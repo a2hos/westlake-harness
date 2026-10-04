@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:02:11.415122+00:00",
+  "checked_at": "2026-10-04T08:04:31.712656+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -413,6 +413,14 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/root-source-admission-v1/ROOT-ADMISSION.json",
       "sha256": "6c6982bb51967508a6120563dc00a216966d33b073fd9cdcab9ee9f15f56ce2e"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
+      "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-stock-view-scout-v1/SCOUT.json",
+      "sha256": "05f2f57999ae0e68b401b98f3a67e582dd52c7f6e552f8d5263d1ba7ed564115"
     }
   ],
   "bionic_stock_graph": {
@@ -451,21 +459,21 @@
     "G273_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0014",
+    "latest": "EVO-0016",
     "verified_improvement_this_round": 1,
-    "scope": "Read-only .so suffix versus content and timeout result routing pilot",
+    "scope": "Read-only ELF member exact reuse identity key, 14 receipts and 11 controls; no actual cache or saved-time proof",
     "global_promotion": false,
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 4,
+    "pending_actual_result_groups": 0,
     "trigger_every_groups": "3-4",
-    "next": "EVO-0016 peer reflection opened after G273, A4 raw, batch12 v3 repair, A4 static; close <=120s, one verifiable improvement, no global promotion without evidence",
-    "latest_closed": "EVO-0015",
-    "pending_groups": 4,
+    "next": "Wait for 3-4 new actual result groups; vary lens; one bounded verifiable improvement",
+    "latest_closed": "EVO-0016",
+    "pending_groups": 0,
     "latest_closure": {
-      "path": "docs/nanhai-plus/evolution/EVO-0015-module-owner-probe/ROOT-CLOSURE.json",
-      "sha256": "0acb072c53d47bb296520f01edf8b50258455ad8d5eb68185a95067255d34583"
+      "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
+      "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
     }
   },
   "mainstream_intake": {
@@ -800,6 +808,22 @@
       "sha256": "6c6982bb51967508a6120563dc00a216966d33b073fd9cdcab9ee9f15f56ce2e"
     },
     "stock_view_closed": false,
+    "graph_executed": false
+  },
+  "g274_stock_view_scout": {
+    "status": "read-only virtual-path scout only",
+    "root_count": 9,
+    "source_entries": 85499,
+    "blueprint_files": 2394,
+    "identical_overlap_paths": 4,
+    "nonidentical_overlap_paths": 0,
+    "virtual_link_targets": 12,
+    "original_dangling_links": 1,
+    "source": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-stock-view-scout-v1/SCOUT.json",
+      "sha256": "05f2f57999ae0e68b401b98f3a67e582dd52c7f6e552f8d5263d1ba7ed564115"
+    },
+    "linux_mount_executed": false,
     "graph_executed": false
   }
 }

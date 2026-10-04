@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-04T08:03:18.302716+00:00",
+  "status": "ROOT_CLOSE_ONE_LIMITED_IDENTITY_PILOT_NOT_PROMOTED",
+  "trigger_actual_result_groups": [
+    "G273 graph terminal rc2",
+    "A4 raw intake root accepted",
+    "batch12 v3 static repair root accepted",
+    "A4 v2 static inventory root accepted"
+  ],
+  "direction": "ELF member reuse identity, distinct from EVO15 Soong module owner probe",
+  "trial": {
+    "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/TRIAL.json",
+    "sha256": "c103b7bb91819377b3aa407020600373688f55c75baa2a6a52c3cf2f73898237"
+  },
+  "review": {
+    "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/REVIEW.md",
+    "sha256": "163e24b86b49fe0f1198d23fb45ff132e0de13a7a82ec7106e04b130232c87c3"
+  },
+  "probe": {
+    "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/probe.py",
+    "sha256": "fc977052ca9ce6735a1da905639754d89b0188ec02118abd6d20cddbee19c13b"
+  },
+  "root_rerun": {
+    "rows": 14,
+    "controls": 11,
+    "all_pass": true,
+    "runtime_reuse_performed": false
+  },
+  "one_verified_improvement": "Versioned key invalidates on member content/name/ABI/scanner/readelf/venv/environment changes in a local read-only trial",
+  "global_promotion": false,
+  "saved_time_measured": false,
+  "new_tool_delta": 0,
+  "original_89_delta": 0,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "next_falsifier": "One isolated retry with actual cache reader, SHA-bound source receipts, and byte-identical 14 records; independent review required."
+}

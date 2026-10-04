@@ -1,0 +1,122 @@
+{
+  "schema": "evo16-elf-member-reuse-key-trial-v1",
+  "candidate_only": true,
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "rows": [
+    {
+      "package": "com.junkfood.seal",
+      "member": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "member_sha256": "7c28f1523b81a2cb18ecd338d6a932bbb9d0daf555991aa498f227e4bbd5f827",
+      "key": "45b7f1062207601dcdbd95610fa42e4522e8fa2eb0075c41e2f9b51dd23e785f",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/8d965b6d3710b6e5176e/RESULT.json"
+    },
+    {
+      "package": "com.junkfood.seal",
+      "member": "lib/arm64-v8a/libaria2c.so",
+      "member_sha256": "7e7e6bd301d1faf8d933ef84179190178e48f956aeabd79c917f10b428d2923e",
+      "key": "51178403a2977ab320c4042d8c860757b7c4640c7f8a89cf16484424c5c8d6f6",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/ca0c5c0a88029777026b/RESULT.json"
+    },
+    {
+      "package": "com.junkfood.seal",
+      "member": "lib/arm64-v8a/libffmpeg.so",
+      "member_sha256": "c48e52c8a367e71203897835a310fd3c678e2e27e5cbdd8cbaa305a83f924648",
+      "key": "78d9a281b7e6504baff7b0ad9b4ddcfadbc9de3bcdb8da1472cf064cf5cc4f52",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/e1f49f08b63b42832edb/RESULT.json"
+    },
+    {
+      "package": "com.junkfood.seal",
+      "member": "lib/arm64-v8a/libffprobe.so",
+      "member_sha256": "26f7d8765a2dfdea5104b3d6d689f2efdb3bc087f789f56d521c54921c2e75f5",
+      "key": "cdee69808a2cf9d749e3cb77703c61c01c61935d12fca59ea3c7cf901771d489",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/cff2b4e9d5bb53a0ba67/RESULT.json"
+    },
+    {
+      "package": "com.junkfood.seal",
+      "member": "lib/arm64-v8a/libmmkv.so",
+      "member_sha256": "a0657bc2249afa3a7cbd79c66eadd1f0fb407fe89f07a1d1d6328cd7397db92d",
+      "key": "8f47536bcfab38521164ee8dc8597f8c34f6efa8224c575ad8ffd4d319521019",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/6680b787d93aa183e59d/RESULT.json"
+    },
+    {
+      "package": "com.junkfood.seal",
+      "member": "lib/arm64-v8a/libpython.so",
+      "member_sha256": "3d7facd61213e36997fe6108c6db4bf7c1c484e7ea75dcfb0bed33133d3a1473",
+      "key": "33ba0e0565896a5dbf39945da4e94f77da79c2c0fb234a1daf3cc74f634fd001",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/802c62c9e746ebc123f1/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/arm64-v8a/liblyrebird.so",
+      "member_sha256": "34e258346e12648b7206941cd4af790ad61ca4c663e47426f3631ee98870dc5c",
+      "key": "c08bc9b55d897e4ebd09796cd8cea556d0d88245a1e752267a94824330cc6262",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/1ad4ccc14d36e9d2a3a2/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/arm64-v8a/libtor.so",
+      "member_sha256": "bf36260486d44c2745fda8e4448668a1ee758db0aa79156299979916b03124a3",
+      "key": "1dffbcba97dd1cac9a5fe9930976004f17ccc1a1fc3d397401cfa1129f4430f1",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/189d792f2f110add4237/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/armeabi-v7a/liblyrebird.so",
+      "member_sha256": "ec54b954399a75cddbc76862fbd887d91714531e21be03795708483809a2e7ed",
+      "key": "92c6f39104e2bda1eb3fe739ef0e01a03a512b7d2d99c7d9fdc9f9d8e2e015d3",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/d26183cc79689da1eafa/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/armeabi-v7a/libtor.so",
+      "member_sha256": "e28eee1ce24a54c8518a5ea91de9365f7db3ea0a9c67a6c2c039b6a85e632485",
+      "key": "2226084346ee3d4beea238fd0c70870eedc95722455c29bebf96eff70eb3c647",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/3e9c9a7974cd592d3f5a/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/x86/liblyrebird.so",
+      "member_sha256": "579be1f08ae4578858e9f8a915824519bb2905a0bba114b2a860daf674056446",
+      "key": "627d11a26ef1f5a3efb05d23096d353331b38fe4b32076db0feba10691438499",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/de88d4f4e4c9249e76df/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/x86/libtor.so",
+      "member_sha256": "8e87c957760124637c8acab8fe8db366ad5343d6f95cb7ef0f98e9b6e31cc143",
+      "key": "2d7fc23cc48a2b7ceca0c7e42774f949b17b752ec1cd3ba89d1d5a61c896c9d9",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/fe1c9026380a689b3038/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/x86_64/liblyrebird.so",
+      "member_sha256": "fe41be88bb4683d4b74e1bc11aa3ee1aac17468e12f8532d00959edcd1cc3597",
+      "key": "efad98b02a2a4351f016b26f97ec59563a490587089c374a72f2dea480446ac6",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/9ba9bc53bdfe96e1093b/RESULT.json"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "member": "lib/x86_64/libtor.so",
+      "member_sha256": "256a1c7dc780a9aae0ddffbffdae73f574767d32304fbda400e6cb9d71233fd6",
+      "key": "1671a581a42db1cc5842ccaf13591eb17176f0a3d5c8a232ae164be9160f8d41",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/9757d2ac236904315267/RESULT.json"
+    }
+  ],
+  "controls": {
+    "same_content_renamed_archive_stable": true,
+    "member_content_change_invalidates": true,
+    "label_change_invalidates": true,
+    "abi_change_invalidates": true,
+    "scanner_change_invalidates": true,
+    "readelf_change_invalidates": true,
+    "venv_change_invalidates": true,
+    "environment_change_invalidates": true,
+    "observed_keys_unique": true,
+    "source_pin_current": true,
+    "tool_pin_current": true
+  },
+  "all_pass": true,
+  "runtime_reuse_performed": false,
+  "device_commands": 0
+}

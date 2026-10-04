@@ -1,0 +1,266 @@
+{
+  "schema": "nanhai.g274.stock-view-scout.v1",
+  "scope": "read-only virtual stock-path and literal provider checks; no mount or graph execution",
+  "source_candidate_sha256": "ad1bddc70b501e6423a7ed2d85a0bcdfd52705aec6a343b4228e6d0db0022b91",
+  "previous_manifest_sha256": "bfb65babe1948af6ebc5ba3096817ad94b290b8beacb983eee28a280d2e5de0e",
+  "roots": [
+    {
+      "stock_root": "packages/apps/DocumentsUI",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/DocumentsUI-r4-ca99454",
+      "commit": "ca99454776b47322576e6dfb5f00cb778e3b3fd0",
+      "tree": "f84be349c58ea442f6c24a5987981e5a3465b491",
+      "entries": 1285,
+      "logical_bytes": 27602348,
+      "blueprint_files": 5,
+      "manifest_sha256": "866f4dcd2f1d32c9297a6ab48676a157e2c36b2196cf41b7814c2133db1acebd"
+    },
+    {
+      "stock_root": "system/netd",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/netd-r4-8d4a0b7",
+      "commit": "8d4a0b7420e67cec340dc37a88815d99a16abfa7",
+      "tree": "e715331f2d071b3c262e50c3b20caaa0eaec25bc",
+      "entries": 159,
+      "logical_bytes": 1304774,
+      "blueprint_files": 6,
+      "manifest_sha256": "8206610a23121b28cd300afd501f8bfa7418e6094d628ae6613cbd044a7614af"
+    },
+    {
+      "stock_root": "device/google/cuttlefish",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/cuttlefish-r4-4d36884",
+      "commit": "4d368849922b04124e66b1aad48f93b3209f3c8d",
+      "tree": "10d3ad52c59318f5c7603196cf8918871cfe8264",
+      "entries": 2052,
+      "logical_bytes": 9419527,
+      "blueprint_files": 201,
+      "manifest_sha256": "ad13cd5a5f10c668edf824b9fbec25973f407d36335682869e591543acf5ea14"
+    },
+    {
+      "stock_root": "system/bpf",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/bpf-r4-0021d8d",
+      "commit": "0021d8d13eb1f603db6b1fa61b6d8ae4b65023db",
+      "tree": "89bbe667c5f070e2df861470271318599a2c2ffb",
+      "entries": 21,
+      "logical_bytes": 128588,
+      "blueprint_files": 4,
+      "manifest_sha256": "ff55e1fb6c1c3fe8d674e24426f02ef643c87b9a64032ef7898a716bc0289376"
+    },
+    {
+      "stock_root": "packages/modules/common",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/modules-common-r4-deef1ed",
+      "commit": "deef1ed99f28b761fe55ab4cac61027f6f78f3e8",
+      "tree": "de4b9e6a40d87e372bd5e90a18538f236d763aae",
+      "entries": 117,
+      "logical_bytes": 386540,
+      "blueprint_files": 26,
+      "manifest_sha256": "6c03ed6c86b9d9d30de8e5dd65b664757d1bfacae575e112d3563bbb5f63466f"
+    },
+    {
+      "stock_root": "frameworks/base",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/frameworks-base-r4-45034f0",
+      "commit": "45034f0663f960d9ee5fb0a101a4732b71f6e2f4",
+      "tree": "6667cba9cf8225451f0822ad94cb21902025dfa3",
+      "entries": 61144,
+      "logical_bytes": 1703541971,
+      "blueprint_files": 980,
+      "manifest_sha256": "34800542aa4143387546d46b62dbc137e31703502d6c5f3ebaaafeea5eb84abe"
+    },
+    {
+      "stock_root": "hardware/interfaces",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/hardware-interfaces-r4-aa22955",
+      "commit": "aa229558cbf04bc997ed27465c5e7ad497123d1b",
+      "tree": "315215f25e2857a7ff1c46c6546f1d5e0f958f5e",
+      "entries": 16456,
+      "logical_bytes": 88231410,
+      "blueprint_files": 949,
+      "manifest_sha256": "a9f88365b7d5cf88c7c27573ca47074335f54bc6c27ab616dd8afc97f9ba2a6e"
+    },
+    {
+      "stock_root": "frameworks/native",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/frameworks-native-r4-fcbde2b",
+      "commit": "fcbde2bcff56ca1d7bec9cabf8bdca5e288bf103",
+      "tree": "99baec33e1309d380fe84fbe89e8c49cd952569a",
+      "entries": 4129,
+      "logical_bytes": 43506471,
+      "blueprint_files": 215,
+      "manifest_sha256": "d141c7d18ecd652cfab00c18f3ae30ebee270d5727956b14b69747a42537c2b2"
+    },
+    {
+      "stock_root": "system/libvintf",
+      "pool_relative": "AOSP-16.0.0_r4/android-source/libvintf-r4-69c456e",
+      "commit": "69c456ea4aa2f503a2904cfbc11f279a3b2efb09",
+      "tree": "8b9bc687ddaef66d0cb027c8e7fe0e168fa3e0ed",
+      "entries": 136,
+      "logical_bytes": 1126276,
+      "blueprint_files": 8,
+      "manifest_sha256": "948a8ac6e3e268a337c6b7dc579a7eb4caee139f948bd9f5e52aeaa1c2f58119"
+    }
+  ],
+  "root_count": 9,
+  "new_entry_count": 85499,
+  "new_logical_bytes": 1875247905,
+  "new_blueprint_files": 2394,
+  "exact_stock_path_overlaps_identical": [
+    {
+      "path": "frameworks/base/data/fonts/fonts.mk",
+      "sha256": "d3e562947b788ce8090a7ec6c5e31c09540bd56fea86cc7be2724c2a1afb782f",
+      "mode": "100644",
+      "bytes": 846
+    },
+    {
+      "path": "frameworks/base/data/keyboards/keyboards.mk",
+      "sha256": "e4eac2b0081071e38f2e920ce8c45c8cbe493dbfb2ff0d7df657cdaa689d16b7",
+      "mode": "100644",
+      "bytes": 748
+    },
+    {
+      "path": "frameworks/base/data/sounds/AllAudio.mk",
+      "sha256": "8280eb0e35a5922210c6ddf725b0c6a12f51d76c03c28e8e8b4edfe5a44505bc",
+      "mode": "100644",
+      "bytes": 24721
+    },
+    {
+      "path": "hardware/interfaces/configstore/1.1/default/surfaceflinger.mk",
+      "sha256": "e2f467de4d5becfa569e235aaa8b5bca367101f0a2bc5c87fff0891decfd9311",
+      "mode": "100644",
+      "bytes": 2905
+    }
+  ],
+  "exact_stock_path_overlaps_nonidentical": 0,
+  "isolated_cross_root_or_dangling_links": [
+    {
+      "source": "system/netd/.clang-format",
+      "payload": "../../build/soong/scripts/system-clang-format",
+      "stock_target": "build/soong/scripts/system-clang-format",
+      "link_sha256": "cdbf666b2a824329abe49508f8f61dc9bce3b7fb5e9d1fa9c6039a71cc7c9a8d",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "e9fdb6ca05f2e7010bc0c8f293e2f61ee7d7f7ac133a10d455cbf0ae44f89d80"
+    },
+    {
+      "source": "device/google/cuttlefish/guest/hals/ril/.clang-format",
+      "payload": "../../../../../../build/soong/scripts/system-clang-format",
+      "stock_target": "build/soong/scripts/system-clang-format",
+      "link_sha256": "94fcd810c37499c06412ce7103ecb6c288feb019f21ab4141c7415885c12c664",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "e9fdb6ca05f2e7010bc0c8f293e2f61ee7d7f7ac133a10d455cbf0ae44f89d80"
+    },
+    {
+      "source": "device/google/cuttlefish/rustfmt.toml",
+      "payload": "../../../build/soong/scripts/rustfmt.toml",
+      "stock_target": "build/soong/scripts/rustfmt.toml",
+      "link_sha256": "565de278d26d1a31ec0e45b98463f97f786e9545d263841710effa47866a1e7c",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "f0fe9298a38b9e5c2ce09aef43e1931f6ae4067b676674ac948d64c6a17e3381"
+    },
+    {
+      "source": "system/bpf/.clang-format",
+      "payload": "../../build/soong/scripts/system-clang-format",
+      "stock_target": "build/soong/scripts/system-clang-format",
+      "link_sha256": "cdbf666b2a824329abe49508f8f61dc9bce3b7fb5e9d1fa9c6039a71cc7c9a8d",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "e9fdb6ca05f2e7010bc0c8f293e2f61ee7d7f7ac133a10d455cbf0ae44f89d80"
+    },
+    {
+      "source": "system/bpf/rustfmt.toml",
+      "payload": "../../build/soong/scripts/rustfmt.toml",
+      "stock_target": "build/soong/scripts/rustfmt.toml",
+      "link_sha256": "042df6640924483862f520a4be9508f43dc267bb8ea2375af72421f3f2463b70",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "f0fe9298a38b9e5c2ce09aef43e1931f6ae4067b676674ac948d64c6a17e3381"
+    },
+    {
+      "source": "frameworks/base/native/android/include/android/multinetwork.h",
+      "payload": "../../../../../native/include/android/multinetwork.h",
+      "stock_target": "frameworks/native/include/android/multinetwork.h",
+      "link_sha256": "5ed382de47e1c94027b14d8f12b1260015e7123420e29e519d718fef7ea2ffdf",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "e5a4e4db1dd3e1d5ceef0e448792b93debcf0cc0da12cde641cf4386a770610c"
+    },
+    {
+      "source": "hardware/interfaces/.clang-format",
+      "payload": "../../build/soong/scripts/system-clang-format",
+      "stock_target": "build/soong/scripts/system-clang-format",
+      "link_sha256": "cdbf666b2a824329abe49508f8f61dc9bce3b7fb5e9d1fa9c6039a71cc7c9a8d",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "e9fdb6ca05f2e7010bc0c8f293e2f61ee7d7f7ac133a10d455cbf0ae44f89d80"
+    },
+    {
+      "source": "hardware/interfaces/security/secretkeeper/aidl/vts/rustfmt.toml",
+      "payload": "../../../../../../build/soong/scripts/rustfmt.toml",
+      "stock_target": "build/soong/scripts/rustfmt.toml",
+      "link_sha256": "6af74cbc9562d800a9c3f4c378c2a408890916f1905e911c422af5ea9eddcc8f",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "f0fe9298a38b9e5c2ce09aef43e1931f6ae4067b676674ac948d64c6a17e3381"
+    },
+    {
+      "source": "frameworks/native/include/ftl/.clang-format",
+      "payload": "../../../../build/soong/scripts/system-clang-format-2",
+      "stock_target": "build/soong/scripts/system-clang-format-2",
+      "link_sha256": "7b26f348a75a6cdc9381d45e1eb328774b54120b7caacd54618aa5a1d791dc80",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "eb2dd9fd3b212b453a936c77d3148a449f20334c62a140b1d299bca9730db819"
+    },
+    {
+      "source": "frameworks/native/include/private/binder",
+      "payload": "../../libs/binder/include/private/binder",
+      "stock_target": "frameworks/native/libs/binder/include/private/binder",
+      "link_sha256": "b0ee7af296dbde8db637a30c04dc86db75b7119cd4ed9ea9bfd34ad74f195fbb",
+      "target_status": "original_r4_dangling_target"
+    },
+    {
+      "source": "frameworks/native/libs/ftl/.clang-format",
+      "payload": "../../../../build/soong/scripts/system-clang-format-2",
+      "stock_target": "build/soong/scripts/system-clang-format-2",
+      "link_sha256": "7b26f348a75a6cdc9381d45e1eb328774b54120b7caacd54618aa5a1d791dc80",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "eb2dd9fd3b212b453a936c77d3148a449f20334c62a140b1d299bca9730db819"
+    },
+    {
+      "source": "frameworks/native/rustfmt.toml",
+      "payload": "../../build/soong/scripts/rustfmt.toml",
+      "stock_target": "build/soong/scripts/rustfmt.toml",
+      "link_sha256": "042df6640924483862f520a4be9508f43dc267bb8ea2375af72421f3f2463b70",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "f0fe9298a38b9e5c2ce09aef43e1931f6ae4067b676674ac948d64c6a17e3381"
+    },
+    {
+      "source": "frameworks/native/services/surfaceflinger/tests/end2end/.clang-format",
+      "payload": "../../../../../../build/soong/scripts/system-clang-format",
+      "stock_target": "build/soong/scripts/system-clang-format",
+      "link_sha256": "94fcd810c37499c06412ce7103ecb6c288feb019f21ab4141c7415885c12c664",
+      "target_status": "qualified_exact_stock_path",
+      "target_sha256": "e9fdb6ca05f2e7010bc0c8f293e2f61ee7d7f7ac133a10d455cbf0ae44f89d80"
+    }
+  ],
+  "qualified_virtual_link_targets": 12,
+  "original_r4_dangling_link_targets": 1,
+  "graphics_aidl_first_level_providers": [
+    {
+      "generated_module_reference": "android.hardware.graphics.common-V7-ndk",
+      "interface_literal": "android.hardware.graphics.common",
+      "stock_blueprint": "hardware/interfaces/graphics/common/aidl/Android.bp",
+      "blueprint_sha256": "04295979b99bf6e297ce8670d2fa945b3345db01973b775e3ae1a97a02475230",
+      "scope": "literal provider present; generated version/graph unresolved"
+    },
+    {
+      "generated_module_reference": "android.hardware.graphics.composer3-V4-ndk",
+      "interface_literal": "android.hardware.graphics.composer3",
+      "stock_blueprint": "hardware/interfaces/graphics/composer/aidl/Android.bp",
+      "blueprint_sha256": "bd209cf6e938573726577aef63a65320fe39cf5e175a7070271a5fb49d63f7fb",
+      "scope": "literal provider present; generated version/graph unresolved"
+    },
+    {
+      "generated_module_reference": "android.hardware.drm.common-V1-ndk",
+      "interface_literal": "android.hardware.drm.common",
+      "stock_blueprint": "hardware/interfaces/drm/common/aidl/Android.bp",
+      "blueprint_sha256": "efea2ae50c31e48e3650bd62ad82ac3b46065775e230ddc19f3f956b49841908",
+      "scope": "literal provider present; generated version/graph unresolved"
+    }
+  ],
+  "boundaries": {
+    "linux_mount_executed": false,
+    "all_transitive_soong_closed": false,
+    "fresh_graph_executed": false,
+    "target_compiled": false,
+    "apk_started": false
+  }
+}
