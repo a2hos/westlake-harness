@@ -1,0 +1,22 @@
+mode: rule
+allow-lan: false
+mixed-port: 0
+external-controller: ""
+external-controller-unix: ""
+log-level: silent
+ipv6: false
+dns:
+  enable: false
+tun:
+  enable: false
+profile:
+  store-selected: false
+proxies: []
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - DIRECT
+rules:
+  - IP-CIDR,1.95.90.207/32,PROXY,no-resolve
+  - MATCH,REJECT

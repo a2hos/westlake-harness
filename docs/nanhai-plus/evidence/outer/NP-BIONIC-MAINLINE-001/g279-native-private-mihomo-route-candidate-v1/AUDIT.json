@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "checks": {
+    "active_process_uses_source": true,
+    "current_geoip_before_match": true,
+    "no_existing_gz02_exact_rule": true,
+    "no_external_proxy_providers": true,
+    "no_proxy_external_file_references": true,
+    "proxy_names_unique": true,
+    "rule_mode": true,
+    "select_group_present": true,
+    "source_has_dns_enabled": true,
+    "source_has_global_controller_unix": true,
+    "source_has_healthcheck_groups": true,
+    "source_has_local_proxy_objects": true,
+    "source_has_prepend_rules": true,
+    "source_sha_locked": true
+  },
+  "credentials_serialized": false,
+  "gz02_connection": false,
+  "network_probe": false,
+  "proxy_group_count": 4,
+  "proxy_instance_started": false,
+  "proxy_object_count": 15,
+  "required_checks_pass": true,
+  "rules_count": 47,
+  "schema": "g279-private-mihomo-source-audit-v1",
+  "source_contains_sensitive_credentials": true,
+  "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "source_size": 7807
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "g279-native-private-mihomo-route-peer-review-v1",
+  "at_utc": "2026-10-04T18:24:53.418830+00:00",
+  "decision": "GO_OFFLINE_DESIGN_ONLY_NO_REAL_INSTANCE_OR_GZ02_CONNECT",
+  "candidate_sha256": "c0e90c8ace8a5c3b47b2baca62fc083158ee4440999d4f150bac949fdcec236d",
+  "evidence_sha256": {
+    "audit": "0f291eba54787f84d2209fd1f27da0e31e2fc39f9146340cc7fee51889e5e15c",
+    "mock_result": "c593d8ac3831861e05795aef7b962c8d9c2b741ba6d7570fd5160e1c0c8d354f",
+    "mock_config": "fbaab4de8f0c577c78bfcda37d7343cdd9092b72a46e90326183e9f6a7fcde6d",
+    "design": "d977af92371229d917ee7ca5da0efdc2f9f7525ab33a1e1729bb4afae922017d",
+    "stdout": "bf4912d006e751f1543e3e01c4ebc7b34472a6f57ca6de3f4bcdb7291ae806b9",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "observed": {
+    "source_sha_current_matches": true,
+    "native_binary_sha_matches": true,
+    "source_audit_required_checks_pass": true,
+    "mock_mihomo_t_rc0": true,
+    "mock_offline_exact_ip_proxy_other_reject": true,
+    "mock_uses_direct_member_only_for_syntax": true,
+    "credential_bearing_config_materialized": false,
+    "private_instance_started": false,
+    "gz02_connected": false,
+    "global_config_or_process_modified": false,
+    "project_runtime_gitignored": true,
+    "private_runtime_dir_absent": true,
+    "credential_scalar_values_found_in_nine_candidate_files": 0
+  },
+  "limits": [
+    "The offline Python rule decision and mihomo -t syntax check used a credential-free mock. Neither proves actual mihomo routing or non-direct node egress.",
+    "Private single-node selection, 0700 directory, O_EXCL 0600 config, silent logging, dynamic unique port, PID-owned listener, termination and cleanup are design statements; no implementation or live validation is present.",
+    "An availability precheck on a dynamic port alone has a TOCTOU gap; the later runner must inspect the actual bound loopback listener and owning private PID, and fail closed if it differs.",
+    "Any real mihomo -t output or process stderr may contain node or credential material; keep raw logs in ignored 0600 project runtime, publish only bounded redacted facts.",
+    "No HK01, container, device, graph, authenticated SSH, or startup claim follows from this evidence."
+  ],
+  "next_release_scope": "Allow only a separately reviewed offline generator and bounded credential-bearing config syntax validation inside project-owned gitignored 0700 runtime, with a single explicitly chosen non-DIRECT node, O_EXCL 0600 config, exact two rules and no inherited DNS/TUN/controller/profile/global settings. Require source process/config SHA recheck, safe raw-log handling and cleanup test. Do not release private process launch or gz02 network/SSH until a later independent review and exact root release.",
+  "reviewer_actions": "Read-only hashes, code and mock review; no real instance, network, SSH, device, container, global configuration/process edit, or count change."
+}

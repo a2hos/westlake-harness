@@ -1,0 +1,64 @@
+{
+  "schema": "g279-native-private-mihomo-route-design-v1",
+  "at_utc": "2026-10-04T18:23:35.647321+00:00",
+  "decision": "GO_OFFLINE_DESIGN_ONLY_NO_INSTANCE_OR_GZ02_CONNECTION",
+  "source_config_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "active_process_uses_source": true,
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "source_audit_sha256": "0f291eba54787f84d2209fd1f27da0e31e2fc39f9146340cc7fee51889e5e15c",
+  "source_audit_program_sha256": "708c12e30624262a6345ac18bac88a52a575d811ace227abb686c62d266951b5",
+  "mock_config_sha256": "fbaab4de8f0c577c78bfcda37d7343cdd9092b72a46e90326183e9f6a7fcde6d",
+  "mock_test_program_sha256": "f9db4fbe24866d3a530f43c87c3bd8f6549b5baafad7251d48b2c41681ee5866",
+  "mock_result_sha256": "c593d8ac3831861e05795aef7b962c8d9c2b741ba6d7570fd5160e1c0c8d354f",
+  "mock_stdout_sha256": "bf4912d006e751f1543e3e01c4ebc7b34472a6f57ca6de3f4bcdb7291ae806b9",
+  "mock_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "design_sha256": "d977af92371229d917ee7ca5da0efdc2f9f7525ab33a1e1729bb4afae922017d",
+  "mock_test_rc": 0,
+  "mock_checks": {
+    "exact_ip_proxy": true,
+    "neighbor_rejected": true,
+    "no_timeout": true,
+    "other_cn_rejected": true,
+    "syntax_rc0": true
+  },
+  "source_structure": {
+    "rule_mode": true,
+    "rules": 47,
+    "local_proxy_objects": 15,
+    "proxy_groups": 4,
+    "no_external_providers": true,
+    "preexisting_geoip_cn_direct_before_match_proxy": true,
+    "prepending_rules_present": true,
+    "healthcheck_groups_present": true,
+    "global_controller_unix_present": true
+  },
+  "private_instance_plan": {
+    "scope": "native project-owned process and config only",
+    "private_runtime_root": ".nanhai-plus-runtime/bionic-oh7-aosp16/proxy-pilot-g279",
+    "directory_mode": "0700",
+    "config_mode": "0600 O_EXCL",
+    "rules": [
+      "IP-CIDR,1.95.90.207/32,PROXY,no-resolve",
+      "MATCH,REJECT"
+    ],
+    "single_non_direct_node_required": true,
+    "global_config_writes": 0,
+    "global_mode_changes": 0,
+    "global_proxy_changes": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "bridge_writes": 0
+  },
+  "known_limits": [
+    "No chosen node was connectivity-tested",
+    "Mock PROXY group uses DIRECT solely for offline syntax; it does not prove real egress",
+    "No second mihomo process was launched",
+    "No gz02 connection or SSH was attempted",
+    "No private credential-bearing config was materialized",
+    "Actual private port bind and protocol-specific node validation require a separate gated experiment"
+  ],
+  "credential_material_written_to_evidence": false,
+  "credential_material_printed": false,
+  "startup_delta": 0,
+  "count_delta": 0
+}

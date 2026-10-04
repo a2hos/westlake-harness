@@ -1,0 +1,72 @@
+{
+  "actual_scope": {
+    "authoritative_count_delta": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "network_commands": 0,
+    "ssh_commands": 0
+  },
+  "at_utc": "2026-10-04T18:22:20.741416+00:00",
+  "causal_chain": "observed repeated opaque rc255 -> missing SOCKS protocol stage receipts -> project-private byte-transparent relay sidecar -> remove blind handshake/graph retry -> verify stage receipt bound to nonce and unchanged SSH stream",
+  "challenged_assumption": "OpenSSH -vv plus nc failure text is enough to localize the transport boundary; v4 contradicts this.",
+  "decision": "GO_OFFLINE_CONTRACT_PILOT_ONLY_NO_LIVE_ROUTE",
+  "direction": "Remote route observability and invalid handshake cost; distinct from EVO44 suffix and EVO43 SDK",
+  "discarded_action": {
+    "action": "Repeat an opaque nc-backed SSH probe from the same route and infer cause from rc255 or the client version line.",
+    "causal_reason": "nc obscures SOCKS5 stage responses, while OpenSSH debug logs only its side of the stream.",
+    "observed_failure": "v4 rc255 with no server banner and no authenticated remote result.",
+    "source_anchor": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-handshake-candidate-v4/ROOT-POSTRUN-ACCEPTANCE.json"
+  },
+  "duration_seconds": 58.307251333,
+  "end_monotonic_ns": 752532595679833,
+  "group_count": 3,
+  "id": "EVO-0045-route-observability",
+  "inferences": [
+    "Opaque nc ProxyCommand hides a failure boundary that matters before choosing another route or expensive graph release.",
+    "The closing component is unknown; v4 does not prove gz02 host state or the proxy cause."
+  ],
+  "observations": [
+    "Signal v2 had all four host-static phases rc0; no startup or device result.",
+    "G279 v4 root accepted terminal rc255, graph commands 0, no server banner, host key or authentication observed.",
+    "OpenKeychain v2 host-static rc0 with signature verification not proven and no startup.",
+    "v4 stderr contains client local version and kex close but no SOCKS5 method or CONNECT response bytes."
+  ],
+  "one_improvement": {
+    "candidate": "For a future independently released, project-private read-only handshake, replace opaque nc ProxyCommand with a byte-transparent SOCKS5 relay that emits a sidecar stage receipt (method reply, CONNECT reply code, first server banner presence) keyed to fresh nonce and exact target; preserve existing SSH host-key pin and no-replay gate.",
+    "failure_behavior": "Fail closed on malformed/partial SOCKS replies or timeout, stop before remote command; record stage UNKNOWN when bytes absent; do not infer remote failure from rc255 alone.",
+    "invalidation": "Discard receipt if target, proxy endpoint, source SHA, nonce, or host-key pin changes; no reuse of v4 nonce or receipt.",
+    "key": "fresh nonce + target host/port + local SOCKS endpoint + wrapper source SHA + SSH host-key pin + route policy",
+    "mechanism": "Locates first failing transport stage from protocol replies in the same authorized connection; prevents ambiguous rc255 from prompting another blind graph or duplicate route attempt.",
+    "pilot_result": "Six offline SOCKS5 stage fixtures classified as expected; historical v4 receipt remains SOCKS_METHOD_UNKNOWN despite ssh rc255. This validates only proposed receipt classification, not relay implementation or live route.",
+    "pilot_sha256": "9a736dec809c83afbfd0d51eb375a3f9ec76cfdeb21b7ecbec287e32d82a57a0",
+    "promotion_gate": "Implement a fresh isolated wrapper candidate and offline socketpair fixtures for fragmented replies, byte preservation, close/timeout and no payload logging; independently review route/host-key/nonce/no-replay controls before one new read-only release. Promote only if same attempt yields unambiguous protocol-stage receipt; never claim authenticated remote or graph until separate receipts prove them.",
+    "risk": "A custom relay could alter bytes or leak credentials/remote data; require binary-transparent fixture proof, bounded sanitized stage metadata only, no payload capture, timeout and independent peer review.",
+    "scope": "Host transport diagnostics only. No SSH run was made in EVO45; no build graph, device, bridge or startup evidence."
+  },
+  "problem": "Released G279 v4 read-only identity probe ended ssh rc255 before observed server banner; existing OpenSSH/nc receipts cannot locate whether SOCKS greeting, SOCKS CONNECT, or upstream SSH stream failed.",
+  "result_groups": [
+    {
+      "name": "Signal v2 static",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "3b6c737993c8a9bbc94d1b874392d2055d9b992f6e2e2b274e06c01cc659ab8e"
+    },
+    {
+      "name": "G279 v4 terminal",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-handshake-candidate-v4/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "d9a17c29e82d161f300d88afc7b50e1dec5914a042c53c446c9748be1447d126"
+    },
+    {
+      "name": "OpenKeychain v2 static",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g326-openkeychain-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "18eea6b3e4a5d0caa2033f7a822d04acfae727f204db0dfd7795fbb38900ed34"
+    }
+  ],
+  "schema": "nanhai-plus-bounded-evolution-v1",
+  "start_monotonic_ns": 752474288428500,
+  "unknowns": [
+    "Whether local SOCKS5 accepted method negotiation or CONNECT.",
+    "Whether gz02 emitted any server bytes on that attempt.",
+    "Whether a different route would work."
+  ],
+  "within_120s": true
+}

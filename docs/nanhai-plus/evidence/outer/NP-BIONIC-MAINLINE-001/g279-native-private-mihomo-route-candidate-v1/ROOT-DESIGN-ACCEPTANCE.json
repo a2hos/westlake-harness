@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-plus-root-private-native-proxy-design-v1",
+  "at_utc": "2026-10-04T18:25:10+00:00",
+  "decision": "ACCEPT_OFFLINE_DESIGN_ONLY",
+  "candidate_sha256": "c0e90c8ace8a5c3b47b2baca62fc083158ee4440999d4f150bac949fdcec236d",
+  "independent_review_sha256": "51096423b0fdc14a813927b1e463f13f56cdd575490b1cf90ae14d948cb95d32",
+  "observed": "Existing native mihomo and source config were SHA-bound; credential-free mock syntax check rc0; offline exact gz02 /32 PROXY and other IP REJECT rules passed.",
+  "not_proven": "A real single-node private config, loopback bind and PID ownership, node egress, gz02 transport, SSH authentication or graph result.",
+  "next": "Review a private offline generator and syntax/cleanup test with secret-bearing config confined to ignored 0700 project runtime before a separately released live pilot.",
+  "global_proxy_writes": 0,
+  "private_proxy_processes_started": 0,
+  "ssh_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

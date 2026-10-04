@@ -1,0 +1,51 @@
+{
+  "all_fixture_pass": true,
+  "authoritative_count_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "fixtures": [
+    {
+      "expected": "SOCKS_METHOD_UNKNOWN",
+      "name": "no_stage_bytes",
+      "observed": "SOCKS_METHOD_UNKNOWN",
+      "pass": true
+    },
+    {
+      "expected": "SOCKS_METHOD_DENIED",
+      "name": "method_denied",
+      "observed": "SOCKS_METHOD_DENIED",
+      "pass": true
+    },
+    {
+      "expected": "SOCKS_CONNECT_REJECTED",
+      "name": "connect_denied",
+      "observed": "SOCKS_CONNECT_REJECTED",
+      "pass": true
+    },
+    {
+      "expected": "SOCKS_CONNECT_OK_SERVER_BANNER_UNKNOWN",
+      "name": "connect_ok_no_banner",
+      "observed": "SOCKS_CONNECT_OK_SERVER_BANNER_UNKNOWN",
+      "pass": true
+    },
+    {
+      "expected": "SSH_SERVER_BANNER_OBSERVED",
+      "name": "server_banner",
+      "observed": "SSH_SERVER_BANNER_OBSERVED",
+      "pass": true
+    },
+    {
+      "expected": "SOCKS_CONNECT_INVALID",
+      "name": "truncated_connect",
+      "observed": "SOCKS_CONNECT_INVALID",
+      "pass": true
+    }
+  ],
+  "network_commands": 0,
+  "schema": "evo45-offline-stage-receipt-pilot-v1",
+  "ssh_commands": 0,
+  "v4_note": "OpenSSH debug text does not record SOCKS5 method or CONNECT reply; client local-version line is not a server banner.",
+  "v4_proxy_stage_classification_from_existing_receipt": "SOCKS_METHOD_UNKNOWN",
+  "v4_ssh_rc": 255,
+  "v4_stderr_sha256": "c937b00d28f71b379c1b2c461816c287b95c1eb61ceb57f2a69ddf8529fc0f64"
+}

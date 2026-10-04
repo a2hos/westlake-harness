@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/Applications/Clash Verge.app/Contents/MacOS/verge-mihomo",
+    "-t",
+    "-d",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-private-mihomo-route-candidate-v1/mock-runtime",
+    "-f",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-private-mihomo-route-candidate-v1/mock.yaml"
+  ],
+  "at_utc": "2026-10-04T18:21:48.754397+00:00",
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "checks": {
+    "exact_ip_proxy": true,
+    "neighbor_rejected": true,
+    "no_timeout": true,
+    "other_cn_rejected": true,
+    "syntax_rc0": true
+  },
+  "credential_material_in_mock": false,
+  "elapsed_seconds": 0.025896874954923987,
+  "gz02_connection": false,
+  "mock_sha256": "fbaab4de8f0c577c78bfcda37d7343cdd9092b72a46e90326183e9f6a7fcde6d",
+  "network_probe": false,
+  "proxy_instance_started": false,
+  "rc": 0,
+  "schema": "g279-private-mihomo-offline-mock-v1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "bf4912d006e751f1543e3e01c4ebc7b34472a6f57ca6de3f4bcdb7291ae806b9",
+  "timed_out": false
+}

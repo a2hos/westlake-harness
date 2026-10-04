@@ -1,0 +1,5 @@
+time="2026-10-04T11:21:48.753481000-07:00" level=info msg="Start initial configuration in progress"
+time="2026-10-04T11:21:48.753562000-07:00" level=info msg="Geodata Loader mode: memconservative"
+time="2026-10-04T11:21:48.753568000-07:00" level=info msg="Geosite Matcher implementation: succinct"
+time="2026-10-04T11:21:48.753600000-07:00" level=info msg="Initial configuration complete, total time: 0ms"
+configuration file /Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-private-mihomo-route-candidate-v1/mock.yaml test is successful

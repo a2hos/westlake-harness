@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:21:11+00:00",
+  "checked_at": "2026-10-04T18:25:32+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -842,18 +842,18 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0044-apk-content-suffix-contract",
+    "latest": "EVO-0045-route-observability",
     "result": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0044-apk-content-suffix-contract/ROOT-ACCEPTANCE.json",
-      "sha256": "27a6cd7572e97ac6a4f1a16b66761ae8a076d169517e809a00df428a4c39b0dc"
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0045-route-observability/ROOT-ACCEPTANCE.json",
+      "sha256": "bdc9595116bea19fb51dfa0a787cd2de4c69dc1cdf66ae1dac46b3a08fbfe2fc"
     },
-    "actual_result_groups": 4,
-    "duration_seconds": 60.650703584,
-    "one_testable_improvement": "Use a SHA-guarded read-only .apk alias for a validated APK stored as .raw before metadata dispatch.",
+    "actual_result_groups": 3,
+    "duration_seconds": 58.307251333,
+    "one_testable_improvement": "Add protocol-stage sidecar receipts to a future byte-transparent project-private SOCKS5 read-only handshake; keep historical rc255 stage unknown.",
     "limited_pilot": true,
     "globally_promoted": false,
-    "pending_actual_result_groups": 3,
-    "direction": "APK content identity versus filename suffix; distinct from EVO43 SDK risk"
+    "pending_actual_result_groups": 0,
+    "direction": "transport stage observability; distinct from EVO44 suffix and EVO43 SDK risk"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -2089,5 +2089,16 @@
     "server_banner_observed": false,
     "graph_result_observed": false,
     "replay_allowed": false
+  },
+  "g279_private_native_proxy_design": {
+    "status": "accepted_offline_design_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-private-mihomo-route-candidate-v1/ROOT-DESIGN-ACCEPTANCE.json",
+      "sha256": "4ddf1ebe443af2ba757e56443630607da6de18bea0d128822df9b8a9c66da798"
+    },
+    "private_process_started": false,
+    "gz02_connected": false,
+    "graph_result_observed": false,
+    "container_commands": 0
   }
 }

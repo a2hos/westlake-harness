@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-plus-root-evolution-acceptance-v1",
+  "at_utc": "2026-10-04T18:23:00+00:00",
+  "decision": "GO_OFFLINE_CLASSIFICATION_PILOT_ONLY",
+  "report_sha256": "91f28030bb5aedb51dae745e6412dd7dc09126dc6f51bd9a94c96386eab69cdb",
+  "pilot_sha256": "9a736dec809c83afbfd0d51eb375a3f9ec76cfdeb21b7ecbec287e32d82a57a0",
+  "actual_result_groups": 3,
+  "duration_seconds": 58.307251333,
+  "one_testable_improvement": "Add protocol-stage receipts for a future project-private, byte-transparent SOCKS5 read-only handshake so an rc255 can be located before selecting another route.",
+  "reason": "The v4 OpenSSH and nc receipts do not expose SOCKS method or CONNECT replies; six offline classification vectors passed, while the historical v4 stage remains unknown.",
+  "limits": "No production relay implementation, live network result, authenticated host, graph, device or startup proof. Independent byte-preservation and security review are required before any one-shot live pilot.",
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0
+}
