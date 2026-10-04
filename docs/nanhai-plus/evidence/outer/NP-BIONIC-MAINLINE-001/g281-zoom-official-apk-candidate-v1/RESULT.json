@@ -1,0 +1,112 @@
+{
+  "schema": "nanhai.g281.zoom_official_apk_static_candidate.v1",
+  "at": "2026-10-04T10:41:47.422013+00:00",
+  "status": "CANDIDATE_ONLY_NO_CANONICAL_OR_BLACKBOX_ADMISSION",
+  "source": {
+    "official_page": "https://zoom.us/download?os=android",
+    "existing_page_html_sha256": "0d328aa36e0145846631b422e8715da8f82e9a84aaafd896e7084011fe75a7cd",
+    "existing_page_headers_sha256": "bf552a222b5d6cd1bc51a7dac30f65e8afd88c3e4fff16cbc982f3b999f8c6bb",
+    "current_page_html_sha256": "c48fb7ee8ef6d0f2367e0386456c086d566fa19704d9e670c90b60d3113bdf07",
+    "current_page_headers_sha256": "47772eaa5965c7d5ebe109e59723be5add66aa6d343bf279c6cbf40fdf5e6fda",
+    "request_url": "https://zoom.us/client/latest/zoom.apk",
+    "effective_url": "https://cdn.zoom.us/prod/7.2.1.43844/zoom.apk",
+    "http_redirect_status": 302,
+    "http_final_status": 200,
+    "curl_rc": 0,
+    "tls_verify_result": 0,
+    "redirects": 1,
+    "headers_sha256": "67f84f1fa5e67128c2c78c71d8198cb7933a6b03d35ff55abf1f4aaa7dd23624",
+    "bytes": 358226193,
+    "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+    "official_vendor_forum_example": "https://devforum.zoom.us/t/host-link-not-starting-meeting/81008/12",
+    "source_limit": "Official download page HTML does not itself expose the APK href; Zoom-hosted latest endpoint resolved to versioned Zoom CDN URL, corroborated by an older official vendor forum example of the same client path form.",
+    "download_argv": [
+      "curl",
+      "--location",
+      "--silent",
+      "--show-error",
+      "--max-time",
+      "300",
+      "--dump-header",
+      ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-official-apk-candidate-v1/apk.headers.raw",
+      "--output",
+      ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-official-apk-candidate-v1/zoom.apk",
+      "--write-out",
+      "http=%{http_code} url=%{url_effective} bytes=%{size_download} tls=%{ssl_verify_result} redirects=%{num_redirects}\\n",
+      "https://zoom.us/client/latest/zoom.apk"
+    ]
+  },
+  "manifest": {
+    "package": "us.zoom.videomeetings",
+    "version_code": "6702010",
+    "version_name": "7.2.1.43844",
+    "target_sdk": 36,
+    "native_code": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ]
+  },
+  "zip": {
+    "facts_sha256": "c0fee1da0b51131218e6068266fbc8a09ee8a17b5b339054a1be562c4e873c18",
+    "entries": 11604,
+    "unique_names": true,
+    "crc_first_failure": null,
+    "root_manifest_count": 1,
+    "root_dex_count": 16,
+    "native_counts_by_abi": {
+      "arm64-v8a": 148,
+      "armeabi-v7a": 142
+    },
+    "invalid_native_count": 0,
+    "preflight_argv": [
+      "python3",
+      "-B",
+      "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-official-apk-candidate-v1/preflight.py",
+      ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-official-apk-candidate-v1/zoom.apk"
+    ],
+    "preflight_rc": 0,
+    "script_sha256": "60b2e98b2759a6b2fcd5e13e45078111afcb5da7d21562dc1e7b1d15743c57f9",
+    "note": "Final ABI-aware preflight run rc0; aapt2 and apksigner were repeated after correcting the initial ZIP checker treatment of 32-bit ARM."
+  },
+  "signature": {
+    "verified": true,
+    "v3": true,
+    "signers": 1,
+    "certificate_sha256": "60b75724b34686e52bde944969de120f16bd6d959788d54384494caedd4e445d",
+    "historical_registry_certificate_same": true,
+    "publisher_certificate_independently_published_by_zoom": "NOT_PROVEN"
+  },
+  "commands": {
+    "badging": {
+      "receipt_sha256": "3ea2b885a275e207488d5597a31a3dfe8939f9ad7f1c2353a1bcb9959f5f10d8",
+      "rc": 0,
+      "stdout_sha256": "8ae5a09243086d836840f5d4f605d52663a55b9ffb59547a16bda21d50e464a5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "signature": {
+      "receipt_sha256": "ae81f9d5a8eae3e651c471c002e26429c347639756de77bc23a5f4697c7e9abb",
+      "rc": 0,
+      "stdout_sha256": "d934e3ae4c0e735a97fd7f4066158bccd5104514ad939d05cc5cac0a8a865d09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "historical_registry": {
+    "id": "r-094e306cdfe640fcf0b8",
+    "version_name": "7.1.8.42948",
+    "artifact_sha256": "9eaddc5558efca06c6fc3c180a725610f79be5ae6edc4b5fee3f5bead1962b4e",
+    "matches_new_artifact": false
+  },
+  "classification": {
+    "canonical_delta": 0,
+    "blackbox_qualified": false,
+    "full_static_inventory_complete": false,
+    "cold_start_verified": false,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "limits": [
+    "Official latest URL is mutable; this receipt binds only the observed 7.2.1.43844 redirect and APK SHA.",
+    "ZIP/manifest/signature preflight is not full harness inventory or runtime evidence.",
+    "Historical Google Play XAPK bytes and version differ; certificate cross-check alone does not transfer package admission."
+  ]
+}

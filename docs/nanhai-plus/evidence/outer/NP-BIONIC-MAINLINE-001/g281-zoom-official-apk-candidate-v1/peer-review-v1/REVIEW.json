@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai.g281.zoom_official_apk_peer_review.v1",
+  "decision": "GO_SEPARATE_OFFICIAL_RAW_SUPPLEMENT_ONLY",
+  "reviewed_result_sha256": "0e98066e4eb614a443e7608af307cea666300ad082f756a8c983aa845163bbbb",
+  "payload": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-official-apk-candidate-v1/zoom.apk",
+    "bytes": 358226193,
+    "sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+    "independently_hashed": true
+  },
+  "official_chain": {
+    "request": "https://zoom.us/client/latest/zoom.apk",
+    "raw_headers_sha256": "67f84f1fa5e67128c2c78c71d8198cb7933a6b03d35ff55abf1f4aaa7dd23624",
+    "observed": "Raw download headers show zoom.us HTTP 302 Location https://cdn.zoom.us/prod/7.2.1.43844/zoom.apk followed by cdn.zoom.us HTTP 200, content-length 358226193. RESULT.json records curl rc 0, one redirect, and TLS verify result 0.",
+    "limit": "The downloaded Zoom page HTML does not directly expose this APK href. The Zoom-hosted endpoint and redirect establish this observed vendor-domain chain; an older Zoom developer forum post independently demonstrates the /client/<version>/zoom.apk path form. The latest endpoint is mutable and no independently published checksum for these exact bytes was found."
+  },
+  "package_and_integrity": {
+    "aapt2": "Recorded aapt2 rc 0: us.zoom.videomeetings, versionName 7.2.1.43844, versionCode 6702010, target SDK 36.",
+    "apksigner": "Recorded apksigner rc 0, v3 verified, one signer; certificate SHA256 60b75724b34686e52bde944969de120f16bd6d959788d54384494caedd4e445d matches historical registry certificate. This does not independently bind the certificate to the publisher.",
+    "zip": "ZIP-FACTS.json SHA256 c0fee1da0b51131218e6068266fbc8a09ee8a17b5b339054a1be562c4e873c18: 11604 unique entries, one root manifest, no CRC failure, 16 root DEX with dex 039 magic, 148 arm64-v8a and 142 armeabi-v7a native ELF entries with no ABI mismatch.",
+    "dex_correction": "The prior preliminary peer message said 17 DEX in error. The exact set is classes.dex plus classes2.dex through classes16.dex, totaling 16."
+  },
+  "historical_registry": {
+    "record_id": "r-094e306cdfe640fcf0b8",
+    "historical_artifact": "gp-zoom.xapk, version 7.1.8.42948, code 6701080, SHA256 9eaddc5558efca06c6fc3c180a725610f79be5ae6edc4b5fee3f5bead1962b4e, 2 splits, payload not locally observed",
+    "finding": "New official standalone APK is a different version and SHA from the historical Google Play XAPK. Matching package and certificate do not establish byte identity, split equivalence, or qualification of the old record. Preserve that registration unchanged."
+  },
+  "admission_boundary": "Evidence is sufficient for root to accept exactly this unmodified 358226193-byte APK as one separate official-channel raw supplemental payload, following the Signal/WhatsApp/Proton supplemental-payload accounting pattern. If the current accepted distinct raw count is independently confirmed as 77 with no duplicate SHA, an authoritative root intake may advance raw payload count to 78. This peer does not edit canonical records or counts. Full static inventory, qualified overseas mainstream blackbox status, installation/display readiness, cold start, and device acceptance remain unproven; their counts stay unchanged.",
+  "peer_actions": "Read-only local receipt/header/APK hash and ZIP/registry review; no download, device, container, graph, canonical edit, or count mutation."
+}

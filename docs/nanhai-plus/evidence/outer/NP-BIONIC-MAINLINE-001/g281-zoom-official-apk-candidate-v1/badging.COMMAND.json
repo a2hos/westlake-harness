@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+    "dump",
+    "badging",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-official-apk-candidate-v1/zoom.apk"
+  ],
+  "rc": 0,
+  "elapsed_seconds": 0.3069819170050323,
+  "stdout_sha256": "8ae5a09243086d836840f5d4f605d52663a55b9ffb59547a16bda21d50e464a5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 9820,
+  "stderr_bytes": 0
+}

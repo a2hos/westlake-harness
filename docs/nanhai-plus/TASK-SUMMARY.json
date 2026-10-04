@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T10:39:37.180571+00:00",
+  "checked_at": "2026-10-04T10:45:24.497591+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 77,
+    "downloaded_payloads": 78,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -51,7 +51,7 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 73,
-    "supplemental_payloads": 4
+    "supplemental_payloads": 5
   },
   "latest_actual_execution": {
     "release": 276,
@@ -534,14 +534,14 @@
   },
   "next_graph_candidate": {
     "prospective_release": 279,
-    "status": "NO_GO_RUNNER_V2",
+    "status": "NO_GO_RUNNER_V3",
     "execution_ready": false,
     "original_owner_graph_ack": false,
     "peer_review": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v2-peer-v1/REVIEW.json",
-      "sha256": "1ac8725f82504d2ba9d5c1c67f5c3f9a4bd4d69b1b5e4564cbd9ae323a527eb6"
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v3-peer-v1/REVIEW.json",
+      "sha256": "bc598ced1b2c9f8bcbb89023d110da87d1982536545b7e0ab51f8df6f400386e"
     },
-    "next_input": "Fix runner v2 peer B1-B6, then independent review, separate original owner graph ACK and one-shot release"
+    "next_input": "Fix runner v3 B4-B6 and EVO19 pre-execution identity gate, independent review, separate original owner graph ACK; no graph now"
   },
   "reflection": {
     "latest": "EVO-0019-input-authority-execution-gate",
@@ -1237,5 +1237,26 @@
       "sha256": "4fe94373c2ab2a315662ee6346bc300c7b1759e8d3299327baa83915d67915f8"
     },
     "graph_released": false
+  },
+  "g281_zoom_raw_supplement": {
+    "status": "accepted_official_raw_only",
+    "root_intake": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-official-apk-candidate-v1/ROOT-RAW-INTAKE.json",
+      "sha256": "f7f3a2d2de6b9cb61a778d2647ad9294a23c35a4cf7939e34fbcd3334f842b95"
+    },
+    "raw_before": 77,
+    "raw_after": 78,
+    "full_static_pass": false,
+    "blackbox_qualified": false,
+    "cold_start_pass": false,
+    "historical_registry_replaced": false
+  },
+  "g279_runner_v3": {
+    "status": "NO_GO_STATIC_CANDIDATE",
+    "peer_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v3-peer-v1/REVIEW.json",
+      "sha256": "bc598ced1b2c9f8bcbb89023d110da87d1982536545b7e0ab51f8df6f400386e"
+    },
+    "graph_executed": false
   }
 }

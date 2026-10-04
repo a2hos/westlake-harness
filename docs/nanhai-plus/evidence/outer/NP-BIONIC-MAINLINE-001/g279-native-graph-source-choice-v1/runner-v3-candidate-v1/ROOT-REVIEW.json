@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai-g279-runner-v3-root-review-v1",
+  "at": "2026-10-04T10:46:03.296845+00:00",
+  "decision": "NO_GO_GRAPH_RELEASE_OR_EXECUTION",
+  "runner": {
+    "path": "scripts/nanhai_plus_native_graph_v3.py",
+    "sha256": "1494eba2a99d5edff5ff811ae536193e541928d1e2180118fb79aa800ff1277c"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v3-candidate-v1/STATIC-CANDIDATE.json",
+    "sha256": "991a74db6471fa85d14ccfab777ffa290795e667849bb26f561188286fd5a2b9"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v3-peer-v1/REVIEW.json",
+    "sha256": "bc598ced1b2c9f8bcbb89023d110da87d1982536545b7e0ab51f8df6f400386e"
+  },
+  "root_static_check_rc": 0,
+  "root_run_rejection_rc": 3,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "next": "Fix B4-B6 and EVO19 pre-execution receipt in a new runner, independent review, separate original-owner graph ACK."
+}

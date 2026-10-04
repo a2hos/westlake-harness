@@ -1,0 +1,66 @@
+{
+  "schema": "nanhai-g279-env-wrapper-launcher-guard-v1",
+  "at": "2026-10-04T10:41:50.400284+00:00",
+  "script_sha256": "54c63eaf77a5de3ac91c8ef5323e2e719079662edc049c60b4d86f417d72ebc5",
+  "tests": [
+    {
+      "argv": [
+        "python3",
+        "scripts/nanhai_plus_env.py",
+        "--run",
+        "unshare",
+        "--help"
+      ],
+      "rc": 2,
+      "rejected": true
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/nanhai_plus_env.py",
+        "--run",
+        "chroot",
+        "--help"
+      ],
+      "rc": 2,
+      "rejected": true
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/nanhai_plus_env.py",
+        "--run",
+        "bwrap",
+        "--help"
+      ],
+      "rc": 2,
+      "rejected": true
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/nanhai_plus_env.py",
+        "--run",
+        "nsjail",
+        "--help"
+      ],
+      "rc": 2,
+      "rejected": true
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/nanhai_plus_env.py",
+        "--run",
+        "/usr/bin/true"
+      ],
+      "rc": 0,
+      "allowed": true
+    }
+  ],
+  "container_executed": false,
+  "namespace_executed": false,
+  "graph_executed": false,
+  "device_executed": false,
+  "scope": "direct --run launcher basename gate only; nested commands require packet and syscall guard"
+}

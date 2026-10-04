@@ -8,7 +8,11 @@ G278 无容器原生宿主进展：重新核查发现 gz02 已有精确 R4 check
 
 G279 全树只读源码准入：gz02 的 R4 manifest 共 1013 项，1011 项存在且逐仓精确标签 HEAD、tracked-clean；缺两项 Darwin 宿主预构建。原内环已对新环境和共享索引完成一次 metadata ACK，**没有构图授权或执行**。原生构图 runner v2 的独审为 NO_GO，六组边界问题待修；不得调用它或旧容器包。下一步修 runner、复审、单独取得原 owner 构图 ACK 后才可尝试普通宿主进程构图。当前 Soong 图、ARM64 Bionic 目标编译、HelloWorld 冷启动及设备验收仍为 0。
 
-G279 三份项目控制输入已在 gz02 一次投递 rc0，独立 SSH 回读确认 generator、manifest ledger 与环境绑定 JSON 均为精确 SHA、0444；root 仅接受只读输入准备，runner v2 仍 NO_GO，未构图。G280 对现有 Firefox 156.0 官方下载字节做 ZIP/CRC、包名版本与 v2 签名核验，独审/root 只接受静态预检候选；与历史登记 SHA 不同，未增加 77 原包或 73 完整静态数。EVO-0019 在四组实际结果后有界闭合一项远端执行前 fail-closed 身份门小试，未推广。
+G279 三份项目控制输入已在 gz02 一次投递 rc0，独立 SSH 回读确认 generator、manifest ledger 与环境绑定 JSON 均为精确 SHA、0444；root 仅接受只读输入准备，runner v2 仍 NO_GO，未构图。G280 对现有 Firefox 156.0 官方下载字节做 ZIP/CRC、包名版本与 v2 签名核验，独审/root 只接受静态预检候选；与历史同版登记 SHA 不同，未计原包或完整静态。EVO-0019 在四组实际结果后有界闭合一项远端执行前 fail-closed 身份门小试，未推广。
+
+G279 runner v3 静态候选 `--static-check` rc0 且 `--run` 仍拒跑；独立审查继续 NO_GO，异常退出清理、过滤器继承、完整执行轨迹、构图产物及 EVO19 执行前身份门尚未验收。
+
+G281 Zoom 官方下载入口经实际 302 跳转到版本固定的 Zoom CDN APK，358,226,193 字节、SHA-256 `ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b`，包名/版本/签名与 ZIP 校验通过。独审和 root 将其作为**独立官方原包补充**准入，原包载荷 77→78；旧 Google Play XAPK 是不同版本与 split，登记及失败不变。该新包仍未完成完整静态清点、黑盒资格核验或冷启动。
 
 | 范围 | 已核实数量 | 含义 |
 |---|---:|---|
@@ -19,7 +23,7 @@ G279 三份项目控制输入已在 gz02 一次投递 rc0，独立 SSH 回读确
 | 历史 Musl 已尝试 / 未尝试 | 58 / 31 | 原 86 项已尝试 56，加新增项已尝试 2 |
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
-| 原版 APK 下载载荷接受 | 77 | 上游登记原包 73，加 Signal、WhatsApp、Vivaldi 与 Proton Meet 官方渠道补充原包各 1；均未计启动 |
+| 原版 APK 下载载荷接受 | 78 | 上游登记原包 73，加 Signal、WhatsApp、Vivaldi、Proton Meet、Zoom 官方渠道补充原包各 1；均未计启动 |
 | APK 完整静态清点 | 73 | 共 147 个 DEX、522 个真正 ELF；VLC、Signal、Keychain 仍未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |

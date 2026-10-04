@@ -1,0 +1,50 @@
+{
+  "schema": "nanhai-g279-native-runner-v3-static-candidate-v1",
+  "at": "2026-10-04T10:43:10.993875+00:00",
+  "runner_path": "scripts/nanhai_plus_native_graph_v3.py",
+  "runner_sha256": "1494eba2a99d5edff5ff811ae536193e541928d1e2180118fb79aa800ff1277c",
+  "status": "STATIC_CANDIDATE_NO_GO_GRAPH",
+  "ast_parse_rc": 0,
+  "checks": [
+    {
+      "name": "static",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v3.py",
+        "--static-check"
+      ],
+      "rc": 0,
+      "stdout_sha256": "826a46caa06f32865bdf0bff5356aaa5e9eb15d5e1fd13c1356d16884e50f75a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run-denial",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v3.py",
+        "--run"
+      ],
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "97f2659eb5420d227424695bb94fb467fa58c3bef1b1dc54670f11b14299e8bc"
+    }
+  ],
+  "B1": "frozen gz02 env binding read and exact key set verified before path construction; remote not executed",
+  "B2": "three project-control inputs SHA/mode verified in dormant remote preflight; staged receipt local static checked",
+  "B3": "manifest ten linkfile targets/hashes, root topology/exclusions/permissions and immediate 1011-project untracked/ledger pre-post guards implemented; remote untested",
+  "B4": "subreaper and /proc descendant cleanup candidate in dormant execute path; needs independent lifecycle/fault injection review",
+  "B5": "no-namespace seccomp guard before UI and exec+namespace strace candidate; guard host smoke only, inherited behavior and complete trace unproven",
+  "B6": "terminal/preflight receipt candidate, exact build.aosp_arm64.ninja, nonempty/full tracked BP coverage and generated actions separate; actual graph unrun",
+  "unresolved": [
+    "Independent peer must review runner code and verify all remote path/permission and cleanup assumptions",
+    "No graph-release ACK or pin for this runner SHA; --run intentionally rc3",
+    "No proof that no-namespace guard mediates full Soong child tree or that generated actions are safe",
+    "No Soong graph, ARM64 Bionic compile, HelloWorld start, 89-tool pass, or device evidence"
+  ],
+  "graph_command_executed": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "canonical_counts_changed": false
+}

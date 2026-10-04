@@ -1,0 +1,83 @@
+{
+  "entries": 11604,
+  "unique_names": true,
+  "root_manifest_count": 1,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes10.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes11.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes12.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes13.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes14.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes15.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes16.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes2.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes3.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes4.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes5.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes6.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes7.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes8.dex",
+      "magic": "6465780a30333900"
+    },
+    {
+      "name": "classes9.dex",
+      "magic": "6465780a30333900"
+    }
+  ],
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "native_count": 290,
+  "native_counts_by_abi": {
+    "arm64-v8a": 148,
+    "armeabi-v7a": 142
+  },
+  "invalid_native": [],
+  "crc_first_failure": null,
+  "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b"
+}

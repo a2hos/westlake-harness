@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+    "-XX:-UsePerfData",
+    "-Xmx512m",
+    "-Djava.awt.headless=true",
+    "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-official-apk-candidate-v1",
+    "-jar",
+    "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+    "verify",
+    "--verbose",
+    "--print-certs",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-official-apk-candidate-v1/zoom.apk"
+  ],
+  "rc": 0,
+  "elapsed_seconds": 0.2988750000949949,
+  "stdout_sha256": "d934e3ae4c0e735a97fd7f4066158bccd5104514ad939d05cc5cac0a8a865d09",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 960,
+  "stderr_bytes": 0
+}

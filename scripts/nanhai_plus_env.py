@@ -110,7 +110,9 @@ def main(argv=None):
                 raise EnvironmentError("--run requires a command")
             if bindings.get("NANHAI_CONTAINER_POLICY") == "forbidden":
                 command = Path(args.run[0]).name.lower()
-                if command in {"docker", "podman", "nerdctl", "buildah", "runc", "crun", "nsjail", "proot"}:
+                if command in {"docker", "podman", "nerdctl", "buildah", "runc", "crun",
+                               "nsjail", "proot", "unshare", "chroot", "bwrap", "bubblewrap",
+                               "firejail", "systemd-nspawn"}:
                     raise EnvironmentError(f"Container or namespace launcher forbidden by current project policy: {command}")
                 if "run" in args.run and any("stock-bionic-target-graph-" in item and
                                              item.endswith("/executor.py") for item in args.run):
