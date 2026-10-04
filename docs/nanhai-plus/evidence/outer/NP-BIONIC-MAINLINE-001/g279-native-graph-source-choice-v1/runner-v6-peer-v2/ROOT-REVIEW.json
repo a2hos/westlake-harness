@@ -1,0 +1,25 @@
+{
+  "schema": "nanhai.g279.native_graph_v6_root_review.v1",
+  "at": "2026-10-04T11:01:31.998612+00:00",
+  "decision": "ACCEPT_PEER_NO_GO_RELEASE_GRAPH",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-candidate-v2/STATIC-CANDIDATE.json",
+    "sha256": "3c88caca39e54beebbfb64650b244340770be3b56fab355dc903520c77e10f20"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-peer-v2/REVIEW.json",
+    "sha256": "4d00a8334e788d5c3d1f850a3624186f484f3c7f0b09006686408553ec6d9e04"
+  },
+  "observed": "Current CLI hard-closes runner --run and gate --preflight/--execute at rc3; local fixture evidence only.",
+  "blocking": [
+    "Remote spec path/interpreter not bound to authority and SSH remote command can be injected",
+    "Readback-to-execution TOCTOU; incomplete metadata and parent component checks",
+    "Receipt destination and failure persistence incomplete",
+    "Original owner graph ACK, actual SSH readback, child seccomp, graph and target evidence absent"
+  ],
+  "graph_execution_allowed": false,
+  "ssh_readback_allowed": false,
+  "container_execution_allowed": false,
+  "device_execution_allowed": false,
+  "next": "New v7 exact-byte candidate fixing peer B1-B3, independent review, then owner ACK separately; do not replay v6."
+}

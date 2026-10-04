@@ -1,0 +1,115 @@
+{
+  "schema": "nanhai-g279-native-runner-v6-static-candidate-v2",
+  "at": "2026-10-04T10:58:50.290704+00:00",
+  "status": "STATIC_CANDIDATE_NO_GO_GRAPH",
+  "runner_path": "scripts/nanhai_plus_native_graph_v6.py",
+  "runner_sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f",
+  "wrapper_path": "scripts/nanhai_plus_native_graph_v6_gate.py",
+  "wrapper_sha256": "4178eabc3cd9490b4c36c411e2316c37cad06d028e2f2264537654b0637def47",
+  "fixture_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-candidate-v2/static_fixtures.py",
+  "fixture_sha256": "213076dd81be191c6114587ecf6c9aaf43286407cd616797f256c7df2746d939",
+  "ast_parse_rc": 0,
+  "checks": [
+    {
+      "name": "runner-static",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v6.py",
+        "--static-check"
+      ],
+      "rc": 0,
+      "stdout_sha256": "356c717d2190c99fcc137b0fcaf0a907c8dd4eec822c38b2a1e58d8395197c23",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "runner-denial",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v6.py",
+        "--run"
+      ],
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "aeff21fb523d3a28bff9511301ed19b64f015e5a2a8f864f47c32201142f9502"
+    },
+    {
+      "name": "gate-static",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v6_gate.py",
+        "--static-check"
+      ],
+      "rc": 0,
+      "stdout_sha256": "e5f53447c344252bc8ae195a7a4b9cacb13b9f8330fd896239e50a3f3f82653a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "gate-preflight-denial",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v6_gate.py",
+        "--preflight"
+      ],
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1af0960a96a302d2a990c067249249617a1a502359023a77249c6636177569dd"
+    },
+    {
+      "name": "gate-execute-denial",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v6_gate.py",
+        "--execute"
+      ],
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "1af0960a96a302d2a990c067249249617a1a502359023a77249c6636177569dd"
+    },
+    {
+      "name": "fixtures",
+      "argv": [
+        "python3",
+        "-B",
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-candidate-v2/static_fixtures.py"
+      ],
+      "rc": 0,
+      "stdout_sha256": "9df974f1ab264acffa628d7fea4d883307a10aecfdaa0691d306e18a1d24e2d8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "supersedes_draft_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-candidate-v1/STATIC-CANDIDATE.json",
+    "reason": "pre-review gate receipt-destination binding and outer-SSH failure cases added; v1 never released"
+  },
+  "peer_v5_sha256": "51050ea33d7704c78b3874b154ce8483fd77e1f2b4203b0a4626bfc5795e93b1",
+  "evo19_root_closure_sha256": "f5c0872cf64fc322e74b65693c63a403edf7920f5f68d615dc21d2f8c4bfe428",
+  "gate_claims": {
+    "single_receipt": "atomic O_EXCL-equivalent hard-link EVO19-GATE.json with expected and actual identities",
+    "expected": [
+      "authoritative local_env/config SHA",
+      "local wrapper SHA/bytes/mode",
+      "remote runner/interpreter/binding/index/UI/guard/generator/ledger/manifest/Go VERSION/bin SHA/bytes/mode",
+      "intended remote argv and interpreter",
+      "SSH outer rc",
+      "remote readback rc"
+    ],
+    "local_fixture_cases": 9,
+    "graph_release": false
+  },
+  "unresolved": [
+    "No reviewed external release spec or original-owner graph ACK",
+    "No actual SSH readback for exact runner/wrapper SHA; injected transport only",
+    "Real Linux descendant cleanup, seccomp inheritance, complete graph trace and artifacts remain unproven",
+    "EVO20 subninja action closure excluded; target Ninja remains NO_GO"
+  ],
+  "graph_command_executed": false,
+  "ssh_commands_executed_by_candidate": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "canonical_counts_changed": false
+}

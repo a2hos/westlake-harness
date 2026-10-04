@@ -1,0 +1,51 @@
+{
+  "schema": "nanhai.g279.native_graph_v6_gate_static_peer_review.v2",
+  "decision": "NO_GO_EVO19_RELEASE_OR_GRAPH",
+  "reviewed": {
+    "runner_sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f",
+    "gate_wrapper_sha256": "4178eabc3cd9490b4c36c411e2316c37cad06d028e2f2264537654b0637def47",
+    "v2_candidate_sha256": "3c88caca39e54beebbfb64650b244340770be3b56fab355dc903520c77e10f20",
+    "v2_fixture_sha256": "213076dd81be191c6114587ecf6c9aaf43286407cd616797f256c7df2746d939",
+    "v1_status": "Superseded draft; not reviewed for release"
+  },
+  "positive_static_findings": [
+    "Reachable runner --run and gate --preflight/--execute remain hard rc3. Current CLI cannot SSH or execute graph; no reachable Docker/Podman/OCI, namespace, chroot or mount route was found.",
+    "Dormant evaluate/preflight_once can write one atomic link-created EVO19-GATE.json containing expected local env/wrapper, intended argv/interpreter, expected and observed remote input SHA/size/mode, plus separate outer SSH and remote readback rc. Nine injected local fixtures match their persisted hashes and cover success, mismatch, SSH failure, env failure, receipt path mismatch and no replacement; they do not perform SSH.",
+    "Remote probe opens final file components O_NOFOLLOW and reads each file through one fd; local wrapper identity is also fd-based. This is stronger than the v5 ad hoc hash checks but remains an observation, not execution-byte pinning."
+  ],
+  "blocking_findings": [
+    {
+      "id": "B1_SPEC_PATH_AUTHORITY_AND_SSH_COMMAND",
+      "severity": "BLOCK_RELEASE_EVEN_FOR_SSH_PREFLIGHT",
+      "source_lines": "gate.py:55-84,138-142,190-193,196-211",
+      "finding": "The authoritative local_env parse is used to check config SHA and host only; remote runner/interpreter/input paths are supplied by an external spec without derivation from the frozen NANHAI bindings or exact reviewed runner SHA. A local validation-only counterexample with runner /tmp/arbitrary-runner.py and remote_interpreter /usr/bin/python3; false # passed validate_spec. The latter is placed directly in the SSH remote-command argument position. A future release must fix the interpreter to a reviewed literal and derive/validate every path and digest against the accepted environment and runner packet before any SSH call. No malicious SSH was attempted."
+    },
+    {
+      "id": "B2_READBACK_TO_EXEC_TOCTOU",
+      "severity": "BLOCK_GRAPH_RELEASE",
+      "source_lines": "gate.py:33-50,87-90,116-163",
+      "finding": "Local/remote stability tuples compare dev, inode, size and mtime, not mode or ctime; chmod during read can leave the reported pre-read mode and stable=true. O_NOFOLLOW protects only the final component, not mutable parent symlinks. The probe closes its fd before any future graph command and has no immutable staged executable handoff or execution-time recheck, so a passing receipt does not bind bytes actually executed."
+    },
+    {
+      "id": "B3_RECEIPT_FAILURE_AND_DESTINATION",
+      "severity": "BLOCK_RELEASE_CONTRACT",
+      "source_lines": "gate.py:82-84,93-113,166-187,196-223",
+      "finding": "The spec accepts any absolute path ending EVO19-GATE.json; it does not constrain the receipt to the project-owned control directory. If the destination parent is absent/unwritable, the function returns FAIL_CLOSED_NO_VALID_RECEIPT without a durable receipt. If the hard link succeeds but directory fsync fails, a PASS file may remain while the caller reports write failure. The release consumer must require a fixed project receipt location, parseable matching digest and successful outer terminal receipt before trusting PASS."
+    },
+    {
+      "id": "B4_NOT_ACTUAL_EXECUTION_EVIDENCE",
+      "severity": "BLOCK_GRAPH_RELEASE",
+      "source_lines": "gate.py:160,225-253; runner.py:main",
+      "finding": "No exact release spec, original-owner graph ACK, actual gz02 readback, or dispatch exists for this SHA. The receipt status is explicitly PREFLIGHT_PASS_ONLY_NOT_GRAPH_RELEASE; outer_ssh_rc and remote_rc refer to input readback, not the graph runner's terminal rc. Real Linux descendant cleanup, inherited seccomp/complete trace, source guards and Soong graph artifacts remain unproven."
+    }
+  ],
+  "adversarial_local_check": {
+    "action": "Import exact gate module and call validate_spec only, with synthetic required input rows and wrapper; no transport call.",
+    "result": "Accepted arbitrary /tmp/arbitrary-runner.py and remote interpreter string /usr/bin/python3; false # while constructing intended argv [interpreter,-B,runner,--run].",
+    "rc": 0,
+    "ssh_commands": 0,
+    "graph_commands": 0
+  },
+  "minimum_next": "Keep all execution routes rc3. First make the preflight SSH command literal and constrain spec paths/receipt destination to accepted local_env/project bindings and exact reviewed runner/wrapper identity. Add mode/ctime and parent-chain checks, then design an execution-time immutable handoff or immediate recheck. Re-review new bytes and fixtures before any actual SSH readback; graph release additionally needs original-owner ACK and actual runtime safety evidence.",
+  "peer_actions": "Static source/diff/receipt review and one local validate_spec-only counterexample. No SSH, graph, container, namespace, chroot, mount, device or Bridge action."
+}
