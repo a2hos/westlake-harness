@@ -1,0 +1,29 @@
+{
+  "schema": "nanhai-native-graph-current-audit-v1",
+  "at_utc": "2026-10-04T22:32:25.588967+00:00",
+  "candidate": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate",
+  "command": [
+    "python3",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/executor.py",
+    "check-candidate"
+  ],
+  "rc": 2,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "2c6afccb5d7ae47b42714ff43a267cce8d7bab52b74d1abef7705df8780f356d",
+  "observed_error": "ValueError: env loader changed",
+  "policy_decision": "NO_GO_CANDIDATE_STALE_AND_CONTAINER_DEPENDENT",
+  "container_dependency_observed": true,
+  "container_commands_executed": 0,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "refs": {
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/HANDOFF.md": "4a42b8da8b5a370a62cc0c51be19fc66e64a1c4482ef89cf980e5857ae39274d",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/STATIC-CHECK.json": "a4c9f84acf12d9db394e18abacb3fed14038580f892b7bfe919ccc81a981e962",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/independent-review-v1/REVIEW.json": "6b4369d10a9e20d7c447dfcc0ca3c45625cd99bb26ee1d3ea3fe76603910d2ce"
+  },
+  "next": "create a new native-host executor using current local_env bindings; do not port Docker lifecycle or replay v18/v20/v21 packets"
+}

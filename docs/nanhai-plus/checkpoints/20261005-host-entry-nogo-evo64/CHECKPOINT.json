@@ -37,7 +37,7 @@
   "tool_dispositions_reviewed": 88,
   "art_abort_bridge": "undetermined, NO_GO final disposition until current Bionic caller/provider/ABI evidence",
   "host_graph_runtime": "fresh authenticated native Linux host, same-build Bionic runtime index, target graph/build, and device cold-start receipt all absent",
-  "pending": "Continue APK identity/static work independently; recover network route before fresh strict SSH H1-H4. Do not execute old nonce, device, container, namespace or Bridge operations.",
+  "pending": "Continue APK identity/static work; recover route and design a fresh native-host graph executor bound to current local_env. Do not reuse v18/v20/v21 Docker lifecycle or old packets.",
   "continuity": {
     "goal_id": "goal_01",
     "herdr_session": "nanhai-plus",
@@ -86,5 +86,13 @@
       "sha256": "a1568fbf07b3038976776a35f0750db35294a6d8fbe654096a9622b7943f83ee"
     },
     "scope": "read-only identity recheck; no canonical count change, no blackbox/startup claim"
+  },
+  "native_graph_v18_current_audit": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/native-graph-v18-current-audit-v1/RESULT.json",
+    "sha256": "fe4b5d862ed72988b585bb7251735cb0c960775a6c77e3d3c827880c1d8856aa",
+    "decision": "NO_GO_CANDIDATE_STALE_AND_CONTAINER_DEPENDENT",
+    "rc": 2,
+    "error": "ValueError: env loader changed",
+    "container_commands": 0
   }
 }
