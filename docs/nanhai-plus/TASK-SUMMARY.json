@@ -1,0 +1,67 @@
+{
+  "schema": "nanhai-plus-task-summary-v1",
+  "checked_at": "2026-10-04T01:25:04.735547+00:00",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "current_bionic": {
+    "original_tools": 89,
+    "whole_tools_completed": 0,
+    "build_accepted": 0,
+    "device_verified": 0,
+    "disposition_reviewed": 88,
+    "dispositions": {
+      "rebuild": 32,
+      "replace": 51,
+      "retain": 5,
+      "undetermined": 1
+    },
+    "retired_accepted": 0
+  },
+  "historical_musl": {
+    "original_tools": 89,
+    "source_rebuild_accepted": 38,
+    "attempted": 58,
+    "unattempted": 31,
+    "limited_native_tools_device_pass": 12,
+    "whole_tools_completed": 0,
+    "not_inherited_by_bionic": true
+  },
+  "new_evolution_tools": {
+    "limited_pilot_validated": 1,
+    "whole_89_count_delta": 0,
+    "tool_id": "EVO-TOOL-APK-INVENTORY-001"
+  },
+  "apk_portfolio": {
+    "downloaded_payloads": 11,
+    "cold_start_verified": 0,
+    "cold_start_target": 200,
+    "qualified_blackbox_startups": 0,
+    "qualified_blackbox_target": 100
+  },
+  "latest_actual_execution": {
+    "release": 259,
+    "external_service_compile_units_rc0": 968,
+    "generated_headers_matched": 27,
+    "link_pass": false,
+    "first_failure": "Host ld.lld cannot load libxml2.so.16",
+    "app_bionic_tool_pass_delta": 0
+  },
+  "scanner_dependencies": {
+    "official_wheels_byte_and_record_verified": 38,
+    "runtime_import_verified": false,
+    "full_scan_verified": false
+  },
+  "evidence": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/services-s1-provider-source-rebuild-v4/root-release-v1/G259-REVIEW.json",
+      "sha256": "31fac51dea28b8a8c8a7152c3630a67bc2b7ccc887b5530374034a11df3837f4"
+    },
+    {
+      "path": "docs/nanhai-plus/BIONIC-TOOLS.json",
+      "sha256": "f2b38448336c5c7ab4435a7ad3b455cdbdbab5c50e0231c10f4a951e2a080811"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa"
+    }
+  ]
+}
