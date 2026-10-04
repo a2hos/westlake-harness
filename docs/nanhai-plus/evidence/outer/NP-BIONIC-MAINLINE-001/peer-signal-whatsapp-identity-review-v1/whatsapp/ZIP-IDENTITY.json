@@ -1,0 +1,30 @@
+{
+  "all_dex_count": 12,
+  "apk_bytes": 148660262,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g312-whatsapp-official-v1/WhatsApp.apk",
+  "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+  "expected_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+  "input_read_only_stat": {
+    "mode": "0o644"
+  },
+  "manifest_count": 1,
+  "root_dex_names": [
+    "classes.dex",
+    "classes10.dex",
+    "classes11.dex",
+    "classes12.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex",
+    "classes7.dex",
+    "classes8.dex",
+    "classes9.dex"
+  ],
+  "sha_matches": true,
+  "so_count": 12,
+  "zip_crc_first_bad": null,
+  "zip_duplicate_names": 0,
+  "zip_entries": 15156
+}

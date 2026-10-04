@@ -1,0 +1,126 @@
+{
+  "at_utc": "2026-10-04T22:27:36.565485+00:00",
+  "bridge_commands": 0,
+  "canonical_changes": 0,
+  "container_commands": 0,
+  "decision": "IDENTITY_RECONFIRMED_WITH_VERSION_BOUNDARIES",
+  "device_commands": 0,
+  "historical_bindings": {
+    "signal": {
+      "raw_admission_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+      "raw_apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+      "root_static_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "root_static_admission_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79"
+    },
+    "whatsapp": {
+      "historical_registered_version": "2.26.37.73",
+      "official_page_label": "2.26.32.84",
+      "package": "com.whatsapp",
+      "raw_supplement_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+      "root_static_admission_sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6",
+      "static_version": "2.26.39.71",
+      "static_version_code": "263907133"
+    }
+  },
+  "limits": [
+    "Signal package identity and signer were independently re-read from existing APK; v1 raw suffix failure remains historical and v2 alias static admission remains unchanged.",
+    "WhatsApp package identity and signer were independently re-read from existing APK; official page label 2.26.32.84, historical registered 2.26.37.73, and package 2.26.39.71 remain distinct and must not be collapsed.",
+    "ZIP checks and tool outputs are read-only identity evidence; no startup, runtime or qualification claim.",
+    "No APK download, device, container, Bridge or canonical writes."
+  ],
+  "rows": [
+    {
+      "aapt2_rc": 0,
+      "apksigner_rc": 0,
+      "certs": [
+        "4be4f6cd5be844083e900279dc822af65a547fecc26aba7ff1f5203a45518cd8",
+        "29f34e5f27f211b424bc5bf9d67162c0eafba2da35af35c16416fc446276ba26"
+      ],
+      "name": "signal",
+      "output_sha256": {
+        "ZIP-IDENTITY.json": "ae2f630466042f9979026b3f21903871dd84b935d9a15bec7e5c7d74f5c22eb7",
+        "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "aapt2.stdout.raw": "a34c5dc9eb06baececc12f09b4be6df769e70116b8fd31e5db4e46c06b478b6a",
+        "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apksigner.stdout.raw": "f4cab3a40fe660c10e112d524dd29c0f830bab7f3be926e57372ff6b31bb0dbe"
+      },
+      "package": "org.thoughtcrime.securesms",
+      "version_code": "175901",
+      "version_name": "8.29.3",
+      "zip": {
+        "all_dex_count": 6,
+        "apk_bytes": 114758484,
+        "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-signal-v2/Signal.apk",
+        "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+        "expected_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+        "input_read_only_stat": {
+          "mode": "0o444"
+        },
+        "manifest_count": 1,
+        "root_dex_names": [
+          "classes.dex",
+          "classes2.dex",
+          "classes3.dex",
+          "classes4.dex",
+          "classes5.dex",
+          "classes6.dex"
+        ],
+        "sha_matches": true,
+        "so_count": 48,
+        "zip_crc_first_bad": null,
+        "zip_duplicate_names": 0,
+        "zip_entries": 4185
+      }
+    },
+    {
+      "aapt2_rc": 0,
+      "apksigner_rc": 0,
+      "certs": [
+        "fb920d381bee1b2093f27dc8f13d994da629dc91887d0529b35c9a2dc4f4a6c2",
+        "3987d043d10aefaf5a8710b3671418fe57e0e19b653c9df82558feb5ffce5d44"
+      ],
+      "name": "whatsapp",
+      "output_sha256": {
+        "ZIP-IDENTITY.json": "3b2179b43bb3d31835676a4d847befdfe33fec3ac9481262dd21ef7e7c9b1d0a",
+        "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "aapt2.stdout.raw": "c222ac80afe7b696ed3d346cd9f1004425460d1f704325bea17e9869755bff60",
+        "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apksigner.stdout.raw": "6f42e330c62bb781185be26a8a8d4da0a89decfac725869ccc1bdc6d657132ac"
+      },
+      "package": "com.whatsapp",
+      "version_code": "263907133",
+      "version_name": "2.26.39.71",
+      "zip": {
+        "all_dex_count": 12,
+        "apk_bytes": 148660262,
+        "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g312-whatsapp-official-v1/WhatsApp.apk",
+        "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+        "expected_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+        "input_read_only_stat": {
+          "mode": "0o644"
+        },
+        "manifest_count": 1,
+        "root_dex_names": [
+          "classes.dex",
+          "classes10.dex",
+          "classes11.dex",
+          "classes12.dex",
+          "classes2.dex",
+          "classes3.dex",
+          "classes4.dex",
+          "classes5.dex",
+          "classes6.dex",
+          "classes7.dex",
+          "classes8.dex",
+          "classes9.dex"
+        ],
+        "sha_matches": true,
+        "so_count": 12,
+        "zip_crc_first_bad": null,
+        "zip_duplicate_names": 0,
+        "zip_entries": 15156
+      }
+    }
+  ],
+  "schema": "peer-signal-whatsapp-identity-review-v1"
+}

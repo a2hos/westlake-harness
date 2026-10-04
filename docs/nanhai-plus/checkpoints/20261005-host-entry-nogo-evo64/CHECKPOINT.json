@@ -1,0 +1,90 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T22:28:24.391216+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 android-16.0.0_r4 / ARM64 / App single Bionic; 200 distinct original APK truly-cold Activity starts incl 100 overseas-mainstream blackbox",
+  "prior_checkpoint": {
+    "path": "docs/nanhai-plus/checkpoints/20261004-raw146-static146-blackbox31-upstream103-evo64/CHECKPOINT.json",
+    "sha256": "8f7a7c83f1fa397ded3520708d077e2a68db0c62b09bf99581bfb94164d1068a"
+  },
+  "root_six_apk_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/root-six-apk-admission-v1/ROOT-ADMISSION.json",
+    "sha256": "00c712bddddb7f911d67181b21cff2d2c4fda33f338dd735ff9e34c0450ce7e7"
+  },
+  "task_summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "3437d6111c3de4f460056d7a77f7ec82b989944fe543ea06b93aca01bd11dbe1"
+  },
+  "outer_state": {
+    "path": "docs/nanhai-plus/OUTER-STATE.json",
+    "sha256": "43eb150bc34db6fca8393a7d9fcf83301929d5a2b837b24f7de1e11b1237f13d"
+  },
+  "evo64_limited_reflection": {
+    "path": "docs/nanhai-plus/evolution/EVO-0064-peer-root-identity-join/DECISION.json",
+    "sha256": "97f8fe619962025fe029677d2df826b484330f70d79d943b638d08f79a19fbf7"
+  },
+  "accepted_counts": {
+    "raw_artifact_identities": 146,
+    "complete_host_static": 146,
+    "semantic_dex": 561,
+    "true_arm64_elf": 2193,
+    "qualified_blackbox_inputs": 31,
+    "exact_upstream_artifacts": 103,
+    "registry_total": 338,
+    "cold_starts": 0,
+    "bionic_whole_tools": 0
+  },
+  "qualified_blackbox_cold_starts": 0,
+  "tool_dispositions_reviewed": 88,
+  "art_abort_bridge": "undetermined, NO_GO final disposition until current Bionic caller/provider/ABI evidence",
+  "host_graph_runtime": "fresh authenticated native Linux host, same-build Bionic runtime index, target graph/build, and device cold-start receipt all absent",
+  "pending": "Continue APK identity/static work independently; recover network route before fresh strict SSH H1-H4. Do not execute old nonce, device, container, namespace or Bridge operations.",
+  "continuity": {
+    "goal_id": "goal_01",
+    "herdr_session": "nanhai-plus",
+    "inner": "octos-inner",
+    "native_session": "oracle-kimi:local:nanhai-plus#inner",
+    "original_budget_preserved": true,
+    "device_hold": true,
+    "remote_kanban_published": false
+  },
+  "boundaries": {
+    "container_commands": 0,
+    "device_commands": 0,
+    "forbidden_devices_accessed": false,
+    "bridge_aospv16_mutations": 0
+  },
+  "local_kanban_api_observation": {
+    "path": "docs/nanhai-plus/checkpoints/20261004-raw146-static146-blackbox31-upstream103-evo64/LOCAL-KANBAN-OBSERVATION.json",
+    "sha256": "03015ec62c7c8b777eb49038314e94cd39d9ddec893add5a002133b635964e28"
+  },
+  "native_host_entry_20261005_v2": {
+    "observation": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-linux-host-entry-20261005-v2/OBSERVATION.json",
+      "sha256": "f7dd763448952e00bbcedc5f101b3de2fc7b41868c770283b1e6d5d4dacd18fb"
+    },
+    "report": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-linux-host-entry-20261005-v2/REPORT.md",
+      "sha256": "98cd10d24a5befac42f62ba61b27d71a5d1b175b949da4abe6ede4465c52db95"
+    },
+    "decision": "NO_GO_NO_FRESH_AUTHENTICATED_NATIVE_LINUX_HOST",
+    "facts": [
+      "gz02 1.95.90.207:58222 TCP timeout 3.003s",
+      "alexpc.local DNS timeout 5s",
+      "no ProxyCommand/Jump and no fresh host key"
+    ],
+    "commands_executed": 0,
+    "next_command_after_route_recovery": "ssh -o BatchMode=yes -o StrictHostKeyChecking=yes gz02 uname -a; id -u; test -r .../.repo/manifest.xml && echo manifest-readable",
+    "executed": false
+  },
+  "signal_whatsapp_identity_review": {
+    "IDENTITY-REVIEW.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-signal-whatsapp-identity-review-v1/IDENTITY-REVIEW.json",
+      "sha256": "b1a096d800e338c41f71ca203162d31a03230273cdf07ea58627a64d29490bd0"
+    },
+    "REVIEW.md": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-signal-whatsapp-identity-review-v1/REVIEW.md",
+      "sha256": "a1568fbf07b3038976776a35f0750db35294a6d8fbe654096a9622b7943f83ee"
+    },
+    "scope": "read-only identity recheck; no canonical count change, no blackbox/startup claim"
+  }
+}

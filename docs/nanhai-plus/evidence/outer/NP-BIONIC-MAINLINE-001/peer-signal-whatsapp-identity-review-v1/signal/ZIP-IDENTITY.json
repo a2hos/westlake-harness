@@ -1,0 +1,24 @@
+{
+  "all_dex_count": 6,
+  "apk_bytes": 114758484,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-signal-v2/Signal.apk",
+  "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "expected_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "input_read_only_stat": {
+    "mode": "0o444"
+  },
+  "manifest_count": 1,
+  "root_dex_names": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex"
+  ],
+  "sha_matches": true,
+  "so_count": 48,
+  "zip_crc_first_bad": null,
+  "zip_duplicate_names": 0,
+  "zip_entries": 4185
+}
