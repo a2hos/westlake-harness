@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai.vector.offline_fixture.v3",
+  "at_utc": "2026-10-04T12:29:12.023515+00:00",
+  "status": "PASS",
+  "argv": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/fixture.py"
+  ],
+  "rc": 0,
+  "stdout": "FIXTURE_PASS 14 v2 terminal receipt,v2 badging output present,old unanchored regex reproduces wrong package,anchored fields parse exact v2 output,ARM64 parsed,wrong exact version rejected,duplicate exact version rejected,ARM32-only rejected,duplicate package line rejected,exclusive START,expired deadline prevents subprocess,noarg refuses execution,v3 no execution receipts,offline-only command sites",
+  "stdout_sha256": "e2240d711c006d8362077afea573bf9a5d2404b5f910d95014104a2aa1ad2a49",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runner_sha256": "2689eecd0cff63d61a9989c96942adf6fc6c372303589449150dd509a0603a3f",
+  "fixture_script_sha256": "b96900e5e4b407bb813d11d58fd2c2b52b019f001609bcf1cc6fea7376271e33",
+  "network_requests": 0,
+  "candidate_executions": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

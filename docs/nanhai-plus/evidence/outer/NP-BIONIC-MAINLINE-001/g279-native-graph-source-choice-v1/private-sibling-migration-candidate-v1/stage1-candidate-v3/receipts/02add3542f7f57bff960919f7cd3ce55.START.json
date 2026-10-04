@@ -1,0 +1,31 @@
+{
+  "container": false,
+  "device": false,
+  "graph": false,
+  "launcher_sha256": "cd30d6c915e32e0d71e7cc64deee077fb1f4f8b1b1f0ccc9cd1f41b6c3b40ba3",
+  "new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "nonce": "02add3542f7f57bff960919f7cd3ce55",
+  "old_root": "/data/source/.nanhai-plus-opaleye-native",
+  "packet_sha256": "a4c8b04518d82259145c419fe120cd6a8ea16b740cd66926b18b7ab77e3260b5",
+  "remote_body_sha256": "04da9d971cbbf986ed8d0f9d840944f17ca5a32622a57c3b765a17f1447a0b54",
+  "remote_writes_observed": 0,
+  "replay_allowed": false,
+  "review_sha256": "b2267d87782607c5cdfac512965308629a31409851e7190fc3895e141248e0c4",
+  "schema": "g279-sibling-stage1-local-start-v2",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "status": "UNKNOWN_UNTIL_RECONCILED"
+}

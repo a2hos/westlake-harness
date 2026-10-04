@@ -1,0 +1,65 @@
+{
+  "schema": "g279-private-sibling-migration-independent-peer-review-v2",
+  "reviewed_utc": "2026-10-04T12:14:00Z",
+  "decision": "NO_GO_EXECUTION; GO_READONLY_DESIGN_BASIS_ONLY",
+  "supersedes": "../peer-review-v1/REVIEW.json",
+  "correction": "V1 incorrectly compared the SHA256 of the whole local_env.md Markdown file with the machine-readable NANHAI_ENV_CONFIG_SHA256. Retract V1's NO_GO_STATIC_IDENTITY_MISMATCH wall and its claimed current config drift. The config digest is unchanged; execution remains NO_GO for the separate reasons below.",
+  "boundary": "G279 gz02 native host filesystem migration and graph preparation; no staging, graph, target build, device, container, namespace, remote write, or BridgeAOSPV16 action",
+  "reviewed_packet": "../MIGRATION-PLAN.json",
+  "observed_wall": {
+    "fact": "The current active machine-readable config digest is 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718 and the bound project root remains the old path. It matches the packet's present-state config digest. The local_env.md file SHA256 497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3 is a separate hash of the complete Markdown file; it is not a config mismatch.",
+    "first_failing_gate": "new-root execution generation, owner ACK and rollback are not yet defined; old-root staging separately failed its observed 0775 mode gate",
+    "status": "NO_GO_INCOMPLETE_MIGRATION_RELEASE"
+  },
+  "proven": [
+    "The packet is explicitly a read-only fallback candidate; it creates no new root. Local SHA256 of READONLY-SNAPSHOT.json and SOURCE-VIEW-LINKS.tsv match the plan's frozen values. The current machine-readable env config digest matches the plan's current-config digest; all three GZ02 path keys still target the old root.",
+    "Fresh bounded read-only SSH on gz02 returned rc0: /data/source UID1000 mode 0755, old project/control/out/tmp UID1000 mode 0775, proposed sibling absent, and nobody can traverse the old project root (test rc0).",
+    "The 46-row source-view mapping has 46 distinct relative paths; 45 resolve through the registered R4 source alias and build/soong resolves to the separately patched worktree. This is a UI-build view, whereas the G279 graph TOP remains the full R4 checkout.",
+    "Fresh read-only stat shows both full R4 source alias and patched Soong worktree UID1000:GID1000 mode 0775. Nobody write tests returned rc1 for each, but group collaborators retain DAC write permission.",
+    "The old G279 v7 graph command runs sudo -u nobody and writes OUT_DIR, TMPDIR, GOCACHE, GOPATH and out/syscalls.log. The runner creates per-run out/tmp directories owned by nobody. Root/ancestor traversal and a writable per-run output path are both required."
+  ],
+  "blocking_findings": [
+    "Migration to the proposed sibling requires a new config digest and regenerated path/config/runner/binding/owner-gate identities. The old identities correctly bind the unchanged old root and cannot be replayed against the sibling. Changing only three local_env keys is insufficient.",
+    "The proposed 0755 root permits nobody traversal, but the plan does not pin the exact out/tmp parent ownership and creation sequence versus nobody-owned per-run directories. The current runner uses sudo -n install -d -o nobody -g nogroup -m 0755 for the per-run leaves; sudo can create those beneath a UID1000-owned 0755 parent. Prove this exact sequence, leaf write access and parent no-group-write in the new generation without running graph; no current output-creation failure was observed.",
+    "No explicit rollback state machine or abort/readback path is present. The packet needs a reversible binding switch with old root held intact, new root quarantined on partial failure, and a rule forbidding deletion or replay until each exact inode, lease and receipt is reconciled.",
+    "The original octos-inner graph-only ACK is absent. The available owner-graph-ack request/spec is marked dispatchable=false and consume rc3; the provenance notes that the runner still lacks an independent trust-domain authorization check. Prior metadata ACK does not authorize graph execution."
+  ],
+  "nonblocking_source_race": "The shared R4 alias and patched Soong worktree are 0775 for project collaborators. AGENTS.md requires this project to consume the shared baseline read-only; it does not require eliminating team DAC write access. Group mode alone is not a NO_GO. The actual graph release still needs fresh before/after HEAD, tracked and untracked status, link target and manifest ledger readback to detect concurrent source changes; nobody-only write denial does not establish absence of other writers.",
+  "not_proven": [
+    "New sibling root and its ACL/mode/inode, nobody traversal of its exact tool paths, nobody write access to its exact per-run OUT/TMP, and denial of control/source writes",
+    "Fresh 46-link target HEAD/status/hash and no extra-entry check after new view creation",
+    "New Soong UI and guard build/provenance, exact path-bound config and original-owner graph ACK",
+    "Soong graph, ARM64 target compilation, and device behavior"
+  ],
+  "failed": [
+    "Current old-root v4 staging preflight: project and control were 0775 and rejected before lease creation, as recorded in ROOT-PREFLIGHT-ACCEPTANCE.json."
+  ],
+  "hypotheses": [
+    {
+      "candidate": "A sibling rooted under /data/source with UID1000 0755 root and controlled nobody-owned output children may close the old project/control group-write issue.",
+      "cheapest_falsifier": "Review an exact directory creation/mode/ACL table and run one read-only identity/traversal/write-denial preflight on the proposed new generation before any stage or graph.",
+      "blocking": "no; this is a design candidate, not an observed failure"
+    }
+  ],
+  "minimum_next_step": "Keep G279 staging and graph NO_GO. Freeze a revised migration packet against the currently matching old-root config, specifying exact directory owners/modes and sudo-created nobody output leaves, rollback/partial-failure receipts, and new runner/stager/gate identity for the proposed sibling. Review it independently, obtain original-session graph-only ACK for that generation, and run fresh read-only gz02 preflight before a separately released one-shot migration. Recheck source HEAD/status/link ledger before and after later graph work.",
+  "evidence": {
+    "packet_plan_sha256": "not_recomputed_in_this_review",
+    "snapshot_sha256": "96fc5f566b5d5a12fc7fd049b362ecab820fbf6f4684c1c24bd7d1e289a130d0",
+    "links_tsv_sha256": "f79646328e9f2fbdb4c6f00f32e0722ceb21424992c27820efc5fa28f79a458c",
+    "current_local_env_file_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+    "current_machine_readable_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "env_json_command": "python3 scripts/nanhai_plus_env.py --json",
+    "env_json_rc": 0,
+    "remote_readonly_stat_rc": 0,
+    "remote_readonly_source_write_tests": "nobody_source_write_rc=1; nobody_worktree_write_rc=1",
+    "references": [
+      "docs/nanhai-plus/RESUME.md",
+      "docs/nanhai-plus/OUTER-STATE.json",
+      "local_env.md",
+      "scripts/nanhai_plus_native_graph_v7.py:312-331,101-117,596-615",
+      "runner-v7-staging-candidate-v4/ROOT-PREFLIGHT-ACCEPTANCE.json",
+      "runner-v9-gate-candidate-v1/owner-graph-ack-candidate-v1/PROVENANCE.md"
+    ]
+  },
+  "review_checklist": "Local-only evidence receipt written; no memory, skill or CI changes requested or made. Any future graph handoff must use the project evidence gate after its concrete generation exists."
+}

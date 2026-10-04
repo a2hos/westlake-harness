@@ -1,0 +1,70 @@
+{
+  "schema": "nanhai.vector.offline_validation_result.v3",
+  "began_utc": "2026-10-04T12:30:36.319944+00:00",
+  "status": "OFFLINE_VALIDATION_CANDIDATE_PENDING_PEER_ROOT_RAW_ADMISSION",
+  "commands": [
+    {
+      "name": "offline-badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "seconds": 0.134,
+      "stdout_sha256": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "seconds": 0.747,
+      "stdout_sha256": "824fbefc74ed0ba4de93131bdaa3508bd9e78f7f223c7b01ca5ceb5ccd2396f5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "network_requests": 0,
+  "apk_get": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "count_delta": 0,
+  "zip": {
+    "entries": 6839,
+    "manifest_count": 1,
+    "abis": [
+      "arm64-v8a"
+    ]
+  },
+  "manifest": {
+    "package": "im.vector.app",
+    "version_code": "40106622",
+    "version_name": "1.6.62",
+    "native_code": "native-code: 'arm64-v8a'"
+  },
+  "signature": {
+    "observed_cert_sha256": "b15d9b673b55b9fe656190794d872e59ec5b85b3bfb8a76b9442f17eae2887c9",
+    "publisher_anchor": null
+  },
+  "apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk",
+    "bytes": 72422482,
+    "sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9"
+  },
+  "ended_utc": "2026-10-04T12:30:37.457789+00:00"
+}

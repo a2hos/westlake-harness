@@ -1,0 +1,57 @@
+{
+  "schema": "nanhai.vector.offline_postdownload_candidate.v3",
+  "observed_utc": "2026-10-04T12:28:55.478904+00:00",
+  "status": "STATIC_OFFLINE_CANDIDATE_NOT_EXECUTED",
+  "purpose": "Validate retained exact v2 APK after parser-only terminal failure; never replay network GET or v2 generation.",
+  "v2_terminal": {
+    "result_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/RESULT.json",
+    "result_sha256": "47395fd4f602539167ca0df011c8a947ad9deba89586a86cd54fec840a5820c5",
+    "start_sha256": "823667b0dbf4b8b485946387a32f3b879876a9361c1eb59a621d372e5a198534",
+    "release_sha256": "f4531b37cd1ef9c6b9e71aaa40528179fe10edc0b39ec4ca08ac97c2c47fa8f0",
+    "badging_stdout_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/runtime-badging.stdout.raw",
+    "badging_stdout_sha256": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679",
+    "status": "TERMINAL_FAILED_NO_RETRY",
+    "error": "RuntimeError('manifest identity drift')",
+    "commands_completed": [
+      "runtime-head",
+      "runtime-download",
+      "runtime-badging"
+    ],
+    "v2_count_delta": 0
+  },
+  "retained_apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk",
+    "bytes": 72422482,
+    "sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "package_expected": "im.vector.app",
+    "version_code_expected": "40106622",
+    "version_name_expected": "1.6.62",
+    "abi_expected": [
+      "arm64-v8a"
+    ],
+    "role": "exact retained original bytes, no new download"
+  },
+  "parser_diagnosis": {
+    "badging_first_line": "package: name='im.vector.app' versionCode='40106622' versionName='1.6.62' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'",
+    "old_regex_effect": "unanchored name matches suffix of compileSdkVersionCodename, replacing package name with 15; versionCode remains 40106622",
+    "v3_fix": "match only whitespace-delimited package fields; reject duplicate exact fields and require one package line"
+  },
+  "scope": {
+    "network_requests": 0,
+    "full_apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "v2_receipt_edits": 0,
+    "canonical_count_delta": 0,
+    "raw_admission": false,
+    "blackbox_qualification": false
+  },
+  "postrun_oracle": [
+    "v2 terminal receipt and retained APK path/SHA pinned",
+    "ZIP CRC and one manifest, only arm64-v8a native libs",
+    "aapt2 exact package/versionCode/versionName with anchored parser",
+    "apksigner modern scheme and observed signer digest",
+    "APK postguard SHA unchanged",
+    "independent postrun peer and root raw admission separate"
+  ]
+}

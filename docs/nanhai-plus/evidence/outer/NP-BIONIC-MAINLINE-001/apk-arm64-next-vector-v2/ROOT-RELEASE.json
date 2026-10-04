@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai.vector.one_shot_root_release.v2",
+  "decision": "GO_ONE_BOUNDED_GET",
+  "scope": "One exact F-Droid Element Classic APK GET and host-side identity checks only; no device, startup, blackbox or canonical-count credit",
+  "script_sha256": "612377055932fab8e0ec67052b8cc39a206d994b6dcc712ed8b4ae1bb3140bdd",
+  "prepare_sha256": "6aedc7ab235a5e51187383a1f7842243395abf1697b0a5442903c700db27ef5c",
+  "candidate_sha256": "f60b55a2ce37e741a3dbd5de8aad22dfe2deee37145aac09f6217032a7579c39",
+  "peer_review_sha256": "4f7e0bb5561f53bf4d780609807366adb62daa6d3d9db3dbc0abac7719cc536b",
+  "env_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "tool_sha256": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "outer_watchdog_seconds": 900,
+  "no_retry": true,
+  "postrun": "Independent peer review of received bytes/ZIP/package/ABI/signature followed by root raw admission before any count change"
+}

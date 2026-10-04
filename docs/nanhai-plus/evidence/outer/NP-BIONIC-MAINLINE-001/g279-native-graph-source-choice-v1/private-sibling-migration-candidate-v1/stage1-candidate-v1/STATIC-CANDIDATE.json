@@ -1,0 +1,30 @@
+{
+  "schema": "g279-sibling-stage1-static-candidate-v1",
+  "status": "LOCAL_STATIC_AND_FIXTURES_PASS_REMOTE_NOT_EXECUTED",
+  "launcher_sha256": "393ecbc4272aa022cb3669a1ce6e12bad61125f15c4dc3170eb8a986d2180fc1",
+  "remote_body_sha256": "81421e73d9621dd52e443a06e00f8e9b17ae8d4c333364cdcf57e6e8a4adde79",
+  "fixtures_sha256": "c755623cd15f690a956f0785c4fc104e580b07993b806efe4e8e8dfc59723018",
+  "fixed_fixture_nonce": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "fixed_fixture_packet_sha256": "73c22330504467f6ae0a6c0aeabc5cc3c677d36c2d6ade5b5edf3b9bf94c620e",
+  "fixed_fixture_remote_program_sha256": "77e0f5dad0d3e34b0cf63328a2c4f3580aa377492fa842e72c69f95d4a8a2793",
+  "plan_sha256": "4ccfe0e18788c0301d01782926b06d564318f703fa3e434164d32c521182e565",
+  "current_old_root_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "local_checks": {
+    "py_compile_rc": 0,
+    "static_check_rc": 0,
+    "fixtures_rc": 0,
+    "fixtures": [
+      "success_readback",
+      "replay_rejected",
+      "source_drift_precreate_abort",
+      "partial_failure_quarantined_old_preserved",
+      "group_writable_parent_precreate_abort"
+    ]
+  },
+  "remote_writes": 0,
+  "graph_commands": 0,
+  "target_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "Independent exact-SHA code and release review, then fresh read-only gz02 preflight. No stage execution from this static receipt."
+}

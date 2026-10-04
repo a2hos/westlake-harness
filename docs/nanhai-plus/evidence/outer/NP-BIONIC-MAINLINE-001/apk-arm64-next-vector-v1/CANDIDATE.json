@@ -1,0 +1,69 @@
+{
+  "schema": "nanhai.apk_arm64_next.vector_candidate.v1",
+  "observed_utc": "2026-10-04T12:13:39.411693+00:00",
+  "status": "STATIC_CANDIDATE_PEER_AND_ROOT_RELEASE_REQUIRED_BEFORE_APK_GET",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / Bionic",
+  "candidate": {
+    "package": "im.vector.app",
+    "version_name": "1.6.62",
+    "version_code": 40106622,
+    "source_url": "https://f-droid.org/repo/im.vector.app_40106622.apk",
+    "channel": "F-Droid main repository, upstream fixed registry source",
+    "expected_bytes": 72422482,
+    "expected_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "registered_abis": [
+      "arm64-v8a"
+    ],
+    "abi_scope": "Upstream F-Droid index-derived lock declares ARM64; inspect actual ZIP and manifest after GET."
+  },
+  "provenance": {
+    "registry_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+    "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "record_id": "r-570841c0ce268cd2ac69",
+    "source_metadata_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/source-metadata/benchmark/2026-09-23-corpus2-blind/downloads.lock.json",
+    "source_metadata_sha256": "ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb",
+    "source_json_pointer": "/apps/im.vector.app",
+    "source_git_blob": "de666c8497547f8deac5588a6b50e01c9054326a",
+    "official_product_release_page": "https://github.com/element-hq/element-android/releases/tag/v1.6.62",
+    "official_source_package_cue": "element-hq/element-android vector/build.gradle namespace im.vector.app (product source; final APK package must be checked)"
+  },
+  "head": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/head.headers.raw",
+    "sha256": "57bb00931cb993b83ce3af1b01c65d52961fe086af4afce56ea6adfe05ba2ea3",
+    "http": 200,
+    "tls_verify_result": 0,
+    "redirects": 0,
+    "content_length": 72422482,
+    "content_type": "application/vnd.android.package-archive",
+    "note": "HEAD and ETag are not artifact hash or ABI proof"
+  },
+  "dedup": {
+    "fixed_registry_package_matches": 1,
+    "fixed_registry_record_matches": 2,
+    "accepted_root_receipt_package_matches": 0,
+    "accepted_root_receipt_paths": [],
+    "same_named_retained_payloads": [
+      ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk"
+    ],
+    "note": "Scoped receipt and filename search; peer must recheck exact byte digest against all admitted payloads before count."
+  },
+  "release_gate": {
+    "apk_get_executed": false,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_delta": 0,
+    "blackbox_qualification_credit": 0,
+    "reason": "Element Android complete client source is public; useful toward 200 raw packages, not the 100 blackbox quota.",
+    "post_get_checks": [
+      "exact received bytes and SHA-256 equal upstream lock",
+      "ZIP integrity and one AndroidManifest.xml",
+      "aapt2 package/versionCode/versionName exact",
+      "actual lib ABI arm64-v8a and no contradictory ARM32-only payload",
+      "apksigner schemes and observed signer certificate",
+      "immutable original APK; no split omission",
+      "independent postrun review and root raw admission before any count"
+    ]
+  },
+  "next": "Independent peer review this candidate and a bounded one-shot downloader; root releases APK GET only after peer GO."
+}

@@ -1,0 +1,25 @@
+{
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "remote_program_sha256": "9827090f54c75e985493c772a18a2bf3710524cd9533f213647a83d986a5c713",
+  "result": {
+    "ssh_rc": 0,
+    "stdout_sha256": "37e09400ee2191cd9cbb101d71f9d51181041aef035f7b2a65fc7ebff8f8ac3d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 14637,
+    "stderr_bytes": 0
+  }
+}

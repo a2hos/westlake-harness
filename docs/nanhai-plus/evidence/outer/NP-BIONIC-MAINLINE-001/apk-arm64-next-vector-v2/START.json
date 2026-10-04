@@ -1,0 +1,9 @@
+{
+  "schema": "nanhai.vector.raw_get_start.v2",
+  "at_utc": "2026-10-04T12:22:53.564352+00:00",
+  "script_sha256": "612377055932fab8e0ec67052b8cc39a206d994b6dcc712ed8b4ae1bb3140bdd",
+  "url": "https://f-droid.org/repo/im.vector.app_40106622.apk",
+  "bytes": 72422482,
+  "sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+  "state": "UNKNOWN_IF_RESULT_ABSENT_DO_NOT_REPLAY"
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "nanhai.vector.offline_v3_independent_peer_review.v1",
+  "reviewed_utc": "2026-10-04T12:30:07.935877+00:00",
+  "verdict": "GO_ONE_OFFLINE_VALIDATION_ONLY",
+  "scope": "Read-only static/fixture review; reviewer did not execute v3 run.py, network, device or container command and did not change canonical counts.",
+  "inputs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/CANDIDATE.json",
+      "bytes": 2836,
+      "sha256": "2dca48f650bf13450e882e8335884460c3af5eb97fba488a47e89fefedd20399"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/PREPARE.json",
+      "bytes": 2382,
+      "sha256": "fcd8d398975c27bbc292fb9acd9280528239553c1e66e19605e8c3c8a14e784d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/run.py",
+      "bytes": 9428,
+      "sha256": "2689eecd0cff63d61a9989c96942adf6fc6c372303589449150dd509a0603a3f"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/fixture.py",
+      "bytes": 3506,
+      "sha256": "b96900e5e4b407bb813d11d58fd2c2b52b019f001609bcf1cc6fea7376271e33"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/FIXTURE.json",
+      "bytes": 1147,
+      "sha256": "b4e7b51e8cc15598243b80ccd40f3ab3c8f8a0f7d645a7d5e94315b44b2beab7"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/RESULT.json",
+      "bytes": 3664,
+      "sha256": "47395fd4f602539167ca0df011c8a947ad9deba89586a86cd54fec840a5820c5"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/runtime-badging.stdout.raw",
+      "bytes": 9143,
+      "sha256": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/START.json",
+      "bytes": 402,
+      "sha256": "823667b0dbf4b8b485946387a32f3b879876a9361c1eb59a621d372e5a198534"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/ROOT-RELEASE.json",
+      "bytes": 1222,
+      "sha256": "f4531b37cd1ef9c6b9e71aaa40528179fe10edc0b39ec4ca08ac97c2c47fa8f0"
+    }
+  ],
+  "retained_apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk",
+    "bytes": 72422482,
+    "sha256_independently_rehashed": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "role": "exact retained v2 original APK, no new GET"
+  },
+  "evidence": {
+    "frozen_hashes": "CANDIDATE/PREPARE/run.py/fixture.py/FIXTURE.json hashes all match PREPARE; v2 RESULT and badging stdout hashes match frozen values.",
+    "v2_terminal": "v2 RESULT remains TERMINAL_FAILED_NO_RETRY with manifest identity drift after one successful 72,422,482-byte exact-SHA GET. v3 does not replay or alter v2.",
+    "zip": "Reviewer independently opened retained APK: 6,839 entries, CRC pass, one AndroidManifest.xml, lib ABI arm64-v8a only.",
+    "parser": "Old unanchored regex treated suffix of compileSdkVersionCodename as package name 15. New parser requires whitespace boundary, exactly one package line and no duplicate exact fields, and parses the original v2 badging as im.vector.app/code 40106622/name 1.6.62/native-code arm64-v8a.",
+    "fixture": "Reviewer reran python3 -B fixture.py rc0 FIXTURE_PASS 14, including wrong version, duplicate field/line, ARM32-only, START exclusivity, expired deadline, noarg refusal and offline-only command sites.",
+    "execution_gate": "Explicit --execute plus ROOT-RELEASE exact hashes, current env, pinned v2 RESULT terminal/path, regular-file type/size, tool SHAs and existing stage are checked before O_EXCL START. START before any APK scan/tool subprocess; existing START or RESULT blocks replay.",
+    "bounded_offline": "180-second SIGALRM deadline after START, outer watchdog 300 seconds; subprocesses only pinned local aapt2 and java/apksigner with remaining-time timeout. No curl, HTTP client, socket, shell, hdc/adb, container launcher or APK GET callsite.",
+    "postrun_oracle": "Whole APK SHA before and after ZIP/aapt2/apksigner, ZIP CRC/one manifest/exact ARM64 ABI, anchored Manifest identity, modern signature scheme and observed signer certificate. Success remains candidate pending independent postrun review and root raw admission."
+  },
+  "limits": [
+    "The observed signer certificate is not an independently publisher-pinned certificate anchor; exact upstream artifact SHA is the byte identity authority.",
+    "No complete static inventory, blackbox qualification, runtime loadability, install, startup or device proof.",
+    "SIGALRM/outer interruption after START may leave no RESULT; this is UNKNOWN and must be reconciled read-only, never replayed."
+  ],
+  "next": "Root may release one offline-only validation bound to this exact v3 script/PREPARE/candidate/v2 RESULT/tools. Preserve v2 terminal failure; review v3 result independently before any raw count change.",
+  "actions": {
+    "fixture_rerun_rc": 0,
+    "run_py_executions": 0,
+    "network_requests": 0,
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  }
+}

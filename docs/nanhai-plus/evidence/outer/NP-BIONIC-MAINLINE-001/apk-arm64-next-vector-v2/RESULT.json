@@ -1,0 +1,109 @@
+{
+  "schema": "nanhai.vector.raw_get_result.v1",
+  "began_utc": "2026-10-04T12:22:53.564178+00:00",
+  "status": "TERMINAL_FAILED_NO_RETRY",
+  "commands": [
+    {
+      "name": "runtime-head",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-redirs",
+        "0",
+        "--head",
+        "--max-time",
+        "20",
+        "--dump-header",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/runtime-head.headers.raw",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects} effective=%{url_effective}",
+        "https://f-droid.org/repo/im.vector.app_40106622.apk"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "seconds": 0.899,
+      "stdout_sha256": "813c3dbeeab73651c6ec505a7c5d5cc3f64b204097cc162f6839126890178cb2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "runtime-download",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-redirs",
+        "0",
+        "--max-time",
+        "240",
+        "--max-filesize",
+        "72422482",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk.part",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects} effective=%{url_effective}",
+        "https://f-droid.org/repo/im.vector.app_40106622.apk"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "seconds": 222.805,
+      "stdout_sha256": "d7529762583e29b8bee1ddb5793078cb5cee276161d0b83a2361e2f85b9b1062",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "runtime-badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "seconds": 0.139,
+      "stdout_sha256": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "apk_get_max": 1,
+  "device_commands": 0,
+  "container_commands": 0,
+  "count_delta": 0,
+  "runtime_head_sha256": "4947bc8fa82a0a8c7469843a8fb6304203914a035bf54651c371d3fe0a97cdae",
+  "apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk",
+    "bytes": 72422482,
+    "sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9"
+  },
+  "zip": {
+    "entries": 6839,
+    "abis": [
+      "arm64-v8a"
+    ],
+    "manifest_count": 1
+  },
+  "error": "RuntimeError('manifest identity drift')",
+  "ended_utc": "2026-10-04T12:26:37.642532+00:00"
+}

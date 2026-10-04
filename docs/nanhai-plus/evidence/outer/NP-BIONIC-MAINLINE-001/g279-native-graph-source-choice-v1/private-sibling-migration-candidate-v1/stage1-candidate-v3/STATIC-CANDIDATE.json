@@ -1,0 +1,37 @@
+{
+  "schema": "g279-sibling-stage1-static-candidate-v3",
+  "status": "LOCAL_STATIC_AND_FIXTURES_PASS_REMOTE_NOT_EXECUTED",
+  "supersedes_launcher": "stage1-candidate-v2/STATIC-CANDIDATE.json",
+  "change_reason": "Fresh gz02 read-only preflight observed hostname GZ02; remote v1's exact-case gz02 check would fail before root creation. Remote v2 casefolds the observed hostname and v3 packet pins GZ02.",
+  "launcher_sha256": "cd30d6c915e32e0d71e7cc64deee077fb1f4f8b1b1f0ccc9cd1f41b6c3b40ba3",
+  "remote_body_sha256": "04da9d971cbbf986ed8d0f9d840944f17ca5a32622a57c3b765a17f1447a0b54",
+  "fixtures_sha256": "7820ec98ece2400d5da5c7053206a5df0b6447a468fab88aee3ad94342a2d4a4",
+  "fixed_fixture_nonce": "dddddddddddddddddddddddddddddddd",
+  "fixed_fixture_packet_sha256": "88a5dbd745321fde2fddfe6a852ddb1d906343e1146a595834adde86c8d0a023",
+  "fixed_fixture_remote_program_sha256": "51986ab6dd95c0950d2259445cbb5655e8b395f41b97c9759f70c033157fc2e7",
+  "plan_sha256": "4ccfe0e18788c0301d01782926b06d564318f703fa3e434164d32c521182e565",
+  "current_old_root_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "checks": {
+    "python_compile_rc": 0,
+    "static_check_rc": 0,
+    "fixtures_rc": 0,
+    "fixture_cases": [
+      "uppercase_GZ02_host_casefold",
+      "success_readback",
+      "replay_rejected",
+      "source_drift_precreate_abort",
+      "partial_failure_quarantined_old_preserved",
+      "group_writable_parent_precreate_abort",
+      "start_fsynced_before_ssh_and_nonce_replay_rejected",
+      "malformed_remote_rc0_kept_unknown"
+    ],
+    "westlake_handoff_gate_rc": 0,
+    "westlake_handoff_gate_result": "PASS"
+  },
+  "remote_writes": 0,
+  "graph_commands": 0,
+  "target_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "Independent exact-SHA review and fresh gz02 read-only preflight; no remote stage from this static receipt."
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T12:35:30.500999+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "original_goal_session_budget_preserved": true,
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "counts": {
+    "raw_apk_accepted": 81,
+    "registered_raw": 75,
+    "supplemental_raw": 6,
+    "complete_static": 76,
+    "dex_entries": 183,
+    "true_elf_entries": 894,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "evidence": {
+    "stage1_peer_postrun": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage1-candidate-v3/peer-postrun-v1/REVIEW.json",
+      "sha256": "9f00ce5e2434d1511eccebe4e57eabfba921867cf0dac90dc6e223b295b9c52e"
+    },
+    "element_v2_terminal": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/RESULT.json",
+      "sha256": "47395fd4f602539167ca0df011c8a947ad9deba89586a86cd54fec840a5820c5"
+    },
+    "element_v3_offline_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/RESULT.json",
+      "sha256": "761df98b98dfeada8748f9a6eb0fe8d0c0e3f3e2b22cfb4137228d1ca02e6312"
+    },
+    "element_peer_postrun": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/peer-postrun-v1/REVIEW.json",
+      "sha256": "6b6045d8d8e5d1f13df781e9e8bfd16e5f05215ad9907ad5ba24be63afdb796e"
+    },
+    "element_root_raw_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/ROOT-RAW-ADMISSION.json",
+      "sha256": "5535307370ab716fb9796852f7e84c9b0c6fa3370ade44c38f933556be70dae7"
+    },
+    "task_summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "165fdb48299229e6cce903135da3ffd1e893743b5f4866ed25881640cc11b731"
+    },
+    "outer_state": {
+      "path": "docs/nanhai-plus/OUTER-STATE.json",
+      "sha256": "2fc314e2c60e9948135d1c72ba44f643a5ac535de457bac7693366f517f1a082"
+    }
+  },
+  "g279_stage": "private sibling stage1 readback accepted; old binding unchanged; stage2 and original owner graph-only ACK pending",
+  "element_stage": "exact registered raw APK accepted; complete static inventory pending; v2 false-negative receipt preserved",
+  "not_proven": [
+    "native Soong graph",
+    "ARM64 Bionic target build",
+    "HelloWorld install/cold-start/display",
+    "any of 200 cold starts"
+  ],
+  "next": "develop/review/execute native sibling stage2 then owner graph ACK and one bounded graph; complete Element static inventory in parallel"
+}

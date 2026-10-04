@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T12:05:29+00:00",
+  "checked_at": "2026-10-04T12:33:44+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,13 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 80,
+    "downloaded_payloads": 81,
+    "latest_raw_admission": {
+      "package": "im.vector.app",
+      "version_code": "40106622",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/ROOT-RAW-ADMISSION.json",
+      "scope": "exact upstream registered original APK only; no complete static or cold start credit"
+    },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": ["G287 ARM32-only TikTok Lite variant", "G292 ARM32-only LINE variant"],
     "cold_start_verified": 0,
@@ -52,7 +58,7 @@
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 74,
+    "registered_upstream_payloads": 75,
     "supplemental_payloads": 6,
     "qualified_blackbox_packages": 3,
     "qualified_blackbox_package_ids": [

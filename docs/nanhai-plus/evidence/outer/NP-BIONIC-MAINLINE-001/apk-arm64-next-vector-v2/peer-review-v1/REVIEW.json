@@ -1,0 +1,61 @@
+{
+  "schema": "nanhai.vector.one_shot_independent_peer_review.v2",
+  "reviewed_utc": "2026-10-04T12:24:08Z",
+  "verdict": "GO_ONE_BOUNDED_GET",
+  "scope": "Independent read-only local review of Element Classic v2; fixture rerun only. No HEAD, APK GET, device, container or canonical count edit by this peer.",
+  "inputs_sha256": {
+    "PREPARE.json": "6aedc7ab235a5e51187383a1f7842243395abf1697b0a5442903c700db27ef5c",
+    "CANDIDATE.json": "f60b55a2ce37e741a3dbd5de8aad22dfe2deee37145aac09f6217032a7579c39",
+    "run.py": "612377055932fab8e0ec67052b8cc39a206d994b6dcc712ed8b4ae1bb3140bdd",
+    "fixture.py": "8ee2f431cf6044266c8d5d398e8285edb410d4ecde0d2d5249b10b3429ec0f63",
+    "FIXTURE.json": "7ed4b3b2399b9f0ae255fc0d467c830d6b42d3d803e04ec2ed0ab281d0bae4f0",
+    "head.headers.raw": "57bb00931cb993b83ce3af1b01c65d52961fe086af4afce56ea6adfe05ba2ea3",
+    "REGISTRY.json": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "downloads.lock.json": "ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb"
+  },
+  "frozen_identity": {
+    "sha_fields_match_current_files": true,
+    "v1_fixture_hash_error_fixed": true,
+    "registry_record_id": "r-570841c0ce268cd2ac69",
+    "registry_source_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "registry_source_blob": "de666c8497547f8deac5588a6b50e01c9054326a",
+    "package": "im.vector.app",
+    "version_name": "1.6.62",
+    "version_code": 40106622,
+    "exact_url": "https://f-droid.org/repo/im.vector.app_40106622.apk",
+    "bytes": 72422482,
+    "artifact_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "registered_abis": ["arm64-v8a"],
+    "status": "source lock and registry agree with CANDIDATE, PREPARE and run.py; actual APK bytes and ABI remain post-GET checks"
+  },
+  "head_review": "Frozen raw HEAD SHA matches; it contains one HTTP/2 200 response, one Content-Length 72422482 and APK MIME. The leading HTTP/1.1 200 Connection established is proxy setup. HEAD and ETag do not establish APK hash, ABI or signature; the runner repeats HEAD at execution.",
+  "tool_and_env_review": {
+    "active_env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "container_policy": "forbidden",
+    "current_tool_sha256_match_prepare": true,
+    "tools": ["curl", "aapt2", "apksigner.jar", "java"]
+  },
+  "fixture_rerun": {
+    "argv": ["python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/fixture.py"],
+    "rc": 0,
+    "result": "FIXTURE_PASS 19",
+    "matches_frozen_fixture_receipt": true,
+    "network_requests": 0,
+    "apk_get": 0
+  },
+  "execution_boundary": {
+    "release": "--execute and ROOT-RELEASE.json exact script/PREPARE/CANDIDATE/env/tool SHAs are required; release is currently absent.",
+    "one_get": "One runtime-download subprocess call site; curl --retry 0, --max-redirs 0, HTTPS-only, max-time 240, exact max-filesize, one fresh HEAD and one GET. START is O_EXCL before stage and network; START/RESULT/stage preexistence prevents replay.",
+    "deadline": "GLOBAL_DEADLINE_SECONDS=600 after START with SIGALRM and per-subprocess bounds 25+250+60+120=455 seconds. PREPARE declares 900-second outer watchdog, leaving 300 seconds margin; actual outer watchdog enforcement remains a root dispatch responsibility.",
+    "post_get": "Exact transfer bytes and SHA before .part rename; ZIP CRC and single AndroidManifest, only arm64-v8a native library ABI; aapt2 exact package/version/name and ABI; apksigner rc0 with v2/v3 and observed signer certificate SHA; final artifact SHA postguard.",
+    "no_replay": "Handled failures write O_EXCL RESULT with TERMINAL_FAILED_NO_RETRY. An abrupt termination can leave START without RESULT; that state is UNKNOWN and must be reconciled read-only, never retried in this generation.",
+    "forbidden_commands": "No shell=True, hdc, adb, Docker, Podman, OCI or namespace launcher in run.py's execution path; device and container command counts are zero."
+  },
+  "release_conditions": [
+    "Root must create an exact-SHA ROOT-RELEASE.json only after this peer review and run the one command with an actual 900-second outer watchdog; the PREPARE field alone is a declared bound, not evidence of enforcement.",
+    "Keep the received APK outside accepted raw counts until independent postrun ZIP/package/ABI/signature/hash review and root raw admission. Do not claim blackbox or startup credit from this GET.",
+    "If START appears without a complete RESULT, treat the generation as unknown and do not replay."
+  ],
+  "limits": "No APK downloaded by this peer. Registered ARM64 is a source declaration until the ZIP is checked. The signature verifier records a certificate but there is no pinned publisher certificate anchor; this is a raw intake candidate, not publisher-identity or device acceptance.",
+  "actions": {"fixture_rerun_rc": 0, "apk_get": 0, "device": 0, "container": 0, "canonical_edits": 0}
+}

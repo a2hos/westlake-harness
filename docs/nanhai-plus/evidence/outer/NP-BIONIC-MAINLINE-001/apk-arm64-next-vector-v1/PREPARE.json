@@ -1,0 +1,62 @@
+{
+  "schema": "nanhai.vector.raw_intake_prepare.v1",
+  "at_utc": "2026-10-04T12:15:21.720044+00:00",
+  "status": "FROZEN_STATIC_CANDIDATE_NOT_EXECUTED",
+  "candidate_sha256": "133e277a2c53453c13477aaa57767464d1eee4067512dac26dd966649619a38d",
+  "script_sha256": "8974b749ddcb4ecbe38ccb88c82012c63066459f0f0831d1e73983ffea23ce41",
+  "fixture_sha256": "da62401d3bc76f3e26bce96c43dec99a60369b1e95c5747fea2e3d0425fafd3b",
+  "head_sha256": "57bb00931cb993b83ce3af1b01c65d52961fe086af4afce56ea6adfe05ba2ea3",
+  "env_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "tool_sha256": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "exact_url": "https://f-droid.org/repo/im.vector.app_40106622.apk",
+  "expected_bytes": 72422482,
+  "expected_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+  "expected_package": "im.vector.app",
+  "expected_version_code": "40106622",
+  "expected_version_name": "1.6.62",
+  "expected_abis": [
+    "arm64-v8a"
+  ],
+  "peer_review_required": true,
+  "root_release_required": true,
+  "release_file_contract": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/ROOT-RELEASE.json",
+    "decision": "GO_ONE_BOUNDED_GET",
+    "script_sha256": "must equal this PREPARE script_sha256",
+    "prepare_sha256": "must equal SHA256 of PREPARE.json",
+    "candidate_sha256": "must equal this PREPARE candidate_sha256",
+    "env_sha256": "must equal this PREPARE env_sha256",
+    "tool_sha256": "must equal this PREPARE tool_sha256"
+  },
+  "next_command_after_review_and_release": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/run.py",
+    "--execute"
+  ],
+  "outer_watchdog_seconds": 300,
+  "limits": {
+    "apk_get_max": 1,
+    "no_retry": true,
+    "startup_credit": false,
+    "blackbox_credit": false,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_delta": 0
+  },
+  "production_artifacts": {
+    "start_exists": false,
+    "result_exists": false,
+    "stage_exists": false
+  }
+}

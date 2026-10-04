@@ -1,0 +1,385 @@
+{
+  "schema": "g279-private-sibling-readonly-snapshot-v1",
+  "started_utc": "2026-10-04T12:07:27.898838+00:00",
+  "ended_utc": "2026-10-04T12:07:28.399823+00:00",
+  "argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "remote_program_sha256": "aa25304c1c2b4bc108bb754f663d0e24f8f7b78e75d8ed94a37b8bb2e5af5083",
+  "rc": 0,
+  "stdout_sha256": "8c438db7d6d9dacaff73a90f9ddf2f42ff22d76eb9a303c582a532443bbc4614",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "",
+  "observation": {
+    "control": [
+      {
+        "bytes": 252412,
+        "is_symlink": false,
+        "mode": "0o444",
+        "name": "MANIFEST-HEADS.tsv",
+        "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+      },
+      {
+        "bytes": 21447,
+        "is_symlink": false,
+        "mode": "0o644",
+        "name": "ROUTE-AUDIT.json",
+        "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a"
+      },
+      {
+        "bytes": 682,
+        "is_symlink": false,
+        "mode": "0o444",
+        "name": "g279-native-graph-env.json",
+        "sha256": "0df4f6fa4f57ac2cda2998723b935fd89c9dfce8f10afd0e23c08a6f2ca9ab91"
+      },
+      {
+        "bytes": 5337,
+        "is_symlink": false,
+        "mode": "0o444",
+        "name": "generate_manifest_heads.py",
+        "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634"
+      },
+      {
+        "bytes": 918,
+        "is_symlink": false,
+        "mode": "0o644",
+        "name": "nanhai_plus_native_soong_ui.sh",
+        "sha256": "6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2"
+      },
+      {
+        "bytes": 3251,
+        "is_symlink": false,
+        "mode": "0o644",
+        "name": "nanhai_plus_native_source_view.py",
+        "sha256": "0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5"
+      },
+      {
+        "bytes": 4539,
+        "is_symlink": false,
+        "mode": "0o444",
+        "name": "no-namespace-exec.c",
+        "sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f"
+      },
+      {
+        "bytes": 515,
+        "is_symlink": false,
+        "mode": "0o644",
+        "name": "soong-ui-no-nsjail.patch",
+        "sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc"
+      }
+    ],
+    "links": [
+      {
+        "exists": true,
+        "relative": "bionic",
+        "resolved": "/data/source/aosp-16.0.0-r4/bionic",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/bionic"
+      },
+      {
+        "exists": true,
+        "relative": "build/blueprint",
+        "resolved": "/data/source/aosp-16.0.0-r4/build/blueprint",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build/blueprint"
+      },
+      {
+        "exists": true,
+        "relative": "build/make",
+        "resolved": "/data/source/aosp-16.0.0-r4/build/make",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build/make"
+      },
+      {
+        "exists": true,
+        "relative": "build/release",
+        "resolved": "/data/source/aosp-16.0.0-r4/build/release",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build/release"
+      },
+      {
+        "exists": true,
+        "relative": "build/soong",
+        "resolved": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container"
+      },
+      {
+        "exists": true,
+        "relative": "cts",
+        "resolved": "/data/source/aosp-16.0.0-r4/cts",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/cts"
+      },
+      {
+        "exists": true,
+        "relative": "device/google/cuttlefish",
+        "resolved": "/data/source/aosp-16.0.0-r4/device/google/cuttlefish",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/device/google/cuttlefish"
+      },
+      {
+        "exists": true,
+        "relative": "external/abseil-cpp",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/abseil-cpp",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/abseil-cpp"
+      },
+      {
+        "exists": true,
+        "relative": "external/doclava",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/doclava",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/doclava"
+      },
+      {
+        "exists": true,
+        "relative": "external/golang-protobuf",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/golang-protobuf",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/golang-protobuf"
+      },
+      {
+        "exists": true,
+        "relative": "external/hamcrest",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/hamcrest",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/hamcrest"
+      },
+      {
+        "exists": true,
+        "relative": "external/jcommander",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/jcommander",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/jcommander"
+      },
+      {
+        "exists": true,
+        "relative": "external/jsilver",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/jsilver",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/jsilver"
+      },
+      {
+        "exists": true,
+        "relative": "external/junit",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/junit",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/junit"
+      },
+      {
+        "exists": true,
+        "relative": "external/ow2-asm",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/ow2-asm",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/ow2-asm"
+      },
+      {
+        "exists": true,
+        "relative": "external/pogreb",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/pogreb",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/pogreb"
+      },
+      {
+        "exists": true,
+        "relative": "external/protobuf",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/protobuf",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/protobuf"
+      },
+      {
+        "exists": true,
+        "relative": "external/python/six",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/python/six",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/python/six"
+      },
+      {
+        "exists": true,
+        "relative": "external/sqlite",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/sqlite",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/sqlite"
+      },
+      {
+        "exists": true,
+        "relative": "external/starlark-go",
+        "resolved": "/data/source/aosp-16.0.0-r4/external/starlark-go",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/starlark-go"
+      },
+      {
+        "exists": true,
+        "relative": "frameworks/base",
+        "resolved": "/data/source/aosp-16.0.0-r4/frameworks/base",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/frameworks/base"
+      },
+      {
+        "exists": true,
+        "relative": "frameworks/native",
+        "resolved": "/data/source/aosp-16.0.0-r4/frameworks/native",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/frameworks/native"
+      },
+      {
+        "exists": true,
+        "relative": "hardware/interfaces",
+        "resolved": "/data/source/aosp-16.0.0-r4/hardware/interfaces",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/hardware/interfaces"
+      },
+      {
+        "exists": true,
+        "relative": "kernel/configs",
+        "resolved": "/data/source/aosp-16.0.0-r4/kernel/configs",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/kernel/configs"
+      },
+      {
+        "exists": true,
+        "relative": "packages/apps/DocumentsUI",
+        "resolved": "/data/source/aosp-16.0.0-r4/packages/apps/DocumentsUI",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/apps/DocumentsUI"
+      },
+      {
+        "exists": true,
+        "relative": "packages/modules/Connectivity",
+        "resolved": "/data/source/aosp-16.0.0-r4/packages/modules/Connectivity",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/modules/Connectivity"
+      },
+      {
+        "exists": true,
+        "relative": "packages/modules/common",
+        "resolved": "/data/source/aosp-16.0.0-r4/packages/modules/common",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/modules/common"
+      },
+      {
+        "exists": true,
+        "relative": "packages/services/Car",
+        "resolved": "/data/source/aosp-16.0.0-r4/packages/services/Car",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/services/Car"
+      },
+      {
+        "exists": true,
+        "relative": "platform_testing",
+        "resolved": "/data/source/aosp-16.0.0-r4/platform_testing",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/platform_testing"
+      },
+      {
+        "exists": true,
+        "relative": "prebuilts/bazel/common",
+        "resolved": "/data/source/aosp-16.0.0-r4/prebuilts/bazel/common",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/bazel/common"
+      },
+      {
+        "exists": true,
+        "relative": "prebuilts/build-tools",
+        "resolved": "/data/source/aosp-16.0.0-r4/prebuilts/build-tools",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/build-tools"
+      },
+      {
+        "exists": true,
+        "relative": "prebuilts/clang/host/linux-x86",
+        "resolved": "/data/source/aosp-16.0.0-r4/prebuilts/clang/host/linux-x86",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/clang/host/linux-x86"
+      },
+      {
+        "exists": true,
+        "relative": "prebuilts/go/linux-x86",
+        "resolved": "/data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/go/linux-x86"
+      },
+      {
+        "exists": true,
+        "relative": "prebuilts/sdk",
+        "resolved": "/data/source/aosp-16.0.0-r4/prebuilts/sdk",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/sdk"
+      },
+      {
+        "exists": true,
+        "relative": "system/apex",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/apex",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/apex"
+      },
+      {
+        "exists": true,
+        "relative": "system/bpf",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/bpf",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/bpf"
+      },
+      {
+        "exists": true,
+        "relative": "system/extras",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/extras",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/extras"
+      },
+      {
+        "exists": true,
+        "relative": "system/libvintf",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/libvintf",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/libvintf"
+      },
+      {
+        "exists": true,
+        "relative": "system/netd",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/netd",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/netd"
+      },
+      {
+        "exists": true,
+        "relative": "system/sepolicy",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/sepolicy",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/sepolicy"
+      },
+      {
+        "exists": true,
+        "relative": "system/tools/aidl",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/tools/aidl",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/tools/aidl"
+      },
+      {
+        "exists": true,
+        "relative": "system/tools/hidl",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/tools/hidl",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/tools/hidl"
+      },
+      {
+        "exists": true,
+        "relative": "system/tools/xsdc",
+        "resolved": "/data/source/aosp-16.0.0-r4/system/tools/xsdc",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/tools/xsdc"
+      },
+      {
+        "exists": true,
+        "relative": "test/suite_harness",
+        "resolved": "/data/source/aosp-16.0.0-r4/test/suite_harness",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/test/suite_harness"
+      },
+      {
+        "exists": true,
+        "relative": "test/vts",
+        "resolved": "/data/source/aosp-16.0.0-r4/test/vts",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/test/vts"
+      },
+      {
+        "exists": true,
+        "relative": "tools/lint_checks",
+        "resolved": "/data/source/aosp-16.0.0-r4/tools/lint_checks",
+        "target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/tools/lint_checks"
+      }
+    ],
+    "root_exists": true,
+    "tools": [
+      {
+        "bytes": 19023728,
+        "is_file": true,
+        "is_symlink": false,
+        "mode": "0o775",
+        "relative": "out/soong-ui-v1/soong_ui",
+        "sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624"
+      },
+      {
+        "bytes": 16464,
+        "is_file": true,
+        "is_symlink": false,
+        "mode": "0o775",
+        "relative": "out/no-namespace-guard-v1/no-namespace-exec",
+        "sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20"
+      }
+    ]
+  },
+  "remote_writes": 0,
+  "stage": 0,
+  "graph": 0,
+  "device": 0,
+  "container": 0
+}

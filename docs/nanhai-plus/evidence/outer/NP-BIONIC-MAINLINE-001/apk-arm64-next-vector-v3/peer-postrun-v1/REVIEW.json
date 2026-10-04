@@ -1,0 +1,69 @@
+{
+  "schema": "nanhai.vector.offline_v3_independent_postrun_review.v1",
+  "reviewed_utc": "2026-10-04T12:31:28Z",
+  "verdict": "ACCEPT_OFFLINE_VALIDATION_CANDIDATE_FOR_ROOT_RAW_ADMISSION_ONLY",
+  "scope": "Independent read-only review of Element Classic v3 terminal RESULT, two local-tool command receipts, retained v2 APK, and unchanged v2 failure evidence. No runner, tool, network, device or container command was executed by this peer; no canonical count was edited.",
+  "frozen_inputs": {
+    "run_py_sha256": "2689eecd0cff63d61a9989c96942adf6fc6c372303589449150dd509a0603a3f",
+    "prepare_sha256": "fcd8d398975c27bbc292fb9acd9280528239553c1e66e19605e8c3c8a14e784d",
+    "candidate_sha256": "2dca48f650bf13450e882e8335884460c3af5eb97fba488a47e89fefedd20399",
+    "fixture_py_sha256": "b96900e5e4b407bb813d11d58fd2c2b52b019f001609bcf1cc6fea7376271e33",
+    "fixture_receipt_sha256": "b4e7b51e8cc15598243b80ccd40f3ab3c8f8a0f7d645a7d5e94315b44b2beab7",
+    "root_release_script_prepare_candidate_peer_sha_match": true,
+    "prepare_script_fixture_receipt_sha_match": true
+  },
+  "execution_receipts": {
+    "start_sha256": "787ee48e1f247d04cf11cbe5e7822b3a1020cf056ea223f9719e249cd638b47c",
+    "result_sha256": "761df98b98dfeada8748f9a6eb0fe8d0c0e3f3e2b22cfb4137228d1ca02e6312",
+    "result_status": "OFFLINE_VALIDATION_CANDIDATE_PENDING_PEER_ROOT_RAW_ADMISSION",
+    "result_command_names": ["offline-badging", "offline-signature"],
+    "command_return_codes": [0, 0],
+    "command_timeouts": [false, false],
+    "argv_match_pinned_local_aapt2_and_java_apksigner": true,
+    "raw_stdout_stderr_sha_match_result": true,
+    "badging_stdout_sha256": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679",
+    "signature_stdout_sha256": "824fbefc74ed0ba4de93131bdaa3508bd9e78f7f223c7b01ca5ceb5ccd2396f5",
+    "stderr_sha256_both": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outer_runner_rc": "reported rc0 by coordinating owner; this peer independently checked RESULT and local-tool rc values, not a separate outer process transcript",
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "count_delta": 0
+  },
+  "retained_apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk",
+    "regular_file": true,
+    "bytes_independently_statted": 72422482,
+    "sha256_independently_rehashed": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "matches_upstream_registry_and_v3_result": true,
+    "zip_result": "v3 RESULT records 6839 entries, CRC pass, one AndroidManifest.xml and only arm64-v8a native lib ABI; the exact artifact was independently ZIP-checked in the pre-run peer receipt. This postrun review rehashed bytes but did not rerun ZIP validation."
+  },
+  "badging": {
+    "package": "im.vector.app",
+    "version_code": "40106622",
+    "version_name": "1.6.62",
+    "native_code": "arm64-v8a",
+    "raw_output_has_one_package_line_and_one_native_code_line": true,
+    "anchored_parser_result_matches_raw_output": true
+  },
+  "signature": {
+    "apksigner_verify_rc": 0,
+    "v2_scheme": true,
+    "v3_scheme": true,
+    "observed_signer_cert_sha256": "b15d9b673b55b9fe656190794d872e59ec5b85b3bfb8a76b9442f17eae2887c9",
+    "publisher_anchor": null,
+    "limit": "Observed certificate and exact upstream artifact SHA support byte intake; no independently pinned publisher certificate is claimed."
+  },
+  "v2_preservation": {
+    "result_sha256_now_and_v3_frozen": "47395fd4f602539167ca0df011c8a947ad9deba89586a86cd54fec840a5820c5",
+    "badging_sha256_now_and_v3_frozen": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679",
+    "v2_status": "TERMINAL_FAILED_NO_RETRY",
+    "v2_error": "RuntimeError('manifest identity drift')",
+    "v2_result_and_badging_edited": false,
+    "v3_network_get_site": false
+  },
+  "decision_boundary": "Accept v3 offline validation as a candidate for separate root raw admission. This review does not itself increment the raw APK count, grant blackbox qualification, assert complete static inventory, or claim app startup/device behavior.",
+  "next": "Root may compare this exact RESULT and artifact hash with the canonical raw registry and issue a separate raw-admission receipt. Preserve the v2 failed generation and the v3 one-shot START/RESULT without replay.",
+  "actions": {"local_readonly_hash_and_receipt_checks": true, "runner_executions": 0, "network_requests": 0, "apk_get": 0, "device": 0, "container": 0, "canonical_edits": 0}
+}

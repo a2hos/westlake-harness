@@ -1,0 +1,27 @@
+{
+  "schema": "g279-sibling-stage1-v2-root-readonly-preflight-v1",
+  "decision": "NO_GO_V2_REMOTE_HOST_CASE_MISMATCH",
+  "remote_preflight_exit_code": 0,
+  "remote_preflight_output": "ROOT-PREFLIGHT-OUTPUT.json",
+  "remote_preflight_output_sha256": "9498d44d853d1a5e63cc5e1547b0e9eddb5be529c30b1d3ee9afdd7e35201a49",
+  "observed": {
+    "remote_uname_nodename": "GZ02",
+    "remote_uid": 1000,
+    "new_sibling_exists": false,
+    "parent_uid": 1000,
+    "parent_mode": "0755",
+    "old_root_uid": 1000,
+    "old_root_mode": "0775",
+    "old_control_uid": 1000,
+    "old_control_mode": "0775"
+  },
+  "first_failing_gate_if_v2_executed": "Remote body compares os.uname().nodename.split('.')[0] exactly with lowercase packet host gz02; actual nodename is uppercase GZ02. No remote execution was attempted.",
+  "actions": {
+    "remote_readonly_preflight": 1,
+    "remote_writes": 0,
+    "graph": 0,
+    "device": 0,
+    "container": 0
+  },
+  "next": "Revise the remote hostname identity check in a new frozen generation, rerun uppercase-host fixture, then perform an independent exact-SHA review and fresh readonly preflight before any stage-1 remote write."
+}

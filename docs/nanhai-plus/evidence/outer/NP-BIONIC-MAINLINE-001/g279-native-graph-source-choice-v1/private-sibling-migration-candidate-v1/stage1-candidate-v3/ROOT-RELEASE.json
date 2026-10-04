@@ -1,0 +1,23 @@
+{
+  "schema": "g279-sibling-stage1-root-release-v3",
+  "decision": "ACCEPT_STAGE1_REMOTE_WRITE_ONCE",
+  "independent_reviewer": "outer-root",
+  "scope": "Create and read back the new gz02 project sibling with seven exact control files and two exact host ELF files; no binding switch, graph, target build, device, container or namespace",
+  "nonce": "02add3542f7f57bff960919f7cd3ce55",
+  "launcher_sha256": "cd30d6c915e32e0d71e7cc64deee077fb1f4f8b1b1f0ccc9cd1f41b6c3b40ba3",
+  "remote_body_sha256": "04da9d971cbbf986ed8d0f9d840944f17ca5a32622a57c3b765a17f1447a0b54",
+  "fixtures_sha256": "7820ec98ece2400d5da5c7053206a5df0b6447a468fab88aee3ad94342a2d4a4",
+  "packet_sha256": "a4c8b04518d82259145c419fe120cd6a8ea16b740cd66926b18b7ab77e3260b5",
+  "remote_program_sha256": "17e0cdb19051de08703519821006760fc8b11511181c5828bafb2b58147ee855",
+  "plan_sha256": "4ccfe0e18788c0301d01782926b06d564318f703fa3e434164d32c521182e565",
+  "old_env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "local_checks": {
+    "launcher_static_check_exit_code": 0,
+    "eight_fixtures_exit_code": 0,
+    "westlake_handoff_gate_exit_code": 0,
+    "latest_readonly_host_preflight": "stage1-candidate-v2/ROOT-PREFLIGHT-OUTPUT.json showed GZ02/UID1000/parent0755/new-root absent; fresh preflight required immediately before execution"
+  },
+  "rollback": "No old binding or old root mutation. On uncertainty or partial failure, preserve the new sibling and reconcile inode/lease/receipt read-only; never auto-delete or replay this nonce.",
+  "release_limit": "Only the exact nonce and packet above; release is consumed by one invocation."
+}

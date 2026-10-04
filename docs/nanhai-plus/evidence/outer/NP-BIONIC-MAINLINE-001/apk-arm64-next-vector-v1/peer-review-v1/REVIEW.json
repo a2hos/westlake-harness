@@ -1,0 +1,72 @@
+{
+  "schema": "nanhai.vector.one_shot_independent_peer_review.v1",
+  "reviewed_utc": "2026-10-04T12:19:02.945311+00:00",
+  "verdict": "NO_GO_FROZEN_FIXTURE_SHA_DRIFT",
+  "scope": "Read-only local review and fixture rerun; no APK GET, device, container or canonical count edit.",
+  "inputs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/CANDIDATE.json",
+      "bytes": 3620,
+      "sha256": "133e277a2c53453c13477aaa57767464d1eee4067512dac26dd966649619a38d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/PREPARE.json",
+      "bytes": 2536,
+      "sha256": "72cdb4ecc1bfa5f4ca174b68418117a88321ece50a2901cbea4e2a17bd371754"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/run.py",
+      "bytes": 10688,
+      "sha256": "8974b749ddcb4ecbe38ccb88c82012c63066459f0f0831d1e73983ffea23ce41"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/fixture.py",
+      "bytes": 2869,
+      "sha256": "81ed596e7e33eabf5789838ed065fd3b63c27b370f7d95f4363e2fcc837a24f2"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/FIXTURE.json",
+      "bytes": 777,
+      "sha256": "da62401d3bc76f3e26bce96c43dec99a60369b1e95c5747fea2e3d0425fafd3b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/head.headers.raw",
+      "bytes": 366,
+      "sha256": "57bb00931cb993b83ce3af1b01c65d52961fe086af4afce56ea6adfe05ba2ea3"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+      "bytes": 1631520,
+      "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/source-metadata/benchmark/2026-09-23-corpus2-blind/downloads.lock.json",
+      "bytes": 3444,
+      "sha256": "ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb"
+    }
+  ],
+  "blocking_finding": {
+    "field": "PREPARE.json fixture_sha256",
+    "prepared_sha256": "da62401d3bc76f3e26bce96c43dec99a60369b1e95c5747fea2e3d0425fafd3b",
+    "actual_fixture_sha256": "81ed596e7e33eabf5789838ed065fd3b63c27b370f7d95f4363e2fcc837a24f2",
+    "meaning": "The frozen PREPARE does not identify the fixture currently rerun. FIXTURE.json itself reports 81ed... under script_sha256, so its label is also ambiguous. A pass on the current fixture cannot satisfy this frozen packet."
+  },
+  "checks_passed": {
+    "upstream_registry": "Frozen REGISTRY.json SHA 289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb, record r-570841c0ce268cd2ac69, and source lock SHA ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb agree: im.vector.app 1.6.62/code 40106622, F-Droid exact URL, 72,422,482 bytes, SHA ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9, declared arm64-v8a. Actual ZIP/ABI not yet proven.",
+    "head": "Frozen HEAD SHA 57bb00931cb993b83ce3af1b01c65d52961fe086af4afce56ea6adfe05ba2ea3 has one Content-Length 72422482 and APK MIME; HTTP200/TLS0/no redirect are candidate observation, not independently refetched.",
+    "static_fixture": "Reviewer reran python3 -B fixture.py, rc0 FIXTURE_PASS 16; no GET. Its actual SHA differs from PREPARE.",
+    "single_get": "run.py has one runtime-download command site, curl retry0, HTTPS only, no redirect-follow, max-filesize exact expected 72422482, max-time240/subprocess timeout250, fresh runtime HEAD and exact full payload SHA before rename.",
+    "one_shot": "Explicit --execute and matching root release required. START is O_EXCL before network; any absent RESULT after START is UNKNOWN and refuses replay. RESULT is O_EXCL on handled paths.",
+    "post_get": "ZIP CRC, one Manifest, exact arm64-v8a .so directory, aapt2 exact package/code/name and native-code, apksigner verify rc0 with v2/v3 and observed cert, final APK SHA. Publisher cert anchor and blackbox qualification are not claimed.",
+    "hidden_execution": "Subprocess calls are explicit curl/aapt2/java-apksigner with tool SHA guards, no shell, device, Docker, Podman or nsjail site found."
+  },
+  "other_limit": "PREPARE outer watchdog 300 s is less than the sum of subprocess bounds (25+250+60+120 s), excluding ZIP/hash time. A timeout after START can leave UNKNOWN without RESULT; no replay is allowed. Root should reconcile any such outcome read-only rather than retry.",
+  "next": "Author should issue a new frozen PREPARE/fixture receipt generation with matching fixture SHA and unambiguous hash fields, then request fresh independent review. Do not release this packet as currently frozen.",
+  "actions": {
+    "fixture_rerun_rc": 0,
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  }
+}

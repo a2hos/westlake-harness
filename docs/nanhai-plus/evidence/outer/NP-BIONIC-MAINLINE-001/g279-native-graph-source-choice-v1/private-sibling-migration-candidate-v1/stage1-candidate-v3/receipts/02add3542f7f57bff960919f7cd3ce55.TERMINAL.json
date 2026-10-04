@@ -1,0 +1,31 @@
+{
+  "execution_uncertain": false,
+  "nonce": "02add3542f7f57bff960919f7cd3ce55",
+  "old_root_preserved": true,
+  "packet_sha256": "a4c8b04518d82259145c419fe120cd6a8ea16b740cd66926b18b7ab77e3260b5",
+  "remote_receipt_status": "STAGED_READBACK",
+  "replay_allowed": false,
+  "schema": "g279-sibling-stage1-local-terminal-v2",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 0,
+  "start_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage1-candidate-v3/receipts/02add3542f7f57bff960919f7cd3ce55.START.json",
+  "start_sha256": "9d89529a3b3765937d25e6c18f88e1b512400ec5d7f38783077edc9fbeda195f",
+  "stderr": "",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\"binding_changed\": false, \"container\": false, \"copied\": [{\"dest\": \"MANIFEST-HEADS.tsv\", \"kind\": \"control\", \"new_id\": {\"bytes\": 252412, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185927, \"mode\": 292, \"sha256\": \"fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356\", \"uid\": 1000}, \"source\": \"control/MANIFEST-HEADS.tsv\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884502, \"mode\": 292, \"uid\": 1000}}, {\"dest\": \"ROUTE-AUDIT.json\", \"kind\": \"control\", \"new_id\": {\"bytes\": 21447, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185928, \"mode\": 292, \"sha256\": \"69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a\", \"uid\": 1000}, \"source\": \"control/ROUTE-AUDIT.json\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884423, \"mode\": 420, \"uid\": 1000}}, {\"dest\": \"generate_manifest_heads.py\", \"kind\": \"control\", \"new_id\": {\"bytes\": 5337, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185929, \"mode\": 292, \"sha256\": \"dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634\", \"uid\": 1000}, \"source\": \"control/generate_manifest_heads.py\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884501, \"mode\": 292, \"uid\": 1000}}, {\"dest\": \"nanhai_plus_native_soong_ui.sh\", \"kind\": \"control\", \"new_id\": {\"bytes\": 918, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185930, \"mode\": 292, \"sha256\": \"6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2\", \"uid\": 1000}, \"source\": \"control/nanhai_plus_native_soong_ui.sh\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884493, \"mode\": 420, \"uid\": 1000}}, {\"dest\": \"nanhai_plus_native_source_view.py\", \"kind\": \"control\", \"new_id\": {\"bytes\": 3251, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185931, \"mode\": 292, \"sha256\": \"0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5\", \"uid\": 1000}, \"source\": \"control/nanhai_plus_native_source_view.py\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884424, \"mode\": 420, \"uid\": 1000}}, {\"dest\": \"no-namespace-exec.c\", \"kind\": \"control\", \"new_id\": {\"bytes\": 4539, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185932, \"mode\": 292, \"sha256\": \"0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f\", \"uid\": 1000}, \"source\": \"control/no-namespace-exec.c\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884504, \"mode\": 292, \"uid\": 1000}}, {\"dest\": \"soong-ui-no-nsjail.patch\", \"kind\": \"control\", \"new_id\": {\"bytes\": 515, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185933, \"mode\": 292, \"sha256\": \"1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc\", \"uid\": 1000}, \"source\": \"control/soong-ui-no-nsjail.patch\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884422, \"mode\": 420, \"uid\": 1000}}, {\"dest\": \"soong-ui-v1/soong_ui\", \"kind\": \"tool\", \"new_id\": {\"bytes\": 19023728, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185935, \"mode\": 365, \"sha256\": \"92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624\", \"uid\": 1000}, \"source\": \"out/soong-ui-v1/soong_ui\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884930, \"mode\": 509, \"uid\": 1000}}, {\"dest\": \"no-namespace-guard-v1/no-namespace-exec\", \"kind\": \"tool\", \"new_id\": {\"bytes\": 16464, \"dev\": 64785, \"gid\": 1000, \"ino\": 47185937, \"mode\": 365, \"sha256\": \"04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20\", \"uid\": 1000}, \"source\": \"out/no-namespace-guard-v1/no-namespace-exec\", \"source_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884506, \"mode\": 509, \"uid\": 1000}}], \"device\": false, \"graph\": false, \"namespace\": false, \"new_root\": \"/data/source/.nanhai-plus-opaleye-native-v7\", \"new_root_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 47185921, \"mode\": 493, \"uid\": 1000}, \"nonce\": \"02add3542f7f57bff960919f7cd3ce55\", \"observed_host\": \"GZ02\", \"old_root_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 29884417, \"mode\": 509, \"uid\": 1000}, \"parent_id\": {\"dev\": 64785, \"gid\": 1000, \"ino\": 2, \"mode\": 493, \"uid\": 1000}, \"schema\": \"g279-sibling-stage1-remote-receipt-v1\", \"status\": \"STAGED_READBACK\"}\n",
+  "stdout_sha256": "0230303aed758f83848bacc86a504ffe851b12a859a7b5817f0b0dbeef7c0795"
+}

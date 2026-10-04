@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai.vector.offline_root_release.v3",
+  "decision": "GO_ONE_OFFLINE_VALIDATION",
+  "scope": "Validate the exact retained v2 Element Classic APK locally once; no network, device, container, canonical count or v2 receipt mutation",
+  "independent_reviewer": "outer-root",
+  "peer_review_sha256": "47ce0c8c10a0ac549db126a1760aeeb2ae649bf016d8e876c9dc3ceb38fdb374",
+  "script_sha256": "2689eecd0cff63d61a9989c96942adf6fc6c372303589449150dd509a0603a3f",
+  "prepare_sha256": "fcd8d398975c27bbc292fb9acd9280528239553c1e66e19605e8c3c8a14e784d",
+  "candidate_sha256": "2dca48f650bf13450e882e8335884460c3af5eb97fba488a47e89fefedd20399",
+  "env_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "v2_result_sha256": "47395fd4f602539167ca0df011c8a947ad9deba89586a86cd54fec840a5820c5",
+  "tool_sha256": {
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "outer_watchdog_seconds": 300,
+  "count_delta_authorized": 0
+}

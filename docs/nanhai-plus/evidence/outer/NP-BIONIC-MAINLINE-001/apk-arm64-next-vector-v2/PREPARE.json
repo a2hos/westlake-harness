@@ -1,0 +1,81 @@
+{
+  "schema": "nanhai.vector.raw_intake_prepare.v2",
+  "at_utc": "2026-10-04T12:20:38.942746+00:00",
+  "status": "FROZEN_STATIC_V2_NOT_EXECUTED",
+  "supersedes_candidate_only": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/PREPARE.json",
+  "v1_peer_no_go": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v1/peer-review-v1/REVIEW.json",
+    "sha256": "685d8e5cf20010a48526d7f5e30ffa887242eef92bd378871363f388d276ddc8",
+    "reason": "fixture hash/field drift and outer watchdog below subprocess maxima"
+  },
+  "candidate_sha256": "f60b55a2ce37e741a3dbd5de8aad22dfe2deee37145aac09f6217032a7579c39",
+  "script_sha256": "612377055932fab8e0ec67052b8cc39a206d994b6dcc712ed8b4ae1bb3140bdd",
+  "fixture_sha256": "8ee2f431cf6044266c8d5d398e8285edb410d4ecde0d2d5249b10b3429ec0f63",
+  "fixture_receipt_sha256": "7ed4b3b2399b9f0ae255fc0d467c830d6b42d3d803e04ec2ed0ab281d0bae4f0",
+  "head_sha256": "57bb00931cb993b83ce3af1b01c65d52961fe086af4afce56ea6adfe05ba2ea3",
+  "env_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "tool_sha256": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "exact_url": "https://f-droid.org/repo/im.vector.app_40106622.apk",
+  "expected_bytes": 72422482,
+  "expected_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+  "expected_package": "im.vector.app",
+  "expected_version_code": "40106622",
+  "expected_version_name": "1.6.62",
+  "expected_abis": [
+    "arm64-v8a"
+  ],
+  "peer_review_required": true,
+  "root_release_required": true,
+  "release_file_contract": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/ROOT-RELEASE.json",
+    "decision": "GO_ONE_BOUNDED_GET",
+    "script_sha256": "must equal this PREPARE script_sha256",
+    "prepare_sha256": "must equal SHA256 of PREPARE.json",
+    "candidate_sha256": "must equal this PREPARE candidate_sha256",
+    "env_sha256": "must equal this PREPARE env_sha256",
+    "tool_sha256": "must equal this PREPARE tool_sha256"
+  },
+  "next_command_after_review_and_release": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/run.py",
+    "--execute"
+  ],
+  "timeout_contract": {
+    "global_deadline_seconds_after_exclusive_START": 600,
+    "subprocess_individual_max_seconds": {
+      "head": 25,
+      "download": 250,
+      "badging": 60,
+      "signature": 120
+    },
+    "subprocess_max_sum_seconds": 455,
+    "global_deadline_covers": "all post-START work including local SHA/ZIP validation and subprocesses; expires to terminal failure without replay",
+    "outer_watchdog_seconds": 900,
+    "outer_margin_seconds": 300
+  },
+  "limits": {
+    "apk_get_max": 1,
+    "no_retry": true,
+    "startup_credit": false,
+    "blackbox_credit": false,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_delta": 0
+  },
+  "production_artifacts": {
+    "start_exists": false,
+    "result_exists": false,
+    "stage_exists": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "nanhai.vector.offline_postdownload_prepare.v3",
+  "prepared_utc": "2026-10-04T12:28:55.478904+00:00",
+  "status": "FROZEN_OFFLINE_ONLY_PENDING_INDEPENDENT_REVIEW_AND_ROOT_RELEASE",
+  "candidate_sha256": "2dca48f650bf13450e882e8335884460c3af5eb97fba488a47e89fefedd20399",
+  "script_sha256": "2689eecd0cff63d61a9989c96942adf6fc6c372303589449150dd509a0603a3f",
+  "fixture_sha256": "b96900e5e4b407bb813d11d58fd2c2b52b019f001609bcf1cc6fea7376271e33",
+  "fixture_receipt_sha256": "b4e7b51e8cc15598243b80ccd40f3ab3c8f8a0f7d645a7d5e94315b44b2beab7",
+  "v2_result_sha256": "47395fd4f602539167ca0df011c8a947ad9deba89586a86cd54fec840a5820c5",
+  "v2_badging_sha256": "5df165d5989bc28235934f18490c20fa6b47c761cec73ecedc0d0badbf072679",
+  "retained_apk_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+  "retained_apk_bytes": 72422482,
+  "env_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "tool_sha256": {
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "release_contract": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/ROOT-RELEASE.json",
+    "decision": "GO_ONE_OFFLINE_VALIDATION",
+    "script_sha256": "must match this PREPARE",
+    "prepare_sha256": "must equal full PREPARE SHA",
+    "candidate_sha256": "must match this PREPARE",
+    "v2_result_sha256": "must match this PREPARE",
+    "env_sha256": "must match this PREPARE",
+    "tool_sha256": "must match this PREPARE"
+  },
+  "command_after_review_and_release": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/run.py",
+    "--execute"
+  ],
+  "timeout_contract": {
+    "global_deadline_after_START_seconds": 180,
+    "outer_watchdog_seconds": 300,
+    "network_timeout": null
+  },
+  "limits": {
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_delta": 0,
+    "no_replay": true,
+    "v2_receipts_immutable": true
+  },
+  "production_state": {
+    "start_exists": false,
+    "result_exists": false
+  }
+}

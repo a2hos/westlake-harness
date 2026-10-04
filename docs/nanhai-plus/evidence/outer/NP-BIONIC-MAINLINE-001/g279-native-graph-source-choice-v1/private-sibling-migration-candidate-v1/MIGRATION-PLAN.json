@@ -1,0 +1,238 @@
+{
+  "schema": "g279-private-sibling-migration-candidate-v1",
+  "prepared_utc": "2026-10-04T12:08:30.427387+00:00",
+  "status": "READONLY_FALLBACK_PACKAGE_NOT_EXECUTED",
+  "old_root": "/data/source/.nanhai-plus-opaleye-native",
+  "proposed_new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "authority": {
+    "local_env": "local_env.md",
+    "current_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "remote_source_audit_sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a",
+    "read_only_snapshot_sha256": "96fc5f566b5d5a12fc7fd049b362ecab820fbf6f4684c1c24bd7d1e289a130d0",
+    "source_links_tsv_sha256": "f79646328e9f2fbdb4c6f00f32e0722ceb21424992c27820efc5fa28f79a458c"
+  },
+  "fresh_readonly_precondition": {
+    "at_utc": "2026-10-04T12:07:59.359231+00:00",
+    "gz02_rc": 0,
+    "new_root_lexists": false,
+    "data_source_uid": 1000,
+    "data_source_mode": "0755",
+    "data_source_symlink": false,
+    "data_source_posix_acl_xattr": false,
+    "stdout_sha256": "f791f535bc8cf98481d2eb4a8c7b1defa77f362a47a79ee2cfc26e30549aa4d3"
+  },
+  "source_view": {
+    "links": 46,
+    "top_level_entries_observed_previous_scout": 14,
+    "mapping_file": "SOURCE-VIEW-LINKS.tsv",
+    "mapping_note": "46 exact relative entries, literal symlink targets, expected Git HEADs and observed resolved targets. build/soong points to the separately patched worktree; other 45 point to the registered full R4 source alias. This view is for building patched Soong UI or partial diagnostics; the G279 stock graph TOP remains the full R4 checkout, not this 46-link view.",
+    "source_alias": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+    "source_real": "/data/source/aosp-16.0.0-r4",
+    "soong_worktree": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+    "create_tool": "scripts/nanhai_plus_native_source_view.py",
+    "no_source_copy": true
+  },
+  "control_old_observed": [
+    {
+      "bytes": 252412,
+      "is_symlink": false,
+      "mode": "0o444",
+      "name": "MANIFEST-HEADS.tsv",
+      "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+    },
+    {
+      "bytes": 21447,
+      "is_symlink": false,
+      "mode": "0o644",
+      "name": "ROUTE-AUDIT.json",
+      "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a"
+    },
+    {
+      "bytes": 682,
+      "is_symlink": false,
+      "mode": "0o444",
+      "name": "g279-native-graph-env.json",
+      "sha256": "0df4f6fa4f57ac2cda2998723b935fd89c9dfce8f10afd0e23c08a6f2ca9ab91"
+    },
+    {
+      "bytes": 5337,
+      "is_symlink": false,
+      "mode": "0o444",
+      "name": "generate_manifest_heads.py",
+      "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634"
+    },
+    {
+      "bytes": 918,
+      "is_symlink": false,
+      "mode": "0o644",
+      "name": "nanhai_plus_native_soong_ui.sh",
+      "sha256": "6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2"
+    },
+    {
+      "bytes": 3251,
+      "is_symlink": false,
+      "mode": "0o644",
+      "name": "nanhai_plus_native_source_view.py",
+      "sha256": "0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5"
+    },
+    {
+      "bytes": 4539,
+      "is_symlink": false,
+      "mode": "0o444",
+      "name": "no-namespace-exec.c",
+      "sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f"
+    },
+    {
+      "bytes": 515,
+      "is_symlink": false,
+      "mode": "0o644",
+      "name": "soong-ui-no-nsjail.patch",
+      "sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc"
+    }
+  ],
+  "control_bytes": 289101,
+  "control_recreation": {
+    "exact_byte_seeds_to_restamp_by_sha": [
+      "ROUTE-AUDIT.json",
+      "MANIFEST-HEADS.tsv",
+      "generate_manifest_heads.py",
+      "nanhai_plus_native_soong_ui.sh",
+      "nanhai_plus_native_source_view.py",
+      "no-namespace-exec.c",
+      "soong-ui-no-nsjail.patch"
+    ],
+    "must_regenerate_not_copy": [
+      "g279-native-graph-env.json"
+    ],
+    "new_exclusive_staged_runner": "nanhai_plus_native_graph_v7.py or successor only after new path/config/BINDING_SHA release; old staged v7 cannot be replayed",
+    "seed_note": "Preserve immutable old control; source exact seed bytes from reviewed local evidence or independently hashed old read-only file, and verify every new SHA/mode. The path-bearing environment JSON must be regenerated from changed local_env, not copied unchanged."
+  },
+  "host_tool_inputs": {
+    "observed_old_outputs": [
+      {
+        "bytes": 19023728,
+        "is_file": true,
+        "is_symlink": false,
+        "mode": "0o775",
+        "relative": "out/soong-ui-v1/soong_ui",
+        "sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624"
+      },
+      {
+        "bytes": 16464,
+        "is_file": true,
+        "is_symlink": false,
+        "mode": "0o775",
+        "relative": "out/no-namespace-guard-v1/no-namespace-exec",
+        "sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20"
+      }
+    ],
+    "rebuild_or_separately_provenance_admit_in_new_out": true,
+    "soong_ui_inputs": [
+      "46-link source-view",
+      "patched Soong worktree HEAD f389fa2a2a768a93bc99957e2288f3fbee032bff",
+      "control/nanhai_plus_native_soong_ui.sh SHA 6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2",
+      "R4 Go prebuilt SHA 467614dc12ce73e28cc9aa8d28bdef259ada3bcc4392f205aaaed6fff44d8cab"
+    ],
+    "guard_inputs": [
+      "control/no-namespace-exec.c SHA 0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f",
+      "/usr/bin/cc on gz02"
+    ],
+    "do_not_symlink_old_out": true,
+    "do_not_copy_old_tmp_or_staging": true
+  },
+  "estimated_size": {
+    "symlink_mapping_tsv_bytes": 7956,
+    "control_seed_bytes_old_total": 289101,
+    "two_final_elf_bytes": 19040192,
+    "old_soong_ui_out_tree_du_sb": 66875631,
+    "old_guard_out_tree_du_sb": 17519,
+    "old_soong_ui_tmp_tree_du_sb": 0,
+    "minimum_new_footprint_comment": "Roughly 67 MB if rebuilding the Soong UI with analogous intermediate output, plus project graph OUT/TMP/staging budget. The 46 links do not copy source repositories; final ELF bytes alone are 19,040,192. Full graph peak is unmeasured."
+  },
+  "path_binding_impact": {
+    "local_env_keys_to_change": [
+      "NANHAI_GZ02_NATIVE_PROJECT_ROOT",
+      "NANHAI_GZ02_NATIVE_SOURCE_VIEW",
+      "NANHAI_GZ02_SOONG_UI"
+    ],
+    "remain_exact": [
+      "NANHAI_GZ02_AOSP_SOURCE_ROOT",
+      "NANHAI_GZ02_SOONG_WORKTREE",
+      "NANHAI_SOURCE_POOL_ROOT"
+    ],
+    "new_config_sha_required": true,
+    "scripts_requiring_new_execution_generation": [
+      "scripts/nanhai_plus_native_graph_v7.py: CONFIG_SHA, BINDING_SHA, absolute seed path, RELEASE_RUN_ID and frozen runner SHA",
+      "scripts/nanhai_plus_stage_runner_v7_candidate_v4.py: PROJECT constant, config SHA, destination/lease identity, O_EXCL final generation",
+      "scripts/nanhai_plus_native_graph_v7_gate.py: REMOTE_PROJECT constant, config/runner/binding identities, source/output paths",
+      "scripts/nanhai_plus_native_graph_v8_gate.py: old REMOTE_PROJECT constant; historical only, do not reuse",
+      "scripts/nanhai_plus_native_graph_v9_gate.py: root dynamic, but frozen release artifacts and exact remote-file identities must be regenerated"
+    ],
+    "historical_receipts_and_specs_to_preserve_not_rewrite": [
+      "runner-v7-staging-candidate-v4",
+      "runner-v9-gate-candidate-v1/owner-graph-ack-candidate-v1/SPEC-TEMPLATE.json",
+      "input-staging-v1/STAGING.json",
+      "g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json"
+    ],
+    "old_mode_correction_script": "scripts/nanhai_plus_g279_mode_correction_v1.py remains old-root-only and must not be aimed at sibling"
+  },
+  "proposed_one_shot_workflow_after_independent_approval": [
+    "Gate 0: Fresh SSH host-key/UID1000, parent chain O_NOFOLLOW/mode/ACL and new-root lexists=false; old root unchanged and lease/final absent at chosen new names.",
+    "Gate 1: Create exactly new real root as UID1000 owner-write-only mode 0755 (not 0700: graph worker nobody needs traversal), control/staging 0700, out/tmp traversable 0755, source-view as needed for host UI build; no symlink to old root. Use O_EXCL/dirfd semantics, fsync, readback. Prove nobody cannot write project parent/control/source.",
+    "Gate 2: Generate 46 symlinks from frozen SOURCE-VIEW-LINKS.tsv using approved source-view script; verify literal targets, resolved realpaths, expected HEADs, count 46, no extra entries; do not copy AOSP.",
+    "Gate 3: Stage seven exact-byte control seeds and regenerate environment JSON from updated authoritative local_env; verify hashes, modes, paths and new config SHA; preserve old seed byte receipt.",
+    "Gate 4: Rebuild or separately admit patched Soong UI and no-namespace guard into new out; verify x86-64 ELF, SHA, worktree/source provenance, no forbidden exec, guard probe. Prove sudo -u nobody can traverse new root/out and execute exact tool, then that nobody cannot write parent/control/shared source; do not reuse old out/tmp/staging.",
+    "Gate 5: Freeze new runner/stager/owner-gate generation with new root/config/binding/tool identities, independently static-review and fixture; fresh O_EXCL lease and START before any later graph; full source manifest/HEAD/untracked pre/post guard; no old release replay."
+  ],
+  "command_templates_not_executed": [
+    "gz02 after new-root/control admission: /usr/bin/python3.12 \"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/nanhai_plus_native_source_view.py\" \"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/ROUTE-AUDIT.json\" \"$NANHAI_GZ02_AOSP_SOURCE_ROOT\" \"$NANHAI_GZ02_SOONG_WORKTREE\" \"$NANHAI_GZ02_NATIVE_SOURCE_VIEW\"",
+    "env TOP=\"$NANHAI_GZ02_NATIVE_SOURCE_VIEW\" OUT_DIR=\"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/out/soong-ui-v1\" TMPDIR=\"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/tmp/soong-ui-v1\" NANHAI_SOONG_WORKTREE=\"$NANHAI_GZ02_SOONG_WORKTREE\" NANHAI_NATIVE_PROJECT_ROOT=\"$NANHAI_GZ02_NATIVE_PROJECT_ROOT\" timeout 600s bash \"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/nanhai_plus_native_soong_ui.sh\"",
+    "/usr/bin/cc -O2 -std=c11 -Wall -Wextra -Werror -fPIE -pie \"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/no-namespace-exec.c\" -o \"$NANHAI_GZ02_NATIVE_PROJECT_ROOT/out/no-namespace-guard-v1/no-namespace-exec\""
+  ],
+  "result_boundary": {
+    "migration_executed": false,
+    "new_root_created": false,
+    "copy": false,
+    "chmod": false,
+    "graph": false,
+    "device": false,
+    "container": false,
+    "canonical_count_delta": 0,
+    "old_root_preserve": true,
+    "decision": "FALLBACK_ONLY_PEER_REVIEW_REQUIRED"
+  },
+  "command_templates_scope": "Illustrative remote Linux argv only; substitute verified bindings from a newly frozen environment packet. These are not an authorized dispatch script.",
+  "mode_design_hard_condition": {
+    "finding": "The prior private-root scout suggested 0700 for the new root, but G279 v7 later executes the UI and guard under sudo -u nobody. A 0700 project root would make both binaries and graph OUT/TMP unreachable by nobody.",
+    "required": "Owner-only write, not owner-only traversal: root and ancestors of tool binaries and graph out/tmp need executable traversal for nobody, for example 0755 with UID1000 and no ACL group write. control may be 0700; staging may be 0700 if no nobody access is needed. Fresh gate must prove nobody can traverse and execute exact tools but cannot write project parent/control/source.",
+    "evidence": "scripts/nanhai_plus_native_graph_v7.py:327,610-612 and guarded-ui-usage-smoke-v4/ROOT-CONTROLLED-PAIR.json"
+  },
+  "read_only_probe_notes": {
+    "remote_snapshot": "READONLY-SNAPSHOT.json retains SSH argv, UTC, rc 0, stdout/stderr SHA and full 46-link, 8-control, 2-tool inventory.",
+    "du": {
+      "argv": [
+        "/usr/bin/ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "StrictHostKeyChecking=yes",
+        "-o",
+        "HostKeyAlgorithms=ssh-ed25519",
+        "-o",
+        "ConnectTimeout=10",
+        "gz02",
+        "/usr/bin/du -sb /data/source/.nanhai-plus-opaleye-native/out/soong-ui-v1 /data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1 /data/source/.nanhai-plus-opaleye-native/tmp/soong-ui-v1"
+      ],
+      "rc": 0,
+      "stdout": "66875631\t.../out/soong-ui-v1\n17519\t.../out/no-namespace-guard-v1\n0\t.../tmp/soong-ui-v1\n"
+    },
+    "first_absence_probe": {
+      "rc": 2,
+      "reason": "read-only inline SSH shell quoting error; no remote program executed or mutation"
+    },
+    "corrected_absence_probe": {
+      "rc": 0,
+      "stdout_sha256": "f791f535bc8cf98481d2eb4a8c7b1defa77f362a47a79ee2cfc26e30549aa4d3"
+    }
+  }
+}

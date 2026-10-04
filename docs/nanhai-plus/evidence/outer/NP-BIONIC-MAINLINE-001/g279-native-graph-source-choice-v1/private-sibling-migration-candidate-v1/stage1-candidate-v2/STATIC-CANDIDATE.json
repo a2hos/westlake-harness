@@ -1,0 +1,36 @@
+{
+  "schema": "g279-sibling-stage1-static-candidate-v2",
+  "status": "LOCAL_STATIC_AND_FIXTURES_PASS_REMOTE_NOT_EXECUTED",
+  "supersedes_launcher": "stage1-candidate-v1/STATIC-CANDIDATE.json",
+  "launcher_sha256": "138b7982f4324c5625b53f49656b6e75b729a2c21a748ee1c32a4a102aa9ede5",
+  "remote_body_sha256": "81421e73d9621dd52e443a06e00f8e9b17ae8d4c333364cdcf57e6e8a4adde79",
+  "fixtures_sha256": "6faf2c1fb9cba5d1033d0945aa59e71087a564bf0b1a706931e5973acb616289",
+  "fixed_fixture_nonce": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "fixed_fixture_packet_sha256": "6fe63fc552c4db12600c4e082548ce0147cb96679d65a1576fcfa348d4b5e10a",
+  "fixed_fixture_remote_program_sha256": "22aa6d2a28b042d16f4131dcb5d786b2f64c7885d6eb9005fffd2ae678dbcf1a",
+  "plan_sha256": "4ccfe0e18788c0301d01782926b06d564318f703fa3e434164d32c521182e565",
+  "current_old_root_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "checks": {
+    "python_compile_rc": 0,
+    "static_check_rc": 0,
+    "fixtures_rc": 0,
+    "fixture_cases": [
+      "success_readback",
+      "replay_rejected",
+      "source_drift_precreate_abort",
+      "partial_failure_quarantined_old_preserved",
+      "group_writable_parent_precreate_abort",
+      "start_fsynced_before_ssh_and_nonce_replay_rejected",
+      "malformed_remote_rc0_kept_unknown"
+    ],
+    "westlake_handoff_gate_rc": 0,
+    "westlake_handoff_gate_result": "PASS"
+  },
+  "new_safety_property": "An O_EXCL, file-and-directory-fsynced START with fixed nonce, packet/script/review SHA, old/new roots and UNKNOWN_UNTIL_RECONCILED is durable before SSH. Existing START or TERMINAL refuses same-nonce reentry.",
+  "remote_writes": 0,
+  "graph_commands": 0,
+  "target_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "Independent exact-SHA review and fresh gz02 read-only preflight; no remote stage from this static receipt."
+}

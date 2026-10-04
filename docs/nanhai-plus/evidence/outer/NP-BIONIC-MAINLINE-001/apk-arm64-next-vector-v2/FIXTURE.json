@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai.vector.local_fixture.v2",
+  "at_utc": "2026-10-04T12:20:38.942136+00:00",
+  "status": "PASS",
+  "argv": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v2/fixture.py"
+  ],
+  "rc": 0,
+  "stdout": "FIXTURE_PASS 19 frozen URL,frozen length,frozen SHA,frozen package,frozen ARM64,v2 staging generation,global execution deadline,HEAD length and MIME,duplicate length rejected,manifest identity and ABI,wrong package rejected,ARM32-only rejected,extra ARM32 rejected,exclusive START,expired deadline prevents subprocess,noarg refuses GET,no execution receipts,one APK GET site,no shell/device/container",
+  "stdout_sha256": "64df015a2ff3b280a67a32b1b2bb29b3eb61d1f207b6718428bc42133d9c7d4c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runner_sha256": "612377055932fab8e0ec67052b8cc39a206d994b6dcc712ed8b4ae1bb3140bdd",
+  "fixture_script_sha256": "8ee2f431cf6044266c8d5d398e8285edb410d4ecde0d2d5249b10b3429ec0f63",
+  "network_requests": 0,
+  "apk_get": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

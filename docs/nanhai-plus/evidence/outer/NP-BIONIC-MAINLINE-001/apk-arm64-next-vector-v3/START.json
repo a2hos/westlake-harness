@@ -1,0 +1,7 @@
+{
+  "schema": "nanhai.vector.offline_start.v3",
+  "at_utc": "2026-10-04T12:30:36.320115+00:00",
+  "script_sha256": "2689eecd0cff63d61a9989c96942adf6fc6c372303589449150dd509a0603a3f",
+  "apk_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+  "state": "UNKNOWN_IF_RESULT_ABSENT_DO_NOT_REPLAY"
+}
