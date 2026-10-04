@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:48:18.835889+00:00",
+  "checked_at": "2026-10-04T08:54:45.466724+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -455,6 +455,10 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/g274-terminal-peer-review-v1/REVIEW.json",
       "sha256": "14b3c2109294ce837b13d2b0225d4563c1f5874c265fd32eaef2860ad11cf793"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "311b75cb735ad0f36e0df6fae5cc49a7daeca998975f04c2c3ed4f3ef35308ac"
     }
   ],
   "bionic_stock_graph": {
@@ -487,7 +491,7 @@
   },
   "next_graph_candidate": {
     "prospective_release": 275,
-    "next_input": "verify exact android-16.0.0_r4 source definitions of kernel-config-soong-rules and soong-selinux; form bounded candidate, independent review and new original-owner ACK",
+    "next_input": "G275 two exact R4 source roots admitted; integrate and independently review complete source/SDK guard and exact oracle, then fresh original owner ACK and root seal",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
@@ -960,6 +964,20 @@
     "graph_generation_pass": false,
     "whole_tool_delta": 0,
     "apk_start_delta": 0,
+    "device_commands": 0
+  },
+  "g275_source_view_admission": {
+    "status": "two exact R4 complete repositories and project input links admitted only",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "311b75cb735ad0f36e0df6fae5cc49a7daeca998975f04c2c3ed4f3ef35308ac"
+    },
+    "stock_root_count_planned": 40,
+    "new_entries": 4587,
+    "linux_mount_verified": false,
+    "graph_executed": false,
+    "target_compile_commands": 0,
+    "owner_new_ACK": false,
     "device_commands": 0
   }
 }

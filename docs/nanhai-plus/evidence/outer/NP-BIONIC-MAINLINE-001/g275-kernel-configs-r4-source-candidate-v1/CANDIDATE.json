@@ -1,0 +1,27 @@
+{
+  "head": "82c305fe2a7af49cbe9928e9b2fe1416f7810a41",
+  "index_at_start": "SOURCES.json had no kernel/configs entry; target path absent",
+  "kind": "source_only_candidate",
+  "limits": "No Soong graph, host build, target build, or device validation. SOURCES.json and README update delegated to parent agent.",
+  "official_remote": "https://android.googlesource.com/kernel/configs",
+  "peeled_commit": "82c305fe2a7af49cbe9928e9b2fe1416f7810a41",
+  "ref": "refs/tags/android-16.0.0_r4",
+  "regular_files": 79,
+  "root_tree": "e1452e62aff9ff0e04225b1732fc241afdd6cd53",
+  "scope": "official AOSP android-16.0.0_r4 kernel/configs full tracked tree; shallow history",
+  "source_pool_relative_path": "AOSP-16.0.0_r4/android-source/kernel-configs",
+  "symlinks": 0,
+  "tag_object": "5379e5d414cbe916d518a7d6c61b53efd44f8998",
+  "tracked_bytes": 223548,
+  "tracked_entries": 79,
+  "tracked_manifest": "TRACKED.tsv",
+  "tracked_manifest_sha256": "4c114f4bd2d713ec2cb3985cec542a6cd91c1ad501bf790e0e4c2ee578b8a2e3",
+  "verification": [
+    "official ls-remote annotated tag and peeled commit matched",
+    "HEAD and root tree verified",
+    "each tracked file Git blob/mode and SHA-256 verified",
+    "git status porcelain empty after final placement",
+    "git fsck --strict --no-reflogs exit 0"
+  ],
+  "verified_utc": "2026-10-04T08:50:45.113698+00:00"
+}

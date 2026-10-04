@@ -1,0 +1,22 @@
+{
+  "schema": "nanhai-g275-r4-source-intake-v1",
+  "at": "2026-10-04T08:51:03.519255+00:00",
+  "status": "SOURCE_IDENTITY_CANDIDATE_ONLY",
+  "upstream": "https://android.googlesource.com/platform/system/sepolicy",
+  "tag": "android-16.0.0_r4",
+  "head": "43e4494a5a78317819dcc2766a11927c12ef3dfd",
+  "tree": "c76731bbf18c27491ee925791d6c49c93c3d54c7",
+  "source": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system-sepolicy-r4-43e4494",
+  "tracked_entries": 4508,
+  "tracked_bytes": 23045633,
+  "symlinks": 17,
+  "tracked_manifest": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-system-sepolicy-r4-source-candidate-v1/TRACKED.tsv",
+    "sha256": "360be787e8f3d96fb7bad15d603289b352d4ae523cca810543b2a7f00cd770b7"
+  },
+  "definition": "build/soong/Android.bp:24 soong-selinux",
+  "git_status_clean": true,
+  "git_fsck_connectivity_rc": 0,
+  "build_pass": false,
+  "device_commands": 0
+}

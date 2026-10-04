@@ -1,0 +1,63 @@
+{
+  "schema": "nanhai-g275-two-r4-source-peer-review-v1",
+  "reviewed_utc": "2026-10-04T08:53:09.133815+00:00",
+  "role": "independent_read_only_source_peer",
+  "status": "SOURCE_IDENTITY_PASS_ONLY",
+  "method": [
+    "official ls-remote tag and peeled commit",
+    "local Git HEAD/tree/tag/remote/status and fsck connectivity",
+    "all tracked paths compared with Git ls-tree mode/blob and worktree bytes, SHA-256 and Git blob rehashed",
+    "candidate TRACKED.tsv and CANDIDATE.json SHA-256 compared with candidate and SOURCES.json",
+    "critical Android.bp definition and SHA-256",
+    "symlink target resolution and project input-view check"
+  ],
+  "repositories": [
+    {
+      "upstream_path": "kernel/configs",
+      "shared_path": "AOSP-16.0.0_r4/android-source/kernel-configs",
+      "official_tag_object": "5379e5d414cbe916d518a7d6c61b53efd44f8998",
+      "peeled_commit_and_head": "82c305fe2a7af49cbe9928e9b2fe1416f7810a41",
+      "root_tree": "e1452e62aff9ff0e04225b1732fc241afdd6cd53",
+      "tracked_entries": 79,
+      "tracked_bytes": 223548,
+      "symlinks": 0,
+      "manifest_sha256": "4c114f4bd2d713ec2cb3985cec542a6cd91c1ad501bf790e0e4c2ee578b8a2e3",
+      "candidate_sha256": "870333d11d48c9ecaf100ef5f5bb1cd8927dcc941cb27dbcc9b5e35de1bac03e",
+      "critical_definition": "build/Android.bp:21 kernel-config-soong-rules",
+      "critical_android_bp_sha256": "85eb74f408c5c60bea7a199d628f30427c64ad989977e9d7c9db4c3370fb80d1",
+      "git_status_clean": true,
+      "tracked_content_errors": 0
+    },
+    {
+      "upstream_path": "system/sepolicy",
+      "shared_path": "AOSP-16.0.0_r4/android-source/system-sepolicy-r4-43e4494",
+      "official_tag_object": "d2be9a5d6a74bc426268eb13f32e43e4a217d9b6",
+      "peeled_commit_and_head": "43e4494a5a78317819dcc2766a11927c12ef3dfd",
+      "root_tree": "c76731bbf18c27491ee925791d6c49c93c3d54c7",
+      "tracked_entries": 4508,
+      "tracked_bytes": 23045633,
+      "symlinks": 17,
+      "symlinks_resolve_inside_repository": true,
+      "manifest_sha256": "360be787e8f3d96fb7bad15d603289b352d4ae523cca810543b2a7f00cd770b7",
+      "candidate_sha256": "6f24c25d42ec6b1ecf628e746845ceb19d1fc5552f880ddcbedd3339621523a6",
+      "critical_definition": "build/soong/Android.bp:24 soong-selinux",
+      "critical_android_bp_sha256": "d71be4485bbad7c78b6a526d0fc1722e596b6d3c5475acb15bd8bdb6471f4cb2",
+      "git_status_clean": true,
+      "tracked_content_errors": 0
+    }
+  ],
+  "registration": {
+    "sources_json_sha256": "874554538e0907f1eb8b73494ef0b2493585675f1d7e1e17c094ca3c6d209d4a",
+    "readme_sha256": "4933092342a16c16124a81152cd6d241e2598eea6315e2a12bdafafe45cccedb",
+    "both_entries_match_head_tree_candidate_hash_and_source_only_limits": true,
+    "readme_g275_entry": "README.md:218"
+  },
+  "project_input_view": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view",
+    "g275_kernel_configs_link_present": false,
+    "g275_system_sepolicy_link_present": false,
+    "meaning": "source checkouts are qualified; stock build view is not yet bound to either repository"
+  },
+  "claim_boundary": "No Soong graph generation, host/target build, Bionic tool, APK startup or device acceptance follows from this source review.",
+  "mutations": "Only this REVIEW.json was created; source, control, build, device and Bridge state were not changed."
+}

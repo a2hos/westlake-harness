@@ -1,0 +1,84 @@
+{
+  "schema": "nanhai-g275-stock-input-v1",
+  "at": "2026-10-04T08:52:49.883477+00:00",
+  "status": "source-view-candidate-not-executable",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39/android-16.0.0_r4/ARM64/App-single-Bionic",
+  "predecessor_g274_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/runtime-result/RESULT.json",
+    "sha256": "24f7ceb9f6ec805358087b5e9e3b9106069501f0a50b2831f9f09a273153f5cf"
+  },
+  "predecessor_materialization": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/MATERIALIZATION.json",
+    "sha256": "809f117f1f583751413beb6698418411200bb213c696b12ab2ba46254a70edb9",
+    "readonly_roots": 38
+  },
+  "roots": [
+    {
+      "pool_relative": "AOSP-16.0.0_r4/android-source/kernel-configs",
+      "stock_root": "kernel/configs",
+      "commit": "82c305fe2a7af49cbe9928e9b2fe1416f7810a41",
+      "tree": "e1452e62aff9ff0e04225b1732fc241afdd6cd53",
+      "entries": 79,
+      "bytes": 223548,
+      "symlinks": 0,
+      "source_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-kernel-configs-r4-source-candidate-v1/CANDIDATE.json",
+      "source_receipt_sha256": "870333d11d48c9ecaf100ef5f5bb1cd8927dcc941cb27dbcc9b5e35de1bac03e",
+      "manifest": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-kernel-configs-r4-source-candidate-v1/TRACKED.tsv",
+      "manifest_sha256": "4c114f4bd2d713ec2cb3985cec542a6cd91c1ad501bf790e0e4c2ee578b8a2e3",
+      "definition": "build/Android.bp:kernel-config-soong-rules",
+      "project_input_link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-kernel-configs"
+    },
+    {
+      "pool_relative": "AOSP-16.0.0_r4/android-source/system-sepolicy-r4-43e4494",
+      "stock_root": "system/sepolicy",
+      "commit": "43e4494a5a78317819dcc2766a11927c12ef3dfd",
+      "tree": "c76731bbf18c27491ee925791d6c49c93c3d54c7",
+      "entries": 4508,
+      "bytes": 23045633,
+      "symlinks": 17,
+      "source_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-system-sepolicy-r4-source-candidate-v1/CANDIDATE.json",
+      "source_receipt_sha256": "6f24c25d42ec6b1ecf628e746845ceb19d1fc5552f880ddcbedd3339621523a6",
+      "manifest": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-system-sepolicy-r4-source-candidate-v1/TRACKED.tsv",
+      "manifest_sha256": "360be787e8f3d96fb7bad15d603289b352d4ae523cca810543b2a7f00cd770b7",
+      "definition": "build/soong/Android.bp:soong-selinux",
+      "project_input_link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-sepolicy"
+    }
+  ],
+  "new_stock_mounts": [
+    {
+      "type": "bind",
+      "source": "${NANHAI_INPUTS_ROOT}/aosp16-r4-kernel-configs",
+      "destination": "/src/kernel/configs",
+      "read_only": true
+    },
+    {
+      "type": "bind",
+      "source": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-sepolicy",
+      "destination": "/src/system/sepolicy",
+      "read_only": true
+    }
+  ],
+  "expected_stock_root_count": 40,
+  "source_identity_verified": true,
+  "stock_linux_mount_verified": false,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "owner_new_ACK": false,
+  "device_commands": 0,
+  "project_input_links": [
+    {
+      "link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-kernel-configs",
+      "target": "${NANHAI_SOURCE_POOL_ROOT}/AOSP-16.0.0_r4/android-source/kernel-configs",
+      "resolved_within_registered_source_root": true,
+      "read_only_consumption": true
+    },
+    {
+      "link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-sepolicy",
+      "target": "${NANHAI_SOURCE_POOL_ROOT}/AOSP-16.0.0_r4/android-source/system-sepolicy-r4-43e4494",
+      "resolved_within_registered_source_root": true,
+      "read_only_consumption": true
+    }
+  ]
+}

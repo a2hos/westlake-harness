@@ -1,0 +1,42 @@
+{
+  "schema": "nanhai-g275-source-view-root-admission-v1",
+  "at": "2026-10-04T08:54:17.124000+00:00",
+  "status": "ROOT_ADMIT_EXACT_R4_SOURCE_AND_PROJECT_LINKS_ONLY",
+  "input_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-stock-input-candidate-v1/INPUT-CANDIDATE.json",
+    "sha256": "9cccbd8062aa5215763ae2c45f39d2b1bb9342b9c840b954a5836906963bc995"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-source-peer-review-v1/REVIEW.json",
+    "sha256": "ccba1449fd57c5cffd7a5ce3ebe898dbb32430d9ec2eff5a3bfe17819f90ca9c"
+  },
+  "roots": [
+    {
+      "stock_root": "kernel/configs",
+      "source_link": ".nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/aosp16-r4-kernel-configs",
+      "resolved_source": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/kernel-configs",
+      "commit": "82c305fe2a7af49cbe9928e9b2fe1416f7810a41",
+      "tree": "e1452e62aff9ff0e04225b1732fc241afdd6cd53",
+      "manifest_sha256": "4c114f4bd2d713ec2cb3985cec542a6cd91c1ad501bf790e0e4c2ee578b8a2e3",
+      "definition": "build/Android.bp:kernel-config-soong-rules"
+    },
+    {
+      "stock_root": "system/sepolicy",
+      "source_link": ".nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/aosp16-r4-system-sepolicy",
+      "resolved_source": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system-sepolicy-r4-43e4494",
+      "commit": "43e4494a5a78317819dcc2766a11927c12ef3dfd",
+      "tree": "c76731bbf18c27491ee925791d6c49c93c3d54c7",
+      "manifest_sha256": "360be787e8f3d96fb7bad15d603289b352d4ae523cca810543b2a7f00cd770b7",
+      "definition": "build/soong/Android.bp:soong-selinux"
+    }
+  ],
+  "prior_roots": 38,
+  "new_roots": 2,
+  "stock_roots_planned": 40,
+  "linux_mount_verified": false,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "owner_new_ACK": false,
+  "device_commands": 0,
+  "next": "integrate full G275 source/SDK guard and exact graph oracle; independent review, original owner fresh ACK, root seal"
+}
