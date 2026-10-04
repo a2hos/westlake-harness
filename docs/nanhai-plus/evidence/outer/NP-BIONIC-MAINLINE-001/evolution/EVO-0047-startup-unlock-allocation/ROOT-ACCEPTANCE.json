@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-plus-evolution-root-acceptance-v1",
+  "at_utc": "2026-10-04T18:54:29+00:00",
+  "decision": "ACCEPT_ONE_CYCLE_ALLOCATION_PILOT_ONLY",
+  "report_sha256": "ccb33707fe1f98a4e2ee8a6759bd83ff5394facc767f7c68478de63fd04b803e",
+  "pilot_sha256": "bf21717dcd573bed7fc42c2d481d3f19e3866b6dc989a89471fc31fccadd1604",
+  "group_count": 4,
+  "duration_seconds": 78.436338583,
+  "accepted_improvement": "For one scheduling cycle, direct one marginal agent to an independently reviewable shared startup dependency gate while retaining a separate APK intake lane; compare actual gate receipt and intake throughput before reuse.",
+  "current_trial": "G279 v2b code-only candidate is under development; no local listener result has yet been accepted.",
+  "promotion_status": "NOT_PROMOTED",
+  "risk_boundary": "A local listener may not connect gz02 or unlock any APK; 100 static packages are potential inputs, not expected startup passes.",
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "at_utc": "2026-10-04T19:06:58Z",
+  "decision": "QUALIFY_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "package": "com.valvesoftware.android.steam.friendsui",
+  "version_name": "1.1",
+  "version_code": 10167321,
+  "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+  "raw_admission_sha256": "830196efabf1feba308a48c58a4145bd49fcd27e7fa12e7f361542cd033c59d0",
+  "independent_review_sha256": "e584f054378fdb2944e2efa329c991ed6a8732d6b8a32b9cb2e2da376c0046e7",
+  "current_duplicate_check": "Exact package absent from 17 prior qualified package IDs; Steam Mobile and Steam Link have other package IDs.",
+  "basis": "Valve official Steam Chat distribution; exact-package Google Play listing shows Valve Corporation and 10M+ downloads; bounded official public-source check did not establish complete buildable source for this Android client.",
+  "qualified_before": 17,
+  "qualified_after": 18,
+  "limits": "Blackbox means no complete buildable same-package client source was established in checked public official channels, not a claim that it does not exist anywhere. Current official webpage may expose Akamai rather than captured Fastly CDN link; byte equality between CDN hosts untested. Qualification and Play downloads are package-level, not cold start or exact-version installs.",
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

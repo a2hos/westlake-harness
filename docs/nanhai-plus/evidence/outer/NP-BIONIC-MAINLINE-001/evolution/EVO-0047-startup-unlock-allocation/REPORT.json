@@ -1,0 +1,92 @@
+{
+  "actual_scope": {
+    "authoritative_count_delta": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "network_commands": 0,
+    "real_proxy_commands": 0
+  },
+  "at_utc": "2026-10-04T18:54:08.312840+00:00",
+  "causal_chain": "100 static/17 qualified and zero starts -> unverified shared host dependency -> receipt-joined dependency-cut allocation -> avoid one extra queued input at expense of blocked startup path -> verify next accepted gate receipt and unchanged intake lane",
+  "challenged_assumption": "More test inputs necessarily accelerate first cold start; this cohort added inputs but no startup.",
+  "decision": "GO_ONE_CYCLE_ALLOCATION_PILOT_ONLY_NO_DISPATCH",
+  "direction": "Investment return and shared startup unlock surface; distinct from EVO46 runner-control contract",
+  "discarded_action": {
+    "action": "Use the next marginal agent exclusively for another APK intake while the earliest shared host dependency remains unverified.",
+    "causal_reason": "Input inventory and runtime dependency have separate proof chains.",
+    "observed_failure": "Syntax passed locally but listener, remote route, graph and cold start remain absent; newest intake cohort added zero starts.",
+    "source_anchor": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v3/ROOT-POSTRUN-ACCEPTANCE.json"
+  },
+  "duration_seconds": 78.436338583,
+  "end_monotonic_ns": 754440195914833,
+  "group_count": 4,
+  "grouping_note": "AdGuard raw, static and qualification are one linked outcome group with three separately pinned root receipts.",
+  "id": "EVO-0047-startup-unlock-allocation",
+  "inferences": [
+    "Another exact APK input cannot by itself prove the missing shared host route/build/startup gate.",
+    "A bounded local v2b private-listener/route receipt is the next specific dependency step after accepted v2a syntax, subject to current-state freshness and independent release.",
+    "The 100 static inputs are a potential downstream pool, not 100 proven startups or a measured fanout benefit."
+  ],
+  "observations": [
+    "G327 hide.me four-phase host static accepted, +1 static and zero cold starts.",
+    "G279 v2a-v2 root NO_GO on descendant escape; no release or real private config.",
+    "G279 v2a-v3 actual local syntax rc0 accepted, but no private proxy process, listener, gz02 connection, graph or startup.",
+    "G328/G329 AdGuard exact APK + static + blackbox qualification accepted as input only, with zero cold starts.",
+    "Current TASK-SUMMARY has 102 raw, 100 complete static, 17 qualified blackbox inputs, zero verified starts."
+  ],
+  "one_improvement": {
+    "candidate": "Use a receipt-joined dependency-cut worksheet before assigning a marginal agent: compare exact cohort intake delta with the earliest shared missing gate, then trial one agent on the next independently reviewable gate receipt while retaining intake work in another lane.",
+    "failure_behavior": "If no independently reviewable next gate packet exists, do not release; keep agent on bounded offline preparation or intake and record no trial.",
+    "falsifier": "A newer accepted independent route/graph already bypasses v2b, or v2b cannot pass offline gates; recompute dependency cut before spending another live cycle.",
+    "invalidation": "Recompute when a newer graph/route or startup receipt appears; reject stale summary or unrooted candidate as gate progress.",
+    "key": "TASK-SUMMARY SHA + exact root intake/static/qualification receipts + last accepted host gate and next absent gate",
+    "mechanism": "Moves effort to the dependency cut that prevents using already-ready inputs, instead of increasing a queue that cannot yet launch; makes the cut and its evidence explicit.",
+    "pilot_result": "Offline join verified this cohort +1 raw/+2 static/+1 qualified/0 starts, with v2a syntax rc0 but listener/remote graph absent; no dispatch.",
+    "pilot_sha256": "bf21717dcd573bed7fc42c2d481d3f19e3866b6dc989a89471fc31fccadd1604",
+    "promotion_gate": "After one cycle compare verified gate transition and intake throughput, then independently decide whether to reuse method. Do not infer 200 APK unlock from a local listener PASS.",
+    "risk": "The identified route may fail and other paths may be cheaper; refresh route evidence and compare alternatives before release.",
+    "scope": "One dispatch-cycle pilot only; no global scheduling change, no claim of expected startup count or guaranteed unlock.",
+    "success_receipt": "Root-accepted exact local listener identity and route behavior without global proxy mutation; still no startup claim.",
+    "trial": "For one cycle, move one otherwise incremental-intake agent to an independently reviewed v2b local listener/route readback packet; preserve another intake lane."
+  },
+  "problem": "Portfolio has 102 accepted raw identities, 100 four-phase static inventories and 17 qualified blackbox test inputs, but zero verified cold starts. Marginal intake keeps growing while common HelloWorld host path has not reached remote graph or launch.",
+  "result_groups": [
+    {
+      "name": "G327 hide.me static root",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "bfda759e29cf1dcc3e4efc0480c051ec153d1ab8d00b5fb76d3203d982ab35e6"
+    },
+    {
+      "name": "G279 v2a-v2 root NO_GO",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v2/ROOT-NO-GO.json",
+      "sha256": "da2024b8b861354e242c1739cc8a4b0ddcfeb464d19e5ccd7baec8f1338d2ecb"
+    },
+    {
+      "name": "G279 v2a-v3 syntax root",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v3/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766"
+    },
+    {
+      "name": "G328/G329 AdGuard raw root",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-adguardvpn-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a"
+    },
+    {
+      "name": "G328/G329 AdGuard static root",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "75ea0c79bde613708a3c19e2d162371b2e9625c91423663003d37e0c7c32c18f"
+    },
+    {
+      "name": "G328/G329 AdGuard qualification root",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g329-adguardvpn-blackbox-qualification-candidate-v1/ROOT-QUALIFICATION.json",
+      "sha256": "fcaa00952dfe11ddfecfa784cfe34958e5e2700c846cb0df91d05bebf41b78e8"
+    }
+  ],
+  "schema": "nanhai-plus-bounded-evolution-v1",
+  "start_monotonic_ns": 754361759576250,
+  "unknowns": [
+    "Whether v2b will pass, whether gz02 route will authenticate, and what first HelloWorld runtime wall appears.",
+    "How many static APKs will eventually share the same post-build startup wall."
+  ],
+  "within_120s": true
+}

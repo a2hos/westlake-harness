@@ -1,0 +1,63 @@
+{
+  "schema": "steam-chat-official-apk-independent-host-raw-review-v1",
+  "decision": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "handoff_sha256": "b4701f5396ff6abb34d65eded93631f2b356736f28acc4fce829cac502273e67",
+  "package": "com.valvesoftware.android.steam.friendsui",
+  "version_name": "1.1",
+  "version_code": 10167321,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-steam-chat-official-intake-candidate-v1/steam-chat.apk",
+  "apk_bytes": 94680962,
+  "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+  "official_distribution": {
+    "valve_page": "https://store.steampowered.com/mobile/",
+    "page_lists_distinct_steam_chat_app": true,
+    "page_direct_apk_link": "https://cdn.fastly.steamstatic.com/apps/steam-chat/steam-chat-app-1.1.apk",
+    "captured_get_rc": 0,
+    "captured_http_status": 200,
+    "captured_tls_verify_result": 0,
+    "captured_redirects": 0,
+    "captured_effective_url": "https://cdn.fastly.steamstatic.com/apps/steam-chat/steam-chat-app-1.1.apk",
+    "captured_download_bytes": 94680962,
+    "provenance_limit": "The official Valve page directly links the exact URL and captured GET metrics plus bytes are consistent, but a full command-to-byte transcript and an independently published publisher certificate pin are not present."
+  },
+  "host_integrity": {
+    "zip_entries": 1834,
+    "zip_crc_all": true,
+    "zip_duplicate_names": 0,
+    "manifest_count": 1,
+    "aapt2_rerun_rc": 0,
+    "aapt2_output_identical_to_capture": true,
+    "min_sdk": 26,
+    "target_sdk": 35,
+    "apksigner_rerun_rc": 0,
+    "apksigner_output_identical_to_capture": true,
+    "signature_v2_verified": true,
+    "signer_cert_sha256": "5dff6b05761447a5bdf919ea88fc6fdf20d301e30b2315415c4d368ec0fbda45"
+  },
+  "native_architecture": {
+    "arm64_elf64_little_endian_em_aarch64": 19,
+    "armeabi_v7a_elf32_em_arm": 19,
+    "x86_elf32_em_386": 19,
+    "x86_64_elf64_em_x86_64": 19,
+    "non_elf_so": 0,
+    "classification_method": "ZIP member ELF magic, class, endianness, and e_machine, not ABI path alone"
+  },
+  "dedupe": {
+    "prior_steam_raw_receipt_sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+    "prior_steam_mobile_package": "com.valvesoftware.android.steam.community",
+    "prior_steam_link_package": "com.valvesoftware.steamlink",
+    "package_and_sha_distinct_from_both": true,
+    "exact_package_absent_from_current_task_summary": true
+  },
+  "claim_boundary": {
+    "play_listing_package_matches_apk": true,
+    "play_publisher": "Valve Corporation",
+    "play_cumulative_downloads": "10M+",
+    "blackbox_qualification_accepted_here": false,
+    "complete_host_static_accepted_here": false,
+    "installation_or_startup_proven": false,
+    "authoritative_count_delta_by_review": 0
+  },
+  "verification": "15 independent local checks passed: exact APK SHA and size, captured HTTP/TLS metrics, ZIP CRC/member count/no duplicates, ELF content classification, rerun aapt2 and apksigner byte-identical to captured outputs, and distinction from both previously accepted Steam APKs.",
+  "review_actions": "Read local captured evidence and official Valve/Play pages; reran host-only metadata and signature verification; no APK redownload, device, container, or authoritative-summary mutation."
+}

@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-04T19:03:40.209888+00:00",
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "config_sha256": "bd8d42693e99a0153552255549cb54f72af3661e294ccd2a8184b0855867f136",
+  "container_commands": 0,
+  "decision": "OBSERVED_FULL_REPLY",
+  "device_commands": 0,
+  "gz02_requests": 0,
+  "listener_after_stop": false,
+  "mock_node": "socks5:127.0.0.1:9",
+  "namespace_commands": 0,
+  "normalized_route_event": {
+    "action": "REJECT",
+    "raw_line_sha256": "59c546de3bde92e660f686a35b91d07f5441b5dce9c18888064f9578877303a9",
+    "rule": "Match",
+    "schema": "g279-v2b-v3-normalized-route-event",
+    "source_ip": "127.0.0.1",
+    "source_port": 64500,
+    "target_ip": "203.0.113.1",
+    "target_port": 9
+  },
+  "normalized_route_event_sha256": "d0a8e77be084b3cf0f924141aa56fdb36153cd4f925ce2f94ff227a7923b955c",
+  "policy_sha256": "dbd367a1e00dd2df2b7cd1e7fb82e167c9f2a7f376cfed2ab08ea2fff57e68f7",
+  "post_reply": "eof",
+  "process_group_clean": true,
+  "real_node_credentials": false,
+  "reply_hex": "050000017f000001fbf2",
+  "rules": [
+    "IP-CIDR,1.95.90.207/32,PROXY,no-resolve",
+    "MATCH,REJECT"
+  ],
+  "sandbox_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "schema": "g279-v2b-v3-exact-binary-mock-oracle-v1",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 1095,
+  "stdout_sha256": "3f0a64c98f690afb7be0a7c931bb5c58c04330965d37d9861adca30c765ba49d",
+  "target": "203.0.113.1:9"
+}

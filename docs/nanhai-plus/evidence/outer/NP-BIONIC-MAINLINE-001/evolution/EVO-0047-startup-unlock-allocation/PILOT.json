@@ -1,0 +1,40 @@
+{
+  "candidate_allocation_trial": "Temporarily assign one otherwise incremental-APK-intake agent to a bounded v2b local listener/route readback packet; keep an independent intake lane. This is a recommendation only, no dispatch.",
+  "cohort_observed_delta": {
+    "four_phase_static_delta": 2,
+    "qualified_blackbox_input_delta": 1,
+    "root_raw_delta": 1,
+    "verified_cold_start_delta": 0
+  },
+  "container_commands": 0,
+  "count_delta": 0,
+  "device_commands": 0,
+  "fanout_note": "100 static inputs are a potential downstream backlog, not 100 proven launches; this pilot does not assign a numeric expected startup gain.",
+  "input_sha256": {
+    "adguard_qualification": "fcaa00952dfe11ddfecfa784cfe34958e5e2700c846cb0df91d05bebf41b78e8",
+    "adguard_raw": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+    "adguard_static": "75ea0c79bde613708a3c19e2d162371b2e9625c91423663003d37e0c7c32c18f",
+    "hide_static": "bfda759e29cf1dcc3e4efc0480c051ec153d1ab8d00b5fb76d3203d982ab35e6",
+    "v2a_v2_no_go": "da2024b8b861354e242c1739cc8a4b0ddcfeb464d19e5ccd7baec8f1338d2ecb",
+    "v2a_v3_syntax": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766"
+  },
+  "network_commands": 0,
+  "no_dispatch": true,
+  "portfolio": {
+    "four_phase_static": 100,
+    "qualified_blackbox_inputs": 17,
+    "raw": 102,
+    "verified_cold_starts": 0
+  },
+  "schema": "evo47-dependency-cut-offline-pilot-v1",
+  "shared_gate_readback": {
+    "gz02_ssh_observed": false,
+    "native_graph_observed": false,
+    "private_listener_observed": false,
+    "private_syntax_rc0": true
+  },
+  "summary_sha256": "c52ffcd453265c981fb307eb4c38ab205f76cb6565d12b739be557e0365cbfd8",
+  "trial_falsifier": "Fresh state shows an already accepted independent route/graph, or v2b packet cannot pass offline controls; then recompute cut instead of spending another cycle on this route.",
+  "trial_success_receipt": "Peer/root accepted v2b local listener identity and route behavior, with exact process and no global proxy mutation; still not a startup.",
+  "why_next_gate": "Exact syntax is accepted, but no private process/listener/remote path exists; another raw/static input cannot itself establish the missing shared host gate."
+}

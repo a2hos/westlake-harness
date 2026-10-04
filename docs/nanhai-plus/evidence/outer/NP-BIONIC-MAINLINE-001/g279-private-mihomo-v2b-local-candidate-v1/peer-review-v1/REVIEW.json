@@ -1,0 +1,31 @@
+{
+  "accepted_static_findings": [
+    "v2a root postrun SHA and terminal SHA are pinned and checked before any v2b START. Candidate/runner/fixture/handoff hashes match their frozen references; no v2b root release or START exists.",
+    "One-shot release binds candidate, runner, peer review, upstream receipts, source, binary, Seatbelt policy and port; late source/PID/socket/leaf recheck precedes private config write.",
+    "Private config and raw logs use project gitignored 0700/0600 O_EXCL paths; exact rules are gz02 /32 PROXY then MATCH REJECT; no global proxy write, SSH, graph, device, container or namespace command appears in runner.",
+    "Structured lsof parser and kernel loopback fixture reject wrong PID/address; process-group stop, no-listener readback and private cleanup are coded, with private retention on unproven process cleanup."
+  ],
+  "at_utc": "2026-10-04T18:56:36.292933+00:00",
+  "blocking_finding": "socks_negative accepts any nonzero SOCKS REP after reading as little as two bytes, then reports a TEST-NET-3 rejection. The same function accepted a local credential-free fake server returning truncated b\\x05\\x01 (2 bytes) and a full b\\x05\\x05 generic failure. Neither proves MATCH,REJECT was selected; a malformed reply or unrelated proxy failure can be counted as the intended negative. Existing fixtures test REP=2 and REP=0 only, so they miss this false-success class. This is material to the v2b stated negative oracle and cannot justify root release.",
+  "candidate_sha256": "931e9e72ccd90b1842993d38488ebf8f58146cf7d7a668bc8e48fc076b4c2ebc",
+  "decision": "NO_GO_V2B_EXECUTION_V1",
+  "fixture_result_sha256": "9f6b14c1b0b91eec4f9448fa2676b758370291897f5449e33376da8ad05158b9",
+  "fixtures_sha256": "0a5d28c5507a7042a60681c5b41ec03598286d53cee59498c6407d62562cb888",
+  "independent_negative_probe": {
+    "generic_failure_accepted_as_rejection": true,
+    "generic_failure_reply_code": 5,
+    "scope": "loopback fake SOCKS server only, no mihomo or real endpoint",
+    "truncated_reply_accepted_as_rejection": true,
+    "truncated_reply_hex": "0501"
+  },
+  "limits": [
+    "v2a syntax rc0 is not v2b listener or route acceptance.",
+    "No live private mihomo or gz02 request was run in this review; selected real node network activity under v2b policy remains unobserved.",
+    "MacOS Seatbelt process policy is not Docker/Podman/OCI or a namespace."
+  ],
+  "required_fix": "New immutable candidate generation: read a complete SOCKS reply and validate version/reserved/address shape; derive the exact REJECT REP from exact Mihomo implementation or bounded no-credential runtime evidence, then accept only that code. Add independent negative fixtures for generic failure and truncated/malformed replies while retaining the current release/identity/cleanup gates.",
+  "review_actions": "Read-only code and immutable SHA review plus a local fake SOCKS listener negative probe; no real credentials, Mihomo instance, SSH, device, container, namespace, Bridge or count edit.",
+  "runner_sha256": "f344debf01779486cd5bcb9b1eec13cf89b1efa28b3b2b5c30b6ab454a67f806",
+  "schema": "g279-private-mihomo-v2b-local-peer-review-v1",
+  "upstream_postrun_sha256": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766"
+}

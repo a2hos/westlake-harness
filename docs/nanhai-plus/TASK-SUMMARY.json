@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 102,
+    "downloaded_payloads": 103,
     "latest_raw_admission": {
       "packages": [
-        "com.adguard.vpn"
+        "com.valvesoftware.android.steam.friendsui"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-adguardvpn-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
-      "scope": "exact official AdGuard VPN 2.16.4 APK host raw only; landing-page version differs; no static/blackbox/startup acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-steam-chat-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "830196efabf1feba308a48c58a4145bd49fcd27e7fa12e7f361542cd033c59d0",
+      "scope": "exact official-linked Steam Chat 1.1 APK host raw only; no static or startup acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,27 +53,27 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 100,
-    "complete_inventory_dex_entries": 325,
+    "complete_static_inventories": 101,
+    "complete_inventory_dex_entries": 329,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1446,
+    "complete_inventory_native_elf_entries": 1465,
     "latest_complete_static_admission": {
-      "package": "com.adguard.vpn",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "75ea0c79bde613708a3c19e2d162371b2e9625c91423663003d37e0c7c32c18f",
-      "scope": "four-phase host static of exact accepted 2.16.4 bytes; 3 DEX and 4 true ARM64 ELF; no blackbox qualification or startup"
+      "package": "com.valvesoftware.android.steam.friendsui",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g329-steamchat-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "c8e2de958111be7a8a20ffd37e8f316dbdcbe483e91d1dd8bf9546ad50810242",
+      "scope": "four-phase host static of exact accepted Steam Chat 1.1 bytes; 4 DEX and 19 true ARM64 ELF; no runtime bridge classification or startup"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 27,
-    "qualified_blackbox_packages": 17,
+    "supplemental_payloads": 28,
+    "qualified_blackbox_packages": 18,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -91,7 +91,8 @@
       "com.lemon.lvoverseas",
       "com.zhiliaoapp.musically",
       "com.expressvpn.vpn",
-      "com.adguard.vpn"
+      "com.adguard.vpn",
+      "com.valvesoftware.android.steam.friendsui"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -102,10 +103,10 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.adguard.vpn",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g329-adguardvpn-blackbox-qualification-candidate-v1/ROOT-QUALIFICATION.json",
-      "sha256": "fcaa00952dfe11ddfecfa784cfe34958e5e2700c846cb0df91d05bebf41b78e8",
-      "scope": "exact-package overseas-mainstream closed-source blackbox test input only; 10M+ Play package-level downloads; no startup"
+      "package": "com.valvesoftware.android.steam.friendsui",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-steam-chat-official-intake-candidate-v1/ROOT-QUALIFICATION.json",
+      "sha256": "312a408715a6a16765e03af92b39a39cfe2788c3a13eb1d42ac6cc08743ad054",
+      "scope": "qualified test input only; no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -2220,6 +2221,99 @@
       "sha256": "fcaa00952dfe11ddfecfa784cfe34958e5e2700c846cb0df91d05bebf41b78e8"
     },
     "qualified_after": 17,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2b_v1": {
+    "status": "root_no_go_execution_v1",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2b-local-candidate-v1/ROOT-NO-GO.json",
+      "sha256": "a9532ada14193199926474083641d16ae343909e731ed1a6893c52608b0c93fe"
+    },
+    "reason": "SOCKS negative test accepted truncated and generic failures as rule rejection",
+    "private_process_started": false,
+    "gz02_connected": false,
+    "startup_delta": 0
+  },
+  "evo47": {
+    "status": "accepted_one_cycle_allocation_pilot_not_promoted",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0047-startup-unlock-allocation/ROOT-ACCEPTANCE.json",
+      "sha256": "32e140328729a31fed45f1934278f9a87e65d2b1f290900211978f5522d56ab6"
+    },
+    "startup_delta": 0
+  },
+  "g330_steam_chat_official_raw": {
+    "status": "accepted_one_exact_official_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-steam-chat-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "830196efabf1feba308a48c58a4145bd49fcd27e7fa12e7f361542cd033c59d0"
+    },
+    "raw_after": 103,
+    "static_delta": 0,
+    "qualified_blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "g331_steam_chat_blackbox_qualification": {
+    "status": "qualified_exact_package_test_input_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-steam-chat-official-intake-candidate-v1/ROOT-QUALIFICATION.json",
+      "sha256": "312a408715a6a16765e03af92b39a39cfe2788c3a13eb1d42ac6cc08743ad054"
+    },
+    "qualified_after": 18,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2b_v2": {
+    "status": "root_no_go_execution_v2",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2b-local-candidate-v2/ROOT-NO-GO.json",
+      "sha256": "694407b99c0a717c685ff0232b846dd34d03aa54ee911fb7a89967702b7ac134"
+    },
+    "reason": "real debug route event hash could not be independently recomputed after private log deletion",
+    "private_process_started": false,
+    "gz02_connected": false,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2b_v3": {
+    "status": "root_no_go_execution_v3",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2b-local-candidate-v3/ROOT-NO-GO.json",
+      "sha256": "e98cd6d95238a7f514524b8242da406a7612109df1d86e50b10291075adb426d"
+    },
+    "reason": "normalized event omitted real raw line timestamp so raw SHA could not be independently recomputed",
+    "private_process_started": false,
+    "gz02_connected": false,
+    "startup_delta": 0
+  },
+  "g329_steam_chat_four_static": {
+    "status": "accepted_exact_four_phase_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g329-steamchat-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "c8e2de958111be7a8a20ffd37e8f316dbdcbe483e91d1dd8bf9546ad50810242"
+    },
+    "static_after": 101,
+    "semantic_dex_after": 329,
+    "true_arm64_elf_after": 1465,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2b_v4": {
+    "status": "accepted_bounded_local_reject_facts_not_command_pass",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2b-local-candidate-v4/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "369462a2e1b4d051739ce3347b3bbb0af25eafa74f7f23f1044d66fc957e5030"
+    },
+    "one_shot_consumed": true,
+    "outer_command_rc": 2,
+    "local_testnet_reject_fact_proven": true,
+    "gz02_connected": false,
+    "graph_result_observed": false,
+    "startup_delta": 0
+  },
+  "evo48": {
+    "status": "accepted_evidence_roundtrip_pilot_not_promoted",
+    "receipt": {
+      "path": "docs/nanhai-plus/evolution/EVO-0048-evidence-roundtrip-preflight/ROOT-ACCEPTANCE.json",
+      "sha256": "f79c3b0e9405d54a763c132610d15456de71c0bb106847db74e0c44ed661f98b"
+    },
     "startup_delta": 0
   }
 }

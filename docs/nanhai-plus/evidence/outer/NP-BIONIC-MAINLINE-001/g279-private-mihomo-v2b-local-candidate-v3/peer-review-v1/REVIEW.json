@@ -1,0 +1,35 @@
+{
+  "accepted_static_findings": [
+    "The normalized route event is selected from exactly one complete Mihomo info log line. A fullmatch whitelist rejects forged substring, duplicate TCP route lines and sensitive suffix; only fixed source/target/rule/action and bounded source port are exported.",
+    "Mock exact-binary raw line SHA and canonical normalized event SHA independently recompute from retained no-credential mock raw stdout/event. Existing SOCKS complete-reply, REP0 then EOF, generic/truncated/malformed negative fixtures remain.",
+    "Real debug stdout/stderr and credential config stay in project-private 0700/0600 files and are deleted only after process-group and listener cleanup; no verbatim debug log is exported into TERMINAL.",
+    "Upstream v2a acceptance, exact release/nonce, fresh source/controller/leaf, structured lsof PID and loopback listener and exact /32 plus MATCH REJECT code gates remain. Seatbelt policy is native host process control, not a container or namespace."
+  ],
+  "at_utc": "2026-10-04T19:04:58.915225+00:00",
+  "blocking_finding": "The real TERMINAL exports normalized_route_event and route_event_sha256, but the normalized record omits the timestamp contained in the matched raw log line. Thus its canonical event SHA can be recomputed postrun, while raw_line_sha256 cannot be independently recomputed after the private raw log is deleted. The mock raw line does not establish what bytes the real run matched. The v2 evidence gap is only partially closed; the sole real route-selection oracle still has an unreviewable raw-line binding.",
+  "candidate_sha256": "7b5c1cbd6c2f66fdbd30aae7d0c80f5cc7558a8406acc0c49425b6a59412dd83",
+  "decision": "NO_GO_V2B_REAL_EXECUTION_V3",
+  "fixture_sha256": "992ea44c6d5c4a9d41d5b58b73e70d2d80f613de857555854c35917a7a042208",
+  "limits": [
+    "No real private node was started or GZ02 contacted in this review.",
+    "Mock node differs from real selected node; local TEST-NET-3 REJECT does not prove gz02 /32 PROXY route, SSH, graph, HelloWorld or device.",
+    "Forced SIGKILL/host loss may leave private 0600 artifacts for nonce-based manual cleanup."
+  ],
+  "mock_oracle_sha256": "42dd0e316b90f8635ed8abf3f9ae4330e43881c3c1ae2b6d19cdb5316fd0e0db",
+  "mock_recheck": {
+    "mock_normalized_event_sha_recomputed": true,
+    "mock_raw_line_sha_recomputed": true,
+    "mock_route_line_count": 1,
+    "real_event_schema_has_full_whitelisted_line": false,
+    "real_event_schema_has_timestamp": false
+  },
+  "mock_stdout_sha256": "3f0a64c98f690afb7be0a7c931bb5c58c04330965d37d9861adca30c765ba49d",
+  "required_fix": "In a new immutable candidate, export either the exact complete log line only after strict fullmatch against the fixed credential-free whitelist, or export the matched timestamp plus the normalized fields and a canonical reconstruction rule so a postrun reviewer can recompute both raw_line_sha256 and event SHA. Add a fixture round-trip that reconstructs the mock raw line byte-for-byte from the exported record; continue to delete the full private debug stream after verified stop.",
+  "review_actions": "Read-only frozen code, fixture and no-credential mock artifact review; no real proxy, credentials, SSH, device, container, namespace, Bridge or count update.",
+  "root_release_present": false,
+  "runner_sha256": "d7510b2180970ceb4dc5ce957b957bf698a5030216f95b71ae098a69b69bb732",
+  "schema": "g279-private-mihomo-v2b-local-peer-review-v3",
+  "start_present": false,
+  "terminal_present": false,
+  "v2_no_go_peer_sha256": "8cfeeeaa69882a0bc00f0c237e123050c7ecdd1df7f53af4eda1b881aecd8a08"
+}

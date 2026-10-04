@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai-plus-evolution-root-acceptance-v1",
+  "at_utc": "2026-10-04T19:08:46Z",
+  "decision": "ACCEPT_ONE_BOUNDED_EVIDENCE_ROUNDTRIP_PILOT_NOT_PROMOTED",
+  "result_sha256": "7b389a68440e2d7573efb3c7d3b2cf02fd5c7a03721a77be1bb827aabe85a79b",
+  "process_sha256": "7dddd123714141b6c593621c71518ec193e667efc2f77492c7d3b72d8bde8c6a",
+  "pilot_sha256": "287d01e032a9ae5c00e1b6b7e45a03df432014918377d293ffcfaa69d172a728",
+  "actual_result_groups": 4,
+  "single_improvement": "Before a real one-shot release, serialize the minimal nonsecret witness, simulate private raw deletion and independently recompute every decisive hash in a credential-free fixture.",
+  "lens": "postrun evidence reproducibility; distinct from EVO46 timing and EVO47 allocation",
+  "pilot_result": "V3 mock raw and event SHA recompute, but the actual terminal schema cannot reconstruct the raw timestamp-bearing line; Steam Chat retained APK SHA recomputes.",
+  "broadly_promoted": false,
+  "next_falsifier": "Apply to v2b v4 mock and expected terminal; both raw line and event hashes must recompute from retained fields after simulated private log deletion.",
+  "count_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

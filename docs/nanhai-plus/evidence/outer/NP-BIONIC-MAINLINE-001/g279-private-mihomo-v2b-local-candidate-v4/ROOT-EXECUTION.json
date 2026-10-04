@@ -1,0 +1,17 @@
+{
+  "schema": "g279-private-mihomo-v2b-v4-root-command-observation-v1",
+  "at_utc_recorded": "2026-10-04T19:11:41Z",
+  "command": ["python3", "-B", "scripts/nanhai_plus_env.py", "--run", "/usr/bin/python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2b-local-candidate-v4/runner.py", "--execute"],
+  "process_exit_code": 2,
+  "stdout_lines": [
+    "{\"decision\": \"GO_V2B_LOCAL_TESTNET_REJECT_LOG_ONLY\", \"terminal_sha256\": \"7dac082c049a4db44e68e558f87d349e7ff7f198a5a34687c33bbcd0e51e24b0\", \"nonce\": \"9d028cd8f82dbc8b25628210d153fc13\"}",
+    "{\"decision\": \"NO_GO_BEFORE_START\", \"failure_class\": \"SystemExit\"}"
+  ],
+  "interpretation": "The immutable runner wrote one GO-scoped TERMINAL, then its outer except BaseException caught the normal SystemExit(0) and produced rc2. The command is not PASS; the START nonce is consumed and must never be replayed.",
+  "terminal_sha256": "7dac082c049a4db44e68e558f87d349e7ff7f198a5a34687c33bbcd0e51e24b0",
+  "command_pass": false,
+  "replay_allowed": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "g279-private-mihomo-v2b-local-root-no-go-v2",
+  "at_utc": "2026-10-04T19:02:39+00:00",
+  "decision": "NO_GO_V2B_REAL_EXECUTION_V2",
+  "candidate_sha256": "b625747fd5d46d9d859cf9a384499d59b7fdfb8e6d03633f603d7d3cb0c82c67",
+  "runner_sha256": "c637d7713f165f40dec1e4803bcb806a332fd98008827a2f5a628f4aa779684a",
+  "independent_review_sha256": "8cfeeeaa69882a0bc00f0c237e123050c7ecdd1df7f53af4eda1b881aecd8a08",
+  "accepted_code_only": "Complete SOCKS reply validation and exact Mihomo mock REP0 then EOF with a MATCH/REJECT debug event; no real node was started.",
+  "remaining_blocker": "Actual route selection would be asserted using a private debug log deleted after success; event SHA alone cannot be independently recomputed or reviewed.",
+  "next": "new v3 candidate exporting one strictly validated nonsecret route event while retaining private raw log cleanup",
+  "release_issued": false,
+  "start_exists": false,
+  "private_process_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

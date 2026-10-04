@@ -1,0 +1,42 @@
+{
+  "apk_bytes": 94680962,
+  "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+  "at_utc": "2026-10-04T19:10:18.720111+00:00",
+  "authoritative_count_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "bridge_gap_classification": "NOT_YET_PROVEN",
+  "candidate_handoff_sha256": "08db546b9952e47481769e26a1947b0295b5d913f82f65a87164fe939e785561",
+  "candidate_result_sha256": "647dc261314bd4b8a84a1c9caa42ac85db95fcf571c141a271ae5e21cdc3e78b",
+  "checks": {
+    "all_handoff_ref_hashes": true,
+    "bridge_gap_claim_bounded": true,
+    "dex_semantic_inventory_not_just_names": true,
+    "exact_root_raw_apk_and_scanner_guard": true,
+    "four_command_phase_receipts": true,
+    "four_dex_bytes_magic_sha": true,
+    "true_arm64_and_other_abi_separate": true,
+    "zip_crc_exact_census": true
+  },
+  "container_commands": 0,
+  "decision": "GO_HOST_STATIC_CANDIDATE_ONLY",
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "four_phases_rc0": true,
+  "limits": [
+    "Host static inventory does not prove any DEX member is unresolved against the current AOSP16/OH7 Bionic runtime.",
+    "Static demand presence does not prove cold-start reachability or a missing implementation.",
+    "No package installation, device operation, or cold start was performed."
+  ],
+  "network_commands": 0,
+  "non_elf_so": 0,
+  "other_abi_true_elf": {
+    "armeabi-v7a": 19,
+    "x86": 19,
+    "x86_64": 19
+  },
+  "root_dex": 4,
+  "root_raw_admission_sha256": "830196efabf1feba308a48c58a4145bd49fcd27e7fa12e7f361542cd033c59d0",
+  "schema": "g329-steamchat-four-static-independent-review-v1",
+  "startup_delta": 0,
+  "true_arm64_elf": 19
+}

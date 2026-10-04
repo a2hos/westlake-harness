@@ -1,0 +1,29 @@
+{
+  "accepted_limits": [
+    "The actual selected-node parser and listener remain untested.",
+    "REP=0 then EOF alone is explicitly recorded as connection closure, not route rejection; the log event must carry the rule oracle.",
+    "The saved mock config uses a fake socks5 loopback node and is structurally equivalent only in non-node fields; it is not a real-node run.",
+    "No positive gz02 PROXY route, SSH, graph, APK startup or device claim follows."
+  ],
+  "at_utc": "2026-10-04T19:02:18.637625+00:00",
+  "blocking_finding": "The exact route event is the sole oracle for a real TEST-NET-3 MATCH/REJECT selection, but after a clean run run_instance deletes the credential-bearing raw debug log and exports only route_event_sha256 plus route_reject_proven=True. A postrun independent reviewer cannot recompute the event SHA or inspect its target/rule/action from the deleted raw stream. The mock event proves the parser can find a mock event, not that the real one occurred. Thus the candidate cannot deliver independently reviewable evidence for its stated v2b result.",
+  "candidate_sha256": "b625747fd5d46d9d859cf9a384499d59b7fdfb8e6d03633f603d7d3cb0c82c67",
+  "decision": "NO_GO_V2B_REAL_EXECUTION_V2",
+  "fixture_sha256": "fb63c3bdc6d4738d51e00e509af4dc1ad0e30db9b6ea7bdbf1a222f46a413665",
+  "mock_oracle_sha256": "e7ffa4b2bc0727c13ca46cae9244a4f13e9ff388e83f7d4a8361b9010af5494a",
+  "mock_stdout_sha256": "c0562b05511197f5e5420134f0f3d8c2210ebbd03ce9dfc8c912039ebb080b09",
+  "required_fix": "New frozen generation: while holding the private raw log, parse exactly one whole log event and export only a strict, credential-free normalized record (source=127.0.0.1 with ephemeral port, target=203.0.113.1:9, rule=Match, action=REJECT) with raw-matched-event SHA; whitelist field lengths/characters and reject extra event or ambiguity. Do not export the full debug log, node name, server or password. Add a fixture that a forged substring/generic log cannot produce the normalized event and that postrun can recompute its digest from the exported record. Preserve private raw log deletion only after process cleanup.",
+  "resolved_v1_findings": [
+    "SOCKS5 parser now reads a complete reply, validates version/reserved/ATYP/address/port and requires REP=0, loopback bind shape, then EOF. Generic failure, truncated reply, malformed ATYP and data-after-reply fixtures reject.",
+    "Exact bundled Mihomo no-credential mock records complete REP=0 then EOF, plus one actual debug route event for 203.0.113.1:9 Match using REJECT; mock binary/config/policy/raw stream hashes match.",
+    "Generated real config retains exact gz02 /32 PROXY then MATCH REJECT rules; structured lsof PID/loopback listener, source/controller/leaf freshness, release/nonce and private process-group/credential cleanup gates remain.",
+    "Debug logs are held in private 0600 files and are not copied verbatim into TERMINAL; process uncertainty retains the private directory. Seatbelt is a native macOS process policy, not a container/image/namespace."
+  ],
+  "review_actions": "Read-only candidate/fixture/raw mock and hash review only; no real proxy, credentials, SSH, device, container, namespace, Bridge or count change.",
+  "root_release_present": false,
+  "runner_sha256": "c637d7713f165f40dec1e4803bcb806a332fd98008827a2f5a628f4aa779684a",
+  "schema": "g279-private-mihomo-v2b-local-peer-review-v2",
+  "start_present": false,
+  "terminal_present": false,
+  "upstream_postrun_sha256": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766"
+}

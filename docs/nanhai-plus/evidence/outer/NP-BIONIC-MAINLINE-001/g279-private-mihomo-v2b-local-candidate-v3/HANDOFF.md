@@ -1,0 +1,11 @@
+# G279 v2b v3: reviewable local REJECT event, candidate only
+
+v1 and v2 remain frozen NO_GO. v3 changes only the route evidence oracle and its test generation. The actual selected node and `runner.py --execute` have not run; no v3 root release, START, or TERMINAL exists.
+
+The exact bundled Mihomo was started only with `MOCK-CONFIG.yaml`: fake SOCKS5 node `127.0.0.1:9`, project-private runtime, no credentials, same non-node configuration and rules (`1.95.90.207/32 → PROXY`, then `MATCH → REJECT`). `MOCK-ORACLE.json` binds the exact binary, policy, config and raw mock log hashes. The complete local TEST-NET-3 SOCKS reply was `REP=0` followed by EOF; this stream alone is not the REJECT oracle. The mock's sole full debug route line showed `203.0.113.1:9 match Match using REJECT`. The fake process/listener ended and its runtime was removed. No gz02 request was sent.
+
+For a later released real-node run, v3 accepts exactly one complete log line in the narrow Mihomo timestamp/level/message format. It rejects forged substrings, any additional TCP route line, a different destination, action or rule, invalid source port, and appended fields. The parser exports into TERMINAL only a normalized record with schema, source `127.0.0.1` and dynamic port, target `203.0.113.1:9`, rule `Match`, action `REJECT`, and SHA256 of the original complete matched line. It also exports SHA256 of a canonical JSON encoding of that normalized record, which a postrun reviewer can recompute without access to the deleted raw debug log. No node name, server, password, unrelated log text, or raw line is exported. The original log remains 0600 and is removed only after verified process stop; uncertainty retains the private directory and returns NO_GO.
+
+`FIXTURE.json` records local no-credential parser and socket negatives, including recomputation of the exported event digest against `MOCK-ORACLE.json`, strict field whitelist and original mock line SHA. This only validates a local TEST-NET-3 `MATCH/REJECT` negative. It proves nothing about the gz02 `/32 → PROXY` positive path, SSH, graph, app startup or device.
+
+Independent peer review and an exact v3 root release are required before the real-node one-shot can execute. Any change after review requires a new immutable generation.

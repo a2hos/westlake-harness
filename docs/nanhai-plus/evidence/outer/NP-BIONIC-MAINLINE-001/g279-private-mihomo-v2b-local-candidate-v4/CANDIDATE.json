@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-04T19:08:19.936766+00:00",
+  "container_commands": 0,
+  "decision": "CANDIDATE_ONLY_NOT_RELEASED",
+  "device_commands": 0,
+  "files_sha256": {
+    "FIXTURE-STDERR.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FIXTURE-STDOUT.raw": "e76b61c7dfa6861e50cc4f67fbef2e6ee1817bb5776cfa184352222d0fe2b3b2",
+    "FIXTURE.json": "1123eb696a84efad6c4e3005a134e88b6a7116c93d6efbf860a0c269d2e9f36a",
+    "HANDOFF.md": "80d814d7fb3cb8a125f0868c23eb983e7dd4ea5b8d16b056905facf702b461e3",
+    "MOCK-STDOUT.raw": "3f0a64c98f690afb7be0a7c931bb5c58c04330965d37d9861adca30c765ba49d",
+    "fixtures.py": "569cc1b73bfe7214f92b68d0fa796d1bf23ef31a86a2bda097eb464c9cd82daa",
+    "runner.py": "5abc3e9ba6bc0a9ff379c29729df623713a9041d4bb25df4e7b165b5386688a0"
+  },
+  "fixture_check_count": 18,
+  "fixture_pass": true,
+  "fixture_rc": 0,
+  "gz02_requests": 0,
+  "handoff_gate_rc": 0,
+  "peer_review_present": false,
+  "real_mihomo_started": false,
+  "real_network_commands": 0,
+  "root_release_present": false,
+  "schema": "g279-private-mihomo-v2b-local-candidate-v4",
+  "scope": "host code-only repair of postrun raw line binding for local TEST-NET-3 REJECT evidence",
+  "start_present": false,
+  "startup_delta": 0,
+  "terminal_present": false,
+  "v3_peer_no_go_sha256": "238dd8cca75896cc940189a7558fa909662ca636afb3f8512d0916bcd7f79fc4"
+}

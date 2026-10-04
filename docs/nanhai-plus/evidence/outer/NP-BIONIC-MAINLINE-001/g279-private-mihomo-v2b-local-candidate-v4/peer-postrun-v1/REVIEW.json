@@ -1,0 +1,56 @@
+{
+  "acceptance_scope": "Accept the exact one-shot local private loopback listener ownership, TEST-NET-3 203.0.113.1:9 MATCH/REJECT route event, SOCKS REP0 then EOF, and observed cleanup as bounded host facts. No positive gz02 /32 PROXY, SSH, graph, HelloWorld, APK startup, or device acceptance.",
+  "at_utc": "2026-10-04T19:11:20.240029+00:00",
+  "candidate_sha256": "830a89d846c5df1ed3ea3cab2cbe8fc6fa59d4658c80caf569240a2cdea12b8f",
+  "chain_verified": true,
+  "command_boundary": {
+    "cause_in_exact_runner": "Top-level try invokes sys.exit(execute()); SystemExit(0) is caught by except BaseException, which prints NO_GO_BEFORE_START/SystemExit and exits 2 after the valid TERMINAL was written.",
+    "classification": "Outer command did not return rc0 and must not be recorded as command PASS; NO_GO_BEFORE_START/SystemExit is a wrapper artifact, not evidence that START was absent or the inner run failed.",
+    "parent_reported_external_rc": 2,
+    "replay_allowed": false,
+    "terminal_internal_decision": "GO_V2B_LOCAL_TESTNET_REJECT_LOG_ONLY"
+  },
+  "decision": "ACCEPT_BOUNDED_LOCAL_REJECT_FACTS_NOT_COMMAND_PASS",
+  "independent_postrun_checks": {
+    "event_fields_whitelisted": true,
+    "event_sha_recomputed": true,
+    "matching_private_process_observed": false,
+    "private_runtime_dir_empty": true,
+    "raw_line_repasses_exact_whitelist": true,
+    "raw_line_sha_recomputed": true,
+    "released_port_39028_listener_observed": false
+  },
+  "nonce_sha256": "19322978033640ec5b92f5d42bf13bb77c8fecbe972118897eeda67a04593556",
+  "peer_review_sha256": "2e270a12b3f6464748b6db61912e2e9ad85d9805bb49c6a45ca177fbbcac2c38",
+  "remaining_limits": [
+    "Deleted full stdout/stderr cannot be independently rehashed; the decisive whitelisted route line is retained and independently verified.",
+    "No direct raw wrapper stdout/stderr receipt was located in candidate directory; external rc2 and duplicate print are parent-reported but exactly explained by immutable runner code.",
+    "One-shot nonce is consumed; do not replay or rewrite historical START/TERMINAL. A separate code generation can fix top-level SystemExit handling for future runs only."
+  ],
+  "review_actions": "Read-only exact receipts, safe route event, runtime directory, process and released listener; no real proxy rerun, SSH, device, container, namespace, Bridge or count edit.",
+  "root_release_sha256": "015b5e4cbcf1d126584196aba7c637358fcf2707ee3c44e3ddf17578f5eec800",
+  "runner_sha256": "5abc3e9ba6bc0a9ff379c29729df623713a9041d4bb25df4e7b165b5386688a0",
+  "schema": "g279-private-mihomo-v2b-v4-peer-postrun-v1",
+  "start_sha256": "5f7d6cbd8253b8a231126f812b4bad261a8b9e12c3d04a684f5704fbc24abb05",
+  "terminal_facts": {
+    "connection_closed": true,
+    "container_commands": 0,
+    "decision": "GO_V2B_LOCAL_TESTNET_REJECT_LOG_ONLY",
+    "device_commands": 0,
+    "global_proxy_writes": 0,
+    "graph_commands": 0,
+    "gz02_ssh_commands": 0,
+    "listener_pid_matches_process": true,
+    "loopback_only": true,
+    "namespace_commands": 0,
+    "private_config_sha256": "37a4f897de41caed3584af3929c89dbe6f9173cd9221e3ac8919f0dc3a54cf05",
+    "private_dir_removed": true,
+    "private_log_stderr_bytes": 0,
+    "private_log_stdout_bytes": 1095,
+    "process_group_clean": true,
+    "route_reject_proven": true,
+    "socks_reply_hex": "050000017f0000019874",
+    "testnet_target": "203.0.113.1"
+  },
+  "terminal_sha256": "7dac082c049a4db44e68e558f87d349e7ff7f198a5a34687c33bbcd0e51e24b0"
+}

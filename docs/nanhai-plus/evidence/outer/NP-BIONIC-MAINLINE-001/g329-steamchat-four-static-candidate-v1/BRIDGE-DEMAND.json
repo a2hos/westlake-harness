@@ -1,0 +1,125 @@
+{
+  "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+  "at_utc": "2026-10-04T19:08:07.239189+00:00",
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_AOSP16_OH7_BIONIC_RUNTIME_INDEX_AND_RESOLUTION",
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_inventory_sha256": {
+    "arm64_elf": "489a696519a82646c28ec84fbf0c12cf0a4d5047bfd4c383c94b810a5968df6b",
+    "dex": "fa52d4cfd89572975da899303f870cfe1d831f3bc523c21251d12c9dd91be48b",
+    "metadata": "6b596780ce8c78b9866455ff0d5e6b84146085aab76e53c4a567bcfd9c95a99c"
+  },
+  "limits": "Demand presence does not prove missing implementations, startup reachability, loaded native libraries, or device behavior. Historical runtime locks are not substituted for the current Bionic target.",
+  "manifest_main_activities": [
+    "com.valvesoftware.android.steam.friendsui.MainActivity"
+  ],
+  "network_commands": 0,
+  "next_evidence": "Bind an exact current Bionic runtime index and host-resolve the DEX platform members, JNI registrations and ARM64 ELF DT_NEEDED/imports; then rank cold-start-reachable gaps using a real trace or accepted graph.",
+  "package": "com.valvesoftware.android.steam.friendsui",
+  "schema": "g329-steamchat-static-bridge-demand-boundary-v1",
+  "static_demands": {
+    "arm64_elf_count": 19,
+    "arm64_elf_needed_sonames": [
+      "libandroid.so",
+      "libc++_shared.so",
+      "libc.so",
+      "libdl.so",
+      "libfbjni.so",
+      "libhermes.so",
+      "libjnigraphics.so",
+      "libjsi.so",
+      "liblog.so",
+      "libm.so",
+      "libreact_codegen_rnscreens.so",
+      "libreact_codegen_rnsvg.so",
+      "libreact_codegen_safeareacontext.so",
+      "libreactnative.so"
+    ],
+    "defined_dex_classes": 29869,
+    "field_reference_keys": 1352,
+    "jni_onload_libraries": 12,
+    "load_library_sites": [
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Lcom/github/penfeizhou/animation/gif/decode/GifFrame;",
+        "value": "animation-decoder-gif"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
+        "dex": "classes2.dex",
+        "method": "<init>",
+        "offset": 50,
+        "owner": "Lcom/swmansion/rnscreens/ScreensModule;",
+        "value": "rnscreens"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
+        "dex": "classes3.dex",
+        "method": "<init>",
+        "offset": 50,
+        "owner": "Lcom/swmansion/rnscreens/utils/ScreenDummyLayoutHelper;",
+        "value": "react_codegen_rnscreens"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Lexpo/modules/av/AVManager;",
+        "value": "expo-av"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Lorg/aomedia/avif/android/AvifDecoder;",
+        "value": "avif_android"
+      }
+    ],
+    "method_reference_keys": 12260,
+    "native_method_declarations": 460,
+    "service_request_names": {
+      "<dynamic-or-unresolved>": 42,
+      "accessibility": 14,
+      "activity": 6,
+      "alarm": 2,
+      "appops": 3,
+      "audio": 8,
+      "captioning": 3,
+      "clipboard": 7,
+      "connectivity": 11,
+      "display": 5,
+      "download": 1,
+      "input_method": 11,
+      "jobscheduler": 3,
+      "keyguard": 1,
+      "layout_inflater": 84,
+      "locale": 3,
+      "location": 1,
+      "media_metrics": 1,
+      "media_session": 1,
+      "notification": 29,
+      "phone": 4,
+      "power": 9,
+      "print": 2,
+      "sensor": 3,
+      "uimode": 8,
+      "user": 1,
+      "vibrator": 2,
+      "vibrator_manager": 2,
+      "wifi": 2,
+      "window": 21
+    },
+    "service_request_sites": 290,
+    "undefined_symbol_names_unique": 909
+  }
+}

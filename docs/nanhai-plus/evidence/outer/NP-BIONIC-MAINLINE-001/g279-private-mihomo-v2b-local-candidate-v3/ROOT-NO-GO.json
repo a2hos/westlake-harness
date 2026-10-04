@@ -1,0 +1,18 @@
+{
+  "schema": "g279-private-mihomo-v2b-local-root-no-go-v3",
+  "at_utc": "2026-10-04T19:06:36Z",
+  "decision": "NO_GO_V2B_REAL_EXECUTION_V3",
+  "candidate_sha256": "7b5c1cbd6c2f66fdbd30aae7d0c80f5cc7558a8406acc0c49425b6a59412dd83",
+  "runner_sha256": "d7510b2180970ceb4dc5ce957b957bf698a5030216f95b71ae098a69b69bb732",
+  "independent_review_sha256": "238dd8cca75896cc940189a7558fa909662ca636afb3f8512d0916bcd7f79fc4",
+  "accepted_code_only": "Strict full-line whitelist, unique route selection and no-credential mock reject forged, duplicate and sensitive-suffix events; no real node started.",
+  "remaining_blocker": "Real TERMINAL would export normalized event but omit timestamp from the matched raw line. Once the private debug log is deleted, an independent reviewer cannot recompute raw_line_sha256 for the actual run.",
+  "next": "New immutable v4 candidate to export only the complete strictly whitelisted safe raw route line and fixture round-trip; independently review before exact release.",
+  "release_issued": false,
+  "start_exists": false,
+  "private_process_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

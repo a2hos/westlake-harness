@@ -1,0 +1,22 @@
+{
+  "schema": "g279-private-mihomo-v2b-root-release-v4",
+  "decision": "ISSUE_EXACT_V2B_V4_LOCAL_TESTNET_REJECT_LOG_ONCE",
+  "candidate_sha256": "830a89d846c5df1ed3ea3cab2cbe8fc6fa59d4658c80caf569240a2cdea12b8f",
+  "runner_sha256": "5abc3e9ba6bc0a9ff379c29729df623713a9041d4bb25df4e7b165b5386688a0",
+  "peer_review_sha256": "2e270a12b3f6464748b6db61912e2e9ad85d9805bb49c6a45ca177fbbcac2c38",
+  "upstream_postrun_sha256": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766",
+  "upstream_terminal_sha256": "6c52be4ac3115d56716def80d958cbe3a41602a62f7dad0a45f2ce9adbcd563e",
+  "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "sandbox_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "sandbox_policy_sha256": "dbd367a1e00dd2df2b7cd1e7fb82e167c9f2a7f376cfed2ab08ea2fff57e68f7",
+  "port": 39028,
+  "scope": "private_native_local_listener_and_testnet_reject_log_only",
+  "one_shot": true,
+  "no_gz02_ssh": true,
+  "no_graph": true,
+  "no_device": true,
+  "no_container": true,
+  "no_namespace": true,
+  "no_global_proxy_write": true
+}

@@ -1,0 +1,36 @@
+{
+  "at_utc": "2026-10-04T19:09:30.694413+00:00",
+  "candidate_sha256": "830a89d846c5df1ed3ea3cab2cbe8fc6fa59d4658c80caf569240a2cdea12b8f",
+  "decision": "GO_V2B_V4_CODE_ONLY",
+  "evo48_process_sha256": "7dddd123714141b6c593621c71518ec193e667efc2f77492c7d3b72d8bde8c6a",
+  "fixture_sha256": "1123eb696a84efad6c4e3005a134e88b6a7116c93d6efbf860a0c269d2e9f36a",
+  "fixture_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "fixture_stdout_sha256": "e76b61c7dfa6861e50cc4f67fbef2e6ee1817bb5776cfa184352222d0fe2b3b2",
+  "identity_note": "The dispatch mentioned 7b5c1cbd as a stale v3 prefix; root clarified the exact v4 frozen candidate is 830a89d846c5df1ed3ea3cab2cbe8fc6fa59d4658c80caf569240a2cdea12b8f, which matches the current file.",
+  "limits": [
+    "This GO is code-only readiness for a separately signed exact root release and one local one-shot test, not authorization in this peer receipt to execute.",
+    "Real selected-node listener and route event have not been observed; mock cannot prove gz02 /32 PROXY route, SSH, native graph, HelloWorld, or device.",
+    "The raw debug stream may contain sensitive material and must remain private; only the strictly whitelisted line may enter TERMINAL.",
+    "SIGKILL or host loss may leave private 0600 artifacts for exact manual cleanup."
+  ],
+  "mock_stdout_sha256": "3f0a64c98f690afb7be0a7c931bb5c58c04330965d37d9861adca30c765ba49d",
+  "preserved_gates": [
+    "v2a accepted postrun and terminal exact SHA bind; release exact candidate/runner/peer/upstream/source/binary/Seatbelt/policy/port and all one-shot/no SSH/graph/device/container/namespace/global-write flags.",
+    "START and TERMINAL absence is required before O_EXCL one-shot START. Fresh source/process/root socket/kernel peer/current leaf guards precede private credential write.",
+    "Exact /32 PROXY then MATCH REJECT config; full SOCKS5 REP0 then EOF is only connection closure, and the exact whitelisted route event is required for REJECT claim.",
+    "Structured lsof checks one loopback listener with direct process PID; process-group stop and no-listener readback precede private 0700/0600 config and raw debug log cleanup; unproven process cleanup retains private directory.",
+    "Seatbelt is native macOS process policy, not Docker/Podman/OCI, image or namespace."
+  ],
+  "release_present": false,
+  "review_actions": "Read-only frozen code, hashes, mock raw line, no-credential fixture rerun and diff from v3; no real Mihomo, SSH, device, container, namespace, Bridge or count edit.",
+  "round_trip_findings": [
+    "normalized_route_event selects one whole TCP route line; anchored ASCII fullmatch allows only timestamp, info level, 127.0.0.1 bounded source port, 203.0.113.1:9, Match and REJECT. Extra prefix/suffix, duplicate, wrong target/action, out-of-range source port and sensitive fields fail in no-credential fixtures.",
+    "The whitelisted complete raw_line is exported into the TERMINAL negative record only after fullmatch. A postrun reader can recompute raw_line_sha256 directly from raw_line and canonical route_event_sha256 from the complete normalized event after private full logs are deleted.",
+    "Independent rerun of offline fixtures returned rc0 with byte-identical saved stdout/stderr; 18/18 checks pass. The saved mock line was produced by exact Mihomo in prior no-credential mock, but this v4 generation did not start real Mihomo."
+  ],
+  "runner_sha256": "5abc3e9ba6bc0a9ff379c29729df623713a9041d4bb25df4e7b165b5386688a0",
+  "schema": "g279-private-mihomo-v2b-v4-peer-review-v1",
+  "start_present": false,
+  "terminal_present": false,
+  "v3_no_go_peer_sha256": "238dd8cca75896cc940189a7558fa909662ca636afb3f8512d0916bcd7f79fc4"
+}

@@ -1,0 +1,40 @@
+{
+  "at_utc": "2026-10-04T19:06:39.712282+00:00",
+  "decision": "GO_BLACKBOX_QUALIFICATION_ONLY",
+  "dedupe": "Existing Steam Mobile and Steam Link are different Play package IDs; this exact package was absent from task summary at intake. Qualification is one distinct candidate, not an authoritative count update.",
+  "limits": [
+    "Google Play listing 10M+ is a bracket, not exact download count.",
+    "Official Valve source and APK provenance do not prove installation, Bionic compatibility, cold launch or screen.",
+    "No Android device was accessed and no authoritative summary/count was edited."
+  ],
+  "package": "com.valvesoftware.android.steam.friendsui",
+  "play_evidence": {
+    "downloads": "10M+",
+    "exact_package_from_url": true,
+    "observation": "Official Play page viewed independently; download count is current page display, not an exact install count.",
+    "publisher": "Valve Corporation",
+    "title": "Steam Chat",
+    "url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.friendsui"
+  },
+  "publisher_evidence": {
+    "cdnhost_limit": "Current webpage exposes cdn.akamai.steamstatic.com, while existing captured raw intake records cdn.fastly.steamstatic.com; both use the steamstatic.com asset path, but this qualification review does not independently compare their bytes.",
+    "observed_asset_path": "/apps/steam-chat/steam-chat-app-1.1.apk",
+    "official_page_has_android_apk_link": true,
+    "official_page_lists_distinct_steam_chat": true,
+    "url": "https://store.steampowered.com/mobile/"
+  },
+  "raw_intake": {
+    "handoff_sha256": "b4701f5396ff6abb34d65eded93631f2b356736f28acc4fce829cac502273e67",
+    "independent_raw_review_sha256": "10d852ff5ae0a1ecfe1d62299657a1aeb737383be57bee4a0a807f781edea2a6",
+    "raw_review_scope": "Existing independent host raw review admitted exact APK only; no host static completion or startup.",
+    "reported_apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307"
+  },
+  "review_actions": "Read existing local raw admission review and official Google Play/Valve/verified ValveSoftware GitHub pages; no APK download, device or count mutation.",
+  "schema": "steam-chat-blackbox-qualification-peer-review-v1",
+  "source_availability": {
+    "checked": "Valve official mobile page, verified ValveSoftware public GitHub organization and bounded web search for same-package Android Steam Chat client source",
+    "claim_limit": "No complete buildable source for this exact Android package was established in checked public official sources; this is not a proof that source is unavailable everywhere or legally closed source. Valve public SDK and networking repositories are not the Steam Chat Android client.",
+    "complete_buildable_same_package_source_established": false,
+    "official_github_url": "https://github.com/ValveSoftware"
+  }
+}

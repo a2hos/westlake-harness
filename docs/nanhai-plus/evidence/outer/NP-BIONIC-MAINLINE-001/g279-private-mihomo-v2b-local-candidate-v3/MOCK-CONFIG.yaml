@@ -1,0 +1,27 @@
+mode: rule
+allow-lan: false
+bind-address: 127.0.0.1
+mixed-port: 64498
+ipv6: false
+log-level: debug
+dns:
+  enable: false
+tun:
+  enable: false
+profile:
+  store-selected: false
+external-controller: ''
+external-controller-unix: ''
+proxies:
+- name: fixture-only-loopback
+  type: socks5
+  server: 127.0.0.1
+  port: 9
+proxy-groups:
+- name: PROXY
+  type: select
+  proxies:
+  - fixture-only-loopback
+rules:
+- IP-CIDR,1.95.90.207/32,PROXY,no-resolve
+- MATCH,REJECT

@@ -1,0 +1,18 @@
+{
+  "schema": "g279-private-mihomo-v2b-local-root-no-go-v1",
+  "at_utc": "2026-10-04T18:56:55+00:00",
+  "decision": "NO_GO_V2B_EXECUTION_V1",
+  "candidate_sha256": "931e9e72ccd90b1842993d38488ebf8f58146cf7d7a668bc8e48fc076b4c2ebc",
+  "runner_sha256": "f344debf01779486cd5bcb9b1eec13cf89b1efa28b3b2b5c30b6ab454a67f806",
+  "independent_review_sha256": "1b83f1f22f9b42dcbe9950fd4d22d3885b1acb45d718ea2a18bfe272776b4146",
+  "upstream_v2a_root_sha256": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766",
+  "blocking_finding": "The SOCKS negative test accepts a truncated 05 01 reply or generic REP=5 failure as a rule REJECT pass; independent fake-server fixtures reproduced both false positives.",
+  "next": "new generation with complete SOCKS5 reply validation, exact-binary no-credential REJECT behavior and malformed/generic-failure negative fixtures",
+  "release_issued": false,
+  "start_exists": false,
+  "private_process_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

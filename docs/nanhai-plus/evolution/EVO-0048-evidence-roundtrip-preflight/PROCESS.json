@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "steam_apk_present": true,
+    "steam_apk_sha_recomputed": true,
+    "v3_mock_event_sha_recomputed": true,
+    "v3_mock_raw_line_sha_recomputed": true,
+    "v3_real_postrun_raw_line_reconstructible_from_export": false
+  },
+  "container_commands": 0,
+  "count_delta": 0,
+  "decision": "PILOT_SIGNAL_ONLY_NO_PROMOTION",
+  "device_commands": 0,
+  "inputs": {
+    "steam_qualification_review_sha256": "e584f054378fdb2944e2efa329c991ed6a8732d6b8a32b9cb2e2da376c0046e7",
+    "steam_raw_review_sha256": "10d852ff5ae0a1ecfe1d62299657a1aeb737383be57bee4a0a807f781edea2a6",
+    "v2b_v1_review_sha256": "1b83f1f22f9b42dcbe9950fd4d22d3885b1acb45d718ea2a18bfe272776b4146",
+    "v2b_v2_review_sha256": "8cfeeeaa69882a0bc00f0c237e123050c7ecdd1df7f53af4eda1b881aecd8a08",
+    "v2b_v3_mock_oracle_sha256": "42dd0e316b90f8635ed8abf3f9ae4330e43881c3c1ae2b6d19cdb5316fd0e0db",
+    "v2b_v3_review_sha256": "238dd8cca75896cc940189a7558fa909662ca636afb3f8512d0916bcd7f79fc4"
+  },
+  "schema": "evo48-evidence-roundtrip-pilot-v1"
+}

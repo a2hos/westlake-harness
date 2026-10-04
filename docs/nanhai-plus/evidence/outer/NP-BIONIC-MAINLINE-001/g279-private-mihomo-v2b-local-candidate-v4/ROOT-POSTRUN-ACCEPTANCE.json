@@ -1,0 +1,19 @@
+{
+  "schema": "g279-private-mihomo-v2b-v4-root-postrun-acceptance-v1",
+  "decision": "ACCEPT_BOUNDED_LOCAL_REJECT_FACTS_NOT_COMMAND_PASS",
+  "execution_sha256": "2417f466ad1e65b14a7cab7feefdb92733d0b6c62024da0a47a22cf627311bb1",
+  "start_sha256": "5f7d6cbd8253b8a231126f812b4bad261a8b9e12c3d04a684f5704fbc24abb05",
+  "terminal_sha256": "7dac082c049a4db44e68e558f87d349e7ff7f198a5a34687c33bbcd0e51e24b0",
+  "independent_postrun_review_sha256": "5df2e3b706d64ad6f6b03416b7653ae919b05c96af90676c0de44bf8256d8957",
+  "accepted_facts": ["One private native Mihomo instance bound loopback port 39028", "TEST-NET-3 203.0.113.1:9 route matched Match/REJECT in strict full-line whitelisted Mihomo log", "The retained safe raw line and normalized event independently reproduce both hashes", "Process group stopped, listener absent and private per-run directory removed"],
+  "command_exit_code": 2,
+  "command_pass": false,
+  "outer_exit_bug": "Frozen runner catches normal SystemExit(0) as BaseException after writing terminal, then prints NO_GO_BEFORE_START and returns rc2.",
+  "replay_allowed": false,
+  "gz02_connected": false,
+  "graph_result_observed": false,
+  "startup_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

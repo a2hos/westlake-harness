@@ -1,0 +1,56 @@
+{
+  "schema": "steam-chat-official-host-raw-candidate-v1",
+  "status": "HOST_RAW_CANDIDATE_ONLY",
+  "at_utc": "2026-10-04T19:04:10.548506+00:00",
+  "official_page": "https://store.steampowered.com/mobile/",
+  "play_url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.friendsui",
+  "official_apk_url": "https://cdn.fastly.steamstatic.com/apps/steam-chat/steam-chat-app-1.1.apk",
+  "get_rc": 0,
+  "get_metrics": {
+    "http_code": 200,
+    "ssl_verify_result": 0,
+    "num_redirects": 0,
+    "url_effective": "https://cdn.fastly.steamstatic.com/apps/steam-chat/steam-chat-app-1.1.apk",
+    "size_download": 94680962,
+    "time_total": 5.333757
+  },
+  "bytes": 94680962,
+  "sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+  "zip_crc_bad_member": null,
+  "zip_members": 1834,
+  "manifest_count": 1,
+  "abi_so_names": {
+    "arm64-v8a": 19,
+    "armeabi-v7a": 19,
+    "x86": 19,
+    "x86_64": 19
+  },
+  "true_arm64_elf_count": 19,
+  "arm64_invalid": [],
+  "aapt2": {
+    "rc": 0,
+    "stderr": ""
+  },
+  "apksigner": {
+    "rc": 0,
+    "stderr": ""
+  },
+  "independent_review": false,
+  "raw_accepted": false,
+  "blackbox_qualified": false,
+  "startup_proven": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "package": "com.valvesoftware.android.steam.friendsui",
+  "version_code": "10167321",
+  "version_name": "1.1",
+  "min_sdk": 26,
+  "target_sdk": 35,
+  "certificate_sha256": "5dff6b05761447a5bdf919ea88fc6fdf20d301e30b2315415c4d368ec0fbda45",
+  "certificate_dn": "O=Valve Corporation, L=Bellevue, ST=WA, C=01",
+  "play_mainstream": "10M+ Google Play downloads, Valve Corporation, 34.2K reviews; page observed 2026-10-04",
+  "source_link_proof": "Official Valve Steam mobile page labels Steam Chat and links latest standalone APK directly",
+  "dedupe_check": "Exact Play package absent from TASK-SUMMARY.json and upstream-apk-registry-v1 bounded text search at intake time",
+  "signature_note": "Valid APK signature does not by itself establish publisher identity; official page to CDN link provides distribution chain",
+  "blackbox_status": "candidate only; source visibility and qualification require independent review"
+}

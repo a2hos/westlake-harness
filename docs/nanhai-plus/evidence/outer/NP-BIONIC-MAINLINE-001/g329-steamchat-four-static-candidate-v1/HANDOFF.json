@@ -1,0 +1,126 @@
+{
+  "apk_bytes": 94680962,
+  "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+  "at_utc": "2026-10-04T19:08:21.361294+00:00",
+  "authoritative_count_changed": false,
+  "blackbox_qualification_accepted_here": false,
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_BIONIC_RUNTIME_INDEX",
+  "container_commands": 0,
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "nested_archive_name_candidates": [],
+  "network_commands": 0,
+  "non_elf_so": 0,
+  "other_true_elf_by_abi": {
+    "armeabi-v7a": 19,
+    "x86": 19,
+    "x86_64": 19
+  },
+  "package": "com.valvesoftware.android.steam.friendsui",
+  "phase_results": {
+    "dex": {
+      "command_sha256": "bb723ed42f6787263298956e553c62d0f8d76082eccef3a9f9be84ba3cde3a2c",
+      "elapsed_seconds": 11.013077958021313,
+      "phase_result_sha256": "98d52aebf67361f297e4f40582b73b3be385acedb6f0ed7b842f08182261de52",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "af4d42c4a26f7eba4b40839a6006668710c294d905b98cbc725f2ea70841a1f0",
+      "timed_out": false
+    },
+    "elf": {
+      "command_sha256": "f1ceb25b885970a49ce7e27c4af5014fd05b12a06024c413c9224a607708e1ab",
+      "elapsed_seconds": 2.851842666976154,
+      "phase_result_sha256": "2a41d4bdddbf0632fd95f67f2ab132c50af27ed0620b4a0be2abee6725d387e1",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "549514234b541e2226f82c7746d06a404e9019795d09667889bdbea4ca93501e",
+      "timed_out": false
+    },
+    "metadata": {
+      "command_sha256": "97fe29f70db310d1558b1f1ae47070327681764aff7092c30d3b971e6d39dc51",
+      "elapsed_seconds": 0.369498832966201,
+      "phase_result_sha256": "d846b740ed57bd21f5dabb711cd964ca4e727a50cf343a8f8f39946c97eefd83",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "20d4e688f5f76eb80de201100896c273773d739b6195b2e4c0d9ded4dfb6662e",
+      "timed_out": false
+    },
+    "zip": {
+      "command_sha256": "3a83743822bcdf8178c70f52236f25abc76b624ec9dc5ae2cfef0833e237fad6",
+      "elapsed_seconds": 0.46242229198105633,
+      "phase_result_sha256": "4226f4babb0a6f832a3042fee301b656f9cf3922c5fd62a00328524a03b91571",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "35dbea217209e510aa265153088fb344f7c4016388f903eb54897d0a661ca014",
+      "timed_out": false
+    }
+  },
+  "refs": {
+    "BRIDGE-DEMAND.json": {
+      "bytes": 4079,
+      "sha256": "7adecc65b2bad62eba07fb26accbb3b1b22f4d01686a60bd93d2c0dc3efbc802"
+    },
+    "CENSUS.json": {
+      "bytes": 13939,
+      "sha256": "1634f48fddd71a8583ebd22cb40092191d2ad14632fc017d5538cc50dee41706"
+    },
+    "RESULT.json": {
+      "bytes": 6709,
+      "sha256": "647dc261314bd4b8a84a1c9caa42ac85db95fcf571c141a271ae5e21cdc3e78b"
+    },
+    "START.json": {
+      "bytes": 1060,
+      "sha256": "fadf2885c9bf3756b68ef3bb1c6c2525426200e66344d3d2ee2480a912425cc5"
+    },
+    "census.py": {
+      "bytes": 3192,
+      "sha256": "f2698665c98a7ffe43df986042c7d430e434a1bd7e23535feec5e899ef9a8d6c"
+    },
+    "phase.py": {
+      "bytes": 5194,
+      "sha256": "538af59f72458e6bc9a61441b206536da82ed9cc18eb7062250d2e63be8c6c93"
+    },
+    "phases/dex/DEX-INVENTORY.json": {
+      "bytes": 21439095,
+      "sha256": "fa52d4cfd89572975da899303f870cfe1d831f3bc523c21251d12c9dd91be48b"
+    },
+    "phases/elf/ELF-CLASSIFICATION.json": {
+      "bytes": 9472,
+      "sha256": "2430b7b88b3e20103edfe94911de32b7663d66428866a2c3acc5bebcffefe735"
+    },
+    "phases/elf/ELF-INVENTORY.json": {
+      "bytes": 3295998,
+      "sha256": "489a696519a82646c28ec84fbf0c12cf0a4d5047bfd4c383c94b810a5968df6b"
+    },
+    "phases/metadata/MANIFEST.json": {
+      "bytes": 2991,
+      "sha256": "6b596780ce8c78b9866455ff0d5e6b84146085aab76e53c4a567bcfd9c95a99c"
+    },
+    "phases/zip/ZIP-FACTS.json": {
+      "bytes": 224,
+      "sha256": "3d53517bffa63bb35a0798b6aab2b67bd5a6865b6d492597079a2966a0d2a414"
+    },
+    "run.py": {
+      "bytes": 3489,
+      "sha256": "faf808db40134f90ef0d9055a8e2f15a931fcff7ab15b72b35deedc7029c643b"
+    }
+  },
+  "root_dex": 4,
+  "root_raw_admission_sha256": "830196efabf1feba308a48c58a4145bd49fcd27e7fa12e7f361542cd033c59d0",
+  "schema": "g329-steamchat-four-static-handoff-v1",
+  "source_guard_all_equal": true,
+  "source_scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "startup_proven": false,
+  "status": "CANDIDATE_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "target_sdk": 35,
+  "terminal_rc": 0,
+  "true_arm64_elf": 19,
+  "version_code": 10167321,
+  "version_name": "1.1",
+  "zip_crc_all": true,
+  "zip_entries": 1834
+}

@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-04T19:00:32.489074+00:00",
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "config_sha256": "200c5e67bc60c47fd5f5b41ed9516835ac3b23d3261b246277fab9269fbfbe49",
+  "container_commands": 0,
+  "decision": "OBSERVED_FULL_REPLY",
+  "device_commands": 0,
+  "exact_route_event_sha256": "6520dcd1988ce0b922cfa6489184b3d758a626f5ed4aa7b20b0b9b0ecff0bd3f",
+  "gz02_requests": 0,
+  "listener_after_stop": false,
+  "mock_node": "socks5:127.0.0.1:9",
+  "namespace_commands": 0,
+  "policy_sha256": "dbd367a1e00dd2df2b7cd1e7fb82e167c9f2a7f376cfed2ab08ea2fff57e68f7",
+  "post_reply": "eof",
+  "process_group_clean": true,
+  "real_node_credentials": false,
+  "reply_hex": "050000017f000001f7a0",
+  "rules": [
+    "IP-CIDR,1.95.90.207/32,PROXY,no-resolve",
+    "MATCH,REJECT"
+  ],
+  "sandbox_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "schema": "g279-v2b-v2-exact-binary-mock-oracle-v1",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 1095,
+  "stdout_sha256": "c0562b05511197f5e5420134f0f3d8c2210ebbd03ce9dfc8c912039ebb080b09",
+  "target": "203.0.113.1:9"
+}

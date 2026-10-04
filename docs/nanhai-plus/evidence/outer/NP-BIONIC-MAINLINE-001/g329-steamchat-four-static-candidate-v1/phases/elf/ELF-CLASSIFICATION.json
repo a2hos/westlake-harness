@@ -1,0 +1,463 @@
+{
+  "non_elf_so_records": [],
+  "non_target_abi_elf_header_records": [
+    {
+      "bytes": 161752,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libanimation-decoder-gif.so"
+    },
+    {
+      "bytes": 1322200,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libappmodules.so"
+    },
+    {
+      "bytes": 691804,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavif_android.so"
+    },
+    {
+      "bytes": 872872,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libc++_shared.so"
+    },
+    {
+      "bytes": 50292,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libexpo-av.so"
+    },
+    {
+      "bytes": 926256,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libexpo-modules-core.so"
+    },
+    {
+      "bytes": 119456,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfbjni.so"
+    },
+    {
+      "bytes": 6024,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libgesturehandler.so"
+    },
+    {
+      "bytes": 1507148,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libhermes.so"
+    },
+    {
+      "bytes": 90784,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libhermestooling.so"
+    },
+    {
+      "bytes": 5876,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libimagepipeline.so"
+    },
+    {
+      "bytes": 296904,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libjsi.so"
+    },
+    {
+      "bytes": 12588,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnative-filters.so"
+    },
+    {
+      "bytes": 341072,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnative-imagetranscoder.so"
+    },
+    {
+      "bytes": 394744,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libreact_codegen_rnscreens.so"
+    },
+    {
+      "bytes": 402436,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libreact_codegen_rnsvg.so"
+    },
+    {
+      "bytes": 108728,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libreact_codegen_safeareacontext.so"
+    },
+    {
+      "bytes": 4775296,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libreactnative.so"
+    },
+    {
+      "bytes": 47512,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/librnscreens.so"
+    },
+    {
+      "bytes": 240852,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libanimation-decoder-gif.so"
+    },
+    {
+      "bytes": 1752680,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libappmodules.so"
+    },
+    {
+      "bytes": 1212276,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libavif_android.so"
+    },
+    {
+      "bytes": 1254988,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libc++_shared.so"
+    },
+    {
+      "bytes": 86352,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libexpo-av.so"
+    },
+    {
+      "bytes": 1221656,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libexpo-modules-core.so"
+    },
+    {
+      "bytes": 166480,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libfbjni.so"
+    },
+    {
+      "bytes": 31612,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libgesturehandler.so"
+    },
+    {
+      "bytes": 2784236,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libhermes.so"
+    },
+    {
+      "bytes": 150148,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libhermestooling.so"
+    },
+    {
+      "bytes": 7040,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libimagepipeline.so"
+    },
+    {
+      "bytes": 431896,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libjsi.so"
+    },
+    {
+      "bytes": 22040,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libnative-filters.so"
+    },
+    {
+      "bytes": 664736,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libnative-imagetranscoder.so"
+    },
+    {
+      "bytes": 558184,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libreact_codegen_rnscreens.so"
+    },
+    {
+      "bytes": 720084,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libreact_codegen_rnsvg.so"
+    },
+    {
+      "bytes": 164788,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libreact_codegen_safeareacontext.so"
+    },
+    {
+      "bytes": 6865028,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libreactnative.so"
+    },
+    {
+      "bytes": 88088,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/librnscreens.so"
+    },
+    {
+      "bytes": 261216,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libanimation-decoder-gif.so"
+    },
+    {
+      "bytes": 1842112,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libappmodules.so"
+    },
+    {
+      "bytes": 1892960,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libavif_android.so"
+    },
+    {
+      "bytes": 1252080,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libc++_shared.so"
+    },
+    {
+      "bytes": 90872,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libexpo-av.so"
+    },
+    {
+      "bytes": 1269040,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libexpo-modules-core.so"
+    },
+    {
+      "bytes": 172952,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libfbjni.so"
+    },
+    {
+      "bytes": 32272,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libgesturehandler.so"
+    },
+    {
+      "bytes": 2283176,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libhermes.so"
+    },
+    {
+      "bytes": 152704,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libhermestooling.so"
+    },
+    {
+      "bytes": 8464,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libimagepipeline.so"
+    },
+    {
+      "bytes": 421384,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libjsi.so"
+    },
+    {
+      "bytes": 30528,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libnative-filters.so"
+    },
+    {
+      "bytes": 720432,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libnative-imagetranscoder.so"
+    },
+    {
+      "bytes": 567752,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libreact_codegen_rnscreens.so"
+    },
+    {
+      "bytes": 624480,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libreact_codegen_rnsvg.so"
+    },
+    {
+      "bytes": 172960,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libreact_codegen_safeareacontext.so"
+    },
+    {
+      "bytes": 6713752,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libreactnative.so"
+    },
+    {
+      "bytes": 92048,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/librnscreens.so"
+    }
+  ],
+  "scope": "ARM64 target readelf/JNI only; other ABI classified by ELF header",
+  "true_arm64_target_records": 19
+}

@@ -1,0 +1,45 @@
+{
+  "at_utc": "2026-10-04T19:07:49.392007+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "fixtures.py"
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "mihomo_started": false,
+  "rc": 0,
+  "real_network_commands": 0,
+  "result": {
+    "actual_proxy_started": false,
+    "checks": {
+      "duplicate_lines_rejected": true,
+      "exact_raw_round_trip": true,
+      "forged_prefix_rejected": true,
+      "forged_suffix_rejected": true,
+      "generic_route_words_rejected": true,
+      "normalized_sha_round_trip": true,
+      "one_mock_route_line": true,
+      "out_of_range_source_port_rejected": true,
+      "proxy_action_rejected": true,
+      "raw_sha_round_trip": true,
+      "safe_exact_whitelist_fields": true,
+      "sensitive_embedded_name_rejected": true,
+      "sensitive_node_suffix_rejected": true,
+      "sensitive_password_suffix_rejected": true,
+      "terminal_event_sha_independent": true,
+      "terminal_line_exact_original": true,
+      "terminal_raw_sha_independent": true,
+      "wrong_target_rejected": true
+    },
+    "container_commands": 0,
+    "device_commands": 0,
+    "gz02_requests": 0,
+    "pass": true,
+    "real_network_commands": 0,
+    "schema": "g279-v2b-offline-fixtures-v4"
+  },
+  "schema": "g279-private-mihomo-v2b-offline-fixture-v4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "e76b61c7dfa6861e50cc4f67fbef2e6ee1817bb5776cfa184352222d0fe2b3b2"
+}
