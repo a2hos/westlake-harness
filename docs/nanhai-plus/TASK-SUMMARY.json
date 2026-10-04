@@ -2100,5 +2100,18 @@
     "gz02_connected": false,
     "graph_result_observed": false,
     "container_commands": 0
+  },
+  "g279_private_native_proxy_runner_v1": {
+    "status": "root_no_go_execute_v1",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-private-mihomo-runner-candidate-v1/ROOT-NO-GO.json",
+      "sha256": "5ccd64ebb2b860c35d873393bcb350f3c78a19aa779f8e4e7a53a940086ff1e4"
+    },
+    "reason": "controller identity gate and listener parser fail; one-shot release and failure evidence insufficient",
+    "private_config_generated": false,
+    "private_process_started": false,
+    "gz02_connected": false,
+    "graph_result_observed": false,
+    "cold_start_delta": 0
   }
 }

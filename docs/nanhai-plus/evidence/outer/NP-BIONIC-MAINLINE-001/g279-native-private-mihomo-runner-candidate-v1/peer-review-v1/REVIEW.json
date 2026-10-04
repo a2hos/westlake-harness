@@ -1,0 +1,37 @@
+{
+  "schema": "g279-native-private-mihomo-runner-peer-review-v1",
+  "at_utc": "2026-10-04T18:29:34.410541+00:00",
+  "decision": "NO_GO_EXECUTE_V1",
+  "candidate_sha256": "8f94f130a6ae1695db059c14e4b2a72d04a6de50c4887a3bd8886a30b129c41c",
+  "runner_sha256": "2992b5891dfd249c6c6b789f92b37c7cb36e1ab60b75c528a6d2895c20480b93",
+  "fixture_sha256": "1e2a5e73837c2a98dac385fcc4e6b1eee03895e5e14db5cd5d480a32ddcfcf1c",
+  "observations": {
+    "fixture_24_of_24_pass_code_only": true,
+    "root_release_absent": true,
+    "start_absent": true,
+    "global_controller_socket": "/tmp/verge/verge-mihomo.sock",
+    "controller_socket_uid": 0,
+    "reviewer_uid": 501,
+    "runner_socket_owner_gate_passes": false,
+    "macos_lsof_last_token_is_LISTEN": true,
+    "real_config_or_instance_or_ssh_executed_by_reviewer": false
+  },
+  "blocking_findings": [
+    "At current_leaf, runner.py requires controller socket st_uid == os.getuid(). Current socket and active verge-mihomo process are root (uid 0), reviewer uid is nonroot. This exact candidate would fail closed before private configuration, despite the valid existing global controller. Do not weaken identity checks blindly; bind socket to the verified process/owner and authenticated controller contract.",
+    "listener_owned parses macOS lsof stdout rows[0].split()[-1] as 127.0.0.1:<port>. Actual macOS lsof listener rows end in (LISTEN), so an otherwise correct private listener cannot pass. Use structured lsof -F or direct socket/PID ownership readback and exercise a real local fixture.",
+    "The SSH gate runs /usr/bin/true and accepts only rc0. It does not retain or validate SSH banner, pinned host-key fingerprint, authenticated session or remote uid; logs are deleted before independent postrun. StrictHostKeyChecking helps but the required positive evidence is absent.",
+    "finally deletes the private run directory including syntax, mihomo and SSH raw logs even on failures. TERMINAL records only stage, exception class, rc/hashes/byte counts. This prevents distinguishing transport, SSH host-key/auth, or remote-command failure; forced SIGKILL/host loss may leave both child and credential file.",
+    "release_check accepts an arbitrary caller-supplied release path and does not bind an independent peer review SHA or a fixed root-release artifact. Root release provenance must be pinned before one-shot execution."
+  ],
+  "additional_limits": [
+    "The dynamic port bind is released before private mihomo binds; PID/readback should close acceptance gap, but current parser is broken.",
+    "The reserved-IP SOCKS nonzero reply checks refusal, not necessarily matched-rule identity. Pair with exact live config/readback or a safe rule oracle.",
+    "Node extraction copies a whole current leaf object; supported node type and credential/logging behavior remain untested on a real config. Do not emit node details into project evidence."
+  ],
+  "next_release_sequence": [
+    "v2a offline credential-bearing single-node config generation and mihomo -t only in ignored project 0700/0600 runtime; verify source/process identity, explicit safe node schema, rules, redacted logs and cleanup, with separate peer/root release.",
+    "v2b native private process launch and local-only listener/PID plus negative route test, with corrected socket identity and lsof/readback, bounded termination and forensic sanitized terminal; separate peer/root release.",
+    "v2c one fresh host-key-pinned gz02 read-only SSH probe using /usr/bin/id -u, with banner, host-key and auth proof, exact remote stdout, no replay, independent postrun; separate peer/root release."
+  ],
+  "reviewer_actions": "Read-only source/fixture and local socket metadata inspection only; no real credential config, instance, network, SSH, graph, device, container, Bridge or count change."
+}

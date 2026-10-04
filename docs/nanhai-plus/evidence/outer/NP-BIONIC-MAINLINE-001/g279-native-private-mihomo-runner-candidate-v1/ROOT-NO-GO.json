@@ -1,0 +1,21 @@
+{
+  "schema": "g279-native-private-mihomo-runner-root-no-go-v1",
+  "at_utc": "2026-10-04T18:31:16+00:00",
+  "decision": "NO_GO_EXECUTE_V1",
+  "candidate_sha256": "8f94f130a6ae1695db059c14e4b2a72d04a6de50c4887a3bd8886a30b129c41c",
+  "runner_sha256": "2992b5891dfd249c6c6b789f92b37c7cb36e1ab60b75c528a6d2895c20480b93",
+  "independent_review_sha256": "74fd14fb46bca3a0b0835e2f6adcb9ef344c36e53d60d0f8cde269409d687d8b",
+  "blocking_findings": [
+    "root-owned controller socket fails the candidate's same-uid gate before config generation",
+    "macOS lsof parser rejects valid LISTEN rows",
+    "one-shot release conflates offline syntax, private process, and remote SSH gates",
+    "postrun failure evidence and release provenance are insufficient"
+  ],
+  "next": "new v2a offline-only candidate, independent review and exact root release; v2b local private process and v2c remote read-only SSH remain separate generations",
+  "private_config_generated": false,
+  "private_process_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}
