@@ -1,0 +1,45 @@
+{
+  "audit_inputs_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "container_commands": 0,
+  "current_checkpoint_sha256": "1fe0e1edc9f702557286a5ecdfbe7257648245fc97f23c24216eb5e68d4d628f",
+  "current_upstream_exact_accepted": 99,
+  "device_commands": 0,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "rows": [
+    {
+      "artifact_id": "a-a2e99d4259611eef7917",
+      "expected_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "package": "com.dozingcatsoftware.cardswithcats",
+      "source_url": "https://f-droid.org/repo/com.dozingcatsoftware.cardswithcats_10.apk",
+      "version_code": "10",
+      "version_name": "1.4.4"
+    },
+    {
+      "artifact_id": "a-46ebfb10ee53c6ae9855",
+      "expected_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "package": "com.exner.tools.meditationtimer",
+      "source_url": "https://f-droid.org/repo/com.exner.tools.meditationtimer_10.apk",
+      "version_code": "10",
+      "version_name": "1.2.0"
+    },
+    {
+      "artifact_id": "a-39391b9d99f88e067474",
+      "expected_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "package": "com.ltrademark.hourly",
+      "source_url": "https://f-droid.org/repo/com.ltrademark.hourly_13.apk",
+      "version_code": "13",
+      "version_name": "1.81"
+    },
+    {
+      "artifact_id": "a-6584a3fcde422ef3679b",
+      "expected_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "package": "org.nsh07.pomodoro",
+      "source_url": "https://f-droid.org/repo/org.nsh07.pomodoro_34.apk",
+      "version_code": "34",
+      "version_name": "1.8.5"
+    }
+  ],
+  "schema": "peer-upstream-next4e-selection-v1",
+  "source_scope": "registered exact F-Droid URL; fresh GET and SHA required"
+}

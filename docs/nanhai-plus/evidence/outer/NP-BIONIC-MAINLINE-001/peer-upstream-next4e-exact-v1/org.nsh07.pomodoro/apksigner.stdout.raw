@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: C=IN, ST=West Bengal, L=Kolkata, O=Individual, OU=Mobile, CN=Nishant Mishra
+Signer #1 certificate SHA-256 digest: 07bef30581baee8f45ec93e47ee68ef20874e50ef5709c78b2ee67ac86be4c3d
+Signer #1 certificate SHA-1 digest: b14e179311e8dbd535ef8de9fb8fff08f8ec6508
+Signer #1 certificate MD5 digest: 8aab9dc860f1b7ca3f5ce2c464e8e76e
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: f55243be70d15d741e080d94aa2e4e74b5954f88079e47cdd07975f469d15c27
+Signer #1 public key SHA-1 digest: 8fde30f5355081e49876f6fec9f775023a8b49a6
+Signer #1 public key MD5 digest: 6638aea4c094c946cd0e5a99c1e903b8

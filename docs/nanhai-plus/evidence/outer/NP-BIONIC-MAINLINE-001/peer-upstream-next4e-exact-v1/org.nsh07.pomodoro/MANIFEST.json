@@ -1,0 +1,43 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 4,
+  "app_name": "Tomato",
+  "bytes": 5763085,
+  "features": [],
+  "filename": "original.apk",
+  "main_activities": [
+    "org.nsh07.pomodoro.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 4,
+  "package": "org.nsh07.pomodoro",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/org.nsh07.pomodoro/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_NOTIFICATION_POLICY",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.POST_PROMOTED_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "org.nsh07.pomodoro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 2,
+  "receivers": 15,
+  "services": 8,
+  "sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+  "signing_certificate_sha256": [
+    "07bef30581baee8f45ec93e47ee68ef20874e50ef5709c78b2ee67ac86be4c3d"
+  ],
+  "target_sdk": "36",
+  "version_code": "34",
+  "version_name": "1.8.5"
+}

@@ -1,0 +1,5 @@
+/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime_common.cc:373:std::string GetFaultMessageForAbortLogging() {
+/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime_common.cc:440:      std::cerr << "Fault message: " << GetFaultMessageForAbortLogging() << std::endl;
+/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime_common.cc:442:      LOG(FATAL_WITHOUT_ABORT) << "Fault message: " << GetFaultMessageForAbortLogging();
+/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime.h:1193:  //       only aborting code should retrieve this data (via GetFaultMessageForAbortLogging
+/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime.h:1598:  friend std::string GetFaultMessageForAbortLogging();

@@ -1,0 +1,25 @@
+{
+  "all_pass": true,
+  "checkpoint_sha256": "1fe0e1edc9f702557286a5ecdfbe7257648245fc97f23c24216eb5e68d4d628f",
+  "checks": {
+    "current_checkpoint_99_of_338": true,
+    "current_checkpoint_frozen": true,
+    "four_distinct_packages_and_artifacts": true,
+    "not_in_individual_root_raw_receipts": true,
+    "not_in_older_accepted_79": true,
+    "old_audit_frozen": true,
+    "registry_frozen": true
+  },
+  "container_commands": 0,
+  "device_commands": 0,
+  "individual_root_raw_receipts_inspected": 50,
+  "limits": "Older gap audit freezes the original 79; current checkpoint freezes 99/338. Individual root receipts are an additional anti-join, not a full reconstruction of all 95 admissions.",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "schema": "peer-upstream-next4e-current-guard-v1",
+  "selected_sha256": [
+    "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+    "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+    "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+    "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21"
+  ]
+}

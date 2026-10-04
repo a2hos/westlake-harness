@@ -1,0 +1,403 @@
+{
+  "all_checks_pass": true,
+  "cold_starts": 0,
+  "complete_host_static_candidates": 4,
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_audit_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "limits": [
+    "F-Droid GET and exact registry SHA are observed; no independent F-Droid publisher signing-key pin is asserted.",
+    "Four-phase static inventory is native host evidence, not install, Bionic runtime, Activity, display, network service, or cold-start proof.",
+    "Raw and static are peer candidates only; authoritative counts remain unchanged until root admission."
+  ],
+  "raw_candidates": 4,
+  "root_admissions": 0,
+  "rows": [
+    {
+      "all_dex": 1,
+      "apk_bytes": 64348929,
+      "apk_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "arm64_lib_so": 5,
+      "artifact_id": "a-a2e99d4259611eef7917",
+      "checks": {
+        "artifact_id": true,
+        "dex_scope_complete": true,
+        "exact_apk_sha": true,
+        "four_phase_rc_guards": true,
+        "get_http_200_apk_mime": true,
+        "private_tmp_empty": true,
+        "raw_validation": true,
+        "signer_found": true,
+        "tool_stdout_stderr_hashes": true
+      },
+      "embedded_dex": 0,
+      "files": {
+        "DEX-INVENTORY.json": {
+          "bytes": 2855755,
+          "sha256": "a9809ac0d89c02a4b11000f440bc64bd01f534e463bedd7641ef998eccd686d3"
+        },
+        "DEX-RESULT.json": {
+          "bytes": 551,
+          "sha256": "8e4ea5d4290a845d7a7318fc50ecd45bef8319b155194c456ab71a6c91095496"
+        },
+        "ELF-INVENTORY.json": {
+          "bytes": 238616,
+          "sha256": "f8841f734ea89df1e499cffbd89243864e734f2e2330c0894393eda89edbc2f7"
+        },
+        "ELF-RESULT.json": {
+          "bytes": 564,
+          "sha256": "0873bfeaee31b0359475fb8ab40fb3aee8e75aa2a81b1240b576b29256cd7824"
+        },
+        "GET.headers.raw": {
+          "bytes": 366,
+          "sha256": "7000fbf91c4d1194e5d94df43a4e8fc8cc799aa8fb9dd9989739d21c12ca0d47"
+        },
+        "GET.stderr.raw": {
+          "bytes": 1344,
+          "sha256": "247c677ace83e4b1b1d20b5e0080bf9803e568d68288a3aeb098d816921961b6"
+        },
+        "GET.stdout.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "MANIFEST.json": {
+          "bytes": 1072,
+          "sha256": "1161ca4452bcb7d0952c2ed372f2ffbfb23070590baf03f2dbc7cadf59aa77f4"
+        },
+        "METADATA-RESULT.json": {
+          "bytes": 651,
+          "sha256": "b02a9cd99148a0e0f37c75213c772fee7ce686a3744c945ef834945fa26fa821"
+        },
+        "RAW.json": {
+          "bytes": 3721,
+          "sha256": "685de2249c736726821dcf472c0dc2ea378ca07b2960af8d02a2947e057c81f4"
+        },
+        "STATIC.json": {
+          "bytes": 3230,
+          "sha256": "d962cdb4e8d42d7431e710577a2a64689cd03a7d5212f95aa8b19218822a883e"
+        },
+        "ZIP-RESULT.json": {
+          "bytes": 627,
+          "sha256": "02f1a27a1b130e598d5c3ed7bc68b60423a9acbb3260dcd7b599ad9924b05130"
+        },
+        "aapt2.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "bytes": 5323,
+          "sha256": "35d460cb7f7a076680600d14c2ecd5cca866a6346f006b777e60882d7c258301"
+        },
+        "apksigner.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "bytes": 976,
+          "sha256": "22f740e10a8ed1ee924e0d17134d191e0e5059e90aad9820d120fc75ddf27d59"
+        }
+      },
+      "package": "com.dozingcatsoftware.cardswithcats",
+      "raw_decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+      "readelf_ok": 5,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "signer_cert_sha256": "dcb1787180dfdcdc8349998f4fe154ae119a403100da406006009c9855f99ea0",
+      "source_url": "https://f-droid.org/repo/com.dozingcatsoftware.cardswithcats_10.apk",
+      "static_decision": "GO_COMPLETE_HOST_STATIC_CANDIDATE",
+      "true_arm64_elf": 5,
+      "version_code": "10",
+      "version_name": "1.4.4"
+    },
+    {
+      "all_dex": 1,
+      "apk_bytes": 4078553,
+      "apk_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "arm64_lib_so": 2,
+      "artifact_id": "a-46ebfb10ee53c6ae9855",
+      "checks": {
+        "artifact_id": true,
+        "dex_scope_complete": true,
+        "exact_apk_sha": true,
+        "four_phase_rc_guards": true,
+        "get_http_200_apk_mime": true,
+        "private_tmp_empty": true,
+        "raw_validation": true,
+        "signer_found": true,
+        "tool_stdout_stderr_hashes": true
+      },
+      "embedded_dex": 0,
+      "files": {
+        "DEX-INVENTORY.json": {
+          "bytes": 2624607,
+          "sha256": "b24efcae5f2cf9f2ad6e089bb1303ffa0232a6200aa9cbf60fb8472b34cc4c88"
+        },
+        "DEX-RESULT.json": {
+          "bytes": 551,
+          "sha256": "d8bb1c1d6c361d2a4003b1986bbb1f4edcfbb05c74031ed2f687d21f9c717ffa"
+        },
+        "ELF-INVENTORY.json": {
+          "bytes": 4330,
+          "sha256": "c5d2f540c637345747b33e91092992ae516091a32947dfe53183960fa568f718"
+        },
+        "ELF-RESULT.json": {
+          "bytes": 564,
+          "sha256": "a63cdd3596d0301b49fd0928af318a21d1a3277579b7763989479357a2b3b30a"
+        },
+        "GET.headers.raw": {
+          "bytes": 364,
+          "sha256": "0fe7680ee0ed3dbe2ba0de76edb8db1cf8c507a0250f193b57db07cd61b84e3f"
+        },
+        "GET.stderr.raw": {
+          "bytes": 870,
+          "sha256": "a091c27aa391cd046a26528953055a39ce57167724285e8e0b8691ed6a3afdf5"
+        },
+        "GET.stdout.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "MANIFEST.json": {
+          "bytes": 973,
+          "sha256": "2162cadc12602e2f32cb1a440c4a3be545e667c1e05a9606a3c6073b3fa942e8"
+        },
+        "METADATA-RESULT.json": {
+          "bytes": 647,
+          "sha256": "7fcc34e38bc58bd9158ead76847d6f70cdce1125456608ada662c690cb34bbc9"
+        },
+        "RAW.json": {
+          "bytes": 3701,
+          "sha256": "572f60d641e6bfd6a97e38082a23a8bc0de8841b130d300d49edb36127afa161"
+        },
+        "STATIC.json": {
+          "bytes": 3222,
+          "sha256": "9399267effe4646307b1a0dcc043662360cf967ef317f017a0e0f6b53f30cccb"
+        },
+        "ZIP-RESULT.json": {
+          "bytes": 627,
+          "sha256": "a240421f4bbf690f50b296ddde42c17d531d5159ded7af015dd4884f52b868e8"
+        },
+        "aapt2.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "bytes": 4959,
+          "sha256": "d290ecae75cae79a6348443bf23d650a0ee701f4400a765dcb42a13ec27bd0ab"
+        },
+        "apksigner.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "bytes": 951,
+          "sha256": "60ba85bf0b345097586b8cae449ede3927d25187cff2dccf7a0e24e8c12a4f54"
+        }
+      },
+      "package": "com.exner.tools.meditationtimer",
+      "raw_decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+      "readelf_ok": 2,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "signer_cert_sha256": "3f15745561afae58a2f73ff97a517303eba059b7c608aac576fab7465df27843",
+      "source_url": "https://f-droid.org/repo/com.exner.tools.meditationtimer_10.apk",
+      "static_decision": "GO_COMPLETE_HOST_STATIC_CANDIDATE",
+      "true_arm64_elf": 2,
+      "version_code": "10",
+      "version_name": "1.2.0"
+    },
+    {
+      "all_dex": 1,
+      "apk_bytes": 2156209,
+      "apk_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "arm64_lib_so": 0,
+      "artifact_id": "a-39391b9d99f88e067474",
+      "checks": {
+        "artifact_id": true,
+        "dex_scope_complete": true,
+        "exact_apk_sha": true,
+        "four_phase_rc_guards": true,
+        "get_http_200_apk_mime": true,
+        "private_tmp_empty": true,
+        "raw_validation": true,
+        "signer_found": true,
+        "tool_stdout_stderr_hashes": true
+      },
+      "embedded_dex": 0,
+      "files": {
+        "DEX-INVENTORY.json": {
+          "bytes": 3323010,
+          "sha256": "51cf3c6c47bd72ddc79ea7067aee0f963a31434784aff357f5a5cb6f6473ec6a"
+        },
+        "DEX-RESULT.json": {
+          "bytes": 551,
+          "sha256": "d8f06378941048151024b144887534cd4130d9aac7fd033037694c66dd99eb32"
+        },
+        "ELF-INVENTORY.json": {
+          "bytes": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "ELF-RESULT.json": {
+          "bytes": 564,
+          "sha256": "bdc261117e4833b57ae6fe7012e488c06623a3f4a6c15ed69be0c6d0759fcb4d"
+        },
+        "GET.headers.raw": {
+          "bytes": 364,
+          "sha256": "8dc29a9649d5188b981b86f34193eadcd7d8491ff03336f2904abafbddba863f"
+        },
+        "GET.stderr.raw": {
+          "bytes": 396,
+          "sha256": "05f8ac7995a7a3c41ce9ec7b78f94de9231bb29d43d162db500564d707b33e1e"
+        },
+        "GET.stdout.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "MANIFEST.json": {
+          "bytes": 1288,
+          "sha256": "f1168f0d8186d33d1701a47b2cf21da784faab78e33b53858d41b62d89f9ce76"
+        },
+        "METADATA-RESULT.json": {
+          "bytes": 636,
+          "sha256": "48828aa5ebcba095cfaecd114313bd3d84d8eefd2b829e6e041592dc12127900"
+        },
+        "RAW.json": {
+          "bytes": 3567,
+          "sha256": "d6f1bf05e17408970f2fb5a3eeb999ed6dc1bb01943a37ffe1dbc31c8baae955"
+        },
+        "STATIC.json": {
+          "bytes": 3201,
+          "sha256": "744b9789c2741e8408e7e364004ce1d3a36e51be6dc0144835f1c545c46989ac"
+        },
+        "ZIP-RESULT.json": {
+          "bytes": 627,
+          "sha256": "d68f9d23149477c789bfc7442f13caa2db3e655490ee808e7c249b628cefc103"
+        },
+        "aapt2.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "bytes": 4493,
+          "sha256": "074c847f7ea6549b2077116e77981f30a4401dac10ceffd9c9f592c94d23f472"
+        },
+        "apksigner.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "bytes": 949,
+          "sha256": "4d803aeaac56e587045ce09951523906a049bea2093ffe7ecc520c3cf101133b"
+        }
+      },
+      "package": "com.ltrademark.hourly",
+      "raw_decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+      "readelf_ok": 0,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "signer_cert_sha256": "d761b654c5f7a7e0cf7c9930d70946b8fcd00513bc60c719ed0e3fddbc7f9ab4",
+      "source_url": "https://f-droid.org/repo/com.ltrademark.hourly_13.apk",
+      "static_decision": "GO_COMPLETE_HOST_STATIC_CANDIDATE",
+      "true_arm64_elf": 0,
+      "version_code": "13",
+      "version_name": "1.81"
+    },
+    {
+      "all_dex": 1,
+      "apk_bytes": 5763085,
+      "apk_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "arm64_lib_so": 1,
+      "artifact_id": "a-6584a3fcde422ef3679b",
+      "checks": {
+        "artifact_id": true,
+        "dex_scope_complete": true,
+        "exact_apk_sha": true,
+        "four_phase_rc_guards": true,
+        "get_http_200_apk_mime": true,
+        "private_tmp_empty": true,
+        "raw_validation": true,
+        "signer_found": true,
+        "tool_stdout_stderr_hashes": true
+      },
+      "embedded_dex": 0,
+      "files": {
+        "DEX-INVENTORY.json": {
+          "bytes": 4559526,
+          "sha256": "a0b3df533d4b02b39447e151e0d88335b9a691f8a4e2fa5a2618d66a766eb429"
+        },
+        "DEX-RESULT.json": {
+          "bytes": 551,
+          "sha256": "705f99982dcdab33b5fe84f411873f42986f97245f3e4c81a116bb5645c5da00"
+        },
+        "ELF-INVENTORY.json": {
+          "bytes": 2449,
+          "sha256": "affda10979acf8313cbf0b2907cc4343d9c77a3ac8eb50167526cf54d4bde1f1"
+        },
+        "ELF-RESULT.json": {
+          "bytes": 564,
+          "sha256": "30d5b3c1c449d5e717373ecfcdbf3a23da26ddaab57b881e0935adb01b173a53"
+        },
+        "GET.headers.raw": {
+          "bytes": 364,
+          "sha256": "7b2e199bd88484e2aa639897bdb9e387dfd2c471e100c07167e23aba037f3309"
+        },
+        "GET.stderr.raw": {
+          "bytes": 554,
+          "sha256": "06f9012da5f7a817c8eea1e431ad42990db48a5fba59396baf2561468394f7c3"
+        },
+        "GET.stdout.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "MANIFEST.json": {
+          "bytes": 1378,
+          "sha256": "fd76a1159bf757d7923f9f880b7b229afd76413e4b4e68f91ca0b8dd4c470cdc"
+        },
+        "METADATA-RESULT.json": {
+          "bytes": 634,
+          "sha256": "ed73d69af9a645178a36c1e1bc5617748692abd1f1890e7762672fcd62551b2a"
+        },
+        "RAW.json": {
+          "bytes": 3611,
+          "sha256": "7c653991f7144821175daa66ff6e64b9e4217d57e33883ad678bdb10bc3d573c"
+        },
+        "STATIC.json": {
+          "bytes": 3196,
+          "sha256": "92012dc8197f15eb88b6a4d9564cd36502a38cf9838e0540a33888f6657bcf2c"
+        },
+        "ZIP-RESULT.json": {
+          "bytes": 627,
+          "sha256": "f8c11d7b1e3b0ba34b3e39deaeeea05de246455e4d76fd6f5b56f0759e2f393b"
+        },
+        "aapt2.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "bytes": 4977,
+          "sha256": "78609d7181a74f32e993c89c91983497ad514e33099681a4ba33502d4072c507"
+        },
+        "apksigner.stderr.raw": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "bytes": 997,
+          "sha256": "1b8a8db6fc2f45aad9d28b13c46bd405cda15067d386aea0e7e500cf9fd81982"
+        }
+      },
+      "package": "org.nsh07.pomodoro",
+      "raw_decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+      "readelf_ok": 1,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "signer_cert_sha256": "07bef30581baee8f45ec93e47ee68ef20874e50ef5709c78b2ee67ac86be4c3d",
+      "source_url": "https://f-droid.org/repo/org.nsh07.pomodoro_34.apk",
+      "static_decision": "GO_COMPLETE_HOST_STATIC_CANDIDATE",
+      "true_arm64_elf": 1,
+      "version_code": "34",
+      "version_name": "1.8.5"
+    }
+  ],
+  "schema": "peer-upstream-next4e-exact-four-handoff-v1",
+  "selection_sha256": "8b53ba0b1ed02b3da9f00a8e79cb4ccd92dcebc1b3490551bf307ed5eb9d176c"
+}

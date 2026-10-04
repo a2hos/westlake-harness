@@ -1,0 +1,100 @@
+{
+  "at_utc": "2026-10-04T22:15:23.649464+00:00",
+  "bridge_commands": 0,
+  "canonical_changes": 0,
+  "container_commands": 0,
+  "decision": "TWO_DISTINCT_PACKAGE_CANDIDATES_FOR_INDEPENDENT_REVIEW",
+  "dedup_root_receipt_search": {
+    "argv": [
+      "rg",
+      "-l",
+      "com\\.teamviewer\\.teamviewer\\.market\\.mobile|com\\.teamviewer\\.host\\.market",
+      "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001",
+      "--glob",
+      "*ROOT*ADMISSION*.json",
+      "--glob",
+      "*ROOT*QUALIFICATION*.json"
+    ],
+    "rc": 1,
+    "scope": "filename-filtered ROOT admission and qualification JSON only",
+    "stderr": "",
+    "stdout": ""
+  },
+  "device_commands": 0,
+  "eula_scope_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-qualification-v1/EULA-SCOPE.json",
+    "sha256": "5da5a8a4d601400f102de2d34f461ad14155eb5e25dfaa4fd2247ed364ef9e77"
+  },
+  "limits": [
+    "Same publisher certificate does not collapse distinct package IDs, but package distinction alone does not establish cold start.",
+    "Play downloads are package-wide, not exact APK/version downloads.",
+    "No separate official certificate digest pin; acquisition is tied to the publisher page direct APK URL and APK signature verifies.",
+    "EULA supports proprietary-client source scope; no global absence of third-party component source is claimed.",
+    "Independent review and root admission are required before canonical count changes."
+  ],
+  "publisher_page": "https://www.teamviewer.com/en/download/portal/android/",
+  "rows": [
+    {
+      "all_four_static_rc0": true,
+      "apk_bytes": 245891200,
+      "apk_sha256": "2428b81eb78e93ebacb0dde64fc1a5f382e2446db8521b8481b0d74ee4cdc935",
+      "apk_url": "https://download.teamviewer.com/download/TeamViewer.apk",
+      "elf_counts": {
+        "arm64_path_arm32_elf": 0,
+        "non_elf_so": 0,
+        "other_arm32_elf": 9,
+        "other_elf": 18,
+        "true_arm64_elf": 9
+      },
+      "package": "com.teamviewer.teamviewer.market.mobile",
+      "play_package_wide_downloads": "100M+",
+      "publisher_page_links_exact_apk_and_play_package": true,
+      "receipt_sha256": {
+        "qualification": "e82aa1f8e5f528ec6955ef78ddf1779c61fdcd69e18561503be87c8c91ae5532",
+        "raw_result": "1990f995e3142e56643406ea291c6490afbf451537258dba9f8385bf948ffc8c",
+        "static": "9c56c7269453ded9f6b08694ea02ffbf419d0ae14e93a269f9e745dce3d91a7d",
+        "verify": "cac694785578394cf46344ec1c7dd4b27819ce08564368eee05a37ce7b6243be"
+      },
+      "semantic_dex_entries": 2,
+      "signer_cert_sha256": [
+        "a7d99ff485f0c55fd4f1f9cc35cb08a1b74eb995fc3f0524318ff662f8d3cd26"
+      ],
+      "tag": "remote",
+      "version_code": "1582270",
+      "version_name": "15.82.270",
+      "zip_entries": 1541
+    },
+    {
+      "all_four_static_rc0": true,
+      "apk_bytes": 68939457,
+      "apk_sha256": "0372259d3a49ff007e62ca5f56f0145b8afedb2d7ff79224034e1025c3dc27bb",
+      "apk_url": "https://download.teamviewer.com/download/TeamViewerHost.apk",
+      "elf_counts": {
+        "arm64_path_arm32_elf": 0,
+        "non_elf_so": 0,
+        "other_arm32_elf": 11,
+        "other_elf": 16,
+        "true_arm64_elf": 11
+      },
+      "package": "com.teamviewer.host.market",
+      "play_package_wide_downloads": "5M+",
+      "publisher_page_links_exact_apk_and_play_package": true,
+      "receipt_sha256": {
+        "qualification": "d4ea4d6448b25d6c8ea0c08c86959c7a65f81b73fcffd98fc04c12bf595cdc23",
+        "raw_result": "a37a77b47869dee73b5ec0061efb9caa27a62dda465e99256b11808ad139c40c",
+        "static": "3eb709e3e90d1990e1a2985ff8e468b442a1bcfe9bfaf946e957816661bb20f6",
+        "verify": "6de584beb126f7fa5a51c5cdee534aac79e5333ca29c4662e1c94c0a37b096d7"
+      },
+      "semantic_dex_entries": 1,
+      "signer_cert_sha256": [
+        "a7d99ff485f0c55fd4f1f9cc35cb08a1b74eb995fc3f0524318ff662f8d3cd26"
+      ],
+      "tag": "host",
+      "version_code": "1582263",
+      "version_name": "15.82.263",
+      "zip_entries": 874
+    }
+  ],
+  "schema": "peer-teamviewer-remote-host-test-input-handoff-v1",
+  "startup_proven": false
+}

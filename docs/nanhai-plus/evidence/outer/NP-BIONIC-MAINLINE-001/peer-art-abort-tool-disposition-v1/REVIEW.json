@@ -1,0 +1,90 @@
+{
+  "at_utc": "2026-10-04T22:14:22.680442+00:00",
+  "candidate_direction": "R4 ART native abort message and fatal logging may replace the separate historical C bridge, conditional on exact current consumer and OH-visible sink evidence.",
+  "counts_delta": {
+    "build_accepted": 0,
+    "disposition_reviewed": 0,
+    "retired_accepted": 0,
+    "whole_tool_accepted": 0
+  },
+  "decision": "NO_GO_FINAL_DISPOSITION_KEEP_UNDETERMINED",
+  "input_sha256": {
+    "audit_script": "db1d9c017413baa7603f554aae7e51367c0d87a963a7200b6b3bd46785238975",
+    "catalog_sha256": "f2b38448336c5c7ab4435a7ad3b455cdbdbab5c50e0231c10f4a951e2a080811",
+    "historical_g160": "19fc3391c8518d53786e1248c7d23cc8bdbc93b0055c4df5f40852bffed8c2d3",
+    "historical_source_sha256": "571673ea0546e35df2fcc631a213ba071e806c2c214dc7a6f5f72de3e8b14f1e",
+    "local_env": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+    "observation": "d079540d6dac5a63ad4b1e0e78e74d657eff801ce5d6138f9d109a45433c10e7",
+    "plan_sha256": "9d608e57aeef88573bf8bb1ba570704a2e20fbb6d3e51c1e64fc5f4c847cf445",
+    "prior_peer_keep_undetermined": "6d35a3fe1e2ede4d2385fcdd1283be2157d0374655ce70dc05406b9c90f787cc",
+    "prior_peer_replace_candidate": "1c9e437feac93c9bc7a118d57280f29e710069fb2226ed936e2ccc36dbbc253a",
+    "r4_art_runtime_common_sha256": "eac0a73915f2cd9efd1098bd1f380ec69c43d1fbd4231eb6d7bc6ee7c4f4b3ed",
+    "r4_art_runtime_h_sha256": "24d5c4b6c6326187fd28a8d462077d0f5747942f5bb5f748b00695476f5348df"
+  },
+  "limits": "Independent static review only; no new build/host graph, runtime, device, container, Bridge, canonical or owner-state change. No formal reflection in this round.",
+  "minimum_next_validation": [
+    "From the selected current Bionic appspawn/ART source and intended native graph, identify exact abort caller/imports and declared sink/tag or abort-message consumer; record source commit and SHA. Stop if still unselected.",
+    "For one exact R4 ARM64 Bionic build cohort, record libart export/visibility, caller/provider, libc++ ABI, compiler/sysroot and DT_NEEDED/namespace closure; no Musl or second libc mapping.",
+    "Once an authorized native runtime exists, trigger one controlled fatal diagnostic and one unavailable/empty-message boundary; verify exact message and OH-visible sink. If old wrapper is truly absent, classify replacement/retirement separately without marking the old ID PASS."
+  ],
+  "observed": {
+    "bounded_consumer_search": "Historical appspawn subtree finds wrapper definition/references in that TU only; R4 ART finds internal producer/consumer. This is not global no-consumer proof.",
+    "catalog": "89 IDs audited, 1 undetermined, 0 whole-tool accepted; only art-abort-bridge remains undetermined.",
+    "historical_failure": "G160 recorded strict link rc1 on missing symbol in a Musl candidate. It is not a Bionic target result.",
+    "historical_source": "C ABI copy wrapper calls C++ std::string-returning ART function; old source is a comparator, not target build input.",
+    "r4_source": "runtime_common.cc implements GetFaultMessageForAbortLogging and writes Fault message to stderr or LOG(FATAL_WITHOUT_ABORT) on unexpected signal; runtime.cc SetAbortMessage has ART_TARGET_ANDROID android_set_abort_message branch."
+  },
+  "option_assessment": {
+    "native_replacement": "CANDIDATE_ONLY: R4 ART source logs fault message and sets Android abort message in ART_TARGET_ANDROID, but selected product branch and OH-visible sink unbound.",
+    "rebuild_old_wrapper": "NO_GO_NOW: no selected Bionic consumer/provider/export/C++ ABI cohort; G160 strict R4/Musl link failed with unresolved art::GetFaultMessageForAbortLogging.",
+    "retain_old_binary": "NO_GO: historical OH6.1/Musl/libc++ and R155 linkage cannot be inherited by R4 Bionic.",
+    "retire": "NO_GO_NOW: narrow absence of caller in historical selected appspawn subtree does not prove no current Bionic consumer or diagnostic requirement."
+  },
+  "schema": "peer-art-abort-tool-disposition-review-v1",
+  "search_receipts": {
+    "historical_appspawn": {
+      "argv": [
+        "rg",
+        "-n",
+        "-g",
+        "*.cc",
+        "-g",
+        "*.cpp",
+        "-g",
+        "*.h",
+        "-g",
+        "*.bp",
+        "-g",
+        "*.gn",
+        "westlake_art_copy_fault_message_for_abort_logging|GetFaultMessageForAbortLogging|libwestlake_art_abort_bridge",
+        "/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3e866f9f8fdd2cd6d1fd0bf814b85c872b063845a5d3ecec8ba0bf15b762897c"
+    },
+    "r4_art": {
+      "argv": [
+        "rg",
+        "-n",
+        "-g",
+        "*.cc",
+        "-g",
+        "*.cpp",
+        "-g",
+        "*.h",
+        "-g",
+        "*.bp",
+        "-g",
+        "*.gn",
+        "westlake_art_copy_fault_message_for_abort_logging|GetFaultMessageForAbortLogging|libwestlake_art_abort_bridge",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/art"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6afa27ded5f054ffb6bed3a481b4af896907737bc57aca289f0cffab997795f4"
+    }
+  },
+  "target": "oh7.0.0.39-aosp16r4-arm64-bionic",
+  "tool_id": "art-abort-bridge"
+}

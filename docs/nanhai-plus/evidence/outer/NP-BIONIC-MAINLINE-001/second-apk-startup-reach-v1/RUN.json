@@ -1,0 +1,26 @@
+{
+  "admission_sha256": "cbfffc3d3498f5e6b6da355bdbd848fa6d5d541050d98173f0962cc5d9dd8824",
+  "apk_sha256": "dbf937ebbe7c0b3d24c07fa0ede7cb53ea117f7071db3b61f1c96b7d257cda55",
+  "argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-B",
+    "-m",
+    "westlake_gap.cli",
+    "startup-reach",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4d-exact-v1/com.justdeax.composeStopwatch/original.apk",
+    "--out",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/second-apk-startup-reach-v1/STARTUP-REACH.json"
+  ],
+  "at_utc": "2026-10-04T22:14:02.687875+00:00",
+  "cli_source_sha256": "31c79e38021ccbe1864aaf78cf2834e94b210f36034d0198989f97043d61838a",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "output_sha256": "26385c5e45885ce4e6c5d082cd651851333e9f4f77bf914f09b94daaacad52bc",
+  "rc": 0,
+  "reach_source_sha256": "8809918e3f84c154e7b59f89cd07307296c3e58019a67d3c19640a6a99282be5",
+  "runtime_index_used": false,
+  "schema": "nanhai-second-apk-static-reach-v1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "de1ea896087ab5fd5826647cf0a2908e87fc963868c297b60bc05b6dd63dc166"
+}

@@ -1,0 +1,12 @@
+HTTP/1.1 200 Connection established
+
+HTTP/2 200 
+server: nginx/1.22.1
+date: Sun, 04 Oct 2026 22:14:02 GMT
+content-type: application/vnd.android.package-archive
+content-length: 2156209
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+last-modified: Sun, 16 Aug 2026 07:41:38 GMT
+etag: "20e6b1-659252f16881a"
+accept-ranges: bytes
+

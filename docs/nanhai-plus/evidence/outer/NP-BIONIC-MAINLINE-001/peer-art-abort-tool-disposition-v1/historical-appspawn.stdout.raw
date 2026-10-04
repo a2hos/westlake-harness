@@ -1,0 +1,4 @@
+/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x/src/art_abort_message_bridge.cpp:3: * GetFaultMessageForAbortLogging() inside namespace art, while appspawn-x is
+/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x/src/art_abort_message_bridge.cpp:14:std::string GetFaultMessageForAbortLogging();
+/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x/src/art_abort_message_bridge.cpp:18:westlake_art_copy_fault_message_for_abort_logging(char* output,
+/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x/src/art_abort_message_bridge.cpp:20:    const std::string message = art::GetFaultMessageForAbortLogging();

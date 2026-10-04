@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: O=Ltrademark, CN=Leo Herrera
+Signer #1 certificate SHA-256 digest: d761b654c5f7a7e0cf7c9930d70946b8fcd00513bc60c719ed0e3fddbc7f9ab4
+Signer #1 certificate SHA-1 digest: 17701b0b53512d1fa4971c0f2e1673c52b734c4e
+Signer #1 certificate MD5 digest: 70d0c5d6980dbf5353bf1ecce4dd5368
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 6736e6014675127e781da8ae6bbf874816b1923339e9d4216b8a110b755f6f79
+Signer #1 public key SHA-1 digest: a56f1d66945725cbe47572a7fb0ad24e470aa8dd
+Signer #1 public key MD5 digest: aca46330b063e13c8c59f49eb5fd86a1

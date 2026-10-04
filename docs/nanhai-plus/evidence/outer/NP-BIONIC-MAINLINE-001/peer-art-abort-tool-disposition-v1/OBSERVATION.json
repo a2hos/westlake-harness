@@ -1,0 +1,56 @@
+{
+  "at_utc": "2026-10-04T22:13:47.913952+00:00",
+  "bounded_search": {
+    "historical_appspawn": {
+      "argv": [
+        "rg",
+        "-n",
+        "-g",
+        "*.cc",
+        "-g",
+        "*.cpp",
+        "-g",
+        "*.h",
+        "-g",
+        "*.bp",
+        "-g",
+        "*.gn",
+        "westlake_art_copy_fault_message_for_abort_logging|GetFaultMessageForAbortLogging|libwestlake_art_abort_bridge",
+        "/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3e866f9f8fdd2cd6d1fd0bf814b85c872b063845a5d3ecec8ba0bf15b762897c"
+    },
+    "r4_art": {
+      "argv": [
+        "rg",
+        "-n",
+        "-g",
+        "*.cc",
+        "-g",
+        "*.cpp",
+        "-g",
+        "*.h",
+        "-g",
+        "*.bp",
+        "-g",
+        "*.gn",
+        "westlake_art_copy_fault_message_for_abort_logging|GetFaultMessageForAbortLogging|libwestlake_art_abort_bridge",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/art"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6afa27ded5f054ffb6bed3a481b4af896907737bc57aca289f0cffab997795f4"
+    }
+  },
+  "catalog_sha256": "f2b38448336c5c7ab4435a7ad3b455cdbdbab5c50e0231c10f4a951e2a080811",
+  "catalog_undetermined": 1,
+  "catalog_whole_tool_accepted": 0,
+  "historical_source_sha256": "571673ea0546e35df2fcc631a213ba071e806c2c214dc7a6f5f72de3e8b14f1e",
+  "plan_sha256": "9d608e57aeef88573bf8bb1ba570704a2e20fbb6d3e51c1e64fc5f4c847cf445",
+  "r4_art_runtime_common_sha256": "eac0a73915f2cd9efd1098bd1f380ec69c43d1fbd4231eb6d7bc6ee7c4f4b3ed",
+  "r4_art_runtime_h_sha256": "24d5c4b6c6326187fd28a8d462077d0f5747942f5bb5f748b00695476f5348df",
+  "schema": "peer-art-abort-tool-readonly-audit-v1",
+  "target_plan_state": "not_run"
+}

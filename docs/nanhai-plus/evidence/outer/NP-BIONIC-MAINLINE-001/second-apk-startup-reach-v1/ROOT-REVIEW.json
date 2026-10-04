@@ -1,0 +1,20 @@
+{
+  "apk_sha256": "dbf937ebbe7c0b3d24c07fa0ede7cb53ea117f7071db3b61f1c96b7d257cda55",
+  "at_utc": "2026-10-04T22:14:28.739963+00:00",
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_SECOND_REAL_APK_STATIC_ENTRYPOINT_PILOT_ONLY",
+  "detected_launcher": [
+    "com.justdeax.composeStopwatch.AppActivity"
+  ],
+  "first_activity_methods": 897,
+  "limits": "The second real APK avoids a launcher false negative but does not test the no-launcher case or target-runtime behavior; EVO63 remains a pilot.",
+  "manifest_launcher": [
+    "com.justdeax.composeStopwatch.AppActivity"
+  ],
+  "manifest_package": "com.justdeax.composeStopwatch",
+  "output_sha256": "26385c5e45885ce4e6c5d082cd651851333e9f4f77bf914f09b94daaacad52bc",
+  "process_start_methods": 10064,
+  "run_sha256": "e1e1e5f0258b885a84bf4ecee2693858a203561c41730c30bab004d3b5324489",
+  "runtime_index_present": false,
+  "schema": "nanhai-second-apk-static-reach-root-review-v1"
+}

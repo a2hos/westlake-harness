@@ -1,0 +1,94 @@
+[
+  {
+    "abi": "arm64-v8a",
+    "abi_matches_machine": true,
+    "archive_abi": "arm64-v8a",
+    "build_id": "a7846ae06d6bf6cf63fa7c5e056b5de493c71567",
+    "bytes": 10096,
+    "exported_symbols": [
+      "JNI_OnLoad"
+    ],
+    "has_jni_onload": true,
+    "jni_exports": [],
+    "jni_registration_entries": [
+      {
+        "function_vaddr": 6280,
+        "name": "createInternalPathIterator",
+        "section": ".data.rel.ro",
+        "signature": "(Landroid/graphics/Path;IF)J",
+        "table_vaddr": 23792
+      },
+      {
+        "function_vaddr": 6612,
+        "name": "destroyInternalPathIterator",
+        "section": ".data.rel.ro",
+        "signature": "(J)V",
+        "table_vaddr": 23816
+      },
+      {
+        "function_vaddr": 6848,
+        "name": "internalConicToQuadratics",
+        "section": ".data.rel.ro",
+        "signature": "([FI[FFF)I",
+        "table_vaddr": 23960
+      },
+      {
+        "function_vaddr": 6620,
+        "name": "internalPathIteratorHasNext",
+        "section": ".data.rel.ro",
+        "signature": "(J)Z",
+        "table_vaddr": 23672
+      },
+      {
+        "function_vaddr": 6636,
+        "name": "internalPathIteratorNext",
+        "section": ".data.rel.ro",
+        "signature": "(J[FI)I",
+        "table_vaddr": 23696
+      },
+      {
+        "function_vaddr": 6784,
+        "name": "internalPathIteratorPeek",
+        "section": ".data.rel.ro",
+        "signature": "(J)I",
+        "table_vaddr": 23720
+      },
+      {
+        "function_vaddr": 6832,
+        "name": "internalPathIteratorRawSize",
+        "section": ".data.rel.ro",
+        "signature": "(J)I",
+        "table_vaddr": 23744
+      },
+      {
+        "function_vaddr": 6840,
+        "name": "internalPathIteratorSize",
+        "section": ".data.rel.ro",
+        "signature": "(J)I",
+        "table_vaddr": 23768
+      }
+    ],
+    "machine": "AArch64",
+    "machine_abi": "arm64-v8a",
+    "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "needed": [
+      "libc.so",
+      "libdl.so",
+      "libm.so"
+    ],
+    "readelf_ok": true,
+    "runtime_symbol_candidates": [],
+    "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6",
+    "soname": "libandroidx.graphics.path.so",
+    "undefined_symbols": [
+      "__cxa_atexit",
+      "__cxa_finalize",
+      "__stack_chk_fail",
+      "__system_property_get",
+      "atoi",
+      "free",
+      "malloc"
+    ],
+    "undefined_weak_symbols": []
+  }
+]
