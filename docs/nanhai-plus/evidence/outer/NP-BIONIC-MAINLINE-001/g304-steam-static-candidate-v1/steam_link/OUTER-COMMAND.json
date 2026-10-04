@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam_link/run.py",
+    "--execute"
+  ],
+  "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+  "started_at": "2026-10-04T15:41:40.360537+00:00",
+  "timeout_seconds": 1400,
+  "network_authorized": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "pid": 81411,
+  "rc": 0,
+  "finished_at": "2026-10-04T15:42:47.055066+00:00",
+  "elapsed_seconds": 66.69448466703761,
+  "stdout_sha256": "46aa4521cfa69676648264ff6ad484b3788ada0c5e84c9d6ec771b5e4d2896a2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

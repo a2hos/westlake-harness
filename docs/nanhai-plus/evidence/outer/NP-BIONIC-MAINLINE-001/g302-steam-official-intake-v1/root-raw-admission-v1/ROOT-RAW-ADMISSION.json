@@ -1,0 +1,40 @@
+{
+  "schema": "g302-steam-two-root-raw-admission-v1",
+  "accepted_at_utc": "2026-10-04T15:39:52.797298+00:00",
+  "decision": "ACCEPT_TWO_RAW_APK_IDENTITIES_ONLY",
+  "candidate": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/CANDIDATE.json",
+  "candidate_sha256": "bea82656aa59f003c315c1e4d06ee257b40651b37d66a9ead4964c5753854de3",
+  "peer_review": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/peer-review-v1/REVIEW.json",
+  "peer_review_sha256": "e520e27a0ea25fbe71667d86edeaf1dc2dfba18ee33d13c7053810761c1e2ddd",
+  "raw_before": 85,
+  "raw_after": 87,
+  "supplemental_before": 10,
+  "supplemental_after": 12,
+  "packages": [
+    {
+      "package": "com.valvesoftware.android.steam.community",
+      "version_name": "3.10.9",
+      "version_code": 10470850,
+      "sha256": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d",
+      "bytes": 131986934,
+      "local_bytes_rehashed": true
+    },
+    {
+      "package": "com.valvesoftware.steamlink",
+      "version_name": "1.3.32",
+      "version_code": 5000315,
+      "sha256": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+      "bytes": 132207126,
+      "local_bytes_rehashed": true
+    }
+  ],
+  "provenance_limit": "Official Valve page/direct URLs and saved HTTP 200 headers; exact GET URL-to-byte transcript absent; independent publisher-to-cert fingerprint binding absent",
+  "blackbox_qualification_delta": 0,
+  "complete_static_delta": 0,
+  "cold_start_delta": 0,
+  "bionic_tool_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "bridge_writes": 0
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "g279-v13-a30-live-goal-peer-review-v1",
+  "reviewed_at_utc": "2026-10-04T15:42:11.801496+00:00",
+  "decision": "NO_GO_A3_0_FULL_CONTINUITY",
+  "bounded_finding": "Native goal_get call occurred and succeeded in original oracle-kimi:local:nanhai-plus#inner turn; only status=blocked and goal_id=goal_01 are visible in truncated native output_preview. Separate native Bash time read succeeded. Remaining continuity assertions are not independently evidenced by this readback.",
+  "turn_id": "01a10790-1d9d-76d2-ba84-b201a9f77843",
+  "tool_call_id": "tool_HrgpsqZJvNHMiXBIenp36Tku",
+  "native_ledger": ".nanhai-plus-runtime/instance/ui-protocol/6f7261636c652d6b696d693a6c6f63616c3a6e616e6861692d706c757323696e6e6572007e6377642d35343431326534343037326337313832/ledger-00001791090903799580-81499.log",
+  "native_ledger_sha256": "3757b883d620be496edd4b73ae7a5a4f18a07c5ae029e415eba1222e82bd2f84",
+  "excerpt_sha256": "70f8436ccb8276acb84d9a120211efde48767d09b2286d048059591c809ee81b",
+  "native_events": {
+    "goal_get_start_seq": 187106,
+    "goal_get_success_seq": 187108,
+    "utc_bash_success_seq": 187118,
+    "turn_complete_seq": 187550
+  },
+  "directly_verified": {
+    "goal_id": "goal_01",
+    "goal_status": "blocked",
+    "native_session": "oracle-kimi:local:nanhai-plus#inner",
+    "read_event_id": "ledger seq 187108 / tool_HrgpsqZJvNHMiXBIenp36Tku",
+    "read_at": "Bash 2026-10-04T15:38:02.980550+00:00 after goal_get (not atomic tool timestamp)",
+    "goal_get_success": true
+  },
+  "not_independently_verified": [
+    "goal_creation_id",
+    "goal_created_at",
+    "claim",
+    "coordinator_session",
+    "token_budget",
+    "tokens_used",
+    "remaining",
+    "new_goal_created",
+    "new_session_created",
+    "usage_reset",
+    "replacement_coordinator_created"
+  ],
+  "context_only": [
+    "herdr_session and agent names are present in the read command and original lane identity, not in Goal_get output",
+    "owner prose reported 20B, 255945577 used, 19744054423 remaining, but native ledger output_preview truncates before those fields",
+    "created_at_ms=1790677296212 was explicitly carried from an earlier goal_update, not freshly verified by Goal_get",
+    "the 255945577 used value equals historical OUTER-STATE snapshot; equality does not establish fresh usage"
+  ],
+  "source_gap": "The UI thread JSON contains only 168-byte metadata; the session JSONL located under profiles/oracle-kimi/data/sessions is an older 2026-09-29 record and contains no matching turn. The native UI ledger stores only a truncated output_preview for goal_get.",
+  "required_to_reconsider": "Fresh exact original-goal metadata readback persisted with full, hash-pinned native tool result or authoritative store record; separate evidence for claim/coordinator and noncreation/nonreset assertions; peer checks every required_live_fields entry against primary evidence. No owner ACK or graph release on this receipt."
+}

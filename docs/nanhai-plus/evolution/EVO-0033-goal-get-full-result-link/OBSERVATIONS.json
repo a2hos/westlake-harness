@@ -1,0 +1,25 @@
+{
+  "schema": "evo33-four-result-group-observations-v1",
+  "groups": [
+    "G302 raw exact two APK identities accepted",
+    "G303 Steam Mobile and Steam Link blackbox package qualifications accepted",
+    "G304 two complete host static inventories accepted",
+    "A3.0 original goal continuity NO_GO after successful Goal_get with truncated preview"
+  ],
+  "input_sha256": {
+    "g302_raw": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+    "g303_mobile_blackbox": "935221dc869b71a0a5d9755e4f91bb0bacda044ccca8bca11286bdd4052f3f12",
+    "g303_link_blackbox": "69048a46a2d72885288ec25fbfed9472880e79d2b9b1f234ba8c49c736ce4c05",
+    "g304_mobile_static": "ba3c9cfcc2a49d7404f6a14545d1c261c00a3201aeebfa7be96604ad19dcad96",
+    "g304_link_static": "da321360f3ef45dc7bfd2c06f3ce352cdc9495f7e343666543a5401700784c94",
+    "a30_live_goal_no_go": "5a38050363f81f264f23c36ac836e97fc14adc60b1676425080185d9a752905c",
+    "goal_get_ledger_excerpt": "70f8436ccb8276acb84d9a120211efde48767d09b2286d048059591c809ee81b"
+  },
+  "goal_get_first_open_wall": "Native ledger has goal_get success, but only 203-byte truncated output_preview; full budget/usage/creation fields cannot be independently bound to same tool call. Supervisor snapshot is 17 hours older.",
+  "canonical_modifications": 0,
+  "owner_prompts": 0,
+  "graph_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge_writes": 0
+}

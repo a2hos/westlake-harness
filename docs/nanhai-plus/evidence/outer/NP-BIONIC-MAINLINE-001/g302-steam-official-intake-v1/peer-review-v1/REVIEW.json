@@ -1,0 +1,81 @@
+{
+  "schema": "g302-valve-two-apk-independent-raw-candidate-review-v1",
+  "decision": "GO_TWO_RAW_APK_IDENTITIES_FOR_ROOT_ADMISSION_ONLY",
+  "scope": "Two Valve-hosted original APK identities; no blackbox qualification, four-phase static completion, cold start, or device result",
+  "reviewed_sha256": {
+    "candidate": "bea82656aa59f003c315c1e4d06ee257b40651b37d66a9ead4964c5753854de3",
+    "branch_plan": "6cfa0daf39144c3f233fa6ff01f0d045df9a9c35c48f5ba68e1e9a49feac3598",
+    "handoff": "d840bb5aaa7b6f2f66e66e49833c590b1785121ad7be8111fd580e79735abd9e",
+    "scan_script": "8b8232181b3e3379a89264461cd3e849baa9dfdcb93f7e0daedcb0f0f51b9808"
+  },
+  "official_source": {
+    "product_page": "https://store.steampowered.com/mobile",
+    "steam_mobile_direct_url": "https://media.steampowered.com/apps/steam-android/steam-3.10.9.apk",
+    "steam_link_direct_url": "https://media.steampowered.com/steamlink/android/latest/steamlink-android.apk",
+    "product_page_direct_links_independently_seen": true,
+    "steam_mobile_google_play_package_url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community&hl=en_US",
+    "steam_link_google_play_package_url": "https://play.google.com/store/apps/details?id=com.valvesoftware.steamlink&hl=en_US",
+    "google_play_lists_valve_corporation_for_both": true,
+    "saved_http_headers_report_200_and_exact_lengths": true,
+    "download_transport_log_with_url_and_digest_retained": false
+  },
+  "packages": [
+    {
+      "package": "com.valvesoftware.android.steam.community",
+      "version_name": "3.10.9",
+      "version_code": 10470850,
+      "apk_sha256": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d",
+      "bytes": 131986934,
+      "aapt2_rc": 0,
+      "aapt2_output_byte_identical_to_saved_report": true,
+      "apksigner_rc": 0,
+      "apksigner_output_byte_identical_to_saved_report": true,
+      "apk_v2_signature_verified": true,
+      "zip_entries_crc_verified": 1816,
+      "arm64_v8a_elf64_aarch64_verified": 25,
+      "raw_candidate_go": true
+    },
+    {
+      "package": "com.valvesoftware.steamlink",
+      "version_name": "1.3.32",
+      "version_code": 5000315,
+      "apk_sha256": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+      "bytes": 132207126,
+      "aapt2_rc": 0,
+      "aapt2_output_byte_identical_to_saved_report": true,
+      "apksigner_rc": 0,
+      "apksigner_output_byte_identical_to_saved_report": true,
+      "apk_v1_and_v2_signatures_verified": true,
+      "zip_entries_crc_verified": 134,
+      "arm64_v8a_elf64_aarch64_verified": 24,
+      "raw_candidate_go": true
+    }
+  ],
+  "certificate": {
+    "shared_signer_sha256": "5dff6b05761447a5bdf919ea88fc6fdf20d301e30b2315415c4d368ec0fbda45",
+    "signer_dn_reported": "O=Valve Corporation, L=Bellevue, ST=WA, C=01",
+    "publisher_to_signer_cryptographic_binding": "UNPROVEN_NO_OFFICIAL_PUBLISHED_CERT_FINGERPRINT_OR_SIGNED_APK_DIGEST",
+    "blackbox_qualification_requires_separate_review": true
+  },
+  "dedup_and_evo31": {
+    "task_summary_root_accepted_raw_before": 85,
+    "existing_task_summary_and_prior_outer_evidence_package_name_hits_outside_g302": 0,
+    "two_package_names_distinct": true,
+    "download_completed_before_candidate_observed": true,
+    "candidate_observed_before_branch_plan_recorded": true,
+    "qualification_start_recorded": false,
+    "four_phase_scan_start_recorded": false,
+    "raw_count_change_by_this_review": 0,
+    "blackbox_qualified_delta": 0,
+    "complete_static_delta": 0,
+    "cold_start_delta": 0
+  },
+  "evidence_boundary": "The independently viewed Valve product page links to both listed direct APK URLs, and the saved HTTP headers report 200 with matching Content-Length. The package does not retain a command-level download transcript binding each exact local APK digest to its URL; local bytes and tool reports were rechecked. Root may admit these exact two raw artifact identities under that provenance limit. The shared valid APK signer and Valve DN are not an independently published Valve fingerprint. Nothing here proves blackbox qualification, complete static scan, or startup.",
+  "authorization": {
+    "canonical_raw_mutation_by_peer": false,
+    "device": false,
+    "container": false,
+    "namespace": false,
+    "bridge_write": false
+  }
+}

@@ -1,0 +1,835 @@
+{
+  "entries_scanned": 1816,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 155435289,
+  "compressed_bytes": 131012742,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 8995908,
+        "sha256": "244eebd8233f655829264348187aab9eaabf088d29efe2eb25c0bed52a855f43"
+      },
+      {
+        "name": "classes2.dex",
+        "bytes": 8947236,
+        "sha256": "896e08425ccd30607c3fbb3e0c0fc6ff6d567a6567d502715d5e2a2d1cad7801"
+      },
+      {
+        "name": "classes3.dex",
+        "bytes": 8770488,
+        "sha256": "2f4e441c36920a7122450337ca5497699468f5de607a25361534d3ef9c61ad74"
+      },
+      {
+        "name": "classes4.dex",
+        "bytes": 10106112,
+        "sha256": "53822844128a26e1f61ca99a0a8b9dc24a826cc0f595f2230a3eb130c3dab25e"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/libanimation-decoder-gif.so",
+        "bytes": 275368,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "1a36faccdc2df2d03b399bd20113768f04fe5f9c873c32974d89e588f63b6933"
+      },
+      {
+        "name": "lib/arm64-v8a/libappmodules.so",
+        "bytes": 2033560,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "150bdd8325b1d37bd937abea46a689e0b129148156cf87670ebc59e80af5221a"
+      },
+      {
+        "name": "lib/arm64-v8a/libavif_android.so",
+        "bytes": 899752,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "278211a4aa0fe5034aef8ef9717736242b3b6868708dcd1e1b6d941c5f05150c"
+      },
+      {
+        "name": "lib/arm64-v8a/libbarhopper_v3.so",
+        "bytes": 4946720,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ec09597e9eb3aee0eb55ae3366da0d4ba416f5aa35a1af0b3811f50ff46743a1"
+      },
+      {
+        "name": "lib/arm64-v8a/libc++_shared.so",
+        "bytes": 1292904,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214"
+      },
+      {
+        "name": "lib/arm64-v8a/libexpo-av.so",
+        "bytes": 96536,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "1711ed1a8115913b10479633e34d5685cee26350f276bfffb4cd6798dd14c897"
+      },
+      {
+        "name": "lib/arm64-v8a/libexpo-modules-core.so",
+        "bytes": 1306712,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "aac428fa814fecf92393128b5be35623e5ceccdc75b20273dd5b31395cc3d5fb"
+      },
+      {
+        "name": "lib/arm64-v8a/libfbjni.so",
+        "bytes": 177000,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22"
+      },
+      {
+        "name": "lib/arm64-v8a/libgesturehandler.so",
+        "bytes": 35040,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "00d3b6e9833902e69d0adc65e77fe62a5a77a7c4ea768c5c2c2474c6d05da1f3"
+      },
+      {
+        "name": "lib/arm64-v8a/libhermes.so",
+        "bytes": 2259008,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a7f6ec77c4a513348dd3e1597ab1b61ba6b5426ca58a81643fc2f537b8aa48b8"
+      },
+      {
+        "name": "lib/arm64-v8a/libhermestooling.so",
+        "bytes": 156144,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "e2da466819b767972d64224b9b55b86d2666f0a798d3646b50058f2634b197c0"
+      },
+      {
+        "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+        "bytes": 29008,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3e0071afcdc7e321f839e196d266014182f18d0988e4455acc9857a085b2184e"
+      },
+      {
+        "name": "lib/arm64-v8a/libimagepipeline.so",
+        "bytes": 8760,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d"
+      },
+      {
+        "name": "lib/arm64-v8a/libjsi.so",
+        "bytes": 417384,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "918f034d6d3ca92d28e8474cab32cf4ac5c179b05e296297b6cf7faa4c53e9d6"
+      },
+      {
+        "name": "lib/arm64-v8a/libnative-filters.so",
+        "bytes": 23712,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594"
+      },
+      {
+        "name": "lib/arm64-v8a/libnative-imagetranscoder.so",
+        "bytes": 585376,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca"
+      },
+      {
+        "name": "lib/arm64-v8a/libreact_codegen_rnpicker.so",
+        "bytes": 272840,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "74cb6a0ff3751d051faf9afcbb7e5936b63c88a3efbe1c8060550b3f7de15fe9"
+      },
+      {
+        "name": "lib/arm64-v8a/libreact_codegen_rnscreens.so",
+        "bytes": 561760,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "784316a21ded9a6c2666296f5db344cf23ffd80514bb8ed7c6f6840015830045"
+      },
+      {
+        "name": "lib/arm64-v8a/libreact_codegen_rnsvg.so",
+        "bytes": 569472,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "348cc0bcc77bfab90ba415176f251aa277b3d8866bc610619e336a82a9ad3e83"
+      },
+      {
+        "name": "lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+        "bytes": 173032,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "424d0466650b4c9cb1477c69ba5c99a04d6a874ad2e79e33eeeeb95d018f580b"
+      },
+      {
+        "name": "lib/arm64-v8a/libreactnative.so",
+        "bytes": 6562560,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "28aa21c60de143ae45df4223666e048eefd740fb33da6a44f91dea5c68207773"
+      },
+      {
+        "name": "lib/arm64-v8a/libreanimated.so",
+        "bytes": 1408360,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "605a2cb2ca4e5bc7aa8da9331f4c1e0dea025018489f3af96171d392445f1e0b"
+      },
+      {
+        "name": "lib/arm64-v8a/librnscreens.so",
+        "bytes": 95192,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "d549425752fdf2fb25e9805b4b7fd67f637267a176495f3acd07d7a02e55c479"
+      },
+      {
+        "name": "lib/arm64-v8a/libsurface_util_jni.so",
+        "bytes": 4832,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ee3f0d56f81cc0a301db32dc4fd51274c3216733b4c40172768e38bc5049a265"
+      },
+      {
+        "name": "lib/arm64-v8a/libworklets.so",
+        "bytes": 896272,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "45ae43925f9fa46d3624a31ea7feefbb0b76659274664210021567e2addcb250"
+      },
+      {
+        "name": "lib/armeabi-v7a/libanimation-decoder-gif.so",
+        "bytes": 161752,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "750f811d54bd64e2f1e307de7162caaf05c89a111a1d785e6e3312b2d9aa03a2"
+      },
+      {
+        "name": "lib/armeabi-v7a/libappmodules.so",
+        "bytes": 1507216,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "4f1ce412e21655665ef4a107ed103e8e76d20c28959535a460c8d8b53ec7728a"
+      },
+      {
+        "name": "lib/armeabi-v7a/libavif_android.so",
+        "bytes": 691804,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "83d0a97055eece4ee47a340504eae7cf8185522f64b0353507839ebf59da8946"
+      },
+      {
+        "name": "lib/armeabi-v7a/libbarhopper_v3.so",
+        "bytes": 3244440,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b3c162c69e4906b816227ae116bfd8b9ff19cfdd58a3de0c9a9b110e030063e9"
+      },
+      {
+        "name": "lib/armeabi-v7a/libc++_shared.so",
+        "bytes": 872872,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "84e7d99b7b6df960b37c28e43808cc5c2c62d1bb9449e27683fc53309dea5b6c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libexpo-av.so",
+        "bytes": 50292,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "92c40038dab51bc0582d76702d34301f028b1ed224ee6b642a2e0e6afceb6b07"
+      },
+      {
+        "name": "lib/armeabi-v7a/libexpo-modules-core.so",
+        "bytes": 926256,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "661ddcf458ed6efe3767f736b46d5ea5f3234be2084346ab609c1ec7c4d1a124"
+      },
+      {
+        "name": "lib/armeabi-v7a/libfbjni.so",
+        "bytes": 119456,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6739b4db111283fe0a86a3a5fdd80efe5d963355dd161b95ec179f01cc9685d5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libgesturehandler.so",
+        "bytes": 6024,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "37f70db039a39d40e51049f1f2b0490db89ceae5c9d9599eac2d503a199d353a"
+      },
+      {
+        "name": "lib/armeabi-v7a/libhermes.so",
+        "bytes": 1507148,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b3db01b4944eeacb8b71e181f906a0797011052de9018660b137663382237df4"
+      },
+      {
+        "name": "lib/armeabi-v7a/libhermestooling.so",
+        "bytes": 90784,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b135c3e656e7220c3ab110e212ad26cbf03b8fdf27b14124a5ec1d459f092074"
+      },
+      {
+        "name": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+        "bytes": 20380,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e48e356bbe1902ae9a66178a4a0141c993b82ee9f70dde52ad83e4af3eca984f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libimagepipeline.so",
+        "bytes": 5876,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "0fb5021bcf1cbb6c10630732560bb80bad7187c8b8391e6c001b3f892fa613d5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libjsi.so",
+        "bytes": 296904,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "2072f802ece827cb77a0e20b76adbaf8b9624bef482bd31847b01baf29e32b43"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnative-filters.so",
+        "bytes": 12588,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "fb3d55facc8dfdc856441015c2a8d803b10b6c3cf09524c4f04562cec186a62e"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnative-imagetranscoder.so",
+        "bytes": 341072,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "40905f1c50315f66362a8e10e2ac19d1df62c3f1800bc2ee639047d09c9f1bd9"
+      },
+      {
+        "name": "lib/armeabi-v7a/libreact_codegen_rnpicker.so",
+        "bytes": 180948,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7af1e5da78b1e3d8c8e9c8efae94bf32c928a8d95f0e14351c703b9ba7347c49"
+      },
+      {
+        "name": "lib/armeabi-v7a/libreact_codegen_rnscreens.so",
+        "bytes": 394760,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e33a658bcafbe84a7370ed39df3845b797542fb3de651dc301e638f096f474c3"
+      },
+      {
+        "name": "lib/armeabi-v7a/libreact_codegen_rnsvg.so",
+        "bytes": 402436,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7366bb8d11a3c2527bfa05e14f06a9902ccafac5caa2ced6051d08a9ed186a05"
+      },
+      {
+        "name": "lib/armeabi-v7a/libreact_codegen_safeareacontext.so",
+        "bytes": 108728,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "752ecf1b04f0835037d2b1c1fdaa9a5eb65b6a33e58d5646cd9ac4515a78365a"
+      },
+      {
+        "name": "lib/armeabi-v7a/libreactnative.so",
+        "bytes": 4777336,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "70db0b170c49dcb292a067b023654abc636e7ce306c94aa9123ff34940ca66e7"
+      },
+      {
+        "name": "lib/armeabi-v7a/libreanimated.so",
+        "bytes": 902384,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "8f9b4fd9cbc1869d725d4b4700c4c8d614f53ebe38ad1dee4b17dcba1332fc86"
+      },
+      {
+        "name": "lib/armeabi-v7a/librnscreens.so",
+        "bytes": 47512,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e47cbe6a45299a5f2614e75e98aa0e901af7ab2158dc7ff03b1cebfe1f313707"
+      },
+      {
+        "name": "lib/armeabi-v7a/libsurface_util_jni.so",
+        "bytes": 3440,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "f110d6a305fef5be5664d58cfb054366b002bc516066b4ec880c38a68428756f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libworklets.so",
+        "bytes": 586172,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e36e9338187bb0a8cfa5963638bc8d59bcb59acf8e8d4c5311731d361537d804"
+      },
+      {
+        "name": "lib/x86/libanimation-decoder-gif.so",
+        "bytes": 240852,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "520a7dab587fef0bc30f83338d5c6ff787a5824f034eea276723f9c02b5073b7"
+      },
+      {
+        "name": "lib/x86/libappmodules.so",
+        "bytes": 2005980,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "7d9fbbe78a415c67441bb6ffdea00a9904206a93d4c725cdd8a16627665ada56"
+      },
+      {
+        "name": "lib/x86/libavif_android.so",
+        "bytes": 1212276,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8400d6ae3b1feca6e0cc3eb3965568095c050a46dd571be4d18b1c04a13b9d93"
+      },
+      {
+        "name": "lib/x86/libbarhopper_v3.so",
+        "bytes": 6122368,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "212dad60137637d3cbaf1ba5fd9d2c0e163c67731ed3a86ecb5d9f8bb9a60c3b"
+      },
+      {
+        "name": "lib/x86/libc++_shared.so",
+        "bytes": 1254988,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "3bd6a3c5d1baa1fac3bdd8452ccc403fd1b464b3f80eb9fa207df5ec2d565129"
+      },
+      {
+        "name": "lib/x86/libexpo-av.so",
+        "bytes": 86352,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "4ae4886a298fe5c749066965de5d5fa05fe64710f15fe97fadb2de60d5621e1b"
+      },
+      {
+        "name": "lib/x86/libexpo-modules-core.so",
+        "bytes": 1221656,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "cdda09a372fd5b9289cecd648784a4075472f50f7361397f6cddb6485ed8874a"
+      },
+      {
+        "name": "lib/x86/libfbjni.so",
+        "bytes": 166480,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "735533ea082fe331b293a947f5ac32556ea433c7db1d2fe76e4ac9a440917c65"
+      },
+      {
+        "name": "lib/x86/libgesturehandler.so",
+        "bytes": 31612,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "b3d5a82f955cbb6e51eb84a36d4b82a9ebb27d5adef2e0d2cebea3212dcbaf67"
+      },
+      {
+        "name": "lib/x86/libhermes.so",
+        "bytes": 2784236,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "3d8b6620ebe50cc92a6db185850e6308de8a251a602200766b5423cbe1f7dc4c"
+      },
+      {
+        "name": "lib/x86/libhermestooling.so",
+        "bytes": 150148,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6b7306ccaa19cc7f070c04508c33f01855a5e0eec62b046b101de2d00ea55575"
+      },
+      {
+        "name": "lib/x86/libimage_processing_util_jni.so",
+        "bytes": 38292,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "f5bdd537631cce21ad038a6737775540a7aef1f5a3d1fdc26c469f6c1ae73010"
+      },
+      {
+        "name": "lib/x86/libimagepipeline.so",
+        "bytes": 7040,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "afd22bf7e62e5d08c0ec17ff6c0a273bfc580052c89363c0cb5d72e98d3b4cf4"
+      },
+      {
+        "name": "lib/x86/libjsi.so",
+        "bytes": 431896,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8b70b76ddf442bd1562e0436195decf4ca4d43be9a6dbc1244c91673bab85eef"
+      },
+      {
+        "name": "lib/x86/libnative-filters.so",
+        "bytes": 22040,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6947adfed7f745e52408b11d83a3cf25072749c3336aa35c634928c6dcfa5da0"
+      },
+      {
+        "name": "lib/x86/libnative-imagetranscoder.so",
+        "bytes": 664736,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "943c8757e57f59556027d460c0e86738d5969794db905febbe4926fd1d3fa663"
+      },
+      {
+        "name": "lib/x86/libreact_codegen_rnpicker.so",
+        "bytes": 270988,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "d1f8ced26f7a168d81f12418993e9d3bca891f0f401893f168b65f6ce1694f39"
+      },
+      {
+        "name": "lib/x86/libreact_codegen_rnscreens.so",
+        "bytes": 558184,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "a7c71b3339dd22c08aa6938651536a6ea66303fbb8fd5a1374e6c65371748a5a"
+      },
+      {
+        "name": "lib/x86/libreact_codegen_rnsvg.so",
+        "bytes": 720084,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "2b577d70cf8b04141f8e236022455905360fbe83ca4e5d12e123ca945fa2cd5b"
+      },
+      {
+        "name": "lib/x86/libreact_codegen_safeareacontext.so",
+        "bytes": 164788,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "694938272b1569556e8a9266851f956c18e5cb76a463d9f823578b166b5793da"
+      },
+      {
+        "name": "lib/x86/libreactnative.so",
+        "bytes": 6867648,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "f9accb0671bca2cf11e4fed789eed0ab9167b03cf329b948c371c28c7740b430"
+      },
+      {
+        "name": "lib/x86/libreanimated.so",
+        "bytes": 1332896,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "78e9f75c76d56daf8f9f70c15b7092674ebe5afd11412e9de545cd4b4c99f97d"
+      },
+      {
+        "name": "lib/x86/librnscreens.so",
+        "bytes": 88088,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "bf5616f9fa76db48a8ad37954fc06d038f6aea9795b33e4a34d38d6b129f4491"
+      },
+      {
+        "name": "lib/x86/libsurface_util_jni.so",
+        "bytes": 3712,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6b5d033063bc125d99706f14f0ded08b3f0058f53f5a3d17d134e7d2ea75db11"
+      },
+      {
+        "name": "lib/x86/libworklets.so",
+        "bytes": 790848,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "964959eb1e985d8c889d5dcd0baac179d1d03126b8ca247de60beaf854c6973c"
+      },
+      {
+        "name": "lib/x86_64/libanimation-decoder-gif.so",
+        "bytes": 261216,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "ac33356aa5d6fc6d8c749e95192440a693f5095f1532e2405cc133fab78e493c"
+      },
+      {
+        "name": "lib/x86_64/libappmodules.so",
+        "bytes": 2095104,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "54834db3d0225beda487d293073d7c905de5ad9f8f1cfa560e2196680db3105e"
+      },
+      {
+        "name": "lib/x86_64/libavif_android.so",
+        "bytes": 1892960,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d63e4fe8cba8992b28a4497b9a174c0549ed875ec4b28115ec7cf6c55136c5a4"
+      },
+      {
+        "name": "lib/x86_64/libbarhopper_v3.so",
+        "bytes": 5909280,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "6c5deea87d962af008fd48c3229db13ab68eef2e9feeccb2df5b33a920c0579a"
+      },
+      {
+        "name": "lib/x86_64/libc++_shared.so",
+        "bytes": 1252080,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f"
+      },
+      {
+        "name": "lib/x86_64/libexpo-av.so",
+        "bytes": 90872,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "a44b53ec8fa3c70885facec326a88e043c75cf8cee0cf4123b20f4081b6fa480"
+      },
+      {
+        "name": "lib/x86_64/libexpo-modules-core.so",
+        "bytes": 1269040,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d5a0996ae43cbc18258be231cf648e121161f9b9b37a4e0461eb81b2cf4371da"
+      },
+      {
+        "name": "lib/x86_64/libfbjni.so",
+        "bytes": 172952,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653"
+      },
+      {
+        "name": "lib/x86_64/libgesturehandler.so",
+        "bytes": 32272,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "ef03358e46d70c992889f58cd922bac129091a169aacc2ab3990dddee1cd7366"
+      },
+      {
+        "name": "lib/x86_64/libhermes.so",
+        "bytes": 2283176,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "661269a6ca897ed7811c913e6ea38c8365f9a05775bcda9a8306bec6c5e15cb3"
+      },
+      {
+        "name": "lib/x86_64/libhermestooling.so",
+        "bytes": 152704,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "61a5c952384b68479d2b8f5b9c39e17b2040f5be1d4ace5b391ff3ff319893b8"
+      },
+      {
+        "name": "lib/x86_64/libimage_processing_util_jni.so",
+        "bytes": 48104,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "676e3e280c10dcb9b71ef5bb727552610dc73c7ec85af54c7c898f82785c33d7"
+      },
+      {
+        "name": "lib/x86_64/libimagepipeline.so",
+        "bytes": 8464,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "2e596f4955f65abaa93c891b49eb58b5416581806a04bde0097cc369ae4dbfb3"
+      },
+      {
+        "name": "lib/x86_64/libjsi.so",
+        "bytes": 421384,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "0f7a574219c8d5974399d4ea4f8b4e5304a73e9be493be05ebdeed34f40ec215"
+      },
+      {
+        "name": "lib/x86_64/libnative-filters.so",
+        "bytes": 30528,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "1a5270f007dd4b2f0fc52ceac82e05143648ba9be59c2213a21cf61c84f1f5e5"
+      },
+      {
+        "name": "lib/x86_64/libnative-imagetranscoder.so",
+        "bytes": 720432,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "f6b92ad7f1c30973f40704c46987504757c3d079c7f4ace6efc8b318dd9c22f3"
+      },
+      {
+        "name": "lib/x86_64/libreact_codegen_rnpicker.so",
+        "bytes": 274432,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "5cb70b3c772d3f683d6fb748a6b7a10fe47e61ed073e8dbfe2ded4f4f0aa33e5"
+      },
+      {
+        "name": "lib/x86_64/libreact_codegen_rnscreens.so",
+        "bytes": 567752,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "047c9bd2be458ff47b482405acbf573ac02e7950241b51d1f0d340549185a4a3"
+      },
+      {
+        "name": "lib/x86_64/libreact_codegen_rnsvg.so",
+        "bytes": 624480,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "25e2fc5fa9312536ae00a40bddbd2196558278b24de64bdb702d3c4dc6024590"
+      },
+      {
+        "name": "lib/x86_64/libreact_codegen_safeareacontext.so",
+        "bytes": 172960,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "ae54a5d79c50fcc56d653ab4184b16660c18bd1341a38c46de1f6dda93bf827e"
+      },
+      {
+        "name": "lib/x86_64/libreactnative.so",
+        "bytes": 6716488,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "8ae7e32ca501b0cec434f74424453415d13417659aba87bd02b384919beccd89"
+      },
+      {
+        "name": "lib/x86_64/libreanimated.so",
+        "bytes": 1404456,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "ceea0d08d159685f7ab170c3c3b32a1381b3d87bc339699a910c59a975b692b7"
+      },
+      {
+        "name": "lib/x86_64/librnscreens.so",
+        "bytes": 92048,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b7576d6222e72aea635b83dcf30b87594b9770d36c46aebc784cb6324d63b820"
+      },
+      {
+        "name": "lib/x86_64/libsurface_util_jni.so",
+        "bytes": 4928,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "cd425e10a365fb3695e53f1e46227d44d89f14854da4f1258ef079c80c752339"
+      },
+      {
+        "name": "lib/x86_64/libworklets.so",
+        "bytes": 866000,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b96a59953351f801512b7bd746caddcf6cb33dd39c8e29a5340611f438302b3d"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

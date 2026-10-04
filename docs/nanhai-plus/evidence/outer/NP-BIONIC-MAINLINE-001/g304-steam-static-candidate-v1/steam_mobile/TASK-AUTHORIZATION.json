@@ -1,0 +1,12 @@
+{
+  "scope": "G304 one local host-only four-phase static scan of exact com.valvesoftware.android.steam.community original APK",
+  "inputs_sha256": "8fddaf2049c17edb2588260e64d794d1da3c6d4f777baf16c421cead3fb10700",
+  "runner_sha256": "6aa5269883008a86c039c81abaf90592b8007ca35c625006f6231103a3973f5a",
+  "scan_phase_sha256": "3ddeecfa2e271a3c09d7b94d4ef2a30253ba78e2bf67c17dea9af988b0dfd6fa",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "raw_admission_sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+  "attempts": 1,
+  "device_commands": 0,
+  "container_commands": 0,
+  "authorization": "Parent outer task delegated G304 exact two host-only scans; no device, container, or Bridge write"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "g304-steam-root-static-admission-v1",
+  "at": "2026-10-04T15:45:44.190623+00:00",
+  "decision": "ACCEPT_ONE_COMPLETE_HOST_STATIC_INVENTORY_ONLY",
+  "package": "com.valvesoftware.android.steam.community",
+  "apk_sha256": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d",
+  "candidate_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam_mobile/RESULT.json",
+    "sha256": "fd806c8a0a1351dfbc05591403277897b2f45abdbdfa84ecc4e54c0d1a85f424"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/CANDIDATE.json",
+    "sha256": "1304020b0e373dc278ebe8cb37a08d4ad701e3addbb699ffbf1c240ed56ce981"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "14e5dd5bce2ba7bf52d6fbad9da428653f6385938f1214bd81d2a9549e1ed57a"
+  },
+  "raw_admission_sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+  "counts_before": {
+    "complete_static": 82,
+    "dex": 214,
+    "true_arm64_elf": 998
+  },
+  "counts_after": {
+    "complete_static": 83,
+    "dex": 218,
+    "true_arm64_elf": 1023
+  },
+  "this_package": {
+    "zip_entries_crc_checked": 1816,
+    "dex_entries": 4,
+    "true_elf_all_abi": 100,
+    "true_arm64_elf": 25
+  },
+  "host_static_only": true,
+  "startup_delta": 0,
+  "build_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "limits": [
+    "No Bionic target runtime or OH cold start",
+    "Publisher-to-APK-signing-certificate binding not independently proven; G303 qualification is separate"
+  ]
+}

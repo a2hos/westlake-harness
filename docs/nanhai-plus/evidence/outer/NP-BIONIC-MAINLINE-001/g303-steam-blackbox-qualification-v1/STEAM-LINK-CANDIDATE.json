@@ -1,0 +1,78 @@
+{
+  "schema": "g303-one-overseas-blackbox-qualification-candidate-v1",
+  "reviewed_at_utc": "2026-10-04T15:40:38.788720+00:00",
+  "decision": "GO_CANDIDATE_FOR_SEPARATE_INDEPENDENT_ROOT_QUALIFICATION_ONLY",
+  "canonical_qualification_changed": false,
+  "qualification_rule": "docs/nanhai-plus/PORTFOLIO-GOAL.md:18 and G300 five-criterion precedent",
+  "product": "Steam Link",
+  "exact_artifact": {
+    "package": "com.valvesoftware.steamlink",
+    "version_name": "1.3.32",
+    "version_code": 5000315,
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g302-steam-official-intake-v1/SteamLink.apk",
+    "bytes": 132207126,
+    "sha256_rechecked": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+    "arm64_elf_count": 24,
+    "apk_signature_schemes": {
+      "1": true,
+      "2": true,
+      "3": false,
+      "3.1": false,
+      "4": false
+    },
+    "observed_signing_cert_sha256": "5dff6b05761447a5bdf919ea88fc6fdf20d301e30b2315415c4d368ec0fbda45",
+    "observed_signing_dn": "O=Valve Corporation, L=Bellevue, ST=WA, C=01"
+  },
+  "raw_root_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256_rechecked": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+    "decision": "ACCEPT_TWO_RAW_APK_IDENTITIES_ONLY",
+    "raw_before": 85,
+    "raw_after": 87
+  },
+  "criteria": {
+    "official_product_and_legal_original_channel": {
+      "decision": "GO",
+      "evidence": "Valve official mobile page names Steam Link and links the exact Valve-hosted APK download channel; the original host download has saved HTTP 200 headers and is accepted as a raw identity. Official direct availability supports lawful original acquisition.",
+      "official_page": "https://store.steampowered.com/mobile",
+      "direct_apk_url": "https://media.steampowered.com/steamlink/android/latest/steamlink-android.apk",
+      "boundary": "Saved HTTP headers and retained bytes lack a single immutable GET URL-to-byte transcript; the certificate-to-publisher chain is separately unproven."
+    },
+    "exact_package_and_version": {
+      "decision": "GO",
+      "evidence": "The Valve page links a moving latest APK without a version label; the exact retained bytes and aapt2 manifest report 1.3.32/code 5000315. Present original SHA and size match G302 raw root admission, with aapt2/apksigner and host ZIP/ARM64 checks recorded in G302.",
+      "boundary": "Exact direct-download bytes are not established as byte-identical to Google Play distribution; moving latest channel may later change."
+    },
+    "overseas_mainstream": {
+      "decision": "GO",
+      "evidence": "US-English Google Play exact package page names Valve Corporation and shows 10M+ worldwide downloads and about 53.2K reviews, providing a US storefront signal plus broad reach.",
+      "source": "https://play.google.com/store/apps/details?id=com.valvesoftware.steamlink&hl=en_US",
+      "boundary": "Worldwide lifetime package bucket is not US installs or downloads of this exact APK version."
+    },
+    "complete_android_client_blackbox_source_boundary": {
+      "decision": "GO_WITH_EXPLICIT_INFERENCE",
+      "evidence": "The input is Valve’s original executable Android client APK; this project neither possesses nor modifies complete source for this client. Valve’s subscriber agreement treats Steam client software as licensed, while its public Steam Link SDK describes ARMv7 Linux hardware and third-party components, not the complete Android Steam Link client.",
+      "source": "https://store.steampowered.com/subscriber_agreement/",
+      "additional_source": "https://github.com/ValveSoftware/steamlink-sdk",
+      "boundary": "Product-level source classification is an inference for the test input, not proof that complete exact-build source exists nowhere. Steam Link legal applicability and any build-specific source publication are not independently established."
+    },
+    "unmodified_project_input": {
+      "decision": "GO",
+      "evidence": "The G302 root raw receipt accepted this exact original APK hash; current original-file hash still matches. G303 reads only and does not edit the APK or source.",
+      "boundary": "Any later staging/runtime copy requires its own hash readback."
+    }
+  },
+  "publisher_signer_binding": "UNPROVEN: both retained Valve APKs carry the same cryptographically valid observed signing certificate (SHA-256 5dff6b05761447a5bdf919ea88fc6fdf20d301e30b2315415c4d368ec0fbda45; DN O=Valve Corporation), but no independently Valve-published Android APK signing fingerprint or signed exact APK digest has been verified. The matching DN/shared cert, website URL and Play developer name do not themselves prove publisher-to-cert identity.",
+  "minimal_supplement": "Obtain an official Valve Android APK signing-certificate SHA-256 or Valve-signed checksum/release manifest for this exact download and verify against the retained original bytes. A later HTTPS download alone is not independent cert attestation.",
+  "limits": [
+    "No four-phase host static inventory for this exact package yet",
+    "No OH7/Bionic installation, truly-cold start, rendering, interaction or service proof",
+    "G303 performs no device/container/namespace/graph/Bridge operation",
+    "Root qualification and canonical count are separate decisions"
+  ],
+  "count_effect": {
+    "qualified_blackbox_delta_now": 0,
+    "complete_static_delta_now": 0,
+    "cold_start_delta_now": 0
+  }
+}

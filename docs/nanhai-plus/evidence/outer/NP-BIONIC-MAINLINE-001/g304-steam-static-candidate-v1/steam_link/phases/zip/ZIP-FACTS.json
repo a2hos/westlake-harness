@@ -1,0 +1,788 @@
+{
+  "entries_scanned": 134,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 286379370,
+  "compressed_bytes": 132184294,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 314248,
+        "sha256": "a5c315d683eac7c7f8f73ec096bd414406d80f9ef68180a1ef469f052cd39e44"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/libQt5AndroidExtras_arm64-v8a.so",
+        "bytes": 129224,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4b563514a4d4bfe2c6d6192b0dd9b7be439fce52c016d814e5f6450591282e79"
+      },
+      {
+        "name": "lib/arm64-v8a/libQt5Core_arm64-v8a.so",
+        "bytes": 5923176,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "687a385c0f18f8399c2f421846cfdba11d96dce75e9839840d0c169469e550a7"
+      },
+      {
+        "name": "lib/arm64-v8a/libQt5Gui_arm64-v8a.so",
+        "bytes": 5373440,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "c12a7c49282d836a30ce9987b0cb92d0283d0f27a629df621ea353f218f57951"
+      },
+      {
+        "name": "lib/arm64-v8a/libQt5Network_arm64-v8a.so",
+        "bytes": 4055552,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "7db24b7f4443ed0329986ca6e96bbbd0b15a195b949155c667ee8386b4ec6e0a"
+      },
+      {
+        "name": "lib/arm64-v8a/libQt5Svg_arm64-v8a.so",
+        "bytes": 358120,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f44b13e104e9417ad912625ff92e48c56a4dfab609aaee02337d350c38b3709a"
+      },
+      {
+        "name": "lib/arm64-v8a/libQt5Widgets_arm64-v8a.so",
+        "bytes": 6954344,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "fa4d07e7aac6050ed055a61c194ed98cd79bb3e2a84d3d0ebd5196fa3b1371f4"
+      },
+      {
+        "name": "lib/arm64-v8a/libSDL3.so",
+        "bytes": 2086976,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "1a4983f0338375b2acb1d2ca63b1ee40b317e37680fa7cb52205d71522d50879"
+      },
+      {
+        "name": "lib/arm64-v8a/libSDL3_image.so",
+        "bytes": 235384,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "583e697e743d2bdcb35160b3d08f204ec95e6e37173620d9bca2f79f716fdbe1"
+      },
+      {
+        "name": "lib/arm64-v8a/libSDL3_mixer.so",
+        "bytes": 237672,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2fa42838b0f5aeadf337686faf6ad39bf6ebf1f497cbf6de4bba377a522e16b7"
+      },
+      {
+        "name": "lib/arm64-v8a/libSDL3_ttf.so",
+        "bytes": 1546992,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ceba0cd8fd28f92253ba5c2019ce14ff590b16f1b2267db85e27c4c682e841c0"
+      },
+      {
+        "name": "lib/arm64-v8a/libc++_shared.so",
+        "bytes": 1253544,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "cd61762848882a16c8244c964a6f396c0caa0b440588a210ce9cc4ab0e6d9f0c"
+      },
+      {
+        "name": "lib/arm64-v8a/libh264bitstream.so",
+        "bytes": 86736,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "30feb6b79b1de7baa14bd112e0773d4ed7e2b0deee8a75d8cfce39c3c67c9b58"
+      },
+      {
+        "name": "lib/arm64-v8a/libhevcbitstream.so",
+        "bytes": 113920,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "d3ce506c3f8fe8744539175ccc3f6f1a263aa458abad51c5db0ecb0ebf47a183"
+      },
+      {
+        "name": "lib/arm64-v8a/libmain.so",
+        "bytes": 15937792,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "50e1d3147d5d47b71ef1970e1867a2fe4f3e1ecf2ea6153f927fac88b88ea38e"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_bearer_qandroidbearer_arm64-v8a.so",
+        "bytes": 68864,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b3dc5f7bb6926b289d50d898efa84fa584f05670b3a5b6a3313bad1dbfa7058c"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_iconengines_qsvgicon_arm64-v8a.so",
+        "bytes": 37464,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f3ace70dd4dfe71e4c8691749729a264f0d454030040818888f42a30d8aa3a22"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_imageformats_qgif_arm64-v8a.so",
+        "bytes": 27680,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "c73544a05dd45ee29fda7b0a48552ff912077b4893622531f94e1b940b778c8c"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_imageformats_qico_arm64-v8a.so",
+        "bytes": 29240,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "789a5fb7f1a7e8a4b1e87678eccafda31b200367a93f70b01b028c454db0793d"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_imageformats_qjpeg_arm64-v8a.so",
+        "bytes": 291712,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "859fcd2032af46515cefdf197f17a53bdfc2bcc2b85d6fac4a43cf9f967d0d84"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_imageformats_qsvg_arm64-v8a.so",
+        "bytes": 22024,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "40ca418d9af8b2f16509a3d1f7fd92cee123316f04877d325f167955959f4254"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_platforms_qtforandroid_arm64-v8a.so",
+        "bytes": 1281192,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b418ef15fc62a4fe8706b9b3720180c69d9314de26f9477916b7781797e365fc"
+      },
+      {
+        "name": "lib/arm64-v8a/libplugins_styles_qandroidstyle_arm64-v8a.so",
+        "bytes": 99552,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3f0046a43ca7bb14a5deaf54841c88510308a2058aa6b332e4b8388ae5fd4003"
+      },
+      {
+        "name": "lib/arm64-v8a/libshell_arm64-v8a.so",
+        "bytes": 23102528,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "15b2d79881eef0c47ed2f96c17d1d60a5f42d3285abcf9f512cfffdac5b238a2"
+      },
+      {
+        "name": "lib/arm64-v8a/libsteamwebrtc.so",
+        "bytes": 6282776,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2a74920293078807ec8e47ecc8df2a4565b60e8ace471b883746b180950c3710"
+      },
+      {
+        "name": "lib/armeabi-v7a/libQt5AndroidExtras_armeabi-v7a.so",
+        "bytes": 83440,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7c666e9862960c3312dd9d6565166061516b0a3a57768ecbf93b155f92fff98b"
+      },
+      {
+        "name": "lib/armeabi-v7a/libQt5Core_armeabi-v7a.so",
+        "bytes": 4290968,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7117508722b679b005bdcb3ec73cf439a40e6d83f5d48c4d62f108c23f8a21c3"
+      },
+      {
+        "name": "lib/armeabi-v7a/libQt5Gui_armeabi-v7a.so",
+        "bytes": 3437784,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b1454b67afb59740ea0d6722ab3e5ebf7ba97d07db7932bde64c497d698b546d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libQt5Network_armeabi-v7a.so",
+        "bytes": 2965760,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e9e0114c5a7e1044abff883fe58bfc0376a220f38706cb5f5927928da73f8041"
+      },
+      {
+        "name": "lib/armeabi-v7a/libQt5Svg_armeabi-v7a.so",
+        "bytes": 203076,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "77df72aea25deab97b4aae340f5f8d3bca5d0af73a40bd4bc4ffbdf2554aa6a2"
+      },
+      {
+        "name": "lib/armeabi-v7a/libQt5Widgets_armeabi-v7a.so",
+        "bytes": 3849636,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "d5565b659401e7c7dda5a17903556a7c5077f351bd485f67d3abe7fc73e2aee5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libSDL3.so",
+        "bytes": 1323856,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "1335d742451403b7c68431a527c9a2786f3ec82a6fe81b705ffbe85ff76dcb52"
+      },
+      {
+        "name": "lib/armeabi-v7a/libSDL3_image.so",
+        "bytes": 140344,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "a860e019832aec3c790ba273a6031e01caabef2d8312b7f1f4dfe9ca1fcbb2fc"
+      },
+      {
+        "name": "lib/armeabi-v7a/libSDL3_mixer.so",
+        "bytes": 153572,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "eeb120188b2bd6f0b3b3abb1ca3c8800a56626597dc86e7e2ed70a1002e57250"
+      },
+      {
+        "name": "lib/armeabi-v7a/libSDL3_ttf.so",
+        "bytes": 1335044,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e48d857db588058abca5c2ee57a94ee31a683e75017a508a3e0a16dc2bef51d0"
+      },
+      {
+        "name": "lib/armeabi-v7a/libc++_shared.so",
+        "bytes": 850380,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e7e20f6e0f3f181e853cea50373ecee2ccfe95c668dce72d0999b2469c92d0e1"
+      },
+      {
+        "name": "lib/armeabi-v7a/libh264bitstream.so",
+        "bytes": 32148,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "c9ab49f9b825d7fbd422558478145a112dd7151db141f0aee9b9a5e4e6b214bc"
+      },
+      {
+        "name": "lib/armeabi-v7a/libhevcbitstream.so",
+        "bytes": 27376,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6ba776b140fb49353e9184d1cf1510770e216645aa28edf662deb3c7ac92d374"
+      },
+      {
+        "name": "lib/armeabi-v7a/libmain.so",
+        "bytes": 13078672,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "689d36121bc613ac9cadb6aeaed4624f24f40b0f9ba5470ab2fa4655f7d5efc6"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_bearer_qandroidbearer_armeabi-v7a.so",
+        "bytes": 39280,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "a5173f3cbda695024e5521f2f426f86c09c33799d76aeea947c81ed6fd211b09"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_iconengines_qsvgicon_armeabi-v7a.so",
+        "bytes": 22092,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "314cdd15b6cb00aa215eb44dff2e06a0bf57e8c2d814cc958f6f64dc2e8fda6f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_imageformats_qgif_armeabi-v7a.so",
+        "bytes": 16208,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "ef8f0fcd91de765b847a89aacec14dace21468507227f5feb54398ed66a0947c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_imageformats_qico_armeabi-v7a.so",
+        "bytes": 16900,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "35fb2a4c26bd66fb3a590273251c435ff7939bf4e4f939385b00ce557432ec7f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_imageformats_qjpeg_armeabi-v7a.so",
+        "bytes": 151912,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "879145eb48eadffe2b80cd894ed1957aa8bb113359a813fb508384d4fddd90c3"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_imageformats_qsvg_armeabi-v7a.so",
+        "bytes": 13632,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "695177822792949f8a5179c02e44d59115c861ecca386cc4c498a6ca912a24e0"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_platforms_qtforandroid_armeabi-v7a.so",
+        "bytes": 721904,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "c0dfb927dbb724cbf7f15fe7c1ed76b5e8f2bbafe2ed5110b0904931f36b7040"
+      },
+      {
+        "name": "lib/armeabi-v7a/libplugins_styles_qandroidstyle_armeabi-v7a.so",
+        "bytes": 62008,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "8edb20a541b939498b36996ab4eac1cdc38ee335899d203793681993ef962320"
+      },
+      {
+        "name": "lib/armeabi-v7a/libshell_armeabi-v7a.so",
+        "bytes": 19036164,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "f08baeee672b373b1e79758dcfb38e28fd89883503437658d5d79c82a7ed84ae"
+      },
+      {
+        "name": "lib/armeabi-v7a/libsteamwebrtc.so",
+        "bytes": 3664964,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6d64df6bc26888341474eb068af9f924c60e2e97b110e03fc0ba1d9debdf9b34"
+      },
+      {
+        "name": "lib/x86/libQt5AndroidExtras_x86.so",
+        "bytes": 119740,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "25d582d2c894f890397b709717aace9d27e7163c25e54688ede887404d6ba1c1"
+      },
+      {
+        "name": "lib/x86/libQt5Core_x86.so",
+        "bytes": 5925092,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "2a5e350a233cbe0f4d40222d812fd96d3b84b3defd60c2f359ea3f9f2797e22c"
+      },
+      {
+        "name": "lib/x86/libQt5Gui_x86.so",
+        "bytes": 5650272,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "55c5a93c8a1329d122710918a44b526abeef147192ea9b67d8f8214cf0819090"
+      },
+      {
+        "name": "lib/x86/libQt5Network_x86.so",
+        "bytes": 3833256,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "3b83cc1223af7c56bd94e0518851b27279f4692aff4750949f8695518ac2b791"
+      },
+      {
+        "name": "lib/x86/libQt5Svg_x86.so",
+        "bytes": 355868,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "c5eba13afa38b5aeea136f93d1126d9d15cc3871f0702172a0e588ac892628f7"
+      },
+      {
+        "name": "lib/x86/libQt5Widgets_x86.so",
+        "bytes": 6752732,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "651b235ca3780fc87a04941b0a1b2dade0148134e82c8c9b10417be673bbade1"
+      },
+      {
+        "name": "lib/x86/libSDL3.so",
+        "bytes": 2349292,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "9e6185f889b7f7cdaeda03fa50ddcc78e25688df7f6399a1da6ca9f168307a01"
+      },
+      {
+        "name": "lib/x86/libSDL3_image.so",
+        "bytes": 249984,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "d9fbec695be1d8b3023c9ec9dcc7ca8260f4e589886d276edca84b3499105d6a"
+      },
+      {
+        "name": "lib/x86/libSDL3_mixer.so",
+        "bytes": 285388,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "774609a583ea3ffbfbbc56c6cb8adb8c82d9ff55ff19d60f337e613face5e9b5"
+      },
+      {
+        "name": "lib/x86/libSDL3_ttf.so",
+        "bytes": 1622428,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "fcb18f2d7b2647757b02c9b47628a5f6418870bdb9721a10710edcc3057b591c"
+      },
+      {
+        "name": "lib/x86/libc++_shared.so",
+        "bytes": 1143240,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "23ff3b208a61693deda577e381a7da775b104b6c5e997465802037ab8952d9f1"
+      },
+      {
+        "name": "lib/x86/libh264bitstream.so",
+        "bytes": 83168,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "566ded2c1a3e4da40a14448dc4a158bdecd84975bed5069e1d5aa6b6b01b390a"
+      },
+      {
+        "name": "lib/x86/libhevcbitstream.so",
+        "bytes": 105892,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "18e3afb00f657b83b6e1ad03ffc9c964bc494a3b00a97c155acc0385ba760995"
+      },
+      {
+        "name": "lib/x86/libmain.so",
+        "bytes": 15757276,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "3bf06bdd1b09577b5068d62e871a0f596f4f444dfb8db102649ebcf270b2b37d"
+      },
+      {
+        "name": "lib/x86/libplugins_bearer_qandroidbearer_x86.so",
+        "bytes": 58404,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "e22716dab4eb2aabae54c542c14118ad557ebebadf673c54a4ac867e7a962e8a"
+      },
+      {
+        "name": "lib/x86/libplugins_iconengines_qsvgicon_x86.so",
+        "bytes": 29504,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "e971f95cf0c736eac2b4419cd281d9327ebbecbc1088db0d309347c4515c1cd8"
+      },
+      {
+        "name": "lib/x86/libplugins_imageformats_qgif_x86.so",
+        "bytes": 23712,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "a246c5bf58eca4623b381b29a812c63abcf1ab4dabbb794e379fa698463f8f79"
+      },
+      {
+        "name": "lib/x86/libplugins_imageformats_qico_x86.so",
+        "bytes": 23868,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "073d14e65eb6969a4bbf77ceab5dcf94191e03d852ff89c89b8ca93fe2c2edbe"
+      },
+      {
+        "name": "lib/x86/libplugins_imageformats_qjpeg_x86.so",
+        "bytes": 420020,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "37a5928d972b7067db17292f9712dd113e335d19b9a7ee58d7cea9aa0225cce2"
+      },
+      {
+        "name": "lib/x86/libplugins_imageformats_qsvg_x86.so",
+        "bytes": 16332,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8f65b4a3914f933d12aacd4658ccf4d195c86238a33cc7695a88ff1b057bb5b4"
+      },
+      {
+        "name": "lib/x86/libplugins_platforms_qtforandroid_x86.so",
+        "bytes": 1302680,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "f85d9152d968576031c3cb88ee0787037ddaf2e384f9f2e4190adaf57135684c"
+      },
+      {
+        "name": "lib/x86/libplugins_styles_qandroidstyle_x86.so",
+        "bytes": 89192,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "be694f07a4a167b1d5413f86cb80346b571dad32ba6e89d78a24fbf20c93f370"
+      },
+      {
+        "name": "lib/x86/libshell_x86.so",
+        "bytes": 23091100,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "bd581f64ba96c6f266f646f7ca397b8a1266b46aeca622009857bcbd48de8126"
+      },
+      {
+        "name": "lib/x86/libsteamwebrtc.so",
+        "bytes": 6622184,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8bffa7a616e30986ab18ec7b41b24af67c02558bf152fcf83a7d2a93350f898c"
+      },
+      {
+        "name": "lib/x86_64/libQt5AndroidExtras_x86_64.so",
+        "bytes": 123824,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d715cd562dce7885f38a8bb49d327896ced3bca64261a9cb434589f5844a224a"
+      },
+      {
+        "name": "lib/x86_64/libQt5Core_x86_64.so",
+        "bytes": 5877288,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "cd59df801f6ad5586e38bc720454f51d73df0c03dbed0db73bd9b592b25d4041"
+      },
+      {
+        "name": "lib/x86_64/libQt5Gui_x86_64.so",
+        "bytes": 5419696,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "71c8834da66608f68a27645a3b391ee8ef1a7feb4e9943b96ad868e469d69aaa"
+      },
+      {
+        "name": "lib/x86_64/libQt5Network_x86_64.so",
+        "bytes": 4722600,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "1dc3801a783b585393935216bdd17a8313d24b831f7814b4177dd5ffc6214a74"
+      },
+      {
+        "name": "lib/x86_64/libQt5Svg_x86_64.so",
+        "bytes": 352216,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "03c83439c8cafe683cf43e3cd136f88ee2b7d6e8eac96c15c253314ebecf396a"
+      },
+      {
+        "name": "lib/x86_64/libQt5Widgets_x86_64.so",
+        "bytes": 6956648,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "9cddc02a55b1482c200e8974ef5da088bc3280ccb1e4817c5033689be633936c"
+      },
+      {
+        "name": "lib/x86_64/libSDL3.so",
+        "bytes": 2297904,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "17a233ec1d244fce2916b74c09e806aaf4d84081713ad0125002a902e9e4d608"
+      },
+      {
+        "name": "lib/x86_64/libSDL3_image.so",
+        "bytes": 269032,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "27e6d52850cbf9264f13b9bb3ca8fcd655e3bc6823b094d25a7aedc7d60eeec4"
+      },
+      {
+        "name": "lib/x86_64/libSDL3_mixer.so",
+        "bytes": 275808,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "e9c00ffd9379c56b7dcf50f3cf9a0aaf1ecf08d5c6eb076dacac37d2e10bb8e1"
+      },
+      {
+        "name": "lib/x86_64/libSDL3_ttf.so",
+        "bytes": 1597440,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "cb372ed1dd73d5d8d081b7ca5609a3319f2fae0ec4cc38e75cfe63a3c0134e58"
+      },
+      {
+        "name": "lib/x86_64/libc++_shared.so",
+        "bytes": 1229808,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "2e855857f80819737d25a663109fedf816a5e996a85423166806014a06593256"
+      },
+      {
+        "name": "lib/x86_64/libh264bitstream.so",
+        "bytes": 82088,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "af11170c245dad4fc1db53c4c4a0be30a79d53454913f3fa100663de38d0eadd"
+      },
+      {
+        "name": "lib/x86_64/libhevcbitstream.so",
+        "bytes": 106480,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "1c718ef1ac9b95056e0aad578e9b8abd8b3a812aa5e60921d16a848d252add54"
+      },
+      {
+        "name": "lib/x86_64/libmain.so",
+        "bytes": 16853440,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "57e625cdecef4683e019109cea5bf26c67ab7d0e84bbe4c247377a0ba9a11a34"
+      },
+      {
+        "name": "lib/x86_64/libplugins_bearer_qandroidbearer_x86_64.so",
+        "bytes": 62192,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "6e70b91e29b80eed18f025c3cc2395c89b860e204c2208ba489a91cf5f95ae50"
+      },
+      {
+        "name": "lib/x86_64/libplugins_iconengines_qsvgicon_x86_64.so",
+        "bytes": 32608,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "470dc2d2a85b7a7388900ceb814fd2f2e729326a247a20196d4b3c4a8fb7a472"
+      },
+      {
+        "name": "lib/x86_64/libplugins_imageformats_qgif_x86_64.so",
+        "bytes": 26736,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "1e8fead75442426cb5ccd85bc2e1cd11ad99b37ddeff4b4d0d4418a3b43c0d3b"
+      },
+      {
+        "name": "lib/x86_64/libplugins_imageformats_qico_x86_64.so",
+        "bytes": 26608,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "e2ad9e2b89e7b08495c0d5497aa83a9d40cf0f8210ce4d7fe630ae2e5e961691"
+      },
+      {
+        "name": "lib/x86_64/libplugins_imageformats_qjpeg_x86_64.so",
+        "bytes": 446464,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "91aa6a578fd08a36a698d83593f5c75f225df95d84d9b0f374780e416740df2c"
+      },
+      {
+        "name": "lib/x86_64/libplugins_imageformats_qsvg_x86_64.so",
+        "bytes": 19712,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d937fca65a93e0f2142d9f1be15aa2f3a202f4be2d1aae9ac2c200e32471ba83"
+      },
+      {
+        "name": "lib/x86_64/libplugins_platforms_qtforandroid_x86_64.so",
+        "bytes": 1335144,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b123123313a2cf81a660a851891d81038a6c07d230e8b38f086639137db622de"
+      },
+      {
+        "name": "lib/x86_64/libplugins_styles_qandroidstyle_x86_64.so",
+        "bytes": 95672,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "4aff2a125df7adce27e8789b1c2be8b1d55a6247cd78440dbb3f28ea0784f493"
+      },
+      {
+        "name": "lib/x86_64/libshell_x86_64.so",
+        "bytes": 24031744,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "195025601c2b17194a4d8b3debd674aca3377290fe3851986656c49bc973f907"
+      },
+      {
+        "name": "lib/x86_64/libsteamwebrtc.so",
+        "bytes": 6665064,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "ad1614b459af63577ad063a40b704299a5c5e0dfc706ee9044b09932f5b1c38c"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

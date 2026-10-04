@@ -1,0 +1,95 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T15:46:12.335745+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "version": "OH7.0.0.39 / AOSP16 R4 / ARM64 / App single Bionic",
+  "counts": {
+    "raw": 87,
+    "complete_host_static": 84,
+    "qualified_blackbox_packages": 9,
+    "true_cold_starts": 0,
+    "whole_bionic_tools": 0
+  },
+  "g299_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1"
+  },
+  "g300_blackbox": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/nordvpn-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "9d716511f176f3aad3432209d0ff666ed1c188d44d910ba4a4f73df78cef168f"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/surfshark-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "0975a6f8e2971066b8b131c32376281854f418cd86f62b33d4705e87b3794293"
+    }
+  ],
+  "g279_v13_readonly_rootguard": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v13-inmemory-rootguard-probe-v1/ROOT-POSTRUN-ACCEPTANCE.json",
+    "sha256": "b783de585302f5418046539289e100732c6b1d35181bf4dfd1a2233a5d57ad78"
+  },
+  "g279_v13_scope": "typed root links/copyfile plus 1011 untracked guard only; full tracked-clean not regenerated; graph and target compile 0",
+  "g279_v12_replay_allowed": false,
+  "next": "resolve A3.0 full live goal evidence capture, then independent root continuity acceptance before v13 outer release/ACK; no v12 replay",
+  "container": false,
+  "namespace": false,
+  "device_hold": true,
+  "original_budget_and_goal_preserved": true,
+  "g301_static": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/nordvpn/ROOT-STATIC-ADMISSION.json",
+      "sha256": "4d454f484b19de94d5e75464c1282d6737ad6087bfbee2c28314d0902e7241ce"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/surfshark/ROOT-STATIC-ADMISSION.json",
+      "sha256": "e962905c85906a3315313383a7aa7f54c0150491a2584a677bccb2c03e7ae1da"
+    }
+  ],
+  "g279_v13_runner_stage": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v13-runner-stage-prep-v2/ROOT-STAGE-ACCEPTANCE.json",
+    "sha256": "5dceabf9821b14dd884ee7d00eb6789cce9f36361602accdb08d7086d9616b3f",
+    "scope": "one exact runner staged and 28-row readback; no EVO19 or graph"
+  },
+  "evo19_v13_v1_static_no_go": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v13-active-env-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "7baed4e2d4f56cd2830445a075735f40bd8e56792329885cac4adbbaaf670fe7",
+    "reason": "SSH route/host-key not pinned, remote Python missing -B; no SSH"
+  },
+  "evo19_v13_v2_readonly": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v13-active-env-candidate-v2/ROOT-POSTRUN-ACCEPTANCE.json",
+    "sha256": "40482009247b7b89d0b46592df848ba22f2826273b7c28135728e0050ab9ad33",
+    "scope": "11 exact inputs, raw stdout/stderr not separately retained; no graph"
+  },
+  "g302_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e"
+  },
+  "g303_blackbox": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/steam-mobile-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "935221dc869b71a0a5d9755e4f91bb0bacda044ccca8bca11286bdd4052f3f12"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/steam-link-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "69048a46a2d72885288ec25fbfed9472880e79d2b9b1f234ba8c49c736ce4c05"
+    }
+  ],
+  "g304_static": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam-mobile-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "ba3c9cfcc2a49d7404f6a14545d1c261c00a3201aeebfa7be96604ad19dcad96"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam-link-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "da321360f3ef45dc7bfd2c06f3ce352cdc9495f7e343666543a5401700784c94"
+    }
+  ],
+  "g279_a30": {
+    "decision": "NO_GO_FULL_LIVE_CONTINUITY",
+    "peer_review": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v13-a30-live-goal-peer-review-v2/REVIEW.json",
+    "sha256": "5a38050363f81f264f23c36ac836e97fc14adc60b1676425080185d9a752905c",
+    "reason": "Goal_get native UI ledger preserves only 200-character preview; supervisor full event is 17 hours older; 18 live fields unproven"
+  }
+}

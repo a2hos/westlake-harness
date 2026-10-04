@@ -1,0 +1,22 @@
+{
+  "schema": "g302-evo31-two-branch-plan-v1",
+  "recorded_at_utc": "2026-10-04T15:36:19Z",
+  "raw_identity": {
+    "candidate_observed_at_utc": "2026-10-04T15:35:57.708292+00:00",
+    "candidate_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/CANDIDATE.json",
+    "candidate_sha256": "bea82656aa59f003c315c1e4d06ee257b40651b37d66a9ead4964c5753854de3",
+    "steam_mobile_download_completed_at_utc": "2026-10-04T15:34:19.538517+00:00",
+    "steam_link_download_completed_at_utc": "2026-10-04T15:34:19.639981+00:00",
+    "root_raw_admission_at_utc": null,
+    "canonical_raw_delta": 0
+  },
+  "packages": [
+    {"package": "com.valvesoftware.android.steam.community", "apk_sha256": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d", "version": "3.10.9", "blackbox_qualification_start_at_utc": null, "four_phase_scan_start_at_utc": null},
+    {"package": "com.valvesoftware.steamlink", "apk_sha256": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459", "version": "1.3.32", "blackbox_qualification_start_at_utc": null, "four_phase_scan_start_at_utc": null}
+  ],
+  "qualification_branch": "After independent root raw admission, independently check the official Valve product/download page, exact-package US-English Google Play listing, lawful original channel, full-client blackbox source boundary, and unchanged APK SHA. Publisher-signer binding remains explicitly unproven unless Valve publishes a matching certificate fingerprint or signs the exact APK digest. Qualification requires separate peer and root decisions.",
+  "static_branch": "After independent root raw admission, freeze a per-APK four-phase ZIP/metadata/ELF/DEX runner based on accepted G301/G298 host method. Its cache key must include APK SHA-256, exact scanner source SHA-256, rules/input SHA-256, venv manifest SHA-256 and readelf SHA-256. Only then record actual scan start/end, phase raw streams/rc, pre/post guards, independent postrun and root static admission. Static work may start before qualification ends if both branches retain the same APK SHA; it has no blackbox or startup count effect by itself.",
+  "trial_measurements": ["raw root admission timestamp", "qualification start and root admission timestamps", "static scan start and root admission timestamps", "per-package CPU and wall time", "same APK SHA at branch join", "any duplicate computation or miscount"],
+  "actual_branch_execution": {"qualification_started": false, "four_phase_scan_started": false, "root_raw_admission_present": false, "cache_key_finalized": false},
+  "boundaries": {"canonical_mutations": 0, "device_commands": 0, "container_commands": 0, "namespace_commands": 0, "bridge_writes": 0}
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "g279-v13-goalget-native-path-study-v1",
+  "finding": "NO_PATH",
+  "checked_at_utc": "2026-10-04T15:46:07.477198+00:00",
+  "target_turn": "01a10790-1d9d-76d2-ba84-b201a9f77843",
+  "target_tool": "tool_HrgpsqZJvNHMiXBIenp36Tku",
+  "local_evidence": {
+    "ledger": ".nanhai-plus-runtime/instance/ui-protocol/6f7261636c652d6b696d693a6c6f63616c3a6e616e6861692d706c757323696e6e6572007e6377642d35343431326534343037326337313832/ledger-00001791090903799580-81499.log",
+    "ledger_sha256": "3757b883d620be496edd4b73ae7a5a4f18a07c5ae029e415eba1222e82bd2f84",
+    "tool_completed_seq": 187108,
+    "tool_completed_has_only_output_preview": true,
+    "thread_metadata": ".nanhai-plus-runtime/instance/ui-protocol/6f7261636c652d6b696d693a6c6f63616c3a6e616e6861692d706c757323696e6e6572007e6377642d35343431326534343037326337313832/threads/30316131303739302d316439642d373664322d626138342d623230316139663737383433.json",
+    "thread_metadata_bytes": 168,
+    "thread_metadata_sha256": "1a6335ad53c006cd442f1fc1e7647ebca919b406d459cda78acccd18899b77b5",
+    "session_jsonl": ".nanhai-plus-runtime/instance/profiles/oracle-kimi/data/sessions/oracle-kimi%3Alocal%3Ananhai-plus%23inner.jsonl",
+    "session_jsonl_mtime_utc": "2026-09-29T22:12:48.662575+00:00",
+    "session_jsonl_sha256": "4c742bd0eef74b275c473dfc7b22757bb47a062fa023be6e405886eff3cf93b4",
+    "session_jsonl_contains_target_turn": false
+  },
+  "read_only_api_candidate": {
+    "method": "session/hydrate",
+    "source_contract": ".nanhai-plus-runtime/backend-source/crates/octos-core/src/ui_protocol.rs:2671,2685,2773",
+    "source_handler": ".nanhai-plus-runtime/backend-source/crates/octos-cli/src/api/ui_protocol.rs:15959",
+    "reason_not_run": "Existing target backend PID 81499 is serve --stdio, bound to current octoscode process, with no known independent read-only WS/HTTP endpoint; launching another backend would not be an authoritative read of current in-memory SessionRuntime and could affect control state."
+  },
+  "tested_read_only": [
+    "Parsed native UI ledger target tool start/end and confirmed full tool content is absent from persistent event; only truncated output_preview is stored.",
+    "Inspected target thread metadata JSON (168 bytes), no tool result.",
+    "Checked target profile session JSONL; it predates target turn and does not contain turn ID.",
+    "Inspected current backend process argv and local source session/hydrate contract; no safe direct connection to current stdio instance found."
+  ],
+  "not_authorized": [
+    "owner prompt",
+    "new backend process",
+    "graph",
+    "device",
+    "container"
+  ],
+  "impact": "A3.0 prior NO_GO remains; do not infer live full Goal_get result from owner prose or stale supervisor event."
+}

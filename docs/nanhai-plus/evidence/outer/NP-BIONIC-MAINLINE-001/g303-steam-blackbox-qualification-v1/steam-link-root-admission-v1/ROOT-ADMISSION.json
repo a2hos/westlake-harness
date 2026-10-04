@@ -1,0 +1,33 @@
+{
+  "schema": "g303-steam-root-blackbox-qualification-v1",
+  "at": "2026-10-04T15:42:24.227618+00:00",
+  "decision": "ACCEPT_ONE_OVERSEAS_MAINSTREAM_BLACKBOX_PACKAGE_QUALIFICATION_ONLY",
+  "package": "com.valvesoftware.steamlink",
+  "apk_sha256": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/STEAM-LINK-CANDIDATE.json",
+    "sha256": "800c62b7146081ed01c5750eea6bc5dc3aa70d7a83437c9cea307e8b2d2d39e4"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/peer-review-v1/REVIEW.json",
+    "sha256": "72e881299c84c2ced905a4055cd313c5aee8ef4e643a0726da5818b24398bc25"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e"
+  },
+  "qualified_before": 8,
+  "qualified_after": 9,
+  "complete_static_delta": 0,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "limits": [
+    "Publisher-to-APK-signing-certificate identity not independently bound",
+    "Official direct APK exact GET URL-to-byte transcript absent; retained original bytes and source page/headers accepted under explicit provenance limit",
+    "Worldwide Play download bucket is package lifetime, not this exact version or US installs",
+    "Complete Android client blackbox classification includes explicit product-boundary inference",
+    "No complete four-phase static scan, Bionic runtime, device, or cold-start proof"
+  ]
+}

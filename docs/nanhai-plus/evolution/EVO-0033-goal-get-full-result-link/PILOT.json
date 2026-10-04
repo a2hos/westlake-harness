@@ -1,0 +1,25 @@
+{
+  "schema": "evo33-offline-pilot-result-v1",
+  "command": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evolution/EVO-0033-goal-get-full-result-link/probe.py"
+  ],
+  "rc": 0,
+  "stdout": {
+    "actual_full_result_available": false,
+    "actual_preview_bytes": 203,
+    "actual_preview_rejected": true,
+    "mutated_digest_event_and_session_rejected": true,
+    "real_goal_continuity_passed": false,
+    "schema": "evo33-goal-get-full-result-link-offline-pilot-v1",
+    "source_excerpt_sha256": "70f8436ccb8276acb84d9a120211efde48767d09b2286d048059591c809ee81b",
+    "synthetic_full_join_passed": true
+  },
+  "stderr": "",
+  "probe_sha256": "bfcc4c2a05b70ea459fc587e00c354b7de446c01dc2b9c8cf5afbf74a6b37f17",
+  "observations_sha256": "6b811f48d988a898610a9055b515c37715e546e380756e7bae7ab43ff4abaf09",
+  "runtime_seconds_claimed": null,
+  "live_goal_metadata_captured": false,
+  "promotion": "NOT_PROMOTED"
+}

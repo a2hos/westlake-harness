@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T15:03:20.734243+00:00",
+  "checked_at": "2026-10-04T15:45:44.191257+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,15 +35,15 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 85,
+    "downloaded_payloads": 87,
     "latest_raw_admission": {
       "packages": [
-        "com.nordvpn.android",
-        "com.surfshark.vpnclient.android"
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.steamlink"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
-      "scope": "two official supplemental ARM64 original APK identities only; no static, blackbox qualification or cold start credit"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+      "scope": "two Valve raw artifact identities only; no static, blackbox qualification or cold start credit"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -54,13 +54,13 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 82,
-    "complete_inventory_dex_entries": 214,
-    "complete_inventory_native_elf_entries": 998,
+    "complete_static_inventories": 84,
+    "complete_inventory_dex_entries": 219,
+    "complete_inventory_native_elf_entries": 1047,
     "latest_complete_static_admission": {
-      "package": "com.surfshark.vpnclient.android",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/surfshark/ROOT-STATIC-ADMISSION.json",
-      "sha256": "e962905c85906a3315313383a7aa7f54c0150491a2584a677bccb2c03e7ae1da",
+      "package": "com.valvesoftware.steamlink",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam-link-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "da321360f3ef45dc7bfd2c06f3ce352cdc9495f7e343666543a5401700784c94",
       "scope": "four-phase host static only; no cold start credit"
     },
     "incomplete_static_inventories": [
@@ -70,8 +70,8 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 10,
-    "qualified_blackbox_packages": 7,
+    "supplemental_payloads": 12,
+    "qualified_blackbox_packages": 9,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -79,7 +79,9 @@
       "com.opera.browser",
       "com.opera.gx",
       "com.nordvpn.android",
-      "com.surfshark.vpnclient.android"
+      "com.surfshark.vpnclient.android",
+      "com.valvesoftware.android.steam.community",
+      "com.valvesoftware.steamlink"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -90,9 +92,9 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.surfshark.vpnclient.android",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/surfshark-root-admission-v1/ROOT-ADMISSION.json",
-      "sha256": "0975a6f8e2971066b8b131c32376281854f418cd86f62b33d4705e87b3794293",
+      "package": "com.valvesoftware.steamlink",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/steam-link-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "69048a46a2d72885288ec25fbfed9472880e79d2b9b1f234ba8c49c736ce4c05",
       "scope": "package qualification only; cold start 0"
     },
     "g299_raw_supplement": {
@@ -136,6 +138,49 @@
       "delta": 2,
       "dex_delta": 7,
       "true_arm64_elf_delta": 57,
+      "cold_start_delta": 0
+    },
+    "g302_raw_supplement": {
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+      "raw_delta": 2,
+      "static_delta": 0,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    "g303_blackbox_qualifications": {
+      "receipts": [
+        {
+          "package": "com.valvesoftware.android.steam.community",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/steam-mobile-root-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "935221dc869b71a0a5d9755e4f91bb0bacda044ccca8bca11286bdd4052f3f12"
+        },
+        {
+          "package": "com.valvesoftware.steamlink",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/steam-link-root-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "69048a46a2d72885288ec25fbfed9472880e79d2b9b1f234ba8c49c736ce4c05"
+        }
+      ],
+      "delta": 2,
+      "static_delta": 0,
+      "cold_start_delta": 0
+    },
+    "g304_static_admissions": {
+      "receipts": [
+        {
+          "package": "com.valvesoftware.android.steam.community",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam-mobile-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "ba3c9cfcc2a49d7404f6a14545d1c261c00a3201aeebfa7be96604ad19dcad96"
+        },
+        {
+          "package": "com.valvesoftware.steamlink",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g304-steam-static-candidate-v1/steam-link-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "da321360f3ef45dc7bfd2c06f3ce352cdc9495f7e343666543a5401700784c94"
+        }
+      ],
+      "delta": 2,
+      "dex_delta": 5,
+      "true_arm64_elf_delta": 49,
       "cold_start_delta": 0
     }
   },
@@ -1539,5 +1584,28 @@
     "target_compiles": 0,
     "device_commands": 0,
     "next": "fresh v13 runner-only staging and release chain"
+  },
+  "g279_v13_runner_stage": {
+    "status": "accepted_exact_staged_runner_bytes_and_readback_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v13-runner-stage-prep-v2/ROOT-STAGE-ACCEPTANCE.json",
+      "sha256": "5dceabf9821b14dd884ee7d00eb6789cce9f36361602accdb08d7086d9616b3f"
+    },
+    "soong_graph_commands": 0,
+    "target_compiles": 0,
+    "device_commands": 0,
+    "next": "fresh v13 EVO19, original owner signed ACK, Linux gate, graph-only once"
+  },
+  "g279_v13_evo19_readonly": {
+    "status": "accepted_exact_11_input_readback_evidence_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v13-active-env-candidate-v2/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "40482009247b7b89d0b46592df848ba22f2826273b7c28135728e0050ab9ad33"
+    },
+    "raw_transport_streams_separately_retained": false,
+    "soong_graph_commands": 0,
+    "target_compiles": 0,
+    "device_commands": 0,
+    "next": "original-owner signed ACK and new graph control release"
   }
 }

@@ -1,0 +1,96 @@
+{
+  "schema": "g279-v13-a30-live-goal-peer-review-v2",
+  "decision": "NO_GO_A3_0_FULL_CONTINUITY",
+  "revises": "v1 review remains intact; supervisor event stream adds historical identity and cumulative accounting evidence but no fresh live read",
+  "reviewed_at_utc": "2026-10-04T15:43:44.711458+00:00",
+  "supervisor_source": ".nanhai-plus-runtime/instance/supervisor/supervisor-events.jsonl",
+  "supervisor_source_sha256": "86790c038444eeba2c724ae37fcbd29df558ef46561f38bd916e376b425fd45c",
+  "event_count": 3123,
+  "sequence_last": 3123,
+  "event_types": {
+    "continuation_queued": 380,
+    "group_registered": 1005,
+    "continuation_completed": 373,
+    "child_started": 249,
+    "child_terminal": 87,
+    "artifact_updated": 1029
+  },
+  "goal_group_count": 756,
+  "goal_ids_seen": [
+    "goal_01"
+  ],
+  "goal_group_ids_seen": [
+    "autonomy-goal:oracle-kimi:local:nanhai-plus#inner\u0000~cwd-54412e44072c7182"
+  ],
+  "goal_sessions_seen": [
+    "oracle-kimi:local:nanhai-plus#inner\u0000~cwd-54412e44072c7182"
+  ],
+  "metadata_created_at_ms_values": [
+    1790677296212
+  ],
+  "budget_changes": [
+    [
+      36,
+      39,
+      2000000,
+      200000000
+    ],
+    [
+      2857,
+      2859,
+      200000000,
+      20000000000
+    ]
+  ],
+  "usage_decreases": [],
+  "latest_goal_event": {
+    "line": 3122,
+    "seq": 3122,
+    "recorded_at_ms": 1791067239770,
+    "group_id": "autonomy-goal:oracle-kimi:local:nanhai-plus#inner\u0000~cwd-54412e44072c7182",
+    "parent_session_id": "oracle-kimi:local:nanhai-plus#inner\u0000~cwd-54412e44072c7182",
+    "group_created_at_ms": 1791067239702,
+    "status": "blocked",
+    "metadata": {
+      "goal_id": "goal_01",
+      "session_id": "oracle-kimi:local:nanhai-plus#inner\u0000~cwd-54412e44072c7182",
+      "created_at_ms": 1790677296212,
+      "updated_at_ms": 1791067239702,
+      "token_budget": 20000000000,
+      "tokens_used": 255945577,
+      "time_used_seconds": 79895,
+      "continuations_used": 234,
+      "goal_cleared": false
+    }
+  },
+  "latest_event_time_utc": "2026-10-03T22:40:39.770000+00:00",
+  "owner_goal_get_read_time_utc": "2026-10-04T15:38:02.980550+00:00",
+  "staleness_seconds_at_goal_get": 61043.211,
+  "direct_historical_facts": [
+    "The only supervisor goal group in this bounded stream is original goal_01 and original native session.",
+    "Metadata created_at_ms is constant at 1790677296212 across 756 goal records.",
+    "Usage is monotonic in this stream; 20B budget begins at sequence 2859.",
+    "At sequence 3122 status blocked, budget 20000000000, used 255945577, continuations 234."
+  ],
+  "limitations": [
+    "Sequence 3122 recorded_at_ms 1791067239770 converts to 2026-10-03T22:40:39.770Z, about 17 hours before 2026-10-04T15:38:02.980550Z owner readback. This is stale historical evidence, matching OUTER-STATE snapshot time.",
+    "A single local supervisor event stream cannot prove no new goal/session/replacement coordinator exists outside it.",
+    "Claim NP-MUSL16-ART-024 appears in objective prose but is not a structured supervisor metadata claim field.",
+    "Goal_get native UI ledger output_preview truncates after goal ID/status; owner prose values agree with stale supervisor event but are not a fresh independent full result.",
+    "group.created_at_ms is rewritten with each group_registered event; use metadata.created_at_ms for original goal creation identity."
+  ],
+  "a30_missing_fresh_primary_fields": [
+    "goal_creation_id",
+    "goal_created_at",
+    "claim",
+    "coordinator_session",
+    "token_budget",
+    "tokens_used",
+    "remaining",
+    "new_goal_created",
+    "new_session_created",
+    "usage_reset",
+    "replacement_coordinator_created"
+  ],
+  "next_evidence": "Capture a current complete Goal_get result from original lane or read an authoritative current goal-state store with timestamp; bind structured claim and coordinator identity, and enumerate live goals/sessions to substantiate negative assertions. Re-review against 18 required_live_fields. No owner ACK or graph release from this receipt."
+}

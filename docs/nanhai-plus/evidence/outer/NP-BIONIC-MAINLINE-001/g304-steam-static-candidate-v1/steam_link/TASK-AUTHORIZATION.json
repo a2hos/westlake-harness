@@ -1,0 +1,12 @@
+{
+  "scope": "G304 one local host-only four-phase static scan of exact com.valvesoftware.steamlink original APK",
+  "inputs_sha256": "4492ba6cd9eec62ea427d6c7f9119081fde0400aa940834b8ad84d07f2eeb411",
+  "runner_sha256": "cc04c7d2867ac0d5388335442944d85adf41e15f458fa29f9e0ae3b40174dd1a",
+  "scan_phase_sha256": "4c3d6fceae54477f884bcf4136795645bfc101b4f76d36034b3f587cb3d36281",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "raw_admission_sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+  "attempts": 1,
+  "device_commands": 0,
+  "container_commands": 0,
+  "authorization": "Parent outer task delegated G304 exact two host-only scans; no device, container, or Bridge write"
+}

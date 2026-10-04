@@ -1,0 +1,64 @@
+{
+  "schema": "g303-independent-two-steam-blackbox-peer-review-v1",
+  "reviewed_at_utc": "2026-10-04T15:41:55.992755+00:00",
+  "decision": "GO_TWO_CANDIDATES_FOR_SEPARATE_ROOT_QUALIFICATION_ONLY",
+  "canonical_qualification_changed": false,
+  "canonical_qualified_delta": 0,
+  "raw_root_admission_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+  "raw_root_admission_sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e",
+  "precedent": "g300-blackbox-nord-surf-qualification-v1/nordvpn-root-admission-v1/ROOT-ADMISSION.json and PORTFOLIO-GOAL.md qualification scope",
+  "official_sources": [
+    "https://store.steampowered.com/mobile",
+    "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community&hl=en_US",
+    "https://play.google.com/store/apps/details?id=com.valvesoftware.steamlink&hl=en_US",
+    "https://store.steampowered.com/subscriber_agreement/",
+    "https://github.com/ValveSoftware/steamlink-sdk"
+  ],
+  "per_package": [
+    {
+      "product": "Steam Mobile",
+      "package": "com.valvesoftware.android.steam.community",
+      "decision": "GO_FOR_ROOT_QUALIFICATION_WITH_EXPLICIT_EVIDENCE_BOUNDARIES",
+      "candidate_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/STEAM-MOBILE-CANDIDATE.json",
+      "candidate_sha256": "da1344e2ab6e9d2926bc1e26f7b770e086cf2b7f95de8892fdebb56ad9612066",
+      "apk_sha256_rechecked": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d",
+      "apk_bytes_rechecked": 131986934,
+      "g302_raw_identity_match": true,
+      "criteria": "Five criteria match G300 accepted precedent: official Valve page and direct APK route; exact local package/version/hash; US Play package listing and global mainstream reach; original unmodified Android executable with no complete client source used; no project edit.",
+      "boundaries": [
+        "The original GET lacks a single immutable URL-to-byte transcript; the official page and retained HTTP 200 headers support channel provenance but do not establish a publisher-signed exact digest.",
+        "Publisher-to-signing-certificate identity remains independently unbound; observed Valve DN, shared certificate and cryptographic APK verification do not establish Valve public attestation.",
+        "The absence of complete Android client source is a project-input and product-level inference, not proof that exact-build source does not exist anywhere. For Steam Link the public steamlink-sdk is not evidence of complete Android client source.",
+        "US English storefront and worldwide package lifetime downloads support overseas/mainstream classification, not US install counts, current-version counts, or byte identity with Play.",
+        "Blackbox qualification is separate from four-phase static inventory, OH7/Bionic install, truly cold start, rendering, interaction and service compatibility."
+      ]
+    },
+    {
+      "product": "Steam Link",
+      "package": "com.valvesoftware.steamlink",
+      "decision": "GO_FOR_ROOT_QUALIFICATION_WITH_EXPLICIT_EVIDENCE_BOUNDARIES",
+      "candidate_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g303-steam-blackbox-qualification-v1/STEAM-LINK-CANDIDATE.json",
+      "candidate_sha256": "800c62b7146081ed01c5750eea6bc5dc3aa70d7a83437c9cea307e8b2d2d39e4",
+      "apk_sha256_rechecked": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+      "apk_bytes_rechecked": 132207126,
+      "g302_raw_identity_match": true,
+      "criteria": "Five criteria match G300 accepted precedent: official Valve page and direct APK route; exact local package/version/hash; US Play package listing and global mainstream reach; original unmodified Android executable with no complete client source used; no project edit.",
+      "boundaries": [
+        "The original GET lacks a single immutable URL-to-byte transcript; the official page and retained HTTP 200 headers support channel provenance but do not establish a publisher-signed exact digest.",
+        "Publisher-to-signing-certificate identity remains independently unbound; observed Valve DN, shared certificate and cryptographic APK verification do not establish Valve public attestation.",
+        "The absence of complete Android client source is a project-input and product-level inference, not proof that exact-build source does not exist anywhere. For Steam Link the public steamlink-sdk is not evidence of complete Android client source.",
+        "US English storefront and worldwide package lifetime downloads support overseas/mainstream classification, not US install counts, current-version counts, or byte identity with Play.",
+        "Blackbox qualification is separate from four-phase static inventory, OH7/Bionic install, truly cold start, rendering, interaction and service compatibility."
+      ]
+    }
+  ],
+  "root_next": "Root may admit two package qualifications with the stated provenance/signing/source inference limits after its own receipt review; this peer does not modify counts. Independent Valve signing-key/digest attestation would strengthen publisher binding.",
+  "operations": {
+    "apk_mutation": 0,
+    "device": 0,
+    "container": 0,
+    "namespace": 0,
+    "bridge": 0,
+    "task_summary_edit": 0
+  }
+}
