@@ -1,0 +1,49 @@
+{
+  "schema": "g279-stage3-v11-independent-staging-review-v1",
+  "reviewed_utc": "2026-10-04T13:06:54Z",
+  "verdict": "GO_ONE_STAGING_ONLY",
+  "decision": "GO_V11_STAGING_ONCE",
+  "independent_reviewer": "hello_frontier_peer",
+  "scope": "Exactly one bounded gz02 UID1000 write for nonce 4637ba906d21480c910ebcb13f59d8e7: stage the exact v11 runner as a 0444 control file and create Stage3 lease/receipt. No active local_env switch, graph, target compile, device, container or namespace operation is authorized.",
+  "nonce": "4637ba906d21480c910ebcb13f59d8e7",
+  "packet_sha256": "bc49b5c8e263dc2b12d0e850891ce15ae30ccc03e4302f6af5e0660fa0cda950",
+  "packet_file_sha256": "362394aa2bf7b20a0952af6297a1e11e047bdfa41e1388668ff5f3357a5d803b",
+  "launcher_sha256": "d016cf8e1dafc13a75b0db2b582ed7c0359dd212eb271237364b54a5648190d3",
+  "remote_body_sha256": "c5e9d368960f6603ac98e0c37d3c649cedc1e85cfdfaec5e3112df9a516b5190",
+  "runner_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "runner_bytes": 45330,
+  "runner_mode": "0444",
+  "fixtures_sha256": "f28298ef62d36c689282fa67a2ab85ffff4f1efa79fffe8583481bdde3cbe5fc",
+  "fixture_receipt_sha256": "fc9a69b70429beec50900ab4c2b856dc8981f50259cc7a078cc29e4b7c56b23d",
+  "handoff_sha256": "ff7251be3584b2036e3b85a931c8bd40afa55e895830b25f60f4f4b3783d61e1",
+  "reviewed_evidence": {
+    "v11_static_peer_sha256": "dbc8ea685a623f5140c9015a73cca0cd6e2a42a46bafb4677acce00f950961cb",
+    "stage2_peer_sha256": "78d51ad3d3ae1c181cfc3619e428b793ad09b2d3d0ac897e2a415cc9668fb7ca",
+    "stage2_root_acceptance_sha256": "7f6d198094fce2710f753f15af8f672fa743e17ebea84451c78ae4d210a898a3",
+    "active_old_local_env_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+    "packet_reconstructed_exactly": true,
+    "four_directory_identities_match_independent_stage2_readback": true,
+    "all_14_staged_input_dev_inode_uid_gid_mode_size_sha_match_independent_stage1_2_readbacks": true,
+    "runner_local_sha_and_size_match_packet": true,
+    "local_ssh_route_and_ed25519_fingerprint_pin": "PASS, no remote connection made for this review"
+  },
+  "code_and_fixture_findings": {
+    "before_write": "Remote host guard requires Linux GZ02 x86_64 UID/EUID1000. Root/control/old/source-view identities and 14 file identities are checked against the frozen packet before O_EXCL lease. Root is fixed to the accepted private sibling; old root and local_env are not written.",
+    "write_and_readback": "Remote creates O_EXCL/fsynced lease, exact runner bytes in control as 0444, hashes/readbacks the runner and rechecks root/control/old plus all 14 old files before O_EXCL terminal receipt. Partial failure preserves lease/partial state and attempts quarantine; no automatic deletion or retry. Launcher writes fsynced O_EXCL local START before SSH, records uncertain outcomes and refuses same-nonce replay.",
+    "fixtures": "Direct rerun of fixtures.py returned rc0: frozen packet reconstruction, unreleased execute denial before START/SSH, positive exact 0444 runner with receipt, same-byte new-inode substitution denial before lease, and injected runner-write failure leaving lease/quarantine without terminal receipt. macOS fixture substitutes an empty ACL response; Linux ACL remains an execution-time check.",
+    "handoff": "Direct rerun of westlake_gate.py on exact HANDOFF.md returned rc0 PASS.",
+    "scope_guard": "This code stages bytes; it does not call Soong, target tools, device commands, container launchers or namespace APIs. Graph TOP remains the separately guarded full R4 checkout in the v11 runner, not the sibling source-view."
+  },
+  "release_conditions": [
+    "Root rehashes exact packet, launcher, remote body, runner, fixtures and this review; keep the active old local_env SHA unchanged during Stage3.",
+    "Immediately before execution, obtain fresh read-only gz02 identity/UID/ACL/root-control-old-source-view inode, all 14 file hashes and absence of v11 runner, Stage3 lease, receipt and quarantine. Any drift cancels this GO.",
+    "Execute only this frozen launcher and nonce once through the pinned gz02 SSH route. Preserve local START/TERMINAL and remote lease/receipt; any timeout or quarantine is UNKNOWN and must be reconciled read-only without replay.",
+    "After a success-shaped terminal, a separate peer must independently read back runner inode/mode/size/SHA, 14 unchanged inputs, four directories, Stage3 lease/receipt and no extra/quarantine before root admits STAGED_READBACK_ONLY."
+  ],
+  "not_proven": [
+    "No Stage3 remote write or v11 remote runner readback was performed by this peer.",
+    "No active local_env switch or original octos-inner v11 graph-only ACK exists by this review.",
+    "No EVO19 v11 gate, native Soong graph, ARM64 Bionic artifact, HelloWorld cold start or APK launch is established."
+  ],
+  "actions": {"remote_commands": 0, "remote_writes": 0, "local_env_edits": 0, "graph": 0, "target_compile": 0, "device": 0, "container": 0, "namespace": 0, "candidate_edits": 0}
+}

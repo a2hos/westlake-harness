@@ -1,0 +1,29 @@
+{
+  "authoritative_local_env_edits": 0,
+  "container_commands": 0,
+  "decision": "NO_GO_EXECUTE_UNTIL_INDEPENDENT_EXACT_SHA_RELEASE",
+  "device_commands": 0,
+  "files_sha256": {
+    "FIXTURE.json": "d0c0e074d3724a5c2e15da2ce2b90b809b44b22998092bd9d071227b97e957e7",
+    "HANDOFF.md": "a1564f7b6fddc255fa7498b3beb952d11107af27123bfe2a30b7abc1c8525863",
+    "PACKET.json": "7a0634bde7e523390d591cfdf4a1574aa5f85be61a1388ae56f1b5dfdb481fc6",
+    "SWITCH-PLAN.md": "41d1d265f3881b0250b064d97da90589d22040cfec513584e0bd173142822174",
+    "fixtures.py": "185bf9111d661ff0a64d090805b5b0b0e3c63eae8b4374e1277280b307cf3e07",
+    "reconcile.py": "63b965ddc7de63d9cb298fe2fa2c827323ee8de0b9fbc98e97b1bbe1f0faf1bc",
+    "switch.py": "5b1d1861ccbda12650b156928a2ccfbcb2e7582acac95d4c23b661b0914d257d"
+  },
+  "fixture_check_count": 8,
+  "graph_executions": 0,
+  "local_fixture_status": "PASS",
+  "next_gate": "Independent exact-SHA review after v11 root postrun acceptance, then one-shot CONFIG-ONLY switch; fresh active-env EVO19 and original owner ACK remain later.",
+  "nonce": "12e89d715c414c92ba8998a7eea48f43",
+  "packet_canonical_sha256": "e2057089d8d7710c1897ffa3a072a51a2f6b2830b51bd426d5bbc4274fdda94f",
+  "py_compile_rc": 0,
+  "remote_writes": 0,
+  "schema": "g279-stage3-config-only-switch-candidate-v2",
+  "scope": "One local three-key CONFIG-ONLY binding switch; no graph, target, device, container, namespace or remote command",
+  "upstream_v11_independent_postrun_sha256": "600c91a2b0a99b17dddffad6efabf8d85ddd0b4edc8d17b5595ee4c395c2ae36",
+  "upstream_v11_root_postrun_acceptance_sha256": null,
+  "upstream_v11_terminal_sha256": "9fa3bdc3049cc0c8380269ec0bba1bd29ed33dad4e9e6837d6921d78a3efa6c2",
+  "westlake_gate_rc": 0
+}

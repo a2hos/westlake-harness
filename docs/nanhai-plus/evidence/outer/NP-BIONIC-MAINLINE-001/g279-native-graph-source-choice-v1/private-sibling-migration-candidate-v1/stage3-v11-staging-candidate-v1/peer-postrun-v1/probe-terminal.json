@@ -1,0 +1,9 @@
+{
+  "remote_status": "PASS",
+  "schema": "g279-stage3-v11-independent-probe-terminal-v1",
+  "ssh_rc": 0,
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 16630,
+  "stdout_sha256": "9d5b2f02f816877512593d9d3e196bc70aeb7bfe62d0d2011d1483fec446e77c"
+}

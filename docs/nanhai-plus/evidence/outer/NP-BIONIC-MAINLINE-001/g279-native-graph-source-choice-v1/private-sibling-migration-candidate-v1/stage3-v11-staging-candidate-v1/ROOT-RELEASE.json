@@ -1,0 +1,17 @@
+{
+  "schema": "g279-stage3-v11-staging-root-release-v1",
+  "decision": "GO_V11_STAGING_ONCE",
+  "independent_reviewer": "outer-root-after-hello-frontier-peer",
+  "peer_review_sha256": "598153c236b18a3e9c9078ab274d0ff1e60364d202ed8c1c5f6f746c198dd526",
+  "fresh_readonly_preflight_sha256": "57381571ea079d7d74c3940333f9e59a9028f3d45d8743c5c1db60666c8c6515",
+  "nonce": "4637ba906d21480c910ebcb13f59d8e7",
+  "packet_sha256": "bc49b5c8e263dc2b12d0e850891ce15ae30ccc03e4302f6af5e0660fa0cda950",
+  "launcher_sha256": "d016cf8e1dafc13a75b0db2b582ed7c0359dd212eb271237364b54a5648190d3",
+  "remote_body_sha256": "c5e9d368960f6603ac98e0c37d3c649cedc1e85cfdfaec5e3112df9a516b5190",
+  "runner_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "runner_bytes": 45330,
+  "runner_remote_mode": "0444",
+  "scope": "Once only, stage and read back exact v11 runner bytes under the accepted gz02 private sibling control directory; no graph, binding switch, device, container or namespace execution",
+  "outer_watchdog_seconds": 240,
+  "rollback": "If uncertain, preserve lease/quarantine and reconcile read-only; never replay this nonce or delete a partial staged tree automatically."
+}

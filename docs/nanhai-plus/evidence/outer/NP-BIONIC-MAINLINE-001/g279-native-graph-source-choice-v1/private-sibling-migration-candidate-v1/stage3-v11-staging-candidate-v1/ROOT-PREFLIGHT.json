@@ -1,0 +1,60 @@
+{
+  "schema": "g279-v11-staging-root-fresh-readonly-preflight-v1",
+  "at_utc": "2026-10-04T13:07:51.014174+00:00",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 0,
+  "program_sha256": "d67f989578e631dea6f098e05f81d9c2788a39e8d4b9a0acf0b6011027f5e901",
+  "stdout_sha256": "b787db914a48b419262602ba408ff276ba844b6687e40b9c0192a4b1fb825436",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "packet_sha256": "bc49b5c8e263dc2b12d0e850891ce15ae30ccc03e4302f6af5e0660fa0cda950",
+  "remote": {
+    "directories": {
+      "control": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185922,
+        "mode": 448,
+        "uid": 1000
+      },
+      "old-root": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 29884417,
+        "mode": 509,
+        "uid": 1000
+      },
+      "root": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185921,
+        "mode": 493,
+        "uid": 1000
+      },
+      "source-view": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185940,
+        "mode": 493,
+        "uid": 1000
+      }
+    },
+    "files_checked": 14,
+    "host": "GZ02",
+    "uid": 1000,
+    "v11_absent": true
+  }
+}

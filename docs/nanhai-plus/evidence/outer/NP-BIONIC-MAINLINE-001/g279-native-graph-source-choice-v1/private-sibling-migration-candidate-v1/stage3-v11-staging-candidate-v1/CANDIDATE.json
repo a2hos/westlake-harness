@@ -1,0 +1,36 @@
+{
+  "schema": "g279-stage3-v11-staging-candidate-v1",
+  "decision": "NO_GO_REMOTE_WRITE_UNTIL_INDEPENDENT_EXACT_SHA_RELEASE",
+  "nonce": "4637ba906d21480c910ebcb13f59d8e7",
+  "packet_canonical_sha256": "bc49b5c8e263dc2b12d0e850891ce15ae30ccc03e4302f6af5e0660fa0cda950",
+  "packet_file_sha256": "362394aa2bf7b20a0952af6297a1e11e047bdfa41e1388668ff5f3357a5d803b",
+  "launcher_sha256": "d016cf8e1dafc13a75b0db2b582ed7c0359dd212eb271237364b54a5648190d3",
+  "remote_body_sha256": "c5e9d368960f6603ac98e0c37d3c649cedc1e85cfdfaec5e3112df9a516b5190",
+  "fixture_script_sha256": "f28298ef62d36c689282fa67a2ab85ffff4f1efa79fffe8583481bdde3cbe5fc",
+  "fixture_result_sha256": "fc9a69b70429beec50900ab4c2b856dc8981f50259cc7a078cc29e4b7c56b23d",
+  "handoff_sha256": "ff7251be3584b2036e3b85a931c8bd40afa55e895830b25f60f4f4b3783d61e1",
+  "runner_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "runner_bytes": 45330,
+  "runner_remote_mode": "0444",
+  "unchanged_input_files": 14,
+  "stage2_root_acceptance_sha256": "7f6d198094fce2710f753f15af8f672fa743e17ebea84451c78ae4d210a898a3",
+  "validation": {
+    "py_compile_rc": 0,
+    "local_full_writer_fixture_rc": 0,
+    "westlake_gate_handoff_rc": 0,
+    "fixture_host_note": "macOS local fixture shims os.listxattr(fd) to empty; gz02 Linux ACL remains execution-time preflight."
+  },
+  "review_release_contract": {
+    "decision_token": "GO_V11_STAGING_ONCE",
+    "required_fields": ["packet_sha256", "launcher_sha256", "remote_body_sha256", "runner_sha256", "independent_reviewer"],
+    "local_O_EXCL_START_before_SSH": true,
+    "same_nonce_replay": false,
+    "graph": false,
+    "binding_switch": false,
+    "device": false,
+    "container": false,
+    "namespace": false
+  },
+  "actions": {"ssh": 0, "remote_writes": 0, "local_env_edits": 0,
+              "graph": 0, "device": 0, "container": 0}
+}

@@ -1,0 +1,43 @@
+{
+  "authoritative_env_edits": 0,
+  "checks": [
+    {
+      "name": "frozen three-key packet reconstruction",
+      "pass": true
+    },
+    {
+      "name": "unreleased active switch denied before START",
+      "pass": true
+    },
+    {
+      "name": "atomic exact-byte switch, backup and terminal",
+      "pass": true
+    },
+    {
+      "name": "read-only terminal reconciliation",
+      "pass": true
+    },
+    {
+      "name": "same nonce replay denied",
+      "pass": true
+    },
+    {
+      "name": "postreplace failure preserves backup, START and quarantine",
+      "pass": true
+    },
+    {
+      "name": "read-only unknown-state reconciliation",
+      "pass": true
+    },
+    {
+      "name": "drift denied before START",
+      "pass": true
+    }
+  ],
+  "container": 0,
+  "device": 0,
+  "graph": 0,
+  "remote_commands": 0,
+  "schema": "g279-stage3-config-only-switch-fixtures-v2",
+  "status": "PASS"
+}

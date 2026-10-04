@@ -1,0 +1,18 @@
+{
+  "schema": "g279-stage3-v11-root-postrun-acceptance-v1",
+  "decision": "ACCEPT_STAGE3_STAGED_BYTES_ONLY",
+  "candidate_sha256": "95bd87aaa194903f3833c3dc539c489a9f5a032061e010b69f6f45506c435e3c",
+  "release_sha256": "660b4ece406cd54ef6b7344e7d7d75178b75969f1632a08fab008915606d0d71",
+  "one_shot_terminal_sha256": "9fa3bdc3049cc0c8380269ec0bba1bd29ed33dad4e9e6837d6921d78a3efa6c2",
+  "independent_postrun_sha256": "600c91a2b0a99b17dddffad6efabf8d85ddd0b4edc8d17b5595ee4c395c2ae36",
+  "nonce": "4637ba906d21480c910ebcb13f59d8e7",
+  "runner_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "runner_bytes": 45330,
+  "active_local_binding_changed": false,
+  "graph_executed": false,
+  "target_built": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "next_gate": "Independently review and release the separate config-only local_env switch; no graph execution authority follows from staging."
+}

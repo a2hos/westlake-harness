@@ -1,0 +1,39 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T13:15:48Z",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "counts": {
+    "raw_apk_accepted": 81,
+    "registered_raw": 75,
+    "supplemental_raw": 6,
+    "complete_static": 77,
+    "dex_entries": 191,
+    "true_elf_entries": 915,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "evidence": {
+    "v11_staged_runner_root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage3-v11-staging-candidate-v1/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "4e222d072b75c3a6785d284a5f492d2036db37cd2a45be55f495099f9ea4e4df"
+    },
+    "config_only_switch_root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage3-config-only-switch-candidate-v2/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "7441ca645d23fc618cab5b9557e14f1d764e862c03ed8bec7aeca014d14a42b8"
+    }
+  },
+  "active_env_raw_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "active_env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "state": "Native private sibling Stage1/2 and exact v11 runner staging independently accepted. Three-value active local_env switch executed once and independently accepted as CONFIG_ONLY. Full R4 graph TOP unchanged. No original-owner graph-only ACK, native Soong graph, ARM64 target compile, HelloWorld startup, device command, container or namespace execution.",
+  "next": "Build and independently review a fresh active-env EVO19 preflight gate, then outer graph release, original octos-inner graph-only ACK and separately reviewed native graph execution. Preserve device policy and old historical receipts."
+}
