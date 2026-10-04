@@ -126,7 +126,7 @@ Proton Meet 官网 APK（`proton.android.meet` 1.2.2，262,604,360 字节）经�
 
 ## Environment
 
-- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G273 宿主构建。
+- Host: 当前 macOS 外环；G273 曾在 Linux x86_64 容器中做宿主构建，属于封存的历史证据。当前构建路径为经核验的原生 Linux x86_64 宿主进程，禁用容器及 namespace sandbox；原生 Soong 图尚未通过。
 - Device: 本次汇总未访问设备，沿用项目 HOLD 与白名单。
 - Tool path: scripts/nanhai_plus_env.py 与候选 executor.py，精确收据见 JSON 索引。
 - Artifact path: .nanhai-plus-runtime/bionic-oh7-aosp16/out/bionic-stock-bionic-target-graph-v5/accepted-host/soong_build。
