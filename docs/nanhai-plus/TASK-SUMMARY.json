@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T03:02:24.734932+00:00",
+  "checked_at": "2026-10-04T03:29:42.084980+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,19 +35,21 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 35,
+    "downloaded_payloads": 36,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 20,
-    "complete_inventory_dex_entries": 38,
-    "complete_inventory_native_elf_entries": 209,
+    "complete_static_inventories": 34,
+    "complete_inventory_dex_entries": 68,
+    "complete_inventory_native_elf_entries": 292,
     "incomplete_static_inventories": [
       "org.videolan.vlc"
     ],
     "additional_downloads_pending_root_acceptance": 0,
-    "additional_static_inventory_candidates_pending_root_acceptance": 0
+    "additional_static_inventory_candidates_pending_root_acceptance": 0,
+    "registered_upstream_payloads": 35,
+    "supplemental_payloads": 1
   },
   "latest_actual_execution": {
     "release": 265,
@@ -150,6 +152,38 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v7/root-release-v1/G265-REVIEW.json",
       "sha256": "fd29e8d0b5c52778f551af5eef57eb9b84e4d84a97937b443b9515b5df613e45"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-sdk-r4-root-admission-v1/ADMISSION.json",
+      "sha256": "2c568c8dc7f99b8eef98e7f745f057b9f4efb8fcae2b41a0ffa1bb98894918ee"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g265-command-record-reconciliation-v1/REVIEW.json",
+      "sha256": "8d207470466866fa37c0bd68844b67318f0dfba1b80fb8bcf7813364e2138266"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v9/READY.json",
+      "sha256": "5e16fd7ed7f9c72bb79d6cede3fa9dd4121c60ea3f4e1488d19aad40d4597df4"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v9-peer-review-v1/REVIEW.json",
+      "sha256": "134221c6b73c2d6cb08145c612aff63b6c46ff3dfd71d493c1ea716ad0e3a292"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v9-peer-completion-v1/REVIEW.json",
+      "sha256": "d5d3807e94f000cdc184f0d31fa01b70ee3bce192bf7336266c39eeb22ffd366"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0007-dynamic-module-producer/reviews/ROOT-CLOSURE.json",
+      "sha256": "b50c7544de98fc9fa48e5b57bd236537cfec68bd3431b371e6c1b4f02c4c499c"
     }
   ],
   "bionic_stock_graph": {
@@ -180,21 +214,40 @@
   "next_graph_candidate": {
     "previous_version": 7,
     "previous_execution_terminal": true,
-    "next_input": "exact R4 definitions for six observed ART API latest modules",
+    "next_input": "complete exact R4 SDK read-only tree; stock prebuilt_apis dynamic module generation",
     "source_commit_officially_confirmed": "1c599b67bcd3de5c50c79d0622e40b6de99b4cb4",
     "execution_ready": false,
     "complete_libcore_admitted": true,
-    "complete_libcore_files": 8280
+    "complete_libcore_files": 8280,
+    "version": 9,
+    "prospective_release": 266,
+    "executed": false,
+    "owner_new_ack_verified": false,
+    "complete_exact_sdk_admitted": true,
+    "sdk_commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
+    "sdk_git_root": "0348a182903065a14d190eb1aa670246c3c2106d",
+    "sdk_entries": 17924,
+    "sdk_bytes": 6254795690,
+    "candidate_peer_review_closed": true,
+    "root_final_admission_pending": true
   },
   "reflection": {
-    "latest": "EVO-0006",
-    "local_curl_method_validated": true,
+    "latest": "EVO-0007",
+    "verified_improvement_this_round": 1,
+    "scope": "limited dynamic-module producer evidence method",
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 188.905,
+    "duration_seconds": 161.545,
     "limit_seconds": 120,
     "timing_compliant": false,
-    "verified_improvement_this_round": 0,
-    "outer_deadline_interrupt": true
+    "pending_actual_result_groups": 2,
+    "trigger_every_groups": "3-4"
+  },
+  "mainstream_intake": {
+    "accepted_raw_supplement": "Signal 8.29.3",
+    "signal_signature_manifest_market_qualification_verified": false,
+    "firefox_156_arm64": "SHA mismatch with original registry; rejected; original registration retained",
+    "execution_terminal_rc": 2,
+    "startup_delta": 0
   }
 }
