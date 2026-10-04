@@ -1,0 +1,83 @@
+{
+  "schema": "evo40-embedded-dex-census-offline-trial-v1",
+  "started_monotonic_ns": 748865327441166,
+  "ended_monotonic_ns": 748865434875375,
+  "elapsed_seconds": 0.107434209,
+  "at_utc": "2026-10-04T17:21:13.619833+00:00",
+  "cases": [
+    {
+      "case": "brave_positive",
+      "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g314-brave-official-v1/Bravearm64Universal.apk",
+      "apk_sha256": "df3fbad622954843ab03744e85765da0fe5c15a018069b8f0aaabab3eafe6bcc",
+      "result": {
+        "dot_dex_entries": [
+          "assets/webapk8.dex",
+          "classes.dex",
+          "classes2.dex",
+          "classes3.dex",
+          "classes4.dex",
+          "classes5.dex",
+          "classes6.dex"
+        ],
+        "root_classes_dex": [
+          "classes.dex",
+          "classes2.dex",
+          "classes3.dex",
+          "classes4.dex",
+          "classes5.dex",
+          "classes6.dex"
+        ],
+        "embedded_dex_candidates": [
+          "assets/webapk8.dex"
+        ],
+        "invalid_dot_dex": [],
+        "requires_separate_semantic_inventory": true
+      },
+      "oracle_pass": true
+    },
+    {
+      "case": "vyprvpn_negative",
+      "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g311-vyprvpn-official-v1/VyprVPN.apk",
+      "apk_sha256": "be67f60356bac9811ca3419259cbb22ce3e3fb113aedc4e2cc6e3b40e2c1bae7",
+      "result": {
+        "dot_dex_entries": [
+          "classes.dex",
+          "classes2.dex",
+          "classes3.dex"
+        ],
+        "root_classes_dex": [
+          "classes.dex",
+          "classes2.dex",
+          "classes3.dex"
+        ],
+        "embedded_dex_candidates": [],
+        "invalid_dot_dex": [],
+        "requires_separate_semantic_inventory": false
+      },
+      "oracle_pass": true
+    },
+    {
+      "case": "invalid_dot_dex_negative",
+      "fixture_sha256": "f8c9a344611f05a94d18019e613c149a6118d371b719b62427fd0fe58f6b08fd",
+      "result": {
+        "dot_dex_entries": [
+          "classes.dex"
+        ],
+        "root_classes_dex": [],
+        "embedded_dex_candidates": [],
+        "invalid_dot_dex": [
+          "classes.dex"
+        ],
+        "requires_separate_semantic_inventory": true
+      },
+      "oracle_pass": true
+    }
+  ],
+  "all_oracles_pass": true,
+  "production_changes": 0,
+  "network_commands": 0,
+  "device_commands": 0,
+  "ssh_commands": 0,
+  "container_commands": 0,
+  "count_delta": 0
+}

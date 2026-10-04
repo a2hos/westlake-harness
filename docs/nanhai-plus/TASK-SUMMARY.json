@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T16:54:50.513093+00:00",
+  "checked_at": "2026-10-04T17:22:35+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 94,
+    "downloaded_payloads": 96,
     "latest_raw_admission": {
       "packages": [
-        "com.goldenfrog.vyprvpn.app"
+        "com.lemon.lvoverseas"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "c6e8e66616c5455ac63d96b56664f64d6f7074303a42eb0bcd22dd89149b78a3",
-      "scope": "exact publisher-page APK GET plus independent host integrity/signature; raw only"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g316-capcut-official-raw-candidate-v2/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
+      "scope": "publisher-page linked exact host raw only; one ARM32 ELF misplaced under arm64-v8a; no static or blackbox acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,14 +53,14 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 91,
-    "complete_inventory_dex_entries": 244,
-    "complete_inventory_native_elf_entries": 1131,
+    "complete_static_inventories": 92,
+    "complete_inventory_dex_entries": 251,
+    "complete_inventory_native_elf_entries": 1135,
     "latest_complete_static_admission": {
-      "package": "com.goldenfrog.vyprvpn.app",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "36348b4add7e8baa78f56b6a59c6281f2b138e981e3bb4dd91c6c92d3d1c3682",
-      "scope": "four-phase host static only; no startup"
+      "package": "com.brave.browser",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g315-brave-four-static-candidate-v1/root-combined-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "0b2ce3e959a822e5aa51973c050ed95e931ef0c1817d89574b1d7b2b4928c7f4",
+      "scope": "four-phase plus exact embedded DEX semantic host static only; no startup"
     },
     "incomplete_static_inventories": [
       "org.thoughtcrime.securesms",
@@ -69,8 +69,8 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 19,
-    "qualified_blackbox_packages": 13,
+    "supplemental_payloads": 21,
+    "qualified_blackbox_packages": 14,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -84,7 +84,8 @@
       "com.eset.endpoint",
       "com.kms.free",
       "com.adguard.android",
-      "com.goldenfrog.vyprvpn.app"
+      "com.goldenfrog.vyprvpn.app",
+      "com.lemon.lvoverseas"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -95,10 +96,10 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.goldenfrog.vyprvpn.app",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-blackbox-qualification-candidate-v1/root-admission-v1/ROOT-ADMISSION.json",
-      "sha256": "583a71d47339ddf1ee97c9a5b0b7ac35376ff8693764189e6b7ecf010087e2ee",
-      "scope": "exact package qualification only; no startup"
+      "package": "com.lemon.lvoverseas",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g317-capcut-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "2e1b9911055a8ad9bd3db8ea66822314a7ebf93c260824a8f840d75ee277b23a",
+      "scope": "exact-package blackbox test qualification only; old APK/ARM32 path exception, no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -317,6 +318,13 @@
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-blackbox-qualification-candidate-v1/root-admission-v1/ROOT-ADMISSION.json",
       "sha256": "583a71d47339ddf1ee97c9a5b0b7ac35376ff8693764189e6b7ecf010087e2ee",
       "qualified_delta": 1,
+      "cold_start_delta": 0
+    },
+    "g314_brave_raw_admission": {
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g314-brave-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "1dac180763a7c0d543676a3b11efcffa855954c23d370e40964ce03c71bfa9f5",
+      "raw_delta": 1,
+      "blackbox_qualification_delta": 0,
       "cold_start_delta": 0
     }
   },
@@ -829,18 +837,18 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0037-scarce-slot-precheck",
+    "latest": "EVO-0040-embedded-dex-discovery-v1",
     "result": {
-      "path": "docs/nanhai-plus/evolution/EVO-0037-scarce-slot-precheck/RESULT.md",
-      "sha256": "79aa413c6bf7f2d5293dc943135505963570ce3588bbdafc33bd77893b2e53ba"
+      "path": "docs/nanhai-plus/evolution/EVO-0040-embedded-dex-discovery-v1/CLOSURE.json",
+      "sha256": "442340c83ae4c6aef397260d2eadf07ec46108884bfafed0449d0f41d5d955a8"
     },
     "actual_result_groups": 4,
-    "duration_seconds": 60,
-    "one_testable_improvement": "Before first scarce remote use of a new transport version, test stdin hash binding, fixed receipt path, replay rejection and release route/scope locally. Historical replay only; synthetic negative pilot required before broad promotion.",
+    "duration_seconds": 73.189055167,
+    "one_testable_improvement": "Before complete APK static admission, enumerate every .dex ZIP member; separately inventory embedded or malformed entries, or keep the package incomplete.",
     "limited_pilot": true,
     "globally_promoted": false,
     "pending_actual_result_groups": 0,
-    "direction": "scarce remote slot precheck; distinct from EVO36 consumer-contract field shape"
+    "direction": "embedded DEX discovery; distinct from EVO39 release field contract"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -1760,5 +1768,110 @@
     "container": false,
     "namespace": false,
     "next": "fresh four-path absence readback and separate graph-only release"
+  },
+  "g279_v13_four_path_freshness_actual": {
+    "status": "accepted_readonly_four_exact_paths_absent_at_readback_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-four-path-freshness-candidate-v1/actual-four-path-v1/root-postrun-acceptance-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "9ac26c3804d1d5119601f49baee57878096e49567e86153a8ba952bd32a311c7"
+    },
+    "ssh_rc": 0,
+    "graph_executed": false,
+    "target_compiled": false,
+    "device_executed": false,
+    "container": false,
+    "namespace": false,
+    "next": "separate exact graph-only transport peer/root review and one-shot root release; runner rechecks paths"
+  },
+  "g279_v13_graph_transport_actual": {
+    "status": "local_ssh_connect_timeout_terminal_no_remote_result",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-exact-once-candidate-v1/actual-graph-v13-v1/root-postrun-acceptance-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "1193163ce45860e208213b4f53cca557422117730533837e259e86d7650721a4"
+    },
+    "ssh_rc": 255,
+    "graph_pass": false,
+    "remote_graph_state": "unknown_until_fresh_readback",
+    "replay_allowed": false,
+    "container": false,
+    "namespace": false,
+    "next": "verified new route then read-only remote state; do not replay original graph nonce"
+  },
+  "g315_brave_static_review": {
+    "status": "accepted_combined_four_phase_plus_embedded_dex_semantic_host_static_only",
+    "original_peer_review_sha256": "492d772a632f745f056c852bb5dd84e7ff51d69e58ed96395ca75f22c94d2d8d",
+    "bounded_embedded_dex_supplement_sha256": "d461ce88931d9d5cd1c065485b3691054f4f856c8faf70b546f1d1882cbe936e",
+    "supplement_peer_review_sha256": "5d32a7a7efa8d2f7d99b4638840956ec2ce96ca6801154c4de9ac6fd34180bd6",
+    "root_classpath_dex": 6,
+    "additional_embedded_dex": 1,
+    "root_combined_acceptance_sha256": "0b2ce3e959a822e5aa51973c050ed95e931ef0c1817d89574b1d7b2b4928c7f4",
+    "static_count_delta": 1,
+    "accepted_dex_delta": 7,
+    "accepted_true_arm64_elf_delta": 4,
+    "cold_start_delta": 0
+  },
+  "g316_capcut_raw_actual": {
+    "status": "accepted_publisher_page_linked_host_raw_only_with_arm64_path_exception",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g316-capcut-official-raw-candidate-v2/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df"
+    },
+    "raw_before": 95,
+    "raw_after": 96,
+    "true_arm64_elf": 146,
+    "misplaced_arm32_elf_in_arm64_path": 1,
+    "static_count_delta": 0,
+    "blackbox_qualification_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g279_v13_proxy_v2_local_preflight": {
+    "status": "local_pre_ssh_keyerror_only_no_remote_state",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-state-candidate-v2/root-local-preflight-failure-v1/REVIEW.json",
+      "sha256": "8b9366241d56073d8946d042032dbb5e8924f7b5335562af665a1d2498cf2b53"
+    },
+    "ssh_attempted": false,
+    "remote_graph_state": "unknown",
+    "v2_replay_allowed": false,
+    "next": "new immutable v3 route with positive local preflight and independent review"
+  },
+  "g279_v13_proxy_v3_readonly_state_attempt": {
+    "status": "accepted_local_ssh_connection_closed_only_no_remote_result",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-state-candidate-v3/actual-proxy-readback-v3/root-postrun-acceptance-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "749ae6cbb5b0a4ae9aeeb6cefb4ee5b305c28392ca925af4a180d0a8879f0ce9"
+    },
+    "ssh_rc": 255,
+    "stderr": "Connection closed by UNKNOWN port 65535",
+    "authenticated_remote_state_observed": false,
+    "remote_command_executed": "unknown",
+    "remote_graph_result_observed": false,
+    "replay_allowed": false,
+    "graph_pass": false,
+    "container": false,
+    "namespace": false,
+    "next": "bounded local SOCKS diagnosis; any remote retry needs new reviewed nonce and release"
+  },
+  "g279_v13_proxy_local_route_diagnostic": {
+    "status": "local_mihomo_direct_dial_timeout_correlated_only",
+    "service_log_receipt_sha256": "5aca4311a27767e7385aa9d05a313ff91b6e3792026a82aee7f6361c7a9742ed",
+    "active_rule_review_sha256": "0aafc36d17c753670259c1a061e13dadc265f8d299b37ecc27bb1331c585ea06",
+    "observed_target_route": "DIRECT",
+    "observed_dial_result": "i/o timeout",
+    "geoip_rule_match": "inferred_not_proven",
+    "remote_state": "unknown",
+    "proxy_configuration_changed": false
+  },
+  "g317_capcut_blackbox_qualification": {
+    "status": "accepted_exact_package_blackbox_test_qualification_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g317-capcut-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "2e1b9911055a8ad9bd3db8ea66822314a7ebf93c260824a8f840d75ee277b23a"
+    },
+    "qualified_before": 13,
+    "qualified_after": 14,
+    "full_static_delta": 0,
+    "cold_start_delta": 0,
+    "version_and_binary_limits_preserved": true
   }
 }

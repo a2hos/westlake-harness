@@ -1,0 +1,65 @@
+{
+  "schema": "evo38-four-case-capacity-projection-v1",
+  "rows": [
+    {
+      "package": "com.goldenfrog.vyprvpn.app",
+      "state": "raw_and_blackbox_qualified",
+      "new_raw_slots": 1,
+      "new_blackbox_slots": 1,
+      "sources": [
+        {
+          "path": "evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "c6e8e66616c5455ac63d96b56664f64d6f7074303a42eb0bcd22dd89149b78a3"
+        },
+        {
+          "path": "evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-blackbox-qualification-candidate-v1/root-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "583a71d47339ddf1ee97c9a5b0b7ac35376ff8693764189e6b7ecf010087e2ee"
+        }
+      ]
+    },
+    {
+      "package": "com.brave.browser",
+      "state": "raw_only",
+      "new_raw_slots": 1,
+      "new_blackbox_slots": 0,
+      "sources": [
+        {
+          "path": "evidence/outer/NP-BIONIC-MAINLINE-001/g314-brave-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "1dac180763a7c0d543676a3b11efcffa855954c23d370e40964ce03c71bfa9f5"
+        }
+      ]
+    },
+    {
+      "package": "com.whatsapp",
+      "state": "existing_package_version_candidate",
+      "new_raw_slots": 0,
+      "new_blackbox_slots": 0,
+      "sources": [
+        {
+          "path": "evidence/outer/NP-BIONIC-MAINLINE-001/g312-whatsapp-official-raw-candidate-v1/RESULT.json",
+          "sha256": "acb836d568c7771fdfd9251129760f71b6736503f85abae640e141435b1fbb0f"
+        },
+        {
+          "path": "evidence/outer/NP-BIONIC-MAINLINE-001/g312-whatsapp-official-raw-candidate-v1/badging.stdout.raw",
+          "sha256": "c222ac80afe7b696ed3d346cd9f1004425460d1f704325bea17e9869755bff60"
+        }
+      ]
+    },
+    {
+      "package": "org.telegram.messenger",
+      "state": "download_http_500_no_apk",
+      "new_raw_slots": 0,
+      "new_blackbox_slots": 0,
+      "sources": [
+        {
+          "path": "evidence/outer/NP-BIONIC-MAINLINE-001/g313-telegram-official-raw-candidate-v1/apk-headers.raw",
+          "sha256": "4712c2a5a0f868bfd378c548cbba66e2abae01d96f286b55d9285aa094bb86b3"
+        }
+      ]
+    }
+  ],
+  "projected_new_raw_slots": 2,
+  "projected_new_blackbox_slots": 1,
+  "cold_start_slots": 0,
+  "scope": "local four-case projection only; root receipts retain authority; no canonical count change"
+}

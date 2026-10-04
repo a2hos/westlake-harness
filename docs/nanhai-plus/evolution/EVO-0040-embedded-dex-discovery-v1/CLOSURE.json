@@ -1,0 +1,128 @@
+{
+  "schema": "evo40-bounded-reflection-closure-v1",
+  "trigger_groups": [
+    {
+      "label": "G316 CapCut root host raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g316-capcut-official-raw-candidate-v2/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df"
+    },
+    {
+      "label": "G279 proxy SSH rc255",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-state-candidate-v3/actual-proxy-readback-v3/state-TERMINAL.json",
+      "sha256": "8c195ac31f38e6ebf21ca9b75dab38edb05b033d6397b83902fbf469ffc4e949"
+    },
+    {
+      "label": "G279 local DIRECT timeout diagnostic",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-state-candidate-v3/local-socks-route-diagnostic-v1/REVIEW.json",
+      "sha256": "5aca4311a27767e7385aa9d05a313ff91b6e3792026a82aee7f6361c7a9742ed"
+    },
+    {
+      "label": "G315 Brave combined static",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g315-brave-four-static-candidate-v1/root-combined-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "0b2ce3e959a822e5aa51973c050ed95e931ef0c1817d89574b1d7b2b4928c7f4"
+    },
+    {
+      "label": "G317 CapCut qualification candidate only",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g317-capcut-blackbox-qualification-candidate-v1/CANDIDATE.json",
+      "sha256": "1657ac035c2d6e42864385998dce3225b9b946d6bdfbfa7522bac0fb195a219b"
+    }
+  ],
+  "previous_evolution": "EVO-0039-preflight-field-contract",
+  "direction": "APK embedded DEX discovery; deliberately different from EVO39 field-contract checking",
+  "observation": "G315 required a later supplement because six root classpath DEX did not include assets/webapk8.dex. An early all-.dex census would flag hidden DEX for semantic inventory before a complete-static claim. G316, G279, and G317 are the other three actual outcome groups; they are recorded as trigger context, not treated as evidence that this DEX rule solves their distinct issues.",
+  "one_testable_improvement": "Add a read-only preflight census of every .dex ZIP member before proposing a complete APK static count. Compare root classesN.dex entries with other .dex assets; any embedded or malformed entry requires separate semantic inventory or an explicit incomplete result. Do not infer loadability.",
+  "small_offline_trial": {
+    "script": "trial.py",
+    "script_sha256": "2825d9eae6b2f0fbb14b3d72f66047077a61990f32740e7967a7832b37f3198e",
+    "result": "TRIAL-RESULT.json",
+    "result_sha256": "ac3f4a238960bdd0538dc878b4eb53baca593d5a4a8c2e490f98aea7461c3a36",
+    "cases": [
+      {
+        "case": "brave_positive",
+        "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g314-brave-official-v1/Bravearm64Universal.apk",
+        "apk_sha256": "df3fbad622954843ab03744e85765da0fe5c15a018069b8f0aaabab3eafe6bcc",
+        "result": {
+          "dot_dex_entries": [
+            "assets/webapk8.dex",
+            "classes.dex",
+            "classes2.dex",
+            "classes3.dex",
+            "classes4.dex",
+            "classes5.dex",
+            "classes6.dex"
+          ],
+          "root_classes_dex": [
+            "classes.dex",
+            "classes2.dex",
+            "classes3.dex",
+            "classes4.dex",
+            "classes5.dex",
+            "classes6.dex"
+          ],
+          "embedded_dex_candidates": [
+            "assets/webapk8.dex"
+          ],
+          "invalid_dot_dex": [],
+          "requires_separate_semantic_inventory": true
+        },
+        "oracle_pass": true
+      },
+      {
+        "case": "vyprvpn_negative",
+        "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g311-vyprvpn-official-v1/VyprVPN.apk",
+        "apk_sha256": "be67f60356bac9811ca3419259cbb22ce3e3fb113aedc4e2cc6e3b40e2c1bae7",
+        "result": {
+          "dot_dex_entries": [
+            "classes.dex",
+            "classes2.dex",
+            "classes3.dex"
+          ],
+          "root_classes_dex": [
+            "classes.dex",
+            "classes2.dex",
+            "classes3.dex"
+          ],
+          "embedded_dex_candidates": [],
+          "invalid_dot_dex": [],
+          "requires_separate_semantic_inventory": false
+        },
+        "oracle_pass": true
+      },
+      {
+        "case": "invalid_dot_dex_negative",
+        "fixture_sha256": "f8c9a344611f05a94d18019e613c149a6118d371b719b62427fd0fe58f6b08fd",
+        "result": {
+          "dot_dex_entries": [
+            "classes.dex"
+          ],
+          "root_classes_dex": [],
+          "embedded_dex_candidates": [],
+          "invalid_dot_dex": [
+            "classes.dex"
+          ],
+          "requires_separate_semantic_inventory": true
+        },
+        "oracle_pass": true
+      }
+    ],
+    "all_oracles_pass": true,
+    "scope": "Brave positive, VyprVPN negative, synthetic invalid .dex negative; no production scanner change"
+  },
+  "decision": "LOCAL_PILOT_VALIDATED_NOT_PROMOTED",
+  "next_falsifier": "Independently peer-review on another APK with nested .dex and one APK with deceptive extension; reject promotion if false negatives or false positives affect static counts.",
+  "timing": {
+    "clock": "time.monotonic_ns on same host process namespace",
+    "start_monotonic_ns": 748832147736333,
+    "end_monotonic_ns": 748905336791500,
+    "elapsed_seconds": 73.189055167,
+    "wall_start_utc": "2026-10-04T17:20:40.333297+00:00",
+    "wall_end_utc": "2026-10-04T17:21:53.521074+00:00",
+    "within_120_seconds": true
+  },
+  "production_changes": 0,
+  "count_delta": 0,
+  "network_commands": 0,
+  "device_commands": 0,
+  "ssh_commands": 0,
+  "container_commands": 0
+}
