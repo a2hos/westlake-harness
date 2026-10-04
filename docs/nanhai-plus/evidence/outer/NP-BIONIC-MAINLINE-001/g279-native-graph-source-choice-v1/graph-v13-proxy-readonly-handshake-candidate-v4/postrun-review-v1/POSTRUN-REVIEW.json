@@ -1,0 +1,47 @@
+{
+  "schema": "g279-proxy-readonly-gz02-handshake-independent-postrun-review-v4",
+  "decision": "ACCEPT_TERMINAL_NO_AUTHENTICATED_REMOTE_RESULT_NO_REPLAY",
+  "scope": "Read-only postrun classification of one released gz02 SSH identity probe; no renewed transport authorization",
+  "candidate_sha256": "c296640cd096fa78960c81c765ee3f0572b9fd4b3b150b509f024a80655670b0",
+  "controller_sha256": "0637093bfb88121862a75afe6f2108b7eef844164f427ef15b042bef91a29ee3",
+  "peer_review_sha256": "d6158d82a58fbd56c27394c183088c1f7945806ec08460cd97f73b064990b02f",
+  "root_release_sha256": "da4843460b0074276c25f4e148f484ed2b94aa062c1c3716ef59a723263f4a7b",
+  "start_sha256": "2a5efe569fc4b542a22a8b1ff536b1ff908a1001e07861f1623eb2b729088fac",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "c937b00d28f71b379c1b2c461816c287b95c1eb61ceb57f2a69ddf8529fc0f64",
+  "terminal_sha256": "b29b8d36b2eee280471052472d730fc2d54f56be6b25ea290b587071f8eaf6d9",
+  "binding_checks": {
+    "candidate_controller": true,
+    "release_candidate_controller_peer": true,
+    "nonce_candidate_release_start_terminal_equal": true,
+    "nonce": "f2f727d359e411de1bf931506ea006b1",
+    "start_candidate_controller_release": true,
+    "terminal_start_stdout_stderr": true,
+    "start_exact_remote_argv": ["gz02", "/usr/bin/id -u"],
+    "all_16_local_checks_pass": true
+  },
+  "terminal": {
+    "ssh_rc": 255,
+    "outcome_candidate": "NO_AUTHENTICATED_REMOTE_RESULT_NO_REPLAY",
+    "stdout_bytes": 0,
+    "stderr_bytes": 1456,
+    "replay_allowed": false
+  },
+  "observed_stage": {
+    "first_transport_line": "debug1: Executing proxy command: exec /usr/bin/nc -X 5 -x 127.0.0.1:7897 1.95.90.207 58222",
+    "last_positive_client_line": "debug1: Local version string SSH-2.0-OpenSSH_10.3",
+    "first_failure_line": "kex_exchange_identification: Connection closed by remote host",
+    "following_line": "Connection closed by UNKNOWN port 65535",
+    "classification": "SSH client started the specified proxy command and reached local version-string logging, then the stream closed before an observable server SSH banner. The closing component within the proxy/network/remote chain is not established by these logs."
+  },
+  "negative_claims": {
+    "server_ssh_banner_observed": false,
+    "server_host_key_observed": false,
+    "authentication_observed": false,
+    "remote_id_executed_or_uid_observed": false,
+    "remote_shell_or_graph_result": false,
+    "target_build_result": false,
+    "device_result": false
+  },
+  "review_actions": "Read frozen local release, START, stdout, stderr, TERMINAL and source receipts; no SSH retry, device, container, proxy mutation, or authoritative-count mutation."
+}

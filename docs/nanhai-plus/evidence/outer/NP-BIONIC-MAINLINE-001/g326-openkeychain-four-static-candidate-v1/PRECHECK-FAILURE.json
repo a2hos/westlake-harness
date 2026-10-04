@@ -1,0 +1,14 @@
+{
+  "schema": "g326-openkeychain-preflight-terminal-v1",
+  "at_utc": "2026-10-04T18:18:23.152091+00:00",
+  "decision": "PREPARE_SCRIPT_FIELD_MISMATCH_NO_ALIAS_CREATED",
+  "first_failed_command": "python3 scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g326-openkeychain-four-static-candidate-v1/alias.py",
+  "first_failed_rc": 1,
+  "failed_check": "assert any(y.get('proposed_package_label') == package and y['sha256'] == EXPECTED for y in root_acceptance['payloads'])",
+  "actual_root_payload_field": "registry_package_label",
+  "input_closed": true,
+  "scanner_started": false,
+  "count_changed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

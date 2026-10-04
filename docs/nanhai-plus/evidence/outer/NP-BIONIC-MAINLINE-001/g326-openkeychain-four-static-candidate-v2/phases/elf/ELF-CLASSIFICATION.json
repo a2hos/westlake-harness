@@ -1,0 +1,6 @@
+{
+  "arm64_target_records": 0,
+  "non_elf_so": 0,
+  "other_abi_header_only_records": [],
+  "scope": "ARM64 readelf/JNI scan only; other ABI ELF retained by header census without symbol scan"
+}

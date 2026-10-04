@@ -1,0 +1,37 @@
+{
+  "schema": "g326-openkeychain-full-member-census-v2",
+  "original_sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+  "alias_receipt_sha256": "185d34fcfe38fbfa0ec8769c4ceb13f16df1b680f0cc85226395f41c655d59b6",
+  "suffix_fixture_sha256": "194238765ee6e9614430e424e040e3467b66566c3d2d77b1202a650fb57b8d71",
+  "apk_sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+  "root_raw_sha256": "799fb72dddbe88d00a9f8a28ee8bd31675c6b1dc236176560e4613ed0386ff2c",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "entries": 2143,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 9481028,
+      "sha256": "240b02b35a48ac3179e1949fdb9fff8b4e102bd1f9ec17c76da20f7a6d18b7b4",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    }
+  ],
+  "so": [],
+  "nested_archives": [],
+  "nested_magic_candidate_names": [],
+  "counts": {
+    "root_dex": 1,
+    "embedded_dex": 0,
+    "true_arm64_elf": 0,
+    "arm32_elf": 0,
+    "other_elf": 0,
+    "non_elf_so": 0
+  },
+  "bounds": {
+    "nested_archive_max_bytes": 52428800,
+    "nested_max_depth": 3
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0
+}

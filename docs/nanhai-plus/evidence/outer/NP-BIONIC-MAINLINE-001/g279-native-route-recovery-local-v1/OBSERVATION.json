@@ -1,0 +1,49 @@
+{
+  "schema": "g279-native-route-recovery-local-observation-v1",
+  "at_utc": "2026-10-04T18:14:55+00:00",
+  "scope": "Local listener and SOCKS TCP connectivity to project-authorized gz02 only; no SSH authentication or remote command.",
+  "rows": [
+    {
+      "name": "local_listener",
+      "argv": [
+        "nc",
+        "-G",
+        "2",
+        "-vz",
+        "127.0.0.1",
+        "7897"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": "Connection to 127.0.0.1 port 7897 [tcp/*] succeeded!\n"
+    },
+    {
+      "name": "gz02_socks_tcp",
+      "argv": [
+        "nc",
+        "-G",
+        "8",
+        "-X",
+        "5",
+        "-x",
+        "127.0.0.1:7897",
+        "-vz",
+        "1.95.90.207",
+        "58222"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": "Connection to 1.95.90.207 port 58222 [tcp/*] succeeded!\n"
+    }
+  ],
+  "inference": "SOCKS TCP probe rc0 suggests current port reachability, but does not prove SSH host identity, authenticated remote state or Soong graph success.",
+  "old_proxy_terminal": "v3 rc255 closed is historical and not replayable.",
+  "next": "Prepare and independently review a new host-key-pinned one-shot read-only SSH handshake with fresh nonce.",
+  "ssh_commands": 0,
+  "graph_commands": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "hk01_connections": 0
+}

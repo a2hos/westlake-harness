@@ -1,0 +1,28 @@
+{
+  "schema": "g279-socks-ssh-banner-local-observation-v1",
+  "at_utc": "2026-10-04T18:15:14+00:00",
+  "argv": [
+    "nc",
+    "-G",
+    "8",
+    "-w",
+    "3",
+    "-X",
+    "5",
+    "-x",
+    "127.0.0.1:7897",
+    "1.95.90.207",
+    "58222"
+  ],
+  "input_ascii": "\\n",
+  "rc": 0,
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ssh_banner_observed": false,
+  "interpretation": "SOCKS TCP command returned rc0 without SSH banner; cannot infer authenticated or even completed SSH transport. New pinned SSH handshake remains required.",
+  "remote_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

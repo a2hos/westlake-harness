@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:13:31+00:00",
+  "checked_at": "2026-10-04T18:21:11+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -53,8 +53,8 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 97,
-    "complete_inventory_dex_entries": 318,
+    "complete_static_inventories": 98,
+    "complete_inventory_dex_entries": 319,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
@@ -63,14 +63,12 @@
     },
     "complete_inventory_native_elf_entries": 1422,
     "latest_complete_static_admission": {
-      "package": "org.thoughtcrime.securesms",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "3b6c737993c8a9bbc94d1b874392d2055d9b992f6e2e2b274e06c01cc659ab8e",
-      "scope": "new v2 exact .apk alias four-phase target ARM64 host static only; 6 DEX, 12 true ARM64 ELF, 36 other ABI header-only; no startup"
+      "package": "org.sufficientlysecure.keychain",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g326-openkeychain-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "18eea6b3e4a5d0caa2033f7a822d04acfae727f204db0dfd7795fbb38900ed34",
+      "scope": "four-phase host static of exact accepted bytes; 1 DEX, 0 .so/ARM64 ELF; cryptographic signature verification not proven; no startup"
     },
-    "incomplete_static_inventories": [
-      "org.sufficientlysecure.keychain"
-    ],
+    "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
@@ -854,7 +852,7 @@
     "one_testable_improvement": "Use a SHA-guarded read-only .apk alias for a validated APK stored as .raw before metadata dispatch.",
     "limited_pilot": true,
     "globally_promoted": false,
-    "pending_actual_result_groups": 1,
+    "pending_actual_result_groups": 3,
     "direction": "APK content identity versus filename suffix; distinct from EVO43 SDK risk"
   },
   "mainstream_intake": {
@@ -2068,5 +2066,28 @@
     "dex_delta": 6,
     "arm64_elf_delta": 12,
     "cold_start_delta": 0
+  },
+  "g326_openkeychain_static_v2_actual": {
+    "status": "accepted_complete_host_static_signature_unverified",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g326-openkeychain-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "18eea6b3e4a5d0caa2033f7a822d04acfae727f204db0dfd7795fbb38900ed34"
+    },
+    "static_before": 97,
+    "static_after": 98,
+    "dex_delta": 1,
+    "arm64_elf_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g279_v4_proxy_handshake_actual": {
+    "status": "terminal_ssh_rc255_no_authenticated_remote_result",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-handshake-candidate-v4/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "d9a17c29e82d161f300d88afc7b50e1dec5914a042c53c446c9748be1447d126"
+    },
+    "ssh_rc": 255,
+    "server_banner_observed": false,
+    "graph_result_observed": false,
+    "replay_allowed": false
   }
 }

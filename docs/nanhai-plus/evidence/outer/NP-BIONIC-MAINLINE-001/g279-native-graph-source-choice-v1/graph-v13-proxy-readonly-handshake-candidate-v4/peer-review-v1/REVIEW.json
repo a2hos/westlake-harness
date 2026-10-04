@@ -1,0 +1,77 @@
+{
+  "schema": "g279-proxy-readonly-gz02-handshake-independent-static-review-v4",
+  "decision": "GO_STATIC_PREP_ONLY_PENDING_EXACT_ROOT_RELEASE",
+  "candidate_sha256": "c296640cd096fa78960c81c765ee3f0572b9fd4b3b150b509f024a80655670b0",
+  "controller_sha256": "0637093bfb88121862a75afe6f2108b7eef844164f427ef15b042bef91a29ee3",
+  "fixtures_sha256": "e044f6c46966fbb5449f3b76c341d3b1b4a85cfd279fc142231acf4e80e75ce2",
+  "static_result_sha256": "8d39e3c1722caee678103726eb7b1453dca9757348d42afee6e60e0c5e4e3e3b",
+  "project_scope": {
+    "goal_id": "goal_01",
+    "claim": "NP-MUSL16-ART-024",
+    "host": "gz02",
+    "project_host_variable": "NANHAI_GZ02_BUILD_HOST",
+    "no_hk01": true,
+    "exact_endpoint": "1.95.90.207:58222"
+  },
+  "route_and_pin": {
+    "ssh_config": "/dev/null",
+    "proxy_command": "/usr/bin/nc -X 5 -x 127.0.0.1:7897 %h %p",
+    "host_key_alias": "[1.95.90.207]:58222",
+    "host_key_algorithm": "ssh-ed25519",
+    "host_key_fingerprint": "SHA256:RuAqHWgFJEIEcb4hC+WXULCRfV3uCsayP4Iw4aJvwzg",
+    "known_hosts_pin_checked_locally": true,
+    "ssh_g_effective_route_checked_locally": true,
+    "local_listener_rechecked_by_runner_before_start": true,
+    "socks_tcp_success_is_not_ssh_proof": true
+  },
+  "single_use_gate": {
+    "prior_v3_terminal_sha256": "8c195ac31f38e6ebf21ca9b75dab38edb05b033d6397b83902fbf469ffc4e949",
+    "prior_v3_nonce": "224d4c510ac2dc22c4a686f0b630dd19",
+    "prior_v3_ssh_rc": 255,
+    "v4_nonce": "f2f727d359e411de1bf931506ea006b1",
+    "nonce_distinct": true,
+    "root_release_absent_at_review": true,
+    "receipt_directory_empty_at_review": true,
+    "runner_requires_exact_root_release_binding_peer_review_sha": true,
+    "start_created_exclusively_before_transport": true,
+    "replay_allowed": false
+  },
+  "command_boundary": {
+    "remote_command": "/usr/bin/id -u",
+    "total_timeout_seconds": 25,
+    "connect_timeout_seconds": 8,
+    "batch_mode": true,
+    "forwarding_disabled": true,
+    "remote_persistent_writes": 0,
+    "graph": false,
+    "target": false,
+    "device": false,
+    "container": false,
+    "namespace": false
+  },
+  "success_criteria": {
+    "ssh_exit_rc": 0,
+    "stdout_exact_numeric_uid_newline": true,
+    "ssh_protocol_banner_required": true,
+    "pinned_ed25519_server_host_key_debug_required": true,
+    "authenticated_to_exact_host_debug_required": true,
+    "local_socks_tcp_rc0_alone_rejected": true
+  },
+  "independent_local_fixture": {
+    "command": "python3 -B fixtures.py",
+    "rc": 0,
+    "synthetic_positive": true,
+    "negative_cases_rejected": [
+      "wrong_route",
+      "missing_banner",
+      "missing_hostkey",
+      "missing_auth",
+      "socks_false_positive",
+      "nonzero_rc",
+      "unexpected_remote_output"
+    ],
+    "ssh_transport_executed": false
+  },
+  "limits": "This review allows only static preparation. A local SOCKS listener does not establish an SSH banner or remote auth. The prior v3 rc255 is not retried. No fresh remote outcome, graph, build, or device result is claimed. The root must separately decide whether to issue the exact one-use release.",
+  "review_actions": "Read frozen local receipts and controller, reran local fixtures and binary hashes; no SSH connection, proxy modification, remote command, device, container, or mainline mutation."
+}

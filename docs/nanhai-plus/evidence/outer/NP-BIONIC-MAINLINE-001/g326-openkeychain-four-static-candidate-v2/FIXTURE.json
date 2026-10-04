@@ -1,0 +1,78 @@
+{
+  "alias_receipt_sha256": "185d34fcfe38fbfa0ec8769c4ceb13f16df1b680f0cc85226395f41c655d59b6",
+  "apk_metadata": {
+    "abis": [],
+    "activities": 50,
+    "app_name": "OpenKeychain",
+    "bytes": 12043256,
+    "features": [
+      "android.hardware.camera",
+      "android.hardware.camera.autofocus",
+      "android.hardware.camera.flash",
+      "android.hardware.camera.front",
+      "android.hardware.microphone",
+      "android.hardware.screen.landscape",
+      "android.hardware.screen.portrait",
+      "android.hardware.telephony",
+      "android.hardware.touchscreen",
+      "android.hardware.usb.host",
+      "android.hardware.wifi"
+    ],
+    "filename": "OpenKeychain.apk",
+    "main_activities": [
+      "org.sufficientlysecure.keychain.ui.MainActivity"
+    ],
+    "manifest_available": true,
+    "min_sdk": "15",
+    "native_library_entries": 0,
+    "package": "org.sufficientlysecure.keychain",
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g326-openkeychain-v2/OpenKeychain.apk",
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.CAMERA",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+      "android.permission.INTERNET",
+      "android.permission.NFC",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.READ_SYNC_SETTINGS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_SYNC_SETTINGS",
+      "org.sufficientlysecure.keychain.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "providers": 4,
+    "receivers": 10,
+    "services": 9,
+    "sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+    "signing_certificate_sha256": [
+      "2805a6f465acb923103a2ab3a145e1a97a74c44acf751250b588ebc3f88a0cc9"
+    ],
+    "target_sdk": "34",
+    "version_code": "60400",
+    "version_name": "6.0.4"
+  },
+  "checks": {
+    "apk_manifest_accepted": true,
+    "raw_rejected_by_suffix": true,
+    "same_bytes": true,
+    "target_sdk": true,
+    "version": true
+  },
+  "raw_metadata": {
+    "bytes": 12043256,
+    "filename": "body.raw",
+    "manifest_available": false,
+    "package": "body",
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v7/org.sufficientlysecure.keychain/body.raw",
+    "sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce"
+  },
+  "rc": 0,
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "schema": "g326-openkeychain-suffix-fixture-v2"
+}

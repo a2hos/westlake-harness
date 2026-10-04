@@ -1,31 +1,169 @@
 {
   "source": "OUTER-STATE.json public projection (path-safe)",
   "public_projection_doc": "/kanban/public-projection.md",
-  "last_business_change": "2026-10-04T18:13:35.876075+00:00",
+  "last_business_change": "2026-10-04T18:21:52.418940+00:00",
   "last_sync_heartbeat": null,
   "last_success": null,
   "sync_failures": 0,
-  "run_id": "nanhai-plus-20260929-opaleye",
-  "closeout_path": {
-    "summary": "Bionic per-package inputs → HelloWorld earliest unmet boundary; independent tool/client/service work parallel; Musl historical comparison optional"
-  },
-  "updated_at": "2026-10-04T18:13:31+00:00",
-  "dag_version": 10,
-  "next_action": "继续无容器原生 Soong 图路由，HK01 等项目范围答复；EVO43 有界反思和独立 APK 招募；任何远端需新 nonce/独审/release",
   "progress": {
     "target_stock_apk_cold_starts": 200,
     "target_overseas_mainstream_blackbox_cold_starts": 100,
     "stock_apk_cold_starts_verified": 0,
     "overseas_mainstream_blackbox_cold_starts_verified": 0,
     "accepted_raw_apk_artifact_identities": 100,
-    "complete_host_static_inventories": 97,
+    "complete_host_static_inventories": 98,
     "qualified_blackbox_test_packages": 16,
     "bionic_whole_tools_verified": 0,
     "original_tool_ids": 89,
-    "snapshot_at_utc": "2026-10-04T18:13:31+00:00",
+    "snapshot_at_utc": "2026-10-04T18:21:11+00:00",
     "meaning": "raw, static and qualification are separate preparation counts; they do not add to startup success"
   },
-  "checked_at": "2026-10-04T18:13:31+00:00",
+  "human_gates": [
+    {
+      "gate_id": "original_goal_budget",
+      "status": "accepted",
+      "reason": "用户授权200亿有限上限；已在原goal_01实际回读，累计与创建时间未改变。"
+    }
+  ],
+  "environment_gate": {
+    "gate_id": "ENV-READY",
+    "revision": 3,
+    "status": "hold",
+    "doc": "/kanban/public-projection.md",
+    "checks": [
+      {
+        "check_id": "E00",
+        "title": "控制面、预算、等待与恢复",
+        "status": "active",
+        "owner": "octos-inner coordinator",
+        "verified_progress": "已复现stdin共享导致errno35；原goal/累计保留",
+        "next_action": "执行CTRL006 gen3隔离修复和协议回归；验证恢复/等待",
+        "claim_id": "NP-ENV-CTRL-006",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E01",
+        "title": "目录与源码身份",
+        "status": "review",
+        "owner": "musl-owner + bionic-owner",
+        "verified_progress": "源码可读已核；Musl HEAD实际...31b478，gen2笔误待修；29项静态直接rc0",
+        "next_action": "外环核源码/dirty归属与提交、快照来源及哈希",
+        "claim_id": "NP-MUSL-PRE-010",
+        "observed_at": "2026-09-29T12:42:01.052535+00:00"
+      },
+      {
+        "check_id": "E02",
+        "title": "目标版本、ABI与工具链",
+        "status": "ready",
+        "owner": "musl-owner + bionic-owner",
+        "verified_progress": "Musl固定OH6.1.0.31/aarch64，3台实际读回；Bionic覆盖AOSP16R4/ARM64/OH7单独核",
+        "next_action": "按lane绑定实际版本；目标版本不能冒充当前产物",
+        "claim_id": "NP-BIONIC-PRE-011",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E03",
+        "title": "在线D600身份与健康",
+        "status": "review",
+        "owner": "hardware-admin",
+        "verified_progress": "13:27Z三台OH6.1现有同SHA HelloWorld；候选5cd16e92由硬件peer读回",
+        "next_action": "所选设备当前占用/物理映射复核；其他设备变化不阻断此台",
+        "claim_id": "NP-DEVICE-DISPLAY-009",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E04",
+        "title": "D600归属与隔离",
+        "status": "ready",
+        "owner": "hardware-admin",
+        "verified_progress": "已有8台用途方案，物理编号与新旧lease未闭合",
+        "next_action": "合并真实serial和占用；处理旧HOLD/配置漂移",
+        "claim_id": "NP-ENV-DEVICE-005",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E05",
+        "title": "本次设备配置与参考运行时",
+        "status": "blocked",
+        "owner": "hardware-admin + bionic-owner",
+        "verified_progress": "指定6.1板原APK匹配；当前7件运行时全部不匹配，dry-run rc1；本机8件输入全部匹配",
+        "next_action": "由现有设备owner复核七件恢复操作，再按当前boot复验。不是缺APK/源码，也不等10APP。",
+        "claim_id": "NP-ENV-DEVICE-005",
+        "observed_at": "2026-09-30T00:47:07.118188+00:00"
+      },
+      {
+        "check_id": "E06",
+        "title": "当前样本身份与场景",
+        "status": "ready",
+        "owner": "octos-inner coordinator / 下一空槽",
+        "verified_progress": "设备已安装HelloWorld与参考同SHA，bundleType10/MainActivity正确",
+        "next_action": "首跑使用当前样本；10/30APK结果属于后续验收",
+        "claim_id": "NP-PREP-002",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E07",
+        "title": "主机、构建与网络资源",
+        "status": "active",
+        "owner": "musl-owner",
+        "verified_progress": "用户确认Mac/AlexPC均可用；Mac真实CLI和OH Clang15.0.4参数展开已核",
+        "next_action": "按实际产物绑定源码/runtime输入与选定主机构建argv；不继承无关旧新功能门",
+        "claim_id": "NP-MUSL-PRE-010",
+        "observed_at": "2026-09-29T12:52:27.174152+00:00"
+      },
+      {
+        "check_id": "E08",
+        "title": "三lane资源和写集",
+        "status": "review",
+        "owner": "octos-inner coordinator",
+        "verified_progress": "三peer限定写集和真实并行已证明",
+        "next_action": "补API lane与build OUT_DIR/TMPDIR等资源隔离表",
+        "claim_id": "NP-ENV-MGMT-008",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E09",
+        "title": "备份、回退与失联恢复",
+        "status": "ready",
+        "owner": "hardware-admin",
+        "verified_progress": "回退要求已定，现有恢复材料需核",
+        "next_action": "核原镜像/工具/校验和恢复负责人；不诱发故障",
+        "claim_id": "NP-ENV-DEVICE-005",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E10",
+        "title": "验收及证据采集环境",
+        "status": "ready",
+        "owner": "octos-inner coordinator",
+        "verified_progress": "已有独立收据流程，部分测试rc曾被管道掩盖",
+        "next_action": "交真实rc采集、同代输入绑定、时钟和冷启动观测契约",
+        "claim_id": "NP-ENV-MGMT-008",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E11",
+        "title": "操作边界与环境放行",
+        "status": "blocked",
+        "owner": "outer",
+        "verified_progress": "现有授权已记录；当前仍有前置风险/unknown",
+        "next_action": "签发具体lane/action范围收据；不要求未来APK或镜像运行结果",
+        "claim_id": "ENV-READY",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E12",
+        "title": "备忘录Kimi/GLM API池实测、隔离与轮换",
+        "status": "ready",
+        "owner": "POOL007 owner / 下一空槽",
+        "verified_progress": "已有指纹分类和mock；原生接入尚未通过",
+        "next_action": "接续outer POOL007 review-01的原生轮换/隔离缺口",
+        "claim_id": "NP-ENV-POOL-007",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      }
+    ]
+  },
+  "next_action": "继续无容器原生 Soong 图路由，HK01 等项目范围答复；EVO43 有界反思和独立 APK 招募；任何远端需新 nonce/独审/release",
   "steps": [
     {
       "step_id": "01",
@@ -2267,145 +2405,8 @@
       "next_action": "Accept original 30 APK/API scope and Android comparison/performance evidence, then original final publication gate; no Musl prerequisite"
     }
   ],
-  "environment_gate": {
-    "gate_id": "ENV-READY",
-    "revision": 3,
-    "status": "hold",
-    "doc": "/kanban/public-projection.md",
-    "checks": [
-      {
-        "check_id": "E00",
-        "title": "控制面、预算、等待与恢复",
-        "status": "active",
-        "owner": "octos-inner coordinator",
-        "verified_progress": "已复现stdin共享导致errno35；原goal/累计保留",
-        "next_action": "执行CTRL006 gen3隔离修复和协议回归；验证恢复/等待",
-        "claim_id": "NP-ENV-CTRL-006",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E01",
-        "title": "目录与源码身份",
-        "status": "review",
-        "owner": "musl-owner + bionic-owner",
-        "verified_progress": "源码可读已核；Musl HEAD实际...31b478，gen2笔误待修；29项静态直接rc0",
-        "next_action": "外环核源码/dirty归属与提交、快照来源及哈希",
-        "claim_id": "NP-MUSL-PRE-010",
-        "observed_at": "2026-09-29T12:42:01.052535+00:00"
-      },
-      {
-        "check_id": "E02",
-        "title": "目标版本、ABI与工具链",
-        "status": "ready",
-        "owner": "musl-owner + bionic-owner",
-        "verified_progress": "Musl固定OH6.1.0.31/aarch64，3台实际读回；Bionic覆盖AOSP16R4/ARM64/OH7单独核",
-        "next_action": "按lane绑定实际版本；目标版本不能冒充当前产物",
-        "claim_id": "NP-BIONIC-PRE-011",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E03",
-        "title": "在线D600身份与健康",
-        "status": "review",
-        "owner": "hardware-admin",
-        "verified_progress": "13:27Z三台OH6.1现有同SHA HelloWorld；候选5cd16e92由硬件peer读回",
-        "next_action": "所选设备当前占用/物理映射复核；其他设备变化不阻断此台",
-        "claim_id": "NP-DEVICE-DISPLAY-009",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E04",
-        "title": "D600归属与隔离",
-        "status": "ready",
-        "owner": "hardware-admin",
-        "verified_progress": "已有8台用途方案，物理编号与新旧lease未闭合",
-        "next_action": "合并真实serial和占用；处理旧HOLD/配置漂移",
-        "claim_id": "NP-ENV-DEVICE-005",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E05",
-        "title": "本次设备配置与参考运行时",
-        "status": "blocked",
-        "owner": "hardware-admin + bionic-owner",
-        "verified_progress": "指定6.1板原APK匹配；当前7件运行时全部不匹配，dry-run rc1；本机8件输入全部匹配",
-        "next_action": "由现有设备owner复核七件恢复操作，再按当前boot复验。不是缺APK/源码，也不等10APP。",
-        "claim_id": "NP-ENV-DEVICE-005",
-        "observed_at": "2026-09-30T00:47:07.118188+00:00"
-      },
-      {
-        "check_id": "E06",
-        "title": "当前样本身份与场景",
-        "status": "ready",
-        "owner": "octos-inner coordinator / 下一空槽",
-        "verified_progress": "设备已安装HelloWorld与参考同SHA，bundleType10/MainActivity正确",
-        "next_action": "首跑使用当前样本；10/30APK结果属于后续验收",
-        "claim_id": "NP-PREP-002",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E07",
-        "title": "主机、构建与网络资源",
-        "status": "active",
-        "owner": "musl-owner",
-        "verified_progress": "用户确认Mac/AlexPC均可用；Mac真实CLI和OH Clang15.0.4参数展开已核",
-        "next_action": "按实际产物绑定源码/runtime输入与选定主机构建argv；不继承无关旧新功能门",
-        "claim_id": "NP-MUSL-PRE-010",
-        "observed_at": "2026-09-29T12:52:27.174152+00:00"
-      },
-      {
-        "check_id": "E08",
-        "title": "三lane资源和写集",
-        "status": "review",
-        "owner": "octos-inner coordinator",
-        "verified_progress": "三peer限定写集和真实并行已证明",
-        "next_action": "补API lane与build OUT_DIR/TMPDIR等资源隔离表",
-        "claim_id": "NP-ENV-MGMT-008",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E09",
-        "title": "备份、回退与失联恢复",
-        "status": "ready",
-        "owner": "hardware-admin",
-        "verified_progress": "回退要求已定，现有恢复材料需核",
-        "next_action": "核原镜像/工具/校验和恢复负责人；不诱发故障",
-        "claim_id": "NP-ENV-DEVICE-005",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E10",
-        "title": "验收及证据采集环境",
-        "status": "ready",
-        "owner": "octos-inner coordinator",
-        "verified_progress": "已有独立收据流程，部分测试rc曾被管道掩盖",
-        "next_action": "交真实rc采集、同代输入绑定、时钟和冷启动观测契约",
-        "claim_id": "NP-ENV-MGMT-008",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E11",
-        "title": "操作边界与环境放行",
-        "status": "blocked",
-        "owner": "outer",
-        "verified_progress": "现有授权已记录；当前仍有前置风险/unknown",
-        "next_action": "签发具体lane/action范围收据；不要求未来APK或镜像运行结果",
-        "claim_id": "ENV-READY",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      },
-      {
-        "check_id": "E12",
-        "title": "备忘录Kimi/GLM API池实测、隔离与轮换",
-        "status": "ready",
-        "owner": "POOL007 owner / 下一空槽",
-        "verified_progress": "已有指纹分类和mock；原生接入尚未通过",
-        "next_action": "接续outer POOL007 review-01的原生轮换/隔离缺口",
-        "claim_id": "NP-ENV-POOL-007",
-        "observed_at": "2026-09-29T12:33:44.372904+00:00"
-      }
-    ]
-  },
-  "global_focus": "App 单 Bionic HelloWorld 最早未通过边界；基座、安装服务、图形输入并行；89 项独立处置与验证",
+  "updated_at": "2026-10-04T18:21:11+00:00",
+  "checked_at": "2026-10-04T18:21:11+00:00",
   "lane_preparation": {
     "lane-musl": {
       "status": "superseded",
@@ -2511,13 +2512,12 @@
       "summary": "现有APK元数据已验；本体核验与方法输入绑定排入下一空槽。"
     }
   },
-  "human_gates": [
-    {
-      "gate_id": "original_goal_budget",
-      "status": "accepted",
-      "reason": "用户授权200亿有限上限；已在原goal_01实际回读，累计与创建时间未改变。"
-    }
-  ],
+  "closeout_path": {
+    "summary": "Bionic per-package inputs → HelloWorld earliest unmet boundary; independent tool/client/service work parallel; Musl historical comparison optional"
+  },
+  "run_id": "nanhai-plus-20260929-opaleye",
+  "global_focus": "App 单 Bionic HelloWorld 最早未通过边界；基座、安装服务、图形输入并行；89 项独立处置与验证",
+  "dag_version": 10,
   "pending_user_decisions": [],
   "public_baseline_summary": {
     "musl": {

@@ -1,0 +1,39 @@
+{
+  "schema": "g279-proxy-readonly-handshake-static-result-v4",
+  "at_utc": "2026-10-04T18:17:24.464891+00:00",
+  "fixture_rc": 0,
+  "fixture": {
+    "host_fingerprint": "SHA256:RuAqHWgFJEIEcb4hC+WXULCRfV3uCsayP4Iw4aJvwzg",
+    "negative_guards": [
+      "wrong_route",
+      "missing_banner",
+      "missing_hostkey",
+      "missing_auth",
+      "socks_false_positive",
+      "nonzero_rc",
+      "unexpected_remote_output"
+    ],
+    "positive_synthetic": true,
+    "release_absent": true,
+    "remote_argv": [
+      "gz02",
+      "/usr/bin/id -u"
+    ],
+    "schema": "g279-proxy-readonly-handshake-static-fixtures-v4",
+    "ssh_connection_executed": false,
+    "ssh_g_rc": 0
+  },
+  "fixture_stdout_sha256": "f175363b4f3f1cb9c971a23fd2a901dcfbe17a5183bb2cd973cf92b925c6d954",
+  "fixture_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "local_127_0_0_1_7897_connect": true,
+  "local_connect_error": null,
+  "prior_socks_observation_sha256": "b961e5f8ad4798153b7143b87742ed6a0f7c3c63845e25b3bdbb39b719779662",
+  "prior_banner_observation_sha256": "b3e2a43e6a6e1417f7a5a3993ca66baf7bad5c16e5a3d2dfa1485f1060305ca9",
+  "prior_v3_terminal_sha256": "8c195ac31f38e6ebf21ca9b75dab38edb05b033d6397b83902fbf469ffc4e949",
+  "prior_v3_ssh_rc": 255,
+  "prior_v3_replay_allowed": false,
+  "no_ssh_transport": true,
+  "no_remote_command": true,
+  "no_graph_device_container_namespace": true,
+  "execution_precondition_currently_met": true
+}

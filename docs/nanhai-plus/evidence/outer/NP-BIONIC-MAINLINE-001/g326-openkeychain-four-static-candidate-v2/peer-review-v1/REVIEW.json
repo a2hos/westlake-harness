@@ -1,0 +1,36 @@
+{
+  "schema": "g326-openkeychain-four-static-v2-peer-review-v1",
+  "at_utc": "2026-10-04T18:20:31.437611+00:00",
+  "decision": "GO_HOST_STATIC_ONLY_SIGNATURE_UNVERIFIED",
+  "candidate_sha256": "41596e0b1aec080e47571702d3a092f823c3605d739cd0bd7342bfb1712dab32",
+  "result_sha256": "b3811a41c7fdadd94a73438808de99a773efbf16dfb1143096a7f2a789f86892",
+  "root_raw_sha256": "799fb72dddbe88d00a9f8a28ee8bd31675c6b1dc236176560e4613ed0386ff2c",
+  "v1_precheck_failure_sha256": "b0ad306e3fcaaee5ae2a568cd1129a152b65960caf1e24c069e997aea4021c87",
+  "exact_apk_sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+  "observed": {
+    "v1_frozen_no_scanner_start": true,
+    "original_alias_same_bytes_size_sha": true,
+    "alias_mode_0444_regular": true,
+    "suffix_positive_negative_fixture_rc0": true,
+    "new_nonce_bound_start_commands_result": true,
+    "four_phases_rc0": true,
+    "raw_stream_command_result_hashes_match": true,
+    "source_guards_equal": true,
+    "zip_entries_crc_no_duplicates": 2143,
+    "root_dex": 1,
+    "embedded_dex": 0,
+    "true_arm64_elf": 0,
+    "all_so_members": 0,
+    "metadata_package": "org.sufficientlysecure.keychain",
+    "version_code": 60400,
+    "version_name": "6.0.4",
+    "target_sdk": 34,
+    "certificate_fingerprint_extracted": "2805a6f465acb923103a2ab3a145e1a97a74c44acf751250b588ebc3f88a0cc9"
+  },
+  "limits": [
+    "Root raw acceptance is exact payload bytes/ZIP CRC only; APK signature cryptographic verification has not been shown. Extracted certificate fingerprint must not be called verified signature.",
+    "Zero ARM64 ELF means none present in this exact APK ZIP, not an ELF scanner run over target libraries.",
+    "Host static scope only; no install, launch, runtime, device, Bionic whole-tool PASS, or authoritative count change."
+  ],
+  "reviewer_actions": "Read-only local checks and isolated REVIEW.json; no SSH, device, container, network or ledger mutation."
+}

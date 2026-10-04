@@ -1,0 +1,10 @@
+{
+  "crc_all_ok": true,
+  "embedded_dex": 0,
+  "entries_scanned": 2143,
+  "manifest_count": 1,
+  "nested_archives": [],
+  "non_elf_so": [],
+  "root_dex": 1,
+  "true_arm64_elf": 0
+}

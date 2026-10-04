@@ -1,0 +1,95 @@
+{
+  "schema": "g326-openkeychain-four-static-v2-candidate",
+  "at_utc": "2026-10-04T18:19:32.511685+00:00",
+  "decision_candidate": "GO_HOST_FOUR_STATIC_ONLY_PENDING_PEER_ROOT",
+  "root_raw_admission_sha256": "799fb72dddbe88d00a9f8a28ee8bd31675c6b1dc236176560e4613ed0386ff2c",
+  "apk_original_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v7/org.sufficientlysecure.keychain/body.raw",
+  "apk_alias_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g326-openkeychain-v2/OpenKeychain.apk",
+  "apk_sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+  "apk_bytes": 12043256,
+  "alias_mode": "0o444",
+  "alias_receipt_sha256": "185d34fcfe38fbfa0ec8769c4ceb13f16df1b680f0cc85226395f41c655d59b6",
+  "suffix_fixture_sha256": "194238765ee6e9614430e424e040e3467b66566c3d2d77b1202a650fb57b8d71",
+  "fixture_checks": {
+    "apk_manifest_accepted": true,
+    "raw_rejected_by_suffix": true,
+    "same_bytes": true,
+    "target_sdk": true,
+    "version": true
+  },
+  "start_sha256": "0d528e98855d69aa1dd1ba20b1c8adb04fcf7ea809467c8ee5451633b9e319db",
+  "result_sha256": "b3811a41c7fdadd94a73438808de99a773efbf16dfb1143096a7f2a789f86892",
+  "census_sha256": "bb4f639efb2180b9a3a6aaf196fe13dc87397c91c7bc1f4f583e2cb62ffea941",
+  "prepare_source_sha256": "faa9989a9f5f2e41b7ae9aa339b1a0047207240fda9ad0d6ac7f108450c68f6d",
+  "phase_source_sha256": "274cd696a8708e660efdaaf4823bd1aa267ad9e67e90a1b7ce6e6aefa03ee0a2",
+  "runner_source_sha256": "3ef4e55260b9b935a295c617afca790d29717fe717605f363b97e42a24a16d02",
+  "nonce": "48e292296086b5796c74e1e5987b8ffe",
+  "phase_rows": [
+    {
+      "phase": "zip",
+      "rc": 0,
+      "command_sha256": "7f6935a26502a0a277d953d053823d4a9d71878b093348a1714a6875cdd36ea3",
+      "stdout_sha256": "9119199a00cd88736db420b000d5b1aafc83163e6b2e1a9592d76b47cba434a0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "9ceca180e53e00f5d6e1af628dbd129a2d5c6477af6b9bd9529231dc4caa72a7",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "metadata",
+      "rc": 0,
+      "command_sha256": "5dfeb2213fb8e8f139e90c6c5155ab724aa10a6166897be28be8008c99fcebcd",
+      "stdout_sha256": "0796f15cf2c32fb5fbbf4dde0810e67ed1b0d0cf381600a6b1252bf469a61058",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "a9446746928d216af6d455728f51eec13f4fc6f7124b62d657abfe72a4e51d95",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "dex",
+      "rc": 0,
+      "command_sha256": "40d1e1e085d7ad163d0c9407123f1aa2e96f3eabefb0a86d789a8bab08e84efd",
+      "stdout_sha256": "3af810394f1692ec1a4e54108dad8b7627917c92e171388c63b1996bcbf63699",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "bd7479a1e1be2f1c6ad19802ac9a8700264eb80dba69d5fa7e017a6961c31b35",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "elf",
+      "rc": 0,
+      "command_sha256": "d2a4901da44e26d6604b824f96c443125c10b2e10526931e3418ffa75164a3d8",
+      "stdout_sha256": "723259fa1307417dfdf4603f86652cc30a1b29c9f83028d5b0b4c12e85788008",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "1bc8c7cae49fde68328a33540bbf156ee2a5a76351963d8d688714c2a262ddb6",
+      "source_guard_equal": true
+    }
+  ],
+  "census_counts": {
+    "root_dex": 1,
+    "embedded_dex": 0,
+    "true_arm64_elf": 0,
+    "arm32_elf": 0,
+    "other_elf": 0,
+    "non_elf_so": 0
+  },
+  "zip_entries": 2143,
+  "nested_archive_count": 0,
+  "metadata": {
+    "package": "org.sufficientlysecure.keychain",
+    "version_name": "6.0.4",
+    "version_code": "60400",
+    "target_sdk": "34",
+    "signing_certificate_sha256": [
+      "2805a6f465acb923103a2ab3a145e1a97a74c44acf751250b588ebc3f88a0cc9"
+    ],
+    "prior_manifest_sha256": "ce4616723fa8822c469faa1c156c8dbcf1d132aee6217440a2db75804931646a"
+  },
+  "signature_verification": "NOT_PROVEN; certificate fingerprint extracted from exact APK and matches prior scanner output; macOS jarsigner -verify -certs first attempt rc1 because Java Runtime absent",
+  "preflight_failed_generation": "g326-openkeychain-four-static-candidate-v1/PRECHECK-FAILURE.json",
+  "limits": "Host static only; no startup/install/device evidence. Raw root acceptance was exact bytes/ZIP CRC only. v1 preflight script field mismatch preserved. Candidate pending independent peer/root admission.",
+  "authoritative_count_changed": false,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0,
+  "ssh_commands": 0,
+  "bridge_writes": 0
+}
