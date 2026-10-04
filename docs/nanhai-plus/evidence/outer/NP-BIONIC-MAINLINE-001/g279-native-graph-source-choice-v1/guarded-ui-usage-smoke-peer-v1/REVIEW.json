@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai.g279.guarded_ui_usage_smoke_peer_review.v1",
+  "decision": "ACCEPT_HOST_UI_STARTUP_ENVIRONMENT_FIX_ONLY",
+  "receipts": {
+    "v1_sha256": "0d01e387643dcffe662858a6c12619a5da81937490a664ea0d0314b2dfad7f66",
+    "v2_sha256": "d089137d71eb13dfa3fec5d1083999d454c1df40f62ec5e7dfb92eed520da83a",
+    "v3_sha256": "4068efdc4e516849223eae8ab6b7f94c71e889ebcbc9099592b134b36de34e9f"
+  },
+  "observations": {
+    "v1": "Recorded outer SSH rc0; sudo -n -u nobody, env -i PATH=/usr/bin:/bin, timeout 10s, exact guard/UI SHA, --help. Remote rc2 panicked in blueprint/microfactory.findGoVersion attempting an invalid relative Go path. No graph or target command is claimed.",
+    "v2": "Recorded outer SSH rc0; GOROOT set to registered AOSP R4 prebuilts/go/linux-x86, cwd at source alias. Remote rc1 reaches soong_ui getCommand and rejects --help as unknown; no Build call.",
+    "v3": "Recorded outer SSH rc0; same argv as v1 except GOROOT, cwd explicitly project root. Remote rc1 with the same getCommand rejection as v2. This removes the v2 cwd change as a necessary explanation for the observed transition, subject to the v1 receipt's missing explicit cwd field.",
+    "source": "Read-only gz02 source inspection: blueprint/microfactory/microfactory.go initializes goVersion via findGoVersion, which reads runtime.GOROOT()/VERSION or executes runtime.GOROOT()/bin/go version, panicking if both fail. Patched Soong cmd/soong_ui/main.go calls getCommand before build.Build; unknown --help produces rc1 before graph build.",
+    "remote_identity": "Read-only gz02: registered Go root alias resolves /data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86; VERSION says go1.24.1 and SHA256 4407ffecd5b7e06b4f47ac38e68dcca9fc13dd173cc71a5cb228605f328af988; bin/go is x86-64 static ELF, SHA256 467614dc12ce73e28cc9aa8d28bdef259ada3bcc4392f205aaaed6fff44d8cab. UI SHA256 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624; guard SHA256 04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20."
+  },
+  "boundary": "Accept adding exact registered GOROOT to the isolated host UI environment as a startup fix for this --help smoke only. An rc1 unknown-command result is expected evidence that UI initialization progressed past microfactory; it is not a successful graph. No --make-mode, Soong graph, generated action, target compilation, device, or container acceptance. A release candidate must bind GOROOT and its VERSION/go binary identities in a fresh pre-execution gate and independently review the new exact runner SHA.",
+  "evidence_limit": "Numeric remote/outer return codes and cwd are recorded by the owner smoke receipts; peer did not replay UI. v1 does not record cwd explicitly, so the v3 single-variable claim relies on its own statement for that part, although the argv delta is independently visible.",
+  "peer_actions": "Read-only local receipts and remote source/Go/UI/guard identity via SSH; no smoke replay, graph, target, container, device, or Bridge action."
+}

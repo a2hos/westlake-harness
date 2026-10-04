@@ -1,0 +1,42 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T10:55:33.226550+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "g281_zoom_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/ROOT-ADMISSION.json",
+    "sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1"
+  },
+  "g279_runner_v5_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v5-peer-v1/REVIEW.json",
+    "sha256": "51050ea33d7704c78b3874b154ce8483fd77e1f2b4203b0a4626bfc5795e93b1"
+  },
+  "g279_goroot_pair": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v4/ROOT-CONTROLLED-PAIR.json",
+    "sha256": "65e1f034ac1d1cc98cd8e6ec08ba5012e4b27f2c16ed52ad79993434bbbfe071"
+  },
+  "counts": {
+    "raw_apk_accepted": 78,
+    "complete_static": 74,
+    "dex_entries": 163,
+    "true_elf_entries": 812,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200,
+    "qualified_blackbox_starts": 0
+  },
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "next": "Finish/review new native graph runner and owner graph ACK before graph; Zoom blackbox qualification independently.",
+  "task_summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "da2f07b0ebfa821aabd9054b133347f6db4caf4e04ad911291f79be9e4a31893"
+  }
+}

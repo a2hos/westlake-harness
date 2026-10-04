@@ -1,0 +1,185 @@
+{
+  "schema": "nanhai.g281.zoom_static_candidate_ready.v1",
+  "at": "2026-10-04T10:48:54.878026+00:00",
+  "status": "CANDIDATE_ONLY_PENDING_INDEPENDENT_AND_ROOT_REVIEW",
+  "raw_root_intake_sha256": "f7f3a2d2de6b9cb61a778d2647ad9294a23c35a4cf7939e34fbcd3334f842b95",
+  "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+  "outer_preflight_failure": {
+    "rc": 2,
+    "reason": "Initial launcher computed project root one parent too shallow and tried nonexistent docs/scripts/nanhai_plus_env.py; no phase ran.",
+    "retained_receipt": "OUTER-COMMAND.json",
+    "launcher_snapshot": "launch_once.failed-v1.py"
+  },
+  "actual_run": {
+    "outer_rc": 0,
+    "runner_rc": 0,
+    "seconds": 155.63296983402688,
+    "phases": [
+      {
+        "phase": "zip",
+        "argv": [
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+          "-I",
+          "-B",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/scan_phase.py",
+          "zip"
+        ],
+        "timeout_seconds": 120,
+        "rc": 0,
+        "elapsed_seconds": 2.5795987909659743
+      },
+      {
+        "phase": "metadata",
+        "argv": [
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+          "-I",
+          "-B",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/scan_phase.py",
+          "metadata"
+        ],
+        "timeout_seconds": 180,
+        "rc": 0,
+        "elapsed_seconds": 1.7264600839698687
+      },
+      {
+        "phase": "elf",
+        "argv": [
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+          "-I",
+          "-B",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/scan_phase.py",
+          "elf"
+        ],
+        "timeout_seconds": 600,
+        "rc": 0,
+        "elapsed_seconds": 100.23452404199634
+      },
+      {
+        "phase": "dex",
+        "argv": [
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+          "-I",
+          "-B",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/scan_phase.py",
+          "dex"
+        ],
+        "timeout_seconds": 600,
+        "rc": 0,
+        "elapsed_seconds": 47.28106395795476
+      }
+    ],
+    "zip_entries": 11604,
+    "dex_entries": 16,
+    "elf_entries": 290,
+    "arm64_elf": 148,
+    "armv7_elf": 142,
+    "all_result_checks": {
+      "all_four_phases_terminal": true,
+      "all_postguards": true,
+      "full_source_apk_venv_tool_guard_equal": true,
+      "all_zip_members_crc_scanned": true,
+      "manifest_unique": true,
+      "dex_identity": true,
+      "true_elf_identity": true,
+      "true_elf_valid": true,
+      "native_unclassified_zero": true
+    }
+  },
+  "references": {
+    "INPUTS.json": {
+      "sha256": "34f89fbede449eb7109da6282027fe099dca3acfbd4ed0d94c58282bb9814fcc",
+      "bytes": 4347
+    },
+    "common.py": {
+      "sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+      "bytes": 1775
+    },
+    "run.py": {
+      "sha256": "25068219344005229a7799c413a5ca908b7bbbfc9b67ace271bbe970b0bdb0f0",
+      "bytes": 5758
+    },
+    "scan_phase.py": {
+      "sha256": "0b4225b75c4ddd20f6402d135ac5dc4482f026046c64bd109ae52136ca64398e",
+      "bytes": 4825
+    },
+    "launch_once.failed-v1.py": {
+      "sha256": "92f57851a90a937763c71b86cda24510bdf6a2cc5ba77558485918ceab28bdd1",
+      "bytes": 1123
+    },
+    "OUTER-COMMAND.json": {
+      "sha256": "7686e74d14ad90b42a6af963eecd75be780ea48966af87b3c74b70029b81750b",
+      "bytes": 788
+    },
+    "outer.stderr.raw": {
+      "sha256": "e283256a5bb3db1395650103dd220e25d078b013508996097eae34e5b09dd2da",
+      "bytes": 239
+    },
+    "launch_once.py": {
+      "sha256": "0bca2b68082bfc39e9db90943fce8ad888860596fdb57afe3d4103df78d3dc30",
+      "bytes": 1138
+    },
+    "OUTER-COMMAND-v2.json": {
+      "sha256": "2c6b5c10a759588e42516940cc0b5c7f0ee0e37f82060fc4de33caf7d3a0a1f7",
+      "bytes": 781
+    },
+    "outer-v2.stdout.raw": {
+      "sha256": "e1f6cb0459ed088350edae2bc685e378f6f7d75a0b0fe8c9c696a8c7895dbd72",
+      "bytes": 820
+    },
+    "outer-v2.stderr.raw": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "SOURCE-BEFORE.json": {
+      "sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+      "bytes": 2716
+    },
+    "SOURCE-AFTER.json": {
+      "sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+      "bytes": 2716
+    },
+    "RESULT.json": {
+      "sha256": "be1f53599f1d2b06fcf3566db34ff2467f683eb6fe5bfeed109244ba1044d9b5",
+      "bytes": 6829
+    },
+    "phases/zip/RESULT.json": {
+      "sha256": "e14e24cd85720c0cdc27ae6f6c22c6e2116fdc3a50eeb92825fca1056031b752",
+      "bytes": 198
+    },
+    "phases/metadata/RESULT.json": {
+      "sha256": "8e7849c119886d4c6f01b1ffcf3c0616c52bc27c8608d05225e1235581b8bc73",
+      "bytes": 203
+    },
+    "phases/elf/RESULT.json": {
+      "sha256": "9e32e40ce943d6a6c341fdc03143788d711324e0b5c7d3fddd589ed1eaaaffc2",
+      "bytes": 198
+    },
+    "phases/dex/RESULT.json": {
+      "sha256": "999592835340a64b8a3537823dc8ce8b7a4057c21f131b3f26a08aa2362873e5",
+      "bytes": 198
+    },
+    "phases/zip/ZIP-FACTS.json": {
+      "sha256": "445c3d6bd905939ae23547d440063515f3b398d5711ead9431a4a8f8c7e4a0de",
+      "bytes": 75884
+    },
+    "phases/metadata/MANIFEST.json": {
+      "sha256": "3a1591e59bfbe01d13fe098171b73343031a29796f6570da2a37f5374752ad95",
+      "bytes": 4181
+    },
+    "phases/elf/ELF-INVENTORY.json": {
+      "sha256": "ccaf2f966eff2dd6e911c0f5faad10f25230d55ce575b9388f7ffc27d3f07836",
+      "bytes": 51771786
+    },
+    "phases/dex/DEX-INVENTORY.json": {
+      "sha256": "2b2de035556865c62c06b81fef451fac403792607c4e0783d1d9137aa0474488",
+      "bytes": 47632461
+    }
+  },
+  "scope": {
+    "canonical_static_delta": 0,
+    "blackbox_qualified": false,
+    "startup_verified": false,
+    "device_commands": 0,
+    "container_commands": 0
+  }
+}

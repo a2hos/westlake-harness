@@ -1,0 +1,61 @@
+{
+  "schema": "nanhai-g279-native-runner-v4-static-candidate-v1",
+  "at": "2026-10-04T10:47:06.765753+00:00",
+  "runner_path": "scripts/nanhai_plus_native_graph_v4.py",
+  "runner_sha256": "b8a9b3e8e0211b37b1d062f190b748108a4078feeabe8ef00f2ecc174012e363",
+  "fixture_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v4-candidate-v1/static_fixtures.py",
+  "fixture_sha256": "19e494566038736f80155b2ad348f3a8a2a7258f3f29b33d569ac01071fc4fc7",
+  "status": "STATIC_CANDIDATE_NO_GO_GRAPH",
+  "ast_parse_rc": 0,
+  "checks": [
+    {
+      "name": "static",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v4.py",
+        "--static-check"
+      ],
+      "rc": 0,
+      "stdout_sha256": "8112e391a47a2d1eed42a306043a09bb63a0f40a7383dfac1ce4343473cea46a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run-denial",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v4.py",
+        "--run"
+      ],
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "fc94ec3af108a4b84ebd5b8aaf20f9a164bde65cf0bfd42408aa69a7e592ac03"
+    },
+    {
+      "name": "fixtures",
+      "argv": [
+        "python3",
+        "-B",
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v4-candidate-v1/static_fixtures.py"
+      ],
+      "rc": 0,
+      "stdout_sha256": "39779d97186a1616651cdfc5f1f01c356abbcc1a2e285fc077185d51119bafbc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "B4": "SIGTERM/SIGINT intercepted in dormant execute path, cleanup attempted in finally and handlers restored; mocked local fixtures pass; real detached-descendant behavior remains unproven",
+  "B6": "fixed one-shot project pre-control RESULT on binding failure candidate, exclusive durable write helper; exact aosp_arm64 Ninja and nonempty BP list/full tracked-BP coverage code; local positive/negative fixtures pass; remote unrun",
+  "B5": "generated Ninja lexical screen is explicitly LEXICAL_SCREEN_ONLY_NO_TARGET_AUTHORIZATION; target compilation remains false; seccomp/trace still unproven",
+  "evo19_gate": "ABSENT_SEPARATE_ONE_RECEIPT_REQUIRED",
+  "fixture_correction": "First local fixture rc1 from fake wait callback signature mismatch; corrected fixture only, then rc0. Runner unchanged by that correction.",
+  "unresolved": [
+    "EVO19 one immutable release receipt binding runner, wrapper, remote size/mode, argv, interpreter, SSH outer and remote rc",
+    "Independent peer review of v4 exact bytes and real Linux signal/descendant cleanup evidence",
+    "Fresh remote source/input guards, seccomp inheritance, graph artifacts, generated actions and target build remain unrun"
+  ],
+  "graph_command_executed": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "canonical_counts_changed": false
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "nanhai-g279-guarded-soong-ui-usage-smoke-v1",
+  "at": "2026-10-04T10:47:56.737788+00:00",
+  "host": "gz02",
+  "outer_ssh_rc": 0,
+  "remote": {
+    "argv": [
+      "sudo",
+      "-n",
+      "-u",
+      "nobody",
+      "--",
+      "/usr/bin/env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "/usr/bin/timeout",
+      "10s",
+      "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec",
+      "/data/source/.nanhai-plus-opaleye-native/out/soong-ui-v1/soong_ui",
+      "--help"
+    ],
+    "rc": 2,
+    "stdout": "",
+    "stderr": "panic: Unable to discover go version: fork/exec ../../data/source/.nanhai-plus-opaleye-native/source-view/prebuilts/go/linux-x86/bin/go: no such file or directory\n\ngoroutine 1 [running]:\ngithub.com/google/blueprint/microfactory.findGoVersion()\n\tbuild/blueprint/microfactory/microfactory.go:99 +0x5fc\ngithub.com/google/blueprint/microfactory.init()\n\tbuild/blueprint/microfactory/microfactory.go:69 +0x185\n",
+    "ui_sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+    "guard_sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20"
+  },
+  "outer_stderr": "",
+  "container_executed": false,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "source_basis": "cmd/soong_ui/main.go getCommand rejects --help before Build"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "nanhai.g279.native_graph_v4_static_peer_review.v1",
+  "decision": "ACCEPT_STATIC_FIXTURE_CANDIDATE_ONLY_NO_GO_GRAPH_RELEASE",
+  "reviewed": {
+    "runner_sha256": "b8a9b3e8e0211b37b1d062f190b748108a4078feeabe8ef00f2ecc174012e363",
+    "candidate_sha256": "980e3cc2b9bf16d5a1d2672d832422770c403aac2c3b4e6c0d5aa4c64e94615d",
+    "fixture_sha256": "19e494566038736f80155b2ad348f3a8a2a7258f3f29b33d569ac01071fc4fc7",
+    "fixture_stdout_sha256": "39779d97186a1616651cdfc5f1f01c356abbcc1a2e285fc077185d51119bafbc",
+    "prior_v3_peer_sha256": "bc598ced1b2c9f8bcbb89023d110da87d1982536545b7e0ab51f8df6f400386e"
+  },
+  "checks": {
+    "reachable_cli": "main() still returns 3 for --run without calling reviewed_execution_candidate; candidate records run-denial rc3. --static-check reads local receipts only. This peer did not execute either route.",
+    "fixture_scope": "Seven local fixture booleans pass: O_EXCL receipt nonreplacement, exact-product Ninja positive/wrong-product negative, no target authorization, mocked SIGTERM/SIGINT cleanup entry, and signal-handler restoration. Mocked Popen/reap_tree does not exercise a Linux descendant tree, real seccomp inheritance, or remote source/output paths.",
+    "B1": "PARTIAL: frozen local_env binding/config hash and path derivation carried from v3; no fresh remote readback or release receipt.",
+    "B2": "PARTIAL: staged three inputs have pinned SHA and nonwritable checks in dormant preflight; fresh remote size/mode/hash not independently checked here.",
+    "B3": "PARTIAL: ten linkfile/root/untracked/ledger pre-post guards carried from v3, but remote run, full nested permission baseline, and exclusive source-writer proof remain absent.",
+    "B4": "IMPROVED_NOT_PROVEN: v4 lines 315-357 install SIGTERM/SIGINT handlers before Popen, route cancellation through finally, suppress a second signal during cleanup, and fail closed when remaining descendants are not []. Local fixture mocks the cleanup response. Real detached descendants, process-table races, hard kill, and cleanup exceptions lack actual fault evidence; no descendant-clean claim is accepted.",
+    "B5": "BLOCK: guard has only standalone host-tool smoke/trace evidence. Full Soong child inheritance and complete syscall/exec trace remain unproven. Generated Ninja scan now correctly reports LEXICAL_SCREEN_ONLY_NO_TARGET_AUTHORIZATION; that is not generated-action safety proof or permission to run target Ninja.",
+    "B6": "IMPROVED_NOT_PROVEN: v4 lines 411-431 use O_EXCL/O_NOFOLLOW and fsync for one-shot receipts; lines 449-523 add fixed precontrol receipt, exact aosp_arm64 Ninja/BP checks, distinct graph and target fields, and skip source postguard if tree is not proven clear. Fixture proves helper nonreplacement and synthetic artifact positive/negative only. No actual precontrol/terminal receipt or graph artifact exists. A control receipt may be written with runner_exit_code 0 before the second precontrol write fails, producing an inconsistent outer failure; release design should make the single authoritative receipt/outer rc atomic or fail closed before a success claim.",
+    "EVO19": "BLOCK: no single immutable release gate binds current authoritative local_env digest, exact runner and remote wrapper/interpreter/argv, each remote input SHA/size/mode, and separate outer SSH/remote rc. Candidate explicitly declares this absent."
+  },
+  "safety_boundary": "No container/namespace sandbox is introduced in the reachable local routes. Dormant graph code uses ordinary nobody UID, seccomp guard and strace; source inspection and mock fixtures do not prove these runtime controls. Keep --run rc3 and do not dispatch graph, target build, or device work from this SHA.",
+  "peer_actions": "Read-only local SHA/diff/source/fixture-output review. No runner execution, SSH, graph, container, namespace, device, or Bridge action."
+}

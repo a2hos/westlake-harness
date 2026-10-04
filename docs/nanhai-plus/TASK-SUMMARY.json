@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T10:45:24.497591+00:00",
+  "checked_at": "2026-10-04T10:51:36.337059+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,9 +40,9 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 73,
-    "complete_inventory_dex_entries": 147,
-    "complete_inventory_native_elf_entries": 522,
+    "complete_static_inventories": 74,
+    "complete_inventory_dex_entries": 163,
+    "complete_inventory_native_elf_entries": 812,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -1258,5 +1258,28 @@
       "sha256": "bc598ced1b2c9f8bcbb89023d110da87d1982536545b7e0ab51f8df6f400386e"
     },
     "graph_executed": false
+  },
+  "g281_zoom_static": {
+    "status": "accepted_complete_static_only",
+    "root_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/ROOT-ADMISSION.json",
+      "sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1"
+    },
+    "static_before": 73,
+    "static_after": 74,
+    "dex_added": 16,
+    "true_elf_added": 290,
+    "blackbox_qualified": false,
+    "cold_start_pass": false
+  },
+  "g279_runner_v5": {
+    "status": "static_host_env_accepted_graph_no_go",
+    "peer_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v5-peer-v1/REVIEW.json",
+      "sha256": "51050ea33d7704c78b3874b154ce8483fd77e1f2b4203b0a4626bfc5795e93b1"
+    },
+    "graph_executed": false,
+    "target_compiled": false,
+    "device_executed": false
   }
 }

@@ -1,0 +1,45 @@
+{
+  "schema": "g279-goroot-readonly-identity-v1",
+  "at": "2026-10-04T10:51:26.770601+00:00",
+  "status": "READONLY_GO_INPUT_IDENTITY_ONLY",
+  "ssh_outer_argv": [
+    "ssh",
+    "-o",
+    "BatchMode=yes",
+    "gz02",
+    "python3",
+    "-"
+  ],
+  "ssh_outer_rc": 0,
+  "remote_interpreter": "python3 -",
+  "remote_program_sha256": "c1dcc725300c3485c57c3d5233496eb9dd26fcc6f6ccc717fa1f312bd9a5149c",
+  "remote": {
+    "remote_rc": 0,
+    "root": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/go/linux-x86",
+    "root_mode": "0o775",
+    "root_real": "/data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86",
+    "rows": {
+      "VERSION": {
+        "bytes": 35,
+        "mode": "0o664",
+        "real": "/data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86/VERSION",
+        "regular": true,
+        "sha256": "4407ffecd5b7e06b4f47ac38e68dcca9fc13dd173cc71a5cb228605f328af988"
+      },
+      "bin/go": {
+        "bytes": 14314606,
+        "mode": "0o775",
+        "real": "/data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86/bin/go",
+        "regular": true,
+        "sha256": "467614dc12ce73e28cc9aa8d28bdef259ada3bcc4392f205aaaed6fff44d8cab"
+      }
+    },
+    "version_text": "go1.24.1\ntime 2025-02-27T17:57:18Z\n"
+  },
+  "stdout_sha256": "3b6ccf373f087235be6cdc78d7383df1af0565d9e7e53ab101abead8610eb23c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "graph_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "not_evo19_release_gate": true
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-g279-ui-env-controlled-pair-root-v1",
+  "at": "2026-10-04T10:50:38.315339+00:00",
+  "decision": "GOROOT_ONLY_CAUSAL_HOST_UI_SMOKE",
+  "with_goroot": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v3/RESULT.json",
+    "sha256": "4068efdc4e516849223eae8ab6b7f94c71e889ebcbc9099592b134b36de34e9f",
+    "rc": 1
+  },
+  "without_goroot": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v4/RESULT.json",
+    "sha256": "1d9b5aad75f8847b6013a3cb39d1a3f81da5ea8a3ce03b4c705cedc14a1faec6",
+    "rc": 2
+  },
+  "same_cwd": "/data/source/.nanhai-plus-opaleye-native",
+  "same_argv_after_removing_goroot": true,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "scope": "This establishes host UI package-init path only; not Soong graph success."
+}

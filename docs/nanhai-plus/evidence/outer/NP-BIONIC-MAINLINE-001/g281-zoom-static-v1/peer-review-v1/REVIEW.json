@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai.g281.zoom_static_actual_peer_review.v1",
+  "decision": "GO_COMPLETE_STATIC_INVENTORY_ONLY",
+  "references": {
+    "ready_sha256": "f283ee8ab20493e6b74e159bfb387e34ee13d660f595fb65825cbdc17e4ba97b",
+    "result_sha256": "be1f53599f1d2b06fcf3566db34ff2467f683eb6fe5bfeed109244ba1044d9b5",
+    "inputs_sha256": "34f89fbede449eb7109da6282027fe099dca3acfbd4ed0d94c58282bb9814fcc",
+    "root_raw_intake_sha256": "f7f3a2d2de6b9cb61a778d2647ad9294a23c35a4cf7939e34fbcd3334f842b95",
+    "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b"
+  },
+  "actual_execution": {
+    "retained_first_failure": "OUTER-COMMAND.json records launcher rc2 in 0.020 seconds due nonexistent docs/scripts/nanhai_plus_env.py; no scan phase ran. Failed launcher snapshot retained.",
+    "corrected_run": "OUTER-COMMAND-v2.json records env-wrapper outer rc0 in 155.633 seconds; RESULT.json records inner rc0 in 155.478 seconds, four sequential phase rc0, no timeout/retry, and 0 device commands.",
+    "integrity": "All 22 READY.json referenced files independently match their SHA256 and byte lengths. SOURCE-BEFORE.json and SOURCE-AFTER.json are byte-identical SHA256 787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7. Each phase RESULT.json records rc0 and source/APK/tool postguard true.",
+    "zip_and_metadata": "ZIP scan covers 11604 unique entries and full CRC, one manifest, 16 root DEX, 290 true native ELF, no ZIP-in-.so or unclassified .so. Metadata identifies us.zoom.videomeetings 7.2.1.43844/code 6702010, target SDK 36 and exact accepted APK SHA/358226193 bytes.",
+    "dex_and_elf": "DEX inventory covers classes.dex plus classes2.dex through classes16.dex and matches ZIP per-entry SHA/size; ELF inventory covers 148 arm64-v8a and 142 armeabi-v7a entries and matches ZIP per-entry SHA/size. All 290 report readelf_ok and ABI-machine match, with no error or registration-scan error."
+  },
+  "admission_boundary": "This exact root-accepted supplemental Zoom APK qualifies for one complete host static inventory. If the authoritative static count is still 73 and this exact SHA has not been counted already, root may advance it to 74. Do not replace or inherit the historical 7.1.8.42948 Google Play XAPK record. Overseas mainstream blackbox qualification, installation/display readiness, cold Activity startup, Bionic 89-tool pass, and device acceptance remain unproven and unchanged.",
+  "evidence_limit": "Independent review verifies persisted command receipts, file hashes, inventory cardinalities and cross-inventory identities. It did not rerun the 155-second scan or independently instrument process/syscall activity; no graph, container, or device action was performed by peer.",
+  "peer_execution_counts": {"scan": 0, "graph": 0, "container": 0, "device": 0}
+}

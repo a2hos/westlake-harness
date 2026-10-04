@@ -1,0 +1,33 @@
+{
+  "schema": "nanhai-g279-guarded-ui-usage-smoke-v2",
+  "at": "2026-10-04T10:48:56.825141+00:00",
+  "outer_ssh_rc": 0,
+  "remote": {
+    "argv": [
+      "sudo",
+      "-n",
+      "-u",
+      "nobody",
+      "--",
+      "/usr/bin/env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "GOROOT=/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/go/linux-x86",
+      "/usr/bin/timeout",
+      "10s",
+      "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec",
+      "/data/source/.nanhai-plus-opaleye-native/out/soong-ui-v1/soong_ui",
+      "--help"
+    ],
+    "rc": 1,
+    "stdout": "",
+    "stderr": "Error parsing `soong` args: Command not found: \"--help\"\nDid you mean one of these: [\"--make-mode\" \"--dumpvar-mode\" \"--dumpvars-mode\" \"--build-mode\"].\n",
+    "cwd": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+    "goroot_real": "/data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86"
+  },
+  "outer_stderr": "",
+  "graph_executed": false,
+  "container_executed": false,
+  "device_executed": false,
+  "target_compiled": false
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai-g279-guarded-ui-env-root-review-v1",
+  "at": "2026-10-04T10:50:18.690861+00:00",
+  "decision": "ACCEPT_HOST_UI_STARTUP_ENVIRONMENT_FIX_ONLY",
+  "v1_no_goroot": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v1/RESULT.json",
+    "sha256": "0d01e387643dcffe662858a6c12619a5da81937490a664ea0d0314b2dfad7f66"
+  },
+  "v2_goroot_source_cwd": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v2/RESULT.json",
+    "sha256": "d089137d71eb13dfa3fec5d1083999d454c1df40f62ec5e7dfb92eed520da83a"
+  },
+  "v3_goroot_same_project_cwd": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v3/RESULT.json",
+    "sha256": "4068efdc4e516849223eae8ab6b7f94c71e889ebcbc9099592b134b36de34e9f"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-peer-v1/REVIEW.json",
+    "sha256": "4eadbe5a8cceb8b353e0a58d6495033aafb8d4f3af4c5fa7cba7b61cc934c228"
+  },
+  "observed": "No GOROOT rc2 in microfactory package init; same project cwd plus admitted GOROOT rc1 at getCommand expected --help rejection. Explicit GOROOT is sufficient for this host UI smoke.",
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "runner_release": false,
+  "next": "Bind admitted Go root in next runner; separately review full graph packet and owner ACK."
+}

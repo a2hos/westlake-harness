@@ -1,0 +1,81 @@
+{
+  "schema": "nanhai-g279-native-runner-v5-static-candidate-v1",
+  "at": "2026-10-04T10:52:10.956161+00:00",
+  "runner_path": "scripts/nanhai_plus_native_graph_v5.py",
+  "runner_sha256": "14b4817772ca35849b924f955e4a291c618c82133e0d1f67980da52530c5ae2e",
+  "fixture_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v5-candidate-v1/static_fixtures.py",
+  "fixture_sha256": "526f7d46124b81f173f9da25fc0f4b943d49ca9e308f093a17b5dbc5b1391100",
+  "status": "STATIC_CANDIDATE_NO_GO_GRAPH",
+  "ast_parse_rc": 0,
+  "checks": [
+    {
+      "name": "static",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v5.py",
+        "--static-check"
+      ],
+      "rc": 0,
+      "stdout_sha256": "bcafe2317f763b2fb97a5e04a7e5125772bd6e4b82a492d66258b998df3ab44c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run-denial",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/nanhai_plus_native_graph_v5.py",
+        "--run"
+      ],
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "4e9910dd1a38264d0c9229f0e8b464019fce6d30ad957c02b1ca10751847e3b9"
+    },
+    {
+      "name": "fixtures",
+      "argv": [
+        "python3",
+        "-B",
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v5-candidate-v1/static_fixtures.py"
+      ],
+      "rc": 0,
+      "stdout_sha256": "4266b0883aa35711ef81c0d4edb3f8b765aba0f3eef8eb592171be0bdd6b1c60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "go_identity_receipt_sha256": "1b5b3ec599492da6ecf6fea5278f239fdbf2baa56c838312100d19173374972f",
+  "goroot_alias": "${NANHAI_GZ02_AOSP_SOURCE_ROOT}/prebuilts/go/linux-x86",
+  "goroot_version": "go1.24.1",
+  "goroot_version_sha256": "4407ffecd5b7e06b4f47ac38e68dcca9fc13dd173cc71a5cb228605f328af988",
+  "goroot_go_executable_sha256": "467614dc12ce73e28cc9aa8d28bdef259ada3bcc4392f205aaaed6fff44d8cab",
+  "controlled_smoke": {
+    "without_goroot": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v4/RESULT.json",
+      "sha256": "1d9b5aad75f8847b6013a3cb39d1a3f81da5ea8a3ce03b4c705cedc14a1faec6",
+      "remote_rc": 2
+    },
+    "with_goroot": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/guarded-ui-usage-smoke-v3/RESULT.json",
+      "sha256": "4068efdc4e516849223eae8ab6b7f94c71e889ebcbc9099592b134b36de34e9f",
+      "remote_rc": 1
+    },
+    "root_pair_sha256": "65e1f034ac1d1cc98cd8e6ec08ba5012e4b27f2c16ed52ad79993434bbbfe071",
+    "scope": "only host UI package-init path; no graph"
+  },
+  "v4_peer_review_sha256": "6305e9d581a07ee9a5b0bd127962a1a2c9f919583cb348091fcbaf98d2b1b07a",
+  "B4": "signal/cleanup candidate carries from v4; eight mocked local fixture checks pass, real detached descendants unproven",
+  "B6": "single authoritative one-shot precontrol RESULT candidate; only after final runner exit code, no second control RESULT; exact-product artifact code dormant",
+  "B5": "generated action screen is LEXICAL_SCREEN_ONLY_NO_TARGET_AUTHORIZATION; no target compile authorization",
+  "evo19_gate": "ABSENT_SEPARATE_ONE_RECEIPT_REQUIRED",
+  "fixture_correction": "First copied v5 fixture rc1 omitted new source_alias fake path; corrected fixture only, then rc0. Runner unchanged by that correction.",
+  "unresolved": [
+    "EVO19 one immutable release receipt binding runner, wrapper, remote size/mode, argv, interpreter, SSH outer and remote rc",
+    "Independent peer review of v5 exact bytes and real Linux signal/descendant cleanup evidence",
+    "Fresh remote source/input guards, seccomp inheritance, graph artifacts, generated actions and target build remain unrun"
+  ],
+  "graph_command_executed": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "canonical_counts_changed": false
+}

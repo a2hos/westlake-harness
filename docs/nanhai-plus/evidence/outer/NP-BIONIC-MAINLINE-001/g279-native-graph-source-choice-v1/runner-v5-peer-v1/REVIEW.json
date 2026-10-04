@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai.g279.native_graph_v5_static_peer_review.v1",
+  "decision": "ACCEPT_STATIC_HOST_ENV_AND_FAIL_CLOSED_DESIGN_ONLY_NO_GO_GRAPH",
+  "reviewed": {
+    "runner_sha256": "14b4817772ca35849b924f955e4a291c618c82133e0d1f67980da52530c5ae2e",
+    "static_candidate_sha256": "0521f0767b096ad86401dc01814160527bf9badecb58c430948a0c2695b24225",
+    "go_identity_receipt_sha256": "1b5b3ec599492da6ecf6fea5278f239fdbf2baa56c838312100d19173374972f",
+    "fixture_sha256": "526f7d46124b81f173f9da25fc0f4b943d49ca9e308f093a17b5dbc5b1391100",
+    "prior_v4_peer_sha256": "6305e9d581a07ee9a5b0bd127962a1a2c9f919583cb348091fcbaf98d2b1b07a"
+  },
+  "checks": {
+    "reachable_cli": "main() preserves --run hard denial rc3 and does not call reviewed_execution_candidate. Candidate static-check and eight local mocked fixtures report rc0; these are not graph execution evidence.",
+    "no_container_namespace_path": "The dormant graph argv is sudo -n -u nobody, env -i, GNU timeout, strace, project no-namespace-exec guard, then project soong_ui; no Docker/Podman/OCI, nsjail, unshare, chroot or mount launcher is present. Forbidden names and mount/namespace syscall names in v5 are rejection/trace patterns, not invocation. The separate C guard sets no_new_privs and seccomp filter before execvp and rejects namespace, chroot and mount syscalls by design; it creates no namespace. This is static path review, not proof of every Soong descendant or generated action.",
+    "goroot": "v5 derives GOROOT from frozen source alias and adds it to isolated env; dormant file_identity pins VERSION SHA/35 bytes/exact go1.24.1 text and bin/go SHA/14314606 bytes. Fresh read-only gz02 hash/stat agrees: VERSION 4407ffecd5b7e06b4f47ac38e68dcca9fc13dd173cc71a5cb228605f328af988, bin/go 467614dc12ce73e28cc9aa8d28bdef259ada3bcc4392f205aaaed6fff44d8cab; guard 04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20 and UI 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624 also match. Controlled smoke v4/v3 receipts have equal cwd and argv differing only by GOROOT, with rc2 microfactory initialization versus rc1 getCommand rejection. This accepts only host UI startup environment.",
+    "execution_identity_gate": "BLOCK: v5 pins staged binding/index/UI/guard/generator/ledger/manifest/Go hashes in dormant preflight, but no one immutable EVO19 release receipt binds exact runner/wrapper/interpreter/argv, all fresh remote input SHA/size/mode and both outer SSH and remote rc. No original-owner graph ACK or release pin for this SHA is present in the candidate.",
+    "child_inheritance": "BLOCK: C guard applies filter before exec and standalone guard probe plus three --help smokes establish bounded behavior. No independent actual Soong process-tree, inherited filter, detached-descendant cleanup or complete strace proof exists. v5 carries v4 signal handlers/subreaper and mocked cleanup fixtures only; no container/namespace creation is authorized by this review.",
+    "failure_receipt": "IMPROVED_NOT_COMPLETE: v5 writes one O_EXCL/O_NOFOLLOW/fsync terminal RESULT to fixed precontrol after final code is known; write failure changes outward code to 7 and emits fail-closed stderr. It removes v4's two-receipt success/outer-failure inconsistency. A failure to create precontrol can still leave only stdout, and a partial failed write remains a non-parseable artifact; release consumer must require a valid matching terminal receipt. No actual remote failure-path run was reviewed.",
+    "graph_boundary": "Exact aosp_arm64 Ninja, BP-list and source pre/post checks remain dormant. Generated Ninja screening is explicitly LEXICAL_SCREEN_ONLY_NO_TARGET_AUTHORIZATION; target compile and device claims remain false. No graph action has run."
+  },
+  "remaining_no_go": [
+    "EVO19 one-receipt fresh release identity gate and original-owner graph authorization",
+    "actual Linux descendant cleanup and full seccomp inheritance/trace validation",
+    "fresh remote source/input guards and actual product graph/artefact evidence",
+    "generated-action safety and target Ninja execution, ARM64 Bionic build, and device acceptance"
+  ],
+  "peer_actions": "Read-only local source/receipts/diff plus read-only gz02 hash/stat of Go/UI/guard; no --run, graph, container, namespace, chroot, mount, device, or Bridge action."
+}
