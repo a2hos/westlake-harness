@@ -1,0 +1,39 @@
+{
+  "kind": "read_only_host_native_route_candidate",
+  "observed_utc": "2026-10-04T09:51:30Z",
+  "status": "BLOCKED_ON_HOST_SOURCE_AND_PATCHED_SOONG_UI; NO_GRAPH_EXECUTED",
+  "architecture_constraint": "No Docker, Podman, OCI, nsjail, user-namespace sandbox, chroot, or proot. The superseded G277 v21 Docker candidate must not be dispatched or replayed.",
+  "existing_route": {
+    "executor": "stock-bionic-target-graph-v17b/executor.py",
+    "sha256": "eb53aef4061044aad29ed36c5b142d07ac8bd372ef75454d1dfa786301bd5569",
+    "evidence": "Lines 332-338 construct Docker argv; lines 448 and 515-556 create and manage Docker resources. Later graph wrappers delegate to this executor, so a shell flag cannot make that packet host native.",
+    "stock_shell": "stock-bionic-target-graph-v18-full-candidate-v2/stock_target_graph.sh",
+    "stock_shell_sha256": "e59c00a6fc1a5b6d6bd831ad6224a70cfa12a43d2a9000c7b66b12a9fc90bf33",
+    "stock_shell_constraint": "Direct Linux script, but hardcodes TOP=/src, /tools, /accepted and /out; line 49 invokes soong_ui --make-mode --soong-only --skip-ninja libc libm libdl linker. A project-owned native runner and path-variable adaptation are required; no mount namespace or chroot substitute is permitted."
+  },
+  "soong_sandbox_source": {
+    "root": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build-soong",
+    "sandbox_linux_go": "ui/build/sandbox_linux.go",
+    "sandbox_linux_go_sha256": "2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a",
+    "exec_go": "ui/build/exec.go",
+    "exec_go_sha256": "28d42149e19c712c53bcc36356b80f199f59a608a7411bd0500f8b2212db8f2d",
+    "evidence": "sandbox_linux.go:35-43 defines noSandbox with Enabled false and dumpvars/kati/soong/ninja sandbox values with Enabled true. sandbox_linux.go:64-67 returns before nsjail probe when Enabled is false. exec.go:63-64 wraps only when sandboxSupported returns true. dumpvars.go:111, kati.go:176, soong.go:703, ninja.go:124 assign those values to commands.",
+    "bounded_disable_route": "In a Nanhai-owned independent build-soong Git worktree, assign dumpvarsSandbox, katiSandbox, soongSandbox, and ninjaSandbox to noSandbox and rebuild soong_ui into a project-owned output directory. Do not edit or rebuild in the shared baseline. No existing environment-only disable switch was found in the inspected UI code.",
+    "scope_limit": "This disables the Soong UI command wrapper only. build-soong/genrule/genrule.go:558 and android/rule_builder.go:611-672 separately generate nsjail actions; the --skip-ninja graph command should not execute target actions, but its actual process argv must be checked before any future run. Any target compilation requires a separate no-nsjail action audit."
+  },
+  "native_host_handshake": {
+    "host_alias": "gz02",
+    "ssh_batchmode_rc": 0,
+    "observed": "Linux x86_64, host GZ02; /lib64/ld-linux-x86-64.so.2 present; python3, git, ninja, clang and gcc found; /tmp free 137265401856 bytes.",
+    "source_availability": "/opt/19.SourceCode and /opt/19.SourceCode/AOSP-16.0.0_r4/android-source absent; R4 source and accepted tool inputs not yet admitted on this host.",
+    "alternative": "alexpc.local BatchMode SSH returned rc255 Permission denied (publickey,password); it is not a verified available host in this audit."
+  },
+  "next_bounded_action": "Design a new host-native packet, not a G277 Docker wrapper: admit exact R4 source and verified prebuilts into a declared read-only GZ02 input view, use a project-owned Soong worktree and output tree, parameterize stock shell/materializer/preflight paths without mount or namespace use, statically inspect all intended argv for forbidden executables, then separately seek owner dispatch. Preserve original claim/session and device HOLD.",
+  "execution_counts": {
+    "docker_podman_oci": 0,
+    "nsjail_or_namespace": 0,
+    "build_or_graph": 0,
+    "device": 0
+  },
+  "claim": "Route candidate only; no host-native graph, Bionic compile, or device result."
+}

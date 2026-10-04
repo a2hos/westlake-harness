@@ -1,0 +1,45 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T09:55:54.307063+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "user_decision": "No Docker/Podman/OCI/container or namespace-sandbox execution in build, scan, test, bridge or app runtime",
+  "g277_container_candidate": "superseded; no owner ACK, seal, or execution",
+  "original_owner_policy_ack": "8 exact refs consumed, independent/root accepted; no container/build/device",
+  "native_route": "gz02 Linux x86_64 read-only handshake; exact R4 source pool absent, Soong sandbox-off project worktree and separate generated action audit pending; native graph BLOCK",
+  "latest_terminal": "G276 rc2 pregraph inherited verifier drift, spent",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 77,
+    "static_apks": 73,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "reflection": "EVO18 closed; one actual group since closure",
+  "device_hold": "preserved",
+  "github_last_verified_commit": "d4e39600a5043c86c7ac9731752d70d13dfc60ce",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "eafdad3f9a939c6bbb65b329c05c5e97985691806a7a8253cd6b6ad634642af9"
+    },
+    "decision": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md",
+      "sha256": "13e12034df1ef31c267f215359ea5aa3eb56e33a44dc97cd7058009feb7901bf"
+    },
+    "owner_ack_review": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ROOT-ACK.json",
+      "sha256": "15099d8dc70d1ed8cf4446d126df960342c5268aca57ec30b67618acf0a5bddd"
+    },
+    "native_route_review": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/NATIVE-ROUTE-REVIEW.json",
+      "sha256": "418928cceed59fac82b27f42594170cabe844380b8a16d830c7350f974584e11"
+    },
+    "env_policy": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/ENV-POLICY.json",
+      "sha256": "73f07f8e63f4655d4cb8758b8c74a2d898c580897d324fcd7c64e11f997210e8"
+    }
+  }
+}

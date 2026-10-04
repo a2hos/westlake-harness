@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai-g277-container-candidate-superseded-v1",
+  "at": "2026-10-04T09:50:33.093968+00:00",
+  "status": "SUPERSEDED_BY_USER_NO_CONTAINER_DIRECTIVE",
+  "candidate_ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v21-g277-candidate-v1/READY.json",
+    "sha256": "79027c51105613d094ecc495105460d935f3580ebba29dee56463e18913de6da"
+  },
+  "dispatch_allowed": false,
+  "owner_ack_allowed": false,
+  "seal_allowed": false,
+  "run_allowed": false,
+  "docker_commands_after_directive": 0,
+  "graph_executed": false,
+  "reason": "v21 still delegates to Docker-backed v17b graph executor; user now forbids containers across project",
+  "next": "new host-native Linux x86_64 candidate after exact environment and sandbox audit"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-monitor-policy-restart-v1",
+  "at": "2026-10-04T09:52:20.118986+00:00",
+  "reason": "load new container-policy release gate without duplicate coordinator",
+  "old_pid": 4838,
+  "old_command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -B /Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_monitor_v3.py",
+  "old_exited": true,
+  "new_pid": 54898,
+  "new_command": "/usr/local/bin/python3 -B scripts/nanhai_plus_monitor_v3.py",
+  "new_running_after_1s": true,
+  "persistent_state_preserved": ".nanhai-plus-runtime/monitor-state.json",
+  "original_goal_session_untouched": true,
+  "container_commands": 0,
+  "device_commands": 0
+}

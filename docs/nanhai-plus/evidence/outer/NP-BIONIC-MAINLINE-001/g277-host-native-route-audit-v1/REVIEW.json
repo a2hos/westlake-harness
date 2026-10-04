@@ -1,0 +1,65 @@
+{
+  "schema": "nanhai.g277.host-native-route-independent-review.v1",
+  "reviewed_utc": "2026-10-04T09:53:13.863477+00:00",
+  "decision": "ACCEPT_READ_ONLY_ROUTE_AUDIT_BLOCK_HOST_NATIVE_EXECUTION",
+  "candidate_sha256": "cd5cfa1c6eda4dbd1ff447d5e30fe357f3a7f0793adcb92d872519df05515410",
+  "no_container_control": {
+    "decision": "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md",
+    "v21_g277_container_candidate": "SUPERSEDED_BY_USER_NO_CONTAINER_DIRECTIVE",
+    "docker_podman_oci_nsjail_namespace_chroot_proot_allowed": false,
+    "original_goal_session_device_hold_preserved": true
+  },
+  "source_review": {
+    "official_remote": "https://android.googlesource.com/platform/build/soong",
+    "official_r4_tag_object": "4470013a9c2b02680ded543551679b6712689ce3",
+    "official_r4_peeled_commit": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+    "local_head_matches_official_peeled_commit": true,
+    "local_git_clean": true,
+    "sandbox_linux_go_sha256": "2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a",
+    "exec_go_sha256": "28d42149e19c712c53bcc36356b80f199f59a608a7411bd0500f8b2212db8f2d",
+    "verified_ui_behavior": "sandbox_linux.go defines noSandbox disabled and four command sandboxes enabled; sandboxSupported returns false before nsjail probe when disabled; exec.go wraps only when supported; dumpvars/kati/soong/ninja assign the four variables",
+    "scope_limit": "genrule.go and rule_builder.go independently generate nsjail actions; disabling UI wrappers does not certify target action argv or later compilation"
+  },
+  "existing_route": {
+    "executor_sha256": "eb53aef4061044aad29ed36c5b142d07ac8bd372ef75454d1dfa786301bd5569",
+    "stock_shell_sha256": "e59c00a6fc1a5b6d6bd831ad6224a70cfa12a43d2a9000c7b66b12a9fc90bf33",
+    "finding": "Existing executor invokes Docker create/run. Stock script hardcodes /tools, /accepted, /out and invokes soong_ui --make-mode --soong-only --skip-ninja at line 49; it needs a new native runner and path adaptation."
+  },
+  "native_host_observation": {
+    "gz02_ssh_batchmode_rc": 0,
+    "gz02_os_arch": "Linux x86_64",
+    "gz02_hostname": "GZ02",
+    "gz02_loader_present": true,
+    "gz02_tools_found": [
+      "python3",
+      "git",
+      "ninja",
+      "clang via ccache path",
+      "gcc via ccache path"
+    ],
+    "gz02_tmp_free_bytes_at_review": 137265360896,
+    "gz02_source_pool_path_exists": false,
+    "gz02_r4_android_source_path_exists": false,
+    "alexpc_batchmode_ssh_rc": 255,
+    "alexpc_error": "Permission denied (publickey,password)",
+    "tool_versions_and_abi_qualified": false
+  },
+  "next_evidence": "Admit exact R4 source and verified prebuilts into a declared read-only GZ02 view; create Nanhai-owned Soong worktree and project outputs; make a new native runner and path-variable adaptation; inspect intended argv for forbidden sandbox/container commands before owner dispatch.",
+  "not_proven": [
+    "host-native Soong graph",
+    "target compilation",
+    "absence of nsjail in generated target actions",
+    "device result"
+  ],
+  "review_commands": {
+    "ssh_read_only": 2,
+    "git_read_only": true,
+    "docker": 0,
+    "podman": 0,
+    "nsjail": 0,
+    "build": 0,
+    "device": 0,
+    "bridge": 0,
+    "claim_mutations": 0
+  }
+}

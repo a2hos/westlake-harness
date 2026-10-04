@@ -1,0 +1,70 @@
+{
+  "schema": "nanhai.no-container.owner-ack-independent-review.v1",
+  "reviewed_utc": "2026-10-04T09:55:19.356772+00:00",
+  "decision": "ACCEPT_ORIGINAL_OWNER_POLICY_ACK_ONLY",
+  "host_native_graph_status": "NOT_EXECUTED",
+  "request": {
+    "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/POLICY-REQUEST.json",
+    "sha256": "b1433af635138f9a76b047926532ad0399769379a17ebfc0de51da3785bc0d57",
+    "refs": 8,
+    "environment_sha256": "80d72cfa71befcb82f85533c15ab606fe89be25f6e85ac61833b17e830f86099"
+  },
+  "ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/no-container-policy-v1/OWNER-ACK.json",
+    "sha256": "5e2086b73e0c5fbee62283839d6db758164d44d26ca8a36b48f205df990ceb69",
+    "schema": "nanhai-no-container-original-owner-ack-v1",
+    "claim": "NP-MUSL16-ART-024",
+    "goal_id": "goal_01",
+    "session": "oracle-kimi:local:nanhai-plus#inner",
+    "nonce": "nocontainerf5b43adb39079fe67b5af81a",
+    "consumed_exact_request_refs": true,
+    "current_eight_ref_rehash_mismatches": 0,
+    "environment_sha256_matches_request": true,
+    "container_execution_allowed": false,
+    "old_container_packets_replay_allowed": false,
+    "new_host_graph_executed": false,
+    "device_commands": 0
+  },
+  "policy_and_control": {
+    "NANHAI_CONTAINER_POLICY": "forbidden",
+    "NANHAI_BUILD_EXECUTION_MODE": "host-native",
+    "NANHAI_DOCKER_present": false,
+    "NANHAI_HOST_IMAGE_present": false,
+    "environment_sha_matches_loaded_config": true,
+    "claim_status": "ready",
+    "claim_release_state": "completed_reviewed",
+    "claim_release_sequence": 276,
+    "state_container_policy_status": "forbidden",
+    "state_container_policy_revision": 1
+  },
+  "monitor_transport": {
+    "event_id": "no-container-policy-owner-sync-20261004",
+    "return_code": 0,
+    "status": "queued-awaiting-native-ACK",
+    "transport_type": "agent_prompted",
+    "message_sha256": "94d1f744d7db4d5e9b2aa313ec97aeaac6139853213bf8cc0ff11384233dffeb",
+    "meaning": "Prompt queued; native owner tool evidence is separate."
+  },
+  "native_owner_execution": {
+    "ledger_path": ".nanhai-plus-runtime/instance/ui-protocol/6f7261636c652d6b696d693a6c6f63616c3a6e616e6861692d706c757323696e6e6572007e6377642d35343431326534343037326337313832/ledger-00001791090903799580-81499.log",
+    "turn_id": "01a10655-f6ec-7352-af79-98d290c50724",
+    "tool_started_seq": 186315,
+    "tool_completed_seq": 186317,
+    "tool_completed_success": true,
+    "tool_output_reported_rc": 0,
+    "tool_output_ack_sha256_matches": true,
+    "tool_started_count": 2,
+    "tools": "owner_entry.py SHA check and one bounded owner_entry.py invocation only; no container/build/device command",
+    "ordering_limit": "Notification for this policy prompt appears later in ledger order than the tool result; transport and tool completion are separate evidence."
+  },
+  "limits": "Policy acknowledgment only. No new native graph packet, build, target compile, or device acceptance.",
+  "review_commands": {
+    "dispatch": 0,
+    "container": 0,
+    "build": 0,
+    "graph": 0,
+    "device": 0,
+    "bridge": 0,
+    "claim_mutations": 0
+  }
+}

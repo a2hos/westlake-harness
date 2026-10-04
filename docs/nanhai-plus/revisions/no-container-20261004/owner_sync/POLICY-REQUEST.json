@@ -1,0 +1,22 @@
+{
+  "schema": "nanhai-no-container-owner-policy-request-v1",
+  "at": "2026-10-04T09:52:52.476238+00:00",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "nonce": "nocontainerf5b43adb39079fe67b5af81a",
+  "container_policy_revision": 1,
+  "environment_sha256": "80d72cfa71befcb82f85533c15ab606fe89be25f6e85ac61833b17e830f86099",
+  "refs": {
+    "local_env.md": "63696c2d70122d864fd4fda1dde26bb686a4cadac2ee3f7a86ebda54eb02a890",
+    "docs/nanhai-plus/GOAL.md": "4bba7b95103f02134993d77ed21cb053a27e54adeea235536d677842db53c7eb",
+    "docs/nanhai-plus/AGENT-SPEC.md": "7481557a6fd5d8e05799520767731acfd5b138f3d560a35d5784590749d51889",
+    "docs/nanhai-plus/EXECPLAN.md": "07bb838c10b33987b1ea15944b12aa45209ce1add988faeaa360b87ba45bf3c4",
+    "docs/nanhai-plus/OUTER-PROMPT.md": "19d050922bf401309a93983ac6e59d407d5a88995b348d9c5e3b9dc4ff18e9ff",
+    "docs/nanhai-plus/NANHAI-PLUS-PROMPT.md": "a3ea6cfa35262b43ad5f2b4b20936c10a0c92ea61b963b648e46dd71ca870b04",
+    "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md": "13e12034df1ef31c267f215359ea5aa3eb56e33a44dc97cd7058009feb7901bf",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v21-g277-candidate-v1/SUPERSEDED.json": "638778d8fe361a9569e974602d9955a21a9b2ccdd86c79371f5dfa60bff83969"
+  },
+  "owner_receipt": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/no-container-policy-v1/OWNER-ACK.json",
+  "scope": "read-only policy consumption; no container/build/graph/device"
+}

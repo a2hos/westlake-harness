@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T09:46:17.557372+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T09:55:54.307063+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -26,7 +26,11 @@ G276 v20 42 根图候选已通过静态检查与独审/root 限定准入：198,0
 
 G276 的 `system/tools/hidl` 与 `system/apex` 两棵完整官方 R4 仓（共 997 项）已通过源码身份独审和外环准入。两处跨仓符号链接还要在 stock 路径核验；42 根 Linux 视图、Soong 图和目标构建均未验收。
 
-最新构建图实际结果：G276（exec87154，chunkf7480a，rc2）已独审/root 接受，真实失败在 work-init 容器创建后挂载校验，错误 `init mount drift`。根因是继承的 G275 校验器使用独立的旧 v17b 目录状态；Docker 挂载按 v20 命令创建，但校验器预期路径仍指旧目录。42 根 stock Linux 挂载、Soong 图、目标编译和设备均未发生；隔离的 work-init 容器及 out/tmp 两卷经身份核对后清理。G276 旧包禁止重放，G277 修正候选中。
+无容器政策已由原内环只读消费 8 项冻结引用，独审/root 接受；原 goal/session/claim/预算未重建。原生 Linux 宿主 gz02 可达，但精确 R4 源码不在该机；Soong UI 与生成动作的 namespace sandbox 尚须关闭和核验。
+
+用户最新架构决定：全过程杜绝容器。此前 Docker 只用于在 macOS 上运行 Linux x86_64 宿主 Soong 工具，并非 App 桥接运行时；但它不符合新约束。G277/v21 容器候选撤销，G252–G276 容器结果只作历史证据，原生宿主图通过仍为 0。下一步核验原生 Linux x86_64 主机、精确 R4 输入及无 namespace sandbox 的 Soong 执行。
+
+最新构建图实际结果：G276（exec87154，chunkf7480a，rc2）已独审/root 接受，真实失败在 work-init 容器创建后挂载校验，错误 `init mount drift`。根因是继承的 G275 校验器使用独立的旧 v17b 目录状态；Docker 挂载按 v20 命令创建，但校验器预期路径仍指旧目录。42 根 stock Linux 挂载、Soong 图、目标编译和设备均未发生；隔离的 work-init 容器及 out/tmp 两卷经身份核对后清理。G276 旧包禁止重放；随后形成的 G277 容器候选已撤销。
 
 最新构建图实际结果：G275（exec23044，chunk4e7b58，rc2）已由原 owner 新 ACK、独审和外环复核。40 棵源码根只读挂载，Soong bootstrap 250/250，但 target-graph 返回 rc1，图生成与产品配置验收均未通过；182 条报错集中为 HIDL 模块类型 178 条、APEX 模块类型 3 条、缺少 system/apex/Android.bp 1 条。G274 两个未定义模块不再报错。目标编译 0、设备命令 0、Bionic 整工具仍 0/89；G275 封包已用，禁止重放。下一步准入精确 R4 的 system/tools/hidl 与 system/apex 完整源码根，再独审新图。
 

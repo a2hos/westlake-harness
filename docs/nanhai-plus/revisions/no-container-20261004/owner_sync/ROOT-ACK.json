@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai-no-container-policy-root-ack-v1",
+  "at": "2026-10-04T09:55:38.958965+00:00",
+  "decision": "ACCEPT_ORIGINAL_OWNER_POLICY_ACK_ONLY",
+  "request": {
+    "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/POLICY-REQUEST.json",
+    "sha256": "b1433af635138f9a76b047926532ad0399769379a17ebfc0de51da3785bc0d57"
+  },
+  "ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/no-container-policy-v1/OWNER-ACK.json",
+    "sha256": "5e2086b73e0c5fbee62283839d6db758164d44d26ca8a36b48f205df990ceb69"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ACK-REVIEW.json",
+    "sha256": "3c8143cc2eb6a1bfa9e9e17d0a323ed1295a559d13e59aa5b1e9e787ec41552a"
+  },
+  "refs_consumed": 8,
+  "original_goal_session_claim_preserved": true,
+  "container_execution_allowed": false,
+  "old_container_packets_replay_allowed": false,
+  "native_host_graph_executed": false,
+  "device_commands": 0,
+  "limits": [
+    "This is policy synchronization, not native host build or app runtime acceptance"
+  ],
+  "next": "host-native R4 source/toolchain staging and sandbox-free graph candidate"
+}

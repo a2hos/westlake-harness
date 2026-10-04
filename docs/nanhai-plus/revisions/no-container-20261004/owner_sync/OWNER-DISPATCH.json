@@ -1,0 +1,14 @@
+{
+  "schema": "nanhai-no-container-owner-notice-dispatch-v1",
+  "at": "2026-10-04T09:54:17.815744+00:00",
+  "status": "QUEUED_VIA_EXISTING_MONITOR_NOT_YET_NATIVE_ACK",
+  "event_id": "no-container-policy-owner-sync-20261004",
+  "message_sha256": "94d1f744d7db4d5e9b2aa313ec97aeaac6139853213bf8cc0ff11384233dffeb",
+  "request_sha256": "b1433af635138f9a76b047926532ad0399769379a17ebfc0de51da3785bc0d57",
+  "entry_sha256": "da3cae1e7e95d93304e2ef172cff5e8f2d51f1bd11bb3a67fbc0dc804574174f",
+  "peer_pre_dispatch_sha256": "a84374612d803cdd9aaf535b30775a772131de6708b2e46a35ff29993f87baea",
+  "container_policy_revision": 1,
+  "container_execution": false,
+  "container_commands": 0,
+  "device_commands": 0
+}

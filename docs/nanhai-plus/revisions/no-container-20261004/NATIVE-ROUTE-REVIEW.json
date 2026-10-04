@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-no-container-native-route-root-review-v1",
+  "at": "2026-10-04T09:53:46.702422+00:00",
+  "decision": "ACCEPT_ROUTE_AUDIT_ONLY_BLOCK_EXECUTION",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g277-host-native-route-audit-v1/ROUTE-CANDIDATE.json",
+    "sha256": "cd5cfa1c6eda4dbd1ff447d5e30fe357f3a7f0793adcb92d872519df05515410"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g277-host-native-route-audit-v1/REVIEW.json",
+    "sha256": "9a73478753bd69b07a4465b0b614cbcd9cabad8731a327584108146f220ff14d"
+  },
+  "native_host": "gz02 Linux x86_64 read-only handshake; exact source pool absent",
+  "alexpc": "authentication denied in read-only batch probe",
+  "soong": "project-owned worktree sandbox-off rebuild and generated action audit required",
+  "container_commands": 0,
+  "host_graph_executed": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "next": "stage exact R4 source/tool view on native host, qualify toolchain/loader, remove UI and generated namespace sandbox paths, then new reviewed host-native packet"
+}

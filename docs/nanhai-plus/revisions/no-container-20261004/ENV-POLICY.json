@@ -1,0 +1,13 @@
+{
+  "schema": "nanhai-no-container-env-policy-v1",
+  "at": "2026-10-04T09:53:53.102219+00:00",
+  "active_environment_config_sha256": "80d72cfa71befcb82f85533c15ab606fe89be25f6e85ac61833b17e830f86099",
+  "container_policy": "forbidden",
+  "build_execution_mode": "host-native",
+  "docker_binding_absent": true,
+  "host_image_binding_absent": true,
+  "paths_verified": true,
+  "path_count": 74,
+  "links_checked": 5,
+  "full_local_paths_not_published": true
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "nanhai.no-container.owner-sync-independent-pre-dispatch-review.v1",
+  "reviewed_utc": "2026-10-04T09:53:57.265244+00:00",
+  "decision": "GO_FOR_ORIGINAL_OWNER_POLICY_SHA_CONSUMPTION_ONLY",
+  "execution_state": "BLOCK_HOST_NATIVE_GRAPH_PENDING_NEW_PACKET_AND_SEPARATE_RELEASE",
+  "request_sha256": "b1433af635138f9a76b047926532ad0399769379a17ebfc0de51da3785bc0d57",
+  "consumer_sha256": "6f819dee1161d5427b63e5330b1a166391d0181838cb5d0eaca9fb0739e54af9",
+  "entry_sha256": "da3cae1e7e95d93304e2ef172cff5e8f2d51f1bd11bb3a67fbc0dc804574174f",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "nonce": "nocontainerf5b43adb39079fe67b5af81a",
+  "checks": {
+    "frozen_refs": 8,
+    "all_ref_sha256_match": true,
+    "environment_sha256_matches": true,
+    "NANHAI_CONTAINER_POLICY": "forbidden",
+    "NANHAI_BUILD_EXECUTION_MODE": "host-native",
+    "NANHAI_DOCKER_present": false,
+    "NANHAI_HOST_IMAGE_present": false,
+    "original_claim_status": "ready",
+    "original_claim_release_state": "completed_reviewed",
+    "original_claim_release_sequence": 276,
+    "claim_unique": true,
+    "state_container_policy_revision": 1,
+    "state_container_policy_status": "forbidden",
+    "owner_ack_exists": false,
+    "owner_entry_pins_request_and_consumer_sha256": true,
+    "consumer_command_side_effects": false,
+    "consumer_effect": "Reads fixed policy/state/files and writes only the request-designated owner ACK when invoked; no subprocess, network, build, graph, Docker or device call."
+  },
+  "limits": "Only original-owner acknowledgment of user no-container policy; this peer did not invoke owner_entry or consume, dispatch, seal, build, graph, or device.",
+  "review_commands": {
+    "read_only_ssh": 0,
+    "dispatch": 0,
+    "container": 0,
+    "build": 0,
+    "graph": 0,
+    "device": 0,
+    "bridge": 0,
+    "claim_mutations": 0
+  }
+}

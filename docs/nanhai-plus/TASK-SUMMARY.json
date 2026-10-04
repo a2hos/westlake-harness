@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T09:46:17.557372+00:00",
+  "checked_at": "2026-10-04T09:55:38.958965+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -490,6 +490,18 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-REVIEW.json",
       "sha256": "bece2ccac55cbd07209add0229f36118d2221286cfbdf5f29f4e20cfa9c8c5e5"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v21-g277-candidate-v1/SUPERSEDED.json",
+      "sha256": "638778d8fe361a9569e974602d9955a21a9b2ccdd86c79371f5dfa60bff83969"
+    },
+    {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/NATIVE-ROUTE-REVIEW.json",
+      "sha256": "418928cceed59fac82b27f42594170cabe844380b8a16d830c7350f974584e11"
+    },
+    {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ROOT-ACK.json",
+      "sha256": "15099d8dc70d1ed8cf4446d126df960342c5268aca57ec30b67618acf0a5bddd"
     }
   ],
   "bionic_stock_graph": {
@@ -1116,5 +1128,33 @@
     "graph_generation_pass": false,
     "stock_container_created": false,
     "target_compile_commands": 0
+  },
+  "no_container_revision": {
+    "status": "ACTIVE_USER_DIRECTIVE",
+    "decision": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md",
+      "sha256": "13e12034df1ef31c267f215359ea5aa3eb56e33a44dc97cd7058009feb7901bf"
+    },
+    "g277_container_candidate": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v21-g277-candidate-v1/SUPERSEDED.json",
+      "sha256": "638778d8fe361a9569e974602d9955a21a9b2ccdd86c79371f5dfa60bff83969"
+    },
+    "environment_document": {
+      "path": "local_env.md",
+      "sha256": "63696c2d70122d864fd4fda1dde26bb686a4cadac2ee3f7a86ebda54eb02a890"
+    },
+    "container_execution_allowed": false,
+    "host_native_graph_pass": false,
+    "native_target_build_pass": false,
+    "new_host_candidate": "native Linux x86_64 exact R4 source/tool view pending independent audit",
+    "historical_g252_g276_container_receipts": "historical_only_not_native_pass",
+    "host_native_route_root_review": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/NATIVE-ROUTE-REVIEW.json",
+      "sha256": "418928cceed59fac82b27f42594170cabe844380b8a16d830c7350f974584e11"
+    },
+    "owner_policy_ack": {
+      "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ROOT-ACK.json",
+      "sha256": "15099d8dc70d1ed8cf4446d126df960342c5268aca57ec30b67618acf0a5bddd"
+    }
   }
 }
