@@ -845,18 +845,18 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0042-mixed-abi-contract",
+    "latest": "EVO-0043-sample-version-risk",
     "result": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/ROOT-PILOT-ACCEPTANCE.json",
-      "sha256": "2b0ae76760ba635428f034088be8b2956a5adc9735779f80ea9e0f796699f18d"
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0043-sample-version-risk/ROOT-ACCEPTANCE.json",
+      "sha256": "9e1351609d7d1d2c037d9da2a47eb37b19874283623f9ca094856edff1075db0"
     },
-    "actual_result_groups": 4,
-    "duration_seconds": 48.1619065,
-    "one_testable_improvement": "Before expensive ELF analysis, exhaustively classify each raw .so ZIP member by content and ABI, rejecting duplicate names and path/ABI mismatches.",
+    "actual_result_groups": 5,
+    "duration_seconds": 57.6357705,
+    "one_testable_improvement": "Mark exact APK targetSdk versus AOSP16 API36 as version-scope risk for scheduling; require exact device receipts for startup verdicts.",
     "limited_pilot": true,
     "globally_promoted": false,
     "pending_actual_result_groups": 0,
-    "direction": "mixed ABI and opaque .so classification; distinct from EVO41 route evidence gate"
+    "direction": "sample version-scope triage; distinct from EVO42 mixed-ABI classification"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",

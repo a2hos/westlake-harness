@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-plus-root-evolution-acceptance-v1",
+  "at_utc": "2026-10-04T18:02:27+00:00",
+  "decision": "GO_LIMITED_OFFLINE_PILOT_ONLY",
+  "report_sha256": "2e26c92fa2d0b9b7075ac6b69ff05af15d0e82ecc6aafd370b5c4af3102c15b3",
+  "pilot_sha256": "1675858a973cc14d00a47d52620ba0c9e3903d94990691bf8fa238ecc732c1fc",
+  "actual_result_groups": 5,
+  "duration_seconds": 57.6357705,
+  "one_testable_improvement": "Label exact APK targetSdk against AOSP16 API36 as within-ceiling, above-ceiling risk, or missing; require exact device evidence for any startup verdict.",
+  "reason": "The offline five-case pilot preserves uncertainty: targetSdk37 is a risk, not an install failure; neither targetSdk35 nor host static evidence proves runtime success.",
+  "limits": "No production queue change, no device action, no cold-start or tool PASS, and no global promotion. A mixed-SDK scheduling batch and independent review remain required before promotion.",
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0
+}

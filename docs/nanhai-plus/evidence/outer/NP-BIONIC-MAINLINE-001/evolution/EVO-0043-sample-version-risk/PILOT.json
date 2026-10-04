@@ -1,0 +1,26 @@
+{
+  "schema": "EVO43-offline-version-risk-pilot-v1",
+  "platform_api": 36,
+  "inputs": {
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-tor-four-static-candidate-v1/phases/metadata/MANIFEST.json": "242bb506f35adc96d36912ffc5b542a48852a50eaa5d63d9408fe6ec30a95b2e",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-four-static-candidate-v1/phases/metadata/MANIFEST.json": "6b9d9cdbe59db9734b9b0d4b8a4d6afee031f6fbd97af533d3ecc493d63d8f94",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-tor-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json": "9de43151acd737c47b1c4ad95128d82d1fdbfeb194d1aeb9861cd5465a4b0f90",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007"
+  },
+  "cases": {
+    "tor_actual": "WITHIN_VERSION_CEILING_RUNTIME_UNPROVEN",
+    "express_actual": "VERSION_CEILING_RISK_RUNTIME_UNPROVEN",
+    "negative_high_sdk_can_pass_with_device_receipt": "COLD_START_PASS",
+    "negative_low_sdk_not_auto_pass": "WITHIN_VERSION_CEILING_RUNTIME_UNPROVEN",
+    "negative_missing_sdk_not_fail": "METADATA_GAP_RUNTIME_UNPROVEN"
+  },
+  "all_cases_pass": true,
+  "side_effects": {
+    "network": 0,
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "production_writes": 0,
+    "count_writes": 0
+  }
+}

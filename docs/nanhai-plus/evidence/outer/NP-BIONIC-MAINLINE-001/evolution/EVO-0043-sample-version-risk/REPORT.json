@@ -1,0 +1,53 @@
+{
+  "schema": "EVO-0043-version-scope-sample-selection-v1",
+  "at_utc": "2026-10-04T18:00:57.776212+00:00",
+  "start_monotonic_ns": 751191975575250,
+  "end_monotonic_ns": 751249611345750,
+  "elapsed_seconds": 57.6357705,
+  "limit_seconds": 120,
+  "within_limit": true,
+  "actual_result_groups": [
+    {
+      "name": "tor_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g321-tor-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "16e3354a09f1469cfd499216c6557425001034e8c06680de50a21339bf3fcb3e"
+    },
+    {
+      "name": "tor_static",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-tor-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "9de43151acd737c47b1c4ad95128d82d1fdbfeb194d1aeb9861cd5465a4b0f90"
+    },
+    {
+      "name": "express_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364"
+    },
+    {
+      "name": "express_blackbox",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "79819ee3fb39ebbd4da7c01925e6ea76fbd5108869995bd7b326e6780a4e87a9"
+    },
+    {
+      "name": "express_static",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007"
+    }
+  ],
+  "observation": "Tor 15.0.24 is raw+host-static accepted with targetSdk35; ExpressVPN 12.80.1 is raw+package-level blackbox+host-static accepted with targetSdk37. Both have cold_start_delta=0; neither has install/start evidence. ExpressVPN targetSdk37 exceeds AOSP16 API36 but does not imply install failure.",
+  "one_improvement": "Add a version-scope label to 200-APK scheduling records: compare exact APK targetSdk to platform API and label within-ceiling, above-ceiling risk, or metadata gap; all remain runtime-unproven until an exact device receipt overrides the label. The label influences review priority only, never raw/static/blackbox admission or an install verdict.",
+  "pilot_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0043-sample-version-risk/PILOT.json",
+  "pilot_sha256": "1675858a973cc14d00a47d52620ba0c9e3903d94990691bf8fa238ecc732c1fc",
+  "pilot_source_sha256": "116a7f35a57eb044d46b2fa2d62820be63c3bedf775c7a84ca55f034d227fcc8",
+  "pilot_result": "Five offline cases passed: Tor target35 is within-ceiling but unproven; Express target37 is risk but unproven; synthetic target37 with explicit device PASS remains PASS; target35 without device does not auto-PASS; missing target does not auto-FAIL.",
+  "counterexample": "A future exact targetSdk37 APK may install and cold-start successfully; the rule must preserve that possibility and replace risk label only with actual exact device receipt.",
+  "promotion_gate": "Candidate only. Peer review exact inputs/labels, then trial on one small mixed-SDK scheduling batch with immutable pre/post queue and exact device outcomes. Adopt only if it prevents misleading install-failure claims without starving above-ceiling samples or delaying independent host scans.",
+  "limits": "This pilot validates claim discipline, not startup prediction or improved 200-APK throughput. No device action or queue edit was performed.",
+  "side_effects": {
+    "network": 0,
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "production_writes": 0,
+    "count_writes": 0
+  }
+}
