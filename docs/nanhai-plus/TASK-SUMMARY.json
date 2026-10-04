@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T01:25:04.735547+00:00",
+  "checked_at": "2026-10-04T02:02:37.097130+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -26,29 +26,46 @@
     "not_inherited_by_bionic": true
   },
   "new_evolution_tools": {
-    "limited_pilot_validated": 1,
+    "limited_pilot_validated": 2,
     "whole_89_count_delta": 0,
-    "tool_id": "EVO-TOOL-APK-INVENTORY-001"
+    "tool_ids": [
+      "EVO-TOOL-APK-INVENTORY-001",
+      "EVO-TOOL-STOCK-MODULE-FRONTIER-001"
+    ],
+    "broadly_promoted": false
   },
   "apk_portfolio": {
     "downloaded_payloads": 11,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
-    "qualified_blackbox_target": 100
+    "qualified_blackbox_target": 100,
+    "complete_static_inventories": 10,
+    "complete_inventory_dex_entries": 18,
+    "complete_inventory_native_elf_entries": 124,
+    "incomplete_static_inventories": [
+      "org.videolan.vlc"
+    ]
   },
   "latest_actual_execution": {
-    "release": 259,
+    "release": 262,
+    "terminal_rc": 0,
     "external_service_compile_units_rc0": 968,
     "generated_headers_matched": 27,
-    "link_pass": false,
-    "first_failure": "Host ld.lld cannot load libxml2.so.16",
+    "external_musl_service_dsos_linked": 2,
+    "link_pass": true,
+    "reused_objects": 968,
+    "new_compile_jobs": 0,
+    "required_exports_independently_verified": 40,
+    "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
   },
   "scanner_dependencies": {
     "official_wheels_byte_and_record_verified": 38,
-    "runtime_import_verified": false,
-    "full_scan_verified": false
+    "runtime_import_verified": true,
+    "full_scan_verified": false,
+    "actual_imports": 16,
+    "installed_pins": 38
   },
   "evidence": [
     {
@@ -62,6 +79,39 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
       "sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/services-s1-provider-link-only-v1/root-release-v1/G262-REVIEW.json",
+      "sha256": "551e8c5f26759aae473b507b577d5388e2e003b72f06d04a7ffc2a5219a1e9e3"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v4/root-release-v1/G261-REVIEW.json",
+      "sha256": "f22d18b07b85686d60d4b65288c42fe1ac7f48a1c814bf25a08976f38472deb5"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+      "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-native-inventory-recovery-v1/root-review-v1/REVIEW.json",
+      "sha256": "5a974efec3cd293524af0845d3d0c5e21039198e9186258667bbd3be84db4bcb"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0004-stock-module-frontier/trials/module-frontier-v1/root-review-v1/REVIEW.json",
+      "sha256": "185b2af29b8b3a423b9a82396ebf1cd54a3daf45e63252e1ba5c1b57ede3df30"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/TOOL-REGISTRY.json",
+      "sha256": "039ce12797f998d8fbdd32a68202e2ff2db69cce2f63f89aef8c883e1a7fecb9"
     }
-  ]
+  ],
+  "bionic_stock_graph": {
+    "release": 261,
+    "terminal_rc": 2,
+    "blueprint_bootstrap_pass": true,
+    "graph_generation_pass": false,
+    "first_failure": "fork/exec prebuilts/build-tools/linux-x86/bin/ninja: no such file or directory",
+    "target_compile_commands": 0,
+    "owned_resources_cleaned": true
+  }
 }
