@@ -1,0 +1,96 @@
+{
+  "status": "PASS_DIAGNOSTIC",
+  "negative_fixture": true,
+  "candidate_count": 10,
+  "recent_scanned_packages": 8,
+  "recent_scanned_candidate_overlap": [],
+  "exact_historical_payload_count_in_pilot_inputs": 0,
+  "qualified_blackbox_delta": 0,
+  "startup_delta": 0,
+  "rows": [
+    {
+      "package": "com.whatsapp",
+      "historical_version": "2.26.37.73",
+      "historical_artifact_sha256": "37a1deac16b7016bdb8cc3c336a4e66edb53ebdaeb2633c3261ba05d6fd87015",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [
+        "official_supplement"
+      ],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.discord",
+      "historical_version": "346.13 - Stable",
+      "historical_artifact_sha256": "235ea72d817a153dc1e009729d053db66d2f003bc7733a64e15ec739e3164c7e",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [
+        "negative_fixture"
+      ],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.spotify.music",
+      "historical_version": "9.1.86.2432",
+      "historical_artifact_sha256": "37fda72c86ba14dbdb3f89264a0cafb8e4f9be1a01610ead5aa51490c63568c1",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.zhiliaoapp.musically",
+      "historical_version": "47.1.4",
+      "historical_artifact_sha256": "4226ed5d3031b68208c29f62d80ac421b281fc74201bc4163d98e442d0991a40",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.duolingo",
+      "historical_version": "6.98.4",
+      "historical_artifact_sha256": "de3bc77eabd1413289094b0952f0099cd4cb93125ca72aa15df4046f1ebbe56e",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.facebook.katana",
+      "historical_version": "580.0.0.51.74",
+      "historical_artifact_sha256": "f4a8ddfb599c356cf3ee1d9f95da385c1e2cc002ca7741b568c0baaaab3de9ee",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.instagram.android",
+      "historical_version": "449.0.0.52.84",
+      "historical_artifact_sha256": "b3caf207df1d5773d23e9c1b569a943ab4efb1e699a71c6bd772a5b8eb246909",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.reddit.frontpage",
+      "historical_version": "2026.39.0",
+      "historical_artifact_sha256": "6afa5bca5b175444728297717093c1bc6d907d1d634d3e484731777d6ac7190a",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.snapchat.android",
+      "historical_version": "14.25.0.43",
+      "historical_artifact_sha256": "a37383d12c69982786fd8a45ba4271bb16ada2ebc2f7d051e2830a2cb103d178",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    },
+    {
+      "package": "com.ubercab",
+      "historical_version": "4.649.10000",
+      "historical_artifact_sha256": "e10a3e91ba922da5bb8bfd3ee19408e8a30151c92e159c46539e883f88123025",
+      "exact_historical_payload_in_pilot_inputs": false,
+      "same_package_other_raw_in_pilot_inputs": [],
+      "next_evidence": "acquire exact historical artifact or separately verify official new variant"
+    }
+  ]
+}

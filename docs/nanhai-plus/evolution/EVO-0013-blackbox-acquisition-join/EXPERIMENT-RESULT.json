@@ -1,0 +1,67 @@
+{
+  "id": "EVO-0013",
+  "direction": "blackbox acquisition cohort yield and exact historical artifact join",
+  "started_at_utc": "2026-10-04T06:39:00Z",
+  "finished_at_utc": "2026-10-04T06:40:22.916918+00:00",
+  "source_result_groups": [
+    {
+      "group": "batch10",
+      "scope": "four complete static inventories only",
+      "receipt": "harness-stock-inventory-batch10-v1/root-review-v1/ROOT-ACCEPTANCE.json"
+    },
+    {
+      "group": "apk_v9",
+      "scope": "four exact raw ZIP payloads only",
+      "receipt": "apk-stock-intake-v9/root-intake-v1/ROOT-ACCEPTANCE.json"
+    },
+    {
+      "group": "batch11",
+      "scope": "four complete static inventories only",
+      "receipt": "harness-stock-inventory-batch11-v1/root-review-v1/ROOT-ACCEPTANCE.json"
+    }
+  ],
+  "problem": "Scanning and original raw intake continue to grow, but the 100 qualified overseas mainstream blackbox target remains zero. Package-label overlap or a vendor new version cannot establish historic registered payload reproduction.",
+  "observed": "Eight newly scanned packages in batch10 and batch11 have zero overlap with ten previously researched blackbox Tier-B candidates; v9 adds four raw upstream packages but no blackbox qualification. The previously accepted WhatsApp official supplement is same package but different historical artifact SHA/version.",
+  "one_change": "Frozen, read-only pilot.py joins ten Tier-B historical records to v8/v9 accepted raw and WhatsApp supplement on exact package and artifact SHA, plus version if present, then emits the first missing acquisition evidence; it cannot update portfolio counts.",
+  "causal_chain": "Repeated raw/static batch growth without blackbox yield -> no exact artifact linkage at batch planning -> strict historical package/version/SHA join -> distinguish source-acquisition work from scan-ready work -> verify zero false exact matches and separate vendor supplement.",
+  "key_and_invalidation": "Input SHA256 values are pinned for six receipts/queue; changed input fails closed. A broader deployment must include all accepted raw receipts and independently proven manifest versions/splits before any qualification.",
+  "pilot_checks": [
+    {
+      "name": "baseline",
+      "argv": [
+        "python3",
+        "docs/nanhai-plus/evolution/EVO-0013-blackbox-acquisition-join/pilot.py"
+      ],
+      "rc": 0,
+      "output": "trials/baseline.json",
+      "output_sha256": "e0e8199d7219523d9cf5c80e1ca2821c0640750d8c9950fc87b3a8127068bdcd",
+      "exact_historical_payload_count_in_pilot_inputs": 0,
+      "whatsapp_supplement_separated": true
+    },
+    {
+      "name": "same_package_wrong_version_sha",
+      "argv": [
+        "python3",
+        "docs/nanhai-plus/evolution/EVO-0013-blackbox-acquisition-join/pilot.py",
+        "--negative-same-package"
+      ],
+      "rc": 0,
+      "output": "trials/same_package_wrong_version_sha.json",
+      "output_sha256": "4a6c48b3ac218bc1ea1fea38ecbef1a7cdda8b28afc4bad4c9558a8d7c2dc3cd",
+      "exact_historical_payload_count_in_pilot_inputs": 0,
+      "whatsapp_supplement_separated": true
+    }
+  ],
+  "result": "LOCAL_PILOT_VALIDATED_NOT_PROMOTED",
+  "historical_action_to_discard": "Treat package-label match or new vendor download as a replay of the upstream historical artifact. WhatsApp new official raw receipt and old registry SHA differ; replacement is strict artifact join with supplement separate.",
+  "next_small_action": "Route one Tier-B candidate to exact historical artifact acquisition or separately qualify the official new version with manifest, complete splits, signer/publisher and source evidence; do not spend a blackbox quota on another open-source scanner batch.",
+  "limits": "Pilot covers ten researched candidates and only v8/v9 plus WhatsApp acceptance, not all 65 accepted raw payloads. Version for v8/v9 raw has not been verified in these receipts. This does not establish mainstream blackbox qualification or startup. No time saved measured.",
+  "rollback": "Do not promote if a known accepted exact historical artifact is omitted from broader raw corpus, if same-package other-version turns exact, if SHA/receipt drift, or if independent review finds false qualification. Remove pilot from workflow; authoritative counters remain unchanged.",
+  "deltas": {
+    "blackbox_qualified": 0,
+    "startup": 0,
+    "whole_tools": 0,
+    "device_commands": 0,
+    "canonical_writes": 0
+  }
+}

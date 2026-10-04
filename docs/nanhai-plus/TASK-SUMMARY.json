@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T06:16:50.466880+00:00",
+  "checked_at": "2026-10-04T06:41:18.275550+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 61,
+    "downloaded_payloads": 65,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 57,
-    "complete_inventory_dex_entries": 113,
-    "complete_inventory_native_elf_entries": 430,
+    "complete_static_inventories": 61,
+    "complete_inventory_dex_entries": 117,
+    "complete_inventory_native_elf_entries": 438,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -50,7 +50,7 @@
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 59,
+    "registered_upstream_payloads": 63,
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
@@ -334,6 +334,18 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v15/root-release-v1/ROOT-REVIEW.json",
       "sha256": "04d8a74af247894ae94d6f5d96eb38f5c31973f32d89b5afa88d7f4ec522e95d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v9/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "69ad17b8b32dd808f889feb87df3af09913729aa04cd0ca4f1a54c310af72a79"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0013-blackbox-acquisition-join/reviews/ROOT-CLOSURE.json",
+      "sha256": "aff423b7fe075123cfb192c1cf98fcd250c1cd7d1b4cec7e370c71c788a2e214"
     }
   ],
   "bionic_stock_graph": {
@@ -371,16 +383,16 @@
     "G270_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0012",
+    "latest": "EVO-0013",
     "verified_improvement_this_round": 1,
-    "scope": "Read-only accepted receipt/raw identity chain local pilot",
+    "scope": "Ten Tier-B candidate exact historical artifact join local pilot",
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 55.93,
+    "duration_seconds": 82.917,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 1,
+    "pending_actual_result_groups": 0,
     "trigger_every_groups": "3-4",
-    "next": "Wait for 3-4 fresh actual groups; G271 and APK scanner candidates are preparation only"
+    "next": "Wait for 3-4 new actual result groups; pilot is not a blackbox startup or full portfolio qualification"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -523,5 +535,25 @@
     "startup_delta": 0,
     "whole_command_watchdog_seconds": 300,
     "outer_observed_seconds": 38.836091749952175
+  },
+  "apk_intake_v9_actual": {
+    "terminal_chunk": "c63157",
+    "outer_rc": 0,
+    "accepted_raw_payloads": 4,
+    "accepted_raw_after": 65,
+    "startup_delta": 0,
+    "signature_verified": false,
+    "blackbox_qualified": false
+  },
+  "scanner_batch11_actual": {
+    "exec_session": 84077,
+    "terminal_chunk": "f1152e",
+    "outer_rc": 0,
+    "accepted_packages": 4,
+    "DEX_delta": 4,
+    "ELF_delta": 8,
+    "startup_delta": 0,
+    "whole_command_watchdog_seconds": 300,
+    "outer_observed_seconds": 44.738
   }
 }

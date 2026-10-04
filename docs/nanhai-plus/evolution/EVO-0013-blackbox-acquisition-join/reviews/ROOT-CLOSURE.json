@@ -1,0 +1,34 @@
+{
+  "id": "EVO-0013",
+  "status": "CLOSED_LOCAL_PILOT_VALIDATED_NOT_PROMOTED",
+  "at_utc": "2026-10-04T06:41:03.859604+00:00",
+  "trigger_actual_result_groups": [
+    "batch10-static",
+    "apk-v9-raw",
+    "batch11-static"
+  ],
+  "reflection_seconds": 82.916918,
+  "limit_seconds": 120,
+  "direction": "blackbox acquisition exact historical artifact join",
+  "verified_improvements": 1,
+  "global_promotion": false,
+  "original_89_tool_delta": 0,
+  "qualified_blackbox_delta": 0,
+  "cold_start_delta": 0,
+  "review_checks": [
+    "experiment schema and delta assertions",
+    "two frozen trial hashes",
+    "pilot rerun rc0 on baseline and negative fixture",
+    "ten candidate scope and strict historical SHA result"
+  ],
+  "experiment": {
+    "path": "docs/nanhai-plus/evolution/EVO-0013-blackbox-acquisition-join/EXPERIMENT-RESULT.json",
+    "sha256": "5eadb9763d27559aa03c6065ff012141ee374873c9a1161c4a7d10da9a0940e1"
+  },
+  "pilot": {
+    "path": "docs/nanhai-plus/evolution/EVO-0013-blackbox-acquisition-join/pilot.py",
+    "sha256": "861a06c8bc0c65c46e3cd88734772d164efd24eb4d7dad6ef3ee108e3065c6fb"
+  },
+  "scope_limit": "Only ten researched candidates and v8/v9 plus WhatsApp inputs; no full 65-payload qualification",
+  "next_action": "Acquire one exact Tier-B artifact or separately qualify one new official variant; do not count package name alone"
+}
