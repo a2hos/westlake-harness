@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-04T07:48:54.505958+00:00",
+  "status": "ROOT_ACCEPT_G273_TERMINAL_RC2_NEW_TWELVE_MODULE_WALL",
+  "execution": {
+    "session_id": 42573,
+    "terminal_chunk": "37e6c6",
+    "outer_rc": 2
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/runtime-result/RESULT.json",
+    "sha256": "8612bea0372b88ecedc09af4caaa05f583188bd98555c262ae82c1982491a8a9"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b-terminal-peer-review-v1/REVIEW.json",
+    "sha256": "4f3e635ead7c4d9a64964426e526993e01eede3481221d17ab8340dec5631758"
+  },
+  "root_seal": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/root-release-v1/ROOT-SEAL.json",
+    "sha256": "b57d913d033922404a523215f5e391740750b48b7e643c83769dba9df52bf69b"
+  },
+  "first_wall": "documentsui_defaults undefined at packages/services/Car/packages/CarDocumentsUI/Android.bp:17:1",
+  "undefined_modules": [
+    "documentsui_defaults",
+    "netd_defaults",
+    "cuttlefish_base",
+    "bpf_cc_defaults",
+    "framework-system-server-module-defaults",
+    "framework-sources-module-defaults",
+    "framework-minus-apex-aconfig-java-defaults",
+    "VtsHalTargetTestDefaults",
+    "android.hardware.graphics.common-ndk_static",
+    "android.hardware.graphics.composer3-ndk_static",
+    "librenderengine_deps",
+    "use_libaidlvintf_gtest_helper_static"
+  ],
+  "diagnostic_count": 18,
+  "distinct_undefined_modules": 12,
+  "g272_five_old_names_absent": true,
+  "soong_host_bootstrap_steps": 240,
+  "result_evidence_hashes_checked": 140,
+  "source_pre_post_equal": true,
+  "sdk_guard_pre_post_pass": true,
+  "out_archive_sha256": "53720eee06db813d981207245f88fcb57711fe2d974af434ce9f22c5c91ffe10",
+  "tmp_archive_sha256": "ab72841685f9ce605e09d55b02198f4867b3ac100948893a32ec50f8037feb3e",
+  "remove_commands_rc0": true,
+  "fresh_docker_inspect_after_cleanup": false,
+  "retained_volumes_reported": [],
+  "graph_pass": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "whole_tools_delta": 0,
+  "apk_startup_delta": 0,
+  "replay_allowed": false,
+  "next": "Group exact R4 sources for 12 new undefined module names as G274 input candidate; do not replay G273."
+}

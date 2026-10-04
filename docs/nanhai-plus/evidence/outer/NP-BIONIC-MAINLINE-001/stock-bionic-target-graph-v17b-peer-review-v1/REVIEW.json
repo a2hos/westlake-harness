@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-04T07:38:44.067961+00:00",
+  "checks": {
+    "all_virtual_stock_links_closed": 29,
+    "candidate_check_rc": 0,
+    "core_formatter_chains": 3,
+    "device_commands": 0,
+    "exact_r4_source_admissions": 6,
+    "formatter_terminal_sha256": "eb2dd9fd3b212b453a936c77d3148a449f20334c62a140b1d299bca9730db819",
+    "graph_executed": false,
+    "handoff_gate_rc": 0,
+    "new_readonly_roots": 5,
+    "new_source_entries": 16285,
+    "new_source_link_payloads_verified": 27,
+    "original_core_symlink": 1,
+    "packet_file_inputs_independently_rehashed": 330,
+    "packet_inputs": 332,
+    "prior_aidl_links_bound": 2,
+    "readonly_roots_total": 29,
+    "stock_shell_unchanged": true,
+    "v16_manifest_prefix_exact": true,
+    "v16_materialization_prefix_exact": true
+  },
+  "next_evidence": "Root review, fresh original-owner ACK and root seal, then one-shot guarded stock graph under existing claim; do not replay old packet.",
+  "not_proven": [
+    "Future Linux bind mount identity and read-only flags",
+    "Soong graph generation or target compilation",
+    "Bionic runtime, APK cold start, device result, or tool completion"
+  ],
+  "note": "Four original source symlinks resolve to admitted directory paths, not regular file rows; independently checked by existence of admitted descendants. Remaining original links resolve to admitted file rows, including three via the exact system/core link to pinned build/soong formatter bytes.",
+  "observed_wall": "none within candidate metadata scope",
+  "refs": {
+    "CORE-LINK.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/CORE-LINK.json",
+      "sha256": "b6d3ceda06aeccebf2be64cbc769a9781982d7d886f66027ce2e9f4f80b5168b"
+    },
+    "FINAL-VERIFICATION.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/FINAL-VERIFICATION.json",
+      "sha256": "3fc838d121df5976cadcafcdf522a378c420dbdf326cb8606721ce56d1ad8ce4"
+    },
+    "HANDOFF.md": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/HANDOFF.md",
+      "sha256": "992803c520ac32b8788260b6ff9cc04d74aa15790e3d009f42f25d7cbed9b15b"
+    },
+    "LINK-CHECK.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/LINK-CHECK.json",
+      "sha256": "8ec5dcb0ac01a8dfa8b6801af1245ac5ed9bf6dc40e812d62826af137fe1ed39"
+    },
+    "MATERIALIZATION.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/MATERIALIZATION.json",
+      "sha256": "6db5001220091a3402a8a3c94aee8f08ff035b8b88c049afde29daaeba173dde"
+    },
+    "PACKET-CANDIDATE.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/PACKET-CANDIDATE.json",
+      "sha256": "0ae902f1b230d12fc0005c5c557049d4984b7ddbf365714af67518f60641f8d7"
+    },
+    "READY.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/READY.json",
+      "sha256": "41588f972186cd466f409288644ef352e436f8030d6384f009b5ffb70ee1c227"
+    },
+    "SOURCE-MANIFEST.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/SOURCE-MANIFEST.json",
+      "sha256": "bfb65babe1948af6ebc5ba3096817ad94b290b8beacb983eee28a280d2e5de0e"
+    },
+    "executor.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/executor.py",
+      "sha256": "eb53aef4061044aad29ed36c5b142d07ac8bd372ef75454d1dfa786301bd5569"
+    },
+    "six_inputs.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/six_inputs.py",
+      "sha256": "6cd2dff033da0e810860508fc74d6c32178d0ee0c63ab058b3dcfeb00acfcb09"
+    }
+  },
+  "scope": "Independent read-only candidate review; no graph, Docker, target compile, runtime, device, or owner release.",
+  "status": "PEER_ACCEPT_FROZEN_G273_V17B_CANDIDATE_METADATA_ONLY"
+}

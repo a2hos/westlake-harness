@@ -1,0 +1,26 @@
+{
+  "status": "LEXICAL_CANDIDATE_ONLY",
+  "command": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/stock-COMMAND.json",
+  "pool": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+  "rows": [
+    {
+      "name": "aidl_defaults",
+      "definitions": [
+        {
+          "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/aidl-r4-3747384/Android.bp",
+          "mounted_as": "/src/system/tools/aidl",
+          "source_root": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/aidl-r4-3747384",
+          "excluded_control": false
+        }
+      ],
+      "candidate_absent_from_bind_view": false,
+      "unknown_if_no_definition": false
+    },
+    {
+      "name": "evo15_nonexistent_control_987654",
+      "definitions": [],
+      "candidate_absent_from_bind_view": false,
+      "unknown_if_no_definition": true
+    }
+  ]
+}

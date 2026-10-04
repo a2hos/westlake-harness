@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-04T07:41:16.813033+00:00",
+  "status": "INDEPENDENT_TERMINAL_STATIC_CANDIDATE_PASS_ROOT_ACCEPTANCE_PENDING",
+  "scope": "Read-only A3 static inventory terminal review; no scanner rerun, device action, startup, blackbox qualification, or aggregate counter mutation.",
+  "candidate_handoff": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/HANDOFF.json",
+  "candidate_handoff_sha256": "b5c9dfaaf416c5ef292dd4c95296701375d98b64337ffd66118aa3fa92ab2050",
+  "terminal": {
+    "exec_session_id": 65299,
+    "terminal_chunk_id": "9a91d5",
+    "outer_rc_reported": 0,
+    "result_rc_verified": 0,
+    "result_sha256": "d4dc962009efc48ba7e1fb23741b20e347d880bf175a6cd7691bd75f22c4efa6",
+    "limitation": "Terminal session and chunk identifiers originate in author handoff; independent review verified the frozen runtime-result and per-worker command receipts, not a second terminal capture."
+  },
+  "verification": {
+    "independent_assertions_passed": 156,
+    "source_files_hashed": 21,
+    "external_reference_files_hashed": 7,
+    "readelf_alias_and_target_hashed": true,
+    "raw_apks_hashed": 2,
+    "guards_equal": true,
+    "zip_member_sha_and_magic_verified": true,
+    "readelf_invocations_rc0_and_stream_hashes_verified": 19,
+    "worker_checks_all_pass": 73,
+    "fatal_record": "SystemExit(0) after result write; consistent with overall rc=0, but misleading FATAL file name."
+  },
+  "rows": [
+    {
+      "package": "org.localsend.localsend_app",
+      "version": "1.18.2",
+      "dex": 1,
+      "defined_classes": 3022,
+      "elf_arm64": 5,
+      "readelf_rc0": 5,
+      "worker_checks": 23,
+      "complete_static_candidate": true
+    },
+    {
+      "package": "org.linphone",
+      "version": "6.0.21",
+      "dex": 1,
+      "defined_classes": 4804,
+      "elf_arm64": 14,
+      "readelf_rc0": 14,
+      "worker_checks": 50,
+      "complete_static_candidate": true
+    }
+  ],
+  "candidate_totals": {
+    "complete_static_rows": 2,
+    "dex": 2,
+    "elf": 19,
+    "startup_pass": 0,
+    "qualified_blackbox": 0
+  },
+  "root_accepted": false,
+  "notes": [
+    "The source/APK/tool/venv guard snapshots match before and after. The current source files and seven immediate pinned receipts match recorded SHA-256 and sizes.",
+    "ELF records and actual readelf outputs support inventory only; no full gap scan or compatibility claim."
+  ]
+}

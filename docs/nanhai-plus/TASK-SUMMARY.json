@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T07:34:49.449651+00:00",
+  "checked_at": "2026-10-04T07:49:23.675073+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,17 +40,15 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 63,
-    "complete_inventory_dex_entries": 120,
-    "complete_inventory_native_elf_entries": 438,
+    "complete_static_inventories": 65,
+    "complete_inventory_dex_entries": 122,
+    "complete_inventory_native_elf_entries": 457,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
       "org.sufficientlysecure.keychain",
       "com.junkfood.seal",
-      "org.briarproject.briar.android",
-      "org.localsend.localsend_app",
-      "org.linphone"
+      "org.briarproject.briar.android"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
@@ -58,14 +56,13 @@
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
-    "release": 272,
+    "release": 273,
     "terminal_rc": 2,
-    "actual_exec_session": 19714,
-    "terminal_chunk": "1b5375",
+    "actual_exec_session": 42573,
+    "terminal_chunk": "37e6c6",
     "host_tools_actual_loader_pass": 10,
     "soong_bootstrap_successful_steps": 240,
     "soong_bootstrap_total_steps": 240,
-    "aidl_xsdc_plugins_compiled": true,
     "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
@@ -390,17 +387,29 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-system-core-r4-source-candidate-v1/root-admission-v1/ADMISSION.json",
       "sha256": "40632b371db477563d5096f47a2ab06a9904a4fcc087edeb63dc1714b0147430"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0015-module-owner-probe/ROOT-CLOSURE.json",
+      "sha256": "0acb072c53d47bb296520f01edf8b50258455ad8d5eb68185a95067255d34583"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/root-release-v1/G273-REVIEW.json",
+      "sha256": "9ef63a4e1c9bd6b8a6f944c0d9d52031bab8242a9384a02eedaef7fc07898c93"
     }
   ],
   "bionic_stock_graph": {
-    "release": 272,
+    "release": 273,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "soong_host_steps": 240,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "tradefed_errorprone_defaults undefined; 5 distinct modules, 6 diagnostics",
-    "failure_location": "test/suite_harness/common/host-side/tradefed/tests/Android.bp:20:1",
+    "first_failure": "documentsui_defaults undefined; 12 distinct module names, 18 diagnostics",
+    "failure_location": "packages/services/Car/packages/CarDocumentsUI/Android.bp:17:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -419,13 +428,13 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 273,
-    "next_input": "five exact R4 source roots plus exact system/core original formatting link; v17b stock-chain view pending",
+    "prospective_release": 274,
+    "next_input": "trace exact R4 definitions for 12 new undefined modules",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
     "execution_ready": false,
-    "G272_terminal": true
+    "G273_terminal": true
   },
   "reflection": {
     "latest": "EVO-0014",
@@ -437,7 +446,13 @@
     "limit_seconds": 120,
     "pending_actual_result_groups": 0,
     "trigger_every_groups": "3-4",
-    "next": "Wait for 3-4 new actual result groups; timing under 120s peer reported, not independently clocked"
+    "next": "Wait for 3-4 new actual result groups; timing under 120s peer reported, not independently clocked",
+    "latest_closed": "EVO-0015",
+    "pending_groups": 0,
+    "latest_closure": {
+      "path": "docs/nanhai-plus/evolution/EVO-0015-module-owner-probe/ROOT-CLOSURE.json",
+      "sha256": "0acb072c53d47bb296520f01edf8b50258455ad8d5eb68185a95067255d34583"
+    }
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -695,5 +710,32 @@
     },
     "graph_input_view_ready": false,
     "graph_executed": false
+  },
+  "scanner_a3_actual": {
+    "exec_session": 65299,
+    "terminal_chunk": "9a91d5",
+    "rc": 0,
+    "accepted_complete_rows": 2,
+    "dex_delta": 2,
+    "elf_delta": 19,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+    },
+    "startup_delta": 0
+  },
+  "g273_actual": {
+    "exec_session": 42573,
+    "terminal_chunk": "37e6c6",
+    "rc": 2,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/root-release-v1/G273-REVIEW.json",
+      "sha256": "9ef63a4e1c9bd6b8a6f944c0d9d52031bab8242a9384a02eedaef7fc07898c93"
+    },
+    "diagnostics": 18,
+    "distinct_undefined_modules": 12,
+    "g272_five_absent": true,
+    "target_compile_commands": 0,
+    "device_commands": 0
   }
 }

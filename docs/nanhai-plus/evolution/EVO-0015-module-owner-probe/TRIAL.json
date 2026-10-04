@@ -1,0 +1,72 @@
+{
+  "status": "LEXICAL_CANDIDATE_ONLY",
+  "command": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/stock-COMMAND.json",
+  "pool": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+  "rows": [
+    {
+      "name": "tradefed_errorprone_defaults",
+      "definitions": [
+        {
+          "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/platform_testing-r4-4743c9f/libraries/tradefed-error-prone/Android.bp",
+          "mounted_as": null,
+          "source_root": null,
+          "excluded_control": false
+        }
+      ],
+      "candidate_absent_from_bind_view": true,
+      "unknown_if_no_definition": false
+    },
+    {
+      "name": "car-framework-aconfig-libraries",
+      "definitions": [
+        {
+          "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/Car-r4-e35f05e/aconfig/Android.bp",
+          "mounted_as": null,
+          "source_root": null,
+          "excluded_control": false
+        }
+      ],
+      "candidate_absent_from_bind_view": true,
+      "unknown_if_no_definition": false
+    },
+    {
+      "name": "simpleperf_static_libs",
+      "definitions": [
+        {
+          "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system-extras-r4-1f86aa4/simpleperf/Android.bp",
+          "mounted_as": null,
+          "source_root": null,
+          "excluded_control": false
+        }
+      ],
+      "candidate_absent_from_bind_view": true,
+      "unknown_if_no_definition": false
+    },
+    {
+      "name": "AndroidLintCheckerTestDefaults",
+      "definitions": [
+        {
+          "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/lint_checks-r4-bd9a5d8/common/Android.bp",
+          "mounted_as": null,
+          "source_root": null,
+          "excluded_control": false
+        }
+      ],
+      "candidate_absent_from_bind_view": true,
+      "unknown_if_no_definition": false
+    },
+    {
+      "name": "framework-connectivity-test-defaults",
+      "definitions": [
+        {
+          "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/Connectivity-r4-fddbbcc/tests/common/Android.bp",
+          "mounted_as": null,
+          "source_root": null,
+          "excluded_control": false
+        }
+      ],
+      "candidate_absent_from_bind_view": true,
+      "unknown_if_no_definition": false
+    }
+  ]
+}

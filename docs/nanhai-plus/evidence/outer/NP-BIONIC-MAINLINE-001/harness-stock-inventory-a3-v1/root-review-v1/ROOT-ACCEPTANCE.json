@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-04T07:42:06.634476+00:00",
+  "status": "ROOT_ACCEPT_TWO_COMPLETE_STATIC_INVENTORIES_ONLY",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/HANDOFF.json",
+    "sha256": "b5c9dfaaf416c5ef292dd4c95296701375d98b64337ffd66118aa3fa92ab2050"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-peer-review-v1/REVIEW.json",
+    "sha256": "feb50b10d995b248225037eff62073b1ee83bc5c5925b02019a9313a37968838"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/runtime-result/RESULT.json",
+    "sha256": "d4dc962009efc48ba7e1fb23741b20e347d880bf175a6cd7691bd75f22c4efa6"
+  },
+  "exec_session": 65299,
+  "terminal_chunk": "9a91d5",
+  "outer_rc": 0,
+  "accepted_packages": [
+    "org.localsend.localsend_app",
+    "org.linphone"
+  ],
+  "new_complete_rows": 2,
+  "new_dex_entries": 2,
+  "new_arm64_elf_entries": 19,
+  "new_static_cumulative": 65,
+  "new_dex_cumulative": 122,
+  "new_elf_cumulative": 457,
+  "source_raw_tool_venv_pre_post_equal": true,
+  "readelf_rc0": 19,
+  "worker_checks": 73,
+  "device_commands": 0,
+  "startup_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "whole_bionic_tools_delta": 0,
+  "next": "Keep Bionic target graph as earliest HelloWorld wall; use static inventory for future API gap scan only after runtime snapshot."
+}

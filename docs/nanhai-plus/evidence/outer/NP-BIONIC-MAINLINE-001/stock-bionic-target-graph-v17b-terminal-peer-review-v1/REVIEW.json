@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-04T07:48:36.917126+00:00",
+  "cleanup": {
+    "claim_limit": "cleanup command receipts are verified; current daemon state not independently inspected",
+    "fresh_post_run_docker_inspect": false,
+    "remove_command_rc_zero": true,
+    "removed_volumes": [
+      "tmp",
+      "out",
+      "source"
+    ],
+    "retained_volumes_reported": []
+  },
+  "control": {
+    "claim": "NP-MUSL16-ART-024",
+    "goal_id": "goal_01",
+    "owner_ack_nonce_matched": true,
+    "owner_ack_sha256": "1e69415ae38f1f8c094c642688b71d7be236e7f445b0f5fd4a4a6ba2098fad67",
+    "packet_sha256": "2833678591a49ce19d2919a929cebe339c9d0fb2ecf683de479a2d293df514ad",
+    "release_sequence": 273
+  },
+  "evidence": {
+    "indexed_file_count": 140,
+    "indexed_file_hashes_and_lengths_match": true,
+    "out_tar_bytes": 953179136,
+    "out_tar_sha256": "53720eee06db813d981207245f88fcb57711fe2d974af434ce9f22c5c91ffe10",
+    "owner_receipt_sha256": "23c50396283a9ff7319d13a8d5d20b9db85305d2f16c0c994fb84b9aa73d46ec",
+    "result_sha256": "8612bea0372b88ecedc09af4caaa05f583188bd98555c262ae82c1982491a8a9",
+    "tmp_tar_bytes": 51599872,
+    "tmp_tar_sha256": "ab72841685f9ce605e09d55b02198f4867b3ac100948893a32ec50f8037feb3e"
+  },
+  "execution": {
+    "build_pass": false,
+    "device_commands": 0,
+    "exec_session": 42573,
+    "graph_generation_pass": false,
+    "outer_rc": 2,
+    "result_rc": 2,
+    "soong_progress_240_of_240": true,
+    "stock_command_rc": 1,
+    "target_compile_commands": 0,
+    "terminal_chunk": "37e6c6"
+  },
+  "graph_wall": {
+    "diagnostic_count": 18,
+    "distinct_undefined_modules": 12,
+    "first": "error: packages/services/Car/packages/CarDocumentsUI/Android.bp:17:1: \"CarDocumentsUI\" depends on undefined module \"documentsui_defaults\".",
+    "g272_five_names_absent": [
+      "AndroidLintCheckerTestDefaults",
+      "car-framework-aconfig-libraries",
+      "framework-connectivity-test-defaults",
+      "simpleperf_static_libs",
+      "tradefed_errorprone_defaults"
+    ],
+    "undefined_module_names": [
+      "VtsHalTargetTestDefaults",
+      "android.hardware.graphics.common-ndk_static",
+      "android.hardware.graphics.composer3-ndk_static",
+      "bpf_cc_defaults",
+      "cuttlefish_base",
+      "documentsui_defaults",
+      "framework-minus-apex-aconfig-java-defaults",
+      "framework-sources-module-defaults",
+      "framework-system-server-module-defaults",
+      "librenderengine_deps",
+      "netd_defaults",
+      "use_libaidlvintf_gtest_helper_static"
+    ]
+  },
+  "recommendation": "Next graph candidate should address the observed missing providers from exact R4 source; no target compile or APK startup claim.",
+  "scope": "read-only independent terminal review of G273/v17b actual one-shot host graph; not graph/build/device/startup acceptance",
+  "source_sdk_guard": {
+    "sdk_guard_pre_post_pass": true,
+    "sdk_readonly": {
+      "all_bytes_verified": true,
+      "bytes_hashed": 6254795690,
+      "commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
+      "manifest_sha256": "03018238a9dac914dedcbb3c9486a8ec84924dc99c1643bb1134bb2bbe58b2e4",
+      "regular_files": 17921,
+      "symlinks": 3,
+      "tree": "0348a182903065a14d190eb1aa670246c3c2106d"
+    },
+    "source_before_after_equal": true,
+    "source_manifest_digest": "45122f8daf345f583f7f9818f90cdf874a0d211679bfb01123ce163afca5c437"
+  },
+  "status": "PEER_ACCEPT_TERMINAL_WALL_ONLY"
+}

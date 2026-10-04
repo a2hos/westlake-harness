@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-04T07:44:09.008580+00:00",
+  "status": "EVO0015_CLOSED_ONE_READONLY_LOCAL_TRIAL_NOT_PROMOTED",
+  "trigger_actual_groups": [
+    "G272 terminal graph rc2",
+    "A3 raw two accepted/two timeout",
+    "A3 static two complete"
+  ],
+  "lens": "_rethink_other_path",
+  "technical_change": "Bounded lexical exact-name owner probe over pinned R4 source directories plus actual stock bind argv; yields candidate missing source roots before another graph attempt",
+  "mechanism": "Exact name definition discovered but source root absent from existing bind view; five G272 names found as absent candidates, mounted aidl_defaults negative control and nonexistent-name unknown control kept distinct",
+  "pilot_rc": 0,
+  "controls_rc": 0,
+  "root_verified": true,
+  "source_version": "android-16.0.0_r4",
+  "pilot_script_sha256": "e1c3e5832381816f1f09391e17b2752a81f629ff5ec5471ad08f21c29e980cc9",
+  "trial_sha256": "61344421edeaf704ba89580114463940b6b3a64a65eebecdfdc54fc807fd6615",
+  "controls_sha256": "94b365dde253b8a8aad028576944182a63a0246a769b68e1ee8d6f83cb7adaa1",
+  "review_sha256": "0df8f4996c50f274e6c09803c865b81aa728f15107c6347ebaf1ebb1f599c15c",
+  "promotion": false,
+  "new_evolution_tools_delta": 0,
+  "original89_delta": 0,
+  "startup_delta": 0,
+  "limitation": "Lexical owners do not establish Soong namespace, transitive dependency closure or graph pass; no measured avoided build yet.",
+  "next": "Use only as optional G273 source candidate aid; require fresh Soong graph for acceptance."
+}
