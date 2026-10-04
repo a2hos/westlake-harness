@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai-g279-no-namespace-guard-root-review-v1",
+  "at": "2026-10-04T10:39:20.947698+00:00",
+  "decision": "ACCEPT_HOST_TOOL_SMOKE_TEST_ONLY",
+  "source_sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f",
+  "binary_sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20",
+  "build": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/BUILD.json",
+    "sha256": "c8b21496be258891ce2e1b6ba326c80c82e274bab6d5968d34aa4c04f509fe6e"
+  },
+  "trace": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/TRACE.json",
+    "sha256": "65fe484e37ca5b83db4b4a80e72ccf5cb81fb36f559d5097a1f41685ccae0dd9"
+  },
+  "trace_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/probe.strace.raw",
+    "sha256": "bc03d7364282a39e8a02e68694799d145665a7cc273fa9bdc8f64359bf868f95"
+  },
+  "peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/peer-review-v1/REVIEW.json",
+    "sha256": "1d5514e80246cd26258a5fb482659a9ee994db00fbb47bb16a9f9672345e491b"
+  },
+  "build_rc": 0,
+  "safe_probe_rc": 0,
+  "ordinary_exec_rc": 0,
+  "missing_exec_rc": 71,
+  "limitations": [
+    "peer independently checked files and identity but did not replay numeric test rc",
+    "generic execvp still requires exact argv closure",
+    "no Soong graph or target action executed"
+  ],
+  "graph_released": false,
+  "target_compiled": false,
+  "device_executed": false
+}

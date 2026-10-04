@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai.g279.native_input_staging_v2_static_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:32:32.338986+00:00",
+  "decision": "NO_GO_PENDING_TWO_RECEIPT_GATES",
+  "script": {
+    "path": "scripts/nanhai_plus_stage_native_graph_inputs.py",
+    "sha256": "bded4e0acbc4c162e050b71d81c278bd6dc2f3508810658b9281e8fc85f81634"
+  },
+  "scope": "Static review only; no staging, graph, container, device or Bridge execution.",
+  "confirmed_fixes": {
+    "authoritative_binding": "load_environment(local_env.md) config SHA pinned 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718; all required NANHAI_* environment variables compared to parsed authoritative values; host required gz02 and project resolved from pinned binding.",
+    "input_hashes": "generator SHA256 dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634 and ledger SHA256 fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356 pinned and matched current local files.",
+    "remote_path": "Remote program requires exact three names/order, project/control existing real directories, opens control with O_DIRECTORY|O_NOFOLLOW, and creates/reads only leaf names through dir_fd with O_NOFOLLOW and SHA/mode checks; no graph/device/container launcher.",
+    "failure_receipt_attempt": "Exceptions after entering try are caught and an exclusive hard-link installation of local receipt is attempted. Existing receipt is checked before SSH."
+  },
+  "blockers": [
+    {
+      "id": "B1_FALSE_PRE_STAGING_STATUS",
+      "lines": "94-96,130-145",
+      "finding": "Receipt status starts FAILED_PRE_STAGING and is not advanced before SSH. A timeout, nonzero SSH rc, or invalid success JSON can occur after remote files were created, yet the persisted failure receipt still claims pre-staging.",
+      "minimum_fix": "Set status to REMOTE_STATE_UNKNOWN or STAGING_ATTEMPTED_RECONCILE immediately before subprocess.run; reserve FAILED_PRE_STAGING for failures before any remote attempt. Record whether remote invocation started and require read-only reconciliation before retry after unknown state."
+    },
+    {
+      "id": "B2_NONATOMIC_ONE_SHOT_RESERVATION",
+      "lines": "91-93,147-156",
+      "finding": "Two concurrent invocations can both pass RECEIPT.exists(), both contact gz02 and only then contend on os.link. The receipt is protected against overwrite, but remote staging is not one-shot reserved.",
+      "minimum_fix": "Acquire an O_EXCL file or atomic mkdir lock before SSH; a loser must not contact gz02. Preserve a failure/unknown-state receipt or reservation for a crashed or interrupted winner, then release only under explicit reconciliation policy."
+    }
+  ],
+  "limits": [
+    "A successful local receipt validates remote reported file names and SHA, while the remote program itself verifies content and read-only permission bits; this review does not test execution.",
+    "Directory-fd binding protects against leaf symlink escape, but external rename of the opened directory is outside the observed static guarantee; retain project directory ownership and pre/post checks."
+  ],
+  "executed": false
+}

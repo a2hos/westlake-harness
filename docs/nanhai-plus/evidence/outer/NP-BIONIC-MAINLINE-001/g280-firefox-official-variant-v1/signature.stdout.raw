@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Release Engineering, OU=Release Engineering, O=Mozilla Corporation, L=Mountain View, ST=California, C=US
+Signer #1 certificate SHA-256 digest: a78b62a5165b4494b2fead9e76a280d22d937fee6251aece599446b2ea319b04
+Signer #1 certificate SHA-1 digest: 920f4876a6a57b4a6a2f4ccaf65f7d29ce26ff2c
+Signer #1 certificate MD5 digest: b1e1bcee2733025ece9456e419a814a3
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: aac36655156876c894b09d512e74a0c7bb3301a1c871f200820d099ef1520ae1
+Signer #1 public key SHA-1 digest: 3d4fff78408b159058428bff8d07589a4c18aa8b
+Signer #1 public key MD5 digest: fe669db38a1eae305b8573293e5c35d8

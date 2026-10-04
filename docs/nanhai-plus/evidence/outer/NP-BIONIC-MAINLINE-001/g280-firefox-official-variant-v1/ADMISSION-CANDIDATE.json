@@ -1,0 +1,150 @@
+{
+  "schema": "g280-firefox-official-variant-candidate-v1",
+  "at": "2026-10-04T10:32:20.913593+00:00",
+  "status": "CANDIDATE_ONLY_REQUIRES_INDEPENDENT_AND_ROOT_REVIEW",
+  "goal_id": "goal_01",
+  "target": "OH7.0.0.39/android-16.0.0_r4/ARM64/App-single-Bionic",
+  "body_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+  "body_bytes": 133273833,
+  "existing_download_receipt": {
+    "request_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/REQUEST.json",
+    "request_sha256": "fe4b82d5a806408e0ad356f34ba8ba0b90f9290eaf40856ed44c88908f643ba0",
+    "receipt_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/RECEIPT.json",
+    "receipt_sha256": "cb4b003e2d32835e11778897837f25661d296470527d0c9542eb2bb071955881",
+    "headers_sha256": "1c35448595cb713d06e279228e48ba1afcc7824c324413af7188bb9d5cae2cd6",
+    "requested_source_url": "https://archive.mozilla.org/pub/fenix/releases/156.0/android/fenix-156.0-android-arm64-v8a/fenix-156.0.multi.android-arm64-v8a.apk",
+    "effective_url": "https://archive.mozilla.org/pub/fenix/releases/156.0/android/fenix-156.0-android-arm64-v8a/fenix-156.0.multi.android-arm64-v8a.apk",
+    "http_code": 200,
+    "ssl_verify_result": 0,
+    "download_bytes": 133273833,
+    "historic_expected_sha256": "313626eef7c918f950529a792f3738c8d5b41294ed2a7192306795bf0ca41ec6",
+    "historic_expected_mismatch_preserved": true
+  },
+  "command_results": [
+    {
+      "name": "zip",
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/verify_zip.py",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ZIP-FACTS.json",
+        "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c"
+      ],
+      "rc": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.3665000000037253,
+      "command_receipt": "zip.COMMAND.json",
+      "command_receipt_sha256": "2f0257ae9d51eece4eb232bea2fbe44fa0f4362787de5e475715ae81880f3905",
+      "stdout_sha256": "3884a11559f94b2649d12478b84aca7e5f8dfa0049dbc4e7630e6445e1c84887",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+      ],
+      "rc": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.24043424997944385,
+      "command_receipt": "badging.COMMAND.json",
+      "command_receipt_sha256": "be7975955dd5c394ff90d8304a64c10224e865e790e513808f8301f386e3126d",
+      "stdout_sha256": "4d7f01c5655e1810b443e4ca69138d781a3c102dd7befb0ab3549bb999f718ac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+      ],
+      "rc": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.2535444999812171,
+      "command_receipt": "signature.COMMAND.json",
+      "command_receipt_sha256": "08fd900067f13a6852c3d14328c0c8f94cdbf36af2f54965342afb28839fba99",
+      "stdout_sha256": "b778b4e754738cfe0670e622283d13d5012e8a073b0ee79e849e8f0879677909",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "tool_identity": {
+    "python3_actual": {
+      "path": "/usr/local/bin/python3",
+      "resolved_path": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "sha256": "07919b0fbf82742c24420d7dcadbd459f61bc1feb638eca02b81dccab2daf4d5"
+    },
+    "aapt2": {
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+      "sha256": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4"
+    },
+    "apksigner.jar": {
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+      "sha256": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9"
+    },
+    "java": {
+      "path": "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+      "sha256": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+    }
+  },
+  "zip": {
+    "entries": 3307,
+    "unique_names": true,
+    "crc_first_failure": null,
+    "root_manifest_count": 1,
+    "root_dex_count": 3,
+    "arm64_real_elf_count": 18,
+    "invalid_native_count": 0
+  },
+  "manifest": {
+    "package": "org.mozilla.firefox",
+    "version_name": "156.0",
+    "version_code": "2016183650",
+    "native_code_badging": [
+      "'arm64-v8a'"
+    ]
+  },
+  "signature": {
+    "apksigner_exit_zero": true,
+    "v2": true,
+    "v1": false,
+    "v3": false,
+    "signer_count": 1,
+    "certificate_sha256": [
+      "a78b62a5165b4494b2fead9e76a280d22d937fee6251aece599446b2ea319b04"
+    ],
+    "publisher_cert_external_match": "NOT_PROVEN"
+  },
+  "historical_registry_mismatch": {
+    "expected_sha256": "313626eef7c918f950529a792f3738c8d5b41294ed2a7192306795bf0ca41ec6",
+    "actual_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+    "preserve_old_failure": true,
+    "treat_as_new_official_variant_candidate": true
+  },
+  "classification": {
+    "raw_admitted": false,
+    "static_inventory_complete": false,
+    "blackbox_qualified": false,
+    "cold_start_verified": false,
+    "authoritative_delta": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "download_commands_this_run": 0
+  },
+  "limitations": [
+    "Publisher certificate text in APK is self-declared; independent publisher certificate publication not yet matched",
+    "ZIP/native preflight is not full harness static inventory",
+    "Original registry payload SHA is different and remains failed; this variant requires separate root acceptance"
+  ]
+}

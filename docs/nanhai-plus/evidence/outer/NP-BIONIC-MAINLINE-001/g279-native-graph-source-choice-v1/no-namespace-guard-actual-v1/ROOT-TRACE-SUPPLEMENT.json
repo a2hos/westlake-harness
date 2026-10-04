@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-g279-guard-root-trace-supplement-v1",
+  "at": "2026-10-04T10:39:53.703979+00:00",
+  "decision": "TRACE_SUPPORTS_SAFE_PROBE_ONLY",
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/peer-review-v2/REVIEW.json",
+    "sha256": "b23152b21babeb2cad301b52c5172aea95e6def30dbb6005c2048fed20b6ee8f"
+  },
+  "raw_trace_sha256": "bc03d7364282a39e8a02e68694799d145665a7cc273fa9bdc8f64359bf868f95",
+  "scope": "ordinary UID guard smoke test; no Soong graph, target build or device",
+  "original_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/ROOT-REVIEW.json",
+    "sha256": "4fe94373c2ab2a315662ee6346bc300c7b1759e8d3299327baa83915d67915f8"
+  }
+}

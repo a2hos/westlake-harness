@@ -1,0 +1,42 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T10:39:37.180571+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_execution": false,
+  "old_container_packets_replay_allowed": false,
+  "g279_staging": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/ROOT-REVIEW.json",
+    "sha256": "cb0a2c015fe7141a0074982712e516d16e4a4564da1574603bd8996f32f890ea"
+  },
+  "g279_guard_host_tool": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/ROOT-REVIEW.json",
+    "sha256": "4fe94373c2ab2a315662ee6346bc300c7b1759e8d3299327baa83915d67915f8"
+  },
+  "g279_graph_runner": "NO_GO_V2; V3 draft pending independent review",
+  "g280_firefox": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ROOT-REVIEW.json",
+    "sha256": "1004c1b996a5784552bf331b1b892cbc592e88e780244f86a26f6b494589a3f1"
+  },
+  "evolution": {
+    "path": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/ROOT-CLOSURE.json",
+    "sha256": "f5c0872cf64fc322e74b65693c63a403edf7920f5f68d615dc21d2f8c4bfe428"
+  },
+  "counts": {
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "historical_musl_source_accepted": 38,
+    "raw_apk_accepted": 77,
+    "apk_static_complete": 73,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "control": "Preserve original goal/session/claim/cumulative budget and device HOLD/whitelist; no second coordinator.",
+  "next": "Complete and independently review native runner V3 plus fail-closed pre-execution identity gate; obtain separate original-owner graph ACK before any graph."
+}

@@ -1,0 +1,17 @@
+{
+  "name": "badging",
+  "argv": [
+    "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+    "dump",
+    "badging",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+  ],
+  "rc": 0,
+  "timeout": false,
+  "limit_seconds": 180,
+  "elapsed_seconds": 0.24043424997944385,
+  "stdout_sha256": "4d7f01c5655e1810b443e4ca69138d781a3c102dd7befb0ab3549bb999f718ac",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 10536,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai.g279.native_input_staging_actual_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:34:31.010722+00:00",
+  "decision": "ACCEPT_THREE_READ_ONLY_STAGED_INPUTS_ONLY",
+  "references": {
+    "staging_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/STAGING.json",
+      "sha256": "6f71fa24eac010ce33e5572c21b7a0aca2724ae9c4f5f20612ba768fe4633eb1"
+    },
+    "reviewed_script": {
+      "path": "scripts/nanhai_plus_stage_native_graph_inputs.py",
+      "sha256": "b9c341e04555ab0bb8dfd6795ab5da83fa87e0d8049b7c112649b3a8525d955c"
+    },
+    "static_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/staging-peer-v4/REVIEW.json",
+      "sha256": "48789a985a36b9b187273f0a78cec636e2c288224a9b5a17d75f7cc489cd392a"
+    }
+  },
+  "checks": {
+    "result": "STAGING.json reports status STAGED_HASH_VERIFIED, remote_rc=0, host gz02, project /data/source/.nanhai-plus-opaleye-native, exactly three created=true entries, no stderr, and graph/container/device flags false.",
+    "remote_files": "Independent read-only SSH check: control/generate_manifest_heads.py SHA256 dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634, 5337 bytes, mode 0444; control/MANIFEST-HEADS.tsv SHA256 fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356, 252412 bytes, mode 0444; control/g279-native-graph-env.json SHA256 0df4f6fa4f57ac2cda2998723b935fd89c9dfce8f10afd0e23c08a6f2ca9ab91, 682 bytes, mode 0444. All are regular files matching receipt names, hashes, sizes and modes.",
+    "environment": "Current local_env.md raw SHA256 497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3 and parsed config SHA256 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718 match staged binding. Independently regenerated canonical JSON is byte-identical by SHA256 and length.",
+    "source_index_and_binary": "Current local /opt/19.SourceCode/SOURCES.json SHA256 7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636. GZ02 /opt/19.SourceCode/SOURCES.json SHA256 039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79. Canonical alias still points to /data/source/aosp-16.0.0-r4. GZ02 soong_ui remains 19023728-byte Linux x86-64 ELF with SHA256 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624."
+  },
+  "boundary": "Only three staged read-only project control inputs are accepted. No graph runner, Soong graph, target build, generated action, device, Bridge or container execution is accepted or released.",
+  "limits": [
+    "The peer independently verified remote file state and receipt remote rc0; the outer command exit code 0 was reported by the executing owner and is not encoded separately in STAGING.json.",
+    "The environment JSON records bindings; it does not itself prove a subsequent graph command will honor them."
+  ],
+  "peer_execution_counts": {
+    "staging": 0,
+    "graph": 0,
+    "container": 0,
+    "device": 0
+  }
+}

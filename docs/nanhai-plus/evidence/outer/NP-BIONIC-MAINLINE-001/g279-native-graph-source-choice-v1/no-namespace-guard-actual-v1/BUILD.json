@@ -1,0 +1,78 @@
+{
+  "schema": "nanhai-g279-no-namespace-guard-build-v1",
+  "at": "2026-10-04T10:38:15.086644+00:00",
+  "host": "gz02",
+  "project": "/data/source/.nanhai-plus-opaleye-native",
+  "outer_ssh_rc": 0,
+  "remote": {
+    "binary_bytes": 16464,
+    "binary_sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20",
+    "cc_realpath": "/usr/bin/x86_64-linux-gnu-gcc-13",
+    "compile": {
+      "argv": [
+        "/usr/bin/cc",
+        "-O2",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fPIE",
+        "-pie",
+        "/data/source/.nanhai-plus-opaleye-native/control/no-namespace-exec.c",
+        "-o",
+        "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec"
+      ],
+      "rc": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "missing_exec": {
+      "argv": [
+        "sudo",
+        "-n",
+        "-u",
+        "nobody",
+        "--",
+        "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec",
+        "/nonexistent/nanhai-no-namespace-test"
+      ],
+      "rc": 71,
+      "stderr": "execvp: No such file or directory\n",
+      "stdout": ""
+    },
+    "ordinary_exec": {
+      "argv": [
+        "sudo",
+        "-n",
+        "-u",
+        "nobody",
+        "--",
+        "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec",
+        "/usr/bin/true"
+      ],
+      "rc": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "probe": {
+      "argv": [
+        "sudo",
+        "-n",
+        "-u",
+        "nobody",
+        "--",
+        "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec",
+        "--probe"
+      ],
+      "rc": 0,
+      "stderr": "",
+      "stdout": "namespace syscalls denied; no namespace created\n"
+    },
+    "source_mode": "0o444",
+    "source_sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f"
+  },
+  "stderr": "",
+  "container_execution": false,
+  "graph_executed": false,
+  "device_executed": false
+}

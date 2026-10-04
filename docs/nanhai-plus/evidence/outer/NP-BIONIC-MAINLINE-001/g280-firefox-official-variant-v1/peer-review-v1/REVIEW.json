@@ -1,0 +1,85 @@
+{
+  "schema": "g280-firefox-official-variant-independent-peer-review-v1",
+  "at": "2026-10-04T10:34:01.133572+00:00",
+  "status": "ACCEPT_VARIANT_EXECUTION_RECEIPT_STATIC_PREFLIGHT_ONLY",
+  "original_registry_admitted": false,
+  "canonical_admission": false,
+  "official_source_binding": "Recorded HTTPS archive.mozilla.org request/effective URL, HTTP 200, TLS verification 0, bytes and APK SHA agree; no independent publisher certificate baseline match.",
+  "historical_registry_expected_sha256": "313626eef7c918f950529a792f3738c8d5b41294ed2a7192306795bf0ca41ec6",
+  "candidate_apk_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+  "historical_sha_mismatch_preserved": true,
+  "findings": {
+    "zip": "3307 unique entries, CRC clear, one root AndroidManifest.xml, three root DEX, 18 arm64 ELF64/AArch64 libraries; bounded preflight only.",
+    "manifest": "aapt2 rc0: org.mozilla.firefox, 156.0, versionCode 2016183650, arm64-v8a.",
+    "signature": "apksigner rc0: one signer, APK Signature Scheme v2; signer certificate SHA-256 a78b62a5165b4494b2fead9e76a280d22d937fee6251aece599446b2ea319b04. Independent Mozilla cert match unproven.",
+    "python_path": "Actual ZIP verifier interpreter is /usr/local/bin/python3, resolved to Python 3.14 framework binary; /usr/bin/python3 must not be stated."
+  },
+  "independent_checks": {
+    "apk": {
+      "sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+      "matches_candidate": true
+    },
+    "download_request": {
+      "sha256": "fe4b82d5a806408e0ad356f34ba8ba0b90f9290eaf40856ed44c88908f643ba0",
+      "matches_candidate": true
+    },
+    "download_receipt": {
+      "sha256": "cb4b003e2d32835e11778897837f25661d296470527d0c9542eb2bb071955881",
+      "matches_candidate": true
+    },
+    "http_headers": {
+      "sha256": "1c35448595cb713d06e279228e48ba1afcc7824c324413af7188bb9d5cae2cd6",
+      "matches_candidate": true
+    },
+    "RESULT.json": {
+      "sha256": "8afd0b957b4e960fa1db29e86f1a2df1d17701062306b43bef8f2f0d4b422368"
+    },
+    "ZIP-FACTS.json": {
+      "sha256": "7bb6039bca8f5f5ba865108b040a8b7cdc1016b945f32aba658360f932d02e25"
+    },
+    "zip.COMMAND.json": {
+      "sha256": "2f0257ae9d51eece4eb232bea2fbe44fa0f4362787de5e475715ae81880f3905"
+    },
+    "badging.COMMAND.json": {
+      "sha256": "be7975955dd5c394ff90d8304a64c10224e865e790e513808f8301f386e3126d"
+    },
+    "signature.COMMAND.json": {
+      "sha256": "08fd900067f13a6852c3d14328c0c8f94cdbf36af2f54965342afb28839fba99"
+    },
+    "ADMISSION-CANDIDATE.json": {
+      "sha256": "b969df8efafde6917d8088d2344599b7f0fcb37b83244b3b7abecbfedcb796c5"
+    },
+    "READY.json": {
+      "sha256": "54c73e76eed88db6622dcf3ca1f196a0a04a11c4cd29229e711212831d9ea56d"
+    },
+    "zip_command": {
+      "rc": 0,
+      "timeout": false,
+      "stdout_hash_matches_raw": true,
+      "stderr_hash_matches_raw": true
+    },
+    "badging_command": {
+      "rc": 0,
+      "timeout": false,
+      "stdout_hash_matches_raw": true,
+      "stderr_hash_matches_raw": true
+    },
+    "signature_command": {
+      "rc": 0,
+      "timeout": false,
+      "stdout_hash_matches_raw": true,
+      "stderr_hash_matches_raw": true
+    },
+    "python": {
+      "argv_path": "/usr/local/bin/python3",
+      "resolved_path": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "sha256": "07919b0fbf82742c24420d7dcadbd459f61bc1feb638eca02b81dccab2daf4d5",
+      "matches_candidate": true
+    }
+  },
+  "limits": [
+    "Original historical registry SHA mismatch remains a failed intake, not repaired by this run.",
+    "Full harness static inventory, blackbox qualification, cold start and device behavior are unproven.",
+    "This peer review does not authorize canonical or device state changes."
+  ]
+}

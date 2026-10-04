@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai.g279.no_namespace_guard_actual_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:38:52.113578+00:00",
+  "decision": "ACCEPT_GUARD_HOST_TOOL_SMOKE_TEST_ONLY",
+  "references": {
+    "build_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/BUILD.json",
+      "sha256": "c8b21496be258891ce2e1b6ba326c80c82e274bab6d5968d34aa4c04f509fe6e"
+    },
+    "source": {
+      "path": "scripts/nanhai_plus_no_namespace_exec.c",
+      "sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f"
+    },
+    "static_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-peer-v2/REVIEW.json",
+      "sha256": "1fbb7475b16d1bc2dbd3cce30350b5fdc37cff66a3adcfa3fef4765fc3211881"
+    }
+  },
+  "independent_remote_checks": {
+    "source": "GZ02 /data/source/.nanhai-plus-opaleye-native/control/no-namespace-exec.c is a 4539-byte regular file, mode 0444, SHA256 0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f, matching reviewed local source.",
+    "binary": "GZ02 project OUT /data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec is a 16464-byte regular x86-64 ELF PIE executable, SHA256 04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20, matching BUILD.json. Build ID 0342b089338b8fea33fab1336faa5d1516c5b984. No other regular output file in that OUT directory.",
+    "compiler_and_uid": "Current /usr/bin/cc resolves to /usr/bin/x86_64-linux-gnu-gcc-13; current nobody account is uid 65534/gid 65534. BUILD.json records compile argv using /usr/bin/cc and probe/exec argv through sudo -n -u nobody.",
+    "actual_test_receipt": "BUILD.json records outer_ssh_rc=0, compile rc=0 with -O2 -std=c11 -Wall -Wextra -Werror -fPIE -pie; --probe rc=0 and stdout namespace syscalls denied; no namespace created; ordinary /usr/bin/true exec rc=0; nonexistent exec rc=71 with expected execvp ENOENT stderr. No container, graph or device execution is claimed.",
+    "source_layout": "Staged source and compiled binary are under project-owned control/OUT, separate from read-only AOSP checkout and patched Soong worktree."
+  },
+  "acceptance_boundary": "This proves only that the exact guard host binary was compiled and its basic safe probe/ordinary exec behavior was observed in the recorded tests. It does not prove all denied syscalls, descendant filter inheritance, no forbidden generated Soong action, graph output, target build, or device behavior. Do not connect it to the Soong runner without new independent review.",
+  "evidence_limit": "Numeric command return codes and nobody invocation are from BUILD.json; no separate persistent native process transcript or effective-UID snapshot was provided. This peer verified present source/binary/compiler/account identities read-only and did not rerun tests.",
+  "peer_execution_counts": {
+    "compile": 0,
+    "probe": 0,
+    "graph": 0,
+    "container": 0,
+    "device": 0
+  }
+}

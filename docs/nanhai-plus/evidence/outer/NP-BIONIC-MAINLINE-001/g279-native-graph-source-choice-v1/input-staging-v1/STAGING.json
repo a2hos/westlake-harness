@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai-g279-input-staging-v1",
+  "at": "2026-10-04T10:33:49.963882+00:00",
+  "container_execution": false,
+  "graph_executed": false,
+  "device_executed": false,
+  "remote_rc": 0,
+  "remote": {
+    "files": [
+      {
+        "bytes": 5337,
+        "created": true,
+        "mode": "0o444",
+        "name": "generate_manifest_heads.py",
+        "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634"
+      },
+      {
+        "bytes": 252412,
+        "created": true,
+        "mode": "0o444",
+        "name": "MANIFEST-HEADS.tsv",
+        "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+      },
+      {
+        "bytes": 682,
+        "created": true,
+        "mode": "0o444",
+        "name": "g279-native-graph-env.json",
+        "sha256": "0df4f6fa4f57ac2cda2998723b935fd89c9dfce8f10afd0e23c08a6f2ca9ab91"
+      }
+    ],
+    "project": "/data/source/.nanhai-plus-opaleye-native"
+  },
+  "status": "STAGED_HASH_VERIFIED",
+  "host": "gz02",
+  "env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "local_env_file_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+  "binding_sha256": "0df4f6fa4f57ac2cda2998723b935fd89c9dfce8f10afd0e23c08a6f2ca9ab91",
+  "stderr": ""
+}

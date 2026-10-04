@@ -1,0 +1,19 @@
+{
+  "name": "zip",
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/verify_zip.py",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ZIP-FACTS.json",
+    "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c"
+  ],
+  "rc": 0,
+  "timeout": false,
+  "limit_seconds": 300,
+  "elapsed_seconds": 0.3665000000037253,
+  "stdout_sha256": "3884a11559f94b2649d12478b84aca7e5f8dfa0049dbc4e7630e6445e1c84887",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 279,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,21 @@
+{
+  "apk": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw",
+  "sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+  "bytes": 133273833,
+  "tools": {
+    "aapt2": {
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+      "sha256": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4"
+    },
+    "apksigner.jar": {
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+      "sha256": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9"
+    },
+    "java": {
+      "path": "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+      "sha256": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+    }
+  },
+  "script_sha256": "fff04cd70256012e561ba4748f075c50827a3fc8bb311545c9a271177c7cf583",
+  "verify_zip_sha256": "585c1e56710ef59db217687dfdea43055ae124a02cfeccf07bebd995a9821b0f"
+}

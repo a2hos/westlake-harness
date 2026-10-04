@@ -1,0 +1,194 @@
+{
+  "schema": "nanhai.evo19.read_only_pilot.v1",
+  "at": "2026-10-04T10:35:05.421213+00:00",
+  "method": "Read-only Python JSON parse, SHA-256 of seven existing receipts, and assertions on terminal statuses and staging peer digest link; no remote invocation.",
+  "command": "python3 - <<PY (local JSON/hash assertions; recorded as this pilot, rc0) PY",
+  "rc": 0,
+  "checks": {
+    "g276_pregraph_mount_drift": true,
+    "g278_native_host_tool_rc0": true,
+    "g279_stage_remote_rc0_three_files": true,
+    "g279_peer_digest_link": true,
+    "g280_variant_static_only": true,
+    "evo18_grouped_181": true
+  },
+  "references": {
+    "evo18": {
+      "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/ROOT-CLOSURE.json",
+      "sha256": "5236d3d2302a9b258c879aa83932ea54833ec0f7b3f51ea66f2aee92e7cd02f3",
+      "at": "2026-10-04T09:23:59.209488+00:00"
+    },
+    "g276": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/RESULT.json",
+      "sha256": "9797371cba73c4253040bb421a59201b6cd69ca0d2b05776097bff8af21673dc",
+      "at": "2026-10-04T09:40:20.390960+00:00",
+      "terminal_rc": 2,
+      "finished_at": "2026-10-04T09:43:43.415024+00:00",
+      "commands": [
+        {
+          "id": "source-volume-freshness",
+          "rc": 1,
+          "started_at": "2026-10-04T09:41:08.281978+00:00",
+          "finished_at": "2026-10-04T09:41:08.357548+00:00"
+        },
+        {
+          "id": "source-volume-create",
+          "rc": 0,
+          "started_at": "2026-10-04T09:41:16.426049+00:00",
+          "finished_at": "2026-10-04T09:41:16.465035+00:00"
+        },
+        {
+          "id": "source-volume-created-inspect",
+          "rc": 0,
+          "started_at": "2026-10-04T09:41:24.605526+00:00",
+          "finished_at": "2026-10-04T09:41:24.646297+00:00"
+        },
+        {
+          "id": "out-volume-freshness",
+          "rc": 1,
+          "started_at": "2026-10-04T09:41:32.630252+00:00",
+          "finished_at": "2026-10-04T09:41:32.653746+00:00"
+        },
+        {
+          "id": "out-volume-create",
+          "rc": 0,
+          "started_at": "2026-10-04T09:41:40.720519+00:00",
+          "finished_at": "2026-10-04T09:41:40.762729+00:00"
+        },
+        {
+          "id": "out-volume-created-inspect",
+          "rc": 0,
+          "started_at": "2026-10-04T09:41:48.849651+00:00",
+          "finished_at": "2026-10-04T09:41:48.890623+00:00"
+        },
+        {
+          "id": "tmp-volume-freshness",
+          "rc": 1,
+          "started_at": "2026-10-04T09:41:56.994693+00:00",
+          "finished_at": "2026-10-04T09:41:57.034060+00:00"
+        },
+        {
+          "id": "tmp-volume-create",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:05.404653+00:00",
+          "finished_at": "2026-10-04T09:42:05.447466+00:00"
+        },
+        {
+          "id": "tmp-volume-created-inspect",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:13.813618+00:00",
+          "finished_at": "2026-10-04T09:42:13.854663+00:00"
+        },
+        {
+          "id": "work-init-create",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:21.971593+00:00",
+          "finished_at": "2026-10-04T09:42:22.153757+00:00"
+        },
+        {
+          "id": "work-init-inspect-created",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:30.303621+00:00",
+          "finished_at": "2026-10-04T09:42:30.326658+00:00"
+        },
+        {
+          "id": "cleanup-work-init-inspect",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:38.687582+00:00",
+          "finished_at": "2026-10-04T09:42:38.730017+00:00"
+        },
+        {
+          "id": "cleanup-source-volume-inspect",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:47.031073+00:00",
+          "finished_at": "2026-10-04T09:42:47.073566+00:00"
+        },
+        {
+          "id": "cleanup-source-volume-remove",
+          "rc": 0,
+          "started_at": "2026-10-04T09:42:55.087125+00:00",
+          "finished_at": "2026-10-04T09:42:55.130418+00:00"
+        }
+      ]
+    },
+    "g278": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json",
+      "sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6",
+      "at": "2026-10-04T10:09:11.257452+00:00",
+      "command": "env TOP=$NANHAI_GZ02_NATIVE_SOURCE_VIEW OUT_DIR=$NANHAI_GZ02_NATIVE_PROJECT_ROOT/out/soong-ui-v1 TMPDIR=$NANHAI_GZ02_NATIVE_PROJECT_ROOT/tmp/soong-ui-v1 NANHAI_SOONG_WORKTREE=$NANHAI_GZ02_SOONG_WORKTREE NANHAI_NATIVE_PROJECT_ROOT=$NANHAI_GZ02_NATIVE_PROJECT_ROOT timeout 600s strace -f -qq -e execve -o $OUT_DIR/execve.log bash $NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/nanhai_plus_native_soong_ui.sh",
+      "ssh_batchmode_rc": 0,
+      "build_rc": 0
+    },
+    "g279": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/STAGING.json",
+      "sha256": "6f71fa24eac010ce33e5572c21b7a0aca2724ae9c4f5f20612ba768fe4633eb1",
+      "at": "2026-10-04T10:33:49.963882+00:00",
+      "remote_rc": 0,
+      "outer_rc": "OWNER_REPORTED_0_NOT_ENCODED_IN_STAGING_JSON"
+    },
+    "g279_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/actual-peer-v1/REVIEW.json",
+      "sha256": "3ff416b470fb9207d3a6cd690a07ab1e9b59507287ba6b28692cd1d1f4cdd782",
+      "at": "2026-10-04T10:34:31.010722+00:00"
+    },
+    "g280": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/RESULT.json",
+      "sha256": "8afd0b957b4e960fa1db29e86f1a2df1d17701062306b43bef8f2f0d4b422368",
+      "at": "2026-10-04T10:31:42.170073+00:00",
+      "commands": [
+        {
+          "name": "zip",
+          "argv": [
+            "/usr/local/bin/python3",
+            "-B",
+            "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/verify_zip.py",
+            "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw",
+            "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ZIP-FACTS.json",
+            "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c"
+          ],
+          "rc": 0,
+          "timeout": false
+        },
+        {
+          "name": "badging",
+          "argv": [
+            "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+            "dump",
+            "badging",
+            "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+          ],
+          "rc": 0,
+          "timeout": false
+        },
+        {
+          "name": "signature",
+          "argv": [
+            "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+            "-XX:-UsePerfData",
+            "-Xmx512m",
+            "-Djava.awt.headless=true",
+            "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1",
+            "-jar",
+            "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+            "verify",
+            "--verbose",
+            "--print-certs",
+            "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+          ],
+          "rc": 0,
+          "timeout": false
+        }
+      ]
+    },
+    "g280_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/peer-review-v1/REVIEW.json",
+      "sha256": "c8175cb1802ccdda965485650e15ba11c001f5a1ee6e440d119cce2a082d8aec",
+      "at": "2026-10-04T10:34:01.133572+00:00"
+    }
+  },
+  "limits": [
+    "No fresh SSH readback; G279 remote files rely on actual peer review.",
+    "No graph or device run, and no proof that EVO18 avoided a host graph.",
+    "This pilot does not prove a future runner checks delivered input bytes before execution."
+  ]
+}

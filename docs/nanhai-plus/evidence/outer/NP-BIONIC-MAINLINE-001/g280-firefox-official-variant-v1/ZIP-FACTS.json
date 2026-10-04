@@ -1,0 +1,178 @@
+{
+  "abi_counts": {
+    "arm64-v8a": 18
+  },
+  "body_bytes": 133273833,
+  "body_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+  "crc_first_failure": null,
+  "invalid_native_members": [],
+  "manifest_names": [
+    "AndroidManifest.xml"
+  ],
+  "native_members": [
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 10096,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 134288,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libclearkey.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 3370832,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libcrashhelper.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 5940736,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libcrashtools.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 10360,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 875160,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfreebl3.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 5120344,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libgkcodecs.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 176520,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libjnidispatch.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 206832,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblgpllibs.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 21878760,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmegazord.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 2093184,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmozavcodec.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 453808,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmozavutil.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 1295840,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmozglue.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 2874736,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnss3.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 4800,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libplugin-container.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 1366632,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsigner.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 326008,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsoftokn3.so"
+    },
+    {
+      "abi": "arm64-v8a",
+      "abi_matches_elf": true,
+      "bytes": 152498296,
+      "elf_class": 2,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libxul.so"
+    }
+  ],
+  "preflight_pass": true,
+  "root_dex": [
+    {
+      "bytes": 13084400,
+      "magic_hex": "6465780a30333800",
+      "name": "classes.dex"
+    },
+    {
+      "bytes": 8788328,
+      "magic_hex": "6465780a30333800",
+      "name": "classes2.dex"
+    },
+    {
+      "bytes": 9345440,
+      "magic_hex": "6465780a30333800",
+      "name": "classes3.dex"
+    }
+  ],
+  "unique_names": true,
+  "zip_entries": 3307
+}

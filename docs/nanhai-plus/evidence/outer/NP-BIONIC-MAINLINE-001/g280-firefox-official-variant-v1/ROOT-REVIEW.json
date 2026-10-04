@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai-g280-firefox-root-review-v1",
+  "at": "2026-10-04T10:34:57.031206+00:00",
+  "decision": "ACCEPT_STATIC_PREFLIGHT_CANDIDATE_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ADMISSION-CANDIDATE.json",
+    "sha256": "b969df8efafde6917d8088d2344599b7f0fcb37b83244b3b7abecbfedcb796c5"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/RESULT.json",
+    "sha256": "8afd0b957b4e960fa1db29e86f1a2df1d17701062306b43bef8f2f0d4b422368"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/peer-review-v1/REVIEW.json",
+    "sha256": "c8175cb1802ccdda965485650e15ba11c001f5a1ee6e440d119cce2a082d8aec"
+  },
+  "registered_apk_admitted": false,
+  "variant_raw_apk_canonical_admitted": false,
+  "full_static_scan_admitted": false,
+  "blackbox_qualification": false,
+  "device_started": false,
+  "reason": "Fetched official archive bytes differ from historical registered APK SHA; publisher certificate external baseline and full static workflow not yet proven. Preserve old SHA mismatch."
+}

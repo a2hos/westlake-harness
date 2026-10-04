@@ -1,0 +1,9 @@
+2656005 execve("/usr/bin/sudo", ["sudo", "-n", "-u", "nobody", "--", "/data/source/.nanhai-plus-opaley"..., "--probe"], 0x7ffc036ea180 /* 17 vars */) = 0
+2656005 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7c51d0256390) = 2656006
+2656006 execve("/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/no-namespace-exec", ["/data/source/.nanhai-plus-opaley"..., "--probe"], 0x560023ee2c60 /* 17 vars */) = 0
+2656006 unshare(0)                      = -1 EPERM (Operation not permitted)
+2656006 chroot(0xffffffffffffffff)      = -1 EPERM (Operation not permitted)
+2656006 mount(0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0, NULL) = -1 EPERM (Operation not permitted)
+2656006 clone3(NULL, 0)                 = -1 ENOSYS (Function not implemented)
+2656006 clone(child_stack=NULL, flags=CLONE_THREAD|CLONE_NEWUSER) = -1 EPERM (Operation not permitted)
+2656005 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2656006, si_uid=65534, si_status=0, si_utime=0, si_stime=0} ---

@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai.evo19.root-closure.v1",
+  "at": "2026-10-04T10:35:19.922813+00:00",
+  "decision": "CLOSE_ONE_LIMITED_CANDIDATE_NO_GLOBAL_PROMOTION",
+  "lens": "input authority binding and remote delivery/execution gate",
+  "prior_evo18": {
+    "status": "SOURCE_DISCOVERY_IMPROVED_GRAPH_EFFECT_UNPROVEN",
+    "evidence": "181 diagnostics grouped; exact R4 providers sourced; G276 stopped before graph at init mount drift"
+  },
+  "actual_result_groups": [
+    "G276 pregraph terminal failure",
+    "G278 native host tool rc0",
+    "G280 Firefox variant static preflight",
+    "G279 actual three-file remote staging with independent peer readback"
+  ],
+  "one_improvement": "One fail-closed pre-execution receipt must bind authoritative environment, runner/wrapper identity, remote file SHA/size/mode and intended argv/interpreter, with separate outer SSH and remote rc; reject mismatch before graph.",
+  "pilot": {
+    "path": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/PILOT.json",
+    "sha256": "e186b4767673fa57fb5ce90d27ca54818f45d75086a869f8fa2fcc469188846e",
+    "rc": 0
+  },
+  "decision_md": {
+    "path": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/DECISION.md",
+    "sha256": "ab8eaf4c7e19f87cb82036e10b6fa1d2d0efa4acc25627f42587accf33fe5397"
+  },
+  "unproven": [
+    "EVO18 graph avoidance or target graph success",
+    "Future runner honors bindings",
+    "G279 staging alone releases graph",
+    "Firefox historical package acceptance, runtime or device behavior"
+  ],
+  "canonical_delta": 0,
+  "graph_runs_by_peer": 0,
+  "device_commands_by_peer": 0
+}

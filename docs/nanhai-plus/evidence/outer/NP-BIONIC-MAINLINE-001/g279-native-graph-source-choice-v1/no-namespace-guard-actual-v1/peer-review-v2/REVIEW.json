@@ -1,0 +1,18 @@
+{
+  "schema": "nanhai.g279.no_namespace_guard_trace_peer_review.v1",
+  "decision": "ACCEPT_GUARD_HOST_TOOL_PROBE_ONLY",
+  "references": {
+    "prior_actual_peer_sha256": "1d5514e80246cd26258a5fb482659a9ee994db00fbb47bb16a9f9672345e491b",
+    "trace_receipt_sha256": "65fe484e37ca5b83db4b4a80e72ccf5cb81fb36f559d5097a1f41685ccae0dd9",
+    "raw_trace_sha256": "bc03d7364282a39e8a02e68694799d145665a7cc273fa9bdc8f64359bf868f95",
+    "source_sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f"
+  },
+  "checks": {
+    "integrity": "Local probe.strace.raw is 1055 bytes and matches TRACE.json trace_sha256; TRACE.json records ssh_rc=0 and probe_rc=0.",
+    "identity": "Raw trace execve shows sudo -n -u nobody -- <project OUT guard> --probe, followed by child execve of that guard. Parent SIGCHLD records child uid 65534 and status 0.",
+    "observed_syscalls": "Guard child unshare(0), chroot(invalid pointer), mount(invalid pointers), and clone(CLONE_THREAD|CLONE_NEWUSER) each returned EPERM; clone3(NULL,0) returned ENOSYS. This matches the reviewed source probe and filter choices.",
+    "scope": "The trace shows sudo making one ordinary clone before the guarded child execve; no successful namespace, chroot, mount, or guarded clone appears in the captured probe. It is a bounded probe trace, not comprehensive filter coverage or descendant-inheritance evidence."
+  },
+  "boundary": "Accept the exact compiled guard as a tested host tool only. Do not infer Soong graph, target build, container, or device acceptance; Soong invocation requires separate review.",
+  "peer_actions": "Read-only inspection and hashing of local trace/receipt/source; no SSH replay, compile, probe, graph, container, or device action."
+}

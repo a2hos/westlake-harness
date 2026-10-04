@@ -1,0 +1,1 @@
+{"abi_counts": {"arm64-v8a": 18}, "body_bytes": 133273833, "body_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c", "crc_first_failure": null, "manifest_names": ["AndroidManifest.xml"], "preflight_pass": true, "unique_names": true, "zip_entries": 3307}

@@ -1,0 +1,287 @@
+{
+  "schema": "g280-firefox-official-variant-static-preflight-v1",
+  "at": "2026-10-04T10:31:42.170073+00:00",
+  "status": "CANDIDATE_ONLY_NO_CANONICAL_ADMISSION",
+  "body_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+  "body_bytes": 133273833,
+  "commands": [
+    {
+      "name": "zip",
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/verify_zip.py",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ZIP-FACTS.json",
+        "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c"
+      ],
+      "rc": 0,
+      "timeout": false,
+      "limit_seconds": 300,
+      "elapsed_seconds": 0.3665000000037253,
+      "stdout_sha256": "3884a11559f94b2649d12478b84aca7e5f8dfa0049dbc4e7630e6445e1c84887",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 279,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+      ],
+      "rc": 0,
+      "timeout": false,
+      "limit_seconds": 180,
+      "elapsed_seconds": 0.24043424997944385,
+      "stdout_sha256": "4d7f01c5655e1810b443e4ca69138d781a3c102dd7befb0ab3549bb999f718ac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 10536,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+      ],
+      "rc": 0,
+      "timeout": false,
+      "limit_seconds": 180,
+      "elapsed_seconds": 0.2535444999812171,
+      "stdout_sha256": "b778b4e754738cfe0670e622283d13d5012e8a073b0ee79e849e8f0879677909",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1029,
+      "stderr_bytes": 0
+    }
+  ],
+  "zip_preflight": {
+    "abi_counts": {
+      "arm64-v8a": 18
+    },
+    "body_bytes": 133273833,
+    "body_sha256": "d9c16c7406ec275896bb7734cb652c812092531e917a9db7287175dec26e251c",
+    "crc_first_failure": null,
+    "invalid_native_members": [],
+    "manifest_names": [
+      "AndroidManifest.xml"
+    ],
+    "native_members": [
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 10096,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libandroidx.graphics.path.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 134288,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libclearkey.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 3370832,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libcrashhelper.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 5940736,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libcrashtools.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 10360,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libdatastore_shared_counter.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 875160,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libfreebl3.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 5120344,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libgkcodecs.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 176520,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libjnidispatch.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 206832,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/liblgpllibs.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 21878760,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libmegazord.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 2093184,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libmozavcodec.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 453808,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libmozavutil.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 1295840,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libmozglue.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 2874736,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libnss3.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 4800,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libplugin-container.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 1366632,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libsigner.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 326008,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libsoftokn3.so"
+      },
+      {
+        "abi": "arm64-v8a",
+        "abi_matches_elf": true,
+        "bytes": 152498296,
+        "elf_class": 2,
+        "machine": 183,
+        "name": "lib/arm64-v8a/libxul.so"
+      }
+    ],
+    "preflight_pass": true,
+    "root_dex": [
+      {
+        "bytes": 13084400,
+        "magic_hex": "6465780a30333800",
+        "name": "classes.dex"
+      },
+      {
+        "bytes": 8788328,
+        "magic_hex": "6465780a30333800",
+        "name": "classes2.dex"
+      },
+      {
+        "bytes": 9345440,
+        "magic_hex": "6465780a30333800",
+        "name": "classes3.dex"
+      }
+    ],
+    "unique_names": true,
+    "zip_entries": 3307
+  },
+  "package": "org.mozilla.firefox",
+  "version_code": "2016183650",
+  "version_name": "156.0",
+  "native_code_badging": [
+    "'arm64-v8a'"
+  ],
+  "signer_certificate_sha256": [
+    "a78b62a5165b4494b2fead9e76a280d22d937fee6251aece599446b2ea319b04"
+  ],
+  "verified_schemes_parsed": {
+    "v1": false,
+    "v2": true,
+    "v3": false,
+    "v3.1": false,
+    "v4": false
+  },
+  "provenance": {
+    "request_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/REQUEST.json",
+    "request_sha256": "fe4b82d5a806408e0ad356f34ba8ba0b90f9290eaf40856ed44c88908f643ba0",
+    "receipt_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/RECEIPT.json",
+    "receipt_sha256": "cb4b003e2d32835e11778897837f25661d296470527d0c9542eb2bb071955881",
+    "headers_sha256": "1c35448595cb713d06e279228e48ba1afcc7824c324413af7188bb9d5cae2cd6",
+    "requested_source_url": "https://archive.mozilla.org/pub/fenix/releases/156.0/android/fenix-156.0-android-arm64-v8a/fenix-156.0.multi.android-arm64-v8a.apk",
+    "effective_url": "https://archive.mozilla.org/pub/fenix/releases/156.0/android/fenix-156.0-android-arm64-v8a/fenix-156.0.multi.android-arm64-v8a.apk",
+    "http_code": 200,
+    "ssl_verify_result": 0,
+    "download_bytes": 133273833,
+    "historic_expected_sha256": "313626eef7c918f950529a792f3738c8d5b41294ed2a7192306795bf0ca41ec6",
+    "historic_expected_mismatch_preserved": true
+  },
+  "all_commands_rc0": true,
+  "source_postguard_equal": true,
+  "canonical_count_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "limitations": [
+    "Current original is a distinct variant from the historical registry SHA; do not rewrite old failure",
+    "Published publisher-signing certificate comparison remains separate",
+    "This is not a full harness DEX/ELF static inventory, installability, blackbox qualification, or cold startup"
+  ]
+}

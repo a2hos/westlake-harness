@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai-g279-no-namespace-guard-probe-trace-v1",
+  "at": "2026-10-04T10:38:46.798537+00:00",
+  "host": "gz02",
+  "source": "/data/source/.nanhai-plus-opaleye-native/out/no-namespace-guard-v1/probe.strace",
+  "ssh_rc": 0,
+  "trace_sha256": "bc03d7364282a39e8a02e68694799d145665a7cc273fa9bdc8f64359bf868f95",
+  "trace_bytes": 1055,
+  "probe_rc": 0,
+  "observed_denials": [
+    "unshare(0)=EPERM",
+    "chroot(invalid)=EPERM",
+    "mount(invalid)=EPERM",
+    "clone3(NULL,0)=ENOSYS",
+    "clone(CLONE_NEWUSER|CLONE_THREAD)=EPERM"
+  ],
+  "graph_executed": false,
+  "container_executed": false,
+  "device_executed": false
+}

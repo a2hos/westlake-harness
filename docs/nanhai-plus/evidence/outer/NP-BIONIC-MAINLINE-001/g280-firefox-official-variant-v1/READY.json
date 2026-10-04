@@ -1,0 +1,70 @@
+{
+  "schema": "g280-firefox-official-variant-ready-v1",
+  "status": "CANDIDATE_ONLY",
+  "at": "2026-10-04T10:32:20.913593+00:00",
+  "files": {
+    "verify_zip.py": {
+      "bytes": 3002,
+      "sha256": "585c1e56710ef59db217687dfdea43055ae124a02cfeccf07bebd995a9821b0f"
+    },
+    "run.py": {
+      "bytes": 6726,
+      "sha256": "fff04cd70256012e561ba4748f075c50827a3fc8bb311545c9a271177c7cf583"
+    },
+    "INPUTS.json": {
+      "bytes": 1069,
+      "sha256": "843d69761ff1cdb52c4d28ecbd4b3b8185a644c0d534ab6940b2ba2b2459b71b"
+    },
+    "ZIP-FACTS.json": {
+      "bytes": 4026,
+      "sha256": "7bb6039bca8f5f5ba865108b040a8b7cdc1016b945f32aba658360f932d02e25"
+    },
+    "RESULT.json": {
+      "bytes": 9582,
+      "sha256": "8afd0b957b4e960fa1db29e86f1a2df1d17701062306b43bef8f2f0d4b422368"
+    },
+    "zip.COMMAND.json": {
+      "bytes": 962,
+      "sha256": "2f0257ae9d51eece4eb232bea2fbe44fa0f4362787de5e475715ae81880f3905"
+    },
+    "badging.COMMAND.json": {
+      "bytes": 632,
+      "sha256": "be7975955dd5c394ff90d8304a64c10224e865e790e513808f8301f386e3126d"
+    },
+    "signature.COMMAND.json": {
+      "bytes": 993,
+      "sha256": "08fd900067f13a6852c3d14328c0c8f94cdbf36af2f54965342afb28839fba99"
+    },
+    "zip.stdout.raw": {
+      "bytes": 279,
+      "sha256": "3884a11559f94b2649d12478b84aca7e5f8dfa0049dbc4e7630e6445e1c84887"
+    },
+    "zip.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "badging.stdout.raw": {
+      "bytes": 10536,
+      "sha256": "4d7f01c5655e1810b443e4ca69138d781a3c102dd7befb0ab3549bb999f718ac"
+    },
+    "badging.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "signature.stdout.raw": {
+      "bytes": 1029,
+      "sha256": "b778b4e754738cfe0670e622283d13d5012e8a073b0ee79e849e8f0879677909"
+    },
+    "signature.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ADMISSION-CANDIDATE.json": {
+      "bytes": 7123,
+      "sha256": "b969df8efafde6917d8088d2344599b7f0fcb37b83244b3b7abecbfedcb796c5"
+    }
+  },
+  "result_sha256": "8afd0b957b4e960fa1db29e86f1a2df1d17701062306b43bef8f2f0d4b422368",
+  "admission_candidate_sha256": "b969df8efafde6917d8088d2344599b7f0fcb37b83244b3b7abecbfedcb796c5",
+  "canonical_count_delta": 0
+}

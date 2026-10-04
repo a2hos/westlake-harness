@@ -1,0 +1,28 @@
+{
+  "schema": "nanhai.g279.native_input_staging_v4_static_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:33:42.574578+00:00",
+  "decision": "GO_ONE_SHOT_INPUT_STAGING_ONLY",
+  "script": {
+    "path": "scripts/nanhai_plus_stage_native_graph_inputs.py",
+    "sha256": "b9c341e04555ab0bb8dfd6795ab5da83fa87e0d8049b7c112649b3a8525d955c"
+  },
+  "scope": "Permit one execution only of this exact script through the authoritative nanhai_plus_env.py --run wrapper to stage the three fixed read-only inputs on gz02. No graph, target build, container, Bridge or device release.",
+  "checks": {
+    "authoritative_env": "load_environment(local_env.md) current config SHA256 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718 matches frozen constant; script compares all six REQUIRED bindings and wrapper SHA and demands host gz02.",
+    "fixed_inputs": "Current generate_manifest_heads.py SHA256 dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634 and MANIFEST-HEADS.tsv SHA256 fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356 match script pins; third env JSON is deterministically derived from pinned config and raw local_env bytes and its SHA is recorded.",
+    "remote_path_and_mode": "Remote packet fixes exact three names/order. Project/control must be existing real directories; control is opened with O_DIRECTORY|O_NOFOLLOW, leaf files with O_EXCL|O_NOFOLLOW relative to dir_fd. New files are fsynced then fchmod(fd,0444) before close; remote rereads SHA and mode via fd. GZ02 Python 3.12.3 supports os.fchmod; prior unsupported chmod call removed.",
+    "one_shot_and_receipt": "Nonblocking exclusive flock and under-lock second receipt check occur before SSH. Status changes to REMOTE_STATE_UNKNOWN before subprocess.run, so post-attempt failures are not falsely marked pre-staging; catch path records error and atomic exclusive hard-link receipt. Existing receipt stops before SSH.",
+    "remote_command": "Only ssh gz02 python3 -c of the fixed staging program is invoked; source contains no graph, namespace/container or device launcher. Current remote control has none of the three destination files and local STAGING.json is absent."
+  },
+  "post_execution_gate": "Review actual STAGING.json, remote rc, returned three names/hash/mode, and remote files independently before any graph runner review; this GO does not imply source graph readiness.",
+  "limits": [
+    "Static review and read-only host capability/path checks only; the staging script itself was not run here.",
+    "An uncatchable kill or external filesystem mutation can leave state requiring read-only reconciliation; never infer remote absence solely from a missing receipt."
+  ],
+  "review_execution_counts": {
+    "staging": 0,
+    "graph": 0,
+    "container": 0,
+    "device": 0
+  }
+}

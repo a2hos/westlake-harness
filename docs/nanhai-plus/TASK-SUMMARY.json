@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T10:27:22.487980+00:00",
+  "checked_at": "2026-10-04T10:39:37.180571+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -544,15 +544,19 @@
     "next_input": "Fix runner v2 peer B1-B6, then independent review, separate original owner graph ACK and one-shot release"
   },
   "reflection": {
-    "latest": "EVO-0018-type-registration-cohort",
+    "latest": "EVO-0019-input-authority-execution-gate",
     "root_closure": {
-      "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/ROOT-CLOSURE.json",
-      "sha256": "5236d3d2302a9b258c879aa83932ea54833ec0f7b3f51ea66f2aee92e7cd02f3"
+      "path": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/ROOT-CLOSURE.json",
+      "sha256": "f5c0872cf64fc322e74b65693c63a403edf7920f5f68d615dc21d2f8c4bfe428"
     },
     "actual_result_groups": 4,
     "limited_pilot": true,
     "globally_promoted": false,
-    "pending_actual_result_groups": 0
+    "pending_actual_result_groups": 0,
+    "previous_evo18_root_closure": {
+      "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/ROOT-CLOSURE.json",
+      "sha256": "5236d3d2302a9b258c879aa83932ea54833ec0f7b3f51ea66f2aee92e7cd02f3"
+    }
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -1206,5 +1210,32 @@
     "graph_executed": false,
     "target_compiled": false,
     "device_executed": false
+  },
+  "g279_input_staging": {
+    "status": "accepted_three_read_only_remote_inputs_only",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/ROOT-REVIEW.json",
+      "sha256": "cb0a2c015fe7141a0074982712e516d16e4a4564da1574603bd8996f32f890ea"
+    },
+    "remote_rc": 0,
+    "graph_executed": false
+  },
+  "g280_firefox_variant": {
+    "status": "static_preflight_candidate_only",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1/ROOT-REVIEW.json",
+      "sha256": "1004c1b996a5784552bf331b1b892cbc592e88e780244f86a26f6b494589a3f1"
+    },
+    "canonical_raw_delta": 0,
+    "complete_static_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g279_no_namespace_guard": {
+    "status": "accepted_host_tool_smoke_only",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/no-namespace-guard-actual-v1/ROOT-REVIEW.json",
+      "sha256": "4fe94373c2ab2a315662ee6346bc300c7b1759e8d3299327baa83915d67915f8"
+    },
+    "graph_released": false
   }
 }

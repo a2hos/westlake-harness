@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai.g279.no_namespace_exec_static_peer_review.v2",
+  "reviewed_utc": "2026-10-04T10:37:39.147696+00:00",
+  "decision": "GO_COMPILE_AND_SAFE_PROBE_ONLY",
+  "source": {
+    "path": "scripts/nanhai_plus_no_namespace_exec.c",
+    "sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f"
+  },
+  "scope": "Permit gz02 Linux x86_64 compilation into project-owned OUT and bounded --probe plus ordinary exec positive/negative tests using inert commands only. No Soong graph, target build, container, namespace launcher or device execution.",
+  "static_checks": {
+    "bpf_control_flow": "Architecture mismatch kills; AUDIT_ARCH_X86_64 continues. x32 syscall bit kills. Equality macros deny unshare, setns, chroot, pivot_root and mount-family syscalls. clone3 returns ENOSYS because classic BPF cannot dereference its flags pointer. clone checks low 32-bit arg0 flags on x86_64 and denies any NEW_NAMESPACE_FLAGS bit; non-clone and ordinary clone fall through to allow. Branch offsets statically consistent.",
+    "host_abi": "GZ02 Linux 6.8.0-87-generic x86_64. Host unistd_64.h defines clone3 and all optional mount API syscall numbers; linux/sched.h defines all eight listed CLONE_NEW* flags. Source now rejects __ILP32__ x32 compilation. Historical pre-5.4 x32 nr 512-547 caveat is outside this pinned host scope.",
+    "probe_safety": "unshare(0) is a no-op without filter; chroot and mount receive invalid pointers; clone3(NULL,0) is invalid; clone uses CLONE_NEWUSER|CLONE_THREAD, an invalid flag combination. Thus if the filter is wrong, probe cannot perform the former real user namespace creation or mount tmpfs over root. It expects filter-specific EPERM/ENOSYS and fails closed otherwise.",
+    "error_paths": "PR_SET_NO_NEW_PRIVS or PR_SET_SECCOMP failure returns 70 before probe/exec; execvp failure returns 71. Filter is installed before execvp and inherited through permitted fork/clone/exec descendants."
+  },
+  "conditions": [
+    "Compile exact reviewed source SHA into gz02 project OUT, recording compiler argv/rc and resulting ELF SHA. Do not compile into shared source or Bridge paths.",
+    "Run --probe only on the built exact binary; record actual exit code, stdout/stderr and bounded process trace.",
+    "Ordinary exec positives may use inert commands such as /usr/bin/true; negatives must use nonexistent executable or harmless invalid-argument helpers, never a live namespace/mount/container launcher.",
+    "A successful probe is a filter smoke test, not Soong graph release. Separately review runner argv and generated actions before any graph command."
+  ],
+  "limitations": [
+    "The generic execvp interface can launch arbitrary commands, including clients that talk to an external daemon; the caller must pin allowed argv. Seccomp is not a complete container prohibition or sandbox.",
+    "The #ifdef guards for clone3 and newer mount syscalls depend on build headers; GO is limited to the observed gz02 headers and must fail if compiler/header identity differs.",
+    "Probe does not exercise every denied syscall; static branch review and future bounded tests remain separate."
+  ],
+  "review_execution_counts": {
+    "compile": 0,
+    "probe": 0,
+    "graph": 0,
+    "container": 0,
+    "device": 0
+  },
+  "primary_references": [
+    "https://kernel.org/doc/html/latest/userspace-api/seccomp_filter.html",
+    "https://man7.org/linux/man-pages/man2/seccomp.2.html",
+    "https://man7.org/linux/man-pages/man2/unshare.2.html",
+    "https://man7.org/linux/man-pages/man2/clone.2.html"
+  ]
+}

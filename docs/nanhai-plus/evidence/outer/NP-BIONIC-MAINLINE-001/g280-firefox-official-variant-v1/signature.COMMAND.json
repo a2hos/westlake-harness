@@ -1,0 +1,24 @@
+{
+  "name": "signature",
+  "argv": [
+    "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+    "-XX:-UsePerfData",
+    "-Xmx512m",
+    "-Djava.awt.headless=true",
+    "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g280-firefox-official-variant-v1",
+    "-jar",
+    "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+    "verify",
+    "--verbose",
+    "--print-certs",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.mozilla.firefox/body.raw"
+  ],
+  "rc": 0,
+  "timeout": false,
+  "limit_seconds": 180,
+  "elapsed_seconds": 0.2535444999812171,
+  "stdout_sha256": "b778b4e754738cfe0670e622283d13d5012e8a073b0ee79e849e8f0879677909",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 1029,
+  "stderr_bytes": 0
+}

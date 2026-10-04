@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai-g279-staging-root-review-v1",
+  "at": "2026-10-04T10:34:57.030661+00:00",
+  "decision": "ACCEPT_THREE_REMOTE_READ_ONLY_INPUTS_ONLY",
+  "staging": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/STAGING.json",
+    "sha256": "6f71fa24eac010ce33e5572c21b7a0aca2724ae9c4f5f20612ba768fe4633eb1"
+  },
+  "independent_actual_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/input-staging-v1/actual-peer-v1/REVIEW.json",
+    "sha256": "3ff416b470fb9207d3a6cd690a07ab1e9b59507287ba6b28692cd1d1f4cdd782"
+  },
+  "remote_rc": 0,
+  "remote_files": 3,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "next": "G279 graph runner v2 remains NO_GO; correct B1-B6 in a new reviewed version and obtain separate owner graph ACK."
+}
