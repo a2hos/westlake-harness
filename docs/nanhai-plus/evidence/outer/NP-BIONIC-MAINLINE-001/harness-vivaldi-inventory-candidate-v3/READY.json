@@ -1,0 +1,132 @@
+{
+  "schema": "vivaldi-static-candidate-ready-v1",
+  "at": "2026-10-04T08:13:05.181058+00:00",
+  "status": "CANDIDATE_ONLY_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "candidate": "harness-vivaldi-inventory-candidate-v3",
+  "result_sha256": "869896d1b696b1879893cf375fd1c0ef9496e287c42ed1e64b2b6f33380fdb33",
+  "handoff_gate": "PASS",
+  "files": {
+    "INPUTS.json": {
+      "bytes": 22962,
+      "sha256": "a6db46f9cafeccf94d572d7b20b19d6b9995d500bff39169b6aa7bbc736a0636"
+    },
+    "common.py": {
+      "bytes": 1775,
+      "sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a"
+    },
+    "scan_phase.py": {
+      "bytes": 4739,
+      "sha256": "9f343773f0edb0176ff04aa6c367a1f59280477ebc7e93e50e7604a2bb1cd402"
+    },
+    "run.py": {
+      "bytes": 5622,
+      "sha256": "90780134e745c336f0411285112a611f6a20e52a6bc851dae22292e3c48de3b9"
+    },
+    "STARTED.json": {
+      "bytes": 517,
+      "sha256": "78a389a5432f41d61dcaac0bf0978482591ce454deb14d44f7530dbbece0944d"
+    },
+    "SOURCE-BEFORE.json": {
+      "bytes": 2716,
+      "sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7"
+    },
+    "SOURCE-AFTER.json": {
+      "bytes": 2716,
+      "sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7"
+    },
+    "RESULT.json": {
+      "bytes": 6905,
+      "sha256": "869896d1b696b1879893cf375fd1c0ef9496e287c42ed1e64b2b6f33380fdb33"
+    },
+    "HANDOFF.md": {
+      "bytes": 5924,
+      "sha256": "dde1bf2bd5c20bba951fe101b45da05e968bbd134640dcf23384399cf200f562"
+    },
+    "phases/zip/COMMAND.json": {
+      "bytes": 1410,
+      "sha256": "048983f50e52f57f035446346df986b2d5530233bdf1c13bed30f4cb0ddcc0dc"
+    },
+    "phases/zip/RESULT.json": {
+      "bytes": 198,
+      "sha256": "bbe2141351ca5fcb1fa48c9168a58580263c286dd94ee4f9b83ca05feed614d9"
+    },
+    "phases/zip/stdout.raw": {
+      "bytes": 184,
+      "sha256": "adf6cf75485af3062d13a7ce18a6af1af5d0e335dfde6e532fb0720b519e1288"
+    },
+    "phases/zip/stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "phases/metadata/COMMAND.json": {
+      "bytes": 1420,
+      "sha256": "d91128f01f132fa612a11f05137eeedfd988e04144d2af00adbd53471c41dbc0"
+    },
+    "phases/metadata/RESULT.json": {
+      "bytes": 203,
+      "sha256": "0b5c88da2be1415d2abede06f02b8723e24e4fa358d669ad017f3de187f38504"
+    },
+    "phases/metadata/stdout.raw": {
+      "bytes": 189,
+      "sha256": "180d96a17807b2e49a98ce51233547f985a3572335ea569d711c312d0885b700"
+    },
+    "phases/metadata/stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "phases/elf/COMMAND.json": {
+      "bytes": 1410,
+      "sha256": "a16213eea93e70104738999bf3e289f8c25b2d65a2dd5616cc2e5d9fc5600e53"
+    },
+    "phases/elf/RESULT.json": {
+      "bytes": 198,
+      "sha256": "0bf843e9a44249a619107d35fe6fa6f242fe9344ab137aa6d34091b6316fa766"
+    },
+    "phases/elf/stdout.raw": {
+      "bytes": 184,
+      "sha256": "e737d625125539d4b855248e1ef9e14372e4bb2a01db44d79e8f327c546ccc36"
+    },
+    "phases/elf/stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "phases/dex/COMMAND.json": {
+      "bytes": 1409,
+      "sha256": "714342a090f822051f567ce8e4cba1fc43825294ac4cc7bf1d14f48e3f939600"
+    },
+    "phases/dex/RESULT.json": {
+      "bytes": 198,
+      "sha256": "177c5d43da50635246c33555c6df88c94fcbd306630e912261dbc0aabe05dc4f"
+    },
+    "phases/dex/stdout.raw": {
+      "bytes": 184,
+      "sha256": "3bbc0ca8d0c591e17f434f6c5ef05b2e61c0ee0c394a0c7fc9fee00e37996b38"
+    },
+    "phases/dex/stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "phases/zip/ZIP-FACTS.json": {
+      "bytes": 1070,
+      "sha256": "3c4f40d8576e11cd282731c44cd210ceec775a04b659f5087277934f61d3b2c7"
+    },
+    "phases/metadata/MANIFEST.json": {
+      "bytes": 3273,
+      "sha256": "51ccbc9d4ca3dbe9fe84eb343e1d93de31c74e1ce51660ad6a4f87ec0dd1b288"
+    },
+    "phases/elf/ELF-INVENTORY.json": {
+      "bytes": 312196,
+      "sha256": "90489091d80d052cc392193fb0187c01ce03ed36c825b97d799a7cae9044aed5"
+    },
+    "phases/dex/DEX-INVENTORY.json": {
+      "bytes": 12853906,
+      "sha256": "86f9213ac69c7e1cdbbd985c8c7dc7e555d9ddc94296fd4af185dd503eda1385"
+    }
+  },
+  "prior_failed_attempts": {
+    "v1": "run.py rc2 before scan, missing output directory",
+    "v2": "four children rc0 but run.py rc2 due normal SystemExit caught"
+  },
+  "root_count_mutation": false,
+  "device_commands": 0
+}

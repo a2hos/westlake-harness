@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-04T08:14:30.971777+00:00",
+  "status": "ROOT_ACCEPT_STATIC_EXTENSION_ONLY_NOT_EXECUTABLE",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/READY.json",
+    "sha256": "670edc0d44c25a5842cad6fb86363c3f34f3ee034f977d2a10bd03bf6e49ff4f"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-independent-review-v1/REVIEW.json",
+    "sha256": "195463856786315545301e3ef1b45623d819cd2250389e7a7619e083c2001d42"
+  },
+  "root_ready_file_hashes_checked": 9,
+  "static_gate_rc": 0,
+  "g274_source_gate_rc": 0,
+  "old_roots": 29,
+  "new_roots": 9,
+  "old_plus_new_exact_overlaps": 6,
+  "original_links": 13,
+  "original_dangling_link": 1,
+  "full_one_shot_executor_ready": false,
+  "linux_mount_executed": false,
+  "prepost_equal_executed": false,
+  "owner_new_ACK": false,
+  "root_execution_sealed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "device_commands": 0,
+  "next": "Complete independent v18 one-shot executor and its static review, then fresh owner ACK/root seal."
+}

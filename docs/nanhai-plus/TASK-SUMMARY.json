@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:09:38.928439+00:00",
+  "checked_at": "2026-10-04T08:16:07.671751+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,9 +40,9 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 71,
-    "complete_inventory_dex_entries": 129,
-    "complete_inventory_native_elf_entries": 475,
+    "complete_static_inventories": 72,
+    "complete_inventory_dex_entries": 131,
+    "complete_inventory_native_elf_entries": 477,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -429,6 +429,14 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/root-input-admission-v1/ADMISSION.json",
       "sha256": "938389eac68203b94c0e0ded93e0bee9f54fcd641388f0d0a518d5803dc84899"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7762f26dbac3bda94374ac658d1e3bbabdb0929eb37de8a1083f593b1157640c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/root-static-review-v1/REVIEW.json",
+      "sha256": "c790949f79388aa06ea04d0c61271a052104d103090b80c0d90d002431656791"
     }
   ],
   "bionic_stock_graph": {
@@ -474,11 +482,11 @@
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 1,
+    "pending_actual_result_groups": 3,
     "trigger_every_groups": "3-4",
     "next": "Wait for 3-4 new actual result groups; vary lens; one bounded verifiable improvement",
     "latest_closed": "EVO-0016",
-    "pending_groups": 1,
+    "pending_groups": 3,
     "latest_closure": {
       "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
       "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
@@ -860,6 +868,30 @@
     "virtual_links": 12,
     "original_dangling_link": 1,
     "materializer_ready": false,
+    "graph_executed": false
+  },
+  "vivaldi_static_actual": {
+    "status": "root accepted complete static only",
+    "outer_rc": 0,
+    "zip_entries_crc": 5097,
+    "new_dex": 2,
+    "new_true_elf": 2,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7762f26dbac3bda94374ac658d1e3bbabdb0929eb37de8a1083f593b1157640c"
+    },
+    "startup_delta": 0,
+    "blackbox_qualified": false
+  },
+  "g274_v18_static_extension": {
+    "status": "root accepted static extension only, not executable",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/root-static-review-v1/REVIEW.json",
+      "sha256": "c790949f79388aa06ea04d0c61271a052104d103090b80c0d90d002431656791"
+    },
+    "old_roots": 29,
+    "new_roots": 9,
+    "full_one_shot_executor_ready": false,
     "graph_executed": false
   }
 }

@@ -1,0 +1,133 @@
+{
+  "schema": "vivaldi-static-inventory-candidate-v3",
+  "status": "TERMINAL_CANDIDATE_ONLY_REQUIRES_INDEPENDENT_AND_ROOT_REVIEW",
+  "at": "2026-10-04T08:12:17.228720+00:00",
+  "elapsed_seconds": 19.53213845891878,
+  "rc": 0,
+  "checks": {
+    "all_four_phases_terminal": true,
+    "all_postguards": true,
+    "full_source_apk_venv_tool_guard_equal": true,
+    "all_zip_members_crc_scanned": true,
+    "manifest_unique": true,
+    "dex_identity": true,
+    "true_elf_identity": true,
+    "true_elf_valid": true,
+    "native_unclassified_zero": true
+  },
+  "rows": [
+    {
+      "phase": "zip",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/scan_phase.py",
+        "zip"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T08:11:58.522724+00:00",
+      "timeout_seconds": 120,
+      "network_authorized": false,
+      "pid": 56008,
+      "rc": 0,
+      "finished_at": "2026-10-04T08:11:59.129161+00:00",
+      "elapsed_seconds": 0.6065942089771852,
+      "stdout_sha256": "adf6cf75485af3062d13a7ce18a6af1af5d0e335dfde6e532fb0720b519e1288",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "metadata",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/scan_phase.py",
+        "metadata"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T08:11:59.129865+00:00",
+      "timeout_seconds": 180,
+      "network_authorized": false,
+      "pid": 56107,
+      "rc": 0,
+      "finished_at": "2026-10-04T08:12:01.067324+00:00",
+      "elapsed_seconds": 1.9376103329705074,
+      "stdout_sha256": "180d96a17807b2e49a98ce51233547f985a3572335ea569d711c312d0885b700",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "elf",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/scan_phase.py",
+        "elf"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T08:12:01.068052+00:00",
+      "timeout_seconds": 420,
+      "network_authorized": false,
+      "pid": 56159,
+      "rc": 0,
+      "finished_at": "2026-10-04T08:12:11.144329+00:00",
+      "elapsed_seconds": 10.076314125093631,
+      "stdout_sha256": "e737d625125539d4b855248e1ef9e14372e4bb2a01db44d79e8f327c546ccc36",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "dex",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/scan_phase.py",
+        "dex"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T08:12:11.144977+00:00",
+      "timeout_seconds": 360,
+      "network_authorized": false,
+      "pid": 56842,
+      "rc": 0,
+      "finished_at": "2026-10-04T08:12:16.463106+00:00",
+      "elapsed_seconds": 5.318227541050874,
+      "stdout_sha256": "3bbc0ca8d0c591e17f434f6c5ef05b2e61c0ee0c394a0c7fc9fee00e37996b38",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "zip_entries": 5097,
+  "dex_entries": 2,
+  "true_elf_entries": 2,
+  "zip_in_so_entries": 0,
+  "source_APK_venv_tool_pre_post_equal": true,
+  "startup_verified": false,
+  "blackbox_qualified": false,
+  "device_commands": 0,
+  "authoritative_count_changed": false
+}

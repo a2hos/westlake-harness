@@ -1,0 +1,81 @@
+{
+  "schema": "nanhai.g274.v18.materializer-extension-ready.v1",
+  "at": "2026-10-04T08:11:38.299568+00:00",
+  "status": "STATIC_EXTENSION_READY_FOR_INDEPENDENT_REVIEW_NOT_EXECUTABLE",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "input_candidate_sha256": "18514f2a8e0cb8126e109cbb8f9945f2093279cec5c7fff21a5754f27daf051d",
+  "files": {
+    "MATERIALIZATION.json": {
+      "sha256": "809f117f1f583751413beb6698418411200bb213c696b12ab2ba46254a70edb9",
+      "kind": "project_candidate"
+    },
+    "materialize.py": {
+      "sha256": "33c695699d8062adff4d3fbf32f47e41719e9d2a13608537129bbc459c77466e",
+      "kind": "project_candidate"
+    },
+    "NEW-LINKS.json": {
+      "sha256": "d5d60a7de2eed186e297d4675ff7c4074275e33e3132cf66d2c1a729eabf61b6",
+      "kind": "project_candidate"
+    },
+    "executor_extension.py": {
+      "sha256": "e7f508a79da82b1ce5861570932b008b5bbf09c538f73755fcb0261b80d688c5",
+      "kind": "project_candidate"
+    },
+    "HANDOFF.md": {
+      "sha256": "6e2829afbafd3117bbac86aac085f2424a83e707488e8e5841b0214da902beb2",
+      "kind": "project_candidate"
+    },
+    "SDK-MANIFEST.json": {
+      "sha256": "03018238a9dac914dedcbb3c9486a8ec84924dc99c1643bb1134bb2bbe58b2e4",
+      "kind": "symlink_to_frozen_v17b"
+    },
+    "sdk_guard.py": {
+      "sha256": "13d5fb0b02a180ae91c692a96928d537a5b44c330af675421e04b12d7027d79f",
+      "kind": "symlink_to_frozen_v17b"
+    },
+    "CPYTHON-FILES.json": {
+      "sha256": "d806480f68b6eeb8800df9d04fb54af2f02ac262ccbfe99bf8660f57d7d9ad09",
+      "kind": "symlink_to_frozen_v17b"
+    },
+    "cpython_materialize.py": {
+      "sha256": "261338d7f95f09abd450218b21c660a1bd7abcdf0684b4f141bca75d4f62a559",
+      "kind": "symlink_to_frozen_v17b"
+    }
+  },
+  "static_gate": {
+    "rc": 0,
+    "private_entries_preserved": 18023,
+    "old_readonly_roots": 29,
+    "new_readonly_roots": 9,
+    "exact_old_plus_new_overlaps": 6,
+    "original_links": 13,
+    "qualified_links": 12,
+    "original_dangling_links": 1,
+    "unapproved_overlap_negative_rejected": true,
+    "writable_bind_negative_rejected": true
+  },
+  "g274_source_gate": {
+    "rc": 0,
+    "terminal_chunk": "dcc74d",
+    "entries": 85499,
+    "logical_bytes": 1875247905,
+    "different_overlaps": 0,
+    "docker_commands": 0
+  },
+  "old_full_source_sdk_guard_executed": false,
+  "new_full_source_guard_executed_in_input_gate": true,
+  "prepost_equal_executed": false,
+  "linux_mount_executed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "requires": [
+    "independent review",
+    "full v18 one-shot executor integration",
+    "root review",
+    "fresh original owner ACK",
+    "root seal"
+  ]
+}
