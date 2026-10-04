@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T12:41:54+00:00",
+  "checked_at": "2026-10-04T12:57:28.943154+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -43,7 +43,10 @@
       "scope": "exact upstream registered original APK only; no complete static or cold start credit"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
-    "recent_unaccepted_downloads": ["G287 ARM32-only TikTok Lite variant", "G292 ARM32-only LINE variant"],
+    "recent_unaccepted_downloads": [
+      "G287 ARM32-only TikTok Lite variant",
+      "G292 ARM32-only LINE variant"
+    ],
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -1363,5 +1366,27 @@
     "true_elf_after": 825,
     "startup_delta": 0,
     "blackbox_delta": 0
+  },
+  "g279_sibling_stage2_actual": {
+    "status": "accepted_staged_readback_only",
+    "root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage2-candidate-v2/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "7f6d198094fce2710f753f15af8f672fa743e17ebea84451c78ae4d210a898a3"
+    },
+    "stage3_binding_switch_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage3-binding-switch-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "1bcc3eefc9b26385c53c30c7e79c80c39a317af730eef7ed8c03f1c742fc56a5",
+      "decision": "GO_PREP_ONLY"
+    },
+    "runner_v10_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v10-sibling-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "2c56afa9bc87891057500b9e151e078abbd0506630f4ce2d063206334b3a2209",
+      "decision": "NO_GO_THIS_STATIC_PACKET"
+    },
+    "active_binding_changed": false,
+    "soong_graph_executed": false,
+    "arm64_target_built": false,
+    "device_commands": 0,
+    "container_commands": 0
   }
 }

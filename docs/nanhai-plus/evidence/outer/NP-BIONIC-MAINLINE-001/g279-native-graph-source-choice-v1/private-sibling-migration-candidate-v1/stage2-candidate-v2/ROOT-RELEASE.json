@@ -1,0 +1,15 @@
+{
+  "schema": "g279-stage2-v2-root-release-v1",
+  "decision": "GO_STAGE2_V2_REMOTE_WRITE_ONCE",
+  "independent_reviewer": "outer-root-after-hello-frontier-peer",
+  "peer_review_sha256": "605c74bf6528f2a3e32f10ab44fcda2bf066f5866fd17a717e82c7f068de2e71",
+  "fresh_readonly_preflight_sha256": "74d426da645cf6cd5982c36435ad1914ab8de552a5837dea7e0370a0e598e93c",
+  "nonce": "6f324a6cb4e1a5fe8ec594334c61d079",
+  "packet_sha256": "e8581d9366477911cb9da05ccff6d60e32beaa3cddc6bc60c7a556a758fea371",
+  "launcher_sha256": "6de3eb738235f620bcad21128592d06892f99f1fdbfcf47296b11d3128f9df11",
+  "remote_body_sha256": "7035f44ba996a80b8dc859b4d7933390b86bc31b49c13c217d6f4b5467fad145",
+  "new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "scope": "Once only, create and read back 46 source-view links and the path-bound proposed remote control input on gz02; old root and active local_env unchanged, no graph/device/container/namespace",
+  "outer_watchdog_seconds": 240,
+  "rollback": "On nonzero or uncertain result, preserve lease, quarantine and partial tree; reconcile read-only, never replay the nonce or auto-delete."
+}

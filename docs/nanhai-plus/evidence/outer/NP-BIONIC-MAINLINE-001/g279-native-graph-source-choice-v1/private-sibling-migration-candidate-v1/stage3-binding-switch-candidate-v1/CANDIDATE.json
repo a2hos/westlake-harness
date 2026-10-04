@@ -1,0 +1,35 @@
+{
+  "schema": "g279-sibling-stage3-local-binding-switch-candidate-v1",
+  "decision": "NO_GO_SWITCH_WAIT_NEW_RUNNER_AND_ORIGINAL_OWNER_ACK",
+  "packet_sha256": "5c5dfb0c2e3f37c23557e594c93dc4098d88f82d0fca65851289f67477b80ef7",
+  "owner_request_template_sha256": "63d52502ad59d7624a534445f346e3e5b5d703f06a8695da0d6a877476411070",
+  "readonly_check_script_sha256": "4dc2ba9412516f04016c3135b6d67757143eb43b4d620042f9f89784963064bf",
+  "readonly_check_result_sha256": "1b74af37c53d23ad166cb7a7c974d5ca053692d47a053fc7645bc0603ec8db9b",
+  "switch_plan_sha256": "1a5b9cab4e1f15b61715a9a4ba8a23d405671c0bb0f1b32658e33c5c0f3ce8a6",
+  "handoff_sha256": "9a46a4a8e79229761618a8b5df0b9c90171239d7e94abbd20926683f47db4f0f",
+  "checks": {
+    "readonly_check_rc": 0,
+    "proposed_env_check_rc": 0,
+    "westlake_gate_handoff_rc": 0,
+    "stage2_terminal_ssh_rc": 0,
+    "stage2_terminal_status": "STAGED_READBACK_ONLY",
+    "stage2_peer_postrun_decision": "ACCEPT_STAGE2_STAGED_READBACK_ONLY",
+    "stage2_peer_postrun_sha256": "78d51ad3d3ae1c181cfc3619e428b793ad09b2d3d0ac897e2a415cc9668fb7ca"
+  },
+  "pending_external_evidence": [
+    "New full-R4-TOP graph runner/stager/gate generation exact SHA, independent review and remote staging readback",
+    "New original-session graph-only ACK bound to future config and exact runner, native JSONL rc0, independent provenance review",
+    "Separate local one-shot switch executor and independent release"
+  ],
+  "actions": {
+    "owner_dispatches": 0,
+    "local_env_edits": 0,
+    "outer_state_edits": 0,
+    "remote_commands": 0,
+    "remote_writes": 0,
+    "graph": 0,
+    "device": 0,
+    "container": 0,
+    "namespace": 0
+  }
+}

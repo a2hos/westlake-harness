@@ -1,0 +1,43 @@
+{
+  "schema": "g279-sibling-original-owner-graph-only-request-template-v1",
+  "dispatchable": false,
+  "request_sent": false,
+  "ack_exists": false,
+  "nonce": null,
+  "run_id": null,
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "active_config_sha256_at_preparation": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "future_local_env_raw_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "future_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "future_project_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "stock_graph_top": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+  "source_view_role": "host Soong UI build and partial diagnostics only",
+  "future_remote_binding_sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+  "stage2_accepted_postrun_review_sha256": "78d51ad3d3ae1c181cfc3619e428b793ad09b2d3d0ac897e2a415cc9668fb7ca",
+  "new_runner": {
+    "local_path": null,
+    "sha256": null,
+    "bytes": null,
+    "intended_remote_path": null,
+    "remote_mode": null,
+    "independent_review_sha256": null,
+    "remote_stage_readback_sha256": null
+  },
+  "new_gate_spec_sha256": null,
+  "graph_only_intent": true,
+  "graph_executed": false,
+  "target_compile_authorized": false,
+  "device_authorized": false,
+  "container_authorized": false,
+  "namespace_authorized": false,
+  "authorization_effect": false,
+  "provenance_requirements": [
+    "Use existing Herdr nanhai-plus / octos-inner original session; no new goal, claim, session or agent.",
+    "Freeze fresh nonce and exact request/script/spec SHA only after new runner and stage2 postrun are independently accepted.",
+    "Capture owner consume exact command, native tool rc0, ACK path and SHA in one original-session JSONL thread.",
+    "Independent peer cross-checks session/thread continuity, nonce, run-id, future config, exact runner, request and ACK; queued or prompt-accepted is insufficient.",
+    "Graph execution still needs separate trust-bound release and process guard; owner intent is not graph execution authorization."
+  ]
+}

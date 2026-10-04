@@ -1,0 +1,1 @@
+{"actual": {"": ["no-namespace-guard-v1", "soong-ui-v1"], "no-namespace-guard-v1": ["no-namespace-exec"], "soong-ui-v1": ["soong_ui"]}, "container": false, "device": false, "graph": false, "namespace": false, "remote_writes": 0, "schema": "g279-stage2-out-inventory-v1", "status": "PASS"}

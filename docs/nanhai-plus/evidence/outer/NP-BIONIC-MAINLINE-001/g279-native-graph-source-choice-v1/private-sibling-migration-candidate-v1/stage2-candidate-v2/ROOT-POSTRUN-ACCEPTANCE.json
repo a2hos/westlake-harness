@@ -1,0 +1,20 @@
+{
+  "schema": "g279-sibling-stage2-root-postrun-acceptance-v1",
+  "decision": "ACCEPT_STAGE2_STAGED_READBACK_ONLY",
+  "candidate_sha256": "c58b97bd5e3d70fdc9a83a59f74af7a28561ffe0e50091e013fae7f1b663f5be",
+  "release_sha256": "b7bb97bab1eec16ed554cb26f3604231bf8c0d4f69db9623ea557dc75cdf84c1",
+  "fresh_preflight_sha256": "74d426da645cf6cd5982c36435ad1914ab8de552a5837dea7e0370a0e598e93c",
+  "one_shot_terminal_sha256": "5992c268f00b8c06a3855851f8b6dc8ff324f9f762c6216603ea822d911bd765",
+  "independent_postrun_sha256": "78d51ad3d3ae1c181cfc3619e428b793ad09b2d3d0ac897e2a415cc9668fb7ca",
+  "nonce": "6f324a6cb4e1a5fe8ec594334c61d079",
+  "new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "source_view_links_verified": 46,
+  "stage1_files_unchanged": 9,
+  "new_remote_binding_sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+  "active_local_binding_changed": false,
+  "graph_executed": false,
+  "target_built": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next_gate": "Independent exact local_env switch review and original-owner graph-only ACK for the new config and runner generation; separate native Soong graph release."
+}

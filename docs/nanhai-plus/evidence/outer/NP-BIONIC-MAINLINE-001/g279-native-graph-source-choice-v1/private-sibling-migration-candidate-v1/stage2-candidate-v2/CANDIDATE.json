@@ -1,0 +1,46 @@
+{
+  "schema": "g279-sibling-stage2-candidate-v2",
+  "decision": "NO_GO_REMOTE_WRITE_UNTIL_NEW_INDEPENDENT_REVIEW",
+  "supersedes_execution_candidate": "stage2-candidate-v1 only; v1 files and peer NO_GO remain unchanged",
+  "nonce": "6f324a6cb4e1a5fe8ec594334c61d079",
+  "packet_canonical_sha256": "e8581d9366477911cb9da05ccff6d60e32beaa3cddc6bc60c7a556a758fea371",
+  "packet_file_sha256": "f760bf560d2eb3f7aaf8076c24ea866337e3211df7dd1b2bf59d1832737613d7",
+  "launcher_sha256": "6de3eb738235f620bcad21128592d06892f99f1fdbfcf47296b11d3128f9df11",
+  "remote_body_sha256": "7035f44ba996a80b8dc859b4d7933390b86bc31b49c13c217d6f4b5467fad145",
+  "fixtures_sha256": "a76e990ca700137a03440ccb9d2b19b130f541c85532da2f45f1604d6227831b",
+  "fixture_result_sha256": "c28f1a7a8417cbaa2733095827f893f2fdf43b340629e436bccba6dff62fef08",
+  "handoff_sha256": "40d7207d257c02e1408a78caaecca61abab509df706692f1d3c5cb99cfb396ec",
+  "stage1_acceptance": {
+    "stage1_terminal_sha256": "b827de7d870729beb611ed98d917ed23c008135dc7913c09ac8e2669388ae6e5",
+    "stage1_peer_probe_stdout_sha256": "37e09400ee2191cd9cbb101d71f9d51181041aef035f7b2a65fc7ebff8f8ac3d",
+    "stage1_peer_review_sha256": "9f00ce5e2434d1511eccebe4e57eabfba921867cf0dac90dc6e223b295b9c52e",
+    "stage1_remote_receipt_sha256": "5ad4c321bf68bd50d84642684736dba4c345de3906720d31a92be6032e2d4b20",
+    "new_root_dev_ino": [64785, 47185921],
+    "new_control_dev_ino": [64785, 47185922],
+    "old_root_dev_ino": [64785, 29884417],
+    "staged_file_count": 9
+  },
+  "stage2_scope": {
+    "link_count": 46,
+    "source_mapping_sha256": "f79646328e9f2fbdb4c6f00f32e0722ceb21424992c27820efc5fa28f79a458c",
+    "proposed_local_env_file_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+    "proposed_env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+    "proposed_binding_sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+    "local_binding_switch": false,
+    "graph": false,
+    "device": false,
+    "container": false,
+    "namespace": false
+  },
+  "validation": {
+    "py_compile_rc": 0,
+    "local_full_path_fixture_rc": 0,
+    "ssh_route_static_rc": 0,
+    "westlake_gate_handoff_rc": 0,
+    "fixture_linux_acl_note": "Fixture ran on macOS with os.listxattr(fd) shimmed to no ACL; exact Linux ACL check remains in remote body and needs independent review."
+  },
+  "actions": {"ssh_remote_commands": 0, "remote_writes": 0,
+              "local_env_edits": 0, "outer_state_edits": 0,
+              "graph": 0, "device": 0, "container": 0},
+  "next_gate": "Fresh independent v2 exact-SHA review, then root-controlled one-shot stage-2 release after fresh read-only gz02/source preflight; binding switch and graph remain separate."
+}

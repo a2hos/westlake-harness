@@ -1,0 +1,23 @@
+{
+  "rc": 0,
+  "remote_writes": 0,
+  "schema": "g279-stage2-out-inventory-local-v1",
+  "source_sha256": "35e1720384085ec21349595f174313842bed61cf4cf4d0448a1aad7725aeb21b",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "ac69979147c8608dbe0ee4596234fef320a19f36b9d5b17f9125e537224c13c0"
+}

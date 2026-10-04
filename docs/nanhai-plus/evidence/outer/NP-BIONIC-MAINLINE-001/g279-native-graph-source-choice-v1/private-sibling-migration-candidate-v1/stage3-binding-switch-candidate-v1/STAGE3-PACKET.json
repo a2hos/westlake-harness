@@ -1,0 +1,72 @@
+{
+  "schema": "g279-sibling-stage3-binding-switch-candidate-v1",
+  "status": "WAIT_EXTERNAL_GATES_NO_SWITCH",
+  "scope": "Review-only local binding-switch candidate; no active file edit or dispatch",
+  "active_local_env": {
+    "path": "local_env.md",
+    "raw_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+    "config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "project_root": "/data/source/.nanhai-plus-opaleye-native"
+  },
+  "proposed_local_env": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage2-candidate-v2/local_env.proposed.md",
+    "raw_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+    "config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+    "project_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+    "changed_keys_exact": [
+      "NANHAI_GZ02_NATIVE_PROJECT_ROOT",
+      "NANHAI_GZ02_NATIVE_SOURCE_VIEW",
+      "NANHAI_GZ02_SOONG_UI"
+    ]
+  },
+  "remote_binding": {
+    "path": "/data/source/.nanhai-plus-opaleye-native-v7/control/g279-native-graph-env.json",
+    "proposed_local_bytes_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage2-candidate-v2/g279-native-graph-env.proposed.json",
+    "sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f"
+  },
+  "stage2_execution_evidence": {
+    "nonce": "6f324a6cb4e1a5fe8ec594334c61d079",
+    "release_sha256": "b7bb97bab1eec16ed554cb26f3604231bf8c0d4f69db9623ea557dc75cdf84c1",
+    "local_start_sha256": "ba3e675927b491252db74ed9867968e76f83ea08f24e8809e68df29609ffa4b2",
+    "local_terminal_sha256": "5992c268f00b8c06a3855851f8b6dc8ff324f9f762c6216603ea822d911bd765",
+    "ssh_rc": 0,
+    "terminal_status": "STAGED_READBACK_ONLY",
+    "independent_postrun_review_sha256": "78d51ad3d3ae1c181cfc3619e428b793ad09b2d3d0ac897e2a415cc9668fb7ca",
+    "independent_postrun_accepted": true
+  },
+  "graph_generation_dependency": {
+    "old_runner_replay_allowed": false,
+    "stock_graph_top": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+    "source_view_role": "host Soong UI build and partial diagnostics only; not G279 stock graph TOP",
+    "new_runner_path": null,
+    "new_runner_sha256": null,
+    "new_runner_bytes": null,
+    "new_runner_gate_sha256": null,
+    "new_runner_independent_review_sha256": null,
+    "new_runner_remote_staging_readback_sha256": null,
+    "graph_executed": false
+  },
+  "original_owner_graph_ack_dependency": {
+    "goal_id": "goal_01",
+    "claim": "NP-MUSL16-ART-024",
+    "original_session": "oracle-kimi:local:nanhai-plus#inner",
+    "request_template": "OWNER-GRAPH-REQUEST-TEMPLATE.json",
+    "request_nonce": null,
+    "request_sha256": null,
+    "owner_ack_sha256": null,
+    "native_jsonl_witness_sha256": null,
+    "independent_provenance_review_sha256": null,
+    "ack_received": false
+  },
+  "switch_release": {
+    "independent_review_sha256": null,
+    "one_shot_start_sha256": null,
+    "local_env_changed": false,
+    "rollback_seed_raw_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+    "graph_authorized_by_this_packet": false,
+    "target_compile_authorized": false,
+    "device_authorized": false,
+    "container_authorized": false
+  },
+  "next_gate": "Accept stage2 peer postrun; freeze/review/stage new root-bound runner and gate; obtain original-session graph-only ACK bound to future config plus exact runner and witnessed native JSONL; independently review atomic local switch generation."
+}

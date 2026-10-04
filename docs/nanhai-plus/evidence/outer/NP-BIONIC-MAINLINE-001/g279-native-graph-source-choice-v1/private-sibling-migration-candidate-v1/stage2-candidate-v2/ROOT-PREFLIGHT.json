@@ -1,0 +1,166 @@
+{
+  "schema": "g279-stage2-v2-root-fresh-readonly-preflight-v1",
+  "at_utc": "2026-10-04T12:49:36.288443+00:00",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 0,
+  "remote_program_sha256": "794e555b3d40118a0a8257a0f575d403f747de36af7ff77bed1f338bffb481e1",
+  "stdout_sha256": "d1f68505c29035d708bf1eb2c72bb12e20497210e7a473d7b7a43122fa1bcb2b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "packet_sha256": "e8581d9366477911cb9da05ccff6d60e32beaa3cddc6bc60c7a556a758fea371",
+  "new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "verified_file_count": 9,
+  "stage2_absent": true,
+  "remote": {
+    "files": [
+      {
+        "actual": {
+          "bytes": 252412,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185927,
+          "mode": 292,
+          "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+          "uid": 1000
+        },
+        "path": "control/MANIFEST-HEADS.tsv"
+      },
+      {
+        "actual": {
+          "bytes": 21447,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185928,
+          "mode": 292,
+          "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a",
+          "uid": 1000
+        },
+        "path": "control/ROUTE-AUDIT.json"
+      },
+      {
+        "actual": {
+          "bytes": 5337,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185929,
+          "mode": 292,
+          "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634",
+          "uid": 1000
+        },
+        "path": "control/generate_manifest_heads.py"
+      },
+      {
+        "actual": {
+          "bytes": 918,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185930,
+          "mode": 292,
+          "sha256": "6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2",
+          "uid": 1000
+        },
+        "path": "control/nanhai_plus_native_soong_ui.sh"
+      },
+      {
+        "actual": {
+          "bytes": 3251,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185931,
+          "mode": 292,
+          "sha256": "0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5",
+          "uid": 1000
+        },
+        "path": "control/nanhai_plus_native_source_view.py"
+      },
+      {
+        "actual": {
+          "bytes": 4539,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185932,
+          "mode": 292,
+          "sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f",
+          "uid": 1000
+        },
+        "path": "control/no-namespace-exec.c"
+      },
+      {
+        "actual": {
+          "bytes": 515,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185933,
+          "mode": 292,
+          "sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc",
+          "uid": 1000
+        },
+        "path": "control/soong-ui-no-nsjail.patch"
+      },
+      {
+        "actual": {
+          "bytes": 16464,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185937,
+          "mode": 365,
+          "sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20",
+          "uid": 1000
+        },
+        "path": "out/no-namespace-guard-v1/no-namespace-exec"
+      },
+      {
+        "actual": {
+          "bytes": 19023728,
+          "dev": 64785,
+          "gid": 1000,
+          "ino": 47185935,
+          "mode": 365,
+          "sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+          "uid": 1000
+        },
+        "path": "out/soong-ui-v1/soong_ui"
+      }
+    ],
+    "host": "GZ02",
+    "rows": {
+      "control": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185922,
+        "mode": 448,
+        "uid": 1000
+      },
+      "old_root": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 29884417,
+        "mode": 509,
+        "uid": 1000
+      },
+      "root": {
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185921,
+        "mode": 493,
+        "uid": 1000
+      }
+    },
+    "stage2_absent": true,
+    "uid": 1000
+  },
+  "prior_readonly_probe_error": "first read-only preflight attempted to compare unpinned gid on directories and exited rc1; no remote write"
+}

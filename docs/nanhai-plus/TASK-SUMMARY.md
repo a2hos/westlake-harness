@@ -4,6 +4,8 @@
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
+G279 私有 sibling 第二阶段现已在 gz02 一次执行 rc0、独立只读回读/root 限定接受：46 个源码视图链接与目标 HEAD、新路径控制输入、阶段一九文件及旧根身份均匹配。活动 `local_env` 仍指旧根。Stage3 三键本地切换方案独审仅为 GO_PREP；新 graph runner v10 独审 NO_GO（handoff gate rc1、release schema 仍旧版），v11 修正中。原 owner graph-only ACK、Soong 图、ARM64 目标和 HelloWorld 冷启动仍未完成。
+
 最新无容器执行：G279 在 gz02 原生宿主上建立独立私有 sibling 的第一阶段，一次执行 rc0、独立回读通过；仅复制七份控制输入和两份宿主 ELF，活动环境仍指旧根，Soong 图及 ARM64 目标尚未执行。Element Classic `im.vector.app` 1.6.62 登记原包经一次下载与随后离线修正验收，精确 SHA、ARM64、ZIP、包版本及 v2/v3 签名通过，独审/root 限定准入原包：累计 81（登记 75、补充 6）。G293 四阶段主机静态清点一次执行 rc0 并经独审/root 限定接受，完整静态累计 77（191 DEX、915 真 ELF）；黑盒资格 3，真实冷启动 0/200。旧下载器的字段解析误判收据保留，未重放下载；本轮容器、设备命令均为 0。
 
 G278 无容器原生宿主进展：重新核查发现 gz02 已有精确 R4 checkout，42/42 stock 根与 4 类关键输入的 Git 标签 HEAD、tracked-clean 和文件存在性通过，故无需整树复制。规范 `/opt/19.SourceCode` 只读入口和项目独立 Soong 工作树/46 根输入视图已建立；仅关闭 Soong UI 的两处 nsjail 开关。gz02 原生 `soong_ui` 宿主工具编译 rc0，产物 SHA-256 `92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624`；129 次 execve 中禁用执行器调用 0。独审/root 只接受宿主工具编译。Soong 图、ARM64 Bionic 目标构建、HelloWorld 冷启动和设备验收仍未通过。新环境绑定 SHA `5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718`；原 owner 已在 G279 对该环境作 metadata ACK，构图仍需单独 ACK。

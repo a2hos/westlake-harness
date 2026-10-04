@@ -1,0 +1,49 @@
+{
+  "schema": "g279-native-graph-v10-independent-static-review-v1",
+  "reviewed_utc": "2026-10-04T12:55:37Z",
+  "decision": "NO_GO_THIS_STATIC_PACKET",
+  "limited_code_finding": "V10 host/path correction and read-only static/denial behavior are locally supported. This frozen handoff packet is not accepted as a releasable graph generation.",
+  "scope": "Independent local-only review of scripts/nanhai_plus_native_graph_v10.py and frozen runner-v10-sibling-candidate-v1 packet. No remote command, Stage3 write, graph, target compile, device, container, namespace or canonical file edit.",
+  "exact_identity": {
+    "runner_sha256": "28a229c2db943da1735630b8ea230e2137f33bac7a06111a5e3c7a38f9ab3d64",
+    "runner_bytes": 42966,
+    "fixture_sha256": "5d1faa5c97ae67b68d081eba1cb20cfe3b3b0b54412b1903aa566ddfc29bcc54",
+    "static_candidate_sha256": "82e9c61a2e8449d0ac8f70d25bcc7f1b8a4384b74daed89ebe3dcb30bda0effe",
+    "handoff_sha256": "0a75ef3fc2ffcadb545f66acd743fd52ec325636f4ec7acda88c3a6c33f05c46",
+    "stage2_packet_file_sha256": "f760bf560d2eb3f7aaf8076c24ea866337e3211df7dd1b2bf59d1832737613d7",
+    "stage2_independent_postrun_sha256": "78d51ad3d3ae1c181cfc3619e428b793ad09b2d3d0ac897e2a415cc9668fb7ca"
+  },
+  "verified": {
+    "graph_top": "The graph command passes no TOP override and launches soong_ui with cwd=p['source_alias'], /opt/19.SourceCode/AOSP-16.0.0_r4/android-source, which resolves to the admitted full R4 checkout /data/source/aosp-16.0.0-r4. The 46-link source-view appears only as source_view_diagnostic and an identity check; it is not graph TOP.",
+    "new_sibling": "V10 pins /data/source/.nanhai-plus-opaleye-native-v7, proposed env config SHA a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba, remote binding SHA 9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f, and fixed project/UI/diagnostic view paths.",
+    "stage2_identity": "The root/control/source-view dev+inode+UID+mode pins (64785/47185921, 64785/47185922, 64785/47185940) and Stage1 receipt, Stage2 lease, Stage2 receipt and binding file inode/mode/SHA pins match the independent Stage2 readback. The lease/receipt parser rejects nonce, link-count, graph, container, namespace and binding mutations in local fixtures.",
+    "hostname": "All three operative gz02 host comparisons use casefold and accept the observed GZ02 spelling on Linux x86_64; local fixtures execute --run only on macOS, so production host behavior remains unrun.",
+    "local_commands": "Reran static_fixtures.py rc0 (reported 19 checks), v10 --static-check rc0, v10 --run rc3 NO_GO_V10_UNRELEASED before release_gate or graph. The fixture's 19 count is a fixed report field rather than an independently accumulated counter; the actual assertions and denials passed.",
+    "container_namespace": "No container/namespace launcher was invoked by this review. V10 retains the v7 forbidden-tool set, seccomp guard route, namespace syscall trace and descendant cleanup source; inheritance is a static equality observation, not end-to-end Linux proof."
+  },
+  "blocking_findings": [
+    {
+      "id": "H1_HANDOFF_GATE_FAIL",
+      "fact": "The applicable WestLake engineering discipline requires handoff/stage reports to pass westlake_gate.py. Direct rerun on this exact HANDOFF.md returned rc1, missing all required sections and labels, explicit status and observed-wall classification. The Stage2 v1 packet was held for this same reason and Stage2 v2 corrected it to rc0.",
+      "next": "Publish a new exact-byte v10 handoff using the template, mark App/device/Android behavior none or not_reached, run westlake_gate.py to rc0, then independently review the new packet. This does not require a graph command."
+    },
+    {
+      "id": "R1_V10_RELEASE_CONTRACT_NOT_YET_GENERATED",
+      "fact": "The dormant validate_release_packet still requires `nanhai-g279-graph-v7-outer-release-v1` and `nanhai-g279-graph-v7-original-owner-ack-v1` and emits v7 gate/result schemas while RELEASE_RUN_ID and runner path are v10. Current --run is deliberately hard rc3 before this code, so no release validation has been exercised.",
+      "next": "Before any future graph release, make a new v10 contract and fixtures that bind the exact v10 runner, new sibling/config, original-owner graph-only ACK and independent execution authority. Do not make --run reachable by merely deleting the hard close."
+    }
+  ],
+  "real_graph_release_blockers": [
+    "Stage exact v10 runner bytes under new sibling control with mode0444, then independently read back inode/mode/SHA without altering Stage1/Stage2 receipts.",
+    "Review and switch the authoritative local_env to the proposed three GZ02 paths; make original octos-inner re-read that exact new config, while preserving original goal/session/claim/budget.",
+    "Generate and independently review a new EVO19 remote-input gate and v10 outer release, with full-R4 source/content guards, canonical SSH/Python, new binding and no generated container/namespace actions.",
+    "Obtain fresh nonce-bound graph-only ACK from the original octos-inner session with independent provenance and execution-enforced authority; historical metadata ACK and JSON placed by the same UID do not by themselves authorize graph work.",
+    "Verify Linux descendant cleanup and inherited seccomp behavior in the actual graph generation; accept graph only from command rc, exact artifacts, trace and source pre/post evidence. ARM64 target compile and HelloWorld are later separate gates."
+  ],
+  "not_proven": [
+    "Stage3 staged/read-back v10 runner or active local_env switch",
+    "Original-owner v10 graph-only ACK or executable graph release",
+    "Native Soong graph, ARM64 Bionic target artifact, HelloWorld installation/cold startup/display or any APK startup"
+  ],
+  "actions": {"remote_commands": 0, "graph": 0, "target_compile": 0, "device": 0, "container": 0, "namespace": 0, "canonical_edits": 0}
+}

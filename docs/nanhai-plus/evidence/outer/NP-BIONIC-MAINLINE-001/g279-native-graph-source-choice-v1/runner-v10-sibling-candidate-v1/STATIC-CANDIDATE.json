@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "local_fixtures": 19,
+    "run_denial_rc": 3,
+    "static_check_rc": 0
+  },
+  "commands": {
+    "container": 0,
+    "device": 0,
+    "graph": 0,
+    "namespace": 0,
+    "remote": 0,
+    "target_compile": 0
+  },
+  "created_utc": "2026-10-04T12:54:14.798414+00:00",
+  "env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "fixture_sha256": "5d1faa5c97ae67b68d081eba1cb20cfe3b3b0b54412b1903aa566ddfc29bcc54",
+  "graph_top": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+  "new_remote_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "release_blockers": [
+    "Stage3 must independently stage exact v10 runner bytes under new sibling control, mode0444, then read back inode/mode/SHA; old v7 graph files do not grant authority.",
+    "A new EVO19 read-only gate must pin v10 runner, new env config/binding, canonical SSH/Python and all remote inputs, with exact local active local_env switch only after review.",
+    "Original octos-inner owner must issue fresh graph-only ACK for v10 exact SHA/new binding through original session, independently witnessed; prior metadata ACK is insufficient.",
+    "Full release packet and one-shot dispatch must be independently reviewed; candidate --run deliberately returns rc3.",
+    "Linux descendant cleanup and inherited seccomp safety still need independent end-to-end proof before graph credit."
+  ],
+  "remote_binding_sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+  "runner_bytes": 42966,
+  "runner_path": "scripts/nanhai_plus_native_graph_v10.py",
+  "runner_sha256": "28a229c2db943da1735630b8ea230e2137f33bac7a06111a5e3c7a38f9ab3d64",
+  "schema": "g279-native-graph-v10-static-candidate-v1",
+  "source_view": "diagnostic_only",
+  "stage2_receipt_sha256": "31c491700ad81e464666794f451e087594629d16b472e6af143dcde19f71a259",
+  "status": "STATIC_CANDIDATE_ONLY"
+}

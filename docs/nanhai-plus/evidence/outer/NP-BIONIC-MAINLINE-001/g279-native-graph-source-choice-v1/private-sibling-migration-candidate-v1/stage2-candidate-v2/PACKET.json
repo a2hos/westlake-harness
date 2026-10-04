@@ -1,0 +1,428 @@
+{
+  "accepted_stage1": {
+    "control": {
+      "dev": 64785,
+      "ino": 47185922,
+      "mode": 448,
+      "uid": 1000
+    },
+    "files": [
+      {
+        "bytes": 252412,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185927,
+        "mode": 292,
+        "path": "control/MANIFEST-HEADS.tsv",
+        "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+        "uid": 1000
+      },
+      {
+        "bytes": 21447,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185928,
+        "mode": 292,
+        "path": "control/ROUTE-AUDIT.json",
+        "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a",
+        "uid": 1000
+      },
+      {
+        "bytes": 5337,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185929,
+        "mode": 292,
+        "path": "control/generate_manifest_heads.py",
+        "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634",
+        "uid": 1000
+      },
+      {
+        "bytes": 918,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185930,
+        "mode": 292,
+        "path": "control/nanhai_plus_native_soong_ui.sh",
+        "sha256": "6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2",
+        "uid": 1000
+      },
+      {
+        "bytes": 3251,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185931,
+        "mode": 292,
+        "path": "control/nanhai_plus_native_source_view.py",
+        "sha256": "0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5",
+        "uid": 1000
+      },
+      {
+        "bytes": 4539,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185932,
+        "mode": 292,
+        "path": "control/no-namespace-exec.c",
+        "sha256": "0ac0ffc7b643da5e7072fbd4d0384ab977380f9b70208986ec2d479ab5c46a7f",
+        "uid": 1000
+      },
+      {
+        "bytes": 515,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185933,
+        "mode": 292,
+        "path": "control/soong-ui-no-nsjail.patch",
+        "sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc",
+        "uid": 1000
+      },
+      {
+        "bytes": 16464,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185937,
+        "mode": 365,
+        "path": "out/no-namespace-guard-v1/no-namespace-exec",
+        "sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20",
+        "uid": 1000
+      },
+      {
+        "bytes": 19023728,
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 47185935,
+        "mode": 365,
+        "path": "out/soong-ui-v1/soong_ui",
+        "sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+        "uid": 1000
+      }
+    ],
+    "old_root": {
+      "dev": 64785,
+      "ino": 29884417,
+      "mode": 509,
+      "uid": 1000
+    },
+    "peer_probe_sha256": "37e09400ee2191cd9cbb101d71f9d51181041aef035f7b2a65fc7ebff8f8ac3d",
+    "peer_review_sha256": "9f00ce5e2434d1511eccebe4e57eabfba921867cf0dac90dc6e223b295b9c52e",
+    "receipt_old_root_id": {
+      "dev": 64785,
+      "gid": 1000,
+      "ino": 29884417,
+      "mode": 509,
+      "uid": 1000
+    },
+    "receipt_root_id": {
+      "dev": 64785,
+      "gid": 1000,
+      "ino": 47185921,
+      "mode": 493,
+      "uid": 1000
+    },
+    "root": {
+      "dev": 64785,
+      "ino": 47185921,
+      "mode": 493,
+      "uid": 1000
+    },
+    "stage1_nonce": "02add3542f7f57bff960919f7cd3ce55",
+    "terminal_sha256": "b827de7d870729beb611ed98d917ed23c008135dc7913c09ac8e2669388ae6e5"
+  },
+  "binding_changed": false,
+  "binding_hex": "7b0a202022656e765f636f6e6669675f736861323536223a202261346537343235373635383933393032303931383863646466386433323738633239346439653837653865396334373333653135656565306139353164646261222c0a2020226c6f63616c5f656e765f66696c655f736861323536223a202235666566623463613236633231383638336466313735343532343935623836613139623533653639313638373237616463636437656233363562323264333563222c0a2020227061746873223a207b0a20202020224e414e4841495f475a30325f414f53505f534f555243455f524f4f54223a20222f6f70742f31392e536f75726365436f64652f414f53502d31362e302e305f72342f616e64726f69642d736f75726365222c0a20202020224e414e4841495f475a30325f4e41544956455f50524f4a4543545f524f4f54223a20222f646174612f736f757263652f2e6e616e6861692d706c75732d6f70616c6579652d6e61746976652d7637222c0a20202020224e414e4841495f475a30325f4e41544956455f534f555243455f56494557223a20222f646174612f736f757263652f2e6e616e6861692d706c75732d6f70616c6579652d6e61746976652d76372f736f757263652d76696577222c0a20202020224e414e4841495f475a30325f534f4f4e475f5549223a20222f646174612f736f757263652f2e6e616e6861692d706c75732d6f70616c6579652d6e61746976652d76372f6f75742f736f6f6e672d75692d76312f736f6f6e675f7569222c0a20202020224e414e4841495f475a30325f534f4f4e475f574f524b54524545223a20222f6f70742f31392e536f75726365436f64652f414f53502d31362e302e305f72342f776f726b74726565732f6f70616c6579652d736f6f6e672d6e6f2d636f6e7461696e6572222c0a20202020224e414e4841495f534f555243455f504f4f4c5f524f4f54223a20222f6f70742f31392e536f75726365436f6465220a20207d2c0a202022736368656d61223a20226e616e6861692d673237392d6e61746976652d67726170682d656e762d7631220a7d0a",
+  "binding_sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+  "container": false,
+  "device": false,
+  "graph": false,
+  "links": [
+    {
+      "expected_head": "f22516cbc67e81c13cf943ce02f01b8929a98726",
+      "relative": "bionic",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/bionic",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/bionic"
+    },
+    {
+      "expected_head": "c39c8a4c103f1393f015a5befa7726f0c14c9bc2",
+      "relative": "build/blueprint",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/build/blueprint",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build/blueprint"
+    },
+    {
+      "expected_head": "b815dded1eafbf06191a6ae306956bb6ed6fb415",
+      "relative": "build/make",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/build/make",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build/make"
+    },
+    {
+      "expected_head": "0998133091794b56253fd6bd5c33ed0e0e5bd9de",
+      "relative": "build/release",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/build/release",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build/release"
+    },
+    {
+      "expected_head": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+      "relative": "build/soong",
+      "resolved_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container"
+    },
+    {
+      "expected_head": "0d01543cbc74b7e7f311cc29fe854dda968881cb",
+      "relative": "cts",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/cts",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/cts"
+    },
+    {
+      "expected_head": "4d368849922b04124e66b1aad48f93b3209f3c8d",
+      "relative": "device/google/cuttlefish",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/device/google/cuttlefish",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/device/google/cuttlefish"
+    },
+    {
+      "expected_head": "2bf8472a92b84fe4617eeb50053e7a942edcb1b3",
+      "relative": "external/abseil-cpp",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/abseil-cpp",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/abseil-cpp"
+    },
+    {
+      "expected_head": "cfb1eaa49cc60ebc6e9866af54717006e92297fa",
+      "relative": "external/doclava",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/doclava",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/doclava"
+    },
+    {
+      "expected_head": "fcb969a6e0df55f1460721e1b9c4f2c4d2b5a47f",
+      "relative": "external/golang-protobuf",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/golang-protobuf",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/golang-protobuf"
+    },
+    {
+      "expected_head": "9580841c6c1546d56fcb22ef41a9f560a5e9ba42",
+      "relative": "external/hamcrest",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/hamcrest",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/hamcrest"
+    },
+    {
+      "expected_head": "92ee1ba50a02446768fde6a55404d4f75f93a6d7",
+      "relative": "external/jcommander",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/jcommander",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/jcommander"
+    },
+    {
+      "expected_head": "754d8c4235def553d7d5d0a8a85ffb8dcb234001",
+      "relative": "external/jsilver",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/jsilver",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/jsilver"
+    },
+    {
+      "expected_head": "836d60ab48ddc83d3d348bd6e6d82dfb38de283b",
+      "relative": "external/junit",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/junit",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/junit"
+    },
+    {
+      "expected_head": "41662b7d1507816d9965d9e408a53e2c19ff32fc",
+      "relative": "external/ow2-asm",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/ow2-asm",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/ow2-asm"
+    },
+    {
+      "expected_head": "c7851d75ff3a7b8228f548f7235d48cee9130971",
+      "relative": "external/pogreb",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/pogreb",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/pogreb"
+    },
+    {
+      "expected_head": "31fc4250f78631cf8f4f1cc48b200acf11e9c884",
+      "relative": "external/protobuf",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/protobuf",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/protobuf"
+    },
+    {
+      "expected_head": "6bcdf679631e0af933943016f4bcc1f434bb1755",
+      "relative": "external/python/six",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/python/six",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/python/six"
+    },
+    {
+      "expected_head": "c7a62b3b161f45bb530376227576685549e72852",
+      "relative": "external/sqlite",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/sqlite",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/sqlite"
+    },
+    {
+      "expected_head": "4947cdc739c985f6d86941e22894f5cefe7c9e9a",
+      "relative": "external/starlark-go",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/external/starlark-go",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/external/starlark-go"
+    },
+    {
+      "expected_head": "45034f0663f960d9ee5fb0a101a4732b71f6e2f4",
+      "relative": "frameworks/base",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/frameworks/base",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/frameworks/base"
+    },
+    {
+      "expected_head": "fcbde2bcff56ca1d7bec9cabf8bdca5e288bf103",
+      "relative": "frameworks/native",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/frameworks/native",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/frameworks/native"
+    },
+    {
+      "expected_head": "aa229558cbf04bc997ed27465c5e7ad497123d1b",
+      "relative": "hardware/interfaces",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/hardware/interfaces",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/hardware/interfaces"
+    },
+    {
+      "expected_head": "82c305fe2a7af49cbe9928e9b2fe1416f7810a41",
+      "relative": "kernel/configs",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/kernel/configs",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/kernel/configs"
+    },
+    {
+      "expected_head": "ca99454776b47322576e6dfb5f00cb778e3b3fd0",
+      "relative": "packages/apps/DocumentsUI",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/packages/apps/DocumentsUI",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/apps/DocumentsUI"
+    },
+    {
+      "expected_head": "f930245ec39a510f37a9a7dfaded96d287491a61",
+      "relative": "packages/modules/Connectivity",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/packages/modules/Connectivity",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/modules/Connectivity"
+    },
+    {
+      "expected_head": "deef1ed99f28b761fe55ab4cac61027f6f78f3e8",
+      "relative": "packages/modules/common",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/packages/modules/common",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/modules/common"
+    },
+    {
+      "expected_head": "b8fe0e1e8ffd792d9601d53d70ccf47d6edf4906",
+      "relative": "packages/services/Car",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/packages/services/Car",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/packages/services/Car"
+    },
+    {
+      "expected_head": "8037f13cdf3d529fe396f5013f8f944050229861",
+      "relative": "platform_testing",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/platform_testing",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/platform_testing"
+    },
+    {
+      "expected_head": "e24e8ba7c6deed0e2e9c36ad6f255437acd98e0d",
+      "relative": "prebuilts/bazel/common",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/prebuilts/bazel/common",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/bazel/common"
+    },
+    {
+      "expected_head": "412724a805835d89234d67c363f7ada7f5f8a67f",
+      "relative": "prebuilts/build-tools",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/prebuilts/build-tools",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/build-tools"
+    },
+    {
+      "expected_head": "9916fb51ccb914d62d35ad9a7b9b21d2ef046928",
+      "relative": "prebuilts/clang/host/linux-x86",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/prebuilts/clang/host/linux-x86",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/clang/host/linux-x86"
+    },
+    {
+      "expected_head": "71c50d4d0da8b3dee5c70ee45789d001674ca5f6",
+      "relative": "prebuilts/go/linux-x86",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/prebuilts/go/linux-x86",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/go/linux-x86"
+    },
+    {
+      "expected_head": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
+      "relative": "prebuilts/sdk",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/prebuilts/sdk",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/sdk"
+    },
+    {
+      "expected_head": "97548ed51112062a4d1762a7dffa0cadcc09bda9",
+      "relative": "system/apex",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/apex",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/apex"
+    },
+    {
+      "expected_head": "0021d8d13eb1f603db6b1fa61b6d8ae4b65023db",
+      "relative": "system/bpf",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/bpf",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/bpf"
+    },
+    {
+      "expected_head": "3f52a5ab49ba53bc463de658db1d112e001c0280",
+      "relative": "system/extras",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/extras",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/extras"
+    },
+    {
+      "expected_head": "69c456ea4aa2f503a2904cfbc11f279a3b2efb09",
+      "relative": "system/libvintf",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/libvintf",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/libvintf"
+    },
+    {
+      "expected_head": "8d4a0b7420e67cec340dc37a88815d99a16abfa7",
+      "relative": "system/netd",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/netd",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/netd"
+    },
+    {
+      "expected_head": "43e4494a5a78317819dcc2766a11927c12ef3dfd",
+      "relative": "system/sepolicy",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/sepolicy",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/sepolicy"
+    },
+    {
+      "expected_head": "3747384b876442e7ea0c355fe5adc75b29362833",
+      "relative": "system/tools/aidl",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/tools/aidl",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/tools/aidl"
+    },
+    {
+      "expected_head": "9ea202c0fba585c2884a6bb2b1ba2dab46e98a8f",
+      "relative": "system/tools/hidl",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/tools/hidl",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/tools/hidl"
+    },
+    {
+      "expected_head": "ef55c63066afcba5fd8781c2b056ccbe4c6ce687",
+      "relative": "system/tools/xsdc",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/system/tools/xsdc",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/system/tools/xsdc"
+    },
+    {
+      "expected_head": "76cb8a7eec4254999f2abe32a9f1931b07a40851",
+      "relative": "test/suite_harness",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/test/suite_harness",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/test/suite_harness"
+    },
+    {
+      "expected_head": "d63829b1cce079648980ac01ceb363a99750ba78",
+      "relative": "test/vts",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/test/vts",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/test/vts"
+    },
+    {
+      "expected_head": "925ee2da6226009677934dc8aaa613e5e09272a3",
+      "relative": "tools/lint_checks",
+      "resolved_target": "/data/source/aosp-16.0.0-r4/tools/lint_checks",
+      "symlink_target": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/tools/lint_checks"
+    }
+  ],
+  "mapping_sha256": "f79646328e9f2fbdb4c6f00f32e0722ceb21424992c27820efc5fa28f79a458c",
+  "namespace": false,
+  "new_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "new_local_env_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "nonce": "6f324a6cb4e1a5fe8ec594334c61d079",
+  "old_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "old_local_env_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+  "old_root": "/data/source/.nanhai-plus-opaleye-native",
+  "packet_sha256": "e8581d9366477911cb9da05ccff6d60e32beaa3cddc6bc60c7a556a758fea371",
+  "schema": "g279-sibling-stage2-packet-v2",
+  "stage1_receipt_sha256": "5ad4c321bf68bd50d84642684736dba4c345de3906720d31a92be6032e2d4b20"
+}

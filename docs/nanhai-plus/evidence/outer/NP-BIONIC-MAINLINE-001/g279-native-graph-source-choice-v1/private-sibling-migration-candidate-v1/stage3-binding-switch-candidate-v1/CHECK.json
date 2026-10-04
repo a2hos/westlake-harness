@@ -1,0 +1,14 @@
+{
+  "active_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "device": 0,
+  "future_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "graph": 0,
+  "local_binding_changed": false,
+  "owner_ack_received": false,
+  "remote_commands": 0,
+  "remote_writes": 0,
+  "schema": "g279-stage3-readonly-check-v1",
+  "stage2_peer_postrun_accepted": true,
+  "stage2_terminal_status": "STAGED_READBACK_ONLY",
+  "status": "CONSISTENT_WAIT_EXTERNAL_GATES"
+}

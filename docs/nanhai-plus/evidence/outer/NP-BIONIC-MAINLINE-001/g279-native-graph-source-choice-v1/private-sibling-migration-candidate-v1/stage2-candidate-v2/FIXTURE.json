@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "name": "real stage1 acceptance pins three inodes and nine staged files",
+      "pass": true
+    },
+    {
+      "name": "frozen v2 packet reconstitutes exactly",
+      "pass": true
+    },
+    {
+      "name": "unreleased v2 execution denied before local START/SSH",
+      "pass": true
+    },
+    {
+      "name": "full 46-link positive writer and receipt",
+      "pass": true
+    },
+    {
+      "name": "patched Soong link literal",
+      "pass": true
+    },
+    {
+      "name": "same-byte new-inode substitution denied before lease",
+      "pass": true
+    },
+    {
+      "name": "partial failure quarantines without deletion/replay",
+      "pass": true
+    }
+  ],
+  "container": 0,
+  "device": 0,
+  "graph": 0,
+  "network": 0,
+  "remote_writes": 0,
+  "schema": "g279-stage2-local-fixtures-v2",
+  "shared_source_writes": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T12:57:45.456943+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "counts": {
+    "raw_apk_accepted": 81,
+    "registered_raw": 75,
+    "supplemental_raw": 6,
+    "complete_static": 77,
+    "dex_entries": 191,
+    "true_elf_entries": 915,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "evidence": {
+    "g279_stage2_root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage2-candidate-v2/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "7f6d198094fce2710f753f15af8f672fa743e17ebea84451c78ae4d210a898a3"
+    },
+    "g279_stage3_prep_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage3-binding-switch-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "1bcc3eefc9b26385c53c30c7e79c80c39a317af730eef7ed8c03f1c742fc56a5"
+    },
+    "g279_runner_v10_no_go": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v10-sibling-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "2c56afa9bc87891057500b9e151e078abbd0506630f4ce2d063206334b3a2209"
+    },
+    "element_static_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "a53a30e9649d32a956afd44c573eaacb1b26fa7f1b73c53f15428ceb17a8ae2f"
+    },
+    "art_abort_source_audit": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/tool-unknown-disposition-v2/ART-ABORT-AUDIT.json",
+      "sha256": "592454ff9cedc58e570b9093467ae197e2e945b37d576d4eb015ae93564132fc"
+    },
+    "task_summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "0de671196017374dbefed857e60096808455a06de43f350849df4161caa3d044"
+    },
+    "outer_state": {
+      "path": "docs/nanhai-plus/OUTER-STATE.json",
+      "sha256": "d7b88776bf3ed170735bdad42a3aa4238ab51cd5fccaa557f92350c3aca1af7b"
+    }
+  },
+  "native_stage": "Stage2 private sibling source-view/control staged and accepted; active local_env still old; stage3 only GO_PREP; v10 runner NO_GO, v11 in preparation; no original owner graph-only ACK",
+  "next": "independently review v11 runner, complete Linux process guard evidence and exact original owner graph-only ACK, then separately review binding switch and graph release",
+  "not_proven": [
+    "native Soong graph",
+    "ARM64 Bionic target",
+    "HelloWorld install/cold-start/display",
+    "any original APK cold start"
+  ]
+}
