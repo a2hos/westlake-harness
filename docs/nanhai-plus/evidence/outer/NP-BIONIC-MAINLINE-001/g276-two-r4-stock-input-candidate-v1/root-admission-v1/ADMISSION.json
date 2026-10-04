@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-g276-root-source-admission-v1",
+  "at": "2026-10-04T09:26:15.280659+00:00",
+  "decision": "ADMIT_EXACT_R4_SOURCE_IDENTITY_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/INPUT-CANDIDATE.json",
+    "sha256": "a7585fae45b956f85db9272175bebe366f1a3e82d1f6959dd13031424751091e"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "1a02b51b7302fa68687b95d692854e9e0d2144b82da8e63d6b36c1432699c619"
+  },
+  "roots": [
+    {
+      "stock_root": "system/tools/hidl",
+      "commit": "9ea202c0fba585c2884a6bb2b1ba2dab46e98a8f",
+      "tree": "8768c6f3dea007a396d8f4bf638079758d56ee0a",
+      "entries": 453,
+      "source_receipt_sha256": "912a890ca4a770560cffdb733a25b7ac3dc0176b7c077b20f079e878635584da"
+    },
+    {
+      "stock_root": "system/apex",
+      "commit": "97548ed51112062a4d1762a7dffa0cadcc09bda9",
+      "tree": "32c68ee5609e728b323d131d97f44926d70a53bd",
+      "entries": 544,
+      "source_receipt_sha256": "cfb319a8f33ab44b8f5210e7010b44ddeb6d8b5a3062c92349989b0ad26cf1a2"
+    }
+  ],
+  "total_entries": 997,
+  "project_links_readonly": true,
+  "two_external_links_stock_path_resolution_pending": true,
+  "stock_linux_mount_verified": false,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "next": "Static 42-root stock view and external link check, then fresh original-owner ACK and sealed one-shot graph."
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "nanhai-g276-stock-input-v1",
+  "at": "2026-10-04T09:24:21.840763+00:00",
+  "status": "source-view-candidate-not-executable",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39/android-16.0.0_r4/ARM64/App-single-Bionic",
+  "predecessor_g275_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/RESULT.json",
+    "sha256": "d87d229cbad7badf1a8a0baf7ac81a837c868ca991f2f584b3e3357c201885de"
+  },
+  "roots": [
+    {
+      "link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-tools-hidl",
+      "target": "${NANHAI_SOURCE_POOL_ROOT}/AOSP-16.0.0_r4/android-source/system-tools-hidl-r4-9ea202c",
+      "stock_root": "system/tools/hidl",
+      "source_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-system-tools-hidl-r4-9ea202c-source-candidate-v1/CANDIDATE.json",
+      "source_receipt_sha256": "912a890ca4a770560cffdb733a25b7ac3dc0176b7c077b20f079e878635584da",
+      "head": "9ea202c0fba585c2884a6bb2b1ba2dab46e98a8f",
+      "tree": "8768c6f3dea007a396d8f4bf638079758d56ee0a",
+      "entries": 453,
+      "bytes": 1631877,
+      "symlinks": 1,
+      "definition": "hidl-soong-rules",
+      "read_only_consumption": true
+    },
+    {
+      "link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-apex",
+      "target": "${NANHAI_SOURCE_POOL_ROOT}/AOSP-16.0.0_r4/android-source/system-apex-r4-97548ed",
+      "stock_root": "system/apex",
+      "source_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-system-apex-r4-97548ed-source-candidate-v1/CANDIDATE.json",
+      "source_receipt_sha256": "cfb319a8f33ab44b8f5210e7010b44ddeb6d8b5a3062c92349989b0ad26cf1a2",
+      "head": "97548ed51112062a4d1762a7dffa0cadcc09bda9",
+      "tree": "32c68ee5609e728b323d131d97f44926d70a53bd",
+      "entries": 544,
+      "bytes": 34050945,
+      "symlinks": 2,
+      "definition": "library_linking_strategy_cc_defaults and library_linking_strategy_apex_defaults",
+      "read_only_consumption": true
+    }
+  ],
+  "expected_stock_root_count_if_added_to_g275": 42,
+  "source_identity_verified": true,
+  "stock_linux_mount_verified": false,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "notes": [
+    "system/tools/hidl build/Android.bp registers hidl_interface and hidl_package_root via hidl-soong-rules plugin",
+    "system/apex Android.bp declares both library_linking_strategy defaults module types",
+    "cross-repository symbolic links are preserved as upstream and require stock-path validation"
+  ]
+}

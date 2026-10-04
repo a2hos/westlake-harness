@@ -1,0 +1,76 @@
+{
+  "schema": "nanhai-g276-two-r4-source-peer-review-v1",
+  "reviewed_utc": "2026-10-04T09:25:54.344875+00:00",
+  "scope": "Independent source identity, tracked tree integrity, registered read-only project input links, and candidate receipt; no build or device commands.",
+  "candidate": "../INPUT-CANDIDATE.json",
+  "candidate_sha256": "a7585fae45b956f85db9272175bebe366f1a3e82d1f6959dd13031424751091e",
+  "decision": "source_identity_accepted_stock_view_pending",
+  "roots": [
+    {
+      "stock_root": "system/tools/hidl",
+      "official_remote": "https://android.googlesource.com/platform/system/tools/hidl",
+      "official_tag": "android-16.0.0_r4",
+      "tag_object": "2640c78fc3678d8746be83c91d961ac638492c6b",
+      "peeled_commit": "9ea202c0fba585c2884a6bb2b1ba2dab46e98a8f",
+      "root_tree": "8768c6f3dea007a396d8f4bf638079758d56ee0a",
+      "tracked_entries": 453,
+      "regular_files": 452,
+      "symlinks": 1,
+      "tracked_bytes": 1631877,
+      "mode_counts": {
+        "100644": 443,
+        "100755": 9,
+        "120000": 1
+      },
+      "manifest_sha256": "b5747511f27d3c0d2b59ee53caea947ea146d5a26872ec81e9a4a49a684ea77a",
+      "source_receipt_sha256": "912a890ca4a770560cffdb733a25b7ac3dc0176b7c077b20f079e878635584da",
+      "project_link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-tools-hidl",
+      "link_target": "${NANHAI_SOURCE_POOL_ROOT}/AOSP-16.0.0_r4/android-source/system-tools-hidl-r4-9ea202c",
+      "unresolved_external_symlink": ".clang-format -> ../../../build/soong/scripts/system-clang-format"
+    },
+    {
+      "stock_root": "system/apex",
+      "official_remote": "https://android.googlesource.com/platform/system/apex",
+      "official_tag": "android-16.0.0_r4",
+      "tag_object": "fa02143f0280bd8cf2b8420ce38dfe665d793106",
+      "peeled_commit": "97548ed51112062a4d1762a7dffa0cadcc09bda9",
+      "root_tree": "32c68ee5609e728b323d131d97f44926d70a53bd",
+      "tracked_entries": 544,
+      "regular_files": 542,
+      "symlinks": 2,
+      "tracked_bytes": 34050945,
+      "mode_counts": {
+        "100644": 538,
+        "100755": 4,
+        "120000": 2
+      },
+      "manifest_sha256": "01b10c826af6dbf69f2ff72a7c640eb30d0178759bcf4a6d9c059d85be32aabb",
+      "source_receipt_sha256": "cfb319a8f33ab44b8f5210e7010b44ddeb6d8b5a3062c92349989b0ad26cf1a2",
+      "project_link": "${NANHAI_INPUTS_ROOT}/aosp16-r4-system-apex",
+      "link_target": "${NANHAI_SOURCE_POOL_ROOT}/AOSP-16.0.0_r4/android-source/system-apex-r4-97548ed",
+      "unresolved_external_symlink": "rustfmt.toml -> ../../build/soong/scripts/rustfmt.toml"
+    }
+  ],
+  "checks": {
+    "official_ls_remote_tag_and_peeled_commit": "matched both roots",
+    "local_head_tree_and_tag": "matched both roots",
+    "git_fsck_strict_no_reflogs": "rc0 both roots",
+    "git_status_porcelain": "empty both roots",
+    "tracked_manifest_vs_git_tree": "exact path/mode/blob match for all 997 entries",
+    "working_tree_vs_git_tree": "all 997 raw file or symlink bytes, SHA-256, Git blob, modes and sizes match; zero missing, extra or mismatched paths",
+    "project_links": "both symlinks resolve exactly to indexed source pool roots; NANHAI_INPUTS_ROOT and NANHAI_SOURCE_POOL_ROOT declared in local_env.md",
+    "definitions": "hidl-soong-rules registers hidl_interface and hidl_package_root; system/apex Android.bp declares both library_linking_strategy defaults types"
+  },
+  "evidence_boundary": {
+    "proven": "Both full tracked R4 repository trees and project read-only source references at review time.",
+    "not_proven": "Stock Linux path materialization and external symlink resolution; Soong graph; host or target build; device run.",
+    "failed": "None in source identity scope.",
+    "next_evidence": "Create and verify isolated stock-path view including cross-repository link targets, then execute a new graph candidate under the original goal/session and device HOLD."
+  },
+  "commands_executed": {
+    "build": 0,
+    "device": 0,
+    "bridge": 0
+  },
+  "observed_wall": null
+}

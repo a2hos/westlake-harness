@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T09:23:59.209488+00:00",
+  "checked_at": "2026-10-04T09:26:36.754839+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -479,6 +479,10 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
       "sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "1cb49da27ea89d98a04090efa7b6d58b620e6f5bc4415ce6c31b4dca87bef7e9"
     }
   ],
   "bionic_stock_graph": {
@@ -1055,5 +1059,18 @@
     "graph_generation_pass": false,
     "error_lines": 182,
     "target_compile_commands": 0
+  },
+  "g276_source_admission": {
+    "status": "two exact complete R4 source roots admitted only; stock view and graph pending",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "1cb49da27ea89d98a04090efa7b6d58b620e6f5bc4415ce6c31b4dca87bef7e9"
+    },
+    "roots": 2,
+    "tracked_entries": 997,
+    "unresolved_standalone_external_links": 2,
+    "graph_executed": false,
+    "target_compile_commands": 0,
+    "device_commands": 0
   }
 }

@@ -1,0 +1,26 @@
+{
+  "head": "97548ed51112062a4d1762a7dffa0cadcc09bda9",
+  "kind": "source_only_candidate",
+  "limits": "Source identity only; no stock view, Soong graph, host or target build, or device validation.",
+  "official_remote": "https://android.googlesource.com/platform/system/apex",
+  "peeled_commit": "97548ed51112062a4d1762a7dffa0cadcc09bda9",
+  "ref": "refs/tags/android-16.0.0_r4",
+  "regular_files": 542,
+  "root_tree": "32c68ee5609e728b323d131d97f44926d70a53bd",
+  "scope": "official AOSP android-16.0.0_r4 complete tracked tree; shallow history",
+  "source_pool_relative_path": "AOSP-16.0.0_r4/android-source/system-apex-r4-97548ed",
+  "symlinks": 2,
+  "tag_object": "fa02143f0280bd8cf2b8420ce38dfe665d793106",
+  "tracked_bytes": 34050945,
+  "tracked_entries": 544,
+  "tracked_manifest": "TRACKED.tsv",
+  "tracked_manifest_sha256": "01b10c826af6dbf69f2ff72a7c640eb30d0178759bcf4a6d9c059d85be32aabb",
+  "verification": [
+    "official ls-remote annotated tag and peeled commit matched",
+    "HEAD and root tree verified",
+    "each tracked file Git blob/mode and SHA-256 verified",
+    "git status porcelain empty after final placement",
+    "git fsck --strict --no-reflogs exit 0"
+  ],
+  "verified_utc": "2026-10-04T09:23:43.772508+00:00"
+}

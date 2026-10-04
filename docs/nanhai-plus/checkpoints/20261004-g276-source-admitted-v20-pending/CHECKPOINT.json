@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T09:27:29.410639+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "latest_terminal": "G275 exec23044/chunk4e7b58/rc2; graph false, 182 errors, compile0",
+  "g276": "two exact complete R4 source roots system/tools/hidl and system/apex, 997 tracked entries; source identity accepted only; 42-root candidate pending",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 77,
+    "static_apks": 73,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "reflection": "EVO18 closed, pending0",
+  "device_hold": "preserved, no device access",
+  "github_last_verified_commit": "926ec353430a2cd5acce23ff23bd28197c116f3c",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "14ebf58e8d97f732e9882826dddcfdb61bc310658f37d5c55761f00cd4bd3bde"
+    },
+    "g276_source_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "1cb49da27ea89d98a04090efa7b6d58b620e6f5bc4415ce6c31b4dca87bef7e9"
+    }
+  }
+}

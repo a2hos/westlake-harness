@@ -1,0 +1,26 @@
+{
+  "head": "9ea202c0fba585c2884a6bb2b1ba2dab46e98a8f",
+  "kind": "source_only_candidate",
+  "limits": "Source identity only; no stock view, Soong graph, host or target build, or device validation.",
+  "official_remote": "https://android.googlesource.com/platform/system/tools/hidl",
+  "peeled_commit": "9ea202c0fba585c2884a6bb2b1ba2dab46e98a8f",
+  "ref": "refs/tags/android-16.0.0_r4",
+  "regular_files": 452,
+  "root_tree": "8768c6f3dea007a396d8f4bf638079758d56ee0a",
+  "scope": "official AOSP android-16.0.0_r4 complete tracked tree; shallow history",
+  "source_pool_relative_path": "AOSP-16.0.0_r4/android-source/system-tools-hidl-r4-9ea202c",
+  "symlinks": 1,
+  "tag_object": "2640c78fc3678d8746be83c91d961ac638492c6b",
+  "tracked_bytes": 1631877,
+  "tracked_entries": 453,
+  "tracked_manifest": "TRACKED.tsv",
+  "tracked_manifest_sha256": "b5747511f27d3c0d2b59ee53caea947ea146d5a26872ec81e9a4a49a684ea77a",
+  "verification": [
+    "official ls-remote annotated tag and peeled commit matched",
+    "HEAD and root tree verified",
+    "each tracked file Git blob/mode and SHA-256 verified",
+    "git status porcelain empty after final placement",
+    "git fsck --strict --no-reflogs exit 0"
+  ],
+  "verified_utc": "2026-10-04T09:23:43.496013+00:00"
+}
