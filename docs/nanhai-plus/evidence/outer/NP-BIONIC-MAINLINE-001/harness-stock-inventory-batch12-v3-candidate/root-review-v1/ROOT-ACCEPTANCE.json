@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-04T07:59:45.566171+00:00",
+  "status": "ROOT_ACCEPT_TWO_COMPLETE_STATIC_INVENTORIES_WITH_ZIP_IN_SO_SEPARATION",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/READY.json",
+    "sha256": "00dc52787b9ad8a7112a6d0a0340ae3a466c27568e070f59d32dccf1ecab6758"
+  },
+  "aggregate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/AGGREGATE.json",
+    "sha256": "5a1c8e42814ce5a6bc3790aa553d7ed0e540b1767edf8fcbb252f617a8cd3406"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-independent-review-v1/REVIEW.json",
+    "sha256": "8eb39b2383dbee905bf161ccfa74ce4394d566bef73471df83fc310404cdf95d"
+  },
+  "root_artifact_hashes_checked": 71,
+  "root_aggregate_checks_passed": 39,
+  "accepted_packages": [
+    "com.junkfood.seal",
+    "org.briarproject.briar.android"
+  ],
+  "new_complete_rows": 2,
+  "new_dex_entries": 3,
+  "new_true_elf_entries": 14,
+  "zip_in_so_entries_separate": 3,
+  "new_static_cumulative": 67,
+  "new_dex_cumulative": 125,
+  "new_true_elf_cumulative": 471,
+  "prior_batch12_v2_failures_preserved": true,
+  "device_commands": 0,
+  "startup_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "whole_bionic_tools_delta": 0,
+  "next": "Keep three ZIP payloads typed separately; do not represent them as ELF. App runtime and native loading still untested."
+}

@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-04T08:01:32.490566+00:00",
+  "status": "ROOT_ACCEPT_FOUR_COMPLETE_STATIC_INVENTORIES_ONLY",
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/RESULT.json",
+    "sha256": "5c679ff793a74d76ea6dc29f63b089bb9ea67b4e11215f5e9622715abeac729b"
+  },
+  "execution": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/EXECUTION.json",
+    "sha256": "df2d09428d66bcaf522fdf7f87c29caee4ff68131967a04a268949bc312bfc42"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2-independent-peer-v1/REVIEW.json",
+    "sha256": "6dd88052dc66d4a3276ea52c92cd3fb4be658e2c1812bb540006fe94093d9685"
+  },
+  "raw_root_acceptance": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a4-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+    "sha256": "7ceebf7e41802373a1e548eaceb8c1218c25b1ab25d1fc34ae621308ec3c6d17"
+  },
+  "root_checks": "four APK payload SHA256 match INPUTS and independent peer; result/execution rc0, row identity and 4 DEX/4 ELF/readelf receipts; source/input guards true",
+  "accepted_packages": [
+    "com.documentsui.shortcut",
+    "com.ashkanrafiee.librecontactsbackup",
+    "com.github.muellerma.stopwatch",
+    "com.aka.alarm"
+  ],
+  "new_complete_rows": 4,
+  "new_dex_entries": 4,
+  "new_true_elf_entries": 4,
+  "prior_batch12_v3_cumulative": {
+    "static": 67,
+    "dex": 125,
+    "true_elf": 471
+  },
+  "new_cumulative": {
+    "raw": 75,
+    "static": 71,
+    "dex": 129,
+    "true_elf": 475
+  },
+  "metadata_caveat": "INPUTS.scope retains A2/batch12 text; exact four package records, hashes, actual execution and peer review govern acceptance; correct before template reuse",
+  "prior_v1_rc2_preserved": true,
+  "device_commands": 0,
+  "startup_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "whole_bionic_tools_delta": 0
+}

@@ -1,0 +1,120 @@
+{
+  "status": "TERMINAL_CANDIDATE_ONLY_REQUIRES_ROOT_REVIEW",
+  "at": "2026-10-04T07:57:28.235774+00:00",
+  "elapsed_seconds": 9.228358249994926,
+  "rc": 0,
+  "complete_candidate_rows": 4,
+  "source_APK_venv_tool_pre_post_equal": true,
+  "rows": [
+    {
+      "package": "com.documentsui.shortcut",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/scan_one.py",
+        "com.documentsui.shortcut"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/tmp/com.documentsui.shortcut",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T07:57:19.636631+00:00",
+      "timeout_seconds": 75,
+      "network_authorized": false,
+      "pid": 83858,
+      "rc": 0,
+      "finished_at": "2026-10-04T07:57:20.002579+00:00",
+      "elapsed_seconds": 0.36631229193881154,
+      "stdout_sha256": "ad171f19bf8151c9a47f39a8df9c2620c70632702147418a958cf0147e254800",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package": "com.ashkanrafiee.librecontactsbackup",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/scan_one.py",
+        "com.ashkanrafiee.librecontactsbackup"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/tmp/com.ashkanrafiee.librecontactsbackup",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T07:57:19.636593+00:00",
+      "timeout_seconds": 75,
+      "network_authorized": false,
+      "pid": 83857,
+      "rc": 0,
+      "finished_at": "2026-10-04T07:57:20.727902+00:00",
+      "elapsed_seconds": 1.0915081249549985,
+      "stdout_sha256": "69ade929e111906d2b9119f38faf14dcbf1e6cd7c0a1c6855564f0691cc40ad2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package": "com.github.muellerma.stopwatch",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/scan_one.py",
+        "com.github.muellerma.stopwatch"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/tmp/com.github.muellerma.stopwatch",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T07:57:20.003369+00:00",
+      "timeout_seconds": 75,
+      "network_authorized": false,
+      "pid": 83859,
+      "rc": 0,
+      "finished_at": "2026-10-04T07:57:22.963028+00:00",
+      "elapsed_seconds": 2.959826415986754,
+      "stdout_sha256": "3fe63451f84940abe437b6b4fb2eef63543b2e2c7ff4a184c2b4a2b26d89a39e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package": "com.aka.alarm",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/scan_one.py",
+        "com.aka.alarm"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/tmp/com.aka.alarm",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T07:57:20.728736+00:00",
+      "timeout_seconds": 75,
+      "network_authorized": false,
+      "pid": 83900,
+      "rc": 0,
+      "finished_at": "2026-10-04T07:57:27.627114+00:00",
+      "elapsed_seconds": 6.8984364999923855,
+      "stdout_sha256": "2e342f125f0ad452f73819e303f449512a576b00d9a234688ed76233e811248d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "field_facts_sha256": "4b479c244961be51d0442726b4c8b6e3990bad1dc7156d96951784e691f87a23",
+  "startup_verified": false,
+  "signature_verified": false,
+  "qualified_blackbox": false,
+  "device_commands": 0,
+  "authoritative_count_changed": false
+}

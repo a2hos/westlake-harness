@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-04T08:01:32.492198+00:00",
+  "status": "ROOT_ADMIT_NINE_EXACT_R4_SOURCE_IDENTITIES_ONLY",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/READY.json",
+    "sha256": "a9233e8d59152388f220e5d02ff4ef1bad601189918984b64e4a0a357933c335"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/CANDIDATE.json",
+    "sha256": "ad1bddc70b501e6423a7ed2d85a0bcdfd52705aec6a343b4228e6d0db0022b91"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-peer-review-v1/REVIEW.json",
+    "sha256": "722adfcbd872739dcf08f11dc06a2236883cd40be5a283ccd684d5f0b90fd8ca"
+  },
+  "root_ready_refs_sha256_checked": 6,
+  "root_local_verify_rc": 0,
+  "root_local_handoff_gate_rc": 0,
+  "source_repositories": 9,
+  "tracked_entries": 85499,
+  "tracked_bytes": 1875247905,
+  "isolated_symlink_gaps": 13,
+  "stock_path_view_closed": false,
+  "graph_pass": false,
+  "target_compile": false,
+  "owner_new_ACK": false,
+  "device_commands": 0,
+  "next": "Close stock-path view and 13 symlink targets; independent review; fresh original owner ACK and root seal before any G274 graph execution."
+}

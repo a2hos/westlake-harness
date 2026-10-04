@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-04T07:57:51.851904+00:00",
+  "status": "G274_NINE_EXACT_R4_SOURCE_ONLY_CANDIDATE_READY_FOR_INDEPENDENT_REVIEW",
+  "source_repositories": 9,
+  "tracked_entries": 85499,
+  "tracked_bytes": 1875247905,
+  "clone_rc_all_zero": true,
+  "verify_rc": 0,
+  "handoff_gate_rc": 0,
+  "refs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-r4-owner-scout-v1/SCOUT.md",
+      "sha256": "8b2dc58511aee775371db87eb525ff9dfa3751eed48f467dd9d7479f86e228ee"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/verify_repos.py",
+      "sha256": "4a00af4995e3ffab714c61e2078e810bc3b693a1a781c2fdb4e73c8f330f3972"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/VERIFY.jsonl",
+      "sha256": "fcf28087d740e4c58cb0d143dc646f485f3272299232ea19957d009c9a0487e9"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/CANDIDATE.json",
+      "sha256": "ad1bddc70b501e6423a7ed2d85a0bcdfd52705aec6a343b4228e6d0db0022b91"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/INDEX-RECEIPT.json",
+      "sha256": "4bb27b6bd435d643d3ae8edce900ede574ed3d8413df06dc7e31a7796071ebfa"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/HANDOFF.md",
+      "sha256": "9196d98f366a2f33197809c1344ff8271d702a731add06ba41e0b6e295bf3b5a"
+    }
+  ],
+  "graph_executed": false,
+  "target_build_pass": false,
+  "device_commands": false,
+  "owner_ack_required_for_any_new_graph": true
+}

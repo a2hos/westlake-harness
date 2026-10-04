@@ -1,0 +1,444 @@
+{
+  "schema": "nanhai-batch12-v3-ready-candidate-v1",
+  "at": "2026-10-04T07:57:35.964951+00:00",
+  "status": "READY_FOR_INDEPENDENT_ROOT_REVIEW_CANDIDATE_ONLY",
+  "scope": "two A2 original APK host static candidates, zero accepted rows",
+  "complete_static_candidate_rows": 2,
+  "counts_accepted": 0,
+  "aggregate_sha256": "5a1c8e42814ce5a6bc3790aa553d7ed0e540b1767edf8fcbb252f617a8cd3406",
+  "probe_sha256": "8e3de80a20a85ac45f8b4dbaf7ddb88a77db9a8863cbeee772e53616d9e3e9cf",
+  "handoff_sha256": "2acb69825725f8002bc1fb1efdbe4bfe839b5778fe00615ee75300fcee35f1c1",
+  "handoff_gate": {
+    "rc": 0,
+    "stdout": "westlake_gate: /Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/HANDOFF.md\nPASS\nWARN\n- ambiguous progress wording\n",
+    "stderr": ""
+  },
+  "artifacts": [
+    {
+      "path": "AGGREGATE.json",
+      "kind": "file",
+      "bytes": 11930,
+      "sha256": "5a1c8e42814ce5a6bc3790aa553d7ed0e540b1767edf8fcbb252f617a8cd3406"
+    },
+    {
+      "path": "HANDOFF.md",
+      "kind": "file",
+      "bytes": 7389,
+      "sha256": "2acb69825725f8002bc1fb1efdbe4bfe839b5778fe00615ee75300fcee35f1c1"
+    },
+    {
+      "path": "PROBE.json",
+      "kind": "file",
+      "bytes": 5293,
+      "sha256": "8e3de80a20a85ac45f8b4dbaf7ddb88a77db9a8863cbeee772e53616d9e3e9cf"
+    },
+    {
+      "path": "aggregate.py",
+      "kind": "file",
+      "bytes": 5546,
+      "sha256": "a63412726a47f500d4aea03f536a46644f8601f5afbf28516c6495a40df19971"
+    },
+    {
+      "path": "freeze.py",
+      "kind": "file",
+      "bytes": 2440,
+      "sha256": "fab451c841604d23660cc985ce6f8526f304867fb4c68d068ff5378405d0b4e7"
+    },
+    {
+      "path": "java-trials/com.junkfood.seal/COMMAND.json",
+      "kind": "file",
+      "bytes": 817,
+      "sha256": "7e09239bd4792ebf297bf45488779b96fcb4c29c4bdaf4e01a0b79a6055ad8df"
+    },
+    {
+      "path": "java-trials/com.junkfood.seal/MANIFEST.json",
+      "kind": "file",
+      "bytes": 1363,
+      "sha256": "f149da22f1c7278835079dc17757ec8c663fa3797b933cbfa55cafd29271db9b"
+    },
+    {
+      "path": "java-trials/com.junkfood.seal/RESULT.json",
+      "kind": "file",
+      "bytes": 1429,
+      "sha256": "fcb470ce78f3c0fa84f05856d9e3efb1e1dabc28a4b27195efa3936914dae2e3"
+    },
+    {
+      "path": "java-trials/com.junkfood.seal/original.apk",
+      "kind": "symlink",
+      "link": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/com.junkfood.seal/body.raw",
+      "resolved_sha256": "7070a3d4f079046912b4b8dde4edc8d1ef6eade3c9c98b02bfcaba3669c11d98"
+    },
+    {
+      "path": "java-trials/org.briarproject.briar.android/COMMAND.json",
+      "kind": "file",
+      "bytes": 844,
+      "sha256": "13dcb7f70a58cf8da652560d63b6969342b5ce42638b8d7863445fc01fcfc980"
+    },
+    {
+      "path": "java-trials/org.briarproject.briar.android/MANIFEST.json",
+      "kind": "file",
+      "bytes": 1808,
+      "sha256": "9395720d51e804e3084d8d8f20ce7947ebbe2338afe1f455057f372805f3c8f4"
+    },
+    {
+      "path": "java-trials/org.briarproject.briar.android/RESULT.json",
+      "kind": "file",
+      "bytes": 1442,
+      "sha256": "387d04415a071a34840c28dd15c9cd4d3387c1d27c0f9841ad3194d988d57be7"
+    },
+    {
+      "path": "java-trials/org.briarproject.briar.android/original.apk",
+      "kind": "symlink",
+      "link": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/org.briarproject.briar.android/body.raw",
+      "resolved_sha256": "9025888a4a5f5268e1ccbcd840bd07e51e9eaf1d7bbf305ca262b8afc662e372"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/com.junkfood.seal/COMMAND.json",
+      "kind": "file",
+      "bytes": 856,
+      "sha256": "c5ec58869d2e0609bc77178f2662e825277a9336292f253e49333942fb84955d"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/com.junkfood.seal/DEX-INVENTORY.json",
+      "kind": "file",
+      "bytes": 8468850,
+      "sha256": "dbf3304c447f281ae656f8548d6b4cfcff2f944cd3b6ef37cac47d2b1e72a5a9"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/com.junkfood.seal/MANIFEST.json",
+      "kind": "file",
+      "bytes": 1363,
+      "sha256": "f149da22f1c7278835079dc17757ec8c663fa3797b933cbfa55cafd29271db9b"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/com.junkfood.seal/RESULT.json",
+      "kind": "file",
+      "bytes": 679,
+      "sha256": "d23da7d38fcd4a350c757e977a8d8b6909f4a5e6381605ce43e6d07fdd404b25"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/com.junkfood.seal/original.apk",
+      "kind": "symlink",
+      "link": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/com.junkfood.seal/body.raw",
+      "resolved_sha256": "7070a3d4f079046912b4b8dde4edc8d1ef6eade3c9c98b02bfcaba3669c11d98"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/org.briarproject.briar.android/COMMAND.json",
+      "kind": "file",
+      "bytes": 882,
+      "sha256": "37f3ac92e7efa746e39c9e4d7a805226f99ee6a47bfffa242f32ed5f13574f6a"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/org.briarproject.briar.android/DEX-INVENTORY.json",
+      "kind": "file",
+      "bytes": 10340780,
+      "sha256": "c78f8a1ae926f7103b62423a511764f6187e3b9d8e1550671fab47f0e0f92dd1"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/org.briarproject.briar.android/MANIFEST.json",
+      "kind": "file",
+      "bytes": 1808,
+      "sha256": "9395720d51e804e3084d8d8f20ce7947ebbe2338afe1f455057f372805f3c8f4"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/org.briarproject.briar.android/RESULT.json",
+      "kind": "file",
+      "bytes": 827,
+      "sha256": "8217fa1eb0b3519776d53b005d09ccc0a5d31902c499345310355a02b3b43e1d"
+    },
+    {
+      "path": "java-trials/tuplefix-v2/org.briarproject.briar.android/original.apk",
+      "kind": "symlink",
+      "link": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/org.briarproject.briar.android/body.raw",
+      "resolved_sha256": "9025888a4a5f5268e1ccbcd840bd07e51e9eaf1d7bbf305ca262b8afc662e372"
+    },
+    {
+      "path": "member-trials/189d792f2f110add4237/COMMAND.json",
+      "kind": "file",
+      "bytes": 1359,
+      "sha256": "1a7ae24d35339e38376d8f12ca4e255c7771b032d2bde7db978b999e4861b776"
+    },
+    {
+      "path": "member-trials/189d792f2f110add4237/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 476567,
+      "sha256": "343a8c1d5603c80c794cd0ba9cd09f337fdae63b4387041f35732aba0f9bee5c"
+    },
+    {
+      "path": "member-trials/189d792f2f110add4237/RESULT.json",
+      "kind": "file",
+      "bytes": 764,
+      "sha256": "ff7a77b27f476b8670d026658c5a02c355897f2069d10d76203ff620878afe84"
+    },
+    {
+      "path": "member-trials/1ad4ccc14d36e9d2a3a2/COMMAND.json",
+      "kind": "file",
+      "bytes": 1368,
+      "sha256": "b039b2175d68ddd577855ef89f726db9019404acb82c5ca87906b6ce12f88b79"
+    },
+    {
+      "path": "member-trials/1ad4ccc14d36e9d2a3a2/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 1780,
+      "sha256": "c332d976706f017482689b63c7b17a0555a2e2b118ca5e1a096a575be78060b4"
+    },
+    {
+      "path": "member-trials/1ad4ccc14d36e9d2a3a2/RESULT.json",
+      "kind": "file",
+      "bytes": 770,
+      "sha256": "33f97dd2acb8c79d50c72f65ba9962d2f3d07bf7247b5e6ac1b8ca7801935d4f"
+    },
+    {
+      "path": "member-trials/3e9c9a7974cd592d3f5a/COMMAND.json",
+      "kind": "file",
+      "bytes": 1362,
+      "sha256": "5835bc85263ee4204c3e9b4ee3ed951517b52720cb9b946ff65007b0b7215278"
+    },
+    {
+      "path": "member-trials/3e9c9a7974cd592d3f5a/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 474773,
+      "sha256": "9ee82841c534f3142d7e321d7ea74a976c309404a324604e4e87888b566f70c0"
+    },
+    {
+      "path": "member-trials/3e9c9a7974cd592d3f5a/RESULT.json",
+      "kind": "file",
+      "bytes": 766,
+      "sha256": "ad576b08ef6538bb336b1f76b30bb2d25695b912b805f4513dace75f35f31bbb"
+    },
+    {
+      "path": "member-trials/6680b787d93aa183e59d/COMMAND.json",
+      "kind": "file",
+      "bytes": 1336,
+      "sha256": "b440ce3a1c7bb64151acbec09d0d8178bbfa198d012f388da72d2b115355d9e5"
+    },
+    {
+      "path": "member-trials/6680b787d93aa183e59d/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 40966,
+      "sha256": "acd6643e2df71891b0f735a6d76415c230c6b016aaae10bd1b3ab971c098aaa7"
+    },
+    {
+      "path": "member-trials/6680b787d93aa183e59d/RESULT.json",
+      "kind": "file",
+      "bytes": 751,
+      "sha256": "d465a5ec1252d110f8c2514affc9f1d513f65263113e8afdcd65e018f9ab8337"
+    },
+    {
+      "path": "member-trials/802c62c9e746ebc123f1/COMMAND.json",
+      "kind": "file",
+      "bytes": 1340,
+      "sha256": "35b5da129466fc1dc62ebc44df543acb20f78b27a9f26c68ea7aa80ef68df0b0"
+    },
+    {
+      "path": "member-trials/802c62c9e746ebc123f1/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 731,
+      "sha256": "99d3a58d04ba0407ac1190016db5d1733fe8e58f19a25f67f0c7a98c4c7ebac2"
+    },
+    {
+      "path": "member-trials/802c62c9e746ebc123f1/RESULT.json",
+      "kind": "file",
+      "bytes": 751,
+      "sha256": "2f764d7219cc40939e0e50ab443c0878ec8ddd1885fdc58402ccfeb3d57e66be"
+    },
+    {
+      "path": "member-trials/8d965b6d3710b6e5176e/COMMAND.json",
+      "kind": "file",
+      "bytes": 1372,
+      "sha256": "a8a9d57e64ee36e94d99004de50276e3b6c71b775d9732f29070d47f019df3d3"
+    },
+    {
+      "path": "member-trials/8d965b6d3710b6e5176e/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 2236,
+      "sha256": "d1f2a5835943bd4458814735fcd10d0d96dac83458b06302f3f8b912573ff4e5"
+    },
+    {
+      "path": "member-trials/8d965b6d3710b6e5176e/RESULT.json",
+      "kind": "file",
+      "bytes": 767,
+      "sha256": "baac69f2b7b86c6f317014cec6a0d36c5f39a4f53c333499a94b0fa48524a23d"
+    },
+    {
+      "path": "member-trials/9757d2ac236904315267/COMMAND.json",
+      "kind": "file",
+      "bytes": 1353,
+      "sha256": "d75e1c06e0d65f3003e5d6ee3f1ae64cfee38f7d6a71c13603d5dd4f083cf562"
+    },
+    {
+      "path": "member-trials/9757d2ac236904315267/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 477030,
+      "sha256": "be46878e3223c682662059346a145f7678043c6fecc27d36b9ff57f495338357"
+    },
+    {
+      "path": "member-trials/9757d2ac236904315267/RESULT.json",
+      "kind": "file",
+      "bytes": 761,
+      "sha256": "febb1d67d2fe0c98354c376f604015394fc43065a09c5f719a1dd1d619e054c9"
+    },
+    {
+      "path": "member-trials/9ba9bc53bdfe96e1093b/COMMAND.json",
+      "kind": "file",
+      "bytes": 1361,
+      "sha256": "7b3efdf01876356c969940ff408b3f00a8b6b651003ad7af3b9a8981732c2328"
+    },
+    {
+      "path": "member-trials/9ba9bc53bdfe96e1093b/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 1790,
+      "sha256": "b054ba4b5a6fcde04bfa98b10afa0dd5e8a937071684449ce1568d1380020958"
+    },
+    {
+      "path": "member-trials/9ba9bc53bdfe96e1093b/RESULT.json",
+      "kind": "file",
+      "bytes": 767,
+      "sha256": "1d4737d5e01044079ebaa131a3e93f594bb448dfa20db48d9818a8f7da233906"
+    },
+    {
+      "path": "member-trials/b32fe808d4a22b01f2d9/COMMAND.json",
+      "kind": "file",
+      "bytes": 1370,
+      "sha256": "4cf5e35f23cb1273ea12f11b44da2925ef6bcd97beb8c8a06d0f66bb36c95169"
+    },
+    {
+      "path": "member-trials/ca0c5c0a88029777026b/COMMAND.json",
+      "kind": "file",
+      "bytes": 1339,
+      "sha256": "14eb03d209aa99c82d34a39336cf0205da5df596b1d40a19e69816552f92eb54"
+    },
+    {
+      "path": "member-trials/ca0c5c0a88029777026b/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 25144,
+      "sha256": "d4e40aa9aa6123d585278df864f48bc5af41eb5b51d534273c5b6e7962cba19d"
+    },
+    {
+      "path": "member-trials/ca0c5c0a88029777026b/RESULT.json",
+      "kind": "file",
+      "bytes": 754,
+      "sha256": "a0eff7814b776f0493047eedd4383c6aab2d3be296d3cead3540175e5c85e93f"
+    },
+    {
+      "path": "member-trials/cff2b4e9d5bb53a0ba67/COMMAND.json",
+      "kind": "file",
+      "bytes": 1341,
+      "sha256": "d802a3641c76bd9f6a5674a6f3f717408934a1f89cf858abf52518e6a9e16b71"
+    },
+    {
+      "path": "member-trials/cff2b4e9d5bb53a0ba67/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 6617,
+      "sha256": "84414bbcd5046acefb4b5fe5d580c3d1f1dd416315c843528a3706173ba19d57"
+    },
+    {
+      "path": "member-trials/cff2b4e9d5bb53a0ba67/RESULT.json",
+      "kind": "file",
+      "bytes": 754,
+      "sha256": "0186b1a31c83e13955cdc1bf2d4620cfaeb891f3d3477f27356287f43640f78c"
+    },
+    {
+      "path": "member-trials/d26183cc79689da1eafa/COMMAND.json",
+      "kind": "file",
+      "bytes": 1373,
+      "sha256": "3e78e59657709bb0d5146a512f18ffde42c61c2245b3446b4e5198f357c5f062"
+    },
+    {
+      "path": "member-trials/d26183cc79689da1eafa/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 1686,
+      "sha256": "9ee08655abef83878d83d81ab861bd4cf1a2060a16603b5dc7ed1a2c45664dd8"
+    },
+    {
+      "path": "member-trials/d26183cc79689da1eafa/RESULT.json",
+      "kind": "file",
+      "bytes": 772,
+      "sha256": "2b60e9bfc1db67d0b6a1157c70c6771f460425f06a43b9ffbc045526688a74f1"
+    },
+    {
+      "path": "member-trials/de88d4f4e4c9249e76df/COMMAND.json",
+      "kind": "file",
+      "bytes": 1357,
+      "sha256": "82168d49544b077869b5ca3f88e3afa851dfdc134fbc7ea95fe1a2047a396a0c"
+    },
+    {
+      "path": "member-trials/de88d4f4e4c9249e76df/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 1662,
+      "sha256": "f9a6f99b8eb8879f9b760928743a3f94ebac594f5d1076ce10f57b80ef61f9cf"
+    },
+    {
+      "path": "member-trials/de88d4f4e4c9249e76df/RESULT.json",
+      "kind": "file",
+      "bytes": 764,
+      "sha256": "ae28cdc882141022a260b217903ff42c0e44eef472b077f195f8db4824fc89df"
+    },
+    {
+      "path": "member-trials/e1f49f08b63b42832edb/COMMAND.json",
+      "kind": "file",
+      "bytes": 1339,
+      "sha256": "645b4c7900248e2a3a4e46b024174bc56f8c08de9d89943f4d94c19c1924e0c8"
+    },
+    {
+      "path": "member-trials/e1f49f08b63b42832edb/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 11243,
+      "sha256": "786cf2e3aa1bf73b5e2dbc503229305b5ceaa2f467c25fb5c5df935f7bf2356d"
+    },
+    {
+      "path": "member-trials/e1f49f08b63b42832edb/RESULT.json",
+      "kind": "file",
+      "bytes": 753,
+      "sha256": "0b2ef7b50c075ef405e84f7ca173d0ccab8cd54030ee72c79e54347100903c7b"
+    },
+    {
+      "path": "member-trials/fe1c9026380a689b3038/COMMAND.json",
+      "kind": "file",
+      "bytes": 1347,
+      "sha256": "f7b1c8e0da302cb9f6b4b6ddf4f1e77d748edfc9dbb606ff1de3bd19d861adc8"
+    },
+    {
+      "path": "member-trials/fe1c9026380a689b3038/ELF-RECORD.json",
+      "kind": "file",
+      "bytes": 474682,
+      "sha256": "7422bb9432b239a63ab2a7a4694c67434094a8f50e8f3cc75e2331d7c81b3b1e"
+    },
+    {
+      "path": "member-trials/fe1c9026380a689b3038/RESULT.json",
+      "kind": "file",
+      "bytes": 758,
+      "sha256": "1f20005098b7b08e58a13754d30dd7b9f24997a224167c31d161e14bac909546"
+    },
+    {
+      "path": "probe.py",
+      "kind": "file",
+      "bytes": 4314,
+      "sha256": "e116ab496910294b7566d4f89de132d150e8e140954a78ba82a5a9e05375d5b8"
+    },
+    {
+      "path": "run_java.py",
+      "kind": "file",
+      "bytes": 2703,
+      "sha256": "6a85d4717d575a71364dbf817de566a43b9794eb058ecf5e3d7ad6af8aa9bc48"
+    },
+    {
+      "path": "run_member.py",
+      "kind": "file",
+      "bytes": 2979,
+      "sha256": "cbadd12bfc366d954089bbe8293c15dc01b541ebe72b3d040c0df9fd53a3194e"
+    },
+    {
+      "path": "scan_java.py",
+      "kind": "file",
+      "bytes": 4234,
+      "sha256": "d7749e2fad480d4e8f6223e3ece0d597e4380826aef9ae46d2bfa0736e1f7c9e"
+    },
+    {
+      "path": "scan_member.py",
+      "kind": "file",
+      "bytes": 4152,
+      "sha256": "b40274e7bc9dd4e3887119f1bb5352129fd692697bab739b3a56ffce3c196a81"
+    }
+  ]
+}

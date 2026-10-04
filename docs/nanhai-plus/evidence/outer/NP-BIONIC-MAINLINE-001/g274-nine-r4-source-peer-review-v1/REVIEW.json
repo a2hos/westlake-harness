@@ -1,0 +1,62 @@
+{
+  "schema": "nanhai.g274.source-peer-review.v1",
+  "at": "2026-10-04T07:59:58.890078+00:00",
+  "verdict": "PASS_SOURCE_IDENTITY_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/READY.json",
+    "sha256": "a9233e8d59152388f220e5d02ff4ef1bad601189918984b64e4a0a357933c335"
+  },
+  "checks": {
+    "ready_refs": {
+      "checked": 6,
+      "pass": 6,
+      "method": "independent SHA-256 rehash"
+    },
+    "handoff_gate": {
+      "command": "python3 -I -B /Users/alexyang/.codex/skills/westlake-engineering-discipline/scripts/westlake_gate.py docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/HANDOFF.md",
+      "rc": 0
+    },
+    "official_r4_tags": {
+      "repos": 9,
+      "pass": 9,
+      "method": "fresh git ls-remote against each android.googlesource.com origin; annotated tag object and peeled commit match"
+    },
+    "local_git_identity": {
+      "repos": 9,
+      "pass": 9,
+      "method": "independent rev-parse tag, peeled commit, HEAD and root tree; tag type; origin URL; clean git status"
+    },
+    "tracked_payload": {
+      "entries": 85499,
+      "bytes": 1875247905,
+      "pass": true,
+      "method": "independent git ls-files -s -z per-entry lstat/readlink or byte read, Git blob SHA-1, SHA-256, mode, size and frozen manifest compare"
+    },
+    "source_index": {
+      "nine_records_match_candidate": true,
+      "index_snapshot_sha256": "c53fff168a666688d338fb8ad4864249aa3cefebb8416fafd2cc7da99f68fb2e",
+      "readme_snapshot_sha256": "f87e413d01435c5487621721be42f818c3b1594aeb63b44520a7abcc4a11f689"
+    },
+    "old_sparse_baselines": {
+      "frameworks_base_seven_file_record_retained": true,
+      "frameworks_native_seven_file_record_retained": true,
+      "separate_full_clone_paths": true
+    },
+    "isolated_unresolved_symlinks": {
+      "count": 13,
+      "pass_exact_candidate_set": true,
+      "scope": "Existing stock Git link payloads are correct but cross-repository target resolution in a future project source view is unproven"
+    }
+  },
+  "boundaries": {
+    "source_only": true,
+    "complete_aosp": false,
+    "stock_path_view": false,
+    "soong_graph_pass": false,
+    "target_compile": false,
+    "whole_tool_pass": false,
+    "apk_or_device_start": false,
+    "owner_ack_for_fresh_graph": false
+  },
+  "reviewer_note": "This review independently admits nine exact-R4 source identities and their index records. It does not release G274 graph; close stock path and symlink/transitive ownership, then obtain fresh original-owner ACK and root seal."
+}

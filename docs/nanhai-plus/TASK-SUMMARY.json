@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T07:49:23.675073+00:00",
+  "checked_at": "2026-10-04T08:02:11.415122+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,24 +35,22 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 71,
+    "downloaded_payloads": 75,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 65,
-    "complete_inventory_dex_entries": 122,
-    "complete_inventory_native_elf_entries": 457,
+    "complete_static_inventories": 71,
+    "complete_inventory_dex_entries": 129,
+    "complete_inventory_native_elf_entries": 475,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
-      "org.sufficientlysecure.keychain",
-      "com.junkfood.seal",
-      "org.briarproject.briar.android"
+      "org.sufficientlysecure.keychain"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 69,
+    "registered_upstream_payloads": 73,
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
@@ -399,6 +397,22 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/root-release-v1/G273-REVIEW.json",
       "sha256": "9ef63a4e1c9bd6b8a6f944c0d9d52031bab8242a9384a02eedaef7fc07898c93"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a4-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7ceebf7e41802373a1e548eaceb8c1218c25b1ab25d1fc34ae621308ec3c6d17"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/root-source-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "6c6982bb51967508a6120563dc00a216966d33b073fd9cdcab9ee9f15f56ce2e"
     }
   ],
   "bionic_stock_graph": {
@@ -429,7 +443,7 @@
   },
   "next_graph_candidate": {
     "prospective_release": 274,
-    "next_input": "trace exact R4 definitions for 12 new undefined modules",
+    "next_input": "Close stock-path view and 13 cross-repository symlinks for nine admitted exact R4 repositories; independently review; fresh original owner ACK/root seal before G274 graph",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
@@ -444,11 +458,11 @@
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 0,
+    "pending_actual_result_groups": 4,
     "trigger_every_groups": "3-4",
-    "next": "Wait for 3-4 new actual result groups; timing under 120s peer reported, not independently clocked",
+    "next": "EVO-0016 peer reflection opened after G273, A4 raw, batch12 v3 repair, A4 static; close <=120s, one verifiable improvement, no global promotion without evidence",
     "latest_closed": "EVO-0015",
-    "pending_groups": 0,
+    "pending_groups": 4,
     "latest_closure": {
       "path": "docs/nanhai-plus/evolution/EVO-0015-module-owner-probe/ROOT-CLOSURE.json",
       "sha256": "0acb072c53d47bb296520f01edf8b50258455ad8d5eb68185a95067255d34583"
@@ -737,5 +751,55 @@
     "g272_five_absent": true,
     "target_compile_commands": 0,
     "device_commands": 0
+  },
+  "apk_intake_a4_actual": {
+    "exec_session": 59955,
+    "terminal_chunk": "857dd6",
+    "rc": 0,
+    "root_accepted_new_raw_payloads": 4,
+    "root_accepted_bytes": 2286257,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a4-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7ceebf7e41802373a1e548eaceb8c1218c25b1ab25d1fc34ae621308ec3c6d17"
+    },
+    "static_inventory_delta": 0,
+    "startup_delta": 0
+  },
+  "scanner_batch12_repair_actual": {
+    "status": "root accepted static only",
+    "accepted_complete_rows": 2,
+    "dex_delta": 3,
+    "true_elf_delta": 14,
+    "zip_in_so_typed_separately": 3,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+    },
+    "startup_delta": 0
+  },
+  "scanner_a4_actual": {
+    "terminal_rc": 0,
+    "accepted_complete_rows": 4,
+    "dex_delta": 4,
+    "true_elf_delta": 4,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+    },
+    "metadata_scope_copy_forward_caveat": true,
+    "startup_delta": 0
+  },
+  "g274_source_admission": {
+    "status": "source identity only",
+    "repos": 9,
+    "tracked_entries": 85499,
+    "tracked_bytes": 1875247905,
+    "isolated_symlink_gaps": 13,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/root-source-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "6c6982bb51967508a6120563dc00a216966d33b073fd9cdcab9ee9f15f56ce2e"
+    },
+    "stock_view_closed": false,
+    "graph_executed": false
   }
 }

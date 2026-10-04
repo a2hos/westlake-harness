@@ -1,0 +1,62 @@
+{
+  "status": "PASS_STATIC_CANDIDATE_ONLY",
+  "reviewer": "/root/apk_a4_static_peer",
+  "at": "2026-10-04T07:59:58.529589+00:00",
+  "scope": "Independent read-only evidence review; no scanner rerun or count mutation",
+  "result_sha256": "5c679ff793a74d76ea6dc29f63b089bb9ea67b4e11215f5e9622715abeac729b",
+  "execution_sha256": "df2d09428d66bcaf522fdf7f87c29caee4ff68131967a04a268949bc312bfc42",
+  "source_before_after_equal": true,
+  "pinned_source_hashes_match": true,
+  "input_apk_zip_crc_dex_elf_readelf_checked": true,
+  "terminal_rc": 0,
+  "rows": [
+    {
+      "package": "com.documentsui.shortcut",
+      "dex": 1,
+      "elf": 0,
+      "worker_rc": 0,
+      "checks": 8,
+      "readelf_rc0": 0,
+      "apk_sha256": "585e5a7e80ec262d42b2836a2d78b1e3848521b74622a2ef210351e74105bc79"
+    },
+    {
+      "package": "com.ashkanrafiee.librecontactsbackup",
+      "dex": 1,
+      "elf": 0,
+      "worker_rc": 0,
+      "checks": 8,
+      "readelf_rc0": 0,
+      "apk_sha256": "a952781c260b3474563e51454071b864326145ed17b3e247dd3007ef71c7e383"
+    },
+    {
+      "package": "com.github.muellerma.stopwatch",
+      "dex": 1,
+      "elf": 0,
+      "worker_rc": 0,
+      "checks": 8,
+      "readelf_rc0": 0,
+      "apk_sha256": "f7a62d1a72457b647f4e260ea87670a64a92007e1462055826c5feb412b96b13"
+    },
+    {
+      "package": "com.aka.alarm",
+      "dex": 1,
+      "elf": 4,
+      "worker_rc": 0,
+      "checks": 20,
+      "readelf_rc0": 4,
+      "apk_sha256": "ce69414498dfe957a1006d38d04f95680e98ee20caf06881c668692cc027fb2c"
+    }
+  ],
+  "complete_candidate_rows": 4,
+  "dex_entries": 4,
+  "elf_entries": 4,
+  "prior_v1_terminal_rc": 2,
+  "prior_v1_error": "SystemExit(0) caught by BaseException; preserved",
+  "caveats": [
+    "INPUTS.scope retains an A2/batch12 copy-forward description; actual four pinned package records and root A4 acceptance match. Correct scope metadata before using this as a handoff template.",
+    "No signature qualification, device action, runtime compatibility or cold-start evidence."
+  ],
+  "authoritative_count_changed": false,
+  "startup_verified": false,
+  "qualified_blackbox": false
+}

@@ -1,0 +1,360 @@
+{
+  "schema": "nanhai.g274.r4-source-candidate.v1",
+  "created_at": "2026-10-04T07:56:41.187737+00:00",
+  "scope": "nine complete official android-16.0.0_r4 source repositories, source identity only",
+  "actual_graph_trigger": "G273/v17b 18 diagnostics / 12 undefined module names; archived target-graph stdout",
+  "source_scout": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-r4-owner-scout-v1/SCOUT.md",
+    "sha256": "8b2dc58511aee775371db87eb525ff9dfa3751eed48f467dd9d7479f86e228ee"
+  },
+  "verification": {
+    "argv": [
+      "python3",
+      "scripts/nanhai_plus_env.py",
+      "--run",
+      "python3",
+      "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/verify_repos.py"
+    ],
+    "first_rc": 0,
+    "final_rc": 0,
+    "stdout": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-nine-r4-source-candidate-v1/VERIFY.jsonl",
+      "sha256": "fcf28087d740e4c58cb0d143dc646f485f3272299232ea19957d009c9a0487e9"
+    },
+    "error_count": 0,
+    "repositories": 9,
+    "tracked_entries": 85499,
+    "tracked_bytes": 1875247905
+  },
+  "repositories": [
+    {
+      "clean_worktree": true,
+      "commit": "ca99454776b47322576e6dfb5f00cb778e3b3fd0",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "DocumentsUI-files.jsonl",
+      "manifest_sha256": "866f4dcd2f1d32c9297a6ab48676a157e2c36b2196cf41b7814c2133db1acebd",
+      "modes": {
+        "100644": 1284,
+        "100755": 1
+      },
+      "name": "DocumentsUI",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/DocumentsUI-r4-ca99454",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "5378d5fea703c141e20ade5985ebd375759b04cb",
+      "tag_type": "tag",
+      "tracked_bytes": 27602348,
+      "tracked_entries": 1285,
+      "tree": "f84be349c58ea442f6c24a5987981e5a3465b491",
+      "upstream": "https://android.googlesource.com/platform/packages/apps/DocumentsUI",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/packages/apps/DocumentsUI",
+        "AOSP-16.0.0_r4/android-source/DocumentsUI-r4-ca99454"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": []
+    },
+    {
+      "clean_worktree": true,
+      "commit": "8d4a0b7420e67cec340dc37a88815d99a16abfa7",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "netd-files.jsonl",
+      "manifest_sha256": "8206610a23121b28cd300afd501f8bfa7418e6094d628ae6613cbd044a7614af",
+      "modes": {
+        "100644": 158,
+        "120000": 1
+      },
+      "name": "netd",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/netd-r4-8d4a0b7",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "af138a4b3e4894aa9a0e89b276091636e6e55484",
+      "tag_type": "tag",
+      "tracked_bytes": 1304774,
+      "tracked_entries": 159,
+      "tree": "e715331f2d071b3c262e50c3b20caaa0eaec25bc",
+      "upstream": "https://android.googlesource.com/platform/system/netd",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/system/netd",
+        "AOSP-16.0.0_r4/android-source/netd-r4-8d4a0b7"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": [
+        ".clang-format"
+      ]
+    },
+    {
+      "clean_worktree": true,
+      "commit": "4d368849922b04124e66b1aad48f93b3209f3c8d",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "cuttlefish-files.jsonl",
+      "manifest_sha256": "ad13cd5a5f10c668edf824b9fbec25973f407d36335682869e591543acf5ea14",
+      "modes": {
+        "100644": 2010,
+        "100755": 40,
+        "120000": 2
+      },
+      "name": "cuttlefish",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/cuttlefish-r4-4d36884",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "b8f65b87c5cb51aa125bf757044a770aedbf446a",
+      "tag_type": "tag",
+      "tracked_bytes": 9419527,
+      "tracked_entries": 2052,
+      "tree": "10d3ad52c59318f5c7603196cf8918871cfe8264",
+      "upstream": "https://android.googlesource.com/device/google/cuttlefish",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/device/google/cuttlefish",
+        "AOSP-16.0.0_r4/android-source/cuttlefish-r4-4d36884"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": [
+        "rustfmt.toml",
+        "guest/hals/ril/.clang-format"
+      ]
+    },
+    {
+      "clean_worktree": true,
+      "commit": "0021d8d13eb1f603db6b1fa61b6d8ae4b65023db",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "bpf-files.jsonl",
+      "manifest_sha256": "ff55e1fb6c1c3fe8d674e24426f02ef643c87b9a64032ef7898a716bc0289376",
+      "modes": {
+        "100644": 19,
+        "120000": 2
+      },
+      "name": "bpf",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/bpf-r4-0021d8d",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "0ef0787a49ef84b45faf1fbf99221dcaba193a78",
+      "tag_type": "tag",
+      "tracked_bytes": 128588,
+      "tracked_entries": 21,
+      "tree": "89bbe667c5f070e2df861470271318599a2c2ffb",
+      "upstream": "https://android.googlesource.com/platform/system/bpf",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/system/bpf",
+        "AOSP-16.0.0_r4/android-source/bpf-r4-0021d8d"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": [
+        "rustfmt.toml",
+        ".clang-format"
+      ]
+    },
+    {
+      "clean_worktree": true,
+      "commit": "deef1ed99f28b761fe55ab4cac61027f6f78f3e8",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "modules-common-files.jsonl",
+      "manifest_sha256": "6c03ed6c86b9d9d30de8e5dd65b664757d1bfacae575e112d3563bbb5f63466f",
+      "modes": {
+        "100644": 108,
+        "100755": 9
+      },
+      "name": "modules-common",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/modules-common-r4-deef1ed",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "5fa5e4346f8b19a85bcd8a9727809e0662745e14",
+      "tag_type": "tag",
+      "tracked_bytes": 386540,
+      "tracked_entries": 117,
+      "tree": "de4b9e6a40d87e372bd5e90a18538f236d763aae",
+      "upstream": "https://android.googlesource.com/platform/packages/modules/common",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/packages/modules/common",
+        "AOSP-16.0.0_r4/android-source/modules-common-r4-deef1ed"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": []
+    },
+    {
+      "clean_worktree": true,
+      "commit": "45034f0663f960d9ee5fb0a101a4732b71f6e2f4",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "frameworks-base-files.jsonl",
+      "manifest_sha256": "34800542aa4143387546d46b62dbc137e31703502d6c5f3ebaaafeea5eb84abe",
+      "modes": {
+        "100644": 60966,
+        "100755": 164,
+        "120000": 14
+      },
+      "name": "frameworks-base",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/frameworks-base-r4-45034f0",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "dab2e60df41eec5479d4cb934235d6e133433664",
+      "tag_type": "tag",
+      "tracked_bytes": 1703541971,
+      "tracked_entries": 61144,
+      "tree": "6667cba9cf8225451f0822ad94cb21902025dfa3",
+      "upstream": "https://android.googlesource.com/platform/frameworks/base",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/frameworks/base",
+        "AOSP-16.0.0_r4/android-source/frameworks-base-r4-45034f0"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": [
+        "native/android/include/android/multinetwork.h"
+      ]
+    },
+    {
+      "clean_worktree": true,
+      "commit": "aa229558cbf04bc997ed27465c5e7ad497123d1b",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "hardware-interfaces-files.jsonl",
+      "manifest_sha256": "a9f88365b7d5cf88c7c27573ca47074335f54bc6c27ab616dd8afc97f9ba2a6e",
+      "modes": {
+        "100644": 16428,
+        "100755": 24,
+        "120000": 4
+      },
+      "name": "hardware-interfaces",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/hardware-interfaces-r4-aa22955",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "608bbc248447c295b8bb96e16b6edc9b59ae54d9",
+      "tag_type": "tag",
+      "tracked_bytes": 88231410,
+      "tracked_entries": 16456,
+      "tree": "315215f25e2857a7ff1c46c6546f1d5e0f958f5e",
+      "upstream": "https://android.googlesource.com/platform/hardware/interfaces",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/hardware/interfaces",
+        "AOSP-16.0.0_r4/android-source/hardware-interfaces-r4-aa22955"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": [
+        ".clang-format",
+        "security/secretkeeper/aidl/vts/rustfmt.toml"
+      ]
+    },
+    {
+      "clean_worktree": true,
+      "commit": "fcbde2bcff56ca1d7bec9cabf8bdca5e288bf103",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "frameworks-native-files.jsonl",
+      "manifest_sha256": "d141c7d18ecd652cfab00c18f3ae30ebee270d5727956b14b69747a42537c2b2",
+      "modes": {
+        "100644": 4041,
+        "100755": 18,
+        "120000": 70
+      },
+      "name": "frameworks-native",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/frameworks-native-r4-fcbde2b",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "eabff190ccc3baeb4aa552afdb3b0df6262993e5",
+      "tag_type": "tag",
+      "tracked_bytes": 43506471,
+      "tracked_entries": 4129,
+      "tree": "99baec33e1309d380fe84fbe89e8c49cd952569a",
+      "upstream": "https://android.googlesource.com/platform/frameworks/native",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/frameworks/native",
+        "AOSP-16.0.0_r4/android-source/frameworks-native-r4-fcbde2b"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": [
+        "rustfmt.toml",
+        "services/surfaceflinger/tests/end2end/.clang-format",
+        "libs/ftl/.clang-format",
+        "include/ftl/.clang-format",
+        "include/private/binder"
+      ]
+    },
+    {
+      "clean_worktree": true,
+      "commit": "69c456ea4aa2f503a2904cfbc11f279a3b2efb09",
+      "error_count": 0,
+      "errors": [],
+      "manifest": "libvintf-files.jsonl",
+      "manifest_sha256": "948a8ac6e3e268a337c6b7dc579a7eb4caee139f948bd9f5e52aeaa1c2f58119",
+      "modes": {
+        "100644": 135,
+        "100755": 1
+      },
+      "name": "libvintf",
+      "source_relative_path": "AOSP-16.0.0_r4/android-source/libvintf-r4-69c456e",
+      "tag": "android-16.0.0_r4",
+      "tag_object": "035dcd5f2b18bd043bd4c2d9bbc93e99bd1b38e8",
+      "tag_type": "tag",
+      "tracked_bytes": 1126276,
+      "tracked_entries": 136,
+      "tree": "8b9bc687ddaef66d0cb027c8e7fe0e168fa3e0ed",
+      "upstream": "https://android.googlesource.com/platform/system/libvintf",
+      "clone_argv": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--branch",
+        "android-16.0.0_r4",
+        "https://android.googlesource.com/platform/system/libvintf",
+        "AOSP-16.0.0_r4/android-source/libvintf-r4-69c456e"
+      ],
+      "clone_rc": 0,
+      "isolated_unresolved_symlinks": []
+    }
+  ],
+  "boundaries": {
+    "complete_aosp": false,
+    "stock_path_view": false,
+    "soong_graph_pass": false,
+    "target_compile": false,
+    "device_or_apk": false,
+    "shared_baseline_modified": false
+  },
+  "next": "Independent source/index review, stock-path symlink closure and transitive owners before fresh original-owner graph release."
+}

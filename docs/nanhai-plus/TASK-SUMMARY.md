@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T07:49:23.675073+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T08:02:11.415122+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -13,22 +13,26 @@
 | 历史 Musl 已尝试 / 未尝试 | 58 / 31 | 原 86 项已尝试 56，加新增项已尝试 2 |
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
-| 原版 APK 下载载荷接受 | 71 | 上游登记原包 69，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
-| APK 完整静态清点 | 65 | 共 122 个 DEX、457 个 ELF；VLC、Signal、Keychain、Seal 与 Briar 未计完整清点 |
+| 原版 APK 下载载荷接受 | 75 | 上游登记原包 73，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
+| APK 完整静态清点 | 71 | 共 129 个 DEX、475 个真正 ELF；VLC、Signal、Keychain 仍未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
 
-最新构建图实际结果：G273 已终态（exec42573，terminal 37e6c6，rc2），经原 owner 新 ACK/root 封包、独审/root 接受。Soong 宿主引导 240/240，G272 的五种缺项均消失；本轮新报 12 种未定义模块、18 条诊断，首个是 `documentsui_defaults`（CarDocumentsUI）。源码/SDK 前后守卫一致，OUT/TMP 哈希核对与清理命令收据通过；目标编译命令 0。G274 正按精确 R4 定位新定义，G273 旧包禁止重放。
+最新构建图实际结果：G273 已终态（exec42573，terminal 37e6c6，rc2），经原 owner 新 ACK/root 封包、独审/root 接受。Soong 宿主引导 240/240，G272 的五种缺项均消失；本轮新报 12 种未定义模块、18 条诊断，首个是 `documentsui_defaults`（CarDocumentsUI）。源码/SDK 前后守卫一致，OUT/TMP 哈希核对与清理命令收据通过；目标编译命令 0。G274 九个精确 R4 仓仅获源码身份准入（85,499 跟踪项、1,875,247,905 字节）；13 个跨仓链接与 stock 视图未闭合，尚无新图 ACK/执行。G273 旧包禁止重放。
 
 最新构建图实际结果：G272 已终态（exec19714，terminal 1b5375，rc2），原 owner 新 ACK、root 封包与独审均成立。Soong 宿主引导 240/240，AIDL/XSDC 插件参与，前轮六处未识别类型不再出现；新的最早失败为 `tradefed_errorprone_defaults` 未定义，另有 Car、simpleperf、Lint、Connectivity 四种缺项，共六条诊断。源码/SDK 前后守卫一致，OUT/TMP 归档哈希通过，清理命令收据通过；目标编译命令 0。G273 精确 R4 源码定位中，G272 禁止重放。
 
 最新构建图实际结果：G271 已终态（exec87818，terminal b5c83a，rc2）。原 owner 对 17 项输入的 ACK、root 封包及独立预审成立；宿主 Soong 236/236 后原版 CTS 分析出现 5 处 `aidl_interface` 和 1 处 `xsd_config` 未识别类型，首处为 `cts/tests/tests/hardware/Android.bp:19:1`。G270 的 5 个缺模块错误未作为本轮首错出现。源码/SDK 前后守卫一致，OUT/TMP 哈希和资源清理有独立复核；目标编译命令仍为 0。精确 R4 `system/tools/aidl`（2048 文件、2 链接）与 `system/tools/xsdc`（137 文件）已按官方 Git 身份准入为只读源码树，stock 路径与 AIDL 两个链接目标尚未核验可用，G272 候选未封、未执行。
 
-G273 的五棵精确 R4 源码树（16,285 项）及额外 `system/core` 原版树（1,915 项）已分别通过独审与外环**源码身份准入**；`system/core/.clang-format-2` 的 stock 链接链和 G273 图仍未放行。A3 两次实际取包均整体 rc2，仅 LocalSend、Linphone 两个完整原包经独审与外环接受，新增 105,587,196 字节；Home Assistant Minimal、Nextcloud Notes 两轮 rc28 partial 不计。累计 71 原包、65 完整静态，启动数不变。
+G273 的五棵精确 R4 源码树（16,285 项）及额外 `system/core` 原版树（1,915 项）已分别通过独审与外环**源码身份准入**；`system/core/.clang-format-2` 的 stock 链接链和 G273 图仍未放行。A3 两次实际取包均整体 rc2，仅 LocalSend、Linphone 两个完整原包经独审与外环接受，新增 105,587,196 字节；Home Assistant Minimal、Nextcloud Notes 两轮 rc28 partial 不计。当时累计 71 原包、65 完整静态，启动数不变。
 
 A3 两包隔离静态扫描实际 exec65299/chunk9a91d5/rc0，独审和 root 接受后新增 2 DEX、19 ARM64 ELF；LocalSend 与 Linphone 分别 1DEX/5ELF 和 1DEX/14ELF，19 次 readelf 均 rc0，源码/原包/工具/环境前后守卫一致。累计 **65 份完整静态清单、122 DEX、457 ELF**；它们仍未启动。
+
+A4 又实际获取 4 个上游登记的小型原包（Files、Libre Contacts Backup、Stopwatch、aka Alarm）：exec59955/chunk857dd6/rc0，合计 2,286,257 字节；经独审与外环接受后，当前累计 **75 原包、65 完整静态**。签名、黑盒资格和启动均未由取件证明，四包的静态清点另行执行。
+
+batch12 v3 修复后，Seal 与 Briar 两份完整静态清点经独审及 root 接受，新增 3 DEX、14 真 ELF；Seal 内 3 个 ZIP 格式 `.so` 另列，不能误计 ELF。A4 v2 四份清点独审及 root 接受，新增 4 DEX、4 ELF；v1 外层 rc2 和 v2 输入 scope 沿袭文案保留为模板修订事项。当前累计 **75 原包、71 份完整静态、129 DEX、475 真 ELF**，冷启动仍为 0。
 
 历史构建图结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；G271/v15 候选经 570 项独立检查和 root 审查，后由原 octos-inner 新 ACK 与 root 封包执行为 G271；源码准入及 ACK 均不代表图闭合。G270 不重放。
 
@@ -66,13 +70,15 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；65 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G273 有 18 处未定义模块依赖；batch12 整批 rc2；WhatsApp 网页与包内版本不一致 | 精确 R4 十二种缺项定义与下一图候选；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；71 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G273 有 18 处未定义模块依赖；batch12 整批 rc2；WhatsApp 网页与包内版本不一致 | 精确 R4 十二种缺项定义与下一图候选；Bionic 真机 Activity 启动证据 |
 
 自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。此前 3 组实际结果（G268、WhatsApp 只读命令、G269）触发 EVO-0011；它已在 120 秒硬上限关闭，新增验证改进 0、推广 0；随后第 9 批、G270 和第 8 次原包取件构成新三组，EVO-0012 在 55.93 秒内验证一个限定身份链校验器：真实收据 rc0、篡改哈希负例 rc2。未推广、未测节省时间。第 10 批静态扫描、原包 v9 取件、第 11 批静态扫描形成随后三组实际结果，触发 EVO-0013 专职 peer，82.9 秒内闭合一项限定试点：对 10 个 Tier-B 黑盒候选做包名、历史工件 SHA 与有证版本的严格联接，v8/v9 和 WhatsApp 试点输入中 0 个历史工件精确命中；错误版本/SHA 负例未误判，WhatsApp 新版单列。该试点未覆盖当时全部 65 原包，未推广，不增加黑盒资格或启动数。随后 G271、A2 原包与 batch12 三组实际结果触发 EVO-0014：只读分流试点将 Seal 的非 ELF `.zip.so` 与 Briar 超时保留为两种未决类型，四个负例均拒绝；未推广，反思计数归零。
 
 EVO-0015 在 G272 图结果、A3 原包和 A3 静态三组真实结果后闭合一项只读局部试验：用实际 stock bind 命令与精确 R4 源码中的 `name:` 定义定位五种缺项，5/5 为未挂载候选；已挂载模块和假名负例未误报。只辅助下一轮来源准备，不能替代 Soong 图/运行验收，未推广或增加 89 项通过数。
 
 历史自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。该轮四组实际结果已经闭合，不重复反思。独立 peer 的超时记录保留。
+
+G273 图、A4 原包、batch12 v3 修复和 A4 v2 清点构成新四组实际结果，EVO-0016 专职 peer 正在限时反思；尚未闭合或推广。
 
 这是核对时点的任务快照，不是整项目完成声明。逐项计数及本地不可变收据路径/SHA 保存于 [TASK-SUMMARY.json](TASK-SUMMARY.json)；该文件的证据索引不声称大型构建产物已上传。
 
@@ -85,7 +91,7 @@ EVO-0015 在 G272 图结果、A3 原包和 A3 静态三组真实结果后闭合�
 
 ## Evidence target
 
-- What this proves: 截至核对时点的已接受数量与 G271 实际终态。
+- What this proves: 截至核对时点的已接受数量、G273 实际终态与 G274 源码身份准入。
 - What this does not prove: 整工具完成、安装、冷启动、上屏或设备验收。
 
 ## Environment
@@ -117,7 +123,7 @@ EVO-0015 在 G272 图结果、A3 原包和 A3 静态三组真实结果后闭合�
 
 ## Proven
 
-- 38/89 历史 Musl 源码接受、71 个原包载荷接受、65 个完整静态清点。
+- 38/89 历史 Musl 源码接受、75 个原包载荷接受、71 个完整静态清点。
 
 ## Not proven
 
@@ -125,7 +131,7 @@ EVO-0015 在 G272 图结果、A3 原包和 A3 静态三组真实结果后闭合�
 
 ## Failed
 
-- G273 图分析 rc2；G272/G271/G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 静态清点未完成；第 5、12 批整体 rc2。
+- G273 图分析 rc2；G272/G271/G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 历史 v2 静态清点失败已由 v3 新证据修复；第 5、12 批整体 rc2。
 
 ## Next evidence
 

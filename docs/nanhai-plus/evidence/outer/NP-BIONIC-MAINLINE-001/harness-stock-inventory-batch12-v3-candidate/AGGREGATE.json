@@ -1,0 +1,188 @@
+{
+  "schema": "nanhai-batch12-v3-aggregate-candidate-v1",
+  "at": "2026-10-04T07:56:32.595709+00:00",
+  "status": "COMPLETE_STATIC_CANDIDATE_REQUIRES_INDEPENDENT_ROOT_REVIEW",
+  "checks": {
+    "content_probe": true,
+    "source_postguard": true,
+    "tool_postguard": true,
+    "com.junkfood.seal_raw_postguard": true,
+    "com.junkfood.seal_java": true,
+    "com.junkfood.seal:lib/arm64-v8a/libandroidx.graphics.path.so_unique_success": true,
+    "com.junkfood.seal:lib/arm64-v8a/libandroidx.graphics.path.so_exact": true,
+    "com.junkfood.seal:lib/arm64-v8a/libaria2c.so_unique_success": true,
+    "com.junkfood.seal:lib/arm64-v8a/libaria2c.so_exact": true,
+    "com.junkfood.seal:lib/arm64-v8a/libffmpeg.so_unique_success": true,
+    "com.junkfood.seal:lib/arm64-v8a/libffmpeg.so_exact": true,
+    "com.junkfood.seal:lib/arm64-v8a/libffprobe.so_unique_success": true,
+    "com.junkfood.seal:lib/arm64-v8a/libffprobe.so_exact": true,
+    "com.junkfood.seal:lib/arm64-v8a/libmmkv.so_unique_success": true,
+    "com.junkfood.seal:lib/arm64-v8a/libmmkv.so_exact": true,
+    "com.junkfood.seal:lib/arm64-v8a/libpython.so_unique_success": true,
+    "com.junkfood.seal:lib/arm64-v8a/libpython.so_exact": true,
+    "com.junkfood.seal_member_cardinality": true,
+    "com.junkfood.seal_all_other_classified": true,
+    "org.briarproject.briar.android_raw_postguard": true,
+    "org.briarproject.briar.android_java": true,
+    "org.briarproject.briar.android:lib/arm64-v8a/liblyrebird.so_unique_success": true,
+    "org.briarproject.briar.android:lib/arm64-v8a/liblyrebird.so_exact": true,
+    "org.briarproject.briar.android:lib/arm64-v8a/libtor.so_unique_success": true,
+    "org.briarproject.briar.android:lib/arm64-v8a/libtor.so_exact": true,
+    "org.briarproject.briar.android:lib/armeabi-v7a/liblyrebird.so_unique_success": true,
+    "org.briarproject.briar.android:lib/armeabi-v7a/liblyrebird.so_exact": true,
+    "org.briarproject.briar.android:lib/armeabi-v7a/libtor.so_unique_success": true,
+    "org.briarproject.briar.android:lib/armeabi-v7a/libtor.so_exact": true,
+    "org.briarproject.briar.android:lib/x86/liblyrebird.so_unique_success": true,
+    "org.briarproject.briar.android:lib/x86/liblyrebird.so_exact": true,
+    "org.briarproject.briar.android:lib/x86/libtor.so_unique_success": true,
+    "org.briarproject.briar.android:lib/x86/libtor.so_exact": true,
+    "org.briarproject.briar.android:lib/x86_64/liblyrebird.so_unique_success": true,
+    "org.briarproject.briar.android:lib/x86_64/liblyrebird.so_exact": true,
+    "org.briarproject.briar.android:lib/x86_64/libtor.so_unique_success": true,
+    "org.briarproject.briar.android:lib/x86_64/libtor.so_exact": true,
+    "org.briarproject.briar.android_member_cardinality": true,
+    "org.briarproject.briar.android_all_other_classified": true
+  },
+  "checks_pass": 39,
+  "checks_total": 39,
+  "facts": [
+    {
+      "package": "com.junkfood.seal",
+      "apk_sha256": "7070a3d4f079046912b4b8dde4edc8d1ef6eade3c9c98b02bfcaba3669c11d98",
+      "dex_entries": 1,
+      "defined_classes": 6124,
+      "elf_entries": 6,
+      "zip_in_so_entries": [
+        {
+          "name": "lib/arm64-v8a/libaria2c.zip.so",
+          "kind": "ZIP_IN_SO",
+          "bytes": 4218968,
+          "sha256": "d3c2dc0a6db502aa1820cca94db978e793070bfb16c4fe7edfb72306837697bb",
+          "magic": "504b0304"
+        },
+        {
+          "name": "lib/arm64-v8a/libffmpeg.zip.so",
+          "kind": "ZIP_IN_SO",
+          "bytes": 16713785,
+          "sha256": "68359d6cbac6adc021419ee7974f346721e5d8a306729e3e1bd771426375f3c6",
+          "magic": "504b0304"
+        },
+        {
+          "name": "lib/arm64-v8a/libpython.zip.so",
+          "kind": "ZIP_IN_SO",
+          "bytes": 11698164,
+          "sha256": "0210b1223ec8895a0b76679e643e777d37b4c6e4912ea6a95a0759e20bb0ae50",
+          "magic": "504b0304"
+        }
+      ],
+      "manifest_sha256": "f149da22f1c7278835079dc17757ec8c663fa3797b933cbfa55cafd29271db9b",
+      "dex_inventory_sha256": "dbf3304c447f281ae656f8548d6b4cfcff2f944cd3b6ef37cac47d2b1e72a5a9",
+      "native_member_receipts": [
+        {
+          "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+          "record_sha256": "d1f2a5835943bd4458814735fcd10d0d96dac83458b06302f3f8b912573ff4e5",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/8d965b6d3710b6e5176e/COMMAND.json",
+          "terminal_receipt_sha256": "a8a9d57e64ee36e94d99004de50276e3b6c71b775d9732f29070d47f019df3d3"
+        },
+        {
+          "name": "lib/arm64-v8a/libaria2c.so",
+          "record_sha256": "d4e40aa9aa6123d585278df864f48bc5af41eb5b51d534273c5b6e7962cba19d",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/ca0c5c0a88029777026b/COMMAND.json",
+          "terminal_receipt_sha256": "14eb03d209aa99c82d34a39336cf0205da5df596b1d40a19e69816552f92eb54"
+        },
+        {
+          "name": "lib/arm64-v8a/libffmpeg.so",
+          "record_sha256": "786cf2e3aa1bf73b5e2dbc503229305b5ceaa2f467c25fb5c5df935f7bf2356d",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/e1f49f08b63b42832edb/COMMAND.json",
+          "terminal_receipt_sha256": "645b4c7900248e2a3a4e46b024174bc56f8c08de9d89943f4d94c19c1924e0c8"
+        },
+        {
+          "name": "lib/arm64-v8a/libffprobe.so",
+          "record_sha256": "84414bbcd5046acefb4b5fe5d580c3d1f1dd416315c843528a3706173ba19d57",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/cff2b4e9d5bb53a0ba67/COMMAND.json",
+          "terminal_receipt_sha256": "d802a3641c76bd9f6a5674a6f3f717408934a1f89cf858abf52518e6a9e16b71"
+        },
+        {
+          "name": "lib/arm64-v8a/libmmkv.so",
+          "record_sha256": "acd6643e2df71891b0f735a6d76415c230c6b016aaae10bd1b3ab971c098aaa7",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/6680b787d93aa183e59d/COMMAND.json",
+          "terminal_receipt_sha256": "b440ce3a1c7bb64151acbec09d0d8178bbfa198d012f388da72d2b115355d9e5"
+        },
+        {
+          "name": "lib/arm64-v8a/libpython.so",
+          "record_sha256": "99d3a58d04ba0407ac1190016db5d1733fe8e58f19a25f67f0c7a98c4c7ebac2",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/802c62c9e746ebc123f1/COMMAND.json",
+          "terminal_receipt_sha256": "35b5da129466fc1dc62ebc44df543acb20f78b27a9f26c68ea7aa80ef68df0b0"
+        }
+      ],
+      "startup_verified": false,
+      "full_gap_scan": false
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "apk_sha256": "9025888a4a5f5268e1ccbcd840bd07e51e9eaf1d7bbf305ca262b8afc662e372",
+      "dex_entries": 2,
+      "defined_classes": 9475,
+      "elf_entries": 8,
+      "zip_in_so_entries": [],
+      "manifest_sha256": "9395720d51e804e3084d8d8f20ce7947ebbe2338afe1f455057f372805f3c8f4",
+      "dex_inventory_sha256": "c78f8a1ae926f7103b62423a511764f6187e3b9d8e1550671fab47f0e0f92dd1",
+      "native_member_receipts": [
+        {
+          "name": "lib/arm64-v8a/liblyrebird.so",
+          "record_sha256": "c332d976706f017482689b63c7b17a0555a2e2b118ca5e1a096a575be78060b4",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/1ad4ccc14d36e9d2a3a2/COMMAND.json",
+          "terminal_receipt_sha256": "b039b2175d68ddd577855ef89f726db9019404acb82c5ca87906b6ce12f88b79"
+        },
+        {
+          "name": "lib/arm64-v8a/libtor.so",
+          "record_sha256": "343a8c1d5603c80c794cd0ba9cd09f337fdae63b4387041f35732aba0f9bee5c",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/189d792f2f110add4237/COMMAND.json",
+          "terminal_receipt_sha256": "1a7ae24d35339e38376d8f12ca4e255c7771b032d2bde7db978b999e4861b776"
+        },
+        {
+          "name": "lib/armeabi-v7a/liblyrebird.so",
+          "record_sha256": "9ee08655abef83878d83d81ab861bd4cf1a2060a16603b5dc7ed1a2c45664dd8",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/d26183cc79689da1eafa/COMMAND.json",
+          "terminal_receipt_sha256": "3e78e59657709bb0d5146a512f18ffde42c61c2245b3446b4e5198f357c5f062"
+        },
+        {
+          "name": "lib/armeabi-v7a/libtor.so",
+          "record_sha256": "9ee82841c534f3142d7e321d7ea74a976c309404a324604e4e87888b566f70c0",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/3e9c9a7974cd592d3f5a/COMMAND.json",
+          "terminal_receipt_sha256": "5835bc85263ee4204c3e9b4ee3ed951517b52720cb9b946ff65007b0b7215278"
+        },
+        {
+          "name": "lib/x86/liblyrebird.so",
+          "record_sha256": "f9a6f99b8eb8879f9b760928743a3f94ebac594f5d1076ce10f57b80ef61f9cf",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/de88d4f4e4c9249e76df/COMMAND.json",
+          "terminal_receipt_sha256": "82168d49544b077869b5ca3f88e3afa851dfdc134fbc7ea95fe1a2047a396a0c"
+        },
+        {
+          "name": "lib/x86/libtor.so",
+          "record_sha256": "7422bb9432b239a63ab2a7a4694c67434094a8f50e8f3cc75e2331d7c81b3b1e",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/fe1c9026380a689b3038/COMMAND.json",
+          "terminal_receipt_sha256": "f7b1c8e0da302cb9f6b4b6ddf4f1e77d748edfc9dbb606ff1de3bd19d861adc8"
+        },
+        {
+          "name": "lib/x86_64/liblyrebird.so",
+          "record_sha256": "b054ba4b5a6fcde04bfa98b10afa0dd5e8a937071684449ce1568d1380020958",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/9ba9bc53bdfe96e1093b/COMMAND.json",
+          "terminal_receipt_sha256": "7b3efdf01876356c969940ff408b3f00a8b6b651003ad7af3b9a8981732c2328"
+        },
+        {
+          "name": "lib/x86_64/libtor.so",
+          "record_sha256": "be46878e3223c682662059346a145f7678043c6fecc27d36b9ff57f495338357",
+          "terminal_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/9757d2ac236904315267/COMMAND.json",
+          "terminal_receipt_sha256": "d75e1c06e0d65f3003e5d6ee3f1ae64cfee38f7d6a71c13603d5dd4f083cf562"
+        }
+      ],
+      "startup_verified": false,
+      "full_gap_scan": false
+    }
+  ],
+  "source_apk_tool_postguard": true,
+  "counts_accepted": 0,
+  "startup_pass_count": 0,
+  "device_commands": 0
+}

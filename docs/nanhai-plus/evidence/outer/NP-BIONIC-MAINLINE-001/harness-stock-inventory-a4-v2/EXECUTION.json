@@ -1,0 +1,16 @@
+{
+  "status": "TERMINAL_CANDIDATE_ONLY_REQUIRES_ROOT_REVIEW",
+  "command": "python3 scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/run.py",
+  "terminal_chunk": "ec735d",
+  "terminal_rc": 0,
+  "result_sha256": "5c679ff793a74d76ea6dc29f63b089bb9ea67b4e11215f5e9622715abeac729b",
+  "field_facts_sha256": "4b479c244961be51d0442726b4c8b6e3990bad1dc7156d96951784e691f87a23",
+  "package_count": 4,
+  "complete_candidate_rows": 4,
+  "accepted_rows": 0,
+  "startup_verified": false,
+  "device_commands": 0,
+  "prior_v1_terminal_chunk": "f47a1f",
+  "prior_v1_terminal_rc": 2,
+  "prior_v1_error": "SystemExit(0) caught by BaseException; preserved"
+}
