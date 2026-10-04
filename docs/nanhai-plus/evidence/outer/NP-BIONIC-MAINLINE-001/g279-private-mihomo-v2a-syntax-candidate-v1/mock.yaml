@@ -1,0 +1,27 @@
+mode: rule
+allow-lan: false
+bind-address: 127.0.0.1
+mixed-port: 20001
+ipv6: false
+log-level: silent
+dns:
+  enable: false
+tun:
+  enable: false
+profile:
+  store-selected: false
+external-controller: ''
+external-controller-unix: ''
+proxies:
+- name: fake-local-node
+  type: socks5
+  server: 127.0.0.1
+  port: 1080
+proxy-groups:
+- name: PROXY
+  type: select
+  proxies:
+  - fake-local-node
+rules:
+- IP-CIDR,1.95.90.207/32,PROXY,no-resolve
+- MATCH,REJECT

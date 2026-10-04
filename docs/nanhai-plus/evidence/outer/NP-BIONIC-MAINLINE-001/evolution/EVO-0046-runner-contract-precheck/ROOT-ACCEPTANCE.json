@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-plus-evolution-root-acceptance-v1",
+  "at_utc": "2026-10-04T18:37:32+00:00",
+  "decision": "ACCEPT_BOUNDED_OFFLINE_PILOT_ONLY",
+  "report_sha256": "70ff3aeaeaf7866156563e4427152a9e8671b573f5851c6507b9f365b3f9c889",
+  "pilot_sha256": "91f2189cb3bc9dd8f8c8b217b873e9645bb83f2b071687e18abe1cd0f09d988e",
+  "group_count": 4,
+  "duration_seconds": 63.283248042,
+  "accepted_improvement": "Require an executable late controller/source/process/selection identity equality gate immediately before any private credential config write.",
+  "promotion_status": "NOT_PROMOTED",
+  "reason": "Synthetic drift fixtures only cover one of four v2a peer blockers; fresh runner source, mutation fixtures and independent review remain required.",
+  "real_proxy_execution": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

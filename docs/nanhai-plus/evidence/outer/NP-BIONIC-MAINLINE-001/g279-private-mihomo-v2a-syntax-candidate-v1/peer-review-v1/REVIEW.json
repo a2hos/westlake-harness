@@ -1,0 +1,30 @@
+{
+  "schema": "g279-private-mihomo-v2a-syntax-peer-review-v1",
+  "at_utc": "2026-10-04T18:36:03.713985+00:00",
+  "decision": "NO_GO_V2A_REAL_EXECUTION_V1",
+  "candidate_sha256": "524157b219fad4ec1e2a4f6e98c981037980b5e7db28b33eb394c7d01ea0754a",
+  "runner_sha256": "3b342f21ed3c3ebcd1bae47a5c749685a9012a0dc99bf9d35d95647d6a024cf0",
+  "fixture_sha256": "28c52c1955af558f2edd89b41e30062a1dfb4010d949ee712ca888b5febc3605",
+  "v1_no_go_peer_sha256": "74fd14fb46bca3a0b0835e2f6adcb9ef344c36e53d60d0f8cde269409d687d8b",
+  "controller_identity_contract_sha256": "55c7bf9f5176482ae798c46cea876adc0e8c5cdfa785c3409b9889d8f7e192fc",
+  "accepted_static_facts": [
+    "25/25 credential-free fixtures pass; mock mihomo -t rc0, no real controller or private config execution.",
+    "The current root-owned mihomo PID 10430 and Unix peer PID/UID (10430,0) are readable by nonroot; v2a active_process() and peer_identity() succeeded in reviewer-only local checks.",
+    "Exact fixed ROOT-RELEASE path binds candidate, runner and peer SHA; no release or START exists.",
+    "The runner has no explicit proxy-start or gz02 SSH command; private config path is project gitignored runtime with 0700/0600 O_EXCL intent, and output summarizes logs without raw credential bytes.",
+    "Current controller responds HTTP200 without Authorization; v2a correctly relies on kernel peer identity rather than claiming Bearer authentication."
+  ],
+  "blocking_findings": [
+    "Controller selection is read once and then copied into a private config without post-read source SHA, sole PID/argv, socket peer or selection recheck. This violates the bounded controller identity contract and leaves a current-leaf TOCTOU gap. Requery just before private write and compare the leaf in memory without logging its name; recheck all identities.",
+    "source_structure checks external-file-like keys only at the top of each proxy object. Ten of 15 current exact-source nodes have nested dict/list values. The selected leaf may change to one of them; recursive external reference and supported-type checks are required before copying the entire object.",
+    "The credential-bearing mihomo -t subprocess has no demonstrated no-network confinement or network observation. The no-gz02/no-network statement is an intent/fixture boundary, not proven for a real selected node. Either establish an exact binary/source-backed offline contract or place a bounded network-denial/observation gate that respects the no-container/no-namespace rule.",
+    "subprocess.run timeout kills the direct mihomo -t process but does not prove descendants are terminated. The runner deletes its private directory after the command, so any surviving child could retain or use stale config. Use a process-group termination/readback and fail closed if descendants remain."
+  ],
+  "limits": [
+    "One-shot START and ordinary-exception cleanup are coded, but forced SIGKILL or host loss can leave a private 0600 credential file; no automatic replay.",
+    "Mock syntax success does not establish real Hysteria2/VLESS/TUIC/VMess selected-node syntax or egress.",
+    "No v2b listener/routing or v2c SSH/remote identity evidence."
+  ],
+  "next_release": "Do not issue ISSUE_EXACT_V2A_SYNTAX_ONCE for this v1 runner. Revise and independently retest identity freshness, recursive selected-node schema, bounded offline execution and descendant cleanup first; then a single v2a syntax-only root release may be considered. Keep v2b/v2c separate.",
+  "reviewer_actions": "Read-only code, hashes and local Unix peer/process metadata; no real credential generation, mihomo -t, private proxy instance, gz02, SSH, device, container or count change."
+}

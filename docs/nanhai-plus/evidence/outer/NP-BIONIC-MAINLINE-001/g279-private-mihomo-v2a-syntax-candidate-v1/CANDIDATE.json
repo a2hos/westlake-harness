@@ -1,0 +1,63 @@
+{
+  "schema": "g279-private-mihomo-v2a-syntax-candidate-v1",
+  "at_utc": "2026-10-04T18:34:35.828858+00:00",
+  "decision_candidate": "GO_INDEPENDENT_REVIEW_CODE_ONLY_NO_RELEASE",
+  "v1_no_go_peer_sha256": "74fd14fb46bca3a0b0835e2f6adcb9ef344c36e53d60d0f8cde269409d687d8b",
+  "v1_candidate_sha256": "8f94f130a6ae1695db059c14e4b2a72d04a6de50c4887a3bd8886a30b129c41c",
+  "runner_sha256": "3b342f21ed3c3ebcd1bae47a5c749685a9012a0dc99bf9d35d95647d6a024cf0",
+  "fixture_program_sha256": "7768d8c9a311e43a095de9b801e57c372ee2adca3962cff492e752dae75f3ad7",
+  "fixture_sha256": "28c52c1955af558f2edd89b41e30062a1dfb4010d949ee712ca888b5febc3605",
+  "fixture_checks_passed": 25,
+  "fixture_checks_total": 25,
+  "mock_config_sha256": "2eeaa3b808b8bdb5d6d38ef9407ef09f6cbdf96767be50245166132307de538a",
+  "mock_test_rc": 0,
+  "mock_stdout_sha256": "975b4db14d9db268688dad9a7907f7387636b3b07bf36bd126ee51f17d798103",
+  "mock_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "handoff_sha256": "c833533283b6c5a2ffa27dcf89b8d1b8eb237879ca8de666e6abf8785c24d4c7",
+  "source_config_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "mihomo_binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "scope": "single local credential-bearing private config generation plus mihomo -t only, if independently released later",
+  "controller_identity_gate": [
+    "exact source/process path and SHA",
+    "unique root-owned process UID/RUID 0",
+    "root-owned socket metadata",
+    "connected Unix LOCAL_PEERPID equals process PID",
+    "connected Unix LOCAL_PEERCRED uid 0",
+    "socket inode stable across connection"
+  ],
+  "controller_authentication_limitation": "Current controller answers 200 without Authorization. Bearer is not used or claimed as an authentication gate.",
+  "private_config_gate": [
+    "one current leaf node only",
+    "project gitignored runtime 0700",
+    "O_EXCL 0600 config",
+    "exact two rules /32 PROXY then MATCH REJECT",
+    "DNS/TUN/controller/secret/prepend/healthcheck removed",
+    "no global config write"
+  ],
+  "terminal_evidence": [
+    "START one-shot fresh runtime nonce",
+    "failed stage",
+    "mihomo -t rc",
+    "stdout/stderr SHA, bytes, finite category",
+    "config SHA/bytes, no bytes or node names",
+    "private directory cleanup status"
+  ],
+  "root_release_present": false,
+  "peer_go_present": false,
+  "real_source_proxy_extracted": false,
+  "real_controller_queried": false,
+  "real_private_config_created": false,
+  "real_syntax_test_executed": false,
+  "proxy_instance_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge_writes": 0,
+  "count_delta": 0,
+  "limits": [
+    "Fake-node mihomo -t does not prove actual node type acceptance",
+    "Connected root PID/UID secures the queried socket identity, but the global controller remains broadly readable by local users",
+    "Unexpected SIGKILL or host loss can leave an ignored 0600 private file; recover by exact START nonce and PID audit, never replay",
+    "No v2b listener/route or v2c SSH behavior is included"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "actual_scope": {
+    "authoritative_count_delta": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "network_commands": 0,
+    "ssh_commands": 0
+  },
+  "at_utc": "2026-10-04T18:37:27.270237+00:00",
+  "causal_chain": "two NO_GO candidate reviews -> early-only controller selection assumption -> executable late snapshot equality at private write -> avoid one stale-credential candidate/review cycle -> mutation fixtures and fresh peer review",
+  "challenged_assumption": "Early controller GET and code-only mock success hold long enough to validate the later private write; v2a peer NO_GO contradicts it.",
+  "decision": "GO_OFFLINE_CONTRACT_PILOT_ONLY_NO_RUNNER_PROMOTION",
+  "direction": "Mechanically check controller boundary contract before freezing a private runner; different from EVO45 route-stage observability",
+  "discarded_action": {
+    "action": "Treat 25/25 mock fixtures and one early controller read as sufficient to freeze/release v2a runner.",
+    "causal_reason": "The dynamic controller selection can change after initial read and before private config write.",
+    "observed_failure": "Peer NO_GO for missing post-read identity and selection recheck among other blockers.",
+    "source_anchor": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v1/peer-review-v1/REVIEW.json"
+  },
+  "duration_seconds": 63.283248042,
+  "end_monotonic_ns": 753439138189333,
+  "group_count": 4,
+  "id": "EVO-0046-runner-contract-precheck",
+  "inferences": [
+    "A machine-checked late boundary snapshot could reject stale controller selection before credential-bearing private config is written.",
+    "This would address one v2a NO_GO issue only; it does not clear other peer blockers or authorize execution."
+  ],
+  "observations": [
+    "G279 v1 root NO_GO: root-owned controller socket failed same-uid gate, lsof parser and release/postrun issues.",
+    "Controller identity root accepted local peer PID/UID and unauthenticated GET HTTP200; Bearer header is not authentication proof.",
+    "v2a peer NO_GO: current leaf was read once before private config write; recursive external references, offline egress, and descendant cleanup also block real execution.",
+    "hide.me noPlayStore official raw candidate has distinct package from Play listing; no raw/blackbox admission or startup count.",
+    "Exact v2a runner SHA has stable_read at line 162, active_process at 164, current_leaf at 165, write_once at 168, and no identity read between private_dir and write_once."
+  ],
+  "one_improvement": {
+    "candidate": "Add a pre-freeze executable boundary contract: capture a sanitized tuple of source SHA, process PID/UID, socket dev/inode, Unix peer PID/UID and selected-leaf digest; immediately before private config write, take a fresh tuple and require exact equality or fail closed.",
+    "failure_behavior": "Stop before credential-bearing file write, record only failing category and hashes, no node names or secret bytes.",
+    "invalidation": "Any tuple mismatch, missing field, source change, or runner source change invalidates proposed release; no old candidate receipt reuse.",
+    "key": "source SHA + process PID/UID + socket dev/inode + connected Unix peer PID/UID + selected-leaf digest + exact runner source SHA",
+    "mechanism": "Moves current-leaf freshness from an assumption into an executable dependency at the write boundary, preventing stale node selection from being copied.",
+    "pilot_result": "Existing v2a runner lacks late identity read calls before write; six synthetic tuple fixtures pass, rejecting changed selection, source, socket, peer and missing readback. No actual controller access.",
+    "pilot_sha256": "91f2189cb3bc9dd8f8c8b217b873e9645bb83f2b071687e18abe1cd0f09d988e",
+    "promotion_gate": "A fresh runner generation must expose late snapshot function immediately before write, pass unchanged and single-field mutation fixtures without creating a private file, pass independent peer review for this seam and all other blocking findings, then receive separate root release. Do not use EVO46 pilot as release.",
+    "risk": "AST call-order screening is shallow and can miss semantic alternatives; must pair with mutation fixtures at the exact write seam and peer source review.",
+    "scope": "Only G279 private proxy v2a syntax runner contract. Does not solve recursive reference scanning, no-network syntax proof, child cleanup, v2b listener, v2c SSH or APK startup."
+  },
+  "problem": "v1 and v2a runner candidates received NO_GO despite passing code-only fixtures; v2a did not recheck controller/source/process/selection just before writing credential-bearing private config.",
+  "result_groups": [
+    {
+      "name": "G279 v1 runner root NO_GO",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-private-mihomo-runner-candidate-v1/ROOT-NO-GO.json",
+      "sha256": "5ccd64ebb2b860c35d873393bcb350f3c78a19aa779f8e4e7a53a940086ff1e4"
+    },
+    {
+      "name": "G279 controller identity and unauthenticated GET root local observation",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-controller-identity-readonly-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "d4fef0ba28674e81859d036bf61d58d89751478507d2db1dd760d5952ace7cde"
+    },
+    {
+      "name": "G279 v2a v1 peer NO_GO",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "789ea24905dcef105b41ec642b98e1174ffde49e4b7b2af845fa2773134a5ae1"
+    },
+    {
+      "name": "hide.me official noPlayStore raw candidate, not admitted",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-hideme-official-intake-candidate-v1/HANDOFF.json",
+      "sha256": "a591ef1be955146ca98cf35331bb641f2357b72e43ae3d648b3df5c02dbf7c86"
+    }
+  ],
+  "schema": "nanhai-plus-bounded-evolution-v1",
+  "start_monotonic_ns": 753375854941291,
+  "unknowns": [
+    "Whether a revised runner performs equivalent late checks under real controller changes.",
+    "Whether current selected node shape and mihomo offline behavior satisfy separate blockers."
+  ],
+  "within_120s": true
+}

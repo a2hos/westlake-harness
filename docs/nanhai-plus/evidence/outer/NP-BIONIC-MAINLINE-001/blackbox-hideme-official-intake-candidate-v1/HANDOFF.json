@@ -1,0 +1,142 @@
+{
+  "schema": "nanhai-blackbox-official-host-raw-candidate-v1",
+  "status": "CANDIDATE_INDEPENDENT_REVIEW_REQUIRED",
+  "created_at": "2026-10-04T18:35:45.869818+00:00",
+  "app": "hide.me VPN",
+  "exact_package": "hideme.android.vpn.noPlayStore",
+  "version_code": 60121,
+  "version_name": "6.1.2",
+  "official_distribution": {
+    "page": "https://hide.me/en/software/android",
+    "official_help": "https://hide.me/en/help/how-can-i-download-apk-for-your-android-vpn-client/",
+    "entry": "https://hide.me/download/android/apk",
+    "entry_head_rc": 0,
+    "entry_status": 302,
+    "redirect_target": "https://hide.me/downloads/Hide.me-6.1.2.apk",
+    "fixed_head_rc": 0,
+    "fixed_head_status": 200,
+    "fixed_head_content_length": 67834658,
+    "get_rc": 0,
+    "get_metrics": {
+      "http_code": 200,
+      "ssl_verify_result": 0,
+      "url_effective": "https://hide.me/downloads/Hide.me-6.1.2.apk",
+      "num_redirects": 0,
+      "size_download": 67834658,
+      "time_total": 6.779164
+    }
+  },
+  "raw": {
+    "artifact": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/hide-me-6.1.2.apk",
+      "bytes": 67834658,
+      "sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b"
+    },
+    "zip_crc_all_entries": true,
+    "zip_entry_count": 2673,
+    "manifest_present": true
+  },
+  "host_structure": {
+    "aapt2_rc": 0,
+    "package_line": "package: name='hideme.android.vpn.noPlayStore' versionCode='60121' versionName='6.1.2' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'",
+    "target_sdk_line": "targetSdkVersion:'35'",
+    "native_code_line": "native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'",
+    "arm64_elf64_little_endian_count": 20,
+    "arm64_elf64_paths": [
+      "lib/arm64-v8a/libandroidbridge.so",
+      "lib/arm64-v8a/libcharon.so",
+      "lib/arm64-v8a/libconscrypt_jni.so",
+      "lib/arm64-v8a/libimcv.so",
+      "lib/arm64-v8a/libipsec.so",
+      "lib/arm64-v8a/libopenvpn.so",
+      "lib/arm64-v8a/libosslspeedtest.so",
+      "lib/arm64-v8a/libosslutil.so",
+      "lib/arm64-v8a/libovpn3.so",
+      "lib/arm64-v8a/libovpnexec.so",
+      "lib/arm64-v8a/libovpnutil.so",
+      "lib/arm64-v8a/libsentry-android.so",
+      "lib/arm64-v8a/libsentry.so",
+      "lib/arm64-v8a/libstrongswan.so",
+      "lib/arm64-v8a/libtnccs.so",
+      "lib/arm64-v8a/libtncif.so",
+      "lib/arm64-v8a/libtpmtss.so",
+      "lib/arm64-v8a/libwg-go.so",
+      "lib/arm64-v8a/libwg-quick.so",
+      "lib/arm64-v8a/libwg.so"
+    ],
+    "dex_root_count": 3,
+    "apksigner_rc": 0,
+    "v1": true,
+    "v2": true,
+    "v3": false,
+    "signer_cert_sha256": "086d2b255661b961d3ad1eedd53a97aac4b984e197f9f42b9f89bcd5a5914b3e"
+  },
+  "qualification_boundary": {
+    "exact_package_matches_google_play": false,
+    "google_play_package": "hideme.android.vpn",
+    "google_play_downloads": "1M+",
+    "downloads_not_transferred_to_exact_package": true,
+    "signature_validity_not_publisher_identity": true,
+    "blackbox_qualified": false,
+    "note": "Official website supplies a noPlayStore variant with a different package ID; no independent published certificate fingerprint or exact-package popularity proof in this candidate."
+  },
+  "receipts": {
+    "acquisition": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/ACQUISITION.json",
+      "bytes": 4011,
+      "sha256": "204ba210622af233c19ca0cb9c1af56022d8435c831417944947a84e6b14575f"
+    },
+    "entry_headers": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/entry.headers.raw",
+      "bytes": 547,
+      "sha256": "4bd74b7df52811d2b1b68c21e1f3239def8f6647dbff855791e06f349c76e4c8"
+    },
+    "fixed_headers": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/fixed.headers.raw",
+      "bytes": 369,
+      "sha256": "b6468d0334cccec0ecc50a09f1d452c8a9c20de11d6bb5ee09575b85fbdee13a"
+    },
+    "get_headers": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/get.headers.raw",
+      "bytes": 369,
+      "sha256": "78bcd75e2a08359b5ce056a688770c90d149baf50e4ea5e1190ae80db3135699"
+    },
+    "aapt2_stdout": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/aapt2.stdout.raw",
+      "bytes": 8633,
+      "sha256": "1e5971de1e218be17377c86f7b59001c0412a9c244189260e6119417e1604da2"
+    },
+    "aapt2_stderr": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/aapt2.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner_stdout": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/apksigner.stdout.raw",
+      "bytes": 22799,
+      "sha256": "34aefa6766b21f3cbc6d23f44ad45af353cdec99eda09d4f60d2110cdf04e44c"
+    },
+    "apksigner_stderr": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/apksigner.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "acquire_script": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-hideme-official-intake-candidate-v1/acquire.py",
+      "bytes": 4440,
+      "sha256": "538cf33a544e9adcdb6515d0c41072120ca28124deac2cff7d6a6676709f55b4"
+    }
+  },
+  "no_duplicate_evidence": {
+    "task_summary_exact_package_search_hits": 0,
+    "upstream_registry_exact_package_search_hits": 0
+  },
+  "counters": {
+    "raw_accepted_delta": 0,
+    "static_accepted_delta": 0,
+    "blackbox_qualified_delta": 0,
+    "cold_start_delta": 0
+  },
+  "device_commands": 0,
+  "container_commands": 0
+}

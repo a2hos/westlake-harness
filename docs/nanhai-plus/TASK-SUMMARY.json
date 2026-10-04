@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:25:32+00:00",
+  "checked_at": "2026-10-04T18:37:32+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 100,
+    "downloaded_payloads": 101,
     "latest_raw_admission": {
       "packages": [
-        "com.x8bit.bitwarden"
+        "hideme.android.vpn.noPlayStore"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
-      "scope": "exact official Bitwarden APK host raw only; targetSdk37 risk, no static/blackbox/startup acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-hideme-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816",
+      "scope": "exact official hide.me noPlayStore APK host raw only; Play package popularity not inherited; no static/blackbox/startup acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -68,11 +68,13 @@
       "sha256": "18eea6b3e4a5d0caa2033f7a822d04acfae727f204db0dfd7795fbb38900ed34",
       "scope": "four-phase host static of exact accepted bytes; 1 DEX, 0 .so/ARM64 ELF; cryptographic signature verification not proven; no startup"
     },
-    "incomplete_static_inventories": [],
+    "incomplete_static_inventories": [
+      "hideme.android.vpn.noPlayStore"
+    ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 25,
+    "supplemental_payloads": 26,
     "qualified_blackbox_packages": 16,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
@@ -2113,5 +2115,35 @@
     "gz02_connected": false,
     "graph_result_observed": false,
     "cold_start_delta": 0
+  },
+  "g279_private_native_proxy_v2a_v1": {
+    "status": "root_no_go_real_execution_v1",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v1/ROOT-NO-GO.json",
+      "sha256": "eebaf851609d877bee82ef82de0116cf2a4a693f25f12b6e3f09c7607ea3ea29"
+    },
+    "real_config_generated": false,
+    "private_process_started": false,
+    "gz02_connected": false,
+    "startup_delta": 0
+  },
+  "g327_hideme_official_raw": {
+    "status": "accepted_one_exact_official_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-hideme-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816"
+    },
+    "raw_after": 101,
+    "static_delta": 0,
+    "qualified_blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "evo46": {
+    "status": "accepted_bounded_offline_pilot_not_promoted",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0046-runner-contract-precheck/ROOT-ACCEPTANCE.json",
+      "sha256": "ae6c3929dbad9278d9a484b400b9222f3af9896ef66515f685281c91bef5388f"
+    },
+    "startup_delta": 0
   }
 }

@@ -1,0 +1,69 @@
+{
+  "schema": "hideme-official-apk-independent-host-raw-review-v1",
+  "decision": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "handoff_sha256": "a591ef1be955146ca98cf35331bb641f2357b72e43ae3d648b3df5c02dbf7c86",
+  "package": "hideme.android.vpn.noPlayStore",
+  "version_name": "6.1.2",
+  "version_code": 60121,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-hideme-official-intake-candidate-v1/hide-me-6.1.2.apk",
+  "apk_bytes": 67834658,
+  "apk_sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b",
+  "official_distribution": {
+    "publisher_page": "https://hide.me/en/software/android",
+    "publisher_help": "https://hide.me/en/help/how-can-i-download-apk-for-your-android-vpn-client/",
+    "entry_url": "https://hide.me/download/android/apk",
+    "entry_head_rc": 0,
+    "entry_http_status": 302,
+    "redirect_url": "https://hide.me/downloads/Hide.me-6.1.2.apk",
+    "fixed_head_rc": 0,
+    "fixed_head_http_status": 200,
+    "fixed_head_content_length": 67834658,
+    "get_rc": 0,
+    "get_http_status": 200,
+    "get_tls_verify_result": 0,
+    "get_effective_url": "https://hide.me/downloads/Hide.me-6.1.2.apk",
+    "get_size_download": 67834658,
+    "source_limit": "The official website links to this APK flow and the captured HTTPS response binds the exact bytes. No independent pre-pinned publisher signing certificate is established."
+  },
+  "host_integrity": {
+    "receipt_files_sha_and_size_match": true,
+    "zip_crc_all_2673_entries": true,
+    "zip_duplicate_names": 0,
+    "manifest_present": true,
+    "root_dex": 3,
+    "aapt2_rerun_rc": 0,
+    "aapt2_rerun_stdout_sha256": "1e5971de1e218be17377c86f7b59001c0412a9c244189260e6119417e1604da2",
+    "target_sdk": 35,
+    "apksigner_rerun_rc": 0,
+    "apksigner_rerun_stdout_sha256": "34aefa6766b21f3cbc6d23f44ad45af353cdec99eda09d4f60d2110cdf04e44c",
+    "signature_v1": true,
+    "signature_v2": true,
+    "signer_cert_sha256": "086d2b255661b961d3ad1eedd53a97aac4b984e197f9f42b9f89bcd5a5914b3e"
+  },
+  "native_architecture": {
+    "arm64_elf64_little_endian_em_aarch64": 20,
+    "armeabi_v7a_elf32_em_arm": 20,
+    "x86_elf32_em_386": 20,
+    "x86_64_elf64_em_x86_64": 20,
+    "non_elf_so": 0,
+    "classification_method": "ZIP member content ELF magic, class, endianness and e_machine, not ABI path alone"
+  },
+  "nonduplication": {
+    "exact_package_absent_from_current_task_summary": true,
+    "exact_package_only_in_this_candidate_within_project_json_search": true,
+    "exact_sha_only_in_this_candidate_within_project_json_search": true
+  },
+  "qualification_boundary": {
+    "google_play_package": "hideme.android.vpn",
+    "google_play_publisher": "eVenture Limited",
+    "google_play_cumulative_downloads": "1M+",
+    "exact_package_matches_play": false,
+    "play_downloads_transfer_to_this_package": false,
+    "blackbox_qualified": false,
+    "complete_host_static_pass": false,
+    "install_or_cold_start_pass": false,
+    "authoritative_count_delta_by_review": 0
+  },
+  "verification": "24 independent local checks passed, including all referenced receipt hashes, downloaded APK hash and size, full ZIP CRC and duplicate scan, all native ELF header classifications, URL/HTTP evidence, aapt2/apksigner identity, and nonduplication. aapt2 and apksigner were rerun read-only with rc 0 and byte-identical stdout to frozen evidence.",
+  "review_actions": "Read local captured evidence, reran host-only metadata and signature verification, checked official publisher and Play pages; no APK download, device, container, or authoritative-summary mutation."
+}

@@ -1,0 +1,66 @@
+{
+  "all_synthetic_fixtures_pass": true,
+  "authoritative_count_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "network_commands": 0,
+  "runner_sha256": "3b342f21ed3c3ebcd1bae47a5c749685a9012a0dc99bf9d35d95647d6a024cf0",
+  "schema": "evo46-offline-boundary-precheck-pilot-v1",
+  "scope_limit": "AST check only detects named identity read calls in this exact runner and does not prove future semantic equivalence or real controller safety.",
+  "ssh_commands": 0,
+  "synthetic_fixtures": [
+    {
+      "actual": true,
+      "expected": true,
+      "name": "stable",
+      "pass": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "selection_changes",
+      "pass": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "source_changes",
+      "pass": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "socket_replaced",
+      "pass": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "peer_changes",
+      "pass": true
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "missing_readback",
+      "pass": true
+    }
+  ],
+  "v2a_identity_read_calls": [
+    {
+      "line": 162,
+      "name": "stable_read"
+    },
+    {
+      "line": 164,
+      "name": "active_process"
+    },
+    {
+      "line": 165,
+      "name": "current_leaf"
+    }
+  ],
+  "v2a_late_boundary_contract_met": false,
+  "v2a_late_identity_read_calls": [],
+  "v2a_private_write_line": 168
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "g279-private-mihomo-v2a-syntax-root-no-go-v1",
+  "at_utc": "2026-10-04T18:36:24+00:00",
+  "decision": "NO_GO_V2A_REAL_EXECUTION_V1",
+  "candidate_sha256": "524157b219fad4ec1e2a4f6e98c981037980b5e7db28b33eb394c7d01ea0754a",
+  "runner_sha256": "3b342f21ed3c3ebcd1bae47a5c749685a9012a0dc99bf9d35d95647d6a024cf0",
+  "independent_review_sha256": "789ea24905dcef105b41ec642b98e1174ffde49e4b7b2af845fa2773134a5ae1",
+  "accepted_scope": "code-only 25/25 fixture and current local kernel peer identity observation",
+  "blocking_findings": [
+    "current selection and process/source/socket identities not rechecked immediately before private config write",
+    "nested node references not recursively constrained",
+    "real credential-bearing syntax test has no proven offline network boundary",
+    "timeout does not prove descendant cleanup before private config removal"
+  ],
+  "release_issued": false,
+  "start_exists": false,
+  "real_private_config_generated": false,
+  "proxy_instance_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}
