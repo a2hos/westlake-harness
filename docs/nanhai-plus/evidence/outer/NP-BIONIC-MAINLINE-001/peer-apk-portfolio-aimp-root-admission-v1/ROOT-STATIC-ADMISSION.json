@@ -1,0 +1,40 @@
+{
+  "apk_bytes": 22321372,
+  "apk_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "at_utc": "2026-10-04T21:05:39.548731+00:00",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 1,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-aimp-review-v1/REVIEW.json",
+    "sha256": "bf24b3949ae9e714d96bb9a93c542c3bb324a33b1c418182d3987a3e25048e6a"
+  },
+  "package": "com.aimp.player",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "024ca514305d65df0481b657bd6a076467555f96526287e72da08acc1f4d0b91"
+  },
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/DEX/ELF native-host static only; no provider, loader or startup conclusion",
+  "semantic_dex_delta": 1,
+  "static_handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-static-v1/HANDOFF.json",
+    "sha256": "c47dee2fddcac1544b5aaeb613c80d12462dde96d85179afaadc57a685236175"
+  },
+  "static_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-static-v1/STATIC.json",
+    "sha256": "098c0ae5675a35d7d97e3bbd09324465d390e3fbd8dac426a1dba49a8a0f8d39"
+  },
+  "target_sdk_risk": "targetSdk 37 exceeds current AOSP16 API36 baseline; runtime outcome untested",
+  "true_arm64_elf_delta": 19,
+  "version_code": 1747,
+  "version_name": "v4.31.1747 (10.09.2026)"
+}

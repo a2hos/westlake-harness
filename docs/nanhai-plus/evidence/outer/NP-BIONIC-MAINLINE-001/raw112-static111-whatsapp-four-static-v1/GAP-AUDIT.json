@@ -1,0 +1,82 @@
+{
+  "at_utc": "2026-10-04T20:58:54.641259+00:00",
+  "checkpoint": {
+    "path": "docs/nanhai-plus/checkpoints/20261004-raw112-static111-blackbox21-g341-g343/CHECKPOINT.json",
+    "sha256": "c15da15cc5cf2a8f923a53a6eb3cfee9022d56f90069ecb1b55b6c736a468a10"
+  },
+  "checkpoint_counts": {
+    "raw": 112,
+    "static": 111
+  },
+  "frozen_static_count": 105,
+  "frozen_static_lock": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g339-cross-apk-exposure-cohort-v2/LOCK.json",
+    "sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6"
+  },
+  "later_root_static_admissions": [
+    {
+      "apk_sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+      "package": "com.lemon.lvoverseas",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g343-capcut-four-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "a335c46e1c2a1205a5f5a7a0c9ef08d1c593ace5c00b70570cc03e4b50bc6923"
+      }
+    },
+    {
+      "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "package": "InfinityLoop1309.NewPipeEnhanced",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-pipepipe-static-v2/ROOT-STATIC-ADMISSION.json",
+        "sha256": "69033330ed9cdbd149aa8cae286045964bfa90f95e3dc1027b5c7b2629d399dd"
+      }
+    },
+    {
+      "apk_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+      "package": "io.heckel.ntfy",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-ntfy-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "eb1ac6587e42e04e724b81dd7b6340d3b22ab66e4b9797c00a790e61d73926f9"
+      }
+    },
+    {
+      "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+      "package": "org.lichess.mobileV2",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-lichess-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "99ab66f40296363bbac60b430811744090305bb6e4b2ed6faca5b5d41ee4fbdf"
+      }
+    },
+    {
+      "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+      "package": "com.anydesk.anydeskandroid",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "8671fcad3f8557898cf2919ebfcdaf8ace6fcbe3a655891502fc5fff8c676df2"
+      }
+    },
+    {
+      "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "package": "org.fossify.clock",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "ac49e87af15530cdc143894fd3552ba28307e26130c406a894c3c09815995e84"
+      }
+    }
+  ],
+  "later_root_static_count": 6,
+  "limitation": "Identity reconciliation uses the frozen 105 root static lock, six later root static receipts, current checkpoint counts, and the separately accepted WhatsApp raw SHA; this does not independently enumerate all 112 raw receipts as a single lock. New host static scan requires independent review and root acceptance before any canonical count change.",
+  "root_static_total_reconstructed": 111,
+  "schema": "raw112-static111-root-identity-gap-audit-v1",
+  "unmatched_raw_identity": {
+    "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+    "body_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-whatsapp-official-supplement-v1/body.raw",
+    "bytes": 148660262,
+    "package": "com.whatsapp",
+    "receipt_scope": "ACCEPT_ONE_OFFICIAL_CHANNEL_RAW_SUPPLEMENT_ONLY"
+  },
+  "unmatched_root_raw_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-whatsapp-official-supplement-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+    "sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6"
+  },
+  "whatsapp_not_in_frozen_lock_or_six_later_static_sha": true
+}

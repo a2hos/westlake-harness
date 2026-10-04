@@ -1,0 +1,14 @@
+{
+  "play": {
+    "bytes": 1280410,
+    "rc": 0,
+    "sha256": "d8c4af5882b4a17dfbf3b93544be3535658990b5fee893ba00e2ed0b8fc17da8",
+    "url": "https://play.google.com/store/apps/details?id=com.snapchat.android&hl=en_US"
+  },
+  "publisher_repos": {
+    "bytes": 452196,
+    "rc": 0,
+    "sha256": "4054b19db2b752633797f7da3fb253b3f3d8160044aef30547f4be8d63b6e860",
+    "url": "https://github.com/orgs/Snapchat/repositories"
+  }
+}

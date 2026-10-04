@@ -1,0 +1,67 @@
+{
+  "apk_bytes": 148660262,
+  "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+  "at_utc": "2026-10-04T20:59:05.470352+00:00",
+  "decision": "GO_INDEPENDENT_REVIEW_HOST_STATIC_ONLY",
+  "dex_entries": 12,
+  "elf_counts": {
+    "arm64_path_misplaced_arm32_elf": 0,
+    "non_elf_so": 0,
+    "other_arm32_elf": 3,
+    "other_elf": 6,
+    "true_arm64_elf": 3
+  },
+  "gap_audit_sha256": "b70bd93c7b89806042d95d33fcf44627b8c187f2b41dba113b870d5deedff470",
+  "inventory_sha256": {
+    "classification": "ce36fbed41cbd8c37f9a1ec7a0da20d1529af926226cbe64507eea5b2afc84a9",
+    "dex": "a4f8c13ec5f0d39d433878216a3a397a36e8382793b99e890efef81aea5862fb",
+    "elf": "d6561369539cd4fef00569c7926005afe005ba148e1e43bf182d55a3d1ff3656"
+  },
+  "limits": "Candidate only; no canonical static count update, publisher-signature binding, blackbox qualification, install, Bionic build, device or cold start.",
+  "official_page_version_label": "2.26.32.84",
+  "package": "com.whatsapp",
+  "page_manifest_version_mismatch_retained": true,
+  "phases": {
+    "dex": {
+      "command_sha256": "173ab85ee425e09a2e7f7bfc514f27a0b7bf7c253e5535c3e7585943890ca252",
+      "phase_result_sha256": "2962dfdb942bb4d6c361d43bdcff682861c7c45653009d2b871316ccdcea1e0b",
+      "rc": 0,
+      "source_guard_equal": true,
+      "timed_out": false
+    },
+    "elf": {
+      "command_sha256": "e083039e574544af6e9fa5dd53f5df6bcfaa09b40835fdf2298c91d6054aa7bf",
+      "phase_result_sha256": "5414191a5621907e42d81d53ca8fa931a5b78d8b6f717020d4b57f04f98638a5",
+      "rc": 0,
+      "source_guard_equal": true,
+      "timed_out": false
+    },
+    "metadata": {
+      "command_sha256": "217529dd91f044f9052ae6ec17a2168d0cbcc087ebc27a94d400caadc6e4d495",
+      "phase_result_sha256": "5ebcddde7f9eb7452d921d145a4674d31e493d244536512d7e48c92b4ac9a3f4",
+      "rc": 0,
+      "source_guard_equal": true,
+      "timed_out": false
+    },
+    "zip": {
+      "command_sha256": "ea8a012b7ead3b6644627c45d6454df5e159c902be9e45692bdc0802fee8b5b8",
+      "phase_result_sha256": "b87ea4cfa597c52e9c704e81ca8e22a36376ec39a434bd068a75453b438deee0",
+      "rc": 0,
+      "source_guard_equal": true,
+      "timed_out": false
+    }
+  },
+  "raw_admission_sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6",
+  "read_only_apk_symlink": "WhatsApp.apk",
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "result_sha256": "e940db88cd40a7b6102950560e4c3db45a1a9c3d3b6f1ce4046b618b0a67090c",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "schema": "raw112-static111-whatsapp-host-static-handoff-v1",
+  "start_sha256": "5bca81b4f093820952fe1f6c4adb54e0e694b96b6962199ac8e29c35c1169725",
+  "target_readelf_ok": true,
+  "target_sdk": "36",
+  "version_code": "263907133",
+  "version_name": "2.26.39.71",
+  "zip_crc_all_ok": true,
+  "zip_entries": 15156
+}

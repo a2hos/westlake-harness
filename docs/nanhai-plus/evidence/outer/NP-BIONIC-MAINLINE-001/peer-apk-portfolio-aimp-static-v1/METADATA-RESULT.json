@@ -1,0 +1,18 @@
+{
+  "apk_sha_after": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "apk_sha_before": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 0.20721870893612504,
+  "manifest_available": true,
+  "network_commands": 0,
+  "package": "com.aimp.player",
+  "phase": "metadata",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "source_guard_equal": true,
+  "target_sdk": "37",
+  "version_code": "1747",
+  "version_name": "v4.31.1747 (10.09.2026)"
+}

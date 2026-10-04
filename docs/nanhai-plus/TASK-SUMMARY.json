@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T20:53:47.447533+00:00",
+  "checked_at": "2026-10-04T21:08:51.200221+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,19 +35,25 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 112,
+    "downloaded_payloads": 114,
     "latest_raw_admission": {
       "packages": [
-        "org.fossify.clock"
+        "com.aimp.player",
+        "com.snapchat.android"
       ],
       "receipts": [
         {
-          "package": "org.fossify.clock",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "344c20fc2ffec1d447279db1e3685c1badae4fbdd2a8bc3d85561a0c33890f01"
+          "package": "com.aimp.player",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "024ca514305d65df0481b657bd6a076467555f96526287e72da08acc1f4d0b91"
+        },
+        {
+          "package": "com.snapchat.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "30a8525ca370c8353e8c90e8efb89fdec37f86aa411bba23336254fb00c46368"
         }
       ],
-      "scope": "one exact upstream original APK identity only; no runtime pass"
+      "scope": "two exact supplemental official raw variants; Snapchat universal APK remains separate from upstream registered split XAPK; no install/runtime pass"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -58,40 +64,46 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 111,
-    "complete_inventory_dex_entries": 385,
+    "complete_static_inventories": 114,
+    "complete_inventory_dex_entries": 409,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1710,
+    "complete_inventory_native_elf_entries": 1762,
     "latest_complete_static_admission": {
       "packages": [
-        "org.fossify.clock",
-        "com.lemon.lvoverseas"
+        "com.whatsapp",
+        "com.aimp.player",
+        "com.snapchat.android"
       ],
       "receipts": [
         {
-          "package": "org.fossify.clock",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "ac49e87af15530cdc143894fd3552ba28307e26130c406a894c3c09815995e84"
+          "package": "com.whatsapp",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "5f2b444ecf0dfcf256c9497ef4a9e33878ba82a6f4dafe2d1f7ffc3f969b1d49"
         },
         {
-          "package": "com.lemon.lvoverseas",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g343-capcut-four-static-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "a335c46e1c2a1205a5f5a7a0c9ef08d1c593ace5c00b70570cc03e4b50bc6923"
+          "package": "com.aimp.player",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "9865c2e707a6419fd7560f13a3d6cc58322c00b3acf4ddd877a56e9298386fe2"
+        },
+        {
+          "package": "com.snapchat.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "1fdb70b84fecb682a89d3d6f8378b279afa884cb1f2f5da9987d5cdd06a0becf"
         }
       ],
-      "scope": "two four-phase host static inventories; CapCut ARM64 path contains one ARM32 ELF, separately classified; no install/runtime pass"
+      "scope": "three exact four-phase native-host static inventories; WhatsApp official page/manifest version mismatch retained; no install/runtime pass"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 79,
-    "supplemental_payloads": 33,
-    "qualified_blackbox_packages": 21,
+    "supplemental_payloads": 35,
+    "qualified_blackbox_packages": 23,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -113,7 +125,9 @@
       "com.valvesoftware.android.steam.friendsui",
       "com.gaditek.purevpnics",
       "io.privado.android",
-      "com.anydesk.anydeskandroid"
+      "com.anydesk.anydeskandroid",
+      "com.aimp.player",
+      "com.snapchat.android"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -125,16 +139,22 @@
     },
     "latest_blackbox_qualification": {
       "packages": [
-        "com.anydesk.anydeskandroid"
+        "com.aimp.player",
+        "com.snapchat.android"
       ],
       "receipts": [
         {
-          "package": "com.anydesk.anydeskandroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-BLACKBOX-QUALIFICATION.json",
-          "sha256": "17ea5de22d02318d33dc2f9ee9e34d82b492f3629ba3d2078c889cfdad4903cf"
+          "package": "com.aimp.player",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "247391e07a740ff09aa1a3d4e0f6372095c5237e72b8134f00cc31fac07850d4"
+        },
+        {
+          "package": "com.snapchat.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "12127f5412f218c71e76dbe9f92abdc1e9dc305e20b3bc4bbedb4a8dc5703545"
         }
       ],
-      "scope": "overseas mainstream blackbox test input only; not startup"
+      "scope": "two overseas-mainstream blackbox test-input qualifications only; no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -2867,6 +2887,62 @@
     },
     "status": "pilot_only_no_production_promotion",
     "actual_result_groups": 4,
+    "selected_improvement_count": 1,
+    "startup_delta": 0
+  },
+  "latest_batch_20261004_whatsapp_aimp_snapchat": {
+    "raw_delta": 2,
+    "full_static_delta": 3,
+    "semantic_dex_delta": 24,
+    "true_arm64_elf_delta": 52,
+    "blackbox_test_input_delta": 2,
+    "cold_start_delta": 0,
+    "receipts": {
+      "whatsapp_static": {
+        "package": "com.whatsapp",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "5f2b444ecf0dfcf256c9497ef4a9e33878ba82a6f4dafe2d1f7ffc3f969b1d49"
+      },
+      "aimp_raw": {
+        "package": "com.aimp.player",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "024ca514305d65df0481b657bd6a076467555f96526287e72da08acc1f4d0b91"
+      },
+      "aimp_static": {
+        "package": "com.aimp.player",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "9865c2e707a6419fd7560f13a3d6cc58322c00b3acf4ddd877a56e9298386fe2"
+      },
+      "aimp_blackbox": {
+        "package": "com.aimp.player",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+        "sha256": "247391e07a740ff09aa1a3d4e0f6372095c5237e72b8134f00cc31fac07850d4"
+      },
+      "snapchat_raw": {
+        "package": "com.snapchat.android",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "30a8525ca370c8353e8c90e8efb89fdec37f86aa411bba23336254fb00c46368"
+      },
+      "snapchat_static": {
+        "package": "com.snapchat.android",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "1fdb70b84fecb682a89d3d6f8378b279afa884cb1f2f5da9987d5cdd06a0becf"
+      },
+      "snapchat_blackbox": {
+        "package": "com.snapchat.android",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+        "sha256": "12127f5412f218c71e76dbe9f92abdc1e9dc305e20b3bc4bbedb4a8dc5703545"
+      }
+    },
+    "scope": "One previous raw static gap closed plus two new supplemental official APK inputs; all host/input evidence, no Bionic runtime"
+  },
+  "evo58": {
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0058-phase-closure-by-artifact/decision.json",
+      "sha256": "cf6d94c636976aca299b1b6b54b4818c8060898b1617d78b40b0b0678c64be61"
+    },
+    "status": "three-artifact_pilot_only_no_production_promotion",
+    "actual_result_groups": 3,
     "selected_improvement_count": 1,
     "startup_delta": 0
   }

@@ -1,0 +1,120 @@
+{
+  "all_four_phases_rc0": true,
+  "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+  "at_utc": "2026-10-04T20:58:33.305986+00:00",
+  "authoritative_count_changed": false,
+  "candidate_decision": "READY_FOR_INDEPENDENT_HOST_STATIC_REVIEW",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "nonce": "972f43581777a30c0622d1e6ffa74245",
+  "rc": 0,
+  "rows": [
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/scan_phase.py",
+        "zip"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 0.601,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/tmp"
+      },
+      "finished_at": "2026-10-04T20:57:53.585153+00:00",
+      "nonce": "972f43581777a30c0622d1e6ffa74245",
+      "phase": "zip",
+      "rc": 0,
+      "started_at": "2026-10-04T20:57:52.984624+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cc0524443beb25596fa18d0747d8c4ff7dd6c8bb1c1314ed5b8d686abde8d462",
+      "timed_out": false,
+      "timeout_seconds": 300
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/scan_phase.py",
+        "metadata"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 1.031,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/tmp"
+      },
+      "finished_at": "2026-10-04T20:57:54.616543+00:00",
+      "nonce": "972f43581777a30c0622d1e6ffa74245",
+      "phase": "metadata",
+      "rc": 0,
+      "started_at": "2026-10-04T20:57:53.585806+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f804b502a9a0f83021251ddefaff2a7bcbab3ba5d7950470c87f6378e6a583ee",
+      "timed_out": false,
+      "timeout_seconds": 300
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/scan_phase.py",
+        "dex"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 33.647,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/tmp"
+      },
+      "finished_at": "2026-10-04T20:58:28.265012+00:00",
+      "nonce": "972f43581777a30c0622d1e6ffa74245",
+      "phase": "dex",
+      "rc": 0,
+      "started_at": "2026-10-04T20:57:54.617102+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ee36e6eb8c8daaa0d576fede54a81d2bda5239c0e0b1447ec0b997d340312341",
+      "timed_out": false,
+      "timeout_seconds": 1800
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/scan_phase.py",
+        "elf"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 5.04,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/tmp"
+      },
+      "finished_at": "2026-10-04T20:58:33.305542+00:00",
+      "nonce": "972f43581777a30c0622d1e6ffa74245",
+      "phase": "elf",
+      "rc": 0,
+      "started_at": "2026-10-04T20:58:28.265648+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d3900c9bcbca6df505d945362f480c1fcc152bd9b5fb85d65d2a241118768fcb",
+      "timed_out": false,
+      "timeout_seconds": 1800
+    }
+  ],
+  "schema": "raw112-static111-whatsapp-four-static-terminal-v1",
+  "ssh_commands": 0
+}

@@ -1,0 +1,63 @@
+{
+  "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+  "checks": {
+    "aapt2_replay": true,
+    "aapt2_tool_exists": true,
+    "apk_bytes_sha": true,
+    "apk_sha_across_receipts": true,
+    "apksigner_replay": true,
+    "apksigner_tool_exists": true,
+    "bounded_source_snapshot": true,
+    "count_device_boundary": true,
+    "dex_magic": true,
+    "elf_full_classification": true,
+    "elf_rows_sha_headers": true,
+    "embedded_dex": true,
+    "four_phase_rc_guards": true,
+    "handoff_chain": true,
+    "package_version": true,
+    "play_same_package_market": true,
+    "publisher_chain": true,
+    "raw_handoff_file_hashes": true,
+    "signer_cert": true,
+    "static_artifact_hashes": true,
+    "upstream_distinct_variant": true,
+    "zip_integrity": true,
+    "zip_manifest_dex_so": true
+  },
+  "decisions": {
+    "blackbox": "GO_BOUNDED_TEST_QUALIFICATION_ONLY",
+    "raw": "GO_OFFICIAL_UNIVERSAL_SUPPLEMENTAL_VARIANT",
+    "static": "GO_COMPLETE_HOST_STATIC"
+  },
+  "limits": [
+    "No independent publisher certificate pin; publisher direct GET chain and APK signature verification are observed.",
+    "Historical registered 18-split XAPK has a different SHA and recorded certificate fingerprint; no variant/signature equivalence is inferred.",
+    "The GitHub publisher repository snapshot is a bounded source check, not proof that no source exists anywhere.",
+    "Host static and package-wide Play market data do not prove installation, Bionic compatibility, cold start, rendering, or version-specific installs."
+  ],
+  "package": "com.snapchat.android",
+  "schema": "peer-snapchat-independent-review-v1",
+  "signer_cert_sha256": "c7e9caf66dbe343daea2b3d9e756f7b1d913de310797cf3617ce32974617cf48",
+  "tool_replay": {
+    "aapt2": {
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "15f5b9f0f8465cd04bb6d15f687a1e7f836d05e52d10ea02159b71092efb10f0"
+    },
+    "apksigner": {
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "247a8fa7aa47067c5f72516b189df41fb9dd8df5bde88c10dcd521eb56282168"
+    }
+  },
+  "upstream_xapk": {
+    "artifact_id": "a-11ed4add5570205856b8",
+    "identity": "separate supplemental variant",
+    "registered_certificate_sha256": "2f1caafca1ed30d0b4e38863eefabea0e815711fa4cf79b822519a8259d95a58",
+    "sha256": "a37383d12c69982786fd8a45ba4271bb16ada2ebc2f7d051e2830a2cb103d178",
+    "split_count": 18
+  },
+  "version_code": 316472,
+  "version_name": "14.25.0.43"
+}

@@ -1,0 +1,30 @@
+{
+  "apk_bytes": 218350579,
+  "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+  "at_utc": "2026-10-04T21:06:56.333239+00:00",
+  "blackbox_qualification_delta": 1,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "google_play": "https://play.google.com/store/apps/details?id=com.snapchat.android",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-independent-review-v1/REVIEW.json",
+    "sha256": "002a15547ea44b6dc3bfd7c06acc221447b4df341e9463e8e5f4c9eb06326369"
+  },
+  "market_download_label": "1B+",
+  "package": "com.snapchat.android",
+  "publisher_apk_entry": "https://www.snapchat.com/additionaldownloads/",
+  "publisher_support": "https://help.snapchat.com/hc/en-us/articles/7012377684756-What-devices-does-Snapchat-support",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "30a8525ca370c8353e8c90e8efb89fdec37f86aa411bba23336254fb00c46368"
+  },
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "scope": "Same-package overseas market and bounded source evidence qualify exact APK as blackbox test input only; no runtime or version-specific Play APK equivalence",
+  "upstream_artifact_id": "a-11ed4add5570205856b8",
+  "upstream_split_xapk_sha256": "a37383d12c69982786fd8a45ba4271bb16ada2ebc2f7d051e2830a2cb103d178",
+  "variant_identity": "separate supplemental official universal single APK; does not replace registered 18-split XAPK",
+  "version_code": 316472,
+  "version_name": "14.25.0.43"
+}

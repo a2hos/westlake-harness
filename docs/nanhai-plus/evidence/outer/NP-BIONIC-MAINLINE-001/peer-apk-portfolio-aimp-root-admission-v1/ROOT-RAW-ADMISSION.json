@@ -1,0 +1,32 @@
+{
+  "apk_bytes": 22321372,
+  "apk_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "at_utc": "2026-10-04T21:05:39.548731+00:00",
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_SUPPLEMENTAL_PUBLISHER_RAW_ARTIFACT_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-aimp-review-v1/REVIEW.json",
+    "sha256": "bf24b3949ae9e714d96bb9a93c542c3bb324a33b1c418182d3987a3e25048e6a"
+  },
+  "package": "com.aimp.player",
+  "publisher_page": "https://aimp.ru/?do=download&os=android",
+  "publisher_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "raw_delta": 1,
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-official-v2/RESULT.json",
+    "sha256": "69cb356b14970bbda1f0c3dbf0c7b22d389d2d26bf1a071464bdac5cd9e1c4f1"
+  },
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "Exact publisher-hashed unmodified APK identity only; no installation or start",
+  "target_sdk_risk": "targetSdk 37 exceeds current AOSP16 API36 baseline; runtime outcome untested",
+  "verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-official-v2/VERIFY-V2.json",
+    "sha256": "4dfeb69d667aff6c89c0adc04dee9bc34d9a15cabaa8f832e2959ae56fbc9636"
+  },
+  "version_code": 1747,
+  "version_name": "v4.31.1747 (10.09.2026)"
+}

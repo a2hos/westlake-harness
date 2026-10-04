@@ -1,0 +1,489 @@
+{
+  "arm64_path_arm32_elf": [],
+  "non_elf_so": [],
+  "other_arm32_elf": [
+    {
+      "bytes": 10024,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libGWP-ASan.so",
+      "sha256": "852097c10bf5e82be335d0ccc90b2701bc34e780e078c7ef36e89be91d30228b"
+    },
+    {
+      "bytes": 2022380,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libLiteRtClGlAccelerator.so",
+      "sha256": "6f98e466a3ba948aae229e715d21896b1aa72ee5731ec6aa79fa4e5177af2c5f"
+    },
+    {
+      "bytes": 2632,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libLiteRtDispatch_GoogleTensor.so",
+      "sha256": "6b44196c8dfe7a56f58d156c733496282bbfb58998ac6e6dc5269c4710deb069"
+    },
+    {
+      "bytes": 7252,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b"
+    },
+    {
+      "bytes": 50892,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libarcore_sdk_c.so",
+      "sha256": "a3f3fb4748677e3275946ba59a37557a1f0bcfd66c53bd9c9a7afb1d855dffbc"
+    },
+    {
+      "bytes": 71360,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libarcore_sdk_jni.so",
+      "sha256": "a36328d3e13170839200975806ff3c6ce1b01eec715a69afaccca9d0329f3450"
+    },
+    {
+      "bytes": 673160,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavcodec.so",
+      "sha256": "1b33b1dc2db0b11008295f8906e52e83300ef2473b4cb0fd6589f339963d16b9"
+    },
+    {
+      "bytes": 356308,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavformat.so",
+      "sha256": "81d7a6d37736245ad3b66e80bb2c6dab1de9dc6bd6995117575c6f4ce2437ac6"
+    },
+    {
+      "bytes": 448448,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavutil.so",
+      "sha256": "d066efb3d9eae0e3ed1b5fd99edab072cc14730d00be4424acb81d3212d79315"
+    },
+    {
+      "bytes": 1421828,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbloops.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "2e78ea8dfcf98859b8a9680e4007bfc1ed59b9692baadacfe5f5121251e34510"
+    },
+    {
+      "bytes": 25081032,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libcamplat+.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "69a45951958f17a47747ddd46225368b67e03df220b73972e2c2100cd740500a"
+    },
+    {
+      "bytes": 31463764,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libclient.so",
+      "sha256": "d855568a7c1e5a269c7f60b54050d3ce7f4493a0e09977dc46e7d16055c4dd4c"
+    },
+    {
+      "bytes": 3744,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libcpec.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "0b581217444cbf53ed6aac20c8e8519338ecfdfb7dd5474a8bbdf3b9df4cd18a"
+    },
+    {
+      "bytes": 659240,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libdav1dDynamicJNI.so",
+      "sha256": "7868c73f0d4dde48bb68f65a1f9fd2ddb1425ef330683e1ada6a2cb5e3fddd5a"
+    },
+    {
+      "bytes": 659112,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libdav1dJNI.so",
+      "sha256": "f7a7d71ffa559511ff36c72e5f922eff739b2d5729925089ad3356113e52fa89"
+    },
+    {
+      "bytes": 13904,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libedgetpu_tflite.so",
+      "sha256": "fffc9e275a3cb0d858c9651c7e093293c41c4754089e97301b7838ea2f1df06a"
+    },
+    {
+      "bytes": 22492,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libferrite-launcher-4fae2d0.so",
+      "sha256": "15af605c6a492bb5ce23f62e6befc0dc56aad21797a9b733c2cfc37854c694ef"
+    },
+    {
+      "bytes": 164708,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libferrite-tracer-4fae2d0.so",
+      "sha256": "dbbad7243ee5506ad5cb27bedbcd74ecf955971f2a8dba38f3e39709c1d01286"
+    },
+    {
+      "bytes": 5714012,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libglslopt.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "5039d2434d8768ec6fd2eff59d87961a26c5a2e63f7315b61b36c5b8f7e89e5e"
+    },
+    {
+      "bytes": 1364208,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblagunacrypto.so",
+      "sha256": "7e477f3f3415fc8791ce89f763afcb5ae759eaf6883ef3d4960e5551c2e82412"
+    },
+    {
+      "bytes": 477252,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmesdk.so",
+      "sha256": "a93ffc4ca486e9a9a09997903a7f4aa77af4550553d619f63b05df5cdd2c3177"
+    },
+    {
+      "bytes": 91760,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmimalloc.so",
+      "sha256": "b87d2eb8a6752aeb362df400959f187ac8c6c003c4ea5b9563809b1e9903b678"
+    },
+    {
+      "bytes": 9736,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnloader.so",
+      "sha256": "233e8280dba3504da2516272dbd088cc14768cda82d18cc91904d70ffe1416a7"
+    },
+    {
+      "bytes": 1707336,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libscplugin.so",
+      "sha256": "d461071a5a7e85bd1748b0e1ce99b6ce1d5f074639f13d439063457b4866cf54"
+    },
+    {
+      "bytes": 295324,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsnap_egl_ext.so",
+      "sha256": "e63a6fc69adeb4806aa160f703c47114bf18cb360e12edf37278204aa439f21d"
+    },
+    {
+      "bytes": 296872,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libstatic-webp.so",
+      "sha256": "ff7108875cf7ee70942d79a0d4b6bf55510d2b4791f79edfb34f5ac10bd5b1e4"
+    },
+    {
+      "bytes": 70556,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libswresample.so",
+      "sha256": "393189e65c9d4ad172ac2001cfa533eab67bea92db996acd8b7243da0baa7bc2"
+    },
+    {
+      "bytes": 523904,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libswscale.so",
+      "sha256": "58ef0fe9c5898a26bbad1dbfb4e384e4fe76f9d6a3f03e87af1a659faf96b884"
+    },
+    {
+      "bytes": 2616,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtflite_ml_drift_cl.so",
+      "sha256": "567f23c7d5c60dce2d98a0c34fb67a1b998d7b7dd829accb3838a036f2a4952b"
+    },
+    {
+      "bytes": 1878424,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtnn.so",
+      "sha256": "b4ec3de6a1ac5b6bf24a85e71a37b319d887fb7b61a3f233c72dbfd696e9be4b"
+    }
+  ],
+  "other_elf": [],
+  "true_arm64_elf": [
+    {
+      "bytes": 12608,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libGWP-ASan.so",
+      "sha256": "6e1e7d83ea00b34e4835a4c84d37715a43ef0789d98de7dd270f5d5afe2e9604"
+    },
+    {
+      "bytes": 2878320,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libLiteRtClGlAccelerator.so",
+      "sha256": "7e25f90235193554424fb21599c4276dbc5c50eb80769fab6071ce105ca98880"
+    },
+    {
+      "bytes": 314624,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libLiteRtDispatch_GoogleTensor.so",
+      "sha256": "86f8a5d0ccfa895fd4420a8c7d25ac3cc4a58a0c80048e667c88c69095ede346"
+    },
+    {
+      "bytes": 10096,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+    },
+    {
+      "bytes": 68120,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libarcore_sdk_c.so",
+      "sha256": "906c776413d6d75c4d2d2769a74a248baba8604477cc084542e9b6e7a2e07aca"
+    },
+    {
+      "bytes": 117272,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libarcore_sdk_jni.so",
+      "sha256": "cf7ae8b97b037761d9165d237186a0a93b95a3cc85bec447ac231faa5e566b70"
+    },
+    {
+      "bytes": 747840,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libavcodec.so",
+      "sha256": "b517123044b92b388f112d84cf3a5883713938c6b4c6c91ae3a900c1c7b654ba"
+    },
+    {
+      "bytes": 379952,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libavformat.so",
+      "sha256": "45f2ebaf9aabc021f2b87a9895982649b7749b0f55f253106aa1ab5713f76f60"
+    },
+    {
+      "bytes": 554448,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libavutil.so",
+      "sha256": "a29d4a8f03ca4b51b4013f45cdff847baa51b3ccc4ab1985fcc3de7f22d5b6a6"
+    },
+    {
+      "bytes": 2807736,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbloops.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "09257fd6e2ca296812512b653c6b8f279c817f762aca439e0a660bc1438e86b2"
+    },
+    {
+      "bytes": 42132976,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libcamplat+.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "2796b3cbb3d17a98c705d8c5e310d33cef7fa2925c09f20bd1d2fa30d9a3e634"
+    },
+    {
+      "bytes": 45614824,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libclient.so",
+      "sha256": "165c63ca6f3ab245dc0dea4a49bcdfcea72cddc66c1afa6f51a283e1056deb82"
+    },
+    {
+      "bytes": 5384,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libcpec.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "8954de29914d431cfac75ca14db5f13d3697e97605bbeff0f21b4f8dce437e82"
+    },
+    {
+      "bytes": 815896,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libdav1dDynamicJNI.so",
+      "sha256": "fedd49f4a4103123f846295a692f712df229250718035e5dc855e8ccef75c933"
+    },
+    {
+      "bytes": 815784,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libdav1dJNI.so",
+      "sha256": "49bb4c84cd444d1b5741f8ea7b08ba21ce1badfcd153446522d8a52eb06973dc"
+    },
+    {
+      "bytes": 5133704,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libedgetpu_tflite.so",
+      "sha256": "6486e61b8a22db51e4ffeb9b40ad6e24babee87c2cb5b5985cb847b67a41d13f"
+    },
+    {
+      "bytes": 33768,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libferrite-launcher-4fae2d0.so",
+      "sha256": "7db2e0214b9046d2882ef5b2a099397e218540385cd95ac6bb0595f02bc11091"
+    },
+    {
+      "bytes": 232504,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libferrite-tracer-4fae2d0.so",
+      "sha256": "22af6d8c7f2ebc7f1f37a36e4518879db5053b698f5682cb4e6ebb896c0f14dc"
+    },
+    {
+      "bytes": 6479240,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libglslopt.production.890714f37b9845ffb60833ce99e34dac6372eb46.so",
+      "sha256": "3d725fb79bdf303d552f0cc7908a8541c25a036ca516ddbc428a06b2353cff9c"
+    },
+    {
+      "bytes": 1866496,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblagunacrypto.so",
+      "sha256": "cf1d139edd718fbc530f05254b9b231e5c8defdaaae6d17fcf3bd6206e5510ba"
+    },
+    {
+      "bytes": 717696,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmesdk.so",
+      "sha256": "4b62e3bc3420713b0cd07178246cafb639dd66274bf69911dcc0ed755361cb05"
+    },
+    {
+      "bytes": 139776,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmimalloc.so",
+      "sha256": "cec86dac6f51348fdf78f23a6bd3c0901e4ec3123164a78bcffbed3432e1c719"
+    },
+    {
+      "bytes": 14056,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnloader.so",
+      "sha256": "0faa1d4fd424296fe730b5d7930f4748178bce8d3278c12ef795508f91010240"
+    },
+    {
+      "bytes": 2327424,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libscplugin.so",
+      "sha256": "d4edf7758f0bde3cf30388b6f23fc596f243a8ba81656f88d568d0bbdc198668"
+    },
+    {
+      "bytes": 495520,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsnap_egl_ext.so",
+      "sha256": "e0dadefa6badb06f1a074d00264bbb904620ec6123c89c871b5b1d095910e7f0"
+    },
+    {
+      "bytes": 363152,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libstatic-webp.so",
+      "sha256": "db243bf25e2b9888fa72e11386cbb47b44a6c4db384704fc6e78f818417c963a"
+    },
+    {
+      "bytes": 73544,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libswresample.so",
+      "sha256": "02e89d3cfbeb8a5b19a154c87d94bee0a53d12f5768df5e9ad8e84ddef89ef42"
+    },
+    {
+      "bytes": 564016,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libswscale.so",
+      "sha256": "491324b9ca39d5a615be32fa5fd9fca7340f54085270907e2333b56fb03a9106"
+    },
+    {
+      "bytes": 2676048,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtflite_ml_drift_cl.so",
+      "sha256": "484ecabcb142f8de162bf4ee7b64302e36644667578e1361f1b42b5e5f81dc6b"
+    },
+    {
+      "bytes": 2820448,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtnn.so",
+      "sha256": "bc7ffbc84cc7fe689f3d7ba8d335ecbd9164f5e2da2fd33864dbb15eb4a358b4"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-evolution-decision-v1",
+  "id": "EVO-0058",
+  "status": "pilot",
+  "decision": "PILOT_EXACT_ARTIFACT_PHASE_ANTIJOIN_ONLY_NO_PROMOTION",
+  "one_improvement": "After root acceptance, derive pending host-static work by anti-joining root raw and root static receipts on (manifest package, original APK SHA-256); preserve the receipt SHA and variant identity, rather than inferring closure from total counts or package names.",
+  "causal_chain": "Manual raw/static total reconciliation and same-package variant ambiguity -> no exact phase edge between accepted artifacts -> exact receipt-identity anti-join -> eliminate duplicate/wrong-variant rescans and expose missing phase -> three-receipt pilot finds historical WhatsApp gap, closes it only with matching static receipt, keeps Snapchat XAPK separate.",
+  "applicability": "OH7/AOSP16 ARM64 Bionic APK portfolio host-static scheduling only; source artifacts and receipts are read-only.",
+  "result_state": "Observed pilot behavior on three exact receipts; full-corpus efficacy unknown; no install, loader, Bionic tool, or cold-start evidence.",
+  "next_evidence": "An independently reviewed complete, frozen root-raw and root-static receipt manifest with normalized historical schemas; replay all accepted artifact identities and compare generated missing-phase list with the canonical summary before production use.",
+  "promotion_gate": "Reject ambiguous historical raw receipts without separately verified manifest package binding; require zero false closure for same-package/different-SHA variants and an independent root review of full-portfolio output before scheduling scans from it.",
+  "rollback": "Keep current manual evidence-gated scheduling if the anti-join loses a split artifact, treats historical raw package as self-proven, or marks an unaccepted static result complete.",
+  "production_changed": false,
+  "startup_count_delta": 0,
+  "device_or_container_action": false
+}

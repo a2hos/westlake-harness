@@ -1,0 +1,159 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-aimp-official-v2/aimp_4.31.1747.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "0a95bc11df5244737992177a7e693509c312e8cf62769c1362d8744daf4e33b3"
+  },
+  "aapt2_sha256": "347ae46c83960aed14dd88e132f80a82c1b3456000384d234cee23c412533b03",
+  "apk_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-aimp-official-v2/aimp_4.31.1747.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "d9b61cb99892b60f96df48b6ef36931d394bf203aa2eba52390c4c19bd21c27c"
+  },
+  "apksigner_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "arm64_native": [
+    {
+      "bytes": 324744,
+      "name": "lib/arm64-v8a/libbass.so",
+      "sha256": "9a761481e30d44a2a96df1f0986f2aab629be469a6b2fcfdf043923a1f18e365",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 225960,
+      "name": "lib/arm64-v8a/libbass_aac.so",
+      "sha256": "9debc0f7b3bdcbfde7f41a1839f7e7c0a4b5145688ad15bab1f18ca616f05eda",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 36880,
+      "name": "lib/arm64-v8a/libbass_ac3.so",
+      "sha256": "ea2c93a146ef04e25b4218e384534ff6479c01daf1b4fa0a154f5f972b4935b0",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 36832,
+      "name": "lib/arm64-v8a/libbass_aso.so",
+      "sha256": "93ed452e53280de9d14106e5ae6bfca8e96277780f4c6d408cd361fad588434c",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 104344,
+      "name": "lib/arm64-v8a/libbass_fx.so",
+      "sha256": "dff251673965a8aa412aa6625fe640dd35fe1020d335d0884f4886cf8eaf8c3e",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 47360,
+      "name": "lib/arm64-v8a/libbass_mpc.so",
+      "sha256": "b6e2cbb23b6c4132f27596d06e749aeb49423e0083955fb314e698ccb553e667",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 2381480,
+      "name": "lib/arm64-v8a/libbass_ssl.so",
+      "sha256": "ccabe717236483b81898a42a38348462f3d6ee8009ee1a36c34a8a545bcfea3a",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 12744,
+      "name": "lib/arm64-v8a/libbass_tta.so",
+      "sha256": "b75dcda64e109bce59b04da691718c8897bfc987d03fe12765919360082666ad",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 22224,
+      "name": "lib/arm64-v8a/libbassalac.so",
+      "sha256": "522744ddad085762bf76b69c7e5c39a9b770d18c23e206732eb2263ff3c833b3",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 261912,
+      "name": "lib/arm64-v8a/libbassape.so",
+      "sha256": "f783fa2b56360ebfe523d1f3c09982fbc6b4c1d6d206393009c08190e1698b6d",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 16640,
+      "name": "lib/arm64-v8a/libbassdsd.so",
+      "sha256": "f24a027591c8b7569f800a7a16e7434345e7d17f3ace8af0e34d3e59700f5a55",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 58208,
+      "name": "lib/arm64-v8a/libbassflac.so",
+      "sha256": "e67f9b24ccc0656ff4644df822ff810e4e2773076c28d08c7d485bf631c7bf76",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 31688,
+      "name": "lib/arm64-v8a/libbasshls.so",
+      "sha256": "6662ca51e947a0b445544f483ac2af2933df28d5d6e400a0357b02c14222b76b",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 117656,
+      "name": "lib/arm64-v8a/libbassopus.so",
+      "sha256": "8b851d1c3ba477bf5af9e693afed2f8ed637c19b13549e43624a94b6acfb9471",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 44704,
+      "name": "lib/arm64-v8a/libbasswebm.so",
+      "sha256": "6cfc679add97bab6ba2ce5dfb1e6ae09a87762209f984c243c16eabad171c853",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 66392,
+      "name": "lib/arm64-v8a/libbasswv.so",
+      "sha256": "20fbf5101cc94c1dcd704de67d9abf14d2e0c7d18baef9c321cd23c9174b23a5",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 1014704,
+      "name": "lib/arm64-v8a/libc++_shared.so",
+      "sha256": "6a3425e1f4bb972d29edc6a1e61e56e41e2367990981f45e3b2594a59b4e7a74",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 9768,
+      "name": "lib/arm64-v8a/libcolorutils.so",
+      "sha256": "10df9daef9874aa80a46f3dab1ee82e6a6d3821cb7b18aeac5347adaf6f80e4d",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 295040,
+      "name": "lib/arm64-v8a/libsamba.so",
+      "sha256": "cb75b7722964e083238a9fa9d833cfc40767dda772888f009769ddc4e758efab",
+      "true_elf64_aarch64": true
+    }
+  ],
+  "candidate_pass": false,
+  "host_only": true,
+  "min_sdk": null,
+  "package": [
+    "com.aimp.player",
+    "1747",
+    "v4.31.1747 (10.09.2026)"
+  ],
+  "root_count_changed": false,
+  "schema": "aimp-official-verify-v1",
+  "signer_cert_sha256": [
+    "b05cf2cf7252241b39f7ec1fc42b6ce0eaf9f7715c0b0144a7f836a3725e2a4d"
+  ],
+  "startup_proven": false,
+  "target_sdk": "37"
+}

@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-four-static-v2/scan.py",
+    "--execute"
+  ],
+  "at_utc": "2026-10-04T21:01:27.705342+00:00",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 3.289,
+  "input_guard_equal": true,
+  "input_sha256_after": {
+    "apk": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+    "raw_result": "30457dbf9c7da449a84417a25e7dd8fd6fbe2fdbbc424d3cd5d57422dd1250be",
+    "raw_verify": "f3566fe27408a3e209962414c56fa70a2d2710ab5a45989396305d8f57354dc7",
+    "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "input_sha256_before": {
+    "apk": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+    "raw_result": "30457dbf9c7da449a84417a25e7dd8fd6fbe2fdbbc424d3cd5d57422dd1250be",
+    "raw_verify": "f3566fe27408a3e209962414c56fa70a2d2710ab5a45989396305d8f57354dc7",
+    "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "interpreter": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+  "package": "com.snapchat.android",
+  "phase": "metadata",
+  "rc": 0,
+  "target_sdk": "36",
+  "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-snapchat-four-static-v2",
+  "version_code": "316472",
+  "version_name": "14.25.0.43"
+}

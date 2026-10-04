@@ -1,0 +1,94 @@
+{
+  "apk_bytes": 218350579,
+  "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+  "at_utc": "2026-10-04T21:00:01.092187+00:00",
+  "container_commands": 0,
+  "device_commands": 0,
+  "files": {
+    "RESULT.json": {
+      "bytes": 3233,
+      "sha256": "30457dbf9c7da449a84417a25e7dd8fd6fbe2fdbbc424d3cd5d57422dd1250be"
+    },
+    "VERIFY.json": {
+      "bytes": 1552,
+      "sha256": "f3566fe27408a3e209962414c56fa70a2d2710ab5a45989396305d8f57354dc7"
+    },
+    "aapt2.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "aapt2.stdout.raw": {
+      "bytes": 11082,
+      "sha256": "15f5b9f0f8465cd04bb6d15f687a1e7f836d05e52d10ea02159b71092efb10f0"
+    },
+    "acquire.py": {
+      "bytes": 4333,
+      "sha256": "61a367afb75a7a8ff7fdb4f227229aa8161fb744e27521a980877851a48b8a1e"
+    },
+    "apksigner.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner.stdout.raw": {
+      "bytes": 22605,
+      "sha256": "247a8fa7aa47067c5f72516b189df41fb9dd8df5bde88c10dcd521eb56282168"
+    },
+    "get.stderr.raw": {
+      "bytes": 1820,
+      "sha256": "f0696a07aa6811c6716272986800f5709138547931039676b783a7e39d9ed4d9"
+    },
+    "get.stdout.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "head.stderr.raw": {
+      "bytes": 556,
+      "sha256": "c689d00f9828c01ea7add8c17ea78046cb8e89ffa19bad58523b155941d81b23"
+    },
+    "head.stdout.raw": {
+      "bytes": 1713,
+      "sha256": "bf778fd79cfb64089f56453f337d78badea62aa0a78ece1d3dc45c3c2cbd6c4b"
+    },
+    "publisher-get-headers.raw": {
+      "bytes": 1734,
+      "sha256": "aefcf65311f549f5fce20405fdecd87515fb8a5b64065eae65a8b1dff4e8fdbd"
+    },
+    "publisher-head-headers.raw": {
+      "bytes": 1713,
+      "sha256": "bf778fd79cfb64089f56453f337d78badea62aa0a78ece1d3dc45c3c2cbd6c4b"
+    },
+    "support-headers.raw": {
+      "bytes": 1543,
+      "sha256": "644c453c4ca79d1937f7624af7f7f6e7aeead45c7642a8f1ba6cea9ec6b616f8"
+    },
+    "support-page.raw": {
+      "bytes": 77952,
+      "sha256": "f1ee2da4ba1f7b6a7de7722f4c57df65b5a7aca729e9c9e9fe13e2a6ee16b7a9"
+    },
+    "support.stderr.raw": {
+      "bytes": 396,
+      "sha256": "8cf637ee1d2aa9e109cc8edc4a92056240e5ef1743fc40c11ab5f35da13066bf"
+    },
+    "support.stdout.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verify.py": {
+      "bytes": 2484,
+      "sha256": "bb8c22de8230b919c4bff86c189e9453ec5bcd9f07de757d6a4ca7de782140ab"
+    }
+  },
+  "four_phase_rc0": true,
+  "package": "com.snapchat.android",
+  "qualification_candidate_sha256": null,
+  "raw_candidate_pass": true,
+  "root_count_changed": false,
+  "schema": "peer-snapchat-official-raw-v1-handoff-v1",
+  "signature_verify_rc": 0,
+  "startup_proven": false,
+  "upstream_same_version_xapk_artifact_id": "a-11ed4add5570205856b8",
+  "upstream_xapk_sha256": "a37383d12c69982786fd8a45ba4271bb16ada2ebc2f7d051e2830a2cb103d178",
+  "variant_note": "Official publisher universal single APK is byte-distinct from registered same-version multi-split XAPK; preserve both records, do not substitute identity.",
+  "version_code": 316472,
+  "version_name": "14.25.0.43"
+}

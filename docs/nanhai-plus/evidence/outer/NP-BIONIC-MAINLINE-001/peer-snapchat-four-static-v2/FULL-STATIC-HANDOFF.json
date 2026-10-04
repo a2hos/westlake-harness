@@ -1,0 +1,65 @@
+{
+  "apk_bytes": 218350579,
+  "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+  "at_utc": "2026-10-04T21:02:44.267583+00:00",
+  "authoritative_count_changed": false,
+  "container_commands": 0,
+  "decision": "GO_INDEPENDENT_REVIEW_HOST_STATIC_WITH_EMBEDDED_DEX_AND_PRIVATE_TMP",
+  "device_commands": 0,
+  "elf_classification_sha256": "b6010c271f0f9c24a43cabdc520acfd6d643068a5148a98d47dc992bd143fab3",
+  "elf_inventory_sha256": "20fe1888afaa4716082eba2cd31ee0c342b7da1c7e2affed76f7f01098383110",
+  "embedded_inventory_sha256": "a51da1a1ee7be63855c10a7d7a9d24f4a22398bd7ad82b1baa2fde18e8105e8d",
+  "embedded_result_sha256": "6b79181dd6d7f3810acb842f5279f719bca8b201c13e3549410a0872c0885d2f",
+  "limits": [
+    "Official universal APK differs from same-version registered split XAPK; retain distinct identity.",
+    "Embedded DEX was copied only into project evidence for original scanner semantic inventory.",
+    "Host static only; install, Bionic loader, Activity lifecycle, display and cold start unproven."
+  ],
+  "non_elf_so": 0,
+  "package": "com.snapchat.android",
+  "phase_rows": {
+    "dex": {
+      "elapsed_seconds": 35.114,
+      "guard_equal": true,
+      "rc": 0,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-snapchat-four-static-v2"
+    },
+    "elf": {
+      "elapsed_seconds": 9.745,
+      "guard_equal": true,
+      "rc": 0,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-snapchat-four-static-v2"
+    },
+    "metadata": {
+      "elapsed_seconds": 3.289,
+      "guard_equal": true,
+      "rc": 0,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-snapchat-four-static-v2"
+    },
+    "zip": {
+      "elapsed_seconds": 0.62,
+      "guard_equal": true,
+      "rc": 0,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-snapchat-four-static-v2"
+    }
+  },
+  "prescreen_sha256": "c80c6d74e530f743492336b81b841c519b8abd1d6fef886f1a8a8a2a3f20636a",
+  "private_tmp_empty_after": true,
+  "private_tmp_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-snapchat-four-static-v2",
+  "qualification_candidate_sha256": "86894e989bef4f81fad54172c7e2001f899842428eed6152b483eb8fb2dfce74",
+  "raw_handoff_sha256": "ec9f9ecc22937864531af001bccd5e4d45b310f6c620beb6e76e70cf64724362",
+  "root_inventory_sha256": "0a787f44a82bff0457c5e51963a91daff4859a9a92eb2446d93e1379526fb91c",
+  "scan_result_sha256": "97deb06732f8ece12984f6c7a14a2325e445f8e9e577b0eca22df2e04d52d5ac",
+  "scan_script_sha256": "c88e907625946a8fbe96c39806546cc8c7a98149960025a87f59e0af5dfe89a5",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "schema": "peer-snapchat-complete-host-static-handoff-v2",
+  "semantic_embedded_dex": 1,
+  "semantic_root_dex": 10,
+  "semantic_total_dex": 11,
+  "startup_proven": false,
+  "true_arm32_elf": 30,
+  "true_arm64_elf": 30,
+  "v1_v2_inventory_identical": true,
+  "version_code": 316472,
+  "version_name": "14.25.0.43"
+}

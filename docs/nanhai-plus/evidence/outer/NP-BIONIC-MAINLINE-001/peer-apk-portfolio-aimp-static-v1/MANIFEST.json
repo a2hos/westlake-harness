@@ -1,0 +1,53 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ],
+  "activities": 12,
+  "app_name": "AIMP",
+  "bytes": 22321372,
+  "features": [
+    "android.hardware.bluetooth",
+    "android.hardware.faketouch"
+  ],
+  "filename": "aimp_4.31.1747.apk",
+  "main_activities": [
+    "com.aimp.player.ui.activities.main.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 56,
+  "package": "com.aimp.player",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-aimp-official-v2/aimp_4.31.1747.apk",
+  "permissions": [
+    "android.permission.ACCESS_ALL_DOWNLOADS",
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.aimp.player.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 2,
+  "receivers": 3,
+  "services": 5,
+  "sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "signing_certificate_sha256": [
+    "b05cf2cf7252241b39f7ec1fc42b6ce0eaf9f7715c0b0144a7f836a3725e2a4d"
+  ],
+  "target_sdk": "37",
+  "version_code": "1747",
+  "version_name": "v4.31.1747 (10.09.2026)"
+}

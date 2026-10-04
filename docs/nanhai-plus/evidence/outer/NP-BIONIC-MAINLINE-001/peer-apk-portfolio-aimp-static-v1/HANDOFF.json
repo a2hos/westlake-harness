@@ -1,0 +1,61 @@
+{
+  "apk_bytes": 22321372,
+  "apk_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "blackbox_qualified": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "four_phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "package": "com.aimp.player",
+  "publisher_direct_entry": "https://aimp.ru/?do=download.file&id=13",
+  "publisher_page": "https://aimp.ru/?do=download&os=android",
+  "publisher_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+  "publisher_version_label": "4.31.1747",
+  "raw_files": {
+    "APK.headers.raw": "964e7ca5b390451877ece18eadf13675e5d5f74a53496854e168c15915c15cb5",
+    "APK.stderr.raw": "424830700d1607795bda9f7d007137c930526163e4020da6e72da0bf5e2c8519",
+    "APK.stdout.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PAGE.headers.raw": "0ee31b9ced3bc3cff7a71e00904fcd183b505679bed9ffd0406cbd10e73f67e0",
+    "PAGE.stderr.raw": "2d351bc0fb6bed5b954577e5099efd3c7552e7f7dcbe4ffbe3223fddd0ea2b43",
+    "PAGE.stdout.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RESULT.json": "69cb356b14970bbda1f0c3dbf0c7b22d389d2d26bf1a071464bdac5cd9e1c4f1",
+    "VERIFY-V2.json": "4dfeb69d667aff6c89c0adc04dee9bc34d9a15cabaa8f832e2959ae56fbc9636",
+    "VERIFY.json": "d3a6b444e4b42c1de853ac50c9926d47f1c96a98fabc546daedd9e7a81fa83da",
+    "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "aapt2.stdout.raw": "0a95bc11df5244737992177a7e693509c312e8cf62769c1362d8744daf4e33b3",
+    "acquire.py": "e99224977f94a9439cc82feceb20269f25c882cbfa8c2df0c2e02f9b14b5615e",
+    "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apksigner.stdout.raw": "d9b61cb99892b60f96df48b6ef36931d394bf203aa2eba52390c4c19bd21c27c",
+    "publisher-page.html": "9b3dd657af0a40b3c745bee587e2b2a206a616506684cdebfbb8af0b5a01d5ab",
+    "verify.py": "0e466da55922706722da44e3a448c2a0b5ddd977006bbb9923272301f54a5b40",
+    "verify_v2.py": "8951387f93c3d062a4f929563730765781ccd3b28148b866fc6370df7b013a68"
+  },
+  "root_count_changed": false,
+  "root_dex_entries": 1,
+  "schema": "aimp-official-raw-static-handoff-v1",
+  "scope": "Publisher-hashed unmodified raw APK and complete native-host static candidate only; overseas-mainstream blackbox qualification pending independent root review.",
+  "signer_cert_sha256": [
+    "b05cf2cf7252241b39f7ec1fc42b6ce0eaf9f7715c0b0144a7f836a3725e2a4d"
+  ],
+  "startup_proven": false,
+  "static_files": {
+    "DEX-INVENTORY.json": "79003414d65750902d7edda55fe724953f03a869fd267782771490752f7f04eb",
+    "DEX-RESULT.json": "95759593818a93afd31139454d547097424f66a403d6168b0ac84d22c71e1151",
+    "ELF-INVENTORY.json": "e6f6cfaaa2fa8e2e6a952645abfee66e85f4396549434f9c68389c01aaa29a6b",
+    "ELF-RESULT.json": "120189d04a68c922d239293c3726a4683b26085def15bb81b42a9f902e6aeb35",
+    "MANIFEST.json": "e05c497a8437902df29d2ec9a2791cfa922753e2242dba00fbe5c4750f0c12fc",
+    "METADATA-RESULT.json": "f930de160cea09eaf28868204e5fc8590b4161cbf46b828bae4288e6bc789520",
+    "STATIC.json": "098c0ae5675a35d7d97e3bbd09324465d390e3fbd8dac426a1dba49a8a0f8d39",
+    "ZIP-RESULT.json": "2188d8063bb301fef33a2cbc4e98a34189f21db4ea16599c79c0d12113cee52d",
+    "scan.py": "9502f81518d91030ef6a349450a67498dae267601b3019a391eb37a5ce514832"
+  },
+  "status": "CANDIDATE_FOR_INDEPENDENT_ROOT_REVIEW",
+  "target_sdk": "37",
+  "true_arm64_elf_entries": 19,
+  "version_code": "1747",
+  "version_name": "v4.31.1747 (10.09.2026)"
+}

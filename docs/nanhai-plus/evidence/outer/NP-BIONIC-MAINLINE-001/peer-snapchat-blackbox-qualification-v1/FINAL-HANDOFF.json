@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-04T21:02:44.295263+00:00",
+  "authoritative_count_changed": false,
+  "complete_static_v2_handoff_sha256": "d4289454c37bf3756f81fd5d9bfc90a67eb4f20449a72cffe29b4f3cde9a99ff",
+  "limits": [
+    "Publisher linked exact universal APK; no independent publisher certificate pin.",
+    "No startup or Bionic compatibility proof."
+  ],
+  "prescreen_sha256": "c80c6d74e530f743492336b81b841c519b8abd1d6fef886f1a8a8a2a3f20636a",
+  "qualification_candidate_sha256": "86894e989bef4f81fad54172c7e2001f899842428eed6152b483eb8fb2dfce74",
+  "raw_handoff_sha256": "ec9f9ecc22937864531af001bccd5e4d45b310f6c620beb6e76e70cf64724362",
+  "review_required": true,
+  "schema": "peer-snapchat-qualification-final-handoff-v1"
+}

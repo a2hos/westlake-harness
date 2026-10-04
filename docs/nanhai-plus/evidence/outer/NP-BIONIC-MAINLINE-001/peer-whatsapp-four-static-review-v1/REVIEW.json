@@ -1,0 +1,73 @@
+{
+  "schema": "peer-whatsapp-four-static-review-v1",
+  "decision": "GO_ROOT_REVIEW_HOST_STATIC_ONLY",
+  "scope": "Independent read-only review of the raw112/static111 WhatsApp four-phase native Mac host static candidate. No canonical count change or blackbox qualification.",
+  "candidate": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1",
+  "raw_root_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-whatsapp-official-supplement-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+  "raw_root_receipt_sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6",
+  "raw_scope": "ACCEPT_ONE_OFFICIAL_CHANNEL_RAW_SUPPLEMENT_ONLY",
+  "apk": {
+    "project_local_symlink": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/WhatsApp.apk",
+    "target": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-whatsapp-official-supplement-v1/body.raw",
+    "target_within_registered_project_staging": true,
+    "bytes_recomputed": 148660262,
+    "sha256_recomputed": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb"
+  },
+  "input_identity": {
+    "scanner_sha256_recomputed": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+    "readelf_project_local_symlink_to_registered_oh_sdk": true,
+    "readelf_sha256_recomputed": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "start_runner_and_phase_script_sha256_match": true,
+    "checkpoint_sha256_matches_gap_audit": true
+  },
+  "receipt_chain": {
+    "start_sha256": "5bca81b4f093820952fe1f6c4adb54e0e694b96b6962199ac8e29c35c1169725",
+    "terminal_result_sha256": "e940db88cd40a7b6102950560e4c3db45a1a9c3d3b6f1ce4046b618b0a67090c",
+    "gap_audit_sha256": "b70bd93c7b89806042d95d33fcf44627b8c187f2b41dba113b870d5deedff470",
+    "same_nonce_all_four": true,
+    "all_four_command_rows_equal_terminal_rows": true,
+    "all_four_command_and_phase_result_hashes_equal_handoff": true,
+    "all_four_stdout_stderr_hashes_equal_command_rows": true,
+    "phases": [
+      {"name": "zip", "command_rc": 0, "phase_rc": 0, "timed_out": false, "input_guard_equal": true},
+      {"name": "metadata", "command_rc": 0, "phase_rc": 0, "timed_out": false, "input_guard_equal": true},
+      {"name": "dex", "command_rc": 0, "phase_rc": 0, "timed_out": false, "input_guard_equal": true},
+      {"name": "elf", "command_rc": 0, "phase_rc": 0, "timed_out": false, "input_guard_equal": true}
+    ]
+  },
+  "independent_archive_recheck": {
+    "zip_entries": 15156,
+    "unique_names": 15156,
+    "first_bad_crc_member": null,
+    "manifest_entries": 1,
+    "root_dex_entries": 12,
+    "dex_inventory_names_sizes_sha256_and_magic_match_apk": true,
+    "so_entries": 12,
+    "elf_classification_names_sizes_sha256_and_headers_match_apk": true,
+    "true_arm64_elf": 3,
+    "arm64_path_misplaced_arm32_elf": 0,
+    "other_arm32_elf": 3,
+    "other_elf": 6,
+    "non_elf_so": 0,
+    "arm64_readelf_records_ok": 3
+  },
+  "manifest": {
+    "package": "com.whatsapp",
+    "version_name": "2.26.39.71",
+    "version_code": "263907133",
+    "min_sdk": "23",
+    "target_sdk": "36",
+    "main_activity": "com.whatsapp.Main",
+    "prior_badging_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g312-whatsapp-official-raw-candidate-v1/badging.stdout.raw",
+    "prior_badging_agrees_on_package_version_and_main_activity": true,
+    "official_page_version_label": "2.26.32.84",
+    "page_and_manifest_version_mismatch_retained": true
+  },
+  "proven": "One exact root-admitted APK completed four bounded native host static phases with rc0 and equal input guards; archive, DEX and ELF inventory claims above were independently recomputed from APK bytes.",
+  "not_proven": "Publisher-signature binding, blackbox eligibility, install, Bionic whole-tool build, device behavior and true cold start. The raw root receipt explicitly leaves signature binding and qualification false.",
+  "observed_wall": "none within this four-phase host static scope",
+  "hypotheses": [],
+  "failed": [],
+  "next_evidence": "Root may review this peer receipt and candidate for host-static admission only; keep raw and static accounting separate. Any blackbox or cold-start claim requires its own later evidence and authorization.",
+  "command_scope": "Peer used local read-only file and ZIP inspections only; no candidate replay, device, container, SSH, remote or Bridge action."
+}

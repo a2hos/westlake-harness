@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai-evolution-process-v1",
+  "id": "EVO-0058",
+  "at_utc": "2026-10-04T21:08:10Z",
+  "trigger_result_groups": [
+    "WhatsApp original raw admission was the raw112/static111 gap; later exact four-phase static root receipt closed it",
+    "AIMP official APK has exact raw and static receipts; targetSdk37 is a risk label, not an observed install failure",
+    "Snapchat publisher universal APK and upstream registered 18-split XAPK share a package but differ in artifact SHA and admission scope"
+  ],
+  "problem": "Aggregate raw/static counts cannot identify the missing phase for one accepted artifact or distinguish a same-package alternate artifact.",
+  "repeated_cost": "Manual cross-reading of totals and variant receipts can misroute a static scan or count a different APK as closure.",
+  "decision_to_improve": "Compute missing static phase from exact accepted artifact identities after root admission, retaining each receipt hash and source.",
+  "constraints": "Pilot only; no canonical summary, device, container, Bridge, production scanner, or runtime claim.",
+  "primary_lens": "_rethink_other_path: replace aggregate-count inference with receipt-graph phase closure",
+  "discarded_action": {
+    "action": "Infer static completeness from raw112 versus static111 totals or package name alone",
+    "source_anchor": "raw112-static111-whatsapp-four-static-v1/GAP-AUDIT.json and peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "observed_failure": "WhatsApp required an exact receipt reconciliation; Snapchat has a separate upstream split XAPK with the same package name.",
+    "replacement": "Anti-join exact (package, APK SHA-256) root raw and root static receipts."
+  },
+  "pilot_command": "python3 -B scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evolution/EVO-0058-phase-closure-by-artifact/PILOT.py > docs/nanhai-plus/evolution/EVO-0058-phase-closure-by-artifact/PILOT-RESULT.json",
+  "pilot_rc": 0,
+  "pilot_data": "Three actual root-admitted raw/static receipt pairs. Prior view omits only the later WhatsApp static receipt; current view includes it. Upstream Snapchat XAPK SHA remains a separate identity.",
+  "pilot_result": "Prior exact anti-join yields only com.whatsapp/c4260c...; current anti-join yields no missing phase among three samples; registered Snapchat a37383... is not conflated with universal 77c0ff...",
+  "first_attempt": "Initial parser rc1 on historical WhatsApp raw receipt because it uses body.sha256 and has no package field; fixed by binding its original hash to the separately admitted GAP-AUDIT package result. Re-run rc0.",
+  "limitations": "This is a three-artifact local replay, not a complete 114-APK receipt graph or proof of startup. WhatsApp raw package binding relies on the later host metadata/GAP-AUDIT, not its original raw admission alone."
+}

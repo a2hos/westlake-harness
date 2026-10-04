@@ -1,0 +1,87 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "apk_mime_seen": true,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-snapchat-official-raw-v1/Snapchat.apk",
+  "at_utc": "2026-10-04T20:57:17.766251+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "240",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-snapchat-official-raw-v1/Snapchat.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-official-raw-v1/publisher-get-headers.raw",
+      "https://www.snapchat.com/additionaldownloads/"
+    ],
+    "rc": 0,
+    "stderr_sha256": "f0696a07aa6811c6716272986800f5709138547931039676b783a7e39d9ed4d9",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "head": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--head",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-official-raw-v1/publisher-head-headers.raw",
+      "https://www.snapchat.com/additionaldownloads/"
+    ],
+    "rc": 0,
+    "stderr_sha256": "c689d00f9828c01ea7add8c17ea78046cb8e89ffa19bad58523b155941d81b23",
+    "stdout_sha256": "bf778fd79cfb64089f56453f337d78badea62aa0a78ece1d3dc45c3c2cbd6c4b"
+  },
+  "manifest_entries": 1,
+  "official_chain_has_snapchat_domain": true,
+  "payload_bytes": 218350579,
+  "payload_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+  "publisher_link": "https://www.snapchat.com/additionaldownloads/",
+  "publisher_support": "https://help.snapchat.com/hc/en-us/articles/7012377684756-What-devices-does-Snapchat-support",
+  "root_count_changed": false,
+  "root_dex": 10,
+  "schema": "peer-snapchat-official-raw-v1",
+  "startup_proven": false,
+  "support": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-official-raw-v1/support-page.raw",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-official-raw-v1/support-headers.raw",
+      "https://help.snapchat.com/hc/en-us/articles/7012377684756-What-devices-does-Snapchat-support"
+    ],
+    "rc": 0,
+    "stderr_sha256": "8cf637ee1d2aa9e109cc8edc4a92056240e5ef1743fc40c11ab5f35da13066bf",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "zip_duplicate_names": 0,
+  "zip_entries": 11745,
+  "zip_first_bad": null
+}

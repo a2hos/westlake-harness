@@ -1,0 +1,63 @@
+{
+  "actual_receipts": [
+    {
+      "name": "whatsapp",
+      "raw": {
+        "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+        "package": "com.whatsapp",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-whatsapp-official-supplement-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+        "receipt_sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6"
+      },
+      "static": {
+        "apk_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+        "package": "com.whatsapp",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/ROOT-STATIC-ADMISSION.json",
+        "receipt_sha256": "5f2b444ecf0dfcf256c9497ef4a9e33878ba82a6f4dafe2d1f7ffc3f969b1d49"
+      }
+    },
+    {
+      "name": "aimp",
+      "raw": {
+        "apk_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+        "package": "com.aimp.player",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "receipt_sha256": "024ca514305d65df0481b657bd6a076467555f96526287e72da08acc1f4d0b91"
+      },
+      "static": {
+        "apk_sha256": "2d70fb1cb519104826d825d2060289ad77fbd75b5b68c00ff93631ffafa06a46",
+        "package": "com.aimp.player",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "receipt_sha256": "9865c2e707a6419fd7560f13a3d6cc58322c00b3acf4ddd877a56e9298386fe2"
+      }
+    },
+    {
+      "name": "snapchat-universal",
+      "raw": {
+        "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+        "package": "com.snapchat.android",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "receipt_sha256": "30a8525ca370c8353e8c90e8efb89fdec37f86aa411bba23336254fb00c46368"
+      },
+      "static": {
+        "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+        "package": "com.snapchat.android",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "receipt_sha256": "1fdb70b84fecb682a89d3d6f8378b279afa884cb1f2f5da9987d5cdd06a0becf"
+      }
+    }
+  ],
+  "current_static_missing": [],
+  "pre_whatsapp_static_missing": [
+    [
+      "com.whatsapp",
+      "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb"
+    ]
+  ],
+  "registered_snapchat_xapk_separate": [
+    "com.snapchat.android",
+    "a37383d12c69982786fd8a45ba4271bb16ada2ebc2f7d051e2830a2cb103d178"
+  ],
+  "sample_count": 3,
+  "schema": "evo58-offline-phase-closure-pilot-v1",
+  "scope": "Three exact receipts only; prior view omits the later WhatsApp static receipt to replay the observed gap. No full-corpus coverage or runtime claim."
+}

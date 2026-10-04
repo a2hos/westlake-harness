@@ -1,0 +1,41 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-snapchat-official-raw-v1/Snapchat.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "15f5b9f0f8465cd04bb6d15f687a1e7f836d05e52d10ea02159b71092efb10f0"
+  },
+  "apk_bytes": 218350579,
+  "apk_sha256": "77c0ff8a35c513601928a6aed77fbb315b9202f494ac09a2591087f0e909e59b",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-snapchat-official-raw-v1/Snapchat.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "247a8fa7aa47067c5f72516b189df41fb9dd8df5bde88c10dcd521eb56282168"
+  },
+  "candidate_pass": true,
+  "package_version": [
+    "com.snapchat.android",
+    "316472",
+    "14.25.0.43"
+  ],
+  "raw_result_sha256": "30457dbf9c7da449a84417a25e7dd8fd6fbe2fdbbc424d3cd5d57422dd1250be",
+  "root_count_changed": false,
+  "schema": "peer-snapchat-official-verify-v1",
+  "signer_cert_sha256": [
+    "c7e9caf66dbe343daea2b3d9e756f7b1d913de310797cf3617ce32974617cf48"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}
