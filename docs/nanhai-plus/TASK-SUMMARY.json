@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T04:05:22.089861+00:00",
+  "checked_at": "2026-10-04T04:23:19+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,12 +40,13 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 34,
-    "complete_inventory_dex_entries": 68,
+    "complete_static_inventories": 37,
+    "complete_inventory_dex_entries": 72,
     "complete_inventory_native_elf_entries": 292,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
-      "org.thoughtcrime.securesms"
+      "org.thoughtcrime.securesms",
+      "org.sufficientlysecure.keychain"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
@@ -217,6 +218,26 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/signal-apksigner-environment-v1/PARTIAL.json",
       "sha256": "1598b18bc193c8f0acd24c8ac8aeb17d99787b114dc760a4878cf00e3e486864"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-r4-four-source-root-admission-v1/ADMISSION.json",
+      "sha256": "151c9b4ba973e2cd56ead99522b034aa3211e021235f7750ca3165945311042b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-buildtools-python-r4-official-child-anchor-v1/RESULT.json",
+      "sha256": "010081367f13bd3044a48ff11267db70a13e11c10c512940f6852d43b02ca837"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-peer-review-v1/REVIEW.json",
+      "sha256": "0ad2158ec6a4c9b84cd3695971d99ac5963111084262d0875bee9abe2ace707e"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0009-batch-cardinality/reviews/ROOT-CLOSURE.json",
+      "sha256": "a86e5304ffda64d43b3ea9cecb2cf868d1a9658212659ac1653ceb3e9e42bb7b"
     }
   ],
   "bionic_stock_graph": {
@@ -266,15 +287,15 @@
     "source_commit_officially_confirmed_scope": "complete libcore input only; not upcoming nine-module cohort"
   },
   "reflection": {
-    "latest": "EVO-0008",
-    "verified_improvement_this_round": 0,
-    "scope": "scan phase cost investigation; no validated improvement",
+    "latest": "EVO-0009",
+    "verified_improvement_this_round": 1,
+    "scope": "four-input/four-output cardinality guard limited preflight only",
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 95.685483,
+    "duration_seconds": 84.138768,
     "limit_seconds": 120,
     "timing_compliant": true,
-    "pending_actual_result_groups": 2,
+    "pending_actual_result_groups": 0,
     "trigger_every_groups": "3-4"
   },
   "mainstream_intake": {
@@ -283,5 +304,36 @@
     "firefox_156_arm64": "SHA mismatch with original registry; rejected; original registration retained",
     "execution_terminal_rc": 2,
     "startup_delta": 0
+  },
+  "scanner_batch5_actual": {
+    "exec_session": 22164,
+    "terminal_chunk": "a49d2a",
+    "outer_rc": 2,
+    "global_reporter_rc": 1,
+    "global_reporter_failure": "fixed 14-row cardinality for four inputs",
+    "individually_accepted_packages": [
+      "org.xbmc.kore",
+      "org.isoron.uhabits",
+      "org.openhab.habdroid"
+    ],
+    "individually_accepted_dex_delta": 4,
+    "individually_accepted_elf_delta": 0,
+    "timed_out_unaccepted_package": "org.sufficientlysecure.keychain",
+    "startup_delta": 0
+  },
+  "exact_r4_source_inputs": {
+    "status": "four read-only source inputs admitted; source identity only",
+    "admitted": [
+      "jcommander",
+      "ow2-asm",
+      "sqlite",
+      "cpython3 raw Git blob archive"
+    ],
+    "cpython_archive_sha256": "96bf3d3f92fd372bb64f028b2a1b36ebbe0ea712fa00599580d94aac76cf987b",
+    "cpython_archive_files": 4990,
+    "macos_checkout_accepted": false,
+    "filtered_git_archive_accepted": false,
+    "build_graph_pass": false,
+    "other_nine_module_dependencies_closed": false
   }
 }
