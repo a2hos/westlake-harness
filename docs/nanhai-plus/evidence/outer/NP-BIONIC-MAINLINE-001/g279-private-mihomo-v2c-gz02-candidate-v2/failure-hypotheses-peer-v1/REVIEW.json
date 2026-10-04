@@ -1,0 +1,44 @@
+{
+  "schema": "g279-v2c-v2-failure-multipath-peer-v1",
+  "decision": "FOUR_LIVE_HYPOTHESES_NO_CAUSE_PROVEN",
+  "scope": "read_only_bounded_static_failure_path_audit_no_new_ssh_proxy_or_device",
+  "runner_sha256": "06b20ea3844f04c51f3840a76f76c63ac3ad17039f3e8d425d584111f69f4553",
+  "start_sha256": "aeabb4cca7a31c92564880e82fa6431878fa23149af2d15e2edadff622f1b411",
+  "terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7",
+  "postrun_peer_sha256": "3010164a188ddeb11c26211f3cd41861230a2a883011685842bc55c70ab19362",
+  "older_local_socks_observation_sha256": "b961e5f8ad4798153b7143b87742ed6a0f7c3c63845e25b3bdbb39b719779662",
+  "older_banner_observation_sha256": "b3e2a43e6a6e1417f7a5a3993ca66baf7bad5c16e5a3d2dfa1485f1060305ca9",
+  "established_boundary": "The frozen runner increments gz02_ssh_commands only after local SSH Popen. Therefore one local child launch occurred. The negative SOCKS closure and local REJECT parse must have returned before that call in code flow, but their result was discarded on InstanceFailure and is not independently replayable from this terminal. No remote TCP, banner, host-key, authentication, UID or positive route is proven. An older global 7897 SOCKS nc rc0 with no banner is a different route and cannot diagnose this private 39029 run.",
+  "hypotheses": [
+    {
+      "mechanism": "proxy_or_remote_transport_before_ssh_banner",
+      "current_status": "POSSIBLE_NOT_PROVEN",
+      "discriminating_safe_evidence": "SSH timeout/nonzero rc, local child exit class, whether a complete SSH banner was observed, and bounded byte counts; no raw stream or node label.",
+      "next_generation_no_credential_negative": "Use loopback fake SOCKS endpoint that accepts the CONNECT tuple then holds or closes before any SSH banner; require terminal stage ssh_transport with timeout or EOF category, and no host-key/auth/UID claims."
+    },
+    {
+      "mechanism": "ssh_host_key_or_publickey_authentication_rejection",
+      "current_status": "POSSIBLE_NOT_PROVEN",
+      "discriminating_safe_evidence": "Separate stage markers for banner, pinned ED25519 host-key line, and publickey authentication line; allowlisted proof or explicit absent marker plus SSH rc, never full debug text.",
+      "next_generation_no_credential_negative": "Feed synthetic SSH proof parser a wrong pinned fingerprint and, separately, a missing publickey line; require distinct ssh_hostkey and ssh_publickey failures without exporting arbitrary stderr."
+    },
+    {
+      "mechanism": "remote_readonly_command_or_strict_ssh_proof_format_rejection",
+      "current_status": "POSSIBLE_NOT_PROVEN",
+      "discriminating_safe_evidence": "Retain exact safe numeric id-u stdout witness when present, SSH rc, and a fixed parser-reject category; distinguish command nonzero from UID-format and authenticated-line-format mismatches.",
+      "next_generation_no_credential_negative": "Inject rc0 with nonnumeric UID and rc255 with otherwise valid safe witness into the offline parser; require different terminal categories."
+    },
+    {
+      "mechanism": "after_ssh_local_process_guard_or_positive_route_oracle_failure",
+      "current_status": "POSSIBLE_NOT_PROVEN",
+      "discriminating_safe_evidence": "Record whether SSH proof completed, then separate fixed markers for process/listener/config guard, positive-route full-line parse, and witness replay; export only the strictly whitelisted alias route line on successful parse.",
+      "next_generation_no_credential_negative": "Use a fake-node loopback route line with wrong rule/action/alias, and an independent injected process-guard failure; require distinct route_parse versus post_ssh_guard outcomes, no real target dial."
+    }
+  ],
+  "next_step": "Review a new candidate that emits these bounded stage outcomes before private cleanup; run only no-credential negative fixtures first. Do not reuse the consumed nonce or claim a cause from the 8.7-second duration.",
+  "new_ssh_connections": 0,
+  "new_proxy_runs": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "task_summary_modified": false
+}

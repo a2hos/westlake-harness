@@ -1,0 +1,39 @@
+{
+  "schema": "g279-private-mihomo-v2c-v2-peer-postrun-v1",
+  "decision": "ACCEPT_TERMINAL_FAILURE_AND_CLEANUP_ONLY_NO_GZ02_IDENTITY_OR_ROUTE_PROOF",
+  "candidate_sha256": "49cceacb75d31f19dadc5442578ddeb24980a4c26764d218d321d2d748dba22a",
+  "runner_sha256": "06b20ea3844f04c51f3840a76f76c63ac3ad17039f3e8d425d584111f69f4553",
+  "peer_code_review_sha256": "210d6755f2132c134742f719a77f7e31257284ae198725ec74903d3f2d679d37",
+  "root_release_sha256": "7c74b2fb615b9e0c5dfd23ef139a3eb184fdaba509af7b6c74163d7f36a14e0e",
+  "start_sha256": "aeabb4cca7a31c92564880e82fa6431878fa23149af2d15e2edadff622f1b411",
+  "terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7",
+  "nonce": "360eb82d6d9b9a6d4eb05bc88638424d",
+  "chain_checked": {
+    "root_release_exact_candidate_runner_peer_upstream_v2b_bindings": true,
+    "start_release_runner_nonce_match_terminal": true,
+    "one_shot_consumed_no_replay": true
+  },
+  "bounded_observations": {
+    "external_command_rc_reported_by_root": 2,
+    "terminal_decision": "NO_GO_PRIVATE_LISTENER_AND_GZ02_IDENTITY",
+    "terminal_failure_class": "InstanceFailure",
+    "ssh_local_process_launch_count": 1,
+    "negative_result_persisted": false,
+    "private_log_metadata_persisted": false,
+    "terminal_process_group_clean": true,
+    "terminal_private_dir_removed": true,
+    "current_private_root_child_count": 0,
+    "current_port_39029_listener_rows": 0,
+    "remote_write_commands": 0,
+    "hk01_hops": 0,
+    "graph_commands": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "namespace_commands": 0
+  },
+  "interpretation": "The callback increments gz02_ssh_commands immediately after local Popen, before communicate or proof parsing. Thus one local SSH launch is established, but TCP reachability, SSH banner, pinned host-key verification, publickey authentication, remote id-u execution, and positive IPCIDR PROXY route are all unknown. run_instance wraps timeout, nonzero SSH exit, proof parse failure, post-SSH process/listener/config guard, positive route parse and witness replay failures into InstanceFailure. execute only retains the broad stage/failure_class; it discards its local negative result on exception, then deletes private stdout/stderr/config after process cleanup. The 8.7-second START-to-TERMINAL interval is not a cause proof.",
+  "minimal_next_generation_diagnostic": "Preserve this v2 terminal and nonce. In a new frozen candidate, emit a fixed stage enum and credential-free bounded SSH outcome before cleanup: local_spawned, proxy_tcp_opened, banner_seen, host_key_pinned, publickey_authenticated, remote_uid_received, positive_route_parsed, witness_replayed. Retain only exact-whitelist safe host-key/auth/UID and route witnesses when validated, plus SSH rc/timeout class and bounded byte counts; avoid raw debug or node credentials in public evidence. Ensure exception propagation carries the last completed stage and local REJECT fact. Test each fail-closed stage with no-credential fixtures, then separately review and issue a fresh one-shot release. EVO49 preflight split may reduce nonce loss but is not present in this run.",
+  "no_new_ssh_or_proxy_execution": true,
+  "no_device_or_container_execution": true,
+  "task_summary_modified": false
+}

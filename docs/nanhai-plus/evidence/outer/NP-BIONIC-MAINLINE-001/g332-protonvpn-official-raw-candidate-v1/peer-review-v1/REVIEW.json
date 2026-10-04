@@ -1,0 +1,41 @@
+{
+  "schema": "g332-protonvpn-official-raw-peer-review-v1",
+  "decision": "GO_ONE_EXACT_OFFICIAL_HOST_RAW_ONLY",
+  "handoff_sha256": "3b02c2c2d87d8fd3de892edffda6eb75a982a4494a4dac491120dd8a92776a14",
+  "host_verify_sha256": "a07f372a651d5a784e600263252a55d38ccf74388601628206225b4307fb6755",
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "apk_bytes": 64238953,
+  "package": "ch.protonvpn.android",
+  "version_name": "5.20.57.0",
+  "version_code": 605205700,
+  "official_chain": {
+    "proton_help_url": "https://protonvpn.com/support/how-to-install-the-protonvpn-apk",
+    "help_raw_sha256": "4c24b67ff8f4f7098f05c095bd3710e2770ea95199113e3b6ec49406e94c8b70",
+    "help_links_official_github_releases": true,
+    "github_release_tag": "5.20.57.0",
+    "release_api_raw_sha256": "50f37743e895eb84b4ede9be1f3cbee01f06b11767a412f41da47969e0341d1d",
+    "release_asset_id": 600312712,
+    "api_digest_and_size_match_actual_apk": true,
+    "https_redirect_302_then_200": true,
+    "download_headers_sha256": "951d2c7c00b5ac7b6bac71634716c820ff56e04993ae0840a541dfd2bd62d01e"
+  },
+  "independent_checks": {
+    "actual_apk_sha256_and_size_recomputed": true,
+    "zip_entries": 3972,
+    "zip_duplicate_names": 0,
+    "zip_crc_all_ok": true,
+    "true_arm64_elf_count": 8,
+    "other_abi_elf_present": true,
+    "non_elf_so_count": 0,
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "apk_signature_v2_v3_verified": true,
+    "signer_certificate_sha256": "dcc9439ec1a6c6a8d0203f3423ee42bcc8b970628e53cb73a0393f398dd5b853",
+    "prior_project_accepted_package_or_exact_sha_hit": false
+  },
+  "limits": "One exact publisher APK host raw input only. The source repository is public, but source-to-APK build, whitebox qualification, full four-stage static inventory, blackbox qualification, installation and startup are not decided. Mixed ABI entries are counted separately from the eight true ARM64 ELF objects.",
+  "raw_count_changed_by_peer": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "task_summary_modified": false
+}

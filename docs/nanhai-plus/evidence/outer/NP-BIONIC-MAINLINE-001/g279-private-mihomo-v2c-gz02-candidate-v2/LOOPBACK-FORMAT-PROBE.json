@@ -1,0 +1,37 @@
+{
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "container_commands": 0,
+  "device_commands": 0,
+  "fake_node_error_class": null,
+  "fake_node_loopback_only": true,
+  "fake_node_requested_port": 58222,
+  "fake_node_requested_target": "1.95.90.207",
+  "format_matches_candidate": true,
+  "graph_commands": 0,
+  "mihomo_process_stopped": true,
+  "private_dir_removed": true,
+  "real_gz02_connects": 0,
+  "real_node_credentials_loaded": false,
+  "real_ssh_connections": 0,
+  "replayable_event": {
+    "action": "PROXY",
+    "node_alias": "g279-v2c-selected",
+    "raw_line": "time=\"2026-10-04T12:24:36.965266000-07:00\" level=info msg=\"[TCP] 127.0.0.1:55590 --> 1.95.90.207:58222 match IPCIDR(1.95.90.207/32) using PROXY[g279-v2c-selected]\"",
+    "raw_line_sha256": "8640ef9aa5339519b25a2a91fa2191cd709c213821a6c9e436123d510cffd7c4",
+    "rule": "IPCIDR(1.95.90.207/32)",
+    "schema": "g279-v2c-v2-positive-route-event",
+    "source_ip": "127.0.0.1",
+    "source_port": 55590,
+    "target_ip": "1.95.90.207",
+    "target_port": 58222
+  },
+  "route_line_count": 1,
+  "route_lines_ascii": [
+    "time=\"2026-10-04T12:24:36.965266000-07:00\" level=info msg=\"[TCP] 127.0.0.1:55590 --> 1.95.90.207:58222 match IPCIDR(1.95.90.207/32) using PROXY[g279-v2c-selected]\""
+  ],
+  "sandbox_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "schema": "g279-v2c-v2-loopback-format-probe-v1",
+  "socks_reply_hex": "050000017f000001d924",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "892ad16d4db103a870b3019e401dc93ed39a83932a19862b2be27796b5809bdd"
+}

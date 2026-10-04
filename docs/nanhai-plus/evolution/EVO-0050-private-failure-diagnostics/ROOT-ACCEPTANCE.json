@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai-plus-evolution-root-acceptance-v1",
+  "at_utc": "2026-10-04T19:32:08Z",
+  "decision": "ACCEPT_ONE_BOUNDED_PRIVATE_FAILURE_DIAGNOSTICS_PILOT_NOT_PROMOTED",
+  "process_sha256": "4fa7a2af7b7fb30c76be6f48d2f0d5eba5296a7dfa44cc3fa7d9bdc4d82069fa",
+  "pilot_sha256": "150f2189120cb51c23191bba5cd891c95de3f8b5c9c83980d96f9e592f4b15eb",
+  "result_sha256": "fe58437016deb11e279e0a964fea5e14677821638f948934b039734e951fa4a4",
+  "actual_result_groups": 4,
+  "single_improvement": "Before deleting private logs on failure, retain a fixed nonsecret tuple of stage, failure class, child rc or null, timeout flag and bounded stream byte counts; reject free text and credential-bearing fields.",
+  "lens": "failure localization and privacy boundary, distinct from EVO48 success evidence round-trip and EVO49 nonce granularity",
+  "pilot_result": "Eight synthetic checks passed; historical v2c v2 substage remains UNKNOWN and is not retroactively inferred.",
+  "next_falsifier": "A new no-credential fault cannot distinguish two SSH/proxy stages or leaks arbitrary stderr, node label or credentials into the terminal.",
+  "broadly_promoted": false,
+  "count_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,58 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi",
+    "armeabi-v7a",
+    "mips",
+    "mips64",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 70,
+  "app_name": "Proton VPN",
+  "bytes": 64238953,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.camera.autofocus",
+    "android.hardware.camera.flash",
+    "android.hardware.camera.front",
+    "android.hardware.screen.landscape",
+    "android.hardware.screen.portrait",
+    "android.hardware.touchscreen",
+    "android.hardware.wifi",
+    "android.software.leanback"
+  ],
+  "filename": "ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk",
+  "main_activities": [
+    "com.protonvpn.android.redesign.app.ui.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 35,
+  "package": "ch.protonvpn.android",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "ch.protonvpn.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 3,
+  "receivers": 23,
+  "services": 11,
+  "sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "signing_certificate_sha256": [
+    "dcc9439ec1a6c6a8d0203f3423ee42bcc8b970628e53cb73a0393f398dd5b853"
+  ],
+  "target_sdk": "36",
+  "version_code": "605205700",
+  "version_name": "5.20.57.0"
+}

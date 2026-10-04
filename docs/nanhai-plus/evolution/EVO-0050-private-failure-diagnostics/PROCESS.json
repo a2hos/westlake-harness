@@ -1,0 +1,22 @@
+{
+  "schema": "evo-0050-process-v1",
+  "scope": "four_actual_result_groups_one_bounded_reflection",
+  "result_groups": [
+    {"name": "duckduckgo_static_and_whitebox", "static_review_sha256": "affa2817736077b58224e20d6ec176c74c1d11832f8a56aa972247e031e2c79b", "whitebox_review_sha256": "8a17bdd58f79f93770c116d373a6669857548ebf5c08ed8c0154ccefca84ea88"},
+    {"name": "proton_raw_static_whitebox", "raw_review_sha256": "251ab784fa3605790583374cc2ca7af2fe0223409af7dffb79ee020d38e72438", "static_review_sha256": "d8413f8f63fbf521d3ef40e515bd3a4931fa9e0547603b3fd85a4880a2c500b5", "whitebox_review_sha256": "ba7a8aa1a1118d0b16dacbff45c459d70b8a11173c19217c94dfa45020fbf0d4"},
+    {"name": "g279_v2c_v2_code_go", "peer_review_sha256": "210d6755f2132c134742f719a77f7e31257284ae198725ec74903d3f2d679d37"},
+    {"name": "g279_v2c_v2_one_shot_failure", "terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7", "postrun_review_sha256": "3010164a188ddeb11c26211f3cd41861230a2a883011685842bc55c70ab19362", "bounded_fact": "one_local_ssh_launch_rc2_substage_unknown"}
+  ],
+  "single_improvement": "On each failure path before private-log cleanup, serialize a fixed allowlisted diagnostic tuple of last completed stage, failure category, child rc or null, timeout boolean and bounded stdout/stderr byte counts. Keep arbitrary exception text, raw logs, selected-node name and credentials private. This is failure localization only, never a GO witness.",
+  "pilot_script_sha256": "34c84c81a0d049d09d0dee31368d03444115dacb186f00257f674936a6b74230",
+  "pilot_receipt_sha256": "150f2189120cb51c23191bba5cd891c95de3f8b5c9c83980d96f9e592f4b15eb",
+  "pilot_checks": 8,
+  "pilot_pass": true,
+  "pilot_limit": "Synthetic failures remain distinct and malicious/free-text fields are rejected; actual v2c v2 substage cannot be recovered retroactively. No production runner edit or real probe occurred.",
+  "falsifier": "A new no-credential failure fixture still collapses two distinct SSH/proxy stages to the same terminal tuple, or any exported terminal contains a private node label, arbitrary stderr/exception text or credential bytes.",
+  "promotion": "PILOT_ONLY_NO_AUTOMATIC_PROMOTION",
+  "device_commands": 0,
+  "container_commands": 0,
+  "real_proxy_or_ssh_commands": 0,
+  "task_summary_modified": false
+}

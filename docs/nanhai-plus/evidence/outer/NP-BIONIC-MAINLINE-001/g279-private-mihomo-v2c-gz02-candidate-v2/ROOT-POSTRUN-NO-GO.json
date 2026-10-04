@@ -1,0 +1,23 @@
+{
+  "schema": "g279-private-mihomo-v2c-v2-root-postrun-no-go-v1",
+  "at_utc": "2026-10-04T19:29:07Z",
+  "decision": "ACCEPT_TERMINAL_FAILURE_AND_CLEANUP_ONLY_NO_GZ02_IDENTITY_OR_ROUTE_PROOF",
+  "execution_sha256": "2f41309a76294049ac5b4c7472ff5c698060fc1bd37e9395b7cd802f908dc27c",
+  "start_sha256": "aeabb4cca7a31c92564880e82fa6431878fa23149af2d15e2edadff622f1b411",
+  "terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7",
+  "independent_postrun_review_sha256": "3010164a188ddeb11c26211f3cd41861230a2a883011685842bc55c70ab19362",
+  "command_exit_code": 2,
+  "local_ssh_popen_callback_count": 1,
+  "tcp_or_banner_proven": false,
+  "host_key_or_auth_proven": false,
+  "remote_id_proven": false,
+  "positive_route_proven": false,
+  "failure_substage": "UNKNOWN_AFTER_LOCAL_SSH_PROCESS_LAUNCH",
+  "cleanup": "TERMINAL records process group stopped and private directory removed; independent postrun found no port 39029 listener and private root child_count 0.",
+  "next": "New immutable candidate must retain fixed nonsecret failure stage and bounded SSH rc/timeout or parser classification before raw stream deletion, then use a new review/release/nonce.",
+  "replay_allowed": false,
+  "graph_result_observed": false,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

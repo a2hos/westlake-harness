@@ -1,0 +1,45 @@
+{
+  "actual_substage": "UNKNOWN",
+  "checks": {
+    "actual_v2c_failure_substage_unknown": true,
+    "distinct_mock_failures_remain_distinct": true,
+    "reject_arbitrary_failure_text": true,
+    "reject_bad_rc": true,
+    "reject_private_node_or_raw_log_field": true,
+    "reject_timeout_mismatch": true,
+    "reject_unbounded_size": true,
+    "serialized_witness_has_exact_five_safe_keys": true
+  },
+  "container_commands": 0,
+  "device_commands": 0,
+  "mock_receipts": [
+    {
+      "category": "timeout",
+      "rc": null,
+      "stage": "ssh_transport",
+      "stderr_bytes": 128,
+      "stdout_bytes": 0,
+      "timeout": true
+    },
+    {
+      "category": "nonzero_rc",
+      "rc": 255,
+      "stage": "ssh_publickey",
+      "stderr_bytes": 203,
+      "stdout_bytes": 0,
+      "timeout": false
+    },
+    {
+      "category": "parse_reject",
+      "rc": 0,
+      "stage": "positive_route",
+      "stderr_bytes": 410,
+      "stdout_bytes": 5,
+      "timeout": false
+    }
+  ],
+  "pass": true,
+  "real_proxy_or_ssh_commands": 0,
+  "schema": "evo-0050-private-failure-diagnostics-pilot-v1",
+  "terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7"
+}

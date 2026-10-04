@@ -1,0 +1,146 @@
+{
+  "apk_bytes": 64238953,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk",
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "apksigner_verified_v2_v3": true,
+  "arm64_true_elf": 8,
+  "at_utc": "2026-10-04T19:25:20.282412+00:00",
+  "claim_boundary": {
+    "blackbox_qualification_accepted_here": false,
+    "container_commands": 0,
+    "device_commands": 0,
+    "full_static_accepted": false,
+    "raw_count_changed": false,
+    "startup_proven": false,
+    "whitebox_qualification_accepted_here": false
+  },
+  "decision_candidate": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "dedupe": {
+    "current_task_summary_package_hits": 0,
+    "prior_evidence_json_package_hits_excluding_this_candidate": 0,
+    "upstream_registry_package_hits": 0
+  },
+  "download_chain": "HTTPS GitHub release URL 302 to release-assets.githubusercontent.com; final HTTPS 200 application/vnd.android.package-archive with Content-Length 64238953; curl TLS verification rc0",
+  "evidence_sha256": {
+    "HOST-VERIFY.json": "a07f372a651d5a784e600263252a55d38ccf74388601628206225b4307fb6755",
+    "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "aapt2.stdout.raw": "ad339d9bc46823a6368eb9d8dcc5399b1039fd2fe6660fcb5257e63ae970022d",
+    "apk-get.headers.raw": "951d2c7c00b5ac7b6bac71634716c820ff56e04993ae0840a541dfd2bd62d01e",
+    "apk-get.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apk-get.stdout.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apksigner.stdout.raw": "a603c5ebb5c9016e04aebe9f14e394ce9aa31ce76aaec143b7031de4fae4d9ec",
+    "download.py": "42321243ed06ac87d39ba4015e8350ce8c3c071b300f8540503c29ced2840b46",
+    "help.headers.raw": "83039f482f924148407b9dcfbceffd63e5ab7c0b4ec8f4b5c6ca59f9fe6a73ee",
+    "help.raw": "4c24b67ff8f4f7098f05c095bd3710e2770ea95199113e3b6ec49406e94c8b70",
+    "play.headers.raw": "3e4b05cbff3427e6d6ec7d097976c3d8f612ae3d7b897c21a1eada10e59a87fd",
+    "play.raw": "4d01b2602bb63500fea793ec4845c7900d3406aababf668d11bee4600a7b6d1e",
+    "release-api.headers.raw": "c87988b46a300973e44fa5467c8a62004a260a84a8497d70edf6e27809d1e99c",
+    "release-api.raw": "50f37743e895eb84b4ede9be1f3cbee01f06b11767a412f41da47969e0341d1d",
+    "verify.py": "7e350ad0ae836f1bba8ff6f8e5826a1ae1ae20ac0cf733ff5df3145327e53890"
+  },
+  "host_commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ad339d9bc46823a6368eb9d8dcc5399b1039fd2fe6660fcb5257e63ae970022d"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a603c5ebb5c9016e04aebe9f14e394ce9aa31ce76aaec143b7031de4fae4d9ec"
+    }
+  ],
+  "non_elf_so": 0,
+  "official_help_release_href": "https://github.com/ProtonVPN/android-app/releases",
+  "official_help_url": "https://protonvpn.com/support/how-to-install-the-protonvpn-apk",
+  "official_release_api": "https://api.github.com/repos/ProtonVPN/android-app/releases/latest",
+  "other_elf_header_count_by_abi": [
+    {
+      "abi": "arm64-v8a",
+      "class": 2,
+      "count": 8,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "abi": "armeabi",
+      "class": 1,
+      "count": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "armeabi-v7a",
+      "class": 1,
+      "count": 8,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "mips",
+      "class": 1,
+      "count": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "abi": "mips64",
+      "class": 2,
+      "count": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "abi": "x86",
+      "class": 1,
+      "count": 8,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "abi": "x86_64",
+      "class": 2,
+      "count": 8,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "package": "ch.protonvpn.android",
+  "play_downloads": "100M+",
+  "play_publisher": "Proton AG",
+  "play_same_package": true,
+  "play_url": "https://play.google.com/store/apps/details?id=ch.protonvpn.android",
+  "release_asset_bytes": 64238953,
+  "release_asset_digest": "sha256:57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "release_asset_id": 600312712,
+  "release_asset_url": "https://github.com/ProtonVPN/android-app/releases/download/5.20.57.0/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk",
+  "release_tag": "5.20.57.0",
+  "release_url": "https://github.com/ProtonVPN/android-app/releases/tag/5.20.57.0",
+  "root_dex": 4,
+  "schema": "g332-protonvpn-official-host-raw-candidate-v1",
+  "signer_certificate_sha256": [
+    "dcc9439ec1a6c6a8d0203f3423ee42bcc8b970628e53cb73a0393f398dd5b853"
+  ],
+  "source_code_status": "Official ProtonVPN/android-app repository is public and release tag exists; exact source-to-APK completeness/build reproducibility not audited here. Whitebox lane candidate, not blackbox qualification.",
+  "status": "CANDIDATE_INDEPENDENT_REVIEW_REQUIRED",
+  "target_sdk": 36,
+  "version_code": 605205700,
+  "version_name": "5.20.57.0",
+  "zip_crc_all": true,
+  "zip_duplicate_names": 0,
+  "zip_entries": 3972
+}

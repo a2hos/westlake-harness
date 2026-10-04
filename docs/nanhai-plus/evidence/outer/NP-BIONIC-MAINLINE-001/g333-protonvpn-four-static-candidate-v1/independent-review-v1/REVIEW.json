@@ -1,0 +1,40 @@
+{
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "at_utc": "2026-10-04T19:28:48.543624+00:00",
+  "authoritative_count_changed": false,
+  "blackbox_qualified_here": false,
+  "bridge_gap_classified": false,
+  "checks": {
+    "bridge_limit": true,
+    "dex_semantic_inventory": true,
+    "elf_header_independent": true,
+    "four_phase_rc_and_raw_command_hashes": true,
+    "four_phase_source_guards": true,
+    "handoff_artifact_hashes": true,
+    "metadata_identity_and_manifest": true,
+    "original_apk_root_raw_exact": true,
+    "phase_result_hashes": true,
+    "source_and_runner_pins": true,
+    "true_arm64_elf_readelf": true,
+    "zip_crc_names": true
+  },
+  "cold_start_proven": false,
+  "container_commands": 0,
+  "decision": "GO_EXACT_ORIGINAL_APK_FOUR_PHASE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "handoff_sha256": "2568331201bc14e148edf711c14d43182543eeeab2ce24536fdfd85d821613ff",
+  "network_commands": 0,
+  "non_elf_so": 0,
+  "other_abi_true_elf": 27,
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 4,
+  "root_raw_admission_sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be",
+  "schema": "g333-protonvpn-independent-static-review-v1",
+  "terminal_result_sha256": "4a67c5850bf61009015a3489208e324a19aaf99d1d809bb01584428f8a69d2ff",
+  "true_arm64_elf": 8
+}

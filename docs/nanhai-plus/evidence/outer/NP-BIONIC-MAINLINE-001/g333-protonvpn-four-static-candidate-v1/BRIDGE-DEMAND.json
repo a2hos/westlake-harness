@@ -1,0 +1,120 @@
+{
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "at_utc": "2026-10-04T19:27:52.195538+00:00",
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_AOSP16_OH7_BIONIC_RUNTIME_INDEX_AND_RESOLUTION",
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_inventory_sha256": {
+    "arm64_elf": "1942a55dbdb6e965da50ae4133e4fee23000b3db1fa7978caa3aa59d976b2523",
+    "dex": "6c042a6375df49bb51515b0089ac939be0abcb5ed1e53a4bfe3775cc4266b8f5",
+    "metadata": "38e7b7fcea21e4803b965893795caa7105f4420247400a8284d0dcdcf191d2af"
+  },
+  "limits": "Demand presence does not prove missing implementations, startup reachability, loaded native libraries, or device behavior. Historical runtime locks are not substituted for the current Bionic target.",
+  "manifest_main_activities": [
+    "com.protonvpn.android.redesign.app.ui.MainActivity"
+  ],
+  "network_commands": 0,
+  "next_evidence": "Bind an exact current Bionic runtime index and host-resolve the DEX platform members, JNI registrations and ARM64 ELF DT_NEEDED/imports; then rank cold-start-reachable gaps using a real trace or accepted graph.",
+  "package": "ch.protonvpn.android",
+  "schema": "g333-protonvpn-static-bridge-demand-boundary-v1",
+  "static_demands": {
+    "arm64_elf_count": 8,
+    "arm64_elf_needed_sonames": [
+      "libandroid.so",
+      "libc.so",
+      "libdl.so",
+      "liblog.so",
+      "libm.so",
+      "libsentry.so"
+    ],
+    "defined_dex_classes": 37615,
+    "field_reference_keys": 593,
+    "jni_onload_libraries": 2,
+    "load_library_sites": [
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes.dex",
+        "method": "<clinit>",
+        "offset": 20,
+        "owner": "Lp6/a;",
+        "value": "androidx.graphics.path"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes.dex",
+        "method": "<clinit>",
+        "offset": 18,
+        "owner": "Lq5/x0$a;",
+        "value": "datastore_shared_counter"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "<clinit>",
+        "offset": 54,
+        "owner": "Lgo/Seq;",
+        "value": "gojni"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "a",
+        "offset": 4,
+        "owner": "Lio/sentry/android/ndk/SentryNdk;",
+        "value": "log"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "a",
+        "offset": 14,
+        "owner": "Lio/sentry/android/ndk/SentryNdk;",
+        "value": "sentry"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "a",
+        "offset": 24,
+        "owner": "Lio/sentry/android/ndk/SentryNdk;",
+        "value": "sentry-android"
+      }
+    ],
+    "method_reference_keys": 7079,
+    "native_method_declarations": 834,
+    "service_request_names": {
+      "<dynamic-or-unresolved>": 27,
+      "accessibility": 14,
+      "activity": 9,
+      "alarm": 3,
+      "appwidget": 1,
+      "audio": 5,
+      "batterymanager": 1,
+      "clipboard": 3,
+      "connectivity": 6,
+      "input_method": 13,
+      "jobscheduler": 3,
+      "layout_inflater": 82,
+      "locale": 2,
+      "location": 1,
+      "notification": 5,
+      "phone": 1,
+      "power": 4,
+      "sensor": 2,
+      "storage": 1,
+      "storagestats": 1,
+      "uimode": 1,
+      "usagestats": 1,
+      "vibrator": 1,
+      "window": 12
+    },
+    "service_request_sites": 199,
+    "undefined_symbol_names_unique": 297
+  }
+}

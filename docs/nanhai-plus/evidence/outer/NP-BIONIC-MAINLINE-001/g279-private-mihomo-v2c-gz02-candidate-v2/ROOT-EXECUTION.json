@@ -1,0 +1,16 @@
+{
+  "schema": "g279-private-mihomo-v2c-v2-root-command-observation-v1",
+  "at_utc_recorded": "2026-10-04T19:28:17Z",
+  "command": ["python3", "-B", "scripts/nanhai_plus_env.py", "--run", "/usr/bin/python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v2/runner.py", "--execute"],
+  "process_exit_code": 2,
+  "stdout_line": "{\"decision\": \"NO_GO_PRIVATE_LISTENER_AND_GZ02_IDENTITY\", \"terminal_sha256\": \"88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7\", \"nonce\": \"360eb82d6d9b9a6d4eb05bc88638424d\"}",
+  "terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7",
+  "observed_ssh_command_launches": 1,
+  "remote_identity_proven": false,
+  "host_key_verified_proven": false,
+  "positive_route_proven": false,
+  "graph_result_observed": false,
+  "replay_allowed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

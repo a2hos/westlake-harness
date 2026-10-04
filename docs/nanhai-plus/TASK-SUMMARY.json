@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 104,
+    "downloaded_payloads": 105,
     "latest_raw_admission": {
       "packages": [
-        "com.duckduckgo.mobile.android"
+        "ch.protonvpn.android"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g330-duckduckgo-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "eb387b29330a4884a743c5356720021f0fcdd1d621f9834fc0a80fd3e9007e58",
-      "scope": "exact official DuckDuckGo 5.296.0 APK host raw only; old upstream registry version not accepted current target; no static/whitebox/startup acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g332-protonvpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be",
+      "scope": "exact official Proton VPN 5.20.57.0 APK host raw only; no static/whitebox/startup acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,26 +53,26 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 102,
-    "complete_inventory_dex_entries": 340,
+    "complete_static_inventories": 103,
+    "complete_inventory_dex_entries": 344,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1476,
+    "complete_inventory_native_elf_entries": 1484,
     "latest_complete_static_admission": {
-      "package": "com.duckduckgo.mobile.android",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g331-duckduckgo-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "bec2dd9fb42c6818b6692bfa244e8555054fe2ebc72c9de0c311518c513ca13a",
-      "scope": "four-phase host static of exact accepted DuckDuckGo 5.296.0 bytes; 11 DEX and 11 true ARM64 ELF; no runtime bridge classification or startup"
+      "package": "ch.protonvpn.android",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g333-protonvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "919b2a20c977e47812fe19568231f7a8d4d968a54da92715b8f89d5a2506dc6a",
+      "scope": "four-phase host static of exact accepted Proton VPN 5.20.57.0 bytes; 4 DEX and 8 true ARM64 ELF; no runtime bridge classification or startup"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 29,
+    "supplemental_payloads": 30,
     "qualified_blackbox_packages": 18,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
@@ -2364,6 +2364,61 @@
     "receipt": {
       "path": "docs/nanhai-plus/evolution/EVO-0049-observable-one-shot-staircase/ROOT-ACCEPTANCE.json",
       "sha256": "7879ad443e4e24da1c0601391c547d10f38064fb180385f3be381744c8e1426f"
+    },
+    "startup_delta": 0
+  },
+  "g332_protonvpn_official_raw": {
+    "status": "accepted_one_exact_official_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g332-protonvpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be"
+    },
+    "raw_after": 105,
+    "static_delta": 0,
+    "whitebox_delta": 0,
+    "qualified_blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "g333_protonvpn_four_static": {
+    "status": "accepted_exact_four_phase_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g333-protonvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "919b2a20c977e47812fe19568231f7a8d4d968a54da92715b8f89d5a2506dc6a"
+    },
+    "static_after": 103,
+    "semantic_dex_after": 344,
+    "true_arm64_elf_after": 1484,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2c_v2": {
+    "status": "root_accepted_terminal_failure_cleanup_only_no_gz02_identity_or_route_proof",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v2/ROOT-POSTRUN-NO-GO.json",
+      "sha256": "9409e940333c50b2e6d700c7ced33f172a860bc75a53d88c89a85b035824879d"
+    },
+    "outer_command_rc": 2,
+    "local_ssh_popen_callback_count": 1,
+    "failure_substage": "UNKNOWN",
+    "nonce_consumed": true,
+    "gz02_identity_proven": false,
+    "positive_route_proven": false,
+    "graph_result_observed": false,
+    "startup_delta": 0
+  },
+  "g332_protonvpn_whitebox_input": {
+    "status": "qualified_source_mapped_whitebox_test_input_only_build_unverified",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g332-protonvpn-official-raw-candidate-v1/ROOT-WHITEBOX-QUALIFICATION.json",
+      "sha256": "af24d1c1e9a2f5f50547ca4c48ea586abf798850c557f0e76aeebc36406ac4fb"
+    },
+    "blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "evo50": {
+    "status": "accepted_private_failure_diagnostics_pilot_not_promoted",
+    "receipt": {
+      "path": "docs/nanhai-plus/evolution/EVO-0050-private-failure-diagnostics/ROOT-ACCEPTANCE.json",
+      "sha256": "cd2ba63a73fed70e0f30956e1fa319200a8f4674715c958c296bc0c728f50483"
     },
     "startup_delta": 0
   }

@@ -1,0 +1,41 @@
+{
+  "schema": "g279-private-mihomo-v2c-gz02-peer-review-v2",
+  "decision": "GO_V2C_V2_CODE_ONLY",
+  "scope": "independent_frozen_code_and_no_credential_evidence_review_only",
+  "candidate_sha256": "49cceacb75d31f19dadc5442578ddeb24980a4c26764d218d321d2d748dba22a",
+  "runner_sha256": "06b20ea3844f04c51f3840a76f76c63ac3ad17039f3e8d425d584111f69f4553",
+  "fixture_script_sha256": "f2e0229e532da399bc049b0510dd87b86e547e0ab9008eff842080d7362da5b2",
+  "fixture_receipt_sha256": "1546720e2754545608d42746a49dc5509ff4a0b12e5eea5241903f83b8b79a95",
+  "loopback_probe_receipt_sha256": "4093ddbdbfc15923ff6ee1161994afefa4b63ece0a944dfbc1804f0a739200d7",
+  "handoff_sha256": "8b2e5d198fcd3c7aab5242bc68203d9a476e1ffc66eee2f22ec6bdb88c9e7c36",
+  "v1_no_go_peer_sha256": "47ad33bc6db91c11c5174a3e6209fe3368acd6c630f450e584587f551a76a3e8",
+  "findings": [
+    {
+      "kind": "v1_route_oracle_repaired_in_code",
+      "detail": "fresh_selected_node first rechecks the real selected leaf; private_alias copies that node and changes only its name to fixed g279-v2c-selected before minimal_config writes the private 0600 config. The positive parser fullmatches one complete target TCP line including /32 rule, PROXY action and safe alias, exports the entire whitelisted line plus SHA, and replay_positive_event reconstructs it after private log deletion. The original node name and credentials are not exported."
+    },
+    {
+      "kind": "exact_binary_no_credential_format_evidence",
+      "detail": "The frozen loopback probe reports the pinned Mihomo binary, a loopback-only fake SOCKS node that received the target tuple without dialing it, one full positive line and replayable event, zero real gz02 or SSH connections, process stopped and private directory removed. This establishes log format under fake-node conditions, not selected-real-node success."
+    },
+    {
+      "kind": "v1_ssh_oracle_repaired_in_code",
+      "detail": "The parser retains exact public ED25519 host-key line, fixed-destination publickey authentication line and numeric id-u stdout as complete credential-free witnesses. replay_ssh_proof reparses them and checks decisive fields and per-line SHA; the full debug stream SHA is only context metadata. The actual remote handshake format has not been observed and any mismatch fails closed."
+    },
+    {
+      "kind": "transport_and_one_shot_boundaries",
+      "detail": "Exact local ssh/nc SHA and pinned known_hosts fingerprint remain gated; /dev/null SSH config has fixed 127.0.0.1 SOCKS ProxyCommand, no ProxyJump, strict host key, BatchMode, and only remote LC_ALL=C /usr/bin/id -u. v2a/v2b receipts, exact peer/candidate/runner/root-release binding, fresh START and TERMINAL replay guard, private process cleanup, no HK01/graph/device/container/namespace/global proxy write remain in code. Top-level sys.exit is outside Exception handler, addressing the v2b false rc2 defect."
+    },
+    {
+      "kind": "remaining_boundary",
+      "detail": "No root release, START or TERMINAL exists; no selected real node or gz02 SSH has run. EVO49's separate no-credential preflight receipt is not implemented: START still precedes binary, fork-denial, source, controller and port checks. This is an efficiency limitation, not claimed as solved by this review. Any future root release must preserve the runner's exact scope string and current hashes; code-only GO is not runtime acceptance."
+    }
+  ],
+  "real_selected_node_started": false,
+  "real_ssh_connections": 0,
+  "remote_write_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "task_summary_modified": false
+}

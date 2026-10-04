@@ -1,0 +1,30 @@
+{
+  "schema": "g332-protonvpn-whitebox-source-mapped-input-peer-v1",
+  "decision": "GO_WHITEBOX_SOURCE_MAPPED_INPUT_ONLY_BUILD_UNVERIFIED",
+  "official_apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "official_apk_package": "ch.protonvpn.android",
+  "official_apk_version": "5.20.57.0",
+  "official_apk_version_code": 605205700,
+  "host_raw_peer_review_sha256": "251ab784fa3605790583374cc2ca7af2fe0223409af7dffb79ee020d38e72438",
+  "official_repository": "https://github.com/ProtonVPN/android-app",
+  "official_release_tag_url": "https://github.com/ProtonVPN/android-app/releases/tag/5.20.57.0",
+  "tag_commit": "fd1cb1dd108888e57b36ce8d7cc1dcdc25517c61",
+  "tag_commit_url": "https://github.com/ProtonVPN/android-app/commit/fd1cb1dd108888e57b36ce8d7cc1dcdc25517c61",
+  "tagged_gradle_url": "https://github.com/ProtonVPN/android-app/blob/5.20.57.0/app/build.gradle",
+  "tagged_readme_url": "https://github.com/ProtonVPN/android-app/blob/5.20.57.0/README.md",
+  "source_mapping_evidence": [
+    "Official public release 5.20.57.0 points to exact commit fd1cb1dd108888e57b36ce8d7cc1dcdc25517c61 and carries the admitted publisher APK asset.",
+    "Exact tagged app/build.gradle defaults appId to ch.protonvpn.android and assigns it to applicationId; production, vanilla and direct flavors are declared in that source tree.",
+    "Exact tagged README provides source checkout and Gradle build instructions plus the publisher signing certificate fingerprint matching the admitted APK. Its documented public release command uses the OpenSource distribution flavor, whereas the admitted asset filename says production-vanilla-direct-release; equivalence is not assumed."
+  ],
+  "source_checkout_in_shared_pool_present": false,
+  "exact_tag_full_checkout_and_dependencies_verified": false,
+  "clean_build_executed": false,
+  "direct_release_variant_build_verified": false,
+  "publisher_apk_byte_reproducibility_verified": false,
+  "claim_boundary": "This qualifies the unmodified publisher APK as a whitebox source-mapped test input. It does not establish a complete reproducible source tree or that a locally rebuilt APK is byte-identical or publisher-signed. A rebuilt APK would be a distinct artifact. It is not a blackbox qualification, four-stage static result, installation or startup result.",
+  "blackbox_count_changed": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "task_summary_modified": false
+}

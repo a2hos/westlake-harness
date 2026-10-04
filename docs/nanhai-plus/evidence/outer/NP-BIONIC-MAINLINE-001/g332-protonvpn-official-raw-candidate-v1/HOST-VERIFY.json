@@ -1,0 +1,99 @@
+{
+  "api_asset_bytes": 64238953,
+  "api_asset_digest": "sha256:57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "apk_bytes": 64238953,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk",
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "arm64_true_elf": 8,
+  "at_utc": "2026-10-04T19:24:41.792862+00:00",
+  "commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ad339d9bc46823a6368eb9d8dcc5399b1039fd2fe6660fcb5257e63ae970022d"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g332-protonvpn-official-v1/ProtonVPN-5.20.57.0.605205700.-production-vanilla-direct-release.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a603c5ebb5c9016e04aebe9f14e394ce9aa31ce76aaec143b7031de4fae4d9ec"
+    }
+  ],
+  "container_commands": 0,
+  "crc_all_ok": true,
+  "device_commands": 0,
+  "duplicate_names": 0,
+  "elf_header_count_by_abi": [
+    {
+      "abi": "arm64-v8a",
+      "class": 2,
+      "count": 8,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "abi": "armeabi",
+      "class": 1,
+      "count": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "armeabi-v7a",
+      "class": 1,
+      "count": 8,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "mips",
+      "class": 1,
+      "count": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "abi": "mips64",
+      "class": 2,
+      "count": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "abi": "x86",
+      "class": 1,
+      "count": 8,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "abi": "x86_64",
+      "class": 2,
+      "count": 8,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "non_elf_so": [],
+  "package": "ch.protonvpn.android",
+  "root_dex": 4,
+  "schema": "g332-protonvpn-host-verify-v1",
+  "signer_certificate_sha256": [
+    "dcc9439ec1a6c6a8d0203f3423ee42bcc8b970628e53cb73a0393f398dd5b853"
+  ],
+  "version_code": "605205700",
+  "version_name": "5.20.57.0",
+  "zip_entries": 3972
+}

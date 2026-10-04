@@ -1,0 +1,332 @@
+{
+  "schema": "g333-protonvpn-census-v1",
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "apk_bytes": 64238953,
+  "root_raw_admission_sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "zip_entries": 3972,
+  "zip_crc_all": true,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 7245388,
+      "sha256": "dbbc62394f84f250f94f9816ed48442ce384aad407c87bfa16c42dca8c0f0fb1",
+      "magic": "6465780a30333800",
+      "embedded": false
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 8082924,
+      "sha256": "ed3de60a70d16a268ebbf522fa9c866b065db8d16957f584c6134cc050256442",
+      "magic": "6465780a30333800",
+      "embedded": false
+    },
+    {
+      "name": "classes3.dex",
+      "bytes": 7160728,
+      "sha256": "a9b516fa6be3626b390b1ff1906fef2eaa39a8cbf3c49f14d77c509eb8e63c8f",
+      "magic": "6465780a30333800",
+      "embedded": false
+    },
+    {
+      "name": "classes4.dex",
+      "bytes": 3494432,
+      "sha256": "f559472f7c469cf15c9610d73de8b47e1b8748d4dea5a0e5ad177fed8613df05",
+      "magic": "6465780a30333800",
+      "embedded": false
+    }
+  ],
+  "so": [
+    {
+      "name": "lib/arm64-v8a/libandroidvpnrust.so",
+      "kind": "elf",
+      "bytes": 7339000,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10096,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 10360,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libgojni.so",
+      "kind": "elf",
+      "bytes": 11411088,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 176520,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libpayment.so",
+      "kind": "elf",
+      "bytes": 1883184,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsentry-android.so",
+      "kind": "elf",
+      "bytes": 16072,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsentry.so",
+      "kind": "elf",
+      "bytes": 1219960,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/armeabi-v7a/libandroidvpnrust.so",
+      "kind": "elf",
+      "bytes": 5422740,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 7252,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 8432,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libgojni.so",
+      "kind": "elf",
+      "bytes": 11088612,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 126496,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libpayment.so",
+      "kind": "elf",
+      "bytes": 1228672,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsentry-android.so",
+      "kind": "elf",
+      "bytes": 11652,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsentry.so",
+      "kind": "elf",
+      "bytes": 711440,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 126980,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/mips/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 130556,
+      "class": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "name": "lib/mips64/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 150256,
+      "class": 2,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "name": "lib/x86/libandroidvpnrust.so",
+      "kind": "elf",
+      "bytes": 7329916,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 9284,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 7976,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libgojni.so",
+      "kind": "elf",
+      "bytes": 11219600,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 124380,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libpayment.so",
+      "kind": "elf",
+      "bytes": 2212856,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsentry-android.so",
+      "kind": "elf",
+      "bytes": 14096,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsentry.so",
+      "kind": "elf",
+      "bytes": 1310068,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86_64/libandroidvpnrust.so",
+      "kind": "elf",
+      "bytes": 7636952,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10760,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 9424,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libgojni.so",
+      "kind": "elf",
+      "bytes": 12158416,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 126912,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libpayment.so",
+      "kind": "elf",
+      "bytes": 2071232,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsentry-android.so",
+      "kind": "elf",
+      "bytes": 15976,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsentry.so",
+      "kind": "elf",
+      "bytes": 1282040,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "nested_archive_name_candidates": [],
+  "counts": {
+    "root_dex": 4,
+    "embedded_dex": 0,
+    "true_arm64_elf": 8,
+    "arm32_elf": 8,
+    "other_elf": 27,
+    "non_elf_so": 0
+  },
+  "device_commands": 0,
+  "container_commands": 0
+}

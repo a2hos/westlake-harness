@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai-plus-root-whitebox-source-mapped-test-input-v1",
+  "at_utc": "2026-10-04T19:30:43Z",
+  "decision": "QUALIFY_ONE_SOURCE_MAPPED_WHITEBOX_TEST_INPUT_ONLY",
+  "package": "ch.protonvpn.android",
+  "apk_version": "5.20.57.0",
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "raw_admission_sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be",
+  "independent_review_sha256": "ba7a8aa1a1118d0b16dacbff45c459d70b8a11173c19217c94dfa45020fbf0d4",
+  "official_tag": "5.20.57.0",
+  "release_linked_commit": "fd1cb1dd108888e57b36ce8d7cc1dcdc25517c61",
+  "same_package_and_flavors_in_tagged_gradle": true,
+  "scope": "Source-informed analysis of the unchanged official APK. Tagged README release build command names OpenSource flavor while the accepted asset is production-vanilla-direct; exact flavor build and source-to-binary reproducibility unverified.",
+  "blackbox_qualification_delta": 0,
+  "whitebox_startup_delta": 0,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

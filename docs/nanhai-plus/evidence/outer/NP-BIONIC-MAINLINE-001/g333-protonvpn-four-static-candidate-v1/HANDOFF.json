@@ -1,0 +1,130 @@
+{
+  "apk_bytes": 64238953,
+  "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+  "at_utc": "2026-10-04T19:27:52.205249+00:00",
+  "authoritative_count_changed": false,
+  "blackbox_qualification_accepted_here": false,
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_BIONIC_RUNTIME_INDEX",
+  "container_commands": 0,
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "nested_archive_name_candidates": [],
+  "network_commands": 0,
+  "non_elf_so": 0,
+  "other_true_elf_by_abi": {
+    "armeabi": 1,
+    "armeabi-v7a": 8,
+    "mips": 1,
+    "mips64": 1,
+    "x86": 8,
+    "x86_64": 8
+  },
+  "package": "ch.protonvpn.android",
+  "phase_results": {
+    "dex": {
+      "command_sha256": "4906799592eff879c496c38e0951d54cfcd1c08c2d8b241c5f66622c850f59eb",
+      "elapsed_seconds": 10.245285750017501,
+      "phase_result_sha256": "99e872fe06517ca30abc6408da3d4672fa0e5b9fcfd6be67ca966ddaf3a44cc0",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d36cbf67a8820ffd74441454673680c737ed7da9a7214542548dc9b0eb56cfcf",
+      "timed_out": false
+    },
+    "elf": {
+      "command_sha256": "c42dcb3085570694e5fe76485a8b345349aabc2c435b6c66d17918c0496ec20e",
+      "elapsed_seconds": 3.162034249980934,
+      "phase_result_sha256": "1b1b03c61a76b4ee8fcd26154e75cd96f1d804848297a56769e7823bf92310ff",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "97b34119fa1fdc6b388ad08ccd06409d793f1aaf2f1d3e87b8053e14534d86df",
+      "timed_out": false
+    },
+    "metadata": {
+      "command_sha256": "487aa3c8ac603a7f6ce1a3fbfe83c672c296ac631948932e455bbf780ec4edde",
+      "elapsed_seconds": 0.51369558298029,
+      "phase_result_sha256": "ab10c62843c2cc9b0917a7ee267b2ac24e7fb99e4136b8a5514548ee0ff5609c",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "315d79d397da7afe6cbbcc50e0834dac8bc39fd490b2b7141896cbb5a3e4e04b",
+      "timed_out": false
+    },
+    "zip": {
+      "command_sha256": "600393b973a4b2433803966d8b1aea6455de112afb8dc415705451b0e94f8d89",
+      "elapsed_seconds": 0.4264933340018615,
+      "phase_result_sha256": "b9bcd8016b80a7c72a233e7e4f637b3f93207af570ce140be9d6ab623ac2187f",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "14a5986e88c765938c2b73d5142a55e193bc5537e21f17f21b0103524e55e087",
+      "timed_out": false
+    }
+  },
+  "refs": {
+    "BRIDGE-DEMAND.json": {
+      "bytes": 3682,
+      "sha256": "7e2dab861c0c46186a89a60886e12b36960cbea7ff6f95fd61cf1266fbf115d8"
+    },
+    "CENSUS.json": {
+      "bytes": 7190,
+      "sha256": "01cccc0125dc26bf2445c5e4cf955eb785033113871a2d3d70e52f4629e9fb1f"
+    },
+    "RESULT.json": {
+      "bytes": 6706,
+      "sha256": "4a67c5850bf61009015a3489208e324a19aaf99d1d809bb01584428f8a69d2ff"
+    },
+    "START.json": {
+      "bytes": 1060,
+      "sha256": "3f582932fe35db7766293f00247722a8ffa0a068bca58546da4ca2b1c08d8c35"
+    },
+    "census.py": {
+      "bytes": 3216,
+      "sha256": "b3db6c757fab50c01c54f1c24321c05d5543c60a8b3baf6eb4be94f70e09ec13"
+    },
+    "phase.py": {
+      "bytes": 5254,
+      "sha256": "19f0b3ec57c3a58c1e7b49b887fd2ff259b4c612bca024faa4e1ce685596a662"
+    },
+    "phases/dex/DEX-INVENTORY.json": {
+      "bytes": 11614901,
+      "sha256": "6c042a6375df49bb51515b0089ac939be0abcb5ed1e53a4bfe3775cc4266b8f5"
+    },
+    "phases/elf/ELF-CLASSIFICATION.json": {
+      "bytes": 4560,
+      "sha256": "b4348f3f1077ce0be89a2f4e0a9064a4c4d8da6495cfb6a02e83196f4a554a82"
+    },
+    "phases/elf/ELF-INVENTORY.json": {
+      "bytes": 237678,
+      "sha256": "1942a55dbdb6e965da50ae4133e4fee23000b3db1fa7978caa3aa59d976b2523"
+    },
+    "phases/metadata/MANIFEST.json": {
+      "bytes": 1936,
+      "sha256": "38e7b7fcea21e4803b965893795caa7105f4420247400a8284d0dcdcf191d2af"
+    },
+    "phases/zip/ZIP-FACTS.json": {
+      "bytes": 223,
+      "sha256": "783f804927f1c0447f7f274e872b055c916b5150ef0ed91c9e3381c9983d13aa"
+    },
+    "run.py": {
+      "bytes": 3486,
+      "sha256": "1e7463e2170c3b871c0b3df80ac2fa132ee35ed19dac7cfded09fdebb2ba765b"
+    }
+  },
+  "root_dex": 4,
+  "root_raw_admission_sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be",
+  "schema": "g333-protonvpn-four-static-handoff-v1",
+  "source_guard_all_equal": true,
+  "source_scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "startup_proven": false,
+  "status": "CANDIDATE_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "target_sdk": 36,
+  "terminal_rc": 0,
+  "true_arm64_elf": 8,
+  "version_code": 605205700,
+  "version_name": "5.20.57.0",
+  "whitebox_qualification_accepted_here": false,
+  "zip_crc_all": true,
+  "zip_entries": 3972
+}
