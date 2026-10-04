@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai-g288-tiktoklite-hyphen-v2-outer-result-v1",
+  "command": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/run.py",
+    "--execute"
+  ],
+  "outer_elapsed_seconds": 7.602,
+  "outer_rc": 0,
+  "outer_timeout": false,
+  "stdout_bytes": 216,
+  "stdout_sha256": "38874e3c344a337bd89d3a249d9fa2cc409ebad2183a97d2bea3ee8518234629",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_exists": true,
+  "start_exists": true,
+  "device_commands": 0,
+  "container_commands": 0
+}

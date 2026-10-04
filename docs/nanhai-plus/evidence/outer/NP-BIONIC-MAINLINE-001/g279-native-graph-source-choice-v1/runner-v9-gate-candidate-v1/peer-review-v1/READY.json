@@ -1,0 +1,9 @@
+{
+  "schema": "nanhai-g279-evo19-v9-peer-ready-v1",
+  "verdict": "NO_GO_PREFLIGHT_EXECUTE_OR_OWNER_DISPATCH",
+  "limited_acceptance": "GO_STATIC_CANDIDATE_ONLY",
+  "gate_sha256": "c1bb44e2fd55d43677219f0c6421a2bcfc6ba7cb69b57dfa3872051cc296df54",
+  "review_sha256": "2f2c020a85621e5bf611b74e7b9301a2584beec528478e254bc0e52df4efef60",
+  "local_checks_sha256": "209d57ef6880033092a862fa5afcd2e1eb88b2aafcae69ea3532527e8f7ea60d",
+  "graph_executed": false
+}

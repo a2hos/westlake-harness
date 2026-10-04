@@ -1,0 +1,267 @@
+{
+  "schema": "g288-tiktoklite-hyphen-raw-v2-result",
+  "start_sha256": "8b53c813b17cd686925ac560b24fa04def6e561a524c36991cd8e0b802c9f1f6",
+  "generation": "g288-tiktoklite-hyphen-official-raw-candidate-v2",
+  "commands": [
+    {
+      "name": "page",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "25",
+        "--max-filesize",
+        "600000",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/page.body.raw",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects}",
+        "https://www.tiktok.com/download"
+      ],
+      "began_utc": "2026-10-04T11:45:54.969520+00:00",
+      "ended_utc": "2026-10-04T11:45:56.694689+00:00",
+      "seconds": 1.725,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 39,
+      "stdout_sha256": "d68842c34a8da87be402c3b9a00b182f483620d9758ff2cd317479a8b4ae9c1f",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "head",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--head",
+        "--max-time",
+        "20",
+        "--dump-header",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/head.headers.raw",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects}",
+        "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk"
+      ],
+      "began_utc": "2026-10-04T11:45:56.696938+00:00",
+      "ended_utc": "2026-10-04T11:45:57.053316+00:00",
+      "seconds": 0.356,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 34,
+      "stdout_sha256": "24e1953d0705fb49b6df5afcc2424186d73e1d42f25ced1fcac82ff6de099b5b",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "download",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "180",
+        "--max-filesize",
+        "48413684",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk.part",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects}",
+        "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk"
+      ],
+      "began_utc": "2026-10-04T11:45:57.053717+00:00",
+      "ended_utc": "2026-10-04T11:46:01.787796+00:00",
+      "seconds": 4.734,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 41,
+      "stdout_sha256": "547642ceb0caa5c8c6e25c4f32a552ca602f88ecd811793febc2374b33bd88bc",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk"
+      ],
+      "began_utc": "2026-10-04T11:46:01.920778+00:00",
+      "ended_utc": "2026-10-04T11:46:02.015537+00:00",
+      "seconds": 0.095,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 8864,
+      "stdout_sha256": "22188f4453cac69ad872584f0000a962a15b12ff994c1b359afeb6ae878d70aa",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk"
+      ],
+      "began_utc": "2026-10-04T11:46:02.015592+00:00",
+      "ended_utc": "2026-10-04T11:46:02.471520+00:00",
+      "seconds": 0.456,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 11999,
+      "stdout_sha256": "1a0423c30007d85ea4caef29740d7489ab11c1f30de7bb3799a97e6df400ecb6",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "candidate_only": true,
+  "raw_accepted": false,
+  "blackbox_qualified": false,
+  "overseas_mainstream_qualified": false,
+  "source_availability_review": "PENDING_SEPARATE_REVIEW",
+  "canonical_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "publisher_artifact_digest": null,
+  "alternative_lite_variant_used": false,
+  "environment": {
+    "config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "document": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/local_env.md",
+    "links_checked": 5
+  },
+  "tools_before": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "staging": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2",
+  "page_transfer": {
+    "http": "200",
+    "tls": "0",
+    "bytes": "398815",
+    "redirects": "0"
+  },
+  "page": {
+    "bytes": 398815,
+    "sha256": "24eedeb2ae742f72062bee4bc49cc9940b885ef540e0d04e2fd48a06b1779bdc"
+  },
+  "official_lite_card": {
+    "type": "lite",
+    "link": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+    "version": "36.9.61",
+    "size_label": "46.2MB",
+    "title": "TikTok Lite - Faster and Smaller"
+  },
+  "official_page_exact_apk_link": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+  "other_lite_variant_present": true,
+  "head_transfer": {
+    "http": "200",
+    "tls": "0",
+    "bytes": "0",
+    "redirects": "0"
+  },
+  "head": {
+    "bytes": 1635,
+    "sha256": "a094fdf987034bae345f6cb9be98f11a1ea91ce235de7a5e82b0b7316eeb6cd2",
+    "content_length": 48413684,
+    "content_type": "application/vnd.android.package-archive"
+  },
+  "part": {
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0"
+  },
+  "download_transfer": {
+    "http": "200",
+    "tls": "0",
+    "bytes": "48413684",
+    "redirects": "0"
+  },
+  "apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "publisher_sha256_available": false,
+    "sha256_role": "observed received bytes only; no publisher digest comparison"
+  },
+  "zip": {
+    "entries": 2000,
+    "bad_entry": null,
+    "manifest_count": 1,
+    "lib_abis": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ]
+  },
+  "manifest": {
+    "package": "package: name='com.tiktok.lite.go' versionCode='360961' versionName='36.9.61' platformBuildVersionName='14' platformBuildVersionCode='34' compileSdkVersion='34' compileSdkVersionCodename='14'",
+    "min_sdk": "minSdkVersion:'21'",
+    "target_sdk": "targetSdkVersion:'34'",
+    "native_code": "native-code: 'arm64-v8a' 'armeabi-v7a'"
+  },
+  "signature": {
+    "lines": [
+      "Verified using v1 scheme (JAR signing): true",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true",
+      "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+      "Verified using v4 scheme (APK Signature Scheme v4): false",
+      "Number of signers: 1",
+      "Signer #1 certificate DN: CN=Micro Cao, OU=ByteDance, O=ByteDance, L=Beijing, ST=Beijing, C=CN",
+      "Signer #1 certificate SHA-256 digest: d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+      "Signer #1 certificate SHA-1 digest: 00a584e375b5573c89e1f06f5cf60d0d65ddb632",
+      "Signer #1 certificate MD5 digest: aea615ab910015038f73c47e45d21466",
+      "Signer #1 key algorithm: RSA",
+      "Signer #1 key size (bits): 2048",
+      "Signer #1 public key SHA-256 digest: 69a71acffc509cc571a472b7a16ec8ac1680ca92f1a3efc0dab9445a0aa8edf4",
+      "Signer #1 public key SHA-1 digest: 58c5b9b1d1b039bf1279d33f4c4b7e2abfa70526",
+      "Signer #1 public key MD5 digest: 742c99c333cacff20cdfe2b1aec06d33"
+    ]
+  },
+  "status": "TERMINAL_FAILED",
+  "error_type": "GateError",
+  "error": "package mismatch",
+  "ended_utc": "2026-10-04T11:46:02.471966+00:00"
+}

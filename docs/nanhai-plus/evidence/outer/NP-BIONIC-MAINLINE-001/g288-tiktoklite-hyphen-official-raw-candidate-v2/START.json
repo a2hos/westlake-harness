@@ -1,0 +1,11 @@
+{
+  "schema": "g288-tiktoklite-hyphen-raw-v2-start",
+  "at_utc": "2026-10-04T11:45:54.947928+00:00",
+  "status": "REMOTE_STATE_UNKNOWN_IN_PROGRESS",
+  "generation": "g288-tiktoklite-hyphen-official-raw-candidate-v2",
+  "script_sha256": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+  "page": "https://www.tiktok.com/download",
+  "exact_apk_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+  "expected_head_and_received_bytes": 48413684,
+  "meaning": "If RESULT is absent, inspect state; never blindly replay."
+}

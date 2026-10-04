@@ -1,0 +1,28 @@
+{
+  "schema": "g289-tiktoklite-static-prep-fixture-v1",
+  "status": "PASS",
+  "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+  "apk_bytes": 48413684,
+  "script_sha256": {
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+    "run.py": "c1d621e68433391928ee002b71a07bbcc47fb7693356aa2b8e4526e2c6e8f92d"
+  },
+  "input_sha256": "088f27a3e570f4b9adc9ae2ce344171b1b0c357396a224f37b4bc3a8f6b28593",
+  "checks": [
+    "AST",
+    "RETAINED_APK_EXACT_BYTES",
+    "SCANNER_SOURCE_SHA",
+    "VENV_MANIFEST_SHA",
+    "READELF_TOOL_SHA_AND_ALIAS",
+    "NO_RAW_IDENTITY_DECISION",
+    "NO_SCAN_OUTPUT",
+    "EXPLICIT_EXECUTE_GUARD",
+    "FOUR_PROVEN_PHASES",
+    "MIXED_ABI_AND_OPAQUE_SO_HONEST"
+  ],
+  "scan_executed": false,
+  "device": 0,
+  "container": 0,
+  "canonical_delta": 0
+}

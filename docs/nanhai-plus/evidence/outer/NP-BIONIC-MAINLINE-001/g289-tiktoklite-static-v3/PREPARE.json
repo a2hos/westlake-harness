@@ -1,0 +1,66 @@
+{
+  "schema": "g289-tiktoklite-static-prepare-v3",
+  "prepared_utc": "2026-10-04T11:59:35.335715+00:00",
+  "status": "FROZEN_CANDIDATE_PEER_REVIEW_PENDING_NO_SCAN",
+  "exact_apk": {
+    "registry_package_label": "com.tiktok.lite.go",
+    "record_id": null,
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "scope": "exact retained G288 observed official-channel bytes; supplemental raw identity decision pending",
+    "version_code": 360961,
+    "version_name": "36.9.61",
+    "abi_classification": "mixed arm64-v8a + armeabi-v7a; ARM64-compatible structural candidate, not ARM64-only"
+  },
+  "root_raw_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+    "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+    "decision": "ACCEPT_ONE_SEPARATE_OFFICIAL_CHANNEL_OBSERVED_SUPPLEMENTAL_RAW_APK",
+    "schema": "nanhai-g290-tiktok-lite-go-root-raw-intake-v1"
+  },
+  "root_static_release": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-release-v1/ROOT-RELEASE.json",
+    "sha256": "887a344997faab5eedc481f329dee10da75b41cef232ee12005ba1d9eebbcda2",
+    "schema": "nanhai-g289-tiktoklite-static-root-release-v1",
+    "decision": "AUTHORIZE_ONE_LOCAL_STATIC_INVENTORY_AFTER_SEPARATE_V3_PEER_REVIEW"
+  },
+  "input_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+  "script_sha256": {
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+    "run.py": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8"
+  },
+  "fixture_script_sha256": "76450e726eb65c8eb25ee5a582b2a68a7301e983ead806ded53376c4090341f1",
+  "fixture_result_sha256": "2695bb9850fec34a4a20f8c15d8a18d4fed384dc07e774fbf63b591b69b2c4f2",
+  "diff_sha256": "7e155f9b9c8dd96e1773441d54e4f029607bef03b1455b119e976f687c8c2a23",
+  "v2_input_common_scan_phase_unchanged": true,
+  "pre_output_gates": [
+    "explicit --execute",
+    "G290 raw receipt exact path/SHA/schema/decision/package/version/APK SHA+bytes/path/ABI",
+    "G289 static release exact path/SHA/schema/decision/APK/raw/phase order/limits/one attempt/parallel1/retry0/no network/device/container",
+    "G289 release reviewed_v2 hashes match actual v2 files and current v3 INPUTS/common/scan_phase",
+    "separate v3 peer receipt at g289-tiktoklite-static-v3-peer-review-v1/REVIEW.json with schema/verdict GO_ONE_LOCAL_STATIC_INVENTORY and exact v3 runner/input/release SHA",
+    "then create unique phases/tmp/apk-view; second attempt fails"
+  ],
+  "v3_peer_receipt_contract": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3-peer-review-v1/REVIEW.json",
+    "schema": "g289-tiktoklite-static-v3-independent-release-review-v1",
+    "verdict": "GO_ONE_LOCAL_STATIC_INVENTORY",
+    "runner_sha256": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8",
+    "inputs_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+    "root_release_sha256": "887a344997faab5eedc481f329dee10da75b41cef232ee12005ba1d9eebbcda2"
+  },
+  "planned_command_not_run": "python3 scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/run.py --execute",
+  "execution_counts": {
+    "scan": 0,
+    "network": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_delta": 0
+  },
+  "claim_limits": [
+    "No scanner phase, startup, blackbox qualification or static-complete credit yet.",
+    "Four 7fKOM libraries remain opaque, mixed ABI does not prove runtime loadability."
+  ]
+}

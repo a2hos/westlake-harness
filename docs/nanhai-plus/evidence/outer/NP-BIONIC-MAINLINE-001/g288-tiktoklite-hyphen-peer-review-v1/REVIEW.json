@@ -1,0 +1,60 @@
+{
+  "schema": "g288-tiktoklite-hyphen-independent-static-review-v1",
+  "at_utc": "2026-10-04T11:43:27.818449+00:00",
+  "verdict": "NO_GO_CURRENT_V1_ONE_SHOT_GET",
+  "subject": {
+    "runner_sha256": "6dc96c89c20857aba7ecf8b81181e5bb8383f3992f3719267b16ee3b21af6ede",
+    "prepare_sha256": "2267123e843dceb10881f6e6c708c0fd1297860f4bd15222dfa7878675ddbbab",
+    "fixture_sha256": "91605bd13793bab35203a9522774979ab681feccd1d0616af2bc04ec0226382a",
+    "http_observation_sha256": "dfe983c888a562cac4e17f1e6487a36c3cfa4fd5110195fee65f09682f9bf75b",
+    "page_sha256": "e0244c0dd015b11bd33b21894575d9c50a7864300cf75e293dd922dbd81aa3af",
+    "head_sha256": "30745657a2554d90cdae2cec240c32ae92e4e8c29de0bf98ef325d8738858099"
+  },
+  "independent_fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-peer-review-v1/FIXTURE.json",
+    "sha256": "91605bd13793bab35203a9522774979ab681feccd1d0616af2bc04ec0226382a",
+    "status": "PASS",
+    "cases": [
+      "AST",
+      "OFFICIAL_CARD",
+      "BOTH_VARIANTS_DISTINCT",
+      "HEAD_EXACT",
+      "ALTERNATE_REJECTED",
+      "NO_ARG_CLOSED",
+      "ONE_APK_GET_SITE",
+      "ZIP_ABI_PACKAGE_CERT_GATES",
+      "OBSERVATION_HASHES"
+    ],
+    "apk_get_count": 0
+  },
+  "verified": {
+    "channel": "Previously observed HTTPS official /download card first Lite link exactly matches hyphen URL and version label 36.9.61; distinct underscore variant cannot satisfy current card gate. This peer did not make network requests.",
+    "head": "Previously observed exact hyphen URL HEAD HTTP200/TLS0/no redirects, Content-Length 48413684 and APK MIME; runtime reruns page and HEAD before GET.",
+    "bounds": "Runtime page curl max-time25/max-filesize600000 and post-size; HEAD max-time20; exact URL GET max-time180/max-filesize48413684/retry0/no follow or resume and exact received byte count; subprocess 30/25/190 seconds.",
+    "one_shot": "O_EXCL durable START precedes network; new staging required; terminal RESULT hard-link no-replace, failure/unknown is not replayable.",
+    "postchecks": "ZIP CRC and one manifest, package, min/target SDK presence, arm64-v8a-only or no native libs, one signer v2/v3 and observed certificate SHA, tool/APK postguards. Candidate flags keep raw/blackbox/startup uncredited."
+  },
+  "blocking_flaw": {
+    "title": "Downloaded Manifest version is not checked against frozen card identity",
+    "evidence": "PREPARE states exact package/version. run.py official_lite_card requires page version 36.9.61, but post-download checks only regex versionCode=digits and versionName=any nonempty; mock same package with versionCode 999999/versionName 99.99.99 satisfies those predicates.",
+    "mock_predicates_pass": true,
+    "impact": "A different APK of the same package, size and ABI could be labeled OFFICIAL_CHANNEL_RAW_CANDIDATE_STATIC_PASS despite violating frozen version and 360961 filename/card. One-shot download would be consumed before this defect is discovered; fix gate first."
+  },
+  "minimum_v2_fix": [
+    "After aapt2 parse, require version_code == 360961 and version_name == 36.9.61, with explicit negative local fixture for wrong code and wrong name.",
+    "Freeze new runner/fixture/PREPARE SHA in a fresh v2 leaf, verify no START/RESULT/staging there, and independently re-review before one bounded GET."
+  ],
+  "nonblocking_limits": [
+    "Package and ABI of hyphen artifact are unknowable until GET; G287 underscore variant was com.tiktok.lite.go and armeabi-v7a, so do not extrapolate.",
+    "No publisher artifact SHA or independent certificate anchor; even a v2 postcheck pass proves observed channel/candidate only, not publisher byte identity or blackbox qualification.",
+    "HEAD header dump has no explicit script file-size cap; transport timeouts and curl header parser limit duration, but this should be noted."
+  ],
+  "execution_state": {
+    "candidate_start_exists": false,
+    "candidate_result_exists": false,
+    "network_requests_by_peer": 0,
+    "apk_get_by_peer": 0,
+    "device_commands": 0,
+    "container_commands": 0
+  }
+}

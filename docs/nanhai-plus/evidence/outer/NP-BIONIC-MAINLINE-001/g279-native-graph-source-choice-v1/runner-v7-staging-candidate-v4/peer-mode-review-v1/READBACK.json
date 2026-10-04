@@ -1,0 +1,145 @@
+{
+  "schema": "g279-v7-mode-readonly-peer-readback-v1",
+  "at_utc": "2026-10-04T11:41:57.113856+00:00",
+  "argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "stdin_sha256": "6be150d8a0f8514e11a8ab38cfb261a63549e04bfe4cc37ff7b594ced41963a0",
+  "rc": 0,
+  "stdout_sha256": "b4e602f7a8b3ac96b8eb572ea943030efc03673be0bc3f0af06873d52c7932bc",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observation": {
+    "gid": 1000,
+    "paths": [
+      {
+        "acl": {
+          "system.posix_acl_access": "errno:61",
+          "system.posix_acl_default": "errno:61"
+        },
+        "children": [
+          {
+            "gid": 1000,
+            "mode": "0o775",
+            "name": "control",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o775",
+            "name": "out",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o700",
+            "name": "source-view",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o775",
+            "name": "staging",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o775",
+            "name": "tmp",
+            "uid": 1000
+          }
+        ],
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 29884417,
+        "is_dir": true,
+        "is_symlink": false,
+        "mode": "0o775",
+        "path": "/data/source/.nanhai-plus-opaleye-native",
+        "realpath": "/data/source/.nanhai-plus-opaleye-native",
+        "uid": 1000
+      },
+      {
+        "acl": {
+          "system.posix_acl_access": "errno:61",
+          "system.posix_acl_default": "errno:61"
+        },
+        "children": [
+          {
+            "gid": 1000,
+            "mode": "0o444",
+            "name": "MANIFEST-HEADS.tsv",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o644",
+            "name": "ROUTE-AUDIT.json",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o444",
+            "name": "g279-native-graph-env.json",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o444",
+            "name": "generate_manifest_heads.py",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o644",
+            "name": "nanhai_plus_native_soong_ui.sh",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o644",
+            "name": "nanhai_plus_native_source_view.py",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o444",
+            "name": "no-namespace-exec.c",
+            "uid": 1000
+          },
+          {
+            "gid": 1000,
+            "mode": "0o644",
+            "name": "soong-ui-no-nsjail.patch",
+            "uid": 1000
+          }
+        ],
+        "dev": 64785,
+        "gid": 1000,
+        "ino": 29884418,
+        "is_dir": true,
+        "is_symlink": false,
+        "mode": "0o775",
+        "path": "/data/source/.nanhai-plus-opaleye-native/control",
+        "realpath": "/data/source/.nanhai-plus-opaleye-native/control",
+        "uid": 1000
+      }
+    ],
+    "uid": 1000
+  },
+  "ssh_readonly": 1,
+  "chmod": 0,
+  "stage": 0,
+  "graph": 0,
+  "device": 0,
+  "container": 0
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai-g289-tiktoklite-static-v3-root-execute-v1",
+  "released_utc": "2026-10-04T12:01:09Z",
+  "decision": "GO_ONE_BOUNDED_LOCAL_STATIC_SCAN_ONLY",
+  "runner_sha256": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8",
+  "inputs_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+  "prepare_sha256": "1a01551b04e331161b72d798c60029ec5aac855f4764418e6a6835a2481f7bfa",
+  "fixture_sha256": "2695bb9850fec34a4a20f8c15d8a18d4fed384dc07e774fbf63b591b69b2c4f2",
+  "root_static_release_sha256": "887a344997faab5eedc481f329dee10da75b41cef232ee12005ba1d9eebbcda2",
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3-peer-review-v1/REVIEW.json",
+    "sha256": "850254782f31ff43e1ce87327ef838329f02ee432d9a589d7234540d54e67fd7"
+  },
+  "command": ["python3", "-B", "scripts/nanhai_plus_env.py", "--run", "python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/run.py", "--execute"],
+  "outer_watchdog_seconds": 1450,
+  "canonical_static_credit_before_postrun_review": 0,
+  "network_authorized": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

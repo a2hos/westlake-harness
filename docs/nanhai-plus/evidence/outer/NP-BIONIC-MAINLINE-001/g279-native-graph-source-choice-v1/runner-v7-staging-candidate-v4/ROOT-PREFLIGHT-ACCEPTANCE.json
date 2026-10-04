@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai-g279-v7-staging-v4-root-preflight-acceptance-v1",
+  "reviewed_utc": "2026-10-04T11:42:37Z",
+  "decision": "ACCEPT_READONLY_PREFLIGHT_NO_GO_NO_STAGE",
+  "preflight": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/peer-preflight-v1/PREFLIGHT.json",
+    "sha256": "61512fb379049069dcb24a4473f22a2c701345cc3646494d9f44bcaa0d75bf90"
+  },
+  "acl_audit": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/peer-preflight-v1/ACL-AUDIT.json",
+    "sha256": "009d05f9a74ec380b1ebb70c1d8d5bf62bd8e0f935f7ccd30645d171648be906"
+  },
+  "first_failure": "Both project and control are UID1000 mode 0775 with real shared group membership; v4 guard rejects group write before lease creation.",
+  "observed": "SSH identity matched known_hosts, Python 3.12.3 available, fixed lease and runner absent; these facts do not override the mode failure.",
+  "stage_commands": 0,
+  "graph_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "Resolve project-only write boundary without weakening v4 guard; then fresh preflight and separately reviewed staging release."
+}

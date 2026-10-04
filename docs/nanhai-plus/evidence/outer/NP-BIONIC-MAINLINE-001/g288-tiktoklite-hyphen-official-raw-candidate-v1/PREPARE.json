@@ -1,0 +1,47 @@
+{
+  "schema": "g288-tiktoklite-hyphen-prepared-v1",
+  "prepared_utc": "2026-10-04T11:41:45.766421+00:00",
+  "status": "FROZEN_STATIC_CANDIDATE_NOT_EXECUTED",
+  "official_support": "https://support.tiktok.com/en/getting-started/creating-an-account/download-tiktok",
+  "official_page": "https://www.tiktok.com/download",
+  "exact_apk_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+  "alternate_forbidden": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok_Lite_360961.apk",
+  "expected_content_length": 48413684,
+  "expected_content_type": "application/vnd.android.package-archive",
+  "expected_package": "com.zhiliaoapp.musically.go",
+  "official_card": {
+    "type": "lite",
+    "link": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+    "version": "36.9.61",
+    "size_label": "46.2MB",
+    "title": "TikTok Lite - Faster and Smaller"
+  },
+  "head_page_observation_sha256": "dfe983c888a562cac4e17f1e6487a36c3cfa4fd5110195fee65f09682f9bf75b",
+  "page_raw_sha256": "e0244c0dd015b11bd33b21894575d9c50a7864300cf75e293dd922dbd81aa3af",
+  "head_raw_sha256": "30745657a2554d90cdae2cec240c32ae92e4e8c29de0bf98ef325d8738858099",
+  "runner_sha256": "6dc96c89c20857aba7ecf8b81181e5bb8383f3992f3719267b16ee3b21af6ede",
+  "fixture_script_sha256": "9dc254761d4c26352a5dc098663b0ffea3f9525a47b90cd6804353125f47ebca",
+  "fixture_result_sha256": "91605bd13793bab35203a9522774979ab681feccd1d0616af2bc04ec0226382a",
+  "g287_mismatch_receipt": "../g287-tiktoklite-official-raw-candidate-v1/RESULT.json",
+  "gates": [
+    "one-shot START and staging, no retry, no alternate URL",
+    "fresh official page first Lite card exact URL/version and fresh HEAD 200/TLS/no redirect/size/MIME",
+    "one bounded APK GET only after gates, observed SHA and full byte count",
+    "ZIP CRC and exactly one Manifest",
+    "aapt2 exact package/version/min/target SDK; only arm64-v8a or no native libs",
+    "apksigner v2 or v3, one signer, observed certificate SHA-256",
+    "postguard APK and tools; terminal receipt; admission and blackbox qualification remain false"
+  ],
+  "known_limits": [
+    "Official card and HEAD do not reveal actual Manifest package or ABI; ARM64 is unproven.",
+    "Observed cert, if any, requires independent publisher attribution anchor.",
+    "A same version label does not establish same bytes as another variant."
+  ],
+  "execution_counts": {
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  },
+  "execution_command_not_run": "python3 scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v1/run.py --execute"
+}

@@ -1,0 +1,172 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v9_gate.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:35:45.619826+00:00",
+      "expected_rc": 0,
+      "label": "gate_static",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:35:45.577663+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6961f75f8d1bd8d37ffff235c8cb825de3214ab747ec3418471cc65715541d3f"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v9_gate.py",
+        "--preflight"
+      ],
+      "end_utc": "2026-10-04T11:35:45.659519+00:00",
+      "expected_rc": 3,
+      "label": "gate_preflight_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:35:45.619933+00:00",
+      "stderr_sha256": "4cbd7234be2d58c70805e0bdb2e407a2e6f81d3a9b066788e2bcdc74511c195f",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v9_gate.py",
+        "--execute"
+      ],
+      "end_utc": "2026-10-04T11:35:45.700544+00:00",
+      "expected_rc": 3,
+      "label": "gate_execute_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:35:45.659611+00:00",
+      "stderr_sha256": "4cbd7234be2d58c70805e0bdb2e407a2e6f81d3a9b066788e2bcdc74511c195f",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v9-gate-candidate-v1/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:35:45.763874+00:00",
+      "expected_rc": 0,
+      "label": "gate_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:35:45.700627+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "532e499b76a5a3cfe548e794678dc76d2eb5cdb41dbe211510566fd50dee1233"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v9-gate-candidate-v1/owner-graph-ack-candidate-v1/consume_candidate.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:35:45.797912+00:00",
+      "expected_rc": 0,
+      "label": "owner_static",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:35:45.763955+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "39f90fa8f72042c492f955a3a492185b53cdffcfafd47808073698a67c57003f"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v9-gate-candidate-v1/owner-graph-ack-candidate-v1/consume_candidate.py",
+        "--consume"
+      ],
+      "end_utc": "2026-10-04T11:35:45.831371+00:00",
+      "expected_rc": 3,
+      "label": "owner_consume_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:35:45.797992+00:00",
+      "stderr_sha256": "74a6b96c3692d4cf60aec4bf36ba8b3cbb28af28c66776d786590cd660f8839b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v9-gate-candidate-v1/owner-graph-ack-candidate-v1/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:35:45.888049+00:00",
+      "expected_rc": 0,
+      "label": "owner_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:35:45.831465+00:00",
+      "stderr_sha256": "74a6b96c3692d4cf60aec4bf36ba8b3cbb28af28c66776d786590cd660f8839b",
+      "stdout_sha256": "38422b983611a522952d87e42888214b9a78604a4a1df0b8eb070afbcb96e849"
+    }
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "gate": {
+    "bytes": 20263,
+    "path": "scripts/nanhai_plus_native_graph_v9_gate.py",
+    "sha256": "c1bb44e2fd55d43677219f0c6421a2bcfc6ba7cb69b57dfa3872051cc296df54"
+  },
+  "gate_fixture_sha256": "6b905d9cf11f1497a677841e3ae336fd567b3eb0c0e6172a52f302379c92ad95",
+  "graph_commands": 0,
+  "handoff_gate": "PASS",
+  "handoff_sha256": "28353cb4739496d3fe86a991810f9947a7e9d78bf9685acb572919e58927f84c",
+  "herdr_dispatches": 0,
+  "host_ssh": {
+    "bytes": 1584576,
+    "mode": "0755",
+    "path": "/usr/bin/ssh",
+    "sha256": "17542914a3fb55e7efeb35a90d594a21c84bf6a4cfe1fc8ddff5606dc2658fc3"
+  },
+  "host_ssh_identity_receipt_sha256": "2866084a6b89850d88b5005bb6c785b6c49fcf81f28037f68315e2413894bca1",
+  "improvements": [
+    "authoritative local_env variable-derived remote source/project roots",
+    "canonical local /usr/bin/ssh identity checked before transport",
+    "v7 runner path/SHA/41813 bytes/mode pinned; v6 rejected",
+    "11 remote readback paths and digests pinned; fd-walk checks size/mode/stability in injected transport",
+    "receipt write failure leaves unknown path for read-only reconciliation, no automatic unlink",
+    "new graph-only owner nonce/request/spec template; consume CLI hard closed; native JSONL and independent peer required"
+  ],
+  "owner": {
+    "consume_script_sha256": "9343065d3ce1ea35dfb1d42163214d296925c2a7f0abe8994381a12add56fdc6",
+    "dispatchable": false,
+    "fixture_sha256": "c787ab13f1a9c4e6d7f698e243e188a444413e94b32779988a98e16c711f92c9",
+    "nonce": "4117b3c9f5fcc2eeccdd8c0e7aec071d",
+    "provenance_sha256": "3ea5c20f85f0b90196b41c55ad0f1ec7d49c021113883e0a2e031b23d4c7f026",
+    "request_sha256": "4566a136dd38227e17e964e83bfa9f38525fe296f121da38836cefe7a3bfa9c9",
+    "run_id": "g279-native-graph-v7-once",
+    "spec_template_sha256": "e5574ca701cafce350863095965cde26f6df7b910d829410f1e52ac1d7546207",
+    "template_unverified_rows": 9
+  },
+  "owner_session_commands": 0,
+  "remote_interpreter": {
+    "bytes": 8020928,
+    "mode": "0755",
+    "path": "/usr/bin/python3.12",
+    "sha256": "8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc"
+  },
+  "runner": {
+    "bytes": 41813,
+    "path_binding": "NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/nanhai_plus_native_graph_v7.py",
+    "remote_mode": "0444",
+    "sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0"
+  },
+  "schema": "nanhai-g279-evo19-v9-static-candidate-v1",
+  "ssh_commands": 0,
+  "status": "STATIC_ONLY_NO_GO_PREFLIGHT_OR_GRAPH_OR_OWNER_DISPATCH",
+  "target_compiles": 0,
+  "unresolved": [
+    "v7 remote runner not staged or read back",
+    "spec template lacks verified size/mode for nine non-runner/interpreter inputs and is not dispatchable",
+    "no actual v9 SSH preflight or outer/remote rc",
+    "original owner ACK not requested, produced or independently witnessed",
+    "same-writer JSON cannot authenticate graph release; separate signature or permissions needed",
+    "Linux guard/descendant proof and EVO20 generated Ninja closure absent"
+  ],
+  "v7_graph_peer_review_sha256": "aa62468189a3b4e8466a47b799fa027d630633a76bd74b03d890229735f5163b",
+  "v8_peer_review_sha256": "683ba5aee9343bb59a2e60949eb779d5a259ea047876b4702e023a90e48428c1"
+}

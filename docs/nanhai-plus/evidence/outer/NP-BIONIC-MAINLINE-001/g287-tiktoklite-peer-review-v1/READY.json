@@ -1,0 +1,8 @@
+{
+  "schema": "g287-tiktoklite-peer-review-ready-v1",
+  "verdict": "GO_ONE_BOUNDED_GET",
+  "review_sha256": "4731074926bc94f3eaa16cb8e4e3c404f0fe1748e82b6153120dfbf92d60dfac",
+  "runner_sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+  "fixture_status": "PASS",
+  "apk_get_by_reviewer": 0
+}

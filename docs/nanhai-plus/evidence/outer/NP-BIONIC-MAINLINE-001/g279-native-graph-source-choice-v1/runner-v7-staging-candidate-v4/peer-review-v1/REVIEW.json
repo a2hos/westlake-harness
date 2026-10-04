@@ -1,0 +1,60 @@
+{
+  "schema": "nanhai-g279-v7-runner-staging-v4-peer-review-v1",
+  "reviewed_utc": "2026-10-04T11:36:23+00:00",
+  "verdict": "STATIC_GO_FOR_STAGING_ONLY_AFTER_FRESH_REMOTE_PREFLIGHT",
+  "scope": "Local static review and local temporary-directory fixtures only; no SSH, remote stage, graph, device or container execution.",
+  "subject": {
+    "script": "scripts/nanhai_plus_stage_runner_v7_candidate_v4.py",
+    "sha256": "fcf383e0b2818416b003de626366296c1328ad90b807d2058e3f467ba4526d5a",
+    "runner": "scripts/nanhai_plus_native_graph_v7.py",
+    "runner_sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+    "runner_bytes": 41813,
+    "runner_local_mode": "0644",
+    "runner_remote_mode": "0444",
+    "local_env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718"
+  },
+  "local_commands": [
+    {
+      "argv": ["python3", "-B", "scripts/nanhai_plus_stage_runner_v7_candidate_v4.py", "--static-check"],
+      "rc": 0,
+      "observed_status": "STATIC_CANDIDATE_ONLY",
+      "observed_destination": "/data/source/.nanhai-plus-opaleye-native/control/nanhai_plus_native_graph_v7.py",
+      "observed_runner_sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+      "observed_runner_bytes": 41813,
+      "ssh_executed": false
+    },
+    {
+      "argv": ["python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/static_fixtures.py"],
+      "rc": 0,
+      "observed_status": "LOCAL_FIXTURES_ONLY",
+      "passed_checks": 11,
+      "ssh_commands": 0,
+      "remote_staging_commands": 0,
+      "graph_commands": 0,
+      "device_commands": 0,
+      "container_commands": 0
+    }
+  ],
+  "review_findings": [
+    "Current local_env.md parser returns frozen config SHA, gz02 host, exact project/control destination and container-forbidden policy; script also hardchecks these values and ignores inherited NANHAI_* overrides.",
+    "--static-check reads only local authority/source; --stage is the only branch to stage_once and actual_transport. No code path calls the v7 runner or graph.",
+    "The fixed local release directory must be newly created and empty. UNKNOWN.json is O_EXCL/fsync before the sole bounded SSH attempt; an existing UNKNOWN prevents a second transport.",
+    "Remote stdin Python first checks owned, non-root, non-group/other-writable project/control path chain through directory fds and O_NOFOLLOW; it creates an O_EXCL/fsynced lease before any destination access.",
+    "Remote final is O_EXCL and read back by SHA, bytes, mode, UID and inode; no unlink or overwrite occurs. Failed/partial/timeout/malformed outcomes retain UNKNOWN and require read-only reconciliation.",
+    "observe requires matching remote schema/status, exact nonce, destination, source SHA/size/mode, lease digest/size/mode/UID, and parent-chain shape before marking STAGED_HASH_VERIFIED_NOT_EXECUTED."
+  ],
+  "required_before_stage": [
+    "Fresh read-only gz02 SSH host identity and exact project/control path, owner UID and modes; this review did not SSH.",
+    "Fresh read-only proof that fixed remote v4 lease and v7 final path are absent, plus a fresh empty local release directory; if either exists, do not replay v4.",
+    "Recheck exact script/source/local_env SHA and source mode immediately before separately authorized one-shot --stage invocation."
+  ],
+  "residual_assumptions": [
+    "Remote SSH endpoint and Python 3.12 availability, permissions, disk space and network transport were not observed in this review.",
+    "The lease coordinates cooperative writers; another same-UID actor can race or forge remote JSON. A separate read-only post-stage readback is needed before source admission or graph planning.",
+    "The local_env loader module is trusted project code but its own SHA is not pinned by this staging script.",
+    "A successful staging receipt proves only runner bytes placed in project control; v7 runner execution, seccomp/descendant gates, Soong graph, target compile and device results remain unproven."
+  ],
+  "release_dir_observed_at_review": "ABSENT",
+  "remote_state_observed": false,
+  "counts_changed": false
+}

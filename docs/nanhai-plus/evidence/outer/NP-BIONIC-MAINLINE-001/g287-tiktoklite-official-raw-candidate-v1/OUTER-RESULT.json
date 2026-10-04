@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai.g287.tiktoklite.outer_execution.v1",
+  "started_utc": "2026-10-04T11:36:37.339187+00:00",
+  "ended_utc": "2026-10-04T11:36:43.596036+00:00",
+  "elapsed_seconds": 6.257,
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-official-raw-candidate-v1/run.py",
+    "--execute"
+  ],
+  "child_pid": 11135,
+  "child_rc": 0,
+  "outer_timed_out": false,
+  "stdout_sha256": "d0296edfc0ddc694e04f2fcc948b5dbeb60c0bf90c7d62e748ca38880337f0a9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 209,
+  "stderr_bytes": 0,
+  "startup_credit": false,
+  "raw_accepted": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

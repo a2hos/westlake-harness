@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-g289-tiktoklite-static-v3-root-acceptance-v1",
+  "accepted_utc": "2026-10-04T12:03:48Z",
+  "decision": "ACCEPT_ONE_COMPLETE_HOST_STATIC_INVENTORY_ONLY",
+  "package": "com.tiktok.lite.go",
+  "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+  "raw_identity": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+    "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"
+  },
+  "actual_terminal": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/RESULT.json",
+    "sha256": "559a797b3232376c583a0078d4445e8d9c30d73637205359f218aaf93059bf8a",
+    "outer_rc": 0,
+    "inner_rc": 0,
+    "all_four_phases_rc0": true,
+    "all_eleven_checks": true
+  },
+  "independent_postrun": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3-peer-postrun-v1/REVIEW.json",
+    "sha256": "8b85544bbd364a31df1eb8026510ceb2a5948d038017eff33361c745c31dece0"
+  },
+  "inventory": {
+    "zip_entries": 2000,
+    "dex": 17,
+    "true_elf": 69,
+    "true_arm64_elf": 35,
+    "true_arm32_elf": 34,
+    "opaque_non_elf_so": 4,
+    "native_abis": ["arm64-v8a", "armeabi-v7a"]
+  },
+  "counts_before": {"raw_total": 80, "complete_static": 75, "dex_total": 166, "true_elf_total": 825, "qualified_blackbox_packages": 3, "cold_start": 0},
+  "counts_after": {"raw_total": 80, "complete_static": 76, "dex_total": 183, "true_elf_total": 894, "qualified_blackbox_packages": 3, "cold_start": 0},
+  "scope": "Host static inventory only; opaque wrapped .so loadability, Bionic process, installation, Activity and display remain unproven.",
+  "device_commands": 0,
+  "container_commands": 0
+}

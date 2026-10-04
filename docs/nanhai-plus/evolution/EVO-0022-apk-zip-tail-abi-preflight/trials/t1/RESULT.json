@@ -1,0 +1,49 @@
+{
+  "schema": "nanhai.evo22.local_pilot.v1",
+  "started_utc": "2026-10-04T11:43:26.021424+00:00",
+  "ended_utc": "2026-10-04T11:43:26.021424+00:00",
+  "elapsed_seconds": 0.066,
+  "argv": [
+    "python3",
+    "-",
+    "local ZIP central directory replay"
+  ],
+  "rc": 0,
+  "stdout": "two cases classified",
+  "stderr": "",
+  "cases": [
+    {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g287-tiktoklite-official-raw-candidate-v1/tiktok-lite-360961.apk",
+      "sha256": "bb333c2f453caf95158ff3274df5da94b5bfc9a7b2ab7e3510d6695e034ac41d",
+      "full_bytes": 35983713,
+      "central_directory_offset": 35864576,
+      "central_directory_to_eof_bytes": 119137,
+      "range_budget_if_supported": 184694,
+      "range_budget_fraction": 0.005133,
+      "observed_abis_from_central_directory": [
+        "armeabi-v7a"
+      ],
+      "preflight_decision": "REJECT_ARM32_ONLY"
+    },
+    {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk",
+      "sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+      "full_bytes": 117664325,
+      "central_directory_offset": 117563392,
+      "central_directory_to_eof_bytes": 100933,
+      "range_budget_if_supported": 166490,
+      "range_budget_fraction": 0.001415,
+      "observed_abis_from_central_directory": [
+        "arm64-v8a"
+      ],
+      "preflight_decision": "CONTINUE_FULL_GET_AND_VALIDATION"
+    }
+  ],
+  "network_requests": 0,
+  "apk_get": 0,
+  "ssh": 0,
+  "graph": 0,
+  "device": 0,
+  "container": 0,
+  "limitation": "Local complete files only; byte budgets are upper-bound estimates for fetching EOF/central-directory and require HTTP Range support. No live range request or partial ZIP parser was implemented."
+}

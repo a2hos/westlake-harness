@@ -1,0 +1,682 @@
+{
+  "entries_scanned": 2000,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 81859510,
+  "compressed_bytes": 48181773,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 8083516,
+        "sha256": "bd216633535d802e3e104973bcec92166b971dfe036d3a7ce32190d69b8db153"
+      },
+      {
+        "name": "classes10.dex",
+        "bytes": 90252,
+        "sha256": "58464432b647f5e18d7d97a0e14f62c1e482ab07e241b741510c1088b497870e"
+      },
+      {
+        "name": "classes11.dex",
+        "bytes": 476,
+        "sha256": "a9cd217203a0a646add19216a165945f065e2a936b5581c25a194c5e10f4e03d"
+      },
+      {
+        "name": "classes12.dex",
+        "bytes": 152652,
+        "sha256": "aa6cb7d7a36c6701cdba1ecdee458e0fea866ed97e93c3baaca1ac8f7ac79fd5"
+      },
+      {
+        "name": "classes13.dex",
+        "bytes": 732,
+        "sha256": "da47ac71d00261b6937bace5dfb3b47efc35f869639f1fe40f91679d584c3ded"
+      },
+      {
+        "name": "classes14.dex",
+        "bytes": 6584,
+        "sha256": "f0791bb99e1281713eb8c3c5843754d2db439130af3c8f42860f741a3a8c78a8"
+      },
+      {
+        "name": "classes15.dex",
+        "bytes": 109052,
+        "sha256": "62fe29e06ff7352b919288930e97a1054ef3ba1ff49209c2609fd70b0545b8b9"
+      },
+      {
+        "name": "classes16.dex",
+        "bytes": 652,
+        "sha256": "e00b291bf24bfa970f9a4ea2f482e20682e1c36db4e133f97efac0df10bda041"
+      },
+      {
+        "name": "classes17.dex",
+        "bytes": 732,
+        "sha256": "91b77ee8b84d11336160193319b9035307f767e1b4c922abdfe3564427ba9185"
+      },
+      {
+        "name": "classes2.dex",
+        "bytes": 8555712,
+        "sha256": "d658e9a34d09b681ffa58e6c295340ab70169c2934008b1bee7df1903ffd342e"
+      },
+      {
+        "name": "classes3.dex",
+        "bytes": 7978700,
+        "sha256": "ec46451b679127d86d5b65ba30796a84dbe03de4a8ddfa6d1ee5541022c424e3"
+      },
+      {
+        "name": "classes4.dex",
+        "bytes": 720,
+        "sha256": "8733aa3880ab2736e3453e21765e4c7f9779fa30598031b195b7dce398218fdd"
+      },
+      {
+        "name": "classes5.dex",
+        "bytes": 732,
+        "sha256": "96810319569e4dd1409de2217e17e068be32de50713af1a1cb71fd7bf42e3dd6"
+      },
+      {
+        "name": "classes6.dex",
+        "bytes": 217772,
+        "sha256": "30b54864f99c9f2c7186e90d943e55696519a0891be04cf266dfeaa2f3dc739e"
+      },
+      {
+        "name": "classes7.dex",
+        "bytes": 952520,
+        "sha256": "91f6b493cf6ed11efafcfbadb5b0b2190a56ba653c40365635fd177b67b5ad41"
+      },
+      {
+        "name": "classes8.dex",
+        "bytes": 732,
+        "sha256": "4f7eca7a1566a354769f37f5cdf515dbf7e47085bd3adc0c20445b53d5cc4059"
+      },
+      {
+        "name": "classes9.dex",
+        "bytes": 732,
+        "sha256": "b45ba85cf57c54ed065c71c67df02d66333629a796d2d64e1b731cea82339dc8"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/libCepEngine.so",
+        "bytes": 288800,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6151428133b062253f8bc0d447e3dcbc494a0d39444bc217f219e6e7e22c3c9d"
+      },
+      {
+        "name": "lib/arm64-v8a/libTTMachineCore.so",
+        "bytes": 438128,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "9e2ed4d0643c88e60eaeae15dcfc2aa5ca63069f21314936fb5cb8212d878074"
+      },
+      {
+        "name": "lib/arm64-v8a/libavmdlp2pv2.so",
+        "bytes": 2087144,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "cbc6cb32b4a058cd0b925d3b66fd7f037794318c37d6dc65de2da0bd2dcff217"
+      },
+      {
+        "name": "lib/arm64-v8a/libbdvideouploader.so",
+        "bytes": 772232,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "0f4d8479b201294669b457db016afcfacb19057a4f2a5fc1eb4844975d3fb817"
+      },
+      {
+        "name": "lib/arm64-v8a/libbreakpad_client.so",
+        "bytes": 38736,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4d76eb8b2f14f6da3d3614f2b103636d19411fbe318cc8262a88606700553af0"
+      },
+      {
+        "name": "lib/arm64-v8a/libbytennwrapper.so",
+        "bytes": 51232,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b5eb55d1ffcd548a8be9ddec0d0d59db78f488aad3632932b6b4fb2b814d95ec"
+      },
+      {
+        "name": "lib/arm64-v8a/libbytevc1enc.so",
+        "bytes": 1220792,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3bb995e0d6c2a3ecaef0d4304d6001e3d099742c6fa6d5fdb7c430afa60a364b"
+      },
+      {
+        "name": "lib/arm64-v8a/libconfigcenter.so",
+        "bytes": 71720,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "29c33875bf2433e8ae2559fc558c0c0e83e8d689b2de8695df4dda4b01dcaecf"
+      },
+      {
+        "name": "lib/arm64-v8a/libflipped.so",
+        "bytes": 10064,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "8e5346baa621e0db676a940cbc85671e4f4b55a39fd5344ca03449b38af96fb3"
+      },
+      {
+        "name": "lib/arm64-v8a/libflock-lib.so",
+        "bytes": 5848,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "51aa3dae8255c413502744260fe99291910afb385822b21038e520310ab71289"
+      },
+      {
+        "name": "lib/arm64-v8a/libgunda.so",
+        "bytes": 22744,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2866120a9ca414879ac11fda63e2b67b55b696b3f26ce8916726dffbace85f36"
+      },
+      {
+        "name": "lib/arm64-v8a/libhelios_bm.so",
+        "bytes": 14328,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "bde1101518baf1e02f948900da57b887a62b8e6299503e78fbfa096a8e49bf35"
+      },
+      {
+        "name": "lib/arm64-v8a/libjarvis-base.so",
+        "bytes": 5672,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "21cd02fd07f22768e7dcbbf3799833b4471aef492dd82568e7cf08e0e043da6a"
+      },
+      {
+        "name": "lib/arm64-v8a/libkomprese-decompressor.so",
+        "bytes": 15224,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "bd7a9388f21c6ce11b3cce6069ba5a4fc5bfae8ec81fdef10cbc72c34647aa0d"
+      },
+      {
+        "name": "lib/arm64-v8a/libkrypton.so",
+        "bytes": 1330112,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6b4b333af60be01bf7b37edb6bcd90c83e4e3c2192780729fcbddbda89bc01e2"
+      },
+      {
+        "name": "lib/arm64-v8a/liblock-opt.so",
+        "bytes": 14232,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "8ec50fb5d002e05eb7210b8561c165e4c7bf03dff98487d3e4f4007e20478ff7"
+      },
+      {
+        "name": "lib/arm64-v8a/liblynx_krypton.so",
+        "bytes": 26536,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ae6f2dca710256179e5be4281ed28b70b9d0c23fea4fd96f353146a72d9d35ae"
+      },
+      {
+        "name": "lib/arm64-v8a/libmonitorcollector-lib.so",
+        "bytes": 309656,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "9cff04eef3acb92bd7fb9ef298f109b109374d185299ddbcdea9c1d3c9290951"
+      },
+      {
+        "name": "lib/arm64-v8a/libnpth.so",
+        "bytes": 102952,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "27c72ba0e29314845e8daeed8b351720163e5740382c56f82096405266d9345f"
+      },
+      {
+        "name": "lib/arm64-v8a/libnpth_dl.so",
+        "bytes": 30656,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "d5932a682403e410bd751fcf73dbb21f12b49d75623b8b91683bacba0acf6b65"
+      },
+      {
+        "name": "lib/arm64-v8a/libnpth_dumper.so",
+        "bytes": 57544,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "764c76eaa105ae3b23a31425bb82358b4819c633252dbe7eeaa8894986889e36"
+      },
+      {
+        "name": "lib/arm64-v8a/libnpth_fp_unw.so",
+        "bytes": 10064,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ec7833306b85d94b94d1032c524bf5472b459742265df07b26e1dc5fa755b647"
+      },
+      {
+        "name": "lib/arm64-v8a/libnpth_tls_monitor.so",
+        "bytes": 15560,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "960fc51b854acc434fb0fd26f5a1312ef4631ff2e094bb24b73002d44b92ec90"
+      },
+      {
+        "name": "lib/arm64-v8a/liborbuculum.so",
+        "bytes": 1096328,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "81647320c202da6df46da82d319bfdf39ca43a664803cbe72457e217664e7e51"
+      },
+      {
+        "name": "lib/arm64-v8a/liborbuculumadapter.so",
+        "bytes": 67784,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "870d690b80546ef5c3eeb4287e6e612dd146a26da882dfb4f38ebe00654cc648"
+      },
+      {
+        "name": "lib/arm64-v8a/libpns_ttmachine_adapter.so",
+        "bytes": 317696,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "563f55b9a5cd9d90927f919de806e329e4854d2c8ebe03d87eea305126fa7725"
+      },
+      {
+        "name": "lib/arm64-v8a/libpumbaa-network.so",
+        "bytes": 38944,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6df2f9018dd2d69a4952ba0a2a2d04ce378f09259ac54a25943a687fe8b8cc4c"
+      },
+      {
+        "name": "lib/arm64-v8a/librex.so",
+        "bytes": 268328,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "120cef5f212be7f2ee06e958a4f0b4c02c607f2ecab98888dc64f51b51eebfaf"
+      },
+      {
+        "name": "lib/arm64-v8a/libshadowhook_nothing.so",
+        "bytes": 1112,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f2cc6a6f94d7361be915daafff1d25b7b3af34972e7308ac540982cfd608bd32"
+      },
+      {
+        "name": "lib/arm64-v8a/libsscronet.so",
+        "bytes": 4271704,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f7000c71974907a217011f9530ac61ef39032566d9695828d50ecd3991538aaf"
+      },
+      {
+        "name": "lib/arm64-v8a/liburiparser.so",
+        "bytes": 96128,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b13d50cb4bf39c2f2287b7ca57435a2f442ff9efbf54e16196f1553462b40347"
+      },
+      {
+        "name": "lib/arm64-v8a/libwcdb.so",
+        "bytes": 788416,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "0d6d7783942ea70d9fdcd00163b749a0533f7eb19100ccccce8afa2b3b746ff0"
+      },
+      {
+        "name": "lib/arm64-v8a/libxquic.so",
+        "bytes": 229944,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3be9c4a179a46411c66051a516342e3e24769f590eadafcf108c7f7f3ce88819"
+      },
+      {
+        "name": "lib/arm64-v8a/libxquicclient.so",
+        "bytes": 186392,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "087a4cf0f5e76f166190a939d13ba0280e62b41861daa12a47b9e0e86c95e97f"
+      },
+      {
+        "name": "lib/arm64-v8a/libzoin.so",
+        "bytes": 30624,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "09678bbe2c7f1d610a9df3901905bab6e446109a82c5547e43cb619a8a0c1e9d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libCepEngine.so",
+        "bytes": 186028,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "c281864e7d7f0a4413a42f1a16e94e83aa413de789a4700fb4578d0ebe313dda"
+      },
+      {
+        "name": "lib/armeabi-v7a/libTTMachineCore.so",
+        "bytes": 322352,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "46cef7f362f955ea5db6a50f103b48d616bf6754407fc0e78d1dd4ac0d490927"
+      },
+      {
+        "name": "lib/armeabi-v7a/libavmdlp2pv2.so",
+        "bytes": 1107724,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7e6524c2107dc0cdfc8b16a1516deff337d7929a1d86ae01cd3edbfe8c5888c6"
+      },
+      {
+        "name": "lib/armeabi-v7a/libbdvideouploader.so",
+        "bytes": 583392,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b70229cd1ff81555223a0f436a6b22a403bff80a46cf0ff89a65f0f2f939e676"
+      },
+      {
+        "name": "lib/armeabi-v7a/libbreakpad_client.so",
+        "bytes": 42568,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "2a5134ad171aab754c8dd563c2464662988889bf22f8529508d26e4540307fe5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libbytennwrapper.so",
+        "bytes": 38488,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "f108257e309956394d0ca75ead5993ca7cbccf3ed8989d208432c705f86f659c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libbytevc1enc.so",
+        "bytes": 994780,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "5c653e0383ca6c84ea256848a39ecf3d539e8e10e5401382f9a6d01edf98832b"
+      },
+      {
+        "name": "lib/armeabi-v7a/libconfigcenter.so",
+        "bytes": 59056,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "a456c5a32dfb19b112756ea98c8ed699a12750f4dc0fdebc94f8777c05db15f0"
+      },
+      {
+        "name": "lib/armeabi-v7a/libflipped.so",
+        "bytes": 9756,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "157b8bc78235f954c8937667505d4b826c3b90232c56f26490df87da7c484deb"
+      },
+      {
+        "name": "lib/armeabi-v7a/libflock-lib.so",
+        "bytes": 9708,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "cc210218505943bdb4a4324fb87f3903f98f74551600369106c03de80b83c686"
+      },
+      {
+        "name": "lib/armeabi-v7a/libgunda.so",
+        "bytes": 14064,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b4a7e67af2d7ffc31165c4df105378ef095451a3946489f392d6f45cb360396e"
+      },
+      {
+        "name": "lib/armeabi-v7a/libhelios_bm.so",
+        "bytes": 13972,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "0470b0850827e1955de754b8567236f938dcc44a044b3b536efb5b4c4cae34b5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libjarvis-base.so",
+        "bytes": 5516,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "96911ae4fea60f0b097afdd65c3ca172a3713fcf64c88b40b1f31157c7b09323"
+      },
+      {
+        "name": "lib/armeabi-v7a/libkomprese-decompressor.so",
+        "bytes": 16216,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "0c9d7482e16bc943c21b768fd0b701bb5ebc076b9aa2deb4b43a1622f6ef944c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libkrypton.so",
+        "bytes": 915656,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "d1906f8a4e88ee5b9b393cd7d9477bfd248e1a379a47b80fcb0c666faf898ccf"
+      },
+      {
+        "name": "lib/armeabi-v7a/liblock-opt.so",
+        "bytes": 13952,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "a598128cdb6ae760f541877ba55a99de6a0194b017c6a16141d5cd0b1d5368c5"
+      },
+      {
+        "name": "lib/armeabi-v7a/liblynx_krypton.so",
+        "bytes": 30272,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "42945326ad9d60035a37372cfc1942dafc165237e6d901037e40dd05d58776ab"
+      },
+      {
+        "name": "lib/armeabi-v7a/libmonitorcollector-lib.so",
+        "bytes": 178024,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "90568eb2da31cd1d6114d3565eda12a3f439855bdfe4a6ebb8c7db14eaaf8426"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnpth.so",
+        "bytes": 63440,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "db8f8abed81eff93ebb05784a5a4e7fe0de6284a6d83b1ff88ee1fde2de9dc33"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnpth_dl.so",
+        "bytes": 26204,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "ae797191588f6e5a05be20bd825de2086f0b40f15e02d6e3250f3aac00e3010d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnpth_dumper.so",
+        "bytes": 40596,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "3e1043245ece48873b9e61bdb62d6db19907bda43049b4b289d1963aaec458e0"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnpth_tls_monitor.so",
+        "bytes": 11924,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "854210c31ae141c98e5e6a1ef3ee40dcb80eba9d0fe5453554176fbe037a58b0"
+      },
+      {
+        "name": "lib/armeabi-v7a/liborbuculum.so",
+        "bytes": 686020,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "fa7d601312ea0ca2d56e21acecdfdd7c8633ae58bfdcbb3f7988d8507cf3dccc"
+      },
+      {
+        "name": "lib/armeabi-v7a/liborbuculumadapter.so",
+        "bytes": 38628,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "869af58dc5c94eba0957b506613aacd23fdd7ced1d1577313e16a2ceb874a418"
+      },
+      {
+        "name": "lib/armeabi-v7a/libpns_ttmachine_adapter.so",
+        "bytes": 243520,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "1d78a815a9d0d09307b302d56658da79670c4a25542fe4baf7cd26d7da2a9f9f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libpumbaa-network.so",
+        "bytes": 26200,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "52cd4fcaa34480f1fad2dd28dff97b4e1ff64dd848a02e65bfb273711e95de19"
+      },
+      {
+        "name": "lib/armeabi-v7a/librex.so",
+        "bytes": 243412,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e5d22d6286be9896f9c4750b7ea426f377489b2919e3bccde4ac0796ff9c2a40"
+      },
+      {
+        "name": "lib/armeabi-v7a/libshadowhook_nothing.so",
+        "bytes": 704,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6975ae37551113e93937b5f5d924378ed91b6f7d97d8f2dd8fd0851e65a1168f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libsscronet.so",
+        "bytes": 2759456,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "ac308c3eef494548017a69e9beb2e392d931cd09e5abd201ef7f124fd3a43c6e"
+      },
+      {
+        "name": "lib/armeabi-v7a/liburiparser.so",
+        "bytes": 75376,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "5c0a15ee126a2a0ab997a9ea2b52e63e7206f22271ec14a790c446c8c30cfc8b"
+      },
+      {
+        "name": "lib/armeabi-v7a/libwcdb.so",
+        "bytes": 575136,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "0e9d96f5775cd794d8616603e99e6e30bfea753bbbab1ddbbce7106a7d52bfbe"
+      },
+      {
+        "name": "lib/armeabi-v7a/libxquic.so",
+        "bytes": 170352,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "be2e7002255666e2be744a029d0e243170ad1e27f2ceb8f9dbe470645dafdf33"
+      },
+      {
+        "name": "lib/armeabi-v7a/libxquicclient.so",
+        "bytes": 120500,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e849631f7110ada4f729cf23c31d10bf41c68631fba5522534f973d644d0ea50"
+      },
+      {
+        "name": "lib/armeabi-v7a/libzoin.so",
+        "bytes": 22148,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7cc9a57a34b4d7743a94489c26f57fa7ae4161281b4537896ad97875588cf16d"
+      }
+    ],
+    "packed_so": [
+      {
+        "name": "lib/arm64-v8a/libpost_video_base.so",
+        "bytes": 4018533,
+        "abi": "arm64-v8a",
+        "sha256": "918c7e80d15ed27923c628e0e747d93c1ecfe56a6ea1643ccbfd3b848736f2fd",
+        "header_hex": "7f4b4f4d0100000079b8f899b8e9d207"
+      },
+      {
+        "name": "lib/arm64-v8a/libtiktok.so",
+        "bytes": 4056524,
+        "abi": "arm64-v8a",
+        "sha256": "2e00776bfc57434a97c0dd1f8fbb05ee909253731d72f5a8ecbee6ff249e6719",
+        "header_hex": "7f4b4f4d0100000079b8f899e8d3e901"
+      },
+      {
+        "name": "lib/armeabi-v7a/libpost_video_base.so",
+        "bytes": 4033230,
+        "abi": "armeabi-v7a",
+        "sha256": "635ca8a8dd632d1b5c5fc482342e68816678c736b5d590380765abd090bbf53e",
+        "header_hex": "7f4b4f4d0100000079b8f899d8fac105"
+      },
+      {
+        "name": "lib/armeabi-v7a/libtiktok.so",
+        "bytes": 3863436,
+        "abi": "armeabi-v7a",
+        "sha256": "eab00ee4f2e7484715e0eb652711b6b0f1f2e1b932f01cb8dd4f8abdf383e2f3",
+        "header_hex": "7f4b4f4d0100000079b8f8999088a201"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

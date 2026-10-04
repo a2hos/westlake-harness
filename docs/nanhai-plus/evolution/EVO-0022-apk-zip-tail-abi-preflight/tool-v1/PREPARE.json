@@ -1,0 +1,83 @@
+{
+  "schema": "nanhai.evo22.range_tool_candidate.v1",
+  "status": "LOCAL_FIXTURE_ONLY_NETWORK_PROBE_NOT_EXECUTED",
+  "prepared_utc": "2026-10-04T12:08:23.534334+00:00",
+  "source_evolution": "EVO22 local ZIP tail ABI preflight pilot; this is a separate bounded tool-development package, not a new reflection or promotion",
+  "script": {
+    "path": "docs/nanhai-plus/evolution/EVO-0022-apk-zip-tail-abi-preflight/tool-v1/range_probe.py",
+    "sha256": "26aa76c43a79047973c9b0003856ab63b6e8158cb1e988ce012c46ab1d3b93c8",
+    "bytes": 8773
+  },
+  "fixture": {
+    "path": "docs/nanhai-plus/evolution/EVO-0022-apk-zip-tail-abi-preflight/tool-v1/fixture.py",
+    "sha256": "ac748ef478dc6fb95cdb430911320b0a0244b1c68a878a292337c138086f8844",
+    "receipt": "docs/nanhai-plus/evolution/EVO-0022-apk-zip-tail-abi-preflight/tool-v1/FIXTURE-RESULT.json",
+    "receipt_sha256": "a162f46a20d6cd7cd046ae16f2d24cd7ae0a87403cf345cae048169f8f659d67",
+    "rc": 0,
+    "cases": [
+      "changed_etag",
+      "g284_retained_arm64",
+      "g292_hypothetical_arm32_only",
+      "malformed_directory",
+      "range_ignored_200",
+      "truncated_range"
+    ]
+  },
+  "target": {
+    "url": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk",
+    "expected_length": 190235503,
+    "strong_etag": "\"e1628f42066cb5c669fa96ddaaf618a3\"",
+    "source": "G292 frozen official page/HEAD candidate; no APK bytes yet"
+  },
+  "mechanism": "Explicit --probe-g292 only: pinned HTTPS host/path, verified TLS, HEAD identity, exact tail Range with If-Range, EOCD and bounded central-directory Range, 206+exact Content-Range/length/strong ETag/no content encoding drift. No redirect handling and never a full GET. ZIP64, multi-disk, malformed, changed validator, ignored Range or over-budget directory yields UNKNOWN_FALLBACK. Positive ABI/no-native only says continue full GET checks; raw_admitted always false.",
+  "byte_budget": {
+    "max_aggregate_response_accounted": 1048576,
+    "max_body_read": 786432,
+    "max_header_accounted": 65536,
+    "head_and_ranges_only": true,
+    "wire_limit_caveat": "Application read plus accounted headers is capped below 1 MiB; HTTP/TLS may buffer bytes before close, so exact on-wire byte count requires external network accounting. No response body is read when server answers 200 to a Range request."
+  },
+  "fixture_results": {
+    "changed_etag": {
+      "decision": "UNKNOWN_FALLBACK",
+      "response_bytes_accounted": 167236
+    },
+    "g284_retained_arm64": {
+      "decision": "CONTINUE_FULL_GET_CHECKS_ARM64_DIRECTORY_OBSERVED",
+      "response_bytes_accounted": 167236
+    },
+    "g292_hypothetical_arm32_only": {
+      "decision": "REJECT_ARM32_ONLY_STRUCTURAL_CANDIDATE",
+      "response_bytes_accounted": 66069
+    },
+    "malformed_directory": {
+      "decision": "UNKNOWN_FALLBACK",
+      "response_bytes_accounted": 66069
+    },
+    "range_ignored_200": {
+      "decision": "UNKNOWN_FALLBACK",
+      "response_bytes_accounted": 512
+    },
+    "truncated_range": {
+      "decision": "UNKNOWN_FALLBACK",
+      "response_bytes_accounted": 167235
+    }
+  },
+  "noarg": {
+    "argv": [
+      "python3",
+      "-B",
+      "docs/nanhai-plus/evolution/EVO-0022-apk-zip-tail-abi-preflight/tool-v1/range_probe.py"
+    ],
+    "rc": 2,
+    "network_requests": 0
+  },
+  "actions": {
+    "network_requests": 0,
+    "full_apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  },
+  "next": "Independent review of code/fixture and byte-bound semantics before any explicit --probe-g292 network call; a positive preflight never bypasses complete APK hash, manifest and signer gates."
+}

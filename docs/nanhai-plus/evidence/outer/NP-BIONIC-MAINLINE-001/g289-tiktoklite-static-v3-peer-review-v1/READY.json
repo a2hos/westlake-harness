@@ -1,0 +1,9 @@
+{
+  "schema": "g289-tiktoklite-static-v3-peer-ready-v1",
+  "verdict": "GO_ONE_LOCAL_STATIC_INVENTORY",
+  "runner_sha256": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8",
+  "inputs_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+  "root_release_sha256": "887a344997faab5eedc481f329dee10da75b41cef232ee12005ba1d9eebbcda2",
+  "review_sha256": "850254782f31ff43e1ce87327ef838329f02ee432d9a589d7234540d54e67fd7",
+  "scan_executed": false
+}

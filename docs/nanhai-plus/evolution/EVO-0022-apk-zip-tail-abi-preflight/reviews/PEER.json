@@ -1,0 +1,22 @@
+{
+  "schema": "nanhai.evo22.peer_review.v1",
+  "observation": [
+    "G287 terminal receipt reports package com.tiktok.lite.go versus frozen com.zhiliaoapp.musically.go, armeabi-v7a only, 35,983,713 bytes GET; postrun root admitted terminal failure only.",
+    "G279 read-only SSH preflight rc0 observed project/control 0775 and stopped before lease or stage; this supports ordering cheap checks but is not part of selected ZIP mechanism.",
+    "Local ZIP-directory replay classified G287 reject and G284 continue."
+  ],
+  "inference": "ABI rejection can be derived from ZIP central-directory filenames without fetching APK file bodies if HTTP Range is reliable.",
+  "hypothesis": "A bounded live 206-range implementation can save at least 99% transfer for a G287-like ARM32-only asset.",
+  "unknown": [
+    "TikTok CDN byte-range support and content stability",
+    "actual request count, wall time and bytes of a remote partial ZIP parser",
+    "whether metadata or selected central directory contains enough information for exact package identity; this proposal does not claim it"
+  ],
+  "recommendation": "Keep as pilot only. Implement one bounded range parser in a separately reviewed package; test G287 negative, G284 positive, malformed/truncated/changed-ETag controls before using it to skip any GET. Full-payload hash, ZIP CRC, manifest/package and signer checks remain required for positive candidates.",
+  "not_proven": [
+    "no live range savings",
+    "no raw/static/blackbox/startup/device credit",
+    "no remote G279 permission resolution"
+  ],
+  "causal_limit": "G287 full GET was 3.481 s, so network savings could be modest on a fast CDN; primary measurable benefit is fewer payload bytes and less candidate intake work."
+}

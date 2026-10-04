@@ -1,0 +1,32 @@
+{
+  "schema": "g288-local-fixture-v2",
+  "status": "PASS",
+  "runner_sha256": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+  "page_sha256": "e0244c0dd015b11bd33b21894575d9c50a7864300cf75e293dd922dbd81aa3af",
+  "head_sha256": "30745657a2554d90cdae2cec240c32ae92e4e8c29de0bf98ef325d8738858099",
+  "card": {
+    "type": "lite",
+    "link": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+    "version": "36.9.61",
+    "size_label": "46.2MB",
+    "title": "TikTok Lite - Faster and Smaller"
+  },
+  "cases": [
+    "AST",
+    "OFFICIAL_CARD",
+    "BOTH_VARIANTS_DISTINCT",
+    "HEAD_EXACT",
+    "EXACT_VERSION_CODE",
+    "EXACT_VERSION_NAME",
+    "WRONG_CODE_REJECTED",
+    "WRONG_NAME_REJECTED",
+    "ALTERNATE_REJECTED",
+    "NO_ARG_CLOSED",
+    "ONE_APK_GET_SITE",
+    "ZIP_ABI_PACKAGE_CERT_GATES",
+    "OBSERVATION_HASHES"
+  ],
+  "apk_get_count": 0,
+  "device_count": 0,
+  "container_count": 0
+}

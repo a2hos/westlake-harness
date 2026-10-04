@@ -1,0 +1,7 @@
+{
+  "schema": "g288-tiktoklite-hyphen-peer-ready-v1",
+  "verdict": "NO_GO_CURRENT_V1_ONE_SHOT_GET",
+  "runner_sha256": "6dc96c89c20857aba7ecf8b81181e5bb8383f3992f3719267b16ee3b21af6ede",
+  "review_sha256": "a135631ef7515be0cd1c2c8a520f2492d947faf45754b5d722a7ca910f185560",
+  "network_requests_by_peer": 0
+}

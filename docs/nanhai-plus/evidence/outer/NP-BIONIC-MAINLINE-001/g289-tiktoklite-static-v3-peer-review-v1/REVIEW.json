@@ -1,0 +1,36 @@
+{
+  "schema": "g289-tiktoklite-static-v3-independent-release-review-v1",
+  "verdict": "GO_ONE_LOCAL_STATIC_INVENTORY",
+  "reviewed_at_utc": "2026-10-04T12:00:46.920379+00:00",
+  "runner_sha256": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8",
+  "inputs_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+  "root_release_sha256": "887a344997faab5eedc481f329dee10da75b41cef232ee12005ba1d9eebbcda2",
+  "raw_root_sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+  "candidate_prepare_sha256": "1a01551b04e331161b72d798c60029ec5aac855f4764418e6a6835a2481f7bfa",
+  "candidate_fixture_sha256": "2695bb9850fec34a4a20f8c15d8a18d4fed384dc07e774fbf63b591b69b2c4f2",
+  "independent_fixture_sha256": "2695bb9850fec34a4a20f8c15d8a18d4fed384dc07e774fbf63b591b69b2c4f2",
+  "diff_sha256": "7e155f9b9c8dd96e1773441d54e4f029607bef03b1455b119e976f687c8c2a23",
+  "review_scope": "One bounded local static inventory of retained exact G288/G290 supplemental APK. No network, device, container, startup or canonical count authority.",
+  "checks": {
+    "exact_diff": "v3 INPUTS.json, common.py and scan_phase.py are byte-identical to independently reviewed v2; run.py changes only add hardcoded static release path/SHA/schema/decision and validator, v2 source/peer hashes and v3 peer check, replacing None sentinel before output creation. Four scan phases and result calculation are unchanged.",
+    "root_raw": "G290 receipt is exact frozen SHA ffd25a75..., schema/decision, package com.tiktok.lite.go, version 360961/36.9.61, payload path/bytes/SHA and mixed ABIs. Runner independently hardcodes and checks it against current INPUTS.",
+    "static_release": "Actual root release SHA 887a3449... and schema/decision match runner constants. Validator pins exact APK SHA/bytes, G290 receipt SHA/path, phase order zip/metadata/elf/dex, outer/phase limits 1350/120/180/600/600, one attempt, parallel1, retries0, no network/device/container. reviewed_v2 hashes must match actual v2 INPUTS/common/scan_phase/run and independent peer, with current v3 INPUTS/common/scan_phase equal to v2.",
+    "peer_binding": "Runner checks separate sibling REVIEW.json schema/verdict and exact current runner, INPUTS and release SHA before creating phases/tmp/apk-view. This receipt supplies those exact top-level fields; it is not a scanner result.",
+    "negative_fixtures": "Independent copied fixture PASS for raw/root/release hashes, wrong root decision/package/version/payload, wrong release decision/phase/attempt/network/APK/raw/limit/v2 input hash. Before this receipt existed, independent copied --execute returned rc2 V3_INDEPENDENT_PEER_REVIEW_PENDING with no phase or output directory.",
+    "input_immutability": "Fixture independently rehashed retained 48413684-byte APK SHA 37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0, pinned scanner sources, venv manifest and readelf target/alias. Runner retains full pre/post guard.",
+    "inventory_semantics": "69 true ELF are scanned by scanner.read_elf; 4 7fKOM .so remain opaque. Mixed arm64-v8a and armeabi-v7a is structural ABI evidence, not runtime loadability."
+  },
+  "pre_execution_state": {
+    "candidate_started_exists": false,
+    "candidate_result_exists": false,
+    "candidate_phases_exists": false,
+    "candidate_tmp_exists": false,
+    "candidate_apk_view_exists": false,
+    "peer_denial_rc": 2,
+    "scan_phases_by_reviewer": 0,
+    "network_requests_by_reviewer": 0,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "release_limit": "This GO permits only exact v3 SHA via project env loader, one bounded local scan under outer watchdog. Preserve raw per-phase commands/results and postguards; do not count static completion until independent postrun and root review. A repeated or ambiguous run requires read-only reconciliation."
+}

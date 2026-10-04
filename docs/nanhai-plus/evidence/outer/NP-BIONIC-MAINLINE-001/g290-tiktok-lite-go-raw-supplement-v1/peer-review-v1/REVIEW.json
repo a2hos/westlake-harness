@@ -1,0 +1,81 @@
+{
+  "schema": "g290-tiktok-lite-go-independent-exact-byte-raw-supplement-review-v1",
+  "reviewed_utc": "2026-10-04T11:53:03.439401+00:00",
+  "verdict": "GO_EXACT_BYTE_SUPPLEMENTAL_RAW_CANDIDATE_ONLY",
+  "admission_authority": "root later; this peer review changes no canonical counts",
+  "scope": "Read-only independent review of retained G288 APK and frozen receipts; no network, GET, device, container, registry or count edit.",
+  "inputs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/CANDIDATE.json",
+      "sha256": "51f1a9ccc1c8fe1cba4d60f76acb5b782dbb987bdf60520f0653448e34af4a70",
+      "bytes": 5217
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/VERIFICATION.json",
+      "sha256": "4679186d7298f7cee1d35962cc7f1d393e9f3cad550e45f42e2e56cd1cefc7a5",
+      "bytes": 3874
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/FIXTURE.json",
+      "sha256": "1684c8504ae0b0f8d7d73d1a068cc89e24ece6486d49b2a1e7873be4f0b8124a",
+      "bytes": 784
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/RESULT.json",
+      "sha256": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b",
+      "bytes": 10519
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/ROOT-TERMINAL-ACCEPTANCE.json",
+      "sha256": "6f987810e57527ebaab9b9a835a36f9943cdb167276fc6969e5aab15946f0e7b",
+      "bytes": 1396
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-v2-peer-postrun-v1/REVIEW.json",
+      "sha256": "138e28de50de5e013b0218d87aed82d60cf8fe40f259907421496a43f7a17d87",
+      "bytes": 7182
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktok-lite-go-source-scout-v1/RESULT.json",
+      "sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc",
+      "bytes": 3058
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+      "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+      "bytes": 1631520
+    }
+  ],
+  "actual_apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "matches_g288_g290": true
+  },
+  "independent_checks": {
+    "g288_terminal_preserved": "G288 RESULT is TERMINAL_FAILED with package mismatch; ROOT-TERMINAL-ACCEPTANCE accepts failure only and raw delta zero. Outer rc0 means receipt closure, not raw admission.",
+    "source_chain": "Raw G288 page body SHA matches RESULT; encoded \\u002F slash normalization yields exact Lite card/CDN URL twice. Page, HEAD, GET commands each rc0 HTTP200 TLS0 no redirects; HEAD has one Content-Length 48413684 and APK MIME; GET recorded exactly 48413684 bytes.",
+    "zip": "Reviewer independently opened retained APK: 2000 entries, testzip None, one AndroidManifest.xml; lib ABI directories arm64-v8a and armeabi-v7a.",
+    "manifest": "Raw G288 badging stdout SHA matches RESULT and reports actual com.tiktok.lite.go, code 360961, name 36.9.61, min 21, target 34, mixed ARM64/ARM32 native-code.",
+    "signature": "Raw G288 signer stdout SHA matches RESULT; v2/v3 true, one signer, observed cert SHA d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27. This is an observed signer, not independently publisher-pinned.",
+    "registry": "Frozen REGISTRY.json SHA 289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb has 526 records and no com.tiktok.lite.go or com.zhiliaoapp.musically.go exact package. Scoped docs search found this SHA only in G288/G289/G290 candidate/static references, no prior accepted-raw admission receipt. G287 has same actual package but different SHA and terminal failure; not a distinct package credit.",
+    "source_scout": "Scout identifies actual Play id=com.tiktok.lite.go and its market listing, while saying no public complete source was established in bounded search. It does not authenticate exact APK bytes or prove universal source nonexistence; blackbox/mainstream qualification remains separate."
+  },
+  "proven": [
+    "Retained exact bytes, structural ZIP, actual manifest identity and observed signature are internally consistent with official page/HEAD/GET channel receipts.",
+    "No frozen registry or scoped accepted-raw duplicate for exact package/SHA was found."
+  ],
+  "not_proven": [
+    "Publisher-published artifact SHA or independent publisher certificate anchor; observed local hash must not be presented as publisher-attested.",
+    "Complete static inventory, blackbox/mainstream qualification, runtime loadability of two non-ELF wrapped arm64 .so paths, startup or device acceptance.",
+    "An external global ledger beyond the frozen registry and scoped project receipts."
+  ],
+  "decision_boundary": "GO for root to consider one supplemental raw exact-byte admission under actual package com.tiktok.lite.go only. Preserve G288 terminal failure and original com.zhiliaoapp.musically.go identity. At most one artifact/package count after root global dedup; no count changes by this review.",
+  "review_actions": {
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_edits": 0
+  }
+}

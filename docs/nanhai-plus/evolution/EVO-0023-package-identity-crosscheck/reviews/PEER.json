@@ -1,0 +1,22 @@
+{
+  "schema": "nanhai.evo23.peer_review.v1",
+  "observations": [
+    "G287 earlier actual Lite package com.tiktok.lite.go; G288 PREPARE expected com.zhiliaoapp.musically.go.",
+    "G288 terminal mismatch was real, G290 later accepted the same useful downloaded bytes for actual package, and G291 separately qualified that package.",
+    "G279 mode preflight was NO_GO for 0775 before stage and gives an ordering example, but its permission resolution is outside EVO23.",
+    "Local trial rc0 in 0.029097 s identified G288 conflict and G284 exact registered/runner package match."
+  ],
+  "inference": "Candidate identity conflict could have been exposed at freeze time with existing local receipts; the actual transfer did not need to be declared useless or G288 relabeled successful.",
+  "hypothesis": "Future task packets with a package conflict will avoid at least one wrong-target terminal/review generation by routing to explicit actual-package discovery or separate-package intake before dispatch.",
+  "unknown": [
+    "Whether future official variants share product branding but legitimately change Android package",
+    "Actual operator time saved in a future live packet",
+    "Whether a matching prior package predicts next payload package"
+  ],
+  "causal_limit": "This retrospective local pilot cannot prove saved wall time. The 289 s G288-to-G290 interval includes review and decision work, not a pure avoidable cost.",
+  "recommendation": "Keep pilot; apply only to new frozen candidates with independently linked same-product package evidence. Conflict is a hold, not automatic package substitution or raw acceptance. Measure future conflict detections, valid false positives, and terminal package-mismatch count.",
+  "not_proven": [
+    "No G288 history or canonical count changes",
+    "No device, build, graph, startup, or publisher-byte verification"
+  ]
+}

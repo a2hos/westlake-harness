@@ -1,0 +1,84 @@
+{
+  "schema": "nanhai.evo22.range_tool_local_fixture.v1",
+  "argv": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evolution/EVO-0022-apk-zip-tail-abi-preflight/tool-v1/fixture.py"
+  ],
+  "started_utc": "2026-10-04T12:08:05.093366+00:00",
+  "ended_utc": "2026-10-04T12:08:05.182779+00:00",
+  "elapsed_seconds": 0.0896,
+  "rc": 0,
+  "stdout_sha256": "ff4c4c3633ebd1bc001863225fbbc3abcb4d739f4e9c7f613bdf43a53ae64812",
+  "stdout_bytes": 1705,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "script_sha256": "26aa76c43a79047973c9b0003856ab63b6e8158cb1e988ce012c46ab1d3b93c8",
+  "fixture_sha256": "ac748ef478dc6fb95cdb430911320b0a0244b1c68a878a292337c138086f8844",
+  "result": {
+    "canonical_edits": 0,
+    "cases": {
+      "changed_etag": {
+        "decision": "UNKNOWN_FALLBACK",
+        "full_apk_get": false,
+        "raw_admitted": false,
+        "reason": "Unknown: object validator/encoding drift",
+        "remote_body_bytes_read": 166468,
+        "remote_header_bytes_accounted": 768
+      },
+      "g284_retained_arm64": {
+        "decision": "CONTINUE_FULL_GET_CHECKS_ARM64_DIRECTORY_OBSERVED",
+        "entries": 1411,
+        "full_apk_get": false,
+        "observed_abis": [
+          "arm64-v8a"
+        ],
+        "raw_admitted": false,
+        "remote_body_bytes_read": 166468,
+        "remote_header_bytes_accounted": 768
+      },
+      "g292_hypothetical_arm32_only": {
+        "decision": "REJECT_ARM32_ONLY_STRUCTURAL_CANDIDATE",
+        "entries": 3,
+        "full_apk_get": false,
+        "observed_abis": [
+          "armeabi-v7a"
+        ],
+        "raw_admitted": false,
+        "remote_body_bytes_read": 65557,
+        "remote_header_bytes_accounted": 512
+      },
+      "malformed_directory": {
+        "decision": "UNKNOWN_FALLBACK",
+        "full_apk_get": false,
+        "raw_admitted": false,
+        "reason": "Unknown: central directory entry missing",
+        "remote_body_bytes_read": 65557,
+        "remote_header_bytes_accounted": 512
+      },
+      "range_ignored_200": {
+        "decision": "UNKNOWN_FALLBACK",
+        "full_apk_get": false,
+        "raw_admitted": false,
+        "reason": "Unknown: Range not honored",
+        "remote_body_bytes_read": 0,
+        "remote_header_bytes_accounted": 512
+      },
+      "truncated_range": {
+        "decision": "UNKNOWN_FALLBACK",
+        "full_apk_get": false,
+        "raw_admitted": false,
+        "reason": "Unknown: range length mismatch",
+        "remote_body_bytes_read": 166467,
+        "remote_header_bytes_accounted": 768
+      }
+    },
+    "container": 0,
+    "device": 0,
+    "full_apk_get": 0,
+    "g284_apk_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "g292_fixture_role": "synthetic ZIP under exact future G292 scenario; not downloaded G292 bytes",
+    "network_requests": 0,
+    "status": "LOCAL_FIXTURE_PASS"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai.g287.tiktoklite.raw.root_release.v1",
+  "released_utc": "2026-10-04T11:36:23.899308+00:00",
+  "decision": "AUTHORIZE_ONE_BOUNDED_OFFICIAL_CANDIDATE_GET_ONLY",
+  "script_sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+  "prepare_sha256": "2906a06e2c471f8ac5fd39c0195059a04e4cfa69fd8ffeaf65d454e8b4946950",
+  "peer_sha256": "4731074926bc94f3eaa16cb8e4e3c404f0fe1748e82b6153120dfbf92d60dfac",
+  "exact_argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-official-raw-candidate-v1/run.py",
+    "--execute"
+  ],
+  "outer_watchdog_seconds": 270,
+  "expected_cdn_content_length": 35983713,
+  "publisher_sha256_available": false,
+  "publisher_signer_anchor_available": false,
+  "raw_admission": false,
+  "blackbox_qualification": false,
+  "startup_credit": false,
+  "device_authorized": false,
+  "container_authorized": false
+}

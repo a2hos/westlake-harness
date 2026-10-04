@@ -1,0 +1,8 @@
+{
+  "schema": "g288-tiktoklite-hyphen-v2-peer-ready-v1",
+  "verdict": "GO_ONE_BOUNDED_OFFICIAL_CHANNEL_CANDIDATE_GET",
+  "runner_sha256": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+  "review_sha256": "885492df1a696be5ae19e71faca0b9ee9e08b747585efe86354031ae09f464f5",
+  "fixture_status": "PASS",
+  "apk_get_by_peer": 0
+}

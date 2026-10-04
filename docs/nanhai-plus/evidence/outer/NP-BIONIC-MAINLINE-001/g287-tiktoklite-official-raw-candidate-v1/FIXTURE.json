@@ -1,0 +1,23 @@
+{
+  "schema": "g287-tiktoklite-local-fixture-v1",
+  "status": "PASS",
+  "script_sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+  "cases": [
+    "AST_PARSE",
+    "ESCAPED_OFFICIAL_URL_ACCEPTED",
+    "ALTERNATE_LITE_CANNOT_SATISFY_EXACT_URL",
+    "HEAD_IDENTITY_PARSE",
+    "DUPLICATE_HEAD_REJECTED",
+    "START_EXCLUSIVE_REPLAY_REJECTED",
+    "RESULT_ATOMIC_NO_REPLACE",
+    "FOUR_BOUNDED_COMMAND_SITES",
+    "PAGE_AND_APK_BYTE_CAPS_STATIC",
+    "NO_CURL_RETRY_STATIC",
+    "EXPLICIT_EXECUTION_GUARD",
+    "NO_INVENTED_DIGEST_OR_VARIANT_FALLBACK"
+  ],
+  "network_requests": 0,
+  "apk_get": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

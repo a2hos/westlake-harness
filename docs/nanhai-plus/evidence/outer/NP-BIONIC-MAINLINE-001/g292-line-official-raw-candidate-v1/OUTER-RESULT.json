@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai-g292-line-outer-result-v1",
+  "command": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/run.py",
+    "--execute"
+  ],
+  "elapsed_seconds": 23.0,
+  "outer_rc": 0,
+  "outer_timeout": false,
+  "stdout_bytes": 203,
+  "stdout_sha256": "096f6c62e8c1b9b95d5007ecd460085fb2b95214e0d94a759d841643255dd032",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_exists": true,
+  "start_exists": true,
+  "device_commands": 0,
+  "container_commands": 0
+}

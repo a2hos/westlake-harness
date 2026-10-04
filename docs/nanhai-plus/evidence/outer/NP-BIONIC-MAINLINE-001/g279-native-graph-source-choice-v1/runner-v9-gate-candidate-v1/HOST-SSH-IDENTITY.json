@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-04T11:34:16.839491+00:00",
+  "bytes": 1584576,
+  "mode": 493,
+  "network_commands": 0,
+  "path": "/usr/bin/ssh",
+  "schema": "nanhai-g279-local-ssh-identity-readonly-v1",
+  "sha256": "17542914a3fb55e7efeb35a90d594a21c84bf6a4cfe1fc8ddff5606dc2658fc3",
+  "ssh_commands": 0,
+  "stable": true,
+  "uid": 0
+}

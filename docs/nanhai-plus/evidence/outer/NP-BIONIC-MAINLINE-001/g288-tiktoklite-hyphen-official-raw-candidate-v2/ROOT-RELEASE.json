@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai-g288-tiktoklite-hyphen-v2-root-release-v1",
+  "released_utc": "2026-10-04T11:45:38Z",
+  "decision": "GO_ONE_BOUNDED_CANDIDATE_GET_ONLY",
+  "runner_sha256": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+  "prepare_sha256": "eea973e246c9b6ea0d18fc3a850645e581b6e4d30ac34ffe9eb6bdd2ff966d51",
+  "fixture_sha256": "d55c36dadde188339ff3222cd07d07a0908c89fc3ef03e723d58be4d6be2b181",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-v2-peer-review-v1/REVIEW.json",
+    "sha256": "885492df1a696be5ae19e71faca0b9ee9e08b747585efe86354031ae09f464f5"
+  },
+  "command": ["python3", "-B", "scripts/nanhai_plus_env.py", "--run", "python3", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/run.py", "--execute"],
+  "outer_timeout_seconds": 270,
+  "source_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+  "expected_bytes": 48413684,
+  "accepted_raw_delta_before_postrun_review": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,150 @@
+{
+  "schema": "g288-tiktoklite-hyphen-v2-independent-postrun-review-v1",
+  "at_utc": "2026-10-04T11:47:24.537224+00:00",
+  "terminal_verdict": "ACCEPT_TERMINAL_FAILURE_ONLY_NO_CURRENT_RAW_ADMISSION",
+  "terminal": {
+    "status": "TERMINAL_FAILED",
+    "error": "package mismatch",
+    "outer_rc": 0,
+    "outer_timeout": false,
+    "meaning": "outer rc0 means terminal RESULT was written, not that candidate passed"
+  },
+  "exact_evidence_sha256": {
+    "start": "8b53c813b17cd686925ac560b24fa04def6e561a524c36991cd8e0b802c9f1f6",
+    "result": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b",
+    "outer_result": "44da182dd63e6dcf7b162b252ccb2548a94d4326e32b7142f8d75c9c20325288",
+    "runner": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+    "page_body": "24eedeb2ae742f72062bee4bc49cc9940b885ef540e0d04e2fd48a06b1779bdc",
+    "head_headers": "a094fdf987034bae345f6cb9be98f11a1ea91ce235de7a5e82b0b7316eeb6cd2",
+    "badging_stdout": "22188f4453cac69ad872584f0000a962a15b12ff994c1b359afeb6ae878d70aa",
+    "signature_stdout": "1a0423c30007d85ea4caef29740d7489ab11c1f30de7bb3799a97e6df400ecb6"
+  },
+  "channel": {
+    "official_page_http_tls_redirects": {
+      "http": "200",
+      "tls": "0",
+      "bytes": "398815",
+      "redirects": "0"
+    },
+    "official_card": {
+      "type": "lite",
+      "link": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+      "version": "36.9.61",
+      "size_label": "46.2MB",
+      "title": "TikTok Lite - Faster and Smaller"
+    },
+    "head_http_tls_redirects": {
+      "http": "200",
+      "tls": "0",
+      "bytes": "0",
+      "redirects": "0"
+    },
+    "head_length": 48413684,
+    "head_mime": "application/vnd.android.package-archive",
+    "get_http_tls_redirects": {
+      "http": "200",
+      "tls": "0",
+      "bytes": "48413684",
+      "redirects": "0"
+    },
+    "page_head_get_rc": [
+      0,
+      0,
+      0
+    ],
+    "one_get_variant": "hyphen only"
+  },
+  "payload": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "observed_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "zip_entries": 2000,
+    "zip_bad_entry": null,
+    "manifest_count": 1,
+    "abi_library_counts": {
+      "arm64-v8a": 37,
+      "armeabi-v7a": 36
+    },
+    "arm32_names_missing_from_arm64": [],
+    "arm64_nonstandard_so_headers": [
+      {
+        "path": "lib/arm64-v8a/libpost_video_base.so",
+        "prefix_hex": "7f4b4f4d"
+      },
+      {
+        "path": "lib/arm64-v8a/libtiktok.so",
+        "prefix_hex": "7f4b4f4d"
+      },
+      {
+        "path": "lib/armeabi-v7a/libpost_video_base.so",
+        "prefix_hex": "7f4b4f4d"
+      },
+      {
+        "path": "lib/armeabi-v7a/libtiktok.so",
+        "prefix_hex": "7f4b4f4d"
+      }
+    ]
+  },
+  "manifest": {
+    "actual_package": "com.tiktok.lite.go",
+    "version_code": "360961",
+    "version_name": "36.9.61",
+    "min_sdk": "21",
+    "target_sdk": "34",
+    "native_code": "arm64-v8a, armeabi-v7a",
+    "frozen_expected_package": "com.zhiliaoapp.musically.go",
+    "first_failure": "package mismatch"
+  },
+  "signature": {
+    "apksigner_rc": 0,
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "signers": 1,
+    "observed_certificate_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+    "same_observed_cert_as_g287": true,
+    "publisher_certificate_anchor": null,
+    "publisher_artifact_digest": null
+  },
+  "classification": {
+    "current_raw_accepted_delta": 0,
+    "current_static_pass_delta": 0,
+    "current_blackbox_qualified_delta": 0,
+    "current_startup_delta": 0,
+    "arm64_package_structural_compatibility": "SUPPORTED: arm64-v8a has 37 .so paths; 35 verify ELF64/AArch64; all 36 arm32 lib names have arm64 counterparts; mixed ABI alone is not disqualifying. Two arm64 .so paths have non-ELF 7f4b4f4d headers, so loadability/runtime support remains unproven.",
+    "publisher_byte_identity": "UNPROVEN; official page/CDN/TLS establishes observed channel provenance, not independently authenticated publisher SHA/cert."
+  },
+  "supplemental_new_generation_assessment": {
+    "verdict": "ELIGIBLE_FOR_SEPARATE_READ_ONLY_EXACT_BYTES_ADMISSION_REVIEW",
+    "identity": "TikTok Lite website channel, manifest com.tiktok.lite.go, code 360961/name 36.9.61, exact received SHA 37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "conditions": [
+      "New generation must explicitly bind actual package com.tiktok.lite.go and this exact local APK SHA/bytes; no GET or replay of G288.",
+      "Read-only inspect retained bytes, source/page/HEAD/GET receipts, ZIP/Manifest, package/version/ABI and signature with independent review and registry duplicate check.",
+      "Label source provenance official-channel observed; do not equate it with the Play package com.zhiliaoapp.musically.go or publisher-attested bytes.",
+      "If admitted as distinct supplemental raw, count at most one exact package/artifact; no static-complete, blackbox or startup credit without separate evidence."
+    ],
+    "scout_context": {
+      "status": "ROOT_SCOUT_PROVIDED_PENDING_IMMUTABLE_RECEIPT; NOT_INDEPENDENTLY_REFETCHED_IN_THIS_REVIEW",
+      "play_listing_url": "https://play.google.com/store/apps/details?id=com.tiktok.lite.go",
+      "play_listing_reported": "TikTok Pte. Ltd.; 10M+ US downloads; supports mainstream distribution of actual manifest package, not identity of these APK bytes.",
+      "newsroom_url": "https://newsroom.tiktok.com/facts-matter-how-tiktok-protects-us-user-data/?lang=en",
+      "newsroom_reported": "TikTok describes controlled source access/proprietary boundary; not a complete source-availability audit for this exact APK.",
+      "oss_notice_url": "https://in.tiktok.com/legal/page/global/open-source/en",
+      "oss_notice_reported": "OSS notices exist; component-level openness does not make the full application source available.",
+      "qualification_effect": "Blackbox and overseas-mainstream classification remain separate pending immutable scout receipt and exact-package source review; no count awarded here."
+    }
+  },
+  "next_evidence": [
+    "Freeze new read-only intake candidate on retained APK and exact SHA, with expected actual package and mixed-ABI policy; peer review it before any registry/count change.",
+    "Bind the root scout immutable receipt for exact Play package, publisher/market reach and source-availability scope; assess blackbox/mainstream separately from raw channel provenance.",
+    "Seek independent publisher artifact digest or signer certificate anchor if publisher-authenticated official identity is required.",
+    "For ARM64 runtime claim, inspect packed non-ELF .so loading scheme and test only under separately authorized host/device gate; this review grants no execution."
+  ],
+  "review_actions": {
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "source_edits": 0
+  }
+}

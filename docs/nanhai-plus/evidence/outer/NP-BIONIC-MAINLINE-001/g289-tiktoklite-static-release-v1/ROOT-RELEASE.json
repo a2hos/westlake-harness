@@ -1,0 +1,28 @@
+{
+  "schema": "nanhai-g289-tiktoklite-static-root-release-v1",
+  "released_utc": "2026-10-04T11:57:37Z",
+  "decision": "AUTHORIZE_ONE_LOCAL_STATIC_INVENTORY_AFTER_SEPARATE_V3_PEER_REVIEW",
+  "target_package": "com.tiktok.lite.go",
+  "apk": {"bytes": 48413684, "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0"},
+  "root_raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+    "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"
+  },
+  "reviewed_v2": {
+    "inputs_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+    "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase_sha256": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+    "runner_sha256": "1a712fd0fa52175c8d3e1bafb49564e9bf75b3cb6cd73a7e315f291f43d980ec",
+    "independent_peer_sha256": "409dd2b1e0cc0584b8e01f333d7c7b80e13c9d81644e170dc9598b0ce415d635"
+  },
+  "phase_order": ["zip", "metadata", "elf", "dex"],
+  "limits_seconds": {"outer": 1350, "zip": 120, "metadata": 180, "elf": 600, "dex": 600},
+  "attempts": 1,
+  "parallel": 1,
+  "retries": 0,
+  "network_authorized": false,
+  "canonical_static_credit_before_postrun_review": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "condition": "V3 must actually check this release path/SHA/schema/decision and its APK/raw/INPUTS/common/scan_phase/limits, then pass independent peer review; this release does not authorize v2's hardclosed runner to execute."
+}

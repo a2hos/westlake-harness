@@ -1,0 +1,120 @@
+{
+  "schema": "g287-tiktoklite-independent-postrun-review-v1",
+  "at_utc": "2026-10-04T11:39:21.717114+00:00",
+  "verdict": "TERMINAL_FAILED_RETAIN_CANDIDATE_NO_ADMISSION",
+  "terminal": {
+    "result_status": "TERMINAL_FAILED",
+    "error": "package mismatch",
+    "outer_child_rc": 0,
+    "outer_timed_out": false,
+    "meaning": "Outer rc0 means runner wrote RESULT; it is not an APK acceptance pass."
+  },
+  "evidence": {
+    "start_sha256": "c5e3ea69252cb5c9386ad93a320dd5079c65061f199696c71aee904d585f3bfe",
+    "result_sha256": "f0a7c5ee9317b4e03d1c5c782ae558666a57ec3c0bd9fcf4ac60f9d183a528cd",
+    "outer_result_sha256": "897d74aa8cf3d8f8b776502751a544425076fe06be30fe9edfa1571dbf7196bc",
+    "runner_sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+    "raw_stream_sha256": {
+      "page.stdout.raw": "934e4649e568ed8692c222b87211bd2e20e73c053b426d9156859f99725a8c15",
+      "head.stdout.raw": "24e1953d0705fb49b6df5afcc2424186d73e1d42f25ced1fcac82ff6de099b5b",
+      "download.stdout.raw": "283679c6d327d3bc3c662e9e1e171b156c37a37b62285515ca561a3efd282976",
+      "badging.stdout.raw": "bbded158ce6a89fe7559492e0b8bd97a0bc92e9bf8069d72978306e89af781bf",
+      "signature.stdout.raw": "845cf3c3b89b411bdb2b9f7849e9acce7619096574f3409d233e3e9aa99e4fa2",
+      "page.body.raw": "3b987ef3217f7954a3ea9de157a05127c8d69e0dd30f7896b2cfc1348df97a78",
+      "head.headers.raw": "f5217a4786e7e675e6036305dc4a0a221ee04dbda5335e75a3b819d6af14362b"
+    }
+  },
+  "network": {
+    "page": {
+      "http": "200",
+      "tls": "0",
+      "bytes": "399279",
+      "redirects": "0"
+    },
+    "page_bytes": 399279,
+    "page_sha256": "3b987ef3217f7954a3ea9de157a05127c8d69e0dd30f7896b2cfc1348df97a78",
+    "exact_apk_link_present": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok_Lite_360961.apk",
+    "head": {
+      "http": "200",
+      "tls": "0",
+      "bytes": "0",
+      "redirects": "0"
+    },
+    "head_content_length": 35983713,
+    "head_content_type": "application/vnd.android.package-archive",
+    "download": {
+      "http": "200",
+      "tls": "0",
+      "bytes": "35983713",
+      "redirects": "0"
+    },
+    "all_three_command_rc": [
+      0,
+      0,
+      0
+    ],
+    "all_three_tls_verified": true,
+    "redirects": 0
+  },
+  "payload": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g287-tiktoklite-official-raw-candidate-v1/tiktok-lite-360961.apk",
+    "bytes": 35983713,
+    "observed_sha256": "bb333c2f453caf95158ff3274df5da94b5bfc9a7b2ab7e3510d6695e034ac41d",
+    "zip_entries": 1965,
+    "zip_bad_entry": null,
+    "manifest_count": 1,
+    "native_lib_abis": [
+      "armeabi-v7a"
+    ]
+  },
+  "badging": {
+    "command_rc": 0,
+    "package": "com.tiktok.lite.go",
+    "version_code": "360961",
+    "version_name": "36.9.61",
+    "min_sdk": "21",
+    "target_sdk": "34",
+    "native_code": "armeabi-v7a",
+    "runner_expected_package": "com.zhiliaoapp.musically.go",
+    "min_sdk_parser_gap": "Runner searches sdkVersion: but raw aapt2 emits minSdkVersion:, so min_sdk remained null; this would block later even after package gate correction."
+  },
+  "signature": {
+    "command_rc": 0,
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "signers": 1,
+    "observed_cert_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+    "observed_dn": "CN=Micro Cao, OU=ByteDance, O=ByteDance, L=Beijing, ST=Beijing, C=CN",
+    "publisher_cert_anchor": null,
+    "publisher_apk_sha256": null
+  },
+  "classification": {
+    "downloaded_candidate_file_count": 1,
+    "raw_accepted_delta": 0,
+    "static_pass_delta": 0,
+    "blackbox_qualified_delta": 0,
+    "startup_delta": 0,
+    "arm64_bionic_compatible": false,
+    "official_channel_link_observed": true,
+    "publisher_byte_identity_proven": false
+  },
+  "reasoning": [
+    "Exact official download page URL and TLS/CDN HEAD bind the received file to this observed delivery channel, but no independent publisher digest/cert anchor proves publisher byte identity.",
+    "APK is valid ZIP and signature verifies under observed cert, but package differs from pinned expected identity; runner stops with package mismatch.",
+    "Only armeabi-v7a native libraries are present; this is not an ARM64-native APK for the current ARM64 Bionic target. 32-bit support elsewhere is not established.",
+    "Tool postguard and APK after hash fields are absent because execution terminated before those statements; this peer independently rehashed retained APK but does not upgrade run status."
+  ],
+  "next_evidence": [
+    "Do not replay this START generation. Keep complete payload and raw receipts as failed candidate evidence.",
+    "For a new ARM64 candidate, first verify exact package/ABI from an official channel and independent publisher SHA or certificate anchor, then freeze a separate one-shot runner and peer review.",
+    "If considering this 32-bit package for a different target, establish explicit 32-bit ABI support and correct package/minSdk parser in a new generation; do not credit current ARM64 line."
+  ],
+  "review_actions": {
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "source_edits": 0
+  }
+}

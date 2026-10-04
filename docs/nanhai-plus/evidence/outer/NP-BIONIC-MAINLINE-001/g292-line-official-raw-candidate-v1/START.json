@@ -1,0 +1,10 @@
+{
+  "schema": "g292-line-raw-start-v1",
+  "at_utc": "2026-10-04T12:04:51.592447+00:00",
+  "status": "REMOTE_STATE_UNKNOWN_IN_PROGRESS",
+  "script_sha256": "a03647b4500c20787c6b2857288e942ba487ac897f4054a312acc6547311e4b9",
+  "page": "https://line-android-universal-download.line-scdn.net/line-apk-download.html",
+  "apk_url": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk",
+  "expected_head_bytes": 190235503,
+  "meaning": "If RESULT is absent, inspect; never replay this generation."
+}

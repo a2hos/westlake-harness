@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai-g290-tiktok-lite-go-root-raw-intake-v1",
+  "accepted_utc": "2026-10-04T11:53:20Z",
+  "decision": "ACCEPT_ONE_SEPARATE_OFFICIAL_CHANNEL_OBSERVED_SUPPLEMENTAL_RAW_APK",
+  "package": "com.tiktok.lite.go",
+  "version_code": 360961,
+  "version_name": "36.9.61",
+  "payload": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "native_abis": ["arm64-v8a", "armeabi-v7a"],
+    "observed_signer_cert_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/CANDIDATE.json",
+    "sha256": "51f1a9ccc1c8fe1cba4d60f76acb5b782dbb987bdf60520f0653448e34af4a70"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/peer-review-v1/REVIEW.json",
+    "sha256": "5f5131bf3efc33fb89d8973edee31da485f69839bf178b188b8649b5dc2461f7"
+  },
+  "source_scope": "TikTok official download page card to TikTok CDN, HTTP 200/TLS verified/no redirect; APK signature and exact received bytes verified. Publisher-published APK SHA/certificate anchor is unavailable, so publisher-attested byte identity is not claimed.",
+  "identity_boundary": "G288 remains TERMINAL_FAILED for expected com.zhiliaoapp.musically.go. G287 is the same actual package but a different ARM32-only failed artifact; no second package credit.",
+  "counts_before": {"raw_total": 79, "registered_raw": 74, "supplemental_raw": 5, "complete_static": 75, "qualified_blackbox_packages": 2, "cold_start": 0},
+  "counts_after": {"raw_total": 80, "registered_raw": 74, "supplemental_raw": 6, "complete_static": 75, "qualified_blackbox_packages": 2, "cold_start": 0},
+  "not_proven": "No complete static inventory, blackbox qualification, installed App, Activity, display, input or Bionic runtime proof.",
+  "device_commands": 0,
+  "container_commands": 0
+}

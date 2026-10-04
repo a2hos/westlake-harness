@@ -1,0 +1,13 @@
+{
+  "schema": "nanhai-evo23-root-closure-v1",
+  "reviewed_utc": "2026-10-04T12:00:53Z",
+  "decision": "ACCEPT_LOCAL_PILOT_ONLY_DO_NOT_PROMOTE",
+  "trial_sha256": "1c2063840dc98be89a777e8f4c91c1977ef98f404a86eab7aa2dcf8cffd976dd",
+  "peer_decision_sha256": "970703f2dc03a8a1908a6f03bb7347c76bec91a340a024b51526ecc49c6c2d30",
+  "accepted_scope": "Local prior-package crosscheck would flag G288 frozen identity conflict and preserve G284 matching control; no actual future pre-freeze trial or time savings measured.",
+  "next_test": "One prospective candidate with independent prior package evidence; verify conflict hold does not reject the intended official variant, and measure avoided terminal mismatch or review generations.",
+  "not_promoted_reason": "G288's downloaded bytes were useful to G290; retrospective byte-savings inference would be false.",
+  "canonical_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "g287-tiktoklite-independent-static-review-v1",
+  "reviewed_at_utc": "2026-10-04T11:35:42.075942+00:00",
+  "verdict": "GO_ONE_BOUNDED_GET",
+  "scope": "One isolated execution of frozen G287 runner solely to acquire and inspect a candidate; no raw admission, blackbox qualification, startup or device execution.",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-official-raw-candidate-v1",
+    "runner_sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+    "prepare_sha256": "2906a06e2c471f8ac5fd39c0195059a04e4cfa69fd8ffeaf65d454e8b4946950",
+    "fixture_sha256": "640b65dc18312769555c97107f0f92bbd9ca34017460f4f805d21a9919df351b"
+  },
+  "independent_fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-peer-review-v1/FIXTURE.json",
+    "status": "PASS",
+    "cases": [
+      "AST_PARSE",
+      "ESCAPED_OFFICIAL_URL_ACCEPTED",
+      "ALTERNATE_LITE_CANNOT_SATISFY_EXACT_URL",
+      "HEAD_IDENTITY_PARSE",
+      "DUPLICATE_HEAD_REJECTED",
+      "START_EXCLUSIVE_REPLAY_REJECTED",
+      "RESULT_ATOMIC_NO_REPLACE",
+      "FOUR_BOUNDED_COMMAND_SITES",
+      "PAGE_AND_APK_BYTE_CAPS_STATIC",
+      "NO_CURL_RETRY_STATIC",
+      "EXPLICIT_EXECUTION_GUARD",
+      "NO_INVENTED_DIGEST_OR_VARIANT_FALLBACK"
+    ],
+    "network_requests": 0,
+    "apk_get": 0
+  },
+  "checks": {
+    "environment": "Current local_env config SHA equals frozen 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718; project/evidence root and container=forbidden bindings match. Curl/aapt2/apksigner/java present and exact pinned SHAs match.",
+    "live_source_gate": "At runtime, HTTPS official page /download must return HTTP 200, TLS verification 0, no redirect, <=600000 body bytes, and contain exact underscore Lite APK URL. Alternate hyphen variant cannot satisfy exact URL. This was reviewed statically/local fixture; no live network request made by reviewer.",
+    "head_gate": "Fresh HEAD on same exact HTTPS CDN URL requires HTTP 200, TLS 0, no redirect, exactly one Content-Length=35983713 and one APK MIME. HEAD command max-time 20 and subprocess timeout 25.",
+    "network_bounds": "Page: curl max-time 25, max-filesize 600000, subprocess timeout 30 and post-size check. APK GET: exact URL, max-time 180, max-filesize 35983713, retry 0, no follow/resume, subprocess timeout 190; require download 200/TLS0/redirect0 and both transfer and file byte count exact. No fallback GET path.",
+    "one_shot": "Durable O_EXCL START precedes environment checks and HTTP. Existing START rejects replay. Terminal RESULT is link-created without replacement; failures and SIGTERM become TERMINAL_FAILED when RESULT can be written. Absent RESULT after START means UNKNOWN, no blind replay.",
+    "postchecks": "Staging must be new; observed APK SHA and final postguard, ZIP CRC and exactly one manifest, aapt2 package/version/min/target SDK, only arm64-v8a or no lib ABI, apksigner verify v2/v3, one signer and observed cert SHA; all tools have before/after SHA guards.",
+    "claim_boundary": "No publisher artifact digest or publisher certificate anchor exists. Computed SHA proves received bytes only; signature verification proves integrity under observed cert, not publisher attribution. Result sets raw_accepted=false, blackbox_qualified=false, overseas_mainstream_qualified=false and canonical_delta=0."
+  },
+  "limitations": [
+    "Official page binding is a runtime gate, not an independent publisher SHA/certificate proof.",
+    "HEAD header dump has no explicit file-size cap; curl/request timeouts bound duration, and no APK is admitted on abnormal HEAD or later failure.",
+    "This review did not run page, HEAD or APK network requests; live success and actual APK identity require post-run evidence review."
+  ],
+  "pre_execution_state": {
+    "candidate_start_exists": false,
+    "candidate_result_exists": false,
+    "network_requests_by_reviewer": 0,
+    "apk_get_by_reviewer": 0,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "acceptance_condition": "Execute only exact pinned runner SHA once under project environment loader and bounded outer deadline; preserve START, RESULT, raw command streams, payload and observed hashes for independent post-run review. Do not count raw or blackbox from this pre-review."
+}

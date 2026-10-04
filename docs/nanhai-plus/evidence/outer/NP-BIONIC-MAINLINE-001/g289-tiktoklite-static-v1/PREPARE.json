@@ -1,0 +1,65 @@
+{
+  "schema": "g289-tiktoklite-static-prepare-v1",
+  "prepared_utc": "2026-10-04T11:50:11.957282+00:00",
+  "status": "PREPARED_ONLY_RAW_IDENTITY_DECISION_PENDING_NO_SCAN",
+  "exact_apk": {
+    "registry_package_label": "com.tiktok.lite.go",
+    "record_id": null,
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "scope": "exact retained G288 observed official-channel bytes; supplemental raw identity decision pending",
+    "version_code": 360961,
+    "version_name": "36.9.61",
+    "abi_classification": "mixed arm64-v8a + armeabi-v7a; ARM64-compatible structural candidate, not ARM64-only"
+  },
+  "input_sha256": "088f27a3e570f4b9adc9ae2ce344171b1b0c357396a224f37b4bc3a8f6b28593",
+  "script_sha256": {
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+    "run.py": "c1d621e68433391928ee002b71a07bbcc47fb7693356aa2b8e4526e2c6e8f92d"
+  },
+  "fixture_script_sha256": "64db689b70bb3490c4a0e14bcbd86de537af6f0250e8041cd8b7a7a8773d41fe",
+  "fixture_result_sha256": "2ba83c75ff448b22553ede63cdadb7feeda5e0470dc85db2f8cb9dace91a3470",
+  "g288_actual_result_sha256": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b",
+  "g288_postrun_peer_sha256": "138e28de50de5e013b0218d87aed82d60cf8fe40f259907421496a43f7a17d87",
+  "product_source_scout_sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc",
+  "g285_phase_reference": {
+    "path": "../g285-elementx-static-v1",
+    "phases": [
+      "zip",
+      "metadata",
+      "elf",
+      "dex"
+    ],
+    "changed_for_this_apk": "dynamic DEX count; mixed ABI; classify 4 packed 7f4b4f4d .so as opaque and scan only 69 genuine ELF with scanner.read_elf"
+  },
+  "expected_structure": {
+    "zip_entries": 2000,
+    "lib_so_entries": 73,
+    "true_elf_entries": 69,
+    "packed_non_elf_so_entries": 4,
+    "native_abis": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ]
+  },
+  "abi_claim": "ARM64-compatible structural candidate, not ARM64-only; packed libraries and runtime loadability unresolved",
+  "execution_gate": {
+    "explicit_flag": "--execute",
+    "root_identity_receipt_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/ROOT-RAW-IDENTITY.json",
+    "root_identity_receipt_sha256": null,
+    "root_identity_status": null,
+    "meaning": "Current runner must stop before staging or phases; after root decision make a new input generation and peer review before execution."
+  },
+  "planned_command_not_run": "python3 scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v1/run.py --execute",
+  "scan_executed": false,
+  "device": 0,
+  "container": 0,
+  "canonical_delta": 0,
+  "claim_limits": [
+    "No raw admission, static completion, blackbox qualification, startup or device credit.",
+    "Expected ZIP and native counts derive from G288 postrun peer; scanner phases must independently verify.",
+    "Any packed non-ELF .so is opaque, never counted as a valid ELF; ARM64 runtime is not established."
+  ]
+}

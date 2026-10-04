@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai-g279-mode-correction-candidate-v1",
+  "status": "PREPARED_ONLY_PEER_REVIEW_REQUIRED_NO_CHMOD",
+  "target": "gz02:/data/source/.nanhai-plus-opaleye-native and its control child only",
+  "why": "Fresh read-only preflight saw both directories UID/GID 1000/1000 mode 0775, while staging v4 requires neither group nor other write; all eight existing control entries were UID1000. Current /data/source parent is UID1000 mode 0755 and has no POSIX ACL xattr.",
+  "prior_evidence": [
+    {"path": "../runner-v7-staging-candidate-v4/peer-preflight-v1/PREFLIGHT.json", "sha256": "61512fb379049069dcb24a4473f22a2c701345cc3646494d9f44bcaa0d75bf90"},
+    {"path": "../runner-v7-staging-candidate-v4/peer-preflight-v1/ACL-AUDIT.json", "sha256": "009d05f9a74ec380b1ebb70c1d8d5bf62bd8e0f935f7ccd30645d171648be906"}
+  ],
+  "script": {"path": "scripts/nanhai_plus_g279_mode_correction_v1.py", "sha256": "66fe59f520247a1d2b9c11da90e583d37d428418edf28874fdd59972e9c35d6b", "bytes": 10316},
+  "fixture": {"path": "fixture.py", "sha256": "32a1222eeb6f496c8b9b82dd06d416f96a45534bc2cd7eaf5df7fe5c19c08bd6", "rc": 0, "passed_checks": 10, "ssh_commands": 0, "chmod_commands": 0},
+  "static_check": {"argv": ["python3", "-B", "scripts/nanhai_plus_g279_mode_correction_v1.py", "--static-check"], "rc": 0, "status": "STATIC_CANDIDATE_ONLY", "env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718", "local_env_document_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3"},
+  "remote_preconditions": [
+    "Only non-root UID1000 on the pinned gz02 SSH host, current local_env project binding unchanged.",
+    "Open every parent and target as real directories through fd-relative O_DIRECTORY|O_NOFOLLOW; exact project (dev 64785, ino 29884417, uid/gid 1000/1000) and control (dev 64785, ino 29884418, uid/gid 1000/1000).",
+    "Both target modes exactly 0775; every ancestor non-group/other-writable; no POSIX access/default ACL xattr on any opened chain component.",
+    "Fixed v4 stage lease and v7 final are both absent immediately before mutation. If either appears, reject without chmod.",
+    "Parent chain identity and modes stable immediately before fchmod."
+  ],
+  "mutation_and_readback": [
+    "Exactly os.fchmod(control_fd, 0755), fsync(control_fd), os.fchmod(project_fd, 0755), fsync(project_fd). No mkdir, rename, unlink, chown, copy, source, output or configuration edit.",
+    "Reopen path chain with O_NOFOLLOW and compare pinned dev/inode/UID/GID and expected modes; inspect ACL and lease/final absence again. Return success only after both readbacks.",
+    "Durable O_EXCL local UNKNOWN before the sole SSH attempt; terminal O_EXCL receipt. Timeout, malformed remote output or partial chmod remains UNKNOWN or failed, with no automatic rollback or replay."
+  ],
+  "release_dir_exists": false,
+  "future_command_not_executed": "python3 -B scripts/nanhai_plus_g279_mode_correction_v1.py --correct",
+  "rollback_conditions": "No automatic rollback. If group-write is later proven necessary, first stop future staging/graph writers; recheck the same dev/inode/UID/GID, current modes 0755, ACL, fixed lease/final and active collaborators; obtain a separately reviewed reverse packet for exactly the two directories. If a lease/final exists or identity changed, reconcile read-only before deciding whether rollback is safe.",
+  "residual_risks": [
+    "Group AlexYang explicitly includes yue.chen and HanBingChen. No documented requirement for group write was found in the scoped G279 Markdown/reviews, but documentation absence and a point-in-time /proc scan do not prove they have no active or future writer.",
+    "Old out/tmp/staging remain 0775; correcting root/control only meets staging v4's narrow path gate, not graph output isolation or graph authorization.",
+    "A same-UID process can still race or replace names between distinct syscalls; fd/inode/readback reduce but do not eliminate this risk.",
+    "Changing directory mode is externally visible to collaborators. This candidate does not authorize doing so before independent peer review and owner decision."
+  ],
+  "executed": {"ssh": 0, "chmod": 0, "stage": 0, "graph": 0, "device": 0, "container": 0}
+}

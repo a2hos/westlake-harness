@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-peer-postrun-v1/ROOT-ACCEPTANCE.json",
+    "sha256": "25dfb5ea7bebff2ae5e3fd3642649b618bc3dec0e21dc8c6402486870a200a51",
+    "bytes": 1394
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/PREPARE.json",
+    "sha256": "eea973e246c9b6ea0d18fc3a850645e581b6e4d30ac34ffe9eb6bdd2ff966d51",
+    "bytes": 1805
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/ROOT-TERMINAL-ACCEPTANCE.json",
+    "sha256": "6f987810e57527ebaab9b9a835a36f9943cdb167276fc6969e5aab15946f0e7b",
+    "bytes": 1396
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/peer-preflight-v1/PREFLIGHT.json",
+    "sha256": "61512fb379049069dcb24a4473f22a2c701345cc3646494d9f44bcaa0d75bf90",
+    "bytes": 4005
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+    "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+    "bytes": 2139
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/ROOT-ADMISSION.json",
+    "sha256": "1e72e337b17dfdfe31f30d9dd0582041da496467d47db62fd726b32f327bfa80",
+    "bytes": 2165
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/run.py",
+    "sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+    "bytes": 13558
+  },
+  {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+    "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "bytes": 1631520
+  }
+]

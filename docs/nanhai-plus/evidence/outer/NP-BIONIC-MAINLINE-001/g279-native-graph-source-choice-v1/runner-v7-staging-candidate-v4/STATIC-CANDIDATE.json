@@ -1,0 +1,51 @@
+{
+  "schema": "nanhai-g279-v7-runner-staging-executable-candidate-v4",
+  "status": "STATIC_AND_LOCAL_FIXTURES_ONLY_NO_SSH_STAGE",
+  "script": {
+    "path": "scripts/nanhai_plus_stage_runner_v7_candidate_v4.py",
+    "sha256": "fcf383e0b2818416b003de626366296c1328ad90b807d2058e3f467ba4526d5a"
+  },
+  "runner": {
+    "path": "scripts/nanhai_plus_native_graph_v7.py",
+    "sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+    "bytes": 41813,
+    "mode": "0644"
+  },
+  "fixture_sha256": "0db185e96ad07158c80433f1e0a9b805c661989e8c6e5329a4e37aab129f1857",
+  "handoff_sha256": "3618d998033879e2b5638a5ef31a9f793774cc9c99ae1e01a44be6defdce8b6a",
+  "threat_model_sha256": "a18af56072f3b7b4bb27be16cba1dd31241a5d41c6548dbfd0967839e0fe7978",
+  "checks": [
+    {
+      "label": "static_check",
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_stage_runner_v7_candidate_v4.py",
+        "--static-check"
+      ],
+      "started_utc": "2026-10-04T11:35:20.272505+00:00",
+      "rc": 0,
+      "stdout_sha256": "4625a77b35492a911514810713800f702d01c86bb9a0f7a20f457e21f4f10791",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "local_fixtures",
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/static_fixtures.py"
+      ],
+      "started_utc": "2026-10-04T11:35:20.315984+00:00",
+      "rc": 0,
+      "stdout_sha256": "d66eb0963fc82a2b29835c983aa545fa75386e21068c981d246df1eb131274cf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "local_release_dir_exists": false,
+  "ssh_commands": 0,
+  "remote_staging_commands": 0,
+  "graph_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "independent peer review exact SHA, then fresh owner/path read-only facts and separately authorized one-shot staging-only release"
+}

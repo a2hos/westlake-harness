@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai-g291-tiktok-lite-go-blackbox-root-admission-v1",
+  "accepted_utc": "2026-10-04T11:56:18Z",
+  "decision": "ACCEPT_ONE_OVERSEAS_MAINSTREAM_BLACKBOX_PACKAGE_QUALIFICATION_ONLY",
+  "package": "com.tiktok.lite.go",
+  "version_code": 360961,
+  "version_name": "36.9.61",
+  "apk_bytes": 48413684,
+  "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/CANDIDATE.json",
+    "sha256": "17ec0fcbcfd587464fca1ab114c868244eaeaf9b6ee81e594bd23a39b4c2e093"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/peer-review-v1/REVIEW.json",
+    "sha256": "9d5a758d59781bd83e66431d4729a664da479a6f026063f79340c7f944997f50"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+    "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"
+  },
+  "criteria": {
+    "official_product_source": true,
+    "overseas_mainstream_market": true,
+    "official_unmodified_original_apk_version": true,
+    "no_project_source_modification": true
+  },
+  "source_boundary": "TikTok describes its mobile source as proprietary and accessible to approved inspectors under controlled access; OSS components are distinct. No public complete client source was found in the bounded review, but universal nonexistence is not claimed.",
+  "publisher_byte_boundary": "Official page/CDN delivery and APK signer were observed; no publisher-published digest or separate signing-certificate anchor was available for this historical build.",
+  "qualified_blackbox_packages_before": 2,
+  "qualified_blackbox_packages_after": 3,
+  "qualified_blackbox_startups_before": 0,
+  "qualified_blackbox_startups_after": 0,
+  "complete_static_pass": false,
+  "device_executed": false,
+  "cold_start_pass": false,
+  "scope": "One distinct exact-package qualification, no installed/Activity/display/input/Bionic runtime evidence."
+}

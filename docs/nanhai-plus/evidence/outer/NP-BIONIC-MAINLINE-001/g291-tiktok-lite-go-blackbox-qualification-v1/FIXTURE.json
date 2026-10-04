@@ -1,0 +1,19 @@
+{
+  "schema": "g291-tiktok-lite-go-qualification-fixture-v1",
+  "status": "PASS",
+  "cases": [
+    "ROOT_G290_SHA_PIN",
+    "ROOT_EXACT_RAW_IDENTITY",
+    "SOURCE_SCOUT_EXACT_PACKAGE",
+    "PLAY_BUCKET_NOT_US_ONLY",
+    "NO_INVENTED_PUBLISHER_ANCHOR",
+    "NO_COUNT_OR_STARTUP_CLAIM"
+  ],
+  "candidate_sha256": "17ec0fcbcfd587464fca1ab114c868244eaeaf9b6ee81e594bd23a39b4c2e093",
+  "root_raw_sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+  "source_scout_sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc",
+  "network_requests": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "canonical_edits": 0
+}

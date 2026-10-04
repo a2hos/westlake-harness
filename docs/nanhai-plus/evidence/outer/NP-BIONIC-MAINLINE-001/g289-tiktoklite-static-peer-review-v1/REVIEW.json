@@ -1,0 +1,55 @@
+{
+  "schema": "g289-tiktoklite-static-independent-prepared-review-v1",
+  "at_utc": "2026-10-04T11:52:00.973525+00:00",
+  "verdict": "GO_PREPARED_STATIC_CANDIDATE_ONLY_NO_EXECUTION",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v1",
+    "prepare_sha256": "7d6449ff7991b54b7f2d0982ffbc27a5bcc592e427f1375e128e53b2735901d2",
+    "inputs_sha256": "088f27a3e570f4b9adc9ae2ce344171b1b0c357396a224f37b4bc3a8f6b28593",
+    "script_sha256": {
+      "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+      "scan_phase.py": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+      "run.py": "c1d621e68433391928ee002b71a07bbcc47fb7693356aa2b8e4526e2c6e8f92d"
+    },
+    "fixture_sha256": "2ba83c75ff448b22553ede63cdadb7feeda5e0470dc85db2f8cb9dace91a3470"
+  },
+  "independent_fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-peer-review-v1/FIXTURE.json",
+    "sha256": "2ba83c75ff448b22553ede63cdadb7feeda5e0470dc85db2f8cb9dace91a3470",
+    "status": "PASS",
+    "checks": [
+      "AST",
+      "RETAINED_APK_EXACT_BYTES",
+      "SCANNER_SOURCE_SHA",
+      "VENV_MANIFEST_SHA",
+      "READELF_TOOL_SHA_AND_ALIAS",
+      "NO_RAW_IDENTITY_DECISION",
+      "NO_SCAN_OUTPUT",
+      "EXPLICIT_EXECUTE_GUARD",
+      "FOUR_PROVEN_PHASES",
+      "MIXED_ABI_AND_OPAQUE_SO_HONEST"
+    ],
+    "scan_executed": false
+  },
+  "checks": {
+    "retained_input": "Exact G288 retained APK is 48,413,684 bytes SHA256 37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0; one package label com.tiktok.lite.go, code 360961/name 36.9.61. G288 RESULT and independent postrun SHA match PREPARE.",
+    "read_only_zip_header_recount": "Independent ZIP read: 2000 unique entry names, CRC pass, one AndroidManifest.xml, 73 lib .so paths: 69 true ELF, 4 7fKOM opaque, 0 other; 17 DEX names; both arm64-v8a and armeabi-v7a. This is input characterization only, not scanner execution.",
+    "g285_adaptation": "common.py byte-identical to G285. G289 retains zip/metadata/elf/dex phases; ZIP classification adds packed_so 7fKOM with SHA/header rather than treating it as ELF, ELF phase calls scanner.read_elf only on 69 true ELF, metadata binds actual package/version/mixed ABIs, DEX count is dynamically checked against ZIP facts.",
+    "immutability": "Independent fixture rehashed all pinned scanner source files, venv manifest and readelf target/alias, exact APK and candidate scripts. Runner guard(full=True) pre/post checks sources, APK, venv and tool.",
+    "execution_gate": "Current root_acceptance sha256/status are null and referenced ROOT-RAW-IDENTITY.json absent. --execute checks this before phases/tmp/apk-view creation, so no current execution path. Explicit flag also required. Candidate STARTED/RESULT/phases/apk-view/tmp absent.",
+    "claims": "Runner terminal output is candidate only and explicitly denies startup/blackbox/count credit; mixed ABI is ARM64 structural compatibility, not arm64-only or runtime loadability. Opaque KOM libraries are counted separately."
+  },
+  "limitations": [
+    "This GO does not release scanner execution. A new generation must bind a concrete independently reviewed raw identity receipt with exact SHA/status and undergo peer review before --execute.",
+    "Current acceptance comparison uses status supplied by INPUTS; future release must require an explicit admitted status and trusted root receipt, not merely a self-consistent JSON pair.",
+    "Opaque KOM .so contents and runtime loading are unresolved; phase completion cannot count them as ELF or prove full native coverage.",
+    "No network, scan, device, container or canonical state action occurred in this review."
+  ],
+  "review_actions": {
+    "scan_executed": false,
+    "network_requests": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_delta": 0
+  }
+}

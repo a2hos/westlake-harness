@@ -1,0 +1,79 @@
+{
+  "schema": "g291-tiktok-lite-go-independent-blackbox-qualification-review-v1",
+  "reviewed_utc": "2026-10-04T11:56:06.693205+00:00",
+  "verdict": "GO_QUALIFICATION_ONLY",
+  "package": "com.tiktok.lite.go",
+  "version_code": 360961,
+  "version_name": "36.9.61",
+  "payload_sha256_independently_rehashed": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+  "payload_bytes_independently_measured": 48413684,
+  "inputs": [
+    {
+      "path": "docs/nanhai-plus/PORTFOLIO-GOAL.md",
+      "bytes": 8678,
+      "sha256": "9d5278932ff6d95533ec79e70a6d86d71007f6ecd95a438b2c98cf2dc4057b13"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/CANDIDATE.json",
+      "bytes": 6103,
+      "sha256": "17ec0fcbcfd587464fca1ab114c868244eaeaf9b6ee81e594bd23a39b4c2e093"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/LIMITS.md",
+      "bytes": 1752,
+      "sha256": "79fce15eb4883192ef37a7412547b06bf58f658b722dcf370be337a30ceadfb0"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/FIXTURE.json",
+      "bytes": 662,
+      "sha256": "7054855e8a05916f92da40e75207825789cf1ed44e05922fa79add8d324dd557"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+      "bytes": 2139,
+      "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/peer-review-v1/REVIEW.json",
+      "bytes": 5749,
+      "sha256": "5f5131bf3efc33fb89d8973edee31da485f69839bf178b188b8649b5dc2461f7"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktok-lite-go-source-scout-v1/RESULT.json",
+      "bytes": 3058,
+      "sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/RESULT.json",
+      "bytes": 10519,
+      "sha256": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/ROOT-TERMINAL-ACCEPTANCE.json",
+      "bytes": 1396,
+      "sha256": "6f987810e57527ebaab9b9a835a36f9943cdb167276fc6969e5aab15946f0e7b"
+    }
+  ],
+  "four_criteria": {
+    "official_product_source": "PASS_WITH_LIMIT: TikTok official help points to its download page; frozen page Lite card decodes to exact TikTok CDN URL, with page/HEAD/GET rc0 HTTP200 TLS0 and no redirects. Manifest is the same actual Lite product package. This proves observed official channel, not publisher-attested exact bytes.",
+    "overseas_use_and_market": "PASS_WITH_LIMIT: immutable source scout records English-US Google Play listing for exact id=com.tiktok.lite.go, publisher TikTok Pte. Ltd., 10M+ overall download bucket and Social category; US/Lite CDN path supports overseas availability. 10M+ is not US-only installs or active users, and the Play listing does not identify this historical APK SHA.",
+    "legal_original_package_and_version": "PASS_WITH_LIMIT: G290 root accepts one 48,413,684-byte, SHA 37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0 observed official-channel original APK under actual package/version. Reviewer rehashed identical retained bytes. ZIP/Manifest/v2-v3 signature were verified in G290 and G288 receipts. No publisher-published digest or independently anchored signer certificate is available.",
+    "no_project_source_or_apk_modification": "PASS_FOR_CURRENT_PAYLOAD: G288 one GET into isolated staging and G290 read-only verification bind the same exact SHA; no patched APK or project client source modification appears in this chain. This is evidence about current retained artifact, not a universal history claim."
+  },
+  "blackbox_source_boundary": "PASS_WITH_LIMIT: TikTok describes controlled inspection of proprietary full mobile source and separate OSS-component source obligations. Bounded scout found no public complete source for com.tiktok.lite.go; universal nonexistence is not proved. The current unchanged binary is a valid blackbox subject under this project qualification standard.",
+  "identity_and_duplicate_boundary": "G288 remains TERMINAL_FAILED for wrong expected com.zhiliaoapp.musically.go; G290 separate actual-package raw admission does not retroactively pass G288. G287 is same actual package with different failed ARM32-only bytes, not another qualified package. Do not borrow com.zhiliaoapp.musically.go market figures.",
+  "not_proven": [
+    "Exact APK bytes authenticated by a publisher-published SHA or certificate anchor",
+    "Current Play-delivered bytes equal historical 36.9.61 APK",
+    "Country-specific installs or active usage",
+    "Complete static inventory, ARM64 packed-library loadability, install, true cold Activity startup, display, input, restoration or Bionic runtime success"
+  ],
+  "count_boundary": "Peer GO permits root to consider at most one qualified overseas mainstream blackbox package. This receipt changes no canonical count and grants zero qualified starts; current candidate reports blackbox delta 0 and cold-start delta 0.",
+  "review_actions": {
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_edits": 0
+  }
+}

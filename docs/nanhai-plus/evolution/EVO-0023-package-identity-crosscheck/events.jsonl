@@ -1,0 +1,3 @@
+{"utc": "2026-10-04T11:59:03Z", "event": "candidate", "improvement": "pre-freeze crosscheck of intended package against independent same-product Manifest or registry package"}
+{"utc": "2026-10-04T11:59:59.350104+00:00", "event": "local_pilot", "path": "trials/t1/RESULT.json", "rc": 0}
+{"utc": "2026-10-04T12:00:26.268955+00:00", "event": "peer_review", "path": "reviews/PEER.json", "decision": "pilot_not_promoted"}

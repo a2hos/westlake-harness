@@ -1,0 +1,52 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T12:07:05Z",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "original_goal_session_budget_preserved": true,
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "monitor_pid_observed_live": 54898,
+  "counts": {
+    "raw_apk_accepted": 80,
+    "registered_raw": 74,
+    "supplemental_raw": 6,
+    "complete_static": 76,
+    "dex_entries": 183,
+    "true_elf_entries": 894,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "actual_results": {
+    "g287_tiktok_lite_arm32_terminal": {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-peer-postrun-v1/ROOT-ACCEPTANCE.json", "sha256": "25dfb5ea7bebff2ae5e3fd3642649b618bc3dec0e21dc8c6402486870a200a51"},
+    "g288_hyphen_wrong_frozen_package_terminal": {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2/ROOT-TERMINAL-ACCEPTANCE.json", "sha256": "6f987810e57527ebaab9b9a835a36f9943cdb167276fc6969e5aab15946f0e7b"},
+    "g290_actual_package_raw_supplement": {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json", "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"},
+    "g291_tiktok_lite_blackbox_qualification": {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g291-tiktok-lite-go-blackbox-qualification-v1/ROOT-ADMISSION.json", "sha256": "1e72e337b17dfdfe31f30d9dd0582041da496467d47db62fd726b32f327bfa80"},
+    "g289_tiktok_lite_complete_static": {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/ROOT-ACCEPTANCE.json", "sha256": "3226229866c70aebd63782a02094e0355661c71b4106300f93a51390157eb9b5"},
+    "g292_line_arm32_terminal": {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/ROOT-TERMINAL-ACCEPTANCE.json", "sha256": "8ece531fc7c66338b05a1d50bcd9340246177daa3c91200b6750f82c3757d8b7"}
+  },
+  "g279_staging_preflight_no_go": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/ROOT-PREFLIGHT-ACCEPTANCE.json",
+    "sha256": "5d2cc7f780fc988611302bc7f0d0c0a1b30c57e787bb986414a30db9119e8b41",
+    "reason": "project/control are UID1000 mode 0775; other group members have write access; no stage/graph yet",
+    "choice_pending": "narrow project-only 0755 correction versus private sibling root migration"
+  },
+  "evolution": {
+    "evo22_local_pilot_not_promoted": {"path": "docs/nanhai-plus/evolution/EVO-0022-apk-zip-tail-abi-preflight/reviews/ROOT-CLOSURE.json", "sha256": "774c27c6eadb84d0d1a85aca503e46a10730691298d5d532d4db2df0fadf7a63"},
+    "evo23_local_pilot_not_promoted": {"path": "docs/nanhai-plus/evolution/EVO-0023-package-identity-crosscheck/reviews/ROOT-CLOSURE.json", "sha256": "1602ef898b45c3e51836998ca44ec0e3bc4fbe2a117f660e1116a7b7541fd4dc"}
+  },
+  "ssh_preflight_executed": true,
+  "runner_staged": false,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "next": "Resolve G279 owner-only control directory without container and obtain original-owner graph ACK; stage exact runner only after fresh preflight. Continue ARM64 official blackbox intake, use bounded ABI preflight if independently validated, and keep host scans separate from cold-start claims.",
+  "task_summary": {"path": "docs/nanhai-plus/TASK-SUMMARY.json", "sha256": "3edf0fa96a9e2d8c542a725ef11d75f60d30f5edb2d7bb2f7f127391a8887d2e"}
+}

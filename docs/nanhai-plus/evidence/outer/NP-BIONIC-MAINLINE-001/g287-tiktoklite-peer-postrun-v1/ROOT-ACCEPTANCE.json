@@ -1,0 +1,25 @@
+{
+  "schema": "nanhai-g287-tiktoklite-terminal-root-acceptance-v1",
+  "reviewed_utc": "2026-10-04T11:39:36Z",
+  "decision": "ACCEPT_TERMINAL_FAILURE_ONLY_NO_RAW_ADMISSION",
+  "runner_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-official-raw-candidate-v1/RESULT.json",
+    "sha256": "f0a7c5ee9317b4e03d1c5c782ae558666a57ec3c0bd9fcf4ac60f9d183a528cd"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-peer-postrun-v1/REVIEW.json",
+    "sha256": "9a138c2a81261eb855325a573061d5e5c91b3edaf12fa18254882da6527196de"
+  },
+  "observed_apk": {
+    "bytes": 35983713,
+    "sha256": "bb333c2f453caf95158ff3274df5da94b5bfc9a7b2ab7e3510d6695e034ac41d",
+    "manifest_package": "com.tiktok.lite.go",
+    "version_code": "360961",
+    "native_abis": ["armeabi-v7a"]
+  },
+  "first_failure": "manifest package differs from frozen com.zhiliaoapp.musically.go expectation; ARM32-only native payload also fails current ARM64-native qualification",
+  "count_delta": {"accepted_raw": 0, "complete_static": 0, "qualified_blackbox": 0, "cold_start": 0},
+  "next": "Do not replay G287. Select a separate official ARM64 candidate with independently checked manifest/package and provenance; retain downloaded bytes as failed diagnostic candidate only.",
+  "device_commands": 0,
+  "container_commands": 0
+}

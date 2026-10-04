@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-g292-line-official-raw-root-release-v1",
+  "released_utc": "2026-10-04T12:04:34Z",
+  "decision": "GO_ONE_BOUNDED_OFFICIAL_CHANNEL_CANDIDATE_GET_ONLY",
+  "runner_sha256": "a03647b4500c20787c6b2857288e942ba487ac897f4054a312acc6547311e4b9",
+  "prepare_sha256": "812d8232fc2f60e3f433bcbf5dd7e1fca910807ba704207e338172026ef4d18a",
+  "fixture_script_sha256": "191a24f2c7c2879bf3c78a3cd61de7ea7dfef20fe61469f4a2f82380285965a2",
+  "fixture_run": "python3 -B fixture.py rc0 FIXTURE_PASS 13",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "5b96ef4aac4b587ad6e27203f247325754cf886481b7298b0e607311eb40fb4c"
+  },
+  "source_url": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk",
+  "expected_bytes": 190235503,
+  "command": ["python3", "-B", "scripts/nanhai_plus_env.py", "--run", "python3", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/run.py", "--execute"],
+  "outer_watchdog_seconds": 390,
+  "raw_credit_before_postrun_review": 0,
+  "blackbox_credit_before_postrun_review": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "g288-tiktoklite-hyphen-v2-prepared",
+  "prepared_utc": "2026-10-04T11:44:29.009606+00:00",
+  "status": "FROZEN_STATIC_CANDIDATE_NOT_EXECUTED",
+  "supersedes_candidate_only": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v1/PREPARE.json",
+  "peer_no_go": "../g288-tiktoklite-hyphen-peer-review-v1/REVIEW.json",
+  "peer_no_go_sha256": "a135631ef7515be0cd1c2c8a520f2492d947faf45754b5d722a7ca910f185560",
+  "exact_apk_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+  "expected_package": "com.zhiliaoapp.musically.go",
+  "expected_version_code": "360961",
+  "expected_version_name": "36.9.61",
+  "expected_head_bytes": 48413684,
+  "runner_sha256": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+  "fixture_script_sha256": "bef8939af519177e792734c3abf96f5c39dced1de4925150aa095ae9e7153328",
+  "fixture_result_sha256": "d55c36dadde188339ff3222cd07d07a0908c89fc3ef03e723d58be4d6be2b181",
+  "inherited_page_from_v1_sha256": "e0244c0dd015b11bd33b21894575d9c50a7864300cf75e293dd922dbd81aa3af",
+  "inherited_head_from_v1_sha256": "30745657a2554d90cdae2cec240c32ae92e4e8c29de0bf98ef325d8738858099",
+  "inherited_http_observation_sha256": "dfe983c888a562cac4e17f1e6487a36c3cfa4fd5110195fee65f09682f9bf75b",
+  "copied_input_hashes_match": true,
+  "local_negative_cases": [
+    "wrong versionCode 999999 rejected",
+    "wrong versionName 99.99.99 rejected"
+  ],
+  "stage_exists": false,
+  "start_exists": false,
+  "result_exists": false,
+  "apk_get_count": 0,
+  "device_count": 0,
+  "container_count": 0,
+  "canonical_delta": 0,
+  "next": "Independent peer static review before any one-shot GET; package/ABI/publisher anchor remain unproved."
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "g292-line-official-raw-independent-static-review-v1",
+  "reviewed_utc": "2026-10-04T12:04:04.362233+00:00",
+  "verdict": "GO_ONE_BOUNDED_APK_GET_CANDIDATE_ONLY",
+  "scope": "Static/read-only review of frozen page, HEAD, PREPARE, runner and local fixture; no APK GET by reviewer.",
+  "inputs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/PREPARE.json",
+      "sha256": "812d8232fc2f60e3f433bcbf5dd7e1fca910807ba704207e338172026ef4d18a",
+      "bytes": 4224
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/HTTP-OBSERVATION.json",
+      "sha256": "a54203168cdb1955dd4f133c2eec9f1bf5c0e1f603c078777bc5b250ac49cc3b",
+      "bytes": 2836
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/run.py",
+      "sha256": "a03647b4500c20787c6b2857288e942ba487ac897f4054a312acc6547311e4b9",
+      "bytes": 13044
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/fixture.py",
+      "sha256": "191a24f2c7c2879bf3c78a3cd61de7ea7dfef20fe61469f4a2f82380285965a2",
+      "bytes": 2549
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/page.body.raw",
+      "sha256": "519e0076da4f7983331f32c474ae491027d7dbc16643bf0e013bef46b0bf48ce",
+      "bytes": 675
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/head.headers.raw",
+      "sha256": "e0e301e984e4cf2af05481a082b32ef7b1cd9cdb0d4590a706211c7fcc92ef97",
+      "bytes": 452
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/page.stdout.raw",
+      "sha256": "f89748e24ae64ddb612619ff261e8562d1a8ad066027b49342001f3e92d09057",
+      "bytes": 123
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/head.stdout.raw",
+      "sha256": "c52f6e2845a84d4237bb75edd509ce654468e20a0be59ff2ba09e8e4291c437c",
+      "bytes": 115
+    }
+  ],
+  "checks": {
+    "prepare_script_sha_match": true,
+    "prepare_fixture_sha_match": true,
+    "page_sha_match": true,
+    "head_sha_match": true,
+    "page_two_exact_links": true,
+    "head_one_length": true,
+    "head_one_etag": true,
+    "head_one_modified": true,
+    "no_start_result": true,
+    "http_page_head_rc0": true
+  },
+  "independent_source_observation": "At review, LINE Help article https://help.line.me/line/?contentId=20020931 displayed a latest-APK link whose target was the exact frozen line-apk-download.html URL. Web link target was visible; fetching its target through web tool timed out, while frozen 675-byte local page has matching SHA and exact APK href plus refresh.",
+  "official_chain": "Official help -> exact auto page -> one line-15.21.3.apk CDN URL. Frozen page request rc0 HTTP200 TLS0 redirects0, 675B. Frozen HEAD rc0 HTTP200 TLS0 redirects0, exactly one Content-Length 190235503, application/octet-stream, ETag and Last-Modified as pinned. HEAD ETag is not an artifact SHA.",
+  "one_shot_and_bounds": "Explicit --execute only. Durable O_EXCL START before environment, stage, or network; absent RESULT after START is unknown/no replay. Runtime fetches page and HEAD fresh with URL/HTTP/TLS/redirect/body and HEAD length/MIME/ETag/Last-Modified guards. One curl APK GET max-filesize 190235503, max-time 300, subprocess timeout 310, --retry 0, no redirect-follow, no fallback URL. Exclusive RESULT link creation on handled success/failure; late process interruption may leave unknown and must not replay.",
+  "post_get_gates": "Require exact 190235503 transfer/file bytes, ZIP CRC, one manifest, jp.naver.line.android and version name 15.21.3, ABI list empty/arm64-v8a/mixed arm64-v8a+armeabi-v7a, apksigner single signer v2 or v3, observed certificate, tool and APK posthash. Actual versionCode, ABI, signer and payload SHA remain unknown until one-shot GET.",
+  "fixture": "Reviewer reran python3 -B fixture.py: rc0 FIXTURE_PASS 13; alternate page link and duplicate HEAD length rejected, START/RESULT overwrite rejected, noarg refused, no production START/RESULT, AST parsed.",
+  "no_hidden_exec": "Code has one subprocess.run site mediated by command() with explicit curl, aapt2, java/apksigner argv; no shell=True, hdc/adb, Docker/Podman/nsjail or device command. Shared tools and registry have exact SHA guards.",
+  "risk_limits": [
+    "The Help article is specifically about Huawei AppGallery replacement; it still provides a LINE APK link but does not identify current Play-delivered bytes.",
+    "Filename 15.21.3 and December 2025 Last-Modified are hints; manifest decides actual version.",
+    "No publisher-published APK SHA or cert anchor; observed local hash and signer cannot be elevated to publisher-attested identity.",
+    "ZIP library-path check is structural and does not prove ARM64 native loadability or absence of dynamically fetched code.",
+    "Blackbox qualification, raw admission, static inventory and startup require separate review and results."
+  ],
+  "current_counts_changed": 0,
+  "review_actions": {
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  }
+}

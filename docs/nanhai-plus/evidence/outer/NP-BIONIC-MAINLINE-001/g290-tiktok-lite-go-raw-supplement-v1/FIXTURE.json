@@ -1,0 +1,23 @@
+{
+  "schema": "g290-tiktok-lite-go-metadata-fixture-v1",
+  "status": "PASS",
+  "cases": [
+    "EXACT_BYTES_LOCAL_VERIFICATION",
+    "G288_FAILURE_NOT_RELABELED",
+    "EXACT_OFFICIAL_PAGE_CARD_CDN_CHAIN",
+    "G288_PAGE_HEAD_GET_RC_TLS_BYTES",
+    "G287_SAME_PACKAGE_DIFFERENT_FAILED_ARTIFACT",
+    "MIXED_ABI_ACTUAL_IDENTITY",
+    "FROZEN_REGISTRY_NO_LITE_DUPLICATE",
+    "ACTUAL_PLAY_PACKAGE_NOT_CONFUSED",
+    "NO_UNSUPPORTED_PUBLISHER_OR_RUNTIME_CLAIM"
+  ],
+  "verification_sha256": "4679186d7298f7cee1d35962cc7f1d393e9f3cad550e45f42e2e56cd1cefc7a5",
+  "source_scout_sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc",
+  "network_requests": 0,
+  "apk_get": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "canonical_edits": 0,
+  "count_delta": 0
+}

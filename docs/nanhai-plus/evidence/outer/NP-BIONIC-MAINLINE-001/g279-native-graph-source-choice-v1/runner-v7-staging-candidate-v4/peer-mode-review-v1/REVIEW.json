@@ -1,0 +1,73 @@
+{
+  "schema": "g279-v7-stage-v4-mode-correction-independent-review-v1",
+  "at_utc": "2026-10-04T11:42:17.172678+00:00",
+  "verdict": "NO_GO_STAGE_UNTIL_PROJECT_CONTROL_MODE_CORRECTED_AND_FRESH_PREFLIGHT",
+  "preflight_sha256": "61512fb379049069dcb24a4473f22a2c701345cc3646494d9f44bcaa0d75bf90",
+  "stage_script_sha256": "fcf383e0b2818416b003de626366296c1328ad90b807d2058e3f467ba4526d5a",
+  "readback_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/peer-mode-review-v1/READBACK.json",
+  "readback_sha256": "c1ebbeb116b26076f2d2022226a830b947c064121fbd8d25e863382ad7d7b3a8",
+  "facts": {
+    "remote_uid": 1000,
+    "remote_gid": 1000,
+    "project": {
+      "path": "/data/source/.nanhai-plus-opaleye-native",
+      "dev": 64785,
+      "ino": 29884417,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o775",
+      "is_dir": true,
+      "is_symlink": false,
+      "realpath": "/data/source/.nanhai-plus-opaleye-native",
+      "acl": {
+        "system.posix_acl_access": "errno:61",
+        "system.posix_acl_default": "errno:61"
+      }
+    },
+    "control": {
+      "path": "/data/source/.nanhai-plus-opaleye-native/control",
+      "dev": 64785,
+      "ino": 29884418,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o775",
+      "is_dir": true,
+      "is_symlink": false,
+      "realpath": "/data/source/.nanhai-plus-opaleye-native/control",
+      "acl": {
+        "system.posix_acl_access": "errno:61",
+        "system.posix_acl_default": "errno:61"
+      }
+    },
+    "lease_absent": true,
+    "runner_absent": true,
+    "immediate_children_all_uid_1000": true
+  },
+  "assessment": "A project-owned fd-based chmod of exactly project and control from 0775 to 0755 is technically compatible with the current UID 1000 staging writer and removes the group-write bit that v4 correctly rejects. POSIX access/default ACL xattrs are absent (ENODATA=61), so no observed ACL dependency. Other group-1000 users would lose creation/rename rights in these two directories; the readback cannot prove no such workflow exists. No chmod to shared source, OUT, staging, tmp or child files is needed.",
+  "narrow_one_shot_correction": {
+    "preconditions": [
+      "Confirm this dedicated Nanhai project root/control are not intentionally shared write interfaces for another active UID; if they are, use a new exclusive project path and revised peer-reviewed binding, not a weakened gate.",
+      "Before mutation, repeat strict-host-key readback and require exact path, UID/EUID 1000, GID 1000, dev/inode values from this receipt, directory/no symlink, mode 0775, no POSIX ACL access/default, and absent v4 lease and v7 final.",
+      "Use an independently reviewed, single-use project-only correction command and durable local intent/terminal receipts; no staging or graph in the same command."
+    ],
+    "action": "SSH to gz02 with fixed /usr/bin/python3.12. Walk path components by dirfd/O_DIRECTORY/O_NOFOLLOW; re-fstat both held directory fds; fchmod control fd to 0755, then project fd to 0755; fsync each and re-fstat/read back exact dev/inode/UID/GID/mode and no ACL. No recursive chmod, chown, unlink or source path change.",
+    "postconditions": [
+      "Fresh independent read-only SSH check of project/control path, inode, ownership, 0755, ACL absence, lease/final absence.",
+      "Rerun v4 fresh read-only preflight; only if PASS consider a separately released one-shot --stage. No graph authorization follows."
+    ],
+    "rollback": "If correction fails before any v4 lease/final exists, restore 0775 only through same identity-checked held fds, read back and record terminal; if identity or state is uncertain, stop for read-only reconciliation. After staging, do not automatically restore group write: that would reopen the parent replacement boundary. Any later restoration needs separate safety review and must not coexist with trusted staged runner."
+  },
+  "limitations": [
+    "getfacl executable is absent remotely; direct getxattr checks found no POSIX ACL data on either directory.",
+    "No proof of all possible group-1000 consumers or active process expectations; owner approval of mode policy remains a dependency.",
+    "Existing child dirs out/staging/tmp remain 0775 and are outside this narrow fix; they require their own later graph safety review."
+  ],
+  "review_actions": {
+    "readonly_ssh": 1,
+    "chmod": 0,
+    "stage": 0,
+    "graph": 0,
+    "device": 0,
+    "container": 0
+  }
+}

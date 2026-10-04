@@ -1,0 +1,11 @@
+{
+  "schema": "nanhai.evo22.decision.v1",
+  "state": "pilot_not_promoted",
+  "one_improvement": "ZIP central-directory ABI preflight before full APK GET",
+  "local_pilot": "G287 reject and G284 continue, rc0; no network",
+  "promotion_gate": "real bounded 206 range trial with immutable remote object identity, correct negative/positive controls and measured bytes/time; independent review before use",
+  "canonical_delta": 0,
+  "device_delta": 0,
+  "container_delta": 0,
+  "graph_delta": 0
+}

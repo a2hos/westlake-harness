@@ -1,0 +1,44 @@
+{
+  "schema": "nanhai-g279-v7-stage-v4-permission-followup-v1",
+  "status": "NO_GO_PRESERVED_GROUP_WRITE_IS_REAL",
+  "scope": "Three bounded read-only SSH observations in response to the permission blocker; no chmod/chown, stage, graph, device or container command.",
+  "commands": [
+    {
+      "started_utc": "2026-10-04T11:39:57.595115+00:00",
+      "ended_utc": "2026-10-04T11:39:58.026025+00:00",
+      "argv": ["/usr/bin/ssh", "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=yes", "-o", "HostKeyAlgorithms=ssh-ed25519", "-o", "ConnectTimeout=10", "gz02", "/usr/bin/python3.12 -"],
+      "stdin_sha256": "9da884c1c47fa7dbd30e1ac974878565c6f9ef06d02bc49b4ca9c0cd0339bfa9",
+      "rc": 0,
+      "stdout_bytes": 436,
+      "stdout_sha256": "c3387bea0d3b73a2c61b7ddaf7d419572eb5e2bcb43b7308e5abdd36fe7399f6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finding": "getfacl unavailable; both directories group AlexYang gid 1000 mode 0775. Snapshot of 89 /proc fds visible to UID1000 found zero writable fds under control, with 35 proc access/race errors; cannot prove no other active writer."
+    },
+    {
+      "started_utc": "2026-10-04T11:40:12.124792+00:00",
+      "ended_utc": "2026-10-04T11:40:12.773953+00:00",
+      "argv": ["/usr/bin/ssh", "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=yes", "-o", "HostKeyAlgorithms=ssh-ed25519", "-o", "ConnectTimeout=10", "gz02", "/usr/bin/python3.12 -"],
+      "stdin_sha256": "78d5ee88b4dd07e07de8c65c90a6b8a0d7d9a338012b9ce82454c5edb0cbb163",
+      "rc": 0,
+      "stdout_bytes": 574,
+      "stdout_sha256": "eccc70a891bd68838329cb930f11ab96908865ce5a7bde1f7a2c7070c8449b81",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finding": "os.listxattr returned no POSIX access/default ACL xattr on either directory. Group AlexYang explicitly includes yue.chen and HanBingChen; therefore group write is materially shared, not just the owner primary group."
+    },
+    {
+      "started_utc": "2026-10-04T11:40:30.731898+00:00",
+      "ended_utc": "2026-10-04T11:40:31.245519+00:00",
+      "argv": ["/usr/bin/ssh", "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=yes", "-o", "HostKeyAlgorithms=ssh-ed25519", "-o", "ConnectTimeout=10", "gz02", "/usr/bin/python3.12 -"],
+      "stdin_sha256": "265417bd807768fe15993c83107a273da8bca8824e54d21319d855db638d7de7",
+      "rc": 0,
+      "stdout_bytes": 1113,
+      "stdout_sha256": "eca0f9f6c61ffb411f65669791cda2ea69cf5fc110a890c8534f2616b58fae60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finding": "control contained eight entries, all UID1000; no non-owner entry in this point-in-time listing. This does not rule out other group members writing now or later."
+    }
+  ],
+  "documentation_search": "Scoped G279 Markdown/review search found no explicit dependency requiring group write on this project/control pair; absence of documentation is not proof that the listed group members do not need access.",
+  "recommendation": "Keep v4 staging NO_GO and do not chmod the shared project/control pair from this receipt. First establish with the project owner and listed group collaborators whether group writes are required. If they are not, a separately reviewed narrow mode correction of exactly these two directories to 0755 (or stricter) followed by fresh ACL/owner/path/absence preflight would satisfy v4's existing guard. If shared writing is required, create an owner-only project/control location outside the group-writable parent and update the authoritative local_env plus staging/consumer path in a new reviewed generation; a private child under a group-writable parent alone does not close parent rename races.",
+  "staging_attempts": 0,
+  "permission_mutations": 0
+}

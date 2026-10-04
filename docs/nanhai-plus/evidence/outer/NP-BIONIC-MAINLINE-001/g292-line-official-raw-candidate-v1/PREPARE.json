@@ -1,0 +1,78 @@
+{
+  "schema": "g292-line-official-raw-prepared-v1",
+  "status": "PREPARED_ONLY_NO_APK_GET",
+  "observed_utc": "2026-10-04T11:59:13.886473+00:00",
+  "official_source_chain": {
+    "help_article": "https://help.line.me/line/?contentId=20020931",
+    "auto_download_page": "https://line-android-universal-download.line-scdn.net/line-apk-download.html",
+    "exact_apk_url": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk",
+    "official_page_sha256": "519e0076da4f7983331f32c474ae491027d7dbc16643bf0e013bef46b0bf48ce",
+    "page_rc_http_tls_redirects_bytes": [0, 200, 0, 0, 675],
+    "head_rc_http_tls_redirects": [0, 200, 0, 0],
+    "head_sha256": "e0e301e984e4cf2af05481a082b32ef7b1cd9cdb0d4590a706211c7fcc92ef97",
+    "head_content_type": "application/octet-stream",
+    "head_content_length_bytes": 190235503,
+    "head_etag_not_artifact_sha256": "\"e1628f42066cb5c669fa96ddaaf618a3\"",
+    "head_last_modified": "Sat, 20 Dec 2025 04:26:04 GMT",
+    "http_observation_receipt_sha256": "a54203168cdb1955dd4f133c2eec9f1bf5c0e1f603c078777bc5b250ac49cc3b"
+  },
+  "identity_boundary": {
+    "expected_package_for_post_get_check": "jp.naver.line.android",
+    "version_name_hint_from_url_only": "15.21.3",
+    "version_code": null,
+    "apk_sha256": null,
+    "publisher_published_apk_digest": null,
+    "publisher_cert_anchor": null,
+    "actual_signature_cert": null,
+    "actual_abi": null,
+    "arm64_compatibility": "UNPROVEN_UNTIL_APK",
+    "actual_manifest": "UNPROVEN_UNTIL_APK",
+    "play_primary_listing": "https://play.google.com/store/apps/details?id=jp.naver.line.android",
+    "publisher_market_cue": "Google Play listing: LINE (LY Corporation), 1B+ global downloads; current Play version may differ from direct APK",
+    "client_source_availability": "FULL_ANDROID_CLIENT_NOT_ESTABLISHED",
+    "blackbox_qualification": "PENDING_SEPARATE_REVIEW"
+  },
+  "duplicate_guard": {
+    "fixed_registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "apps_exact_package_matches": 0,
+    "records_exact_package_matches": 0,
+    "apps_alias_matches": 0,
+    "future_root_raw_duplicate_review": "REQUIRED_BEFORE_ANY_COUNT"
+  },
+  "prepared_executor": {
+    "script": "run.py",
+    "script_sha256": "a03647b4500c20787c6b2857288e942ba487ac897f4054a312acc6547311e4b9",
+    "fixture": "fixture.py",
+    "fixture_sha256": "191a24f2c7c2879bf3c78a3cd61de7ea7dfef20fe61469f4a2f82380285965a2",
+    "fixture_command": "python3 -B fixture.py",
+    "fixture_rc": 0,
+    "fixture_result": "FIXTURE_PASS 13",
+    "no_arg_command": "python3 -B run.py",
+    "no_arg_rc": 1,
+    "no_arg_result": "PREPARED_ONLY: explicit --execute required",
+    "runtime_requirement": "python3 scripts/nanhai_plus_env.py --run python3 -B run.py --execute",
+    "runtime_behavior_if_authorized_later": "Exclusive START before stage or network; re-read official page and HEAD; exact URL, 190235503 bytes, ETag and Last-Modified guards; one HTTPS APK GET capped at 190235503 bytes and 300 seconds with zero retry; atomic exclusive RESULT even on handled failure; no automatic alternate URL or replay",
+    "execution_performed": false,
+    "start_exists": false,
+    "result_exists": false,
+    "apk_get_count": 0,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "admission": {
+    "raw_candidate_only": true,
+    "canonical_raw_delta": 0,
+    "canonical_static_delta": 0,
+    "canonical_blackbox_delta": 0,
+    "startup_claim": false,
+    "same_byte_upstream_registry_target": false,
+    "g288_tiktok_identity_reused": false
+  },
+  "limitations": [
+    "The auto page says latest APK, but its current filename and December 2025 Last-Modified are not proof of the current Play version; actual versionCode and versionName require the APK manifest.",
+    "A HEAD ETag is a drift hint, not a publisher-published SHA-256 or an authenticated signer certificate.",
+    "No APK bytes were obtained; CRC, manifest, ARM64, signer and source availability remain unknown.",
+    "The 1B+ Play bucket is a global market cue, not a country-specific usage measurement.",
+    "This one-shot executor is a frozen candidate for independent review, not authorization to execute or count a raw package."
+  ]
+}

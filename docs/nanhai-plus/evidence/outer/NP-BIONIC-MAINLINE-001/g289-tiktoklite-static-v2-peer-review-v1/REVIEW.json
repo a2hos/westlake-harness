@@ -1,0 +1,44 @@
+{
+  "schema": "g289-tiktoklite-static-v2-independent-prepared-review-v1",
+  "at_utc": "2026-10-04T11:57:08.923474+00:00",
+  "verdict": "GO_V2_PREPARED_ONLY_NO_EXECUTION",
+  "execution_verdict": "NO_GO_V2_SCAN_HARDCLOSED",
+  "subject": {
+    "v2_run_sha256": "1a712fd0fa52175c8d3e1bafb49564e9bf75b3cb6cd73a7e315f291f43d980ec",
+    "v2_inputs_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+    "v2_common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "v2_scan_phase_sha256": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+    "g290_root_receipt_sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+    "candidate_fixture_sha256": "5bc19648ec9985fb00ee8cdbf771ddff0b9a30b64c16586619f4a70628c211b8",
+    "independent_fixture_sha256": "5bc19648ec9985fb00ee8cdbf771ddff0b9a30b64c16586619f4a70628c211b8"
+  },
+  "independent_checks": {
+    "fixture": "Copied v2 scripts and INPUTS to independent sibling leaf; fixture PASS for exact retained APK, scanner source/venv/readelf, G290 receipt SHA/decision and negative decision/package/version/path/bytes/SHA/ABI mutations.",
+    "root_binding": "Runner hardcodes G290 path, SHA ffd25a75..., schema, decision, actual package/code/name, payload SHA and bytes; compares INPUTS root_acceptance exact dict and actual G290 receipt hash/content. INPUTS status alone cannot authorize.",
+    "hardclosed": "ROOT_STATIC_RELEASE_SHA256 is None; after all root checks, --execute raises STATIC_SCAN_RELEASE_PENDING before phases/tmp/apk-view creation. Independent copy invocation returned rc2 with this message; no STARTED/RESULT/FATAL or phase output in original or peer.",
+    "phase_core": "common.py and scan_phase.py are byte-identical to v1/G285-adapted core; zip/metadata/elf/dex path remains bounded with true 69 ELF read_elf only, four 7fKOM .so opaque, dynamic DEX and mixed ABI checks.",
+    "input": "Retained G288 APK is exact 48413684 bytes/SHA 37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0; G290 root raw receipt accepted precisely this supplemental package and grants no static completion or startup."
+  },
+  "minimal_v3_release_path": {
+    "feasible": "YES, one new candidate generation plus one root static release and independent peer review; no need to redesign four phase scanner.",
+    "required_change": [
+      "Keep G290 raw receipt hardcoded and unchanged; freeze v3 INPUTS, common.py and scan_phase.py hashes and a fresh output directory.",
+      "Create a root static-release body that independently pins G290 receipt SHA, exact APK SHA/bytes/package, v3 INPUTS SHA, unchanged common/scan_phase hashes, four-phase-only scope, one attempt and outer/phase time limits; do not make it depend on v3 run.py SHA if v3 will embed its receipt SHA, to avoid a hash cycle.",
+      "In v3 runner, replace None sentinel with hardcoded release receipt path/SHA/schema/decision and verify actual receipt bytes and fields before any output. Merely setting ROOT_STATIC_RELEASE_SHA256 to a non-None value is unsafe because v2 never uses it for a comparison.",
+      "Have independent peer diff v3 against v2, run local denial/negative fixtures and review the root release; then root outer release pins exact v3 runner SHA and launches once with watchdog. Retain no-replay/unknown receipt semantics."
+    ],
+    "residual": "Same-UID files are not cryptographic separation; for this bounded local static inventory rely on separately reviewed root release plus exact outer command, and do not export this pattern as device/graph authorization."
+  },
+  "limits": [
+    "GO is for prepared candidate only. This review performed no scanner phase, network call, device or container action.",
+    "Packed KOM entries remain opaque and do not count as ELF or runtime loadability proof.",
+    "Even a future four-phase terminal candidate requires independent postrun and root review before static-complete count."
+  ],
+  "review_actions": {
+    "scanner_phases": 0,
+    "network_requests": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_delta": 0
+  }
+}

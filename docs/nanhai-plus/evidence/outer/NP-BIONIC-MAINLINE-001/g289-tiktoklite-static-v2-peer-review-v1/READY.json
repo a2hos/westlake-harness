@@ -1,0 +1,8 @@
+{
+  "schema": "g289-tiktoklite-static-v2-peer-ready-v1",
+  "verdict": "GO_V2_PREPARED_ONLY_NO_EXECUTION",
+  "execution_verdict": "NO_GO_V2_SCAN_HARDCLOSED",
+  "review_sha256": "409dd2b1e0cc0584b8e01f333d7c7b80e13c9d81644e170dc9598b0ce415d635",
+  "run_sha256": "1a712fd0fa52175c8d3e1bafb49564e9bf75b3cb6cd73a7e315f291f43d980ec",
+  "scan_executed": false
+}

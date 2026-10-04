@@ -1,0 +1,42 @@
+{
+  "schema": "g288-tiktok-lite-go-source-provenance-scout-v1",
+  "observed_utc": "2026-10-04T11:48:13.069830+00:00",
+  "mode": "read-only official pages and existing local receipts; no APK GET",
+  "product": {
+    "actual_package": "com.tiktok.lite.go",
+    "play_url": "https://play.google.com/store/apps/details?id=com.tiktok.lite.go",
+    "play_observation": "Google Play page title TikTok Lite - Faster TikTok; publisher TikTok Pte. Ltd.; displays 10M+ downloads and US social listing; this package is distinct from com.zhiliaoapp.musically.go.",
+    "market_inference": "Google Play US listing and 10M+ downloads support overseas use/mainstream candidacy; final portfolio threshold judgment remains separate."
+  },
+  "official_channel": {
+    "support_url": "https://support.tiktok.com/en/getting-started/creating-an-account/download-tiktok",
+    "download_page_url": "https://www.tiktok.com/download",
+    "exact_apk_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+    "local_g288_result": "../g288-tiktoklite-hyphen-official-raw-candidate-v2/RESULT.json",
+    "local_g288_result_sha256": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b",
+    "actual_apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "observed_signer_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+    "inference": "Observed TikTok website/CDN channel and Manifest package match the separate Play product; no independent publisher APK digest or certificate anchor was found."
+  },
+  "source_availability": {
+    "newsroom_url": "https://newsroom.tiktok.com/facts-matter-how-tiktok-protects-us-user-data/?lang=en",
+    "newsroom_observation": "TikTok says trusted inspectors access full mobile source within controlled transparency centers and describes protection of proprietary code. This is not a public full client source release.",
+    "oss_notice_url": "https://in.tiktok.com/legal/page/global/open-source/en",
+    "oss_notice_observation": "TikTok offers corresponding source for licensed open-source components in its product; this does not provide the entire proprietary client source.",
+    "status": "No public complete com.tiktok.lite.go client source established in this bounded search; universal nonexistence is not proved."
+  },
+  "scope_limits": [
+    "Google Play product listing does not authenticate the exact retained APK bytes or observed signing certificate.",
+    "Version 36.9.61 is older than current Play listing; no same-byte Play comparison.",
+    "ARM64-compatible mixed ABI structure is observed separately; actual startup/loadability is unproved.",
+    "Blackbox qualification, raw admission, static inventory and startup counts remain unchanged."
+  ],
+  "decision": "ELIGIBLE_FOR_INDEPENDENT_BLACKBOX_QUALIFICATION_REVIEW_ONLY",
+  "actions": {
+    "network_requests_in_this_receipt_write": 0,
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_count_changes": 0
+  }
+}

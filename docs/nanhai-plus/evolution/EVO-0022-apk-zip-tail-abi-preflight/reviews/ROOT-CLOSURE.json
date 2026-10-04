@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-evo22-root-closure-v1",
+  "reviewed_utc": "2026-10-04T11:43:55Z",
+  "decision": "ACCEPT_LOCAL_PILOT_ONLY_DO_NOT_PROMOTE",
+  "experiment_sha256": "f55a38d70b43f83a97848ca17a6f83c1837bafaf3eba537f74248c59dda556fd",
+  "trial_sha256": "71c132df9737500949ad5b2e390302813ad48dfa69e8407054ed1e248cdf80ef",
+  "peer_sha256": "8da0631fd43deed32c76f54836b589b4f775f6a1506590d975cb74e5d749ea07",
+  "decision_sha256": "186f6326cb2f78a5109b686a9e9e853dc34334c4718548cfac300223a30a5f52",
+  "accepted_scope": "Retained local APK ZIP central-directory filenames classify G287 ARM32-only negative and G284 ARM64 positive.",
+  "not_proven": "No live HTTP Range 206 request, remote object consistency, measured transfer saving, package/signature identity, or APK startup; production intake remains unchanged.",
+  "one_next_test": "Separately reviewed bounded HTTP Range pilot with 206/Content-Range/object identity and negative/positive controls before enabling preflight.",
+  "canonical_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

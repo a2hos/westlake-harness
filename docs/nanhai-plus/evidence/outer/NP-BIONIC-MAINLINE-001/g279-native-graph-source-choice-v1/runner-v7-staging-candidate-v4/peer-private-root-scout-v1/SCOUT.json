@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai-g279-private-native-root-readonly-scout-v1",
+  "observed_utc": "2026-10-04T11:43:39.401896+00:00",
+  "status": "PRIVATE_SIBLING_PATH_CANDIDATE_ONLY_NO_MUTATION",
+  "recommended_new_root": "/data/source/.nanhai-plus-opaleye-native-v7",
+  "new_root_observed_absent": true,
+  "reason": "The existing project/control are group-writable 0775 and cannot pass staging v4's ownership boundary. The sibling's entire existing parent chain is non-group-writable, symlink-free and on the same data volume; it avoids changing or moving the old project.",
+  "existing_parent_chain": [
+    {"path": "/", "uid": 0, "mode": "0755", "type": "directory", "posix_acl_xattr": false},
+    {"path": "/data", "uid": 0, "mode": "0755", "type": "directory", "posix_acl_xattr": false},
+    {"path": "/data/source", "uid": 1000, "mode": "0755", "type": "directory", "posix_acl_xattr": false}
+  ],
+  "comparison": {
+    "data_source": {"mount": "/data/source", "fstype": "ext4", "device": 64785, "available_bytes": 232575082496},
+    "old_project": {"path": "/data/source/.nanhai-plus-opaleye-native", "mode": "0775", "device": 64785, "control_mode": "0775", "preserve_untouched": true},
+    "home": {"path": "/home/AlexYang", "mode": "0750", "parent_home_mode": "0755", "fstype": "ext4", "mount": "/", "device": 64769, "available_bytes": 137228812288, "alternative_safe_parent": true}
+  },
+  "old_project_readonly_inventory": {
+    "top": {"control": "directory 0775", "out": "directory 0775", "tmp": "directory 0775", "staging": "directory 0775", "source-view": "directory 0700"},
+    "source_view_top_level_entries": 14,
+    "source_view_example_absolute_links": ["bionic -> /opt/19.SourceCode/AOSP-16.0.0_r4/android-source/bionic", "cts -> /opt/19.SourceCode/AOSP-16.0.0_r4/android-source/cts", "platform_testing -> /opt/19.SourceCode/AOSP-16.0.0_r4/android-source/platform_testing"],
+    "soong_ui_exists_in_old_out": true
+  },
+  "minimal_reviewed_migration_impact": [
+    "Create the exact new real directory as UID1000 mode 0700, plus owner-only control/out/tmp/staging; do not point the new root at the old root by symlink and do not alter the old tree.",
+    "Revise authoritative local_env.md bindings NANHAI_GZ02_NATIVE_PROJECT_ROOT, NANHAI_GZ02_NATIVE_SOURCE_VIEW and NANHAI_GZ02_SOONG_UI to the new root; this necessarily changes frozen config SHA and requires a new execution generation.",
+    "Stage exact verified control seeds/ledger and rebuild or separately provenance-admit Soong UI and no-namespace guard into new isolated out. Do not symlink or silently reuse old group-writable out/tmp/staging.",
+    "Rebuild the source-view references from the existing manifest/ledger as read-only links to approved shared sources; the target source checkout stays unchanged and the new project owns only links/config/output.",
+    "Change hardcoded old-root seed in scripts/nanhai_plus_native_graph_v7.py and old-root constant in scripts/nanhai_plus_native_graph_v7_gate.py; both require new reviewed hashes. Staging v4 hardcodes old PROJECT and old config SHA, so it cannot stage at the new root and must be superseded by a new packet.",
+    "Revalidate the new root, each parent, mode/UID, link targets, exact control hashes and source/output isolation immediately before any future staging or graph gate."
+  ],
+  "read_only_commands": [
+    {"started_utc": "2026-10-04T11:42:54.632648+00:00", "ended_utc": "2026-10-04T11:42:55.241721+00:00", "rc": 0, "stdout_bytes": 2063, "stdout_sha256": "581d1f0dcb2bfec0c2d9b58fb9d6bee1bf6eaf39b3ccbb9458d21408ce3d2898", "stdin_sha256": "31fa37c4bd5f682c2ff5523d05dc8dce367b9f530c02420f3981cb939686b540"},
+    {"started_utc": "2026-10-04T11:43:22.985503+00:00", "ended_utc": "2026-10-04T11:43:23.440408+00:00", "rc": 0, "stdout_bytes": 1476, "stdout_sha256": "2ccb76ffa77a78191bab6b4c8e30bfe0edac64406e43ce604da299e15569bfeb", "stdin_sha256": "0de3bdaf20742eab3ef907da8e86a338512616e0931532c14334332bd070ff68"},
+    {"started_utc": "2026-10-04T11:43:38.909075+00:00", "ended_utc": "2026-10-04T11:43:39.401896+00:00", "rc": 0, "stdout_bytes": 555, "stdout_sha256": "119ec8c607110dfad43affe7e014670efa5280c0fce94470912a06901ffcaf31", "stdin_sha256": "2f626347228c6707240549464dc2cbe72cdffc4b3d6ebbb98d30ac5cd8a5ec03"}
+  ],
+  "command_argv": ["/usr/bin/ssh", "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=yes", "-o", "HostKeyAlgorithms=ssh-ed25519", "-o", "ConnectTimeout=10", "gz02", "/usr/bin/python3.12 -"],
+  "not_proven": ["Space suffices for future graph output; only current available bytes were measured.", "New root permissions and files; the path is absent and nothing was created.", "New tool provenance, source view, staging or graph correctness.", "Absence of future same-UID interference."],
+  "commands_executed": {"ssh_readonly": 3, "mkdir": 0, "chmod": 0, "copy": 0, "stage": 0, "graph": 0, "device": 0, "container": 0}
+}

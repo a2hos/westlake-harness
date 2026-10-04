@@ -1,0 +1,66 @@
+{
+  "schema": "g288-official-page-head-observation-v1",
+  "curl_sha256": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+  "requests": [
+    {
+      "name": "page",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "-fsS",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--max-time",
+        "25",
+        "--max-filesize",
+        "600000",
+        "--output",
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v1/page.body.raw",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects}",
+        "https://www.tiktok.com/download"
+      ],
+      "began_utc": "2026-10-04T11:41:06.061811+00:00",
+      "ended_utc": "2026-10-04T11:41:07.619690+00:00",
+      "rc": 0,
+      "stdout": "http=200 tls=0 bytes=396469 redirects=0",
+      "stderr": "",
+      "body_or_headers_bytes": 396469,
+      "body_or_headers_sha256": "e0244c0dd015b11bd33b21894575d9c50a7864300cf75e293dd922dbd81aa3af"
+    },
+    {
+      "name": "head",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "-sS",
+        "-I",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--max-time",
+        "20",
+        "--max-redirs",
+        "0",
+        "--output",
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v1/head.headers.raw",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects}",
+        "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk"
+      ],
+      "began_utc": "2026-10-04T11:41:07.619872+00:00",
+      "ended_utc": "2026-10-04T11:41:07.973933+00:00",
+      "rc": 0,
+      "stdout": "http=200 tls=0 bytes=0 redirects=0",
+      "stderr": "",
+      "body_or_headers_bytes": 1635,
+      "body_or_headers_sha256": "30745657a2554d90cdae2cec240c32ae92e4e8c29de0bf98ef325d8738858099"
+    }
+  ],
+  "apk_get_count": 0,
+  "device_count": 0,
+  "container_count": 0
+}

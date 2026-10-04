@@ -1,0 +1,58 @@
+{
+  "schema": "g292-line-official-raw-independent-postrun-review-v1",
+  "verdict": "NO_GO_ARM64_RAW_ADMISSION",
+  "scope": "Independent local read-only review of the one-shot terminal and retained bytes; no GET, scan, device, container, or canonical edit by reviewer.",
+  "frozen_inputs_sha256": {
+    "runner": "a03647b4500c20787c6b2857288e942ba487ac897f4054a312acc6547311e4b9",
+    "prepare": "812d8232fc2f60e3f433bcbf5dd7e1fca910807ba704207e338172026ef4d18a",
+    "root_release": "9e5313d376192bf45df2e8bd3bf701044c75d31363f822d9179b55ce0780c27a",
+    "start": "b090b64435d09fc6afb4a70658c28a3dfc3adf4fad703eb7ec19a119e46f73ef",
+    "outer_result": "f1945c62e5a5aa851250578cc0778fae68acf48d04028519028d18795cc9602d",
+    "inner_result": "d450828167ef38e89a2dd245b6e2b64b14d6a8bf301c532947b044dbee4e8a93"
+  },
+  "terminal": {
+    "outer_rc": 0,
+    "outer_timeout": false,
+    "inner_status": "TERMINAL_FAILED",
+    "first_failing_gate": "ZIP library ABI list must be empty, arm64-v8a, or mixed arm64-v8a plus armeabi-v7a; actual list is armeabi-v7a only",
+    "error": "GateError: no ARM64-compatible native variant",
+    "no_replay": true
+  },
+  "network_receipts_reviewed_without_new_network": {
+    "official_chain": "Prior independent review linked LINE Help article to exact auto-download page; fresh runtime page contained the same exact CDN APK URL. This is official-channel provenance, not a publisher-published artifact digest.",
+    "runtime_page": "curl rc0 HTTP200 TLS0 redirects0; 675 bytes; body SHA-256 519e0076da4f7983331f32c474ae491027d7dbc16643bf0e013bef46b0bf48ce",
+    "runtime_head": "curl rc0 HTTP200 TLS0 redirects0; Content-Length 190235503; application/octet-stream; pinned ETag and Last-Modified; raw header SHA-256 8010c7d81beedc20f86f06a6b2a829672085b71815f68c10ebca6870dea26158",
+    "runtime_apk_get": "Exactly one runtime-download command in RESULT, curl rc0 HTTP200 TLS0 redirects0, 190235503 bytes, --retry 0, --max-time 300, --max-filesize 190235503, no redirect-follow or alternate URL",
+    "all_five_command_receipts": "page, HEAD, download, badging, signature raw stdout/stderr byte counts and SHA-256 independently rehashed and match RESULT; all command rc0 and timed_out false",
+    "outer_streams": "Raw outer stdout/stderr bytes and SHA-256 independently rehashed and match OUTER-RESULT"
+  },
+  "retained_apk": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1/line-15.21.3.apk",
+    "bytes": 190235503,
+    "sha256": "7bb25bde366a5445e9ad0d821826e0acb6cf3cce6e0f29f87bb04dec4adbcf95",
+    "sha256_role": "Independent hash of exact retained received bytes, not publisher attestation",
+    "zip_crc_bad_member": null,
+    "zip_entries": 20280,
+    "zip_unique_entries": 20280,
+    "manifest_count": 1,
+    "manifest_package": "jp.naver.line.android",
+    "manifest_version_code": "152130180",
+    "manifest_version_name": "15.21.3",
+    "min_sdk": 30,
+    "target_sdk": 35,
+    "native_code": "armeabi-v7a",
+    "lib_abis": ["armeabi-v7a"],
+    "arm32_lib_entry_count": 76,
+    "arm64_lib_entry_count": 0
+  },
+  "signature_boundary": "The task's phrase 'signature not reached' applies only to the runner's post-ABI signature admission gate. The actual runtime-signature/apksigner command DID execute, rc0, and its 2384-byte stdout was rehashed; it reports v3 verification true. Since ABI GateError occurs before signature parsing/admission and postguards, RESULT has no signature or tools_after fields. No publisher certificate anchor is established. Do not claim the signature command was skipped.",
+  "credit": {
+    "raw": 0,
+    "complete_static": 0,
+    "blackbox": 0,
+    "startup": 0,
+    "reason": "The exact official-channel candidate was retained but fails the project's ARM64-compatible native variant intake gate; no static scan or runtime test was performed. Outer rc0 only reports that the terminal RESULT was written."
+  },
+  "next_evidence": "Find a separately sourced LINE official-channel APK or publisher artifact with a verified arm64-v8a native variant; freeze its URL, page/HEAD and size, then use a new reviewed one-shot generation. Do not replay G292 or relabel these ARM32-only bytes as ARM64. Recheck package/version, complete ZIP CRC, ABI, signer and independent publisher identity anchor before any raw admission, then separate static and runtime gates.",
+  "reviewer_actions": {"network_requests": 0, "apk_gets": 0, "scan_runs": 0, "device_commands": 0, "container_commands": 0, "canonical_edits": 0}
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "g289-tiktoklite-static-v3-postrun-peer-ready-v1",
+  "verdict": "GO_COMPLETE_HOST_STATIC_INVENTORY_PLUS_ONE",
+  "review_sha256": "8b85544bbd364a31df1eb8026510ceb2a5948d038017eff33361c745c31dece0",
+  "result_sha256": "559a797b3232376c583a0078d4445e8d9c30d73637205359f218aaf93059bf8a",
+  "complete_static_delta_recommended": 1
+}

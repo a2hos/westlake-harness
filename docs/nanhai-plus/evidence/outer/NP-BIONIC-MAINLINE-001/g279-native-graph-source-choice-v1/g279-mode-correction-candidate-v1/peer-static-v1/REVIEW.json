@@ -1,0 +1,75 @@
+{
+  "schema": "nanhai-g279-mode-correction-independent-static-review-v1",
+  "reviewed_utc": "2026-10-04T11:47:33.223759+00:00",
+  "verdict": "NO_GO_EXECUTION_PENDING_GROUP_WRITER_DECISION",
+  "mechanism_assessment": "STATICALLY_BOUNDED_CANDIDATE",
+  "scope": "Static review and local fixtures only. No SSH, remote chmod, stage, graph, device or container command.",
+  "inputs": [
+    {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_g279_mode_correction_v1.py",
+      "sha256": "66fe59f520247a1d2b9c11da90e583d37d428418edf28874fdd59972e9c35d6b",
+      "bytes": 10316
+    },
+    {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-mode-correction-candidate-v1/PREPARE.json",
+      "sha256": "6bea9da6840eb04adf1f07b85473358960bc175a8884640ccc4082019f3eb2ee",
+      "bytes": 4233
+    },
+    {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-mode-correction-candidate-v1/fixture.py",
+      "sha256": "32a1222eeb6f496c8b9b82dd06d416f96a45534bc2cd7eaf5df7fe5c19c08bd6",
+      "bytes": 2868
+    },
+    {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/peer-preflight-v1/PREFLIGHT.json",
+      "sha256": "61512fb379049069dcb24a4473f22a2c701345cc3646494d9f44bcaa0d75bf90",
+      "bytes": 4005
+    },
+    {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v4/peer-preflight-v1/ACL-AUDIT.json",
+      "sha256": "009d05f9a74ec380b1ebb70c1d8d5bf62bd8e0f935f7ccd30645d171648be906",
+      "bytes": 3837
+    }
+  ],
+  "checks": {
+    "exact_targets": "Two pinned project-owned directory file descriptors only: /data/source/.nanhai-plus-opaleye-native and child control; remote program contains exactly two fchmod(0755) sites and no mkdir, rename, unlink or chown.",
+    "identity": "Project/control dev, inode, UID/GID pinned to observed 64785/29884417 and 64785/29884418, both 1000/1000; current local_env SHA, gz02 host and container prohibition checked before transport.",
+    "path_and_acl": "Every path component opened fd-relative with O_DIRECTORY|O_NOFOLLOW; parent write bits and POSIX ACL xattrs rejected; named chain matched before and after; only target modes may change 0775 to 0755.",
+    "lease": "Stage lease and final script names must be absent before and after correction.",
+    "one_shot": "Local UNKNOWN.json durable O_EXCL before single SSH; terminal receipt O_EXCL. Timeout, parse error, remote rc23 or partial mutation cannot report success or replay; read-only reconciliation required.",
+    "local_validation": "Reviewer reran fixture.py rc0 with 10/10 checks, zero SSH/chmod; reran --static-check rc0, zero SSH/chmod. PREPARE hashes of script, fixture and two prior receipts matched."
+  },
+  "observed_wall": "Read-only G279 preflight rc0 found both pinned directories mode 0775; the staging v4 guard would reject before lease. This review has no new remote observation.",
+  "hypotheses": [
+    {
+      "candidate": "The other group members have no required active or future writes in project/control.",
+      "cheapest_falsifier": "Explicit project-owner and affected collaborator write-workflow check.",
+      "blocking": "yes_for_mode_change"
+    }
+  ],
+  "proven": [
+    "Static candidate limits its intended remote mutations to two fchmod calls on held directory descriptors.",
+    "Local fixture verifies one-shot receipt behavior for a remote rc23 and repeat attempt."
+  ],
+  "not_proven": [
+    "Group AlexYang members yue.chen and HanBingChen can lose write access without disruption.",
+    "Remote current inode, mode, ACL and lease state at execution time.",
+    "Absence of a same-UID rename race or a partial chmod after transport failure.",
+    "Staging, graph, target build or device success."
+  ],
+  "failed": [
+    "Execution release is not justified by existing collaboration evidence."
+  ],
+  "next_evidence": "Resolve whether yue.chen/HanBingChen or another group writer needs write access to these exact two directories. If no, independently authorize this exact two-dir correction and recheck fresh remote state before a one-shot run; if yes, use an owner-only project/control location in a new reviewed generation.",
+  "residual_risk": "Changing 0775 to 0755 removes group-write rights for these directories. It does not alter the group-writable out/tmp/staging subtrees or prove future graph isolation. A concurrent same-UID process could still race path names; a failed second fchmod leaves partial state and requires read-only reconciliation.",
+  "commands_by_reviewer": {
+    "static_check": 1,
+    "fixture": 1,
+    "ssh": 0,
+    "chmod": 0,
+    "stage": 0,
+    "graph": 0,
+    "device": 0,
+    "container": 0
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "files": {
+    "gate": {
+      "sha256": "c1bb44e2fd55d43677219f0c6421a2bcfc6ba7cb69b57dfa3872051cc296df54",
+      "bytes": 20263,
+      "mode": "0o644"
+    },
+    "runner_v7": {
+      "sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+      "bytes": 41813,
+      "mode": "0o644"
+    },
+    "host_ssh": {
+      "sha256": "17542914a3fb55e7efeb35a90d594a21c84bf6a4cfe1fc8ddff5606dc2658fc3",
+      "bytes": 1584576,
+      "mode": "0o755"
+    },
+    "candidate": {
+      "sha256": "8cf85ccda90cc20617f50b0f771e18326fffa91a850a3cd463d4079bf56ba398",
+      "bytes": 7797,
+      "mode": "0o644"
+    },
+    "owner_request": {
+      "sha256": "4566a136dd38227e17e964e83bfa9f38525fe296f121da38836cefe7a3bfa9c9",
+      "bytes": 1283,
+      "mode": "0o644"
+    },
+    "owner_spec": {
+      "sha256": "e5574ca701cafce350863095965cde26f6df7b910d829410f1e52ac1d7546207",
+      "bytes": 4366,
+      "mode": "0o644"
+    },
+    "owner_consume": {
+      "sha256": "9343065d3ce1ea35dfb1d42163214d296925c2a7f0abe8994381a12add56fdc6",
+      "bytes": 4189,
+      "mode": "0o644"
+    },
+    "local_env": {
+      "sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+      "bytes": 12544,
+      "mode": "0o644"
+    }
+  },
+  "commands": [
+    {
+      "name": "gate_static",
+      "rc": 0,
+      "stdout_sha256": "6961f75f8d1bd8d37ffff235c8cb825de3214ab747ec3418471cc65715541d3f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "gate_preflight",
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "4cbd7234be2d58c70805e0bdb2e407a2e6f81d3a9b066788e2bcdc74511c195f"
+    },
+    {
+      "name": "gate_execute",
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "4cbd7234be2d58c70805e0bdb2e407a2e6f81d3a9b066788e2bcdc74511c195f"
+    },
+    {
+      "name": "gate_fixtures",
+      "rc": 0,
+      "stdout_sha256": "532e499b76a5a3cfe548e794678dc76d2eb5cdb41dbe211510566fd50dee1233",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "owner_static",
+      "rc": 0,
+      "stdout_sha256": "39f90fa8f72042c492f955a3a492185b53cdffcfafd47808073698a67c57003f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "owner_consume",
+      "rc": 3,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "74a6b96c3692d4cf60aec4bf36ba8b3cbb28af28c66776d786590cd660f8839b"
+    },
+    {
+      "name": "owner_fixtures",
+      "rc": 0,
+      "stdout_sha256": "38422b983611a522952d87e42888214b9a78604a4a1df0b8eb070afbcb96e849",
+      "stderr_sha256": "74a6b96c3692d4cf60aec4bf36ba8b3cbb28af28c66776d786590cd660f8839b"
+    }
+  ],
+  "ssh_commands": 0,
+  "graph_commands": 0,
+  "herdr_dispatches": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "nanhai.evo23.local_trial.v1",
+  "argv": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evolution/EVO-0023-package-identity-crosscheck/trials/t1/trial.py"
+  ],
+  "started_utc": "2026-10-04T11:59:59.321181+00:00",
+  "ended_utc": "2026-10-04T11:59:59.350104+00:00",
+  "elapsed_seconds": 0.029097,
+  "rc": 0,
+  "stdout_bytes": 929,
+  "stdout_sha256": "419b78768fd53b3b34fd976dc017267e0904be71bf9094c629c884565f688a06",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "trial_script_sha256": "a26123dba56bca8bef189c131de387feec187ba8f988e9f98b86baa192c075b1",
+  "output": {
+    "apk_get": 0,
+    "canonical_edits": 0,
+    "cases": [
+      {
+        "case": "G288_before_GET",
+        "decision": "CONFLICT_HOLD_TARGET_AND_OPEN_DISTINCT_PACKAGE_REVIEW",
+        "freeze_sha256": "eea973e246c9b6ea0d18fc3a850645e581b6e4d30ac34ffe9eb6bdd2ff966d51",
+        "frozen_expected_package": "com.zhiliaoapp.musically.go",
+        "prior_observed_package": "com.tiktok.lite.go",
+        "prior_sha256": "25dfb5ea7bebff2ae5e3fd3642649b618bc3dec0e21dc8c6402486870a200a51",
+        "product": "TikTok Lite"
+      },
+      {
+        "case": "G284_before_GET",
+        "decision": "MATCH_CONTINUE",
+        "frozen_runner_expected_package": "io.element.android.x",
+        "prior_registered_package": "io.element.android.x",
+        "product": "Element X",
+        "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+        "runner_sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243"
+      }
+    ],
+    "chmod": 0,
+    "container": 0,
+    "device": 0,
+    "graph": 0,
+    "network_requests": 0,
+    "ssh": 0,
+    "status": "LOCAL_REPLAY_PASS"
+  }
+}

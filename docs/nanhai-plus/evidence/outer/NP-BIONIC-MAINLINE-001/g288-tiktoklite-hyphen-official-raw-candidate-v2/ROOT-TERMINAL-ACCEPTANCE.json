@@ -1,0 +1,24 @@
+{
+  "schema": "nanhai-g288-tiktoklite-hyphen-v2-root-terminal-acceptance-v1",
+  "reviewed_utc": "2026-10-04T11:48:31Z",
+  "decision": "ACCEPT_TERMINAL_FAILURE_ONLY_NEW_PACKAGE_REVIEW_SEPARATE",
+  "result_sha256": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b",
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-v2-peer-postrun-v1/REVIEW.json",
+    "sha256": "138e28de50de5e013b0218d87aed82d60cf8fe40f259907421496a43f7a17d87"
+  },
+  "observed_apk": {
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "manifest_package": "com.tiktok.lite.go",
+    "version_code": "360961",
+    "version_name": "36.9.61",
+    "abis": ["arm64-v8a", "armeabi-v7a"]
+  },
+  "first_failure": "Frozen expected package com.zhiliaoapp.musically.go differs from actual com.tiktok.lite.go.",
+  "architectural_note": "A mixed ARM64 and ARM32 APK can supply ARM64 native libraries; this payload has 35 verified ARM64 ELF files plus two non-ELF wrapped .so paths whose runtime behavior is unproven.",
+  "count_delta": {"accepted_raw": 0, "complete_static": 0, "qualified_blackbox": 0, "cold_start": 0},
+  "next": "Separate read-only exact-byte, actual-package supplemental admission review; no G288 replay or retroactive task success.",
+  "device_commands": 0,
+  "container_commands": 0
+}

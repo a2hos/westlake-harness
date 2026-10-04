@@ -1,0 +1,10 @@
+{
+  "schema": "nanhai.evo23.decision.v1",
+  "state": "pilot_not_promoted",
+  "one_improvement": "pre-freeze crosscheck of intended package against independent same-product Manifest or registry package",
+  "pilot_result": "G288 conflict and G284 match correctly classified, rc0, 0.029097 s, no network",
+  "promotion_gate": "one future prospective candidate with pre-declared package source, observed conflict route, independent review and no false rejection; quantify generations/terminal mismatches avoided",
+  "canonical_delta": 0,
+  "network_get": 0,
+  "chmod_stage_graph_device_container": 0
+}

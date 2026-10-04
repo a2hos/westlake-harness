@@ -1,0 +1,24 @@
+{
+  "schema": "nanhai-g292-line-official-raw-root-terminal-acceptance-v1",
+  "reviewed_utc": "2026-10-04T12:06:31Z",
+  "decision": "ACCEPT_TERMINAL_ARM32_ONLY_FAILURE_NO_ARM64_RAW_ADMISSION",
+  "result_sha256": "d450828167ef38e89a2dd245b6e2b64b14d6a8bf301c532947b044dbee4e8a93",
+  "independent_postrun": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/peer-postrun-v1/REVIEW.json",
+    "sha256": "2e3a4e302dc03e1f06a9f81b0e87153898257eed136542d6c3d654c9a70a4341"
+  },
+  "observed_apk": {
+    "bytes": 190235503,
+    "sha256": "7bb25bde366a5445e9ad0d821826e0acb6cf3cce6e0f29f87bb04dec4adbcf95",
+    "package": "jp.naver.line.android",
+    "version_code": "152130180",
+    "version_name": "15.21.3",
+    "native_abis": ["armeabi-v7a"]
+  },
+  "first_failure": "No ARM64-compatible native variant in this official APK; stop before raw admission for current ARM64 target.",
+  "signature_scope": "apksigner command returned rc0 with v3 true, but script terminated on ABI gate before its later signature admission/postguard checks; signature is observation only.",
+  "count_delta": {"accepted_raw": 0, "complete_static": 0, "qualified_blackbox": 0, "cold_start": 0},
+  "next": "Retain as historical ARM32-only candidate; seek a distinct official ARM64 LINE variant and test cheap ZIP ABI preflight prospectively, without replaying G292.",
+  "device_commands": 0,
+  "container_commands": 0
+}

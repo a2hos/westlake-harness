@@ -1,0 +1,72 @@
+{
+  "schema": "g290-tiktok-lite-go-readonly-raw-supplement-candidate-v1",
+  "status": "FROZEN_EXACT_BYTE_SUPPLEMENT_CANDIDATE_PEER_REVIEW_PENDING",
+  "decision_requested": "Independent review of retained exact bytes for a new actual-package supplemental raw intake; root owns any later canonical admission.",
+  "retained_apk": {
+    "path_binding": "NANHAI_STAGING_ROOT/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "manifest_package": "com.tiktok.lite.go",
+    "version_code": 360961,
+    "version_name": "36.9.61",
+    "min_sdk": 21,
+    "target_sdk": 34,
+    "native_abis": ["arm64-v8a", "armeabi-v7a"],
+    "zip_entries": 2000,
+    "zip_crc_bad_entry": null,
+    "manifest_count": 1,
+    "observed_signer_cert_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+    "publisher_artifact_sha256": null,
+    "publisher_certificate_anchor": null
+  },
+  "identity_boundaries": {
+    "g288_terminal": "TERMINAL_FAILED: frozen expected com.zhiliaoapp.musically.go mismatched actual com.tiktok.lite.go; outer rc0 was receipt closure only.",
+    "g288_root_decision": "ACCEPT_TERMINAL_FAILURE_ONLY_NEW_PACKAGE_REVIEW_SEPARATE; accepted raw delta 0.",
+    "g287_relation": "Earlier underscore Lite APK had the same actual package com.tiktok.lite.go but different SHA bb333c2f453caf95158ff3274df5da94b5bfc9a7b2ab7e3510d6695e034ac41d and ARM32-only native payload; G287 also had no raw admission. It is not another package.",
+    "play_identity": "Source scout links Google Play listing id=com.tiktok.lite.go (10M+ downloads); do not substitute id=com.zhiliaoapp.musically.go, a distinct Play package.",
+    "registry_identity": "Frozen upstream REGISTRY.json has neither actual com.tiktok.lite.go nor com.zhiliaoapp.musically.go; this candidate is supplemental and does not replace the historical com.zhiliaoapp.musically records.",
+    "abi": "Mixed ARM64+ARM32 is structurally ARM64-capable, not ARM64-only. G288 peer saw 37 arm64 .so paths, of which 35 are ELF64/AArch64 and two start 7f4b4f4d; runtime loadability is unproved."
+  },
+  "channel_evidence": {
+    "publisher_support": "https://support.tiktok.com/en/getting-started/creating-an-account/download-tiktok",
+    "official_page": "https://www.tiktok.com/download",
+    "exact_cdn_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+    "g288_page_head_get": "Actual rc 0/0/0, HTTP 200/TLS 0/no redirects, exact HEAD and received 48413684 B; SHA is observed local bytes, not publisher-published digest.",
+    "source_scout_path": "../g288-tiktok-lite-go-source-scout-v1/RESULT.json",
+    "source_scout_sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc"
+  },
+  "frozen_evidence_sha256": {
+    "registry": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "g288_result": "260d17bdd4b3646c467625b16e7e4b17ff46b0bbaf24141dcb73dcf759e5e14b",
+    "g288_root_terminal": "6f987810e57527ebaab9b9a835a36f9943cdb167276fc6969e5aab15946f0e7b",
+    "g288_peer_postrun": "138e28de50de5e013b0218d87aed82d60cf8fe40f259907421496a43f7a17d87",
+    "g290_verify_script": "f8bb80aa490b0145326accaa8506672f38de6f261ba48b01ef1cc807699e225e",
+    "g290_verification": "4679186d7298f7cee1d35962cc7f1d393e9f3cad550e45f42e2e56cd1cefc7a5",
+    "g290_fixture": "1684c8504ae0b0f8d7d73d1a068cc89e24ece6486d49b2a1e7873be4f0b8124a"
+  },
+  "verification": {
+    "argv": ["python3", "scripts/nanhai_plus_env.py", "--run", "python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/verify.py"],
+    "rc": 0,
+    "receipt": "VERIFICATION.json",
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "zip_crc": "PASS",
+    "apk_sha_pre_post": "MATCH",
+    "tool_sha_pre_post": "MATCH"
+  },
+  "fixture": {"path": "FIXTURE.json", "status": "PASS", "cases": 9, "network_requests": 0},
+  "proposed_later_count_effect": {
+    "current_raw_delta": 0,
+    "current_distinct_package_delta": 0,
+    "current_static_complete_delta": 0,
+    "current_blackbox_qualified_delta": 0,
+    "current_cold_start_delta": 0,
+    "if_root_accepts_and_global_dedup_confirms": "At most one new accepted exact-byte artifact and one distinct package; G287 and G288 versions of the same actual package must not be counted as different packages."
+  },
+  "remaining_review": [
+    "Independent peer must rehash actual APK and source receipts, verify exact official page/card/HEAD/GET chain, package/version/signature, and global accepted-raw duplicate ledger before root admission.",
+    "Publisher has not published an independently pinned APK SHA or certificate anchor; official-channel observation does not prove publisher-attested byte identity.",
+    "Overseas mainstream, closed-source blackbox qualification, complete static inventory and runtime startup remain separate; source scout is bounded and does not itself count any of them."
+  ],
+  "actions_this_generation": {"apk_get": 0, "network_requests": 0, "canonical_count_edits": 0, "device_commands": 0, "container_commands": 0}
+}

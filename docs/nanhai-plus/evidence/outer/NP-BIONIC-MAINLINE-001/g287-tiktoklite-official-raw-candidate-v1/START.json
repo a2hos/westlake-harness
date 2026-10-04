@@ -1,0 +1,11 @@
+{
+  "schema": "g287-tiktoklite-raw-v1-start",
+  "at_utc": "2026-10-04T11:36:37.401287+00:00",
+  "status": "REMOTE_STATE_UNKNOWN_IN_PROGRESS",
+  "generation": "g287-tiktoklite-official-raw-candidate-v1",
+  "script_sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+  "page": "https://www.tiktok.com/download",
+  "exact_apk_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok_Lite_360961.apk",
+  "expected_head_and_received_bytes": 35983713,
+  "meaning": "If RESULT is absent, inspect state; never blindly replay."
+}

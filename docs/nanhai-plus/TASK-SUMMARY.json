@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T11:27:50.527948+00:00",
+  "checked_at": "2026-10-04T12:05:29+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,16 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 79,
+    "downloaded_payloads": 80,
+    "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
+    "recent_unaccepted_downloads": ["G287 ARM32-only TikTok Lite variant", "G292 ARM32-only LINE variant"],
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 75,
-    "complete_inventory_dex_entries": 166,
-    "complete_inventory_native_elf_entries": 825,
+    "complete_static_inventories": 76,
+    "complete_inventory_dex_entries": 183,
+    "complete_inventory_native_elf_entries": 894,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -51,14 +53,16 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 74,
-    "supplemental_payloads": 5,
-    "qualified_blackbox_packages": 2,
+    "supplemental_payloads": 6,
+    "qualified_blackbox_packages": 3,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
-      "com.vivaldi.browser"
+      "com.vivaldi.browser",
+      "com.tiktok.lite.go"
     ]
   },
   "latest_actual_execution": {
+    "scope_note": "Historical G276 native graph attempt; newer portfolio host scans and candidate GETs are recorded separately below.",
     "release": 276,
     "terminal_rc": 2,
     "actual_exec_session": 87154,
@@ -70,6 +74,16 @@
     "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
+  },
+  "latest_portfolio_execution": {
+    "g289_host_static": "rc0, four phases rc0, root accepted one complete static inventory for com.tiktok.lite.go",
+    "g289_root_acceptance": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/ROOT-ACCEPTANCE.json",
+    "g292_line_official_candidate": "TERMINAL_FAILED independently reviewed: downloaded APK contains armeabi-v7a only; no count change",
+    "g292_result_sha256": "d450828167ef38e89a2dd245b6e2b64b14d6a8bf301c532947b044dbee4e8a93",
+    "g292_root_terminal_sha256": "8ece531fc7c66338b05a1d50bcd9340246177daa3c91200b6750f82c3757d8b7",
+    "cold_starts_delta": 0,
+    "device_commands": 0,
+    "container_commands": 0
   },
   "scanner_dependencies": {
     "official_wheels_byte_and_record_verified": 38,

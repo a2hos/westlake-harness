@@ -1,0 +1,145 @@
+{
+  "schema": "g289-tiktoklite-static-v3-independent-postrun-review-v1",
+  "reviewed_at_utc": "2026-10-04T12:03:14.657897+00:00",
+  "verdict": "GO_COMPLETE_HOST_STATIC_INVENTORY_PLUS_ONE",
+  "scope": "Complete host static inventory of exact G290-accepted supplemental com.tiktok.lite.go artifact, with four 7fKOM libraries explicitly opaque. No runtime/blackbox/startup credit.",
+  "artifact_sha256": {
+    "outer_result": "e9fd717a529a27bdf619942f7f95e28cdb1935dcae46af66ad04214f055dc62d",
+    "inner_result": "559a797b3232376c583a0078d4445e8d9c30d73637205359f218aaf93059bf8a",
+    "started": "15f82a171919d1798dfbd58c6c24855c722cf71148f14413ed75eb3a5041398e",
+    "source_before": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+    "source_after": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+    "zip_facts": "9e9a5cbcb0fbb0d2fa217a5d401600c6eeb8fdc3a3f93991d3697dbc3708466c",
+    "manifest": "2db82b19d6c737273ea3fbc7ecfd10f2e80bf5c45adef57955b4259033278930",
+    "elf_inventory": "7ada37f16ed5ac543e0aedac4efb00568ce31638540d3fd9078f13dbca397d83",
+    "dex_inventory": "e74a4faccbca8e168b3cf5a3798fabc84cb040b36299b9a46d20033b840a8b08",
+    "runner": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8",
+    "inputs": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+    "root_raw": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"
+  },
+  "terminal": {
+    "outer_rc": 0,
+    "outer_timeout": false,
+    "outer_elapsed_seconds": 19.618,
+    "outer_stdout_hash_matches": true,
+    "outer_stderr_hash_matches": true,
+    "inner_rc": 0,
+    "inner_status": "TERMINAL_CANDIDATE_ONLY_REQUIRES_INDEPENDENT_AND_ROOT_REVIEW",
+    "all_checks_true": true,
+    "fatal_exists": false
+  },
+  "start_and_guard": {
+    "input_sha_matches": true,
+    "raw_acceptance_sha_matches": true,
+    "before_receipt_sha_matches": true,
+    "before_after_equal": true,
+    "pinned_source_rows": 21,
+    "all_source_rows_match_current_and_input": true,
+    "venv_manifest_sha_matches": true,
+    "venv_entries_verified_by_actual_guard": 11476,
+    "readelf_sha_matches": true,
+    "readelf_alias_resolves_to_target": true,
+    "apk_bytes": 48413684,
+    "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0"
+  },
+  "phases": [
+    {
+      "phase": "zip",
+      "command_sha256": "40dfd2020539de444d149e9ca4bc98bb23ed2d7ba71ece4c94a3e1dd850a3369",
+      "result_sha256": "f107b3b60cedb493e127339cb3b31106a10fff9d08b7e0d6464d67d3dc2824fd",
+      "stdout_sha256": "67b6f742244ef9ad18ccee4744e0b113b5466d96d471f78130c668a9f7b46748",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outer_row_matches_command": true,
+      "command_rc": 0,
+      "inner_rc": 0,
+      "postguard": true,
+      "stdout_hash_matches_command": true,
+      "stderr_hash_matches_command": true
+    },
+    {
+      "phase": "metadata",
+      "command_sha256": "fef5060d1858c95a61fc434114aa306c62cebdd9744e01d5c52eb493a91f0696",
+      "result_sha256": "ef2920ea3f7117f94864168c99ff1701b6c09f65e4b95aaf8221f1eb7d2a24f7",
+      "stdout_sha256": "d855da66b1db19793746740ac066c12ea345d8b88ae9a11da97a5001fe16e3ac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outer_row_matches_command": true,
+      "command_rc": 0,
+      "inner_rc": 0,
+      "postguard": true,
+      "stdout_hash_matches_command": true,
+      "stderr_hash_matches_command": true
+    },
+    {
+      "phase": "elf",
+      "command_sha256": "a1dc5805f42a0d97d10ec9fd9e99ac5e893f89425862dce2e581a63aaf744d9f",
+      "result_sha256": "2d46a857a7f1d24d4457b662fefddab78ecf559301658db09f6ce7bfeed157a0",
+      "stdout_sha256": "ee5dbfa191b7d41cf66e47c797a5ecbc453e6a432af806b6cdbc24a5c3e5f34d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outer_row_matches_command": true,
+      "command_rc": 0,
+      "inner_rc": 0,
+      "postguard": true,
+      "stdout_hash_matches_command": true,
+      "stderr_hash_matches_command": true
+    },
+    {
+      "phase": "dex",
+      "command_sha256": "50d0e52896f7e9afd97cbfffa474cb9a8f9014c05b21aa4da1012775c1ea0d91",
+      "result_sha256": "067674caf458e830f941ae637180e133f9c10b6c5552b24354c6c536b213fd4c",
+      "stdout_sha256": "378ca190c1702a8e475a183f02ed18bb1bdbf3f9fce5f1b8f6d24baeb2561449",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outer_row_matches_command": true,
+      "command_rc": 0,
+      "inner_rc": 0,
+      "postguard": true,
+      "stdout_hash_matches_command": true,
+      "stderr_hash_matches_command": true
+    }
+  ],
+  "inventory": {
+    "zip_entries": 2000,
+    "unique_entries": 2000,
+    "crc_bad_entry": null,
+    "manifest_count": 1,
+    "zipfacts_entries": 2000,
+    "dex_entries": 17,
+    "true_elf_entries": 69,
+    "arm64_true_elf": 35,
+    "arm32_true_elf": 34,
+    "all_elf_readelf_and_abi_valid": true,
+    "opaque_kom_entries": 4,
+    "opaque_names": [
+      "lib/arm64-v8a/libpost_video_base.so",
+      "lib/arm64-v8a/libtiktok.so",
+      "lib/armeabi-v7a/libpost_video_base.so",
+      "lib/armeabi-v7a/libtiktok.so"
+    ],
+    "elf_opaque_overlap": [],
+    "unclassified_so": 0,
+    "zip_in_so": 0,
+    "dex_identity_exact": true
+  },
+  "count_decision": {
+    "complete_static_delta_recommended": 1,
+    "new_dex_members": 17,
+    "new_true_elf_members": 69,
+    "new_arm64_true_elf_members": 35,
+    "new_arm32_true_elf_members": 34,
+    "opaque_uncredited_members": 4,
+    "blackbox_delta": 0,
+    "cold_start_delta": 0,
+    "canonical_count_edits_by_peer": 0
+  },
+  "limitations": [
+    "This accepts complete inventory/accounting of every ZIP member and successful scanner phases; four 7fKOM native payloads remain opaque, so semantic native coverage and runtime loadability are not proven.",
+    "No network packet trace was captured. Runner/phase command receipts mark network unauthorized; static code and observed commands show no network route.",
+    "Device, container and startup claims remain false; actual root count update requires separate root acceptance."
+  ],
+  "review_actions": {
+    "scanner_rerun": 0,
+    "network_requests": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_edits": 0
+  }
+}

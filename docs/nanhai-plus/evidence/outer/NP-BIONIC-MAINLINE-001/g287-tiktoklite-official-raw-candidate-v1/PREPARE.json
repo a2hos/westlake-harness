@@ -1,0 +1,60 @@
+{
+  "schema": "g287-tiktoklite-official-raw-v1-prepare",
+  "at_utc": "2026-10-04T11:33:13.957953+00:00",
+  "status": "FROZEN_STATIC_CANDIDATE_NOT_EXECUTED",
+  "source_frontier_receipt": "../g286-blackbox-official-frontier-v1/REPORT.md",
+  "official_support": "https://support.tiktok.com/en/getting-started/creating-an-account/download-tiktok",
+  "official_page": "https://www.tiktok.com/download",
+  "exact_apk_url": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok_Lite_360961.apk",
+  "observed_head_bytes": 35983713,
+  "other_lite_variant_forbidden_as_fallback": "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk",
+  "publisher_artifact_sha256": null,
+  "publisher_signing_certificate_sha256": null,
+  "runtime_gates": [
+    "START.json durable exclusive before any source mutation or HTTP request; existing START rejects replay",
+    "re-read local_env.md via nanhai_plus_env.py; require frozen config SHA and inherited NANHAI_* equality",
+    "require exact APK URL in fresh official TikTok HTML capped at 600000 bytes, HTTP 200, TLS verified, zero redirects",
+    "fresh exact CDN HEAD HTTP 200, TLS verified, zero redirects, exact Content-Length 35983713 and APK MIME",
+    "single HTTPS APK GET with --max-filesize 35983713, --max-time 180, --retry 0 and no redirect or resume",
+    "new isolated NANHAI_STAGING_ROOT generation path, byte count, observed SHA-256, ZIP CRC, one Manifest",
+    "aapt2 package/versionCode/versionName/minSdk/targetSdk, ARM64-only or no native lib, apksigner schemes and observed certificate SHA-256",
+    "postguard tool and received APK SHA, terminal atomic RESULT without overwrite"
+  ],
+  "runner": {
+    "path": "run.py",
+    "sha256": "6263d76adf1a48de571564cf0524d0034f5d6a9d221040a0fd91fb33669c02f9",
+    "ast_parse": "PASS"
+  },
+  "fixture": {
+    "path": "FIXTURE.json",
+    "sha256": "640b65dc18312769555c97107f0f92bbd9ca34017460f4f805d21a9919df351b",
+    "status": "PASS",
+    "network_requests": 0
+  },
+  "production_artifacts": {
+    "start_exists": false,
+    "result_exists": false,
+    "staging_exists": false
+  },
+  "execution_counts": {
+    "page_get": 0,
+    "apk_head": 0,
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  },
+  "no_arg_guard_probe": {
+    "argv": ["python3", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-official-raw-candidate-v1/run.py"],
+    "rc": 1,
+    "stderr": "PREPARED_ONLY: explicit --execute required",
+    "network_requests": 0
+  },
+  "later_command_not_executed": "python3 scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g287-tiktoklite-official-raw-candidate-v1/run.py --execute",
+  "claim_limits": [
+    "Official page and TLS do not supply a publisher APK SHA-256; computed SHA is observed bytes only.",
+    "Verified APK signature and observed certificate SHA do not by themselves prove publisher attribution without an independent anchor.",
+    "Blackbox closed-source status and overseas-mainstream qualification remain separate pending reviews; no raw admission or launch claim.",
+    "If START exists without RESULT, remote state is unknown and this execution generation must not be replayed."
+  ]
+}

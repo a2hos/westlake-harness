@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai-g279-evo19-v9-independent-static-review-v1",
+  "at_utc": "2026-10-04T11:36:59.686345+00:00",
+  "verdict": "NO_GO_PREFLIGHT_EXECUTE_OR_OWNER_DISPATCH",
+  "limited_acceptance": "GO_STATIC_CANDIDATE_ONLY",
+  "gate_sha256": "c1bb44e2fd55d43677219f0c6421a2bcfc6ba7cb69b57dfa3872051cc296df54",
+  "candidate_sha256": "8cf85ccda90cc20617f50b0f771e18326fffa91a850a3cd463d4079bf56ba398",
+  "owner_request_sha256": "4566a136dd38227e17e964e83bfa9f38525fe296f121da38836cefe7a3bfa9c9",
+  "owner_spec_template_sha256": "e5574ca701cafce350863095965cde26f6df7b910d829410f1e52ac1d7546207",
+  "owner_consume_sha256": "9343065d3ce1ea35dfb1d42163214d296925c2a7f0abe8994381a12add56fdc6",
+  "local_checks_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v9-gate-candidate-v1/peer-review-v1/LOCAL-CHECKS.json",
+  "local_checks_sha256": "209d57ef6880033092a862fa5afcd2e1eb88b2aafcae69ea3532527e8f7ea60d",
+  "findings": {
+    "identity": "Current /usr/bin/ssh SHA/bytes/mode match pinned 17542914.../1584576/0755. Local v7 runner SHA/bytes match 0b799e.../41813; remote desired mode 0444 remains an intended value, not current remote proof. Canonical remote /usr/bin/python3.12 SHA/8020928/0755 are pinned from historical read-only receipt, not fresh v9 SSH readback. Current local_env config SHA matches frozen value and remote paths derive from it.",
+    "remote_readback": "Gate defines exactly 11 remote file path+SHA entries and generated fd-walk checks path components with O_NOFOLLOW, hashes, size/mode and before/after identities. This review made no SSH call. No actual v9 outer SSH rc, remote rc, or remote rows exist; v7 runner is not staged/read back.",
+    "cli": "Fresh local rerun: gate --static-check rc0; gate --preflight rc3; gate --execute rc3; gate fixture rc0. Owner --static-check rc0; --consume rc3; owner fixture rc0. Output hashes captured in LOCAL-CHECKS.json; no graph route reachable from CLI.",
+    "owner": "Request binds nonce 4117b3c9f5fcc2eeccdd8c0e7aec071d, goal_01, claim NP-MUSL16-ART-024, original session oracle-kimi:local:nanhai-plus#inner, run_id g279-native-graph-v7-once and exact gate/spec/v7 SHA; it expressly has dispatchable=false and no target/device/container authority. No original owner ACK or native JSONL witness was obtained.",
+    "spec_gap": "SPEC-TEMPLATE is not valid release spec: 9 of 11 remote inputs have null size/mode and all need fresh readback; wrapper is candidate metadata rather than validated release wrapper. validate_spec enforces exact 11 names, paths and hashes, but for the nine remaining rows validates only positive size/mode range, so independent evidence for those values remains necessary.",
+    "authority_gap": "An ACK JSON written by the same UID is not independent owner provenance or execution authorization. Even a later JSONL peer witness alone is not an execution-enforced trust boundary; graph runner must verify a separately controlled signature or equivalent permission boundary before --run is releasable."
+  },
+  "blocking_conditions": [
+    "Fresh staged v7 runner identity and complete 11-row size/mode/SHA readback with actual outer and remote rc.",
+    "Complete immutable release spec and independent review on exact bytes.",
+    "Original-session nonce-bound graph-only ACK with native JSONL continuity and independent peer.",
+    "Execution-enforced independent trust domain for release authorization, plus separate host safety/EVO20 closure evidence."
+  ],
+  "negative_claims": {
+    "ssh_commands": 0,
+    "herdr_dispatches": 0,
+    "graph_commands": 0,
+    "target_compiles": 0,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "scope": "Independent static/local fixture review only; no SSH, Herdr, graph, device, or container action."
+}

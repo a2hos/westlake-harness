@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai.evo22.experiment.v1",
+  "state": "pilot",
+  "owner": "dedicated independent reflection peer",
+  "source_groups": [
+    "G284 Element X raw accepted",
+    "G285 Element X static accepted",
+    "G287 TikTok Lite terminal package/ARM32 failure",
+    "G279 v7 staging read-only NO_GO 0775"
+  ],
+  "boundary": "Package/Resource candidate intake, local host only; no device/build/graph/remote permission action",
+  "version_architecture": "AOSP16 R4 / OH7 ARM64 Bionic App portfolio",
+  "problem": "G287 transferred a 35,983,713-byte APK before its ARM32-only native payload was visible and the candidate was rejected. G279 separately shows a cheap preflight can stop before stage.",
+  "baseline": "G287 page 1.667 s, HEAD 0.365 s, full GET 3.481 s and 35,983,713 bytes, then package mismatch and ARM32-only terminal failure; raw/static count delta zero.",
+  "hypothesis": "For official APK servers with stable HTTP byte ranges, reading ZIP EOF and central directory before full GET will reject ARM32-only assets with under 1% of full payload transfer, without rejecting an accepted ARM64 control.",
+  "options": [
+    {
+      "name": "full GET then ZIP and badging",
+      "tradeoff": "authoritative payload checks but incurs entire transfer before ABI rejection"
+    },
+    {
+      "name": "bounded HTTP Range ZIP directory preflight",
+      "tradeoff": "cheap ABI reject when server supports ranges; parser and remote content identity need careful guards"
+    }
+  ],
+  "selected_one_improvement": "Add an optional fail-closed ZIP central-directory ABI preflight before full APK GET; only negative ARM32-only classification can stop a candidate. Ambiguous or unsupported ranges fall back to current bounded GET, and positive classification confers no acceptance.",
+  "sample": "local replay of exact G287 rejected APK and exact G284 accepted Element X APK",
+  "cost_cap": "local read-only two APKs; no network, graph, device, container or permission mutation",
+  "acceptance": "Local G287 reject / G284 continue; later live range probe must return 206 with consistent Content-Range and ETag or Last-Modified, fetch under 1% for G287, and match full payload classification.",
+  "stop_rollback": "Any missing/inconsistent 206 range identity, malformed ZIP, ambiguous ABI, or false rejection of ARM64 control disables preflight and preserves full GET path."
+}

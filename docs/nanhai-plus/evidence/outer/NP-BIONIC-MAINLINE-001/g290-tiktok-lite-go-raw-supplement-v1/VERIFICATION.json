@@ -1,0 +1,93 @@
+{
+  "schema": "g290-tiktok-lite-go-exact-byte-readonly-verification-v1",
+  "status": "EXACT_BYTE_RAW_SUPPLEMENT_CANDIDATE_READY_FOR_PEER",
+  "apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk",
+    "bytes": 48413684,
+    "sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "sha256_role": "observed retained bytes; no publisher digest"
+  },
+  "g288_terminal_status": "TERMINAL_FAILED",
+  "g288_root_raw_delta": 0,
+  "source_scout_sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "registry_duplicate": false,
+  "package_count_delta": 0,
+  "candidate_raw_artifact_delta": 0,
+  "zip": {
+    "entries": 2000,
+    "bad_entry": null,
+    "manifest_count": 1,
+    "lib_abis": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ]
+  },
+  "manifest": {
+    "package": "com.tiktok.lite.go",
+    "version_code": "360961",
+    "version_name": "36.9.61",
+    "min_sdk": "21",
+    "target_sdk": "34",
+    "native_code": "native-code: 'arm64-v8a' 'armeabi-v7a'"
+  },
+  "signature": {
+    "verified": true,
+    "observed_certificate_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+    "publisher_certificate_anchor": null
+  },
+  "commands": {
+    "badging": {
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk"
+      ],
+      "started_utc": "2026-10-04T11:50:29.733998+00:00",
+      "ended_utc": "2026-10-04T11:50:29.833743+00:00",
+      "elapsed_seconds": 0.1,
+      "rc": 0,
+      "stdout_sha256": "22188f4453cac69ad872584f0000a962a15b12ff994c1b359afeb6ae878d70aa",
+      "stdout_bytes": 8864,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    "signature": {
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g288-tiktoklite-hyphen-official-raw-candidate-v2/tiktok-lite-hyphen-360961.apk"
+      ],
+      "started_utc": "2026-10-04T11:50:29.833829+00:00",
+      "ended_utc": "2026-10-04T11:50:30.287174+00:00",
+      "elapsed_seconds": 0.453,
+      "rc": 0,
+      "stdout_sha256": "1a0423c30007d85ea4caef29740d7489ab11c1f30de7bb3799a97e6df400ecb6",
+      "stdout_bytes": 11999,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  },
+  "tools_sha256": {
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "network_requests": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "canonical_edits": 0,
+  "blackbox_qualified": false,
+  "startup_proven": false,
+  "static_complete_claim": false,
+  "ended_utc": "2026-10-04T11:50:30.309752+00:00"
+}

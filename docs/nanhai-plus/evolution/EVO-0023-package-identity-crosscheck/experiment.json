@@ -1,0 +1,34 @@
+{
+  "schema": "nanhai.evo23.experiment.v1",
+  "state": "pilot",
+  "owner": "dedicated reflection peer",
+  "source_groups": [
+    "G288 terminal package mismatch despite official card",
+    "G279 project/control 0775 read-only preflight NO_GO",
+    "G290 actual-package supplemental raw admission",
+    "G291 actual-package blackbox qualification"
+  ],
+  "boundary": "APK candidate package identity at freeze time; source/local receipts only",
+  "version_architecture": "AOSP16 R4 / OH7 ARM64 Bionic package portfolio",
+  "problem": "G288 froze com.zhiliaoapp.musically.go although earlier G287 official Lite bytes had observed com.tiktok.lite.go; the subsequent hyphen URL also delivered com.tiktok.lite.go, causing one avoidable target-identity terminal path before G290 separate intake.",
+  "baseline": "G288 frozen expected package mismatch led to terminal failure after 48,413,684-byte GET (4.734 s). G288 root terminal at 11:48:31Z; G290 separate raw root at 11:53:20Z, 289 s elapsed. The GET bytes were later useful for G290, so this is iteration cost, not wasted transfer. G279 separately showed cheap preflight can stop before a write gate; it is context, not the selected mechanism.",
+  "hypothesis": "A pre-freeze crosscheck between intended package and independently observed same-product Manifest/registry package will flag an unresolved conflict before one-shot dispatch while allowing matching controls.",
+  "options": [
+    {
+      "name": "freeze from official card/version alone",
+      "risk": "card may not declare Android package; repeat G288 target mismatch",
+      "benefit": "no added gate"
+    },
+    {
+      "name": "crosscheck package provenance before freeze",
+      "risk": "same-product variants may legitimately use different packages; conflict must hold rather than auto-relabel",
+      "benefit": "makes ambiguity explicit before GET and prepares separate-package route"
+    }
+  ],
+  "selected_one_improvement": "Pre-freeze package-identity conflict gate: compare exact intended Android package to prior independent Manifest or registered package linked to the same product/channel; a conflict requires distinct-package review before releasing a one-shot expected-package task. Never silently substitute identity.",
+  "cost_cap": "one local read-only replay, no network GET, chmod, stage, graph, device, container or count edit",
+  "acceptance": "G288 conflict flagged and G284 registry/runner match permitted in a local pilot under 1 second; future live use must demonstrate one avoided mismatched expected-package terminal without suppressing a valid new variant.",
+  "stop_rollback": "If evidence links different product variants ambiguously, no authoritative prior package exists, or a conflict gate blocks a valid exact-package candidate, revert to explicit discovery classification and full post-GET Manifest/signature gate.",
+  "measured_trial_seconds": 0.029097,
+  "baseline_iteration_seconds": 289
+}

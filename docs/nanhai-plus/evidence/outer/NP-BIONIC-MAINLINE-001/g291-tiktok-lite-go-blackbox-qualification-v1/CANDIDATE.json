@@ -1,0 +1,61 @@
+{
+  "schema": "g291-tiktok-lite-go-overseas-mainstream-blackbox-qualification-candidate-v1",
+  "observed_utc": "2026-10-04T11:54:10.687919+00:00",
+  "status": "CANDIDATE_FOR_INDEPENDENT_QUALIFICATION_REVIEW_NOT_COUNTED",
+  "portfolio_rule": "PORTFOLIO-GOAL.md:18 requires separate official product source, overseas use/market evidence, legal original package source/version, and no project source modification; full client source availability is assessed separately for blackbox classification.",
+  "actual_identity": {
+    "package": "com.tiktok.lite.go",
+    "version_code": 360961,
+    "version_name": "36.9.61",
+    "apk_bytes": 48413684,
+    "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+    "native_abis": ["arm64-v8a", "armeabi-v7a"],
+    "observed_signer_cert_sha256": "d7811ec4166fea6cc720ba66699dc84b584ac9e6986613a76d4e43d8cbe32b27",
+    "publisher_published_apk_sha256": null,
+    "publisher_published_certificate_anchor": null,
+    "do_not_alias": ["com.zhiliaoapp.musically.go", "com.zhiliaoapp.musically", "com.ss.android.ugc.tiktok.lite"]
+  },
+  "criteria": {
+    "official_product_source": {
+      "candidate_evidence": "TikTok's official help directs Android users to its own download page for TikTok Lite. G288 frozen page body contains the precise Lite card/US CDN URL, and its page/HEAD/GET receipts report HTTP 200, TLS verified, no redirects and exact 48413684 received bytes. Manifest package is com.tiktok.lite.go.",
+      "primary_urls": ["https://support.tiktok.com/en/getting-started/creating-an-account/download-tiktok", "https://www.tiktok.com/download", "https://sf16-va.tiktokcdn.com/obj/eden-va2/lapshyasbrvarpa_kpvykuh_jnb/ljhwZthlaukjlkulzlp/US/Lite/TikTok-Lite_360961.apk"],
+      "scope": "Observed official-channel chain; no independent publisher-published artifact digest or certificate anchor."
+    },
+    "overseas_use_and_market": {
+      "candidate_evidence": "Exact Google Play id=com.tiktok.lite.go lists TikTok Lite - Faster TikTok, publisher TikTok Pte. Ltd., 10M+ downloads, about 50.9K reviews and Social category in the English-US listing. This supports substantial non-domestic distribution; 10M+ is the listing's overall install bucket, not a measured U.S.-only install count.",
+      "primary_url": "https://play.google.com/store/apps/details?hl=en-US&id=com.tiktok.lite.go",
+      "scope": "No per-country download breakdown or proof that this historical APK SHA equals current Play-delivered bytes. Distinct 1B+ com.zhiliaoapp.musically.go figures must not be borrowed."
+    },
+    "legal_original_package_and_version": {
+      "candidate_evidence": "Root accepted one exact official-channel-observed supplemental raw APK under com.tiktok.lite.go; local O_NOFOLLOW read at the above UTC again measured 48413684 bytes and exact SHA. G290 read-only aapt2/apksigner/ZIP verification recorded code/name/min/target, v2/v3 signer and original unmodified archive.",
+      "root_raw_receipt": "../g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+      "root_raw_receipt_sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+      "root_decision": "ACCEPT_ONE_SEPARATE_OFFICIAL_CHANNEL_OBSERVED_SUPPLEMENTAL_RAW_APK",
+      "scope": "Exact observed delivery and retained bytes, not publisher-attested same-byte Play release."
+    },
+    "no_project_source_or_apk_modification": {
+      "candidate_evidence": "G288 downloaded a single original APK to isolated staging; G290 and this review only read the same retained file. Rehash equals G288/G290 root SHA. No patched APK or project client source modification is in this evidence chain.",
+      "scope": "Local chain/receipt evidence only; no claim about TikTok's own release engineering."
+    },
+    "blackbox_source_availability": {
+      "candidate_evidence": "TikTok's newsroom describes full mobile app source access for approved Oracle/independent inspectors inside controlled transparency centers and explicitly calls code proprietary. TikTok's OSS notice offers source for licensed components, not the complete product. Bounded G288 scout found no public complete com.tiktok.lite.go client source.",
+      "primary_urls": ["https://newsroom.tiktok.com/facts-matter-how-tiktok-protects-us-user-data/?lang=en", "https://in.tiktok.com/legal/page/global/open-source/en"],
+      "scout_receipt": "../g288-tiktok-lite-go-source-scout-v1/RESULT.json",
+      "scout_sha256": "f372ce4703b71801ba07b6864ca7f1112ef144d2f63cbfe7d8a318669a74d8dc",
+      "scope": "Strong platform-level proprietary/source-access evidence; not proof that no complete source for this exact Lite build exists anywhere. Independent peer must decide whether this meets the project's blackbox threshold."
+    }
+  },
+  "historical_boundary": {
+    "g288": "TERMINAL_FAILED package mismatch remains unchanged; G290 separate root raw intake did not replay or retroactively pass G288.",
+    "g287": "Different SHA ARM32-only official Lite payload has the same actual package com.tiktok.lite.go and failed raw admission; it is not another blackbox package.",
+    "frozen_upstream_registry": "No com.tiktok.lite.go entry; qualification is for one supplemental package/artifact, not a historical registry match."
+  },
+  "claim_limits": [
+    "Root G290 raw admission is not blackbox qualification; current blackbox count remains unchanged in this candidate.",
+    "Current Play listing does not authenticate version 36.9.61 or exact APK SHA; publisher has not published independent APK digest/certificate anchor in cited evidence.",
+    "Mixed ARM64/ARM32 package includes two arm64 .so paths with non-ELF wrapper headers; runtime loadability is not proved here.",
+    "No install, truly-cold Activity startup, rendering, interaction, restoration or Bionic runtime proof."
+  ],
+  "count_effect": {"qualified_blackbox_delta": 0, "raw_delta": 0, "cold_start_delta": 0},
+  "next": "Independent peer review exact package, marketplace locality interpretation, source-availability standard and G290 root SHA; only root may later update qualification ledger for one package."
+}

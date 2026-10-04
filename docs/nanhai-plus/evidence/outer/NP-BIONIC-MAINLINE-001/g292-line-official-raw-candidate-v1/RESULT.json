@@ -1,0 +1,239 @@
+{
+  "schema": "g292-line-raw-result-v1",
+  "start_sha256": "b090b64435d09fc6afb4a70658c28a3dfc3adf4fad703eb7ec19a119e46f73ef",
+  "commands": [
+    {
+      "name": "runtime-page",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "20",
+        "--max-filesize",
+        "100000",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/runtime-page.body.raw",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects} effective=%{url_effective}",
+        "https://line-android-universal-download.line-scdn.net/line-apk-download.html"
+      ],
+      "began_utc": "2026-10-04T12:04:51.605492+00:00",
+      "ended_utc": "2026-10-04T12:04:52.748134+00:00",
+      "elapsed_seconds": 1.143,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_sha256": "f89748e24ae64ddb612619ff261e8562d1a8ad066027b49342001f3e92d09057",
+      "stdout_bytes": 123,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "runtime-head",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--head",
+        "--max-time",
+        "20",
+        "--dump-header",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g292-line-official-raw-candidate-v1/runtime-head.headers.raw",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects} effective=%{url_effective}",
+        "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk"
+      ],
+      "began_utc": "2026-10-04T12:04:52.748729+00:00",
+      "ended_utc": "2026-10-04T12:04:53.457403+00:00",
+      "elapsed_seconds": 0.709,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_sha256": "c52f6e2845a84d4237bb75edd509ce654468e20a0be59ff2ba09e8e4291c437c",
+      "stdout_bytes": 115,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "runtime-download",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "300",
+        "--max-filesize",
+        "190235503",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1/line-15.21.3.apk.part",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects} effective=%{url_effective}",
+        "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk"
+      ],
+      "began_utc": "2026-10-04T12:04:53.458436+00:00",
+      "ended_utc": "2026-10-04T12:05:12.695147+00:00",
+      "elapsed_seconds": 19.237,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_sha256": "25bb5e2720f94dc30e92856b7abd3e5595675b9ae647d7849027553879a55980",
+      "stdout_bytes": 123,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "runtime-badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1/line-15.21.3.apk"
+      ],
+      "began_utc": "2026-10-04T12:05:13.206490+00:00",
+      "ended_utc": "2026-10-04T12:05:13.910782+00:00",
+      "elapsed_seconds": 0.704,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_sha256": "72770e1a228da09ac7a16f01b61b066655aaf8aefa99f1f9120e9b8538c4adfa",
+      "stdout_bytes": 20071,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "runtime-signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1/line-15.21.3.apk"
+      ],
+      "began_utc": "2026-10-04T12:05:13.910852+00:00",
+      "ended_utc": "2026-10-04T12:05:14.521049+00:00",
+      "elapsed_seconds": 0.61,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_sha256": "44bc396cc5e96aeb541bff58f96aac5281df9a88f2a585315b1e5ac74ffa9230",
+      "stdout_bytes": 2384,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "candidate_only": true,
+  "raw_accepted": false,
+  "blackbox_qualified": false,
+  "canonical_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "environment": {
+    "config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb"
+  },
+  "tools_before": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "staging": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1",
+  "page_transfer": {
+    "http": "200",
+    "tls": "0",
+    "bytes": "675",
+    "redirects": "0",
+    "effective": "https://line-android-universal-download.line-scdn.net/line-apk-download.html"
+  },
+  "page": {
+    "bytes": 675,
+    "sha256": "519e0076da4f7983331f32c474ae491027d7dbc16643bf0e013bef46b0bf48ce",
+    "exact_url": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk"
+  },
+  "head_transfer": {
+    "http": "200",
+    "tls": "0",
+    "bytes": "0",
+    "redirects": "0",
+    "effective": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk"
+  },
+  "head": {
+    "sha256": "8010c7d81beedc20f86f06a6b2a829672085b71815f68c10ebca6870dea26158",
+    "content_length": 190235503,
+    "content_type": "application/octet-stream",
+    "etag_observed_not_sha256": "\"e1628f42066cb5c669fa96ddaaf618a3\"",
+    "last_modified": "Sat, 20 Dec 2025 04:26:04 GMT"
+  },
+  "part": {
+    "bytes": 190235503,
+    "sha256": "7bb25bde366a5445e9ad0d821826e0acb6cf3cce6e0f29f87bb04dec4adbcf95"
+  },
+  "download_transfer": {
+    "http": "200",
+    "tls": "0",
+    "bytes": "190235503",
+    "redirects": "0",
+    "effective": "https://line-android-universal-download.line-scdn.net/line-15.21.3.apk"
+  },
+  "apk": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g292-line-official-raw-candidate-v1/line-15.21.3.apk",
+    "bytes": 190235503,
+    "sha256": "7bb25bde366a5445e9ad0d821826e0acb6cf3cce6e0f29f87bb04dec4adbcf95",
+    "publisher_artifact_digest": null,
+    "sha256_role": "observed received bytes"
+  },
+  "zip": {
+    "entries": 20280,
+    "bad_entry": null,
+    "manifest_count": 1,
+    "lib_abis": [
+      "armeabi-v7a"
+    ]
+  },
+  "manifest": {
+    "package": "jp.naver.line.android",
+    "version_code": "152130180",
+    "version_name": "15.21.3",
+    "min_sdk_line": "minSdkVersion:'30'",
+    "target_sdk_line": "targetSdkVersion:'35'",
+    "native_code": "native-code: 'armeabi-v7a'"
+  },
+  "status": "TERMINAL_FAILED",
+  "error_type": "GateError",
+  "error": "no ARM64-compatible native variant",
+  "ended_utc": "2026-10-04T12:05:14.524080+00:00"
+}

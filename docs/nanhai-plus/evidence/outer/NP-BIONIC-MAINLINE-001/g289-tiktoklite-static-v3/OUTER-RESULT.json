@@ -1,0 +1,25 @@
+{
+  "schema": "nanhai-g289-tiktoklite-static-v3-outer-result-v1",
+  "command": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/run.py",
+    "--execute"
+  ],
+  "elapsed_seconds": 19.618,
+  "outer_rc": 0,
+  "outer_timeout": false,
+  "stdout_bytes": 1054,
+  "stdout_sha256": "472ed57012ede25aeaf3559eacc983630931bc76f684e636733e3ade3de30b3e",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_exists": true,
+  "started_exists": true,
+  "network_authorized": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

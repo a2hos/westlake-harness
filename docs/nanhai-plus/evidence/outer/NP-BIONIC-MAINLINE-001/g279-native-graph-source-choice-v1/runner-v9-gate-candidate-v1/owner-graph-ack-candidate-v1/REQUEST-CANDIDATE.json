@@ -1,0 +1,27 @@
+{
+  "claim": "NP-MUSL16-ART-024",
+  "container_authorized": false,
+  "device_authorized": false,
+  "device_commands": 0,
+  "dispatchable": false,
+  "environment_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "evo19_gate_script_sha256": "c1bb44e2fd55d43677219f0c6421a2bcfc6ba7cb69b57dfa3872051cc296df54",
+  "evo19_spec_template_sha256": "e5574ca701cafce350863095965cde26f6df7b910d829410f1e52ac1d7546207",
+  "goal_id": "goal_01",
+  "graph_executed": false,
+  "graph_only_intent": true,
+  "nonce": "4117b3c9f5fcc2eeccdd8c0e7aec071d",
+  "owner_ack_candidate_path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/g279-native-graph-v7-owner-intent-v1/OWNER-INTENT-ACK.json",
+  "run_id": "g279-native-graph-v7-once",
+  "runner": {
+    "bytes": 41813,
+    "intended_remote_mode": "0444",
+    "path": "scripts/nanhai_plus_native_graph_v7.py",
+    "sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0"
+  },
+  "schema": "nanhai-g279-original-owner-graph-intent-request-v1",
+  "scope": "original owner intent candidate only; no graph release until external native JSONL peer review and separate trust boundary",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "target_compile_authorized": false,
+  "target_compiled": false
+}

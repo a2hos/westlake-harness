@@ -1,0 +1,58 @@
+{
+  "schema": "g288-tiktoklite-hyphen-v2-independent-static-review-v1",
+  "at_utc": "2026-10-04T11:45:26.246420+00:00",
+  "verdict": "GO_ONE_BOUNDED_OFFICIAL_CHANNEL_CANDIDATE_GET",
+  "scope": "One bounded GET with exact frozen v2 runner and outer watchdog only; no raw admission, blackbox or startup credit.",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-official-raw-candidate-v2",
+    "runner_sha256": "1da21aa7247ee7831a870945b9ff2b7239333da631d33efa3b117191154d0d6f",
+    "prepare_sha256": "eea973e246c9b6ea0d18fc3a850645e581b6e4d30ac34ffe9eb6bdd2ff966d51",
+    "fixture_sha256": "d55c36dadde188339ff3222cd07d07a0908c89fc3ef03e723d58be4d6be2b181",
+    "observation_sha256": "dfe983c888a562cac4e17f1e6487a36c3cfa4fd5110195fee65f09682f9bf75b",
+    "page_sha256": "e0244c0dd015b11bd33b21894575d9c50a7864300cf75e293dd922dbd81aa3af",
+    "head_sha256": "30745657a2554d90cdae2cec240c32ae92e4e8c29de0bf98ef325d8738858099"
+  },
+  "independent_fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g288-tiktoklite-hyphen-v2-peer-review-v1/FIXTURE.json",
+    "sha256": "d55c36dadde188339ff3222cd07d07a0908c89fc3ef03e723d58be4d6be2b181",
+    "status": "PASS",
+    "cases": [
+      "AST",
+      "OFFICIAL_CARD",
+      "BOTH_VARIANTS_DISTINCT",
+      "HEAD_EXACT",
+      "EXACT_VERSION_CODE",
+      "EXACT_VERSION_NAME",
+      "WRONG_CODE_REJECTED",
+      "WRONG_NAME_REJECTED",
+      "ALTERNATE_REJECTED",
+      "NO_ARG_CLOSED",
+      "ONE_APK_GET_SITE",
+      "ZIP_ABI_PACKAGE_CERT_GATES",
+      "OBSERVATION_HASHES"
+    ],
+    "network_requests": 0,
+    "apk_get": 0
+  },
+  "checks": {
+    "v1_blocker": "CLOSED: v2 requires exact parsed package com.zhiliaoapp.musically.go, versionCode 360961, versionName 36.9.61; wrong code and wrong name each raise GateError in independent fixture.",
+    "diff": "Compared v1 and v2: added version constants/check_manifest_identity call, uses constant in official card, changed staging generation and START/RESULT schema; original exact URL, HEAD/GET commands, size limits, one-shot and ZIP/ABI/signature logic unchanged.",
+    "source_binding": "Runtime fresh HTTPS TikTok /download page must 200/TLS0/no redirect, body <=600000 and contain exact hyphen URL; first Lite card must have that exact link and version 36.9.61. Underscore alternate cannot satisfy card gate. Historical page and HEAD bytes match frozen observation; peer did no network request.",
+    "head_get": "Fresh exact hyphen CDN HEAD requires 200/TLS0/no redirect, one Content-Length=48413684 and APK MIME. Only one GET site uses that URL, retry0, no follow/resume, max-time180, max-filesize48413684; postchecks transfer and local file byte count. Page/HEAD/GET subprocess timeouts 30/25/190.",
+    "one_shot": "Exclusive durable START before HTTP, fresh staging, no replay after START, terminal RESULT hardlink without replace; failure/timeout leaves evidence for read-only reconciliation.",
+    "payload": "ZIP CRC/testzip and exactly one Manifest, aapt2 package/version/min/target, native ABIs only [] or [arm64-v8a], apksigner v2/v3 and one signer with observed cert digest; APK and tool SHA postguards.",
+    "current_state": "Current local_env parsed config SHA matches frozen value; v2 candidate START, RESULT and project staging directory are absent."
+  },
+  "limits": [
+    "Manifest package, ABI and publisher identity are not proven before GET; G287 underscore result cannot be extrapolated to hyphen variant.",
+    "No independent publisher APK SHA or certificate anchor. A passing postcheck may establish only an observed official-channel candidate; raw accepted, blackbox qualified and startup remain false pending separate review.",
+    "HEAD header dump has no explicit script size cap; curl and subprocess time bounds apply."
+  ],
+  "release_condition": "Execute exact runner SHA only once via nanhai_plus_env.py with a bounded outer watchdog; preserve START, RESULT, raw streams and payload. Post-run peer must independently verify terminal rc, actual package/version/ABI/signature and received SHA before any claim.",
+  "review_actions": {
+    "network_requests": 0,
+    "apk_get": 0,
+    "device_commands": 0,
+    "container_commands": 0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "g289-tiktoklite-static-prep-fixture-v3",
+  "status": "PASS",
+  "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+  "apk_bytes": 48413684,
+  "script_sha256": {
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "6b0f65a9aa33d84e4af90d24d8a583b8ddbb5d7bd9497b58cc0992bece86f419",
+    "run.py": "7361358752045a733385e3b9e76830d56886495756739e22405fad6d5c648ac8"
+  },
+  "input_sha256": "047fb0892df936ebb4ab718ccacd395b86ab6c27bfb3773024b4b603e4ff3620",
+  "root_receipt_sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590",
+  "root_static_release_sha256": "887a344997faab5eedc481f329dee10da75b41cef232ee12005ba1d9eebbcda2",
+  "checks": [
+    "AST",
+    "RETAINED_APK_EXACT_BYTES",
+    "SCANNER_SOURCE_SHA",
+    "VENV_MANIFEST_SHA",
+    "READELF_TOOL_SHA_AND_ALIAS",
+    "ROOT_SHA_AND_DECISION",
+    "ROOT_MUTATIONS_REJECTED",
+    "STATIC_RELEASE_EXACT",
+    "STATIC_RELEASE_MUTATIONS_REJECTED",
+    "V3_PEER_PENDING",
+    "NO_SCAN_OUTPUT",
+    "EXPLICIT_EXECUTE_GUARD",
+    "FOUR_PROVEN_PHASES",
+    "MIXED_ABI_AND_OPAQUE_SO_HONEST"
+  ],
+  "scan_executed": false,
+  "device": 0,
+  "container": 0,
+  "canonical_delta": 0
+}
