@@ -1,0 +1,37 @@
+{
+  "schema": "g279-v2c-v7-alternate-node-independent-code-review-v1",
+  "at_utc": "2026-10-04T20:19:03Z",
+  "decision": "GO_V2C_V7_CODE_ONLY",
+  "candidate_sha256": "2f7423672e0b6ae3b561cd9ab01d77630b1c1865b037bde00fa29d59b72df4fb",
+  "runner_sha256": "53d0c32a4459ceaf865e905f7072f80112fb65bde719d113f72e76f2cea2180c",
+  "fixture_sha256": "e08cf93c42f7594749fae1e7ebe2fa28a6c8b13893165120f4dfc2f1fd572ab9",
+  "fixture_script_sha256": "bf1b335c8ac8abcab4d6c58d67c50079413fe4ea1b25541d24f433997da4ff31",
+  "independent_fixture_command": ["python3", "scripts/nanhai_plus_env.py", "--run", ".nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3", "-B", "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-v2c-v7-alternate-node-candidate-v1/fixtures_v7.py"],
+  "independent_fixture_rc": 0,
+  "checks": {
+    "v6_bounded_failure_chain_and_no_replay_frozen": true,
+    "selection_code_candidate_peer_exact_sha_and_code_only_scope": true,
+    "two_local_observations_rank_noncurrent_index1_before_secret_write": true,
+    "fresh_source_process_socket_and_current_leaf_rechecked_after_second_rank": true,
+    "exact_root_release_peer_candidate_runner_hashes_and_new_nonce_required_before_START": true,
+    "v5_v6_nonce_reuse_rejected_and_v7_START_O_EXCL": true,
+    "private_dir_config_modes_and_single_renamed_node_inherited_from_v6": true,
+    "exact_target_port_hostkey_ssh_G_and_readonly_id_u_inherited_from_v6": true,
+    "local_TEST_NET_REJECT_and_exact_32_PROXY_safe_line_inherited_from_v6": true,
+    "cleanup_and_failure_terminal_preserve_no_graph_device_container_namespace_or_global_write": true,
+    "offline_negatives_for_current_index1_better_alternate_stale_history_old_alias_and_forged_line": true
+  },
+  "code_delta": "V7 changes selection/source binding, fixed safe alias, private path, nonce/release identity and terminal schema. It does not broaden the remote SSH command or v6 success proof; its exact node copy comes from a source file whose SHA is rechecked before credential write.",
+  "falsifiable_risks": [
+    "Historical 51 ms alternate delay is not gz02-specific reachability; one-shot SSH can still return rc255 and consume its nonce.",
+    "Selection and credential write are sequential, not atomic; source/PID/socket/current leaf are rechecked, but future controller behavior after final read is only bounded by private config and later SSH proof.",
+    "V7 retains the v6 failure-path raw stderr cleanup limit: an rc255 marker may be runner-reported yet not independently replayable after private logs are deleted; preserve UNKNOWN where raw safe witness is absent.",
+    "EVO54 node-outbound witness remains pilot only. This v7 code review neither requires it nor treats /32 rule selection as node TCP proof."
+  ],
+  "root_release_present_at_review": false,
+  "start_present_at_review": false,
+  "terminal_present_at_review": false,
+  "execution_authorized": false,
+  "next_gate": "Root may separately review exact v7 release with pinned port/nonce and current source/controller/host-key guards. Only a new one-shot release may execute; this code GO is not network authorization.",
+  "review_actions": {"proxy_started": 0, "ssh_connections": 0, "global_proxy_writes": 0, "device_commands": 0, "container_commands": 0, "namespace_commands": 0, "bridge_accesses": 0}
+}

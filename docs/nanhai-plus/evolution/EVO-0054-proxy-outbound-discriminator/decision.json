@@ -1,0 +1,14 @@
+{
+  "schema": "nanhai-evolution-decision-v1",
+  "id": "EVO-0054",
+  "at_utc": "2026-10-04T20:15:59Z",
+  "status": "pilot",
+  "decision": "PILOT_BOUNDARY_ONLY_NO_PROMOTION",
+  "one_improvement": "Bind an exact-endpoint private selected-node outbound dial outcome to the next separately released SSH attempt so rc255 can be localized beyond local rule selection.",
+  "pilot_result": "existing v6 remains LOCAL_RULE_ONLY; four synthetic cases separate no attempt, dial failure, connected without banner, and banner without host key",
+  "pilot_result_path": "trials/01-offline/RESULT.json",
+  "production_runner_changed": false,
+  "network_or_proxy_action": false,
+  "next_validation": "First review whether a privacy-safe private-instance dial outcome is obtainable. Only if yes, develop a separate observer/runner candidate and verify one actual receipt with independent peer/root; otherwise retain UNKNOWN and current runner.",
+  "rollback_condition": "Any credential, node identity or raw private log leakage, global proxy mutation, missing exact endpoint/time binding, or altered one-shot semantics rejects the candidate."
+}

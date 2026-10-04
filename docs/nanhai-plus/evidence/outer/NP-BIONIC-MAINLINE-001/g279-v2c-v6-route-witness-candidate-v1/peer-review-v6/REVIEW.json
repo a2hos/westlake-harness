@@ -1,0 +1,50 @@
+{
+  "at_utc": "2026-10-04T20:08:35.493835+00:00",
+  "bridge_accesses": 0,
+  "candidate_sha256": "db702431647c424fb2a849d08da8062d254b13d1fe7cf82798510072063d3063",
+  "checks": {
+    "failure_positive_line": "one complete anchored line only, exact target 1.95.90.207:58222, IPCIDR /32, PROXY fixed safe alias, full line and SHA replayable",
+    "fake_socks_separate_temp_rerun_rc": 0,
+    "fake_socks_temp_accepts": 1,
+    "fake_socks_temp_markers": [
+      "kex_exchange_identification: Connection closed by remote host",
+      "Connection closed by UNKNOWN port 65535"
+    ],
+    "fake_socks_temp_outbound_calls": "zero by source inspection; no kernel packet trace claimed",
+    "fake_socks_temp_ssh_child_rc": 255,
+    "fake_socks_temp_stderr_sha256": "37b4f2bf7e81d61b028a7543e019182f59e1537ea220a806c7df4ca5f32cc27e",
+    "fake_socks_temp_target": "192.0.2.2:2222",
+    "independent_no_credential_fixture_passed": 16,
+    "independent_no_credential_fixture_rc": 0,
+    "negative_lines": "forged prefix, sensitive suffix, duplicate, wrong target, wrong action and pre-SSH stage remain UNKNOWN",
+    "one_shot_release": "peer-review-v6 and root-release-v6 exact paths, candidate/runner/peer SHA, v5 chain and no-graph/device/container flags bound",
+    "privacy_boundary": "only timestamp, loopback source port, target /32, fixed rule/action and fixed alias can enter positive_route_witness; arbitrary private logs and node name not exported",
+    "stage_boundary": "LOCAL_LINE_OBSERVED allowed only stages 4-6; PROVEN still requires stage>=7 and SSH proof",
+    "success_boundary": "success requires unchanged SSH rc0/pinned hostkey/auth/UID, positive route and replayed witnesses; failure branch remains NO_GO"
+  },
+  "container_commands": 0,
+  "decision": "GO_V2C_V6_CODE_ONLY",
+  "device_commands": 0,
+  "fixture_sha256": "48a61e469f3af7902f0888a9b9e45e4ae287e3026aa9bed2e2883ffc0a9fb74b",
+  "frozen_files_match_candidate": true,
+  "limits": [
+    "GO is code-only. No v6 root release, START or TERMINAL existed at review.",
+    "A local Mihomo line proves only local rule selection, not gz02 TCP, SSH banner, hostkey, authentication, UID or Soong graph.",
+    "Fake SOCKS is a local counterexample to marker uniqueness, not a measurement of real gz02 or packet-level absence of all outbound traffic.",
+    "Any real run requires a separate exact root release and fresh source/controller/host key guards."
+  ],
+  "real_gz02_connections_by_review": 0,
+  "root_release_present": false,
+  "runner_sha256": "9f4592a5336f809254ddecfd80b85b50aa016c8f50ef3b0535898ac1ec0de510",
+  "schema": "g279-v2c-v6-independent-code-review-v1",
+  "start_present": false,
+  "task_summary_changed": false,
+  "terminal_present": false,
+  "v5_chain": {
+    "new_nonce_required": true,
+    "replay_rejected": true,
+    "root_no_go_sha256": "120676b37e534dc9cbceacfe34c0dd344d9790d6628c85b16ba13a68193539b3",
+    "start_sha256": "27622c8134df3e8a03b8efe154f226d4f9ee327c1d210e7e5b7c114f7b267aab",
+    "terminal_sha256": "c4ab077f3747aeb7287898aa010ea8c3d77ac9177352767e75dee81b67f8ae37"
+  }
+}

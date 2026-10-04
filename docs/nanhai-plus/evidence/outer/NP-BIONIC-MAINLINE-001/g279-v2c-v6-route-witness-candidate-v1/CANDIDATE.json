@@ -1,0 +1,40 @@
+{
+  "at_utc": "2026-10-04T20:06:11.941544+00:00",
+  "authoritative_count_changed": false,
+  "bridge_accesses": 0,
+  "container_commands": 0,
+  "decision": "CANDIDATE_ONLY_NO_REAL_GZ02_CONNECTION",
+  "device_commands": 0,
+  "fake_socks_once_rc": 0,
+  "fake_socks_outbound_calls": 0,
+  "fake_socks_target": "192.0.2.2:2222",
+  "files_sha256": {
+    "FAKE-SOCKS-RESULT.json": "e44fbb1d414565bded4743307753a8df52e6a65901dd7acadd2ca2b7f0bb9322",
+    "FAKE-SSH-STDERR.raw": "028ed7d4ff65bd74dca123381d5ae18815e649d91263c97f9f14893da9e1b39d",
+    "FAKE-SSH-STDOUT.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FIXTURE.json": "28797718bae7bab754623a520ce82ced646b25eda7a8a176a2054d2beff73431",
+    "HANDOFF.md": "db41284423defa1e9f94ec83c839bab04f69ca9dea107286c00e0cf02b1137de",
+    "V5-TO-V6.patch": "6df2898d97415072e112d86446fb6c8b0d39b02dd2377d4a81f6c7d187689256",
+    "fake_socks_counterexample.py": "51e1e778783a8a912b45dcee8e67689b72b949b35a0e3b33573226b4b6397703",
+    "fixtures_v6.py": "48a61e469f3af7902f0888a9b9e45e4ae287e3026aa9bed2e2883ffc0a9fb74b",
+    "runner.py": "9f4592a5336f809254ddecfd80b85b50aa016c8f50ef3b0535898ac1ec0de510"
+  },
+  "fixture_checks": 16,
+  "fixture_rc": 0,
+  "graph_commands": 0,
+  "radar_a_sha256": "43f5eb6da42910d7c7d5184aaa2407ac1691b505f814e40eb8a7f9183c845271",
+  "radar_synthesis_sha256": "d9c6fba46dc37c542091cbf764ba660fc186580ceea1bd0cd99d9ed75f0e9c39",
+  "real_gz02_connections": 0,
+  "real_selected_node_started": false,
+  "required_before_any_v6_run": [
+    "independent code and fake-proof peer review",
+    "exact v6 root release binding all frozen hashes, selected port, v5 NO_GO chain and one-shot scope",
+    "fresh source/controller/host key guards"
+  ],
+  "schema": "g279-v2c-v6-route-witness-code-candidate-v1",
+  "scope": "one-layer local fake SOCKS counterexample and positive /32 log witness on SSH failure",
+  "v5_fixture_sha256": "aaa1c13d647efdab5974cc5167b29b2a2d2eade5bd7cf5842aa8dddedf4c2376",
+  "v5_root_nogo_sha256": "120676b37e534dc9cbceacfe34c0dd344d9790d6628c85b16ba13a68193539b3",
+  "v5_runner_sha256": "ff2c62a72bd8a20f43d884241c0b76e3b3df3c1a1d2af882631efda3a1db79b5",
+  "v5_terminal_sha256": "c4ab077f3747aeb7287898aa010ea8c3d77ac9177352767e75dee81b67f8ae37"
+}

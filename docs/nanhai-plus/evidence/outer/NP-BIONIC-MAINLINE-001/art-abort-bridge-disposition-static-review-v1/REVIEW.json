@@ -1,0 +1,78 @@
+{
+  "at_utc": "2026-10-04T20:18:50.594604+00:00",
+  "boundary": "ART abort diagnostic -> selected appspawn/adapter caller -> OH-visible log sink; C++ ABI/provider/export and exact build cohort",
+  "decision": "KEEP_UNDETERMINED_NO_REPLACE_ADMISSION",
+  "design_check": {
+    "adapter_boundary_decision": "no code change; legacy C bridge remains a candidate boundary until current caller/provider are bound",
+    "art_internal_semantics_modified": false,
+    "bcp_semantics_modified": false,
+    "truly_cold_verified": false
+  },
+  "hypothesis": {
+    "blocking": false,
+    "candidate": "Native ART LOG plus Bionic abort-message path may replace the separate bridge.",
+    "cheapest_falsifier": "From the selected Bionic appspawn source/Soong graph, locate the exact abort caller and exported provider; if it still references the bridge or no OH log sink is wired, replacement is false."
+  },
+  "minimal_gap_to_replace": [
+    "Bind the selected current Bionic appspawn/ART caller and trace its fatal-message path to a concrete OH-visible sink, proving the old C bridge is absent or not consumed.",
+    "Bind same-generation R4 ARM64 Bionic product/provider/export and compiler/C++ ABI identities, then verify the replacement message and failure behavior with a bounded host/build or runtime receipt as appropriate."
+  ],
+  "not_proven": [
+    "The actual selected Bionic appspawn/ART abort caller no longer calls or needs westlake_art_copy_fault_message_for_abort_logging.",
+    "ART fatal message reaches a specified OH7 HiLog tag/domain or equivalent retained sink in the selected product, including empty/failure semantics.",
+    "The replacement provider, exported symbol set and caller share the exact R4 ARM64 Bionic C++ ABI/compiler/sysroot/build identity; historical OH clang15/Musl cohort cannot establish this.",
+    "A current graph/build or device cold abort test passes; host source inspection does not count as tool completion."
+  ],
+  "observed_wall": "none; this is a static ownership gap, not an observed current build or device failure",
+  "proven": [
+    {
+      "fact": "R4 ART GetFaultMessageForAbortLogging returns a std::string and HandleUnexpectedSignalCommonDump writes it to stderr or LOG(FATAL_WITHOUT_ABORT); Runtime::SetAbortMessage conditionally calls android_set_abort_message under ART_TARGET_ANDROID.",
+      "source_sha256": {
+        "runtime.cc": "655f5a7a8d9840cf29a43f8fec1fbf0eee812586fe1959feb8fc209e6e7afe82",
+        "runtime_common.cc": "eac0a73915f2cd9efd1098bd1f380ec69c43d1fbd4231eb6d7bc6ee7c4f4b3ed"
+      }
+    },
+    {
+      "fact": "Historical eafec bridge copies that std::string to a C buffer; no call site was found in the bounded historical appspawn-x/src search. Historical source is comparison only.",
+      "source_sha256": "571673ea0546e35df2fcc631a213ba071e806c2c214dc7a6f5f72de3e8b14f1e"
+    },
+    {
+      "fact": "OH7.0.0.39 source validation records 520/520 manifest HEAD matches and HiLog package exports libhilog; existence of this provider does not show selected ART abort delivery.",
+      "source_sha256": {
+        "SOURCE_VALIDATION.json": "a3d84e21218ee2f1a9a593824d670f625091fda21e6cebbe4c1c9d4192ffec67",
+        "hilog/bundle.json": "249b4e4434e220cc2f80f3ade8da48f9002cc2ed6e7ae544ac1f67e8cf47fc92"
+      }
+    },
+    {
+      "fact": "Current Bionic plan is undetermined and local_env sets NANHAI_BIONIC_BUILD_READY=false; no accepted Bionic appspawn/ART product/provider/export identity is bound in this item.",
+      "source_sha256": {
+        "local_env.md": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+        "plan.json": "9d608e57aeef88573bf8bb1ba570704a2e20fbb6d3e51c1e64fc5f4c847cf445"
+      }
+    }
+  ],
+  "schema": "art-abort-bridge-bionic-disposition-independent-static-v1",
+  "scope": {
+    "bridge16_accesses": 0,
+    "build_commands": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "plan_changed": false,
+    "task_summary_changed": false,
+    "total_89_count_changed": false
+  },
+  "source_refs": {
+    "historical_bridge": "/opt/19.SourceCode/WestLake-Harness-eafec9451a91/source/bms/src/adapter/framework/appspawn-x/src/art_abort_message_bridge.cpp",
+    "local_env": "local_env.md",
+    "oh_hilog_bundle": "/opt/19.SourceCode/OpenHarmony-7.0.0.39/base/hiviewdfx/hilog/bundle.json",
+    "plan": "docs/nanhai-plus/tool-records/art-abort-bridge/targets/oh7.0.0.39-aosp16r4-arm64-bionic/plan.json",
+    "r4_runtime": "/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime.cc",
+    "r4_runtime_common": "/opt/19.SourceCode/AOSP-16.0.0_r4/art/runtime/runtime_common.cc"
+  },
+  "target": {
+    "aosp": "android-16.0.0_r4",
+    "app_libc": "bionic",
+    "arch": "arm64",
+    "openharmony": "7.0.0.39"
+  }
+}

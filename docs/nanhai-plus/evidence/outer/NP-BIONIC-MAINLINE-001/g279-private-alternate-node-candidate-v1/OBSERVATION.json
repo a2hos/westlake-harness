@@ -1,0 +1,24 @@
+{
+  "alternate_index": 1,
+  "alternate_recent_metric": {
+    "best_delay_ms": 51,
+    "freshest_age_seconds": 3.94349,
+    "valid_samples": 10
+  },
+  "alternate_type": "vless",
+  "at_utc": "2026-10-04T20:11:39.529754+00:00",
+  "controller_peer_pid_matched_process": true,
+  "controller_root_owned": true,
+  "current_index": 9,
+  "current_type": "hysteria2",
+  "eligible_non_current_count": 12,
+  "global_selection_writes": 0,
+  "gz02_connections": 0,
+  "gz02_reachability_proven": false,
+  "node_count": 15,
+  "proxy_instance_starts": 0,
+  "schema": "g279-private-alternate-observation-v1",
+  "selection_only": true,
+  "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "upstream_runner_sha256": "a17afa0de9b3efa68a7ba9601a6b6fa4dc71394d39cb76b4e803f1c5035da61c"
+}

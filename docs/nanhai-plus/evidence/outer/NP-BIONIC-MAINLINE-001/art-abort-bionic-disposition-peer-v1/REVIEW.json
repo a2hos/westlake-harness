@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-10-04T20:13:49.092297+00:00",
+  "count_policy": {
+    "catalog_changed": false,
+    "disposition_candidate_only": true,
+    "retired_delta": 0,
+    "tool_pass_delta": 0
+  },
+  "decision": "RECOMMEND_REPLACE_CAPABILITY_CONDITIONAL_NO_ACCEPTANCE",
+  "evidence_sha256": {
+    "bionic_catalog": "f2b38448336c5c7ab4435a7ad3b455cdbdbab5c50e0231c10f4a951e2a080811",
+    "bionic_plan": "9d608e57aeef88573bf8bb1ba570704a2e20fbb6d3e51c1e64fc5f4c847cf445",
+    "musl_link_failure": "19fc3391c8518d53786e1248c7d23cc8bdbc93b0055c4df5f40852bffed8c2d3",
+    "old_wrapper": "571673ea0546e35df2fcc631a213ba071e806c2c214dc7a6f5f72de3e8b14f1e",
+    "prior_root_disposition": "21e9f00edad841bb3eeec818ff1b5757c3aefbac6732c69329a49f203cd75ca2",
+    "r4_runtime": "655f5a7a8d9840cf29a43f8fec1fbf0eee812586fe1959feb8fc209e6e7afe82",
+    "r4_runtime_common": "eac0a73915f2cd9efd1098bd1f380ec69c43d1fbd4231eb6d7bc6ee7c4f4b3ed",
+    "r4_runtime_header": "24d5c4b6c6326187fd28a8d462077d0f5747942f5bb5f748b00695476f5348df"
+  },
+  "execution": {
+    "bridge_changes": 0,
+    "builds": 0,
+    "containers": 0,
+    "device_commands": 0
+  },
+  "falsifiers_and_gates": [
+    "Find exact current Bionic appspawn/ART abort consumer and required OH-visible sink/format. If it calls the C wrapper, replace classification must be revisited; rebuild only within one admitted Bionic/libc++ cohort or integrate inside ART with explicit export and C ownership boundary.",
+    "Prove R4 product ART_TARGET_ANDROID branch and actual in-App provider/namespace, Bionic libc and C++ ABI; disallow Musl DT_NEEDED or a second libc mapping.",
+    "Force a controlled ART fatal path and separately an unexpected-signal path in an authorized later run; compare message, truncation, empty/unavailable message, and OH sink visibility. Static code presence is not runtime proof.",
+    "If native message does not reach required OH sink, implement/verify an in-process Bionic-to-OH client boundary or process-external logging service and retain this capability open; do not retire it as passed.",
+    "Before accepting replacement, prove old DSO absent from loader graph and no unresolved consumer references; signed independent review and root count update are separate."
+  ],
+  "missing_evidence": [
+    "exact new Bionic caller/consumer and sink",
+    "actual R4 Bionic product libart export/provider graph",
+    "actual abort log visibility on OH7",
+    "build/loader/device execution"
+  ],
+  "recommended_disposition": "replace",
+  "replacement_candidate": "R4 ART own Bionic-side Runtime::SetAbortMessage/android_set_abort_message and ART fatal logging; if OH visibility is needed, route the resulting Bionic-owned diagnostic to OH logging through a verified Bionic client/OS boundary, not an in-App Musl DSO.",
+  "schema": "g279-art-abort-bridge-bionic-disposition-independent-candidate-v1",
+  "source_scope": {
+    "aosp_art_head_verified": "1690c6912a7972c9e62c39b48c706de9b8b18b4a",
+    "consumer_search": "exact selected WestLake-Harness bms/src adapter and WestLake-22b945321929 source; only wrapper definition found",
+    "harness_snapshot": "eafec9451a91 selected immutable file, not full repository"
+  },
+  "target": "oh7.0.0.39-aosp16r4-arm64-bionic",
+  "tool_id": "art-abort-bridge",
+  "why": [
+    "Old DSO exports a C buffer copy wrapper around an internal art::std::string-returning function. The separate OH-clang15/Musl/C++ link recipe is outside the single-Bionic App boundary.",
+    "Exact R4 ART source already sets its abort message and logs the fatal abort state; unexpected-signal path logs the fault message. Reuse of this native producer is a plausible replacement direction.",
+    "The old selected harness source has the wrapper definition but no observed call site in the selected source roots. This narrow absence does not prove there is no current Bionic caller.",
+    "Historical strict R4/Musl link rc1 on missing GetFaultMessageForAbortLogging export is a real failure, not a successful target bridge or proof Bionic will export it."
+  ]
+}

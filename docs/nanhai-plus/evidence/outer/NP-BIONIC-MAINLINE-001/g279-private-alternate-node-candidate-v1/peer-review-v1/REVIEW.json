@@ -1,0 +1,60 @@
+{
+  "accepted_findings": [
+    "Only local Unix controller HTTP GET /proxies/<quoted name> is used, with kernel peer PID/UID and root-owned socket path guards from exact upstream runner. No PUT/PATCH or config write path exists in selector.",
+    "Exact local source SHA, unique root-owned process identity, 15 ordered nodes and allowed node schema are checked. Source/process/socket/current leaf are rechecked after 15 history reads.",
+    "History input is bounded to 256 entries/node, 1 MiB/controller response and timestamps within -120 to 7200 seconds; ranking excludes current index 9 and fails closed if index 1 is no longer best.",
+    "Observation emits only source-order indices, node types and aggregate delay; no node name, server address, UUID/password or raw controller body.",
+    "Independent fresh read-only run repeated candidate 1/15, 12 eligible non-current and current 9 without changing global selection."
+  ],
+  "at_utc": "2026-10-04T20:13:07.579372+00:00",
+  "candidate_sha256": "df18bfc969e6de78d6f4e1400619dfc78b5ce67a5edd30af61e3cb5749c52e44",
+  "decision": "GO_SELECTION_CODE_ONLY_NO_PROXY_OR_SSH_RELEASE",
+  "fixture_raw_sha256": "dca5657c3f8e12e2863b140de03521bbe16925855d4e99934cafcb2f58e8db25",
+  "fixture_script_sha256": "b5efbb22f637c00a27dd8d5a02ecfdfae2c2905b6c85a683e30bd17b67f5d5cf",
+  "frozen_sha_matches_candidate": {
+    "fixture": true,
+    "fixture_raw": true,
+    "observation": true,
+    "selector": true
+  },
+  "independent_fresh_readonly_controller_observation": {
+    "at_utc": "2026-10-04T20:12:39.493687+00:00",
+    "chosen_best_delay_ms": 51,
+    "chosen_source_order_index": 1,
+    "chosen_type": "vless",
+    "chosen_valid_samples": 10,
+    "controller_peer_pid_guard_in_code": true,
+    "current_source_order_index": 9,
+    "current_type": "hysteria2",
+    "eligible_non_current_count": 12,
+    "node_count": 15,
+    "node_names_or_credentials_exported": false,
+    "rc": 0,
+    "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1"
+  },
+  "independent_no_credential_fixture": {
+    "rc": 0,
+    "result": "positive and changed-current/ranking/inventory/stale/future/invalid-history negatives PASS"
+  },
+  "limits": [
+    "The 51 ms best historical delay is not a current gz02-specific TCP or SSH result.",
+    "Dynamic controller histories are not frozen in full; the future execution gate must re-read and re-rank all candidates immediately before any private credential write, and any drift must abort.",
+    "Proposed nonce is not an issued START; no runner/release or selected-node proxy instance exists in this generation.",
+    "Code-only GO does not authorize switching the global node, starting a private proxy, SSH, graph or device work."
+  ],
+  "next_gate": "A separate runner candidate should bind the exact selected index and fresh re-ranked history/source/process/socket/leaf to a new independent review and root one-shot release; preserve no credentials or names in evidence.",
+  "observation_sha256": "adb718a8b8934bb1b7b108a591824e029e141c36d3e444420a113462163760a8",
+  "schema": "g279-private-alternate-node-independent-code-review-v1",
+  "scope": {
+    "bridge_accesses": 0,
+    "container_commands": 0,
+    "controller_get_queries_by_review": "one fresh selector observation only",
+    "device_commands": 0,
+    "global_selection_writes": 0,
+    "gz02_connections": 0,
+    "proxy_instance_starts": 0,
+    "ssh_connections": 0,
+    "task_summary_changed": false
+  },
+  "selector_sha256": "11e4d38464e727555a31d88c6a32d10fd300982d28712e76ac0a91af2a1e4b8f"
+}

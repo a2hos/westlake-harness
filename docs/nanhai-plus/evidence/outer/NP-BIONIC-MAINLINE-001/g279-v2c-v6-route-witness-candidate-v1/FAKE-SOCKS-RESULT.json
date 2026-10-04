@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-04T20:03:02.304353+00:00",
+  "container_commands": 0,
+  "credential_auth_attempts": 0,
+  "decision": "LOCAL_FAKE_ONLY",
+  "device_commands": 0,
+  "fake_server": {
+    "accepts": 1,
+    "greeting_hex": "050100",
+    "request_hex": "05010001c000020208ae",
+    "requested_port": 2222,
+    "requested_target": "192.0.2.2"
+  },
+  "fake_server_outbound_socket_calls": 0,
+  "namespace_commands": 0,
+  "pre_banner_marker_full_lines": [
+    "kex_exchange_identification: Connection closed by remote host",
+    "Connection closed by UNKNOWN port 65535"
+  ],
+  "real_gz02_connections": 0,
+  "schema": "g279-v2c-v6-fake-socks-counterexample-v1",
+  "ssh_rc": 255,
+  "ssh_stderr_bytes": 605,
+  "ssh_stderr_sha256": "028ed7d4ff65bd74dca123381d5ae18815e649d91263c97f9f14893da9e1b39d",
+  "ssh_stdout_bytes": 0,
+  "ssh_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

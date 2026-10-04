@@ -1,0 +1,43 @@
+{
+  "actions": {
+    "bridge_changes": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "global_controller_writes": 0,
+    "gz02_connections": 0,
+    "namespace_commands": 0,
+    "proxy_instances_started": 0,
+    "ssh_commands": 0
+  },
+  "at_utc": "2026-10-04T20:17:51.749262+00:00",
+  "decision": "CODE_ONLY_AWAIT_INDEPENDENT_PEER_AND_ROOT_RELEASE",
+  "fixture_code_sha256": "bf1b335c8ac8abcab4d6c58d67c50079413fe4ea1b25541d24f433997da4ff31",
+  "fixture_rc": 0,
+  "fixture_result_sha256": "e08cf93c42f7594749fae1e7ebe2fa28a6c8b13893165120f4dfc2f1fd572ab9",
+  "new_generation": true,
+  "proof_limit": "Local /32 route line and controller delay history do not prove node outbound TCP or gz02 reachability; only actual pinned SSH banner/host key/auth/UID can support remote identity claim.",
+  "proposed_nonce": "fce0fa42604f3a6e76de78d6e339683e",
+  "required_next": "Independent code review must bind exact runner/candidate/fixture hashes; then a separate root release with exact nonce, port and complete release fields. No execution granted by this candidate.",
+  "runner_sha256": "53d0c32a4459ceaf865e905f7072f80112fb65bde719d113f72e76f2cea2180c",
+  "runtime_boundaries": [
+    "source SHA and unique root-owned Unix controller kernel peer PID/socket",
+    "15 ordered nodes, recent history and deterministic index-1 non-current ranking twice before 0600 credential write",
+    "0700 project private directory, O_EXCL 0600 config, fixed alias, only one selected node",
+    "exact /32 PROXY and MATCH REJECT, loopback listener PID and route-line witnesses",
+    "pinned gz02 host key and one SSH read-only identity command",
+    "bounded stderr/stdout, terminal cleanup, no replay"
+  ],
+  "schema": "g279-private-v2c-v7-alternate-node-executable-candidate-v1",
+  "selection_candidate_nonce_reused": false,
+  "selection_candidate_sha256": "df18bfc969e6de78d6f4e1400619dfc78b5ce67a5edd30af61e3cb5749c52e44",
+  "selection_code_sha256": "11e4d38464e727555a31d88c6a32d10fd300982d28712e76ac0a91af2a1e4b8f",
+  "selection_peer_sha256": "b13e945aa27509cf9d807d034e8d6f2ab4ae38123529c30b434d6e2fa47c44bb",
+  "target": "gz02 exact 1.95.90.207:58222 read-only SSH identity probe via project-private alternate node index 1",
+  "v6_candidate_sha256": "db702431647c424fb2a849d08da8062d254b13d1fe7cf82798510072063d3063",
+  "v6_nonce_reused": false,
+  "v6_peer_postrun_sha256": "62b18f2c4e6eae4800f8524862190d3e7b22a4ec03aafd2ce2501fb7baa4fd07",
+  "v6_root_postrun_sha256": "764214f597910d1613a7820f5dcd6793ec3e87f6f2c1a3e540cb6ffe671fc400",
+  "v6_runner_sha256": "9f4592a5336f809254ddecfd80b85b50aa016c8f50ef3b0535898ac1ec0de510",
+  "v6_start_sha256": "0b5e215cfb5ad3e10e07d30351540f65dcfd7dd92f507336daf17fc1bc3897a0",
+  "v6_terminal_sha256": "ae8a2894a8fc88b371e38489e1505cbf3d3055271d32051e9d47bc88c0a591ee"
+}

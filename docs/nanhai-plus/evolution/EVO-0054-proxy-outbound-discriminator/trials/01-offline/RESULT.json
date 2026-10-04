@@ -1,0 +1,16 @@
+{
+  "schema": "evo54-offline-pilot-result-v1",
+  "argv": ["python3", "-B", "docs/nanhai-plus/evolution/EVO-0054-proxy-outbound-discriminator/trials/01-offline/PILOT.py"],
+  "started_at_utc": "2026-10-04T20:15:55Z",
+  "finished_at_utc": "2026-10-04T20:15:59Z",
+  "elapsed_seconds_upper_bound": 4,
+  "rc": 0,
+  "script_sha256": "ad91baf527162aa798f6c6c47c4dae358c64df0807b769e9eac181a7d3bc5389",
+  "stdout_sha256": "d095a58ecd6f53281a8818d56b3c20804b2ee472d3d6c2db711754a51d2970b2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "actual_v6_class": "LOCAL_RULE_ONLY",
+  "synthetic_distinguishing_cases": 4,
+  "real_node_outbound_observed": false,
+  "network_calls": 0,
+  "runner_edits": 0
+}

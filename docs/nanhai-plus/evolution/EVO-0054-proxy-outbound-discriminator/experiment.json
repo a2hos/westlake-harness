@@ -1,0 +1,34 @@
+{
+  "schema": "nanhai-evolution-experiment-v1",
+  "id": "EVO-0054",
+  "owner": "dedicated-reflection-peer",
+  "target": "OH7.0.0.39/android-16.0.0_r4/ARM64/Bionic",
+  "direction": "connection failure localization and next network experiment information gain",
+  "trigger_result_groups": [
+    "G279 v6 code peer GO only",
+    "G279 v6 actual outer rc2 and SSH child rc255; local exact /32 PROXY line observed",
+    "G279 v6 independent peer/root accepted bounded local line and failure only",
+    "alternate-node selector code GO; no proxy or SSH release"
+  ],
+  "baseline": "The exact /32 PROXY line does not distinguish selected-node outbound TCP attempt, remote connect, banner, host key or auth. V6 consumed its nonce and yielded no authenticated remote fact.",
+  "hypotheses": [
+    "The selected node never attempts an outbound connection to the endpoint",
+    "The selected node attempts but cannot connect to the endpoint",
+    "TCP reaches an SSH peer but closes before banner or key exchange"
+  ],
+  "options": [
+    {"id": "A", "method": "repeat SSH with another node and only rc/stderr", "cost": "one nonce and remote attempt", "information_limit": "rc255 remains ambiguous"},
+    {"id": "B", "method": "bind one privacy-filtered selected-node outbound dial outcome to the existing local rule/SSH receipt", "cost": "one small local observation design/pilot; later only if separately released", "information_limit": "node dial alone is not remote host-key proof"}
+  ],
+  "selected_one_improvement": "For the next separately released private-node SSH attempt, require an exact-endpoint selected-node outbound dial witness with a bounded result enum ATTEMPTED_CONNECT_OK, ATTEMPTED_CONNECT_FAILED, NOT_OBSERVED, captured beside the /32 rule and SSH stage. On missing or unsafe witness, report UNKNOWN and do not infer remote unavailability.",
+  "pilot_scope": "offline classification of existing accepted receipts only; no runner change or live network",
+  "cost_cap_seconds": 120,
+  "success_test": "v6 remains LOCAL_RULE_ONLY; synthetic no-outbound and connect-failed cases are distinguishable; no case gains remote banner/host-key/auth without corresponding evidence",
+  "stop_or_rollback": "If witness requires credentials, node names, broad raw logs, global proxy changes or cannot be bound to exact endpoint/time/private instance, keep existing runner and UNKNOWN. Never replay v6 nonce.",
+  "inputs": {
+    "v6_code_peer_sha256": "820c3fbc22530de1ddc5a74148ae0436578135e47ff02c889989b07a3a15df6a",
+    "v6_terminal_sha256": "ae8a2894a8fc88b371e38489e1505cbf3d3055271d32051e9d47bc88c0a591ee",
+    "v6_root_sha256": "764214f597910d1613a7820f5dcd6793ec3e87f6f2c1a3e540cb6ffe671fc400",
+    "alternate_selector_peer_sha256": "b13e945aa27509cf9d807d034e8d6f2ab4ae38123529c30b434d6e2fa47c44bb"
+  }
+}

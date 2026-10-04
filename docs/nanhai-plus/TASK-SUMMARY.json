@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T20:02:41.325673+00:00",
+  "checked_at": "2026-10-04T20:22:43.887316+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -2621,5 +2621,51 @@
     },
     "next_wall": "fresh authenticated exact-R4 Linux native host route",
     "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2c_v6": {
+    "status": "root_accepted_local_32_proxy_rule_line_and_bounded_ssh_failure_only",
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-v2c-v6-route-witness-candidate-v1/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "764214f597910d1613a7820f5dcd6793ec3e87f6f2c1a3e540cb6ffe671fc400"
+    },
+    "outer_command_rc": 2,
+    "local_gz02_32_proxy_rule_line_proven": true,
+    "proxy_node_outbound_tcp_proven": false,
+    "gz02_identity_proven": false,
+    "graph_result_observed": false,
+    "one_shot_consumed": true,
+    "cold_start_delta": 0
+  },
+  "g279_private_native_proxy_v2c_v7": {
+    "status": "root_accepted_local_32_proxy_rule_line_and_bounded_ssh_failure_only",
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-v2c-v7-alternate-node-candidate-v1/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "850edde1111318928555dbccb9b00e8939496ab128ee0e1d81a8ea3ceb05ef6b"
+    },
+    "outer_command_rc": 2,
+    "local_gz02_32_proxy_rule_line_proven": true,
+    "proxy_node_outbound_tcp_proven": false,
+    "gz02_identity_proven": false,
+    "graph_result_observed": false,
+    "one_shot_consumed": true,
+    "cold_start_delta": 0
+  },
+  "evo54": {
+    "status": "bounded_pilot_only_no_promotion",
+    "lens": "node_outbound_discriminator",
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0054-proxy-outbound-discriminator/decision.json",
+      "sha256": "fbbfa5dce3db975546b27bd7087a2a76a38fb00953aa39164338a0221e69d686"
+    },
+    "startup_delta": 0
+  },
+  "art_abort_bionic_disposition_followup": {
+    "decision": "remain_undetermined",
+    "static_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/art-abort-bridge-disposition-static-review-v1/REVIEW.json",
+      "sha256": "6d35a3fe1e2ede4d2385fcdd1283be2157d0374655ce70dc05406b9c90f787cc"
+    },
+    "disposition_reviewed_delta": 0,
+    "tool_pass_delta": 0
   }
 }

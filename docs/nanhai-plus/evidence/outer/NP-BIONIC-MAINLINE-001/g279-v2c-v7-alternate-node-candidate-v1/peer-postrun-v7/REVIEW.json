@@ -1,0 +1,67 @@
+{
+  "schema": "g279-v2c-v7-independent-postrun-review-v1",
+  "decision": "ACCEPT_LOCAL_RULE_WITNESS_AND_BOUNDED_FAILURE_ONLY_NO_REMOTE_IDENTITY",
+  "scope": "independent_read_only_postrun_no_network_replay",
+  "artifact_sha256": {
+    "candidate": "2f7423672e0b6ae3b561cd9ab01d77630b1c1865b037bde00fa29d59b72df4fb",
+    "runner": "53d0c32a4459ceaf865e905f7072f80112fb65bde719d113f72e76f2cea2180c",
+    "code_peer": "c119c5f245325b0a079d846e90aecb26b428235b84756a08a48cb613d53ad63b",
+    "root_release": "47c74590b2809dd91420b79e7e4382cc296febe7e9ad17ae0688fc816d2020c6",
+    "start": "611d2dd43a4ba8432f842b492d955869c6eeef58096e0cafb813e34b90d84f8b",
+    "terminal": "840bfd3fdd626e7a735c3d6c9d22e6b8a35a012fa418822fba42a68efda3521f"
+  },
+  "chain": {
+    "nonce": "fce0fa42604f3a6e76de78d6e339683e",
+    "nonce_matches_candidate_release_start_terminal": true,
+    "start_release_sha_matches_actual": true,
+    "terminal_release_sha_matches_actual": true,
+    "release_runner_sha_matches_actual": true,
+    "start_runner_sha_matches_actual": true,
+    "release_code_peer_sha_matches_actual": true,
+    "one_shot_consumer": "START.json exists; runner exact_release rejects any second START or TERMINAL",
+    "root_release_decision": "ISSUE_EXACT_V2C_V7_ALTERNATE_GZ02_READONLY_ONCE",
+    "terminal_decision": "NO_GO_PRIVATE_LISTENER_AND_GZ02_IDENTITY"
+  },
+  "replayable_safe_evidence": {
+    "negative_line_sha256": "c8764783807064cb911cb9559d5294f387dfd0eaa7f9b2fb7d1996e98c3d1164",
+    "negative_normalized_event_sha256": "49226dfa502f517a23fad695e1a37581cf5e81273960bef3bdea63abd7aaae8e",
+    "negative_line_claim": "127.0.0.1:58802 to 203.0.113.1:9 matched Match using REJECT",
+    "positive_line_sha256": "6dfcaca0d45b2d55fee6c022dc01b33a3c9591ef9a0c7a74ced4ae93edb80130",
+    "positive_line_claim": "127.0.0.1:58804 to 1.95.90.207:58222 matched IPCIDR(1.95.90.207/32) using PROXY[g279-v2c-alternate]",
+    "line_replay": "Both terminal-exported lines match anchored safe syntax; raw-line hashes recompute; negative normalized-event canonical SHA recomputes",
+    "limit": "Local mihomo selection lines only; no remote TCP connection or gz02 identity proof"
+  },
+  "terminal_reported_only": {
+    "outer_runner_rc": 2,
+    "failed_stage": "private_listener_and_gz02_identity",
+    "failure_class": "InstanceFailure",
+    "last_complete_stage": "SSH_LOCAL_PROCESS_LAUNCHED",
+    "ssh_commands": 1,
+    "ssh_child_rc": 255,
+    "ssh_stdout_bytes": 0,
+    "ssh_stderr_bytes": 1462,
+    "ssh_error_marker": "PRE_BANNER_CLOSED_LINE_SEEN",
+    "last_ssh_stage": "UNKNOWN",
+    "process_group_clean": true,
+    "private_dir_removed": true,
+    "zero_scope_counters": ["remote_write_commands", "hk01_hops", "graph_commands", "device_commands", "container_commands", "namespace_commands", "global_proxy_writes", "startup_delta"],
+    "limit": "Raw SSH stdout/stderr and private process logs were removed; child rc, byte counts, marker and cleanup-at-exit are not independently replayable from raw streams"
+  },
+  "postrun_local_observation": {
+    "private_root": ".nanhai-plus-runtime/bionic-oh7-aosp16/proxy-pilot-g279-v2c-v7",
+    "private_root_exists_and_empty": true,
+    "nonce_subdirectory_absent": true,
+    "tcp_39033_listener_lsof_records": 0,
+    "matching_private_process_records_excluding_observer_command": 0,
+    "limit": "Point-in-time local absence corroborates cleanup; it does not prove uninterrupted process-group cleanup history"
+  },
+  "negative_cases": [
+    "No raw SSH stderr means the PRE_BANNER_CLOSED_LINE_SEEN marker cannot establish which host or network hop closed the stream",
+    "No SSH banner, pinned host-key exchange, authentication or UID receipt; gz02 remote identity remains unproven",
+    "Local /32 PROXY rule selection does not establish alternate-node reachability or remote TCP connection",
+    "No graph command, Soong execution, AOSP16 build, APK build, device test or startup progress is established",
+    "One-shot v7 is consumed; no replay under this release"
+  ],
+  "methods": ["SHA-256 over original files", "JSON chain field comparison", "anchored route-line parsing and hash recomputation", "read-only private-root listing", "read-only lsof listener query", "read-only process listing"],
+  "prohibited_actions_not_performed": ["SSH", "proxy launch", "network test", "device", "container", "Bridge mutation"]
+}

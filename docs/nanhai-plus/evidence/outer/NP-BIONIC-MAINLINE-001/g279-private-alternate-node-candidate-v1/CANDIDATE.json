@@ -1,0 +1,41 @@
+{
+  "actions_this_generation": {
+    "bridge_changes": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "global_selection_writes": 0,
+    "gz02_connections": 0,
+    "proxy_instance_starts": 0,
+    "ssh_commands": 0
+  },
+  "at_utc": "2026-10-04T20:11:57.439954+00:00",
+  "claim": "Existing local controller delay history makes index 1 a bounded alternate trial candidate only; no endpoint or SSH proof.",
+  "decision": "CANDIDATE_ONLY_NO_RELEASE_NO_EXECUTION",
+  "fixture_output_sha256": "dca5657c3f8e12e2863b140de03521bbe16925855d4e99934cafcb2f58e8db25",
+  "fixture_rc": 0,
+  "fixture_script_sha256": "b5efbb22f637c00a27dd8d5a02ecfdfae2c2905b6c85a683e30bd17b67f5d5cf",
+  "future_execution_gate": [
+    "Independent review and new exact root release required; this candidate grants no execution.",
+    "Recheck source SHA, unique root-owned controller PID, kernel socket peer, exact 15 ordered nodes, current leaf, all candidate history and ranking immediately before private credential write; abort on any drift.",
+    "Copy only selected source-order index 1 node into project-private 0700 directory with O_EXCL 0600 config; fixed non-sensitive alias, one PROXY node, exact gz02 /32 PROXY and MATCH REJECT, loopback listener only.",
+    "No global controller PUT/PATCH, no global config edit, no node-name or credential logging; no fallback candidate selection on failure.",
+    "Bind one new nonce to reviewed code/input/release, enforce START/TERMINAL and no replay; launch, probe and cleanup only under separate release."
+  ],
+  "observation_sha256": "adb718a8b8934bb1b7b108a591824e029e141c36d3e444420a113462163760a8",
+  "prior_v6_nonce": "3e004b647101d527cf132b51e7a2a9b1",
+  "prior_v6_peer_postrun_sha256": "62b18f2c4e6eae4800f8524862190d3e7b22a4ec03aafd2ce2501fb7baa4fd07",
+  "prior_v6_terminal_sha256": "ae8a2894a8fc88b371e38489e1505cbf3d3055271d32051e9d47bc88c0a591ee",
+  "proposed_nonce": "485d18b8bbf5711e33baa9dcc83b4bc5",
+  "schema": "g279-private-alternate-node-code-candidate-v1",
+  "selection": {
+    "current_source_order_index": 9,
+    "gz02_reachability_proven": false,
+    "historical_best_delay_ms": 51,
+    "historical_valid_samples": 10,
+    "node_names_and_credentials_in_receipts": false,
+    "source_order_index": 1,
+    "type": "vless"
+  },
+  "selector_sha256": "11e4d38464e727555a31d88c6a32d10fd300982d28712e76ac0a91af2a1e4b8f",
+  "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1"
+}

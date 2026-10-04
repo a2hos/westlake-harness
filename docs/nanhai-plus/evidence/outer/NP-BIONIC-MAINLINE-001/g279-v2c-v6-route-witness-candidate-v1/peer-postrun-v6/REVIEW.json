@@ -1,0 +1,75 @@
+{
+  "at_utc": "2026-10-04T20:10:20.719595+00:00",
+  "candidate_sha256": "db702431647c424fb2a849d08da8062d254b13d1fe7cf82798510072063d3063",
+  "cleanup_readback": {
+    "global_verge_mihomo_pid_10430_remained": true,
+    "lsof_listen_rc": 1,
+    "lsof_listen_stdout_bytes": 0,
+    "private_process_observed": false,
+    "private_root_only_no_once_children": true,
+    "released_port": 39032,
+    "terminal_private_dir_removed": true,
+    "terminal_process_group_clean": true
+  },
+  "code_peer_sha256": "820c3fbc22530de1ddc5a74148ae0436578135e47ff02c889989b07a3a15df6a",
+  "decision": "ACCEPT_V6_LOCAL_RULE_LINE_AND_BOUNDED_FAILURE_ONLY_NO_REMOTE_TCP",
+  "local_negative_route_witness": {
+    "action": "Match using REJECT",
+    "meaning": "local TEST-NET-3 only",
+    "raw_line_and_parser_recomputed": true,
+    "raw_line_sha256": "188e4ec7775049bcf0bcfc4570dc4f7aa47cac8101062bd789fc973614b89823",
+    "target": "203.0.113.1:9"
+  },
+  "local_positive_route_witness": {
+    "action": "PROXY[g279-v2c-selected]",
+    "exact_parser_and_replay_passed": true,
+    "meaning": "one local private Mihomo rule-selection line; not a node dial or remote TCP proof",
+    "raw_line_and_sha_recomputed": true,
+    "raw_line_sha256": "e66213a4700e8e026a779909d0311ab6f8f5b1d2749938eb584ef7150f5afdde",
+    "rule": "IPCIDR(1.95.90.207/32)",
+    "target": "1.95.90.207:58222"
+  },
+  "next_gate": "Do not replay v6 nonce. A new endpoint/route fact and separately reviewed generation are needed before another read-only identity probe; keep graph and device claims at zero.",
+  "nonce": "3e004b647101d527cf132b51e7a2a9b1",
+  "not_proven": [
+    "actual node outbound socket",
+    "remote gz02 TCP connection",
+    "SSH server banner",
+    "pinned remote host key",
+    "public-key authentication",
+    "remote UID",
+    "Soong graph",
+    "HelloWorld cold launch",
+    "actual raw 1462-byte SSH stderr marker line independently replayed"
+  ],
+  "release_nonce_chain_valid": true,
+  "release_sha256": "353056f04d696ef89423659963c27648ae7f7d4bbc086bbe03c4da67f3ab78b8",
+  "runner_sha256": "9f4592a5336f809254ddecfd80b85b50aa016c8f50ef3b0535898ac1ec0de510",
+  "schema": "g279-v2c-v6-independent-postrun-review-v1",
+  "scope": {
+    "bridge_accesses": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "new_gz02_connections_by_review": 0,
+    "remote_writes_by_review": 0,
+    "task_summary_changed": false
+  },
+  "ssh_observation": {
+    "child_launch_count_reported": 1,
+    "child_rc": 255,
+    "independent_outer_rc_receipt_available": false,
+    "last_ssh_stage": "UNKNOWN",
+    "marker_raw_stderr_preserved": false,
+    "marker_reported": "PRE_BANNER_CLOSED_LINE_SEEN",
+    "outer_rc_reported_by_parent": 2,
+    "positive_route_status": "LOCAL_LINE_OBSERVED",
+    "stderr_bytes": 1462,
+    "stdout_bytes": 0,
+    "terminal_decision": "NO_GO_PRIVATE_LISTENER_AND_GZ02_IDENTITY",
+    "timed_out": false
+  },
+  "start_sha256": "0b5e215cfb5ad3e10e07d30351540f65dcfd7dd92f507336daf17fc1bc3897a0",
+  "terminal_sha256": "ae8a2894a8fc88b371e38489e1505cbf3d3055271d32051e9d47bc88c0a591ee",
+  "v5_chain_four_shas_match_release": true,
+  "v5_nonce_distinct": true
+}
