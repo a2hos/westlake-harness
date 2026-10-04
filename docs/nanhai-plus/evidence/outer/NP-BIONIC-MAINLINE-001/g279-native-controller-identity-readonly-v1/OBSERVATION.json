@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-04T18:32:39.026129+00:00",
+  "controller_http_200_bearer_auth": true,
+  "current_leaf_in_exact_source_proxies": true,
+  "current_leaf_non_direct": true,
+  "local_peerpid_matches_process_each_request": true,
+  "mihomo_pid": 10430,
+  "mihomo_uid": 0,
+  "network_or_gz02_or_device_or_container": false,
+  "node_name_or_credential_recorded": false,
+  "process_exact_d_f_ext_ctl_unix": true,
+  "schema": "g279-native-controller-identity-readonly-v1",
+  "scope": "One local read-only Unix controller observation; future current selection can change.",
+  "selection_group_hops": 3,
+  "socket_mode": "0o777",
+  "socket_path": "/tmp/verge/verge-mihomo.sock",
+  "socket_uid": 0,
+  "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "source_sha_after_equal": true
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "g279-native-controller-no-auth-negative-v1",
+  "at_utc": "2026-10-04T18:32:53.328360+00:00",
+  "request": "GET /proxies/PROXY over local Unix socket without Authorization header",
+  "http_status": 200,
+  "rejected_without_auth": false,
+  "body_bytes_not_saved": 550,
+  "peerpid_matches_observation": true,
+  "node_or_credential_material_saved": false,
+  "remote_network": false
+}

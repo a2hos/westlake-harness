@@ -1,0 +1,25 @@
+{
+  "schema": "g279-native-controller-identity-root-acceptance-v1",
+  "at_utc": "2026-10-04T18:33:10+00:00",
+  "decision": "ACCEPT_LOCAL_READONLY_IDENTITY_ONLY",
+  "observation_sha256": "5e708af0a4631bb9ecac828ee0d92b179aae30495752ebfd4c6abfbe7e8efda4",
+  "auth_negative_sha256": "dfd3fbe77221cbbc54a1e48dc0efdc8316b9cba65797e0662e158a55e98b5dd1",
+  "bounded_contract_sha256": "55c7bf9f5176482ae798c46cea876adc0e8c5cdfa785c3409b9889d8f7e192fc",
+  "accepted": [
+    "Unix LOCAL_PEERPID matched the root-owned mihomo process and exact controller arguments at observation time",
+    "source config SHA remained stable during the bounded read",
+    "three-hop selected leaf was present in the source config and non-DIRECT at observation time",
+    "unauthenticated GET returned HTTP 200; Bearer header is not an authentication proof for this controller"
+  ],
+  "not_proven": [
+    "future selected leaf or source config stability",
+    "running executable image bytes from ps path alone",
+    "safe access to credentials by arbitrary local users",
+    "private config syntax, private process, gz02 SSH, remote graph or startup"
+  ],
+  "release_issued": false,
+  "global_config_mutated": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

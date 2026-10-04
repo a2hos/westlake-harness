@@ -1,0 +1,33 @@
+{
+  "schema": "g279-native-controller-identity-contract-v1",
+  "at_utc": "2026-10-04T18:33:18.366605+00:00",
+  "source_observation_sha256": "5e708af0a4631bb9ecac828ee0d92b179aae30495752ebfd4c6abfbe7e8efda4",
+  "no_auth_negative_sha256": "dfd3fbe77221cbbc54a1e48dc0efdc8316b9cba65797e0662e158a55e98b5dd1",
+  "probe_program_sha256": "9aa80880670820d8a3c189f418676d17b0fe97ba68ead84a51a38f4a0c4224b8",
+  "decision": "GO_BOUNDED_LOCAL_READONLY_IDENTITY_ONLY_NO_BEARER_AUTH_CLAIM",
+  "correction": "OBSERVATION.json field controller_http_200_bearer_auth records that a request carrying Bearer received 200; it does not establish that Bearer is required. AUTH-NEGATIVE.json shows GET /proxies/PROXY without Authorization also received 200 on the same peer PID. Do not call this an authenticated controller read.",
+  "current_observed_identity": {
+    "source_config_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+    "sole_mihomo_pid": 10430,
+    "process_uid": 0,
+    "process_exact_d_f_socket_arguments": true,
+    "unix_socket_owner_uid": 0,
+    "socket_peer_pid_equals_process": true,
+    "selection_hops": 3,
+    "current_leaf_in_source_and_non_direct": true,
+    "no_auth_get_status": 200
+  },
+  "v2a_falsifiable_guards": [
+    "Immediately before any leaf extraction, require exact source config SHA and one expected root-owned mihomo PID with exact -d, -f and -ext-ctl-unix argv, plus root-owned Unix socket at the exact path.",
+    "On every Unix connection use LOCAL_PEERPID and reject unless it equals that still-live PID; do not use socket pathname/owner alone as process identity.",
+    "Read only current selection through GET, cap response bytes, reject non-200/malformed/unknown/cyclic/DIRECT or REJECT leaf; never emit the leaf name, full proxy object, secret or raw response into versioned evidence.",
+    "Recheck source SHA, sole PID/UID/argv and socket peer PID after reading; selection is time-varying, so re-read immediately before constructing a private config and abort if leaf changed.",
+    "Treat no-auth GET 200 as a confidentiality/access-control boundary: the socket directory root:staff mode 2770 permits staff access while socket mode 0777. Bearer header is not demonstrated as an enforcement gate.",
+    "Do not infer running binary bytes from ps path alone; bind binary provenance separately if required. Do not query remote gz02 or mutate global state in v2a."
+  ],
+  "limits": [
+    "One observed current leaf at one time; no availability or future selection guarantee.",
+    "Local peer PID and process arguments strongly bind this Unix endpoint to the running process but do not cryptographically attest its executable image.",
+    "No private config generated, process started, SSH or gz02 network performed."
+  ]
+}
