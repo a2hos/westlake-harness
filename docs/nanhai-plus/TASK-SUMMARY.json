@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T05:22:15+00:00",
+  "checked_at": "2026-10-04T05:45:47.385315+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,9 +40,9 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 49,
-    "complete_inventory_dex_entries": 97,
-    "complete_inventory_native_elf_entries": 372,
+    "complete_static_inventories": 53,
+    "complete_inventory_dex_entries": 109,
+    "complete_inventory_native_elf_entries": 410,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -54,12 +54,12 @@
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
-    "release": 269,
+    "release": 270,
     "terminal_rc": 2,
-    "actual_exec_session": 18293,
-    "terminal_chunk": "734d54",
+    "actual_exec_session": 87143,
+    "terminal_chunk": "ab03cc",
     "host_tools_actual_loader_pass": 10,
-    "soong_bootstrap_successful_steps": 236,
+    "soong_bootstrap_successful_steps": 235,
     "soong_bootstrap_total_steps": 236,
     "stock_clang_plugin_compiled": true,
     "target_compile_commands": 0,
@@ -298,16 +298,32 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/whatsapp-signature-manifest-parser-v2/root-review-v1/ROOT-ACCEPTANCE.json",
       "sha256": "f43edb27b5319575aaf4af756f26b5a7285239834139c7474c38bd59badb719a"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v14/root-release-v1/G270-REVIEW.json",
+      "sha256": "6987c52b6c70a3adc0ea54b47cb68ad33bbefb5869d01ba38609ef0058622bbe"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g271-source-scout-v1/REPORT.json",
+      "sha256": "46a5cb63ca31ddbe4a4a99760c2a693aa04af28c6925d1c2ec5d02d4c682901c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g271-cts-closure-review-v1/REPORT.json",
+      "sha256": "8644838d8d68f7c3d518515e5748052d5e461ff2bc55ea09109a8ca1f78f6193"
     }
   ],
   "bionic_stock_graph": {
-    "release": 269,
+    "release": 270,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "libcore/luni/src/test/Android.bp:21:1 undefined junit",
-    "failure_location": "libcore/luni/src/test/Android.bp:21:1",
+    "first_failure": "five undefined modules: doclava, jsilver, compatibility-host-util, cts-tradefed, vts-tradefed",
+    "failure_location": "build/make/tools/apicheck/Android.bp:19:1; build/soong/test_suites/Android.bp:54:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -326,23 +342,20 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 270,
-    "next_input": "exact R4 junit owning module",
+    "prospective_release": 271,
+    "next_input": "five exact R4 owning source trees, complete CTS (sparse closure rejected)",
     "execution_ready": false,
-    "G269_terminal": true
+    "G270_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0010",
-    "verified_improvement_this_round": 1,
-    "scope": "Invocation-bound curl identity and explicit environment local candidate",
+    "latest": "EVO-0011",
+    "verified_improvement_this_round": 0,
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 90.402889166,
     "limit_seconds": 120,
-    "timing_compliant": true,
-    "pending_actual_result_groups": 3,
+    "pending_actual_result_groups": 2,
     "trigger_every_groups": "3-4",
-    "next": "EVO-0011 triggered after G268, WhatsApp actual and G269; bounded peer experiment pending"
+    "next": "Wait for 3-4 new actual results; batch9 and G270 are groups 1-2."
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -445,5 +458,15 @@
     "old_combined_result_rc": 2,
     "retained_text_parser_v2_accepted": true,
     "publisher_binding_verified": false
+  },
+  "scanner_batch9_actual": {
+    "exec_session": 78401,
+    "terminal_chunk": "5b27d4",
+    "outer_rc": 0,
+    "accepted_packages": 4,
+    "DEX_delta": 12,
+    "ELF_delta": 38,
+    "startup_delta": 0,
+    "outer_watchdog_scope": "parent-observed only"
   }
 }
