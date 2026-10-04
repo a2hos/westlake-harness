@@ -1,0 +1,115 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T21:26:36.802410+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 android-16.0.0_r4 / ARM64 / App single Bionic; 200 distinct unmodified APK cold starts incl 100 overseas-mainstream blackbox",
+  "task_summary_sha256": "db36b408961f7a8bbe55f9d8017d1b4fab8045b9ae0c80b437b5bc9c969bec1e",
+  "raw_accepted": 120,
+  "full_host_static_accepted": 120,
+  "semantic_dex_entries": 463,
+  "true_arm64_elf_entries": 1912,
+  "qualified_blackbox_packages": 25,
+  "upstream_exact_raw_accepted": 83,
+  "upstream_registry_artifacts": 338,
+  "upstream_exact_artifact_gap": 255,
+  "cold_start_verified": 0,
+  "qualified_blackbox_cold_starts": 0,
+  "bionic_whole_tools_verified": 0,
+  "tool_dispositions_reviewed": 88,
+  "graph_result_observed": false,
+  "fresh_authenticated_native_linux_host": false,
+  "six_new_raw_receipts": [
+    {
+      "package": "chat.fluffy.fluffychat",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f53e121840ac028c9f3a1332d50a78b5180674ba71ec5602c98a63f7ed3b98ca"
+    },
+    {
+      "package": "com.nextcloud.client",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "472dc088a45b235fcc8d27e9390076367be07dc36b384f623c22b862580f6c0c"
+    },
+    {
+      "package": "net.osmand.plus",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "deb919086d5e48a58f9b61ae21ac32852f82314153bed35b28eb1a644bbdcc05"
+    },
+    {
+      "package": "org.mozilla.fennec_fdroid",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "13367abd089b60a4f57313d9337aca80b018b47827a06593037c5b2fb020eb3f"
+    },
+    {
+      "package": "com.imo.android.imoim",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "be424ac3b6007d2c3f1bb2db576f2a65876ec14030707cb02c18f990ebc80e93"
+    },
+    {
+      "package": "com.imo.android.imoimlite",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a706ffda05800cb62ca4b857bf0dcfa0ea801d6d7b2d5dafb72e67227bbdc915"
+    }
+  ],
+  "six_new_static_receipts": [
+    {
+      "package": "chat.fluffy.fluffychat",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "a753e86f0cda9d22e9253fd2805686dba7921377da23e3a522e949657a10d99b"
+    },
+    {
+      "package": "com.nextcloud.client",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "6e2260ad6c8e7fa73e4c66d6fc5f9b68074b045b75d85b7f8d1ac524244d4f23"
+    },
+    {
+      "package": "net.osmand.plus",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "dff533f7e8f2af43306dc8fd714db888dba3253fa5e660358ab305605d4bfa76"
+    },
+    {
+      "package": "org.mozilla.fennec_fdroid",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "1b0fb162d6aa2e1425f8fda63f3f3bc1acb68215d1fc3c6c8632f8cc9bde16b3"
+    },
+    {
+      "package": "com.imo.android.imoim",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "0b228bcecb2626016c2f664c5b9d645525d66f142c3ac631f5a6c38eb1a9b755"
+    },
+    {
+      "package": "com.imo.android.imoimlite",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "687ecd2d443e0d9ba5ceaf748456d4341cd9762bc003d114d229853df228a230"
+    }
+  ],
+  "two_new_blackbox_receipts": [
+    {
+      "package": "com.imo.android.imoim",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+      "sha256": "2bed3c864c555b9a399b14cdbf33188910263fa250f21054b03d7915703c52ed"
+    },
+    {
+      "package": "com.imo.android.imoimlite",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+      "sha256": "07ff5f0c5c0ff75a643f57a8159bada335d96a3ab321ff03bc091bbab6c60ce8"
+    }
+  ],
+  "upstream_gap_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-artifact-gap-audit-v1/ROOT-REVIEW.json",
+    "sha256": "47953e4383cfca7db5b4894297ebc34c78f11c2f277b6684753b022f2ddcd071"
+  },
+  "liblog_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-cross-apk-liblog-frontier-v1/ROOT-REVIEW.json",
+    "sha256": "2fc391244a215121477352e7e2ed9ccde0dbdfbeecfe4ff1f66a9c64933b1b39"
+  },
+  "evo59_decision": {
+    "path": "docs/nanhai-plus/evolution/EVO-0059-projection-freshness/decision.json",
+    "sha256": "ee577f75df610918b517a70d1191e2c10893ef9bb5793a1c0efa3db770d79436"
+  },
+  "local_projection_pilot_rc": 0,
+  "remote_kanban_published": false,
+  "next": "Fresh authenticated exact-R4 native Linux x86_64 host entry, Bionic graph, product ELF/install manifest, then HelloWorld device chain. Continue registered upstream and qualified blackbox intake in parallel. No old nonce replay.",
+  "container_commands": 0,
+  "device_commands": 0,
+  "device_hold": true,
+  "goal_session_budget_preserved": true
+}

@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 35280721,
+  "apk_sha256": "59dcee41cb5d7f7f9d22bbfc571f822303f40f7f591ecd82d8c2ffd62332a45f",
+  "at_utc": "2026-10-04T21:25:33.589609+00:00",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "four_static_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-four-static-v1/RESULT.json",
+    "sha256": "fd8a913b08a53156a804c85d5463f85d29e86e75cc52f24270dd9f3ba80a4595"
+  },
+  "full_static_delta": 1,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-independent-review-v1/REVIEW.json",
+    "sha256": "9e91da6eae84639da30e54f33b5c165ca810947b08367f592bc90125895969f3"
+  },
+  "package": "com.imo.android.imoimlite",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "a706ffda05800cb62ca4b857bf0dcfa0ea801d6d7b2d5dafb72e67227bbdc915"
+  },
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/3 DEX/30 true ARM64 ELF native-host static only; no loader/device result",
+  "semantic_dex_delta": 3,
+  "true_arm64_elf_delta": 30,
+  "version_code": "3372",
+  "version_name": "9.8.000000018087"
+}

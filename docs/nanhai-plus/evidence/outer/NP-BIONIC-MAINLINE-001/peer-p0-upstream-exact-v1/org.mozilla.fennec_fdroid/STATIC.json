@@ -1,0 +1,83 @@
+{
+  "apk_sha256": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+  "artifact_id": "a-1ebdf60c95b146c9966d",
+  "authoritative_count_changed": false,
+  "container_commands": 0,
+  "decision": "GO_COMPLETE_HOST_STATIC_CANDIDATE",
+  "device_commands": 0,
+  "four_phase_rc0": true,
+  "package": "org.mozilla.fennec_fdroid",
+  "phases": {
+    "dex": {
+      "apk_sha_after": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "apk_sha_before": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "container_commands": 0,
+      "device_commands": 0,
+      "dex_entries": 3,
+      "dex_names": [
+        "classes.dex",
+        "classes2.dex",
+        "classes3.dex"
+      ],
+      "elapsed_seconds": 9.671,
+      "input_guard_equal": true,
+      "phase": "dex",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+    },
+    "elf": {
+      "abi_matches_machine": 15,
+      "apk_sha_after": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "apk_sha_before": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "arm64_elf_entries": 15,
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 14.664,
+      "input_guard_equal": true,
+      "phase": "elf",
+      "rc": 0,
+      "readelf_ok": 15,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+    },
+    "metadata": {
+      "apk_sha_after": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "apk_sha_before": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 0.952,
+      "input_guard_equal": true,
+      "manifest_available": true,
+      "package": "org.mozilla.fennec_fdroid",
+      "phase": "metadata",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "target_sdk": "37",
+      "version_code": "1560020",
+      "version_name": "156.0.0"
+    },
+    "zip": {
+      "apk_sha_after": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "apk_sha_before": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "arm64_so_count": 15,
+      "container_commands": 0,
+      "crc_first_bad": null,
+      "device_commands": 0,
+      "duplicate_names": 0,
+      "elapsed_seconds": 0.323,
+      "entries": 3257,
+      "input_guard_equal": true,
+      "manifest_count": 1,
+      "phase": "zip",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "root_dex_count": 3,
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+    }
+  },
+  "raw_sha256": "477e4eac9c342faf20321e45e08a6261690ecb265b4c287e4982d6f7ae506aee",
+  "schema": "peer-p0-exact-four-static-v1",
+  "startup_proven": false
+}

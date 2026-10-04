@@ -1,0 +1,72 @@
+{
+  "abis": [
+    "arm64-v8a"
+  ],
+  "activities": 12,
+  "app_name": "OsmAnd~",
+  "bytes": 157841461,
+  "features": [
+    "android.hardware.bluetooth",
+    "android.hardware.camera",
+    "android.hardware.camera.autofocus",
+    "android.hardware.location",
+    "android.hardware.location.gps",
+    "android.hardware.location.network",
+    "android.hardware.microphone",
+    "android.hardware.sensor.accelerometer",
+    "android.hardware.sensor.compass",
+    "android.hardware.sensor.gyroscope",
+    "android.hardware.sensor.light",
+    "android.hardware.touchscreen",
+    "android.hardware.wifi",
+    "com.sec.feature.spen_usp"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "net.osmand.plus.activities.MapActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "24",
+  "native_library_entries": 6,
+  "package": "net.osmand.plus",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-p0-upstream-exact-v1/net.osmand.plus/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.BLUETOOTH_SCAN",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_LOCATION",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.STORAGE",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "androidx.car.app.ACCESS_SURFACE",
+    "androidx.car.app.MAP_TEMPLATES",
+    "androidx.car.app.NAVIGATION_TEMPLATES",
+    "net.osmand.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 4,
+  "receivers": 6,
+  "services": 6,
+  "sha256": "0239f0b09e1bf7e22a468b881a0a744c1a19ca72b8daf068ac3ac1b5b240e4b6",
+  "signing_certificate_sha256": [
+    "38294eaac95c3bb5a994692cd7758f8bcdbffb40819af6e806eb7fe482324dcd"
+  ],
+  "target_sdk": "36",
+  "version_code": "540403",
+  "version_name": "5.4.4"
+}

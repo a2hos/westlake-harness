@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai-evolution-decision-v1",
+  "id": "EVO-0059",
+  "status": "pilot",
+  "problem": "After four actual result groups, accepted APK preparation counts advanced while the board could still show an older public progress snapshot.",
+  "observed_failure": "The outer coordinator had to refresh the board manually after the 111/109/21 display lagged the authoritative 114/114/23 counts. The checked-in historical board at HEAD was older still (100/98/16); neither board state is evidence of current runtime startup.",
+  "discarded_action": "Treat successful publication or the board's own heartbeat as proof that its progress agrees with the root-accepted task summary.",
+  "decision": "PILOT_THREE_HOP_PROGRESS_FRESHNESS_GATE_ONLY_NO_PRODUCTION_PROMOTION",
+  "one_improvement": "Before a board snapshot is called current, compare accepted raw/static/qualified/startup counters from TASK-SUMMARY.json to OUTER-STATE.json progress and projected kanban-state.json progress, require matching board/outer snapshot and checked_at fields, and require outer checked_at not earlier than summary checked_at. Fail closed with a field-level mismatch list.",
+  "causal_chain": "Manual summary-to-board refresh and stale displayed counters -> no content-level cross-hop check -> read-only three-hop counter/timestamp gate -> avoid rechecking a falsely current board or reporting stale progress -> current inputs GO rc0, deliberately stale 111/109/21 counterexample NO_GO rc2.",
+  "trigger_result_groups": ["upstream 338/79/259 difference independent review", "cross-114 APK liblog static cluster", "FluffyChat exact raw/static root scope admission", "imo official raw/static/blackbox root scope admission"],
+  "applicability": "OH7/AOSP16 ARM64 Bionic outer control projection only. Counts remain preparation classes; 0/200 startups and 0/89 Bionic whole tools are unchanged by this pilot.",
+  "source_inputs_sha256": {
+    "TASK-SUMMARY.json": "88944c2bda1515c90a1b59b9a9afe6f81861cdc9cd241f852b1b507762549bbb",
+    "OUTER-STATE.json": "9e305aca815d91607517615fa6ba8d5e8abcc3fefc970902197ee2a2b5872962",
+    "kanban-state.json": "06b6facd5009caa88b845cec6ce4d87e2d17195ee76f6f94186140e9efa11c7f",
+    "pilot.py": "5b6b57ff24e4c15aa9d5d75e495ad925275380ef94208ad12e98e038bbd2176b"
+  },
+  "pilot_commands": [
+    "python3 docs/nanhai-plus/evolution/EVO-0059-projection-freshness/pilot.py docs/nanhai-plus/TASK-SUMMARY.json docs/nanhai-plus/OUTER-STATE.json docs/nanhai-plus/deploy/kanban-site/kanban-state.json",
+    "python3 docs/nanhai-plus/evolution/EVO-0059-projection-freshness/pilot.py docs/nanhai-plus/TASK-SUMMARY.json docs/nanhai-plus/OUTER-STATE.json docs/nanhai-plus/deploy/kanban-site/kanban-state.json --counterexample"
+  ],
+  "pilot_result": {"current_rc": 0, "current_status": "GO", "current_mismatches": 0, "counterexample_rc": 2, "counterexample_status": "NO_GO", "counterexample_mismatch_fields": ["accepted_raw_apk_artifact_identities", "complete_host_static_inventories", "qualified_blackbox_test_packages", "snapshot_at_utc"]},
+  "known_limits": ["This is a local file projection check; it does not prove a remote board was published or viewed.", "Matching counters cannot prove individual APK receipt identity or a correct source ledger.", "The 111/109/21 counterexample is generated in memory; it does not overwrite the current board."],
+  "next_evidence": "Independently replay a production publisher dry-run on a frozen new acceptance and an unchanged snapshot, then verify remote served board bytes/etag against the approved projection; add receipt-set digest to the projection before claiming content identity.",
+  "promotion_gate": "Independent review of receipt-to-summary provenance and safe public field projection, positive unchanged case, negative stale-counter and same-count-different-receipt cases, plus remote served-byte check. Keep the pilot outside production until these pass.",
+  "rollback": "Keep manual evidence-gated board review if the gate gives false freshness, leaks private paths or device IDs, or blocks an unchanged valid snapshot.",
+  "production_changed": false,
+  "startup_count_delta": 0,
+  "device_or_container_action": false
+}

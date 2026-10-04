@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T21:08:51.200221+00:00",
+  "checked_at": "2026-10-04T21:25:58.808707+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,25 +35,49 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 114,
+    "downloaded_payloads": 120,
     "latest_raw_admission": {
       "packages": [
-        "com.aimp.player",
-        "com.snapchat.android"
+        "chat.fluffy.fluffychat",
+        "com.nextcloud.client",
+        "net.osmand.plus",
+        "org.mozilla.fennec_fdroid",
+        "com.imo.android.imoim",
+        "com.imo.android.imoimlite"
       ],
       "receipts": [
         {
-          "package": "com.aimp.player",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "024ca514305d65df0481b657bd6a076467555f96526287e72da08acc1f4d0b91"
+          "package": "chat.fluffy.fluffychat",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "f53e121840ac028c9f3a1332d50a78b5180674ba71ec5602c98a63f7ed3b98ca"
         },
         {
-          "package": "com.snapchat.android",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "30a8525ca370c8353e8c90e8efb89fdec37f86aa411bba23336254fb00c46368"
+          "package": "com.nextcloud.client",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "472dc088a45b235fcc8d27e9390076367be07dc36b384f623c22b862580f6c0c"
+        },
+        {
+          "package": "net.osmand.plus",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "deb919086d5e48a58f9b61ae21ac32852f82314153bed35b28eb1a644bbdcc05"
+        },
+        {
+          "package": "org.mozilla.fennec_fdroid",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "13367abd089b60a4f57313d9337aca80b018b47827a06593037c5b2fb020eb3f"
+        },
+        {
+          "package": "com.imo.android.imoim",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "be424ac3b6007d2c3f1bb2db576f2a65876ec14030707cb02c18f990ebc80e93"
+        },
+        {
+          "package": "com.imo.android.imoimlite",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "a706ffda05800cb62ca4b857bf0dcfa0ea801d6d7b2d5dafb72e67227bbdc915"
         }
       ],
-      "scope": "two exact supplemental official raw variants; Snapchat universal APK remains separate from upstream registered split XAPK; no install/runtime pass"
+      "scope": "four exact upstream F-Droid artifacts plus two distinct publisher-linked imo supplemental variants; artifact receipt labels, not all verified distinct applications; no install/runtime pass"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -64,46 +88,64 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 114,
-    "complete_inventory_dex_entries": 409,
+    "complete_static_inventories": 120,
+    "complete_inventory_dex_entries": 463,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1762,
+    "complete_inventory_native_elf_entries": 1912,
     "latest_complete_static_admission": {
       "packages": [
-        "com.whatsapp",
-        "com.aimp.player",
-        "com.snapchat.android"
+        "chat.fluffy.fluffychat",
+        "com.nextcloud.client",
+        "net.osmand.plus",
+        "org.mozilla.fennec_fdroid",
+        "com.imo.android.imoim",
+        "com.imo.android.imoimlite"
       ],
       "receipts": [
         {
-          "package": "com.whatsapp",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "5f2b444ecf0dfcf256c9497ef4a9e33878ba82a6f4dafe2d1f7ffc3f969b1d49"
+          "package": "chat.fluffy.fluffychat",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "a753e86f0cda9d22e9253fd2805686dba7921377da23e3a522e949657a10d99b"
         },
         {
-          "package": "com.aimp.player",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "9865c2e707a6419fd7560f13a3d6cc58322c00b3acf4ddd877a56e9298386fe2"
+          "package": "com.nextcloud.client",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "6e2260ad6c8e7fa73e4c66d6fc5f9b68074b045b75d85b7f8d1ac524244d4f23"
         },
         {
-          "package": "com.snapchat.android",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "1fdb70b84fecb682a89d3d6f8378b279afa884cb1f2f5da9987d5cdd06a0becf"
+          "package": "net.osmand.plus",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "dff533f7e8f2af43306dc8fd714db888dba3253fa5e660358ab305605d4bfa76"
+        },
+        {
+          "package": "org.mozilla.fennec_fdroid",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "1b0fb162d6aa2e1425f8fda63f3f3bc1acb68215d1fc3c6c8632f8cc9bde16b3"
+        },
+        {
+          "package": "com.imo.android.imoim",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "0b228bcecb2626016c2f664c5b9d645525d66f142c3ac631f5a6c38eb1a9b755"
+        },
+        {
+          "package": "com.imo.android.imoimlite",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "687ecd2d443e0d9ba5ceaf748456d4341cd9762bc003d114d229853df228a230"
         }
       ],
-      "scope": "three exact four-phase native-host static inventories; WhatsApp official page/manifest version mismatch retained; no install/runtime pass"
+      "scope": "six exact four-phase native-host static inventories; +54 semantic DEX and +150 true ARM64 ELF; no loader/runtime pass"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 79,
-    "supplemental_payloads": 35,
-    "qualified_blackbox_packages": 23,
+    "registered_upstream_payloads": 83,
+    "supplemental_payloads": 37,
+    "qualified_blackbox_packages": 25,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -127,7 +169,9 @@
       "io.privado.android",
       "com.anydesk.anydeskandroid",
       "com.aimp.player",
-      "com.snapchat.android"
+      "com.snapchat.android",
+      "com.imo.android.imoim",
+      "com.imo.android.imoimlite"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -139,22 +183,22 @@
     },
     "latest_blackbox_qualification": {
       "packages": [
-        "com.aimp.player",
-        "com.snapchat.android"
+        "com.imo.android.imoim",
+        "com.imo.android.imoimlite"
       ],
       "receipts": [
         {
-          "package": "com.aimp.player",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
-          "sha256": "247391e07a740ff09aa1a3d4e0f6372095c5237e72b8134f00cc31fac07850d4"
+          "package": "com.imo.android.imoim",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "2bed3c864c555b9a399b14cdbf33188910263fa250f21054b03d7915703c52ed"
         },
         {
-          "package": "com.snapchat.android",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
-          "sha256": "12127f5412f218c71e76dbe9f92abdc1e9dc305e20b3bc4bbedb4a8dc5703545"
+          "package": "com.imo.android.imoimlite",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "07ff5f0c5c0ff75a643f57a8159bada335d96a3ab321ff03bc091bbab6c60ce8"
         }
       ],
-      "scope": "two overseas-mainstream blackbox test-input qualifications only; no startup"
+      "scope": "two separate overseas-mainstream blackbox test-input qualifications; no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -434,7 +478,8 @@
       "qualification_delta": 2,
       "qualified_startup_delta": 0,
       "cold_start_delta": 0
-    }
+    },
+    "artifact_package_identity_caveat": "120 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 120 is not a proved distinct-app count."
   },
   "latest_actual_execution": {
     "scope_note": "Historical G276 native graph attempt; newer portfolio host scans and candidate GETs are recorded separately below.",
@@ -2943,6 +2988,127 @@
     },
     "status": "three-artifact_pilot_only_no_production_promotion",
     "actual_result_groups": 3,
+    "selected_improvement_count": 1,
+    "startup_delta": 0
+  },
+  "latest_batch_20261004_upstream_four_imo_two": {
+    "raw_delta": 6,
+    "full_static_delta": 6,
+    "semantic_dex_delta": 54,
+    "true_arm64_elf_delta": 150,
+    "blackbox_test_input_delta": 2,
+    "cold_start_delta": 0,
+    "upstream_registry_raw_delta": 4,
+    "supplemental_raw_delta": 2,
+    "raw_receipts": [
+      {
+        "package": "chat.fluffy.fluffychat",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "f53e121840ac028c9f3a1332d50a78b5180674ba71ec5602c98a63f7ed3b98ca"
+      },
+      {
+        "package": "com.nextcloud.client",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "472dc088a45b235fcc8d27e9390076367be07dc36b384f623c22b862580f6c0c"
+      },
+      {
+        "package": "net.osmand.plus",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "deb919086d5e48a58f9b61ae21ac32852f82314153bed35b28eb1a644bbdcc05"
+      },
+      {
+        "package": "org.mozilla.fennec_fdroid",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "13367abd089b60a4f57313d9337aca80b018b47827a06593037c5b2fb020eb3f"
+      },
+      {
+        "package": "com.imo.android.imoim",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "be424ac3b6007d2c3f1bb2db576f2a65876ec14030707cb02c18f990ebc80e93"
+      },
+      {
+        "package": "com.imo.android.imoimlite",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "a706ffda05800cb62ca4b857bf0dcfa0ea801d6d7b2d5dafb72e67227bbdc915"
+      }
+    ],
+    "static_receipts": [
+      {
+        "package": "chat.fluffy.fluffychat",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "a753e86f0cda9d22e9253fd2805686dba7921377da23e3a522e949657a10d99b"
+      },
+      {
+        "package": "com.nextcloud.client",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "6e2260ad6c8e7fa73e4c66d6fc5f9b68074b045b75d85b7f8d1ac524244d4f23"
+      },
+      {
+        "package": "net.osmand.plus",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "dff533f7e8f2af43306dc8fd714db888dba3253fa5e660358ab305605d4bfa76"
+      },
+      {
+        "package": "org.mozilla.fennec_fdroid",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "1b0fb162d6aa2e1425f8fda63f3f3bc1acb68215d1fc3c6c8632f8cc9bde16b3"
+      },
+      {
+        "package": "com.imo.android.imoim",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "0b228bcecb2626016c2f664c5b9d645525d66f142c3ac631f5a6c38eb1a9b755"
+      },
+      {
+        "package": "com.imo.android.imoimlite",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "687ecd2d443e0d9ba5ceaf748456d4341cd9762bc003d114d229853df228a230"
+      }
+    ],
+    "blackbox_receipts": [
+      {
+        "package": "com.imo.android.imoim",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+        "sha256": "2bed3c864c555b9a399b14cdbf33188910263fa250f21054b03d7915703c52ed"
+      },
+      {
+        "package": "com.imo.android.imoimlite",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+        "sha256": "07ff5f0c5c0ff75a643f57a8159bada335d96a3ab321ff03bc091bbab6c60ce8"
+      }
+    ],
+    "scope": "host/input evidence only; no native Bionic graph, APK install, device or startup"
+  },
+  "upstream_artifact_gap_audit": {
+    "frozen_audit": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-artifact-gap-audit-v1/ROOT-REVIEW.json",
+      "sha256": "47953e4383cfca7db5b4894297ebc34c78f11c2f277b6684753b022f2ddcd071"
+    },
+    "frozen_registry_artifacts": 338,
+    "frozen_registry_package_labels": 329,
+    "frozen_prior_root_admitted_exact_artifacts": 79,
+    "current_root_admitted_exact_artifacts": 83,
+    "current_exact_artifact_gap": 255,
+    "scope": "current gap is derived from four later exact upstream root admissions; original frozen audit retained"
+  },
+  "liblog_cross_apk_frontier": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-cross-apk-liblog-frontier-v1/ROOT-REVIEW.json",
+      "sha256": "2fc391244a215121477352e7e2ed9ccde0dbdfbeecfe4ff1f66a9c64933b1b39"
+    },
+    "frozen_prior_raw_labels": 114,
+    "declared_needed_package_labels": 78,
+    "declared_needed_arm64_elf_edges": 807,
+    "runtime_provider_verified": false,
+    "startup_blocker_proven": false,
+    "startup_delta": 0
+  },
+  "evo59": {
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0059-projection-freshness/decision.json",
+      "sha256": "ee577f75df610918b517a70d1191e2c10893ef9bb5793a1c0efa3db770d79436"
+    },
+    "status": "pilot_only_no_remote_board_promotion",
+    "actual_result_groups": 4,
     "selected_improvement_count": 1,
     "startup_delta": 0
   }

@@ -1,0 +1,41 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-imo-lite-official-raw-v1/imo-lite-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "1b859a262bccafb4366fdb95aff8ded1c5dc11b25d8218ba4e2ce0f73dcb863e"
+  },
+  "apk_bytes": 35280721,
+  "apk_sha256": "59dcee41cb5d7f7f9d22bbfc571f822303f40f7f591ecd82d8c2ffd62332a45f",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-imo-lite-official-raw-v1/imo-lite-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "bac70191e0c81992b86dc8dcad28af5cf5ec7470fd0e6e3fc100d36ed864f089"
+  },
+  "candidate_pass": true,
+  "package_version": [
+    "com.imo.android.imoimlite",
+    "3372",
+    "9.8.000000018087"
+  ],
+  "raw_result_sha256": "fb2d2873f238c63616983b11169806e1f170c2d06ed5a9530406b4039cee820d",
+  "root_count_changed": false,
+  "schema": "peer-imo-lite-official-verify-v1",
+  "signer_cert_sha256": [
+    "44483f98c17bf49fbde08d3376af09c6fc1f9370c7a046c35a3dca45f5785150"
+  ],
+  "startup_proven": false,
+  "target_sdk": "35"
+}

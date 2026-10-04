@@ -1,0 +1,87 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/original.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 10176,
+    "stdout_sha256": "b4b9b28cade392db11bf8efb7f29a5e15f0314e87bc0706162047423a2cfb527"
+  },
+  "aapt2_tool_sha256": "347ae46c83960aed14dd88e132f80a82c1b3456000384d234cee23c412533b03",
+  "actual_sha256": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/original.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 976,
+    "stdout_sha256": "dc14e0f8d7c817243aec231892abcbdc1e16e7d7bc26786c8b19c9e0aba14bb0"
+  },
+  "apksigner_tool_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "arm64_so_count": 15,
+  "artifact_id": "a-1ebdf60c95b146c9966d",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "authoritative_count_changed": false,
+  "bytes": 127634542,
+  "container_commands": 0,
+  "decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+  "device_commands": 0,
+  "expected_sha256": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "300",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/original.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/GET.headers.raw",
+      "https://f-droid.org/repo/org.mozilla.fennec_fdroid_1560020.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 1107,
+    "stderr_sha256": "1b8f9702f9fcd15d34fec1c890b308b2d34cba332311ee0439b1b6de2b5133db",
+    "stdout_bytes": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "get_elapsed_seconds": 9.907,
+  "input_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "manifest_count": 1,
+  "native_abis": [
+    "arm64-v8a"
+  ],
+  "package_expected": "org.mozilla.fennec_fdroid",
+  "package_version_match": true,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "root_dex_count": 3,
+  "schema": "peer-p0-exact-raw-v1",
+  "sha_matches_registry": true,
+  "source_url_registered": "https://f-droid.org/repo/org.mozilla.fennec_fdroid_1560020.apk",
+  "startup_proven": false,
+  "version_code_expected": [
+    "1560020"
+  ],
+  "version_expected": [
+    "156.0.0"
+  ],
+  "zip_duplicate_names": 0,
+  "zip_entries": 3257,
+  "zip_first_bad": null
+}

@@ -1,0 +1,21 @@
+{
+  "accepted_exact_upstream_artifacts": 79,
+  "at_utc": "2026-10-04T21:16:51.257956+00:00",
+  "audit_script_sha256": "27ab3936b2e618a2f2d31d63723a35f9e5ea3cf2619305437d6566c5a581ab7e",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_FROZEN_EXACT_ARTIFACT_GAP_AUDIT_ONLY",
+  "device_commands": 0,
+  "inputs_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "missing_exact_upstream_artifacts": 259,
+  "package_semantics_qualified_by_this_audit": false,
+  "receipt_package_labels": 114,
+  "receipt_raw_artifact_shas": 114,
+  "registry_artifacts": 338,
+  "result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "root_replay_byte_equal": true,
+  "root_replay_rc": 0,
+  "schema": "nanhai-plus-upstream-artifact-gap-root-review-v1",
+  "scope": "Registry exact ID/SHA gap and receipt-label census; no startup, target ABI proof for missing artifacts, or complete verified distinct-package count",
+  "source_head_qualification": "Four P0 URLs had HEAD200/APK MIME only; body SHA, signing and package identity pending GET"
+}

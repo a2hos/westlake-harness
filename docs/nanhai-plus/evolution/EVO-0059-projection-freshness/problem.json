@@ -1,0 +1,9 @@
+{
+  "difficulty": "After accepted APK preparation results, the public progress can lag the authoritative local summary.",
+  "cost_signal": "The outer coordinator observed 111/109/21 on the board after the summary reached 114/114/23 and had to synchronize the projection manually.",
+  "decision_target": "Decide whether a small read-only three-hop freshness gate catches stale projection before it is called current.",
+  "constraints": "One pilot only; no production script/control mutation, no device or container, no startup claim; OH7/AOSP16 ARM64 Bionic project.",
+  "completion_signal": "Current frozen inputs pass and a stale 111/109/21 projection fails with field-level diagnostics.",
+  "source_terminal": "nanhai-plus outer EVO59",
+  "confirmed": true
+}

@@ -1,0 +1,88 @@
+{
+  "apk_bytes": 149790415,
+  "apk_mime_seen": true,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-imo-official-raw-v1/imo-official.apk",
+  "apk_sha256": "02cb731e3702454d844fb784b357961d2eb3543e1b0d3f89103c424148375630",
+  "arm64_so_entries": 84,
+  "at_utc": "2026-10-04T21:12:14.102587+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "240",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-imo-official-raw-v1/imo-official.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-official-raw-v1/apk-get-headers.raw",
+      "https://static-web.imoim.net/as/indigo-static/imo-apks-for-all-channels/imo-stable-build419-2026.08.1041-imo_official_pc.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "ca2a8a1fcec21095170664a5466e02f5e3e4171dca974015a10e5672a131c874",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "head": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--head",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-official-raw-v1/apk-head-headers.raw",
+      "https://static-web.imoim.net/as/indigo-static/imo-apks-for-all-channels/imo-stable-build419-2026.08.1041-imo_official_pc.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "3e5137066d5a0d0a06da6f0eeb82a7081ce69df93df2e7f81c7e95aa77e094b2",
+    "stdout_sha256": "dcb555d3566e7fe4b59e192bc4479a7a4f4ddc2a07e72535e692bfe4c7cab592"
+  },
+  "manifest_entries": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "page": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "45",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-official-raw-v1/publisher-page.raw",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-official-raw-v1/publisher-page-headers.raw",
+      "https://imo.im/en/log"
+    ],
+    "rc": 0,
+    "stderr_sha256": "b92d6586392643c325bd164f0e9d4fcfcef0e7d13b9eddfe4fd175542c52af17",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "publisher_apk_url": "https://static-web.imoim.net/as/indigo-static/imo-apks-for-all-channels/imo-stable-build419-2026.08.1041-imo_official_pc.apk",
+  "publisher_page": "https://imo.im/en/log",
+  "publisher_page_links_exact_apk": true,
+  "root_count_changed": false,
+  "root_dex_entries": 33,
+  "schema": "peer-imo-official-raw-v1",
+  "startup_proven": false,
+  "zip_duplicate_names": 0,
+  "zip_entries": 9298,
+  "zip_first_bad": null
+}

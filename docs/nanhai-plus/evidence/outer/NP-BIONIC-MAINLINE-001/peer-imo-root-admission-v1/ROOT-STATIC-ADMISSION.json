@@ -1,0 +1,39 @@
+{
+  "apk_bytes": 149790415,
+  "apk_sha256": "02cb731e3702454d844fb784b357961d2eb3543e1b0d3f89103c424148375630",
+  "at_utc": "2026-10-04T21:18:58.076148+00:00",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "embedded_dex_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-four-static-v1/embedded-dex-v1/RESULT.json",
+    "sha256": "bea5ffd030f5a3d579edb7af3c6aec3b2728814e3c9399ed24399f445f9d3e07"
+  },
+  "four_static_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-four-static-v1/RESULT.json",
+    "sha256": "f44765b6af0fbd1a3422231bac66cb918bec03dfba4bf6e84f143bc392e39ae9"
+  },
+  "full_static_delta": 1,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-independent-review-v1/REVIEW.json",
+    "sha256": "64b9509f03c3fed21313e2033e213881137aec26a19bb5bb99663af9e24e1ceb"
+  },
+  "package": "com.imo.android.imoim",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "be424ac3b6007d2c3f1bb2db576f2a65876ec14030707cb02c18f990ebc80e93"
+  },
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/33 root plus 1 embedded DEX/84 true ARM64 ELF native-host static only",
+  "semantic_dex_delta": 34,
+  "true_arm64_elf_delta": 84,
+  "version_code": 26081041,
+  "version_name": "2026.08.1041"
+}

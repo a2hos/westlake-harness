@@ -1,0 +1,29 @@
+{
+  "apk_bytes": 127634542,
+  "apk_sha256": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+  "artifact_id": "a-1ebdf60c95b146c9966d",
+  "at_utc": "2026-10-04T21:22:05.582834+00:00",
+  "blackbox_qualification_delta": 0,
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/RAW.json",
+    "sha256": "477e4eac9c342faf20321e45e08a6261690ecb265b4c287e4982d6f7ae506aee"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_UPSTREAM_FDROID_DISTRIBUTION_APK_ONLY",
+  "device_commands": 0,
+  "four_p0_handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/HANDOFF-v2.json",
+    "sha256": "40b3f66274597abb1fb272ae752d61e4b28b45857e09e8b682dd65e752a50a4f"
+  },
+  "gap_audit_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-artifact-gap-audit-v1/ROOT-REVIEW.json",
+    "sha256": "47953e4383cfca7db5b4894297ebc34c78f11c2f277b6684753b022f2ddcd071"
+  },
+  "package": "org.mozilla.fennec_fdroid",
+  "raw_delta": 1,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "Exact registered artifact ID/SHA and signed F-Droid distribution APK only; no install/start/runtime pass",
+  "static_delta": 0
+}

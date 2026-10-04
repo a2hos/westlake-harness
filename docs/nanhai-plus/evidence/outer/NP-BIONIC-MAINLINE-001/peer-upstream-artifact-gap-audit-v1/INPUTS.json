@@ -1,0 +1,248 @@
+{
+  "other_raw_root_receipts": [
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-adguardvpn-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-hideme-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a1b8e69d8d4b3d52ce4ef19d37d2f064a2ce65bfeb35984ad2458deaf0f2c5b8"
+    },
+    {
+      "kind": "single_payload",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "2afcd40d8098bdc0075db76b7a62d82e32c8fe1f6a68a0a7b729883f3e6da3fc"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-steam-chat-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "830196efabf1feba308a48c58a4145bd49fcd27e7fa12e7f361542cd033c59d0"
+    },
+    {
+      "kind": "single_payload",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-vivaldi-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7e0ca7bad935d6d4a9984dd87e630e521ad60f94ddfa4411c0aa2b2c47097b9d"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-official-apk-candidate-v1/ROOT-RAW-INTAKE.json",
+      "sha256": "f7f3a2d2de6b9cb61a778d2647ad9294a23c35a4cf7939e34fbcd3334f842b95"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g290-tiktok-lite-go-raw-supplement-v1/ROOT-RAW-INTAKE.json",
+      "sha256": "ffd25a75b488981468cafad6f18ebf80a6e67e72e55e1df1aa1a8313281cc590"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g302-steam-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "bd63045a19277cec49fe1f71630b12a9bb3a6cf983869b50cf4c738dcebef02e"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g305-mozilla-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "119e105139b30c63b849b9b172c9d927d96955bd28d2df5d9633cd40481f658d"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g307-blackbox-official-intake-v1/publisher-route-recheck-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "3ee3666b75181729b0baed896c152e62fbf58b3b3757b898d15b66f470d77637"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g307-blackbox-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "528fc422c7495aa60fd12578182d5bc5da6c495eb36ce235dbceedc9588e5ed8"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g310-adguard-official-route-recheck-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f6458306295ce4f393d5fe5fb1dc0aaf45e692d9ae961702443c311a50469376"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g311-vyprvpn-official-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "c6e8e66616c5455ac63d96b56664f64d6f7074303a42eb0bcd22dd89149b78a3"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g314-brave-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "1dac180763a7c0d543676a3b11efcffa855954c23d370e40964ce03c71bfa9f5"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g316-capcut-official-raw-candidate-v2/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-official-route-attempt-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g321-tor-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "16e3354a09f1469cfd499216c6557425001034e8c06680de50a21339bf3fcb3e"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g330-duckduckgo-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "eb387b29330a4884a743c5356720021f0fcdd1d621f9834fc0a80fd3e9007e58"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g332-protonvpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g334-purevpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g336-privadovpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719"
+    },
+    {
+      "kind": "payloads",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79"
+    },
+    {
+      "kind": "single_payload",
+      "package": "com.whatsapp",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-whatsapp-official-supplement-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "024ca514305d65df0481b657bd6a076467555f96526287e72da08acc1f4d0b91"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f52eae3bf501b5919a7f5da53ac34d7a78deea133f77c83a97eaefb25d7135c7"
+    },
+    {
+      "kind": "root_raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "30a8525ca370c8353e8c90e8efb89fdec37f86aa411bba23336254fb00c46368"
+    }
+  ],
+  "registry": {
+    "kind": "registry",
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+    "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb"
+  },
+  "schema": "peer-upstream-artifact-gap-audit-inputs-v1",
+  "upstream_root_receipts": [
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a2/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "5719ff0d849f890dcab3fd8af31b26453b6e63176523d3c80af5ec437a0ca233"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a3-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "93265ee01194652d367cc646d19f12e1c0849a6a337bbeddbbcc185d51d1deaa"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a4-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7ceebf7e41802373a1e548eaceb8c1218c25b1ab25d1fc34ae621308ec3c6d17"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "9be234eedfb6c01b07e8c47e5b20e39cc8b3e4abfb79332798346487b1e5829d"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v4/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "ae07bdd11be2df193366f80276448e22e1d7b155554df4ebf6832780fef26cd6"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v5/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "8524539f7f8ac3b5c5bbfa6bef77de765ac95dac92e29849299611b61645cf58"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v6/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "72d3f6d8f3a4cf8c3ea918f6d439c87ee6d97e1ffe7f533421396140bd05a6ce"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v7/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "799fb72dddbe88d00a9f8a28ee8bd31675c6b1dc236176560e4613ed0386ff2c"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v8/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "bb528044a1366a58d7b8842634f1c9792c37822acb5c68f33d4a06acfc196396"
+    },
+    {
+      "kind": "stock_batch",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v9/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "69ad17b8b32dd808f889feb87df3af09913729aa04cd0ca4f1a54c310af72a79"
+    },
+    {
+      "kind": "single_upstream",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/ROOT-RAW-INTAKE.json",
+      "sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e"
+    },
+    {
+      "kind": "single_upstream",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/ROOT-RAW-ADMISSION.json",
+      "sha256": "5535307370ab716fb9796852f7e84c9b0c6fa3370ade44c38f933556be70dae7"
+    },
+    {
+      "kind": "single_upstream",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-pipepipe-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "5a07fec52ad977bd081e4f83d3516aa146a6c5c672b96332d062188cbc9be476"
+    },
+    {
+      "kind": "single_upstream",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-ntfy-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "5fc1c5148cfb20d586d716b3105cde1b45311cdb8e415cbf39a8d4b37a914f3d"
+    },
+    {
+      "kind": "single_upstream",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-lichess-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4c63f74b9aaa5a87dd4000e71f692d501c50456c09979b90608b5a345f7c580f"
+    },
+    {
+      "kind": "single_upstream",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "344c20fc2ffec1d447279db1e3685c1badae4fbdd2a8bc3d85561a0c33890f01"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "apk_bytes": 185599421,
+  "apk_sha256": "edcdf6171c09ab39ed76447c1ee11c66503d922dfe4f36f2dd429f2f9c652481",
+  "artifact_id": "a-c6a54846db20d9b2d99d",
+  "at_utc": "2026-10-04T21:18:35.502017+00:00",
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/STATIC.json",
+    "sha256": "00ce0d449005acb67dc75996351fe109668f84ee565e140e84bfc22eee46321d"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 1,
+  "gap_audit_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-artifact-gap-audit-v1/ROOT-REVIEW.json",
+    "sha256": "47953e4383cfca7db5b4894297ebc34c78f11c2f277b6684753b022f2ddcd071"
+  },
+  "package": "chat.fluffy.fluffychat",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "f53e121840ac028c9f3a1332d50a78b5180674ba71ec5602c98a63f7ed3b98ca"
+  },
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/DEX/ELF host static only; no loader/install/startup evidence",
+  "semantic_dex_delta": 2,
+  "true_arm64_elf_delta": 9,
+  "version_code": 3566,
+  "version_name": "2.9.5"
+}

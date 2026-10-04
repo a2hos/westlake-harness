@@ -1,0 +1,71 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "activities": 46,
+  "app_name": "Nextcloud",
+  "bytes": 96757432,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.location.gps",
+    "android.hardware.location.network",
+    "android.hardware.telephony",
+    "android.hardware.touchscreen",
+    "android.hardware.wifi"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "com.nmc.android.ui.LauncherActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "28",
+  "native_library_entries": 12,
+  "package": "com.nextcloud.client",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-p0-upstream-exact-v1/com.nextcloud.client/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_MEDIA_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.AUTHENTICATE_ACCOUNTS",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_ACCOUNTS",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_CALENDAR",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+    "android.permission.READ_SYNC_SETTINGS",
+    "android.permission.READ_SYNC_STATS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_CREDENTIALS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_CALENDAR",
+    "android.permission.WRITE_CONTACTS",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SYNC_SETTINGS",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.nextcloud.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 7,
+  "receivers": 14,
+  "services": 10,
+  "sha256": "2d08059c9a0a94ef4316e5c8491e3c6aee99a87b58bb796163c44e08deb1615c",
+  "signing_certificate_sha256": [
+    "5709576f9d6c6a7687dd5d56b269d1fa5e379702b91bc83f39fd7b7c597c1b83"
+  ],
+  "target_sdk": "36",
+  "version_code": "350000090",
+  "version_name": "35.0.0"
+}

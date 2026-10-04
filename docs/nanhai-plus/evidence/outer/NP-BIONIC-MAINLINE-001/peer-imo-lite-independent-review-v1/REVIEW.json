@@ -1,0 +1,81 @@
+{
+  "schema": "peer-imo-lite-independent-three-layer-review-v1",
+  "decisions": {
+    "official_raw": "GO_ROOT_REVIEW_ONE_EXACT_OFFICIAL_CHANNEL_RAW_ONLY",
+    "complete_host_static": "GO_ROOT_REVIEW_ONE_EXACT_HOST_STATIC_ONLY",
+    "overseas_mainstream_blackbox": "GO_ROOT_REVIEW_ONE_EXACT_BLACKBOX_TEST_INPUT_ONLY"
+  },
+  "scope": "Independent read-only peer review of the exact imo Lite official raw APK, four native-host static phases and overseas mainstream blackbox test-input candidate. No authoritative count change.",
+  "input_receipts_sha256": {
+    "raw_result": "fb2d2873f238c63616983b11169806e1f170c2d06ed5a9530406b4039cee820d",
+    "raw_verify": "c8b13d06724a373a514f42c9a9e37f0850fac82a25df52fed1ed94434c93aa82",
+    "four_static_result": "fd8a913b08a53156a804c85d5463f85d29e86e75cc52f24270dd9f3ba80a4595",
+    "qualification": "56935b7ae649c2ac234e5a91f3d4527c3cc3708a9ab5a55d103cbe926e6d8f3c"
+  },
+  "official_raw_recheck": {
+    "publisher_page": "https://imo.im/en/log",
+    "publisher_page_capture_sha256_recomputed": "95755a77ab5b5c77c39cc0c9c033ed5529db19e4212fbfa760dc7b361546de05",
+    "publisher_page_exact_lite_apk_link_count": 1,
+    "current_publisher_page_still_links_exact_url": true,
+    "apk_direct_url": "https://static-web.imoim.net/as/indigo-static/imo-apks-for-all-channels/imo-lite-build605-9.8.000000018087-imo_official_pc.apk",
+    "get_rc": 0,
+    "get_http_status": 200,
+    "get_content_type": "application/vnd.android.package-archive",
+    "get_content_length": 35280721,
+    "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-imo-lite-official-raw-v1/imo-lite-official.apk",
+    "apk_bytes_recomputed": 35280721,
+    "apk_sha256_recomputed": "59dcee41cb5d7f7f9d22bbfc571f822303f40f7f591ecd82d8c2ffd62332a45f",
+    "zip_entries_recomputed": 2496,
+    "unique_zip_names_recomputed": 2496,
+    "zip_crc_first_bad_recomputed": null,
+    "manifest_count_recomputed": 1,
+    "apksigner_independent_read_only_rerun_rc": 0,
+    "signature_schemes_verified": ["v1", "v2", "v3"],
+    "signer_certificate_sha256": "44483f98c17bf49fbde08d3376af09c6fc1f9370c7a046c35a3dca45f5785150",
+    "same_signer_certificate_as_imo_main_candidate": true,
+    "independent_publisher_certificate_pin": false,
+    "aapt2_independent_read_only_rerun_rc": 0,
+    "package": "com.imo.android.imoimlite",
+    "version_code": "3372",
+    "version_name": "9.8.000000018087",
+    "target_sdk": "35",
+    "launchable_activity": "com.imo.android.imoim.activities.Home"
+  },
+  "host_static_recheck": {
+    "phase_rc": {"zip": 0, "metadata": 0, "dex": 0, "elf": 0},
+    "all_four_before_after_apk_raw_scanner_readelf_guards_equal": true,
+    "semantic_dex_entries_recomputed": 3,
+    "dex_inventory_names_sizes_and_sha256_match_apk": true,
+    "total_so_entries_recomputed": 60,
+    "true_arm64_elf_recomputed": 30,
+    "other_arm32_elf_recomputed": 30,
+    "arm64_path_arm32_elf": 0,
+    "non_elf_so": 0,
+    "elf_classification_names_hashes_and_headers_match_apk": true,
+    "arm64_readelf_ok_and_machine_match": 30
+  },
+  "qualification_recheck": {
+    "google_play_url": "https://play.google.com/store/apps/details?id=com.imo.android.imoimlite&hl=en_US",
+    "same_lite_package_on_official_page_and_play": true,
+    "play_publisher": "imo.im",
+    "play_downloads": "100M+ package-wide, not version-specific",
+    "different_package_from_main_imo": "com.imo.android.imoim",
+    "full_matching_public_android_client_source_identified_in_bounded_candidate_review": false,
+    "global_source_absence_proven": false,
+    "play_delivered_apk_sha_and_signer_equivalence_proven": false,
+    "qualification_scope": "Exact unmodified official-channel imo Lite APK as a separate overseas mainstream blackbox test input only; no startup credit"
+  },
+  "deduplication": {
+    "upstream_registry_lite_package_matches": 0,
+    "g339_frozen_105_lite_package_matches": 0,
+    "nine_later_root_admitted_package_identities_match": 0,
+    "main_imo_package_is_distinct": true,
+    "authoritative_raw_static_blackbox_counts_changed": false
+  },
+  "proven": "The exact imo Lite APK follows the publisher direct link and recorded successful GET, passes ZIP CRC and signature checks, has a different package from main imo, and has complete host static inventories. Its Play listing supplies separate Lite-package market evidence.",
+  "not_proven": "Independent publisher certificate pin, Play byte/signature equivalence, global absence of full source, device install, Bionic compatibility, truly-cold Activity lifecycle, UI or interaction.",
+  "observed_wall": "none within raw/host-static review; no device or loader command executed",
+  "hypotheses": [],
+  "next_evidence": "Root may decide raw, full host static and blackbox test-input qualification separately for this Lite package. An authorized truly-cold original-APK receipt is required for startup credit.",
+  "actions": "Read-only local APK/ZIP/receipt inspections, aapt2/apksigner verification, and publisher/Play page reads. No candidate replay, device, container, Bridge or canonical mutation."
+}

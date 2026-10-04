@@ -1,0 +1,17 @@
+{
+  "apk_sha_after": "0239f0b09e1bf7e22a468b881a0a744c1a19ca72b8daf068ac3ac1b5b240e4b6",
+  "apk_sha_before": "0239f0b09e1bf7e22a468b881a0a744c1a19ca72b8daf068ac3ac1b5b240e4b6",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 2.285,
+  "input_guard_equal": true,
+  "manifest_available": true,
+  "package": "net.osmand.plus",
+  "phase": "metadata",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "target_sdk": "36",
+  "version_code": "540403",
+  "version_name": "5.4.4"
+}

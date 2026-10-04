@@ -1,0 +1,106 @@
+{
+  "rows": [
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--location",
+        "--max-time",
+        "15",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code}\t%{url_effective}\t%{content_type}\t%{size_download}",
+        "https://f-droid.org/repo/chat.fluffy.fluffychat_3566.apk"
+      ],
+      "artifact_id": "a-c6a54846db20d9b2d99d",
+      "content_type": "application/vnd.android.package-archive",
+      "downloaded_bytes": 0,
+      "effective_url": "https://f-droid.org/repo/chat.fluffy.fluffychat_3566.apk",
+      "http_code": "200",
+      "package": "chat.fluffy.fluffychat",
+      "rc": 0,
+      "registered_sha256_not_downloaded": "edcdf6171c09ab39ed76447c1ee11c66503d922dfe4f36f2dd429f2f9c652481",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--location",
+        "--max-time",
+        "15",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code}\t%{url_effective}\t%{content_type}\t%{size_download}",
+        "https://f-droid.org/repo/com.nextcloud.client_350000090.apk"
+      ],
+      "artifact_id": "a-93343ea6fbf4c80b8f20",
+      "content_type": "application/vnd.android.package-archive",
+      "downloaded_bytes": 0,
+      "effective_url": "https://f-droid.org/repo/com.nextcloud.client_350000090.apk",
+      "http_code": "200",
+      "package": "com.nextcloud.client",
+      "rc": 0,
+      "registered_sha256_not_downloaded": "2d08059c9a0a94ef4316e5c8491e3c6aee99a87b58bb796163c44e08deb1615c",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--location",
+        "--max-time",
+        "15",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code}\t%{url_effective}\t%{content_type}\t%{size_download}",
+        "https://f-droid.org/repo/net.osmand.plus_540403.apk"
+      ],
+      "artifact_id": "a-b443b6a5d594b48d6000",
+      "content_type": "application/vnd.android.package-archive",
+      "downloaded_bytes": 0,
+      "effective_url": "https://f-droid.org/repo/net.osmand.plus_540403.apk",
+      "http_code": "200",
+      "package": "net.osmand.plus",
+      "rc": 0,
+      "registered_sha256_not_downloaded": "0239f0b09e1bf7e22a468b881a0a744c1a19ca72b8daf068ac3ac1b5b240e4b6",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--location",
+        "--max-time",
+        "15",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code}\t%{url_effective}\t%{content_type}\t%{size_download}",
+        "https://f-droid.org/repo/org.mozilla.fennec_fdroid_1560020.apk"
+      ],
+      "artifact_id": "a-1ebdf60c95b146c9966d",
+      "content_type": "application/vnd.android.package-archive",
+      "downloaded_bytes": 0,
+      "effective_url": "https://f-droid.org/repo/org.mozilla.fennec_fdroid_1560020.apk",
+      "http_code": "200",
+      "package": "org.mozilla.fennec_fdroid",
+      "rc": 0,
+      "registered_sha256_not_downloaded": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+      "stderr": ""
+    }
+  ],
+  "schema": "peer-upstream-gap-p0-head-probe-v1",
+  "scope": "HEAD only; no APK body or hash verification"
+}

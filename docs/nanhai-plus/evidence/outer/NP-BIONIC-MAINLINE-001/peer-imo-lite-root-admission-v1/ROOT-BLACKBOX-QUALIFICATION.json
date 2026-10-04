@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 35280721,
+  "apk_sha256": "59dcee41cb5d7f7f9d22bbfc571f822303f40f7f591ecd82d8c2ffd62332a45f",
+  "at_utc": "2026-10-04T21:25:33.589609+00:00",
+  "blackbox_qualification_delta": 1,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "google_play": "https://play.google.com/store/apps/details?id=com.imo.android.imoimlite",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-independent-review-v1/REVIEW.json",
+    "sha256": "9e91da6eae84639da30e54f33b5c165ca810947b08367f592bc90125895969f3"
+  },
+  "market_download_label": "100M+ package-wide",
+  "package": "com.imo.android.imoimlite",
+  "publisher_page": "https://imo.im/en/log",
+  "qualification_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-qualification-v1/QUALIFICATION.json",
+    "sha256": "56935b7ae649c2ac234e5a91f3d4527c3cc3708a9ab5a55d103cbe926e6d8f3c"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "a706ffda05800cb62ca4b857bf0dcfa0ea801d6d7b2d5dafb72e67227bbdc915"
+  },
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "scope": "Separate Lite-package overseas-mainstream blackbox test-input eligibility only; no startup",
+  "source_scope": "Bounded source visibility; no global source absence or Play-byte equivalence proven",
+  "static_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+    "sha256": "687ecd2d443e0d9ba5ceaf748456d4341cd9762bc003d114d229853df228a230"
+  },
+  "version_code": "3372",
+  "version_name": "9.8.000000018087"
+}

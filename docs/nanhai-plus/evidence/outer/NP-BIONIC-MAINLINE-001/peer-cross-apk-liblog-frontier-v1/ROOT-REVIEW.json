@@ -1,0 +1,64 @@
+{
+  "at_utc": "2026-10-04T21:17:46.899125+00:00",
+  "cohort_sha256": "48ed07424e5d660ce5696e3f8419645430ba30fc40c1b609f7b136672881c5ca",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_HOST_STATIC_RANKING_ONLY",
+  "device_commands": 0,
+  "distinct_arm64_elf_records_in_this_audit": 1226,
+  "distinct_receipt_package_labels": 114,
+  "frozen_105_lock_sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+  "later_inventory_input_lock": {
+    "InfinityLoop1309.NewPipeEnhanced": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-pipepipe-static-v2/ELF-INVENTORY.json",
+      "sha256": "9e1af5b66eeca3d42d06bd0efb8dd82449ab3b35f9004eb568a802cb688dff2e"
+    },
+    "com.aimp.player": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-aimp-static-v1/ELF-INVENTORY.json",
+      "sha256": "e6f6cfaaa2fa8e2e6a952645abfee66e85f4396549434f9c68389c01aaa29a6b"
+    },
+    "com.anydesk.anydeskandroid": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ELF-INVENTORY.json",
+      "sha256": "94e12724c26841420ad76a54b5b5de7655a35c37c0e3a095507d8d3376002172"
+    },
+    "com.lemon.lvoverseas": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g343-capcut-four-static-v1/phases/elf/ELF-INVENTORY.json",
+      "sha256": "6f41482a0b8009ea3affe619d1c13f517723daaa8a951a45682540ba4040446b"
+    },
+    "com.snapchat.android": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-snapchat-four-static-v1/ELF-INVENTORY.json",
+      "sha256": "20fe1888afaa4716082eba2cd31ee0c342b7da1c7e2affed76f7f01098383110"
+    },
+    "com.whatsapp": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/raw112-static111-whatsapp-four-static-v1/phases/elf/ELF-INVENTORY.json",
+      "sha256": "d6561369539cd4fef00569c7926005afe005ba148e1e43bf182d55a3d1ff3656"
+    },
+    "io.heckel.ntfy": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-ntfy-static-v1/ELF-INVENTORY.json",
+      "sha256": "0f2ed676cec8f06abdcc1bc54f9508dae34e457dd22e20daf9a297be8f178100"
+    },
+    "org.fossify.clock": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/ELF-INVENTORY.json",
+      "sha256": "affda10979acf8313cbf0b2907cc4343d9c77a3ac8eb50167526cf54d4bde1f1"
+    },
+    "org.lichess.mobileV2": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-lichess-static-v1/ELF-INVENTORY.json",
+      "sha256": "91dc281fbdae48560fe24897948a0de932f5846fc586d8d76a8a3fd7ea3881a8"
+    }
+  },
+  "liblog_declared_needed_edges": 807,
+  "liblog_declared_needed_package_labels": 78,
+  "limitations": [
+    "Nine later input inventory SHAs are frozen here; peer replay did not itself assert those SHA guards.",
+    "Receipt package labels do not alone prove 114 verified manifest package identities.",
+    "Cumulative 1762 ARM64 ELF metric is a different denominator from this deduplicated 1226-record cohort."
+  ],
+  "next": "On fresh authenticated exact-R4 native host, read-only inspect same-generation product liblog.so plus installed-file manifest/exports before any rebuild; current static need does not prove a loader wall.",
+  "peer_review_sha256": "f9a047c3f4342bb913d976a385b503d32e7eb7066ac4f5bf7de2b57dc036de69",
+  "provider_runtime_verified": false,
+  "recompute_script_sha256": "a1eafd103a4454132085a6152f6f4420496d28f6efe566f73d3f43bae3b9b0b4",
+  "root_replay_byte_equal": true,
+  "root_replay_rc": 0,
+  "schema": "nanhai-plus-cross-apk-liblog-root-static-review-v1",
+  "startup_blocker_proven": false
+}

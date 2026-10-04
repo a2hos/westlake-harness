@@ -1,0 +1,30 @@
+{
+  "apk_bytes": 35280721,
+  "apk_sha256": "59dcee41cb5d7f7f9d22bbfc571f822303f40f7f591ecd82d8c2ffd62332a45f",
+  "at_utc": "2026-10-04T21:25:33.589609+00:00",
+  "blackbox_delta": 0,
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-official-raw-v1/RESULT.json",
+    "sha256": "fb2d2873f238c63616983b11169806e1f170c2d06ed5a9530406b4039cee820d"
+  },
+  "candidate_verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-official-raw-v1/VERIFY.json",
+    "sha256": "c8b13d06724a373a514f42c9a9e37f0850fac82a25df52fed1ed94434c93aa82"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_SUPPLEMENTAL_OFFICIAL_RAW_APK_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-independent-review-v1/REVIEW.json",
+    "sha256": "9e91da6eae84639da30e54f33b5c165ca810947b08367f592bc90125895969f3"
+  },
+  "package": "com.imo.android.imoimlite",
+  "publisher_page": "https://imo.im/en/log",
+  "raw_delta": 1,
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "Publisher-linked exact unmodified signed Lite APK; independent SHA/ZIP check; distinct from imo main; no install/runtime/start",
+  "version_code": "3372",
+  "version_name": "9.8.000000018087"
+}

@@ -1,0 +1,39 @@
+{
+  "apk_bytes": 157841461,
+  "apk_sha256": "0239f0b09e1bf7e22a468b881a0a744c1a19ca72b8daf068ac3ac1b5b240e4b6",
+  "artifact_id": "a-b443b6a5d594b48d6000",
+  "at_utc": "2026-10-04T21:22:05.582438+00:00",
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/STATIC.json",
+    "sha256": "f2f93df7abb34675e64d1506b29e0229079ec3c6e18a6519ea11c790ccd86c7d"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "four_p0_handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/HANDOFF-v2.json",
+    "sha256": "40b3f66274597abb1fb272ae752d61e4b28b45857e09e8b682dd65e752a50a4f"
+  },
+  "full_static_delta": 1,
+  "gap_audit_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-artifact-gap-audit-v1/ROOT-REVIEW.json",
+    "sha256": "47953e4383cfca7db5b4894297ebc34c78f11c2f277b6684753b022f2ddcd071"
+  },
+  "package": "net.osmand.plus",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "deb919086d5e48a58f9b61ae21ac32852f82314153bed35b28eb1a644bbdcc05"
+  },
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/DEX/ELF host static only; no loader/install/startup evidence",
+  "semantic_dex_delta": 5,
+  "true_arm64_elf_delta": 6
+}

@@ -1,0 +1,134 @@
+{
+  "checkpoint": {
+    "bionic_whole_tools": 0,
+    "full_host_static": 114,
+    "native_linux_soong_graph_observed": false,
+    "path": "docs/nanhai-plus/checkpoints/20261004-raw114-static114-blackbox23-evo58/CHECKPOINT.json",
+    "raw": 114,
+    "sha256": "dfe3d096ff0ef6ce2cd72816998b71512d06954b14a8de85b4713afcd2a59e12",
+    "true_cold_starts": 0
+  },
+  "counting_rule": "For each of 114 distinct package identities, count only inventory records marked machine=AArch64 and abi=arm64-v8a. Count each ELF DT_NEEDED relation once and distinct ELF bytes by SHA256. Split-member receipts replace aggregate placeholders. This snapshot has 1226 such ELF records; the checkpoint's 1762 is a separately maintained cumulative static metric and is not substituted for this deduplicated denominator.",
+  "decision": "CANDIDATE_ONE_HOST_ONLY_LIBLOG_PROVIDER_VALIDATION",
+  "exact_r4_source": {
+    "android_bp_sha256": "cb95bc9f49bd420d1448906541d31ce9f66996668aeee5d14693f64915af8199",
+    "built_arm64_product_elf_observed": false,
+    "different_ndk_definition": "ndk_library name liblog, liblog/Android.bp:202; API stub definition is not the runtime provider",
+    "different_runtime_apex_static_definition": "liblog_for_runtime_apex is cc_library_static at Android.bp:177; it is not the shared platform provider",
+    "git_head": "58dac317ea08b8f275ebd01ce864acab2de30b93",
+    "git_tree": "55fdb686a886e51fa5992738a4f570e7aacab63d",
+    "local_head_matches_official_tag_commit_and_tree": true,
+    "local_path_under_registered_source_pool": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/logging/liblog/Android.bp",
+    "official_tag": "https://android.googlesource.com/platform/system/logging/+/refs/tags/android-16.0.0_r4",
+    "platform_shared_definition": "cc_library name liblog, liblog/Android.bp:153; defaults liblog.defaults include Android target sources and symbol map",
+    "same_generation_install_manifest_observed": false,
+    "worktree_status_clean": true
+  },
+  "hypothesis": {
+    "blocking": false,
+    "candidate": "A complete platform ARM64 Bionic liblog provider with install placement and required exports could satisfy one shared native dependency edge for 78 accepted APK identities.",
+    "cheapest_falsifier": "Inspect a same-generation product liblog.so and install manifest first. If already present, correctly typed, installed and export-complete, provider absence is false; advance to actual loader evidence rather than rebuilding."
+  },
+  "input_binding": {
+    "audit_output": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-cross-apk-liblog-frontier-v1/COHORT.json",
+    "audit_output_sha256": "48ed07424e5d660ce5696e3f8419645430ba30fc40c1b609f7b136672881c5ca",
+    "audit_script": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-cross-apk-liblog-frontier-v1/recompute.py",
+    "frozen_105_lock": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g339-cross-apk-exposure-cohort-v2/LOCK.json",
+    "frozen_105_lock_sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+    "individual_elf_inventory_hashes_checked_against_lock": 103,
+    "later_root_admitted_package_identities": 9,
+    "split_packages_reconstructed_from_accepted_member_record_sha256": 2
+  },
+  "limits": [
+    "DT_NEEDED is a static declaration and does not prove that the library is loaded on a cold-start path.",
+    "Zero same-APK ARM64 providers does not prove that the current Android product lacks liblog.so.",
+    "A successful liblog build or install mapping cannot alone show any of the 78 APKs start; other dependencies may fail first.",
+    "No device, container, SSH, remote, Bridge, canonical state or count mutation was performed."
+  ],
+  "minimum_next_validation_packet": {
+    "failure_oracle": "First failing command/rc or absent/mismatched artifact, install mapping, ABI, SONAME, exports or generation; report the narrow observed failure.",
+    "host_success_oracle": "One exact-R4 ARM64 Bionic platform liblog.so artifact, same-generation installed-file placement, and required dynamic-symbol closure with source/output guards; this is host provider evidence only.",
+    "owner": "Original nanhai-plus native Bionic owner lane; fresh ACK and new one-use packet, not a replay of G279 or earlier nonces",
+    "preconditions": [
+      "Fresh authenticated Linux x86_64 host identity and exact android-16.0.0_r4 source/manifest receipt",
+      "Project-isolated OUT_DIR, TMPDIR and staging; no Docker, Podman or OCI",
+      "Current product and generation bound to the existing native Bionic build plan; device HOLD remains"
+    ],
+    "runtime_oracle_later": "Only a separately authorized truly-cold original-APK loader receipt could turn static exposure into an actual dependency wall or demonstrate an APK unblocked.",
+    "single_target": "liblog platform ARM64 shared variant from system/logging/liblog/Android.bp:153",
+    "steps": [
+      "Read-only anti-join: inspect same-generation product installed-file manifest and ARM64 liblog.so ELF, recording exact path, SHA256, SONAME, machine and exported dynamic symbols. If complete, stop without a rebuild.",
+      "If absent or incomplete, use the original owner's fresh native Soong build route with only the liblog module target and recorded argv/rc/OUT/TMP/source guards; do not select the ndk_library stub or liblog_for_runtime_apex static variant as runtime artifact.",
+      "After rc0, bind produced ELF SHA256, AArch64 machine, SONAME liblog.so, dynamic exports and installed-file manifest to the same build generation. Compare required liblog dynamic symbols for the 807 consumer ELFs. Retain compiler/linker errors exactly if rc != 0."
+    ]
+  },
+  "observed_wall": "none for liblog on a current-generation Android Bionic loader. The current checkpoint records no authenticated exact-R4 native Linux Soong graph or target artifact; absence of that receipt is a provenance gap, not an observed missing-library failure.",
+  "ranking": [
+    {
+      "distinct_elf_sha256": 1037,
+      "elf_edges": 1219,
+      "needed": "libc.so",
+      "packages": 95,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 1012,
+      "elf_edges": 1194,
+      "needed": "libdl.so",
+      "packages": 95,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 956,
+      "elf_edges": 1125,
+      "needed": "libm.so",
+      "packages": 92,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 728,
+      "elf_edges": 807,
+      "needed": "liblog.so",
+      "packages": 78,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 150,
+      "elf_edges": 161,
+      "needed": "libz.so",
+      "packages": 26,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 81,
+      "elf_edges": 83,
+      "needed": "libEGL.so",
+      "packages": 22,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 79,
+      "elf_edges": 82,
+      "needed": "libGLESv2.so",
+      "packages": 19,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 17,
+      "elf_edges": 17,
+      "needed": "libmediandk.so",
+      "packages": 10,
+      "same_apk_arm64_provider_packages": 0
+    },
+    {
+      "distinct_elf_sha256": 43,
+      "elf_edges": 43,
+      "needed": "libOpenSLES.so",
+      "packages": 8,
+      "same_apk_arm64_provider_packages": 0
+    }
+  ],
+  "schema": "peer-cross-apk-liblog-frontier-review-v1",
+  "scope": "Read-only distinct-package cross-APK DT_NEEDED ranking of the current 114 root-admitted raw/host-static package identities; no loader or device experiment.",
+  "selection": "liblog.so is the highest-ranked one-module provider after the Bionic libc/libdl/libm bootstrap trio, covering 78 distinct accepted APKs and 807 ARM64 ELF DT_NEEDED edges. Exact R4 source defines a platform shared module. One same-generation product artifact/install audit can falsify a provider gap; libz.so is the next narrower dependency candidate (26 packages/161 edges). This ranking is static leverage, not runtime unblocking."
+}

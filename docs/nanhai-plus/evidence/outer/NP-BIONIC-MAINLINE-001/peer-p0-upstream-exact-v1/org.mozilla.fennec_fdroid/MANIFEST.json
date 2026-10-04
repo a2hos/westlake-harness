@@ -1,0 +1,71 @@
+{
+  "abis": [
+    "arm64-v8a"
+  ],
+  "activities": 20,
+  "app_name": "Fennec",
+  "bytes": 127634542,
+  "features": [
+    "android.hardware.audio.low_latency",
+    "android.hardware.camera",
+    "android.hardware.camera.any",
+    "android.hardware.camera.autofocus",
+    "android.hardware.location",
+    "android.hardware.location.gps",
+    "android.hardware.microphone",
+    "android.hardware.touchscreen"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "org.mozilla.fenix.HomeActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 15,
+  "package": "org.mozilla.fennec_fdroid",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS",
+    "android.permission.CREDENTIAL_MANAGER_SET_ORIGIN",
+    "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.adjust.preinstall.READ_PERMISSION",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "org.mozilla.fennec_fdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "org.mozilla.fennec_fdroid.permission.PROFILER_INTERNAL",
+    "org.mozilla.fennec_fdroid.permission.RECEIVE_DOWNLOAD_BROADCAST"
+  ],
+  "providers": 9,
+  "receivers": 14,
+  "services": 105,
+  "sha256": "27f2951376ca1085e0933066c902fdfe4d260916d381e233475c5fd6964f5745",
+  "signing_certificate_sha256": [
+    "06665358efd8ba05be236a47a12cb0958d7d75dd939d77c2b31f5398537ebdc5"
+  ],
+  "target_sdk": "37",
+  "version_code": "1560020",
+  "version_name": "156.0.0"
+}
