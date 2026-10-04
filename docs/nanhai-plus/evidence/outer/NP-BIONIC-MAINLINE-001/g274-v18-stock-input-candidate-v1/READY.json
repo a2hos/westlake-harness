@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-04T08:06:57.036355+00:00",
+  "candidate_sha256": "18514f2a8e0cb8126e109cbb8f9945f2093279cec5c7fff21a5754f27daf051d",
+  "device_commands": 0,
+  "differing_overlaps": 0,
+  "gate_rc": 0,
+  "gate_stdout_sha256": "a69eb64df91441b13ad5082cee16fcb0892163f4b915e5a6dbef4070485a0767",
+  "graph_executed": false,
+  "handoff_sha256": "0ee60681f2f7b27d81f73f30fecc95df993dd5b56e3c2235ed0d471820cbc557",
+  "identical_overlaps": 4,
+  "linux_mount_executed": false,
+  "new_logical_bytes": 1875247905,
+  "new_tracked_entries": 85499,
+  "nine_exact_source_roots": 9,
+  "original_dangling_links": 1,
+  "original_links": 13,
+  "qualified_virtual_links": 12,
+  "requires": [
+    "integrated v18 materializer/executor with old+new full source and SDK pre/postguards",
+    "independent peer/root review",
+    "fresh original owner ACK",
+    "root seal"
+  ],
+  "schema": "nanhai.g274.v18.input-ready.v1",
+  "sdk_full_prepost_executed": false,
+  "status": "INPUT_CANDIDATE_READY_FOR_INDEPENDENT_REVIEW_NOT_GRAPH_EXECUTION",
+  "verifier_sha256": "d6831594f58ff4ea5a1cf7cceb7eea140811fd4dcdd212b55fcf25aa188068c3"
+}

@@ -1,0 +1,63 @@
+{
+  "independent_findings": {
+    "exact_r4_source_roots": 9,
+    "four_new_overlap_paths": [
+      "frameworks/base/data/fonts/fonts.mk",
+      "frameworks/base/data/keyboards/keyboards.mk",
+      "frameworks/base/data/sounds/AllAudio.mk",
+      "hardware/interfaces/configstore/1.1/default/surfaceflinger.mk"
+    ],
+    "four_old_new_overlaps_identical": true,
+    "link_payloads_checked": 13,
+    "linux_mount_and_graph_not_executed": true,
+    "logical_bytes": 1875247905,
+    "new_stock_blueprint_files": 2394,
+    "original_r4_dangling_target": "frameworks/native/libs/binder/include/private/binder",
+    "source_and_sdk_complete_prepost_guards_are_plan_only": true,
+    "source_root_readonly_binds_planned": 9,
+    "stock_view_qualified_targets": 12,
+    "tracked_entries": 85499,
+    "v17b_root_overlap_policy_allows_only_two_other_paths": true
+  },
+  "independent_gate": {
+    "command": "python3 scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/verify_input.py",
+    "exit_code": 0,
+    "stdout": {
+      "candidate_valid": true,
+      "different_overlaps": 0,
+      "docker_commands": 0,
+      "entries": 85499,
+      "graph_executed": false,
+      "identical_overlaps": 4,
+      "logical_bytes": 1875247905,
+      "nine_roots": 9,
+      "original_dangling_links": 1,
+      "qualified_links": 12
+    }
+  },
+  "limits": {
+    "device_commands": 0,
+    "graph_execution_authorized": false,
+    "input_admission_allowed": true,
+    "source_or_sdk_prepost_run_in_this_review": false,
+    "target_compiled": false
+  },
+  "required_before_executable_release": [
+    "Implement and independently review integrated v18 manifest, materializer and executor extending v17b without altering its frozen evidence.",
+    "Admit only the four exact new overlaps by path, mode, byte count, SHA-256 and Git blob; reject all other overlaps.",
+    "Materialize private source volume with nine mountpoints absent as content; bind nine full roots read-only only in stock phase and verify Linux mount source/destination/RW=false.",
+    "Preserve all 13 symlink payloads, including the one original dangling R4 link, and verify 12 qualified targets in composed stock view.",
+    "Run frozen v17b full source and 17,924-entry SDK plus all nine complete source guards before and after; require equality.",
+    "Obtain fresh original owner ACK and root seal before one-shot graph."
+  ],
+  "reviewed_at": "2026-10-04T08:08:00.241998+00:00",
+  "reviewed_files": {
+    "HANDOFF-GATE.stdout.json": "a69eb64df91441b13ad5082cee16fcb0892163f4b915e5a6dbef4070485a0767",
+    "HANDOFF.md": "0ee60681f2f7b27d81f73f30fecc95df993dd5b56e3c2235ed0d471820cbc557",
+    "INPUT-CANDIDATE.json": "18514f2a8e0cb8126e109cbb8f9945f2093279cec5c7fff21a5754f27daf051d",
+    "READY.json": "fb040932356e49a145694ae274cfcc35e439b8e6164c6dff1289d01df9d4ae5d",
+    "verify_input.py": "d6831594f58ff4ea5a1cf7cceb7eea140811fd4dcdd212b55fcf25aa188068c3"
+  },
+  "schema": "nanhai.g274.v18.stock-input-independent-review.v1",
+  "verdict": "PASS_INPUT_ONLY_MATERIALIZER_ADAPTATION_REQUIRED_BEFORE_EXECUTION"
+}

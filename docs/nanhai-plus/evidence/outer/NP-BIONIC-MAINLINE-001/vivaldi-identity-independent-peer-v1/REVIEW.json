@@ -1,0 +1,75 @@
+{
+  "schema": "vivaldi-identity-independent-peer-v1",
+  "reviewed_utc": "2026-10-04T08:08:35.457040+00:00",
+  "decision": "PASS_STATIC_IDENTITY_WITH_LIMITS",
+  "candidate_result": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-identity-candidate-v1/RESULT.json",
+  "candidate_result_sha256": "2777b7179f2bf2c67b4ce25132de1a3e559297356577deb401650d073661dbc0",
+  "interpretation": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-identity-candidate-v1/INTERPRETATION.json",
+  "interpretation_sha256": "4c02141a45c47b1bb4024254b2ee4d64a15d1f6f02f47d1122c68e5fdaa356f6",
+  "pin_and_guard": {
+    "all_four_expected_before_after_current_sha256_identical": true,
+    "payload_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+    "aapt2_sha256": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner_jar_sha256": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java_sha256": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "command_evidence": {
+    "aapt2_dump_badging_rc": 0,
+    "apksigner_verify_rc": 0,
+    "both_timed_out": false,
+    "both_stderr_empty": true,
+    "raw_streams": {
+      "badging.stdout.raw": {
+        "sha256": "ce2d3c457e1e3a09f63e496ee0cd804e756cf3a6c4b6800fadd2f4a9cce18eef",
+        "bytes": 9563
+      },
+      "badging.stderr.raw": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "signature.stdout.raw": {
+        "sha256": "69a64b8f72fd2677e186ca7ae95b2a78999f2d8594ad00570693e7ff100f7a55",
+        "bytes": 981
+      },
+      "signature.stderr.raw": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  },
+  "identity": {
+    "package": "com.vivaldi.browser",
+    "version_name": "8.2.4147.130",
+    "version_code": "541470130",
+    "min_sdk": 29,
+    "target_sdk": 36,
+    "compile_sdk": 37,
+    "aapt_native_code": "'arm64-v8a'",
+    "zip_lib_abis": [
+      "arm64-v8a"
+    ],
+    "root_manifest_count": 1,
+    "package_line_has_split_attribute": false
+  },
+  "signature": {
+    "apksigner_output_verifies": true,
+    "v1": false,
+    "v2": true,
+    "v3": false,
+    "v3_1": false,
+    "v4": false,
+    "source_stamp": false,
+    "signers": 1,
+    "certificate_dn": "CN=Vivaldi browser, O=Vivaldi Technologies AS, L=Oslo, C=NO",
+    "certificate_sha256": "e8a78544655ba8c09817f732768f5689b1662ec4b2bc5a0bc0ec138d33ca3d1e"
+  },
+  "correction": "RESULT.json parsed_badging.sdk is null because the first parser searched sdkVersion; immutable badging.stdout.raw says minSdkVersion:29, and INTERPRETATION.json correctly records 29.",
+  "limits": [
+    "Corporate publisher binding is not proven by a self-described certificate DN; no independently authenticated official certificate fingerprint was checked.",
+    "A package line without split attribute and one root Manifest do not establish split closure or installability.",
+    "An arm64-v8a lib directory and native-code line do not establish Android16/OH7 compatibility, Bionic behavior, or runtime cold start.",
+    "Complete client source availability and overseas mainstream blackbox qualification remain unproven; no counters changed.",
+    "This peer recomputed saved bytes and read original tool outputs; it did not rerun aapt2/apksigner or observe the author processes live."
+  ],
+  "count_instruction": "Static identity peer evidence only; root decides any admission. No device, Git, Bridge, counters or control state changed."
+}

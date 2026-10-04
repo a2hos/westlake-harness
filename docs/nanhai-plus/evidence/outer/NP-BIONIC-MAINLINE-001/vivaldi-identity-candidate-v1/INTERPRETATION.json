@@ -1,0 +1,51 @@
+{
+  "schema": "vivaldi-identity-interpretation-v1",
+  "result_path": "RESULT.json",
+  "result_sha256": "2777b7179f2bf2c67b4ce25132de1a3e559297356577deb401650d073661dbc0",
+  "raw_stdout_hashes": {
+    "badging.stdout.raw": "ce2d3c457e1e3a09f63e496ee0cd804e756cf3a6c4b6800fadd2f4a9cce18eef",
+    "signature.stdout.raw": "69a64b8f72fd2677e186ca7ae95b2a78999f2d8594ad00570693e7ff100f7a55"
+  },
+  "identity": {
+    "package": "com.vivaldi.browser",
+    "version_name": "8.2.4147.130",
+    "version_code": "541470130",
+    "min_sdk": 29,
+    "target_sdk": 36,
+    "compile_sdk": 37,
+    "manifest_package_line_has_split_attribute": false,
+    "aapt_native_code": "'arm64-v8a'",
+    "zip_lib_abis": [
+      "arm64-v8a"
+    ],
+    "zip_manifest_count": 1
+  },
+  "signature": {
+    "verify_rc": 0,
+    "v2_verified": true,
+    "v1_verified": false,
+    "v3_verified": false,
+    "v3_1_verified": false,
+    "v4_verified": false,
+    "source_stamp_verified": false,
+    "signers": 1,
+    "certificate_dn": "CN=Vivaldi browser, O=Vivaldi Technologies AS, L=Oslo, C=NO",
+    "certificate_sha256": "e8a78544655ba8c09817f732768f5689b1662ec4b2bc5a0bc0ec138d33ca3d1e"
+  },
+  "provenance_comparison": {
+    "official_scout_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-next-intake-scout-v1/REPORT.md",
+    "official_scout_sha256": "8e3a1d0a9bab83984adf43311eec1576f35da2b705e58889a86a9c44aacfd1e5",
+    "official_archive_version_label": "8.2.4147.130",
+    "payload_version_matches_official_archive_label": true,
+    "official_archive_filename_matches_payload_name": true,
+    "https_download_receipt_matches_official_archive_host": true,
+    "independent_publisher_certificate_binding": false,
+    "certificate_dn_only_is_not_identity_proof": true
+  },
+  "limits": [
+    "First RESULT.json parser looked for sdkVersion rather than minSdkVersion; this interpretation corrects minSdkVersion from immutable badging stdout, without rerunning tools.",
+    "No manifest split attribute in the aapt package line and one root AndroidManifest.xml do not prove independent split closure.",
+    "Certificate DN claims Vivaldi Technologies AS, but absent an official certificate fingerprint or separately authenticated binding it is not corporate identity proof.",
+    "Candidate has no root acceptance, mainstream blackbox qualification, or runtime startup evidence."
+  ]
+}

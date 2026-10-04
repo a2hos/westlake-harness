@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:04:31.712656+00:00",
+  "checked_at": "2026-10-04T08:09:38.928439+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 75,
+    "downloaded_payloads": 76,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -51,7 +51,7 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 73,
-    "supplemental_payloads": 2
+    "supplemental_payloads": 3
   },
   "latest_actual_execution": {
     "release": 273,
@@ -421,6 +421,14 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-stock-view-scout-v1/SCOUT.json",
       "sha256": "05f2f57999ae0e68b401b98f3a67e582dd52c7f6e552f8d5263d1ba7ed564115"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-vivaldi-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7e0ca7bad935d6d4a9984dd87e630e521ad60f94ddfa4411c0aa2b2c47097b9d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/root-input-admission-v1/ADMISSION.json",
+      "sha256": "938389eac68203b94c0e0ded93e0bee9f54fcd641388f0d0a518d5803dc84899"
     }
   ],
   "bionic_stock_graph": {
@@ -451,7 +459,7 @@
   },
   "next_graph_candidate": {
     "prospective_release": 274,
-    "next_input": "Close stock-path view and 13 cross-repository symlinks for nine admitted exact R4 repositories; independently review; fresh original owner ACK/root seal before G274 graph",
+    "next_input": "G274/v18 input-only admitted; integrate and independently review materializer/executor with exact overlap, links, source/SDK guards; then original owner fresh ACK/root seal",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
@@ -466,11 +474,11 @@
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 0,
+    "pending_actual_result_groups": 1,
     "trigger_every_groups": "3-4",
     "next": "Wait for 3-4 new actual result groups; vary lens; one bounded verifiable improvement",
     "latest_closed": "EVO-0016",
-    "pending_groups": 0,
+    "pending_groups": 1,
     "latest_closure": {
       "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
       "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
@@ -824,6 +832,34 @@
       "sha256": "05f2f57999ae0e68b401b98f3a67e582dd52c7f6e552f8d5263d1ba7ed564115"
     },
     "linux_mount_executed": false,
+    "graph_executed": false
+  },
+  "vivaldi_raw_actual": {
+    "status": "official-channel raw payload only",
+    "package": "com.vivaldi.browser",
+    "version": "8.2.4147.130",
+    "bytes": 352886633,
+    "sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-vivaldi-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "7e0ca7bad935d6d4a9984dd87e630e521ad60f94ddfa4411c0aa2b2c47097b9d"
+    },
+    "static_complete": false,
+    "blackbox_qualified": false,
+    "startup_delta": 0
+  },
+  "g274_v18_input_admission": {
+    "status": "input only, not executable",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/root-input-admission-v1/ADMISSION.json",
+      "sha256": "938389eac68203b94c0e0ded93e0bee9f54fcd641388f0d0a518d5803dc84899"
+    },
+    "nine_roots": 9,
+    "same_overlaps": 4,
+    "different_overlaps": 0,
+    "virtual_links": 12,
+    "original_dangling_link": 1,
+    "materializer_ready": false,
     "graph_executed": false
   }
 }

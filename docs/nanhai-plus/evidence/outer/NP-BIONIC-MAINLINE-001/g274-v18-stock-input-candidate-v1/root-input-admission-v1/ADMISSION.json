@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-04T08:08:55.552742+00:00",
+  "status": "ROOT_ADMIT_G274_V18_INPUT_ONLY_NOT_EXECUTION",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/READY.json",
+    "sha256": "fb040932356e49a145694ae274cfcc35e439b8e6164c6dff1289d01df9d4ae5d"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/INPUT-CANDIDATE.json",
+    "sha256": "18514f2a8e0cb8126e109cbb8f9945f2093279cec5c7fff21a5754f27daf051d"
+  },
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/HANDOFF.md",
+    "sha256": "0ee60681f2f7b27d81f73f30fecc95df993dd5b56e3c2235ed0d471820cbc557"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-peer-review-v1/REVIEW.json",
+    "sha256": "0adc9bfa042274f447adcca221b1441b9912cd7a9adf800a275fd3280b24d750"
+  },
+  "root_verify_input_rc": 0,
+  "root_verify_stdout_sha256": "a69eb64df91441b13ad5082cee16fcb0892163f4b915e5a6dbef4070485a0767",
+  "source_roots": 9,
+  "tracked_entries": 85499,
+  "tracked_bytes": 1875247905,
+  "overlap_same": 4,
+  "overlap_different": 0,
+  "original_links": 13,
+  "virtual_resolved": 12,
+  "original_dangling": 1,
+  "v17b_materializer_compatible": false,
+  "v18_materializer_independent_review": false,
+  "original_owner_new_ACK": false,
+  "root_execution_sealed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compile": false,
+  "device_commands": 0,
+  "next": "Integrate exact v18 materializer and guard policy; independent review before original owner ACK/root seal and one-shot graph."
+}

@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-04T08:09:11.396688+00:00",
+  "status": "ROOT_ACCEPT_ONE_OFFICIAL_CHANNEL_RAW_APK_PAYLOAD_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-vivaldi-intake-candidate-v1/RESULT.json",
+    "sha256": "520dd9bd6652fb4dfba3be97ca4895764028b1aea1a923aaba97f79e67d57625"
+  },
+  "raw_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-vivaldi-intake-independent-peer-v1/REVIEW.json",
+    "sha256": "d584e50fced358582855706a34162db384042cff49f67ab65fc0d27ca94be7ff"
+  },
+  "identity_interpretation": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-identity-candidate-v1/INTERPRETATION.json",
+    "sha256": "4c02141a45c47b1bb4024254b2ee4d64a15d1f6f02f47d1122c68e5fdaa356f6"
+  },
+  "identity_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-identity-independent-peer-v1/REVIEW.json",
+    "sha256": "5ccd5c0c4c61425b8ff0fec3859d4a54c8b1c2798aa4f4d6525bf25d083c0a87"
+  },
+  "root_payload_bytes_rehashed": 352886633,
+  "payload_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+  "package": "com.vivaldi.browser",
+  "version_name": "8.2.4147.130",
+  "abi": "arm64-v8a",
+  "signature_v2_tool_valid": true,
+  "publisher_certificate_independently_bound": false,
+  "full_split_set_proven": false,
+  "blackbox_qualified": false,
+  "static_inventory_complete": false,
+  "device_commands": 0,
+  "startup_delta": 0,
+  "whole_bionic_tools_delta": 0,
+  "new_raw_payloads": 1,
+  "new_raw_cumulative": 76,
+  "note": "Official archive filename and direct host match static package/version and ZIP integrity. Certificate DN is self-asserted; independent publisher certificate binding remains open. This is raw-only acceptance, not blackbox/runtime acceptance."
+}

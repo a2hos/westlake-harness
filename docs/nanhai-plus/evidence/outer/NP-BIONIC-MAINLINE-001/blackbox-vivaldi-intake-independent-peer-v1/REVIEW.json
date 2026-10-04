@@ -1,0 +1,51 @@
+{
+  "schema": "blackbox-vivaldi-intake-independent-peer-v1",
+  "reviewed_utc": "2026-10-04T08:06:28.482741+00:00",
+  "decision": "PASS_RAW_PAYLOAD_INTEGRITY_ONLY",
+  "candidate_result": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-vivaldi-intake-candidate-v1/RESULT.json",
+  "payload": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-vivaldi-intake-candidate-v1/Vivaldi.8.2.4147.130_arm64-v8a.apk",
+  "official_archive_url": "https://vivaldi.com/download/archive/?platform=android",
+  "official_archive_observation": "Official Vivaldi Android archive lists Vivaldi.8.2.4147.130_arm64-v8a.apk dated 2026-10-01, size 336.54 MB; exact direct URL is the candidate pinned URL.",
+  "candidate_pinned_url": "https://downloads.vivaldi.com/stable/Vivaldi.8.2.4147.130_arm64-v8a.apk",
+  "checks": {
+    "result_sha256": "520dd9bd6652fb4dfba3be97ca4895764028b1aea1a923aaba97f79e67d57625",
+    "payload_bytes": 352886633,
+    "payload_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+    "payload_regular_file": true,
+    "payload_magic_hex": "504b0304",
+    "zip_entries": 5097,
+    "zip_unique_names": 5097,
+    "zip_duplicate_names": [],
+    "zip_first_bad_crc_entry": null,
+    "manifest_exact_top_level_count": 1,
+    "scout_sha256": "8e3a1d0a9bab83984adf43311eec1576f35da2b705e58889a86a9c44aacfd1e5",
+    "curl_sha256": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "get_headers_sha256": "b961c27258befa2eccec1dec83d9403d827c6a6e01f6505084374aa1a89a76c7",
+    "get_stdout_sha256": "0177b6f85c8aa75a54f7be78757590aff08502a8a263a3567cf7f546aad950cc",
+    "get_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "get_stderr_bytes": 0
+  },
+  "http_tls_evidence": {
+    "candidate_get_returncode": 0,
+    "saved_get_stdout": "200 https://downloads.vivaldi.com/stable/Vivaldi.8.2.4147.130_arm64-v8a.apk 0 352886633",
+    "saved_get_stderr_empty": true,
+    "saved_get_headers_http_200": true,
+    "saved_get_headers_content_type": "application/octet-stream",
+    "saved_get_headers_content_length": 352886633,
+    "tls_verify_result_from_curl_write_out": 0,
+    "effective_url_matches_pinned": true
+  },
+  "guard_evidence": {
+    "source_scout_before_after_sha_match": true,
+    "curl_before_after_sha_match": true
+  },
+  "limitations": [
+    "HEAD HTTP 200 and Content-Length are copied in candidate RESULT; an independent raw HEAD transcript was not retained.",
+    "Publisher checksum was not independently obtained; official archive listing and candidate GET TLS evidence support source/channel, while APK bytes are independently hashed here.",
+    "The 8.2.4147.130 version is the official archive filename label only; binary AndroidManifest version and package name are not parsed.",
+    "APK publisher signature, complete split closure, ARM64 binary compatibility, complete client source availability, and overseas-mainstream blackbox qualification are unproven.",
+    "No installation, device access, truly cold startup, Bionic tool execution, or 200/100 counters are proven.",
+    "Candidate RESULT and saved GET outputs are the author terminal evidence; this peer did not repeat download or observe the original process live."
+  ],
+  "count_instruction": "Root may decide raw-only admission. Peer made no counter, control, source, device, Bridge, or Git changes."
+}
