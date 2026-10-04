@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T04:52:42+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T05:04:03+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -20,7 +20,9 @@
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
 
-最新实际工程结果：G267 已终态（exec62919，terminal de0e45，rc2）。346 个精确 R4 VNDK license/NOTICE/config 文件已只读接入，原四个 license 模块报错消失；本轮实际出现 24 条未定义模块错误，涉及 Python、protobuf、sqlite、jcommander、ASM 的 9 个模块。目标编译命令仍为 0，图生成未通过。root 重哈 140 项证据及 OUT/TMP，独立审查 578 项检查通过；source/SDK 前后守卫通过，三个专属卷已清理。
+最新构建图实际结果：G268 已终态（exec56670，terminal85f3ce，rc2）。原版 Soong 236/236 后首错为 `external/protobuf/Android.bp:128:1` 的 `absl_notls_defaults` 未定义，309 行同类错误；前轮九模块墙已消失。源与 SDK 前后守卫通过，SDK 17,924 项 / 6.25 GB，专属容器与卷已清理；ARM64 目标编译命令仍为 0。下一步仅按精确 AOSP16 R4 补 Abseil 模块输入，新包须新 ACK，G268 不重放。
+
+历史上一轮工程结果：G267 已终态（exec62919，terminal de0e45，rc2）。346 个精确 R4 VNDK license/NOTICE/config 文件已只读接入，原四个 license 模块报错消失；本轮实际出现 24 条未定义模块错误，涉及 Python、protobuf、sqlite、jcommander、ASM 的 9 个模块。目标编译命令仍为 0，图生成未通过。root 重哈 140 项证据及 OUT/TMP，独立审查 578 项检查通过；source/SDK 前后守卫通过，三个专属卷已清理。
 
 20 个新增上游登记原包本轮单次 GET 下载成功（exec9205，terminal783cf7，rc0），累计上游载荷 55 个，加官方 Signal 补充包共 56 个。root 核对 100 项原始引用、原登记 SHA 与完整 ZIP CRC，并经独立审查后接受。下载不证明签名、安装、主流资格或启动。Firefox 官方 ARM64 包与原登记 SHA 不符，原拒绝记录保留。
 
@@ -44,9 +46,11 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；49 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G267 缺 9 个 stock 输入模块；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 精确 R4 新依赖闭合与下一 stock 图执行；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；49 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G268 缺 absl_notls_defaults；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 精确 R4 新依赖闭合与下一 stock 图执行；Bionic 真机 Activity 启动证据 |
 
-自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。反思当前累计 4 组新实际结果（第 6/7/8 批和 WhatsApp 原包），EVO-0010 已触发，待限定试验闭合。独立 peer 的超时记录保留。
+自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。当前反思累计 1 组新实际结果（G268），下一次等 3–4 组。
+
+历史自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。该轮四组实际结果已经闭合，不重复反思。独立 peer 的超时记录保留。
 
 这是核对时点的任务快照，不是整项目完成声明。逐项计数及本地不可变收据路径/SHA 保存于 [TASK-SUMMARY.json](TASK-SUMMARY.json)；该文件的证据索引不声称大型构建产物已上传。
 
@@ -59,12 +63,12 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Evidence target
 
-- What this proves: 截至核对时点的已接受数量与 G267 实际终态。
+- What this proves: 截至核对时点的已接受数量与 G268 实际终态。
 - What this does not prove: 整工具完成、安装、冷启动、上屏或设备验收。
 
 ## Environment
 
-- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G267 宿主构建。
+- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G268 宿主构建。
 - Device: 本次汇总未访问设备，沿用项目 HOLD 与白名单。
 - Tool path: scripts/nanhai_plus_env.py 与候选 executor.py，精确收据见 JSON 索引。
 - Artifact path: .nanhai-plus-runtime/bionic-oh7-aosp16/out/bionic-stock-bionic-target-graph-v5/accepted-host/soong_build。
@@ -73,20 +77,20 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 ## Status
 
 - Label: build_pass
-- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G267 整体图生成失败。
+- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G268 整体图生成失败。
 
 ## Observed wall
 
 - Classification: observed
-- Fact: G267 实际报出 24 条错误，涉及 9 个 Python/protobuf/sqlite/jcommander/ASM 未定义模块。
-- Evidence: G267-REVIEW.json，SHA 见 TASK-SUMMARY.json。
-- First failing command: G267 stock Soong Android.bp 分析步骤（236/236）。
+- Fact: G268 实际报出 2 条错误，均为原版 protobuf 引用的 absl_notls_defaults 未定义；G267 的九模块墙已越过。
+- Evidence: G268-REVIEW.json，SHA 见 TASK-SUMMARY.json。
+- First failing command: G268 stock Soong Android.bp 分析步骤（236/236）。
 - Exit/status: 外层 terminal rc2；目标编译命令 0。
 
 ## Hypotheses
 
 - Candidate: 无新增根因假设；五源插件已实际编译，完整 libcore 已执行，完整 SDK 已核验；下一批 stock 输入待精确版本闭合。
-- Cheapest falsifier: 精确 R4 stock 依赖输入核验后，新候选经原 owner ACK 与封包执行。
+- Cheapest falsifier: 精确 R4 Abseil 模块输入核验后，新候选经原 owner ACK 与封包执行。
 - Blocking: no
 
 ## Proven
@@ -99,11 +103,11 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Failed
 
-- G267 图分析 rc2；Firefox 下载 SHA 不符；VLC/Signal/Keychain 静态清点未完成；第 5 批汇总 rc2。
+- G268 图分析 rc2；G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain 静态清点未完成；第 5 批汇总 rc2。
 
 ## Next evidence
 
-- Command: 原 owner 接受新候选后，通过 NANHAI 环境入口执行新封包。
+- Command: 原 owner 接受 Abseil 新候选后，通过 NANHAI 环境入口执行新封包。
 - Expected output: 记录真实图分析结果及首个失败，成功时继续目标编译门。
 - If it fails: 保留原始收据，按精确版本定位下一缺项，不算成功。
 

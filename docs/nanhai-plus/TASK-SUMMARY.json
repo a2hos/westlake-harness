@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T04:52:42+00:00",
+  "checked_at": "2026-10-04T05:04:03+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -54,12 +54,12 @@
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
-    "release": 267,
+    "release": 268,
     "terminal_rc": 2,
-    "actual_exec_session": 62919,
-    "terminal_chunk": "de0e45",
+    "actual_exec_session": 56670,
+    "terminal_chunk": "85f3ce",
     "host_tools_actual_loader_pass": 10,
-    "soong_bootstrap_successful_steps": 235,
+    "soong_bootstrap_successful_steps": 236,
     "soong_bootstrap_total_steps": 236,
     "stock_clang_plugin_compiled": true,
     "target_compile_commands": 0,
@@ -274,16 +274,24 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-whatsapp-official-supplement-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
       "sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v12/root-release-v1/G268-REVIEW.json",
+      "sha256": "4d750450a81fd6f881356599ac6097d6c1be3701272ef163cc4708e8c6b83926"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0010-apk-proof-scope/reviews/ROOT-CLOSURE.json",
+      "sha256": "5dda0be93a893c5710bf3adaa5158b42e1f5a811ec5a76eaf570b72361c8c3f1"
     }
   ],
   "bionic_stock_graph": {
-    "release": 267,
+    "release": 268,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "24 undefined-module errors; 9 unique Python/protobuf/sqlite/jcommander/ASM modules",
-    "failure_location": "build/soong/ui/metrics/metrics_proto/Android.bp:1:1",
+    "first_failure": "external/protobuf/Android.bp:128:1 undefined absl_notls_defaults",
+    "failure_location": "external/protobuf/Android.bp:128:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -302,38 +310,23 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "previous_version": 9,
-    "previous_execution_terminal": true,
-    "next_input": "exact R4 Python/protobuf/sqlite/jcommander/ASM stock cohorts",
-    "source_commit_officially_confirmed": "1c599b67bcd3de5c50c79d0622e40b6de99b4cb4",
+    "prospective_release": 269,
+    "next_input": "exact R4 absl_notls_defaults owning module",
     "execution_ready": false,
-    "complete_libcore_admitted": true,
-    "complete_libcore_files": 8280,
-    "version": 11,
-    "prospective_release": 267,
-    "executed": true,
-    "owner_new_ack_verified": true,
-    "complete_exact_sdk_admitted": true,
-    "sdk_commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
-    "sdk_git_root": "0348a182903065a14d190eb1aa670246c3c2106d",
-    "sdk_entries": 17924,
-    "sdk_bytes": 6254795690,
-    "candidate_peer_review_closed": true,
-    "root_final_admission_pending": false,
-    "source_commit_officially_confirmed_scope": "complete libcore input only; not upcoming nine-module cohort"
+    "G268_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0009",
+    "latest": "EVO-0010",
     "verified_improvement_this_round": 1,
-    "scope": "four-input/four-output cardinality guard limited preflight only",
+    "scope": "Invocation-bound curl identity and explicit environment local candidate",
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 84.138768,
+    "duration_seconds": 90.402889166,
     "limit_seconds": 120,
     "timing_compliant": true,
-    "pending_actual_result_groups": 4,
+    "pending_actual_result_groups": 1,
     "trigger_every_groups": "3-4",
-    "next": "EVO-0010 triggered after four actual result groups; limited peer trial pending"
+    "next": "Wait 2-3 more actual accepted groups"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
