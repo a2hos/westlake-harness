@@ -1,0 +1,24 @@
+{
+  "schema": "g310-adguard-overseas-mainstream-blackbox-root-admission-v1",
+  "at_utc": "2026-10-04T16:39:31.918760+00:00",
+  "decision": "ACCEPT_EXACT_ADGUARD_ANDROID_BLACKBOX_QUALIFICATION_ONLY",
+  "package": "com.adguard.android",
+  "version": "4.14.2",
+  "apk_sha256": "bc42be7eb481a5410904b54f08fc6269f837ccb1cefee67db53ecc9345e2683e",
+  "candidate_sha256": "e54fa325c4dc17c18364ddc874ff1faff2a34d83c43c34c83c1651269de779ff",
+  "independent_peer_sha256": "d0ddf47de77799bbc67204bc3bac820ff452c5cc58180c4a55763f189258ecd7",
+  "root_raw_sha256": "f6458306295ce4f393d5fe5fb1dc0aaf45e692d9ae961702443c311a50469376",
+  "root_static_sha256": "2ce831860037d0dda497561d1fb840b4af2d37c6ae1eda40c89a988477b25ce4",
+  "publisher_market_source": "https://adguard.com/en/blog/adguard-google-play-removal.html",
+  "publisher_source_statement": "product-level historical near-30-million installations from official website; exact package inferred through publisher release asset digest and APK manifest",
+  "blackbox_source_statement": "publisher repository explicitly says Android product is not open source and serves as bug tracker",
+  "blackbox_qualified_before": 11,
+  "blackbox_qualified_delta": 1,
+  "blackbox_qualified_after": 12,
+  "cold_start_delta": 0,
+  "scope": "qualification only; no installation/runtime/device evidence",
+  "limits": [
+    "No geographic breakdown or active-user count; overseas-mainstream is a bounded inference from international publisher/product-level cumulative installs.",
+    "Do not transfer Google Play Content Blocker metrics or source to this package."
+  ]
+}

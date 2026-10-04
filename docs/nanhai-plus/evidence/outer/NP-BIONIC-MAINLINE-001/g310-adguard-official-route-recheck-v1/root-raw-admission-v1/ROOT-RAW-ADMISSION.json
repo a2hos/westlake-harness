@@ -1,0 +1,22 @@
+{
+  "schema": "g310-adguard-root-host-raw-admission-v1",
+  "at_utc": "2026-10-04T16:32:52.319986+00:00",
+  "decision": "ACCEPT_EXACT_ADGUARD_4_14_2_HOST_RAW_APK_ONLY",
+  "candidate_sha256": "a8d28c99ca88e2b75bfe11969989f138f2214854a9df2fff9bc8dc96c5c72939",
+  "peer_review_sha256": "da69052996f4e4774c5e2d7af6eab267f749ccdd816c8f7910694eb316272c12",
+  "publisher_api_raw_sha256": "b204d0f9a99077f810d3a08d2ed928e994ee217951335f0b27bf5c33bd084a42",
+  "package": "com.adguard.android",
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g307-blackbox-official-v1/AdGuard.apk",
+  "apk_sha256": "bc42be7eb481a5410904b54f08fc6269f837ccb1cefee67db53ecc9345e2683e",
+  "apk_bytes": 79756740,
+  "publisher_asset_digest": "sha256:bc42be7eb481a5410904b54f08fc6269f837ccb1cefee67db53ecc9345e2683e",
+  "raw_before": 92,
+  "raw_delta": 1,
+  "raw_after": 93,
+  "static_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "scope": "host raw identity only; no Bionic or device pass",
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "g310-adguard-root-host-static-admission-v1",
+  "at_utc": "2026-10-04T16:35:09.460404+00:00",
+  "decision": "ACCEPT_EXACT_ADGUARD_HOST_STATIC_INVENTORY_ONLY",
+  "package": "com.adguard.android",
+  "apk_sha256": "bc42be7eb481a5410904b54f08fc6269f837ccb1cefee67db53ecc9345e2683e",
+  "raw_root_receipt_sha256": "f6458306295ce4f393d5fe5fb1dc0aaf45e692d9ae961702443c311a50469376",
+  "static_result_sha256": "d461388328f3b60582a488260631bde6202be158236c0d70bfcb3fbf133c4164",
+  "independent_peer_sha256": "c735d7e2f1bbb3b268720cfb4be9d2b558f7b883e11efe7efa548e9dd7538bb6",
+  "four_phase_rcs": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "zip_entries": 2686,
+  "dex_entries": 3,
+  "true_arm64_elf_entries": 8,
+  "static_before": 89,
+  "static_delta": 1,
+  "static_after": 90,
+  "raw_after": 93,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "scope": "host four-phase static only; no install, runtime, or device pass"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T16:40:48.127617+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "version": "OH7.0.0.39 / AOSP16 R4 / ARM64 / App single Bionic",
+  "counts": {
+    "raw": 93,
+    "complete_host_static": 90,
+    "qualified_blackbox_packages": 12,
+    "true_cold_starts": 0,
+    "whole_bionic_tools": 0
+  },
+  "summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "92e72d04069d03add57f783b7e334173384a5f772adbf54551d03406726d11c8"
+  },
+  "receipts": {
+    "g310_adguard_raw": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g310-adguard-official-route-recheck-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f6458306295ce4f393d5fe5fb1dc0aaf45e692d9ae961702443c311a50469376"
+    },
+    "g310_adguard_static": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g310-adguard-static-independent-review-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "2ce831860037d0dda497561d1fb840b4af2d37c6ae1eda40c89a988477b25ce4"
+    },
+    "g310_adguard_blackbox_qualification": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g310-adguard-blackbox-qualification-candidate-v1/root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "f019f496cc75f0787a6b4f7d6bb86e7fdbbc0a354865652ba73fd143e188f619"
+    },
+    "g279_c4_final_stage_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v13-c4-one-shot-stage-candidate-v3/root-final-stage-acceptance-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "ff1aa9b0d326bd8eefabfb67afa8c2670a72d0d98476448bb2d65cdd1ab72859"
+    },
+    "evo36_result": {
+      "path": "docs/nanhai-plus/evolution/EVO-0036-consumer-contract-shape/RESULT.md",
+      "sha256": "f0128329b48c23348f359bd3d2c9c7f472cda227f9b065c58325100aa74aff9f"
+    }
+  },
+  "g279_v13_state": "C4_EXACT_FIVE_FILE_NATIVE_STAGE_AND_READBACK_ROOT_ACCEPTED; L5_SIGNATURE_GATE_NOT_RELEASED; SOONG_GRAPH_NOT_RUN",
+  "native_goal_200_apk_text_sync": "NOT_PROVEN_BY_CURRENT_GOAL_GET; bounded owner readback separate",
+  "next": "Prepare and independently review v13 L5 signature/control gate, then root release native Soong graph once; no target/device until separate gates",
+  "container": false,
+  "namespace": false,
+  "device_hold": true,
+  "target_compiled": false,
+  "graph_executed": false
+}
