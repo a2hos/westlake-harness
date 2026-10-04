@@ -1,0 +1,48 @@
+{
+  "all_so_count": 292,
+  "apk_sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+  "at_utc": "2026-10-04T17:44:56.553588+00:00",
+  "authoritative_count_changed": false,
+  "decision": "NO_GO_PROMOTION",
+  "defects": [
+    "No explicit path-mismatch partition/exception handling for admitted CapCut raw; current result is a correct fail-closed rejection, not generic scan readiness.",
+    "Duplicate ZIP member names collapse in observed dict before gate, so current gate can return PASS_PARTITION on a duplicated raw-name stream."
+  ],
+  "evidence_sha256": {
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/PILOT.json": "4fa785851d775846cc21394f5411ed9e12b2b12f9529103cb03bc9aa9d9bd1d6",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot.py": "d7e9ccb1a2f24339092313f5ba690694d134f8d4ac8713c89c5a4b7f9bc565e2",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/second-sample-v1/RESULT.json": "c368497ad0b9359c1502b2a8ee38367b530b59cb0636e1004eb8d2d1d9f99984",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/second-sample-v1/check.py": "47786bc3d7e4a3a251bbc0c95fc43841b182796a8907863f4ab24ccb47583ddb",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/second-sample-v1/stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/second-sample-v1/stdout.raw": "759eda9e385a143e2b692276003d99ef28841e79fcc88e5228adc2fa478440e2"
+  },
+  "execution_rc": 0,
+  "misplaced_path": "lib/arm64-v8a/libcvt.so",
+  "misplaced_sha256": "336c9807054a2f88703509b6f27edd9d7c82acdbc7f2a50d6b0e2d5c79697153",
+  "negative_checks": {
+    "capcut": {
+      "missing_member": "REJECT_MEMBER_SET",
+      "path_only_wrong_abi": "REJECT_CLASS_MISMATCH",
+      "real_second_sample": "REJECT_UNSUPPORTED_CLASS"
+    },
+    "duplicate_name_after_dict_collapse": "PASS_PARTITION",
+    "original_tiktok": {
+      "fake_so_assumed_elf": "REJECT_CLASS_MISMATCH",
+      "missing_member": "REJECT_MEMBER_SET",
+      "real_mixed_apk": "PASS_PARTITION",
+      "v1_all_elf_assumed_arm64": "REJECT_CLASS_MISMATCH"
+    }
+  },
+  "network_ssh_device_container_commands": 0,
+  "next_verifiable_improvement": "Pass raw ZIP member-name list and expected content classes into gate before dict conversion; add a distinct misplaced-ELF class with exact bounded waiver policy, then rerun TikTok, CapCut and duplicate-member negative.",
+  "partition_counts": {
+    "arm32_elf": 145,
+    "arm64_elf": 146,
+    "unexpected_elf_abi": 1
+  },
+  "production_scanner_modified": false,
+  "raw_admission_sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
+  "real_second_sample_gate": "REJECT_UNSUPPORTED_CLASS",
+  "schema": "evo42-independent-second-sample-terminal-review-v1",
+  "source_pre_post_equal": true
+}

@@ -1,0 +1,208 @@
+{
+  "schema": "g322-tor-full-member-census-v1",
+  "apk_sha256": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+  "root_raw_sha256": "16e3354a09f1469cfd499216c6557425001034e8c06680de50a21339bf3fcb3e",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "entries": 2031,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 11728192,
+      "sha256": "fdaa343eb473fb3c8cb36449310c278a8de70e004c1f4bfc61cfb3553b26fb28",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 474632,
+      "sha256": "f64fba45e2f133febb49ee5e089904629c20e1dabcbd17243a4c1c566cf92c3c",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes3.dex",
+      "bytes": 9201444,
+      "sha256": "8a6f1621767bfd20c7a9d779488ee4fba64285c4b20727bcb6bf6d2206cd5a7f",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes4.dex",
+      "bytes": 1520760,
+      "sha256": "a3e8e2646c861823323dfcb4b32917a39baa672e0503318b605aa1e997c81946",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    }
+  ],
+  "so": [
+    {
+      "name": "lib/arm64-v8a/libConjure.so",
+      "kind": "elf",
+      "bytes": 13016240,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libLyrebird.so",
+      "kind": "elf",
+      "bytes": 17115824,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libTor.so",
+      "kind": "elf",
+      "bytes": 8388632,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10096,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 7112,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libfreebl3.so",
+      "kind": "elf",
+      "bytes": 683632,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libgkcodecs.so",
+      "kind": "elf",
+      "bytes": 5496992,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 168328,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/liblgpllibs.so",
+      "kind": "elf",
+      "bytes": 222008,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmegazord.so",
+      "kind": "elf",
+      "bytes": 4210304,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmozavcodec.so",
+      "kind": "elf",
+      "bytes": 274728,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmozavutil.so",
+      "kind": "elf",
+      "bytes": 460488,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmozglue.so",
+      "kind": "elf",
+      "bytes": 1370944,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libnss3.so",
+      "kind": "elf",
+      "bytes": 2706448,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libplugin-container.so",
+      "kind": "elf",
+      "bytes": 4640,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsentry-android.so",
+      "kind": "elf",
+      "bytes": 16832,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsentry.so",
+      "kind": "elf",
+      "bytes": 681032,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsoftokn3.so",
+      "kind": "elf",
+      "bytes": 301000,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libxul.so",
+      "kind": "elf",
+      "bytes": 137762536,
+      "class": 2,
+      "machine": 183
+    }
+  ],
+  "nested_archives": [
+    {
+      "path": "assets/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi",
+      "bytes": 2451793,
+      "sha256": "de3e9ac4819a94f8b5f1df65fade773720dfd44da4c946940898a879fe965958",
+      "members": 275,
+      "dex": [],
+      "nested": []
+    },
+    {
+      "path": "assets/omni.ja",
+      "bytes": 46593167,
+      "sha256": "697c0cb9c504793ed73c2425b3240c8e26c2fd60a4091372ea657b757aaffbe4",
+      "members": 3807,
+      "dex": [],
+      "nested": []
+    }
+  ],
+  "nested_magic_candidate_names": [
+    "assets/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi",
+    "assets/omni.ja"
+  ],
+  "counts": {
+    "root_dex": 4,
+    "embedded_dex": 0,
+    "true_arm64_elf": 19,
+    "arm32_elf": 0,
+    "non_elf_so": 0
+  },
+  "bounds": {
+    "nested_archive_max_bytes": 52428800,
+    "nested_max_depth": 3
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "g322-tor-four-static-independent-review-v1",
+  "reviewed_at_utc": "2026-10-04T17:53:05Z",
+  "decision": "GO_HOST_STATIC_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-tor-four-static-candidate-v1/CANDIDATE.json",
+    "sha256": "b48369bd9baa2abc560508042c09421d7b28275ae82d7a30fd6b0082573192f6"
+  },
+  "scope": "One exact Tor Browser APK, host-only four-phase static inventory; no device, container, network, SSH, Bionic target or runtime acceptance.",
+  "exact_input": {
+    "g321_root_raw_admission_sha256": "16e3354a09f1469cfd499216c6557425001034e8c06680de50a21339bf3fcb3e",
+    "root_raw_decision": "ACCEPT_ONE_EXACT_OFFICIAL_AARCH64_APK_HOST_RAW_ONLY",
+    "apk_sha256_recomputed": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+    "apk_bytes": 111113963,
+    "package": "org.torproject.torbrowser",
+    "version_name": "15.0.24 (140.17.0esr)",
+    "version_code": "2016187202",
+    "signer_cert_sha256": "20061f045e737c67375c17794cfedb436a03cec6bacb7cb9f96642205ca2cec8",
+    "metadata_identity_matches_root_raw": true
+  },
+  "frozen_receipts": {
+    "sha256_checks_passed": 34,
+    "sha256_checks_failed": 0,
+    "start_sha256": "6cee2748cd8d41b57f8f439bc4346d367e976d39ce6600e797c236e145b88676",
+    "result_sha256": "c662456ca40da36b16b8d125d4be428149f1101e3b4f0a14f0351a2d9886d1cd",
+    "census_sha256": "63a9a490674d0d57e7dc977d69164b4bb902c7c3ad5643ae33720a2c254ce817",
+    "phase_source_sha256": "3a5efca616a8d6351c30a061e5c96cc2f9754ea3175fd7fe33cfb46e2924006d",
+    "runner_source_sha256": "153ea0a62e1f38f3df7c2fdf425a9974dd4ac84016acefaa36b9b2ab2eb91069",
+    "prepare_source_sha256": "4fda82fc44c423df23ffee503ea5c76f1f2efaa7b2044d69fa91693117aa2356"
+  },
+  "phase_results": {
+    "zip": {"rc": 0, "source_pre_post_equal": true, "stdout_stderr_command_and_inventory_sha_match": true},
+    "metadata": {"rc": 0, "source_pre_post_equal": true, "stdout_stderr_command_and_inventory_sha_match": true},
+    "elf": {"rc": 0, "source_pre_post_equal": true, "stdout_stderr_command_and_inventory_sha_match": true},
+    "dex": {"rc": 0, "source_pre_post_equal": true, "stdout_stderr_command_and_inventory_sha_match": true}
+  },
+  "independent_apk_census": {
+    "root_zip_entries": 2031,
+    "root_duplicate_names": 0,
+    "root_all_zip_crc_pass": true,
+    "root_dex_names": ["classes.dex", "classes2.dex", "classes3.dex", "classes4.dex"],
+    "root_dex_magic_and_individual_sha_match": true,
+    "true_arm64_elf64_aarch64": 19,
+    "arm32_elf": 0,
+    "non_elf_so": 0,
+    "all_19_readelf_and_abi_matches_in_frozen_inventory": true,
+    "main_activity_from_host_metadata": "org.mozilla.fenix.HomeActivity"
+  },
+  "nested_archive_boundary": {
+    "discovery": "All root non-directory members had headers read; ZIP PK0304 magic selected exactly two nested archives. Nested members were checked by both .dex name and dex magic, and ZIP magic recursively to depth 3.",
+    "max_nested_archive_bytes": 52428800,
+    "max_nested_depth": 3,
+    "archives": [
+      {
+        "path": "assets/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi",
+        "sha256": "de3e9ac4819a94f8b5f1df65fade773720dfd44da4c946940898a879fe965958",
+        "members": 275,
+        "embedded_dex": 0,
+        "nested_children": 0,
+        "all_zip_crc_pass": true
+      },
+      {
+        "path": "assets/omni.ja",
+        "sha256": "697c0cb9c504793ed73c2425b3240c8e26c2fd60a4091372ea657b757aaffbe4",
+        "members": 3807,
+        "embedded_dex": 0,
+        "nested_children": 0,
+        "all_zip_crc_pass": true
+      }
+    ],
+    "limit": "This establishes no DEX in the two ZIP-magic nested archives under the frozen depth/size bounds, not absence of dynamically downloaded code or opaque non-ZIP containers."
+  },
+  "count_effect_if_root_accepts": {
+    "complete_host_static_package": 1,
+    "dex_entries": 4,
+    "true_arm64_elf_entries": 19,
+    "raw_apk": 0,
+    "blackbox_qualification": 0,
+    "cold_start": 0,
+    "bionic_whole_tool": 0
+  },
+  "actions_by_reviewer": {"device": 0, "container": 0, "network": 0, "ssh": 0, "startup": 0, "authoritative_ledger_writes": 0},
+  "observed_wall": "None in the four host static phases; each terminal rc is 0 and the frozen source guards matched before and after.",
+  "hypotheses": [],
+  "proven": "Exact G321 root raw identity, full root ZIP integrity, metadata, 19 true ARM64 ELF, four root DEX and the bounded nested XPI/omni.ja no-DEX result independently match the four-phase receipts.",
+  "not_proven": "Device install, true cold start, display, Bionic runtime, source-property/blackbox qualification, dynamically loaded/downloaded code or unbounded nested formats.",
+  "failed": "None in this host-only static scope.",
+  "next_evidence": "Root may accept one complete host static inventory for Tor Browser; runtime and blackbox qualification remain separate gates."
+}

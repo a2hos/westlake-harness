@@ -1,0 +1,20 @@
+{
+  "schema": "g323-expressvpn-root-blackbox-test-qualification-v1",
+  "at_utc": "2026-10-04T17:58:32+00:00",
+  "decision": "ACCEPT_ONE_EXACT_PACKAGE_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_QUALIFICATION_ONLY",
+  "package": "com.expressvpn.vpn",
+  "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+  "raw_admission_sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364",
+  "candidate_sha256": "06628764353074266d215902287b20034458548da78d3e096b2f6d5a8476bbdf",
+  "independent_peer_sha256": "e70ce94c7a7b19d66b58cd2ea3033a8d6f2cc99f1ee427ec11cf177519fce89e",
+  "qualified_packages_before": 15,
+  "qualified_packages_after": 16,
+  "basis": "Publisher-linked exact unmodified APK and same-package Google Play listing naming ExpressVPN with cumulative 100M+ downloads; bounded publisher and repository source search did not establish a fully buildable matching Android client; independent peer confirmed distinctness from 15 prior qualified package IDs.",
+  "limits": "100M+ is listing lifetime, not installs of APK version 12.80.1 or a country-specific total; bounded source search cannot prove global nonexistence. targetSdk 37 exceeds current AOSP16 API36 and remains a compatibility risk. No loadability, install or startup evidence.",
+  "raw_delta": 0,
+  "full_static_delta": 0,
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

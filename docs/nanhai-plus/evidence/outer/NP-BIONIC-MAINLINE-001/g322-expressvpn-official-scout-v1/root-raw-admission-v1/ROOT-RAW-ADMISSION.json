@@ -1,0 +1,22 @@
+{
+  "schema": "g322-expressvpn-root-official-host-raw-admission-v1",
+  "at_utc": "2026-10-04T17:54:29+00:00",
+  "decision": "ACCEPT_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "package": "com.expressvpn.vpn",
+  "version_name": "12.80.1",
+  "version_code": "12800140",
+  "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+  "apk_bytes": 139584355,
+  "candidate_sha256": "414995523b371d9c91e282d116b6c61590aef3c9c697bc889694762c421cc83d",
+  "independent_peer_sha256": "f4da29467a169f0819c66ed9ffe40ee30a43379d8f8062fa2f5ef07285f5b336",
+  "accepted_raw_before": 98,
+  "accepted_raw_after": 99,
+  "basis": "Publisher-page exact APK links redirect to the same ExpressVPN distribution URL; HTTPS HTTP 200/TLS verified, 3642 ZIP entries CRC valid and unique, package/version and APK signer verified, 22 true ARM64 ELF plus 69 other-ABI ELF; distinct from 98 accepted raw identities.",
+  "limits": "targetSdk 37 exceeds the current AOSP16 API36 baseline and is a compatibility risk, not an observed install failure. No independent publisher certificate anchor, full static semantic scan, blackbox test qualification, target build, device install or cold start is claimed.",
+  "full_static_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

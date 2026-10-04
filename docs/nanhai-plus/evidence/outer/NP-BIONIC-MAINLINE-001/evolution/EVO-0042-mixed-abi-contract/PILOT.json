@@ -1,0 +1,26 @@
+{
+  "schema": "EVO42-offline-pilot-v1",
+  "inputs": {
+    "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+    "census_sha256": "53f7841aac873dc6fec48c845b2b9794f2096b5d1b5f9c1c6c5eb2a485885cb5"
+  },
+  "actual_partition": {
+    "arm64_elf": 227,
+    "arm32_elf": 225,
+    "non_elf_so": 4
+  },
+  "cases": {
+    "real_mixed_apk": "PASS_PARTITION",
+    "v1_all_elf_assumed_arm64": "REJECT_CLASS_MISMATCH",
+    "fake_so_assumed_elf": "REJECT_CLASS_MISMATCH",
+    "missing_member": "REJECT_MEMBER_SET"
+  },
+  "pass": true,
+  "effects": {
+    "network": 0,
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "production_writes": 0
+  }
+}

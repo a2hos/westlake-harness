@@ -1,0 +1,2540 @@
+{
+  "source": "OUTER-STATE.json public projection (path-safe)",
+  "public_projection_doc": "/kanban/public-projection.md",
+  "last_business_change": "2026-10-04T18:00:34.028979+00:00",
+  "last_sync_heartbeat": null,
+  "last_success": null,
+  "sync_failures": 0,
+  "human_gates": [
+    {
+      "gate_id": "original_goal_budget",
+      "status": "accepted",
+      "reason": "用户授权200亿有限上限；已在原goal_01实际回读，累计与创建时间未改变。"
+    }
+  ],
+  "updated_at": "2026-10-04T18:00:30.508414+00:00",
+  "global_focus": "App 单 Bionic HelloWorld 最早未通过边界；基座、安装服务、图形输入并行；89 项独立处置与验证",
+  "checked_at": "2026-10-04T18:00:30.508414+00:00",
+  "run_id": "nanhai-plus-20260929-opaleye",
+  "dag_version": 10,
+  "next_action": "继续无容器原生 Soong 图路由，HK01 等项目范围答复；EVO43 有界反思和独立 APK 招募；任何远端需新 nonce/独审/release",
+  "closeout_path": {
+    "summary": "Bionic per-package inputs → HelloWorld earliest unmet boundary; independent tool/client/service work parallel; Musl historical comparison optional"
+  },
+  "progress": {
+    "target_stock_apk_cold_starts": 200,
+    "target_overseas_mainstream_blackbox_cold_starts": 100,
+    "stock_apk_cold_starts_verified": 0,
+    "overseas_mainstream_blackbox_cold_starts_verified": 0,
+    "accepted_raw_apk_artifact_identities": 99,
+    "complete_host_static_inventories": 95,
+    "qualified_blackbox_test_packages": 16,
+    "bionic_whole_tools_verified": 0,
+    "original_tool_ids": 89,
+    "snapshot_at_utc": "2026-10-04T17:59:40+00:00",
+    "meaning": "raw, static and qualification are separate preparation counts; they do not add to startup success"
+  },
+  "steps": [
+    {
+      "step_id": "01",
+      "lane": "outer",
+      "phase": 0,
+      "title": "建立控制面、版本锁、lane、预算",
+      "status": "active",
+      "blocked_by": [],
+      "claim_id": "NP-ENV-CTRL-006",
+      "owner": "octos-inner coordinator",
+      "last_evidence": "/kanban/public-projection.md",
+      "next_action": "Preserve original goal/session/budget and verify synchronized owner ACK",
+      "claim_ids": [
+        "NP-ENV-CTRL-006",
+        "NP-ENV-MGMT-008",
+        "NP-ENV-POOL-007"
+      ],
+      "progress_scope": "环境准备进行中；peer运行状态另见工作包终态",
+      "substeps": [
+        {
+          "id": "01.CONTROL.G95",
+          "title": "等待防重入与取消清理",
+          "status": "review",
+          "owner": "outer coordinator / original Kimi",
+          "progress": "重复wait95已清理；v2一次等待、并发互斥、取消、新包4用例通过；原生采用及UI取消传播未验",
+          "next_action": "下一实际业务包封存v2；业务构建不依赖此诊断完成"
+        },
+        {
+          "id": "01.CONTROL.G99V2",
+          "title": "原生一次等待与退出验收",
+          "status": "accepted",
+          "owner": "original Kimi / deterministic guard",
+          "progress": "实际wait99 rc75结束，19次状态读0模型调用，无残留等待child；UI取消传播/goal自治仍未验",
+          "next_action": "保留v2；新包就绪才释放下一canonical序号"
+        }
+      ]
+    },
+    {
+      "step_id": "02",
+      "lane": "outer",
+      "phase": 0,
+      "title": "四种同硬件可复现配置",
+      "status": "active",
+      "blocked_by": [],
+      "claim_id": "NP-DEVICE-DISPLAY-009",
+      "owner": "hardware-admin",
+      "last_evidence": "/kanban/public-projection.md",
+      "next_action": "Use current four-board policy, max 2 device slots; bind exact operation/lease/recovery per package",
+      "claim_ids": [
+        "NP-DEVICE-DISPLAY-009",
+        "NP-ENV-DEVICE-005"
+      ],
+      "progress_scope": "环境准备进行中；peer运行状态另见工作包终态"
+    },
+    {
+      "step_id": "03",
+      "lane": "outer",
+      "phase": 0,
+      "title": "参考实现源码/构建/产物身份",
+      "status": "active",
+      "blocked_by": [],
+      "claim_id": "NP-MUSL-PRE-010",
+      "owner": "original octos-inner Kimi / outer verifier",
+      "last_evidence": "/kanban/public-projection.md",
+      "next_action": "Admit exact Bionic source/toolchain/CRT inputs; keep historical Musl outputs separate",
+      "claim_ids": [
+        "NP-MUSL-PRE-010",
+        "NP-BIONIC-PRE-011",
+        "NP-ENV-SOURCE-004"
+      ],
+      "progress_scope": "环境准备进行中；peer运行状态另见工作包终态"
+    },
+    {
+      "step_id": "04",
+      "lane": "lane-musl",
+      "phase": 1,
+      "title": "westlake-harness既有进展复现矩阵与APK gap map",
+      "status": "superseded",
+      "blocked_by": [],
+      "claim_id": "NP-MUSL-DIRECT-015",
+      "owner": "musl-input-query",
+      "last_evidence": "/kanban/public-projection.md",
+      "next_action": "Preserve Musl history; optional comparison only, not a Bionic prerequisite",
+      "progress_scope": "已有完整源码与首APK运行证据；复现矩阵继续补齐"
+    },
+    {
+      "step_id": "05",
+      "lane": "lane-musl",
+      "phase": 1,
+      "title": "Musl 首批10 APK",
+      "status": "superseded",
+      "blocked_by": [],
+      "claim_id": "NP-MUSL16-ART-024",
+      "owner": "original octos-inner Kimi / outer independent review",
+      "last_evidence": "/kanban/public-projection.md",
+      "next_action": "Preserve Musl history; optional comparison only, not a Bionic prerequisite",
+      "substeps": [
+        {
+          "id": "05.BLOCKERS.CURRENT",
+          "title": "当前卡点与后续未验事项",
+          "status": "active",
+          "owner": "outer coordinator / original Kimi",
+          "progress": "libart及dalvikvm64严格链接已验；同源boot、实际ART/N1/provider/设备未验；MacServer缺项独立跟踪",
+          "next_action": "核原R4 dex2oat入口与同源boot构建输入，再进入实际ART加载；设备HOLD不变"
+        },
+        {
+          "id": "05.CXX.FOLDHASH.G20",
+          "title": "R4 foldhash目标库实际编译",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "next_action": "原有产物供目标libcxx使用，不重编。",
+          "progress": "原Kimi实际编译0.732秒；5份Git源码、1个ELF64 AArch64对象、327770字节rlib已独立验收。"
+        },
+        {
+          "id": "05.CXX.PRODUCERS.G21",
+          "title": "CXX宏生产链与OH原生静态库",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "G21主机9项及G22修复后的OH原生CXX归档已验。",
+          "next_action": "保留已验生产输入，推进目标Rust CXX。"
+        },
+        {
+          "id": "05.CXX.TARGET.G23",
+          "title": "目标Rust CXX生产库",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "4.306秒实编rc0；31份Git源码、5个AArch64对象、2712920字节rlib及原生归档包入已验。",
+          "next_action": "吸收G23目标CXX已验产物及G22兼容头文件绑定，核定flags/Minikin下一生产节点；复用全部已验输入。"
+        },
+        {
+          "id": "05.CXX.BRIDGES.G25",
+          "title": "flags与Minikin原生桥接库",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "4个实际C++编译rc0；2个静态归档的AArch64成员逐字节通过独立验收。669项输入不变。",
+          "next_action": "原内环复用G25归档；核定flags_rust/liblog_rust构建；补齐日志链4个固定提交源码目录后推进logger与Minikin。设备HOLD，APK0/10。"
+        },
+        {
+          "id": "05.MIGRATION.S1",
+          "title": "版本迁移 1/4：有界扫描生效输入",
+          "status": "accepted",
+          "owner": "deterministic script",
+          "next_action": "35秒完成候选扫描，0读取错误；不等于依赖闭合或迁移通过"
+        },
+        {
+          "id": "05.MIGRATION.S2",
+          "title": "版本迁移 2/4：组件版本清单",
+          "status": "accepted",
+          "owner": "original Kimi / Codex review",
+          "next_action": "按清单逐项迁移；107个官方r4仓库身份已核，未声称已下载/编译"
+        },
+        {
+          "id": "05.MIGRATION.S3",
+          "title": "同版模块重建：ART归档已验，进入最终链接",
+          "status": "active",
+          "owner": "original inner implementers",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。",
+          "progress": "374/374同配置对象、两归档全部成员和180常量已验；最终libart/平台/boot/设备待验"
+        },
+        {
+          "id": "05.MIGRATION.S4",
+          "title": "版本迁移 4/4：静态/构建/设备分层检验",
+          "status": "pending",
+          "owner": "inner execution / outer review",
+          "next_action": "分别记录残留、构建、真实设备结果，不以主机通过冒充上屏"
+        },
+        {
+          "id": "05.ENV61",
+          "title": "OH6.1已有项目环境回溯文档",
+          "status": "accepted",
+          "owner": "octos-inner Kimi + outer review",
+          "next_action": "第一阶段local_env.md已完成来源回溯与完整性复核"
+        },
+        {
+          "id": "05.SCOPE61",
+          "title": "锁定OH6.1十APP范围与验收场景",
+          "status": "ready",
+          "owner": "musl61-corpus-owner",
+          "next_action": "核同事样例和本地APK路径/hash；范围数、输入就绪数、运行通过数分开"
+        },
+        {
+          "id": "05.OH7.INSTALL",
+          "title": "OH7试点：HelloWorld安装与BMS身份",
+          "status": "pending",
+          "owner": "musl-oh7-bms-g4",
+          "next_action": "旧6.1十APP启动依赖已撤销；在完整MacServer副本上按.39/r4构建与当前设备范围推进。"
+        },
+        {
+          "id": "05.OH7.DEVICE2",
+          "title": "OH7第二开发板：5583f5be运行环境与独立回归",
+          "status": "pending",
+          "owner": "musl-oh7-device2",
+          "next_action": "旧6.1十APP启动依赖已撤销；在完整MacServer副本上按.39/r4构建与当前设备范围推进。"
+        },
+        {
+          "id": "05.OH7.START",
+          "title": "OH7试点：Musl appspawn启动",
+          "status": "pending",
+          "owner": "musl-oh7-pilot",
+          "next_action": "旧6.1十APP启动依赖已撤销；在完整MacServer副本上按.39/r4构建与当前设备范围推进。"
+        },
+        {
+          "id": "05.OH7.FRAME",
+          "title": "OH7试点：首屏与触摸",
+          "status": "pending",
+          "owner": "musl-oh7-pilot",
+          "next_action": "旧6.1十APP启动依赖已撤销；在完整MacServer副本上按.39/r4构建与当前设备范围推进。"
+        },
+        {
+          "id": "05.OH7.COLD",
+          "title": "OH7试点：恢复与冷启动复验",
+          "status": "pending",
+          "owner": "musl-oh7-pilot",
+          "next_action": "旧6.1十APP启动依赖已撤销；在完整MacServer副本上按.39/r4构建与当前设备范围推进。"
+        },
+        {
+          "id": "05.CLONE",
+          "title": "历史OH6.1：完整克隆并执行上游入口",
+          "status": "accepted"
+        },
+        {
+          "id": "05.INPUT",
+          "title": "历史OH6.1：参考runtime恢复输入与单板挂载",
+          "status": "accepted"
+        },
+        {
+          "id": "05.FIRST",
+          "title": "历史OH6.1：首APK首屏与触摸",
+          "status": "accepted",
+          "next_action": "已验HelloWorld首屏及触摸；不冒充10APK批次完成"
+        },
+        {
+          "id": "05.REPEAT",
+          "title": "历史OH6.1：7件参考配置可重复冷启动",
+          "status": "blocked",
+          "next_action": "复核七件恢复流程并绑定当前boot；文档工作不执行恢复或冷测",
+          "owner": "musl-owner"
+        },
+        {
+          "id": "05.TEN",
+          "title": "历史OH6.1：扩展至10个APK",
+          "status": "planned",
+          "next_action": "历史输入保留；当前优先.39/r4最小运行链，不据此派旧设备任务。"
+        },
+        {
+          "id": "05.APP.HELLOWORLD",
+          "title": "HelloWorld @ 5cd16e92",
+          "status": "review",
+          "owner": "musl-app-helloworld",
+          "next_action": "本代任务已终态，原始证据及CURRENT/result待回收；保留研究绑定"
+        },
+        {
+          "id": "05.APP.ZIGZAG",
+          "title": "ZigZag @ 5ce1227d",
+          "status": "review",
+          "owner": "musl-app-zigzag",
+          "next_action": "本代任务已终态，原始证据及CURRENT/result待回收；保留研究绑定"
+        },
+        {
+          "id": "05.APP.TOUTIAO",
+          "title": "头条13.9.0（板上既有） @ 5cd33a95",
+          "status": "review",
+          "owner": "musl-app-toutiao",
+          "next_action": "本代任务已终态，原始证据及CURRENT/result待回收；保留研究绑定"
+        },
+        {
+          "id": "05.MACSERVER",
+          "title": "完整复制MacServer实际状态与全部文件",
+          "status": "accepted",
+          "owner": "outer rsync (zero model calls)",
+          "next_action": "全量快照及现有工作树逐文件内容零差异；原Git登记、阶段1环境和原累计预算保留。"
+        },
+        {
+          "id": "05.SDK39",
+          "title": "OH7.0.0.39 SDK来源与本机编译器",
+          "status": "accepted",
+          "owner": "outer verifier",
+          "next_action": "可作为当前native构建输入；不代表运行时通过。"
+        },
+        {
+          "id": "05.NATIVE39",
+          "title": "原native配方：.39/r4 ARM64六个边界库",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer review",
+          "next_action": "编译6/6，rc0；后续ART/boot/Framework仍未验。"
+        },
+        {
+          "id": "05.ART16",
+          "title": "r4 ART同版本源码依赖与对象编译",
+          "status": "active",
+          "owner": "original octos-inner Kimi",
+          "next_action": "用户调整顺序：先028生效输入清单，保留原ART结果，不再零散改配方。",
+          "progress": "完整runtime273/compiler101对象与两归档已验；最终共享链接仍待验"
+        },
+        {
+          "id": "05.ART16.LEAF",
+          "title": "r4 ART两个独立对象与头文件闭包",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer independent review",
+          "next_action": "保留冒烟结果，按原组件目标确定完整配置；运行验收仍0个。"
+        },
+        {
+          "id": "05.APK025.A.INPUT",
+          "title": "车道A · HelloWorld · 原APK与原流程输入",
+          "status": "review",
+          "owner": "Kimi peer A / 01a0f629-a6a3-7363-9bce-65274fa453c0",
+          "next_action": "原APK字节匹配已验；完整原流程参数与.39代输入待owner整合。"
+        },
+        {
+          "id": "05.APK025.A.INSTALL",
+          "title": "车道A · HelloWorld · 安装",
+          "status": "planned",
+          "owner": "Kimi peer A / 01a0f629-a6a3-7363-9bce-65274fa453c0",
+          "next_action": "待当前.39身份、独占lease及实际安装输入；查询超时事实已交owner，host准备继续。"
+        },
+        {
+          "id": "05.APK025.A.START",
+          "title": "车道A · HelloWorld · 启动",
+          "status": "planned",
+          "owner": "Kimi peer A / 01a0f629-a6a3-7363-9bce-65274fa453c0",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.A.FRAME",
+          "title": "车道A · HelloWorld · 上屏",
+          "status": "planned",
+          "owner": "Kimi peer A / 01a0f629-a6a3-7363-9bce-65274fa453c0",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.A.INPUTTEST",
+          "title": "车道A · HelloWorld · 基本交互",
+          "status": "planned",
+          "owner": "Kimi peer A / 01a0f629-a6a3-7363-9bce-65274fa453c0",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.B.INPUT",
+          "title": "车道B · ZigZag/已有控制样本 · 原APK与原流程输入",
+          "status": "review",
+          "owner": "Kimi peer B / 01a0f629-dc2a-7850-80ba-8188c8e176b7",
+          "next_action": "probe字节匹配已验；redacted SHA和时间戳收据待owner修复，控制样本单列。"
+        },
+        {
+          "id": "05.APK025.B.INSTALL",
+          "title": "车道B · ZigZag/已有控制样本 · 安装",
+          "status": "planned",
+          "owner": "Kimi peer B / 01a0f629-dc2a-7850-80ba-8188c8e176b7",
+          "next_action": "待当前.39身份、独占lease及实际安装输入；查询超时事实已交owner，host准备继续。"
+        },
+        {
+          "id": "05.APK025.B.START",
+          "title": "车道B · ZigZag/已有控制样本 · 启动",
+          "status": "planned",
+          "owner": "Kimi peer B / 01a0f629-dc2a-7850-80ba-8188c8e176b7",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.B.FRAME",
+          "title": "车道B · ZigZag/已有控制样本 · 上屏",
+          "status": "planned",
+          "owner": "Kimi peer B / 01a0f629-dc2a-7850-80ba-8188c8e176b7",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.B.INPUTTEST",
+          "title": "车道B · ZigZag/已有控制样本 · 基本交互",
+          "status": "planned",
+          "owner": "Kimi peer B / 01a0f629-dc2a-7850-80ba-8188c8e176b7",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.C.INPUT",
+          "title": "车道C · Wikipedia/已有控制样本 · 原APK与原流程输入",
+          "status": "review",
+          "owner": "Kimi peer C / 01a0f62a-0b10-7f41-a4c0-04cf3b6c7576",
+          "next_action": "原env.md指向仓库外westlake-inputs/apks；按MacServer原位置补Wikipedia输入，避免用同样缺失的Firefox替代。"
+        },
+        {
+          "id": "05.APK025.C.INSTALL",
+          "title": "车道C · Wikipedia/已有控制样本 · 安装",
+          "status": "planned",
+          "owner": "Kimi peer C / 01a0f62a-0b10-7f41-a4c0-04cf3b6c7576",
+          "next_action": "待当前.39身份、独占lease及实际安装输入；查询超时事实已交owner，host准备继续。"
+        },
+        {
+          "id": "05.APK025.C.START",
+          "title": "车道C · Wikipedia/已有控制样本 · 启动",
+          "status": "planned",
+          "owner": "Kimi peer C / 01a0f62a-0b10-7f41-a4c0-04cf3b6c7576",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.C.FRAME",
+          "title": "车道C · Wikipedia/已有控制样本 · 上屏",
+          "status": "planned",
+          "owner": "Kimi peer C / 01a0f62a-0b10-7f41-a4c0-04cf3b6c7576",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.APK025.C.INPUTTEST",
+          "title": "车道C · Wikipedia/已有控制样本 · 基本交互",
+          "status": "planned",
+          "owner": "Kimi peer C / 01a0f62a-0b10-7f41-a4c0-04cf3b6c7576",
+          "next_action": "沿原流程执行，逐步记录实际命令/rc；当前未宣称设备成功。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M01",
+          "title": "M01 harness_device_evidence",
+          "status": "active",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "限定主机编译运行已验收；全环境和harness设备执行仍待后续证据"
+        },
+        {
+          "id": "05.MIGRATION.S3.M02",
+          "title": "M02 native_sdk",
+          "status": "pending",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "Bind same .39 SDK/sysroot/C++ headers and host-specific compiler identities"
+        },
+        {
+          "id": "05.MIGRATION.S3.M03",
+          "title": "M03 all_source_components",
+          "status": "active",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "7个core源码实际checkout全部验收；其他组件只按当前真实所需补齐"
+        },
+        {
+          "id": "05.MIGRATION.S3.M04",
+          "title": "M04 framework_codegen_java_resources",
+          "status": "active",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "真实flags已验；已有注解/资源清单随M06.2接入构建"
+        },
+        {
+          "id": "05.MIGRATION.S3.M05",
+          "title": "M05 host_tools",
+          "status": "active",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "dex2oat核心镜像生产验证已验；其他host工具按真实下游需求准入，不宣称整套工具完成。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06",
+          "title": "M06 core_java_extensions",
+          "status": "accepted",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "当前七个R4 Java运行库及输入绑定已验；复用产物，继续host/native/framework。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07",
+          "title": "原生支持库：已验组件复用，ART配置缺陷已修复",
+          "status": "active",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。",
+          "progress": "75依赖节点；38生成源码、180目标常量及4项provider页大小配置修复已验；dlmalloc9源码已补。完整ART/设备仍未验。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M08",
+          "title": "完整ART：生成输入和依赖已验，继续runtime/compiler",
+          "status": "active",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。",
+          "progress": "75依赖节点；38生成源码、180目标常量及4项provider页大小配置修复已验；dlmalloc9源码已补。完整ART/设备仍未验。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M09",
+          "title": "M09 framework_codegen_java_resources",
+          "status": "pending",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "Build r4 framework generators/Java/resources with original phase2 workflow"
+        },
+        {
+          "id": "05.MIGRATION.S3.M10",
+          "title": "M10 oh_adapter_bms_provider",
+          "status": "pending",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "Port OH7 private boundaries and BMS/appspawn/provider inventories; firmware ABI must be .39"
+        },
+        {
+          "id": "05.MIGRATION.S3.M11",
+          "title": "M11 boot_packaging",
+          "status": "pending",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "Generate matching boot and package full source runtime with per-artifact provenance"
+        },
+        {
+          "id": "05.MIGRATION.S3.M12",
+          "title": "M12 harness_device_evidence",
+          "status": "pending",
+          "owner": "original Kimi inner / Codex review",
+          "next_action": "After actual .39 lease, run original APK install/cold-launch/screen evidence and repeat across target corpus"
+        },
+        {
+          "id": "05.ENV.EXTERNAL",
+          "title": "MacServer项目外依赖实物与本机gap",
+          "status": "accepted",
+          "owner": "outer read-only audit / original inner remediation",
+          "next_action": "按原M01–M12逐组件补齐，不新增全局门"
+        },
+        {
+          "title": "M03.1：7项r4锁、真实准入和首个checkout",
+          "status": "accepted",
+          "owner": "original Kimi implementation / outer independent review",
+          "next_action": "已验收的限定范围保留，不重复执行；不计为全环境/设备通过",
+          "id": "05.MIGRATION.S3.M03.1"
+        },
+        {
+          "title": "M01.1：Ubuntu24/amd64与锁定JDK21实跑",
+          "status": "accepted",
+          "owner": "original Kimi implementation / outer independent review",
+          "next_action": "已验收的限定范围保留，不重复执行；不计为全环境/设备通过",
+          "id": "05.MIGRATION.S3.M01.1"
+        },
+        {
+          "id": "05.MIGRATION.S3.M03.2",
+          "title": "M03.2：7个core源码仓实际提交核对完成",
+          "status": "accepted",
+          "next_action": "保留已验收源码；不据此宣称目标构建完成",
+          "owner": "original Kimi inner / Codex independent review"
+        },
+        {
+          "id": "05.MIGRATION.S3.M04.1",
+          "title": "M04.1：r4构建定义与core Java迁移方案",
+          "status": "review",
+          "next_action": "三仓来源已验收；计划发现10个真实漏项与继承/编译入口问题，转M04.2+M06.1修正",
+          "owner": "original Kimi inner / Codex independent review"
+        },
+        {
+          "id": "05.MIGRATION.S3.M04.2",
+          "title": "M04.2：完整r4发布/生成器/编译输入绑定",
+          "status": "review",
+          "owner": "original Kimi inner",
+          "next_action": "由M04.3重写矛盾绑定；准备脚本的虚构子命令已拒收"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.1",
+          "title": "M06.1：当前3043源码清单与15项解析检查已验",
+          "status": "accepted",
+          "owner": "original Kimi owner after rejected peer return",
+          "next_action": "复用已验清单；完整递归边、生成源和目标编译继续在M06闭合"
+        },
+        {
+          "id": "05.MIGRATION.S3.M04.2.ACONFIG",
+          "title": "r4 aconfig：官方来源、二进制及本机执行核验",
+          "status": "accepted",
+          "owner": "outer independent source/tool review",
+          "next_action": "复用同一工具生成真实flags；不再把Rust/vendor重建当作此步骤前置"
+        },
+        {
+          "id": "05.MIGRATION.S3.M04.3",
+          "title": "M04.3：执行真实r4 flags生成",
+          "status": "accepted",
+          "owner": "original Kimi inner / outer host executor",
+          "next_action": "复用40flags/15生成源；一致bindings维护转M06.2"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.2",
+          "title": "M06.2：正式入口通过，4个r4核心JAR已验",
+          "status": "accepted",
+          "owner": "original Kimi inner / outer host executor",
+          "next_action": "复用已验核心产物推进Java扩展；新增输入代前补共享校验边界。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.3.SOURCES",
+          "title": "M06.3：3个r4扩展/crypto源码已验",
+          "status": "accepted",
+          "owner": "existing deterministic fetcher",
+          "next_action": "复用已验源码移植Java扩展；不重拉。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.3.GENERATOR-SOURCES",
+          "title": "M06.3：StatsD/proto/protobuf 三个 r4 生成依赖源码已验",
+          "status": "accepted",
+          "owner": "deterministic fetcher / outer review",
+          "next_action": "供 Conscrypt 真生成器移植使用；源码通过不代表生成器或 Java 通过。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.3",
+          "title": "M06.3：r4 BouncyCastle/XML移植 + Conscrypt依赖复核",
+          "status": "accepted",
+          "owner": "original Kimi; peer terminal",
+          "next_action": "三项R4 Java扩展全部已验；复用，不重编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.3.BC_XML",
+          "title": "BouncyCastle/XML：2个R4运行JAR真实构建已验",
+          "status": "accepted",
+          "owner": "original Kimi implementation / outer build and independent acceptance",
+          "next_action": "复用产物；完成Conscrypt与正式入口集成，不重复构建。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.4",
+          "title": "Conscrypt18份生成Java已验，目标编译继续",
+          "status": "accepted",
+          "owner": "original Kimi / outer actual host executor",
+          "next_action": "生成源码已由M06.7实际编译使用；复用，不重新生成。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.4.READY_INPUTS",
+          "title": "首批Conscrypt flags/StaticBlocklist：10命令rc0已验",
+          "status": "accepted",
+          "owner": "original Kimi runner / outer execution and acceptance",
+          "next_action": "绑定并复用已有生成物；继续NativeConstants和StatsLog。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.5.NATIVE_CONSTANTS",
+          "title": "NativeConstants：R4实际编译/运行rc0，51常量已验",
+          "status": "accepted",
+          "owner": "original Kimi proposal / outer host execution and review",
+          "next_action": "复用产物并补正式输入绑定；不重复构建。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.6",
+          "title": "R4主机工具/StatsLog生成：300命令rc0已验",
+          "status": "accepted",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "复用完整已验输出；推进M06.7。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.6.PROTOC",
+          "title": "R4 Protobuf/protoc：真实构建与运行rc0已验",
+          "status": "accepted",
+          "owner": "original Kimi runner / outer execution and independent review",
+          "next_action": "复用当前工具代编译StatsLog，不重复构建。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.7",
+          "title": "Conscrypt：R4 javac/D8通过，414个DEX类已验",
+          "status": "accepted",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "原Kimi从已验收据绑定七个R4 Java组件，修正精确输入映射并核对正式构建入口；复用已验产物，不重新编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.8",
+          "title": "组件身份绑定核对完成，正式入口由M06.9验收",
+          "status": "accepted",
+          "owner": "original Kimi / outer review",
+          "next_action": "已闭合，复用已验产物。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.9",
+          "title": "统一入口Conscrypt：javac/D8 rc0，两个JAR逐字节一致",
+          "status": "accepted",
+          "owner": "original Kimi / outer independent execution",
+          "next_action": "复用，不再重编译；后续为输入绑定和主机boot验证。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M06.10",
+          "title": "七个R4运行JAR统一绑定与真实下游选择器验证",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "当前七个R4 Java运行库及输入绑定已验；复用产物，继续host/native/framework。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M05.1",
+          "title": "R4 host核心镜像：21个ARM64文件真实生成并验收",
+          "status": "accepted",
+          "owner": "original Kimi binding / outer host executor and independent review",
+          "next_action": "复用；目标ART/Framework未完成前不部署。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.1",
+          "title": "21个native支撑库实际输入与首个R4/.39编译片段",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "复用有限清单，不重复扫描。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.2",
+          "owner": "original Kimi / outer review",
+          "title": "R4/.39 liblog：8源构建与ARM64 ELF验收通过",
+          "status": "accepted",
+          "next_action": "复用已验组件，原内环接回同字节入口与绑定。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.3",
+          "owner": "original Kimi / outer review",
+          "title": "R4/.39 liblog：8源构建与ARM64 ELF验收通过",
+          "status": "accepted",
+          "next_action": "复用已验组件，原内环接回同字节入口与绑定。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.4",
+          "title": "原内环接回已验liblog入口与产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "复用已验liblog组件，不重编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.5",
+          "title": "R4 libbase及fmt：18源实际构建与ARM64验收通过",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "复用已验组件及不可变产物绑定，不重编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.6",
+          "title": "R4 libbase 原内环产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "6项不可变生产引用已验，后续组件可复用。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.7",
+          "title": "R4 libcutils：21源实际构建与ARM64验收通过",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "原内环登记产物绑定；不用重复编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.8",
+          "title": "原内环登记libcutils产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "保持已验产物和不可变生产引用，后续直接复用。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.9",
+          "title": "R4 libutils：20源构建、真实参数与ARM64产物验收",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "原内环接回已验候选和产物绑定，不重复编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.10",
+          "title": "原内环已登记libutils与严格输入校验",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "保持6项不可变生产引用，后续直接复用。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.11",
+          "title": "R4 libnativehelper：7源实际编译与ARM64产物验收",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "原内环登记产物，不重复编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.12",
+          "title": "原内环已登记libnativehelper及头文件版本锁检查",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "保持不可变生产引用；后续复用。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.13",
+          "title": "R4 zlib：19源构建及CRC/PMULL保留已验",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "原内环登记已验产物，不重复编译。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.14",
+          "title": "原内环已登记zlib及单文件编译选项",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "保持6项不可变生产引用及特性等价证据；后续复用。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.15",
+          "title": "ZIP/R4头文件与生产源码输入验收",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "M07.16: preserve exact checks and prove compiler/runtime mapping"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.16",
+          "title": "ZIP整数检查与同版运行库实测构建",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "Original owner output binding"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.17",
+          "title": "ZIP绑定与Expat/PNG源码输入验收",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "Actual builds moved to explicit M07.18"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.17.ZIP",
+          "title": "第七项ZIP产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "Reuse exact accepted binding; no recompile"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.18",
+          "title": "PNG构建已验；Expat候选修正中",
+          "status": "superseded",
+          "owner": "original octos-inner Kimi",
+          "next_action": "PNG accepted; Expat correction and acceptance recorded in M07.19"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.18.PNG",
+          "title": "PNG18源码真实构建",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "Original owner binding; no recompile"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.19",
+          "title": "PNG绑定与Expat修正构建已验",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "M07.20 original owner Expat binding and ICU inputs"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.19.PNG",
+          "title": "第八项PNG产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "Reuse accepted PNG binding; no rebuild"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.20",
+          "title": "Expat绑定已验；ICU初稿需纠正",
+          "status": "superseded",
+          "owner": "original octos-inner Kimi",
+          "next_action": "Initial ICU map superseded by verified R4 oracle; original Expat binding remains accepted"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.20.EXPAT",
+          "title": "第九项Expat不可变产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner",
+          "next_action": "Reuse exact accepted producer; no recompile"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.21",
+          "title": "ICU458源码与两库实际构建已验",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "Original owner output bindings, then exact currentR4 public wrapper/font dependency graph"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.22",
+          "title": "ICU两项绑定与三份R4字体源码已验",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / deterministic helper",
+          "next_action": "Reuse bindings/checkouts; M07.23 next actual build"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.23",
+          "title": "公共ICU与FreeType两项R4实际构建已验",
+          "status": "accepted",
+          "owner": "original octos-inner / fixed execution script",
+          "next_action": "Owner bindings then currentR4HarfBuzz; no recompile"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.24",
+          "title": "公共ICU与FreeType不可变产物绑定",
+          "status": "accepted",
+          "owner": "original octos-inner / deterministic helper",
+          "next_action": "Reuse accepted bindings; no rebuild"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.25",
+          "title": "HarfBuzz55源码实际构建及R4默认UCD已验",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "next_action": "Owner binding then exactR4Minikin dependencies; no recompile"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.26",
+          "title": "HarfBuzz产物绑定与R4Minikin新增依赖清单",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "Locate exactR4Minikin producers; no rebind/recompile"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.27",
+          "title": "接入R4配置标志源码生产者",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "Reuse currentR4checkout, no refetch"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.28",
+          "title": "实际构建R4配置标志C++基础库",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "Reuse accepted component; no rebuild. Full property/reset semantics remain open."
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.29",
+          "title": "配置标志产物绑定与现有Rust工具核查",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "Reuse binding; Rust inventory is not provider admission."
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.30",
+          "title": "接入R4 CXX及四个直接Rust依赖源码",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "Reuse exactR4 source checkouts; no refetch."
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.31",
+          "title": "接入并核验R4指定的Rust1.88 Mac编译器",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "Reuse exactR4 hosttool. Initialversion timeout retained; no host/target compile acceptance."
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.32",
+          "title": "接入同一R4标准库源码与13项直接Rust依赖",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "已验收；由M07.33统一构建消费"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.32.G2",
+          "title": "只读修正13模块清单的host类型识别",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / fixed helper",
+          "next_action": "已验收；由M07.33统一构建消费"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.33",
+          "title": "Rust标准库/CXX/日志链已验，推进Minikin静态库",
+          "status": "active",
+          "owner": "original octos-inner Kimi",
+          "next_action": "复用25项目标Rust库和已验原生桥接归档，核定并发布Minikin的rust_ffi_static配方，再编译/链接C++主库；设备HOLD。",
+          "progress": "日志依赖链已编译闭合：25项目标Rust库已验并由原内环绑定；4目录缺口和alloc配方错误已关闭。下一关为Minikin Rust静态库与C++主库，完整运行时/设备仍未验。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.33.SOURCEPOOL",
+          "title": "共享源码池：软件/版本目录、统一索引与agent入口",
+          "status": "accepted",
+          "owner": "outer deterministic source organization and verification",
+          "next_action": "按共享索引复用精确版本；已声明软链接可读取共享输入，新版native入口准入通过，完整构建仍未验。"
+        },
+        {
+          "id": "05.MIGRATION.S3.M07.33.READONLY-LINKS",
+          "title": "项目内只读软链接例外及真实构建输入准入",
+          "status": "accepted",
+          "owner": "outer / explicit user rule update",
+          "next_action": "后续同批次使用版本化入口；源码只读访问、版本/哈希校验和输出隔离均保留。"
+        },
+        {
+          "id": "05.RUST.CURRENT",
+          "title": "目标标准库13个rlib及绑定已验",
+          "status": "accepted",
+          "owner": "original Kimi execution / outer review",
+          "progress": "含完整libstd.rlib；13项实际绑定已验。native链接与运行不在此验收范围。",
+          "next_action": "下游libcxx/flags等继续使用已验13项产物，不重编。"
+        },
+        {
+          "id": "05.CXX.HOST.G15",
+          "title": "CXX1.0.160主机生成器已验",
+          "status": "accepted",
+          "owner": "original Kimi / outer independent review",
+          "progress": "Cargo rc0，12.586秒，x86_64 Mach-O；1141输入核验，内置头文件与R4一致。",
+          "next_action": "供G16实际生产生成使用，不重编。"
+        },
+        {
+          "id": "05.CXX.FFI.G16",
+          "title": "Minikin/flags的4项生产FFI生成",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "4个生产文件均rc0，外环独立重现逐字节一致；原13个目标库哈希不变。",
+          "next_action": "使用已生成文件，继续目标库构建。"
+        },
+        {
+          "id": "05.RUST.FLAGS.LOG.G26",
+          "title": "flags与log两个Rust目标库",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi两编译进程重叠，flags0.491秒/log0.621秒均rc0；源码/ELF/归档独立验收通过。",
+          "next_action": "原Kimi实编flags_rust与log两个独立Rust库；外环补齐并验收四项日志源码。"
+        },
+        {
+          "id": "05.RUST.LOGGER.FOUNDATIONS.G27",
+          "title": "日志链三个Rust基础库",
+          "status": "review",
+          "owner": "original Kimi",
+          "progress": "env_logger已独立验收；memchr与regex-syntax的真实rc1均为alloc显式绑定缺失，G28仅修正两个失败节点。",
+          "next_action": "原Kimi执行memchr、regex-syntax、env_logger三个独立节点；日志链源码缺口已关闭。"
+        },
+        {
+          "id": "05.RUST.ALLOC.BINDING.G28",
+          "title": "修正两个日志基础库的alloc输入",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "只补alloc显式绑定后，memchr0.559秒/regex_syntax2.361秒rc0；24/31源码、2/16AArch64对象独立验收。",
+          "next_action": "原Kimi只重编memchr/regex-syntax两个失败节点；env_logger保留，修正外环漏配的alloc绑定。"
+        },
+        {
+          "id": "05.RUST.AHO.G29",
+          "title": "日志链aho_corasick目标库",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "aho_corasick1.1.3实编rc0，29源码/16AArch64对象独立验收。",
+          "next_action": "原Kimi执行aho_corasick；后续regex_automata依赖它，保留20个已验Rust目标库。"
+        },
+        {
+          "id": "05.RUST.COMPONENT.BINDINGS.G30",
+          "title": "原内环吸收本轮21项目标库与归档",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实际写入图/锁，旧15条不变；21目标、9主机、3原生分类绑定并独立验收。",
+          "next_action": "原Kimi将21个目标Rust库、3个原生归档及源码回执接回原图/锁；再推进regex_automata。"
+        },
+        {
+          "id": "05.RUST.REGEX.AUTOMATA.G31",
+          "title": "日志链regex_automata目标库",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实编rc0；实际源码、目标对象和归档独立验收通过。",
+          "next_action": "原Kimi编译regex_automata，复用原图/锁中的21项目标Rust库；随后regex→env_filter→logger→Minikin。"
+        },
+        {
+          "id": "05.RUST.G32-REGEX",
+          "title": "libregex",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实编rc0；实际源码、目标对象和归档独立验收通过。",
+          "next_action": "原Kimi执行 libregex；复用已验产物，返回后独立验收。"
+        },
+        {
+          "id": "05.RUST.G33-ENV-FILTER",
+          "title": "libenv_filter",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实编rc0；实际源码、目标对象和归档独立验收通过。",
+          "next_action": "原Kimi执行 libenv_filter；复用已验产物，返回后独立验收。"
+        },
+        {
+          "id": "05.RUST.G34-LOGGER",
+          "title": "liblogger",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实编rc0；实际源码、目标对象和归档独立验收通过。",
+          "next_action": "原Kimi执行 liblogger；复用已验产物，返回后独立验收。"
+        },
+        {
+          "id": "05.RUST.LOGGER.BINDINGS.G35",
+          "title": "原内环吸收完整日志构建链",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实际回写；25目标库、9主机生产模块、3原生归档已独立核对。旧21条不变，零编译。",
+          "next_action": "原内环把25项目标Rust库接回图/锁；随后进入Minikin Rust静态库与C++主库。"
+        },
+        {
+          "id": "05.RUST.G36-MINIKIN-FFI",
+          "title": "libminikin_rust_ffi",
+          "status": "superseded",
+          "owner": "original Kimi",
+          "progress": "E0463 panic_abort;G37修搜索范围后关闭，历史失败保留",
+          "next_action": "失败历史由G37关闭；不重跑G36"
+        },
+        {
+          "id": "05.RUST.G37-MINIKIN-SEARCH-PATH",
+          "title": "libminikin_rust_ffi",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "Minikin Rust静态库78ARM64对象；G36错误关闭",
+          "next_action": "已验收；复用本代产物，不重编"
+        },
+        {
+          "id": "05.M07.33.G38",
+          "title": "Minikin C++主库31单元及严格链接",
+          "status": "superseded",
+          "owner": "original Kimi",
+          "progress": "2/31对象通过；locale头文件遮蔽、R4默认参数遗漏、Clang15语法能力差异",
+          "next_action": "G39关闭失败；两个成功对象已复用"
+        },
+        {
+          "id": "05.M07.33.G39",
+          "title": "Minikin主库3类修正与链接",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "29新编+2复用，严格链接rc0，ARM64动态库独立验收",
+          "next_action": "已验收；复用本代产物，不重编"
+        },
+        {
+          "id": "05.M07.33.G40",
+          "title": "Minikin结果由原内环消费",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原内环接回2类Minikin产物，39个已绑定产物哈希复核通过",
+          "next_action": "已验收；复用，不重跑"
+        },
+        {
+          "id": "05.M07.33.G41",
+          "title": "核对完整运行时的实际消费者",
+          "status": "superseded",
+          "owner": "original Kimi",
+          "progress": "清单退回：既有libbase/libcutils和ART被误报缺失，CLI参数错误",
+          "next_action": "G43已关闭该核对范围，历史拒收保留"
+        },
+        {
+          "id": "05.M07.33.G42",
+          "title": "纠正消费者清单的伪缺口",
+          "status": "superseded",
+          "owner": "original Kimi",
+          "progress": "配方helper定位正确；7JAR/21core产物未按收据核哈希，整体清单不接受",
+          "next_action": "G43固定脚本关闭重复调查，不重跑"
+        },
+        {
+          "id": "05.M07.33.G43",
+          "title": "固定脚本核对既有运行时输入",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "69个实际输入复核：host1/JAR7/core21均匹配；15源码JNI生产定义确认",
+          "next_action": "复用已有产物；G44实编下一组件"
+        },
+        {
+          "id": "05.M07.33.G44",
+          "title": "R4 ICU JNI 15单元编译与严格链接",
+          "status": "superseded",
+          "owner": "original Kimi",
+          "progress": "静态归档与3对象独立验收；12个缺头目录失败由G45/G46闭合",
+          "next_action": "成功对象和归档已复用，不重跑"
+        },
+        {
+          "id": "05.M07.33.G45",
+          "title": "补齐R4 nativehelper传递导出目录",
+          "status": "superseded",
+          "owner": "original Kimi",
+          "progress": "新增10对象通过，累计13/15；剩余2项由G46闭合",
+          "next_action": "成功对象保留复用"
+        },
+        {
+          "id": "05.M07.33.G46",
+          "title": "ICU JNI全15单元及严格链接",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "仅补2单元，严格链接rc0；114224字节AArch64 ELF",
+          "next_action": "已验收；运行行为待验"
+        },
+        {
+          "id": "05.M07.33.G47",
+          "title": "原内环接回ICU JNI图/锁记录",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实际回写并独立验收；先前记录不变",
+          "next_action": "完整运行时构建器接入仍待验"
+        },
+        {
+          "id": "05.M07.33.G48",
+          "title": "核对完整ART配方、C++ABI与编译器",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "6文件5路径由原Kimi实读并独立验收；不代表新编译器准入",
+          "next_action": "按用户新方向复现MacServer工具工作方式"
+        },
+        {
+          "id": "05.M07.33.G49",
+          "title": "MacServer工具对应新版源码与首个复现任务",
+          "status": "rejected",
+          "owner": "original Kimi",
+          "progress": "返回清单含不存在脚本、缩略SHA、旧锁冒充R4；不据此构建",
+          "next_action": "改为已核验编译器的实际两单元编译"
+        },
+        {
+          "id": "05.M07.33.G50",
+          "title": "R4编译器与.39头文件编译原始ART单元",
+          "status": "accepted",
+          "owner": "outer authorized host transport",
+          "progress": "外环host入口完成2/2未改动R4单元实编，668/675依赖独立复核；不代表完整链接",
+          "next_action": "2个原始R4 ART单元已实际编译通过；原Kimi恢复后消费成果，下一步验证.39 C++提供库链接与原构建配方"
+        },
+        {
+          "id": "05.M07.33.G51",
+          "title": "原内环消费编译器实编结果并核对Docker入口",
+          "status": "rejected",
+          "owner": "original Kimi",
+          "progress": "已恢复实际执行，但把工具输出SHA脱敏误作文件占位符；无有效ACK",
+          "next_action": "执行精确消费命令并进入脚本等待"
+        },
+        {
+          "id": "05.M07.33.G52",
+          "title": "原内环用文件程序消费已验对象",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实际执行文件消费者rc0，两个对象校验通过；Docker配置访问限制已确诊",
+          "next_action": "两个R4 ART单元实编及原Kimi消费均已验；下一步完成.39 C++提供库链接和旧ART配方迁移，不重编已验对象"
+        },
+        {
+          "id": "05.M07.33.G53",
+          "title": "R4 tinyxml2真实ART依赖构建",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi实际编译1单元及tinyxml2归档rc0，140014字节，独立复核通过",
+          "next_action": "已由libartbase真实消费，不重建"
+        },
+        {
+          "id": "05.M07.33.G53FLAGS",
+          "title": "R4真实ART native开关生成",
+          "status": "accepted",
+          "owner": "outer host transport",
+          "progress": "48个实际release开关，3份C++/头文件，非全false合成头",
+          "next_action": "原Kimi消费tinyxml2、真实开关、libartbase/Palette loader图锁；随后沿MacServer A级真实Palette配方核对R4接口并迁移到.39"
+        },
+        {
+          "id": "05.M07.33.G54",
+          "title": "ART基础库完整组件首轮构建",
+          "status": "partial",
+          "owner": "outer host transport",
+          "progress": "37单元中33通过；Palette真实loader严格链接成功；4单元缺配方宏，保留首轮证据",
+          "next_action": "原Kimi消费tinyxml2、真实开关、libartbase/Palette loader图锁；随后沿MacServer A级真实Palette配方核对R4接口并迁移到.39"
+        },
+        {
+          "id": "05.M07.33.G55",
+          "title": "仅修复4单元并严格链接libartbase",
+          "status": "accepted",
+          "owner": "outer host transport / independent review",
+          "progress": "37单元齐备；libartbase3373744字节、Palette loader60232字节；8库链接符号闭合，不代表平台provider或运行时",
+          "next_action": "原Kimi消费tinyxml2、真实开关、libartbase/Palette loader图锁；随后沿MacServer A级真实Palette配方核对R4接口并迁移到.39"
+        },
+        {
+          "id": "05.M07.33.MACSERVER-A",
+          "title": "读取MacServer A级70项真实配方清单",
+          "status": "accepted",
+          "owner": "outer read-only intake",
+          "progress": "HTTP三清单200；70项53完整17不完整；Palette7文件与原commit字节一致，目标迁移另验",
+          "next_action": "原Kimi消费tinyxml2、真实开关、libartbase/Palette loader图锁；随后沿MacServer A级真实Palette配方核对R4接口并迁移到.39"
+        },
+        {
+          "id": "05.M07.33.G56",
+          "title": "原内环接收已验ART组件并绑定图锁",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi真实命令rc0；51旧节点逐字保留、新增4组件；仅图锁消费，运行集成未验",
+          "next_action": "原Kimi核对MacServer实际Palette源码/map与AOSP16 R4方法和调用点，形成.39版本构建前的精确迁移差异"
+        },
+        {
+          "id": "05.M07.33.G57",
+          "title": "MacServer真实Palette配方与R4接口逐项对比",
+          "status": "partial",
+          "owner": "original Kimi",
+          "progress": "方法名核对22/20已验：新增DebugStoreGetString和MapPriority；行为/实现层提案有错误，已拒收，未改源",
+          "next_action": "保留Palette新增2方法的事实；外环核对契约与实现层，原Kimi继续冻结命令执行，禁止据错误语义提案修改ART loader"
+        },
+        {
+          "id": "05.M07.33.G58",
+          "title": "逐工具、逐版本的源码重建与效果验收档案",
+          "status": "accepted",
+          "owner": "original Kimi / deterministic script",
+          "progress": "原Kimi生成86项档案并检查通过；原版源码/命令/差异/验证方法已逐项导入，已有组件结果关联；不计新版整项通过",
+          "next_action": "工具档案87项已核验；按当前就绪配方推进Palette同.39/R4边界实现；33项等待MacServer实际补充，现有30秒脚本持续对账更新"
+        },
+        {
+          "id": "05.M07.33.G59",
+          "title": "自动回收MacServer新增参考并保留版本档案",
+          "status": "accepted",
+          "owner": "existing Python observer / outer review",
+          "progress": "实际捕获87项、A75；52声明就绪、33待补、2上游文件参考。原172份参考/目标文件保持；HTTP304巡检0模型调用",
+          "next_action": "工具档案87项已核验；按当前就绪配方推进Palette同.39/R4边界实现；33项等待MacServer实际补充，现有30秒脚本持续对账更新"
+        },
+        {
+          "id": "05.M07.33.G60",
+          "title": "参考Palette在.39 SDK/R4 liblog下构建与原测试",
+          "status": "review",
+          "owner": "original octos-inner Kimi"
+        },
+        {
+          "id": "05.M07.33.G61",
+          "title": "同源主机对照已验，完成Palette目标库构建",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi"
+        },
+        {
+          "id": "05.M07.33.G62",
+          "title": "未发布MapPriority候选已拒收",
+          "status": "review"
+        },
+        {
+          "id": "05.M07.33.G63",
+          "title": "真实MapPriority测试与21接口目标库构建",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi"
+        },
+        {
+          "id": "05.M07.33.G64",
+          "title": "原owner消费Palette组件到图锁",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi"
+        },
+        {
+          "id": "05.M07.33.G65",
+          "title": "R4 libdexfile/libprofile23单元构建与原owner消费",
+          "status": "accepted",
+          "owner": "outer host transport; original octos-inner consumer"
+        },
+        {
+          "id": "05.M07.33.G66",
+          "title": "OH sigchain边界适配及两次目标构建",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi"
+        },
+        {
+          "id": "05.M07.33.G67",
+          "title": "原owner消费OH sigchain组件到图锁",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi"
+        },
+        {
+          "id": "05.M07.33.G68",
+          "title": "MacServer N1加载链.39/R4重建与原测试",
+          "status": "active",
+          "owner": "original octos-inner Kimi",
+          "progress": "两项库双构建一致；六个R4 API签名和20×74 registry检查通过；完整契约/运行未验"
+        },
+        {
+          "id": "05.M07.33.G69",
+          "title": "ANL原契约测试使用项目临时目录",
+          "status": "blocked",
+          "owner": "original octos-inner Kimi",
+          "progress": "项目内夹具已修复，编译rc0；ANL145检查3项共享规则失败，rc1证据保留"
+        },
+        {
+          "id": "05.N1.CANDIDATES.G70",
+          "title": "N1已编译候选及失败契约记账",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "progress": "原Kimi实跑rc0；59原节点保持，61总节点含2个未验候选；accepted列表/计数不变",
+          "next_action": "核对新目标namespace-owner共享契约；继续独立R4 nativebridge/ART生产依赖，复用成功对象与库"
+        },
+        {
+          "id": "05.ART.NATIVEBRIDGE.G71",
+          "title": "R4 nativebridge实现库双构建",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "progress": "原Kimi四条编译/链接命令rc0；两份89744字节目标库一致，26实现导出及4提供者闭合已验",
+          "next_action": "原Kimi接收nativebridge组件验收；保持N1两项未验候选及失败证据"
+        },
+        {
+          "id": "05.ART.NATIVEBRIDGE.G72",
+          "title": "原内环接收nativebridge组件验收",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "progress": "原Kimi同轮G71→G72续跑rc0；61原节点与N1失败保持，新增1项nativebridge构建组件，共62节点",
+          "next_action": "5个精确R4 ART支持仓库正在原共享池补齐；随后编译实际依赖"
+        },
+        {
+          "id": "05.ART.SUPPORT.SOURCES.G1",
+          "title": "补齐R4 ART runtime/JIT的5个支持仓库",
+          "status": "accepted",
+          "owner": "deterministic source gate / outer transport",
+          "progress": "5仓库5352文件源码门已验；25项显式Git CRLF检出被如实记录。没有源码改动或重下载",
+          "next_action": "只验这5个精确提交和内容，不标完整AOSP/构建通过"
+        },
+        {
+          "id": "05.ART.COMPRESSION.G73",
+          "title": "R4 LZ4/LZMA完整模块双构建",
+          "status": "accepted",
+          "owner": "authorized host transport; original Kimi receives result",
+          "progress": "LZ4 4单元和LZMA 38单元各编译两次；84编译及4严格链接rc0，同版.39提供者及重复SHA独立复核通过。仅构建范围。",
+          "next_action": "原内环G74消费收据；目标运行仍未验"
+        },
+        {
+          "id": "05.ART.COMPRESSION.G74",
+          "title": "原内环吸收LZ4/LZMA构建收据",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi固定绑定命令rc0；62→64节点及9→11原生库记录，原节点/N1候选/Rust计数不变。仅消费已验构建。",
+          "next_action": "复用G73两套压缩库；按R4模块定义推进剩余ART/JIT支撑库并保留N1契约失败"
+        },
+        {
+          "id": "05.ART.VIXL.G75",
+          "title": "R4 VIXL代码生成器库双构建",
+          "status": "review",
+          "owner": "authorized host transport / outer independent review",
+          "progress": "20编译通过；32失败。外环漏R4警告默认项，未改源码，G76仅重编失败项",
+          "next_action": "20成功对象已复用；32失败由G76补编，原rc1留存"
+        },
+        {
+          "id": "05.ART.VIXL.G76",
+          "title": "补齐R4警告默认值并复用VIXL成功对象",
+          "status": "accepted",
+          "owner": "authorized host transport",
+          "progress": "补编32全部rc0，复用20对象；2库同SHA。10个../路径别名已独立核实为预封存输入，原包rc1不改。仅构建验收。",
+          "next_action": "原内环G77消费；JIT实际行为未验"
+        },
+        {
+          "id": "05.ART.VIXL.G77",
+          "title": "原内环吸收VIXL组件收据",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi固定命令rc0；64→65节点、11→12原生库记录，原节点/N1失败及Rust计数不变。",
+          "next_action": "按R4 Blueprint封存libelffile静态库、cpu_features和unwindstack；复用已验库，继续完整ART runtime/compiler生产链，N1三项失败单独收敛"
+        },
+        {
+          "id": "05.ART.CPU_ELF.G78",
+          "title": "R4 CPU特征库与ELF静态库双构建",
+          "status": "accepted",
+          "owner": "bounded deterministic host transport; original Kimi receives result",
+          "progress": "20编译及6链接/归档rc0；6267输入、719实际依赖、5归档成员、11库闭包与重复SHA独立复核通过。仅构建范围。",
+          "next_action": "原内环G79消费，运行时未验"
+        },
+        {
+          "id": "05.ART.CPU_ELF.G79",
+          "title": "原内环吸收CPU共享库与ELF静态库收据",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi固定命令rc0；65→67节点、12→13共享库与4→5静态归档记录。原节点/N1候选/Rust计数保持。",
+          "next_action": "核定完整R4 unwindstack的libprocinfo、libdexfile_support、Rust demangle及zstd真实来源；复用已验库，推进完整ART runtime/compiler，N1失败单独处理。"
+        },
+        {
+          "id": "05.ART.DEMANGLE.G80",
+          "title": "原内环构建R4 Rust demangle与C接口",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimi4次Rust实编rc0；双构建同SHA；3对象rlib和62对象staticlib及C导出独立验收。仅构建范围。",
+          "next_action": "G81原owner消费；完整unwindstack严格链接和运行行为仍未验"
+        },
+        {
+          "id": "05.ART.SOURCE.UNWIND.G80",
+          "title": "UNWIND精确R4源码补齐",
+          "status": "accepted",
+          "owner": "source pool transport / outer review",
+          "progress": "2个完整源码仓、654文件通过源码门；仅源码范围",
+          "next_action": "当前目标构建与独立验收"
+        },
+        {
+          "id": "05.ART.SOURCE.DEMANGLE.G80",
+          "title": "DEMANGLE精确R4源码补齐",
+          "status": "accepted",
+          "owner": "source pool transport / outer review",
+          "progress": "原稀疏仓展开2个crate、33新增文件；1529旧文件不变；仅源码范围",
+          "next_action": "当前目标构建与独立验收"
+        },
+        {
+          "id": "05.ART.DEMANGLE.G81",
+          "title": "原内环吸收demangler构建收据",
+          "status": "accepted",
+          "owner": "original Kimi",
+          "progress": "原Kimiwait80返回后同轮消费G81，0新prompt；67→69图节点，Rust rlib25→26/staticlib1→2，旧节点与N1失败保持。",
+          "next_action": "按已验R4源码构建libprocinfo、libdexfile_support和zstd，复用demangler与现有库完成完整unwindstack；继续ART runtime/compiler及N1契约。"
+        },
+        {
+          "id": "05.ART.G82",
+          "title": "R4 unwindstack前置：procinfo / dexfile_support / zstd",
+          "status": "review",
+          "owner": "original claim / authorized outer Docker transport",
+          "progress": "82/84编译通过；procinfo/dexfile_support两次归档及严格链接通过。zstd cover缺qsort_r，按同版OS边界修复。",
+          "next_action": "实际构建R4 libprocinfo/libdexfile_support/zstd三项完整静态模块；独立验收后原Kimi吸收，继而完整unwindstack。"
+        },
+        {
+          "id": "05.ART.G83",
+          "title": "OH .39 qsort_r私有边界与完整zstd归档",
+          "status": "accepted",
+          "owner": "original claim / authorized outer host transport",
+          "progress": "独立验收：4新编译+82复用、12归档/链接rc0；748真实依赖、7提供库、重复产物一致。只验构建。",
+          "next_action": "只编译cover两个失败对象与同版OH私有qsort两个对象，复用82成功对象；验收完整zstd后原Kimi消费三库。"
+        },
+        {
+          "id": "05.ART.G84",
+          "title": "原Kimi消费三项unwindstack前置库",
+          "status": "accepted",
+          "owner": "octos-inner / original Kimi",
+          "progress": "原生工具rc0；72节点/8原生静态库；旧69节点、Rust和N1记录未变。",
+          "next_action": "原Kimi消费G83三项完整静态库收据，保存原图/锁及N1失败状态；随后完整unwindstack。"
+        },
+        {
+          "id": "05.ART.G85",
+          "title": "完整R4 libunwindstack：31源文件与DEX支持",
+          "status": "review",
+          "owner": "original claim / authorized outer host transport",
+          "progress": "56/62编译通过，6次失败限于3源文件的SDK声明缺口；链接未到达。",
+          "next_action": "实际编译完整31源文件libunwindstack，两次构建和严格链接；保留DEXFILE_SUPPORT和原exported.map。"
+        },
+        {
+          "id": "05.ART.G86",
+          "title": "完整unwindstack：同版ELF常量与tgkill头",
+          "status": "accepted",
+          "owner": "original claim / authorized outer host transport",
+          "progress": "6新编译+56复用、2严格链接rc0；同SHA20853144字节，31源、1085导出、807依赖、7库闭包。",
+          "next_action": "复用G85的56成功对象；只补两项同版ELF常量和真实SDK tgkill头，编译6失败对象后严格链接完整unwindstack。"
+        },
+        {
+          "id": "05.ART.G87",
+          "title": "原Kimi消费完整unwindstack构建收据",
+          "status": "accepted",
+          "owner": "octos-inner / original Kimi",
+          "progress": "原生rc0；wait84→G87同轮实跑，0新prompt；73节点、14共享库，旧72节点及N1/Rust/8归档未变。",
+          "next_action": "原Kimi消费完整unwindstack构建收据，然后使用已验依赖推进完整ART runtime/compiler/JIT。"
+        },
+        {
+          "id": "05.ART.G88",
+          "title": "G88 Git配置访问失败",
+          "status": "superseded",
+          "owner": "deterministic producer / outer verifier",
+          "progress": "生成前rc1；G89进程级隔离修正",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G89",
+          "title": "原始ART生成源码38份",
+          "status": "accepted",
+          "owner": "original Kimi / outer verifier",
+          "progress": "76条原生成命令rc0，双生成SHA一致；尚未编译",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G90",
+          "title": "目标汇编常量180项",
+          "status": "accepted",
+          "owner": "deterministic producer / outer verifier",
+          "progress": "2次目标编译+2次原脚本提取，完整常量表相同",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G91",
+          "title": "G91零计数清单未通过",
+          "status": "superseded",
+          "owner": "deterministic producer / outer verifier",
+          "progress": "Kimi解析器rc0但关键计数0；已由G92实际清单取代",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G92",
+          "title": "完整ART源与80对象配置审计",
+          "status": "accepted",
+          "owner": "original Kimi / outer verifier",
+          "progress": "353份Git输入核验，42对象受遗漏宏影响，38对象可复用",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G93",
+          "title": "42对象及3个共享库定向重建",
+          "status": "accepted",
+          "owner": "deterministic producer / outer verifier",
+          "progress": "42/42编译、3链接通过；归档编排错误在G94修复",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G94",
+          "title": "归档与链接依赖闭合",
+          "status": "accepted",
+          "owner": "deterministic producer / outer verifier",
+          "progress": "复用80对象；2归档+2严格probe通过，12-provider闭包",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G95",
+          "title": "原内环吸收同版配置与生成物",
+          "status": "accepted",
+          "owner": "original Kimi / outer verifier",
+          "progress": "原Kimi工具rc0；75节点，4身份更新+2生成节点，历史/N1/Rust保留",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G96",
+          "title": "补齐R4 dlmalloc源码",
+          "status": "accepted",
+          "owner": "deterministic producer / outer verifier",
+          "progress": "固定R4提交9文件/249721字节；仅源码门，不是构建",
+          "next_action": "复用G89/G90生成物、G94同配置provider与G96 dlmalloc；按G92完整清单核定R4 runtime/compiler生产配方并实际构建，平台/odrstatslog映射单独审查。"
+        },
+        {
+          "id": "05.ART.G97",
+          "title": "完整ART生产模块预检",
+          "status": "superseded",
+          "owner": "original Kimi / outer host",
+          "progress": "原Kimi ACK已验；3/4预检通过，真实缺头文件引用及2项清单项，G98修复",
+          "next_action": "G98 actual offline dependencies and full374-unit producer build"
+        },
+        {
+          "id": "05.ART.G98",
+          "title": "374单元完整ART生产构建",
+          "status": "superseded",
+          "owner": "original Kimi / outer host",
+          "progress": "374全量预检：331通过，43失败归为3类；5项清单缺项。源码未变。",
+          "next_action": "G99 full374-unit preprocessing and producer compile; original Musl selector, no source changes"
+        },
+        {
+          "id": "05.ART.G99",
+          "title": "原始Musl配置的374单元生产构建",
+          "status": "superseded",
+          "owner": "original Kimi / outer host",
+          "progress": "374离线预处理已验；3项旧实编错误由G100/G102诊断关闭",
+          "next_action": "完整范围保留，G103使用已验配方重编"
+        },
+        {
+          "id": "05.ART.G100.RECIPE",
+          "title": "汇编/JIT配方实编修正",
+          "status": "accepted",
+          "progress": "2/2 ARM64对象通过，1068依赖0未绑定；不代表完整ART",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "固定.39 __n1 ABI，在项目私有标准库头文件边界验证C++20外部分配器流构造接口；保留ART源码，先语义/ABI/原始runtime.cc目标编译，再恢复完整374单元构建。"
+        },
+        {
+          "id": "05.ART.G100.STUDY",
+          "title": "SDK标准库接口专项分析",
+          "status": "superseded",
+          "progress": "Kimi来源事实通过；不支持外部分配器的原候选签名已拒绝，通用修复待验证",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "修正后的通用候选已由G102独立验证"
+        },
+        {
+          "id": "05.ART.G101",
+          "title": "原内环吸收独立复核",
+          "status": "accepted",
+          "progress": "原Kimi实际ACK rc0；图75节点与锁保持不变",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "固定.39 __n1 ABI，在项目私有标准库头文件边界验证C++20外部分配器流构造接口；保留ART源码，先语义/ABI/原始runtime.cc目标编译，再恢复完整374单元构建。"
+        },
+        {
+          "id": "05.ART.G102",
+          "title": "通用分配器流语义及ARM64验证",
+          "status": "accepted",
+          "progress": "22主机语义用例+ASan/UBSan；16 ARM64布局值及完整布局汇编一致；原runtime.cc目标编译rc0",
+          "owner": "original Kimi / deterministic host build / outer review",
+          "next_action": "G103 完整构建 runtime 273 + compiler 101；三项旧预编译错误已被独立目标检查关闭，按四门收集真实结果。"
+        },
+        {
+          "id": "05.ART.G103",
+          "title": "374单元完整生产构建",
+          "status": "superseded",
+          "progress": "历史369/374与5失败保持原记录；G109全374同配置重编通过，取代当前阻断",
+          "owner": "original Kimi / deterministic host build / outer review",
+          "next_action": "关闭G103五个真实失败消费者的共同SDK接口缺口；保持ART源码及374完整范围，先验证kernel/signal声明与C++20库契约，再恢复完整归档。"
+        },
+        {
+          "id": "05.ART.G104",
+          "title": "SDK/kernel源契约独立复核",
+          "status": "superseded",
+          "progress": "来源采集通过、解释性错误被独立退回；G105已消费纠正，G108实测关闭接口缺口",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "关闭G103五个真实失败消费者的共同SDK接口缺口；保持ART源码及374完整范围，先验证kernel/signal声明与C++20库契约，再恢复完整归档。"
+        },
+        {
+          "id": "05.ART.G105",
+          "title": "原内环接收369对象检查点",
+          "status": "accepted",
+          "progress": "原Kimi实际ACK rc0；101成员compiler归档与纠正后的源契约已消费，原图/锁不变",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "关闭G103五个真实失败消费者的共同SDK接口缺口；保持ART源码及374完整范围，先验证kernel/signal声明与C++20库契约，再恢复完整归档。"
+        },
+        {
+          "id": "05.M07.33.G108",
+          "title": "通用SDK接口与五消费者验证",
+          "status": "accepted",
+          "owner": "original Kimi + independent outer review",
+          "progress": "77主机语义用例、8 ARM64检查通过；16流布局值一致；1261依赖无未绑定",
+          "next_action": "同一输入配置完整重建374单元；目标内核/设备未验"
+        },
+        {
+          "id": "05.ART.G109",
+          "title": "完整ART生产对象与两份归档",
+          "status": "accepted",
+          "owner": "original owner + independent outer host review",
+          "progress": "374/374；runtime273/compiler101实际成员逐项哈希通过；四门rc0",
+          "next_action": "Bind accepted producer artifacts and admit final libart shared-link recipe; keep platform/runtime/device gaps explicit"
+        },
+        {
+          "id": "05.ART.G110",
+          "title": "最终Musl配置汇编常量一致性",
+          "status": "accepted",
+          "owner": "original owner + independent outer host review",
+          "progress": "两次ARM64生成180常量，与G90头字节相同；不代表boot/运行验收",
+          "next_action": "Bind accepted producer artifacts and admit final libart shared-link recipe; keep platform/runtime/device gaps explicit"
+        },
+        {
+          "id": "05.ART.G111",
+          "title": "原内环登记完整ART归档",
+          "status": "accepted",
+          "progress": "图75→78，273/101归档与SDK接口节点绑定",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "修复原内环确定性结束约束；按真实N1失败和剩余ART/boot工具释放下一有界包"
+        },
+        {
+          "id": "05.ART.G112",
+          "title": "首次完整严格链接定位缺口",
+          "status": "superseded",
+          "progress": "实际rc1，424条链接轨迹；唯一ODR缺定义后由G114闭合，原失败保留",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "修复原内环确定性结束约束；按真实N1失败和剩余ART/boot工具释放下一有界包"
+        },
+        {
+          "id": "05.ART.G113",
+          "title": "未提供统计能力的错误契约",
+          "status": "accepted",
+          "progress": "4场景/9断言ASanUBSan通过；上传仍未实现",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "修复原内环确定性结束约束；按真实N1失败和剩余ART/boot工具释放下一有界包"
+        },
+        {
+          "id": "05.ART.G114",
+          "title": "同版libart严格链接",
+          "status": "accepted",
+          "progress": "1新对象/604依赖；link rc0、425trace/32输入0未绑定；非运行验收",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "修复原内环确定性结束约束；按真实N1失败和剩余ART/boot工具释放下一有界包"
+        },
+        {
+          "id": "05.ART.G115",
+          "title": "原owner登记链接候选",
+          "status": "accepted",
+          "progress": "图78→80；runtime_eligible=false；结束控制另列失败",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "修复原内环确定性结束约束；按真实N1失败和剩余ART/boot工具释放下一有界包"
+        },
+        {
+          "id": "05.CONTROL.G115",
+          "title": "完成后仍等待的控制面回归",
+          "status": "superseded",
+          "progress": "原会话已维护重启、日志保持；确定性结束约束尚待修复",
+          "owner": "original Kimi / outer independent review",
+          "next_action": "原失败保留；G117独立证明收据后正常结束"
+        },
+        {
+          "id": "05.CONTROL.G116",
+          "title": "原内环日志、界面恢复及收据正常结束",
+          "status": "accepted",
+          "owner": "original Kimi / outer control review",
+          "next_action": "保持30秒容量监控；硬工具次数上限及完整goal自治仍未验"
+        },
+        {
+          "id": "05.N1.G117",
+          "title": "三份N1 ELF事实已验，语义分析拒收",
+          "status": "superseded",
+          "owner": "original octos-inner Kimi / Codex outer review",
+          "next_action": "原三失败保留，转G118纠正"
+        },
+        {
+          "id": "05.N1.G118",
+          "title": "N1源码解释纠正已验，运行契约仍开放",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / Codex outer review",
+          "next_action": "Inventory the original R4 dalvikvm/dex2oat tool consumers and admissible recipes against already accepted ART graph; do not execute historical Makefile patches or old boot inputs"
+        },
+        {
+          "id": "05.DALVIKVM.G123",
+          "title": "原版R4 dalvikvm对象实际编译",
+          "status": "accepted",
+          "owner": "outer host transport / original Kimi consumption",
+          "progress": "编译rc0；679依赖、0未登记；180640字节AArch64对象；未链接/运行",
+          "next_action": "核验已有R4 libnativehelper invocation导出与同版dalvikvm严格链接；再验证boot/N1/runtime，设备HOLD不变"
+        },
+        {
+          "id": "05.DALVIKVM.G124",
+          "title": "原内环接收对象独立验收",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "progress": "1真实工具/741tokens/正常回执；不提升APK或设备分母",
+          "next_action": "bind existing R4 libnativehelper build provenance and dynamic invocation exports; prepare strict same-cohort dalvikvm executable link"
+        },
+        {
+          "id": "05.DALVIKVM.G126",
+          "title": "原R4 dalvikvm64严格可执行链接",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer independent review",
+          "progress": "143248字节ARM64 PIE；16实际输入/0未登记；未运行",
+          "next_action": "核原R4 dex2oat入口与同源boot构建输入，再进入实际ART加载；设备HOLD不变"
+        },
+        {
+          "id": "05.DALVIKVM.G127",
+          "title": "原内环登记两个构建候选",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi",
+          "progress": "图80→82，旧80节点不变；新增对象/可执行候选runtime_eligible=false",
+          "next_action": "核原R4 dex2oat入口与同源boot构建输入，再进入实际ART加载；设备HOLD不变"
+        },
+        {
+          "id": "05.DEX2OAT.G128",
+          "title": "R4 dex2oat源清单与上游生成",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer host transport and independent review",
+          "progress": "21原源码/1生成源；字节独立验收，旧临时helper拒收",
+          "next_action": "核验并构建现有R4 BoringSSL的.39 ARM64原生crypto provider，再严格链接dex2oat；不重编已验22对象，不等待MacServer全部齐套，设备HOLD保留"
+        },
+        {
+          "id": "05.DEX2OAT.G130",
+          "title": "dex2oat22对象实际编译",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer host transport and independent review",
+          "progress": "22/22 ARM64 REL；1278依赖/0未登记；9438输入回读无变化",
+          "next_action": "核验并构建现有R4 BoringSSL的.39 ARM64原生crypto provider，再严格链接dex2oat；不重编已验22对象，不等待MacServer全部齐套，设备HOLD保留"
+        },
+        {
+          "id": "05.DEX2OAT.G131",
+          "title": "原内环接收并验证固定生成工具",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer host transport and independent review",
+          "progress": "1工具/794tokens；字节一致，stderr保存，正常原生回执",
+          "next_action": "核验并构建现有R4 BoringSSL的.39 ARM64原生crypto provider，再严格链接dex2oat；不重编已验22对象，不等待MacServer全部齐套，设备HOLD保留"
+        },
+        {
+          "id": "05.CRYPTO.G132",
+          "title": "R4 crypto原模块完整归档",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer host transport and independent review",
+          "progress": "378/378编译，247 C++/131汇编；1228依赖/0未登记；未验算法运行",
+          "next_action": "只读核验现有OH7.0.0.39 Release真实libc/loader与构建/镜像的来源对应，再安排有界工具启动；SDK符号接口不能代替运行库；不重编已验crypto/ART/AOT，设备HOLD保留"
+        },
+        {
+          "id": "05.DEX2OAT.G133",
+          "title": "dex2oat64严格可执行链接",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer host transport and independent review",
+          "progress": "25267288字节ARM64 PIE；52实际输入/0未登记；原Kimi1工具/737tokens",
+          "next_action": "只读核验现有OH7.0.0.39 Release真实libc/loader与构建/镜像的来源对应，再安排有界工具启动；SDK符号接口不能代替运行库；不重编已验crypto/ART/AOT，设备HOLD保留"
+        },
+        {
+          "id": "05.DEX2OAT.G134",
+          "title": "原内环登记三个构建候选",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer host transport and independent review",
+          "progress": "图82→85；旧82节点不变；全部runtime_eligible=false；1工具/707tokens",
+          "next_action": "只读核验现有OH7.0.0.39 Release真实libc/loader与构建/镜像的来源对应，再安排有界工具启动；SDK符号接口不能代替运行库；不重编已验crypto/ART/AOT，设备HOLD保留"
+        },
+        {
+          "id": "05.ENV.G136",
+          "title": "原内环核验Release元数据",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport and independent review",
+          "progress": "G136固定脚本1调用；清单520项一致，127338构建记录中4607含musl标识，仅元数据接受",
+          "next_action": "审查原R4 dex2oat帮助/主入口及构造路径，再做一次同19ELF/.39镜像运行库的有界工具启动；不重编已验产物，不把加载清单通过当成ART/boot/APK通过"
+        },
+        {
+          "id": "05.ENV.G137",
+          "title": "精确运行库与镜像对应",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport and independent review",
+          "progress": "镜像加载器对应sp变体；镜像/SDK C++各24有效节相同；1工具/621tokens",
+          "next_action": "审查原R4 dex2oat帮助/主入口及构造路径，再做一次同19ELF/.39镜像运行库的有界工具启动；不重编已验产物，不把加载清单通过当成ART/boot/APK通过"
+        },
+        {
+          "id": "05.RUNTIME.G138",
+          "title": "首次真实加载器解析与重定位",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport and independent review",
+          "progress": "隔离主机.39 loader --list rc0；19ELF/18共享库，stderr0；ART入口未运行",
+          "next_action": "审查原R4 dex2oat帮助/主入口及构造路径，再做一次同19ELF/.39镜像运行库的有界工具启动；不重编已验产物，不把加载清单通过当成ART/boot/APK通过"
+        },
+        {
+          "id": "05.RUNTIME.G139",
+          "title": "原内环接收加载证据",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport and independent review",
+          "progress": "1工具/829tokens实际ACK；完整工具/ART/boot/设备不提升",
+          "next_action": "审查原R4 dex2oat帮助/主入口及构造路径，再做一次同19ELF/.39镜像运行库的有界工具启动；不重编已验产物，不把加载清单通过当成ART/boot/APK通过"
+        },
+        {
+          "id": "05.RUNTIME.G140",
+          "title": "原版dex2oat CLI实际运行",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer transport and independent review",
+          "progress": "Usage源码约定rc1；同19ELF，30项输入复核",
+          "next_action": "先验证现有.39 SDK ARM64 lldb-server，再用同20ELF/7JAR捕获首个SIGSEGV的真实PC/调用栈；未定位前不改ART、不重编已验对象，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G141",
+          "title": "首次核心编译真实缺库",
+          "status": "failed",
+          "owner": "original octos-inner Kimi / existing outer transport and independent review",
+          "progress": "rc139，动态Palette缺项；后续G143已越过本错误",
+          "next_action": "先验证现有.39 SDK ARM64 lldb-server，再用同20ELF/7JAR捕获首个SIGSEGV的真实PC/调用栈；未定位前不改ART、不重编已验对象，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G142",
+          "title": "同版动态Palette输入核验",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer transport and independent review",
+          "progress": "缓存readelf/nm证据确认默认版本导出；纠正检查器，不重编",
+          "next_action": "先验证现有.39 SDK ARM64 lldb-server，再用同20ELF/7JAR捕获首个SIGSEGV的真实PC/调用栈；未定位前不改ART、不重编已验对象，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G143",
+          "title": "实际ART初始化段错误",
+          "status": "blocked",
+          "owner": "original octos-inner Kimi / existing outer transport and independent review",
+          "progress": "已进heap GC初始化；SIGSEGV/139；7VDEX中间件、7空OAT、0ART，镜像验收0",
+          "next_action": "先验证现有.39 SDK ARM64 lldb-server，再用同20ELF/7JAR捕获首个SIGSEGV的真实PC/调用栈；未定位前不改ART、不重编已验对象，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G144",
+          "title": "原内环消费首错与下一步",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer transport and independent review",
+          "progress": "1工具/991tokens，原owner收据及正常turn结束已验",
+          "next_action": "先验证现有.39 SDK ARM64 lldb-server，再用同20ELF/7JAR捕获首个SIGSEGV的真实PC/调用栈；未定位前不改ART、不重编已验对象，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G148",
+          "title": "调试协议故障已定位",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport",
+          "progress": "独立无ART夹具22消息，确认无inferior时的连接停滞",
+          "next_action": "在同20ELF/7JAR的首个内核SIGSEGV停止点采集本次/proc映射和原始栈；核验ELF基址并符号化调用来源，未定位前不改ART/GC/ABI，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G149",
+          "title": "内核加载器入口夹具",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport",
+          "progress": "SDK LLDB rc0，SIGSTOP/_dlstart偏移0x81440；无ART启动",
+          "next_action": "在同20ELF/7JAR的首个内核SIGSEGV停止点采集本次/proc映射和原始栈；核验ELF基址并符号化调用来源，未定位前不改ART/GC/ABI，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G150",
+          "title": "真实第一SIGSEGV已捕获",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport",
+          "progress": "首信号采集已验；映射缺口由G154闭合，运行失败仍在PC0节点",
+          "next_action": "同组产物停在已加载主入口，读取libart的emutls GOT槽并核对实际指向；再限定观察TLS返回边界。当前仅候选，不改ART/GC/ABI；设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G151",
+          "title": "原内环已消费内核故障",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / existing outer host transport",
+          "progress": "1工具/975tokens，原session真实完成并更新CURRENT",
+          "next_action": "在同20ELF/7JAR的首个内核SIGSEGV停止点采集本次/proc映射和原始栈；核验ELF基址并符号化调用来源，未定位前不改ART/GC/ABI，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G152",
+          "title": "输入截断派工已中断",
+          "status": "superseded",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "4KB输入截断导致8次读取；无代码，拒收并缩小G153任务",
+          "next_action": "同组产物停在已加载主入口，读取libart的emutls GOT槽并核对实际指向；再限定观察TLS返回边界。当前仅候选，不改ART/GC/ABI；设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G153",
+          "title": "诊断采集器纠正后通过",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "原Kimi提案39/41失败；独立纠正后45/45断言，只验采集工具",
+          "next_action": "同组产物停在已加载主入口，读取libart的emutls GOT槽并核对实际指向；再限定观察TLS返回边界。当前仅候选，不改ART/GC/ABI；设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G154",
+          "title": "同次故障映射与地址归属",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "139maps/20ELF，PC/LR/FP0；raw stack仍非调用链",
+          "next_action": "同组产物停在已加载主入口，读取libart的emutls GOT槽并核对实际指向；再限定观察TLS返回边界。当前仅候选，不改ART/GC/ABI；设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G155",
+          "title": "TLS唯一动态提供者已查明",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "该批唯一动态定义在同版C++库；其主入口前实际绑定后来由G157验明",
+          "next_action": "同组产物停在已加载主入口，读取libart的emutls GOT槽并核对实际指向；再限定观察TLS返回边界。当前仅候选，不改ART/GC/ABI；设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G156",
+          "title": "原内环已消费映射和TLS证据",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "历史1工具/746tokens消费；后续G157/G158已完成",
+          "next_action": "同组产物停在已加载主入口，读取libart的emutls GOT槽并核对实际指向；再限定观察TLS返回边界。当前仅候选，不改ART/GC/ABI；设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.PC0",
+          "title": "核心镜像运行仍故障",
+          "status": "blocked",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "真实SIGSEGV/PC0仍在；主入口前GOT一致已验，实际前一跳转/返回来源未知",
+          "next_action": "G157已证明主入口前GOT及机器码一致，不重放。先用已封存反汇编/寄存器筛除不匹配候选，再封存一次限定TLS返回边界或其他OS边界的区分观察；不改ART/GC/ABI，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G157",
+          "title": "主入口前TLS绑定已核实",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "91映射，GOT与16字节机器码一致；109输入重验，仅诊断通过",
+          "next_action": "G157已证明主入口前GOT及机器码一致，不重放。先用已封存反汇编/寄存器筛除不匹配候选，再封存一次限定TLS返回边界或其他OS边界的区分观察；不改ART/GC/ABI，设备HOLD。"
+        },
+        {
+          "id": "05.RUNTIME.G158",
+          "title": "原内环已消费绑定与交付预期",
+          "status": "accepted",
+          "owner": "original octos-inner Kimi / outer isolated host transport",
+          "progress": "1固定工具/1060tokens；原会话真实完成",
+          "next_action": "G157已证明主入口前GOT及机器码一致，不重放。先用已封存反汇编/寄存器筛除不匹配候选，再封存一次限定TLS返回边界或其他OS边界的区分观察；不改ART/GC/ABI，设备HOLD。"
+        },
+        {
+          "id": "05.A86.SOURCE-DEVICE",
+          "title": "86工具快速首轮与两台授权真机验证",
+          "status": "active",
+          "next_action": "完成已补取N1/compat就绪配方，G177至多6路实际构建；回收旧版双机结果",
+          "progress": "16项源码构建已验、9项限定原生检查；19项实际尝试，67未跑；86输入核查完成"
+        }
+      ],
+      "progress_scope": "原86源码16/86、限定原生真机9项；全部86输入已核查，实际尝试19；core镜像0、OH7 APK0/10",
+      "claim_ids": [
+        "NP-MUSL16-ART-024",
+        "NP-MUSL16-APK-025-A",
+        "NP-MUSL16-APK-025-B",
+        "NP-MUSL16-APK-025-C"
+      ]
+    },
+    {
+      "step_id": "06",
+      "lane": "lane-musl",
+      "phase": 1,
+      "title": "Musl 扩展30 APK",
+      "status": "superseded",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Preserve Musl history; optional comparison only, not a Bionic prerequisite"
+    },
+    {
+      "step_id": "07",
+      "lane": "lane-musl",
+      "phase": 1,
+      "title": "Musl 基线报告",
+      "status": "superseded",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Preserve Musl history; optional comparison only, not a Bionic prerequisite"
+    },
+    {
+      "step_id": "08",
+      "lane": "lane-bionic",
+      "phase": 2,
+      "title": "AOSP/OH 版本差异矩阵",
+      "status": "active",
+      "blocked_by": [],
+      "claim_id": "NP-BIONIC-PRE-011",
+      "owner": "bionic-version-matrix",
+      "last_evidence": "/kanban/public-projection.md",
+      "next_action": "Exact Bionic inputs and 89 tool disposition review",
+      "progress_scope": "历史/声明清单已回收；不是Bionic当前构建或真机通过"
+    },
+    {
+      "step_id": "09",
+      "lane": "lane-bionic",
+      "phase": 2,
+      "title": "单 Bionic 进程边界",
+      "status": "active",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Admit minimum production Bionic libc/CRT source and actual recipe"
+    },
+    {
+      "step_id": "10",
+      "lane": "lane-bionic",
+      "phase": 2,
+      "title": "OH provider/bridge 契约",
+      "status": "active",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Prepare installation and service contracts in parallel; device actions require per-package admission"
+    },
+    {
+      "step_id": "11",
+      "lane": "lane-bionic",
+      "phase": 2,
+      "title": "Bionic 10→30 APK 切片",
+      "status": "blocked",
+      "blocked_by": [
+        "BIONIC-BASELINE-INPUTS",
+        "BIONIC-PROCESS-AND-SERVICE-CONTRACT",
+        "CURRENT-DEVICE-POLICY"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Prepare graphics/input independently; runtime integration consumes actual B1/B2 receipts"
+    },
+    {
+      "step_id": "12",
+      "lane": "lane-api",
+      "phase": 3,
+      "title": "AOSP16 R4 完整 AIDL 清单",
+      "status": "planned",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Release independent exact-source/API contract slices when ready; no Musl dependency"
+    },
+    {
+      "step_id": "13",
+      "lane": "lane-api",
+      "phase": 3,
+      "title": "10 APK 方法关联与 DAG",
+      "status": "planned",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Release independent exact-source/API contract slices when ready; no Musl dependency"
+    },
+    {
+      "step_id": "14",
+      "lane": "lane-api",
+      "phase": 3,
+      "title": "逐方法契约卡",
+      "status": "planned",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Release independent exact-source/API contract slices when ready; no Musl dependency"
+    },
+    {
+      "step_id": "15",
+      "lane": "lane-api",
+      "phase": 3,
+      "title": "AMS/PMS/WMS 核心与全部方法",
+      "status": "blocked",
+      "blocked_by": [
+        "ENV-READY",
+        "14",
+        "device_write"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "等待 ENV-READY, 14, device_write；条件通过后按原DAG释放本步骤"
+    },
+    {
+      "step_id": "16",
+      "lane": "lane-api",
+      "phase": 3,
+      "title": "功能门后删除重复服务",
+      "status": "blocked",
+      "blocked_by": [
+        "ENV-READY",
+        "15"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "等待 ENV-READY, 15；条件通过后按原DAG释放本步骤"
+    },
+    {
+      "step_id": "17",
+      "lane": "outer",
+      "phase": 4,
+      "title": "Musl vs Bionic 早期对照",
+      "status": "planned",
+      "blocked_by": [],
+      "claim_id": null,
+      "owner": "outer",
+      "last_evidence": null,
+      "next_action": "Compare any actual applicable Musl/Bionic pair; record unavailable comparisons separately, never gate Bionic work or publication",
+      "substeps": [
+        {
+          "id": "17-PREP",
+          "title": "明确同APK与测量契约",
+          "status": "ready",
+          "owner": "comparison owner / next ready slot",
+          "progress": "只读准备，无须先完成10个APK",
+          "next": "固定样本hash、场景、采集指标及版本变化变量"
+        },
+        {
+          "id": "17-PAIR",
+          "title": "首个有效证据对",
+          "status": "blocked",
+          "owner": "musl-owner + bionic-owner",
+          "progress": "Musl当前runtime差异已实测；Bionic本轮运行证据未交",
+          "next": "各自完成同一APK一次有效运行采集后按对比较"
+        },
+        {
+          "id": "17-ACCEPT",
+          "title": "整步验收",
+          "status": "blocked",
+          "owner": "outer",
+          "progress": "核心样本齐全才验收整步",
+          "next": "汇齐规定样本，不把整步完成作为首跑门"
+        }
+      ]
+    },
+    {
+      "step_id": "18",
+      "lane": "outer",
+      "phase": 4,
+      "title": "Android vs Bionic 后期对照",
+      "status": "blocked",
+      "blocked_by": [
+        "ENV-READY",
+        "02",
+        "11",
+        "15"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "等待 ENV-READY, 02, 11, 15；条件通过后按原DAG释放本步骤"
+    },
+    {
+      "step_id": "19",
+      "lane": "outer",
+      "phase": 4,
+      "title": "测量集与性能阈值人审",
+      "status": "blocked",
+      "blocked_by": [
+        "18",
+        "performance_threshold"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Measure Android/Bionic performance and apply user-confirmed thresholds; step17 optional and not a gate"
+    },
+    {
+      "step_id": "20",
+      "lane": "outer",
+      "phase": 4,
+      "title": "10 APK 核心版发布门",
+      "status": "blocked",
+      "blocked_by": [
+        "BIONIC-10APK",
+        "AMS-PMS-WMS-CONTRACTS",
+        "core_release"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Accept Bionic 10 APK and core service contracts, then original core publication gate; no Musl prerequisite"
+    },
+    {
+      "step_id": "21",
+      "lane": "outer",
+      "phase": 4,
+      "title": "30 APK / 全 AIDL 最终门",
+      "status": "blocked",
+      "blocked_by": [
+        "BIONIC-30APK",
+        "AIDL-API-LEDGER",
+        "18",
+        "19",
+        "20",
+        "final_release"
+      ],
+      "claim_id": null,
+      "owner": null,
+      "last_evidence": null,
+      "next_action": "Accept original 30 APK/API scope and Android comparison/performance evidence, then original final publication gate; no Musl prerequisite"
+    }
+  ],
+  "lane_preparation": {
+    "lane-musl": {
+      "status": "superseded",
+      "summary": "Musl 历史结果保留，非 Bionic 前置",
+      "last_evidence_at": "2026-10-02T01:49:54.583049+00:00",
+      "next_action": "只读消费经版本核验的适用历史证据",
+      "checklist": [
+        {
+          "id": "M-PRE-READ",
+          "title": "源码读取权限",
+          "status": "accepted",
+          "owner": "outer",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T12:42:01.052535+00:00",
+          "next_action": "已解除，不重复调查"
+        },
+        {
+          "id": "M-PRE-STATIC",
+          "title": "静态契约29项",
+          "status": "accepted",
+          "owner": "outer",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T12:42:01.052535+00:00",
+          "next_action": "29/29通过，仅静态范围"
+        },
+        {
+          "id": "M-PRE-IDENTITY",
+          "title": "源码与dirty归属",
+          "status": "accepted",
+          "owner": "musl-owner",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00",
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "blocked_by": []
+        },
+        {
+          "id": "M-PRE-BUILD",
+          "title": "按产物绑定Mac/AlexPC工具链与命令",
+          "status": "ready",
+          "owner": "musl-owner",
+          "blocked_by": [],
+          "next_action": "当前复现复用6件已定位产物，无需把重编设置为首样本前置；重编按将来变更触发",
+          "evidence": "/kanban/public-projection.md"
+        },
+        {
+          "id": "M-PRE-OVERLAY",
+          "title": "7件精确参考runtime已用于首样例",
+          "status": "accepted",
+          "owner": "musl-owner",
+          "blocked_by": [],
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00"
+        },
+        {
+          "id": "M-PRE-DEVICE",
+          "title": "D600归属、镜像与恢复",
+          "status": "accepted",
+          "owner": "hardware-admin",
+          "blocked_by": [],
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00"
+        },
+        {
+          "id": "M-PRE-ENV",
+          "title": "Musl首样本操作输入放行",
+          "status": "accepted",
+          "owner": "outer",
+          "blocked_by": [],
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00"
+        },
+        {
+          "id": "M-PRE-CLI",
+          "title": "现有Harness真实CLI入口",
+          "status": "accepted",
+          "owner": "outer",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T12:52:27.174152+00:00",
+          "next_action": "--help rc0；绑定APK与runtime路径后生成实际复现argv"
+        },
+        {
+          "id": "M-PRE-SHARED-READ",
+          "title": "原Kimi读取共享版本源码并启动固定工具链",
+          "status": "accepted",
+          "owner": "original octos-inner / outer review",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-10-01T22:18:43.302552+00:00",
+          "next_action": "已验；继续同一M07.33，不重试旧EPERM或dyld失败。"
+        }
+      ]
+    },
+    "lane-bionic": {
+      "status": "active",
+      "summary": "Bionic 基座输入绑定、89 项处置、安装服务与图形契约并行",
+      "last_evidence_at": "2026-09-29T19:57:53.031910+00:00",
+      "next_action": "最小生产 Bionic 源树身份准入后释放真实构建包"
+    },
+    "lane-api": {
+      "status": "ready",
+      "summary": "现有APK元数据已验；本体核验与方法输入绑定排入下一空槽。"
+    }
+  },
+  "environment_gate": {
+    "gate_id": "ENV-READY",
+    "revision": 3,
+    "status": "hold",
+    "doc": "/kanban/public-projection.md",
+    "checks": [
+      {
+        "check_id": "E00",
+        "title": "控制面、预算、等待与恢复",
+        "status": "active",
+        "owner": "octos-inner coordinator",
+        "verified_progress": "已复现stdin共享导致errno35；原goal/累计保留",
+        "next_action": "执行CTRL006 gen3隔离修复和协议回归；验证恢复/等待",
+        "claim_id": "NP-ENV-CTRL-006",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E01",
+        "title": "目录与源码身份",
+        "status": "review",
+        "owner": "musl-owner + bionic-owner",
+        "verified_progress": "源码可读已核；Musl HEAD实际...31b478，gen2笔误待修；29项静态直接rc0",
+        "next_action": "外环核源码/dirty归属与提交、快照来源及哈希",
+        "claim_id": "NP-MUSL-PRE-010",
+        "observed_at": "2026-09-29T12:42:01.052535+00:00"
+      },
+      {
+        "check_id": "E02",
+        "title": "目标版本、ABI与工具链",
+        "status": "ready",
+        "owner": "musl-owner + bionic-owner",
+        "verified_progress": "Musl固定OH6.1.0.31/aarch64，3台实际读回；Bionic覆盖AOSP16R4/ARM64/OH7单独核",
+        "next_action": "按lane绑定实际版本；目标版本不能冒充当前产物",
+        "claim_id": "NP-BIONIC-PRE-011",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E03",
+        "title": "在线D600身份与健康",
+        "status": "review",
+        "owner": "hardware-admin",
+        "verified_progress": "13:27Z三台OH6.1现有同SHA HelloWorld；候选5cd16e92由硬件peer读回",
+        "next_action": "所选设备当前占用/物理映射复核；其他设备变化不阻断此台",
+        "claim_id": "NP-DEVICE-DISPLAY-009",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E04",
+        "title": "D600归属与隔离",
+        "status": "ready",
+        "owner": "hardware-admin",
+        "verified_progress": "已有8台用途方案，物理编号与新旧lease未闭合",
+        "next_action": "合并真实serial和占用；处理旧HOLD/配置漂移",
+        "claim_id": "NP-ENV-DEVICE-005",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E05",
+        "title": "本次设备配置与参考运行时",
+        "status": "blocked",
+        "owner": "hardware-admin + bionic-owner",
+        "verified_progress": "指定6.1板原APK匹配；当前7件运行时全部不匹配，dry-run rc1；本机8件输入全部匹配",
+        "next_action": "由现有设备owner复核七件恢复操作，再按当前boot复验。不是缺APK/源码，也不等10APP。",
+        "claim_id": "NP-ENV-DEVICE-005",
+        "observed_at": "2026-09-30T00:47:07.118188+00:00"
+      },
+      {
+        "check_id": "E06",
+        "title": "当前样本身份与场景",
+        "status": "ready",
+        "owner": "octos-inner coordinator / 下一空槽",
+        "verified_progress": "设备已安装HelloWorld与参考同SHA，bundleType10/MainActivity正确",
+        "next_action": "首跑使用当前样本；10/30APK结果属于后续验收",
+        "claim_id": "NP-PREP-002",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E07",
+        "title": "主机、构建与网络资源",
+        "status": "active",
+        "owner": "musl-owner",
+        "verified_progress": "用户确认Mac/AlexPC均可用；Mac真实CLI和OH Clang15.0.4参数展开已核",
+        "next_action": "按实际产物绑定源码/runtime输入与选定主机构建argv；不继承无关旧新功能门",
+        "claim_id": "NP-MUSL-PRE-010",
+        "observed_at": "2026-09-29T12:52:27.174152+00:00"
+      },
+      {
+        "check_id": "E08",
+        "title": "三lane资源和写集",
+        "status": "review",
+        "owner": "octos-inner coordinator",
+        "verified_progress": "三peer限定写集和真实并行已证明",
+        "next_action": "补API lane与build OUT_DIR/TMPDIR等资源隔离表",
+        "claim_id": "NP-ENV-MGMT-008",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E09",
+        "title": "备份、回退与失联恢复",
+        "status": "ready",
+        "owner": "hardware-admin",
+        "verified_progress": "回退要求已定，现有恢复材料需核",
+        "next_action": "核原镜像/工具/校验和恢复负责人；不诱发故障",
+        "claim_id": "NP-ENV-DEVICE-005",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E10",
+        "title": "验收及证据采集环境",
+        "status": "ready",
+        "owner": "octos-inner coordinator",
+        "verified_progress": "已有独立收据流程，部分测试rc曾被管道掩盖",
+        "next_action": "交真实rc采集、同代输入绑定、时钟和冷启动观测契约",
+        "claim_id": "NP-ENV-MGMT-008",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E11",
+        "title": "操作边界与环境放行",
+        "status": "blocked",
+        "owner": "outer",
+        "verified_progress": "现有授权已记录；当前仍有前置风险/unknown",
+        "next_action": "签发具体lane/action范围收据；不要求未来APK或镜像运行结果",
+        "claim_id": "ENV-READY",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      },
+      {
+        "check_id": "E12",
+        "title": "备忘录Kimi/GLM API池实测、隔离与轮换",
+        "status": "ready",
+        "owner": "POOL007 owner / 下一空槽",
+        "verified_progress": "已有指纹分类和mock；原生接入尚未通过",
+        "next_action": "接续outer POOL007 review-01的原生轮换/隔离缺口",
+        "claim_id": "NP-ENV-POOL-007",
+        "observed_at": "2026-09-29T12:33:44.372904+00:00"
+      }
+    ]
+  },
+  "pending_user_decisions": [],
+  "public_baseline_summary": {
+    "musl": {
+      "source": "MacServer westlake-harness完整副本；GitHub历史参考保留",
+      "commit_short": "d8a3ac9e",
+      "oh": "OH7.0.0.39",
+      "scope": "历史 58/89 尝试、38/89 源码接受、12 限定原生、0 整工具；不继承为 Bionic 通过",
+      "public_doc": "/kanban/public-projection.md",
+      "aosp": "AOSP16 R4",
+      "abi": "ARM64"
+    },
+    "bionic": {
+      "aosp": "AOSP16 R4",
+      "abi": "ARM64",
+      "oh": "OH7.0.0.39",
+      "relationship": "当前主线；适用历史可复用，无 Musl 首跑前置",
+      "public_doc": "/kanban/public-projection.md"
+    }
+  }
+}

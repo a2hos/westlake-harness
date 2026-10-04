@@ -1,0 +1,23 @@
+{
+  "schema": "g321-tor-browser-root-official-host-raw-admission-v1",
+  "at_utc": "2026-10-04T17:48:15+00:00",
+  "decision": "ACCEPT_ONE_EXACT_OFFICIAL_AARCH64_APK_HOST_RAW_ONLY",
+  "package": "org.torproject.torbrowser",
+  "version_name": "15.0.24 (140.17.0esr)",
+  "version_code": "2016187202",
+  "apk_sha256": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+  "apk_bytes": 111113963,
+  "signer_cert_sha256": "20061f045e737c67375c17794cfedb436a03cec6bacb7cb9f96642205ca2cec8",
+  "candidate_sha256": "5a93489b4f00fec831c2188273c9b960c266da7984ea28bed902380a72d4523e",
+  "independent_peer_sha256": "ea4b9bd1bce98c480a3eb07d36bc652771d0f7dc755baf2f9519331e2ba930aa",
+  "accepted_raw_before": 97,
+  "accepted_raw_after": 98,
+  "basis": "Exact stable aarch64 href on Tor Project Android page, HTTPS GET HTTP 200/TLS verified, 2031 ZIP entries CRC valid, package/version and APK signature verified, 19 true ARM64 ELF, no accepted-raw duplicate.",
+  "limits": "Detached publisher .asc was not independently verified; acceptance is exact host raw only. Full semantic static scan, source-property classification, target build, install, cold start and display are separate gates.",
+  "full_static_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

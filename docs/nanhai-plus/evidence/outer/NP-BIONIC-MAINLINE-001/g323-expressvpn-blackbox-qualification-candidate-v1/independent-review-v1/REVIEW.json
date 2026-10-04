@@ -1,0 +1,50 @@
+{
+  "schema": "g323-expressvpn-blackbox-qualification-independent-review-v1",
+  "decision": "GO_ONE_PACKAGE_QUALIFICATION_ONLY",
+  "candidate_sha256": "06628764353074266d215902287b20034458548da78d3e096b2f6d5a8476bbdf",
+  "review_scope": "Independent read-only review of one package's overseas-mainstream blackbox test eligibility; no ledger admission or runtime claim",
+  "package": "com.expressvpn.vpn",
+  "version_name": "12.80.1",
+  "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+  "root_raw_binding": {
+    "receipt_sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364",
+    "decision": "ACCEPT_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+    "package_version_apk_sha_match": true
+  },
+  "publisher_chain": {
+    "official_page": "https://www.expressvpn.com/vpn-download/android-vpn-asia",
+    "page_link": "https://www.expressvpn.com/download-android-apk",
+    "redirected_apk": "https://www.expressvpn.works/clients/android/expressvpn_android_12.80.1.12800140.2495292_release_website.apk",
+    "observation": "Captured official page href and HTTP/TLS-successful APK download are bound by the root-raw receipt to the APK manifest and observed signer; there is no independently pinned publisher certificate."
+  },
+  "market_evidence": {
+    "url": "https://play.google.com/store/apps/details?id=com.expressvpn.vpn&hl=en_US",
+    "captured_body_sha256": "047bee880d5550b6d9371600fc3c8539a171c99843d8fca39d062b220b1cef5e",
+    "same_package": true,
+    "publisher": "ExpressVPN",
+    "downloads": "100M+",
+    "interpretation": "Cumulative Play listing downloads for this package/product; not downloads of exact APK version and not a country-specific count."
+  },
+  "public_client_source": {
+    "scope_receipt_sha256": "c3207dbde7b82bd825ce12cad51459f9e07ef2af76cd4470cf32b89f1740d344",
+    "bounded_result": "Official-public GitHub organization and exact-package repository searches did not establish a complete buildable Android client for this package/version. Public Lightway and other component repositories are not the complete app source.",
+    "limit": "This does not prove global or private source nonexistence."
+  },
+  "uniqueness": {
+    "task_summary_sha256": "2d6a2a46996148b4a57ca46c04f5b39faa706678714ed00e393a888737c0c081",
+    "qualified_blackbox_before": 15,
+    "package_absent_from_15": true,
+    "review_count_delta": 0
+  },
+  "compatibility_risk": "APK targetSdkVersion 37 exceeds the AOSP16 API 36 baseline. This is a test risk and requires later compatibility observation; it is not an observed installation or startup failure.",
+  "claim_boundary": {
+    "eligible_for_one_blackbox_test_package": true,
+    "static_test_pass": false,
+    "install_pass": false,
+    "startup_pass": false,
+    "device_pass": false,
+    "ledger_changed": false
+  },
+  "verification": "23 independent local checks passed: candidate and bound evidence SHA, root raw identity, official capture, Play package/publisher/download interpretation, bounded source scope, current 15-package nonoverlap, targetSdk risk, and receipt controls.",
+  "review_actions": "Read local frozen evidence and wrote this REVIEW.json only; no network, SSH, device, container, or authoritative-count mutation."
+}

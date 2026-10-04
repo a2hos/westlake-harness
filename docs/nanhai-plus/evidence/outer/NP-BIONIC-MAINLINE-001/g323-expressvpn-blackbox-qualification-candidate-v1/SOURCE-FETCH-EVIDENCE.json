@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-10-04T17:56:04.030015+00:00",
+  "candidate_sha256": "06628764353074266d215902287b20034458548da78d3e096b2f6d5a8476bbdf",
+  "play_exact_package_raw_sha256": "047bee880d5550b6d9371600fc3c8539a171c99843d8fca39d062b220b1cef5e",
+  "publisher_page_raw_sha256": "e2fdb214bdd5257b5adddc09764bf1535de336cfe974ddfdc23a981eaff9d344",
+  "requests": [
+    {
+      "body_sha256": "c2a8a2fcb3d302c3df2212546df23e4e3d0e47bad2a8ec2e90651ca547bc7d9f",
+      "headers_sha256": "133f14537ae3a708b8f9368240335f4b64e4e42bff5779738e2249d9db1acf18",
+      "http_code": 200,
+      "kind": "official_github_org",
+      "observed_rc": 0,
+      "tls_verify_result": 0,
+      "url": "https://github.com/expressvpn"
+    },
+    {
+      "body_sha256": "fbf0199f1e42247442d915bd5dd748c75ebe730fe5a1ab1c161b9ac06bf56b25",
+      "headers_sha256": "eaa70ef46f46584902eaf84c3c7f806fa103a1ad27e4c99ba3b543ba3d228e62",
+      "http_code": 200,
+      "kind": "official_public_repos",
+      "observed_rc": 0,
+      "tls_verify_result": 0,
+      "url": "https://api.github.com/orgs/expressvpn/repos?per_page=100&type=public"
+    },
+    {
+      "body_sha256": "08c082fdf7ca87ba911a2aabb0f0cf2d3e482a6feeaac9713e4578c20b2600b2",
+      "headers_sha256": "cf7a242c68990b1bb347e1af4680f1979b59ce9f411112dc29dcdca2ef6c4d4c",
+      "http_code": 200,
+      "kind": "official_org_android_repository_search",
+      "observed_rc": 0,
+      "tls_verify_result": 0,
+      "url": "https://api.github.com/search/repositories?q=org%3Aexpressvpn+android&per_page=100"
+    },
+    {
+      "body_sha256": "08c082fdf7ca87ba911a2aabb0f0cf2d3e482a6feeaac9713e4578c20b2600b2",
+      "headers_sha256": "74df5b3616b741e6b148964f74baac77ebd868f194f668aabb9e1539923397cf",
+      "http_code": 200,
+      "kind": "exact_package_repository_search",
+      "observed_rc": 0,
+      "tls_verify_result": 0,
+      "url": "https://api.github.com/search/repositories?q=%22com.expressvpn.vpn%22&per_page=100"
+    },
+    {
+      "body_sha256": "9a3dad7c560094bf2a3c0655af81d15ed55337af508fb8918bb02510493dcf6c",
+      "headers_sha256": "c21be13ced5fd0e42a9c3b15bef348a3f6ca1afeb7a7b2f728711a83f046fc2a",
+      "http_code": 200,
+      "kind": "publisher_lightway_partial_source",
+      "observed_rc": 0,
+      "tls_verify_result": 0,
+      "url": "https://www.expressvpn.com/news-pr/expressvpn-launches-lightway-for-all-open-sources-code-and-publishes-new-third-party-audit"
+    }
+  ],
+  "schema": "g323-expressvpn-source-fetch-evidence-v1",
+  "scope": "bounded primary-source raw captures, no claim of exhaustive global source availability"
+}

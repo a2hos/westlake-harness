@@ -1,0 +1,46 @@
+{
+  "schema": "EVO-0042-mixed-ABI-classification-contract-v1",
+  "at_utc": "2026-10-04T17:43:19.023353+00:00",
+  "start_monotonic_ns": 750142680079208,
+  "end_monotonic_ns": 750190841985708,
+  "elapsed_seconds": 48.1619065,
+  "limit_seconds": 120,
+  "within_limit": true,
+  "actual_result_groups": [
+    {
+      "name": "TikTok official raw",
+      "evidence_sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4",
+      "finding": "One full official APK includes mixed native payload: arm64, arm32 and non-ELF .so paths."
+    },
+    {
+      "name": "TikTok blackbox qualification",
+      "evidence_sha256": "6a81fdb38b05fa88343a6e6b75a819c82d058d3ce94b36ec9c7b9e9381223a64",
+      "finding": "Package-level qualification is separate from scanner result and startup."
+    },
+    {
+      "name": "TikTok static v1",
+      "evidence_sha256": "de1b18a08639b441583c237131d610cfb608fc34ac7a7e03d109c1bfc7981e63",
+      "finding": "ELF rc2 from all-ELF-is-arm64 assertion; DEX phase did not run."
+    },
+    {
+      "name": "TikTok static v2",
+      "evidence_sha256": "84c4ab9294cc5cf9c401b6a636247786df1cc14c5808e0e135cb4883c4f3d683",
+      "finding": "ABI-aware ELF phase and DEX phase rc0; no authoritative count in candidate."
+    }
+  ],
+  "one_improvement": "Add a content-based .so partition contract before expensive ELF scanning: exact ZIP .so member set must be exhaustively and disjointly classified as supported ARM64 ELF, ARM32 ELF, or named non-ELF; unknown ABI/missing/duplicate/mislabeled entries fail before scan. Hand each ABI subset to the correct scanner.",
+  "pilot_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/PILOT.json",
+  "pilot_sha256": "4fa785851d775846cc21394f5411ed9e12b2b12f9529103cb03bc9aa9d9bd1d6",
+  "pilot_source_sha256": "d7e9ccb1a2f24339092313f5ba690694d134f8d4ac8713c89c5a4b7f9bc565e2",
+  "pilot_result": "Real 456-member TikTok partition PASS (227 ARM64, 225 ARM32, 4 non-ELF); three negative mutations reject wrong-arm64, fake-ELF, and omitted member.",
+  "promotion_gate": "Candidate only. Another agent must review this pilot and apply as a separate small scanner-preflight change; require the same actual TikTok partition, all negative fixtures, then a second distinct mixed-ABI APK and unchanged source/phase guards before promoting to default across portfolio.",
+  "limits": "The pilot checks ZIP names and first 64 bytes, not ELF semantic readelf success or nested archives; v2 scanner remains the runtime source for full static results. No production runner or ledger changed.",
+  "side_effects": {
+    "network": 0,
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "production_writes": 0,
+    "count_writes": 0
+  }
+}

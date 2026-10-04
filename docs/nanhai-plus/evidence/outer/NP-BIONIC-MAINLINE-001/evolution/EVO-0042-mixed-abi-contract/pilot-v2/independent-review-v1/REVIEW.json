@@ -1,0 +1,70 @@
+{
+  "schema": "evo42-mixed-abi-pilot-v2-independent-review-v1",
+  "reviewed_at_utc": "2026-10-04T17:47:08Z",
+  "decision": "GO_PILOT_ONLY_NO_PRODUCTION_PROMOTION",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot-v2/CANDIDATE.json",
+    "sha256": "4843eea1a227d2fcfbc3334e87462b07c5d558f7a2a712dab7abbe1ac6977048"
+  },
+  "scope": "Offline local method pilot only; no production scanner integration, authoritative count change, network, SSH, device, container or namespace use.",
+  "evidence_checks": {
+    "candidate_sha256_match": true,
+    "six_frozen_evidence_sha256_match": true,
+    "four_current_input_sha256_match": true,
+    "result_cases_equal_required": true,
+    "source_pre_post_equal_reported_by_pilot": true,
+    "current_input_sha256_still_match": true,
+    "candidate_reported_pilot_rc": 0,
+    "stderr_empty": true
+  },
+  "raw_zip_member_order": {
+    "source": "rows_from_zip iterates ZipInfo in infolist order and returns a list without collapsing duplicate names.",
+    "guard": "gate compares len(raw_names) with len(set(raw_names)) before observed=dict(raw_rows).",
+    "synthetic_duplicate_result_reproduced": "REJECT_DUPLICATE_MEMBER",
+    "duplicate_guard_before_dict": true
+  },
+  "real_inputs_rechecked": {
+    "tiktok": {
+      "sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+      "so_rows": 456,
+      "duplicate_so_names": 0,
+      "arm64_elf": 227,
+      "arm32_elf": 225,
+      "non_elf_so": 4,
+      "gate": "PASS_PARTITION"
+    },
+    "capcut": {
+      "sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+      "so_rows": 292,
+      "duplicate_so_names": 0,
+      "arm64_elf": 146,
+      "arm32_elf": 145,
+      "unexpected_elf_abi": 1,
+      "unexpected_path": "lib/arm64-v8a/libcvt.so",
+      "gate": "REJECT_UNSUPPORTED_CLASS",
+      "wrong_abi_exception_added": false
+    }
+  },
+  "negative_cases_reproduced": {
+    "v1_all_elf_assumed_arm64": "REJECT_CLASS_MISMATCH",
+    "fake_so_assumed_elf": "REJECT_CLASS_MISMATCH",
+    "missing_member": "REJECT_MEMBER_SET",
+    "duplicate_zip_member": "REJECT_DUPLICATE_MEMBER"
+  },
+  "effects": {
+    "pilot_output": "One isolated RESULT.json written with O_EXCL and O_NOFOLLOW; stdout/stderr are frozen companion evidence.",
+    "production_scanner_changed": false,
+    "authoritative_count_delta": 0,
+    "device_commands": 0,
+    "network_commands": 0,
+    "ssh_commands": 0,
+    "container_commands": 0,
+    "namespace_commands": 0
+  },
+  "observed_wall": "Existing production classifier treated mixed-ABI and non-ELF .so members too coarsely; this bounded pilot correctly partitions TikTok and refuses CapCut's one path/ELF-ABI mismatch.",
+  "hypotheses": [],
+  "proven": "The frozen pilot script and actual result implement raw-name duplicate rejection before dict conversion; real TikTok passes, CapCut's wrong ABI fails, and four negative cases reject as specified. Inputs and output hashes match.",
+  "not_proven": "Production scanner integration, cross-APK generality, runtime loadability, device startup, or reflection elapsed time under the project's 120-second cadence cap; no duration receipt was included.",
+  "failed": "None in this isolated pilot; CapCut rejection is intentional and must not be waived.",
+  "next_evidence": "Separate contract review and targeted scanner integration tests before production promotion; separately record actual reflection duration if counting this as a cadence closure."
+}

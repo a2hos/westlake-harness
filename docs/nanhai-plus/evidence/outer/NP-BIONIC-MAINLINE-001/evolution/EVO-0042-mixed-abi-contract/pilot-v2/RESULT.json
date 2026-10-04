@@ -1,0 +1,50 @@
+{
+  "authoritative_count_delta": 0,
+  "capcut_exception_added": false,
+  "capcut_partition": {
+    "arm32_elf": 145,
+    "arm64_elf": 146,
+    "non_elf_so": 0,
+    "unexpected_elf_abi": 1
+  },
+  "capcut_so_count": 292,
+  "cases": {
+    "capcut_real": "REJECT_UNSUPPORTED_CLASS",
+    "duplicate_zip_member": "REJECT_DUPLICATE_MEMBER",
+    "fake_so_assumed_elf": "REJECT_CLASS_MISMATCH",
+    "missing_member": "REJECT_MEMBER_SET",
+    "tiktok_real": "PASS_PARTITION",
+    "v1_all_elf_assumed_arm64": "REJECT_CLASS_MISMATCH"
+  },
+  "effects": {
+    "container": 0,
+    "device": 0,
+    "namespace": 0,
+    "network": 0,
+    "ssh": 0
+  },
+  "inputs_sha256": {
+    "capcut": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+    "capcut_raw": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
+    "census": "53f7841aac873dc6fec48c845b2b9794f2096b5d1b5f9c1c6c5eb2a485885cb5",
+    "tiktok": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc"
+  },
+  "pass": true,
+  "production_scanner_changed": false,
+  "required": {
+    "capcut_real": "REJECT_UNSUPPORTED_CLASS",
+    "duplicate_zip_member": "REJECT_DUPLICATE_MEMBER",
+    "fake_so_assumed_elf": "REJECT_CLASS_MISMATCH",
+    "missing_member": "REJECT_MEMBER_SET",
+    "tiktok_real": "PASS_PARTITION",
+    "v1_all_elf_assumed_arm64": "REJECT_CLASS_MISMATCH"
+  },
+  "schema": "evo42-offline-pilot-v2",
+  "source_pre_post_equal": true,
+  "tiktok_partition": {
+    "arm32_elf": 225,
+    "arm64_elf": 227,
+    "non_elf_so": 4
+  },
+  "tiktok_so_count": 456
+}

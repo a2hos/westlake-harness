@@ -1,0 +1,58 @@
+{
+  "at_utc": "2026-10-04T17:46:06.149116+00:00",
+  "capcut": {
+    "gate": "REJECT_UNSUPPORTED_CLASS",
+    "partition": {
+      "arm32_elf": 145,
+      "arm64_elf": 146,
+      "non_elf_so": 0,
+      "unexpected_elf_abi": 1
+    },
+    "so_count": 292,
+    "wrong_abi_not_waived": true
+  },
+  "command": [
+    "python3",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot-v2/pilot.py",
+    "--run"
+  ],
+  "decision": "GO_PILOT_V2_ONLY_NO_PRODUCTION_PROMOTION",
+  "evidence_sha256": {
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/PILOT.json": "4fa785851d775846cc21394f5411ed9e12b2b12f9529103cb03bc9aa9d9bd1d6",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot-v2/RESULT.json": "b41df209d76465507d493b2995ed1f91984585bf56f269ce2a1b9c5ccbc7d270",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot-v2/pilot.py": "7d101f21f28007a2823ec9b2893d33b648af3bf139b2b3c193abfa9fb0f3e333",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot-v2/stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot-v2/stdout.raw": "90fffb21cc51a5dfaa561963510e271471646877544861c63832a9d43ddc4269",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/pilot.py": "d7e9ccb1a2f24339092313f5ba690694d134f8d4ac8713c89c5a4b7f9bc565e2"
+  },
+  "execution_rc": 0,
+  "inputs_sha256": {
+    "capcut": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+    "capcut_raw": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
+    "census": "53f7841aac873dc6fec48c845b2b9794f2096b5d1b5f9c1c6c5eb2a485885cb5",
+    "tiktok": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc"
+  },
+  "negative_cases": {
+    "duplicate_zip_member": "REJECT_DUPLICATE_MEMBER",
+    "fake_so_assumed_elf": "REJECT_CLASS_MISMATCH",
+    "missing_member": "REJECT_MEMBER_SET",
+    "v1_all_elf_assumed_arm64": "REJECT_CLASS_MISMATCH"
+  },
+  "next": "Independent root review may accept pilot v2 as a bounded method candidate; promotion into production needs separate contract review and targeted scanner integration tests.",
+  "raw_duplicate_checked_before_dict": true,
+  "schema": "evo42-pilot-v2-independent-candidate-v1",
+  "scope": "isolated offline pilot only; production scanner/ledger/device unchanged",
+  "source_pre_post_equal": true,
+  "tiktok": {
+    "gate": "PASS_PARTITION",
+    "partition": {
+      "arm32_elf": 225,
+      "arm64_elf": 227,
+      "non_elf_so": 4
+    },
+    "so_count": 456
+  }
+}

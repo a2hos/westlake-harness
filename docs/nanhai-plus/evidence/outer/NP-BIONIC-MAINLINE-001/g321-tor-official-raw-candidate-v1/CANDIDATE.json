@@ -1,0 +1,50 @@
+{
+  "schema": "g321-tor-browser-official-host-raw-candidate-v1",
+  "at_utc": "2026-10-04T17:46:33.943349+00:00",
+  "decision_candidate": "GO_OFFICIAL_EXACT_HOST_RAW_ONLY",
+  "publisher_page": "https://download.torproject.org/tor-browser-for-android/",
+  "publisher_page_sha256": "46fdde9fd770e6aba00d39703ca0d72f11d44712fd58e7299622520454d1fe72",
+  "publisher_href_sha256": "0ca866bf87ec3edb54919fb8c9b7e3cc1b49c2a029a6309b44bb58cd4b7f50d8",
+  "publisher_apk_url": "https://dist.torproject.org/torbrowser/15.0.24/tor-browser-android-aarch64-15.0.24.apk",
+  "apk_get_command_sha256": "98e41930e40fa57bc92401b48384e71370f9c510c8313c415a76093fdd0514e8",
+  "apk_get_headers_sha256": "d6569b1ac3eee90c08a50d16bff57181e57fa19e103ad67d7282d69e3340b332",
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g321-tor-official-v1/TorBrowser.apk",
+  "apk_sha256": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+  "apk_bytes": 111113963,
+  "zip_entries": 2031,
+  "zip_crc_ok": true,
+  "package": "org.torproject.torbrowser",
+  "version_code": "2016187202",
+  "version_name": "15.0.24 (140.17.0esr)",
+  "signer_cert_sha256": "20061f045e737c67375c17794cfedb436a03cec6bacb7cb9f96642205ca2cec8",
+  "lib_elf_by_abi_class_machine": [
+    {
+      "abi": "arm64-v8a",
+      "elf_class": 2,
+      "machine": 183,
+      "count": 19
+    }
+  ],
+  "true_arm64_elf_count": 19,
+  "non_elf_so_path_entries": [],
+  "badging_stdout_sha256": "d9bff0cddbbb376c745a27f846ba989fc092ada72f5da05ff1b6b23c2bd9ee1e",
+  "signature_stdout_sha256": "f861e2ac9b4bde4900656e8c73d6e45898903e91f81d1566e64aa3fb8fb7f25c",
+  "play_url": "https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US",
+  "play_raw_sha256": "b20635b1118cac8f077de871438df6ebe45945d474111ff71cb4e9e889dd24ee",
+  "market_scope": "Google Play cumulative listing downloads are not installs of this exact APK version",
+  "duplicate_check_scope": "Current accepted root raw and TASK-SUMMARY package search; upstream input metadata not counted as acceptance",
+  "raw_admission_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "full_static_delta": 0,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge_writes": 0,
+  "play_observation": {
+    "exact_package_present": true,
+    "publisher": "The Tor Project",
+    "cumulative_downloads": "50M+",
+    "metric_scope": "Product/package listing total, not version 15.0.24 installs"
+  },
+  "source_version_boundary": "Publisher Android page links stable 15.0.24 aarch64 APK and separate 16.0a13 alpha APK; stable link was selected exactly once."
+}

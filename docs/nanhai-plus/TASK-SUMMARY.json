@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T17:41:00+00:00",
+  "checked_at": "2026-10-04T17:59:25+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 97,
+    "downloaded_payloads": 99,
     "latest_raw_admission": {
       "packages": [
-        "com.zhiliaoapp.musically"
+        "com.expressvpn.vpn"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-official-route-attempt-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4",
-      "scope": "official download-page serialized CDN link exact host raw only; four non-ELF .so entries, no static or blackbox acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364",
+      "scope": "publisher-page linked exact website APK host raw only; targetSdk37 risk, no static/blackbox/startup acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,20 +53,20 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 93,
-    "complete_inventory_dex_entries": 303,
+    "complete_static_inventories": 95,
+    "complete_inventory_dex_entries": 310,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1362,
+    "complete_inventory_native_elf_entries": 1403,
     "latest_complete_static_admission": {
-      "package": "com.zhiliaoapp.musically",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "c1ae74284a77bb715bb3f41263d9ace79f4ac6d08c4af8773420163af5d176ee",
-      "scope": "four-phase host static only; 51 DEX, 227 true ARM64 ELF, 225 ARM32 ELF separate, four non-ELF .so separate; no startup"
+      "package": "com.expressvpn.vpn",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007",
+      "scope": "four-phase target ARM64 host static only; 3 DEX, 22 true ARM64 ELF, 69 other ABI separate with three mapping exceptions; no startup"
     },
     "incomplete_static_inventories": [
       "org.thoughtcrime.securesms",
@@ -75,8 +75,8 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 22,
-    "qualified_blackbox_packages": 15,
+    "supplemental_payloads": 24,
+    "qualified_blackbox_packages": 16,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -92,7 +92,8 @@
       "com.adguard.android",
       "com.goldenfrog.vyprvpn.app",
       "com.lemon.lvoverseas",
-      "com.zhiliaoapp.musically"
+      "com.zhiliaoapp.musically",
+      "com.expressvpn.vpn"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -103,10 +104,10 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.zhiliaoapp.musically",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g320-tiktok-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
-      "sha256": "6a81fdb38b05fa88343a6e6b75a819c82d058d3ce94b36ec9c7b9e9381223a64",
-      "scope": "exact-package overseas-mainstream blackbox test qualification only; G319 static v1 NO_GO, no startup"
+      "package": "com.expressvpn.vpn",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "79819ee3fb39ebbd4da7c01925e6ea76fbd5108869995bd7b326e6780a4e87a9",
+      "scope": "exact-package overseas-mainstream blackbox test qualification only; targetSdk37 risk, no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -844,18 +845,18 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0040-embedded-dex-discovery-v1",
+    "latest": "EVO-0042-mixed-abi-contract",
     "result": {
-      "path": "docs/nanhai-plus/evolution/EVO-0040-embedded-dex-discovery-v1/CLOSURE.json",
-      "sha256": "442340c83ae4c6aef397260d2eadf07ec46108884bfafed0449d0f41d5d955a8"
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0042-mixed-abi-contract/ROOT-PILOT-ACCEPTANCE.json",
+      "sha256": "2b0ae76760ba635428f034088be8b2956a5adc9735779f80ea9e0f796699f18d"
     },
     "actual_result_groups": 4,
-    "duration_seconds": 73.189055167,
-    "one_testable_improvement": "Before complete APK static admission, enumerate every .dex ZIP member; separately inventory embedded or malformed entries, or keep the package incomplete.",
+    "duration_seconds": 48.1619065,
+    "one_testable_improvement": "Before expensive ELF analysis, exhaustively classify each raw .so ZIP member by content and ABI, rejecting duplicate names and path/ABI mismatches.",
     "limited_pilot": true,
     "globally_promoted": false,
     "pending_actual_result_groups": 0,
-    "direction": "embedded DEX discovery; distinct from EVO39 release field contract"
+    "direction": "mixed ABI and opaque .so classification; distinct from EVO41 route evidence gate"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -1950,6 +1951,67 @@
     "non_elf_so_members": 4,
     "static_delta": 0,
     "blackbox_qualification_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g321_tor_raw_actual": {
+    "status": "accepted_official_aarch64_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g321-tor-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "16e3354a09f1469cfd499216c6557425001034e8c06680de50a21339bf3fcb3e"
+    },
+    "raw_before": 97,
+    "raw_after": 98,
+    "full_static_delta": 0,
+    "blackbox_qualification_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g322_tor_static_actual": {
+    "status": "accepted_complete_four_phase_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-tor-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "9de43151acd737c47b1c4ad95128d82d1fdbfeb194d1aeb9861cd5465a4b0f90"
+    },
+    "full_static_before": 93,
+    "full_static_after": 94,
+    "semantic_dex_delta": 4,
+    "true_arm64_elf_delta": 19,
+    "cold_start_delta": 0
+  },
+  "g322_expressvpn_raw_actual": {
+    "status": "accepted_official_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364"
+    },
+    "raw_before": 98,
+    "raw_after": 99,
+    "target_sdk": 37,
+    "full_static_delta": 0,
+    "blackbox_qualification_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g323_expressvpn_blackbox_qualification": {
+    "status": "accepted_exact_package_blackbox_test_qualification_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "79819ee3fb39ebbd4da7c01925e6ea76fbd5108869995bd7b326e6780a4e87a9"
+    },
+    "qualified_before": 15,
+    "qualified_after": 16,
+    "full_static_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g323_expressvpn_static_actual": {
+    "status": "accepted_complete_four_phase_target_arm64_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007"
+    },
+    "full_static_before": 94,
+    "full_static_after": 95,
+    "semantic_dex_delta": 3,
+    "true_arm64_elf_delta": 22,
+    "other_abi_elf_separate": 69,
     "cold_start_delta": 0
   }
 }

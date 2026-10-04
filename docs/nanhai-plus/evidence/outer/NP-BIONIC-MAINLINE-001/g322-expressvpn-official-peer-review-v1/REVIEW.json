@@ -1,0 +1,57 @@
+{
+  "schema": "g322-expressvpn-independent-host-raw-review-v1",
+  "at_utc": "2026-10-04T17:53:58.304616+00:00",
+  "decision": "GO_HOST_RAW_ONLY",
+  "candidate_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/CANDIDATE.json",
+  "candidate_sha256": "414995523b371d9c91e282d116b6c61590aef3c9c697bc889694762c421cc83d",
+  "command_evidence_sha256": "3fb8d6c57437088395684a23c2890368b129ce0f3e2012dcb229cc3288d4a0d3",
+  "inventory_sha256": "2ac19c29a52698dede0bb26eb6317b2eaada4c0997aa8ce91835d98c75cd0be5",
+  "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+  "apk_bytes": 139584355,
+  "publisher_route": {
+    "page": "https://www.expressvpn.com/vpn-download/android-vpn-asia",
+    "page_sha256": "e2fdb214bdd5257b5adddc09764bf1535de336cfe974ddfdc23a981eaff9d344",
+    "exact_anchor": "https://www.expressvpn.com/download-android-apk",
+    "anchor_occurrences": 2,
+    "http_chain": "200 publisher page; APK entry returned 302 Location to the exact .works URL; final 200. Domain ownership not separately asserted.",
+    "head_and_get_headers_sha256": {
+      "apk-head-headers.raw": "360490e254df503ab5bcc87d79323f137481ce58a46b8fbc35fc231b7999e0fc",
+      "apk-get-headers.raw": "579b4248a56e69aab07f252ac9a2b0251f303502359aa8eb5d6f806325034cc4"
+    },
+    "get_rc": 0,
+    "get_tls_verify_result": 0
+  },
+  "independent_checks": {
+    "zip_crc_ok": true,
+    "zip_unique_entries": 3642,
+    "manifest_count": 1,
+    "dex_members": 3,
+    "true_arm64_elf": 22,
+    "other_true_elf": 69,
+    "non_elf_so": 0,
+    "badging_rc": 0,
+    "apksigner_rc": 0,
+    "package": "com.expressvpn.vpn",
+    "version": "12.80.1",
+    "version_code": "12800140",
+    "signer_cert_sha256": "19c6272660b98ef90fe366d29dfcb4819fc33f21aa915b9357ee03f6206f4bac",
+    "v2_signature": true,
+    "v3_signature": true
+  },
+  "independent_output_sha256": {
+    "badging": "83f5b1043f7612dff273874e44aaa03006077a5d006919376a4f5b7e4e774acb",
+    "signature": "b6a31f3337d6ab691c23c0777e604a8db898c833e7f664fe462a4e833df2f8c7"
+  },
+  "duplicate_check": {
+    "accepted_root_receipt_hits": [],
+    "task_summary_hits": [],
+    "baseline_raw_count": 98,
+    "new_count_delta": 0
+  },
+  "limits": "Signer certificate is observed via Android APK signature, not independently pinned to publisher. targetSdk 37 is a compatibility risk relative to AOSP16 API36, not an install/start verdict. No blackbox qualification, static, runtime or device credit.",
+  "target_sdk": 37,
+  "count_writes": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge_writes": 0
+}

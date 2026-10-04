@@ -1,0 +1,686 @@
+{
+  "schema": "g323-expressvpn-full-member-census-v1",
+  "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+  "root_raw_sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "entries": 3642,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 12058988,
+      "sha256": "892fc16c5f4e1d268c497996db25a044e01ce5ccfbda912758c9c18ace5c56f5",
+      "magic": "6465780a30333700",
+      "header_consistent": true
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 200808,
+      "sha256": "e986e0ad6e4f925452b460e98f9541cfd08344fa728f48321366600a52731c5f",
+      "magic": "6465780a30333700",
+      "header_consistent": true
+    },
+    {
+      "name": "classes3.dex",
+      "bytes": 5803060,
+      "sha256": "41dd74976449f1f4903abc53dd1d27f2500a962efcfefb4bd875407cf20abc39",
+      "magic": "6465780a30333700",
+      "header_consistent": true
+    }
+  ],
+  "so": [
+    {
+      "name": "lib/arm64-v8a/lib...axl_mempkts_control...so",
+      "kind": "elf",
+      "bytes": 412128,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10096,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libaxl.so",
+      "kind": "elf",
+      "bytes": 532784,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libcrashlytics-common.so",
+      "kind": "elf",
+      "bytes": 864616,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libcrashlytics-handler.so",
+      "kind": "elf",
+      "bytes": 222056,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libcrashlytics-trampoline.so",
+      "kind": "elf",
+      "bytes": 4744,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libcrashlytics.so",
+      "kind": "elf",
+      "bytes": 231960,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 7112,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libheliumvpn.so",
+      "kind": "elf",
+      "bytes": 1335800,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 165992,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libkp_sdk_manager.so",
+      "kind": "elf",
+      "bytes": 22125880,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/liblightway_mobile.so",
+      "kind": "elf",
+      "bytes": 6536992,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/liblink-quality-jni.so",
+      "kind": "elf",
+      "bytes": 258848,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmaplibre.so",
+      "kind": "elf",
+      "bytes": 10843424,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libopenvpnexec.so",
+      "kind": "elf",
+      "bytes": 3318536,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libopvpnutil.so",
+      "kind": "elf",
+      "bytes": 6624,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libtoolChecker.so",
+      "kind": "elf",
+      "bytes": 5512,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libvpnutils.so",
+      "kind": "elf",
+      "bytes": 8008,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libwg-go.so",
+      "kind": "elf",
+      "bytes": 3824256,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libwg-quick.so",
+      "kind": "elf",
+      "bytes": 30992,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libwg.so",
+      "kind": "elf",
+      "bytes": 89816,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libxvclient.so",
+      "kind": "elf",
+      "bytes": 13758776,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/armeabi-v7a/lib...axl_mempkts_control...so",
+      "kind": "elf",
+      "bytes": 304764,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 7252,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libaxl.so",
+      "kind": "elf",
+      "bytes": 388244,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrashlytics-common.so",
+      "kind": "elf",
+      "bytes": 534164,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrashlytics-handler.so",
+      "kind": "elf",
+      "bytes": 126236,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrashlytics-trampoline.so",
+      "kind": "elf",
+      "bytes": 3304,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrashlytics.so",
+      "kind": "elf",
+      "bytes": 132856,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 4416,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libheliumvpn.so",
+      "kind": "elf",
+      "bytes": 1054568,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 116344,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libkp_sdk_manager.so",
+      "kind": "elf",
+      "bytes": 16984688,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/liblightway_mobile.so",
+      "kind": "elf",
+      "bytes": 3446196,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/liblink-quality-jni.so",
+      "kind": "elf",
+      "bytes": 164004,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libmaplibre.so",
+      "kind": "elf",
+      "bytes": 7914880,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libopenvpnexec.so",
+      "kind": "elf",
+      "bytes": 2886680,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libopvpnutil.so",
+      "kind": "elf",
+      "bytes": 5200,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libtoolChecker.so",
+      "kind": "elf",
+      "bytes": 3944,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libvpnutils.so",
+      "kind": "elf",
+      "bytes": 8284,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libwg-go.so",
+      "kind": "elf",
+      "bytes": 3591468,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libwg-quick.so",
+      "kind": "elf",
+      "bytes": 23676,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libwg.so",
+      "kind": "elf",
+      "bytes": 59360,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libxvclient.so",
+      "kind": "elf",
+      "bytes": 10220540,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 126980,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/mips/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 130556,
+      "class": 1,
+      "machine": 8
+    },
+    {
+      "name": "lib/mips64/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 150256,
+      "class": 2,
+      "machine": 8
+    },
+    {
+      "name": "lib/x86/lib...axl_mempkts_control...so",
+      "kind": "elf",
+      "bytes": 442856,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 9284,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libaxl.so",
+      "kind": "elf",
+      "bytes": 545968,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libcrashlytics-common.so",
+      "kind": "elf",
+      "bytes": 863764,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libcrashlytics-handler.so",
+      "kind": "elf",
+      "bytes": 198372,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libcrashlytics-trampoline.so",
+      "kind": "elf",
+      "bytes": 3576,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libcrashlytics.so",
+      "kind": "elf",
+      "bytes": 208744,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 5148,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libheliumvpn.so",
+      "kind": "elf",
+      "bytes": 1119980,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 116260,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libkp_sdk_manager.so",
+      "kind": "elf",
+      "bytes": 23543456,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/liblightway_mobile.so",
+      "kind": "elf",
+      "bytes": 5323280,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/liblink-quality-jni.so",
+      "kind": "elf",
+      "bytes": 293404,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libmaplibre.so",
+      "kind": "elf",
+      "bytes": 10991680,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libopenvpnexec.so",
+      "kind": "elf",
+      "bytes": 3376492,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libopvpnutil.so",
+      "kind": "elf",
+      "bytes": 5456,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libtoolChecker.so",
+      "kind": "elf",
+      "bytes": 4292,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libvpnutils.so",
+      "kind": "elf",
+      "bytes": 7036,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libwg-go.so",
+      "kind": "elf",
+      "bytes": 3617620,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libwg-quick.so",
+      "kind": "elf",
+      "bytes": 29992,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libwg.so",
+      "kind": "elf",
+      "bytes": 82460,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libxvclient.so",
+      "kind": "elf",
+      "bytes": 13468068,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86_64/lib...axl_mempkts_control...so",
+      "kind": "elf",
+      "bytes": 469544,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10760,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libaxl.so",
+      "kind": "elf",
+      "bytes": 593784,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libcrashlytics-common.so",
+      "kind": "elf",
+      "bytes": 860232,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libcrashlytics-handler.so",
+      "kind": "elf",
+      "bytes": 210016,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libcrashlytics-trampoline.so",
+      "kind": "elf",
+      "bytes": 4600,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libcrashlytics.so",
+      "kind": "elf",
+      "bytes": 219664,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 6224,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libheliumvpn.so",
+      "kind": "elf",
+      "bytes": 2763944,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 116904,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libkp_sdk_manager.so",
+      "kind": "elf",
+      "bytes": 24345000,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/liblightway_mobile.so",
+      "kind": "elf",
+      "bytes": 7007080,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/liblink-quality-jni.so",
+      "kind": "elf",
+      "bytes": 278832,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libmaplibre.so",
+      "kind": "elf",
+      "bytes": 11204288,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libopenvpnexec.so",
+      "kind": "elf",
+      "bytes": 3736624,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libopvpnutil.so",
+      "kind": "elf",
+      "bytes": 6672,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libtoolChecker.so",
+      "kind": "elf",
+      "bytes": 5416,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libvpnutils.so",
+      "kind": "elf",
+      "bytes": 7888,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libwg-go.so",
+      "kind": "elf",
+      "bytes": 4078272,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libwg-quick.so",
+      "kind": "elf",
+      "bytes": 32656,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libwg.so",
+      "kind": "elf",
+      "bytes": 111256,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libxvclient.so",
+      "kind": "elf",
+      "bytes": 14162360,
+      "class": 2,
+      "machine": 62
+    }
+  ],
+  "nested_archives": [],
+  "nested_magic_candidate_names": [],
+  "counts": {
+    "root_dex": 3,
+    "embedded_dex": 0,
+    "true_arm64_elf": 22,
+    "arm32_elf": 23,
+    "other_elf": 69,
+    "non_elf_so": 0
+  },
+  "bounds": {
+    "nested_archive_max_bytes": 52428800,
+    "nested_max_depth": 3
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0
+}

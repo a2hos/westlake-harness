@@ -1,0 +1,61 @@
+{
+  "schema": "g279-hk01-gz02-readonly-route-draft-independent-review-v1",
+  "reviewed_at_utc": "2026-10-04T17:50:31Z",
+  "decision": "GO_STATIC_DRAFT_ONLY_NO_CONNECT",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-hk01-gz02-readonly-route-draft-v1/DRAFT-CANDIDATE.json",
+    "sha256": "9e92760436afab4abe65796338ef0d06892166a3c9fae496ebd4e568b32f3499"
+  },
+  "frozen_inputs": {
+    "route_draft_sha256": "1234b77c066adecfd43959a28ceac08963d19abf4cf58b15caf66d45b0839114",
+    "validator_sha256": "18aa2ec861148cf38f3a17c4eee3238b25f30cd7dc028f4a1e98c808ebe5d6c3",
+    "prior_hk01_static_candidate_sha256": "eec9d1f46ef15930ddf40ba27a873494dd7b84a4424859f4270e19b7662e09c9",
+    "route_audit_sha256": "d0c9817d70aade68eb3b9da5bc9d9e2e4c6fcd2f99e6d746095cf7d4a0e74366"
+  },
+  "static_checks": {
+    "independent_field_and_hash_checks": 10,
+    "failed": 0,
+    "local_validator_argv": ["python3", "-B", "validate.py", "--static-only"],
+    "local_validator_rc": 0,
+    "inner_ssh_G_stdout_sha256": "c029ab108ccc0fbd46ddf98c757867f5e7145f434b96907526eda3f3c4fe76b1",
+    "outer_ssh_G_stdout_sha256": "7300a7ef70faf75973827d47787be292040c376451093f1457d221859badf132",
+    "planned_inner_proxycommand_sha256": "85b041edced3d12dbf18146b3cbfd87152f94aad421e819aa29062fe3c20376a",
+    "only_ssh_subprocess_is_local_ssh_G": true,
+    "execution_entry_exists": false,
+    "fixed_actual_attempt_directory_empty": true
+  },
+  "route_boundary": {
+    "first_hop": "119.13.124.122:58222",
+    "first_hop_ed25519_fingerprint": "SHA256:63ITbEecfx098rGUb4XR2oaa9CZ2ksy0gH4Z+ZDwWDc",
+    "first_hop_transport": "local SOCKS5 127.0.0.1:7897 to literal HK01 endpoint",
+    "hk01_planned_action": "SSH -W to gz02 TCP only, with no HK01 remote shell command",
+    "target": "1.95.90.207:58222",
+    "target_ed25519_fingerprint": "SHA256:RuAqHWgFJEIEcb4hC+WXULCRfV3uCsayP4Iw4aJvwzg",
+    "target_remote_command": ["/usr/bin/id", "-u"],
+    "ssh_config_file": "/dev/null",
+    "strict_host_key_checking": true,
+    "new_nonce_distinct_from_prior_static_candidate": true,
+    "nonce_reserved_unconsumed": "69e3be1284f9c4bf8dd0ac4ff8803a4d",
+    "future_per_hop_connect_timeout_seconds": 10,
+    "future_overall_wall_timeout_seconds": 45,
+    "future_runner_enforces_wall_timeout": false,
+    "project_hk01_scope_receipt": null,
+    "release_exists": false,
+    "replay_allowed": false,
+    "execution_allowed_now": false
+  },
+  "reviewer_actions": {
+    "ssh_connections": 0,
+    "remote_commands": 0,
+    "proxy_changes": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "graph_runs": 0
+  },
+  "observed_wall": "Project-specific HK01 jump scope remains unanswered. The static draft has no release or execution launcher, so it cannot establish SSH reachability or run the read-only command.",
+  "hypotheses": [],
+  "proven": "Frozen two-hop route fields, both host-key pins, local SSH configuration, new reserved nonce, intended read-only command and static-only validator match; actual attempt directory is empty.",
+  "not_proven": "HK01 project authorization, SOCKS-to-HK01 authenticated SSH, HK01 -W support or HK01-to-gz02 reachability, gz02 identity readback, executable 45-second watchdog, Soong graph or target build.",
+  "failed": "No connection was attempted; static-only review does not authorize execution.",
+  "next_evidence": "After an explicit project-scope decision, prepare a separately reviewed exact one-shot execution package with enforced 45-second wall timeout, fixed nonce/start receipt and root release. This draft itself stays nonexecutable."
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "g323-expressvpn-host-four-static-candidate-v1",
+  "at_utc": "2026-10-04T17:58:02.209921+00:00",
+  "decision_candidate": "GO_HOST_FOUR_PHASE_STATIC_WITH_EXPLICIT_OTHER_ABI_LIMITS",
+  "root_raw_admission_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+  "root_raw_admission_sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364",
+  "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+  "package": "com.expressvpn.vpn",
+  "version_name": "12.80.1",
+  "target_sdk_risk_only": 37,
+  "start_sha256": "68cdbf9891cc7dbd55f4e83a2843ed1bc3ed580629df2f4577ed1041947a4f16",
+  "result_sha256": "e02e83b7f64e030ae8805c7e985853eb8ce3467171be889f83734d3fcb8ee127",
+  "census_sha256": "117c87e51dbf01f665528ec79bf887f0e0fcc7f2ec8c7e65f0a4110bef031f39",
+  "phase_source_sha256": "a7ad4d68233c0f6eb00e6038dc41b359c09083d3d75675bdeb78805b7df94338",
+  "runner_source_sha256": "466e22d5c625b7aaa8d6e35278545d9610cb23590df942ab151ba11e80dcbc66",
+  "prepare_source_sha256": "cbe3d08aa80841ebe13d25b76911827e1f1b18240fd2619841958b132ac223e2",
+  "phase_receipts": {
+    "zip": {
+      "result_sha256": "32e040c0cad159929682d319d3c71820d9024baa2b28f2c02ebf2337106ecedf",
+      "stdout_sha256": "9f86f01590ea34eef7045849ca77a55cb6e02a540d98b04830bb4665962da8e3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "ed2940c5268a6ef9265ca10a9d274292142bd39fdc1914cf51207021c5c9312f",
+      "rc": 0,
+      "source_guard_equal": true
+    },
+    "metadata": {
+      "result_sha256": "35a6ab8e0d8dc06cc1087310477da32a934c2390d8dbc1a3d174f86e0baa024f",
+      "stdout_sha256": "4e7e7701cb3c42d54ca14a99bf44e86954f02640d91e5e09f44c7d64c56be89d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "a682a0d07aa683e4d4d56670c2b9663383aae724b51f44894e2a7f9800184575",
+      "rc": 0,
+      "source_guard_equal": true
+    },
+    "elf": {
+      "result_sha256": "95f98f09c01f2586b39ca46c3bbd5307ab22ac45524122fa2f0a5019c6ec6249",
+      "stdout_sha256": "52b4dd9f7374f5e165a7ac7bd7b813dd47a4f5658324fb458290d12db5b287b6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "25a8d503c041d15bdfdce0c6ccdb858d3af6df347198d181ac5790eed3baebe4",
+      "rc": 0,
+      "source_guard_equal": true
+    },
+    "dex": {
+      "result_sha256": "6843e39f439735fdf01b9b98984b25fe5a6d26663c4047379c9a1df9ec2fc020",
+      "stdout_sha256": "243c3c03d8cbc188886259eacde91c90ed33af91123c865ed62cce3a2f8ed6aa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "470083ff0bda06b06c38444cb61f4053f8e0592b9c18347d51f5321c6dbec2b5",
+      "rc": 0,
+      "source_guard_equal": true
+    }
+  },
+  "inventory_sha256": {
+    "zip_facts": "ba2ab17395361d9c2a6f23eb27cac6aedd6628130ef66e88f69d01e9ac9d329a",
+    "metadata": "6b9d9cdbe59db9734b9b0d4b8a4d6afee031f6fbd97af533d3ecc493d63d8f94",
+    "elf": "4baf64d28834f70269470dff7355280d6e746b59aa08db105c4b8acb370e71fd",
+    "elf_classification": "6cf177c140d7e519ae7ab0bf2f723605099ff95025ebea5dbb23f0b152a4eaf5",
+    "dex": "8c77d609fd740059dfe10a5bf6a5e3cf4dc1abef8ab7a244ebbb0d2d15d9c304"
+  },
+  "counts": {
+    "zip_entries": 3642,
+    "root_dex": 3,
+    "embedded_dex": 0,
+    "true_arm64_elf": 22,
+    "other_true_elf": 69,
+    "non_elf_so": 0,
+    "nested_archives": 0
+  },
+  "other_abi_limits": {
+    "scanner_abi_mismatches": [
+      "lib/armeabi/libjnidispatch.so"
+    ],
+    "scanner_unknown_machine_abi": [
+      "lib/mips/libjnidispatch.so",
+      "lib/mips64/libjnidispatch.so"
+    ],
+    "interpretation": "Legacy armeabi alias maps to ARM32 EM_ARM; MIPS entries have valid class/EM_MIPS path headers but scanner has no MIPS machine-to-ABI mapping. All 91 ELF readelf operations returned success; target ARM64 records matched."
+  },
+  "limits": "Host-only static candidate. targetSdk 37 is risk relative to AOSP16 API36, not install/start result. No blackbox qualification, device, startup, whole-tool or canonical static count claim.",
+  "authoritative_count_changed": false,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0,
+  "ssh_commands": 0,
+  "bridge_writes": 0
+}

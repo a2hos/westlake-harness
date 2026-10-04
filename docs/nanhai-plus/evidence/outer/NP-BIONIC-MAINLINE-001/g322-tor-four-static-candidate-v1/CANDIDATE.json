@@ -1,0 +1,87 @@
+{
+  "schema": "g322-tor-host-four-static-candidate-v1",
+  "at_utc": "2026-10-04T17:51:36.591803+00:00",
+  "decision_candidate": "GO_HOST_FOUR_PHASE_COMPLETE_STATIC_ONLY",
+  "root_raw_admission_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g321-tor-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+  "root_raw_admission_sha256": "16e3354a09f1469cfd499216c6557425001034e8c06680de50a21339bf3fcb3e",
+  "apk_sha256": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+  "package": "org.torproject.torbrowser",
+  "version_name": "15.0.24 (140.17.0esr)",
+  "start_sha256": "6cee2748cd8d41b57f8f439bc4346d367e976d39ce6600e797c236e145b88676",
+  "result_sha256": "c662456ca40da36b16b8d125d4be428149f1101e3b4f0a14f0351a2d9886d1cd",
+  "census_sha256": "63a9a490674d0d57e7dc977d69164b4bb902c7c3ad5643ae33720a2c254ce817",
+  "phase_source_sha256": "3a5efca616a8d6351c30a061e5c96cc2f9754ea3175fd7fe33cfb46e2924006d",
+  "runner_source_sha256": "153ea0a62e1f38f3df7c2fdf425a9974dd4ac84016acefaa36b9b2ab2eb91069",
+  "prepare_source_sha256": "4fda82fc44c423df23ffee503ea5c76f1f2efaa7b2044d69fa91693117aa2356",
+  "phase_receipts": {
+    "zip": {
+      "result_sha256": "de52182d6c313dcb4b7d1884bc8dda3af1776150ef8e5ed1410d0c96fd76928e",
+      "stdout_sha256": "b73d076c74d7ac9769845521cce263aeba69c5b0179859266dd3915799115a21",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "547d4f210cf6106822f017cbaaa8cb4d7ccc741e1dafc2b7696819387f1a3693",
+      "rc": 0,
+      "source_guard_equal": true
+    },
+    "metadata": {
+      "result_sha256": "d7d52837a9b01594648010d66bda986f61dee4f8ffdaad60c0759728dee5e456",
+      "stdout_sha256": "d5ef76c9630ada4a24c2936f9b32a375e1eb3ab9523398471ec625db56eb7853",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "e5e3ff7626e162f8393157a06b9430f187cc35a1f431a1ce54f031e4b9a3c774",
+      "rc": 0,
+      "source_guard_equal": true
+    },
+    "elf": {
+      "result_sha256": "356ac5ec2794830c8ae8ebbee820d3ffbbdf1be16a990f79f65e50c4cbecce7b",
+      "stdout_sha256": "9f9b1d62b7fed191d3f3d3d257c31f80732899332f3c2ce55ac5ec6c586120ba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "005024d4b587062653b4254614fb650dd6607f56360a88c4eec0266c60a63a65",
+      "rc": 0,
+      "source_guard_equal": true
+    },
+    "dex": {
+      "result_sha256": "34ec17a3693524e2eb094724343123c71abaf496cd892ba138b6d736daff3dc1",
+      "stdout_sha256": "a7b2b734f50356b295a7eaa48358219a0896a904fa194fc9a073260dcd0d6219",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command_sha256": "bb6b32a3818d7914dd22e29fc836cfcd932bfaef1902bbea093a8dc0c69ef4fe",
+      "rc": 0,
+      "source_guard_equal": true
+    }
+  },
+  "inventory_sha256": {
+    "zip_facts": "e693611cc8fd1c14f8cc9aa1b38803efd2e918deafd618a1c51b12604006bc7e",
+    "metadata": "242bb506f35adc96d36912ffc5b542a48852a50eaa5d63d9408fe6ec30a95b2e",
+    "elf": "8f4bd9bc3d99a48c6a039c9a253551f71c4b211461b58dd7f7fbaa9de75d463f",
+    "dex": "d55b92e3ff6029bb7b2fbdcc15d7fe785bf2031f5f01608aa8c93b8da425f51a"
+  },
+  "counts": {
+    "zip_entries": 2031,
+    "root_dex": 4,
+    "embedded_dex": 0,
+    "true_arm64_elf": 19,
+    "arm32_elf": 0,
+    "non_elf_so": 0,
+    "nested_archives": 2
+  },
+  "nested_archive_evidence": [
+    {
+      "path": "assets/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi",
+      "sha256": "de3e9ac4819a94f8b5f1df65fade773720dfd44da4c946940898a879fe965958",
+      "members": 275,
+      "dex_entries": 0
+    },
+    {
+      "path": "assets/omni.ja",
+      "sha256": "697c0cb9c504793ed73c2425b3240c8e26c2fd60a4091372ea657b757aaffbe4",
+      "members": 3807,
+      "dex_entries": 0
+    }
+  ],
+  "limits": "Host-only complete static candidate. Nested scan used ZIP magic and bounded recursion, finding XPI and omni.ja with no DEX. No APK startup, device, blackbox, whole-tool, or canonical static count claim.",
+  "authoritative_count_changed": false,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0,
+  "ssh_commands": 0,
+  "bridge_writes": 0
+}

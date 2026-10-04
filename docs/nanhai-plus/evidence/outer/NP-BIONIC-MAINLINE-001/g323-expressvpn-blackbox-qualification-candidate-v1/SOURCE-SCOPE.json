@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-04T17:55:49.799021+00:00",
+  "github_exact_package_repository_search_total": 0,
+  "limits": "This is not proof that source is globally absent or that every component is closed. GitHub repository search does not search private repositories or full code content.",
+  "official_verified_org": "https://github.com/expressvpn",
+  "org_android_repository_search_total": 0,
+  "org_public_repo_count": 14,
+  "org_public_repo_names": [
+    "expressvpn_leak_testing",
+    "expressvpn_browser_extension",
+    "xoth_location_tracker_investigation",
+    "lightway-core-snapshot",
+    "lightway-core",
+    "telehealth_apps_investigation",
+    "lightway-laser",
+    "wolfssl-sys",
+    "lightway-sys",
+    "wolfssl-rs",
+    "lightway",
+    "metrics-exporter-dogstatsd",
+    "reqwest",
+    "wreq"
+  ],
+  "partial_public_components": [
+    "lightway-core",
+    "lightway",
+    "expressvpn_browser_extension",
+    "expressvpn_leak_testing"
+  ],
+  "publisher_lightway_announcement_url": "https://www.expressvpn.com/news-pr/expressvpn-launches-lightway-for-all-open-sources-code-and-publishes-new-third-party-audit",
+  "raw_sha256": {
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/github-org-repos.raw": "fbf0199f1e42247442d915bd5dd748c75ebe730fe5a1ab1c161b9ac06bf56b25",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/github-package-search.raw": "08c082fdf7ca87ba911a2aabb0f0cf2d3e482a6feeaac9713e4578c20b2600b2",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/github-search.raw": "08c082fdf7ca87ba911a2aabb0f0cf2d3e482a6feeaac9713e4578c20b2600b2",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/lightway-page.raw": "9a3dad7c560094bf2a3c0655af81d15ed55337af508fb8918bb02510493dcf6c"
+  },
+  "result": "matching complete buildable Android client source for com.expressvpn.vpn 12.80.1 not established in bounded official-public search",
+  "schema": "g323-expressvpn-bounded-public-source-availability-v1"
+}

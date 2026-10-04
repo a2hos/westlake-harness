@@ -1,0 +1,19 @@
+{
+  "schema": "evo42-root-bounded-method-acceptance-v1",
+  "at_utc": "2026-10-04T17:48:55+00:00",
+  "decision": "ACCEPT_REFLECTION_AND_PILOT_V2_ONLY_NO_PRODUCTION_PROMOTION",
+  "reflection_report_sha256": "506fdaeee94f8079e8dc8add2d8d2331d01a6270fbd8ac79ec556458ef5e60a2",
+  "reflection_elapsed_seconds": 48.1619065,
+  "actual_result_groups": 4,
+  "pilot_v1_sha256": "4fa785851d775846cc21394f5411ed9e12b2b12f9529103cb03bc9aa9d9bd1d6",
+  "second_real_sample_review_sha256": "dc2099641b5f16afeb7207bdae6aa18f890fd1474ab1752f0d3e60af4d31bd2a",
+  "pilot_v2_candidate_sha256": "4843eea1a227d2fcfbc3334e87462b07c5d558f7a2a712dab7abbe1ac6977048",
+  "pilot_v2_independent_review_sha256": "1053e2df9198cf93b04ef2e669d3ee8138fef859429716e4428ec10b5ecdcbd5",
+  "one_improvement": "Content-based exhaustive .so ZIP member partition before expensive ELF analysis, with raw-name duplicate rejection before dict conversion.",
+  "pilot_result": "TikTok 456 members partitioned; CapCut one ARM32 ELF under ARM64 path rejected; four negative cases rejected, including duplicate ZIP name.",
+  "promotion_gate": "Separate contract review, targeted production scanner integration and independently reviewed cross-APK regression are still required. No exception for CapCut wrong-ABI member.",
+  "production_scanner_changed": false,
+  "authoritative_count_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}
