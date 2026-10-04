@@ -1,0 +1,61 @@
+{
+  "schema": "nanhai-g279-hello-frontier-peer-v1",
+  "scope": "Read-only architecture and receipt audit plus isolated local v10 source fixture; no gz02 command, Herdr dispatch, graph, target build, device, container, or namespace operation",
+  "boundary": "Device/Tooling host-native Soong graph prerequisite for ARM64 Bionic HelloWorld; App runtime remains unproven",
+  "versions": {
+    "oh": "OpenHarmony-7.0.0.39",
+    "aosp": "android-16.0.0_r4",
+    "target": "ARM64 Bionic",
+    "gz02_full_top": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source -> /data/source/aosp-16.0.0-r4",
+    "source_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-SOURCE-ADMISSION.json",
+    "source_scope": "1011 R4-clean present manifest projects and two absent Darwin host prebuilts; admitted only as read-only input, not whole-tree content proof"
+  },
+  "current_gate": {
+    "earliest_unproven": "Native gz02 AOSP16 R4 Soong graph for aosp_arm64 libc/libm/libdl/linker",
+    "stage1_sibling": "STAGED_READBACK, SSH rc0, independent postrun ACCEPT_STAGE1_STAGED_READBACK_ONLY",
+    "stage1_terminal_sha256": "b827de7d870729beb611ed98d917ed23c008135dc7913c09ac8e2669388ae6e5",
+    "stage1_peer_review_sha256": "9f00ce5e2434d1511eccebe4e57eabfba921867cf0dac90dc6e223b295b9c52e",
+    "active_binding": "Old /data/source/.nanhai-plus-opaleye-native remains in local_env.md; sibling /data/source/.nanhai-plus-opaleye-native-v7 has no stage-2 source view/env/runner release",
+    "owner_ack": "Only g279-native-source-ack-v1 metadata OWNER-ACK exists; its graph_executed=false and it is not graph-only authorization",
+    "owner_source_ack_sha256": "fe6f5a0d8391da5ddc1a7291366cc9afe353bbe48f6715e97db216a2f420e92b",
+    "graph_status": "NOT_EXECUTED",
+    "target_status": "NOT_EXECUTED",
+    "hello_status": "NOT_INSTALLED_OR_STARTED_ON_CURRENT_GENERATION"
+  },
+  "new_fact": {
+    "observed_remote_hostname": "GZ02",
+    "old_runner_sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+    "old_runner_lines": [95, 568, 594],
+    "mechanism": "Three exact lowercase gz02 comparisons in v7 would reject the observed uppercase host before the graph. Stage-1 remote body already corrected its separate hostname check with casefold().",
+    "classification": "Source-verified preflight mismatch with directly observed host identity; old runner not executed on gz02"
+  },
+  "isolated_v10_candidate": {
+    "path": "nanhai_plus_native_graph_v10_candidate.py",
+    "sha256": "dae6958cd116e048c5a54136c25c39bae6f309e22d17af70b749398adec179ce",
+    "delta": "Single is_native_host predicate used at the three checks; accepts GZ02/gz02 and DNS suffix only on Linux x86_64, rejects other hosts. STAGE2_BINDING_FROZEN=false makes --run hard rc3 before any path or remote graph operation.",
+    "fixture": "host_identity_fixtures.py",
+    "fixture_sha256": "aa1bf8cfd8aa345e411a9644d313e5b2ca56c0facfe57a10e8f7d6738096bd8a",
+    "fixture_result": "Local rc0: 8 host cases; three call sites; candidate --run rc3 NO_GO_GRAPH_RELEASE_GATE; 0 SSH/graph/target/device/container/namespace",
+    "release_ready": false,
+    "not_done": "CONFIG_SHA, BINDING_SHA, seed path, runner filename/run ID, exact release validator and static-check paths are still inherited from v7; this file is a narrow hostname patch candidate, not the stage-2 runner."
+  },
+  "smallest_next_native_test": {
+    "kind": "gz02 read-only UID/traversal probe on the already staged sibling",
+    "preconditions": "Fresh pinned SSH host key and exact stage-1 receipt readback; no device; no write",
+    "checks": [
+      "As UID1000, confirm sibling root/out/tmp 0755 and control/staging 0700, nine staged hashes and no ACL group write",
+      "As nobody, test -x on sibling root/out/soong-ui-v1/soong_ui and out/no-namespace-guard-v1/no-namespace-exec, and test -r for the full R4 source/manifests",
+      "As nobody, prove no write to sibling root, control, source checkout and Soong worktree (permission metadata, no test write); keep old binding unchanged"
+    ],
+    "pass_claim": "Only native host access prerequisites; does not prove Soong graph"
+  },
+  "path_to_graph": [
+    "Stage 2 creates and checks the exact 46-link source view in sibling, regenerates path-bound env JSON and authoritative local_env binding with new config SHA, and verifies tool/guard provenance and nobody traversal",
+    "Generate a fresh v10 runner/stager/gate release against the new sibling with casefold host predicate, new root/config/binding/runner SHA; independent static and execution-gate review",
+    "Obtain exact-nonce graph-only ACK from original Herdr nanhai-plus/octos-inner with native session provenance and an execution-enforced independent authority gate; metadata ACK does not suffice",
+    "Run one native graph-only command via original owner after fresh source guard and release: soong_ui --make-mode --soong-only --skip-ninja --skip-soong-tests libc libm libdl linker under TARGET_PRODUCT=aosp_arm64, no namespace/container",
+    "Accept graph only if command rc0, output build.aosp_arm64.ninja and Android.bp.list are nonempty and audited, syscall trace has no namespace attempt/forbidden launcher/target tool execution, and source pre/post identities match",
+    "Separately review and execute ARM64 Bionic target compile, then install/true-cold launch/first-frame/input/exit HelloWorld on an allowed board after re-reading device policy"
+  ],
+  "counts_changed": {"graph": 0, "target": 0, "hello_world": 0, "apk_cold_start": 0, "bionic_tool": 0}
+}

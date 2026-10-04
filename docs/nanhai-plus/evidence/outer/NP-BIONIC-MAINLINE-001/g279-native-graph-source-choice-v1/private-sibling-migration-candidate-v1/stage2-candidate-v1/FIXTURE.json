@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "name": "46 distinct ordered links",
+      "pass": true
+    },
+    {
+      "name": "proposal binds three new paths",
+      "pass": true
+    },
+    {
+      "name": "binding and packet hashes",
+      "pass": true
+    },
+    {
+      "name": "bad nonce denied",
+      "pass": true
+    },
+    {
+      "name": "unsigned remote packet denied",
+      "pass": true
+    },
+    {
+      "name": "O_EXCL freeze replay denied",
+      "pass": true
+    },
+    {
+      "name": "unreleased execute denied before SSH",
+      "pass": true
+    },
+    {
+      "name": "no local START from denied execute",
+      "pass": true
+    }
+  ],
+  "container": 0,
+  "device": 0,
+  "graph": 0,
+  "network": 0,
+  "remote_writes": 0,
+  "schema": "g279-stage2-local-fixtures-v1",
+  "status": "PASS"
+}

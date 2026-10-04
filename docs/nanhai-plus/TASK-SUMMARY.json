@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T12:33:44+00:00",
+  "checked_at": "2026-10-04T12:41:54+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -48,9 +48,14 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 76,
-    "complete_inventory_dex_entries": 183,
-    "complete_inventory_native_elf_entries": 894,
+    "complete_static_inventories": 77,
+    "complete_inventory_dex_entries": 191,
+    "complete_inventory_native_elf_entries": 915,
+    "latest_complete_static_admission": {
+      "package": "im.vector.app",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/ROOT-STATIC-ADMISSION.json",
+      "scope": "four-phase host static only; no cold start credit"
+    },
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",

@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai.evo24.experiment.v1",
+  "state": "local_pilot_only_peer_root_decision_pending",
+  "lens": "Validation contract quality at one-shot artifact handoff",
+  "source_groups": [
+    "G279 native sibling stage 1 staged-readback accepted with exact nonce and bounded scope",
+    "Element Classic v2 manifest-regex false terminal, followed by v3 offline exact raw admission",
+    "G293 four-phase host static inventory accepted"
+  ],
+  "prior_pilot_effect_check": {
+    "EVO22": "ZIP Range ABI pilot remains not promoted; Element v2 used full GET and v3/G293 used retained local bytes. No observed EVO22 effect on these results.",
+    "EVO23": "Pre-freeze package crosscheck remains not promoted; Element expected and actual package were the same. No observed EVO23 effect on these results."
+  },
+  "baseline": "The v2 fixture accepted a minimal synthetic aapt2 package line, but its released parser used an unanchored name/version regex. The actual aapt2 line also carried platformBuildVersionName='15', which overwrote the parsed name and caused terminal manifest identity drift after a 72,422,482-byte GET taking 222.805 seconds. V3 corrected the parser and replayed the actual raw line; G279 and G293 illustrate successful receipt-bound handoffs but do not establish parser-contract coverage.",
+  "one_improvement": "Before release of a one-shot command that parses external tool text, require a fixture for each acceptance-critical parser using a representative full output line with suffix/prefix name collisions, plus the minimal positive. Bind that fixture and parser script by SHA in the release receipt. A mismatch blocks release; this is a local preparation gate, not a substitute for runtime identity or signature checks.",
+  "prediction": "On a future parser with v2-style unanchored fields, the expanded fixture fails before one-shot release while a correct parser accepts both minimal and collision-bearing lines; fixture execution stays below 1 second and causes no network or canonical mutation.",
+  "falsifier": "A future exact output with field collisions passes the preparation fixture but fails the released parser, or the fixture rejects a valid output that the authoritative exact package/version/ABI parser should accept.",
+  "pilot": {
+    "command": ["python3", "-B", "docs/nanhai-plus/evolution/EVO-0024-parser-contract-fixture/pilot.py"],
+    "first_attempt_rc": 1,
+    "first_attempt_issue": "Pilot path calculation used parents[5] instead of parents[4]; corrected within the pilot only before the measured run.",
+    "measured_rc": 0,
+    "measured_seconds": 0.011628,
+    "v2_minimal_accept": true,
+    "v2_collision_accept": false,
+    "v2_actual_accept": false,
+    "v3_collision_accept": true,
+    "v3_actual_accept": true,
+    "network_requests": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "canonical_count_delta": 0
+  },
+  "decision": "Peer recommends one prospective candidate-level trial, with root decision pending. Do not promote to the 89-item flow from this retrospective replay."
+}

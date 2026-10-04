@@ -1,0 +1,138 @@
+{
+  "schema": "nanhai.g293.vector.static_inventory_result.v1",
+  "status": "TERMINAL_CANDIDATE_ONLY_REQUIRES_INDEPENDENT_AND_ROOT_REVIEW",
+  "at": "2026-10-04T12:39:59.123893+00:00",
+  "elapsed_seconds": 35.6657537498977,
+  "rc": 0,
+  "checks": {
+    "all_four_phases_terminal": true,
+    "all_postguards": true,
+    "full_source_apk_venv_tool_guard_equal": true,
+    "all_zip_members_crc_scanned": true,
+    "manifest_unique": true,
+    "eight_dex_entries": true,
+    "twenty_one_arm64_elf_entries": true,
+    "dex_identity": true,
+    "true_elf_identity": true,
+    "true_elf_valid": true,
+    "native_unclassified_zero": true
+  },
+  "rows": [
+    {
+      "phase": "zip",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/scan_phase.py",
+        "zip"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T12:39:25.114011+00:00",
+      "timeout_seconds": 120,
+      "network_authorized": false,
+      "pid": 69424,
+      "rc": 0,
+      "finished_at": "2026-10-04T12:39:25.812881+00:00",
+      "elapsed_seconds": 0.6990580420242622,
+      "stdout_sha256": "7645897f3440b00a7cdee13827cf0a0aaeb933904fcc67c9c0f185339f228e4e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "metadata",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/scan_phase.py",
+        "metadata"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T12:39:25.813501+00:00",
+      "timeout_seconds": 180,
+      "network_authorized": false,
+      "pid": 69448,
+      "rc": 0,
+      "finished_at": "2026-10-04T12:39:26.569248+00:00",
+      "elapsed_seconds": 0.7559306249022484,
+      "stdout_sha256": "98a3bd9e4b06935c9e2192e32b2bb15c5b3802c0e22beb974b941224b6a7ac71",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "elf",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/scan_phase.py",
+        "elf"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T12:39:26.569975+00:00",
+      "timeout_seconds": 600,
+      "network_authorized": false,
+      "pid": 69645,
+      "rc": 0,
+      "finished_at": "2026-10-04T12:39:32.889092+00:00",
+      "elapsed_seconds": 6.319502750062384,
+      "stdout_sha256": "da35eca2fd80b6e427de990bd8485cd109ef504feed21a579c743156123e2283",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "phase": "dex",
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/scan_phase.py",
+        "dex"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "environment": {
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/tmp",
+        "LC_ALL": "C",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_at": "2026-10-04T12:39:32.889844+00:00",
+      "timeout_seconds": 600,
+      "network_authorized": false,
+      "pid": 70003,
+      "rc": 0,
+      "finished_at": "2026-10-04T12:39:57.621726+00:00",
+      "elapsed_seconds": 24.732820666977204,
+      "stdout_sha256": "51dcadfc584db2f7ca26d614dc9298db05c250065ee0fc88efdaa83bf4810743",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "zip_entries": 6839,
+  "dex_entries": 8,
+  "true_elf_entries": 21,
+  "true_arm64_elf_entries": 21,
+  "true_non_arm64_elf_entries": 0,
+  "zip_in_so_entries": 0,
+  "source_APK_venv_tool_pre_post_equal": true,
+  "startup_verified": false,
+  "blackbox_qualified": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "authoritative_count_changed": false
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai.g293.vector.static.root_release.v1",
+  "decision": "GO_ONE_LOCAL_STATIC_INVENTORY",
+  "scope": "Run the exact retained Element Classic APK once through local ZIP, metadata, ELF and DEX inventory; no network, device, container, count or startup claim",
+  "runner_sha256": "382c6fc826579a76c149dc09b274cf86cda86d1267c65dec47512464c191dbf6",
+  "inputs_sha256": "b5da60e041b4fa60c7769bc0ecd9b527f05a28ed47663be4f3d0dd0bcd9fe164",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "scan_phase_sha256": "c7c12b69200d879f8d14da8e7255f04d5e4eadb40885bb8e476358f42b641c1f",
+  "prepare_sha256": "3dd0db5243539b7afc5ac7bd7b5dce10c413d91c7136c83b22f2b72cadca80a0",
+  "peer_review_sha256": "b789192529bab3dc37d70c5f07eb2139134dabe7a6873bfb42811cd17c9f6dae",
+  "raw_receipt_sha256": "5535307370ab716fb9796852f7e84c9b0c6fa3370ade44c38f933556be70dae7",
+  "phase_order": ["zip", "metadata", "elf", "dex"],
+  "limits_seconds": {
+    "outer_seconds": 1350,
+    "zip_seconds": 120,
+    "metadata_seconds": 180,
+    "elf_seconds": 600,
+    "dex_seconds": 600,
+    "parallel": 1,
+    "retries": 0
+  },
+  "outer_watchdog_seconds": 1800,
+  "network_authorized": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "canonical_count_change_authorized": false
+}

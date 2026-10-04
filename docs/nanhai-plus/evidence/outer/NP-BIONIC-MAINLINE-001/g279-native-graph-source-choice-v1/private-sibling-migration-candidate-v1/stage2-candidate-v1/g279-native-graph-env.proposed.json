@@ -1,0 +1,13 @@
+{
+  "env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "local_env_file_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "paths": {
+    "NANHAI_GZ02_AOSP_SOURCE_ROOT": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+    "NANHAI_GZ02_NATIVE_PROJECT_ROOT": "/data/source/.nanhai-plus-opaleye-native-v7",
+    "NANHAI_GZ02_NATIVE_SOURCE_VIEW": "/data/source/.nanhai-plus-opaleye-native-v7/source-view",
+    "NANHAI_GZ02_SOONG_UI": "/data/source/.nanhai-plus-opaleye-native-v7/out/soong-ui-v1/soong_ui",
+    "NANHAI_GZ02_SOONG_WORKTREE": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+    "NANHAI_SOURCE_POOL_ROOT": "/opt/19.SourceCode"
+  },
+  "schema": "nanhai-g279-native-graph-env-v1"
+}

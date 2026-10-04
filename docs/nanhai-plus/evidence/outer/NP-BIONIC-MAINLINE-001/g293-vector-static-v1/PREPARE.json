@@ -1,0 +1,99 @@
+{
+  "schema": "nanhai.g293.vector.static_prepare.v1",
+  "prepared_utc": "2026-10-04T12:36:37.696917+00:00",
+  "status": "FROZEN_CANDIDATE_INDEPENDENT_REVIEW_AND_ROOT_RELEASE_PENDING_NO_SCAN",
+  "exact_apk": {
+    "registry_package_label": "im.vector.app",
+    "record_id": "r-570841c0ce268cd2ac69",
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-arm64-next-vector-v2/im.vector.app_40106622.apk",
+    "bytes": 72422482,
+    "sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "scope": "exact v3 root-accepted F-Droid raw APK only",
+    "upstream_version_label": "1.6.62",
+    "version_code": 40106622
+  },
+  "root_raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/ROOT-RAW-ADMISSION.json",
+    "sha256": "5535307370ab716fb9796852f7e84c9b0c6fa3370ade44c38f933556be70dae7",
+    "schema": "nanhai.vector.raw_apk_root_admission.v1",
+    "decision": "ACCEPT_ONE_UPSTREAM_REGISTERED_RAW_APK_IDENTITY_ONLY"
+  },
+  "source_method": "G285/G289 four-phase ZIP, metadata, ELF, DEX host inventory with independent source/APK/tool/venv guards",
+  "inventory_expectations": {
+    "zip_entries": 6839,
+    "dex_entries": 8,
+    "true_elf_entries": 21,
+    "native_abis": [
+      "arm64-v8a"
+    ],
+    "packed_non_elf_so_entries": 0
+  },
+  "input_sha256": "b5da60e041b4fa60c7769bc0ecd9b527f05a28ed47663be4f3d0dd0bcd9fe164",
+  "script_sha256": {
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "c7c12b69200d879f8d14da8e7255f04d5e4eadb40885bb8e476358f42b641c1f",
+    "run.py": "382c6fc826579a76c149dc09b274cf86cda86d1267c65dec47512464c191dbf6",
+    "fixture.py": "ef2aa629493181efd907651756f4696fffb386fb98303a3fba8bb2feada79eae"
+  },
+  "fixture_receipt_sha256": "d7e908f0c46e2f7787ff41cb6b2344940f0e9fa9a9150002e409ad07d8d72db5",
+  "root_release_contract": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/ROOT-RELEASE.json",
+    "schema": "nanhai.g293.vector.static.root_release.v1",
+    "decision": "GO_ONE_LOCAL_STATIC_INVENTORY",
+    "runner_sha256": "must match PREPARE",
+    "inputs_sha256": "must match PREPARE",
+    "common_sha256": "must match PREPARE",
+    "scan_phase_sha256": "must match PREPARE",
+    "peer_review_sha256": "must match separate independent review",
+    "raw_receipt_sha256": "5535307370ab716fb9796852f7e84c9b0c6fa3370ade44c38f933556be70dae7",
+    "phase_order": [
+      "zip",
+      "metadata",
+      "elf",
+      "dex"
+    ],
+    "limits_seconds": {
+      "outer_seconds": 1350,
+      "zip_seconds": 120,
+      "metadata_seconds": 180,
+      "elf_seconds": 600,
+      "dex_seconds": 600,
+      "parallel": 1,
+      "retries": 0
+    },
+    "network_authorized": false,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "peer_review_contract": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/peer-review-v1/REVIEW.json",
+    "verdict": "GO_ONE_LOCAL_STATIC_INVENTORY",
+    "runner_sha256": "must match PREPARE",
+    "inputs_sha256": "must match PREPARE",
+    "scan_phase_sha256": "must match PREPARE"
+  },
+  "command_after_both_gates": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/run.py",
+    "--execute"
+  ],
+  "outer_watchdog_seconds": 1800,
+  "claim_limits": {
+    "raw_already_admitted": true,
+    "complete_static_credit": false,
+    "startup_verified": false,
+    "blackbox_qualified": false,
+    "canonical_count_delta": 0
+  },
+  "execution_counts": {
+    "scan": 0,
+    "network": 0,
+    "device": 0,
+    "container": 0
+  }
+}

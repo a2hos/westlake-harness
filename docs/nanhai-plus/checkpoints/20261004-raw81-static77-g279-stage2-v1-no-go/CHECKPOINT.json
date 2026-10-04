@@ -1,0 +1,54 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T12:43:12.909541+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "counts": {
+    "raw_apk_accepted": 81,
+    "registered_raw": 75,
+    "supplemental_raw": 6,
+    "complete_static": 77,
+    "dex_entries": 191,
+    "true_elf_entries": 915,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "evidence": {
+    "g279_stage1_postrun": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage1-candidate-v3/peer-postrun-v1/REVIEW.json",
+      "sha256": "9f00ce5e2434d1511eccebe4e57eabfba921867cf0dac90dc6e223b295b9c52e"
+    },
+    "g279_stage2_v1_no_go": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage2-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "b7adf314ec5b49ee9397851f6b3b2f5f979472932e5990575aafa649396a2bd5"
+    },
+    "g293_static_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "a53a30e9649d32a956afd44c573eaacb1b26fa7f1b73c53f15428ceb17a8ae2f"
+    },
+    "task_summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "94eb80cb77d3b09cf3a8948ef8da623246cf93c5d500d6a649365c38300e3dda"
+    },
+    "outer_state": {
+      "path": "docs/nanhai-plus/OUTER-STATE.json",
+      "sha256": "b74f6787b7657d9bcc7d8f951d87874dbc1e3e69b0c517b63182d017672dcf8f"
+    }
+  },
+  "stage2_v1": "NO_GO independent review; no remote write; stage2 v2 fixes under development",
+  "not_proven": [
+    "native Soong graph",
+    "ARM64 Bionic target",
+    "HelloWorld installation/cold-start/display",
+    "any of 200 original APK cold starts"
+  ],
+  "next": "review corrected stage2 v2, execute only after new GO, then independent postrun and original owner graph-only ACK"
+}

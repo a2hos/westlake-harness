@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai.g293.vector.static_outer_start.v1",
+  "started_utc": "2026-10-04T12:39:23.397655+00:00",
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/run.py",
+    "--execute"
+  ],
+  "watchdog_seconds": 1800,
+  "one_attempt": true,
+  "no_replay": true
+}

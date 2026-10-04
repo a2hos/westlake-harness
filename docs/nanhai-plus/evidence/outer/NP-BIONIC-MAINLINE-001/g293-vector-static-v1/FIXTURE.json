@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai.g293.vector.static_fixture.v1",
+  "at_utc": "2026-10-04T12:36:37.696917+00:00",
+  "status": "PASS",
+  "argv": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/fixture.py"
+  ],
+  "rc": 0,
+  "stdout_sha256": "b1f0f3af5b591874705b3da1c34dc40833a8a4be61d6d52a227cd568f81af649",
+  "stdout": {
+    "apk_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+    "canonical_count_delta": 0,
+    "checks": [
+      "three_scripts_AST",
+      "exact retained APK",
+      "root raw admission",
+      "scanner source hashes",
+      "venv manifest hash",
+      "readelf tool and alias",
+      "preflight ZIP shape",
+      "four ordered phases",
+      "review and release gates",
+      "no scan output",
+      "no network or device command sites"
+    ],
+    "container_commands": 0,
+    "device_commands": 0,
+    "network_requests": 0,
+    "scan_executed": false,
+    "status": "PASS"
+  },
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "fixture_script_sha256": "ef2aa629493181efd907651756f4696fffb386fb98303a3fba8bb2feada79eae",
+  "scanner_executed": false,
+  "network_requests": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

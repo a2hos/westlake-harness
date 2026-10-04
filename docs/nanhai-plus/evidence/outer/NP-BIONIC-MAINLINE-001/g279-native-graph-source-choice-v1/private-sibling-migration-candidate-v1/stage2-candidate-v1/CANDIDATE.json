@@ -1,0 +1,36 @@
+{
+  "schema": "g279-sibling-stage2-candidate-v1",
+  "status": "NO_GO_EXECUTION_UNTIL_INDEPENDENT_REVIEW",
+  "nonce": "9fbcd07961496a239af20124fab64e0b",
+  "packet_sha256": "ca5e0e8ca069900dcde0c4f2482974ba7b1229edfba68116e7d94c35e1d4bdcd",
+  "packet_file_sha256": "19cf640110a0dee3e2c9cd1f0c22e02bb098d3a0797638716e612ea0818dcf0a",
+  "launcher_sha256": "8bb27c80c7075c67687e4c7336170b038aa8888b4378f23a1541a6a8f8ea0c1f",
+  "remote_body_sha256": "93e7bd58092644ff5241fd19fad3acb5173fdb639215bdc222e9604ce75fc0bc",
+  "fixtures_sha256": "914cee8568f6125cad9863d3c3f47593a14c252e7adb0f9a546c0c708dcb3765",
+  "fixture_result_sha256": "b545dd4411612f8c10bb191f91768516c135cb5a94410e1249478c4779a18536",
+  "source_mapping_sha256": "f79646328e9f2fbdb4c6f00f32e0722ceb21424992c27820efc5fa28f79a458c",
+  "link_count": 46,
+  "stage1_receipt_sha256": "5ad4c321bf68bd50d84642684736dba4c345de3906720d31a92be6032e2d4b20",
+  "old_local_env_file_sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3",
+  "old_env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "proposed_local_env_file_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "proposed_env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "proposed_remote_binding_sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+  "validation": {
+    "py_compile_rc": 0,
+    "local_fixture_rc": 0,
+    "local_ssh_route_identity_rc": 0,
+    "westlake_gate_handoff_rc": 1,
+    "westlake_gate_note": "Runtime/app report template requires unrelated device and adapter labels; HANDOFF records missing sections. No pass claimed."
+  },
+  "actions": {
+    "remote_writes": 0,
+    "network_downloads": 0,
+    "graph": 0,
+    "device": 0,
+    "container": 0,
+    "namespace": 0,
+    "local_binding_changes": 0
+  },
+  "next_gate": "Independent exact-SHA review may issue GO_STAGE2_REMOTE_WRITE_ONCE. After postrun peer readback, require original-owner graph ACK and a separately reviewed binding switch/new graph generation."
+}

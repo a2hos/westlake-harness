@@ -1,0 +1,223 @@
+{
+  "entries_scanned": 6839,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 168399075,
+  "compressed_bytes": 71382817,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 9047900,
+        "sha256": "584ece24344ef5b62d0861a89eca3e17d14e244bf0620cb6b53e48d4ad523708"
+      },
+      {
+        "name": "classes2.dex",
+        "bytes": 8947168,
+        "sha256": "acd342ff245647f98980758c7354d72a69e692805224f00006e6cd2c6660e0f2"
+      },
+      {
+        "name": "classes3.dex",
+        "bytes": 8210080,
+        "sha256": "a73481ad88b88396e705f46178153d64ad44dc625e91bb44b389ce59997b275c"
+      },
+      {
+        "name": "classes4.dex",
+        "bytes": 9457072,
+        "sha256": "251dadf3cefcdecbd92668b66f5c0356657315ac11c14f1aa7555f25c6e7e1b9"
+      },
+      {
+        "name": "classes5.dex",
+        "bytes": 8685884,
+        "sha256": "08b042e02fc781394608dce5eaa6f29b763c20363c5d19a81a494c6b41b2633c"
+      },
+      {
+        "name": "classes6.dex",
+        "bytes": 8597012,
+        "sha256": "684cf09c120f4e6b7bf88d641d98db2fadd44d31629995358c32902db6ce7a40"
+      },
+      {
+        "name": "classes7.dex",
+        "bytes": 7845868,
+        "sha256": "4cd10eb3480535f8727c6608e977a737ca470567f50637def7c4f5725cc21add"
+      },
+      {
+        "name": "classes8.dex",
+        "bytes": 6010516,
+        "sha256": "eec2d7f8d7e88ce3de8e849ee5591f05d2a880f43b45281738ca41b0bae310f6"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/libc++_shared.so",
+        "bytes": 1292904,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214"
+      },
+      {
+        "name": "lib/arm64-v8a/libfbjni.so",
+        "bytes": 177000,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22"
+      },
+      {
+        "name": "lib/arm64-v8a/libhermes.so",
+        "bytes": 2249600,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ebf7bc5c1f135760e4fee0571a110d6e827f6e9a6ccadeb21e10e2c4c68c9c1b"
+      },
+      {
+        "name": "lib/arm64-v8a/libhermestooling.so",
+        "bytes": 149920,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "429170b800a3e0a8b0be15c09e7356fd789b7159a2dad43375d23eedf22bdc3b"
+      },
+      {
+        "name": "lib/arm64-v8a/libimagepipeline.so",
+        "bytes": 8760,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a709472b19930e7afc52ca6d0759cffeb33f826771fecee71b2c23c09cdfa1ba"
+      },
+      {
+        "name": "lib/arm64-v8a/libjingle_peerconnection_so.so",
+        "bytes": 11391928,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2d1f4c3aa2eb0f3769d5c52a8fa6186fc8a9249e97eacf73e637aa5ac3387269"
+      },
+      {
+        "name": "lib/arm64-v8a/libjnidispatch.so",
+        "bytes": 165992,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ddfc6c965bbe366615c000ec1f06552ddf0bb2b4f9d921d0bff8c75b3cb2ca4c"
+      },
+      {
+        "name": "lib/arm64-v8a/libjsctooling.so",
+        "bytes": 131112,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "05c792ebc8bb277515c9b13faf75fcc593bfffa2c0f154934338d4c6ddc463dc"
+      },
+      {
+        "name": "lib/arm64-v8a/libjsi.so",
+        "bytes": 412408,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "411d40312ac0db4bb2585fd78d8340e5e4af96a2046a4b4d8019b2a13e08578b"
+      },
+      {
+        "name": "lib/arm64-v8a/libmaplibre.so",
+        "bytes": 11263128,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "06406234032d5f9274f03bd4d1f64d58a501f052184907b7f15226abc4edfe5a"
+      },
+      {
+        "name": "lib/arm64-v8a/libmatrix_sdk_crypto_ffi.so",
+        "bytes": 11627888,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "75ff02a86617cabf08570fca2d1facc786aa1a33eacbe9c12972d3dc0ebcdb03"
+      },
+      {
+        "name": "lib/arm64-v8a/libnative-filters.so",
+        "bytes": 23712,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b283e235b7ad3a42358a6519620c2a1f5770764f00a5ac8f8b2705c53076f56e"
+      },
+      {
+        "name": "lib/arm64-v8a/libnative-imagetranscoder.so",
+        "bytes": 585376,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "23485bbc2cf1ac41cd373eccba1f4439fec37883a216b6e6b391f57c246f5e2a"
+      },
+      {
+        "name": "lib/arm64-v8a/libopuscodec.so",
+        "bytes": 730928,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "cad9e3888ea82c210d5aeb7eb328cdf0d58cd3407a5be2b4379da82a4e19601f"
+      },
+      {
+        "name": "lib/arm64-v8a/libreactnative.so",
+        "bytes": 6276096,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f5e13c085223cc49f7eec90559d4b73fa66aecabb62cefd1f5c9aab20969dab8"
+      },
+      {
+        "name": "lib/arm64-v8a/librealm-jni.so",
+        "bytes": 8527768,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "7693a9d21679f3e230f9f634459ff8102e30bd7ec73a764d7360df216d3099e0"
+      },
+      {
+        "name": "lib/arm64-v8a/librnscreens.so",
+        "bytes": 63176,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "8e57c67b93fcc3bb84ce3e900ccf856f5827c006712db7fc79a17a098b08da5f"
+      },
+      {
+        "name": "lib/arm64-v8a/librnworklets.so",
+        "bytes": 533824,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "27e5af9d252c20d9ab3aa3629517fcc41fab67ed10b5c9ae8c19a54308beff9d"
+      },
+      {
+        "name": "lib/arm64-v8a/libsentry-android.so",
+        "bytes": 16832,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a4eaa6bb917cfee5c5753e5511a4bc1f0d6311768f4c4c977d6e8bc4be579e66"
+      },
+      {
+        "name": "lib/arm64-v8a/libsentry.so",
+        "bytes": 723712,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "056e46a6de4121e9a4f9cfc947eaf0e3cbe7ea8b8c6fcab7ef396b95dee1f9dc"
+      },
+      {
+        "name": "lib/arm64-v8a/libuniffi_wysiwyg_composer.so",
+        "bytes": 3311440,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a5a2a448ada49f7f0564d90a2018a3fab4a0d1c635f3304672ff8b2dea3f50bb"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

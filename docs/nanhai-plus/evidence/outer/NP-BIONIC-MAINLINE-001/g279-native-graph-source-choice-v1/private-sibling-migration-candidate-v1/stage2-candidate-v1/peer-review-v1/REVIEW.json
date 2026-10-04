@@ -1,0 +1,51 @@
+{
+  "schema": "g279-sibling-stage2-independent-peer-review-v1",
+  "reviewed_utc": "2026-10-04T12:41:59Z",
+  "decision": "NO_GO_STAGE2_REMOTE_WRITE_V1",
+  "scope": "Independent local read and fixture review for exactly one proposed gz02 UID1000 stage-2 sibling write. No SSH remote command, execution, candidate edit, local_env edit, graph, target build, device, container, or namespace action.",
+  "frozen_identity": {
+    "nonce": "9fbcd07961496a239af20124fab64e0b",
+    "packet_canonical_sha256": "ca5e0e8ca069900dcde0c4f2482974ba7b1229edfba68116e7d94c35e1d4bdcd",
+    "packet_file_sha256": "19cf640110a0dee3e2c9cd1f0c22e02bb098d3a0797638716e612ea0818dcf0a",
+    "launcher_sha256": "8bb27c80c7075c67687e4c7336170b038aa8888b4378f23a1541a6a8f8ea0c1f",
+    "remote_body_sha256": "93e7bd58092644ff5241fd19fad3acb5173fdb639215bdc222e9604ce75fc0bc",
+    "fixtures_sha256": "914cee8568f6125cad9863d3c3f47593a14c252e7adb0f9a546c0c708dcb3765",
+    "source_mapping_sha256": "f79646328e9f2fbdb4c6f00f32e0722ceb21424992c27820efc5fa28f79a458c",
+    "stage1_postrun_review_sha256": "9f00ce5e2434d1511eccebe4e57eabfba921867cf0dac90dc6e223b295b9c52e"
+  },
+  "verified": {
+    "mapping": "PACKET links equal the frozen SOURCE-VIEW-LINKS.tsv row for row: 46 sorted unique links; 45 registered full-R4 alias targets resolve under /data/source/aosp-16.0.0-r4; one build/soong link resolves to the registered no-container worktree. Remote source_check compares each literal alias to the pinned resolved path and Git HEAD before and after link creation.",
+    "proposal": "Raw current local_env.md SHA 497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3; proposed file SHA 5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c and proposed config SHA a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba. Diff is precisely three values in the machine-readable values map: GZ02 project root, source view, and Soong UI. Proposed remote binding SHA 9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f matches frozen file; no active local binding switch is in stage 2.",
+    "ssh_host": "Local /usr/bin/ssh -G gz02 route and pinned known_hosts ed25519 fingerprint check passed; remote GZ02 and UID1000 require fresh execution-time readback, not inferred from this local test.",
+    "write_bounds": "Launcher reconstitutes exact packet/proposal, requires independent exact-SHA review, fsyncs O_EXCL local START before SSH and denies replay. Remote uses O_NOFOLLOW final directory opens, O_EXCL lease/binding/receipt, fixed new sibling path, explicit 46 link inventory, and quarantine-on-partial-failure without deletion. It has no graph/device/container/namespace code path.",
+    "local_fixture": "Reran fixture rc0: eight static/denial checks, including bad nonce, unsigned remote packet, freeze replay and unreleased execute denial; 0 remote writes/network/graph/device/container. This is not a positive remote writer test."
+  },
+  "blocking_findings": [
+    {
+      "id": "B1_STAGED_ROOT_NOT_PINNED",
+      "fact": "The independent stage-1 readback identifies sibling root dev/inode 64785/47185921, control 64785/47185922, old root 64785/29884417, and nine new file hashes/sizes/modes/inodes. Stage-2 remote validates only current UID/mode/shape plus SHA of a copied STAGE1-RECEIPT.json; it does not parse that receipt or compare its root/control/old-root identity and nine file identities with the current tree before creating the lease.",
+      "risk": "A replacement or altered sibling carrying the same stage-1 receipt bytes can reach a stage-2 write while the review would misleadingly attribute it to the accepted stage-1 tree.",
+      "smallest_fix": "Parse the SHA-pinned stage-1 receipt and compare current root/control/old-root dev+inode+UID+mode and nine staged file SHA/size/mode/inode before the first write; fail closed on mismatch. Recheck stable directory identity after the write, and add a substitution fixture."
+    },
+    {
+      "id": "B2_POSITIVE_WRITER_PATH_UNTESTED",
+      "fact": "The eight local fixtures never run the remote 46-link writer to STAGED_READBACK_ONLY on a temporary representative tree; they exercise only packet/static and refusal branches.",
+      "risk": "Link parent creation, os.walk inventory, O_EXCL receipt and partial-failure behavior lack executable positive coverage before the one-shot remote write.",
+      "smallest_fix": "Add an isolated temporary-tree positive-path fixture with 46 links, one patched Soong alias, exact binding bytes, and an injected failure proving quarantine/no deletion; no gz02 or shared-source write. Freeze a new script/packet generation after the code and fixtures change."
+    },
+    {
+      "id": "B3_REQUIRED_HANDOFF_GATE_FAIL",
+      "fact": "The applicable westlake-engineering-discipline skill says handoff/PR/stage reports must pass westlake_gate.py. Direct rerun on HANDOFF.md returned rc1 for all required section headings/labels, status and observed-wall classification.",
+      "scope": "A host migration handoff can state Android behavior, App and device as none/not reached while still satisfying the evidence template; this is a required communication gate, not a runtime/app-claim mismatch that can silently be waived.",
+      "smallest_fix": "Rewrite a new handoff generation using the template with explicit host-only/not-reached values, run westlake_gate.py to rc0, and independently review the new exact bytes."
+    }
+  ],
+  "not_blocking_but_unproven": [
+    "No fresh gz02 execution-time SSH/UID/inode/source HEAD readback was performed by this peer; any later release needs it immediately before the first write.",
+    "Git HEAD and alias realpath do not establish whole-tree byte cleanliness; stage 2 only creates references, so graph source/content guards remain a later separate gate.",
+    "Original octos-inner graph-only ACK is absent. This review concerns stage 2 only and grants no graph authority.",
+    "No rollback deletion is designed; after a partial attempt preserve lease/quarantine and reconcile read-only, never replay the nonce."
+  ],
+  "next": "Keep this v1 nonce and packet unreleased. Correct B1-B3 in a new immutable candidate and fixture generation; obtain a fresh independent peer review, then root may decide one bounded stage-2 remote write after fresh read-only host/source preflight. A later binding switch, graph, target compile, and device acceptance remain separately gated.",
+  "actions": {"remote_writes": 0, "graph": 0, "target_compile": 0, "device": 0, "container": 0, "namespace": 0, "candidate_mutations": 0, "local_env_mutations": 0}
+}

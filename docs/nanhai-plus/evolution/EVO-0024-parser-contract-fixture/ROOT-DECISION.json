@@ -1,0 +1,13 @@
+{
+  "schema": "nanhai.evo24.root_decision.v1",
+  "decision": "ACCEPT_ONE_PROSPECTIVE_LOCAL_PARSER_FIXTURE_TRIAL_ONLY",
+  "experiment_sha256": "ee452cfe839058f40fc69c406233ee6ec12d1e38c5ea9c9826c2fdee9ac3e37f",
+  "pilot_sha256": "c961886729e3423f58fe43b91612e77f76bc5480f8054ed42d85f8179b3564f4",
+  "observed_local_pilot_rc": 0,
+  "observed_local_pilot_seconds": 0.011628,
+  "next_test": "For one future one-shot candidate that parses external tool text, bind the actual parser and fixture SHA in its release and test a representative full line with field-name collisions alongside a minimal positive. Record whether the gate finds a defect before execution and its added time.",
+  "broad_promotion": false,
+  "original_89_tool_pass_delta": 0,
+  "apk_startup_delta": 0,
+  "scope": "Preparation-gate pilot only; no change to Bionic architecture, acceptance thresholds or current executed receipts."
+}
