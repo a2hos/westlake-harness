@@ -1,0 +1,49 @@
+{
+  "schema": "g279-stage4-v12-independent-static-review-v2",
+  "independent_reviewer": "codex-stage4-v12-v2-peer",
+  "decision": "GO_V12_STAGING_ONCE",
+  "scope": "Exact frozen v2 packet and one-shot native-host staging of v12 runner bytes under the accepted private sibling only. This review does not authorize SSH by this reviewer, graph execution, target compilation, App or device work, containers, or namespace sandboxes.",
+  "packet_sha256": "3cecd491666451a490cbcee5ce1ca01d1722aad0c95e4950aee06867211c0da1",
+  "packet_file_sha256": "cba275745d625e6e3eb97e9af577f7cbaf8aa8ac2684fbaec92f29a84816a5f4",
+  "nonce": "98436646ab71ba46dcc5cfe3d4d12e45",
+  "launcher_sha256": "a8212a669dfcccc9afacb5d71ab2a796456596e9b4e6d67cade03ae4d9bbf48b",
+  "remote_body_sha256": "bac8b67e3fb7a537470567d82b34ebed453eb4d29d6fdc6fc1ec4dfd4dbf8635",
+  "fixtures_sha256": "acbe487bd11517cae7be729538421fdff09dcdb3107bdd34ee11a2ba811af504",
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "runner_bytes": 47610,
+  "runner_target_mode": "0444",
+  "handoff_sha256": "d1acd5713b113a548ba0a1317d2de8420d048abe1425ba05f375e2e9c7113c06",
+  "active_local_env_raw_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "stage3_peer_sha256": "600c91a2b0a99b17dddffad6efabf8d85ddd0b4edc8d17b5595ee4c395c2ae36",
+  "stage3_root_acceptance_sha256": "4e222d072b75c3a6785d284a5f492d2036db37cd2a45be55f495099f9ea4e4df",
+  "v12_static_peer_sha256": "92ccc9f050bdb1771090af315f7973ded9b0dfbfb6af1eaa49899817b3769022",
+  "v1_no_go_peer_sha256": "67be580a1182fee341473fd0a62cc3489e2fe104b324f86cbd562050fbdd45df",
+  "verified_local": {
+    "packet_reconstruction": "PASS: canonical packet digest and full packet reconstruction match; 17 unique unchanged file identities and exact 15-entry control inventory are derived from pinned Stage3 receipts; active local_env SHA matches.",
+    "code_and_v1_separation": "PASS: launcher, remote_body and fixtures compile without pyc output and are byte-identical to v1; v2 packet has a distinct nonce and canonical SHA. v1 immutable NO_GO remains separate and grants no authority.",
+    "handoff_gate": "PASS: westlake_gate.py on exact v2 HANDOFF.md returned rc0; its recorded stdout SHA eed69642df3be2469a7405313d74addcb6af304d54168b39b992751078125421 matches the file.",
+    "fixtures": "PASS: local fixtures returned rc0, 5/5: exact packet, unreleased execute denied before START/SSH, mode 0444 staging, same-byte inode replacement denial, and partial-write quarantine without deletion or replay.",
+    "host_and_write_scope": "Static review: launcher pins gz02 SSH host key checks and remote Python 3.12; remote body checks Linux x86_64 gz02 UID/EUID 1000, directory inodes, source/control identities and inventories before O_EXCL lease, runner and receipt writes. Local START/TERMINAL are O_EXCL and nonce replay is denied.",
+    "no_container_or_namespace": "Static review: Stage4 launcher/remote body invoke no Docker, Podman, OCI, container or namespace tool. v12 graph runner is staged only; its later graph command uses native sudo/env/timeout/strace/seccomp guard, has a forbidden launcher list and audits namespace attempts. No graph path was executed in this review."
+  },
+  "execution_conditions": [
+    "Root/operator must separately authorize the one-shot Stage4 action and recheck current control policy; this review alone does not claim remote state is fresh.",
+    "Immediately before execution, fresh read-only gz02 preflight must match all pinned directory identities, 17 file identities and exact 15-entry control inventory; any drift invalidates this GO.",
+    "Use this v2 nonce once only. Preserve START/TERMINAL and any quarantine; never replay v1 or retry a started nonce. Independent postrun readback is required before calling staged bytes accepted."
+  ],
+  "not_proven": [
+    "Fresh gz02 input state or actual v12 remote staging/readback",
+    "Formal active-env EVO19 gate and original owner graph-only signed ACK",
+    "Native Soong graph, ARM64 Bionic target, App launch or device result"
+  ],
+  "actions_by_reviewer": {
+    "ssh": 0,
+    "remote_writes": 0,
+    "graph": 0,
+    "target_compile": 0,
+    "device": 0,
+    "container": 0,
+    "namespace": 0,
+    "candidate_edits": 0
+  }
+}

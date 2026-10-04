@@ -1,0 +1,20 @@
+{
+  "schema": "g279-stage4-v12-root-one-shot-release-v1",
+  "at": "2026-10-04T13:35:52.352240+00:00",
+  "issuer": "/root",
+  "decision": "RELEASE_ONE_V2_STAGE4_NATIVE_STAGING_ONLY",
+  "nonce": "98436646ab71ba46dcc5cfe3d4d12e45",
+  "packet_sha256": "3cecd491666451a490cbcee5ce1ca01d1722aad0c95e4950aee06867211c0da1",
+  "peer_review_sha256": "3ac77e5852f1267f6c461dea12491e5dbb4aacc20d9a6d493eabd167b4c75e46",
+  "fresh_preflight_sha256": "52090da4580fc3a5747821115cd6a0be66d42e85beef4812b6bd5fd4601cbcb5",
+  "launcher_sha256": "a8212a669dfcccc9afacb5d71ab2a796456596e9b4e6d67cade03ae4d9bbf48b",
+  "remote_body_sha256": "bac8b67e3fb7a537470567d82b34ebed453eb4d29d6fdc6fc1ec4dfd4dbf8635",
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "attempts": 1,
+  "replay_allowed": false,
+  "graph": false,
+  "target": false,
+  "device": false,
+  "container": false,
+  "namespace": false
+}

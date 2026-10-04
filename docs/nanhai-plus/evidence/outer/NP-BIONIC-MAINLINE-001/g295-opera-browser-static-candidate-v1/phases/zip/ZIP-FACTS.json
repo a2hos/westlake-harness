@@ -1,0 +1,207 @@
+{
+  "entries_scanned": 7309,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 307729461,
+  "compressed_bytes": 278061392,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 11131144,
+        "sha256": "cc97ea9778d352c44fa38330c03881a2d85b2b7915c06101ae2aed2c6db1c034"
+      },
+      {
+        "name": "classes2.dex",
+        "bytes": 7718032,
+        "sha256": "9628b4b55542b9c17ce4a91bb6489780821efc2281c368b490734a0928800ba8"
+      },
+      {
+        "name": "classes3.dex",
+        "bytes": 9077060,
+        "sha256": "e629989c4e96d35bb9c6987c97054abad7130a7793b4dc4ad040d99c93d3bf96"
+      },
+      {
+        "name": "classes4.dex",
+        "bytes": 5272164,
+        "sha256": "d7f79e813e03de370563791e8d0cb18ef5e105a88f5ab6240f140549552353a2"
+      },
+      {
+        "name": "classes5.dex",
+        "bytes": 1364,
+        "sha256": "7cde2688ebf08772183569a0129d43cb5a832dc808ec5f37f6c12383eb8d0986"
+      },
+      {
+        "name": "classes6.dex",
+        "bytes": 3938332,
+        "sha256": "74f2806d6180c0e6ce2a4df6c2b7928351a6a65a02de850af587ab0227bda82e"
+      },
+      {
+        "name": "classes7.dex",
+        "bytes": 2784,
+        "sha256": "f723f3eb0ae7751dfbd377fdc284891a587e0a61cdaffa06daeb4e2689e06567"
+      },
+      {
+        "name": "classes8.dex",
+        "bytes": 2004272,
+        "sha256": "9c3ec450b940d5b3f6f490b158d3c5af6ecd9030a3983b0758d787d7047117c3"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/dummy.so",
+        "bytes": 4064,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "13425092c4df9c0736312ff97470bf1812c93b0064418cff4b5bd5eae7f491b8"
+      },
+      {
+        "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+        "bytes": 10096,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+      },
+      {
+        "name": "lib/arm64-v8a/libbarhopper_v3.so",
+        "bytes": 4946720,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ec09597e9eb3aee0eb55ae3366da0d4ba416f5aa35a1af0b3811f50ff46743a1"
+      },
+      {
+        "name": "lib/arm64-v8a/libblind_threshold_bls.so",
+        "bytes": 715120,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "7c86095f2852be75814630c9100fdf7ed03dca2e8103668d785c94cbff43c75c"
+      },
+      {
+        "name": "lib/arm64-v8a/libchrome_crashpad_handler.so",
+        "bytes": 1312392,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "bb0756d34a60ece7b8ed6a03e414aff1d34b97725a7000c76a8482d5c4190e54"
+      },
+      {
+        "name": "lib/arm64-v8a/libcrashpad_handler_trampoline.so",
+        "bytes": 6904,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "fce8f6f64863683cefdfc4d4fac52e9df7b4a42ba73135c4f93afb2ec409341d"
+      },
+      {
+        "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+        "bytes": 7784,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "178f89a2c6c9234ddf980dd4cd1f3616186a46b2b932aafa6707abd04c5fd76a"
+      },
+      {
+        "name": "lib/arm64-v8a/libdummy.so",
+        "bytes": 3896,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6a258ad4410528c667fa57e948256ca2e4705620a4c428d65131c7fbbaf092ef"
+      },
+      {
+        "name": "lib/arm64-v8a/libheliumvpn.so",
+        "bytes": 1250120,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2500f9422044d362b8f01065ce00cc306e098299be30e685fd3ae2f6a5e939cc"
+      },
+      {
+        "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+        "bytes": 32528,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+      },
+      {
+        "name": "lib/arm64-v8a/libjnidispatch.so",
+        "bytes": 165992,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "ddfc6c965bbe366615c000ec1f06552ddf0bb2b4f9d921d0bff8c75b3cb2ca4c"
+      },
+      {
+        "name": "lib/arm64-v8a/libkp_sdk_manager.so",
+        "bytes": 14153104,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "e560d777bc2fbc74e6fdf75e501f4e3a7a236813040a42592a75fd0166804f55"
+      },
+      {
+        "name": "lib/arm64-v8a/libopenvpn.so",
+        "bytes": 6569640,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "120882e756d63e7ab17b01953aa90b758a82572c3a5388e0904d5287ccfb4a6d"
+      },
+      {
+        "name": "lib/arm64-v8a/libopera.so",
+        "bytes": 163973704,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "162761a1eebd3b9808d756687699c0a2bfb6e3600f64c31ee568b04a97540ea3"
+      },
+      {
+        "name": "lib/arm64-v8a/libovpnexec.so",
+        "bytes": 4224,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6da308f64543da0f97f177bb8d1bea7ffc0606d470fd452a6fce6f2b4dc557c4"
+      },
+      {
+        "name": "lib/arm64-v8a/librenderscript-toolkit.so",
+        "bytes": 337160,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "0be8dd81ce5b7fbbdd7b829ae601197a3facdb6f68b89782c9d1a8e6fc7b192d"
+      },
+      {
+        "name": "lib/arm64-v8a/libsurface_util_jni.so",
+        "bytes": 4896,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+      },
+      {
+        "name": "lib/arm64-v8a/libvpnutils.so",
+        "bytes": 8144,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "febf88ffc41a07a5eb6ee1851138be6fde01959ab30e1f065baaf3c72c7063e2"
+      },
+      {
+        "name": "lib/arm64-v8a/libwg-go.so",
+        "bytes": 2752344,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4a27e2d42e7f5b2d489b7dfdc8e32921ec5f509a0e7b3618832da6e7b8792d86"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

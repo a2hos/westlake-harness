@@ -1,0 +1,141 @@
+{
+  "canonical_count_change": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "entries": [
+    {
+      "artifact": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/opera-arm64.apk",
+      "artifact_sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+      "candidate_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/CANDIDATE.json",
+      "candidate_receipt_sha256": "01d15303d85dcf3c77750320ccd60032c5aecaae7c6886696e249f6b79d2742b",
+      "executed_command_families": [
+        "curl HTTPS GET with bounded time and zero retry; effective URL, HTTP and TLS verification in curl.stdout",
+        "aapt2 dump badging",
+        "java -jar apksigner.jar verify --verbose --print-certs",
+        "Python zipfile.testzip full CRC, ABI entries, APK SHA256"
+      ],
+      "name": "opera",
+      "raw_command_outputs": {
+        "aapt2.stderr.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/aapt2.stderr.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/aapt2.stdout.raw",
+          "sha256": "a7813dd9e83458410e6fbc4532a99100c969950c4af4b8e7d4e79ad7a1c4ca18"
+        },
+        "apksigner.stderr.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/apksigner.stderr.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/apksigner.stdout.raw",
+          "sha256": "96e0a20b84b3b6172ff1b215b0def1e51169634d1b8cf7059eb6a0b385c58a21"
+        },
+        "curl.stderr": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/curl.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "curl.stdout": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/curl.stdout",
+          "sha256": "97aec353edd311b91113b087325fd3cb533209435df321502e26b9a3e5233ec5"
+        },
+        "headers.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/headers.raw",
+          "sha256": "326ed30a741e9e25268e15f7a7177a5abf4aac54390a27ccd34e133546ef18ab"
+        }
+      },
+      "url": "https://download.opera.com/download/get/?arch=arm8&download_url=&nothanks=yes&partner=www&product=Android"
+    },
+    {
+      "artifact": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/opera-gx.apk",
+      "artifact_sha256": "22f2921d3a91e94f3689f104a52d502ae6f5ad46e32cedf67e98b760be9c9503",
+      "candidate_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/CANDIDATE.json",
+      "candidate_receipt_sha256": "f0ac49ff2345f5906dc34fa9d57a8492b8bf9f6e8b3dd418eb577f45cfec90a1",
+      "executed_command_families": [
+        "curl HTTPS GET with bounded time and zero retry; effective URL, HTTP and TLS verification in curl.stdout",
+        "aapt2 dump badging",
+        "java -jar apksigner.jar verify --verbose --print-certs",
+        "Python zipfile.testzip full CRC, ABI entries, APK SHA256"
+      ],
+      "name": "opera-gx",
+      "raw_command_outputs": {
+        "aapt2.stderr.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/aapt2.stderr.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/aapt2.stdout.raw",
+          "sha256": "11963cb966e12fe9160b9957d0b6439516a689fa94208980d561a590bfc57399"
+        },
+        "apksigner.stderr.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/apksigner.stderr.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/apksigner.stdout.raw",
+          "sha256": "7493edcce54cfbe4ed922fea3d283a447db0b703c0fd0cde657fa689ad4516ec"
+        },
+        "curl.stderr": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/curl.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "curl.stdout": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/curl.stdout",
+          "sha256": "36bc0fc5eecc2b89e73e983f6f35d274deb8d37b55ecb6e1408f2d2bc4383be3"
+        },
+        "headers.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/headers.raw",
+          "sha256": "e8ff97941dd110adaf96148f1db25484991db9b0632a518b98ea13fe9a0efe1f"
+        }
+      },
+      "url": "https://download.opera.com/download/get/?download_url=https%3A%2F%2Foperagx.gg%2Fmobile-lp-android&nothanks=yes&partner=www&product=android-gx"
+    },
+    {
+      "artifact": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/opera-mini.apk",
+      "artifact_sha256": "b7a9aee039fec78693eac2c21a31df82703d9be50dfae7ca59ca41a51b46fe64",
+      "candidate_receipt": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/CANDIDATE.json",
+      "candidate_receipt_sha256": "f49ea93962b79c4294e78a96e41169eb081379803113647706fad373d78bf1ee",
+      "executed_command_families": [
+        "curl HTTPS GET with bounded time and zero retry; effective URL, HTTP and TLS verification in curl.stdout",
+        "aapt2 dump badging",
+        "java -jar apksigner.jar verify --verbose --print-certs",
+        "Python zipfile.testzip full CRC, ABI entries, APK SHA256"
+      ],
+      "name": "opera-mini",
+      "raw_command_outputs": {
+        "aapt2.stderr.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/aapt2.stderr.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "aapt2.stdout.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/aapt2.stdout.raw",
+          "sha256": "9a2a65c9ebd9cbf2102784a12b081815f07c4f9dcca1fb75d89890279786639e"
+        },
+        "apksigner.stderr.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/apksigner.stderr.raw",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "apksigner.stdout.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/apksigner.stdout.raw",
+          "sha256": "a0967be2aca1fd851526df6b73d8e3634d2df28a1e2e13d17e00046461c58cde"
+        },
+        "curl.stderr": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/curl.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "curl.stdout": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/curl.stdout",
+          "sha256": "cde7dc15e302e9ecb514651f19137f7cf48a10e94f566523340bbf656091cbf8"
+        },
+        "headers.raw": {
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-mini-official-v1/headers.raw",
+          "sha256": "a85cf9f6b7a5e3c6e7db8e25f2d81b0cf7f786072a3ec2dc7f1e3132464e6569"
+        }
+      },
+      "url": "https://download.opera.com/download/get/?download_url=&nothanks=yes&partner=www&product=android+mini"
+    }
+  ],
+  "schema": "blackbox-opera-command-evidence-v1",
+  "scope": "Evidence file inventories raw outputs and candidate receipts; command argv was not separately captured at execution time and must not be represented as a cryptographically bound original command record. The tool-call transcript contains executed code."
+}

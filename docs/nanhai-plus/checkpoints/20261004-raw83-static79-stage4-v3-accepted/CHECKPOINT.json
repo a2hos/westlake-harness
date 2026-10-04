@@ -1,0 +1,63 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T13:43:45.507447+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "active_env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "counts": {
+    "accepted_raw_apks": 83,
+    "registered_raw_apks": 75,
+    "supplemental_raw_apks": 8,
+    "complete_host_static": 79,
+    "dex_entries": 205,
+    "true_arm64_elf_entries": 938,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "evidence": {
+    "opera_raw": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a1b8e69d8d4b3d52ce4ef19d37d2f064a2ce65bfeb35984ad2458deaf0f2c5b8"
+    },
+    "opera_static": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g295-opera-browser-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "fdc45b39d92c5fbe10044d2d3c62bdb69125932e5dac657142f2eab3a1393bda"
+    },
+    "stage4_v2_prestart_failure": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v2/ROOT-TERMINAL.json",
+      "sha256": "1687249dc66681bc94e4d74042b6757a5f1d3530fa59a4a75bdc059076acc4fc"
+    },
+    "stage4_v3_postrun": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v3/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "94a0c751e9b715139cccef48805cc71c1d47a158c4555ffa4cadc0dc180afd38"
+    },
+    "linux_memfd_fixture": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/linux-memfd-signature-fixture-v1/RESULT.json",
+      "sha256": "2bb4d265eb954efa1261a9b1fdf5a705c9f6cc9f607c52f8d3499c04be702731"
+    },
+    "cross_apk_static_pilot": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/cross-apk-reference-pilot-v1/ROOT-PILOT-ADMISSION.json",
+      "sha256": "fc143bcc187415715590b19bea386f77c26d4a57b5a01096ef3b029687e63ff0"
+    },
+    "evo26": {
+      "path": "docs/nanhai-plus/evolution/EVO-0026-host-identity-prestart-fixture/RESULT.json",
+      "sha256": "99441e35f600e3ea66f330b4e2b0352f84821d6e071f562f9495605fd5eb1ff6"
+    }
+  },
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "stage4_v12_staged_bytes_accepted": true,
+  "formal_evo19_pass": false,
+  "original_owner_signed_graph_ack": false,
+  "graph_executed": false,
+  "arm64_target_built": false,
+  "hello_world_started": false,
+  "next": "Freeze/review fresh formal v12 EVO19 11-row active-env gate, then root read-only release and exact gate readback; graph release and original-owner signed ACK remain separate. Continue APK static/qualification in parallel."
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai-evo26-process-v1",
+  "closed_utc": "2026-10-04T13:38:00Z",
+  "trigger_groups": [
+    "G294 VLC one host-static inventory accepted: 77 to 78, no cold start",
+    "Stage4 v1 HANDOFF gate rc1 and independent NO_GO, no remote write",
+    "Opera Browser and Opera GX raw APK admission: raw 81 to 83, no static or runtime increment",
+    "Stage4 v2 fresh read-only preflight PASS, then launcher host_identity rc1 before START"
+  ],
+  "primary_lens": "_rethink_log_day",
+  "lens_collection": {
+    "requested_window": "rolling previous 24 hours",
+    "sampled_logs": 0,
+    "semantic_stage": "not-run",
+    "collector_result": "/tmp/evo26-rethink-output/rethink-result.json",
+    "registration_error": "learning_store register-rethink returned Operation not permitted on /private/tmp; no learning-store result was claimed",
+    "evidence_substitute": "Exact current repository receipts and launcher source, read-only; terminal-log inference is not claimed"
+  },
+  "one_improvement_only": "Before releasing a one-shot Stage4 launcher, run a local fixture of host_identity against an exact pinned ed25519 row plus extra non-ed25519 rows, and wrong or duplicate ed25519 rows; retain fingerprint and fail-closed checks.",
+  "evo25_check": "No isolated reusable gate-engine fixture or promoted implementation found in the reviewed EVO25 result and current G279 evidence; status unverified, not counted as a trial.",
+  "actions": {
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "graph": 0,
+    "canonical_edits": 0,
+    "candidate_edits": 0,
+    "experiment_runs": 0
+  },
+  "result_path": "docs/nanhai-plus/evolution/EVO-0026-host-identity-prestart-fixture/RESULT.json"
+}

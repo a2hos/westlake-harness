@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai-evo25-process-v1",
+  "closed_utc": "2026-10-04T13:25:21Z",
+  "trigger": "Four actual result groups since EVO24: G279 v11 runner staged/read back, private sibling active config switched, original owner config readback, G294 VLC host static scan. Candidate v12 static review used as current evidence, not counted as an additional trigger group.",
+  "primary_lens": "_rethink_old_rule",
+  "one_improvement_only": "Explore separating runner-specific identity spec from reusable gate validation code, while preserving fresh byte readback and independent release.",
+  "observations": {
+    "v11_gate_sha256": "64b7fb70003ebff08234ff156e9d9a0a5402a55bfb5adb94ed4951c4f4cee6a2",
+    "v12_gate_sha256": "069e97c069e4d93ddaa2f04021af9e7060fec5d3155b658df2d52dfc08d39ba2",
+    "v11_lines": 400,
+    "v12_lines": 400,
+    "identical_lines_by_sequence_matcher": 390,
+    "source_read_only_comparison_rc": 0
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evolution/EVO-0025-reusable-input-identity-gate/RESULT.json",
+    "sha256": "a7ae46f257d5b4dd6103128c281863578742d8ce6dacf9b0369f3ae26bf94f85",
+    "rethink_core_validate_result_rc": 0,
+    "experiment_state": "proposed_only",
+    "adoption_state": "not_promoted"
+  },
+  "actions": {
+    "remote_commands": 0,
+    "graph_runs": 0,
+    "target_compiles": 0,
+    "device_commands": 0,
+    "canonical_policy_edits": 0,
+    "experiment_runs": 0
+  },
+  "completion_limit": "This reflection does not advance G279 graph authority or any of 89 tools/200 APK outcomes."
+}

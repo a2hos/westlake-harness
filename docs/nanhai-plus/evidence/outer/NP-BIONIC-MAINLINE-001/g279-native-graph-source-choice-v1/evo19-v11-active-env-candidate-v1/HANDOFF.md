@@ -1,0 +1,11 @@
+# G279 EVO19 active-env v11 candidate
+
+This is a **read-only preflight candidate** for the now-active `local_env.md` config SHA `a4e74257…` and the exact staged v11 runner SHA `8b648401…`. It does not release Soong graph execution. It cannot authorize v12: that generation needs a new runner path/SHA/bytes, a new spec, a new fresh readback and a separate review/release.
+
+`gate.py` pins the current config, SSH/interpreter identities and 11 remote inputs. The three AOSP paths use the project-declared shared read-only symlink exception: the probe checks that the literal `android-source` symlink points exactly to `/data/source/aosp-16.0.0-r4`, then walks the resolved path with `O_NOFOLLOW`. All other paths use symlink-free fd walks. The probe checks SHA-256, size, mode and before/after inode/mtime/ctime stability. It records both outer SSH rc and remote rc and never calls a graph runner.
+
+The preparatory v3 SSH returned outer rc 0, remote rc 0 and 11/11 matching rows; see `PREP-READBACK-v3.json`. It is an observation at that time, not the formal EVO19 gate. `PREP-READBACK.json` and `PREP-READBACK-v2.json` retain failed iterations (JSON double encoding, then three registered source aliases rejected). `fixtures.py` passed local positive, byte drift, config drift and altered-spec checks. `gate.py --preflight` currently exits 3 without a peer review and root release; it created no `EVO19-GATE.json`.
+
+For independent review, inspect exact `gate.py` SHA `64b7fb70003ebff08234ff156e9d9a0a5402a55bfb5adb94ed4951c4f4cee6a2` and canonical `SPEC.json` SHA `d4f8accf37c201a01f08c731dc5ec6bde685d62a90b0d61e5770f79c2ec0b075`. A future reviewer must create `peer-review-v1/REVIEW.json` with `decision=GO_READONLY_EVO19_ONCE` and both exact SHA fields. Root then separately writes `ROOT-READBACK-RELEASE.json` using the field contract illustrated in `ROOT-READBACK-RELEASE-TEMPLATE.json`; only then can one local `--preflight` create the O_EXCL `EVO19-GATE.json`. The gate receipt must be independently checked before any remote staging or graph release. The formal gate must be refreshed if inputs drift; never rewrite an existing receipt.
+
+The v11 runner has `--run` hard-closed (rc 3); no owner graph ACK, target build, device or App result follows from this candidate. The active goal/session/claim and device HOLD remain unchanged.

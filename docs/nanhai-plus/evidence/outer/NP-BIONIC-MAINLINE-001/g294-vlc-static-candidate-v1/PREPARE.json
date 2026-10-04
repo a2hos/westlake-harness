@@ -1,0 +1,43 @@
+{
+  "schema": "nanhai.g294.vlc.static_prepare.v1",
+  "prepared_utc": "2026-10-04T13:19:04.743086+00:00",
+  "status": "FROZEN_CANDIDATE_INDEPENDENT_REVIEW_AND_ROOT_RELEASE_PENDING_NO_SCAN",
+  "exact_apk": {
+    "registry_package_label": "org.videolan.vlc",
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v2/org.videolan.vlc/body.raw",
+    "bytes": 47990842,
+    "sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+    "upstream_version_label": "3.7.1",
+    "version_code": 13070106,
+    "artifact_id": "a-7018dabd40416b3824c5"
+  },
+  "lockfile": "benchmark/2026-09-23-corpus2-blind/downloads.lock.json",
+  "lockfile_sha256": "ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb",
+  "raw_acceptance": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+    "sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa",
+    "status": "ACCEPT_8_EXACT_STOCK_PAYLOAD_IDENTITIES_ONLY"
+  },
+  "inventory_expectations": {
+    "zip_entries": 2618,
+    "dex_entries": 6,
+    "true_elf_entries": 4,
+    "native_abis": [
+      "arm64-v8a"
+    ],
+    "packed_non_elf_so_entries": 0
+  },
+  "files_sha256": {
+    "INPUTS.json": "89cd0852e881af7b79ab47e5f5f8436508ab95e61fddf660d27ce9a32746d4fe",
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "8fd41ff3bf5a978cccb9dc3599fb864078c2dee9e1b72db256b821a37ae7202b",
+    "run.py": "fd010dd1f6ddf63eb9142336db4f50efa0cb76117ff79837649c7bf6aab11480"
+  },
+  "scope": "One exact upstream registered VLC APK; host ZIP/metadata/ELF/DEX only; no network/device/container/namespace/startup/count change",
+  "prior_partial": "harness-stock-inventory-batch2-v1 VLC 150-second timeout; partial inventory not complete",
+  "proposed_gate": {
+    "peer_review": "peer-review-v1/REVIEW.json",
+    "root_release": "ROOT-RELEASE.json",
+    "decision": "GO_ONE_LOCAL_STATIC_INVENTORY"
+  }
+}

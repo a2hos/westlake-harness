@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-10-04T13:21:15.802657+00:00",
+  "checks": 5,
+  "container_commands": 0,
+  "device_commands": 0,
+  "fixture_rc": 0,
+  "gate_receipt_created": false,
+  "gate_sha256": "64b7fb70003ebff08234ff156e9d9a0a5402a55bfb5adb94ed4951c4f4cee6a2",
+  "graph_commands": 0,
+  "namespace_commands": 0,
+  "preflight_without_release_rc": 3,
+  "preflight_without_release_ssh": false,
+  "prep_matches": 11,
+  "prep_readback_sha256": "859cbf2c032d97245dab60e143ce58226c36b10198d25fd56fb2177718986d0a",
+  "prep_remote_rc": 0,
+  "prep_rows": 11,
+  "prep_ssh_rc": 0,
+  "py_compile_rc": 0,
+  "schema": "nanhai-g279-evo19-v11-fixture-v1",
+  "spec_sha256": "d4f8accf37c201a01f08c731dc5ec6bde685d62a90b0d61e5770f79c2ec0b075",
+  "status": "PASS_LOCAL_ONLY",
+  "target_compiles": 0
+}

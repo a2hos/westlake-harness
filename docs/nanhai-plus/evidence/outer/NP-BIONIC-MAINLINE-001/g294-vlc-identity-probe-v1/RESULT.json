@@ -1,0 +1,77 @@
+{
+  "schema": "nanhai.g294.vlc.identity_probe.v1",
+  "at": "2026-10-04T13:22:36.075426+00:00",
+  "inputs": {
+    "apk": {
+      "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v2/org.videolan.vlc/body.raw",
+      "sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+      "bytes": 47990842
+    },
+    "aapt2": {
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+      "sha256": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+      "bytes": 11038888
+    },
+    "apksigner.jar": {
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+      "sha256": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+      "bytes": 1074052
+    },
+    "java": {
+      "path": "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+      "sha256": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158",
+      "bytes": 70704
+    }
+  },
+  "index_sha256": "ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb",
+  "raw_acceptance_sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa",
+  "commands": {
+    "badging": {
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v2/org.videolan.vlc/body.raw"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.09469362499658018,
+      "stdout_sha256": "72fad9429713469bd632b06cb27b809120b5a3741521b500c0eacef3dc1922b2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 7398,
+      "stderr_bytes": 0
+    },
+    "signature": {
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-identity-probe-v1",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v2/org.videolan.vlc/body.raw"
+      ],
+      "rc": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.6341994579415768,
+      "stdout_sha256": "75ff3daa3063849e114b2a287b3653025bd4378bf14ab677e4a40e8cfe2b7184",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 7166,
+      "stderr_bytes": 0
+    }
+  },
+  "checks": {
+    "package_identity": true,
+    "signature_verified": true,
+    "input_unchanged": true
+  },
+  "scope": "read-only host package and signature verification; no full static, startup or count credit",
+  "signer_certificate_sha256": [
+    "80535be61eedb9a03b0476a6f493d496c3498770404339ea7a8000f5e61d22c0"
+  ],
+  "rc": 0
+}

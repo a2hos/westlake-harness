@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai-g295-opera-browser-root-static-admission-v1",
+  "at": "2026-10-04T13:41:38.586497+00:00",
+  "decision": "ACCEPT_ONE_COMPLETE_HOST_STATIC_INVENTORY_ONLY",
+  "package": "com.opera.browser",
+  "apk_sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+  "candidate_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g295-opera-browser-static-candidate-v1/RESULT.json",
+    "sha256": "52969dfb5396da25df7922d692b6bad2a6135609f110922f1e78268369e1d63a"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g295-opera-browser-static-candidate-v1/peer-postrun-v1/REVIEW.json",
+    "sha256": "3cc3a7ea63733adf7e4be357beb3c7acb6f8d2313cce1a23eb931aac1a314ade"
+  },
+  "seal_sha256": "103ec8acec098978fac1a416220496206ad1d4902cfaee3a1c92d82ab9fc1feb",
+  "counts_before": {
+    "complete_static": 78,
+    "dex": 197,
+    "true_arm64_elf": 919
+  },
+  "counts_after": {
+    "complete_static": 79,
+    "dex": 205,
+    "true_arm64_elf": 938
+  },
+  "host_static_only": true,
+  "blackbox_qualification_delta": 0,
+  "startup_delta": 0,
+  "build_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "limits": [
+    "Independent scan and root identity/count spot check only",
+    "No Bionic runtime, cold start, input, graphics or device proof"
+  ]
+}

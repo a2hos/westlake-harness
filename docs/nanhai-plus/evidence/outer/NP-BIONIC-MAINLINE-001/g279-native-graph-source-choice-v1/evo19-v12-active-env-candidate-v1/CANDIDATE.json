@@ -1,0 +1,18 @@
+{
+  "env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "fixture_sha256": "e054ce31dce92be98a9eddc9387a0a3d41738f74d8f07838f0a0290986347291",
+  "formal_gate_receipt": null,
+  "formal_spec_sha256": null,
+  "gate_sha256": "069e97c069e4d93ddaa2f04021af9e7060fec5d3155b658df2d52dfc08d39ba2",
+  "graph_authorized": false,
+  "local_env_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "remote_runner_readback": false,
+  "remote_runner_staged": false,
+  "runner_candidate_bytes": 47610,
+  "runner_candidate_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "runner_version": "v12",
+  "schema": "nanhai-g279-evo19-v12-active-env-candidate-v1",
+  "spec_template_sha256": "b566c9b8dd88321080826da0aa59e7270eff5244ecdf5dde271664b00c4b0456",
+  "status": "STATIC_TEMPLATE_ONLY",
+  "v11_prep_reuse_scope": "Only ten unchanged non-runner input identity observations; all eleven require fresh formal v12 gate readback."
+}

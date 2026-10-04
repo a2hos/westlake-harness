@@ -1,0 +1,20 @@
+{
+  "schema": "g279-stage4-v12-v3-root-postrun-acceptance-v1",
+  "at": "2026-10-04T13:43:09.088089+00:00",
+  "decision": "ACCEPT_STAGE4_STAGED_BYTES_ONLY",
+  "packet_sha256": "8745a57fe662baced75d9fb354cc658e0e93f74919cdf3957c18b2a03e76add7",
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "runner_bytes": 47610,
+  "runner_mode": 292,
+  "remote_runner_inode": 47186014,
+  "local_terminal_sha256": "70df1b9efde6b6c2636b1bb42186ba3c46a862a1d658535b121bcc7d52a38485",
+  "independent_review_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v3/peer-postrun-v1/REVIEW.json",
+  "independent_review_sha256": "131fe0f97c443ef85770730d36a132cfb3500bbaedeaf11db0a38412d8497ac3",
+  "formal_evo19_pass": false,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_sandbox": false,
+  "next": "new formal v12 EVO19 exact active environment gate; no graph release yet"
+}

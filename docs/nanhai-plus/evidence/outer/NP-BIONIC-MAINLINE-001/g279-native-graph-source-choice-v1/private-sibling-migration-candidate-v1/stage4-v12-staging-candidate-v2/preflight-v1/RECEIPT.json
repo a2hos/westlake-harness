@@ -1,0 +1,30 @@
+{
+  "container": false,
+  "device": false,
+  "graph": false,
+  "namespace": false,
+  "packet_sha256": "3cecd491666451a490cbcee5ce1ca01d1722aad0c95e4950aee06867211c0da1",
+  "program_sha256": "a486e232b2aaf5b5f4af51988ad2e658ae0413340ad3803243ff464525065e66",
+  "remote_writes": 0,
+  "review_sha256": "3ac77e5852f1267f6c461dea12491e5dbb4aacc20d9a6d493eabd167b4c75e46",
+  "schema": "g279-stage4-v12-fresh-readonly-preflight-v1",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 0,
+  "status": "PASS",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "6511f68acc5ccc83a70f660d8e4ae3964420b92d33d2b74f9bc0a9e78e808f76"
+}

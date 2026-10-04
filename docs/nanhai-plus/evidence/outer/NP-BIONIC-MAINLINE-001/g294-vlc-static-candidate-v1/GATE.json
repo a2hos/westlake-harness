@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai.g294.vlc.handoff_gate.v1",
+  "at": "2026-10-04T13:20:41.839238+00:00",
+  "argv": [
+    "python3",
+    "-B",
+    "/opt/19.SourceCode/WestLake-Harness-3e5f0069d3da/source/bms/src/adapter/framework/native-compat/thread-guard-registry/evidence/westlake_gate.py",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/HANDOFF.md"
+  ],
+  "rc": 0,
+  "gate_sha256": "288a9c93a7a2bf450e782d068a1d6f56fe607df575c687d13e4dd5cb654d4901",
+  "handoff_sha256": "7d1754a45f2a260f4efff28b4b4414e5a034465dd010b34220d08b5673aad0e0",
+  "stdout_sha256": "c1fd1ad6aa83de53940ae669a9c8cc4b516f90b6d33f2d6640135898ef519c0b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_prepare_sha256": "b9cfaf5b45e8c3b9f48b452ef320db771484fcde50b9b74e4d9ae155e5fefe7d",
+  "claim": "handoff format only; no static inventory or startup credit"
+}

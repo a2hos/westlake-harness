@@ -1,0 +1,10 @@
+{
+  "decision": "GO_READONLY_EVO19_ONCE",
+  "gate_sha256": "64b7fb70003ebff08234ff156e9d9a0a5402a55bfb5adb94ed4951c4f4cee6a2",
+  "graph_authorized": false,
+  "local_env_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "peer_review_sha256": "<fill exact reviewed peer-review-v1/REVIEW.json SHA256>",
+  "schema": "nanhai-g279-evo19-v11-readback-release-v1",
+  "scope": "v11-staged-input-readback-only",
+  "spec_sha256": "d4f8accf37c201a01f08c731dc5ec6bde685d62a90b0d61e5770f79c2ec0b075"
+}

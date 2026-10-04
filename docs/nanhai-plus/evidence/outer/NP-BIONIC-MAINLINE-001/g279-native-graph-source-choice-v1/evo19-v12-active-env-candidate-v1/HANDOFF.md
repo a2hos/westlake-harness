@@ -1,0 +1,9 @@
+# G279 EVO19 v12 active-env static candidate
+
+This candidate binds the currently active config SHA `a4e74257…` and **new** v12 runner candidate SHA `b3277b02…`, 47,610 bytes, intended remote path `control/nanhai_plus_native_graph_v12.py`. It is separate from the v11 gate candidate. The v12 runner has not been staged or read back on gz02; this directory deliberately has `SPEC-TEMPLATE.json` but **no `SPEC.json`, root readback release, or `EVO19-GATE.json`**. `gate.py --preflight` returns rc 3 without SSH in that state.
+
+The template carries 10 non-runner identities from the v11 preparatory read-only observation and the proposed v12 runner identity from the local candidate. Those 10 observations do not prove current remote state. `fixtures.py` uses a clearly synthetic v12 row and passed five local contract checks, including byte/config/spec drift denials; it did not stage, SSH, graph, build or access a device. The exact gate SHA is `069e97c069e4d93ddaa2f04021af9e7060fec5d3155b658df2d52dfc08d39ba2`; template SHA is `b566c9b8dd88321080826da0aa59e7270eff5244ecdf5dde271664b00c4b0456`.
+
+After independent v12 runner review and an independently released one-shot staging/readback, create a **new** `SPEC.json` from actual exact runner SHA/bytes/mode and current 11-input evidence. Independently review that exact spec and gate before a separate root read-only preflight release. The formal gate re-reads all 11 remote inputs, binds wrapper/config/local_env/intended argv, captures outer SSH rc and remote rc, and writes an O_EXCL local receipt. Its source alias exception only accepts the declared AOSP symlink pointing exactly to the complete R4 checkout, then uses a no-follow fd walk. The gate itself never invokes the runner or authorizes graph execution.
+
+The v12 owner signed graph-only ACK, outer release, graph action audit, target compilation and device/App acceptance remain separate gates. No v11 gate receipt may be promoted to v12 authority.

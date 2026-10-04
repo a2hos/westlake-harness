@@ -1,0 +1,14 @@
+{
+  "scope": "G295 one local host-only four-phase static scan of exact Opera Browser original APK",
+  "source": "root delegated task to g295_opera_browser_static",
+  "inputs_sha256": "8eda309d057d930e65194e26147fdb29437fcea8cf0aeff5b92f0e39345968d0",
+  "runner_sha256": "68d47df47c5e64f90cd8f1fd0086ace1640941c579f3f1a473c5f5c68e30cd2c",
+  "scan_phase_sha256": "90acbebec576a11d18b2d7b0f3204411bd5a9af019c1edb86271062a4be5d735",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "raw_admission_sha256": "a1b8e69d8d4b3d52ce4ef19d37d2f064a2ce65bfeb35984ad2458deaf0f2c5b8",
+  "attempts": 1,
+  "device_commands": 0,
+  "container_commands": 0,
+  "requires_independent_postrun_review": true,
+  "authoritative_count_changed": false
+}

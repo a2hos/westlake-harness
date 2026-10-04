@@ -1,0 +1,12 @@
+{
+  "schema": "nanhai.g294.vlc.outer_result.v1",
+  "at": "2026-10-04T13:22:25.769124+00:00",
+  "rc": 0,
+  "timed_out": false,
+  "elapsed_seconds": 21.81043033406604,
+  "stdout_sha256": "44fc6d3a1a3e27636b570066238df43f8c652bd772128ce9eefa7f0f91fc14e8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command_sha256": "98622c792a4c0b98872b8c7f216b17b9dfd12a44b6dd1e0b58a401fe61d57cf3",
+  "scan_result_sha256": "bd1ac290fa36e29649b88fd6f0977327eca836829b18dcbeb8fd1e8e27cf848b",
+  "attempt": 1
+}

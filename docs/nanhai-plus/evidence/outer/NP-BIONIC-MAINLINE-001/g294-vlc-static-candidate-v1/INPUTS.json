@@ -1,0 +1,66 @@
+{
+  "source_sha256": {
+    "harness/westlake_gap/__init__.py": "40aed4cae72a375064e0a95ff8e4510dc61508ef8d14c3b4b34319b171068299",
+    "harness/westlake_gap/cli.py": "31c79e38021ccbe1864aaf78cf2834e94b210f36034d0198989f97043d61838a",
+    "harness/westlake_gap/contracts.py": "2a9ea43c489006426a9eeb705b804903f5e55666e823cbd25a9d25700b567ac8",
+    "harness/westlake_gap/deploy.py": "bac40c9d745676787f04f34be0fe5f25ef48c4a720872ee6c513bea15d56d188",
+    "harness/westlake_gap/gapmap.py": "5430d58b5d42a281cfab55de95f9393a4998de8126a9824d02f72f3b13e1c30e",
+    "harness/westlake_gap/lifecycle.py": "21fba301167ee11303c7433d1c038d2d1d24176609affc34d5d8f777bf8454cb",
+    "harness/westlake_gap/methodtrace.py": "c320757b97393a5e835f9018c21e85268ef20354bc30f0cb1810510ae3fb1603",
+    "harness/westlake_gap/native.py": "88cb9884bb2b26e950ddbe657941d4c60337c956d088c1e42f3a9647cc2e68ee",
+    "harness/westlake_gap/nativeprov.py": "729e67c6eafbc162583eef4eacfb738413f1b2b247cc51e5c49493312be9f6f3",
+    "harness/westlake_gap/nativeupcall.py": "c791b36080fc16a65a8fa20bac6e46d5d33b047a6bb5bffc7933e2880a6d9940",
+    "harness/westlake_gap/ndk.py": "d3f4e71abac1614563c0b6b62f15e38e5db3f6d390ab3fa960e96eae91181748",
+    "harness/westlake_gap/ohevents.py": "c7d8a60fe7b15eacac1ef3c7542dc0d8d647c881a714b5e0e0ff9bd8914accd5",
+    "harness/westlake_gap/ohresolve.py": "3cb1fad3f01cc00b8321f434a4ace0a63065fcb3e10f0fbde8d15f2cc3baaad6",
+    "harness/westlake_gap/platformapi.py": "978b674166a614c386458b8927988640287662be9708f9c50b0de9f5a45960a6",
+    "harness/westlake_gap/reach.py": "30aa9ef65942fae1519b7444586d7f1cc10fc0f26d4954c4753d1e3cf2932585",
+    "harness/westlake_gap/report.py": "d9284259bd18a6d83cab51d2ebb3bcea82ea2c345650ec22717f33183ef5c9d3",
+    "harness/westlake_gap/scanner.py": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+    "harness/westlake_gap/services.py": "fdfeb2b74025adc4c3c550a9e31d4c2e444ddedbb67ea78d452e03bde97310f0",
+    "harness/westlake_gap/trace.py": "ac3fab32f13cd3a4e146d6c8a44db54e9dd13f9e66db1a1fa445ec3b14978e57",
+    "harness/westlake_gap/tracecmp.py": "77a48c548f46da8d1ee7d27242a168e9ca61bbaa12777729730ef9fe6df1e48b",
+    "pyproject.toml": "8554bceb1d36d1a463fa29482d199ce40361e11b5c664a774fc233174ef17ed9"
+  },
+  "venv_manifest": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/INSTALLED-VENV-MANIFEST.json",
+    "sha256": "54c1e17b37ddccef4e0e62191018f4390159726209fb1c687150d9811b7e522b",
+    "bytes": 3031857
+  },
+  "venv": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1",
+  "tool_mapping": {
+    "alias": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin/readelf",
+    "observer": "sys.setprofile observes original subprocess.run return values; sys audit hook records actual Popen argv; no monkeypatch or source change",
+    "prior_ready_sha256": "643aacac40efd7e40e3a26d65c92c7b2464a5cea31ea1f0892bd188245988636",
+    "qualification_result_sha256": "be941248b53626d6e716a865576fdefadd8f6d0af891d6216e3ad4a121b84804",
+    "target": "/opt/19.SourceCode/OpenHarmony-SDK-26.0.0.39-mac-arm64/extracted/native/llvm/bin/llvm-readelf",
+    "tool_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "venv_manifest_sha256": "54c1e17b37ddccef4e0e62191018f4390159726209fb1c687150d9811b7e522b"
+  },
+  "apks": [
+    {
+      "registry_package_label": "org.videolan.vlc",
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v2/org.videolan.vlc/body.raw",
+      "bytes": 47990842,
+      "sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+      "upstream_version_label": "3.7.1",
+      "version_code": 13070106,
+      "artifact_id": "a-7018dabd40416b3824c5"
+    }
+  ],
+  "root_acceptance": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+    "sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa",
+    "status": "ACCEPT_8_EXACT_STOCK_PAYLOAD_IDENTITIES_ONLY"
+  },
+  "scope": "One exact root-accepted F-Droid VLC APK, four-phase host ZIP/metadata/ELF/DEX inventory candidate only",
+  "inventory_expectations": {
+    "zip_entries": 2618,
+    "dex_entries": 6,
+    "true_elf_entries": 4,
+    "native_abis": [
+      "arm64-v8a"
+    ],
+    "packed_non_elf_so_entries": 0
+  }
+}

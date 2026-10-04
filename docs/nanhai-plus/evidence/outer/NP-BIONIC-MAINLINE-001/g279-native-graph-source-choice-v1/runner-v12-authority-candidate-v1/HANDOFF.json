@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-04T13:19:58.910832+00:00",
+  "device_commands": 0,
+  "fixtures_sha256": "825c225e7eaa7c08cd7bb864049e5d164e22462d03356a9f825d0e55b6f62a95",
+  "graph_execution": false,
+  "handoff_md_sha256": "f618f5079d77334299fca5c8c896819831a5cf9d1b24df9dec31750b36808a8f",
+  "next": "Independent diff/fixture review, then original-owner signed ACK and separately reviewed v12 staging/EVO19/release",
+  "owner_public_key_sha256": "49486d713386d80fd13a89c4440d26d3bdb6de8948176c57f28700ff80770fb6",
+  "remote_write": false,
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "schema": "nanhai-g279-v12-static-handoff-v1",
+  "source_v11_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "status": "GO_STATIC_REVIEW_ONLY",
+  "target_compile_commands": 0
+}

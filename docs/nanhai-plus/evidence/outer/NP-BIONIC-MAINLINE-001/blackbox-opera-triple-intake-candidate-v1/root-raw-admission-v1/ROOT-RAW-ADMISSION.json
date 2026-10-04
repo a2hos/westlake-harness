@@ -1,0 +1,52 @@
+{
+  "schema": "nanhai-opera-two-raw-root-admission-v1",
+  "at": "2026-10-04T13:34:57.342166+00:00",
+  "decision": "ACCEPT_TWO_UNMODIFIED_OFFICIAL_ARM64_RAW_APKS_ONLY",
+  "accepted": [
+    {
+      "package": "com.opera.browser",
+      "version": "102.3.5206.90530",
+      "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-official-v1/opera-arm64.apk",
+      "bytes": 279570110,
+      "sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+      "candidate_sha256": "01d15303d85dcf3c77750320ccd60032c5aecaae7c6886696e249f6b79d2742b"
+    },
+    {
+      "package": "com.opera.gx",
+      "version": "3.3.13",
+      "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-opera-gx-official-v1/opera-gx.apk",
+      "bytes": 64107242,
+      "sha256": "22f2921d3a91e94f3689f104a52d502ae6f5ad46e32cedf67e98b760be9c9503",
+      "candidate_sha256": "f0ac49ff2345f5906dc34fa9d57a8492b8bf9f6e8b3dd418eb577f45cfec90a1"
+    }
+  ],
+  "rejected": [
+    {
+      "package": "com.opera.mini.native",
+      "reason": "ARM32_ONLY"
+    }
+  ],
+  "author_command_evidence": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/COMMAND-EVIDENCE.json",
+    "sha256": "119ef91f2b64f45157140bef0add3c542a13763cdbb5fb63ec5338d11ead0fe7"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-independent-review-v1/REVIEW.json",
+    "sha256": "50ecd90ad3ab50c4e1b1d7cc4e388f445bf65710600d9181175c9c5fae9187c8"
+  },
+  "raw_before": 81,
+  "raw_after": 83,
+  "supplemental_before": 6,
+  "supplemental_after": 8,
+  "complete_static_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "limits": [
+    "Browser GET rc0 was independently recovered from author terminal, not bound into original candidate receipt",
+    "No published signer digest binding",
+    "No complete static scan",
+    "No Bionic runtime or device startup"
+  ]
+}

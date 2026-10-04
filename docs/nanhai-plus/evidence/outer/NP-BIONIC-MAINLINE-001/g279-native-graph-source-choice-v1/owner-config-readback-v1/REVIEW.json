@@ -1,0 +1,20 @@
+{
+  "schema": "g279-original-owner-config-readback-v1",
+  "decision": "ACCEPT_METADATA_READBACK_ONLY",
+  "agent": "nanhai-plus/octos-inner",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "observed_turn": "01a10710",
+  "terminal_snapshot_sha256": "1fd9587902465d82698e26e74c9d3446b28b66bd3bfa27eea6888c7b15b15c6e",
+  "reported_command": "python3 -B scripts/nanhai_plus_env.py --check",
+  "reported_rc": 0,
+  "reported_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "reported_config_switch_acceptance_sha256": "7441ca645d23fc618cab5b9557e14f1d764e862c03ed8bec7aeca014d14a42b8",
+  "scope": "Original owner terminal reports one read-only metadata check after the local config switch. Outer independently verified active env and receipt SHA. The Herdr prompt initially returned agent_prompt_stalled, then the same live terminal showed working and completed the turn; no duplicate prompt was sent.",
+  "graph_only_ack": false,
+  "graph_executed": false,
+  "target_built": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "Use a separately frozen native graph execution package and original-owner graph-only ACK after the active-env EVO19 gate and outer release."
+}

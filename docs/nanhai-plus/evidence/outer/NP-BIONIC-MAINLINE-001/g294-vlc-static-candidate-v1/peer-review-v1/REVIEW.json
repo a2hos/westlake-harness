@@ -1,0 +1,47 @@
+{
+  "apk_bytes": 47990842,
+  "apk_sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+  "caveats": [
+    "The 1350-second outer limit is checked between phases and is not a hard wall-clock watchdog for full source/venv guards or final audit. Each phase process has a bounded wait; root should retain external observation of the actual command and terminal rc.",
+    "On a phase timeout, the process group is killed and partial outputs are retained; an interruption or failure before RESULT.json is not a complete scan and must not change the static count.",
+    "The candidate does not prove truly cold startup, Bionic runtime, device behavior, or blackbox qualification."
+  ],
+  "checks": {
+    "21_scanner_source_hashes_match": true,
+    "all_prepared_file_hashes_match": true,
+    "apk_bytes_and_sha_match_lock_and_root_receipt": true,
+    "dual_gate_before_output_creation": true,
+    "no_device_container_namespace_calls_in_candidate": true,
+    "no_output_or_release_exists_yet": true,
+    "one_shot_output_paths": true,
+    "phase_order_zip_metadata_elf_dex": true,
+    "phase_timeout_and_fail_stop": true,
+    "python_ast_parse": true,
+    "readelf_alias_matches": true,
+    "venv_manifest_and_llvm_readelf_hashes_match": true
+  },
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "handoff_gate_sha256": "c250cf1e6716edc3ed764cd222ed4b17991b73c6e86e8df8621711c0f24639ed",
+  "handoff_sha256": "7d1754a45f2a260f4efff28b4b4414e5a034465dd010b34220d08b5673aad0e0",
+  "inputs_sha256": "89cd0852e881af7b79ab47e5f5f8436508ab95e61fddf660d27ce9a32746d4fe",
+  "limits": {
+    "outer_seconds_soft": 1350,
+    "phase_seconds": {
+      "dex": 600,
+      "elf": 600,
+      "metadata": 180,
+      "zip": 120
+    },
+    "retries": 0
+  },
+  "lockfile_sha256": "ec4004b6543dc7559ae306b4232a5a05adcaf430354d194fe172886673a695cb",
+  "next": "Root may issue a separately reviewed exact ROOT-RELEASE.json and one local --execute; require actual four phase rc0 plus all check booleans and independent postrun review before static count change.",
+  "prepare_sha256": "b9cfaf5b45e8c3b9f48b452ef320db771484fcde50b9b74e4d9ae155e5fefe7d",
+  "reviewed_utc": "2026-10-04T13:21:11.855610+00:00",
+  "root_acceptance_sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa",
+  "runner_sha256": "fd010dd1f6ddf63eb9142336db4f50efa0cb76117ff79837649c7bf6aab11480",
+  "scan_phase_sha256": "8fd41ff3bf5a978cccb9dc3599fb864078c2dee9e1b72db256b821a37ae7202b",
+  "schema": "nanhai.g294.vlc.static_peer_review.v1",
+  "scope": "one exact original VLC 3.7.1 APK; host-only four-phase static inventory; no startup/blackbox/device/tool pass",
+  "verdict": "GO_ONE_LOCAL_STATIC_INVENTORY"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "g279-stage4-v12-independent-static-review-v3",
+  "independent_reviewer": "codex-stage4-v12-v3-peer",
+  "decision": "GO_V12_STAGING_ONCE",
+  "scope": "One exact native-host staging of the frozen v12 runner bytes in the accepted private sibling. No graph, target build, App, device, container, namespace, or active binding change is authorized by this review.",
+  "nonce": "532f48f9da3feae0d4be25a562422806",
+  "packet_sha256": "8745a57fe662baced75d9fb354cc658e0e93f74919cdf3957c18b2a03e76add7",
+  "packet_file_sha256": "91e8786ece772a89b317785a12b6c20492414f082837eb94c8d5a2cd99e97385",
+  "launcher_sha256": "4fc2281eb6ad42422b692e4957df02333b31def1e3867fa87abeda432cafa930",
+  "remote_body_sha256": "bac8b67e3fb7a537470567d82b34ebed453eb4d29d6fdc6fc1ec4dfd4dbf8635",
+  "fixtures_sha256": "1118a5c789f300ad0a284a3666698b3026f79f47f8351f4b181f41c0f2230487",
+  "fixture_result_sha256": "ed4c1bc3b64751b0beee002ad1e6fce9d0e2a7c90b19e57742b43591088d05ef",
+  "fixture_stdout_sha256": "0de58d71f76210b6de4a97692614e2024c12cf92c23f0719ea074394b1ecb540",
+  "handoff_sha256": "9e89f829d380b8b24e3112b964b13d087e13babb52919b9c6d46f2205663e231",
+  "handoff_gate_stdout_sha256": "19610f385c8877f30db0677a37a409bc68a7838861999eba8f1c30b036236b34",
+  "active_local_env_raw_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "runner_bytes": 47610,
+  "runner_target_mode": "0444",
+  "stage3_peer_sha256": "600c91a2b0a99b17dddffad6efabf8d85ddd0b4edc8d17b5595ee4c395c2ae36",
+  "stage3_root_acceptance_sha256": "4e222d072b75c3a6785d284a5f492d2036db37cd2a45be55f495099f9ea4e4df",
+  "v12_static_peer_sha256": "92ccc9f050bdb1771090af315f7973ded9b0dfbfb6af1eaa49899817b3769022",
+  "v2_terminal_sha256": "1687249dc66681bc94e4d74042b6757a5f1d3530fa59a4a75bdc059076acc4fc",
+  "verified_local": {
+    "v2_terminal": "ROOT-TERMINAL records rc 1, TERMINAL_FAILED_PRE_START_NO_REPLAY, no START, no launcher SSH and no remote write. Its nonce and packet differ from v3 and may not be replayed.",
+    "host_identity": "v3 filters literal [1.95.90.207]:58222 rows and requires exactly one ssh-ed25519 row with pinned SHA256:RuAqHWgFJEIEcb4hC+WXULCRfV3uCsayP4Iw4aJvwzg. Unrelated RSA/ECDSA rows are allowed; duplicate or wrong Ed25519 and SSH route drift are denied. The actual SSH argv pins StrictHostKeyChecking=yes, HostKeyAlgorithms=ssh-ed25519 and the explicit known_hosts file.",
+    "packet": "Canonical SHA recomputed and equal; 17 unique unchanged file identities and exact 15-entry control inventory are bound to accepted Stage3 evidence. v12 source SHA and 47610 bytes, local_env SHA, and all recorded candidate file SHAs match.",
+    "checks": "Independent local fixtures returned rc 0 with 10/10 checks; handoff gate returned rc 0 PASS; launcher, remote body and fixtures parsed successfully. Recorded fixture and gate stdout hashes match their files.",
+    "write_scope": "Remote writer statically checks host/UID, directory and 17 file identities, control inventory and packet before O_EXCL lease, runner and receipt; failed partial writes enter quarantine without replay. No container or namespace command appears in Stage4 launcher or writer."
+  },
+  "execution_conditions": [
+    "Re-read the current project control and device policy and perform a fresh read-only gz02 preflight immediately before this one-shot; all pinned directory identities, 17 file identities, and the 15-entry control inventory must match.",
+    "Use only this v3 packet and nonce once. Preserve START, TERMINAL and any remote quarantine; a started nonce must never be retried or replayed.",
+    "Require separate independent postrun readback before accepting staged bytes. This GO does not grant graph execution, target compilation, App or device work."
+  ],
+  "not_proven": [
+    "Fresh gz02 state, actual v3 SSH/staging or remote readback",
+    "Formal EVO19 active-env gate and original owner graph-only signed ACK",
+    "Native graph, ARM64 Bionic target, App launch or device result"
+  ],
+  "actions_by_reviewer": {
+    "ssh": 0,
+    "remote_writes": 0,
+    "graph": 0,
+    "target_compile": 0,
+    "device": 0,
+    "container": 0,
+    "namespace": 0,
+    "candidate_edits": 0
+  }
+}

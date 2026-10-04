@@ -1,0 +1,53 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T13:29:00Z",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "active_env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "counts": {
+    "accepted_raw_apks": 81,
+    "registered_raw_apks": 75,
+    "supplemental_raw_apks": 6,
+    "complete_host_static": 78,
+    "dex_entries": 197,
+    "true_arm64_elf_entries": 919,
+    "qualified_blackbox_packages": 3,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "evidence": {
+    "original_owner_config_readback": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-config-readback-v1/REVIEW.json",
+      "sha256": "5a3edb13a98c76b62193f844107f7ba3dba29e93619603e6628569d0885f46c9"
+    },
+    "vlc_static_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "44eb7df55607c410f001d742bdd3e62b3bd102c7c0968fc1fd719228e54c538d"
+    },
+    "v12_runner_static_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v12-authority-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "92ccc9f050bdb1771090af315f7973ded9b0dfbfb6af1eaa49899817b3769022"
+    },
+    "v12_stage4_v1_no_go": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "67be580a1182fee341473fd0a62cc3489e2fe104b324f86cbd562050fbdd45df"
+    },
+    "reflection_evo25": {
+      "path": "docs/nanhai-plus/evolution/EVO-0025-reusable-input-identity-gate/RESULT.json",
+      "sha256": "a7ae46f257d5b4dd6103128c281863578742d8ce6dacf9b0369f3ae26bf94f85",
+      "promoted": false
+    }
+  },
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "graph_executed": false,
+  "arm64_target_built": false,
+  "hello_world_started": false,
+  "next": "Review corrected Stage4 v12 staging candidate; only after independent GO and fresh read-only preflight stage v12 bytes once, read back, then bind fresh active-env EVO19 and owner graph-only ACK. Continue blackbox intake and cross-APK evidence scans in parallel."
+}

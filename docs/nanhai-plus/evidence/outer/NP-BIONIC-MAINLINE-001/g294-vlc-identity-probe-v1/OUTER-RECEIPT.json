@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai.g294.vlc.identity_outer_receipt.v1",
+  "at": "2026-10-04T13:22:44.885456+00:00",
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-identity-probe-v1/probe.py",
+    "--execute"
+  ],
+  "observed_outer_rc": 0,
+  "probe_sha256": "077d5ea31871d904ccf38d9fd6e02cb2e724f9a328deb530b7fda6b94bb1b44f",
+  "result_sha256": "39334577394102313731f3627f89a00d96856e4f5e997797843bd7348ad44aca",
+  "badging_stdout_sha256": "72fad9429713469bd632b06cb27b809120b5a3741521b500c0eacef3dc1922b2",
+  "signature_stdout_sha256": "75ff3daa3063849e114b2a287b3653025bd4378bf14ab677e4a40e8cfe2b7184",
+  "preexisting_manifest_certificate_matches": true,
+  "claim": "verified existing original APK package/version and cryptographic signature validity, host-only; no publisher external chain, complete static or startup credit"
+}

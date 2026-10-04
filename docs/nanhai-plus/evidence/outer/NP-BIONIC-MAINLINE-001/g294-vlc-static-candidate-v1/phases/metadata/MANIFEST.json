@@ -1,0 +1,65 @@
+{
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-v2/org.videolan.vlc/body.raw",
+  "filename": "org.videolan.vlc.apk",
+  "sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+  "bytes": 47990842,
+  "manifest_available": true,
+  "package": "org.videolan.vlc",
+  "app_name": "VLC",
+  "version_code": "13070106",
+  "version_name": "3.7.1",
+  "min_sdk": "17",
+  "target_sdk": "36",
+  "main_activities": [
+    "org.videolan.vlc.StartActivity"
+  ],
+  "activities": 40,
+  "services": 7,
+  "receivers": 8,
+  "providers": 6,
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_LOGS",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_SETTINGS",
+    "com.android.providers.tv.permission.READ_EPG_DATA",
+    "com.android.providers.tv.permission.WRITE_EPG_DATA",
+    "org.videolan.vlc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "org.videolan.vlc.MEDIA",
+    "org.videolan.vlc.permission.BIND_DATA_CONSUMER",
+    "org.videolan.vlc.permission.READ_EXTENSION_DATA"
+  ],
+  "features": [
+    "android.hardware.bluetooth",
+    "android.hardware.microphone",
+    "android.hardware.touchscreen",
+    "android.software.leanback"
+  ],
+  "signing_certificate_sha256": [
+    "80535be61eedb9a03b0476a6f493d496c3498770404339ea7a8000f5e61d22c0"
+  ],
+  "abis": [
+    "arm64-v8a"
+  ],
+  "native_library_entries": 4
+}

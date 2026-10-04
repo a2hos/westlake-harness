@@ -1,0 +1,112 @@
+{
+  "actions": {
+    "candidate_edits": 0,
+    "canonical_edits": 0,
+    "container": 0,
+    "device": 0,
+    "graph": 0,
+    "namespace": 0,
+    "read_only_ssh": 1,
+    "remote_writes": 0,
+    "target_compile": 0
+  },
+  "boundary": "Read-only SSH inspected the exact private sibling and issued no remote writes, graph, target, device, container or namespace operations. No local_env or canonical change by reviewer.",
+  "decision": "ACCEPT_STAGE4_STAGED_BYTES_ONLY",
+  "execution_chain": {
+    "fresh_preflight_receipt_sha256": "a444d94a34be878697af9671dc46af8fd7d1938a3515f91094a8c987324eaa85",
+    "independent_preexecute_review_sha256": "6c9fb3525e8a5a63419e8afd9acc393942dce34921658376e361b8844ede2ebf",
+    "local_start_sha256": "180af1687523a084759f94627c9bd945c429edf2838073a1f33d5c765a42290a",
+    "local_terminal_sha256": "70df1b9efde6b6c2636b1bb42186ba3c46a862a1d658535b121bcc7d52a38485",
+    "local_terminal_ssh_rc": 0,
+    "local_terminal_status": "STAGED_READBACK_ONLY",
+    "local_terminal_stdout_equals_independent_remote_receipt": true,
+    "packet_canonical_sha256": "8745a57fe662baced75d9fb354cc658e0e93f74919cdf3957c18b2a03e76add7",
+    "packet_file_sha256": "91e8786ece772a89b317785a12b6c20492414f082837eb94c8d5a2cd99e97385",
+    "root_outer_execute_rc": "reported_rc0_by_outer_task; no separate rc receipt in this candidate",
+    "root_release_sha256": "88e09725ed3a240e7d96efddcd4ec956cee67a2f3c0994b7c5b7d9eb9e5c632f"
+  },
+  "failed": [],
+  "hypotheses": [],
+  "independent_remote_readback": {
+    "control_entries_exact": 18,
+    "directory_identities_match": true,
+    "host": "GZ02",
+    "lease_identity": {
+      "bytes": 164,
+      "dev": 64785,
+      "gid": 1000,
+      "ino": 47186013,
+      "mode": 256,
+      "sha256": "8bad1ba35087c2b220b00602b8564c464639837499e1fdafbb47c900d0c773dc",
+      "uid": 1000
+    },
+    "old_input_identities_match": 17,
+    "out_inventory": {
+      "": [
+        "no-namespace-guard-v1",
+        "soong-ui-v1"
+      ],
+      "no-namespace-guard-v1": [
+        "no-namespace-exec"
+      ],
+      "soong-ui-v1": [
+        "soong_ui"
+      ]
+    },
+    "probe_command_sha256": "3d1ef6de4a9e491e0533c17883649dc93b8db02c499a4ff8dc31bd73411867ec",
+    "probe_source_sha256": "751e8b304d93c96f2d5d104a5f603c957e62a2c040d14744baffe92828bd4ea3",
+    "probe_terminal_sha256": "f4d176c28d8df9f391ca12c6cf93cb10b1efb2f4b5626759a158a9346c60cd76",
+    "quarantine_absent": true,
+    "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_stdout_sha256": "11874c062504ded5cd46e7ab5fff22da3b1a4c2218b4f1aa0fb42068fb802e56",
+    "receipt_identity": {
+      "bytes": 728,
+      "dev": 64785,
+      "gid": 1000,
+      "ino": 47186015,
+      "mode": 256,
+      "sha256": "9c7e44d9f9a891102ebec219b3293c3dc32fdec867cda5ac8b288d8192758ef9",
+      "uid": 1000
+    },
+    "remote_receipt_flags": {
+      "binding_changed": false,
+      "container": false,
+      "device": false,
+      "graph": false,
+      "namespace": false,
+      "target": false
+    },
+    "remote_status": "PASS",
+    "runner_identity": {
+      "bytes": 47610,
+      "dev": 64785,
+      "gid": 1000,
+      "ino": 47186014,
+      "mode": 292,
+      "sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+      "uid": 1000
+    },
+    "runner_path": "/data/source/.nanhai-plus-opaleye-native-v7/control/nanhai_plus_native_graph_v12.py",
+    "ssh_rc": 0,
+    "staging_empty": true,
+    "tmp_empty": true,
+    "uid": 1000
+  },
+  "memory_skill_ci_review": "No memory, skill or CI rule change; this review records bounded evidence only.",
+  "next_evidence": "Separate reviewed graph release and original owner graph-only ACK, then exact graph command and result receipts; preserve device HOLD.",
+  "not_proven": [
+    "Native Soong graph execution or acceptance",
+    "ARM64 Bionic target compile, HelloWorld cold start, first frame or device acceptance",
+    "Global audit of gz02 processes or future state; probe verifies bounded tree at readback time",
+    "Formal next graph release and original owner graph-only ACK"
+  ],
+  "observed_wall": "none",
+  "proven": [
+    "Frozen v12 runner 47610 bytes with exact packet SHA-256 exists on gz02 as UID/GID 1000/1000 mode 0444 inode 47186014.",
+    "Stage4 lease and receipt match exact nonce and packet; local terminal stdout equals independent remote receipt.",
+    "Four directory identities, all 17 older input identities and exact 18-entry post-stage control inventory match; sibling out contains only two original host-tool files."
+  ],
+  "reviewed_utc": "2026-10-04T13:42:47Z",
+  "schema": "g279-stage4-v12-independent-postrun-review-v1",
+  "scope": "One exact v12 native runner staged in the accepted gz02 private sibling; staged-byte readback only."
+}

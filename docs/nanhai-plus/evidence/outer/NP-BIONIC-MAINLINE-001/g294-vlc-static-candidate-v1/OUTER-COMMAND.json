@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai.g294.vlc.outer_command.v1",
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/run.py",
+    "--execute"
+  ],
+  "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+  "started_at": "2026-10-04T13:22:03.958355+00:00",
+  "limit_seconds": 1800,
+  "release_sha256": "a705f713eab8e27d15cd132f7e327249142dd0ea62ec249f369c055260bffb0a",
+  "peer_sha256": "a71111b7b705bc0fd8a67f103eb4d7033467efcd6f7c3a201afb964f33c8cd84",
+  "runner_sha256": "fd010dd1f6ddf63eb9142336db4f50efa0cb76117ff79837649c7bf6aab11480",
+  "inputs_sha256": "89cd0852e881af7b79ab47e5f5f8436508ab95e61fddf660d27ce9a32746d4fe",
+  "attempt": 1
+}

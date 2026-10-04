@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g295-opera-browser-static-candidate-v1/run.py",
+    "--execute"
+  ],
+  "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+  "started_at": "2026-10-04T13:38:15.261137+00:00",
+  "finished_at": "2026-10-04T13:38:45.349658+00:00",
+  "elapsed_seconds": 30.088716915925033,
+  "rc": 0,
+  "stdout_sha256": "9deec31f4025060ed621113a76d8962d7c73ab0c509a0a05324cc3b56a5e3c49",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputs_sha256": "8eda309d057d930e65194e26147fdb29437fcea8cf0aeff5b92f0e39345968d0",
+  "runner_sha256": "68d47df47c5e64f90cd8f1fd0086ace1640941c579f3f1a473c5f5c68e30cd2c",
+  "scan_phase_sha256": "90acbebec576a11d18b2d7b0f3204411bd5a9af019c1edb86271062a4be5d735",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "authorization_sha256": "3fe7cd379d88c009027f9d5701edcec9de0af407be7436c515b88e758a1d75f1",
+  "device_commands": 0,
+  "container_commands": 0
+}

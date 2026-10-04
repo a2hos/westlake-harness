@@ -1,0 +1,27 @@
+{
+  "env_config_sha256": "a4e742576589390209188cddf8d3278c294d9e87e8e9c4733e15eee0a951ddba",
+  "failed_preparatory_receipts": [
+    {
+      "path": "PREP-READBACK.json",
+      "reason": "double-encoded remote JSON literal yielded remote JSONDecodeError",
+      "sha256": "e248345472ec76c179eeb21379cc80dac2cd9d47284180995991671e73573775"
+    },
+    {
+      "path": "PREP-READBACK-v2.json",
+      "reason": "8/11 match; canonical registered AOSP source alias was rejected by nofollow walk",
+      "sha256": "71cdfe83aee05e0c47e20d465d0fec4da065473ab3e71b18b7cf59099bd88d57"
+    }
+  ],
+  "fixture_sha256": "9a7c1d5b827307d0b60ce686fc12d68f586760d70dfc0cebe8ae424c6d9823e6",
+  "formal_gate_receipt": null,
+  "gate_sha256": "64b7fb70003ebff08234ff156e9d9a0a5402a55bfb5adb94ed4951c4f4cee6a2",
+  "graph_authorized": false,
+  "local_env_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+  "prep_readback_sha256": "859cbf2c032d97245dab60e143ce58226c36b10198d25fd56fb2177718986d0a",
+  "runner_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "runner_version": "v11",
+  "schema": "nanhai-g279-evo19-v11-active-env-candidate-v1",
+  "spec_sha256": "d4f8accf37c201a01f08c731dc5ec6bde685d62a90b0d61e5770f79c2ec0b075",
+  "status": "STATIC_CANDIDATE_AND_PREP_READBACK_ONLY",
+  "v12_authorized": false
+}

@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-10-04T13:22:54.786362+00:00",
+  "checks": 5,
+  "container_commands": 0,
+  "device_commands": 0,
+  "fixture_rc": 0,
+  "formal_spec_created": false,
+  "gate_receipt_created": false,
+  "gate_sha256": "069e97c069e4d93ddaa2f04021af9e7060fec5d3155b658df2d52dfc08d39ba2",
+  "graph_commands": 0,
+  "namespace_commands": 0,
+  "preflight_without_release_rc": 3,
+  "preflight_without_release_ssh": false,
+  "py_compile_rc": 0,
+  "schema": "nanhai-g279-evo19-v12-fixture-v1",
+  "spec_template_sha256": "b566c9b8dd88321080826da0aa59e7270eff5244ecdf5dde271664b00c4b0456",
+  "status": "PASS_SYNTHETIC_LOCAL_ONLY",
+  "target_compiles": 0,
+  "v11_prep_reference_sha256": "859cbf2c032d97245dab60e143ce58226c36b10198d25fd56fb2177718986d0a",
+  "v12_remote_runner_readback": false,
+  "v12_remote_runner_staged": false
+}

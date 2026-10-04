@@ -1,0 +1,47 @@
+{
+  "schema": "codex-rethink-result-v1",
+  "lens": "log-day",
+  "scope": "Only the four named actual result groups after EVO25; source is current repository receipts because the rolling-day log collector returned zero samples.",
+  "decision": "Propose one local pre-release host_identity fixture for future frozen Stage4 launcher generations; no change to current G279/G295 execution.",
+  "observed": [
+    {
+      "group": "G294 VLC",
+      "outcome": "Root accepted one complete host-static inventory, static 77 to 78 with 197 DEX and 919 true ARM64 ELF; cold-start delta 0.",
+      "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/ROOT-STATIC-ADMISSION.json"
+    },
+    {
+      "group": "Stage4 v1",
+      "outcome": "Independent NO_GO_THIS_PACKET because HANDOFF gate rc1; no remote staging authorization.",
+      "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v1/peer-review-v1/REVIEW.json"
+    },
+    {
+      "group": "Opera raw admission",
+      "outcome": "Root accepted Opera Browser and Opera GX ARM64 raw APKs only, raw 81 to 83; Opera Mini rejected as ARM32 only; static and cold-start deltas 0.",
+      "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json"
+    },
+    {
+      "group": "Stage4 v2",
+      "outcome": "Fresh read-only preflight SSH rc0 and PASS. One-shot launcher rc1 at host_identity because three known_hosts algorithms were present; no START, launcher SSH, remote write, graph, device, container or namespace action.",
+      "sources": [
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v2/preflight-v1/RECEIPT.json",
+        "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/private-sibling-migration-candidate-v1/stage4-v12-staging-candidate-v2/ROOT-TERMINAL.json",
+        "scripts/nanhai_plus_g279_sibling_stage2_candidate_v2.py:176"
+      ]
+    }
+  ],
+  "causal_finding": "The launcher checked len(all matching host rows) == 1 before filtering by ssh-ed25519. Additional RSA and ECDSA rows caused a local false rejection even though the read-only preflight used a pinned ed25519 SSH route. The failure was before START, so it gives no remote staging or graph evidence.",
+  "single_change": {
+    "name": "Local host identity fixture before one-shot release",
+    "smallest_trial": "Use a temporary local known_hosts fixture and the exact proposed launcher host_identity logic. Positive case: one pinned ed25519 row plus RSA/ECDSA rows for the same endpoint passes. Negative cases: missing, malformed, duplicated or wrong-fingerprint ed25519 row fails. Assert no START file and no SSH subprocess beyond local ssh -G; capture fixture rc and exact launcher digest before root release.",
+    "falsifier": "Any positive case fails, any negative case passes, a network SSH occurs, or the tested launcher digest differs from the release packet.",
+    "stop_condition": "Do not release that packet if a case fails or if the fixture cannot run without remote access; retain v2 terminal failure and require a newly reviewed generation.",
+    "expected_effect": "Catch this specific multi-algorithm known_hosts mismatch before consuming a one-shot Stage4 release; no claim of graph progress or general security correctness.",
+    "state": "proposed_only; no fixture run in this reflection"
+  },
+  "evo25_gate_reuse": {
+    "recommendation": "Reusable gate implementation with separate generation-specific identity binding",
+    "checked_evidence": "EVO25 PROCESS and RESULT remain proposed_only; current reviewed G279 files show no isolated two-runner fixture receipt or promoted engine.",
+    "trial_state": "unverified; do not count as tested or adopted"
+  },
+  "limits": "No rolling-day terminal sample was available; this is a receipt-backed reconstruction, not a terminal-log outcome claim. No remote, device, container, graph or candidate execution was performed."
+}

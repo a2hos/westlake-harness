@@ -1,0 +1,97 @@
+{
+  "schema": "codex-rethink-result-v1",
+  "quality_gate_version": 2,
+  "lens": "old-rule",
+  "scope": "G279 AOSP16 r4/OH7 ARM64 native-host Bionic graph pre-execution identity gate only; no graph, target build, APK or device claim",
+  "problem": {
+    "difficulty": "Each G279 runner revision triggers a separate EVO19 gate program and fixtures before the first native Soong graph; v10, v11 and v12 remain pre-graph.",
+    "cost_signal": "Observed v11 and v12 EVO19 gate.py are each 400 lines; a line-sequence comparison found 390 identical lines and 10 changed lines. v10 review found an old v7 release schema, and v11 review found only static contract proof.",
+    "decision_target": "Decide whether future runner generations need a cloned identity-gate implementation, or can reuse one reviewed implementation while regenerating and independently reviewing a generation-specific binding.",
+    "constraints": "Keep one-shot fresh remote byte readback, no-follow/source alias checks, exact wrapper and runner SHA/bytes/mode, active local_env and argv identity, separate SSH and remote rc, original-owner ACK, independent review, no containers or namespace sandbox, no device access.",
+    "completion_signal": "An isolated future candidate proves unchanged gate implementation digest across two distinct runner identities; fresh generation-specific specs and O_EXCL receipts differ; runner-byte/config/argv mutation fails before graph; released pipeline still requires owner and root gates.",
+    "source_terminal": "G279 v10/v11/v12 and EVO19 candidate evidence",
+    "confirmed": true
+  },
+  "current_assumption": "A new runner SHA implies a new copy of the 400-line EVO19 gate implementation as well as a fresh input-identity receipt.",
+  "alternative": "Preserve fresh generation-specific spec, remote readback and independent release, but keep one immutable, separately reviewed gate implementation keyed by its own SHA. Bind each generation with a canonical spec containing goal/claim, active env/config SHA, absolute remote runner path/SHA/bytes/mode, all 11 remote file identities, wrapper SHA, argv/interpreter, host, and receipt path. Reuse is invalidated by any gate-code, schema, security-policy, source-alias, or trust-boundary change; runner-only changes create a new spec and receipt but do not clone gate code.",
+  "outcome_evidence": "Observation only: v11/v12 390/400 equal lines; v12 has a static candidate and no staged runner or EVO19 receipt. No measured time saving or live graph correctness proof.",
+  "cheapest_next_evidence": "After independent permission to trial, use only local synthetic fixtures for two runner identities and mutations of runner byte, config SHA, argv, one remote identity and gate code SHA. Capture gate implementation digest, both spec digests, expected accept/deny and zero graph invocations.",
+  "recommendation": "Propose a narrow reusable gate-engine experiment after current v12 path is not delayed; do not replace the current v12 gate or count this as a graph/89-tool/APK result. A passing local fixture would justify independent security review, not rollout.",
+  "stop_condition": "Stop if the generic engine cannot bind all v12 remote identities and exact release semantics, if a mutation reaches graph, or if implementation reuse obscures independent review of changed security logic.",
+  "coverage": "Compared current v11/v12 400-line gate programs, v10 independent NO_GO, v11 GO_STATIC review, v12 GO_STATIC review and EVO19 original decision. Host source closure, object/link reuse and deployment boundaries were not changed by this proposal.",
+  "blind_spots": "No Linux probe or graph run. Gate runtime cost and reviewer-hours not measured. Same-user key access does not prove original-owner identity. The generic mechanism may not reduce cost if gate security logic changes every generation.",
+  "claims": [
+    {
+      "kind": "observation",
+      "statement": "v11 and v12 EVO19 gate.py have 400 lines each, with 390 identical lines; differences are version and runner-specific identity/message/release fields.",
+      "applicability": "Only the two current G279 local gate candidates",
+      "falsifier": "A byte/line recount of these exact files yields a different result.",
+      "outcome_state": "observed",
+      "sources": [
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v11-active-env-candidate-v1/gate.py", "anchor": "lines 1-400"},
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v12-active-env-candidate-v1/gate.py", "anchor": "lines 1-400"}
+      ]
+    },
+    {
+      "kind": "hypothesis",
+      "statement": "Separating a reviewed gate engine from generation data can remove per-runner gate-code cloning while retaining fresh remote identity validation.",
+      "applicability": "Only runner-only changes where the gate security model and schema remain unchanged",
+      "falsifier": "Synthetic runner/config/argv/remote-byte mutation passes, security logic still needs per-generation edits, or reviewer cannot verify binding provenance.",
+      "outcome_state": "pending",
+      "sources": [
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/DECISION.md", "anchor": "one fail-closed pre-execution check and mutation falsifier"}
+      ]
+    }
+  ],
+  "discarded_actions": [
+    {
+      "action": "Clone the EVO19 gate implementation and edit embedded version/runner constants for every runner revision.",
+      "observed_failure": "v10 carried old v7 release schemas and received independent NO_GO; v11/v12 gates duplicate 390 of 400 lines without any graph result.",
+      "causal_reason": "Identity data and validation code are coupled, forcing copy/edit and creating stale-schema risk while still requiring fresh remote readback.",
+      "replacement": "Keep one immutable reviewed engine and emit a distinct complete canonical binding spec plus fresh O_EXCL receipt per runner generation; any engine/schema/security change forces a new review.",
+      "applicability": "Future runner-only revisions after current v12 path; historical frozen packets remain unchanged.",
+      "sources": [
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v10-sibling-candidate-v1/peer-review-v1/REVIEW.json", "anchor": "blocking_findings R1_V10_RELEASE_CONTRACT_NOT_YET_GENERATED"},
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v12-active-env-candidate-v1/gate.py", "anchor": "lines 1-400"}
+      ]
+    }
+  ],
+  "technical_actions": [
+    {
+      "name": "Data-bound reusable pre-execution identity engine",
+      "category": "input-identity",
+      "change": "Extract version/runner/receipt-specific constants from the 400-line gate into a canonical signed-off spec; engine pins spec SHA and re-reads active local_env plus all declared remote SHA/size/mode just before release; generated receipt includes engine SHA, spec SHA, both SSH/remote rc and exact argv. Missing, extra, stale, or changed fields fail closed.",
+      "causal_mechanism": "A runner-only revision changes its content key/spec, not the gate code. This removes cloned validation-code review and stale embedded release schemas while keeping remote byte verification and one-shot receipts generation-specific.",
+      "expected_effect": "Eliminate a 400-line gate-code clone for future runner-only revisions; still produce a new spec, independent spec review and fresh remote readback. No compile or graph run eliminated or proven faster yet.",
+      "applicability": "AOSP16 r4/OH7 ARM64 native graph input gate only; no containers, no namespace, no authority transfer or device action.",
+      "verification": "Two local synthetic runner identities with one engine digest, two spec/receipt digests, exact positive fixture, negative mutations of runner/config/argv/remote identity/engine SHA, zero graph invocation; then independent review before any use.",
+      "risks": "Generic spec parser could admit undeclared fields or weaken no-follow checks; accidental reuse of stale receipt; v12 cryptographic owner limitations remain. Fail closed and retain current v12 path as rollback.",
+      "sources": [
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/evo19-v12-active-env-candidate-v1/HANDOFF.md", "anchor": "11-input readback and explicit no SPEC/GATE"},
+        {"kind": "repository-file", "source": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/DECISION.md", "anchor": "pre-execution identity contract"}
+      ]
+    }
+  ],
+  "experiment": {
+    "challenged_rule": "A fresh runner generation requires a fresh copy of EVO19 gate code.",
+    "original_rationale": "The original EVO19 rule protects against stale wrapper/runner/environment and remote input bytes after G276 mount drift; each generation must have a fresh reviewed binding and receipt.",
+    "changed_condition": "v11/v12 gate logic is almost identical (390 of 400 lines), and the differences are primarily generation data; exact specs and receipts can still be fresh.",
+    "smallest_experiment": "An isolated local-only fixture with one fixed engine, two synthetic distinct runner identities and five identity mutations; compare engine/spec/receipt digests and ensure all mutations deny before any graph callback.",
+    "expected_observation": "Same engine SHA, different per-generation spec SHA and receipt SHA, positive fixtures pass, mutations deny, graph callback remains uncalled.",
+    "stop_condition": "Any mutation passes, any graph callback executes, or v12 security semantics cannot be represented without changing engine code.",
+    "risk": "Over-generalizing a security gate could hide changed trust semantics or admit stale inputs.",
+    "rollback": "Keep the current independently reviewed v12 candidate and all frozen v10/v11 receipts; do not promote this experiment.",
+    "approval_state": "proposed"
+  },
+  "metrics": {
+    "semantic_stage": "synthesized",
+    "result_groups_considered": 4,
+    "v11_gate_lines": 400,
+    "v12_gate_lines": 400,
+    "equal_lines": 390,
+    "experiment_executed": false,
+    "graph_runs": 0,
+    "device_commands": 0,
+    "canonical_policy_edits": 0
+  }
+}

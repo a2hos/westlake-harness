@@ -1,0 +1,1236 @@
+{
+  "packages": [
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/app.organicmaps/DEX-INVENTORY.json",
+        "sha256": "ea9b7dec4175d53671fb30ee91226b673ab17dca8522d31e9955fbd116812286"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/app.organicmaps/ELF-INVENTORY.json",
+        "sha256": "a3f480094cadb372ba5c17a15ba788038fdee7e007ebfd1bff469b087d1c5c3a"
+      },
+      "package": "app.organicmaps",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/at.bitfire.davdroid/DEX-INVENTORY.json",
+        "sha256": "6c378de2474b4f2303cf0c27bf387cc4b20543cd1d73d72cd7426433cd579cf3"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/at.bitfire.davdroid/ELF-INVENTORY.json",
+        "sha256": "4e0ad76827bb95361ee648841f3bea18f2382b436519bcf6e367914be7f57408"
+      },
+      "package": "at.bitfire.davdroid",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/at.bitfire.icsdroid/DEX-INVENTORY.json",
+        "sha256": "d3f2d83f484b157b830a22c1eb9f09fcdca06d532c2542d08c9b9a2eeff7e8d1"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/at.bitfire.icsdroid/ELF-INVENTORY.json",
+        "sha256": "26ed9097bc4e8ade5de186f63f00dcd9e71f41c0c38ef7bc5efa955aab9923ad"
+      },
+      "package": "at.bitfire.icsdroid",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/code.name.monkey.retromusic/DEX-INVENTORY.json",
+        "sha256": "e6a131a34ffe62a076877aa4df5e660465c26dbc4ccd7703e7362a48690c1ec2"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/code.name.monkey.retromusic/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "code.name.monkey.retromusic",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.aka.alarm/DEX-INVENTORY.json",
+        "sha256": "689d10def7e0fb1921105aaf5af2ee749433168b44228dd93f898d08ac9c5a16"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.aka.alarm/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "com.aka.alarm",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/com.amaze.filemanager/DEX-INVENTORY.json",
+        "sha256": "49eff11838f8be1e60f1c6b590e56196b7fa6091bdafff2d95a8f80480312d1c"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/com.amaze.filemanager/ELF-INVENTORY.json",
+        "sha256": "d6451dbf2ac79b2920c39bdf1335030cbd0fb523081678f82f6804ffb8c0939a"
+      },
+      "package": "com.amaze.filemanager",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.ashkanrafiee.librecontactsbackup/DEX-INVENTORY.json",
+        "sha256": "0b97683246946fdd76d173a3dc29cdabdb9b2382ef78158fb205124baf6f5878"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.ashkanrafiee.librecontactsbackup/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "com.ashkanrafiee.librecontactsbackup",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/com.aurora.store/DEX-INVENTORY.json",
+        "sha256": "3079536fe0a3ed6c6b70bbbdf98a58262ebf83d6f252862c1f9be9bf610a884f"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/com.aurora.store/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "com.aurora.store",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/com.bnyro.translate/DEX-INVENTORY.json",
+        "sha256": "6878877e4500c1d10bafc2e2621bc72f3d9078ccaa1223d11101f7fc68acaedc"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/com.bnyro.translate/ELF-INVENTORY.json",
+        "sha256": "4310c5047c1453d9acffb56a722a0096943b2511551217957e4b739e993ca2f0"
+      },
+      "package": "com.bnyro.translate",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/com.brouken.player/DEX-INVENTORY.json",
+        "sha256": "75b8dbe97cd6ad086c8bcd4133c62ed1cf23112a62dd77c0066746522e5460c4"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/com.brouken.player/ELF-INVENTORY.json",
+        "sha256": "c4733ef865a34464266d27ebcea894db08dae1adaf5345e70d2de9b2b7849241"
+      },
+      "package": "com.brouken.player",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/com.celzero.bravedns/DEX-INVENTORY.json",
+        "sha256": "6877e7a6bd0f4c4b6bf11ab8a535b0ff7b010b05ed18392883f17a61e49f15f8"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/com.celzero.bravedns/ELF-INVENTORY.json",
+        "sha256": "2e82331010b1727e485b04d98375dd7037a9759a7989af4f43912b7e806b8e99"
+      },
+      "package": "com.celzero.bravedns",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.documentsui.shortcut/DEX-INVENTORY.json",
+        "sha256": "7bdf0e41f6a62763904eba7eb05996f55573d2469f3063e2756ae8b48cf50e92"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.documentsui.shortcut/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "com.documentsui.shortcut",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/com.gh4a/DEX-INVENTORY.json",
+        "sha256": "13d17450ec791e2c44187ad4a00c74512812e1faac016abb24469c91c30468b9"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/com.gh4a/ELF-INVENTORY.json",
+        "sha256": "9de62eaf78a9932e48b5b60501f009eceb0c6fc519b649f7a4d7dcb5e4c2b53b"
+      },
+      "package": "com.gh4a",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/com.github.andreyasadchy.xtra/DEX-INVENTORY.json",
+        "sha256": "11203d3cfce84435c6e29d1bf8f45c1eb58e5554e2355e7296106a399ca959d1"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/com.github.andreyasadchy.xtra/ELF-INVENTORY.json",
+        "sha256": "6deb7a985f6254882a70f6a29da96ec9f36c7fc0ba84704657a37170770ee1ca"
+      },
+      "package": "com.github.andreyasadchy.xtra",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/com.github.ashutoshgngwr.noice/DEX-INVENTORY.json",
+        "sha256": "2fb5b3fc536aab051fb48e249a25118da14c44e096c74e5bd261580ad809a59a"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/com.github.ashutoshgngwr.noice/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "com.github.ashutoshgngwr.noice",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/com.github.libretube/DEX-INVENTORY.json",
+        "sha256": "65eb4d4ec64d68f7a19e1240329b42e55430dafd1d92b01f8a33a33de1e919d0"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/com.github.libretube/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "com.github.libretube",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.github.muellerma.stopwatch/DEX-INVENTORY.json",
+        "sha256": "53a95120bf92736473c58d505dd94b664d40ddece81a5f750909b0259c86067e"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/packages/com.github.muellerma.stopwatch/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "com.github.muellerma.stopwatch",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a4-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+      }
+    },
+    {
+      "aggregate": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/AGGREGATE.json",
+        "sha256": "5a1c8e42814ce5a6bc3790aa553d7ed0e540b1767edf8fcbb252f617a8cd3406"
+      },
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/java-trials/tuplefix-v2/com.junkfood.seal/DEX-INVENTORY.json",
+        "sha256": "dbf3304c447f281ae656f8548d6b4cfcff2f944cd3b6ef37cac47d2b1e72a5a9"
+      },
+      "elf_records": [
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/8d965b6d3710b6e5176e/ELF-RECORD.json",
+          "sha256": "d1f2a5835943bd4458814735fcd10d0d96dac83458b06302f3f8b912573ff4e5"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/ca0c5c0a88029777026b/ELF-RECORD.json",
+          "sha256": "d4e40aa9aa6123d585278df864f48bc5af41eb5b51d534273c5b6e7962cba19d"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/e1f49f08b63b42832edb/ELF-RECORD.json",
+          "sha256": "786cf2e3aa1bf73b5e2dbc503229305b5ceaa2f467c25fb5c5df935f7bf2356d"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/cff2b4e9d5bb53a0ba67/ELF-RECORD.json",
+          "sha256": "84414bbcd5046acefb4b5fe5d580c3d1f1dd416315c843528a3706173ba19d57"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/6680b787d93aa183e59d/ELF-RECORD.json",
+          "sha256": "acd6643e2df71891b0f735a6d76415c230c6b016aaae10bd1b3ab971c098aaa7"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/802c62c9e746ebc123f1/ELF-RECORD.json",
+          "sha256": "99d3a58d04ba0407ac1190016db5d1733fe8e58f19a25f67f0c7a98c4c7ebac2"
+        }
+      ],
+      "package": "com.junkfood.seal",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/com.keylesspalace.tusky/DEX-INVENTORY.json",
+        "sha256": "3e47b115bc0a0b706a71ea858f966ba36dbf1322c98e78a13c01559ff6e6b38c"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/com.keylesspalace.tusky/ELF-INVENTORY.json",
+        "sha256": "4f06c6aefa590392024a079b96a2f7355612cdad06883e24fe0c480ccef5b462"
+      },
+      "package": "com.keylesspalace.tusky",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/packages/com.kunzisoft.keepass.libre/DEX-INVENTORY.json",
+        "sha256": "9a2b7786fed74d33fc3fd4c9cb6e5eacf1343cf8d2072e80fce683d24a13990a"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/packages/com.kunzisoft.keepass.libre/ELF-INVENTORY.json",
+        "sha256": "0916b11afc723696dd1ce0667e462b1f94a4e5c72122e4689e22588fb67fd3e9"
+      },
+      "package": "com.kunzisoft.keepass.libre",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/root-review-v1/REVIEW.json",
+        "sha256": "f51a83d4b0e27245703d0a6ba1f0c763648d27a19f94cdb69283a18ec97d6401"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/com.kylecorry.trail_sense/DEX-INVENTORY.json",
+        "sha256": "d80029ae4ad9f5a042db91a4e4449a6a20895625ab2505dd98b3e941fb2a92c9"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/com.kylecorry.trail_sense/ELF-INVENTORY.json",
+        "sha256": "bb0e9f2162f74c833f9cef66765fb78709bfe1a16871b7b9369f6c32ee8fcdc4"
+      },
+      "package": "com.kylecorry.trail_sense",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/com.looker.droidify/DEX-INVENTORY.json",
+        "sha256": "b228cf44aa2ab2211f218f7a7b9aff97d50dcce046d54101940705e7dc787481"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/com.looker.droidify/ELF-INVENTORY.json",
+        "sha256": "d488db880f955567c5a83a0b1781afe6741cb5a26bf12d41c5dc0e3e84be3e1f"
+      },
+      "package": "com.looker.droidify",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/com.nononsenseapps.feeder/DEX-INVENTORY.json",
+        "sha256": "714c08d9ce72ef4b76f0ae7a0b991b23693e29a6d57b2fb2a35309686e7caf68"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/com.nononsenseapps.feeder/ELF-INVENTORY.json",
+        "sha256": "69ce3285df64d6f441303713172d509b29e0cb8317ce464e84608628ccaa78b8"
+      },
+      "package": "com.nononsenseapps.feeder",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/com.shatteredpixel.shatteredpixeldungeon/DEX-INVENTORY.json",
+        "sha256": "1d9fc6b10d49b7bbe08218dbf2c69fa626482bef9fdb6483628a45b4ac889640"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/com.shatteredpixel.shatteredpixeldungeon/ELF-INVENTORY.json",
+        "sha256": "8e8fd489b75340ca5e697da93d94df044a3559278f8bb271fe9f8df08641d0f2"
+      },
+      "package": "com.shatteredpixel.shatteredpixeldungeon",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/phases/dex/DEX-INVENTORY.json",
+        "sha256": "e74a4faccbca8e168b3cf5a3798fabc84cb040b36299b9a46d20033b840a8b08"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/phases/elf/ELF-INVENTORY.json",
+        "sha256": "7ada37f16ed5ac543e0aedac4efb00568ce31638540d3fd9078f13dbca397d83"
+      },
+      "package": "com.tiktok.lite.go",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g289-tiktoklite-static-v3/ROOT-ACCEPTANCE.json",
+        "sha256": "3226229866c70aebd63782a02094e0355661c71b4106300f93a51390157eb9b5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/com.unciv.app/DEX-INVENTORY.json",
+        "sha256": "bb51dff1ccc02c9c35f413ada447caa2416b4fbd663b31b18bd832c2baf6cfec"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/com.unciv.app/ELF-INVENTORY.json",
+        "sha256": "f8f1814f804a2a348cbe532821f3090336e372b4a72838ea6d012b5ff2abf2b4"
+      },
+      "package": "com.unciv.app",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/phases/dex/DEX-INVENTORY.json",
+        "sha256": "86f9213ac69c7e1cdbbd985c8c7dc7e555d9ddc94296fd4af185dd503eda1385"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/phases/elf/ELF-INVENTORY.json",
+        "sha256": "90489091d80d052cc392193fb0187c01ce03ed36c825b97d799a7cae9044aed5"
+      },
+      "package": "com.vivaldi.browser",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "7762f26dbac3bda94374ac658d1e3bbabdb0929eb37de8a1083f593b1157640c"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/com.vrem.wifianalyzer/DEX-INVENTORY.json",
+        "sha256": "f9452a3f6ef375d782b9170c75e454018521f308cd7804b1ee37403c74c1eb47"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/com.vrem.wifianalyzer/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "com.vrem.wifianalyzer",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/de.dennisguse.opentracks/DEX-INVENTORY.json",
+        "sha256": "6d976219b7e5c6a4b02d932ebe11c01ea62614717b95a77fc24577036cb971bb"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/runtime-result/packages/de.dennisguse.opentracks/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "de.dennisguse.opentracks",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/de.ph1b.audiobook/DEX-INVENTORY.json",
+        "sha256": "09c86294efe44ecc5d9e6e77facecc314870e5e4278f35f7028811a73f91b0f6"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/de.ph1b.audiobook/ELF-INVENTORY.json",
+        "sha256": "028eba740c0737006db4024bcd52f8c59a24bc9b7a07858af922d56251873d04"
+      },
+      "package": "de.ph1b.audiobook",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/de.tadris.fitness/DEX-INVENTORY.json",
+        "sha256": "ca7f9e1be743360668f54b1a62557c50b0a969daa367d1176e3f98554516232f"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/runtime-result/packages/de.tadris.fitness/ELF-INVENTORY.json",
+        "sha256": "9e04e17951845be4b33f3d8731c1cd97b7337eff88221e5f282cc3c3f508c04f"
+      },
+      "package": "de.tadris.fitness",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch11-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/dev.imranr.obtainium.fdroid/DEX-INVENTORY.json",
+        "sha256": "477f148c2d25ab69fc0914327a3ab6b8655158e60794b4e9d44c12d7dff9bf6c"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/dev.imranr.obtainium.fdroid/ELF-INVENTORY.json",
+        "sha256": "adb840753f834248b57c8a16b206931540f9466f3932afc9ed327245f8f4732c"
+      },
+      "package": "dev.imranr.obtainium.fdroid",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/dev.lucanlm.antimine/DEX-INVENTORY.json",
+        "sha256": "f92bc11d6032ee60b22d26c2dd3921bd0c345308b91321e7deda5982acfce51d"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/dev.lucanlm.antimine/ELF-INVENTORY.json",
+        "sha256": "79a8c6683c874dfe4a23724144ad9a5b3af8b5a3165f7b21e318bbd926d7f74f"
+      },
+      "package": "dev.lucanlm.antimine",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/eu.faircode.email/DEX-INVENTORY.json",
+        "sha256": "2ad0cfdad2ce0fa69757ea491a5c0dc37ad42fae864638beecc1371e6747d4c2"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/eu.faircode.email/ELF-INVENTORY.json",
+        "sha256": "677ac8836f7e73895561ab95bd540d1621020778ba667e6d725a548015bcba20"
+      },
+      "package": "eu.faircode.email",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/eu.siacs.conversations/DEX-INVENTORY.json",
+        "sha256": "d915c8d8559c0804bd24b5ec49af10e735459d806e4053c313b07c1cf885a6f9"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/eu.siacs.conversations/ELF-INVENTORY.json",
+        "sha256": "d07af65a527b194e2b687c51fc5c5b8f4bb29d047873ed973d616ebbd147d28b"
+      },
+      "package": "eu.siacs.conversations",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/phases/dex/DEX-INVENTORY.json",
+        "sha256": "7ea2af4fe7a843ed03ba24ae8401dbbed7bd0fc28a52cb2db2773e40b56ba5c5"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/phases/elf/ELF-INVENTORY.json",
+        "sha256": "8a9b7f8bcce13463bdd705cb15ff974a5940128d457e610186cd5e55056fbf0c"
+      },
+      "package": "im.vector.app",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "a53a30e9649d32a956afd44c573eaacb1b26fa7f1b73c53f15428ceb17a8ae2f"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g285-elementx-static-v1/phases/dex/DEX-INVENTORY.json",
+        "sha256": "cb95821f00c9870974e6f8f55fa2570a83845c778045db1c4cfa63af5f20c946"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g285-elementx-static-v1/phases/elf/ELF-INVENTORY.json",
+        "sha256": "f949ddda0163ea908755627b6b0fd812c44b020784ee217df1f05bb297da8bcc"
+      },
+      "package": "io.element.android.x",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g285-elementx-static-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "1152fb8cb8109aae7e2177dc7580b7df668e464554ff098d5b030ac08ccede04"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/io.github.muntashirakon.AppManager/DEX-INVENTORY.json",
+        "sha256": "657fca626aeccd1ff49ffb7d521f4dbdb4f6a936457e2d507fe38e9d54bcd33a"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/io.github.muntashirakon.AppManager/ELF-INVENTORY.json",
+        "sha256": "bade5c96e33c6b1618b154103ac1b3ca3646453c355426986e5e50551a421bda"
+      },
+      "package": "io.github.muntashirakon.AppManager",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/me.hackerchick.catima/DEX-INVENTORY.json",
+        "sha256": "366bea2eb88ce8dc40babc0f80d82fb5ae490422868e90113845d067569efc08"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/me.hackerchick.catima/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "me.hackerchick.catima",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/me.zhanghai.android.files/DEX-INVENTORY.json",
+        "sha256": "1005f55ce38c4f2cf5e1ec3695931e94b93cdb8100962b763f571a1256db29d5"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/me.zhanghai.android.files/ELF-INVENTORY.json",
+        "sha256": "0c2c20afc781912c82d6f5fdefed47ca0423ba3fe15aa0ff35ff1e97119a5ff8"
+      },
+      "package": "me.zhanghai.android.files",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/net.programmierecke.radiodroid2/DEX-INVENTORY.json",
+        "sha256": "43e118e2dc3b5ef85896b313b891de99fc8d2290689848df85efce3e3a4dbf04"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/net.programmierecke.radiodroid2/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "net.programmierecke.radiodroid2",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/packages/net.thunderbird.android/DEX-INVENTORY.json",
+        "sha256": "c0b29d3fa23a75bd000e24421aa9ed764f8c4a7eb7a99f9f898f870485925901"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/packages/net.thunderbird.android/ELF-INVENTORY.json",
+        "sha256": "cbfd3654b5d20def9490f1529a36d04f5f5f8841af356d6c67c8f6eefc2f33a1"
+      },
+      "package": "net.thunderbird.android",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/root-review-v1/REVIEW.json",
+        "sha256": "f51a83d4b0e27245703d0a6ba1f0c763648d27a19f94cdb69283a18ec97d6401"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/nodomain.freeyourgadget.gadgetbridge/DEX-INVENTORY.json",
+        "sha256": "d71cbb9233fdc749ed6ba2ebb3f311be098af74fa2235db53e350ca701b553a0"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/nodomain.freeyourgadget.gadgetbridge/ELF-INVENTORY.json",
+        "sha256": "30d71507ead5b8db616cb90d15130e547feb4236c5e42be42996af0c4b5dfcb4"
+      },
+      "package": "nodomain.freeyourgadget.gadgetbridge",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/org.adaway/DEX-INVENTORY.json",
+        "sha256": "0fd4d9279c47dac968f6b5ed3de8d969f2e21e08f6f065d05bb0b591dff8dfae"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/org.adaway/ELF-INVENTORY.json",
+        "sha256": "5792281964f3aefe3efeb19bb8bfd115bca998164ce2c654703aa5107637438e"
+      },
+      "package": "org.adaway",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/packages/org.andstatus.app/DEX-INVENTORY.json",
+        "sha256": "222dade0f0502f741ca756e55ebd9dbb1601021975a58fb9d9be22c30e76c2b5"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/packages/org.andstatus.app/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.andstatus.app",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "dd3c13e939c50717943f023a8c6eafaa9d63fb96255f35301dc8f0e12020dc1d"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/org.billthefarmer.editor/DEX-INVENTORY.json",
+        "sha256": "aee62a360cca2684bccd97131cdc64d82d6efa6c5dd953fa9e062d8ec6f1a75d"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/org.billthefarmer.editor/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.billthefarmer.editor",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/org.breezyweather/DEX-INVENTORY.json",
+        "sha256": "b7a34b7c241198a456c809945c3b2962c4e43383990f7890e5a47dbf77fd1202"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/org.breezyweather/ELF-INVENTORY.json",
+        "sha256": "79a00887a5f9e70656a50579b4e2f6b2b7db00067f9ac921f282f4239db3d3f7"
+      },
+      "package": "org.breezyweather",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "aggregate": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/AGGREGATE.json",
+        "sha256": "5a1c8e42814ce5a6bc3790aa553d7ed0e540b1767edf8fcbb252f617a8cd3406"
+      },
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/java-trials/tuplefix-v2/org.briarproject.briar.android/DEX-INVENTORY.json",
+        "sha256": "c78f8a1ae926f7103b62423a511764f6187e3b9d8e1550671fab47f0e0f92dd1"
+      },
+      "elf_records": [
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/1ad4ccc14d36e9d2a3a2/ELF-RECORD.json",
+          "sha256": "c332d976706f017482689b63c7b17a0555a2e2b118ca5e1a096a575be78060b4"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/189d792f2f110add4237/ELF-RECORD.json",
+          "sha256": "343a8c1d5603c80c794cd0ba9cd09f337fdae63b4387041f35732aba0f9bee5c"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/d26183cc79689da1eafa/ELF-RECORD.json",
+          "sha256": "9ee08655abef83878d83d81ab861bd4cf1a2060a16603b5dc7ed1a2c45664dd8"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/3e9c9a7974cd592d3f5a/ELF-RECORD.json",
+          "sha256": "9ee82841c534f3142d7e321d7ea74a976c309404a324604e4e87888b566f70c0"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/de88d4f4e4c9249e76df/ELF-RECORD.json",
+          "sha256": "f9a6f99b8eb8879f9b760928743a3f94ebac594f5d1076ce10f57b80ef61f9cf"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/fe1c9026380a689b3038/ELF-RECORD.json",
+          "sha256": "7422bb9432b239a63ab2a7a4694c67434094a8f50e8f3cc75e2331d7c81b3b1e"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/9ba9bc53bdfe96e1093b/ELF-RECORD.json",
+          "sha256": "b054ba4b5a6fcde04bfa98b10afa0dd5e8a937071684449ce1568d1380020958"
+        },
+        {
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/member-trials/9757d2ac236904315267/ELF-RECORD.json",
+          "sha256": "be46878e3223c682662059346a145f7678043c6fecc27d36b9ff57f495338357"
+        }
+      ],
+      "package": "org.briarproject.briar.android",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v3-candidate/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.connectbot/DEX-INVENTORY.json",
+        "sha256": "89f3c3f79cbca41b51ff990f3319e5baa1a6d18bb2436a4bba224252fb35eb1c"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.connectbot/ELF-INVENTORY.json",
+        "sha256": "d2663b487a2610e3d13ba700189c7ce262e58f612e5238f878db555c0dd83fee"
+      },
+      "package": "org.connectbot",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/org.fdroid.fdroid/DEX-INVENTORY.json",
+        "sha256": "53206c0ccd29066a300a8a91bd4dc84e65db078b0fdc90d566bcc92bd0195ee8"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/runtime-result/packages/org.fdroid.fdroid/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fdroid.fdroid",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch9-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.calendar/DEX-INVENTORY.json",
+        "sha256": "e0d19ef2e87353b0318f7a08ace17c4bc8c2a81f0aaaf56475ac8b69cafd93d9"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.calendar/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.calendar",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/org.fossify.camera/DEX-INVENTORY.json",
+        "sha256": "1e27c2d8069109b01bfc8dbafc6b9b02ea7e3b3a9c46c2c1ae72c6f1ea662687"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/org.fossify.camera/ELF-INVENTORY.json",
+        "sha256": "2f42417cabe9d001637eed6c960e79999d42d11187bf75c2ce7f72f012a9c149"
+      },
+      "package": "org.fossify.camera",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.contacts/DEX-INVENTORY.json",
+        "sha256": "7d403d61c2f4b909ddf2147a55294880d970f48eed2c35d9653b64214bc8e6a7"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.contacts/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.contacts",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/org.fossify.filemanager/DEX-INVENTORY.json",
+        "sha256": "12accfebf7b9650e1fef104d25628991f0ffd2fc57ccb2838a20b9fc0e0d4a9a"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/org.fossify.filemanager/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.filemanager",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/packages/org.fossify.gallery/DEX-INVENTORY.json",
+        "sha256": "32e5b2b80b4b9e1d6aca1600c0ffee778004925d778c092cb2ecc34d26716b3e"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/packages/org.fossify.gallery/ELF-INVENTORY.json",
+        "sha256": "f6268542ac0b63eac6d31d39dcb80d407c2faaf8fbb11b091c9ea9c42d7bdc36"
+      },
+      "package": "org.fossify.gallery",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-python-runtime-v1/root-review-v1/REVIEW.json",
+        "sha256": "f51a83d4b0e27245703d0a6ba1f0c763648d27a19f94cdb69283a18ec97d6401"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/org.fossify.messages/DEX-INVENTORY.json",
+        "sha256": "3b62e757ec1dd323bb77124921523114a9cae64efb3e837b6b332b8a20def690"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/runtime-result/packages/org.fossify.messages/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.messages",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.musicplayer/DEX-INVENTORY.json",
+        "sha256": "5f0fa2e3d450fe30323305c7c0cc30ef560bf28031618448588ab8a75b7a8a6c"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.musicplayer/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.musicplayer",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/org.fossify.notes/DEX-INVENTORY.json",
+        "sha256": "a3440b680da4a9818caa680501d36a8cab8af2cf7a65019b133ecc16d375feb5"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/org.fossify.notes/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.notes",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.phone/DEX-INVENTORY.json",
+        "sha256": "2433d2f8bbfa65ccd1bc5167088d02fc0f76e89fefe5759a8b4d8c754012b474"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.fossify.phone/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.fossify.phone",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/org.fossify.voicerecorder/DEX-INVENTORY.json",
+        "sha256": "2f73d848fce287e59cea18d24ea210e0a022df3690634cc4e6d387fb062ff44b"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/runtime-result/packages/org.fossify.voicerecorder/ELF-INVENTORY.json",
+        "sha256": "d875a969a94b2b0bf14bd5b6855ad5313573badb19456732b2c235acd0228ab2"
+      },
+      "package": "org.fossify.voicerecorder",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/runtime-result/packages/org.isoron.uhabits/DEX-INVENTORY.json",
+        "sha256": "71096ee1b1b0353a81b2d3e06f26f7f5829ca8185d522cc9a80cf0f7cf2dd76c"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/runtime-result/packages/org.isoron.uhabits/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.isoron.uhabits",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.jellyfin.mobile/DEX-INVENTORY.json",
+        "sha256": "c32e319dec82c5726e7e66c9c01dbd56dc68dd1527576f29798ec7b823120f82"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.jellyfin.mobile/ELF-INVENTORY.json",
+        "sha256": "580dbe826f3756be4c55b5d65a410a8591c807e9c07ecee4f21d953ff86889aa"
+      },
+      "package": "org.jellyfin.mobile",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.joinmastodon.android/DEX-INVENTORY.json",
+        "sha256": "2c0395d5e64acb2a143abe4426acfe77d5ec047920cd74035e7f6dbd729aa113"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.joinmastodon.android/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.joinmastodon.android",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.kde.kdeconnect_tp/DEX-INVENTORY.json",
+        "sha256": "8b40ad7761339fb80bc9b6e155a107b36a37236e2d3cb3d9f24b6153673fdb01"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/packages/org.kde.kdeconnect_tp/ELF-INVENTORY.json",
+        "sha256": "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      },
+      "package": "org.kde.kdeconnect_tp",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch2-v1/root-review-v1/REVIEW.json",
+        "sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/org.liberty.android.freeotpplus/DEX-INVENTORY.json",
+        "sha256": "5dd07792c5c61dfeaf399d19abe67dea33bef7763b74978d92da0d7a9a69b9f4"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/org.liberty.android.freeotpplus/ELF-INVENTORY.json",
+        "sha256": "30d71507ead5b8db616cb90d15130e547feb4236c5e42be42996af0c4b5dfcb4"
+      },
+      "package": "org.liberty.android.freeotpplus",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/runtime-result/packages/org.linphone/DEX-INVENTORY.json",
+        "sha256": "bc5919f810fc7bc56a080650bc3240cb52b212723d01facd9f4efd6691b5775f"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/runtime-result/packages/org.linphone/ELF-INVENTORY.json",
+        "sha256": "345c0def73b026d486ff148efef04483edd7bff6378c379ab6c94094520b582d"
+      },
+      "package": "org.linphone",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/runtime-result/packages/org.localsend.localsend_app/DEX-INVENTORY.json",
+        "sha256": "08236b8f70c5d54e43eedc4b00fa660a097c8215e30febf0a99206d87e4e6841"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/runtime-result/packages/org.localsend.localsend_app/ELF-INVENTORY.json",
+        "sha256": "c6b85e1271c9190eab728d66adc94bee35448eaf87e08643dd09fe98095356dd"
+      },
+      "package": "org.localsend.localsend_app",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-a3-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/runtime-result/packages/org.openhab.habdroid/DEX-INVENTORY.json",
+        "sha256": "c8d0d200e5d3ae8b2ee9890390840fadb1bd8e31470d7c55befc022bc34eb71b"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/runtime-result/packages/org.openhab.habdroid/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.openhab.habdroid",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.proninyaroslav.libretorrent/DEX-INVENTORY.json",
+        "sha256": "f9ab0e7bb0a3756b8f1363fdb865c020a878941c29ea510611042c370ab31676"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.proninyaroslav.libretorrent/ELF-INVENTORY.json",
+        "sha256": "35a9a918a92a2a9004acec573fd01b4688b424c0b935ee9318e942177b962ef7"
+      },
+      "package": "org.proninyaroslav.libretorrent",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/org.quantumbadger.redreader/DEX-INVENTORY.json",
+        "sha256": "79bceabb065e7dd11191075dd494e8e1dc1687fc0172513a42e9198c90b40d94"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/runtime-result/packages/org.quantumbadger.redreader/ELF-INVENTORY.json",
+        "sha256": "aa10c576f754e441f9792c796eb03c61e35cebc93b683aaacb7715974b2923ad"
+      },
+      "package": "org.quantumbadger.redreader",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.tasks/DEX-INVENTORY.json",
+        "sha256": "87c99fd1636158ceb47219e977a70c9a2568d992c2202d6a8b149d5b16f31798"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/runtime-result/packages/org.tasks/ELF-INVENTORY.json",
+        "sha256": "edfce5c96d927a32bc36331fd489af74549ecb99997a10f5da51fcba6940e83d"
+      },
+      "package": "org.tasks",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch4-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/phases/dex/DEX-INVENTORY.json",
+        "sha256": "e15279a6ede51d1d74bfa8138ca0fbcc5826c0f6762d54e9531b81145c5a7d49"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/phases/elf/ELF-INVENTORY.json",
+        "sha256": "546d2a71962338064de8dc925830be9bc31248793cda04acb88f1323f7d3b629"
+      },
+      "package": "org.videolan.vlc",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "44eb7df55607c410f001d742bdd3e62b3bd102c7c0968fc1fd719228e54c538d"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/packages/org.woheller69.gpscockpit/DEX-INVENTORY.json",
+        "sha256": "b1b3bf36287f77f6cb16d18c8acdf093b41554869edc5eb7346d867eac7a12aa"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/packages/org.woheller69.gpscockpit/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.woheller69.gpscockpit",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "dd3c13e939c50717943f023a8c6eafaa9d63fb96255f35301dc8f0e12020dc1d"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/runtime-result/packages/org.xbmc.kore/DEX-INVENTORY.json",
+        "sha256": "d9ba7bb17feb4d4063ba166aa53874a7ec81f4f70c0dfe79ddc41f1a364fcc2f"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/runtime-result/packages/org.xbmc.kore/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.xbmc.kore",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch5-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/org.y20k.transistor/DEX-INVENTORY.json",
+        "sha256": "406c4cd431dfe71690ea6086e19aa2114d35c9d5521b1ad75dc9a25bf5f9364d"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/org.y20k.transistor/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "org.y20k.transistor",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/phases/dex/DEX-INVENTORY.json",
+        "sha256": "bc598a6880c7217d274eba52d6bb2b2cb89cfaf54081f15f6d394b1da7c1abcc"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/phases/elf/ELF-INVENTORY.json",
+        "sha256": "a44f16d136f6a63be15438c8fc6a67316bc57687283a2090157d91630f35cb5f"
+      },
+      "package": "proton.android.meet",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "6a191bd160db05359c565e1f96dcd3a138af6cf72037fe78f750e5e124b4874e"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/phases/dex/DEX-INVENTORY.json",
+        "sha256": "2b2de035556865c62c06b81fef451fac403792607c4e0783d1d9137aa0474488"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/phases/elf/ELF-INVENTORY.json",
+        "sha256": "ccaf2f966eff2dd6e911c0f5faad10f25230d55ce575b9388f7ffc27d3f07836"
+      },
+      "package": "us.zoom.videomeetings",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/ROOT-ADMISSION.json",
+        "sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/ws.xsoh.etar/DEX-INVENTORY.json",
+        "sha256": "014c1b099ab805107a34a45220256b2a8642e73e4c5048222b56deb031cf2bf5"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/runtime-result/packages/ws.xsoh.etar/ELF-INVENTORY.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "package": "ws.xsoh.etar",
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+        "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+      }
+    }
+  ],
+  "schema": "cross-apk-reference-input-v1",
+  "target": "OH7.0.0.39-AOSP16.0.0_r4-arm64-Bionic"
+}

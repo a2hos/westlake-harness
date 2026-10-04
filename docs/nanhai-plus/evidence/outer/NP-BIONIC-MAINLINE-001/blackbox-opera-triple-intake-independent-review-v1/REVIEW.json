@@ -1,0 +1,153 @@
+{
+  "at": "2026-10-04T13:34:12.930305+00:00",
+  "author_command_evidence_sha256": "119ef91f2b64f45157140bef0add3c542a13763cdbb5fb63ec5338d11ead0fe7",
+  "author_handoff_sha256": "7ee0c5048fc90818ed47e44e8683752a9ef4936246888d4a4583c055706ae288",
+  "browser_get_terminal": {
+    "chunk_id": "e516ae",
+    "command_event_line": 163,
+    "command_event_sha256": "e9bf1210795d63a0fecb78dff3f48db7619695db9a9f86af8ad41a2212c7a750",
+    "curl_subprocess_rc": 0,
+    "limit": "original tool session log independently read; command rc was not separately frozen in candidate receipt",
+    "log_path": "/Users/alexyang/.codex/sessions/2026/10/04/rollout-2026-10-04T06-27-59-01a10719-9351-7ae3-968c-0324e3bf35ed.jsonl",
+    "outer_rc": 0,
+    "terminal_output_line": 164,
+    "terminal_output_sha256": "db6c2359ad3490372bd14e11c39c4fb30a1536ed4c7b1fcb0cbff18774b7f68b",
+    "unified_exec_session_id": 15402
+  },
+  "canonical_count_change": 0,
+  "container_commands": 0,
+  "dedup": {
+    "limit": "root must repeat immediate ledger check before canonical admission",
+    "raw_count_before": 81,
+    "searched": "Current TASK-SUMMARY, OUTER-STATE, upstream registry and outer-evidence JSON; no matching Opera package IDs or candidate APK SHA values outside new candidate"
+  },
+  "device_commands": 0,
+  "gx_mini_get_rc": {
+    "opera_gx": 0,
+    "opera_mini": 0,
+    "source": "CANDIDATE.json curl.rc"
+  },
+  "limits": [
+    "GO permits root raw-identity review only; does not itself admit original APK",
+    "No blackbox mainstream/source-closure qualification; GX mainstream reach UNKNOWN",
+    "No static inventory or cold start",
+    "Opera Mini is official-looking signed original but ARM32-only",
+    "No device, container, namespace or graph operation"
+  ],
+  "overall": "GO_RAW_IDENTITY_ONLY_FOR_BROWSER_AND_GX; NO_GO_FOR_MINI_ARM32_ONLY",
+  "packages": [
+    {
+      "abi_dirs": [
+        "arm64-v8a"
+      ],
+      "apk_bytes": 279570110,
+      "apk_sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+      "blackbox_qualified": false,
+      "candidate_sha256": "01d15303d85dcf3c77750320ccd60032c5aecaae7c6886696e249f6b79d2742b",
+      "cold_start": false,
+      "complete_static": false,
+      "decision": "GO_RAW_IDENTITY_ONLY",
+      "final_url": "https://download3.operacdn.com/ftp/pub/opera/android/10200/Opera_102_3_5206_90530_Generic_Opera_arm8_LZMA.apk",
+      "header_content_length": 279570110,
+      "http_status": 200,
+      "manifest_count": 1,
+      "package": "com.opera.browser",
+      "raw_output_sha256": {
+        "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "aapt2.stdout.raw": "a7813dd9e83458410e6fbc4532a99100c969950c4af4b8e7d4e79ad7a1c4ca18",
+        "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apksigner.stdout.raw": "96e0a20b84b3b6172ff1b215b0def1e51169634d1b8cf7059eb6a0b385c58a21",
+        "curl.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "curl.stdout": "97aec353edd311b91113b087325fd3cb533209435df321502e26b9a3e5233ec5",
+        "headers.raw": "326ed30a741e9e25268e15f7a7177a5abf4aac54390a27ccd34e133546ef18ab"
+      },
+      "root_raw_accepted": false,
+      "signature_v3_verified": true,
+      "signer_certificate_sha256": "5d6afbf87f652af04647ada0df634cf22370900b164b09d50bd23aa2cb5285b8",
+      "tls_verify_result": 0,
+      "version_code": "1910213408",
+      "version_name": "102.3.5206.90530",
+      "zip_crc": "PASS",
+      "zip_members": 7309
+    },
+    {
+      "abi_dirs": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "apk_bytes": 64107242,
+      "apk_sha256": "22f2921d3a91e94f3689f104a52d502ae6f5ad46e32cedf67e98b760be9c9503",
+      "blackbox_qualified": false,
+      "candidate_sha256": "f0ac49ff2345f5906dc34fa9d57a8492b8bf9f6e8b3dd418eb577f45cfec90a1",
+      "cold_start": false,
+      "complete_static": false,
+      "decision": "GO_RAW_IDENTITY_ONLY",
+      "final_url": "https://download3.operacdn.com/ftp/pub/opera/android/opera-gx/opera-gx-3.3.13.apk",
+      "header_content_length": 64107242,
+      "http_status": 200,
+      "manifest_count": 1,
+      "package": "com.opera.gx",
+      "raw_output_sha256": {
+        "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "aapt2.stdout.raw": "11963cb966e12fe9160b9957d0b6439516a689fa94208980d561a590bfc57399",
+        "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apksigner.stdout.raw": "7493edcce54cfbe4ed922fea3d283a447db0b703c0fd0cde657fa689ad4516ec",
+        "curl.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "curl.stdout": "36bc0fc5eecc2b89e73e983f6f35d274deb8d37b55ecb6e1408f2d2bc4383be3",
+        "headers.raw": "e8ff97941dd110adaf96148f1db25484991db9b0632a518b98ea13fe9a0efe1f"
+      },
+      "root_raw_accepted": false,
+      "signature_v3_verified": true,
+      "signer_certificate_sha256": "aad8e204d24d177934c9cd0c63cc6aa38efbf42c4a6957097e2210f57faa67aa",
+      "tls_verify_result": 0,
+      "version_code": "194",
+      "version_name": "3.3.13",
+      "zip_crc": "PASS",
+      "zip_members": 1928
+    },
+    {
+      "abi_dirs": [
+        "armeabi-v7a"
+      ],
+      "apk_bytes": 46507432,
+      "apk_sha256": "b7a9aee039fec78693eac2c21a31df82703d9be50dfae7ca59ca41a51b46fe64",
+      "blackbox_qualified": false,
+      "candidate_sha256": "f49ea93962b79c4294e78a96e41169eb081379803113647706fad373d78bf1ee",
+      "cold_start": false,
+      "complete_static": false,
+      "decision": "NO_GO_ARM32_ONLY",
+      "final_url": "https://download3.operacdn.com/ftp/pub/opera/android/mini/99.6.2254.2363/operamini-99.6.2254.2363.apk",
+      "header_content_length": 46507432,
+      "http_status": 200,
+      "manifest_count": 1,
+      "package": "com.opera.mini.native",
+      "raw_output_sha256": {
+        "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "aapt2.stdout.raw": "9a2a65c9ebd9cbf2102784a12b081815f07c4f9dcca1fb75d89890279786639e",
+        "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apksigner.stdout.raw": "a0967be2aca1fd851526df6b73d8e3634d2df28a1e2e13d17e00046461c58cde",
+        "curl.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "curl.stdout": "cde7dc15e302e9ecb514651f19137f7cf48a10e94f566523340bbf656091cbf8",
+        "headers.raw": "a85cf9f6b7a5e3c6e7db8e25f2d81b0cf7f786072a3ec2dc7f1e3132464e6569"
+      },
+      "root_raw_accepted": false,
+      "signature_v3_verified": true,
+      "signer_certificate_sha256": "57acbc525f1b2ebd19196cd6f014397cc910fd18841e0ae850febc3e1e593ff2",
+      "tls_verify_result": 0,
+      "version_code": "999835963",
+      "version_name": "99.6.2254.2363",
+      "zip_crc": "PASS",
+      "zip_members": 5413
+    }
+  ],
+  "schema": "blackbox-opera-triple-independent-review-v1",
+  "scope": "independent host readback, candidate only; no canonical admission",
+  "source_chain": {
+    "independent_browser_observation": "All three official Android download buttons point to recorded download.opera.com URLs and redirect to the same recorded operacdn final URLs",
+    "official_page": "https://www.opera.com/download",
+    "published_signer_digest_binding": "UNKNOWN"
+  },
+  "target": "OH7.0.0.39-AOSP16.0.0_r4-arm64-Bionic"
+}

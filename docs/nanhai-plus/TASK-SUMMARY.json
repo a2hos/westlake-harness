@@ -35,12 +35,15 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 81,
+    "downloaded_payloads": 83,
     "latest_raw_admission": {
-      "package": "im.vector.app",
-      "version_code": "40106622",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-arm64-next-vector-v3/ROOT-RAW-ADMISSION.json",
-      "scope": "exact upstream registered original APK only; no complete static or cold start credit"
+      "packages": [
+        "com.opera.browser",
+        "com.opera.gx"
+      ],
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a1b8e69d8d4b3d52ce4ef19d37d2f064a2ce65bfeb35984ad2458deaf0f2c5b8",
+      "scope": "two official supplemental ARM64 original APK identities only; no static, blackbox qualification or cold start credit"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -51,29 +54,37 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 77,
-    "complete_inventory_dex_entries": 191,
-    "complete_inventory_native_elf_entries": 915,
+    "complete_static_inventories": 79,
+    "complete_inventory_dex_entries": 205,
+    "complete_inventory_native_elf_entries": 938,
     "latest_complete_static_admission": {
-      "package": "im.vector.app",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g293-vector-static-v1/ROOT-STATIC-ADMISSION.json",
+      "package": "com.opera.browser",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g295-opera-browser-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "fdc45b39d92c5fbe10044d2d3c62bdb69125932e5dac657142f2eab3a1393bda",
       "scope": "four-phase host static only; no cold start credit"
     },
     "incomplete_static_inventories": [
-      "org.videolan.vlc",
       "org.thoughtcrime.securesms",
       "org.sufficientlysecure.keychain"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 6,
+    "supplemental_payloads": 8,
     "qualified_blackbox_packages": 3,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
       "com.tiktok.lite.go"
-    ]
+    ],
+    "opera_raw_supplement": {
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a1b8e69d8d4b3d52ce4ef19d37d2f064a2ce65bfeb35984ad2458deaf0f2c5b8",
+      "raw_delta": 2,
+      "static_delta": 0,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    }
   },
   "latest_actual_execution": {
     "scope_note": "Historical G276 native graph attempt; newer portfolio host scans and candidate GETs are recorded separately below.",
@@ -1386,6 +1397,17 @@
     "active_binding_changed": false,
     "soong_graph_executed": false,
     "arm64_target_built": false,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "g294_vlc_static_actual": {
+    "status": "accepted_complete_host_static_only",
+    "root_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g294-vlc-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+    "static_before": 77,
+    "static_after": 78,
+    "dex_added": 6,
+    "true_arm64_elf_added": 4,
+    "cold_start_delta": 0,
     "device_commands": 0,
     "container_commands": 0
   }

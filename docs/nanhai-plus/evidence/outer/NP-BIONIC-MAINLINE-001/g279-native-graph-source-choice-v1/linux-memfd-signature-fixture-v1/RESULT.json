@@ -1,0 +1,56 @@
+{
+  "schema": "g279-v12-linux-memfd-signature-fixture-v1",
+  "at": "2026-10-04T13:37:41.472682+00:00",
+  "status": "PASS",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 0,
+  "program_sha256": "be97c5dbb3ce4b0fc1a8ff02548bca4f74da474cef67240c04a29a0f7d967afa",
+  "public_key_sha256": "2dadc54bddbf292565ad2f3d9a2702f156a57c324c011bdfefa34f5f0a4f385e",
+  "fixture_message_sha256": "3b14f0c53b21ddf13dd9b83fdfb08b94d84eb23ce198e82e03fd5c243e60b56e",
+  "fixture_signature_sha256": "53593ccff341718e9fbe011194cc036b93912d40ec137f5bbd12c930b79b7c04",
+  "remote_result": {
+    "container": false,
+    "device": false,
+    "graph": false,
+    "host": "GZ02",
+    "memfd": true,
+    "namespace_sandbox": false,
+    "platform": "linux",
+    "remote_writes": 0,
+    "results": [
+      {
+        "namespace": "nanhai-plus-g279-graph-v12",
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "cc089b95b138bd8259b37608b1034dd89bbab470617a223c25d28a14d832e46d"
+      },
+      {
+        "namespace": "wrong-namespace",
+        "rc": 255,
+        "stderr_sha256": "9bd29b8ad464abaa369873681c84108b9d1ab2a61b03448419c69b158ac25f00",
+        "stdout_sha256": "ab9742df5291a699fec0ff326fc06a6d4646a0b2e63c4cbf0ffeb341481095c2"
+      }
+    ],
+    "uid": 1000
+  },
+  "scope": "Linux memfd/pass_fds/ssh-keygen verify positive and wrong-namespace negative only; not original owner ACK or graph",
+  "remote_writes": 0,
+  "container": false,
+  "namespace_sandbox": false,
+  "graph": false,
+  "device": false
+}

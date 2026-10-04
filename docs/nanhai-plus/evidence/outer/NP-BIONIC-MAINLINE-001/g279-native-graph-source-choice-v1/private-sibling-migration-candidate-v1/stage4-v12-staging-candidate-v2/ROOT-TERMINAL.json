@@ -1,0 +1,26 @@
+{
+  "schema": "g279-stage4-v12-v2-root-terminal-prestart-v1",
+  "at": "2026-10-04T13:36:41.743969+00:00",
+  "decision": "TERMINAL_FAILED_PRE_START_NO_REPLAY",
+  "nonce": "98436646ab71ba46dcc5cfe3d4d12e45",
+  "packet_sha256": "3cecd491666451a490cbcee5ce1ca01d1722aad0c95e4950aee06867211c0da1",
+  "release_sha256": "5f4ecb7692e0b16c8f07eb35f65dabcefed7572c43280323f11ba025adcabde2",
+  "root_tool_chunk": "4a78ea",
+  "outer_rc": 1,
+  "exception": "ValueError: known host row drift",
+  "source": "scripts/nanhai_plus_g279_sibling_stage2_candidate_v2.py:187 host_identity",
+  "observed_known_host_algorithms": [
+    "ssh-ed25519",
+    "ssh-rsa",
+    "ecdsa-sha2-nistp256"
+  ],
+  "pinned_ed25519_fingerprint": "SHA256:RuAqHWgFJEIEcb4hC+WXULCRfV3uCsayP4Iw4aJvwzg",
+  "start_receipt_exists": false,
+  "ssh_attempted_by_launcher": false,
+  "remote_write": false,
+  "graph": false,
+  "device": false,
+  "container": false,
+  "namespace": false,
+  "next": "Fresh v3 candidate may filter exact ed25519 row and retain pinned fingerprint; no v2 replay"
+}

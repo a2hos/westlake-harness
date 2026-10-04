@@ -1,0 +1,58 @@
+{
+  "schema": "nanhai.g295.opera_browser.peer_postrun_review.v1",
+  "reviewed_at": "2026-10-04T13:41:11.566970+00:00",
+  "reviewer": "independent_postrun_peer",
+  "candidate": "g295-opera-browser-static-candidate-v1",
+  "verdict": "GO_HOST_STATIC_CANDIDATE_FOR_ROOT_REVIEW",
+  "scope": "one admitted exact Opera Browser original APK, native Mac host, four phase static scan only",
+  "checks": {
+    "root_raw_admission_sha256_and_apk_identity": true,
+    "delegated_single_attempt_authorization_and_script_hashes": true,
+    "outer_once_rc0_and_four_phases_rc0": true,
+    "raw_stdout_stderr_hashes": true,
+    "seal_32_files_size_sha256": true,
+    "source_before_after_equal_and_live_source_hashes": true,
+    "venv_manifest_hash_and_readelf_alias_target_hash": true,
+    "original_apk_live_sha256_and_bytes": true,
+    "zip_7309_unique_entries_crc_and_single_manifest": true,
+    "eight_dex_member_bytes_hash_identity": true,
+    "nineteen_true_arm64_elf_member_bytes_hash_identity": true,
+    "metadata_package_version_abi_sha": true,
+    "all_candidate_result_checks_true": true,
+    "handoff_westlake_gate_pass": true,
+    "no_container_namespace_device_commands_in_recorded_argv_and_scripts": true
+  },
+  "observed": {
+    "original_apk_sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+    "original_apk_bytes": 279570110,
+    "outer_rc": 0,
+    "phase_rc": {
+      "zip": 0,
+      "metadata": 0,
+      "elf": 0,
+      "dex": 0
+    },
+    "zip_entries": 7309,
+    "zip_crc_bad_entry": null,
+    "dex_entries": 8,
+    "true_arm64_elf_entries": 19,
+    "seal_files": 32,
+    "candidate_result_sha256": "52969dfb5396da25df7922d692b6bad2a6135609f110922f1e78268369e1d63a",
+    "handoff_gate_rc": 0,
+    "handoff_gate_output": "PASS"
+  },
+  "boundaries": {
+    "static_only": true,
+    "startup_verified": false,
+    "blackbox_qualified": false,
+    "device_verified": false,
+    "build_pass": false,
+    "authoritative_count_changed": false,
+    "root_acceptance_pending": true
+  },
+  "observed_wall": "none in the host static scan receipts",
+  "hypotheses": [],
+  "failed": [],
+  "next_evidence": "Root may accept this exact APK as one complete host-static inventory only; any startup, blackbox, Bionic runtime or device claim needs its separate gate and direct evidence.",
+  "review_note": "One preliminary peer comparison treated venv_manifest and readelf guard records as scalar strings; they are structured records. Corrected comparison and live hashes passed. No candidate file was edited."
+}

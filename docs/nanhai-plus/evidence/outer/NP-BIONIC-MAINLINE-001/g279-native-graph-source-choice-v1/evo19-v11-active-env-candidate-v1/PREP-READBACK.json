@@ -1,0 +1,16 @@
+{
+  "probe_sha256": "e301ccac9a3e86809828158c63047a1e771cd621efcb763ad3aa945b12741527",
+  "remote": null,
+  "schema": "nanhai-g279-evo19-v11-prep-readback-v1",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n  File \"/usr/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+  "stderr_sha256": "8569510e912c2dff9af2b2e26ba3c66046b13ff2843dbac898c9625e02bfb01d",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

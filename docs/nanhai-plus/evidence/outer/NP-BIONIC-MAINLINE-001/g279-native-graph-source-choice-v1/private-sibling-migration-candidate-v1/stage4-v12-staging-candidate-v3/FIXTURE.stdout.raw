@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "name": "reviewed v12 packet reconstructs exactly",
+      "pass": true
+    },
+    {
+      "name": "unreleased execute denied before START/SSH",
+      "pass": true
+    },
+    {
+      "name": "one pinned Ed25519 with unrelated RSA/ECDSA rows accepted",
+      "pass": true
+    },
+    {
+      "name": "duplicate Ed25519 row denied",
+      "pass": true
+    },
+    {
+      "name": "Ed25519 fingerprint drift denied",
+      "pass": true
+    },
+    {
+      "name": "SSH route drift denied",
+      "pass": true
+    },
+    {
+      "name": "actual SSH remains strict Ed25519",
+      "pass": true
+    },
+    {
+      "name": "positive mode0444 exact runner and remote receipt",
+      "pass": true
+    },
+    {
+      "name": "same-byte inode replacement denied before lease",
+      "pass": true
+    },
+    {
+      "name": "partial lease quarantined without deletion or replay",
+      "pass": true
+    }
+  ],
+  "container": 0,
+  "device": 0,
+  "graph": 0,
+  "namespace": 0,
+  "remote_writes": 0,
+  "schema": "g279-stage4-v12-staging-local-fixtures-v1",
+  "ssh": 0,
+  "status": "PASS"
+}

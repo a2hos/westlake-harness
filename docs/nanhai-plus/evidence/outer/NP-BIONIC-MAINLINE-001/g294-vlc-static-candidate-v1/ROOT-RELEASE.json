@@ -1,0 +1,29 @@
+{
+  "schema": "nanhai.g294.vlc.static.root_release.v1",
+  "decision": "GO_ONE_LOCAL_STATIC_INVENTORY",
+  "package": "org.videolan.vlc",
+  "apk_sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+  "prepare_sha256": "b9cfaf5b45e8c3b9f48b452ef320db771484fcde50b9b74e4d9ae155e5fefe7d",
+  "peer_review_sha256": "a71111b7b705bc0fd8a67f103eb4d7033467efcd6f7c3a201afb964f33c8cd84",
+  "runner_sha256": "fd010dd1f6ddf63eb9142336db4f50efa0cb76117ff79837649c7bf6aab11480",
+  "inputs_sha256": "89cd0852e881af7b79ab47e5f5f8436508ab95e61fddf660d27ce9a32746d4fe",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "scan_phase_sha256": "8fd41ff3bf5a978cccb9dc3599fb864078c2dee9e1b72db256b821a37ae7202b",
+  "raw_receipt_sha256": "7bfa1d6911110e1c0f7d5b2852fea53b9856a35a2d5a9721dd710eb9b2ff7dfa",
+  "phase_order": ["zip", "metadata", "elf", "dex"],
+  "limits_seconds": {
+    "outer_seconds": 1350,
+    "zip_seconds": 120,
+    "metadata_seconds": 180,
+    "elf_seconds": 600,
+    "dex_seconds": 600,
+    "parallel": 1,
+    "retries": 0
+  },
+  "network_authorized": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_credit": 0,
+  "static_credit_before_postrun_review": 0,
+  "scope": "One host-only exact original VLC four-phase inventory. Preserve raw81/static77 until independent terminal review and root admission."
+}

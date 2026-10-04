@@ -1,0 +1,111 @@
+{
+  "probe_sha256": "a339dc2211849fc55cc580e6e43c0f67baba8b549fb5f4d4f31298b72960312b",
+  "remote": {
+    "remote_rc": 23,
+    "rows": [
+      {
+        "bytes": 785,
+        "match": true,
+        "mode": 256,
+        "name": "binding",
+        "path": "/data/source/.nanhai-plus-opaleye-native-v7/control/g279-native-graph-env.json",
+        "sha256": "9157f7d3e719c2fe1d2186bb79095500572049c4b7a3bc8d3befbdb98d47ae2f",
+        "stable": true
+      },
+      {
+        "bytes": 5337,
+        "match": true,
+        "mode": 292,
+        "name": "generator",
+        "path": "/data/source/.nanhai-plus-opaleye-native-v7/control/generate_manifest_heads.py",
+        "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634",
+        "stable": true
+      },
+      {
+        "error": "NotADirectoryError: [Errno 20] Not a directory: 'android-source'",
+        "match": false,
+        "name": "go_executable",
+        "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/go/linux-x86/bin/go"
+      },
+      {
+        "error": "NotADirectoryError: [Errno 20] Not a directory: 'android-source'",
+        "match": false,
+        "name": "go_version",
+        "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/prebuilts/go/linux-x86/VERSION"
+      },
+      {
+        "bytes": 16464,
+        "match": true,
+        "mode": 365,
+        "name": "guard",
+        "path": "/data/source/.nanhai-plus-opaleye-native-v7/out/no-namespace-guard-v1/no-namespace-exec",
+        "sha256": "04c24a88e2eb292b669a7c1fae0b42e9e9e3b0d66fa6dd0bf6e901ec7367df20",
+        "stable": true
+      },
+      {
+        "bytes": 2118,
+        "match": true,
+        "mode": 420,
+        "name": "index",
+        "path": "/opt/19.SourceCode/SOURCES.json",
+        "sha256": "039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79",
+        "stable": true
+      },
+      {
+        "bytes": 8020928,
+        "match": true,
+        "mode": 493,
+        "name": "interpreter",
+        "path": "/usr/bin/python3.12",
+        "sha256": "8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc",
+        "stable": true
+      },
+      {
+        "bytes": 252412,
+        "match": true,
+        "mode": 292,
+        "name": "ledger",
+        "path": "/data/source/.nanhai-plus-opaleye-native-v7/control/MANIFEST-HEADS.tsv",
+        "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+        "stable": true
+      },
+      {
+        "error": "NotADirectoryError: [Errno 20] Not a directory: 'android-source'",
+        "match": false,
+        "name": "manifest",
+        "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/.repo/manifests/default.xml"
+      },
+      {
+        "bytes": 45330,
+        "match": true,
+        "mode": 292,
+        "name": "runner",
+        "path": "/data/source/.nanhai-plus-opaleye-native-v7/control/nanhai_plus_native_graph_v11.py",
+        "sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+        "stable": true
+      },
+      {
+        "bytes": 19023728,
+        "match": true,
+        "mode": 365,
+        "name": "ui",
+        "path": "/data/source/.nanhai-plus-opaleye-native-v7/out/soong-ui-v1/soong_ui",
+        "sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+        "stable": true
+      }
+    ],
+    "schema": "nanhai-g279-remote-input-readback-v2"
+  },
+  "schema": "nanhai-g279-evo19-v11-prep-readback-v2",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "ssh_rc": 23,
+  "stderr": "",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "f8fafdc200ab906b8ce530867d52782e9e19d8db8b7a676c1d16114733eba523"
+}

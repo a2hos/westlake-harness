@@ -1,0 +1,27 @@
+{
+  "container": false,
+  "device": false,
+  "graph": false,
+  "namespace": false,
+  "packet_file_sha256": "91e8786ece772a89b317785a12b6c20492414f082837eb94c8d5a2cd99e97385",
+  "probe_source_sha256": "751e8b304d93c96f2d5d104a5f603c957e62a2c040d14744baffe92828bd4ea3",
+  "program_sha256": "88538a24a548be78f94970cb2cee72ea0dfa2aca89f02516bb1370beec299837",
+  "remote_write": false,
+  "schema": "g279-stage4-v12-independent-probe-command-v1",
+  "ssh_argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "HostKeyAlgorithms=ssh-ed25519",
+    "-o",
+    "ConnectTimeout=10",
+    "-o",
+    "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "target": false
+}

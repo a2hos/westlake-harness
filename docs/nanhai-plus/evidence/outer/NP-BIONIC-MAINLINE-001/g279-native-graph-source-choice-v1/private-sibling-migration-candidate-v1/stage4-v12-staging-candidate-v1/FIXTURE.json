@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-04T13:25:20.288352+00:00",
+  "checks": 5,
+  "container": 0,
+  "device": 0,
+  "fixture_rc": 0,
+  "graph": 0,
+  "launcher_sha256": "a8212a669dfcccc9afacb5d71ab2a796456596e9b4e6d67cade03ae4d9bbf48b",
+  "namespace": 0,
+  "nonce": "411b903ce83e4122cc701ebc41ecb77b",
+  "packet_sha256": "cb0ec39a4118f9997d27b14d77eb9e43b45a4f16b236c685da9474a2d2aff320",
+  "py_compile_rc": 0,
+  "remote_body_sha256": "bac8b67e3fb7a537470567d82b34ebed453eb4d29d6fdc6fc1ec4dfd4dbf8635",
+  "remote_writes": 0,
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "schema": "g279-stage4-v12-fixture-v1",
+  "ssh": 0,
+  "status": "PASS_LOCAL_ONLY",
+  "target": 0,
+  "unreleased_execute_denied_before_start_ssh": true
+}

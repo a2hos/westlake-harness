@@ -1,0 +1,33 @@
+{
+  "schema": "nanhai-g279-v12-independent-static-review-v1",
+  "decision": "GO_STATIC_ONLY",
+  "scope": "Frozen local v12 candidate review; no remote staging, write, graph, target compile or device action",
+  "runner_sha256": "b3277b024ba258cc00c7fea1d9275672108970886c78b0c221f60aec16600a3b",
+  "v11_sha256": "8b6484017d3679f4b14cde7c91e25a76f05289882fc390d3511180611714ffbe",
+  "fixtures_sha256": "825c225e7eaa7c08cd7bb864049e5d164e22462d03356a9f825d0e55b6f62a95",
+  "diff": {
+    "full_diff_inspected": true,
+    "stat": "93 insertions, 41 deletions",
+    "changes": [
+      "v12 one-shot control/output/tmp names and release schemas are separate from frozen v11",
+      "v11 unconditional --run rc3 replaced by detached SSH signature check before release parser and output path",
+      "release_gate rechecks signature and compares exact signed ACK SHA with release ACK SHA; pre-graph release_gate equality repeats the check",
+      "static-check now reports identity and authority key only; it no longer validates stage2 local packet hashes, so its rc0 is only a smoke result"
+    ]
+  },
+  "checks": {
+    "python_compile": "PASS",
+    "static_fixtures": "PASS: signed ACK accepted, altered ACK/wrong namespace/wrong key/missing signature denied; graph not invoked",
+    "static_check": "PASS: rc0 STATIC_CANDIDATE_ONLY",
+    "local_run_denial": "PASS: rc3 NO_GO_OWNER_SIGNATURE before graph on Darwin",
+    "key_provenance": "ssh-add -L on Mac lists the exact pinned Ed25519 public key; this proves key availability to current Mac user, not original Herdr owner identity",
+    "linux_memfd_pass_fds": "CODE_REVIEW_ONLY: os.memfd_create flags=0, /proc/self/fd path, subprocess pass_fds=(fd) and lseek(0) are coherent; local host is Darwin, and no Linux or remote execution was performed, so runtime behavior remains unverified",
+    "container_namespace": "No new container or namespace launch in v12 diff; inherited FORBIDDEN and strace-based namespace audit remain, but no actual graph trace was produced"
+  },
+  "authority_limit": "The Mac ssh-agent key is accessible to same-user Mac processes, including the outer coordinator. The signature establishes a Mac/gz02 machine boundary against remote same-UID JSON self-attestation; it does not cryptographically distinguish the original Herdr owner from the outer coordinator. Owner JSONL command/event/rc0 and exact ACK/signature SHA must be independently witnessed. Existing owner_provenance JSON fields are same-UID data and are not themselves proof.",
+  "release_limit": "GO_STATIC_ONLY is not authority to stage or execute. Require exact runner readback, Linux memfd/pass_fds fixture, active-env v12 EVO19 gate, fresh outer release nonce, original owner session signature with independent JSONL witness, reviewed packet and one-shot execution-adjacent release. Strict owner cryptographic separation would require a dedicated key unavailable to outer same-UID processes.",
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "remote_writes": 0
+}

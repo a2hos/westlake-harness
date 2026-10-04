@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-04T13:24:27.238600+00:00",
+  "decision": "ACCEPT_COMPLETE_HOST_STATIC_ONLY",
+  "evidence": {
+    "apk_bytes": 47990842,
+    "apk_sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+    "input_sha256": "89cd0852e881af7b79ab47e5f5f8436508ab95e61fddf660d27ce9a32746d4fe",
+    "outer_command_sha256": "98622c792a4c0b98872b8c7f216b17b9dfd12a44b6dd1e0b58a401fe61d57cf3",
+    "outer_result_sha256": "7a2a4363a861d5607c346a75b43e36411813b51020fdbfe8ef847d883a07a8e1",
+    "outer_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outer_stdout_sha256": "44fc6d3a1a3e27636b570066238df43f8c652bd772128ce9eefa7f0f91fc14e8",
+    "phases": {
+      "dex": {
+        "COMMAND.json": "d15f04e30d771e02bb74b297f64c8aaf8d3843b01942140cac4c4dac73656d9f",
+        "RESULT.json": "7e03466550cd02a65408265afc9afb602f618788eec0b214d49aea848d43574f",
+        "inventory_sha256": "e15279a6ede51d1d74bfa8138ca0fbcc5826c0f6762d54e9531b81145c5a7d49",
+        "rc": 0,
+        "stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.raw": "e3f92b58701786086ad1bd3f50d9a3f1ee0f89585937b518292aba87af5c46c4"
+      },
+      "elf": {
+        "COMMAND.json": "8531269b35efb0fd4843fcd03723189302bc831a15bd71c40c6e4d1e79c07a4e",
+        "RESULT.json": "e0f8c553c509963fbe61a40b500c0dbfa492ad1ab12538339103b58739281c6a",
+        "inventory_sha256": "546d2a71962338064de8dc925830be9bc31248793cda04acb88f1323f7d3b629",
+        "rc": 0,
+        "stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.raw": "13edad21b68e5c09ab898b4c6e3c13fbf57a9184d03b2a940962aecf78ff48ba"
+      },
+      "metadata": {
+        "COMMAND.json": "63f5d5edb89f2c402f39bb5507f08136caf503ebb231210c4eb499a4ca595e3f",
+        "RESULT.json": "d043fd6d209e2098e201450b346037035f8702febc5bc5a99a980430e7a2c9ea",
+        "inventory_sha256": "a215ace9f6182a53712628e773d145ac943a1c6cbce002ce812f63ef5a4d0fd3",
+        "rc": 0,
+        "stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.raw": "4ec0f8909195677b6e9289080f1bce794b854e6de2fce4d88ea7106aa83380b8"
+      },
+      "zip": {
+        "COMMAND.json": "5113488da116152ef899fed87dea41bcb299b3d1d2835437834cfc10fcfa7dc4",
+        "RESULT.json": "368d3afd0c11329209e3da7c243ebddfd49f139fa8a57964367c022bf1d49529",
+        "inventory_sha256": "d62836e7c7b6e42453e22f37cad4d3360ee606e7b49f1721a12f7142d1c920fc",
+        "rc": 0,
+        "stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.raw": "843330dc20ac95a44bb0e37c0a0d45279a9ed739386b7a45185398f5f73fec48"
+      }
+    },
+    "root_release_sha256": "a705f713eab8e27d15cd132f7e327249142dd0ea62ec249f369c055260bffb0a",
+    "scan_result_sha256": "bd1ac290fa36e29649b88fd6f0977327eca836829b18dcbeb8fd1e8e27cf848b",
+    "source_after_sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+    "source_before_sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7"
+  },
+  "independent_checks": {
+    "apk_view_symlink_points_to_exact_raw": true,
+    "dex_and_elf_inventories_match_zip_facts": true,
+    "four_phase_order_and_recorded_rc0": true,
+    "four_stdout_stderr_hashes_match_command_rows": true,
+    "four_terminal_results_rc0_and_postguards": true,
+    "four_true_arm64_elf_headers_sizes_and_member_hashes": true,
+    "independent_zip_crc_all_2618": true,
+    "manifest_package_version_and_entrypoint": true,
+    "no_candidate_device_container_or_count_claim": true,
+    "outer_command_and_result_sha_links_match": true,
+    "outer_recorded_rc0_not_timed_out": true,
+    "root_accepted_raw_apk_identity_matches_current_bytes": true,
+    "six_dex_headers_sizes_and_member_hashes": true,
+    "source_apk_venv_tool_before_after_identical": true
+  },
+  "limit": "Recorded outer rc0 and phase PIDs are corroborated by immutable outputs/hashes but this peer did not witness process execution live. Root controls canonical static-count admission separately.",
+  "observed": {
+    "blackbox_qualified": false,
+    "canonical_count_changed_by_reviewer": false,
+    "container_commands": 0,
+    "device_commands": 0,
+    "dex_entries": 6,
+    "launch_activity": "org.videolan.vlc.StartActivity",
+    "outer_rc": 0,
+    "package": "org.videolan.vlc",
+    "signature_scope": "Androguard extracts v2/v3 DER certificates and hashes them; this is identity metadata, not independent APK cryptographic signature verification",
+    "signing_certificate_sha256_probe": [
+      "80535be61eedb9a03b0476a6f493d496c3498770404339ea7a8000f5e61d22c0"
+    ],
+    "startup_verified": false,
+    "true_arm64_elf_entries": 4,
+    "version": "3.7.1",
+    "zip_entries_crc": 2618
+  },
+  "schema": "nanhai.g294.vlc.independent_postrun_review.v1",
+  "scope": "One exact original VLC 3.7.1 APK, host ZIP/metadata/ELF/DEX inventory; no startup, blackbox, device or Bionic tool credit"
+}

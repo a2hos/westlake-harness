@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai.cross_apk_reference_root_pilot_admission.v1",
+  "decision": "ACCEPT_STATIC_FREQUENCY_PILOT_ONLY",
+  "input_manifest_sha256": "b639dac4b3f49e7e1091399890230337e8bd6ae214fc856d7ba4dbf7ba9f402f",
+  "aggregate_program_sha256": "c21e450c55010a3506c0f5c67f092066389b4c68455cc2cd0d0b7a3d8209a231",
+  "output_sha256": "f5632ac647489d7a60c7f66b2bd0cae71cc9e6f17d629903d44cbce234e4b4cd",
+  "fixtures": "PASS_5_OF_5_RERUN",
+  "unique_accepted_packages": 78,
+  "dex_entries": 197,
+  "true_arm64_elf_entries_in_pilot": 365,
+  "candidate": "__system_property_get appears as an undefined ARM64 import in 49 distinct APKs; verify actual Bionic property-read behavior in a HelloWorld process before calling it a gap or fix.",
+  "reachability": "UNKNOWN",
+  "provider_implementation": "UNKNOWN",
+  "startup_blocker": "UNKNOWN",
+  "bionic_tool_pass_delta": 0,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}
