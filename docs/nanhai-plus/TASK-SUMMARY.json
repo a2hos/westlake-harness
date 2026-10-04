@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T07:03:04.033068+00:00",
+  "checked_at": "2026-10-04T07:21:36.788395+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -56,14 +56,14 @@
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
-    "release": 271,
+    "release": 272,
     "terminal_rc": 2,
-    "actual_exec_session": 87818,
-    "terminal_chunk": "b5c83a",
+    "actual_exec_session": 19714,
+    "terminal_chunk": "1b5375",
     "host_tools_actual_loader_pass": 10,
-    "soong_bootstrap_successful_steps": 236,
-    "soong_bootstrap_total_steps": 236,
-    "stock_clang_plugin_compiled": true,
+    "soong_bootstrap_successful_steps": 240,
+    "soong_bootstrap_total_steps": 240,
+    "aidl_xsdc_plugins_compiled": true,
     "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
@@ -372,16 +372,21 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g272-r4-aidl-xsdc-source-candidate-v1/root-admission-v1/ADMISSION.json",
       "sha256": "6247b5a25d4d90dd71e3396d2757308a6a396e6200ae2dec78d94ec5d44d0dd3"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/G272-REVIEW.json",
+      "sha256": "ce77cdd38392990aa2556ab65f31515f96e05d42ae30dc747cea4f806e8d775b"
     }
   ],
   "bionic_stock_graph": {
-    "release": 271,
+    "release": 272,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
+    "soong_host_steps": 240,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "unrecognized Soong module types: aidl_interface x5, xsd_config x1",
-    "failure_location": "cts/tests/tests/hardware/Android.bp:19:1 (first of six)",
+    "first_failure": "tradefed_errorprone_defaults undefined; 5 distinct modules, 6 diagnostics",
+    "failure_location": "test/suite_harness/common/host-side/tradefed/tests/Android.bp:20:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -400,14 +405,13 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 272,
-    "next_input": "exact R4 system/tools/aidl and system/tools/xsdc source trees; stock-path view and symlink closure still pending",
+    "prospective_release": 273,
+    "next_input": "trace exact R4 definitions for five undefined modules",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
     "execution_ready": false,
-    "G270_terminal": true,
-    "G271_terminal": true
+    "G272_terminal": true
   },
   "reflection": {
     "latest": "EVO-0014",
@@ -629,5 +633,21 @@
     "stock_path_materialized": false,
     "symlink_targets_resolved": false,
     "graph_executed": false
+  },
+  "g272_actual": {
+    "exec_session": 19714,
+    "terminal_chunk": "1b5375",
+    "rc": 2,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/G272-REVIEW.json",
+      "sha256": "ce77cdd38392990aa2556ab65f31515f96e05d42ae30dc747cea4f806e8d775b"
+    },
+    "source_pre_post_equal": true,
+    "sdk_guard_pre_post_pass": true,
+    "output_archive_bytes": 952203776,
+    "tmp_archive_bytes": 51599872,
+    "host_steps": 240,
+    "target_compile_commands": 0,
+    "device_commands": 0
   }
 }

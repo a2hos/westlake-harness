@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "kind": "g272-v16-independent-terminal-peer-review",
+  "reviewed_at": "2026-10-04T07:21:03.821796+00:00",
+  "scope": "read-only independent review of original-owner-sealed one-shot host target graph; no Docker, device, Herdr, or runtime mutation",
+  "boundary": "AOSP16 R4 ARM64 Bionic host Soong target graph only; no target compile or APK/device/runtime validation",
+  "status": "reviewed-terminal-failure",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "release_sequence": 272,
+  "exec_session": 19714,
+  "terminal_chunk": "1b5375",
+  "outer_rc": 2,
+  "packet": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/G272-SEALED.json",
+    "sha256": "7924bdf2de3876d3d428bb2cf097b2fe50999fc314605234c6943a17f23cbe5d"
+  },
+  "root_seal": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/ROOT-SEAL.json",
+    "sha256": "cf0167144a1d2706c71b91ae15e50c17dd3575abf6eccdf2245458f199011e10"
+  },
+  "owner_request": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/OWNER-REQUEST.json",
+    "sha256": "80cf0e0b87ee7f1b3ddcd1843037bb4109c77e4ef4780caa6d470e427aaf0692"
+  },
+  "owner_ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/OWNER-ACK-v2.json",
+    "sha256": "88ced78bbb263237d74c9f094e094406119cc58e43e5564bf7171ccf48bb6385"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/RESULT.json",
+    "sha256": "612678dd8a08ad2596237e4347cf6d69d1120b27672ae89c3603fe80a3e5e85c"
+  },
+  "owner_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/OWNER-RECEIPT.json",
+    "sha256": "22f025e190d7ba81a03ee264109b911c0fc098c1593285bcc9becab12953e0c4"
+  },
+  "stock_command": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/stock-COMMAND.json",
+    "sha256": "d43860be4ac4388f5dff4684ea7ed1ea86a28b4b1b4077f7f9e1e265e1da7370"
+  },
+  "stock_stdout": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/stock.stdout.log",
+    "sha256": "b4083c551649c2e76fc2d8e31f159c2cb6403a8fb36510c51b8c8a58f5765bf5"
+  },
+  "stock_stderr": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/stock.stderr.log",
+    "sha256": "2bcea06918a9f868acc4cfec8cc54fdadb7520658d4d86e8e228424ee52d214e"
+  },
+  "source_before": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/SOURCE-BEFORE.json",
+    "sha256": "8b8af9552a0ac10d265de0071a3b4b5664e7b7f25f52a521a57cf4e5031258e7"
+  },
+  "source_after": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/SOURCE-AFTER.json",
+    "sha256": "8b8af9552a0ac10d265de0071a3b4b5664e7b7f25f52a521a57cf4e5031258e7"
+  },
+  "checks": {
+    "sealed_input_file_hashes": {
+      "verified": 321,
+      "mismatches": []
+    },
+    "owner_ack": {
+      "request_nonce_matches": true,
+      "inputs_exact": true,
+      "release_sequence": 272,
+      "owner_ack_sha_matches_seal": true
+    },
+    "result_evidence": {
+      "count": 140,
+      "mismatches": []
+    },
+    "source_pre_post": {
+      "byte_identical": true,
+      "pass_before": true,
+      "pass_after": true,
+      "sdk_readonly_before": {
+        "commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
+        "tree": "0348a182903065a14d190eb1aa670246c3c2106d",
+        "manifest_sha256": "03018238a9dac914dedcbb3c9486a8ec84924dc99c1643bb1134bb2bbe58b2e4",
+        "regular_files": 17921,
+        "symlinks": 3,
+        "bytes_hashed": 6254795690,
+        "all_bytes_verified": true
+      },
+      "sdk_readonly_after": {
+        "commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
+        "tree": "0348a182903065a14d190eb1aa670246c3c2106d",
+        "manifest_sha256": "03018238a9dac914dedcbb3c9486a8ec84924dc99c1643bb1134bb2bbe58b2e4",
+        "regular_files": 17921,
+        "symlinks": 3,
+        "bytes_hashed": 6254795690,
+        "all_bytes_verified": true
+      }
+    },
+    "archives": {
+      "out": {
+        "verified_bytes": 952203776,
+        "expected_bytes": 952203776,
+        "sha256": "748dbce241b38aa6cf407175d405cdb7443c2663756f2b3d5d411ae37ebfdca3",
+        "expected_sha256": "748dbce241b38aa6cf407175d405cdb7443c2663756f2b3d5d411ae37ebfdca3",
+        "unexpanded_tar": true
+      },
+      "tmp": {
+        "verified_bytes": 51599872,
+        "expected_bytes": 51599872,
+        "sha256": "a8556b6c47cd1f92699799ec74fe1d7b6374f5b770eb546b7d5058a3ad38769c",
+        "expected_sha256": "a8556b6c47cd1f92699799ec74fe1d7b6374f5b770eb546b7d5058a3ad38769c",
+        "unexpanded_tar": true
+      }
+    },
+    "cleanup": {
+      "command_rc": {
+        "cleanup-stock-remove": 0,
+        "cleanup-materialize-remove": 0,
+        "cleanup-work-init-remove": 0,
+        "cleanup-tmp-volume-remove": 0,
+        "cleanup-out-volume-remove": 0,
+        "cleanup-source-volume-remove": 0
+      },
+      "reported_retained_volumes": [],
+      "fresh_docker_inspect_performed_by_peer": false
+    }
+  },
+  "observed_wall": {
+    "first_failed_step": "stock",
+    "stock_container_rc": 1,
+    "stock_container_timed_out": false,
+    "failed_child_step": "target-graph",
+    "target_graph_child_rc": "1",
+    "stock_command": "/accepted/soong_ui --make-mode --soong-only --skip-ninja libc libm libdl linker",
+    "host_bootstrap": "240/240; aidl-soong-rules and xsdc-soong-rules compiled",
+    "first_soong_error": "test/suite_harness/common/host-side/tradefed/tests/Android.bp:20:1 compatibility-tradefed-tests depends on undefined module tradefed_errorprone_defaults",
+    "other_undefined_modules": [
+      "tradefed_errorprone_defaults",
+      "car-framework-aconfig-libraries",
+      "simpleperf_static_libs",
+      "AndroidLintCheckerTestDefaults",
+      "framework-connectivity-test-defaults"
+    ],
+    "error_count": 6,
+    "error_source": "unexpanded OUT tar ./error.log and ./stock-steps/target-graph.stdout"
+  },
+  "proven": [
+    "original owner ACK matched release 272 exact request inputs",
+    "sealed packet 323 file inputs hash-match current files; env identifiers not independently reconstructed",
+    "host Soong AIDL/XSDC plugins participated in bootstrap",
+    "product dumpvars completed; target graph failed during Android.bp dependency analysis",
+    "source and SDK guard snapshots byte-identical; all 140 RESULT evidence references hash-match",
+    "OUT and TMP archive bytes and hashes match RESULT",
+    "cleanup remove commands reported rc0 for three containers and three volumes"
+  ],
+  "not_proven": [
+    "graph generation pass",
+    "target libc/libm/libdl/linker compile",
+    "Bionic whole-tool pass",
+    "APK install or truly-cold start",
+    "device result",
+    "post-cleanup live Docker absence beyond executor receipts"
+  ],
+  "failed": [
+    "one-shot G272 target graph rc1 and wrapper rc2"
+  ],
+  "hypotheses": [
+    {
+      "candidate": "Missing exact R4 providers for the six undefined module dependency references in the isolated source view",
+      "cheapest_falsifier": "Locate each provider definition in pinned R4 source then check whether corresponding read-only source view is present; no build needed",
+      "blocking": false
+    }
+  ],
+  "next_evidence": "Read-only provider-to-repository mapping for six undefined modules; admit exact R4 source views with hashes before a newly sealed G273 one-shot graph."
+}

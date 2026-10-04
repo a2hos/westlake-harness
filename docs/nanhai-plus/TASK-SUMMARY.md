@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T07:03:04.033068+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T07:21:36.788395+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -19,6 +19,8 @@
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
+
+最新构建图实际结果：G272 已终态（exec19714，terminal 1b5375，rc2），原 owner 新 ACK、root 封包与独审均成立。Soong 宿主引导 240/240，AIDL/XSDC 插件参与，前轮六处未识别类型不再出现；新的最早失败为 `tradefed_errorprone_defaults` 未定义，另有 Car、simpleperf、Lint、Connectivity 四种缺项，共六条诊断。源码/SDK 前后守卫一致，OUT/TMP 归档哈希通过，清理命令收据通过；目标编译命令 0。G273 精确 R4 源码定位中，G272 禁止重放。
 
 最新构建图实际结果：G271 已终态（exec87818，terminal b5c83a，rc2）。原 owner 对 17 项输入的 ACK、root 封包及独立预审成立；宿主 Soong 236/236 后原版 CTS 分析出现 5 处 `aidl_interface` 和 1 处 `xsd_config` 未识别类型，首处为 `cts/tests/tests/hardware/Android.bp:19:1`。G270 的 5 个缺模块错误未作为本轮首错出现。源码/SDK 前后守卫一致，OUT/TMP 哈希和资源清理有独立复核；目标编译命令仍为 0。精确 R4 `system/tools/aidl`（2048 文件、2 链接）与 `system/tools/xsdc`（137 文件）已按官方 Git 身份准入为只读源码树，stock 路径与 AIDL 两个链接目标尚未核验可用，G272 候选未封、未执行。
 
@@ -58,7 +60,7 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；63 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G271 CTS 有 6 处未识别类型；batch12 整批 rc2；WhatsApp 网页与包内版本不一致 | 精确 R4 AIDL/XSDC stock view 与下一图候选；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；63 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G272 有 6 处未定义模块依赖；batch12 整批 rc2；WhatsApp 网页与包内版本不一致 | 精确 R4 五种缺项定义与下一图候选；Bionic 真机 Activity 启动证据 |
 
 自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。此前 3 组实际结果（G268、WhatsApp 只读命令、G269）触发 EVO-0011；它已在 120 秒硬上限关闭，新增验证改进 0、推广 0；随后第 9 批、G270 和第 8 次原包取件构成新三组，EVO-0012 在 55.93 秒内验证一个限定身份链校验器：真实收据 rc0、篡改哈希负例 rc2。未推广、未测节省时间。第 10 批静态扫描、原包 v9 取件、第 11 批静态扫描形成随后三组实际结果，触发 EVO-0013 专职 peer，82.9 秒内闭合一项限定试点：对 10 个 Tier-B 黑盒候选做包名、历史工件 SHA 与有证版本的严格联接，v8/v9 和 WhatsApp 试点输入中 0 个历史工件精确命中；错误版本/SHA 负例未误判，WhatsApp 新版单列。该试点未覆盖当时全部 65 原包，未推广，不增加黑盒资格或启动数。随后 G271、A2 原包与 batch12 三组实际结果触发 EVO-0014：只读分流试点将 Seal 的非 ELF `.zip.so` 与 Briar 超时保留为两种未决类型，四个负例均拒绝；未推广，反思计数归零。
 
@@ -80,7 +82,7 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Environment
 
-- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G271 宿主构建。
+- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G272 宿主构建。
 - Device: 本次汇总未访问设备，沿用项目 HOLD 与白名单。
 - Tool path: scripts/nanhai_plus_env.py 与候选 executor.py，精确收据见 JSON 索引。
 - Artifact path: .nanhai-plus-runtime/bionic-oh7-aosp16/out/bionic-stock-bionic-target-graph-v5/accepted-host/soong_build。

@@ -1,0 +1,40 @@
+{
+  "at_utc": "2026-10-04T07:08:45.914659+00:00",
+  "blockers": [],
+  "candidate_ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/READY.json",
+    "sha256": "8e1743b2756a8948b19188ed522fd764bd54d1ebac7c05de2aadd9ff292b9a57"
+  },
+  "checks": {
+    "aidl_source": "2050/2050 mode, byte count, SHA256, Git blob; HEAD 3747384b876442e7ea0c355fe5adc75b29362833, tree b23fc12fb071f96a313c6ba70be2046726d13800",
+    "aidl_stock_symlinks": "2/2 original payloads map virtually to build/soong/scripts stock targets with matching source-manifest SHA256",
+    "artifact_manifest_sha_and_bytes": "74/74 pass",
+    "candidate_bound_local_file_hashes": "321/321 pass; 2 env inputs intentionally not treated as local files",
+    "candidate_check_receipt": "rc0, stdout and stderr hashes pass",
+    "handoff_gate_receipt": "rc0, stdout and stderr hashes pass",
+    "materialization": "18022 entries retained, 1257 selected regular retained",
+    "prior_readonly_mount_prefix": "22/22 exact, v16 24 total",
+    "prior_source_repository_prefix": "22/22 exact, v16 24 total",
+    "ready_references_sha_and_bytes": "8/8 pass",
+    "ready_stable_at_review_end": true,
+    "source_mounts": "24 roots; 2 new roots; 2187 new source entries (2185 regular, 2 symlinks)",
+    "v15_common_input_hashes": "257/257 unchanged; prior path-local references relinked to v16 rather than silently reused",
+    "xsdc_source": "137/137 mode, byte count, SHA256, Git blob; HEAD ef55c63066afcba5fd8781c2b056ccbe4c6ce687, tree bd73096b2ef43d5434f4a415d822fea6e65a5df8"
+  },
+  "forbidden_actions": {
+    "candidate_writes": 0,
+    "device_commands": 0,
+    "docker_commands": 0,
+    "graph_runs": 0,
+    "herdr_commands": 0,
+    "shared_source_writes": 0
+  },
+  "result": "PASS_FROZEN_CANDIDATE_ONLY",
+  "reviewer": "independent peer, read-only candidate review",
+  "schema_version": 1,
+  "scope_limits": [
+    "The source symlink check is a virtual stock-path/content check; no actual Linux bind mount or Soong graph was run in this review.",
+    "No original-owner G272 ACK or root seal is claimed. This review is not execution authorization.",
+    "No target compilation, runtime, APK startup, or device acceptance is claimed."
+  ]
+}

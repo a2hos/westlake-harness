@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-04T07:21:19.782221+00:00",
+  "status": "ROOT_ACCEPT_G272_TERMINAL_RC2_FIRST_UNDEFINED_MODULES",
+  "execution": {
+    "session_id": 19714,
+    "terminal_chunk": "1b5375",
+    "outer_rc": 2
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/runtime-result/RESULT.json",
+    "sha256": "612678dd8a08ad2596237e4347cf6d69d1120b27672ae89c3603fe80a3e5e85c"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g272-v16-terminal-peer-review-v1/REVIEW.json",
+    "sha256": "eb1fa987ef3ea00c01c14b44a2a180d50c82f27c69a070798e23dc253014c193"
+  },
+  "root_seal": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/ROOT-SEAL.json",
+    "sha256": "cf0167144a1d2706c71b91ae15e50c17dd3575abf6eccdf2245458f199011e10"
+  },
+  "first_wall": "tradefed_errorprone_defaults undefined at test/suite_harness/common/host-side/tradefed/tests/Android.bp:20:1",
+  "undefined_modules": [
+    "tradefed_errorprone_defaults",
+    "car-framework-aconfig-libraries",
+    "simpleperf_static_libs",
+    "AndroidLintCheckerTestDefaults",
+    "framework-connectivity-test-defaults"
+  ],
+  "diagnostic_count": 6,
+  "aidl_xsdc_unknown_types_absent": true,
+  "soong_host_bootstrap_steps": 240,
+  "result_evidence_hashes_checked": 140,
+  "source_pre_post_equal": true,
+  "sdk_guard_pre_post_pass": true,
+  "out_archive_sha256": "748dbce241b38aa6cf407175d405cdb7443c2663756f2b3d5d411ae37ebfdca3",
+  "tmp_archive_sha256": "a8556b6c47cd1f92699799ec74fe1d7b6374f5b770eb546b7d5058a3ad38769c",
+  "remove_commands_rc0": true,
+  "fresh_docker_inspect_after_cleanup": false,
+  "retained_volumes_reported": [],
+  "graph_pass": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "whole_tools_delta": 0,
+  "apk_startup_delta": 0,
+  "replay_allowed": false,
+  "next": "Trace exact R4 definitions for five undefined modules as G273 isolated source candidate; do not replay G272."
+}
