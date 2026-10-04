@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T10:51:36.337059+00:00",
+  "checked_at": "2026-10-04T10:59:04.803188+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -51,7 +51,11 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 73,
-    "supplemental_payloads": 5
+    "supplemental_payloads": 5,
+    "qualified_blackbox_packages": 1,
+    "qualified_blackbox_package_ids": [
+      "us.zoom.videomeetings"
+    ]
   },
   "latest_actual_execution": {
     "release": 276,
@@ -1281,5 +1285,15 @@
     "graph_executed": false,
     "target_compiled": false,
     "device_executed": false
+  },
+  "g281_zoom_blackbox_qualification": {
+    "status": "accepted_package_qualification_only",
+    "root_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-blackbox-qualification-v1/ROOT-ADMISSION.json",
+      "sha256": "67597a609ca452b6cd9ac52b5348f4b39b105339a8e80e6449b25c8c2e261fa8"
+    },
+    "qualified_package_delta": 1,
+    "qualified_startup_delta": 0,
+    "cold_start_pass": false
   }
 }

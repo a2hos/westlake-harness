@@ -1,0 +1,3 @@
+{"at":"2026-10-04T10:55:54Z","event":"trigger_verified","state":"candidate","detail":"Three post-EVO19 actual groups have root receipts; no canonical mutation by peer."}
+{"at":"2026-10-04T10:56:08Z","event":"synthetic_counterexample_observed","state":"pilot","detail":"Existing v5 top-file audit returned no suspicious lines when literal subninja child contained nsjail command; graph and target not run."}
+{"at":"2026-10-04T10:56:08Z","event":"decision","state":"pilot","detail":"One closure-aware screen candidate retained, no global promotion."}

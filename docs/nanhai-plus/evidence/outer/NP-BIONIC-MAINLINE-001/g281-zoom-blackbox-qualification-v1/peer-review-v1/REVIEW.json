@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai.g281.zoom_blackbox_qualification_peer_review.v1",
+  "decision": "GO_OVERSEAS_MAINSTREAM_BLACKBOX_QUALIFICATION_ONLY",
+  "reviewed_candidate_sha256": "87cd06091e8fd091efb844b5dad73afc342c197db7fc3cdd8992ae40ae38761f",
+  "goal_sha256": "9d5278932ff6d95533ec79e70a6d86d71007f6ecd95a438b2c98cf2dc4057b13",
+  "criteria": {
+    "official_product_source": {
+      "decision": "PASS",
+      "evidence": "Zoom's own 2021 guidance PDF explicitly identifies package us.zoom.videomeetings on Google Play and permits a signed Android APK directly from its download center. The current Play listing names Zoom Workplace/zoom.com for the same package. Local PDF and Play snapshots match candidate hashes.",
+      "source_urls": ["https://explore.zoom.us/media/zoom-video-communications-guidance-document-2021-12-06.pdf", "https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_US"]
+    },
+    "overseas_mainstream_market": {
+      "decision": "PASS",
+      "evidence": "Current Google Play listing for this package displays 1B+ cumulative downloads and a US developer listing; Zoom's own About page describes global organizational use. This supports overseas mainstream market status, not users of this exact APK version or country-by-country Android usage.",
+      "source_urls": ["https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_US", "https://www.zoom.com/en/about/"]
+    },
+    "lawful_original_package_source_and_version": {
+      "decision": "PASS_FOR_ZOOM_DIRECT_APK_ONLY",
+      "evidence": "Local raw headers SHA256 67f84f1fa5e67128c2c78c71d8198cb7933a6b03d35ff55abf1f4aaa7dd23624 show zoom.us/client/latest/zoom.apk HTTP 302 to cdn.zoom.us/prod/7.2.1.43844/zoom.apk HTTP 200, 358226193 bytes; receipt records curl rc0/TLS verify 0. Independent APK SHA256 ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b matches raw and static root admissions. aapt2/metadata identify us.zoom.videomeetings 7.2.1.43844/code 6702010. apksigner rc0 verifies v3 and one cert SHA256 60b75724b34686e52bde944969de120f16bd6d959788d54384494caedd4e445d, exactly the Android cert Zoom published for version 5.6.6. No Zoom-published checksum for current 7.2.1 bytes was found.",
+      "historical_boundary": "The previous Google Play gp-zoom.xapk is 7.1.8.42948, two splits and SHA256 9eaddc5558efca06c6fc3c180a725610f79be5ae6edc4b5fee3f5bead1962b4e. Product package and signer continuity do not make the direct APK byte-identical to that Play artifact. Preserve historical record unchanged."
+    },
+    "no_project_source_modification": {
+      "decision": "PASS_FOR_THIS_TEST_INPUT",
+      "evidence": "Root raw intake accepted an unmodified official binary; static scan's source/APK/tool before and after snapshots are byte-identical and its metadata SHA equals the downloaded APK SHA. Zoom terms license its Software as object code; the project tests this exact binary without a Zoom source patch. This does not claim that every bundled third-party component lacks source code.",
+      "source_url": "https://www.zoom.com/en/trust/terms/"
+    }
+  },
+  "snapshot_hashes_verified": {
+    "zoom_guidance_pdf": "df06eb4bc252b5a143f5f6d1f203249bba8a207469545b1cf36575e777a20b02",
+    "google_play_html": "89865ce22cc6b37f42121b63b8ae57b1b7b51140b77de23e591cc8f7f2e47c8d",
+    "zoom_terms_html": "749c348e2bd29811514dfff8705519bbf1a23ca9afe71e9f77e7282598c46a70",
+    "zoom_about_html": "247fdd8de786c9686a5eb959cb76c81110704ec8ffccc9ca92ffa94535550724"
+  },
+  "scope": "Root may qualify package us.zoom.videomeetings once in the overseas mainstream blackbox cohort, bound to this official direct APK version/hash and its separate raw/static admissions. Distinct versions or splits do not add another package to the 200/100 denominators. This peer did not change a ledger or count. No install, truly cold Activity startup, display, interaction, device, Bionic target or runtime PASS is implied.",
+  "peer_actions": "Read-only local snapshot/header/APK/signature/static receipt hashing and official source review; no download, ledger edit, device, container, graph, or Bridge action."
+}

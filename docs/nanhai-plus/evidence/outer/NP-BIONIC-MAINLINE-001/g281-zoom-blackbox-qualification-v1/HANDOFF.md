@@ -1,0 +1,5 @@
+# G281 Zoom overseas mainstream blackbox qualification candidate
+
+The four PORTFOLIO-GOAL qualification inputs are supported for package `us.zoom.videomeetings`, official Zoom APK version `7.2.1.43844`, SHA-256 `ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b`. Zoom guidance published the exact Android signing certificate digest observed by apksigner; the download receipt binds Zoom HTTPS to a versioned Zoom CDN APK. Google Play lists this package under zoom.com with 1B+ cumulative downloads, and Zoom describes global customer usage. Zoom terms license its software in object-code form. Raw and static admission retain the same unmodified APK SHA.
+
+This is a **qualification candidate pending independent and root review**. The current download page HTML did not itself expose the APK href, no publisher checksum for these exact bytes was found, and market evidence does not measure this Android version’s users by country. Existing raw 78 and static 74 are distinct from blackbox qualification. No cold start, display, device or runtime result. See CANDIDATE.json for source URLs, snapshot hashes and evidence boundaries.

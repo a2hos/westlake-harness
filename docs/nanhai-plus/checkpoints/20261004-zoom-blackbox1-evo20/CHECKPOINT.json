@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T11:00:25.174991+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "g281_zoom_blackbox_qualification": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-blackbox-qualification-v1/ROOT-ADMISSION.json",
+    "sha256": "67597a609ca452b6cd9ac52b5348f4b39b105339a8e80e6449b25c8c2e261fa8"
+  },
+  "evo20": {
+    "path": "docs/nanhai-plus/evolution/EVO-0020-ninja-include-closure/reviews/ROOT-CLOSURE.json",
+    "sha256": "8815a04845586f1ad34eed959e80d534de3d657c453622138b6590069c49f6a1"
+  },
+  "counts": {
+    "raw_apk_accepted": 78,
+    "complete_static": 74,
+    "qualified_blackbox_packages": 1,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "g279_runner_v6": "candidate_pending_peer; no SSH or graph",
+  "next": "Review G279 v6, fix any actual security/identity gap in new version; separately prioritize next official APKs.",
+  "task_summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "99e703732a5bee91c16cb727ec2dc4d7b5a747a2ba04c9bdb76eb046fa818345"
+  }
+}

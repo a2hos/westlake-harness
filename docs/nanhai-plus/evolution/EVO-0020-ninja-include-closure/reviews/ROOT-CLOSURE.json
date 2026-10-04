@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai.evo20.root_closure.v1",
+  "at": "2026-10-04T10:57:49.553523+00:00",
+  "decision": "ACCEPT_BOUNDED_SYNTHETIC_COUNTEREXAMPLE_PILOT_ONLY_NOT_PROMOTED",
+  "trigger_actual_groups": 3,
+  "reflection_window": "2026-10-04T10:55:54Z to 2026-10-04T10:56:08Z",
+  "within_120_seconds": true,
+  "selected_improvements": 1,
+  "decision_ref": {
+    "path": "docs/nanhai-plus/evolution/EVO-0020-ninja-include-closure/decision.json",
+    "sha256": "1baaad02a883ef8c9162f7d21c8bcb1e004eefe5d606c89a9a9f154a3c659004"
+  },
+  "trial_ref": {
+    "path": "docs/nanhai-plus/evolution/EVO-0020-ninja-include-closure/trials/t1/RESULT.json",
+    "sha256": "6ec0736d5487c85e251c061fb238d5b9175c12ddd96ea050e26bd896c7991550"
+  },
+  "peer_ref": {
+    "path": "docs/nanhai-plus/evolution/EVO-0020-ninja-include-closure/reviews/PEER.json",
+    "sha256": "6e16d54783dd670b53f9b4268b2027f6e46817218622b3239efb11dd8e0318a2"
+  },
+  "observed": "Exact v5 top-level Ninja lexical audit returned no suspicious lines when literal subninja child contained nsjail in synthetic fixture.",
+  "inference": "Real generated graph may contain include/subninja; this is not yet observed.",
+  "scope": "Future read-only first offending action counterexample scanner; no target authorization.",
+  "graph_executed": false,
+  "target_executed": false,
+  "device_executed": false,
+  "container_executed": false,
+  "tool_count_delta": 0,
+  "startup_count_delta": 0,
+  "next": "Separate bounded implementation and independent review after EVO19 runner/owner graph gate; apply only to graph artifact if actually generated."
+}

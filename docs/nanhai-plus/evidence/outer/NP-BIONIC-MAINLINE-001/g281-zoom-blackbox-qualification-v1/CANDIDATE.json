@@ -1,0 +1,141 @@
+{
+  "schema": "nanhai.g281.zoom_blackbox_qualification_candidate.v1",
+  "observed_at_utc": "2026-10-04T10:57:04.292786+00:00",
+  "status": "EVIDENCE_SUPPORTS_OVERSEAS_MAINSTREAM_BLACKBOX_CANDIDATE_PENDING_INDEPENDENT_AND_ROOT_REVIEW",
+  "goal_definition": {
+    "path": "docs/nanhai-plus/PORTFOLIO-GOAL.md",
+    "sha256": "9d5278932ff6d95533ec79e70a6d86d71007f6ecd95a438b2c98cf2dc4057b13",
+    "requirements": [
+      "official product source",
+      "overseas use or market evidence",
+      "lawful original package source and version",
+      "no project source modification"
+    ]
+  },
+  "identity": {
+    "package": "us.zoom.videomeetings",
+    "version_name": "7.2.1.43844",
+    "version_code": "6702010",
+    "apk_bytes": 358226193,
+    "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+    "abi": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ],
+    "historical_record_version": "7.1.8.42948",
+    "historical_record_is_same_artifact": false
+  },
+  "official_download_chain": {
+    "request": "https://zoom.us/client/latest/zoom.apk",
+    "effective": "https://cdn.zoom.us/prod/7.2.1.43844/zoom.apk",
+    "headers_sha256": "67f84f1fa5e67128c2c78c71d8198cb7933a6b03d35ff55abf1f4aaa7dd23624",
+    "curl_rc": 0,
+    "http_redirect_status": 302,
+    "http_final_status": 200,
+    "tls_verify_result": 0,
+    "actual_result_sha256": "0e98066e4eb614a443e7608af307cea666300ad082f756a8c983aa845163bbbb",
+    "raw_root_intake_sha256": "f7f3a2d2de6b9cb61a778d2647ad9294a23c35a4cf7939e34fbcd3334f842b95",
+    "source_limit": "Current Zoom page HTML did not expose the APK href; the observed Zoom-domain latest endpoint redirected to version-pinned Zoom CDN, and Zoom guidance confirms direct signed APK distribution via its download center."
+  },
+  "signature": {
+    "verified_scheme": "v3",
+    "signer_certificate_sha256": "60b75724b34686e52bde944969de120f16bd6d959788d54384494caedd4e445d",
+    "actual_apksigner_stdout_sha256": "d934e3ae4c0e735a97fd7f4066158bccd5104514ad939d05cc5cac0a8a865d09",
+    "official_published_cert_exact_match": true,
+    "official_cert_published_for_version": "5.6.6",
+    "current_version_published_checksum_found": false
+  },
+  "unmodified_original": {
+    "raw_root_intake": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-official-apk-candidate-v1/ROOT-RAW-INTAKE.json",
+    "static_root_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/ROOT-ADMISSION.json",
+    "static_root_admission_sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1",
+    "static_before_after_byte_equal": true,
+    "source_before_sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+    "source_after_sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+    "apk_sha256_matches_download_raw_static": true
+  },
+  "sources": {
+    "zoom_guidance_pdf": {
+      "url": "https://explore.zoom.us/media/zoom-video-communications-guidance-document-2021-12-06.pdf",
+      "snapshot": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-blackbox-qualification-v1/guidance.pdf",
+      "sha256": "df06eb4bc252b5a143f5f6d1f203249bba8a207469545b1cf36575e777a20b02",
+      "headers_sha256": "5aa5b1ae02eff3287cf7014248ea74f249fd85954b23299f99a7e264695f69c7",
+      "http": 200,
+      "tls_verify_result": 0,
+      "observed_fact": "Section 2.2 says Zoom Download Center offers signed Android APK; section 2.3 publishes version 5.6.6 Android APK signer certificate SHA256 60b75724b34686e52bde944969de120f16bd6d959788d54384494caedd4e445d. This is signer continuity evidence, not a published 7.2.1 APK checksum."
+    },
+    "google_play_product": {
+      "url": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_US",
+      "snapshot": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-blackbox-qualification-v1/play.html.raw",
+      "sha256": "89865ce22cc6b37f42121b63b8ae57b1b7b51140b77de23e591cc8f7f2e47c8d",
+      "headers_sha256": "81bf57a2e605d9705ebb6f33fda2c5e9c548aefc51d332d2bc148aac16c5992e",
+      "http": 200,
+      "tls_verify_result": 0,
+      "observed_fact": "Zoom Workplace listing for exact package us.zoom.videomeetings names developer zoom.com and displays 1B+ downloads; cumulative Play installs, not unique current users or checksum of this CDN APK."
+    },
+    "zoom_terms": {
+      "url": "https://www.zoom.com/en/trust/terms/",
+      "effective_url": "https://www.zoom.com/en/trust/terms/?cms_guid=false",
+      "snapshot": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-blackbox-qualification-v1/terms.html.raw",
+      "sha256": "749c348e2bd29811514dfff8705519bbf1a23ca9afe71e9f77e7282598c46a70",
+      "headers_sha256": "ed2073a7e25356f14b218af9f715b9081cc2cde57a91cadaa2e3eb5ecb1ded4d",
+      "http": 200,
+      "tls_verify_result": 0,
+      "observed_fact": "Zoom software is licensed in object-code form; Zoom may include third-party open-source components. This supports product blackbox source-property classification, not a claim that every library is closed source."
+    },
+    "zoom_about": {
+      "url": "https://www.zoom.com/en/about/",
+      "effective_url": "https://www.zoom.com/en/about/?cms_guid=false",
+      "snapshot": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g281-zoom-blackbox-qualification-v1/about.html.raw",
+      "sha256": "247fdd8de786c9686a5eb959cb76c81110704ec8ffccc9ca92ffa94535550724",
+      "headers_sha256": "4f3ad3736d60fc4c0ba23620da2b4cb20c3b32ec2fa3c2c95b66fadbe1a8d4b2",
+      "http": 200,
+      "tls_verify_result": 0,
+      "observed_fact": "Zoom describes global organizational collaboration and a customer story of 70,000+ employees using Zoom globally; this is product-market context, not Android-only usage."
+    }
+  },
+  "criteria": {
+    "official_product": {
+      "supported": true,
+      "evidence": [
+        "zoom_guidance_pdf",
+        "google_play_product"
+      ]
+    },
+    "overseas_mainstream": {
+      "supported": true,
+      "evidence": [
+        "google_play_product",
+        "zoom_about"
+      ],
+      "limit": "1B+ Play download band and global customer story support scale and overseas market; they do not count unique Android users in any country."
+    },
+    "lawful_original_source_and_version": {
+      "supported": true,
+      "evidence": [
+        "official_download_chain",
+        "signature",
+        "raw_root_intake"
+      ],
+      "limit": "Publisher does not publish checksum of exact 7.2.1 bytes in sources reviewed."
+    },
+    "no_project_source_modification": {
+      "supported": true,
+      "evidence": [
+        "unmodified_original",
+        "zoom_terms"
+      ],
+      "limit": "Object-code software can contain open-source third-party components; this is a binary-only project test input."
+    }
+  },
+  "decision_boundary": {
+    "qualification_candidate": true,
+    "canonical_blackbox_count_delta": 0,
+    "raw_count_observed": 78,
+    "complete_static_count_observed": 74,
+    "real_startup_count_delta": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "next_gate": "Independent peer should replay exact source snapshots and APK/cert/unchanged-chain hashes, then root may admit package qualification only; truly-cold startup separately requires device/runtime evidence."
+  }
+}

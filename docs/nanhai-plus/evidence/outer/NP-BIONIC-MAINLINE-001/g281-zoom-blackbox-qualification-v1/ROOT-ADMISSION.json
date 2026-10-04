@@ -1,0 +1,41 @@
+{
+  "schema": "nanhai.g281.zoom_blackbox_root_admission.v1",
+  "at": "2026-10-04T10:58:56.500800+00:00",
+  "decision": "ACCEPT_ONE_OVERSEAS_MAINSTREAM_BLACKBOX_PACKAGE_QUALIFICATION_ONLY",
+  "package": "us.zoom.videomeetings",
+  "version": "7.2.1.43844",
+  "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-blackbox-qualification-v1/CANDIDATE.json",
+    "sha256": "87cd06091e8fd091efb844b5dad73afc342c197db7fc3cdd8992ae40ae38761f"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-blackbox-qualification-v1/peer-review-v1/REVIEW.json",
+    "sha256": "9bac54a430be0ee336a0070ff2408fb14ce809ccd01b18c0b4a8a36cea5c8ab9"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-official-apk-candidate-v1/ROOT-RAW-INTAKE.json",
+    "sha256": "f7f3a2d2de6b9cb61a778d2647ad9294a23c35a4cf7939e34fbcd3334f842b95"
+  },
+  "static_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g281-zoom-static-v1/ROOT-ADMISSION.json",
+    "sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1"
+  },
+  "criteria": {
+    "official_product_source": true,
+    "overseas_mainstream_market": true,
+    "official_unmodified_original_apk_version": true,
+    "no_project_source_modification": true
+  },
+  "root_rehashed_apk_and_four_source_snapshots": true,
+  "publisher_signer_certificate_sha256": "60b75724b34686e52bde944969de120f16bd6d959788d54384494caedd4e445d",
+  "separate_historical_play_xapk_unchanged": true,
+  "qualified_blackbox_packages_before": 0,
+  "qualified_blackbox_packages_after": 1,
+  "qualified_blackbox_startups_before": 0,
+  "qualified_blackbox_startups_after": 0,
+  "cold_start_pass": false,
+  "device_executed": false,
+  "graph_executed": false,
+  "scope_note": "Qualification of one package/one exact direct APK only; no installed, Activity, display, input or Bionic runtime proof."
+}
