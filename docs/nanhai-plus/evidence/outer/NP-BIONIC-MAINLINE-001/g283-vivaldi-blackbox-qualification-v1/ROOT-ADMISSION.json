@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai.g283.vivaldi.blackbox_root_admission.v1",
+  "at": "2026-10-04T11:05:06.233041+00:00",
+  "decision": "ACCEPT_ONE_OVERSEAS_MAINSTREAM_BLACKBOX_PACKAGE_QUALIFICATION_ONLY",
+  "package": "com.vivaldi.browser",
+  "version": "8.2.4147.130",
+  "apk_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+  "apk_bytes": 352886633,
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g283-vivaldi-blackbox-qualification-v1/CANDIDATE.json",
+    "sha256": "03f85f475c5ad97aa7e3b26a992005dd16a7afeee00e90275d6198a330d60974"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g283-vivaldi-blackbox-qualification-v1/peer-review-v1/REVIEW.json",
+    "sha256": "7d55a7de0db2023ec1e754931c654404ffd379e17030a31b4b65f70bfd3bd902"
+  },
+  "root_archive_verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g283-vivaldi-blackbox-qualification-v1/ROOT-ARCHIVE-VERIFY.json",
+    "sha256": "ed197c8256bc7b6e83e785f5f1213ad034bea76568ea33123db5270e50c5426b"
+  },
+  "root_rehashed_apk": true,
+  "criteria": {
+    "official_product_source": true,
+    "overseas_mainstream_market": true,
+    "official_unmodified_original_apk_version": true,
+    "no_project_source_modification": true
+  },
+  "qualifications_before": 1,
+  "qualifications_after": 2,
+  "qualified_blackbox_startups": 0,
+  "cold_start_pass": false,
+  "device_executed": false,
+  "graph_executed": false,
+  "source_boundary": "Some Chromium/C++ source published; Android UI is not fully open; blackbox is third-party unmodified binary input, not all-code-closed claim.",
+  "scope_note": "One package/exact official arm64 APK qualification; no split completeness, install, Activity or display proof."
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "nanhai.g283.vivaldi.blackbox_peer_review.v1",
+  "verdict": "GO_QUALIFICATION_ONLY",
+  "candidate_sha256": "03f85f475c5ad97aa7e3b26a992005dd16a7afeee00e90275d6198a330d60974",
+  "package": "com.vivaldi.browser",
+  "version_name": "8.2.4147.130",
+  "version_code": "541470130",
+  "payload_sha256_independently_rehashed": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+  "four_criteria": {
+    "official_product": "PASS: Vivaldi official download archive lists the exact arm64-v8a filename and links downloads.vivaldi.com.",
+    "overseas_market": "PASS_WITH_LIMIT: Google Play US listing identifies Vivaldi Technologies, com.vivaldi.browser, 5M+ cumulative downloads and 135K reviews; this supports overseas availability, not country-specific installs or current active usage.",
+    "legitimate_unchanged_payload": "PASS: official archive publishes SHA-256 cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595; current 352,886,633-byte APK independently rehashes identically. Prior apksigner v2 result and certificate e8a78544655ba8c09817f732768f5689b1662ec4b2bc5a0bc0ec138d33ca3d1e are bound by this whole-file official hash; publisher does not separately publish the certificate fingerprint.",
+    "no_project_source_modification": "PASS_FOR_CURRENT_PAYLOAD: root raw acceptance and completed static inventory bind the same SHA with pre/post source guards. Vivaldi publishes partial Chromium-derived code, while Android Java UI changes are not fully published; this is third-party binary blackbox testing, not proof of fully closed source."
+  },
+  "evidence": {
+    "official_archive": "https://vivaldi.com/download/archive/?platform=android",
+    "official_apk_url": "https://downloads.vivaldi.com/stable/Vivaldi.8.2.4147.130_arm64-v8a.apk",
+    "market": "https://play.google.com/store/apps/details?id=com.vivaldi.browser&hl=en_US",
+    "source_boundary": "https://vivaldi.com/blog/vivaldi-browser-open-source/",
+    "raw_acceptance": "blackbox-vivaldi-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+    "static_result": "harness-vivaldi-inventory-candidate-v3/RESULT.json"
+  },
+  "scope": "Qualification of one exact unchanged official APK only. No additional raw/static count, split-set, runtime, device, startup or display claim.",
+  "actions": {"apk_download": false, "device": false, "container": false, "canonical_edit": false}
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "nanhai.g283.vivaldi.root_archive_verify.v1",
+  "start_utc": "2026-10-04T11:04:53.232457+00:00",
+  "end_utc": "2026-10-04T11:04:55.099218+00:00",
+  "argv": [
+    "/usr/bin/curl",
+    "--fail",
+    "--location",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "20",
+    "https://vivaldi.com/download/archive/?platform=android"
+  ],
+  "rc": 0,
+  "response_bytes": 348634,
+  "response_sha256": "9daced45b3ddaa0e0216e88cbe680a545bf0aca861ca1a726db061010f04a865",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "snapshot": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g283-vivaldi-root-review-v1/archive.html",
+  "official_apk_sha256_present": true,
+  "expected_apk_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+  "device_commands": 0,
+  "container_commands": 0
+}

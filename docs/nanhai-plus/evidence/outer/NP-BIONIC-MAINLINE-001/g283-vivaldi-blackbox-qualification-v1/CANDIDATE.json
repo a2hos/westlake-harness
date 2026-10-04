@@ -1,0 +1,77 @@
+{
+  "schema": "g283-vivaldi-blackbox-qualification-candidate-v1",
+  "at_utc": "2026-10-04T11:02:49.462323+00:00",
+  "decision": "GO_CANDIDATE_FOR_INDEPENDENT_ROOT_REVIEW_ONLY",
+  "portfolio_rule": "docs/nanhai-plus/PORTFOLIO-GOAL.md:18",
+  "package": "com.vivaldi.browser",
+  "version": "8.2.4147.130",
+  "abi": "arm64-v8a",
+  "payload": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-vivaldi-intake-candidate-v1/Vivaldi.8.2.4147.130_arm64-v8a.apk",
+    "bytes": 352886633,
+    "sha256_current": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+    "official_url": "https://downloads.vivaldi.com/stable/Vivaldi.8.2.4147.130_arm64-v8a.apk",
+    "official_archive_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+    "official_archive_match": true
+  },
+  "official_archive_fetch": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--silent",
+      "--show-error",
+      "--max-time",
+      "20",
+      "https://vivaldi.com/download/archive/?platform=android"
+    ],
+    "rc": 0,
+    "response_bytes": 348634,
+    "response_sha256": "f72feddcd9b11b5c5cb4771ffb7c094befa7a2860fb448b90061859ead3956fb",
+    "stderr": ""
+  },
+  "signature": {
+    "apksigner_v2_verified_from_prior_receipt": true,
+    "certificate_sha256": "e8a78544655ba8c09817f732768f5689b1662ec4b2bc5a0bc0ec138d33ca3d1e",
+    "certificate_dn": "CN=Vivaldi browser, O=Vivaldi Technologies AS, L=Oslo, C=NO",
+    "official_cert_fingerprint_direct_publication": false,
+    "official_whole_apk_hash_binds_embedded_certificate": true
+  },
+  "market": {
+    "google_play_url": "https://play.google.com/store/apps/details?id=com.vivaldi.browser&hl=en_US",
+    "observed_listing": "Vivaldi Technologies; com.vivaldi.browser; 5M+ downloads; 135K reviews; 4.6 stars",
+    "overseas_localized_listings": [
+      "US",
+      "GB",
+      "DE",
+      "FR",
+      "ES"
+    ],
+    "limit": "Cumulative global download threshold and non-China market availability, not country-specific installs, active users, or exact market share."
+  },
+  "source_boundary": {
+    "official_source_page": "https://vivaldi.com/source/",
+    "official_explanation": "https://vivaldi.com/blog/vivaldi-browser-open-source/",
+    "observation": "Vivaldi publishes Chromium modifications and C++ feature backend, while Android Java UI remains closed source; source archive 8.2.4133 is not exact APK 8.2.4147.130 and not full rebuild source.",
+    "complete_exact_client_source_proven": false
+  },
+  "unchanged_apk": {
+    "download_result": "blackbox-vivaldi-intake-candidate-v1/RESULT.json",
+    "root_acceptance": "blackbox-vivaldi-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+    "static_guard": "harness-vivaldi-inventory-candidate-v3/RESULT.json",
+    "static_guard_pre_post_equal": true,
+    "current_sha_matches_official": true
+  },
+  "limits": [
+    "Not canonical qualification, startup, or device evidence.",
+    "Full split delivery not independently proven.",
+    "No modification is evidenced for the accepted candidate and completed inventory; future runtime must recheck hash.",
+    "No exact-version full browser source or country-specific active usage claim."
+  ],
+  "actions": {
+    "downloaded_apk": false,
+    "device_access": false,
+    "container_use": false,
+    "canonical_edit": false
+  }
+}

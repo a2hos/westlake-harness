@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T11:05:44.168009+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "g283_vivaldi_blackbox": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g283-vivaldi-blackbox-qualification-v1/ROOT-ADMISSION.json",
+    "sha256": "1e9aedda546972d3f56957ee0cd521fac8ede6502d74df5dd05d37bd9d22511a"
+  },
+  "g279_v7_no_go": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-candidate-v1/ROOT-REVIEW.json",
+    "sha256": "f26e06212c33747c44758e5c57b8c189f4b00d0beb03ab3851ad083cc2e4730d"
+  },
+  "counts": {
+    "raw_apk_accepted": 78,
+    "complete_static": 74,
+    "qualified_blackbox_packages": 2,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "next": "Review v8 canonical interpreter gate, stage remote runner only after independent read-only authority; Element X exact upstream APK raw intake in parallel.",
+  "task_summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "0d38576b142e3104162b634c2eec16683bbecfbc699cb2051c9552650ab85d3e"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai.g279.runner_v7.static_peer_review.v1",
+  "verdict": "NO_GO_PREFLIGHT_OR_GRAPH",
+  "v7_gate_sha256": "9fc519fb516e54e925786c20b3c59ef9921be244795d8bf3554f07daa0b917a5",
+  "candidate_status": "STATIC_ONLY_NO_GO_EXECUTION",
+  "cli_review": "main exposes static-check only; preflight and execute return 3 before SSH, receipt or graph. v6 runner --run also remains rc3. No Docker, Podman, OCI, nsjail, namespace, chroot or mount execution path is present in v7.",
+  "identity_conflict": {
+    "v7_fixed_interpreter": "/usr/bin/python3",
+    "remote_observed_path": "/usr/bin/python3 symbolic link -> /usr/bin/python3.12",
+    "canonical_binary": "/usr/bin/python3.12",
+    "canonical_sha256": "8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc",
+    "canonical_bytes": 8020928,
+    "canonical_mode": "0755",
+    "effect": "Remote probe opens final component with O_NOFOLLOW, so /usr/bin/python3 must fail even if INTERPRETER_SHA is filled; current INTERPRETER_SHA=None already forces validate_spec rejection.",
+    "evidence": "g279-native-graph-source-choice-v1/interpreter-identity-v1/RESULT.json"
+  },
+  "positive_static_findings": [
+    "SSH command is a literal read-only Python stdin route and dormant in current CLI; no spec shell interpolation.",
+    "Remote input names, pinned paths and SHA table, host, goal, claim, wrapper identity, local_env/config SHA and intended argv are checked before the dormant transport.",
+    "Remote probe uses directory-fd O_NOFOLLOW walk, regular-file SHA/size/mode checks, and stable inode/time/mode comparison; SSH and remote rc plus ordered rows are checked.",
+    "Receipt writer uses exclusive temporary creation, fsync, hard link without replacement and directory fsync; failure returns a closed status."
+  ],
+  "remaining_gates": [
+    "Pin the canonical /usr/bin/python3.12 consistently in SSH, interpreter table, spec and intended argv; independently admit executable bytes plus every path component before any live preflight.",
+    "Stage and read back exact remote v6 runner; it remains hard closed for --run.",
+    "Bind a fresh immutable readback to the immediate execution handoff, and complete EVO20 recursive subninja action scan before any graph release.",
+    "A failed receipt write can only return a failure status, not guarantee a persisted failure receipt; keep execution closed on that path."
+  ],
+  "scope": "Static/local evidence only; no SSH, graph, target, container, device or Bridge action performed by peer."
+}

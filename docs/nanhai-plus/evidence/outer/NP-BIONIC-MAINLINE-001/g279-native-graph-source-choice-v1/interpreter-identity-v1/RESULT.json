@@ -1,0 +1,28 @@
+{
+  "schema": "nanhai.g279.remote_python_identity_readonly.v1",
+  "start_utc": "2026-10-04T11:04:01.400591+00:00",
+  "end_utc": "2026-10-04T11:04:01.847699+00:00",
+  "argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "ConnectTimeout=8",
+    "gz02",
+    "readlink -f /usr/bin/python3; stat -c \"%n %F %s %a\" /usr/bin/python3 /usr/bin/python3.12; sha256sum /usr/bin/python3.12"
+  ],
+  "env_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "ssh_outer_rc": 0,
+  "stdout_utf8": "/usr/bin/python3.12\n/usr/bin/python3 symbolic link 10 777\n/usr/bin/python3.12 regular file 8020928 755\n8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc  /usr/bin/python3.12\n",
+  "stdout_sha256": "59dca2caeaaea36cbd0eb7f1d62e795cf169351ae632013ff7968f4f8b071a10",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "canonical_interpreter": "/usr/bin/python3.12",
+  "reported_sha256": "8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc",
+  "reported_bytes": 8020928,
+  "reported_mode_octal": "0755",
+  "is_readonly_identity_observation": true,
+  "graph_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "admission": "CANDIDATE_PENDING_INDEPENDENT_REVIEW"
+}

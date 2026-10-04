@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai.g279.runner_v7_root_review.v1",
+  "at": "2026-10-04T11:05:30.150706+00:00",
+  "decision": "ACCEPT_STATIC_DIFF_ONLY_NO_GO_PREFLIGHT_GRAPH",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-candidate-v1/STATIC-CANDIDATE.json",
+    "sha256": "3572dd94682ee19a6c00e4d47b50562e6810edc70992aaaf11c1d90389c8d72c"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "a753758a4b90a95490e7968fa97d943c36781e0ed6b124d6111aea875f18a8c4"
+  },
+  "remote_interpreter_observation": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/interpreter-identity-v1/RESULT.json",
+    "sha256": "cbde15db2801060dc572b92fc32534083eabce249ca9b3b8a4880ebaa0cce954"
+  },
+  "observed": "v7 local fixtures rc0; preflight/execute rc3. Frozen /usr/bin/python3 conflicts with actual gz02 symlink and final O_NOFOLLOW, so remote readback would fail.",
+  "unproven": [
+    "Canonical /usr/bin/python3.12 identity independent admission",
+    "Remote runner staging and identity",
+    "Execution-adjacent byte handoff",
+    "Generated subninja action closure",
+    "Original owner graph ACK and actual graph/target/device evidence"
+  ],
+  "ssh_preflight_allowed": false,
+  "graph_execution_allowed": false,
+  "container_execution_allowed": false,
+  "device_execution_allowed": false,
+  "next": "New v8 exact-byte canonical interpreter candidate, independent review; do not invoke v7."
+}

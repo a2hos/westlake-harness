@@ -1,0 +1,129 @@
+{
+  "schema": "nanhai.g282.next_official_apk_shortlist.v1",
+  "at_utc": "2026-10-04T11:00:44.438120+00:00",
+  "status": "READ_ONLY_CANDIDATES_NO_ADMISSION",
+  "source_registry": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+    "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "apps": 329,
+    "artifacts": 338
+  },
+  "control_raw_count_observed": 78,
+  "control_path": "docs/nanhai-plus/OUTER-STATE.json",
+  "control_sha256": "c3a739a6c4a33d213980fd39bd8a7fe1f21246e894484ba2b2bf07e88909f6cc",
+  "method": "Compared exact package names against accepted package fields in apk-stock-intake root receipts and selected supplemental root receipts; looked up versioned records in fixed registry; checked official release/store pages and GitHub release asset metadata read-only. No APK payload GET.",
+  "ranking_policy": "Direct pinned official assets first by bytes because they are runnable next; Play-only proprietary candidates follow because credentialed acquisition is unproven. Blackbox potential is stated separately; open-source packages are not 100-blackbox credit.",
+  "candidates": [
+    {
+      "rank": 1,
+      "package": "im.vector.app",
+      "upstream_record_id": "r-570841c0ce268cd2ac69",
+      "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+      "upstream_source_path": "benchmark/2026-09-23-corpus2-blind/downloads.lock.json",
+      "upstream_json_pointer": "/apps/im.vector.app",
+      "upstream_version_name": "1.6.62",
+      "official_url": "https://github.com/element-hq/element-android/releases/download/v1.6.62/vector-gplay-arm64-v8a-release-signed.apk",
+      "official_page": "https://github.com/element-hq/element-android/releases/tag/v1.6.62",
+      "official_source_evidence": "https://api.github.com/repos/element-hq/element-android/releases/tags/v1.6.62",
+      "channel": "direct_official_github",
+      "published_asset_bytes": 73975127,
+      "blackbox_potential": "LOW_OPEN_SOURCE",
+      "next_action": "Fetch this pinned arm64 asset once, capture GitHub redirect and SHA, verify manifest package/version, signer, ZIP CRC; raw-only peer/root gate.",
+      "current_raw_status": "NOT_FOUND_IN_SCANNED_ROOT_ACCEPTED_PACKAGE_PAYLOADS; REQUIRE_FINAL_DEDUP_AT_INTAKE"
+    },
+    {
+      "rank": 2,
+      "package": "io.element.android.x",
+      "upstream_record_id": "r-52d5e188c88dfba15c98",
+      "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+      "upstream_source_path": "benchmark/2026-09-25-batch9-blind/downloads.lock.json",
+      "upstream_json_pointer": "/elementx",
+      "upstream_version_name": "26.09.1",
+      "official_url": "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk",
+      "official_page": "https://github.com/element-hq/element-x-android/releases/tag/v26.09.1",
+      "official_source_evidence": "https://api.github.com/repos/element-hq/element-x-android/releases/tags/v26.09.1",
+      "channel": "direct_official_github",
+      "published_asset_bytes": 117664325,
+      "blackbox_potential": "LOW_OPEN_SOURCE",
+      "next_action": "Fetch pinned arm64 asset once; verify F-Droid flavor manifest package/version equals upstream registration before raw-only admission.",
+      "current_raw_status": "NOT_FOUND_IN_SCANNED_ROOT_ACCEPTED_PACKAGE_PAYLOADS; REQUIRE_FINAL_DEDUP_AT_INTAKE"
+    },
+    {
+      "rank": 3,
+      "package": "com.duckduckgo.mobile.android",
+      "upstream_record_id": "r-96746033c13092c10d43",
+      "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+      "upstream_source_path": "benchmark/2026-09-25-batch9-blind/downloads.lock.json",
+      "upstream_json_pointer": "/duckduckgo",
+      "upstream_version_name": "5.294.1",
+      "official_url": "https://github.com/duckduckgo/Android/releases/download/5.294.1/duckduckgo-5.294.1-play-release.apk",
+      "official_page": "https://github.com/duckduckgo/Android/releases/tag/5.294.1",
+      "official_source_evidence": "https://api.github.com/repos/duckduckgo/Android/releases/tags/5.294.1",
+      "channel": "direct_official_github",
+      "published_asset_bytes": 125086746,
+      "blackbox_potential": "LOW_OPEN_SOURCE",
+      "next_action": "Official DuckDuckGo help links this GitHub release channel; fetch pinned APK once, verify package/version/signer/ZIP CRC then raw-only gate.",
+      "current_raw_status": "NOT_FOUND_IN_SCANNED_ROOT_ACCEPTED_PACKAGE_PAYLOADS; REQUIRE_FINAL_DEDUP_AT_INTAKE"
+    },
+    {
+      "rank": 4,
+      "package": "com.discord",
+      "upstream_record_id": "r-ec45f6fd5eabbba793d4",
+      "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+      "upstream_source_path": "benchmark/2026-09-29-top-apps-blind/apps.json",
+      "upstream_json_pointer": "/discord",
+      "upstream_version_name": "346.13 - Stable",
+      "official_url": "https://play.google.com/store/apps/details?id=com.discord",
+      "official_page": "https://discord.com/download",
+      "official_source_evidence": "https://support.discord.com/hc/en-us/articles/13148417007767-Troubleshooting-Mobile-Crashing-and-Installation-Issues",
+      "channel": "official_play_only",
+      "published_asset_bytes": null,
+      "blackbox_potential": "HIGH_CLOSED_BINARY_CANDIDATE",
+      "next_action": "First establish authorized auditable Google Play acquisition of complete base/splits and version; no vendor direct APK is supported. If Play gives newer version, treat as separate candidate.",
+      "current_raw_status": "NOT_FOUND_IN_SCANNED_ROOT_ACCEPTED_PACKAGE_PAYLOADS; REQUIRE_FINAL_DEDUP_AT_INTAKE"
+    },
+    {
+      "rank": 5,
+      "package": "com.spotify.music",
+      "upstream_record_id": "r-081ae4a7c005f85322a0",
+      "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+      "upstream_source_path": "benchmark/2026-09-29-top-apps-blind/apps.json",
+      "upstream_json_pointer": "/spotify",
+      "upstream_version_name": "9.1.86.2432",
+      "official_url": "https://play.google.com/store/apps/details?id=com.spotify.music",
+      "official_page": "https://www.spotify.com/us/download/android/",
+      "official_source_evidence": "https://community.spotify.com/t5/Android/lt-snip-moderator-edit-gt-is-not-operating-correctly/m-p/5324439",
+      "channel": "official_play_only",
+      "published_asset_bytes": null,
+      "blackbox_potential": "HIGH_CLOSED_BINARY_CANDIDATE",
+      "next_action": "First establish authorized auditable Play acquisition and complete split set; Spotify staff say legacy direct APK is deprecated. If current Play version differs, separate candidate only.",
+      "current_raw_status": "NOT_FOUND_IN_SCANNED_ROOT_ACCEPTED_PACKAGE_PAYLOADS; REQUIRE_FINAL_DEDUP_AT_INTAKE"
+    }
+  ],
+  "exclusions": [
+    {
+      "package": "org.telegram.messenger",
+      "upstream_version": "12.10.5",
+      "reason": "Official telegram.org Android direct build uses org.telegram.messenger.web per Telegram reproducible-build documentation, not fixed upstream org.telegram.messenger; Play version requires a separate acquisition route. Telegram client is open source."
+    },
+    {
+      "package": "org.mozilla.firefox",
+      "upstream_version": "156.0",
+      "reason": "Existing 156.0 archive bytes already downloaded but G280 root explicitly accepted static-preflight candidate only because SHA conflicts with same-version historical registration; no new fetch until provenance resolution."
+    }
+  ],
+  "limits": [
+    "The 78 raw count is control state, not a newly reconstructed per-payload proof.",
+    "GitHub asset sizes are release API metadata; manifest package/signature/ABI and payload SHA require actual download before admission.",
+    "Official Play listing does not expose historic exact APK bytes or guarantee historic version availability.",
+    "No candidate is counted as raw, static, blackbox qualified or started by this study."
+  ],
+  "execution_counts": {
+    "large_apk_downloads": 0,
+    "device": 0,
+    "container": 0,
+    "graph": 0,
+    "canonical_delta": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "nanhai.g282.shortlist.peer_review.v1",
+  "verdict": "GO_FOR_ONE_ISOLATED_RAW_CANDIDATE_FETCH_ONLY",
+  "candidate_sha256": "7e519d1513300615f9b6081bd4dc8894f64950a3940c0abca0163f4be83236a6",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "current_control_sha256": "bdb24c30beacb251e2b71b9ec6f997ba99b40edc2858900346df3f4ad513ec1c",
+  "current_raw_count_observed": 78,
+  "recommended_first": {
+    "package": "im.vector.app",
+    "version_label": "1.6.62",
+    "asset": "vector-gplay-arm64-v8a-release-signed.apk",
+    "official_release_api": "https://api.github.com/repos/element-hq/element-android/releases/tags/v1.6.62",
+    "api_asset_bytes": 73975127,
+    "reason": "Smallest of the three pinned direct-publisher arm64 assets; no accepted package match found in scoped stock-intake/root control search. Download and manifest/signature verification remain required before any count changes.",
+    "classification": "OPEN_SOURCE_NOT_OVERSEAS_BLACKBOX_CREDIT"
+  },
+  "per_candidate": [
+    {
+      "package": "im.vector.app",
+      "upstream_version_code": 40106622,
+      "upstream_record": "r-570841c0ce268cd2ac69",
+      "finding": "Publisher GitHub tag and 73,975,127-byte gplay arm64 asset confirmed. Upstream record instead pins 72,422,482-byte F-Droid APK SHA ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9; proposed asset is a separate channel and cannot inherit that SHA."
+    },
+    {
+      "package": "io.element.android.x",
+      "upstream_version_code": 202609012,
+      "upstream_record": "r-52d5e188c88dfba15c98",
+      "finding": "Publisher GitHub tag and 117,664,325-byte fdroid arm64 asset confirmed. Upstream F-Droid APK has the same recorded byte count but SHA ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3; equality of bytes/signature is unproven until payload hashing."
+    },
+    {
+      "package": "com.duckduckgo.mobile.android",
+      "upstream_version_code": 52941000,
+      "upstream_record": "r-96746033c13092c10d43",
+      "finding": "Publisher GitHub tag and 125,086,746-byte play-release asset confirmed. Upstream record pins 177,279,489-byte F-Droid APK SHA 7d9b7f53edf1c549025fd9da1e2d52fc9394bef7c87046fe44bead4aaa98e4d5; channel and bytes differ."
+    },
+    {
+      "package": "com.discord",
+      "upstream_version_name": "346.13 - Stable",
+      "upstream_version_code": 346013,
+      "upstream_record": "r-ec45f6fd5eabbba793d4",
+      "finding": "Closed-source blackbox prospect; historical record is a three-split gp-discord.xapk, not a direct publisher APK. Play listing does not supply pinned 346.13 bytes; acquisition route remains unresolved."
+    },
+    {
+      "package": "com.spotify.music",
+      "upstream_version_name": "9.1.86.2432",
+      "upstream_version_code": 146555520,
+      "upstream_record": "r-081ae4a7c005f85322a0",
+      "finding": "Closed-source blackbox prospect; historical record is an 18-split XAPK, not a direct publisher APK. Play listing does not supply pinned 9.1.86.2432 bytes; acquisition route remains unresolved."
+    }
+  ],
+  "limits": [
+    "The three direct assets are publisher release metadata, not downloaded or manifest-verified APKs; version labels are upstream and release-tag claims only.",
+    "No reviewed candidate is currently accepted among the scoped 78 raw payloads, but final full-registry dedup is required at intake.",
+    "No shortlist item earns raw, static, blackbox qualification or device/start credit from this review."
+  ],
+  "execution": {"large_downloads": 0, "device": 0, "container": 0, "canonical_edits": 0}
+}

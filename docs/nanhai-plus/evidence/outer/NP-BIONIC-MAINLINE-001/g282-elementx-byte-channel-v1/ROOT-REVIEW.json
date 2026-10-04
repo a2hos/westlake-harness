@@ -1,0 +1,22 @@
+{
+  "schema": "nanhai.g282.elementx_byte_channel_root_review.v1",
+  "at": "2026-10-04T11:06:22.003503+00:00",
+  "decision": "ACCEPT_METADATA_FOR_ONE_BOUNDED_RAW_FETCH_ONLY",
+  "channel_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g282-elementx-byte-channel-v1/CHANNEL-RECEIPT.json",
+    "sha256": "877a674dac31cb04897c64ffb0fac030af9bfc050abb807b5c7cc3b657a34b36"
+  },
+  "registry_file_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "record_id": "r-52d5e188c88dfba15c98",
+  "artifact_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "artifact_bytes": 117664325,
+  "source_url": "https://f-droid.org/repo/io.element.android.x_202609012.apk",
+  "issuer_asset_sha_matches_registry": true,
+  "correction": "CHANNEL-RECEIPT.json registry.sha256 labels artifact SHA, not REGISTRY.json file SHA; this review records both separately without rewriting historical candidate.",
+  "raw_admission": false,
+  "blackbox_qualification": false,
+  "startup": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "next": "One isolated APK GET, hash/manifest/signature/ZIP and independent review before raw count."
+}

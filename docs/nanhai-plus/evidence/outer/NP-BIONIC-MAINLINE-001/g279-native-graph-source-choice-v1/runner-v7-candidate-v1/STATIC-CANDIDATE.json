@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v7_gate.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:02:59.499181+00:00",
+      "expected_rc": 0,
+      "label": "static_check",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:02:59.444978+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "03e11334a78dd77aa12e0f9c9d085baa49c5c68a15c73350279d40149cc5fe15"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v7_gate.py",
+        "--preflight"
+      ],
+      "end_utc": "2026-10-04T11:02:59.541755+00:00",
+      "expected_rc": 3,
+      "label": "preflight_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:02:59.499414+00:00",
+      "stderr_sha256": "e16780715e64c895d6cce5ce0d8aa3d61c7b879335f17c5034e7c3a938730c7d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v7_gate.py",
+        "--execute"
+      ],
+      "end_utc": "2026-10-04T11:02:59.597611+00:00",
+      "expected_rc": 3,
+      "label": "execute_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:02:59.541983+00:00",
+      "stderr_sha256": "e16780715e64c895d6cce5ce0d8aa3d61c7b879335f17c5034e7c3a938730c7d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-candidate-v1/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:02:59.664190+00:00",
+      "expected_rc": 0,
+      "label": "local_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:02:59.597828+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2d57face78ca9ef38b254ad6f2cfcb5579d58691990943ab4fe0eb375a1b6faf"
+    }
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-candidate-v1/static_fixtures.py",
+    "sha256": "5c48e3e53f9b8db1967fe95d5ee89652e5c91796846562a420a1c12c6c49081f"
+  },
+  "graph_commands": 0,
+  "schema": "nanhai-g279-runner-v7-static-candidate-v1",
+  "ssh_commands": 0,
+  "status": "STATIC_ONLY_NO_GO_EXECUTION",
+  "unresolved": [
+    "interpreter SHA and executable path-component admission",
+    "remote v6 runner staging and readback",
+    "execution-adjacent immutable handoff or reread",
+    "EVO20 recursive subninja action scan",
+    "actual SSH, graph, device and original-owner ACK"
+  ],
+  "v6_formal_peer_review_sha256": "4d00a8334e788d5c3d1f850a3624186f484f3c7f0b09006686408553ec6d9e04",
+  "v6_runner_unchanged_sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f",
+  "v7_gate": {
+    "path": "scripts/nanhai_plus_native_graph_v7_gate.py",
+    "sha256": "9fc519fb516e54e925786c20b3c59ef9921be244795d8bf3554f07daa0b917a5"
+  },
+  "verified_changes": [
+    "literal SSH remote command, no spec interpolation",
+    "fixed remote path/digest table from frozen AOSP16 R4 binding and v6 runner SHA",
+    "interpreter SHA unresolved so validate_spec always rejects",
+    "fd-relative O_NOFOLLOW remote path walk; mode and ctime in stability comparison",
+    "fixed local receipt destination and unlink after post-link fsync failure",
+    "no release status emitted"
+  ]
+}

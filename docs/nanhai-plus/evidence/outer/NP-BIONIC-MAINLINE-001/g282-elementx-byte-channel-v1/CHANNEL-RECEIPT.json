@@ -1,0 +1,94 @@
+{
+  "schema": "g282-elementx-byte-channel-v1",
+  "at_utc": "2026-10-04T11:04:23.784667+00:00",
+  "decision": "GO_EXACT_UPSTREAM_BYTE_CANDIDATE_METADATA_ONLY",
+  "registry": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+    "sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "record_id": "r-52d5e188c88dfba15c98",
+    "source_path": "benchmark/2026-09-25-batch9-blind/downloads.lock.json",
+    "json_pointer": "/elementx",
+    "package": "io.element.android.x",
+    "version_name": "26.09.1",
+    "version_code": 202609012,
+    "url": "https://f-droid.org/repo/io.element.android.x_202609012.apk",
+    "bytes": 117664325
+  },
+  "official_asset": {
+    "stable_url": "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk",
+    "name": "app-fdroid-arm64-v8a-release-signed.apk",
+    "release_tag": "v26.09.1",
+    "api_digest": "sha256:ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "api_bytes": 117664325
+  },
+  "read_only_commands": [
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "20",
+        "https://api.github.com/repos/element-hq/element-x-android/releases/tags/v26.09.1"
+      ],
+      "rc": 0,
+      "response_sha256": "9a93e373912de0409d214459f23d27d0f125361df944b6ffce2c0e4df509ea0e",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--location",
+        "--max-time",
+        "20",
+        "--head",
+        "https://f-droid.org/repo/io.element.android.x_202609012.apk"
+      ],
+      "rc": 0,
+      "http_status_200": true,
+      "content_length": 117664325,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--location",
+        "--max-time",
+        "20",
+        "--head",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code} %{ssl_verify_result} %{content_type} %{size_download}",
+        "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk"
+      ],
+      "rc": 0,
+      "write_out": "200 0 application/vnd.android.package-archive 0",
+      "stderr": ""
+    }
+  ],
+  "comparison": {
+    "github_digest_equals_upstream": true,
+    "github_size_equals_upstream": true,
+    "fdroid_head_size_equals_upstream": true
+  },
+  "limits": [
+    "No APK payload downloaded or locally hashed in this task; metadata equality is strong candidate evidence, not payload verification.",
+    "GitHub release asset is publisher-controlled and F-Droid link is the exact registry URL; equal size alone would not prove byte identity, but GitHub API digest equals registry SHA.",
+    "Raw, static, blackbox, startup and device counters unchanged."
+  ],
+  "actions": {
+    "apk_payload_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edit": 0
+  }
+}
