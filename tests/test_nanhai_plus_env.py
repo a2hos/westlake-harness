@@ -123,6 +123,13 @@ class EnvironmentEntryTests(unittest.TestCase):
         self.assertEqual(bare.returncode, 2)
         self.assertIn("Historical container executor is revoked", bare.stderr)
 
+    def test_every_script_using_historical_docker_binding_is_revoked(self):
+        scripts = SCRIPT.parent.glob("nanhai_plus_*.py")
+        docker_scripts = {path.name for path in scripts if
+                          path != SCRIPT and "NANHAI_DOCKER" in path.read_text()}
+        self.assertTrue(docker_scripts)
+        self.assertFalse(docker_scripts - env_module.LEGACY_CONTAINER_EXECUTORS)
+
 
 if __name__ == "__main__":
     unittest.main()
