@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-four-static-v1/scan.py",
+    "--execute"
+  ],
+  "at_utc": "2026-10-04T21:28:56.903149+00:00",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 27.935,
+  "input_guard_equal": true,
+  "input_sha256_after": {
+    "apk": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+    "raw_result": "7b0e5aff3fbc6d93e4a230385e72ac6bc246dc43cf93345679dbebb8a4d67dc8",
+    "raw_verify": "447f1eaf6fad05a225428277ebb915cc71c1bcc886d787636feb03b95bdd9aca",
+    "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "input_sha256_before": {
+    "apk": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+    "raw_result": "7b0e5aff3fbc6d93e4a230385e72ac6bc246dc43cf93345679dbebb8a4d67dc8",
+    "raw_verify": "447f1eaf6fad05a225428277ebb915cc71c1bcc886d787636feb03b95bdd9aca",
+    "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "interpreter": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+  "phase": "dex",
+  "rc": 0,
+  "semantic_dex_entries": 47,
+  "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-bigo-four-static-v1"
+}

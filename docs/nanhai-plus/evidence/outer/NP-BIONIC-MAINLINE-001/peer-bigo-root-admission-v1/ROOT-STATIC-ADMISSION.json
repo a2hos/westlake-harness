@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 156619073,
+  "apk_sha256": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+  "at_utc": "2026-10-04T21:32:47.822744+00:00",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "four_static_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-four-static-v1/RESULT.json",
+    "sha256": "bec5ae1e55fb6ab4841c7e9344352d35b00e1e417c456aa9ccb70815cd707179"
+  },
+  "full_static_delta": 1,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-independent-review-v1/REVIEW.json",
+    "sha256": "1cdc52255508fc9a939e2ba120d79788f8abda8698c1c9c3ba9063e00e5997dc"
+  },
+  "package": "sg.bigo.live",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "89fc160b7ab6b3ed74e0a5d90856969a7f9e3d539d3e5978f93c89c0f350c79d"
+  },
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/47 DEX/97 true ARM64 ELF native-host static only; no loader/device result",
+  "semantic_dex_delta": 47,
+  "true_arm64_elf_delta": 97,
+  "version_code": "4137",
+  "version_name": "6.53.1"
+}

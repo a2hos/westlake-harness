@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 156619073,
+  "apk_sha256": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+  "at_utc": "2026-10-04T21:32:47.822744+00:00",
+  "blackbox_qualification_delta": 1,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "google_play": "https://play.google.com/store/apps/details?id=sg.bigo.live",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-independent-review-v1/REVIEW.json",
+    "sha256": "1cdc52255508fc9a939e2ba120d79788f8abda8698c1c9c3ba9063e00e5997dc"
+  },
+  "market_download_label": "500M+ package-wide",
+  "package": "sg.bigo.live",
+  "publisher_page": "https://www.bigo.tv/blog/bigo-live-apk",
+  "qualification_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-qualification-v1/QUALIFICATION.json",
+    "sha256": "5be34a00ad163ec5afd99842d0435dc924865ac3dba4f241b19541736eb0e26a"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "89fc160b7ab6b3ed74e0a5d90856969a7f9e3d539d3e5978f93c89c0f350c79d"
+  },
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "scope": "Overseas-mainstream blackbox test-input eligibility only; no startup",
+  "source_scope": "Bounded source visibility; no global source absence or Play-byte equivalence proven",
+  "static_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+    "sha256": "0d86df6d68bd1ed191b8e5e785ea93a83c11ae40c4232bb1ec4b1a651f836ace"
+  },
+  "version_code": "4137",
+  "version_name": "6.53.1"
+}

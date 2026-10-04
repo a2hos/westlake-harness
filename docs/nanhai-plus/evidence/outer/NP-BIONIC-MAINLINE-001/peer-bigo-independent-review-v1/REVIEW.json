@@ -1,0 +1,69 @@
+{
+  "schema": "peer-bigo-independent-three-layer-review-v1",
+  "role": "non_author_independent_read_only_peer",
+  "reviewed_at_utc": "2026-10-04T21:31:32.850581+00:00",
+  "decisions": {
+    "official_original_apk": "GO_CANDIDATE_ONLY",
+    "complete_four_phase_host_static": "GO_CANDIDATE_ONLY",
+    "overseas_mainstream_blackbox_test_input": "GO_CANDIDATE_ONLY",
+    "installation_cold_start_or_bionic_runtime": "NO_GO_NO_RUNTIME_EVIDENCE",
+    "authoritative_count_change": "NO_GO_PEER_CANNOT_ADMIT"
+  },
+  "independent_observation": {
+    "file": "OBSERVATION.json",
+    "sha256": "981a84604ba0783e4b5720d4df25f1bc727d75541d224b514435d05850626a33",
+    "reproducer": "verify.py",
+    "reproducer_sha256": "223ad70084f4e333b1ba2c333278c96938160b6820b593658f6682619a64c899"
+  },
+  "original_apk": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk",
+    "bytes_recomputed": 156619073,
+    "sha256_recomputed": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+    "publisher_page": "https://www.bigo.tv/id/blog/bigo-live-apk",
+    "direct_apk_link_in_page": "https://static-web.bigolive.tv/as/bigo-static/apk/bigolive-bigotv.apk",
+    "captured_head_and_get": "Both raw header receipts show HTTP/2 200, Android APK MIME type, and Content-Length 156619073; no download was repeated in peer review.",
+    "package": "sg.bigo.live",
+    "version_code": 4137,
+    "version_name": "6.53.1",
+    "target_sdk": 36,
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "signature_schemes_verified": ["v2", "v3"],
+    "signer_cert_sha256": "5c333105423f4d1b074a8deb7e5a2c6e9b485cf47fd6fd5309778e8dc3629401",
+    "publisher_certificate_pin_limit": "No independent publisher certificate pin; website link plus verified package signature supports this bounded original-source candidate."
+  },
+  "four_phase_static": {
+    "candidate_phase_rc": {"zip": 0, "metadata": 0, "dex": 0, "elf": 0},
+    "candidate_input_guards_equal_before_after": true,
+    "peer_zip_crc_first_bad": null,
+    "peer_zip_entries": 13568,
+    "peer_duplicate_names": 0,
+    "peer_manifest_entries": 1,
+    "peer_root_dex_entries_and_magic": "47 entries, all DEX magic",
+    "peer_so_entries": 195,
+    "peer_true_arm64_elf": 97,
+    "peer_arm32_elf_under_armeabi_v7a": 98,
+    "peer_arm64_path_arm32_or_non_elf_so": 0,
+    "elf_header_basis": "All 195 .so members read independently: arm64-v8a class 2 e_machine 183; armeabi-v7a class 1 e_machine 40. Candidate ELF phase separately reports 97/97 readelf_ok and ABI-machine match.",
+    "nested_archive": "Candidate NESTED-ARCHIVE.json covers assets/audioroot_ludo.zip: 28 entries, CRC clean, no DEX/SO/nested package entries; SHA preserved in OBSERVATION."
+  },
+  "blackbox_test_input": {
+    "play_url": "https://play.google.com/store/apps/details?id=sg.bigo.live&hl=en_US",
+    "captured_play_rc": 0,
+    "captured_play_http": 200,
+    "same_package": "sg.bigo.live",
+    "play_publisher": "BIGO TECHNOLOGY PTE. LTD.",
+    "play_downloads": "500M+ package-wide listing, not version-specific",
+    "source_visibility": "Candidate bounded publisher-page and targeted source search found no publicly buildable matching full Android client; this does not establish global source absence.",
+    "play_variant_limit": "The Play delivery is not proven byte-identical to this publisher APK/version.",
+    "runtime_limit": "Input qualification confers no install, launch, UI, cold-start, Bionic, or device pass."
+  },
+  "deduplication": "Bounded search of prior project root qualification JSON/Markdown found no earlier sg.bigo.live admission. The unrelated peer-imo-four-static-v1/MANIFEST.json mention is manifest text, not a BIGO package admission.",
+  "candidate_receipts": {
+    "raw_result_sha256": "7b0e5aff3fbc6d93e4a230385e72ac6bc246dc43cf93345679dbebb8a4d67dc8",
+    "raw_verify_sha256": "447f1eaf6fad05a225428277ebb915cc71c1bcc886d787636feb03b95bdd9aca",
+    "static_result_sha256": "bec5ae1e55fb6ab4841c7e9344352d35b00e1e417c456aa9ccb70815cd707179",
+    "qualification_sha256": "5be34a00ad163ec5afd99842d0435dc924865ac3dba4f241b19541736eb0e26a"
+  },
+  "execution_scope": {"network_requests": 0, "downloads": 0, "device_commands": 0, "container_commands": 0, "bridge_actions": 0, "ledger_changes": 0}
+}

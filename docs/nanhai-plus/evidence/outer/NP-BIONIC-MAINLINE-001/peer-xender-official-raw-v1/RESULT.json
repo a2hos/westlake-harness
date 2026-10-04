@@ -1,0 +1,90 @@
+{
+  "apk_bytes": 31703348,
+  "apk_mime_seen": true,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-xender-official-raw-v1/xender-official.apk",
+  "apk_sha256": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+  "arm64_so_entries": 10,
+  "at_utc": "2026-10-04T21:33:52.644455+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "240",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-xender-official-raw-v1/xender-official.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-official-raw-v1/apk-get-headers.raw",
+      "https://w48975123.mochain.net/upd/202609/Xender_V19.0.0.prime_GP.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "00b90458c56689c89380246d98f9d85d99bdca472a1b937530f331b7498bd25b",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "head": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--head",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-official-raw-v1/apk-head-headers.raw",
+      "https://w48975123.mochain.net/upd/202609/Xender_V19.0.0.prime_GP.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "267ce4775458a213fa7644b3b43ff4e4a69ef3b98e136fe0d87a611abf457294",
+    "stdout_sha256": "cdf1539400c6200212f77527526dc1c320d30221573bea37bafb1dfdb79d5ca3"
+  },
+  "manifest_entries": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "page": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "45",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-official-raw-v1/publisher-page.raw",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-official-raw-v1/publisher-page-headers.raw",
+      "https://js.xdd-w-00tj3nsj.com/h5_upd_url?app=xd&platform="
+    ],
+    "rc": 0,
+    "stderr_sha256": "f587e99457689ede0e8c538cc10f5e443c671865ae95808252bb14711ba08c57",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "publisher_apk_url": "https://w48975123.mochain.net/upd/202609/Xender_V19.0.0.prime_GP.apk",
+  "publisher_page": "https://js.xdd-w-00tj3nsj.com/h5_upd_url?app=xd&platform=",
+  "publisher_page_links_exact_apk": true,
+  "root_count_changed": false,
+  "root_dex_entries": 6,
+  "schema": "peer-xender-official-raw-v1",
+  "startup_proven": false,
+  "zip_duplicate_names": 0,
+  "zip_entries": 5380,
+  "zip_first_bad": null
+}

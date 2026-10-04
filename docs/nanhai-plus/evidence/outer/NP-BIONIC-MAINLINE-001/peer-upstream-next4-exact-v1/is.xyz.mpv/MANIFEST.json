@@ -1,0 +1,44 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ],
+  "activities": 5,
+  "app_name": "mpv",
+  "bytes": 123244634,
+  "features": [
+    "android.hardware.touchscreen",
+    "android.software.leanback"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "is.xyz.mpv.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 30,
+  "package": "is.xyz.mpv",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4-exact-v1/is.xyz.mpv/original.apk",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_MEDIA_AUDIO",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "is.xyz.mpv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 1,
+  "receivers": 2,
+  "services": 1,
+  "sha256": "5cba2237b20ba34b79eaccfbd39bdb5b09d2a9a774bdccee09ca450eac4edd34",
+  "signing_certificate_sha256": [
+    "43509443ff26dec9be7ab69cf7e32482680be75a5643c0759c9805d20d491a49"
+  ],
+  "target_sdk": "36",
+  "version_code": "48",
+  "version_name": "2026-09-17-release"
+}

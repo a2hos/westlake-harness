@@ -1,0 +1,88 @@
+{
+  "apk_bytes": 156619073,
+  "apk_mime_seen": true,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk",
+  "apk_sha256": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+  "arm64_so_entries": 97,
+  "at_utc": "2026-10-04T21:28:35.215212+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "240",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-official-raw-v1/apk-get-headers.raw",
+      "https://static-web.bigolive.tv/as/bigo-static/apk/bigolive-bigotv.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "08895e624f029163c47af91b2a72841590bd01345ccbb5a525c92b42dcd78fb1",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "head": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--head",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-official-raw-v1/apk-head-headers.raw",
+      "https://static-web.bigolive.tv/as/bigo-static/apk/bigolive-bigotv.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "dc30971f794bae270c298db313ec242a14447c4cc781ac135893a906342ae5ed",
+    "stdout_sha256": "297159223e0292a6d554e0e15e240e8b075b442d74af0fe7b09e7e7a52c58f34"
+  },
+  "manifest_entries": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "page": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "45",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-official-raw-v1/publisher-page.raw",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-official-raw-v1/publisher-page-headers.raw",
+      "https://www.bigo.tv/id/blog/bigo-live-apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "dd1cde90e8eeeb4ff0687991734517d54fe0b199370949d65661c06513aa60a6",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "publisher_apk_url": "https://static-web.bigolive.tv/as/bigo-static/apk/bigolive-bigotv.apk",
+  "publisher_page": "https://www.bigo.tv/id/blog/bigo-live-apk",
+  "publisher_page_links_exact_apk": true,
+  "root_count_changed": false,
+  "root_dex_entries": 47,
+  "schema": "peer-bigo-official-raw-v1",
+  "startup_proven": false,
+  "zip_duplicate_names": 0,
+  "zip_entries": 13568,
+  "zip_first_bad": null
+}

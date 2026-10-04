@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T21:34:57.792656+00:00",
+  "package": "de.westnordost.streetcomplete",
+  "artifact_id": "a-f753949ae8c1346a0933",
+  "apk_sha256": "9845b2e86f6e92440d7a1ed4742b861ef46d866e3f141e666fc7e41dcdd443ec",
+  "apk_bytes": 96482236,
+  "source_url": "https://f-droid.org/repo/de.westnordost.streetcomplete_6308.apk",
+  "version_name": "63.4",
+  "version_code": "6308",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/HANDOFF.json",
+    "sha256": "1abce7f33a4ad33149e712c4b8943cc1eef2b9c8fc716d9fa079e683e3a94900"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "dcc3f45df0bca1b8f068694c94ffd8a7aea70fce2d98c621549b565feaed24b6"
+  },
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/STATIC.json",
+    "sha256": "2c8ea7d06439374f149346e765c279fc450551bbdeede0589bf60833f32d166e"
+  },
+  "semantic_dex_delta": 4,
+  "true_arm64_elf_delta": 2,
+  "full_static_delta": 1,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "scope": "Four-phase native-host ZIP/metadata/DEX/true ARM64 ELF static only; no loader/device result"
+}

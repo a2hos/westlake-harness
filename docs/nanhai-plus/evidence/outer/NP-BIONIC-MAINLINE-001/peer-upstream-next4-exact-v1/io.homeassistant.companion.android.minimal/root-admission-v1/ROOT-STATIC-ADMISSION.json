@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T21:34:57.792656+00:00",
+  "package": "io.homeassistant.companion.android.minimal",
+  "artifact_id": "a-1abef3c4f37c226f12d5",
+  "apk_sha256": "f3ecfcba33d2d7936e7f6d5adde6cdd35b50d19d0af36b1d5b5ed11c9e53a601",
+  "apk_bytes": 57401014,
+  "source_url": "https://f-droid.org/repo/io.homeassistant.companion.android.minimal_22884.apk",
+  "version_name": "2026.6.5-minimal",
+  "version_code": "22884",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/HANDOFF.json",
+    "sha256": "1abce7f33a4ad33149e712c4b8943cc1eef2b9c8fc716d9fa079e683e3a94900"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "0d7e5246192d5afa2b2d92d87d19b4cf2ff0d34fce8ef10a06ca04d4120495aa"
+  },
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/STATIC.json",
+    "sha256": "4ad985f71635cfdd0d19e25c16d10e40557026a6958cbf274d0e63f3e743dc51"
+  },
+  "semantic_dex_delta": 9,
+  "true_arm64_elf_delta": 3,
+  "full_static_delta": 1,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "scope": "Four-phase native-host ZIP/metadata/DEX/true ARM64 ELF static only; no loader/device result"
+}

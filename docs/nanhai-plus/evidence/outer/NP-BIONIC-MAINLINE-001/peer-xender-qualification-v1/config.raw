@@ -1,0 +1,27 @@
+{
+   "apps": [{
+      "pn": "cn.xender",
+      "market_url": "https://play.google.com/store/apps/details?id=cn.xender",
+      "download_url": "https://w48975123.mochain.net/upd/202609/Xender_V19.0.0.prime_GP.apk",
+      "version": "1000310",
+      "os": "android"
+   }, {
+      "pn": "cn.shanchuan.shanchuan",
+      "market_url": "https://apps.apple.com/us/app/xender-file-share-share-music/id898129576",
+      "download_url": "",
+      "version": "123",
+      "os": "iphone"
+   }, {
+      "pn": "com.xd.down.win",
+      "market_url": "",
+      "download_url": "https://update.xdd-w-00tj3nsj.com/eup/xw/xender_ai-v6.0.0-20260615082729-1153419-release-prod.exe",
+      "version": "600",
+      "os": "winpc"
+   }, {
+      "pn": "com.xender.download",
+      "market_url": "",
+      "download_url": "https://update.xdd-m-ytky5vpx.com/eup/xm/prod/xender_ai-v6.0.0-20260702151643-61ae166-release-prod.dmg",
+      "version": "600",
+      "os": "macpc"
+   }]
+}

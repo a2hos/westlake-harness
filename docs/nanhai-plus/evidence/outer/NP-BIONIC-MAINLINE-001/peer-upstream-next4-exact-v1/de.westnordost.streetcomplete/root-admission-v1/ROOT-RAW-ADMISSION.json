@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:34:57.792656+00:00",
+  "package": "de.westnordost.streetcomplete",
+  "artifact_id": "a-f753949ae8c1346a0933",
+  "apk_sha256": "9845b2e86f6e92440d7a1ed4742b861ef46d866e3f141e666fc7e41dcdd443ec",
+  "apk_bytes": 96482236,
+  "source_url": "https://f-droid.org/repo/de.westnordost.streetcomplete_6308.apk",
+  "version_name": "63.4",
+  "version_code": "6308",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/HANDOFF.json",
+    "sha256": "1abce7f33a4ad33149e712c4b8943cc1eef2b9c8fc716d9fa079e683e3a94900"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/RAW.json",
+    "sha256": "7dc9bb9c7359842ee5f13558986cc5d96dc6be301286d6074066579354049530"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, original F-Droid distribution APK and local ZIP/signature metadata only; no install/runtime"
+}

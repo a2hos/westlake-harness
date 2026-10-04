@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:34:57.792656+00:00",
+  "package": "cx.ring",
+  "artifact_id": "a-2fc4eef2d8add4e33054",
+  "apk_sha256": "459c8826b1f8dba48fbf8869ba11b6d1438e592f8ff6dd541a06577efa25cee2",
+  "apk_bytes": 100428373,
+  "source_url": "https://f-droid.org/repo/cx.ring_503.apk",
+  "version_name": "20260807-01",
+  "version_code": "503",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/HANDOFF.json",
+    "sha256": "1abce7f33a4ad33149e712c4b8943cc1eef2b9c8fc716d9fa079e683e3a94900"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/cx.ring/RAW.json",
+    "sha256": "d8d1c0fa6f74a56a0810d61ba1d1ab339551d80e827b6ae3583b004572bac8bc"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, original F-Droid distribution APK and local ZIP/signature metadata only; no install/runtime"
+}

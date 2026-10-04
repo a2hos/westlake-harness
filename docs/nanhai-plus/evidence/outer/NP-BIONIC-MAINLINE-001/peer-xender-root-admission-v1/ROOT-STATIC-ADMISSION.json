@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 31703348,
+  "apk_sha256": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+  "at_utc": "2026-10-04T21:37:37.651080+00:00",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "four_static_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-four-static-v1/RESULT.json",
+    "sha256": "3bf9c96f35a126f37e163d1eaf42c0fc11c9a2bbca7525aeb4105ddb60bfecc2"
+  },
+  "full_static_delta": 1,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-independent-review-v1/REVIEW.json",
+    "sha256": "ad57707744308d0cd970a002c627414c7ce64a13a74776ffdb33b6d7b42e84b1"
+  },
+  "package": "cn.xender",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "631c2fabd545628df283a6267888955db50d1999b35b22dd8ce2128ad0538498"
+  },
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/6 DEX/10 true ARM64 ELF native-host static only; no loader/device result",
+  "semantic_dex_delta": 6,
+  "true_arm64_elf_delta": 10,
+  "version_code": "1000310",
+  "version_name": "19.0.0.prime"
+}

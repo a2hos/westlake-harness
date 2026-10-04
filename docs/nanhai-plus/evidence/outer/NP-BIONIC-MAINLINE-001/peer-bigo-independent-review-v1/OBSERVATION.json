@@ -1,0 +1,67 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9218f3fedc15a8c8a5d7895b9a81a57eb3cd0c8b0721768b1e854ad9a13fb975"
+  },
+  "apk_bytes": 156619073,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk",
+  "apk_sha256": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "526737605e66247157649bd54bd949b57a1502d4a96c4d6858dc0b9d83a12cce"
+  },
+  "candidate_receipt_sha256": {
+    "peer-bigo-four-static-v1/DEX-RESULT.json": "ca6194bc7c66e5b77bab9ceabe4e5cc0ff286447e460147f5db997ad4c4a7acb",
+    "peer-bigo-four-static-v1/ELF-RESULT.json": "2915d39b4d09081e2fbc4a9df7c23fd9c0032518e34d493d34220344bed83a9a",
+    "peer-bigo-four-static-v1/METADATA-RESULT.json": "0223ffdfbe30d4a2dd1a7a910b8552b790c46679a4df9397ad1df10924863a79",
+    "peer-bigo-four-static-v1/NESTED-ARCHIVE.json": "366d091211d4dfef8be602afd31b10d0597dbab05eb16a69954f24e4f2c7ba71",
+    "peer-bigo-four-static-v1/RESULT.json": "bec5ae1e55fb6ab4841c7e9344352d35b00e1e417c456aa9ccb70815cd707179",
+    "peer-bigo-four-static-v1/ZIP-RESULT.json": "24a23a410247b2cee5759195dd89be03ff87270c18bc34dc299388e0b235e367",
+    "peer-bigo-official-raw-v1/RESULT.json": "7b0e5aff3fbc6d93e4a230385e72ac6bc246dc43cf93345679dbebb8a4d67dc8",
+    "peer-bigo-official-raw-v1/VERIFY.json": "447f1eaf6fad05a225428277ebb915cc71c1bcc886d787636feb03b95bdd9aca",
+    "peer-bigo-qualification-v1/QUALIFICATION.json": "5be34a00ad163ec5afd99842d0435dc924865ac3dba4f241b19541736eb0e26a",
+    "peer-bigo-qualification-v1/SOURCE-FETCH.json": "be05faf603a7a3e8dc8da9a2d3df8b520f925d073943e628b2fa305e11717a0b"
+  },
+  "finished_at_utc": "2026-10-04T21:31:33.769212+00:00",
+  "schema": "peer-bigo-independent-observation-v1",
+  "scope": "Read-only local APK and candidate receipts; no network, download, device, container, Bridge or ledger action",
+  "source": {
+    "get_headers_sha256": "6c23c4781bdef2034912592349f428ec7aeca3327230015591c68800e5d612a5",
+    "head_headers_sha256": "297159223e0292a6d554e0e15e240e8b075b442d74af0fe7b09e7e7a52c58f34",
+    "play_500m_plus": true,
+    "play_exact_package": true,
+    "play_page_sha256": "5018b9eecdb071ab466502dfb6b9c58e0b649d29e8acfeff6274dded82fd657e",
+    "play_publisher": true,
+    "publisher_page_links_exact_apk": true,
+    "publisher_page_sha256": "48d5364f8822bcad1b51bf17446fd3f960751206767fcafded4d54701beb6f5e"
+  },
+  "started_at_utc": "2026-10-04T21:31:32.850581+00:00",
+  "zip": {
+    "bad_root_dex_magic": [],
+    "crc_first_bad": null,
+    "duplicate_names": 0,
+    "elf_header_counts": {
+      "arm64-v8a:class2:machine183": 97,
+      "armeabi-v7a:class1:machine40": 98
+    },
+    "entries": 13568,
+    "manifest_entries": 1,
+    "root_dex": 47,
+    "so_entries": 195
+  }
+}

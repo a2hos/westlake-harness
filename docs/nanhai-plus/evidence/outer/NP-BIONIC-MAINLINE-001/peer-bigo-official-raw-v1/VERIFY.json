@@ -1,0 +1,41 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9218f3fedc15a8c8a5d7895b9a81a57eb3cd0c8b0721768b1e854ad9a13fb975"
+  },
+  "apk_bytes": 156619073,
+  "apk_sha256": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-bigo-official-raw-v1/bigo-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "526737605e66247157649bd54bd949b57a1502d4a96c4d6858dc0b9d83a12cce"
+  },
+  "candidate_pass": true,
+  "package_version": [
+    "sg.bigo.live",
+    "4137",
+    "6.53.1"
+  ],
+  "raw_result_sha256": "7b0e5aff3fbc6d93e4a230385e72ac6bc246dc43cf93345679dbebb8a4d67dc8",
+  "root_count_changed": false,
+  "schema": "peer-bigo-official-verify-v1",
+  "signer_cert_sha256": [
+    "5c333105423f4d1b074a8deb7e5a2c6e9b485cf47fd6fd5309778e8dc3629401"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}

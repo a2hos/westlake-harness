@@ -1,0 +1,30 @@
+{
+  "landing": {
+    "url": "https://www.xender.com/",
+    "rc": 0,
+    "stdout": "200 https://www.xender.com/",
+    "sha256": "03bd086c8a7fd335c8e21b6b70f908ea8fa16e645b6d8d399d44930359fad628",
+    "bytes": 77098
+  },
+  "js": {
+    "url": "https://www.xender.com/js/index.22e6c96706269929b192.js",
+    "rc": 0,
+    "stdout": "200 https://www.xender.com/js/index.22e6c96706269929b192.js",
+    "sha256": "833e72b3a8861aba4cae87623e695240822d98019f2fcaf29914bc0270891946",
+    "bytes": 73440
+  },
+  "config": {
+    "url": "https://js.xdd-w-00tj3nsj.com/h5_upd_url?app=xd&platform=",
+    "rc": 0,
+    "stdout": "200 https://js.xdd-w-00tj3nsj.com/h5_upd_url?app=xd&platform=",
+    "sha256": "040eb308929e4cca2a0c175bc7a6783484d31b1295a17971b3e3f9b2f48a09a4",
+    "bytes": 952
+  },
+  "play": {
+    "url": "https://play.google.com/store/apps/details?id=cn.xender&hl=en_US",
+    "rc": 0,
+    "stdout": "200 https://play.google.com/store/apps/details?id=cn.xender&hl=en_US",
+    "sha256": "b541bcd57581ad9867bbec2c8676f7fb533e7d4db9f27a045ec7928a4c1de92e",
+    "bytes": 1260520
+  }
+}

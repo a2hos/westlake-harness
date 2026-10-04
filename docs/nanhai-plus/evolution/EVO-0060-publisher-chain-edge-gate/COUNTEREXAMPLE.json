@@ -1,0 +1,33 @@
+{
+  "case": "synthetic_config_url_mismatch",
+  "checks": {
+    "android_config_matches_apk_package_version": true,
+    "android_config_matches_get_url": false,
+    "apk_exact_sha": true,
+    "frozen_config_sha": true,
+    "frozen_js_sha": true,
+    "frozen_landing_sha": true,
+    "get_rc_and_receipt_sha": true,
+    "js_declares_exact_api_base": true,
+    "landing_declares_exact_js": true,
+    "one_android_package": true
+  },
+  "container_commands": 0,
+  "decision": "NO_GO",
+  "device_commands": 0,
+  "failed_edges": [
+    "android_config_matches_get_url"
+  ],
+  "input_sha256": {
+    "apk": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+    "config": "040eb308929e4cca2a0c175bc7a6783484d31b1295a17971b3e3f9b2f48a09a4",
+    "js": "833e72b3a8861aba4cae87623e695240822d98019f2fcaf29914bc0270891946",
+    "landing": "03bd086c8a7fd335c8e21b6b70f908ea8fa16e645b6d8d399d44930359fad628",
+    "qualification": "9115ec6bdcbe64ae232d9d95f629bbb21901a0259a342b1620b3fe8c00259753",
+    "raw_result": "c094583d6e2dc8e60abdbdc555f15eedd661d854c2c1b511e6676f03544b9bb5",
+    "raw_verify": "fcd50c54e9144b8efc49dc8a685806125a0567246b24ee5650bec7acc630dbff"
+  },
+  "network_commands": 0,
+  "production_changed": false,
+  "schema": "evo60-publisher-chain-edge-pilot-v1"
+}

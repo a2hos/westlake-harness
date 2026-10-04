@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-plus-root-native-host-entry-review-v1",
+  "at_utc": "2026-10-04T21:29:53.109757+00:00",
+  "decision": "ACCEPT_BOUNDED_LOCAL_NO_GO_ONLY",
+  "peer_review_sha256": "61a812ebf688857364975be8136d4f290de25d0c4674ac0a1dde2edcda5edfd4",
+  "observation_sha256": "1589e8d18e36c07ac1fc342e1cfed4bb07fdb3911113c83aa826e2f33cb59864",
+  "proven": "The bounded local checks did not establish a new project-authenticated native Linux x86_64 endpoint; local Mac remains Darwin arm64. No native Soong graph or product ELF result is present.",
+  "not_proven": "Current remote TCP/SSH state, remote Linux identity, exact R4 source/toolchain, Soong graph, device runtime. A local route alone does not prove reachability.",
+  "next": "Continue independent APK input work. If a fresh authorized host route is available, issue new one-use host-key-pinned read-only identity/input gate before any native Soong graph.",
+  "container_commands": 0,
+  "device_commands": 0,
+  "remote_connections": 0,
+  "startup_delta": 0,
+  "tool_pass_delta": 0
+}

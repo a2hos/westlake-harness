@@ -1,0 +1,48 @@
+{
+  "apk_bytes": 89963816,
+  "apk_sha256": "532b96a64d5d2ea68f6c4b87597ea00094a577e329d729307f2e0cbc5fe93b16",
+  "arm64_so_entries": 0,
+  "container_commands": 0,
+  "decision": "NO_GO_ARM64_MAINLINE",
+  "device_commands": 0,
+  "four_static_performed": false,
+  "native_abis": [
+    "armeabi-v7a"
+  ],
+  "package_version": [
+    "video.like",
+    "4942",
+    "3.84.3"
+  ],
+  "root_count_changed": false,
+  "schema": "peer-likee-arm64-no-go-v1",
+  "signer_cert_sha256": [
+    "5c333105423f4d1b074a8deb7e5a2c6e9b485cf47fd6fd5309778e8dc3629401"
+  ],
+  "startup_proven": false,
+  "tools": {
+    "aapt2": {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-likee-official-raw-v1/likee-official.apk.part"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "dc14d7dc157ae81088956e1fa8408006235abccf2b5817889da472a8bf796c75"
+    },
+    "apksigner": {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-likee-official-raw-v1/likee-official.apk.part"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "24ccae2d13ede21e9e28d3257e2c85094b15ee1d8f556b363006be9436d4674e"
+    }
+  }
+}

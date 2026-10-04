@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T21:25:58.808707+00:00",
+  "checked_at": "2026-10-04T21:37:57.102544+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,49 +35,49 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 120,
+    "downloaded_payloads": 126,
     "latest_raw_admission": {
       "packages": [
-        "chat.fluffy.fluffychat",
-        "com.nextcloud.client",
-        "net.osmand.plus",
-        "org.mozilla.fennec_fdroid",
-        "com.imo.android.imoim",
-        "com.imo.android.imoimlite"
+        "is.xyz.mpv",
+        "de.westnordost.streetcomplete",
+        "io.homeassistant.companion.android.minimal",
+        "cx.ring",
+        "sg.bigo.live",
+        "cn.xender"
       ],
       "receipts": [
         {
-          "package": "chat.fluffy.fluffychat",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "f53e121840ac028c9f3a1332d50a78b5180674ba71ec5602c98a63f7ed3b98ca"
+          "package": "is.xyz.mpv",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/is.xyz.mpv/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "8360d1c849309c6926bbcc90773eade0d4388fa60d11fb0a92b480ce1c17c146"
         },
         {
-          "package": "com.nextcloud.client",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "472dc088a45b235fcc8d27e9390076367be07dc36b384f623c22b862580f6c0c"
+          "package": "de.westnordost.streetcomplete",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "dcc3f45df0bca1b8f068694c94ffd8a7aea70fce2d98c621549b565feaed24b6"
         },
         {
-          "package": "net.osmand.plus",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "deb919086d5e48a58f9b61ae21ac32852f82314153bed35b28eb1a644bbdcc05"
+          "package": "io.homeassistant.companion.android.minimal",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "0d7e5246192d5afa2b2d92d87d19b4cf2ff0d34fce8ef10a06ca04d4120495aa"
         },
         {
-          "package": "org.mozilla.fennec_fdroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "13367abd089b60a4f57313d9337aca80b018b47827a06593037c5b2fb020eb3f"
+          "package": "cx.ring",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/cx.ring/root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "cf64d0528526ff82002c884ba4e68e3007343023420ed5b4b17fc218a88fd487"
         },
         {
-          "package": "com.imo.android.imoim",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "be424ac3b6007d2c3f1bb2db576f2a65876ec14030707cb02c18f990ebc80e93"
+          "package": "sg.bigo.live",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "89fc160b7ab6b3ed74e0a5d90856969a7f9e3d539d3e5978f93c89c0f350c79d"
         },
         {
-          "package": "com.imo.android.imoimlite",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "a706ffda05800cb62ca4b857bf0dcfa0ea801d6d7b2d5dafb72e67227bbdc915"
+          "package": "cn.xender",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "631c2fabd545628df283a6267888955db50d1999b35b22dd8ce2128ad0538498"
         }
       ],
-      "scope": "four exact upstream F-Droid artifacts plus two distinct publisher-linked imo supplemental variants; artifact receipt labels, not all verified distinct applications; no install/runtime pass"
+      "scope": "four more exact upstream F-Droid artifacts plus BIGO/Xender distinct publisher-linked supplemental variants; no install/runtime pass"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -88,64 +88,64 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 120,
-    "complete_inventory_dex_entries": 463,
+    "complete_static_inventories": 126,
+    "complete_inventory_dex_entries": 531,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1912,
+    "complete_inventory_native_elf_entries": 2038,
     "latest_complete_static_admission": {
       "packages": [
-        "chat.fluffy.fluffychat",
-        "com.nextcloud.client",
-        "net.osmand.plus",
-        "org.mozilla.fennec_fdroid",
-        "com.imo.android.imoim",
-        "com.imo.android.imoimlite"
+        "is.xyz.mpv",
+        "de.westnordost.streetcomplete",
+        "io.homeassistant.companion.android.minimal",
+        "cx.ring",
+        "sg.bigo.live",
+        "cn.xender"
       ],
       "receipts": [
         {
-          "package": "chat.fluffy.fluffychat",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/chat.fluffy.fluffychat/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "a753e86f0cda9d22e9253fd2805686dba7921377da23e3a522e949657a10d99b"
+          "package": "is.xyz.mpv",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/is.xyz.mpv/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "55cd531758cb9c08aca8859c1de5a2e00a3cbcd1834f2460ba7157010dc88c6f"
         },
         {
-          "package": "com.nextcloud.client",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/com.nextcloud.client/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "6e2260ad6c8e7fa73e4c66d6fc5f9b68074b045b75d85b7f8d1ac524244d4f23"
+          "package": "de.westnordost.streetcomplete",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "431989566d66c4d65002e7b8fecc9f799c09b50789a791fe1da0e99d92a21a59"
         },
         {
-          "package": "net.osmand.plus",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/net.osmand.plus/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "dff533f7e8f2af43306dc8fd714db888dba3253fa5e660358ab305605d4bfa76"
+          "package": "io.homeassistant.companion.android.minimal",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "ec7959e1fed4866d66469732307fdd6814b48aa7ddf472eb73a828b98806f291"
         },
         {
-          "package": "org.mozilla.fennec_fdroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-p0-upstream-exact-v1/org.mozilla.fennec_fdroid/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "1b0fb162d6aa2e1425f8fda63f3f3bc1acb68215d1fc3c6c8632f8cc9bde16b3"
+          "package": "cx.ring",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/cx.ring/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "f87dd8327b649470a12f6cf75b9e29fed99af6c66491074be2f458e111fe13a5"
         },
         {
-          "package": "com.imo.android.imoim",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "0b228bcecb2626016c2f664c5b9d645525d66f142c3ac631f5a6c38eb1a9b755"
+          "package": "sg.bigo.live",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "0d86df6d68bd1ed191b8e5e785ea93a83c11ae40c4232bb1ec4b1a651f836ace"
         },
         {
-          "package": "com.imo.android.imoimlite",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "687ecd2d443e0d9ba5ceaf748456d4341cd9762bc003d114d229853df228a230"
+          "package": "cn.xender",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "a37c8d6cf09064c331867a5a07693dcb52388ce4d7172fd4d8426cb0b898ca10"
         }
       ],
-      "scope": "six exact four-phase native-host static inventories; +54 semantic DEX and +150 true ARM64 ELF; no loader/runtime pass"
+      "scope": "six exact four-phase native-host static inventories; +68 semantic DEX, +126 true ARM64 ELF; no loader/runtime pass"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 83,
-    "supplemental_payloads": 37,
-    "qualified_blackbox_packages": 25,
+    "registered_upstream_payloads": 87,
+    "supplemental_payloads": 39,
+    "qualified_blackbox_packages": 27,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -171,7 +171,9 @@
       "com.aimp.player",
       "com.snapchat.android",
       "com.imo.android.imoim",
-      "com.imo.android.imoimlite"
+      "com.imo.android.imoimlite",
+      "sg.bigo.live",
+      "cn.xender"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -183,19 +185,19 @@
     },
     "latest_blackbox_qualification": {
       "packages": [
-        "com.imo.android.imoim",
-        "com.imo.android.imoimlite"
+        "sg.bigo.live",
+        "cn.xender"
       ],
       "receipts": [
         {
-          "package": "com.imo.android.imoim",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
-          "sha256": "2bed3c864c555b9a399b14cdbf33188910263fa250f21054b03d7915703c52ed"
+          "package": "sg.bigo.live",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "67a98cc6a688d8b29c9421da6f5977a043d3470fe35d828a0e2c14cb1285d1bf"
         },
         {
-          "package": "com.imo.android.imoimlite",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-imo-lite-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
-          "sha256": "07ff5f0c5c0ff75a643f57a8159bada335d96a3ab321ff03bc091bbab6c60ce8"
+          "package": "cn.xender",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "302204e7a763e6bf385ba382090b01effcf7d3e2a298f9fa5567be178fdf8e65"
         }
       ],
       "scope": "two separate overseas-mainstream blackbox test-input qualifications; no startup"
@@ -479,7 +481,7 @@
       "qualified_startup_delta": 0,
       "cold_start_delta": 0
     },
-    "artifact_package_identity_caveat": "120 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 120 is not a proved distinct-app count."
+    "artifact_package_identity_caveat": "126 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 126 is not a proved distinct-app count."
   },
   "latest_actual_execution": {
     "scope_note": "Historical G276 native graph attempt; newer portfolio host scans and candidate GETs are recorded separately below.",
@@ -3086,8 +3088,8 @@
     "frozen_registry_artifacts": 338,
     "frozen_registry_package_labels": 329,
     "frozen_prior_root_admitted_exact_artifacts": 79,
-    "current_root_admitted_exact_artifacts": 83,
-    "current_exact_artifact_gap": 255,
+    "current_root_admitted_exact_artifacts": 87,
+    "current_exact_artifact_gap": 251,
     "scope": "current gap is derived from four later exact upstream root admissions; original frozen audit retained"
   },
   "liblog_cross_apk_frontier": {
@@ -3110,6 +3112,123 @@
     "status": "pilot_only_no_remote_board_promotion",
     "actual_result_groups": 4,
     "selected_improvement_count": 1,
+    "startup_delta": 0
+  },
+  "latest_batch_20261004_upstream_next4_bigo_xender": {
+    "raw_delta": 6,
+    "full_static_delta": 6,
+    "semantic_dex_delta": 68,
+    "true_arm64_elf_delta": 126,
+    "blackbox_test_input_delta": 2,
+    "cold_start_delta": 0,
+    "upstream_registry_raw_delta": 4,
+    "supplemental_raw_delta": 2,
+    "raw_receipts": [
+      {
+        "package": "is.xyz.mpv",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/is.xyz.mpv/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "8360d1c849309c6926bbcc90773eade0d4388fa60d11fb0a92b480ce1c17c146"
+      },
+      {
+        "package": "de.westnordost.streetcomplete",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "dcc3f45df0bca1b8f068694c94ffd8a7aea70fce2d98c621549b565feaed24b6"
+      },
+      {
+        "package": "io.homeassistant.companion.android.minimal",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "0d7e5246192d5afa2b2d92d87d19b4cf2ff0d34fce8ef10a06ca04d4120495aa"
+      },
+      {
+        "package": "cx.ring",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/cx.ring/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "cf64d0528526ff82002c884ba4e68e3007343023420ed5b4b17fc218a88fd487"
+      },
+      {
+        "package": "sg.bigo.live",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "89fc160b7ab6b3ed74e0a5d90856969a7f9e3d539d3e5978f93c89c0f350c79d"
+      },
+      {
+        "package": "cn.xender",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "631c2fabd545628df283a6267888955db50d1999b35b22dd8ce2128ad0538498"
+      }
+    ],
+    "static_receipts": [
+      {
+        "package": "is.xyz.mpv",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/is.xyz.mpv/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "55cd531758cb9c08aca8859c1de5a2e00a3cbcd1834f2460ba7157010dc88c6f"
+      },
+      {
+        "package": "de.westnordost.streetcomplete",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "431989566d66c4d65002e7b8fecc9f799c09b50789a791fe1da0e99d92a21a59"
+      },
+      {
+        "package": "io.homeassistant.companion.android.minimal",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "ec7959e1fed4866d66469732307fdd6814b48aa7ddf472eb73a828b98806f291"
+      },
+      {
+        "package": "cx.ring",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/cx.ring/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "f87dd8327b649470a12f6cf75b9e29fed99af6c66491074be2f458e111fe13a5"
+      },
+      {
+        "package": "sg.bigo.live",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "0d86df6d68bd1ed191b8e5e785ea93a83c11ae40c4232bb1ec4b1a651f836ace"
+      },
+      {
+        "package": "cn.xender",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "a37c8d6cf09064c331867a5a07693dcb52388ce4d7172fd4d8426cb0b898ca10"
+      }
+    ],
+    "blackbox_receipts": [
+      {
+        "package": "sg.bigo.live",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+        "sha256": "67a98cc6a688d8b29c9421da6f5977a043d3470fe35d828a0e2c14cb1285d1bf"
+      },
+      {
+        "package": "cn.xender",
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+        "sha256": "302204e7a763e6bf385ba382090b01effcf7d3e2a298f9fa5567be178fdf8e65"
+      }
+    ],
+    "scope": "host/input evidence only; no native Bionic graph, APK install, device or startup"
+  },
+  "native_linux_entry_current_review": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-linux-entry-current-v1/ROOT-REVIEW.json",
+      "sha256": "f61fa7a9ed026a51ddff400fbfd6cbdcb3e9a6063c74cad5084863f19700208e"
+    },
+    "decision": "bounded_local_no_new_authenticated_entry",
+    "soong_graph_observed": false,
+    "startup_delta": 0
+  },
+  "evo60": {
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0060-publisher-chain-edge-gate/decision.json",
+      "sha256": "4a42a78e17f632ba9c929b0f54b2598c74a477a886266821a69f4b18c63c932b"
+    },
+    "status": "publisher_chain_edge_pilot_only_not_promoted",
+    "actual_result_groups": 4,
+    "selected_improvement_count": 1,
+    "positive_rc": 0,
+    "counterexample_rc": 2,
+    "startup_delta": 0
+  },
+  "likee_arm32_only_no_go": {
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-likee-official-raw-v1/NO-GO.json",
+      "sha256": "a38c26a74e6369f46be263731944ac8a9270e58962e05b06a24cd53c02d7e2b9"
+    },
+    "raw_delta": 0,
+    "static_delta": 0,
     "startup_delta": 0
   }
 }

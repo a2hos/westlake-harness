@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-evolution-decision-v1",
+  "id": "EVO-0060",
+  "status": "pilot",
+  "trigger_result_groups": [
+    "native-host read-only NO_GO",
+    "BIGO raw/static/blackbox bounded root admission",
+    "four exact upstream raw/static bounded root admissions",
+    "Xender publisher-site candidate pending independent review"
+  ],
+  "one_improvement": "Byte-pin and check every publisher landing-to-JS-to-config-to-actual-GET-to-APK identity edge before multi-host provenance is accepted.",
+  "pilot_case": "Xender frozen publisher assets and raw APK receipts",
+  "pilot_positive_rc": 0,
+  "pilot_positive_status": "GO",
+  "pilot_counterexample_rc": 2,
+  "pilot_counterexample_status": "NO_GO",
+  "pilot_counterexample_failed_edges": ["android_config_matches_get_url"],
+  "promotion_gate": "Independent Xender review plus a second differently structured publisher chain and a same-package wrong-CDN negative case, with exact headers and APK hash; no automatic production promotion.",
+  "production_changed": false,
+  "authoritative_count_delta": 0,
+  "original_89_tool_denominator_changed": false,
+  "network_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge_changed": false
+}

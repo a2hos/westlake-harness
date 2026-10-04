@@ -1,0 +1,79 @@
+{
+  "schema": "peer-xender-independent-three-layer-review-v1",
+  "role": "non_author_independent_read_only_peer",
+  "decisions": {
+    "official_original_apk": "GO_CANDIDATE_ONLY",
+    "complete_four_phase_host_static": "GO_CANDIDATE_ONLY",
+    "overseas_mainstream_blackbox_test_input": "GO_CANDIDATE_ONLY",
+    "installation_cold_start_or_bionic_runtime": "NO_GO_NO_RUNTIME_EVIDENCE",
+    "authoritative_count_change": "NO_GO_PEER_CANNOT_ADMIT"
+  },
+  "independent_observation": {
+    "file": "OBSERVATION.json",
+    "sha256": "a187a204d1a0a4b0899095933e46c701f124d5cd4093d5f3f518e875af5ae073",
+    "reproducer": "verify.py",
+    "reproducer_sha256": "ae6babd6832ad51948b0275dec75ffbfd9f8be8795c755c1bdff17df381bae78",
+    "window_utc": ["2026-10-04T21:36:26.947946+00:00", "2026-10-04T21:36:27.495044+00:00"]
+  },
+  "official_chain": {
+    "landing": "https://www.xender.com/",
+    "landing_links_js": "https://www.xender.com/js/index.22e6c96706269929b192.js",
+    "js_declares_and_calls": "https://js.xdd-w-00tj3nsj.com/h5_upd_url?app=xd&platform=",
+    "api_cn_xender_entry": {
+      "pn": "cn.xender",
+      "market_url": "https://play.google.com/store/apps/details?id=cn.xender",
+      "download_url": "https://w48975123.mochain.net/upd/202609/Xender_V19.0.0.prime_GP.apk",
+      "version": "1000310",
+      "os": "android"
+    },
+    "chain_check": "Captured landing, JS, config API and CDN GET/HEAD all returned HTTP 200. Raw publisher-page bytes equal the config API capture. GET and HEAD URLs exactly match the cn.xender config entry. GET and HEAD report 31703348 bytes; CDN content-type is application/octet-stream, so package type is established by ZIP/APK parsers and verified signature rather than MIME alone.",
+    "cdn_domain_limit": "CDN host differs from xender.com; origin is supported by the official-page JS/config chain, without an independently pinned publisher certificate."
+  },
+  "original_apk": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-xender-official-raw-v1/xender-official.apk",
+    "bytes_recomputed": 31703348,
+    "sha256_recomputed": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+    "package": "cn.xender",
+    "version_code": 1000310,
+    "version_name": "19.0.0.prime",
+    "compile_sdk": 37,
+    "target_sdk": 36,
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "verified_signature_schemes": ["v1", "v2"],
+    "signer_cert_sha256": "2dc51edb11905e74e712c123b42ce8ad6f623687d912eb051f14116646ef9ab3"
+  },
+  "four_phase_static": {
+    "candidate_phase_rc": {"zip": 0, "metadata": 0, "dex": 0, "elf": 0},
+    "candidate_input_sha_guards_equal_before_after": true,
+    "peer_zip_entries": 5380,
+    "peer_zip_crc_first_bad": null,
+    "peer_duplicate_names": 0,
+    "peer_manifest_entries": 1,
+    "peer_root_dex": 6,
+    "peer_bad_dex_magic": 0,
+    "peer_so_entries": 26,
+    "peer_true_arm64_elf": 10,
+    "peer_other_elf": {"arm32": 10, "x86": 3, "x86_64": 3},
+    "peer_arm64_path_arm32_or_non_elf_so": 0,
+    "elf_header_basis": "Independently read all 26 .so ELF headers: ARM64 class 2 machine 183, ARM32 class 1 machine 40, x86 class 1 machine 3, x86_64 class 2 machine 62. Candidate ELF phase separately reports all 10 ARM64 entries readelf_ok and ABI-machine match."
+  },
+  "blackbox_test_input": {
+    "play_url": "https://play.google.com/store/apps/details?id=cn.xender&hl=en_US",
+    "captured_play_rc": 0,
+    "captured_play_http": 200,
+    "play_exact_package": "cn.xender",
+    "play_downloads": "500M+ package-wide listing, not version-specific",
+    "source_visibility_limit": "Candidate bounded publisher-page and targeted repository search did not identify a matching publicly buildable full Xender client; global source absence is not proven.",
+    "play_variant_limit": "Play delivery is not proven byte-identical to publisher CDN APK/version.",
+    "runtime_limit": "Input qualification confers no install, launch, UI, cold-start, Bionic, or device pass."
+  },
+  "deduplication": "Bounded search of prior outer project JSON/Markdown, excluding this candidate's own receipts, found no earlier cn.xender record.",
+  "candidate_receipt_sha256": {
+    "raw_result": "c094583d6e2dc8e60abdbdc555f15eedd661d854c2c1b511e6676f03544b9bb5",
+    "raw_verify": "fcd50c54e9144b8efc49dc8a685806125a0567246b24ee5650bec7acc630dbff",
+    "four_static_result": "3bf9c96f35a126f37e163d1eaf42c0fc11c9a2bbca7525aeb4105ddb60bfecc2",
+    "qualification": "9115ec6bdcbe64ae232d9d95f629bbb21901a0259a342b1620b3fe8c00259753"
+  },
+  "execution_scope": {"network_requests": 0, "downloads": 0, "device_commands": 0, "container_commands": 0, "bridge_actions": 0, "ledger_changes": 0}
+}

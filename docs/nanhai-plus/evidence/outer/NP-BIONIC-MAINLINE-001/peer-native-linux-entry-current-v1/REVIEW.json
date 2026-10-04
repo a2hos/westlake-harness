@@ -1,0 +1,67 @@
+{
+  "schema": "peer-native-linux-entry-current-review-v1",
+  "reviewer_role": "independent_read_only_peer",
+  "decision": "NO_GO_NEW_AUTHENTICATED_NATIVE_LINUX_X86_64_ENTRY",
+  "soong_graph_decision": "NO_GO_UNTIL_FRESH_HOST_IDENTITY_AND_EXACT_R4_INPUT_READBACK",
+  "observation": {
+    "file": "OBSERVATION.json",
+    "sha256": "1589e8d18e36c07ac1fc342e1cfed4bb07fdb3911113c83aa826e2f33cb59864",
+    "window_utc": ["2026-10-04T21:28:07.506891+00:00", "2026-10-04T21:28:12.569263+00:00"],
+    "command_count": 6,
+    "raw_output_files": "Each OBSERVATION row names a command; name.stdout.raw and name.stderr.raw are preserved here with byte counts and SHA-256."
+  },
+  "findings": [
+    {
+      "name": "local_host",
+      "command": "uname -sm",
+      "rc": 0,
+      "result": "Darwin arm64, not a native Linux x86_64 Soong host",
+      "stdout_sha256": "16b8cd028eb757aab907ab404e1656e01783846457156eec99372a91fc1b104d"
+    },
+    {
+      "name": "gz02_route",
+      "command": "route -n get 1.95.90.207",
+      "rc": 0,
+      "result": "Kernel route via 192.168.3.1/en0 exists; this proves neither target TCP nor SSH authentication nor Linux identity",
+      "stdout_sha256": "5c165d1f48b0354d37ceadbf81827b75e25b52a05e134443feeb4cbc590fadd5"
+    },
+    {
+      "name": "alexpc_name",
+      "command": "dscacheutil -q host -a name alexpc.local",
+      "rc": 124,
+      "result": "Five-second bounded timeout, no address returned",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "local_proxy_listener",
+      "command": "lsof -nP -iTCP:7897 -sTCP:LISTEN",
+      "rc": 1,
+      "result": "No listener listed on the previously registered local proxy port",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "registered_ssh_config",
+      "commands": ["ssh -G gz02", "ssh -G alexpc"],
+      "rc": [0, 0],
+      "result": "gz02 resolves in local config to AlexYang@1.95.90.207:58222 and AlexPC to alexyang@alexpc.local:22; StrictHostKeyChecking ask. ssh -G is configuration-only and opened no connection.",
+      "stdout_sha256": ["2ef35b4d8a2a7d4ef189fb6025a75853320e264bf2709a2fc7677c01864d3514", "d6bf2118f321008806e5b3fe08b483e41722dca800cd304f75a81b53f2f09cd2"]
+    }
+  ],
+  "registered_ssh_file_sha256": {
+    "ssh_config": "d99dc196e3fd7fdbe1c6eb5e6c43a5d85256e659ef5abfd5e27587b318726fdd",
+    "known_hosts": "519aab445016e0a5fc983a1210037535908dab7711c13c9075f16e868f24b53b"
+  },
+  "prior_baseline": {
+    "g279_local_diff": {"file": "../g279-native-host-entry-local-diff-v1/NO-ROUTE.json", "sha256": "103cc106fda5d57a56552c31a6e83a7be16a0e2c8ecb9e0d778bcda49efdb7a3"},
+    "g279_root_acceptance": {"file": "../g279-native-route-current-readonly-peer-v1/ROOT-ACCEPTANCE.json", "sha256": "f87912614430894b82459b97322eded2e868126807be3b1f0e56953586d82e28"},
+    "g318_backup_audit": {"file": "../g318-native-backup-host-audit-v1/AUDIT.json", "sha256": "1dd383c01e3b6adbf9de470fade06d41e5f8f7c73a5e44bb486dca4522cfb6f0"},
+    "comparison": "The local SSH config and known_hosts hashes match the prior g279 local-diff receipt. That receipt already held AlexPC and current gz02 at NO-GO; an earlier gz02 readback at 15:18 UTC is historical, not current authentication or a Soong graph. No newly registered host route or identity appeared in this bounded local observation."
+  },
+  "limits": [
+    "No target TCP or SSH attempt was made; target availability cannot be inferred from the local kernel route or DNS timeout alone.",
+    "No remote Linux x86_64 identity, exact AOSP 16.0.0_r4 source/manifest/toolchain, project OUT/TMP, or Soong dependency graph was authenticated in this review.",
+    "Other personal SSH aliases are outside the current project-scoped authenticated host evidence and were not tested."
+  ],
+  "minimal_next_action": "When a newly authorized project-scoped route is supplied, take a fresh host-key-pinned, read-only authenticated Linux x86_64 identity and exact AOSP16 R4 source/manifest/toolchain/project OUT/TMP readback with a new one-use owner ACK. Only after that receipt passes, consider a separate native Soong graph packet. Do not replay prior nonces.",
+  "execution_scope": {"ssh_connections": 0, "target_tcp_commands": 0, "soong_commands": 0, "container_commands": 0, "device_commands": 0, "bridge_actions": 0, "remote_mutations": 0}
+}

@@ -1,0 +1,46 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 4,
+  "app_name": "Street­Complete",
+  "bytes": 96482236,
+  "features": [
+    "android.hardware.location.gps",
+    "android.hardware.screen.portrait",
+    "android.hardware.wifi"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "de.westnordost.streetcomplete.screens.main.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "25",
+  "native_library_entries": 8,
+  "package": "de.westnordost.streetcomplete",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4-exact-v1/de.westnordost.streetcomplete/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "de.westnordost.streetcomplete.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 3,
+  "receivers": 4,
+  "services": 3,
+  "sha256": "9845b2e86f6e92440d7a1ed4742b861ef46d866e3f141e666fc7e41dcdd443ec",
+  "signing_certificate_sha256": [
+    "7bdab5770bdbdc7a38002430a0b56adf631f1445ba478ba2a8fb168d5c087513"
+  ],
+  "target_sdk": "35",
+  "version_code": "6308",
+  "version_name": "63.4"
+}

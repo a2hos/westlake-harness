@@ -1,0 +1,42 @@
+{
+  "audit_inputs_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "container_commands": 0,
+  "device_commands": 0,
+  "rows": [
+    {
+      "artifact_id": "a-1f62491a80584c7b95f1",
+      "expected_sha256": "5cba2237b20ba34b79eaccfbd39bdb5b09d2a9a774bdccee09ca450eac4edd34",
+      "package": "is.xyz.mpv",
+      "source_url": "https://f-droid.org/repo/is.xyz.mpv_48.apk",
+      "version_code": "48",
+      "version_name": "2026-09-17-release"
+    },
+    {
+      "artifact_id": "a-f753949ae8c1346a0933",
+      "expected_sha256": "9845b2e86f6e92440d7a1ed4742b861ef46d866e3f141e666fc7e41dcdd443ec",
+      "package": "de.westnordost.streetcomplete",
+      "source_url": "https://f-droid.org/repo/de.westnordost.streetcomplete_6308.apk",
+      "version_code": "6308",
+      "version_name": "63.4"
+    },
+    {
+      "artifact_id": "a-1abef3c4f37c226f12d5",
+      "expected_sha256": "f3ecfcba33d2d7936e7f6d5adde6cdd35b50d19d0af36b1d5b5ed11c9e53a601",
+      "package": "io.homeassistant.companion.android.minimal",
+      "source_url": "https://f-droid.org/repo/io.homeassistant.companion.android.minimal_22884.apk",
+      "version_code": "22884",
+      "version_name": "2026.6.5-minimal"
+    },
+    {
+      "artifact_id": "a-2fc4eef2d8add4e33054",
+      "expected_sha256": "459c8826b1f8dba48fbf8869ba11b6d1438e592f8ff6dd541a06577efa25cee2",
+      "package": "cx.ring",
+      "source_url": "https://f-droid.org/repo/cx.ring_503.apk",
+      "version_code": "503",
+      "version_name": "20260807-01"
+    }
+  ],
+  "schema": "peer-upstream-next4-selection-v1",
+  "source_scope": "registered F-Droid exact URL; live GET and hash remain to be tested"
+}

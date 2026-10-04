@@ -1,0 +1,30 @@
+{
+  "apk_bytes": 156619073,
+  "apk_sha256": "30c97668ef095f6372f3a2353b8d65fa9050cf49ad5ba070d7579dcbd16a12a1",
+  "at_utc": "2026-10-04T21:32:47.822744+00:00",
+  "blackbox_delta": 0,
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-official-raw-v1/RESULT.json",
+    "sha256": "7b0e5aff3fbc6d93e4a230385e72ac6bc246dc43cf93345679dbebb8a4d67dc8"
+  },
+  "candidate_verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-official-raw-v1/VERIFY.json",
+    "sha256": "447f1eaf6fad05a225428277ebb915cc71c1bcc886d787636feb03b95bdd9aca"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_SUPPLEMENTAL_OFFICIAL_RAW_APK_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-bigo-independent-review-v1/REVIEW.json",
+    "sha256": "1cdc52255508fc9a939e2ba120d79788f8abda8698c1c9c3ba9063e00e5997dc"
+  },
+  "package": "sg.bigo.live",
+  "publisher_page": "https://www.bigo.tv/blog/bigo-live-apk",
+  "raw_delta": 1,
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "Publisher-linked exact unmodified signed APK; independently rehashed bytes/ZIP; no install/runtime/start",
+  "version_code": "4137",
+  "version_name": "6.53.1"
+}

@@ -1,0 +1,92 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/original.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 11761,
+    "stdout_sha256": "edadd600ab99651e2a6224165216a382ceef4a6662d1e1b1274f9e3f2b3e5ec3"
+  },
+  "aapt2_tool_sha256": "347ae46c83960aed14dd88e132f80a82c1b3456000384d234cee23c412533b03",
+  "actual_sha256": "f3ecfcba33d2d7936e7f6d5adde6cdd35b50d19d0af36b1d5b5ed11c9e53a601",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/original.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 30982,
+    "stdout_sha256": "f4bb8db90d31698725b2f52b882aada1e8d04737057357b08272d2a4beb8d1a8"
+  },
+  "apksigner_tool_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "arm64_abi_compatible": true,
+  "arm64_so_count": 3,
+  "artifact_id": "a-1abef3c4f37c226f12d5",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "authoritative_count_changed": false,
+  "bytes": 57401014,
+  "container_commands": 0,
+  "decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+  "device_commands": 0,
+  "expected_sha256": "f3ecfcba33d2d7936e7f6d5adde6cdd35b50d19d0af36b1d5b5ed11c9e53a601",
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "300",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/original.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/io.homeassistant.companion.android.minimal/GET.headers.raw",
+      "https://f-droid.org/repo/io.homeassistant.companion.android.minimal_22884.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 17065,
+    "stderr_sha256": "1ba75598487dd056ea53f6088757c36f8addc0b762e64e9ce1add7e22d74ddc7",
+    "stdout_bytes": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "get_elapsed_seconds": 211.55,
+  "input_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "manifest_count": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "package_expected": "io.homeassistant.companion.android.minimal",
+  "package_version_match": true,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "root_dex_count": 9,
+  "schema": "peer-upstream-next4-exact-raw-v1",
+  "selection_sha256": "04e06c935a46d30fb10305c321e486548d0cd375d239423e0bcebbd217adb979",
+  "sha_matches_registry": true,
+  "source_url_registered": "https://f-droid.org/repo/io.homeassistant.companion.android.minimal_22884.apk",
+  "startup_proven": false,
+  "version_code_expected": [
+    "22884"
+  ],
+  "version_expected": [
+    "2026.6.5-minimal"
+  ],
+  "zip_duplicate_names": 0,
+  "zip_entries": 2593,
+  "zip_first_bad": null
+}

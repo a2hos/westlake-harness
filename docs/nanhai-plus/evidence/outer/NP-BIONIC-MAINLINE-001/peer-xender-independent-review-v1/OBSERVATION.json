@@ -1,0 +1,79 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-xender-official-raw-v1/xender-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "a83ab585550f54ad795689e16667a4007a7f31af3348e4eaf463b3b43b18d70e"
+  },
+  "apk_bytes": 31703348,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-xender-official-raw-v1/xender-official.apk",
+  "apk_sha256": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-xender-official-raw-v1/xender-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "dec27bf40ae63ffb5bb99f883b83e09e1fc97e6e4e0369a1de61170cfd495f77"
+  },
+  "finished_at_utc": "2026-10-04T21:36:27.495044+00:00",
+  "official_chain": {
+    "config_sha256": "040eb308929e4cca2a0c175bc7a6783484d31b1295a17971b3e3f9b2f48a09a4",
+    "config_xender_entry": {
+      "download_url": "https://w48975123.mochain.net/upd/202609/Xender_V19.0.0.prime_GP.apk",
+      "market_url": "https://play.google.com/store/apps/details?id=cn.xender",
+      "os": "android",
+      "pn": "cn.xender",
+      "version": "1000310"
+    },
+    "get_url_matches_config": true,
+    "head_url_matches_config": true,
+    "js_calls_config_with_app_xd": true,
+    "js_declares_config_api": true,
+    "js_sha256": "833e72b3a8861aba4cae87623e695240822d98019f2fcaf29914bc0270891946",
+    "landing_links_js": true,
+    "landing_sha256": "03bd086c8a7fd335c8e21b6b70f908ea8fa16e645b6d8d399d44930359fad628",
+    "play_500m_plus": true,
+    "play_same_package": true,
+    "play_sha256": "b541bcd57581ad9867bbec2c8676f7fb533e7d4db9f27a045ec7928a4c1de92e",
+    "raw_page_matches_config_sha256": true
+  },
+  "receipt_sha256": {
+    "peer-xender-four-static-v1/DEX-RESULT.json": "61ec44642b1a878d2be5f1e16be5fdd0546dea2be687ab8307b91ad5f7fbddbe",
+    "peer-xender-four-static-v1/ELF-RESULT.json": "96ab22e9742d1d5282eaed6997be98d5d610604ddb3a977c91a2cd5a21cf3077",
+    "peer-xender-four-static-v1/METADATA-RESULT.json": "00bf51850518b5de515796b853adbccd61103f7a4ddc1edfdbf4890b3aa7aa8d",
+    "peer-xender-four-static-v1/RESULT.json": "3bf9c96f35a126f37e163d1eaf42c0fc11c9a2bbca7525aeb4105ddb60bfecc2",
+    "peer-xender-four-static-v1/ZIP-RESULT.json": "2be4aa07bc0efca6c825480e8a3c1bcff07790716deb64143b64601d365f0071",
+    "peer-xender-official-raw-v1/RESULT.json": "c094583d6e2dc8e60abdbdc555f15eedd661d854c2c1b511e6676f03544b9bb5",
+    "peer-xender-official-raw-v1/VERIFY.json": "fcd50c54e9144b8efc49dc8a685806125a0567246b24ee5650bec7acc630dbff",
+    "peer-xender-qualification-v1/QUALIFICATION.json": "9115ec6bdcbe64ae232d9d95f629bbb21901a0259a342b1620b3fe8c00259753",
+    "peer-xender-qualification-v1/SOURCE-FETCH.json": "bf14c27fcd52d74d731d281d83fcc834ba740ead8d8416aa2569cf6168e217c8"
+  },
+  "schema": "peer-xender-independent-observation-v1",
+  "scope": "Read-only local source/receipt/APK review; no network, download, device, container, Bridge or ledger action",
+  "started_at_utc": "2026-10-04T21:36:26.947946+00:00",
+  "zip": {
+    "bad_dex_magic": [],
+    "crc_first_bad": null,
+    "duplicate_names": 0,
+    "elf_header_counts": {
+      "arm64-v8a:class2:machine183": 10,
+      "armeabi-v7a:class1:machine40": 10,
+      "x86:class1:machine3": 3,
+      "x86_64:class2:machine62": 3
+    },
+    "entries": 5380,
+    "manifest_entries": 1,
+    "root_dex": 6,
+    "so_entries": 26
+  }
+}

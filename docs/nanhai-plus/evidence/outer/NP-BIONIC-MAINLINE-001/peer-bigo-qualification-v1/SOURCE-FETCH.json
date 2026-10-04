@@ -1,0 +1,16 @@
+{
+  "publisher": {
+    "url": "https://www.bigo.tv/id/blog/bigo-live-apk",
+    "rc": 0,
+    "stdout": "200 https://www.bigo.tv/id/blog/bigo-live-apk",
+    "sha256": "48d5364f8822bcad1b51bf17446fd3f960751206767fcafded4d54701beb6f5e",
+    "bytes": 273398
+  },
+  "play": {
+    "url": "https://play.google.com/store/apps/details?id=sg.bigo.live&hl=en_US",
+    "rc": 0,
+    "stdout": "200 https://play.google.com/store/apps/details?id=sg.bigo.live&hl=en_US",
+    "sha256": "5018b9eecdb071ab466502dfb6b9c58e0b649d29e8acfeff6274dded82fd657e",
+    "bytes": 1267787
+  }
+}

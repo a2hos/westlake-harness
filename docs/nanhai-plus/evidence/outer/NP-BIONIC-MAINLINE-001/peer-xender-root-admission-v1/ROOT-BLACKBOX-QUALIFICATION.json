@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 31703348,
+  "apk_sha256": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+  "at_utc": "2026-10-04T21:37:37.651080+00:00",
+  "blackbox_qualification_delta": 1,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "google_play": "https://play.google.com/store/apps/details?id=cn.xender",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-independent-review-v1/REVIEW.json",
+    "sha256": "ad57707744308d0cd970a002c627414c7ce64a13a74776ffdb33b6d7b42e84b1"
+  },
+  "market_download_label": "500M+ package-wide",
+  "package": "cn.xender",
+  "publisher_landing": "https://www.xender.com/",
+  "qualification_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-qualification-v1/QUALIFICATION.json",
+    "sha256": "9115ec6bdcbe64ae232d9d95f629bbb21901a0259a342b1620b3fe8c00259753"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "631c2fabd545628df283a6267888955db50d1999b35b22dd8ce2128ad0538498"
+  },
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "scope": "Overseas-mainstream blackbox test-input eligibility only; no startup",
+  "source_scope": "Bounded source visibility; no global source absence or Play-byte equivalence proven",
+  "static_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+    "sha256": "a37c8d6cf09064c331867a5a07693dcb52388ce4d7172fd4d8426cb0b898ca10"
+  },
+  "version_code": "1000310",
+  "version_name": "19.0.0.prime"
+}

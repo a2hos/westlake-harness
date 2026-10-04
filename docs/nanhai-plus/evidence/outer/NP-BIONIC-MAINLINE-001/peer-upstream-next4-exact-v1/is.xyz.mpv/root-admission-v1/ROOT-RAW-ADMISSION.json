@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:34:57.792656+00:00",
+  "package": "is.xyz.mpv",
+  "artifact_id": "a-1f62491a80584c7b95f1",
+  "apk_sha256": "5cba2237b20ba34b79eaccfbd39bdb5b09d2a9a774bdccee09ca450eac4edd34",
+  "apk_bytes": 123244634,
+  "source_url": "https://f-droid.org/repo/is.xyz.mpv_48.apk",
+  "version_name": "2026-09-17-release",
+  "version_code": "48",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/HANDOFF.json",
+    "sha256": "1abce7f33a4ad33149e712c4b8943cc1eef2b9c8fc716d9fa079e683e3a94900"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4-exact-v1/is.xyz.mpv/RAW.json",
+    "sha256": "aa9f214b4f0f31ef5de95fa7f4656bf6c585324d19ba2ab6f10f0615e67b4748"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, original F-Droid distribution APK and local ZIP/signature metadata only; no install/runtime"
+}

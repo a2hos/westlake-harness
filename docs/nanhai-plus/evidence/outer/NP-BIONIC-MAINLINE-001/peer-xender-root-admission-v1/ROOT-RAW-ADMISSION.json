@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 31703348,
+  "apk_sha256": "e205201d0593e5c370d3b1b659e98289eb8370b02a6c11f953120fd4381cb962",
+  "at_utc": "2026-10-04T21:37:37.651080+00:00",
+  "blackbox_delta": 0,
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-official-raw-v1/RESULT.json",
+    "sha256": "c094583d6e2dc8e60abdbdc555f15eedd661d854c2c1b511e6676f03544b9bb5"
+  },
+  "candidate_verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-official-raw-v1/VERIFY.json",
+    "sha256": "fcd50c54e9144b8efc49dc8a685806125a0567246b24ee5650bec7acc630dbff"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_SUPPLEMENTAL_OFFICIAL_RAW_APK_ONLY",
+  "device_commands": 0,
+  "evo60_pilot": {
+    "path": "docs/nanhai-plus/evolution/EVO-0060-publisher-chain-edge-gate/decision.json",
+    "sha256": "4a42a78e17f632ba9c929b0f54b2598c74a477a886266821a69f4b18c63c932b"
+  },
+  "full_static_delta": 0,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-xender-independent-review-v1/REVIEW.json",
+    "sha256": "ad57707744308d0cd970a002c627414c7ce64a13a74776ffdb33b6d7b42e84b1"
+  },
+  "package": "cn.xender",
+  "publisher_config_api": "https://js.xdd-w-00tj3nsj.com/h5_upd_url?app=xd&platform=",
+  "publisher_landing": "https://www.xender.com/",
+  "raw_delta": 1,
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "Frozen landing-to-JS-to-config-to-CDN chain and independently rehashed signed exact APK; CDN MIME octet-stream; no external publisher cert pin or runtime",
+  "version_code": "1000310",
+  "version_name": "19.0.0.prime"
+}

@@ -1,0 +1,127 @@
+{
+  "container_commands": 0,
+  "device_commands": 0,
+  "local_ssh_file_identity": {
+    "known_hosts": {
+      "exists": true,
+      "sha256": "519aab445016e0a5fc983a1210037535908dab7711c13c9075f16e868f24b53b"
+    },
+    "ssh_config": {
+      "exists": true,
+      "sha256": "d99dc196e3fd7fdbe1c6eb5e6c43a5d85256e659ef5abfd5e27587b318726fdd"
+    }
+  },
+  "rows": [
+    {
+      "argv": [
+        "uname",
+        "-sm"
+      ],
+      "finished_at_utc": "2026-10-04T21:28:07.509879+00:00",
+      "name": "host-os",
+      "rc": 0,
+      "started_at_utc": "2026-10-04T21:28:07.506891+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 13,
+      "stdout_sha256": "16b8cd028eb757aab907ab404e1656e01783846457156eec99372a91fc1b104d",
+      "timed_out": false,
+      "timeout_seconds": 3
+    },
+    {
+      "argv": [
+        "route",
+        "-n",
+        "get",
+        "1.95.90.207"
+      ],
+      "finished_at_utc": "2026-10-04T21:28:07.513285+00:00",
+      "name": "gz02-kernel-route",
+      "rc": 0,
+      "started_at_utc": "2026-10-04T21:28:07.510128+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 319,
+      "stdout_sha256": "5c165d1f48b0354d37ceadbf81827b75e25b52a05e134443feeb4cbc590fadd5",
+      "timed_out": false,
+      "timeout_seconds": 3
+    },
+    {
+      "argv": [
+        "dscacheutil",
+        "-q",
+        "host",
+        "-a",
+        "name",
+        "alexpc.local"
+      ],
+      "finished_at_utc": "2026-10-04T21:28:12.516919+00:00",
+      "name": "alexpc-local-dns",
+      "rc": 124,
+      "started_at_utc": "2026-10-04T21:28:07.513495+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": true,
+      "timeout_seconds": 5
+    },
+    {
+      "argv": [
+        "lsof",
+        "-nP",
+        "-iTCP:7897",
+        "-sTCP:LISTEN"
+      ],
+      "finished_at_utc": "2026-10-04T21:28:12.555990+00:00",
+      "name": "local-proxy-listener",
+      "rc": 1,
+      "started_at_utc": "2026-10-04T21:28:12.517227+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": false,
+      "timeout_seconds": 3
+    },
+    {
+      "argv": [
+        "ssh",
+        "-G",
+        "gz02"
+      ],
+      "finished_at_utc": "2026-10-04T21:28:12.563886+00:00",
+      "name": "gz02-ssh-effective-config",
+      "rc": 0,
+      "started_at_utc": "2026-10-04T21:28:12.556292+00:00",
+      "stderr_bytes": 72,
+      "stderr_sha256": "d0e14941dee288cc8de19e48436cdf3c2e7939d4b98136c44d954b5f8be73d8a",
+      "stdout_bytes": 4376,
+      "stdout_sha256": "2ef35b4d8a2a7d4ef189fb6025a75853320e264bf2709a2fc7677c01864d3514",
+      "timed_out": false,
+      "timeout_seconds": 3
+    },
+    {
+      "argv": [
+        "ssh",
+        "-G",
+        "alexpc"
+      ],
+      "finished_at_utc": "2026-10-04T21:28:12.569263+00:00",
+      "name": "alexpc-ssh-effective-config",
+      "rc": 0,
+      "started_at_utc": "2026-10-04T21:28:12.564193+00:00",
+      "stderr_bytes": 72,
+      "stderr_sha256": "d0e14941dee288cc8de19e48436cdf3c2e7939d4b98136c44d954b5f8be73d8a",
+      "stdout_bytes": 4376,
+      "stdout_sha256": "d6bf2118f321008806e5b3fe08b483e41722dca800cd304f75a81b53f2f09cd2",
+      "timed_out": false,
+      "timeout_seconds": 3
+    }
+  ],
+  "schema": "peer-native-linux-entry-local-observation-v1",
+  "scope": "Local OS route, name resolution, listener and ssh configuration only; no SSH connection, target TCP, proxy mutation, device, container, Bridge or Soong action",
+  "soong_commands": 0,
+  "ssh_connections": 0,
+  "target_tcp_commands": 0
+}
