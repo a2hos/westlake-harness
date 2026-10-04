@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-04T08:17:49.944511+00:00",
+  "status": "RAW76_STATIC72_G274_V18_INPUT_AND_EXTENSION_ONLY",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "budget": 20000000000,
+  "device_hold": true,
+  "raw_payloads": 76,
+  "complete_static_inventories": 72,
+  "dex_entries": 131,
+  "elf_entries": 477,
+  "whole_bionic_tools": 0,
+  "historical_musl_source_pass": 38,
+  "cold_start_200": 0,
+  "qualified_blackbox_start_100": 0,
+  "reflection_pending_groups": 3,
+  "reflection_latest": {
+    "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
+    "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
+  },
+  "g273": {
+    "terminal_rc": 2,
+    "exec_session": 42573,
+    "terminal_chunk": "37e6c6",
+    "root_review": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/root-release-v1/G273-REVIEW.json",
+    "root_review_sha256": "9ef63a4e1c9bd6b8a6f944c0d9d52031bab8242a9384a02eedaef7fc07898c93",
+    "first_wall": "documentsui_defaults; 12 distinct undefined module names, 18 diagnostics",
+    "target_compile_commands": 0
+  },
+  "g274": {
+    "nine_exact_r4_sources_admitted_only": true,
+    "input_only_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/root-input-admission-v1/ADMISSION.json",
+    "input_only_sha256": "938389eac68203b94c0e0ded93e0bee9f54fcd641388f0d0a518d5803dc84899",
+    "static_extension_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/root-static-review-v1/REVIEW.json",
+    "static_extension_sha256": "c790949f79388aa06ea04d0c61271a052104d103090b80c0d90d002431656791",
+    "full_executor_candidate_independent_review": false,
+    "linux_mount_executed": false,
+    "original_owner_new_ACK": false,
+    "graph_executed": false
+  },
+  "github_commit": "641613ce3b119a88c5d2176395dcd655c3f65d9a",
+  "github_remote_verified": true,
+  "published_scope": "76/72 compact summary, Vivaldi raw+static root reviews, G274 v18 input/static extension reviews, EVO16; raw APK/build archives local",
+  "next": "Do not replay G273. Independently review G274/v18 full executor, root review, original owner fresh ACK/root seal, then one-shot graph. Reflection after next actual result group. Device HOLD/whitelist."
+}
