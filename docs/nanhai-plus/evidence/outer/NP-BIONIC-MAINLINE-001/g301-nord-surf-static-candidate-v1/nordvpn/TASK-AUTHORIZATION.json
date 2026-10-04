@@ -1,0 +1,12 @@
+{
+  "scope": "G301 one local host-only four-phase static scan of exact nordvpn original APK",
+  "inputs_sha256": "405abe1a16d28830e3327287facf605da4a781c40279048151cd58b707718752",
+  "runner_sha256": "29705d1fb512c1d012f1352122d1cc65f9b46f14f6658af723284a76611f23cb",
+  "scan_phase_sha256": "7781c1755f5fac9481e9118044b6f2c49505c866f26ebbfc9a93450479d13c43",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "raw_admission_sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
+  "attempts": 1,
+  "device_commands": 0,
+  "container_commands": 0,
+  "authorization": "User request delegated by outer to G301 peer"
+}

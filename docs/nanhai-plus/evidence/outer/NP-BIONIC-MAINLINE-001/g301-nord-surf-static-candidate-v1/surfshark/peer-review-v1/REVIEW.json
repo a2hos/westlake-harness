@@ -1,0 +1,38 @@
+{
+  "schema": "g301-surfshark-independent-four-phase-static-review-v1",
+  "decision": "GO_FOUR_PHASE_HOST_STATIC_EVIDENCE_ONLY",
+  "package": "com.surfshark.vpnclient.android",
+  "version": "3.35.0",
+  "apk_sha256": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+  "result_sha256": "23214044c5eac96ac6847eb8457313e35b7ed349ee732669ac7a0149017149ca",
+  "checks": {
+    "outer_rc": 0,
+    "four_phase_rc": {"zip": 0, "metadata": 0, "elf": 0, "dex": 0},
+    "outer_and_all_phase_raw_stream_sha_match": true,
+    "all_phase_command_and_result_rc_match": true,
+    "all_phase_source_apk_tool_postguards": true,
+    "source_before_after_byte_equal": true,
+    "runner_scan_phase_common_sha_match_task_authorization": true,
+    "current_original_apk_sha_match_inputs_and_g299": true,
+    "zip_all_crc_scanned": true,
+    "zip_entries": 3971,
+    "manifest_package_version_match": true,
+    "dex_entries": 4,
+    "true_elf_entries": 138,
+    "arm64_true_elf_entries": 37,
+    "all_elf_readelf_ok": true,
+    "native_unclassified_zero": true
+  },
+  "phase_result_sha256": {
+    "zip": "206fb395bb0f8a9f0421724facb35fea6133c082e609c7eade8d553ab30d119b",
+    "metadata": "0e2d3edae9239c9f89e1cae27de42bc18529cf5c5217e96f53d3992c584b5955",
+    "elf": "5b01031614ef50defc6f74624158d1ddae8772b52a849146890c30b38554b889",
+    "dex": "8043d3abff5002d7f47fa40e854b3398dca0ddf7ebad1cc9bd69c4b857212340"
+  },
+  "scope_limit": "Independent acceptance of exact original APK host ZIP/metadata/ELF/DEX static evidence only. G300 separately qualified this package as overseas mainstream blackbox; G301 RESULT.blackbox_qualified=false is a local scan-status field, not a revocation of G300. Publisher-to-signing-certificate binding remains unproven. No OH7/Bionic install, startup, screen, input, or VPN service evidence.",
+  "canonical_count_changed_by_review": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "remote_calls_by_review": 0,
+  "next": "Separate root admission of complete static inventory; retain independent qualification and cold-start counters"
+}

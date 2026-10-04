@@ -1,0 +1,83 @@
+{
+  "schema": "g299-blackbox-next-intake-independent-review-v1",
+  "decision": "GO_TWO_RAW_IDENTITIES_AND_CONDITIONAL_BLACKBOX_QUALIFICATION; NO_FOUR_PHASE_STATIC",
+  "scope": "Two original official-site Android APK candidates only. Independent root raw admission and separate blackbox qualification are still required before canonical counts change; no install, graph, device or cold-start evidence.",
+  "candidate_sha256": "0a97aa3e61a12fa380af0da2deca97997e574d448b0e1748e6259f2088d1e626",
+  "source_sha256": {
+    "scan_py": "0d90c2a2723657d38d9638dcdee7e5f1f62d8db238366c2e020edba011edc263",
+    "handoff": "cc21e0d46dbd597875158b8f1f1603e218d16feceaa8f9f8e832a4d5f922f4ba"
+  },
+  "checks": {
+    "independent_original_apk_sha_size_recomputed": true,
+    "independent_full_zip_crc_and_unique_entry_names": true,
+    "independent_all_arm64_elf64_aarch64_headers": true,
+    "aapt2_package_and_version_from_retained_badging": true,
+    "apksigner_verify_reexecuted_on_both_original_apks": true,
+    "official_pages_link_the_recorded_download_channels": true,
+    "google_play_exact_package_and_overseas_mainstream_market": true,
+    "canonical_83_raw_and_5_qualified_package_ids_have_no_duplicates": true,
+    "westlake_handoff_gate_pass": true,
+    "publisher_to_signing_certificate_independently_bound": false,
+    "four_phase_host_static_inventory_per_package_complete": false
+  },
+  "packages": {
+    "nordvpn": {
+      "package": "com.nordvpn.android",
+      "version_code": "1002121",
+      "version_name": "9.14.1+sideload",
+      "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+      "bytes": 109609596,
+      "zip_entries_crc_checked": 3517,
+      "dex_entries_presence_count": 3,
+      "arm64_elf_count": 20,
+      "verified_signature_scheme": "v3",
+      "certificate_sha256": "bc64ae0725af656b3b10b684cd1df4c9d6b7f81bc5dc32df3a3b2ce94ce61466",
+      "certificate_dn_observed": "O=Tefincom; does not itself attest the current Nord Security publisher",
+      "official_page": "https://nordvpn.com/download/android/",
+      "official_download": "https://downloads.nordcdn.com/apps/android/generic/nordvpn-sideload/latest/v2/NordVPN.apk",
+      "effective_url": "https://downloads77-android.nordcdn.com/apps/android/generic/nordvpn-sideload/latest/v2/NordVPN.apk",
+      "google_play": "https://play.google.com/store/apps/details?id=com.nordvpn.android",
+      "play_publisher": "Nord Security",
+      "play_global_download_floor": "100M+",
+      "raw_identity_decision": "GO_INDEPENDENT_ROOT_RAW_ADMISSION",
+      "blackbox_decision": "GO_SEPARATE_ROOT_QUALIFICATION_AFTER_RAW_ADMISSION_UNDER_G297_STANDARD",
+      "complete_four_phase_static_decision": "NO_GO_NOT_RUN"
+    },
+    "surfshark": {
+      "package": "com.surfshark.vpnclient.android",
+      "version_code": "310048760",
+      "version_name": "3.35.0",
+      "apk_sha256": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+      "bytes": 156032892,
+      "zip_entries_crc_checked": 3971,
+      "dex_entries_presence_count": 4,
+      "arm64_elf_count": 37,
+      "verified_signature_scheme": "v1+v2",
+      "certificate_sha256": "4a0dc39f29beeeed408f8c33acbb3b18c14eac24a76208aa566e5cab8f3e3726",
+      "certificate_dn_observed": "all Unknown; no publisher identity can be inferred from DN",
+      "official_page": "https://surfshark.com/download/android",
+      "official_download": "https://downloads.surfshark.com/android/Surfshark.apk",
+      "effective_url": "https://downloads.surfshark.com/android/Surfshark.apk",
+      "google_play": "https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android",
+      "play_publisher": "Surfshark B.V.",
+      "play_global_download_floor": "10M+",
+      "raw_identity_decision": "GO_INDEPENDENT_ROOT_RAW_ADMISSION",
+      "blackbox_decision": "GO_SEPARATE_ROOT_QUALIFICATION_AFTER_RAW_ADMISSION_UNDER_G297_STANDARD",
+      "complete_four_phase_static_decision": "NO_GO_NOT_RUN"
+    }
+  },
+  "provenance_boundary": "Both official product pages offered APK download links to the exact recorded vendor domains, and retained HTTP headers and local bytes have matching sizes. Nord's retained x-digest equals the APK SHA, but x-signature was not verified against an independently published Nord key. Official-site distribution and cryptographically valid APK signatures are distinct facts; neither the certificate DN nor Play listing publishes the exact signing-certificate fingerprint or proves Play-byte identity.",
+  "minimal_publisher_signer_supplement": "Obtain from each publisher an official current Android APK signing-certificate SHA-256 or a publisher-signed checksum/release manifest for the exact download, then compare the fingerprint or verify the signed SHA against these original bytes. For Nord, a publisher-pinned public key allowing verification of the retained x-authorization/x-digest/x-signature headers could close the byte-publisher chain. Repeating a TLS download alone does not independently bind the APK signing certificate to the publisher.",
+  "counts": {
+    "accepted_before": {"raw": 83, "complete_four_phase_static": 80, "qualified_overseas_blackbox": 5, "cold_start": 0},
+    "delta_now": {"raw": 0, "complete_four_phase_static": 0, "qualified_overseas_blackbox": 0, "cold_start": 0},
+    "possible_after_separate_root_admissions": {"raw": 85, "complete_four_phase_static": 80, "qualified_overseas_blackbox": 7, "cold_start": 0}
+  },
+  "static_gap": "G299 verifies archive CRC, manifest, signatures, DEX presence and 57 ARM64 ELF headers, but does not run the established four-phase package inventory/consumer/API/ELF scan or independent postrun. No complete-static increment is defensible.",
+  "limits": [
+    "Google Play 100M+/10M+ are package-level worldwide lifetime buckets, not exact APK version downloads, US installs or runtime success.",
+    "Original APKs are local bytes from moving vendor download URLs; exact future URL content may differ.",
+    "Neither APK was installed or cold-started on OH7/Bionic; VPN service functionality is untested."
+  ],
+  "actions": {"ssh_calls": 0, "device_commands": 0, "graph_commands": 0, "container_commands": 0, "candidate_mutations": 0, "canonical_summary_mutations": 0}
+}

@@ -1,0 +1,1139 @@
+{
+  "entries_scanned": 3971,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 321038422,
+  "compressed_bytes": 155520995,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 10231908,
+        "sha256": "9421164c7c83237789ea9497bb18fa2c70ccb8fcda4d8159c979533c5bd6d199"
+      },
+      {
+        "name": "classes2.dex",
+        "bytes": 588292,
+        "sha256": "e1956667699a41c254b59a0952b01d08d413569c316ce2bd665765f8ac5cc5f7"
+      },
+      {
+        "name": "classes3.dex",
+        "bytes": 11834992,
+        "sha256": "4e011b704ac53694a4c7abe135f6db4f6974a5ff4ba3d189659c5224288bdcc6"
+      },
+      {
+        "name": "classes4.dex",
+        "bytes": 2753716,
+        "sha256": "0868a4de9857f6b56f28d00e4d602cc53f34887118f0b2dcb72f07fe9b8bce38"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/libaecore.so",
+        "bytes": 257168,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3397b7ae4234115eb742e8bc554bbf86e9c404198dd539008a39f3d509806773"
+      },
+      {
+        "name": "lib/arm64-v8a/libaedroid.so",
+        "bytes": 223336,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f7e5d32e4f2f714fee73b958ae5010a1006222966852471a09cb9dede4f190e1"
+      },
+      {
+        "name": "lib/arm64-v8a/libaeelf.so",
+        "bytes": 62320,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "e9c7e1a46f928adf9b5bfd4e11f06f18fa0b254f4fb97de986d5f56f5178bc2e"
+      },
+      {
+        "name": "lib/arm64-v8a/libaehelp.so",
+        "bytes": 213096,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4bee780570da108571e369bdfa9c7cfab2db0a83c3d6aa279fdfc920e7c61add"
+      },
+      {
+        "name": "lib/arm64-v8a/libaemobile.so",
+        "bytes": 503104,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b85ea1d3e5dbbfe5f9d5b268d62cc4697801e2c4ef18cad676f5f7e00e1cd1c8"
+      },
+      {
+        "name": "lib/arm64-v8a/libaepack.so",
+        "bytes": 235984,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b49107a6554c63c0e53b0e41ad878b06ff7447d14a75d7059900791e72e0a12e"
+      },
+      {
+        "name": "lib/arm64-v8a/libaescn.so",
+        "bytes": 109736,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "156f90ac3eadedf1a848996777c626db2d6e36166104c3636673fa4ebc3e7c52"
+      },
+      {
+        "name": "lib/arm64-v8a/libaevdf.so",
+        "bytes": 78624,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "dda11682471c606c7a4afeaec372ca125b0c89e54ccf0bc15b042e11090bbfd8"
+      },
+      {
+        "name": "lib/arm64-v8a/libanalytics.so",
+        "bytes": 250512,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b0619701413f313c9fc1e3db36980147bcdc5a1974611866e50f59bcd2f20c5f"
+      },
+      {
+        "name": "lib/arm64-v8a/libandroidbridge.so",
+        "bytes": 103256,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "75706d10410a6944b7fec26dec98801f9a431496a0486acd793b0c92620a00c8"
+      },
+      {
+        "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+        "bytes": 10096,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+      },
+      {
+        "name": "lib/arm64-v8a/libantivirus.so",
+        "bytes": 138792,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a0a141a2d9f431fc7ddb15f1ef35c281f8067aa5daa839dc2ba10320e3bb081f"
+      },
+      {
+        "name": "lib/arm64-v8a/libapp.so",
+        "bytes": 259944,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "60eef923049adc98043f3d37be4e98cdf66ced871bf2f6d7ca67e14f31ced34e"
+      },
+      {
+        "name": "lib/arm64-v8a/libauth.so",
+        "bytes": 251576,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "e825c8043bd239ca9118fae1083f8395274c16d96b5061805852fccb7b9e865d"
+      },
+      {
+        "name": "lib/arm64-v8a/libcharon.so",
+        "bytes": 1207184,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6c9d3bdc91cd1b9134bb3daccd43a27a7b12771208aba518fa2f7ab339118017"
+      },
+      {
+        "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+        "bytes": 7112,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1"
+      },
+      {
+        "name": "lib/arm64-v8a/libimcv.so",
+        "bytes": 412520,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "fe8bb24fe49990a7b01ac5230eb094ba4962cb12ed957cbaab186e2e29d115f2"
+      },
+      {
+        "name": "lib/arm64-v8a/libipsec.so",
+        "bytes": 61064,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b0cb2fe58511f0aa177c18b1de5285c12c4bcce2cc56257fe2198505da81ecdf"
+      },
+      {
+        "name": "lib/arm64-v8a/libjingle_telnyx_peerconnection_so.so",
+        "bytes": 11586416,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "94c33c623b7c9a6844c908ba0cc4abe3bc2264f3f5f307f09212485b11214fd5"
+      },
+      {
+        "name": "lib/arm64-v8a/libmavapi.so",
+        "bytes": 213960,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "19b15a0fe091b78a2c8722600a0ef36ada63d6f8b70f00c30176e109accd3c5d"
+      },
+      {
+        "name": "lib/arm64-v8a/libmltransformersaudionoisesuppression.so",
+        "bytes": 8454248,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f6a0aee77ed3988d99b8b738b4da5401b85d6ef9652e1744b384e5b1be2654bf"
+      },
+      {
+        "name": "lib/arm64-v8a/libnetwork.so",
+        "bytes": 235240,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "db852c2040c40c40f5ba38c1e380b483d3a774f0e4619321c2b5952c4a962584"
+      },
+      {
+        "name": "lib/arm64-v8a/libopenvpn.so",
+        "bytes": 6027080,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f97e690e5e6fae8ea61f776d72c160c4217ddb36da7b7ee4f0ccbc5f906b2774"
+      },
+      {
+        "name": "lib/arm64-v8a/libosslspeedtest.so",
+        "bytes": 4103904,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "81bed19018ce5bca0543f5c8cff718a7475cee8ceeddc4338f5f064ba3f58414"
+      },
+      {
+        "name": "lib/arm64-v8a/libosslutil.so",
+        "bytes": 4103768,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6a8674ccc83863e73af78a4589482f3e83f158aab393b5002cc87f6e28c4fee0"
+      },
+      {
+        "name": "lib/arm64-v8a/libovpnexec.so",
+        "bytes": 4224,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b002e5bd253405789f4741085c8718bc8dae3d532349110dacd9d79796f47dcf"
+      },
+      {
+        "name": "lib/arm64-v8a/libovpnutil.so",
+        "bytes": 4448,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "c1de053abf1792e6f1e972371fd19e61c3bc64ceeb38a25cc3c8ee8c344f92bf"
+      },
+      {
+        "name": "lib/arm64-v8a/libsqlcipher.so",
+        "bytes": 6571864,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "91060e3d9360d4ac0858633f24ed97a62b66b6cdf18c00f8ef8a1e39e72fd76f"
+      },
+      {
+        "name": "lib/arm64-v8a/libstrongswan.so",
+        "bytes": 4637224,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4100585afdf0782f3a3fccb9469e270e94a59179425a500a70f6681f5d22146d"
+      },
+      {
+        "name": "lib/arm64-v8a/libtnccs.so",
+        "bytes": 114240,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b1e5db1956227d682b58641550b90a8c2f97eda93917b06da1c4fd1265102d76"
+      },
+      {
+        "name": "lib/arm64-v8a/libtncif.so",
+        "bytes": 12792,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6901e6a418d9832dd61766fb7dc7faaba4b7919a19de4664474a383321db47fc"
+      },
+      {
+        "name": "lib/arm64-v8a/libtoolChecker.so",
+        "bytes": 5512,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "8b8e358b836ce35835d40bc1b5b935c34633e535eb7bc7642c9762e2f27cb683"
+      },
+      {
+        "name": "lib/arm64-v8a/libtpmtss.so",
+        "bytes": 14232,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "e0d88b25dac9cd6da66e2bb48ab867340607361a1b97f51ef69f688bae5e0f47"
+      },
+      {
+        "name": "lib/arm64-v8a/libvonage-voice-sdk.so",
+        "bytes": 9978808,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "1a07a1acea1a68638b0937a40277afefff26fb649a1c1efdbd847f963eeaeceb"
+      },
+      {
+        "name": "lib/arm64-v8a/libwg-quick.so",
+        "bytes": 39040,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "4f8185e98b251f152e3d66206ca5dfea6d6cbc9c8e98b10d5873de4e6df71e7f"
+      },
+      {
+        "name": "lib/arm64-v8a/libwg.so",
+        "bytes": 243568,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "a39b53cccdc89a0a4064490205fbb9ef468fbf57b37f506af5d74aa62752b29b"
+      },
+      {
+        "name": "lib/arm64-v8a/libwgdns-go.so",
+        "bytes": 7534512,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "85c2ae855246034dcabf32a6815b3a76ab8d3137ab3ba1fde86f6cfa31fd825c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaecore.so",
+        "bytes": 261048,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "830fd81426b11c3394cfb4a7cff25cdb901974528f599f71405609dc16d512cb"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaedroid.so",
+        "bytes": 199408,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "88d43d4b6c04eb361081fcbabb2261d72fa29ecbbdefdda47b3b295009a774ac"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaeelf.so",
+        "bytes": 72048,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "64a27250b669cede9985a0dbde06857ecc4c9f5e0d860c95206b4e68d68fb222"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaehelp.so",
+        "bytes": 232840,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b07d460a55c994bfb3ab4e6ca276fc672fc39424bfa045d51e6fab2233120c94"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaemobile.so",
+        "bytes": 422840,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "f31562312332289379524836df4bc90afc036edd82caa1165981e1dd553f22b4"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaepack.so",
+        "bytes": 249776,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7913d60c197ee09588a01ab4a84c2a1fa1917b986d88690403056b92ae325c63"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaescn.so",
+        "bytes": 130192,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "1c9d1d4d75f155f8016b6a7f99aa9b674848490df129b000a2efd93d9e65c92d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libaevdf.so",
+        "bytes": 100944,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "87a3f4b29250dbbc28260f47a89f285e3ccd2d274902551a9f7236c82f1a64a7"
+      },
+      {
+        "name": "lib/armeabi-v7a/libanalytics.so",
+        "bytes": 145524,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "96245a4b90ee5f0d86200bed5eaf396bdf9a02271cedf91941598108d346f229"
+      },
+      {
+        "name": "lib/armeabi-v7a/libandroidbridge.so",
+        "bytes": 92176,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "636dfc8196b40213ee6ff9812c6ee73b6a7121364640417eb9b739fa7133e0a2"
+      },
+      {
+        "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+        "bytes": 7252,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b"
+      },
+      {
+        "name": "lib/armeabi-v7a/libantivirus.so",
+        "bytes": 96596,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "784ac6a241967c3173b652a2a0965c966cc743d0f46d84202b46082046323c22"
+      },
+      {
+        "name": "lib/armeabi-v7a/libapp.so",
+        "bytes": 154436,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "278042e6448db33452d4dbea46f9949b587d487d499212f8856ec10cdfb22efc"
+      },
+      {
+        "name": "lib/armeabi-v7a/libauth.so",
+        "bytes": 146444,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6b2ca825405d1904c33f0549ca1bf34746c9eb5ae5e34926e77c94e984907325"
+      },
+      {
+        "name": "lib/armeabi-v7a/libcharon.so",
+        "bytes": 1140160,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "c3f316cfbb64289cebd298bbf92cef2cd22d16dbfcf5d3978a8f968119225ef6"
+      },
+      {
+        "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+        "bytes": 4416,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "716c5d8d2cac8ca0edf65da8f139c7886b726ac79d542a14edeb94994ba6d3dc"
+      },
+      {
+        "name": "lib/armeabi-v7a/libimcv.so",
+        "bytes": 366876,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "beb79459dbdf4a550caa5b365b3a3a90e98abbcd50606e6f85cc64f621810734"
+      },
+      {
+        "name": "lib/armeabi-v7a/libipsec.so",
+        "bytes": 51976,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "0e34840f5be9fed1f897b3feea3063a6b59e43542cf1b0600875c11082bb27bd"
+      },
+      {
+        "name": "lib/armeabi-v7a/libjingle_telnyx_peerconnection_so.so",
+        "bytes": 6558928,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7456ba4b90bedb7bfa57eaa2bc1567eab5ae99438e6d1d35605647141ff61b9c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libmavapi.so",
+        "bytes": 142172,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6920a8226f18b2a8886c87a646e834d727d62cd771e045646d763a5a07b538ad"
+      },
+      {
+        "name": "lib/armeabi-v7a/libmltransformersaudionoisesuppression.so",
+        "bytes": 7258020,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "2e3531809b69545e21a7f17922786db1223b904db7a3c59a7aaa8758f8ffc9a8"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnetwork.so",
+        "bytes": 142220,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "34f3febca7ab929c2f5a71ea28d999eaf69261e36338a0c67548c70987aad765"
+      },
+      {
+        "name": "lib/armeabi-v7a/libopenvpn.so",
+        "bytes": 4057656,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "8778c9824bbe0eac5d007e7d8a4b74ada5118ecfee98b14527d8da88b12989db"
+      },
+      {
+        "name": "lib/armeabi-v7a/libosslspeedtest.so",
+        "bytes": 2654532,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "4945d55f0653da497ae911e06d21a513f6c03655ff4216c92b50d450869eee4d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libosslutil.so",
+        "bytes": 2653752,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "525a63fa84ee51294ecfc9675633ac1390eb9506a9c9b32cce7f5f0184e4a109"
+      },
+      {
+        "name": "lib/armeabi-v7a/libovpnexec.so",
+        "bytes": 2908,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "61d95218291956a21a7ad348a011c99ca8adac5c1aa6dad726f5af4863c6d50b"
+      },
+      {
+        "name": "lib/armeabi-v7a/libovpnutil.so",
+        "bytes": 3160,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "a028e094976ef9f01f99fcf328bf54bcba69a8a58ebe1682ceece0ce7a0d3aa0"
+      },
+      {
+        "name": "lib/armeabi-v7a/libsqlcipher.so",
+        "bytes": 4109732,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "c5c01c5250ac119ce4f54da6bcb82b54355acf54bcbb240f9d9d12b88a557ee5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libstrongswan.so",
+        "bytes": 3662392,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "245127ed5cb7ec7f69adeb28e7a25b95f6ec6d95103097093567bbde8d4916a7"
+      },
+      {
+        "name": "lib/armeabi-v7a/libtnccs.so",
+        "bytes": 99428,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "b275a35e448734f34ecadc940c5a25b725976fd386deabb89d70fdfa70d1cd69"
+      },
+      {
+        "name": "lib/armeabi-v7a/libtncif.so",
+        "bytes": 9016,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "aa0b7ec78b4e063d25f238b2a9651d1f73b52a2ed6626c4f0603d00719e2f54c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libtoolChecker.so",
+        "bytes": 3944,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "a376216f7b70585b27763cb4627584485c4382a52dab07aa262c255a71ac060d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libtpmtss.so",
+        "bytes": 9252,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "ebc1aa78b6c7fea62031b497ca733ceab55d5ed2c2a6cfc5dbdc8e600c62b72f"
+      },
+      {
+        "name": "lib/armeabi-v7a/libvonage-voice-sdk.so",
+        "bytes": 6362432,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6df0fe62faabdbe71ade8e13785c8af568713c01a8a37c66e5b4a4f7b3015a34"
+      },
+      {
+        "name": "lib/armeabi-v7a/libwg-quick.so",
+        "bytes": 26336,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "24639cf8a58a530b8d83aead41fde64aed6b242d6acb389b851a02f4ce90542c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libwg.so",
+        "bytes": 61368,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "8ea7101ef4de89a89a8d9b2ce7180aaa64d9c3614a6f454a04b0f2a3c54c2c91"
+      },
+      {
+        "name": "lib/armeabi-v7a/libwgdns-go.so",
+        "bytes": 7387020,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "5d3e95e46709f0803481fe80779cc4f2ae192fc0d0c7f6f3e390f983f2828d49"
+      },
+      {
+        "name": "lib/x86/libanalytics.so",
+        "bytes": 211044,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "261977208386f3d6d1dce885f494e6be097e9f93a222752b5a13bcc06412a27d"
+      },
+      {
+        "name": "lib/x86/libandroidbridge.so",
+        "bytes": 106700,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "f8874119a371f780be0ac7cc32c74334319a1243eda917f338b986ce047a36e3"
+      },
+      {
+        "name": "lib/x86/libandroidx.graphics.path.so",
+        "bytes": 9284,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "eb0570b41fd3bff25d8204a967c03bd7550719e768b791f680cc40cbe35f29af"
+      },
+      {
+        "name": "lib/x86/libapp.so",
+        "bytes": 220724,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "fd7452b603c63e6d0e9a85bbb3ec4a7bb4c0695d445f93e1f9527d9fda5dd18d"
+      },
+      {
+        "name": "lib/x86/libauth.so",
+        "bytes": 212268,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6c63cf38d5a7930c84fa54730b7c94a23ae098ec8525f25ec15e1df6f398a577"
+      },
+      {
+        "name": "lib/x86/libcharon.so",
+        "bytes": 1354036,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "428a42742b7745838a71cdb925374f0c0cec8791db86d1b3a83815dfcd382918"
+      },
+      {
+        "name": "lib/x86/libdatastore_shared_counter.so",
+        "bytes": 5148,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "cd4a1649e2c8350703146f94a6ee2bf4c3c8c9f172159f805b61a4a2abdf0659"
+      },
+      {
+        "name": "lib/x86/libimcv.so",
+        "bytes": 420712,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "b6d2a3a22d7cbb3695cdad982c3f41a5e1ab0452e29c54e013c08bdc108c3465"
+      },
+      {
+        "name": "lib/x86/libipsec.so",
+        "bytes": 60532,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "9f4d6c60694f7ee40768135e6f7a286c204d3d13724ab45ac17153c1006a2e46"
+      },
+      {
+        "name": "lib/x86/libjingle_telnyx_peerconnection_so.so",
+        "bytes": 12254864,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6b2d9fc6a7f213f1aa584a03f931651353352b6a1103d325b3f13b7d17e2393c"
+      },
+      {
+        "name": "lib/x86/libmltransformersaudionoisesuppression.so",
+        "bytes": 9508584,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8edd05782756fc26443c5105efcb5230b4d4951396e0025bf871caac6417a285"
+      },
+      {
+        "name": "lib/x86/libnetwork.so",
+        "bytes": 206264,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8d3ccd7b44c8e705337bc61c8c9472eafdfd100bccb025bbf4dd9b52cb196ca9"
+      },
+      {
+        "name": "lib/x86/libopenvpn.so",
+        "bytes": 5758336,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6f41e8ef5e49306e5bb1291c2b2549aa848f1239acce728d16a9c6d4161be29f"
+      },
+      {
+        "name": "lib/x86/libosslspeedtest.so",
+        "bytes": 3766612,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "955c01af8628f0b8121928fd3530ef0377b5d0e682758a1f5cc524b6571b736c"
+      },
+      {
+        "name": "lib/x86/libosslutil.so",
+        "bytes": 3766472,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "468275b68b33553f6372f42c8e9a2c0905725286939992133e23d47ba58e5fc0"
+      },
+      {
+        "name": "lib/x86/libovpnexec.so",
+        "bytes": 3004,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "f7352fd67954feb5876ebc32f862a12d21d732664038192c0cc699fd352ab8ba"
+      },
+      {
+        "name": "lib/x86/libovpnutil.so",
+        "bytes": 3524,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "8bdb84f8a945e841fbb6926c00d98bce2bef639cc28e8f1ec1ab855b111c5aa1"
+      },
+      {
+        "name": "lib/x86/libsqlcipher.so",
+        "bytes": 5553460,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "4996f4449e54b3f6099b9ffe334255c57405582bc9e36f3334edc1c67d079879"
+      },
+      {
+        "name": "lib/x86/libstrongswan.so",
+        "bytes": 4375144,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "399edd7fdf3745f0c0d4693c5c90a2a0236b3512f127de5b62c178be4593e6f7"
+      },
+      {
+        "name": "lib/x86/libtnccs.so",
+        "bytes": 113596,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "5ead8fe269722aa7f29601d53d05e7a39f7e96c06b006fd01aa129e6a36e2eaf"
+      },
+      {
+        "name": "lib/x86/libtncif.so",
+        "bytes": 9552,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "87a984789b70aa9e6b25667e78c29e1f4dece6f4fa28bc5ddc518f05eb559f98"
+      },
+      {
+        "name": "lib/x86/libtoolChecker.so",
+        "bytes": 4292,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "c023aa7d3b9965364893ada1210eddbbfb206416f59f79a915b4b8143c15de6e"
+      },
+      {
+        "name": "lib/x86/libtpmtss.so",
+        "bytes": 10628,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "71e2fd0ac959d083c2d3d4c234049ca3846fb9be0d9aefc97d42464e085991c2"
+      },
+      {
+        "name": "lib/x86/libvonage-voice-sdk.so",
+        "bytes": 12203212,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6b03bb00389669f50b8e51bd6a373ef423c232acb784efd372a2c14b015422f8"
+      },
+      {
+        "name": "lib/x86/libwg-quick.so",
+        "bytes": 41232,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "47637b0efee91b76c0dcb07b5c9824e21b6c1a00b7e226dd367bc9152c7ad581"
+      },
+      {
+        "name": "lib/x86/libwg.so",
+        "bytes": 110948,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "37568319dd16c703643971210bf3f1686fe46f6a1d078b193882487d94134c35"
+      },
+      {
+        "name": "lib/x86/libwgdns-go.so",
+        "bytes": 7459400,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "2b49cde010495e37581df5c9eb724b75337effb7e664fd76d2b36a5d20e44db6"
+      },
+      {
+        "name": "lib/x86_64/libaecore.so",
+        "bytes": 278944,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "ac2d383626ae304d684a280aa2e46f940f75c421062e45506f446b112e1e7a3f"
+      },
+      {
+        "name": "lib/x86_64/libaedroid.so",
+        "bytes": 234448,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "009a577d9dd8b513ec01ac4039945598f222a46c854e37ff3968077514b3e985"
+      },
+      {
+        "name": "lib/x86_64/libaeelf.so",
+        "bytes": 62056,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "75b93cf835a7b0f985e4923c795ae155f91ba01a87a44ab5fd1dedb2feb72857"
+      },
+      {
+        "name": "lib/x86_64/libaehelp.so",
+        "bytes": 225840,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "f0fbfd7efa5e4c4f1e3222bbe96f53eba1f4311c971aca52d75e4faba56d9fd1"
+      },
+      {
+        "name": "lib/x86_64/libaemobile.so",
+        "bytes": 489544,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "43378c5876ec122e889381fdb14b2525d0cca29f6a7c86fe2b2d5a9d3158a8b9"
+      },
+      {
+        "name": "lib/x86_64/libaepack.so",
+        "bytes": 260152,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "c5bf3d4c3f9deceef690649a3388b178c6f3150f094a659cac10cf658070d70f"
+      },
+      {
+        "name": "lib/x86_64/libaescn.so",
+        "bytes": 118688,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "a04becedab3253d845203422cf22e9442475a32152c617123e24fd12826b99bb"
+      },
+      {
+        "name": "lib/x86_64/libaevdf.so",
+        "bytes": 89848,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b7773554ee3edda0680db0bb58a8a213120d676e4b75140a289d403baa52b1e6"
+      },
+      {
+        "name": "lib/x86_64/libanalytics.so",
+        "bytes": 247936,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "fa24943bda16c1b56b692c2fa794d651a5a9684d5b5c90354a529ea9a3725b68"
+      },
+      {
+        "name": "lib/x86_64/libandroidbridge.so",
+        "bytes": 101976,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "75cefcffa0c304cd79e0622112ad0cbd6197f1b859b26558684dc09a8243ade0"
+      },
+      {
+        "name": "lib/x86_64/libandroidx.graphics.path.so",
+        "bytes": 10760,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "4e56c996f13670e70082658de7880c4020eabf4f25e43387f88ed78a713fc9f0"
+      },
+      {
+        "name": "lib/x86_64/libantivirus.so",
+        "bytes": 146584,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d0c3f5a1da017f53d1baabf1976889e49609e5439549d1994271fcfd82eb0ee3"
+      },
+      {
+        "name": "lib/x86_64/libapp.so",
+        "bytes": 257304,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "6187c7a4f432ee53fca567ff212237e99c431083f7fed506c16e8184cff5b468"
+      },
+      {
+        "name": "lib/x86_64/libauth.so",
+        "bytes": 249000,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "cf42b9825e2811bc95a55524f3aa638651208526a0c480e4e666949fbe4a92df"
+      },
+      {
+        "name": "lib/x86_64/libcharon.so",
+        "bytes": 1260200,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "9ace0ced49a8973946cd0cc820f3630408050d1b4234c83e69f4a862700a0856"
+      },
+      {
+        "name": "lib/x86_64/libdatastore_shared_counter.so",
+        "bytes": 6224,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "fb6c9208988c49ae94943bc3236fa763ba584722e044fa4ea9a12d2941027105"
+      },
+      {
+        "name": "lib/x86_64/libimcv.so",
+        "bytes": 425424,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "128981f90bee80a76b5b1490df32cd372a0bf38b6c6b119c7d7a546026e512d9"
+      },
+      {
+        "name": "lib/x86_64/libipsec.so",
+        "bytes": 58688,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "9503622b212b3514d25a24d5d298141a628b1060fad004eaf86bee2a40358c36"
+      },
+      {
+        "name": "lib/x86_64/libjingle_telnyx_peerconnection_so.so",
+        "bytes": 15593040,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "a859a9d6ee8ebe13f3b3c5d2d4d79a1e78b1aa0f5d18316128ab684a2adccacb"
+      },
+      {
+        "name": "lib/x86_64/libmavapi.so",
+        "bytes": 222728,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "a5a4cbde5ddc853ca1a8e7c50e18a91f77e7f199fb936c4b6e2999077f671ac7"
+      },
+      {
+        "name": "lib/x86_64/libmltransformersaudionoisesuppression.so",
+        "bytes": 9803160,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "2b2ce4fb82fe672c4ab21ddae75413f4a3d78becefc0db8ec288f77546a1907a"
+      },
+      {
+        "name": "lib/x86_64/libnetwork.so",
+        "bytes": 235952,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b8c80dda2ae333e6e5eed3a5d528e963f7065d57aa204be9c9732ff19c41f6e4"
+      },
+      {
+        "name": "lib/x86_64/libopenvpn.so",
+        "bytes": 7022464,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "18cb53e8c76d3f0840bbeb2843227abe21efa7830e124c3372bc8c027300e5f1"
+      },
+      {
+        "name": "lib/x86_64/libosslspeedtest.so",
+        "bytes": 5003240,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "dbf67ef46d422158005a6668b6b732d5acc9015baaf5b081451ac309eb60f152"
+      },
+      {
+        "name": "lib/x86_64/libosslutil.so",
+        "bytes": 5002456,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "76bbdffebd2a8f9fe6536bdb88490ce04cfeb1faf44c59e346de582f0f2c4333"
+      },
+      {
+        "name": "lib/x86_64/libovpnexec.so",
+        "bytes": 4128,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "e786c9d430a529ceb1f3deadaa12ad9b9bf5cc879a77aa50b8e350f1649387cd"
+      },
+      {
+        "name": "lib/x86_64/libovpnutil.so",
+        "bytes": 4496,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "69bfcfdcc2c82e938c59eba047e872cafc0d6200b3f88d3ee84283d494c69385"
+      },
+      {
+        "name": "lib/x86_64/libsqlcipher.so",
+        "bytes": 7323752,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d995617f2f56357516e9470c1f2c81b306bccdfb9ccb5106436cb15bdd2f50b3"
+      },
+      {
+        "name": "lib/x86_64/libstrongswan.so",
+        "bytes": 4880944,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "a5b65f0f51c34d0770359fe7ed9210593cf715fb64e1861c0e119162db07a411"
+      },
+      {
+        "name": "lib/x86_64/libtnccs.so",
+        "bytes": 113480,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "771a2d0ad3d2ea8c25a6aa4bfca1247041e44fb79c00d7c8ae29fd7ee4cf9d9a"
+      },
+      {
+        "name": "lib/x86_64/libtncif.so",
+        "bytes": 12808,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "8c9e5b6a140c059307295734fded88369c8fa2dbed8991f71cb4d00cf7016f0b"
+      },
+      {
+        "name": "lib/x86_64/libtoolChecker.so",
+        "bytes": 5416,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "561bdfa6e3c04c3b933454c0c56a79f19f8a503f91561d500b50d07eeb3d58e1"
+      },
+      {
+        "name": "lib/x86_64/libtpmtss.so",
+        "bytes": 12144,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "d25acf110394c32d9d775b864b99e3bbbfb355db44d0e82f8229394a24daab66"
+      },
+      {
+        "name": "lib/x86_64/libvonage-voice-sdk.so",
+        "bytes": 12293752,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "563824353effbd0861693c27b155bfc1678981a6649b76597d8850ed8c42595d"
+      },
+      {
+        "name": "lib/x86_64/libwg-quick.so",
+        "bytes": 39264,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "da1c4fc8be4c647e0324d2345c25d64f581eff2583ad61e25506864751a4d6e3"
+      },
+      {
+        "name": "lib/x86_64/libwg.so",
+        "bytes": 328288,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "86569ab1a3a32cf3487cf7f3372512c9a83b55791e501a54a9a4942ba4700efd"
+      },
+      {
+        "name": "lib/x86_64/libwgdns-go.so",
+        "bytes": 8112176,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "bbe8215cba5f3a803f9eec139efeb7e46b7700699817e53a2c86c5032f9e0694"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

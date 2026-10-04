@@ -1,0 +1,29 @@
+{
+  "schema": "g300-nordvpn-root-blackbox-qualification-v1",
+  "at": "2026-10-04T14:57:53.870116+00:00",
+  "decision": "ACCEPT_ONE_OVERSEAS_MAINSTREAM_BLACKBOX_PACKAGE_QUALIFICATION_ONLY",
+  "package": "com.nordvpn.android",
+  "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/NORDVPN-CANDIDATE.json",
+    "sha256": "d4a451519ed2d5d7e8c9ac43ecf28da8282cb3c6b024791ac45af1d1a1d5e02f"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1"
+  },
+  "official_download": "https://nordvpn.com/download/android/",
+  "same_package_market": "https://play.google.com/store/apps/details?id=com.nordvpn.android&hl=en_US",
+  "qualified_before": 5,
+  "qualified_after": 6,
+  "complete_static_delta": 0,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "limits": [
+    "Publisher-to-APK-signing-certificate identity not independently bound",
+    "Worldwide Play download bucket is package lifetime, not this exact APK version or US installs",
+    "Complete Android client blackbox classification includes explicit product-boundary inference",
+    "No complete four-phase static scan, Bionic runtime, device, or cold-start proof"
+  ]
+}

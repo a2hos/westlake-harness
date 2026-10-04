@@ -1,0 +1,59 @@
+{
+  "schema": "g300-independent-blackbox-qualification-candidate-v1",
+  "product": "Surfshark for Android",
+  "decision": "GO_FOR_SEPARATE_ROOT_BLACKBOX_QUALIFICATION_OF_THIS_EXACT_RAW_APK",
+  "canonical_qualification_changed": false,
+  "rule": "docs/nanhai-plus/PORTFOLIO-GOAL.md:18; G297 five-criterion precedent",
+  "artifact": {
+    "package": "com.surfshark.vpnclient.android",
+    "version_name": "3.35.0",
+    "version_code": 310048760,
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g299-blackbox-next-intake-v1/Surfshark.apk",
+    "bytes": 156032892,
+    "sha256_rechecked": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+    "arm64_elf_count": 37,
+    "verified_apk_signature": "v1+v2",
+    "observed_signing_cert_sha256": "4a0dc39f29beeeed408f8c33acbb3b18c14eac24a76208aa566e5cab8f3e3726"
+  },
+  "root_raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256_rechecked": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
+    "decision": "ACCEPT_TWO_UNMODIFIED_OFFICIAL_ARM64_RAW_IDENTITIES_ONLY"
+  },
+  "criteria": {
+    "official_product_and_legal_original_channel": {
+      "decision": "GO",
+      "evidence": "Surfshark's official Android page links its Download .APK button directly to downloads.surfshark.com and explicitly offers that APK alongside Google Play; it cautions against modded APKs. Its terms grant a license to download, install and use its software on a compatible device.",
+      "official_page": "https://surfshark.com/download/android",
+      "download_url": "https://downloads.surfshark.com/android/Surfshark.apk",
+      "terms": "https://surfshark.com/terms-of-service",
+      "boundary": "The vendor URL is moving; legal availability for use is not a grant to modify or redistribute it."
+    },
+    "exact_package_and_version": {
+      "decision": "GO",
+      "evidence": "Current original-file SHA equals G299 raw admission; independent G299 aapt2/apksigner/ZIP/ELF checks identify this exact package, version and ARM64 artifact.",
+      "local_evidence": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/peer-review-v1/REVIEW.json",
+      "boundary": "Google Play identity is package-level, not proof that Play serves these same direct-download bytes."
+    },
+    "overseas_mainstream": {
+      "decision": "GO",
+      "evidence": "The US-English Google Play listing for exact id=com.surfshark.vpnclient.android names Surfshark B.V. and shows 10M+ worldwide downloads and about 312K reviews; the US storefront is an overseas market signal.",
+      "source": "https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android&hl=en_US",
+      "boundary": "The worldwide lifetime bucket is neither US installs nor downloads of version 3.35.0."
+    },
+    "complete_client_blackbox_source_boundary": {
+      "decision": "GO_WITH_EXPLICIT_INFERENCE",
+      "evidence": "The tested input is the unmodified executable Android APK, with no complete Android client source used by the project. Surfshark terms expressly license mobile/desktop software use while reserving the software and related IP to the publisher/licensors; component code or protocol documentation is not complete Android client source.",
+      "source": "https://surfshark.com/terms-of-service",
+      "boundary": "Terms support a proprietary product-level boundary, not proof that complete source for this exact build exists nowhere."
+    },
+    "unmodified_project_input": {
+      "decision": "GO",
+      "evidence": "G299 root admission accepts this original APK as unmodified; present SHA still matches and G300 made no APK/source edit.",
+      "boundary": "A later runtime copy needs its own SHA readback."
+    }
+  },
+  "publisher_signer_binding": "UNPROVEN: no independently publisher-published certificate fingerprint or publisher-signed exact APK digest. Embedded signing certificate DN fields are Unknown; HTTPS distribution and a Google Play developer name do not independently bind that cert to Surfshark B.V.",
+  "minimal_supplement": "Obtain Surfshark's official Android signing-certificate SHA-256 or a publisher-signed exact-release checksum/key, then compare or verify against the retained original bytes. Repeating the TLS download alone is not independent signer attestation.",
+  "limits": ["No four-phase static inventory", "No OH7/Bionic install, truly-cold start, screen, input or VPN-service test", "No device, container, graph or Bridge command in G300", "Root qualification decision and canonical count are separate"]
+}

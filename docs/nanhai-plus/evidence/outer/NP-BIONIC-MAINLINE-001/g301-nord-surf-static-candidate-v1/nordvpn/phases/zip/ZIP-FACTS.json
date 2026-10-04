@@ -1,0 +1,670 @@
+{
+  "entries_scanned": 3517,
+  "crc_all_ok": true,
+  "uncompressed_bytes": 198651518,
+  "compressed_bytes": 109120235,
+  "manifest_count": 1,
+  "kinds": {
+    "dex": [
+      {
+        "name": "classes.dex",
+        "bytes": 10217584,
+        "sha256": "7417aae9119fc85a7f3423f9aaae699ea030e5caab04ee1e2227896c835944fc"
+      },
+      {
+        "name": "classes2.dex",
+        "bytes": 11163344,
+        "sha256": "03687042067dfb33eab344345752e1e2286456f46b26073d2e8e6edc721396ea"
+      },
+      {
+        "name": "classes3.dex",
+        "bytes": 1407632,
+        "sha256": "e462613329d38d718c901c5e8f45ac5b441c6b1ee39a6000aade53ad16a6c478"
+      }
+    ],
+    "elf": [
+      {
+        "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+        "bytes": 10096,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+      },
+      {
+        "name": "lib/arm64-v8a/libcrashlytics-common.so",
+        "bytes": 864616,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "2f759a20ed003c50ff4120f7ca3ee56e603bfba6f656fdb617136561bc409ef7"
+      },
+      {
+        "name": "lib/arm64-v8a/libcrashlytics-handler.so",
+        "bytes": 222056,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "064bb16f99de2ea43e9c4f5dc3e94f411b96fbed709149b266479774da7f3f7c"
+      },
+      {
+        "name": "lib/arm64-v8a/libcrashlytics-trampoline.so",
+        "bytes": 9216,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "8e30febd455985c25f2083860ed0d91cfbf69eb43d90f887ead8dd53f0e05735"
+      },
+      {
+        "name": "lib/arm64-v8a/libcrashlytics.so",
+        "bytes": 231960,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "d1f4639c66971f821e356e629fcedbba4ad1395ab0e38d0ca3b5070e7283feb7"
+      },
+      {
+        "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+        "bytes": 10360,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+      },
+      {
+        "name": "lib/arm64-v8a/libfirewall.so",
+        "bytes": 763872,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "3790b8477f3110e8a15caf8fea36e8a50494f015731c8b158eab07b09117862e"
+      },
+      {
+        "name": "lib/arm64-v8a/libjnidispatch.so",
+        "bytes": 176520,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "abc26e994517bcaa3309acdb0a27373864086c7569c89d3087b8626fada9ef06"
+      },
+      {
+        "name": "lib/arm64-v8a/libliteguard.so",
+        "bytes": 921608,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "b8262982307d579ea98a6d160f23276f03f724d8b1f4181d081aba7ca7b246de"
+      },
+      {
+        "name": "lib/arm64-v8a/libmoosenordvpnapp.so",
+        "bytes": 2364368,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "9e18203bb2fd4e041fecdb74cefe70597a5853e6b842ce24d4d9586bc42d7a3c"
+      },
+      {
+        "name": "lib/arm64-v8a/libmooseworker.so",
+        "bytes": 1666648,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "fc67ceefa8863a595cb632b7e2a1cbb0329261626129877b4780eb8c0919c590"
+      },
+      {
+        "name": "lib/arm64-v8a/libnorddrop.so",
+        "bytes": 4270832,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "6481f75b69c09e6d64bc6ba0a34be7cc72571af2e9f5df72a68775fdcb094efb"
+      },
+      {
+        "name": "lib/arm64-v8a/libnordtls.so",
+        "bytes": 3539272,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "f2cff8d21b013ae14cda76f0a7bbadd6ae4f22439b3bb5767fed25c79fe6e512"
+      },
+      {
+        "name": "lib/arm64-v8a/libnudler.so",
+        "bytes": 442680,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "7d0e4314104d26f657dbe4f9d116f93ccbf0c93f8265532922676ad4ca4673c9"
+      },
+      {
+        "name": "lib/arm64-v8a/libopenvpn.so",
+        "bytes": 5983368,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "e3a0fcd69b8ce56c4fa5b99ed8826dd006c25718d05e4d686be921c59fe01891"
+      },
+      {
+        "name": "lib/arm64-v8a/libovpnexec.so",
+        "bytes": 5160,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "dad8238b906472ef8e4402ce791c8f312c78432ea1d13deabab37fdcffd313c6"
+      },
+      {
+        "name": "lib/arm64-v8a/libquench.so",
+        "bytes": 4699264,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "af116db5188f6daecec8323ab495e46d287a852906ef85bd67e6219126681347"
+      },
+      {
+        "name": "lib/arm64-v8a/libsqlite3.so",
+        "bytes": 925624,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "7639e43cd498eb72860bea75af0aa0766a61cf333287d5cc395c070230800e70"
+      },
+      {
+        "name": "lib/arm64-v8a/libtelio.so",
+        "bytes": 8843832,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "d6fa621be8e83f421064e8e2208febd45445445045a1feb6f9e081add5d87c37"
+      },
+      {
+        "name": "lib/arm64-v8a/libvinis.so",
+        "bytes": 847144,
+        "class": 2,
+        "machine": 183,
+        "abi": "arm64-v8a",
+        "sha256": "8e9efd7d521fa32c1989b2cce7958520b76b839e9af6aa95baba20146c9b0aef"
+      },
+      {
+        "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+        "bytes": 7252,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b"
+      },
+      {
+        "name": "lib/armeabi-v7a/libcrashlytics-common.so",
+        "bytes": 534164,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "869b8bb41764ee5bd3234f459e45703607906f2a25519dcfd955e7dd5059c0e6"
+      },
+      {
+        "name": "lib/armeabi-v7a/libcrashlytics-handler.so",
+        "bytes": 126236,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "482d33f5ff7750d0fb6068a5021813c9bb680007c87a7b083fe421b3370da98e"
+      },
+      {
+        "name": "lib/armeabi-v7a/libcrashlytics-trampoline.so",
+        "bytes": 6768,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "9b06b2313d6c96bb4707b99841a29bfc23a5cad5b34edd69ce5caed1ea66a997"
+      },
+      {
+        "name": "lib/armeabi-v7a/libcrashlytics.so",
+        "bytes": 132856,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "30dc4a6025b6a78c3e37b6d80eae162058015a3f0d426e21bb997f7fa5ddd51c"
+      },
+      {
+        "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+        "bytes": 8432,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "f51d0b6801896a20be66bd389a024f30be3284b757ac02377833d20e70b9c628"
+      },
+      {
+        "name": "lib/armeabi-v7a/libfirewall.so",
+        "bytes": 539600,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "f2165cf4a2c115476d3bf3de2de590fc03c368b6faaaa5e60c14f6692aeb5072"
+      },
+      {
+        "name": "lib/armeabi-v7a/libjnidispatch.so",
+        "bytes": 126496,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "9652282ef31834281229370a354d56c1522fe36e93625169df99b3e346f76092"
+      },
+      {
+        "name": "lib/armeabi-v7a/libliteguard.so",
+        "bytes": 584328,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e2d044533940fc3e723d3b0a8911ad6678651f48f7282015313efa2875b8a770"
+      },
+      {
+        "name": "lib/armeabi-v7a/libmoosenordvpnapp.so",
+        "bytes": 1578736,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "e1e52e7920ff36d3f07dddbb951190cb189e4180cf4fd80cb23b24efd19c73e5"
+      },
+      {
+        "name": "lib/armeabi-v7a/libmooseworker.so",
+        "bytes": 1016556,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "39d193d1e44051cda4270688e620573c9a8cde2dc8aaf27f750d6e94e1f1b80d"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnorddrop.so",
+        "bytes": 3049816,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "032d2240053f2aed3037b432e4883fc66b4304ff4ed24398c0a7e27c719a72fc"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnordtls.so",
+        "bytes": 2229000,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "d4b04b37dbe2a422d8fe95ac70997aef76a7c380e54839fcf5965936ef4a80ad"
+      },
+      {
+        "name": "lib/armeabi-v7a/libnudler.so",
+        "bytes": 309328,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "6ea7f28c6919a0620f07123cf2ba7798cfdcbea1c6c5c6e0588ab0a089f39b41"
+      },
+      {
+        "name": "lib/armeabi-v7a/libopenvpn.so",
+        "bytes": 4013748,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "913edf4b023b47a872c2cb857b1703ca963c1c93285658a3da52d18561571897"
+      },
+      {
+        "name": "lib/armeabi-v7a/libovpnexec.so",
+        "bytes": 3608,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "0bfafb952d1e328f85c5e75b5fe5dfd0300ed93666f9c6c0c41003cae64f2d04"
+      },
+      {
+        "name": "lib/armeabi-v7a/libquench.so",
+        "bytes": 3032024,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "4d9eb197611f3e91805cde5062d92ae740c59de062fd73e94e98ba52608f6dfa"
+      },
+      {
+        "name": "lib/armeabi-v7a/libsqlite3.so",
+        "bytes": 857240,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "3d41eb82c0b6bfabf99d9387783d8989e0bf20292ef0d40cf943e074fc734edf"
+      },
+      {
+        "name": "lib/armeabi-v7a/libtelio.so",
+        "bytes": 5944516,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "7b5860fe07a486dd1d2415c77ef071ac258c3d7aa427a397ffca9a7667b97f93"
+      },
+      {
+        "name": "lib/armeabi-v7a/libvinis.so",
+        "bytes": 588688,
+        "class": 1,
+        "machine": 40,
+        "abi": "armeabi-v7a",
+        "sha256": "36489550149117a7f65a981c54feb4c3dfdf44508ec44c17c0996d418620b2cf"
+      },
+      {
+        "name": "lib/x86/libandroidx.graphics.path.so",
+        "bytes": 9284,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "eb0570b41fd3bff25d8204a967c03bd7550719e768b791f680cc40cbe35f29af"
+      },
+      {
+        "name": "lib/x86/libcrashlytics-common.so",
+        "bytes": 863764,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "804f01a1e2f2d4896e8d86c18947dd9a56a2e1f4bf98efbb435455f84e60ac3b"
+      },
+      {
+        "name": "lib/x86/libcrashlytics-handler.so",
+        "bytes": 198372,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "fcd6c4de2a7cd096b629039ca615c2ef4a8292613989deb9c7ae310df0252c2f"
+      },
+      {
+        "name": "lib/x86/libcrashlytics-trampoline.so",
+        "bytes": 6832,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "4de37470c1892f98b4aea5cbdef7ed1af019ad662957cb699b47d00821bb3ee6"
+      },
+      {
+        "name": "lib/x86/libcrashlytics.so",
+        "bytes": 208744,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "58384864badceecef312e7c38fcb2b5489314d0f87705fd6fa7e8ac318d2d831"
+      },
+      {
+        "name": "lib/x86/libdatastore_shared_counter.so",
+        "bytes": 7976,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "c38104bd173ef2e405d32e90ef753725c54aaeca08f2e9a57820df8782f4d790"
+      },
+      {
+        "name": "lib/x86/libfirewall.so",
+        "bytes": 933720,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "9a4a433d7f50045b442acf3a8c70867fe290159485fbba2f3a07cb058eb13bc1"
+      },
+      {
+        "name": "lib/x86/libjnidispatch.so",
+        "bytes": 124380,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "d10fcc75029621a88fa6020807e7ba82ff434a01ead396cf0e36c50e6c393118"
+      },
+      {
+        "name": "lib/x86/libliteguard.so",
+        "bytes": 999908,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "31d00c97fb18a578e05a98efeb97bb89c1474e3315d148971cc0392969d3a6c0"
+      },
+      {
+        "name": "lib/x86/libmoosenordvpnapp.so",
+        "bytes": 2777844,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "42ffd664675564ee7b74ede02a0e74523df0842cfaffc97b54432d806df11f33"
+      },
+      {
+        "name": "lib/x86/libmooseworker.so",
+        "bytes": 1810864,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "e0ebf97af27885326db2500f356b3765c7cec5c239c024c9d89007b4d53f8849"
+      },
+      {
+        "name": "lib/x86/libnorddrop.so",
+        "bytes": 4486756,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "58fff248865bf18e29727529682cca4f9d492a153d43fa8ce5da0e85d3a8d080"
+      },
+      {
+        "name": "lib/x86/libnordtls.so",
+        "bytes": 3543132,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6081cd9c6ca0daad8c0169ccee2261350be14a8b8d470a5fd81b1175f88a0c0c"
+      },
+      {
+        "name": "lib/x86/libnudler.so",
+        "bytes": 497752,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "6e84845e31e489e22e1f5957d775793d1ad8d6276ddd9dc7a11e1620fdaa648a"
+      },
+      {
+        "name": "lib/x86/libopenvpn.so",
+        "bytes": 6427112,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "72d1db10255da3fbe1bfa8675fb75d3b061a188d693002e24071e1c604410510"
+      },
+      {
+        "name": "lib/x86/libovpnexec.so",
+        "bytes": 3860,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "cd409aa5decd25fffc095208a46589f3bfb236966dcb9f6b3fd17e4cde2a4f82"
+      },
+      {
+        "name": "lib/x86/libquench.so",
+        "bytes": 4532372,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "512ebe81fb0e75808850e1e5970ad780ea8bd86e2c658eae251b2d58f01aac42"
+      },
+      {
+        "name": "lib/x86/libsqlite3.so",
+        "bytes": 892728,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "01728dcbfadbcd8a3939c229b0964114850102943b8d85706722ee8cf2b865b8"
+      },
+      {
+        "name": "lib/x86/libtelio.so",
+        "bytes": 9478264,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "4879dad4af20a56bb7dbe1dec726a749a080d966edc60c3ef1be7391b5f3e4b8"
+      },
+      {
+        "name": "lib/x86/libvinis.so",
+        "bytes": 1063684,
+        "class": 1,
+        "machine": 3,
+        "abi": "x86",
+        "sha256": "e7ac340a7d4e384ebb59f5b8c38a597986fbc1c32004e13859be759adba63158"
+      },
+      {
+        "name": "lib/x86_64/libandroidx.graphics.path.so",
+        "bytes": 10760,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "4e56c996f13670e70082658de7880c4020eabf4f25e43387f88ed78a713fc9f0"
+      },
+      {
+        "name": "lib/x86_64/libcrashlytics-common.so",
+        "bytes": 860232,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "be8112a7a5002d718bc60a66ebdf1a9e79472f61712d5c6ec0463310cd658fa2"
+      },
+      {
+        "name": "lib/x86_64/libcrashlytics-handler.so",
+        "bytes": 210016,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "6a27fb03d7de12f95ef7e7371d750b89cb60df1f599b296fbb282df0880b0cc3"
+      },
+      {
+        "name": "lib/x86_64/libcrashlytics-trampoline.so",
+        "bytes": 8744,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "edf8e1f7cf6a64b09b64a13f955ed98c306e2c21ad8f06c707b95e346a4e3031"
+      },
+      {
+        "name": "lib/x86_64/libcrashlytics.so",
+        "bytes": 219664,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "e63b46a506e59324c03f8bb2082a96529980cb8af5087e51d12cbb634014158a"
+      },
+      {
+        "name": "lib/x86_64/libdatastore_shared_counter.so",
+        "bytes": 9424,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "c3973140a0e6144a83e7dd7ee3c4e161f42181591feda254e12c8395d3bbacd0"
+      },
+      {
+        "name": "lib/x86_64/libfirewall.so",
+        "bytes": 846280,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "bbd2981bf1b3fe3cd70e5ff54eb1a367f664cf48e3df65dff35edd96750a2c0e"
+      },
+      {
+        "name": "lib/x86_64/libjnidispatch.so",
+        "bytes": 126912,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "3809247e9b804a05ed8377b87d545cf5b5e97f960f75e725bc8497b40260e417"
+      },
+      {
+        "name": "lib/x86_64/libliteguard.so",
+        "bytes": 953368,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "9a402b88553a2ee070b1c8deae2d2963a5b33fb8fdebe6992c9330de1ef7cd74"
+      },
+      {
+        "name": "lib/x86_64/libmoosenordvpnapp.so",
+        "bytes": 2720800,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "da81c6f1b4c47d5f7f78974fb5387f267f034c048c665f1759f3a54e7863e8db"
+      },
+      {
+        "name": "lib/x86_64/libmooseworker.so",
+        "bytes": 1766960,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "4aadec82d016d02018ef874f0ba4940875dfa373f90cb2ec7525ff3f8c6e5813"
+      },
+      {
+        "name": "lib/x86_64/libnorddrop.so",
+        "bytes": 4644312,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "9fb9795c4d70fe0108e5f417c4c000890f4a6e93dc0596af2b1af92d8b7f522f"
+      },
+      {
+        "name": "lib/x86_64/libnordtls.so",
+        "bytes": 4742072,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "2c314335a8b551d3e26483dd47d9cdee1059216c4135d48774b3817fb54e9c2a"
+      },
+      {
+        "name": "lib/x86_64/libnudler.so",
+        "bytes": 481728,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b4b186bfe2248145297d69290f157c94266ae12d3c09b2bf823d596364fafcfd"
+      },
+      {
+        "name": "lib/x86_64/libopenvpn.so",
+        "bytes": 7004896,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "fa5cdd2112bc21ddd25dd04154aefacfa82e7a9d50d1d3bef4110f771028e6be"
+      },
+      {
+        "name": "lib/x86_64/libovpnexec.so",
+        "bytes": 5000,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "43f317fbc4c877174d7ba20d0244a4ba6c0b35dee45b78c5d14432e4a7f9f031"
+      },
+      {
+        "name": "lib/x86_64/libquench.so",
+        "bytes": 5947976,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b7871dd6396ac9a45b420ec706a635b0e5c1167ed151fd0ce882bc58f8119669"
+      },
+      {
+        "name": "lib/x86_64/libsqlite3.so",
+        "bytes": 917008,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "cdc9e00a8008916994eacc2a34765c1aecec9a1a298cfd0cc7a4df7c428e9e4b"
+      },
+      {
+        "name": "lib/x86_64/libtelio.so",
+        "bytes": 10325864,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "84855820ee0ac0e96a9cfa93576ce77a774175a5b29ac520ec497e4e63d19426"
+      },
+      {
+        "name": "lib/x86_64/libvinis.so",
+        "bytes": 1054424,
+        "class": 2,
+        "machine": 62,
+        "abi": "x86_64",
+        "sha256": "b6a11df9fa616ae9a826257f1ddaffc5abaf0b8ef3cda5c6f4957f13ef8fbac3"
+      }
+    ],
+    "zip_in_so": [],
+    "other_so": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "g301-nordvpn-root-static-admission-v1",
+  "at": "2026-10-04T15:03:20.733584+00:00",
+  "decision": "ACCEPT_ONE_COMPLETE_HOST_STATIC_INVENTORY_ONLY",
+  "package": "com.nordvpn.android",
+  "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+  "candidate_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/nordvpn/RESULT.json",
+    "sha256": "90c2e39c8e6453d182681b359ea769277791f2eb01799cff28ae62ed96162b7d"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/nordvpn/peer-review-v1/REVIEW.json",
+    "sha256": "627c6be8b5d79239ecd07a0a271c32a07b13fd2daf878bd731887e839971cf1b"
+  },
+  "counts_before": {
+    "complete_static": 80,
+    "dex": 207,
+    "true_arm64_elf": 941
+  },
+  "counts_after": {
+    "complete_static": 81,
+    "dex": 210,
+    "true_arm64_elf": 961
+  },
+  "this_package": {
+    "zip_entries_crc_checked": 3517,
+    "dex_entries": 3,
+    "true_elf_all_abi": 80,
+    "true_arm64_elf": 20
+  },
+  "host_static_only": true,
+  "startup_delta": 0,
+  "build_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "limits": [
+    "No Bionic runtime or cold start",
+    "Publisher-to-signing-certificate binding not independently proven; G300 qualification is separate"
+  ]
+}

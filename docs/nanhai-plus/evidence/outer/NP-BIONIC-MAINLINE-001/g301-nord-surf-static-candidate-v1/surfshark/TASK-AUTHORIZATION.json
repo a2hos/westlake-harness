@@ -1,0 +1,12 @@
+{
+  "scope": "G301 one local host-only four-phase static scan of exact surfshark original APK",
+  "inputs_sha256": "14c89ddb9d75e4cda33f6c8948434fd46bf07534792902692139577ec2c1e35c",
+  "runner_sha256": "0f358b49347ec55f0338592438d22c97ce300b2765c4df824399a9b591d73c04",
+  "scan_phase_sha256": "f5096a2832744da81e1aa638dc1eacd30ef1f5b75e8c729e366d9d649f0dcd0c",
+  "common_sha256": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+  "raw_admission_sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
+  "attempts": 1,
+  "device_commands": 0,
+  "container_commands": 0,
+  "authorization": "User request delegated by outer to G301 peer"
+}

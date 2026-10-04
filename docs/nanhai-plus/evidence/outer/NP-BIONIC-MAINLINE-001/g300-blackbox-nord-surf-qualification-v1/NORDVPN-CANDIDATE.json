@@ -1,0 +1,58 @@
+{
+  "schema": "g300-independent-blackbox-qualification-candidate-v1",
+  "product": "NordVPN for Android",
+  "decision": "GO_FOR_SEPARATE_ROOT_BLACKBOX_QUALIFICATION_OF_THIS_EXACT_RAW_APK",
+  "canonical_qualification_changed": false,
+  "rule": "docs/nanhai-plus/PORTFOLIO-GOAL.md:18; G297 five-criterion precedent",
+  "artifact": {
+    "package": "com.nordvpn.android",
+    "version_name": "9.14.1+sideload",
+    "version_code": 1002121,
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g299-blackbox-next-intake-v1/NordVPN.apk",
+    "bytes": 109609596,
+    "sha256_rechecked": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+    "arm64_elf_count": 20,
+    "verified_apk_signature": "v3",
+    "observed_signing_cert_sha256": "bc64ae0725af656b3b10b684cd1df4c9d6b7f81bc5dc32df3a3b2ce94ce61466"
+  },
+  "root_raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256_rechecked": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
+    "decision": "ACCEPT_TWO_UNMODIFIED_OFFICIAL_ARM64_RAW_IDENTITIES_ONLY"
+  },
+  "criteria": {
+    "official_product_and_legal_original_channel": {
+      "decision": "GO",
+      "evidence": "NordVPN official Android product page offers an APK version and cautions against third-party or modded APKs; its link resolves to the nordcdn sideload channel retained in G299, whose HTTP x-digest equals the original APK SHA. Direct official distribution supports lawful acquisition of the original package.",
+      "official_page": "https://nordvpn.com/download/android/",
+      "download_url": "https://downloads.nordcdn.com/apps/android/generic/nordvpn-sideload/latest/v2/NordVPN.apk",
+      "boundary": "The vendor download URL is moving; the x-signature and publisher key have not been independently verified."
+    },
+    "exact_package_and_version": {
+      "decision": "GO",
+      "evidence": "Current original-file SHA equals G299 raw admission; independent G299 aapt2/apksigner/ZIP/ELF checks identify this exact package, version and ARM64 artifact.",
+      "local_evidence": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/peer-review-v1/REVIEW.json",
+      "boundary": "Google Play identity is package-level, not proof that Play serves these same sideload bytes."
+    },
+    "overseas_mainstream": {
+      "decision": "GO",
+      "evidence": "The US-English Google Play listing for exact id=com.nordvpn.android names Nord Security and shows 100M+ worldwide downloads and about 1.36M reviews; the US storefront is an overseas market signal.",
+      "source": "https://play.google.com/store/apps/details?id=com.nordvpn.android&hl=en_US",
+      "boundary": "The worldwide lifetime bucket is neither US installs nor downloads of version 9.14.1+sideload."
+    },
+    "complete_client_blackbox_source_boundary": {
+      "decision": "GO_WITH_EXPLICIT_INFERENCE",
+      "evidence": "The tested input is the unmodified executable Android APK, with no complete Android client source used by the project. NordVPN's trust page identifies open Linux CLI/GUI source, which does not constitute source for this Android client. This supports treating the original Android client as a black-box test input.",
+      "source": "https://nordvpn.com/trust/",
+      "boundary": "This does not prove that complete source for the exact Android build exists nowhere; open components or Linux source do not turn the APK into a white-box test."
+    },
+    "unmodified_project_input": {
+      "decision": "GO",
+      "evidence": "G299 root admission accepts this original APK as unmodified; present SHA still matches and G300 made no APK/source edit.",
+      "boundary": "A later runtime copy needs its own SHA readback."
+    }
+  },
+  "publisher_signer_binding": "UNPROVEN: no independently publisher-published certificate fingerprint or independently verified Nord publisher signature on the exact APK digest. Embedded O=Tefincom DN, Google Play developer name, and HTTPS distribution are not interchangeable signer attestation.",
+  "minimal_supplement": "Obtain Nord's official Android signing-certificate SHA-256 or publisher-signed exact-release checksum/key; compare or verify against the retained original bytes. A pinned Nord public key verifying the recorded x-signature/x-digest would bind bytes to publisher, not by itself Play byte identity.",
+  "limits": ["No four-phase static inventory", "No OH7/Bionic install, truly-cold start, screen, input or VPN-service test", "No device, container, graph or Bridge command in G300", "Root qualification decision and canonical count are separate"]
+}

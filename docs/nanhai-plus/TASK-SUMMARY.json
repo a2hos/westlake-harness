@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T12:57:28.943154+00:00",
+  "checked_at": "2026-10-04T15:03:20.734243+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 83,
+    "downloaded_payloads": 85,
     "latest_raw_admission": {
       "packages": [
-        "com.opera.browser",
-        "com.opera.gx"
+        "com.nordvpn.android",
+        "com.surfshark.vpnclient.android"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "a1b8e69d8d4b3d52ce4ef19d37d2f064a2ce65bfeb35984ad2458deaf0f2c5b8",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
       "scope": "two official supplemental ARM64 original APK identities only; no static, blackbox qualification or cold start credit"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
@@ -54,13 +54,13 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 79,
-    "complete_inventory_dex_entries": 205,
-    "complete_inventory_native_elf_entries": 938,
+    "complete_static_inventories": 82,
+    "complete_inventory_dex_entries": 214,
+    "complete_inventory_native_elf_entries": 998,
     "latest_complete_static_admission": {
-      "package": "com.opera.browser",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g295-opera-browser-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "fdc45b39d92c5fbe10044d2d3c62bdb69125932e5dac657142f2eab3a1393bda",
+      "package": "com.surfshark.vpnclient.android",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/surfshark/ROOT-STATIC-ADMISSION.json",
+      "sha256": "e962905c85906a3315313383a7aa7f54c0150491a2584a677bccb2c03e7ae1da",
       "scope": "four-phase host static only; no cold start credit"
     },
     "incomplete_static_inventories": [
@@ -70,12 +70,16 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 8,
-    "qualified_blackbox_packages": 3,
+    "supplemental_payloads": 10,
+    "qualified_blackbox_packages": 7,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
-      "com.tiktok.lite.go"
+      "com.tiktok.lite.go",
+      "com.opera.browser",
+      "com.opera.gx",
+      "com.nordvpn.android",
+      "com.surfshark.vpnclient.android"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -83,6 +87,55 @@
       "raw_delta": 2,
       "static_delta": 0,
       "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    "latest_blackbox_qualification": {
+      "package": "com.surfshark.vpnclient.android",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/surfshark-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "0975a6f8e2971066b8b131c32376281854f418cd86f62b33d4705e87b3794293",
+      "scope": "package qualification only; cold start 0"
+    },
+    "g299_raw_supplement": {
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
+      "raw_delta": 2,
+      "static_delta": 0,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    "g300_blackbox_qualifications": {
+      "receipts": [
+        {
+          "package": "com.nordvpn.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/nordvpn-root-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "9d716511f176f3aad3432209d0ff666ed1c188d44d910ba4a4f73df78cef168f"
+        },
+        {
+          "package": "com.surfshark.vpnclient.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g300-blackbox-nord-surf-qualification-v1/surfshark-root-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "0975a6f8e2971066b8b131c32376281854f418cd86f62b33d4705e87b3794293"
+        }
+      ],
+      "delta": 2,
+      "static_delta": 0,
+      "cold_start_delta": 0
+    },
+    "g301_static_admissions": {
+      "receipts": [
+        {
+          "package": "com.nordvpn.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/nordvpn/ROOT-STATIC-ADMISSION.json",
+          "sha256": "4d454f484b19de94d5e75464c1282d6737ad6087bfbee2c28314d0902e7241ce"
+        },
+        {
+          "package": "com.surfshark.vpnclient.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g301-nord-surf-static-candidate-v1/surfshark/ROOT-STATIC-ADMISSION.json",
+          "sha256": "e962905c85906a3315313383a7aa7f54c0150491a2584a677bccb2c03e7ae1da"
+        }
+      ],
+      "delta": 2,
+      "dex_delta": 7,
+      "true_arm64_elf_delta": 57,
       "cold_start_delta": 0
     }
   },
@@ -578,18 +631,21 @@
   },
   "next_graph_candidate": {
     "prospective_release": 279,
-    "status": "V7_STATIC_CANDIDATE_PEER_NO_GO_GRAPH_RELEASE",
+    "status": "V12_TERMINAL_RC4_PREFLIGHT_FAILED_NEW_GENERATION_REQUIRED",
     "execution_ready": false,
-    "original_owner_graph_ack": false,
-    "peer_review": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/peer-review-v1/REVIEW.json",
-      "sha256": "aa62468189a3b4e8466a47b799fa027d630633a76bd74b03d890229735f5163b"
+    "original_owner_graph_ack": true,
+    "graph_invoked": true,
+    "soong_graph_command_executed": false,
+    "target_compiled": false,
+    "device_executed": false,
+    "container_used": false,
+    "namespace_used": false,
+    "terminal_root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-graph-postrun-readback-v1/ROOT-FAILED-PREFLIGHT-ACCEPTANCE.json",
+      "sha256": "2b2c01cc3c44219ba2b7b720c621a17b56e17c431c94983fff9a25feecbf433b"
     },
-    "root_review": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/ROOT-REVIEW.json",
-      "sha256": "2b6959a3d2cc9ad61094b0ff24f163434867f0a536d7724c0ccdaa15b307807f"
-    },
-    "next_input": "independent native owner graph ACK provenance, fresh v7 EVO19 remote identity, safely reviewed v7 staging and runtime process safety; do not replay v6/containers"
+    "observed_wall": "IsADirectoryError on manifest directory link build/core in source_guard/root_guard before graph",
+    "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
     "latest": "EVO-0021-apk-publisher-digest-route",
@@ -1410,5 +1466,78 @@
     "cold_start_delta": 0,
     "device_commands": 0,
     "container_commands": 0
+  },
+  "g279_v12_signed_control_stage": {
+    "status": "accepted_exact_staged_bytes_only",
+    "packet_sha256": "1790dc393153a5d4992c069cc2d631a70c8b25a41f5fc0c5b4b1da298f5fdb0c",
+    "ssh_rc": 0,
+    "postrun_ssh_rc": 0,
+    "postrun_status": "PASS_STAGED_BYTES_ONLY",
+    "evidence": {
+      "packet": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-stage-packet-v2/PACKET.json",
+        "sha256": "42843d674255c1f89af8dd8ed5f6987c96f8e4c0933874b25ff8a6ef3264ee3e"
+      },
+      "stage_peer": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-stage-packet-v2/peer-review-v1/REVIEW.json",
+        "sha256": "ce9cc2992fd192b78e4627ac97d3823dbdc20572893597ce32d2ca1c17630bbd"
+      },
+      "stage_root_release": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-stage-packet-v2/ROOT-STAGE-RELEASE.json",
+        "sha256": "cd8a094692eaa915445d52274700cef44341b360c6a191eed0293653e6b05d93"
+      },
+      "stage_terminal": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-stage-packet-v2/receipts/6f064b737b038ac00036612f90a1437a.TERMINAL.json",
+        "sha256": "ca8ab3c1198a8ebc3ccf437dd823d723062208e752ceb43bc01298ae1bb27f23"
+      },
+      "postrun_terminal": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-postrun-prep-v2/probe-terminal.json",
+        "sha256": "0ab8484bdb68d76b37976ce96b21af9c691e20e513b51d76024967951f96dc36"
+      },
+      "postrun_peer": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-postrun-prep-v2/peer-postrun-v1/REVIEW.json",
+        "sha256": "9cda421976b89d819087fd5483f4616c3581ca3cb0e3bbcd64e393dca89c536b"
+      },
+      "postrun_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-signed-control-postrun-prep-v2/ROOT-POSTRUN-ACCEPTANCE.json",
+        "sha256": "cd1f3232a93682ba145dc8b110b8b7e847b9aee9a2a6adb3481c2c1846dd4fab"
+      }
+    },
+    "linux_signature_gate_passed": false,
+    "graph_executed": false,
+    "target_compiled": false,
+    "apk_cold_start_verified": false,
+    "device_executed": false
+  },
+  "g279_v12_graph_actual": {
+    "status": "ACCEPT_FAILED_PREFLIGHT_NO_GRAPH_COMMAND",
+    "ssh_rc": 4,
+    "runner_rc": 4,
+    "preflight_projects": 1011,
+    "soong_graph_commands": 0,
+    "target_compiles": 0,
+    "remote_result_sha256": "0e448147d26d9216f59d4e8f5d819e9fbdbb39e0a83010372ccea2b7db6a6038",
+    "root_failure_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-graph-postrun-readback-v1/ROOT-FAILED-PREFLIGHT-ACCEPTANCE.json",
+      "sha256": "2b2c01cc3c44219ba2b7b720c621a17b56e17c431c94983fff9a25feecbf433b"
+    },
+    "directory_link_type_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v12-linkfile-type-probe-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "b14bc1e4dec5a78c40a24dc3e63cce59faa2cf9fd32a6712ad8a2805d1f43b37"
+    },
+    "v12_replay_allowed": false,
+    "next_generation": "v13"
+  },
+  "g279_v13_readonly_rootguard": {
+    "status": "accepted_bounded_readonly_rootguard_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-v13-inmemory-rootguard-probe-v1/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "b783de585302f5418046539289e100732c6b1d35181bf4dfd1a2233a5d57ad78"
+    },
+    "full_tracked_clean_regenerated": false,
+    "graph_commands": 0,
+    "target_compiles": 0,
+    "device_commands": 0,
+    "next": "fresh v13 runner-only staging and release chain"
   }
 }

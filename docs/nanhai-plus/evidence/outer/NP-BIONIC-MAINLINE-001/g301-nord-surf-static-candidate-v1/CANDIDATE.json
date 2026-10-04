@@ -1,0 +1,45 @@
+{
+  "schema": "g301-two-original-apk-four-phase-static-candidate-v1",
+  "decision": "TWO_TERMINAL_HOST_STATIC_CANDIDATES_PENDING_INDEPENDENT_AND_ROOT_ADMISSION",
+  "root_raw_admission_sha256": "4b7b8620524d382efafdb97a45c49a024653298e1a4bd9346097af238c59fff1",
+  "packages": [
+    {
+      "package": "com.nordvpn.android",
+      "version": "9.14.1+sideload",
+      "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+      "outer_rc": 0,
+      "phase_rc": {"zip": 0, "metadata": 0, "elf": 0, "dex": 0},
+      "zip_entries_crc_checked": 3517,
+      "dex_entries": 3,
+      "true_elf_entries": 80,
+      "arm64_elf_entries": 20,
+      "all_11_result_checks": true,
+      "source_apk_venv_tool_pre_post_equal": true,
+      "result_path": "nordvpn/RESULT.json",
+      "result_sha256": "90c2e39c8e6453d182681b359ea769277791f2eb01799cff28ae62ed96162b7d"
+    },
+    {
+      "package": "com.surfshark.vpnclient.android",
+      "version": "3.35.0",
+      "apk_sha256": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+      "outer_rc": 0,
+      "phase_rc": {"zip": 0, "metadata": 0, "elf": 0, "dex": 0},
+      "zip_entries_crc_checked": 3971,
+      "dex_entries": 4,
+      "true_elf_entries": 138,
+      "arm64_elf_entries": 37,
+      "all_11_result_checks": true,
+      "source_apk_venv_tool_pre_post_equal": true,
+      "result_path": "surfshark/RESULT.json",
+      "result_sha256": "23214044c5eac96ac6847eb8457313e35b7ed349ee732669ac7a0149017149ca"
+    }
+  ],
+  "claims_excluded": ["Canonical static admission", "Blackbox qualification", "Installation", "Truly-cold startup", "Display/input", "VPN service operation"],
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "ssh_commands": 0,
+  "target_compile_commands": 0,
+  "bridge_writes": 0,
+  "canonical_mutations": 0
+}

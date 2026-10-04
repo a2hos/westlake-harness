@@ -1,0 +1,107 @@
+{
+  "accepted_raw_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "current_accepted_raw_before": 83,
+  "device_commands": 0,
+  "graph_commands": 0,
+  "packages": {
+    "nordvpn": {
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "arm64_elf_count": 20,
+      "artifact_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g299-blackbox-next-intake-v1/NordVPN.apk",
+      "badging_sha256": "eaf7d9ad5b233cd7bc763e10f5523b5c76eee7318f03bc7ab9b9786a9ab69621",
+      "bytes": 109609596,
+      "cold_start": false,
+      "device_test": false,
+      "dex_entries": 3,
+      "download_url": "https://downloads.nordcdn.com/apps/android/generic/nordvpn-sideload/latest/v2/NordVPN.apk",
+      "effective_url": "https://downloads77-android.nordcdn.com/apps/android/generic/nordvpn-sideload/latest/v2/NordVPN.apk",
+      "expected_package": "com.nordvpn.android",
+      "expected_size": 109609596,
+      "file": "NordVPN.apk",
+      "manifest": {
+        "name": "com.nordvpn.android",
+        "versionCode": "1002121",
+        "versionName": "9.14.1+sideload"
+      },
+      "official_page": "https://nordvpn.com/download/android/",
+      "play_download_floor": "100M+",
+      "play_url": "https://play.google.com/store/apps/details?id=com.nordvpn.android",
+      "publisher_certificate_binding": "UNPROVEN_NO_OFFICIAL_CERT_FINGERPRINT",
+      "publisher_listing": "Nord Security",
+      "sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+      "signature": {
+        "certificate_dn": "CN=Alex Weblowsky, OU=Mobile Development, O=Tefincom, L=Panama, ST=Panama, C=PA",
+        "certificate_sha256": "bc64ae0725af656b3b10b684cd1df4c9d6b7f81bc5dc32df3a3b2ce94ce61466",
+        "verified_schemes": {
+          "1": false,
+          "2": false,
+          "3": true,
+          "3.1": false,
+          "4": false
+        }
+      },
+      "signer_report_sha256": "744ac800641a4389f37df744d9f7a87aa802023391764f49e8b67774e438c711",
+      "transport_headers_sha256": "a87e721b1a24fc160b5073b524a91e815b7d4fb9d27b1819c3e866b0a6370534",
+      "transport_http": 200,
+      "zip_crc": "PASS_FULL",
+      "zip_entries": 3517
+    },
+    "surfshark": {
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "arm64_elf_count": 37,
+      "artifact_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g299-blackbox-next-intake-v1/Surfshark.apk",
+      "badging_sha256": "b78b26e959d95660fba279149956f380a501073bc72e7d66cf7d941be8cdadf0",
+      "bytes": 156032892,
+      "cold_start": false,
+      "device_test": false,
+      "dex_entries": 4,
+      "download_url": "https://downloads.surfshark.com/android/Surfshark.apk",
+      "effective_url": "https://downloads.surfshark.com/android/Surfshark.apk",
+      "expected_package": "com.surfshark.vpnclient.android",
+      "expected_size": 156032892,
+      "file": "Surfshark.apk",
+      "manifest": {
+        "name": "com.surfshark.vpnclient.android",
+        "versionCode": "310048760",
+        "versionName": "3.35.0"
+      },
+      "official_page": "https://surfshark.com/download/android",
+      "play_download_floor": "10M+",
+      "play_url": "https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android",
+      "publisher_certificate_binding": "UNPROVEN_NO_OFFICIAL_CERT_FINGERPRINT",
+      "publisher_listing": "Surfshark B.V.",
+      "sha256": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+      "signature": {
+        "certificate_dn": "CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown",
+        "certificate_sha256": "4a0dc39f29beeeed408f8c33acbb3b18c14eac24a76208aa566e5cab8f3e3726",
+        "verified_schemes": {
+          "1": true,
+          "2": true,
+          "3": false,
+          "3.1": false,
+          "4": false
+        }
+      },
+      "signer_report_sha256": "b54b7a2be9a0ad30014a1b7191ce2f0c0ea8349222ce25b7a6d0ef32b79a39da",
+      "transport_headers_sha256": "7e062f0b41017bd7f1343e0b1f46e320e283ae4daa477d987e05d29b732fb06e",
+      "transport_http": 200,
+      "zip_crc": "PASS_FULL",
+      "zip_entries": 3971
+    }
+  },
+  "qualified_blackbox_delta": 0,
+  "schema": "g299-blackbox-next-raw-static-candidate-v1",
+  "status": "HOST_RAW_STATIC_CANDIDATE_ONLY"
+}

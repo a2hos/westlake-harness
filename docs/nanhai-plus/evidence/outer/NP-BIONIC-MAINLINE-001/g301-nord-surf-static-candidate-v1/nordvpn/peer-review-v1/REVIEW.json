@@ -1,0 +1,38 @@
+{
+  "schema": "g301-nordvpn-independent-four-phase-static-review-v1",
+  "decision": "GO_FOUR_PHASE_HOST_STATIC_EVIDENCE_ONLY",
+  "package": "com.nordvpn.android",
+  "version": "9.14.1+sideload",
+  "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+  "result_sha256": "90c2e39c8e6453d182681b359ea769277791f2eb01799cff28ae62ed96162b7d",
+  "checks": {
+    "outer_rc": 0,
+    "four_phase_rc": {"zip": 0, "metadata": 0, "elf": 0, "dex": 0},
+    "outer_and_all_phase_raw_stream_sha_match": true,
+    "all_phase_command_and_result_rc_match": true,
+    "all_phase_source_apk_tool_postguards": true,
+    "source_before_after_byte_equal": true,
+    "runner_scan_phase_common_sha_match_task_authorization": true,
+    "current_original_apk_sha_match_inputs_and_g299": true,
+    "zip_all_crc_scanned": true,
+    "zip_entries": 3517,
+    "manifest_package_version_match": true,
+    "dex_entries": 3,
+    "true_elf_entries": 80,
+    "arm64_true_elf_entries": 20,
+    "all_elf_readelf_ok": true,
+    "native_unclassified_zero": true
+  },
+  "phase_result_sha256": {
+    "zip": "495b1d0e14b811ee9dec113e15c5d8579ca0b3371a9c2af4bff4b07576d4a225",
+    "metadata": "9e2a0daeab63ad267251b22536980abc8987135001dbc17a2ce0c5b5ca044984",
+    "elf": "686bbe17d563dac3c21b60b1ead188b6e262c8f021e65d7475de72cff7a8dba9",
+    "dex": "734e92e27a24409fd36bad2956fa28b42c63afc374428a3d31ff6cd7ef85db5f"
+  },
+  "scope_limit": "Independent acceptance of exact original APK host ZIP/metadata/ELF/DEX static evidence only. G300 separately qualified this package as overseas mainstream blackbox; G301 RESULT.blackbox_qualified=false is a local scan-status field, not a revocation of G300. Publisher-to-signing-certificate binding remains unproven. No OH7/Bionic install, startup, screen, input, or VPN service evidence.",
+  "canonical_count_changed_by_review": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "remote_calls_by_review": 0,
+  "next": "Separate root admission of complete static inventory; retain independent qualification and cold-start counters"
+}
