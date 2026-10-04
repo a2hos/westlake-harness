@@ -1,0 +1,18 @@
+{
+  "schema": "nanhai-g275-release-packet-reference-correction-v1",
+  "at": "2026-10-04T09:08:01.169576+00:00",
+  "cause": "read-only released() check rc1: old.project_ref requires {path,sha256}; no Docker or graph was invoked",
+  "previous_transition": "CLAIM-RELEASE-TRANSITION.json",
+  "state_before_sha256": "778b06dfb2fccf17b496c546b3e252421243faa8e943148be80c192b5bda1329",
+  "state_after_sha256": "7f7a555e2a82739d4fc6a8c5d688b6b22d67912a3a8a5f30c464c6cbc4443f6f",
+  "field": "claims[NP-MUSL16-ART-024].release_packet",
+  "before": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-SEALED.json",
+  "after": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-SEALED.json",
+    "sha256": "3b9fdcfe7693b917ba09461fc8b4c953fd08753f63a2e5b612e0490acf72f433"
+  },
+  "goal_session_budget_device_policy_unchanged": true,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "device_commands": 0
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-g275-claim-ready-transition-v1",
+  "at": "2026-10-04T09:01:14.558821+00:00",
+  "status": "ORIGINAL_CLAIM_G274_TERMINAL_TO_G275_OWNER_CONSUME_READY",
+  "state_before_sha256": "4e0f4b4b894834f44240a87c344426a109e273404a32f3ac4027ae52ee48226e",
+  "state_after_sha256": "b54b7cef9a445e5974cecca49feb03220f577a711061533ca231e6599d743f26",
+  "g274_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+    "sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781"
+  },
+  "claim_before": {
+    "status": "ready",
+    "release_state": "released",
+    "release_sequence": 274,
+    "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/root-release-v1/G273-REVIEW.json",
+    "receipt_sha256": "9ef63a4e1c9bd6b8a6f944c0d9d52031bab8242a9384a02eedaef7fc07898c93",
+    "next_action": "G275 exact R4 source scout, independent candidate review, original owner fresh ACK; do not replay G274",
+    "dispatch_state": "g274-terminal-root-reviewed",
+    "native_session": "oracle-kimi:local:nanhai-plus#inner",
+    "goal_id": "goal_01"
+  },
+  "claim_after": {
+    "status": "ready",
+    "release_state": "completed_reviewed",
+    "release_sequence": 274,
+    "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+    "receipt_sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781",
+    "next_action": "Read-only consume frozen G275 v19 candidate and return fresh owner ACK; no Docker/graph/device",
+    "dispatch_state": "g274-terminal-reviewed-g275-owner-consume-ready",
+    "native_session": "oracle-kimi:local:nanhai-plus#inner",
+    "goal_id": "goal_01"
+  },
+  "goal_session_budget_device_policy_unchanged": true,
+  "owner_ACK_created": false,
+  "graph_executed": false,
+  "device_commands": 0
+}

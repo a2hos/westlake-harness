@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-04T09:23:17.021733+00:00",
+  "conclusion": "three unregistered module-type families cluster diagnostic fanout; provider ownership and executable registration still unresolved",
+  "device_commands": 0,
+  "diagnostic_source_roots": {
+    "hardware/interfaces": 178,
+    "packages/modules": 3
+  },
+  "diagnostic_total": 181,
+  "g275_result_sha256": "d87d229cbad7badf1a8a0baf7ac81a837c868ca991f2f584b3e3357c201885de",
+  "g275_target_graph_stdout_member_bytes": 50449,
+  "g275_target_graph_stdout_member_sha256": "e6570e112a7ffad2a87fbe0908f4cbcaebe22a49ae2356e1152f025e23420db4",
+  "graph_or_target_compiled_by_pilot": false,
+  "negative_provider_lookup": {
+    "hidl_interface": "no literal RegisterModuleType in pinned build-soong Go",
+    "hidl_package_root": "no literal RegisterModuleType in pinned build-soong Go",
+    "library_linking_strategy_apex_defaults": "no literal RegisterModuleType in pinned build-soong Go",
+    "library_linking_strategy_cc_defaults": "no literal RegisterModuleType in pinned build-soong Go"
+  },
+  "pinned_soong_go_files_scanned": 886,
+  "positive_control": {
+    "registration_site": "cc/library.go",
+    "type": "cc_library"
+  },
+  "pregraph_source_module_type_counts": {
+    "hidl_interface": 206,
+    "hidl_package_root": 1,
+    "library_linking_strategy_apex_defaults": 2,
+    "library_linking_strategy_cc_defaults": 1
+  },
+  "schema": "nanhai.evo18.type-registration-cohort-pilot.v1",
+  "source_android_bp_files_scanned": 972,
+  "source_usage_checks": {
+    "hidl_interface": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/hardware-interfaces-r4-aa22955/audio/2.0/Android.bp",
+    "library_linking_strategy": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/modules-common-r4-deef1ed/sdk/Android.bp"
+  },
+  "unrecognized_type_counts": {
+    "hidl_interface": 177,
+    "hidl_package_root": 1,
+    "library_linking_strategy_apex_defaults": 2,
+    "library_linking_strategy_cc_defaults": 1
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "nanhai-g275-owner-ack-independent-peer-review-v1",
+  "at": "2026-10-04T09:06:48.471362+00:00",
+  "decision": "GO_FOR_ROOT_SEAL_REVIEW_ONLY",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "original_session": "oracle-kimi:local:nanhai-plus#inner",
+  "original_claim_at_review": {
+    "status": "ready",
+    "release_state": "completed_reviewed",
+    "release_sequence": 274,
+    "token_budget": 20000000000
+  },
+  "owner_request": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/OWNER-REQUEST.json",
+    "sha256": "e4fed51c6137d16aa225c1c680555a09489fbb34e0f0a01f617388e8fda3cc1b",
+    "refs": 364
+  },
+  "owner_ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/OWNER-ACK.json",
+    "sha256": "6e0f44aba4c27cb6a7d958ac94109955550a954bd6cc4b5d3942707fb2027b17",
+    "refs": 364,
+    "control_equal_request": true,
+    "consumed_equal_request": true,
+    "all_364_current_digest_rechecks_pass": true,
+    "accepted_scope": "G275/v19 frozen candidate read-only SHA consumption only; no Docker, graph, compilation, GET or device; outer seal required separately"
+  },
+  "frozen_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/PACKET-CANDIDATE.json",
+    "sha256": "a285316031b2015e9a0f55e1da62be0fd9be309ea20f71adf6bbe566720d4e5e",
+    "ready_sha256": "d03aeccfe1b0ea966af70758db2cd8ee23759e72a78648cd8966c7bef5a6c8f7"
+  },
+  "dispatch_and_native": {
+    "outbox_event_id": "g275-stock-graph-v19-owner-consume-20261004",
+    "outbox_message_sha256": "d9c110c40278e7365cc3d26eb8056f9c98e6e0a31014b39e9e850100af516f5e",
+    "message_hash_encoding": "sha256 of json.dumps(message, ensure_ascii=False) UTF-8",
+    "delivered_text_matches_outbox": true,
+    "native_ledger": ".nanhai-plus-runtime/instance/ui-protocol/6f7261636c652d6b696d693a6c6f63616c3a6e616e6861692d706c757323696e6e6572007e6377642d35343431326534343037326337313832/ledger-00001791090903799580-81499.log",
+    "native_turn_id": "01a10627-d0eb-7f41-ac1c-cbb3c396e254",
+    "turn_started": true,
+    "turn_completed": true,
+    "owner_entry_actual_tool_success": true,
+    "owner_entry_output_rc": 0,
+    "owner_entry_output_ack_sha256": "6e0f44aba4c27cb6a7d958ac94109955550a954bd6cc4b5d3942707fb2027b17",
+    "native_tool_calls_in_turn": 2,
+    "native_tool_commands": [
+      "owner_entry SHA check",
+      "owner_entry read-only consumer"
+    ],
+    "monitor_dispatch_queue_receipt_status": "QUEUED_VIA_EXISTING_MONITOR_NOT_YET_DELIVERED at queue time; native ledger independently proves subsequent delivery"
+  },
+  "code": {
+    "owner_entry_sha256": "212e568cbcdaa8537c52ae31993f292bb58252380b0f4899f4a13214d4ed3120",
+    "consume_sha256": "973785d299ab0786d3b06c7cde73c9d05c02aca7fa6296ae21e767f390a67ef9",
+    "request_sha256_in_dispatch": "e4fed51c6137d16aa225c1c680555a09489fbb34e0f0a01f617388e8fda3cc1b"
+  },
+  "scope": {
+    "network_requests": 0,
+    "compiler_commands": 0,
+    "docker_commands": 0,
+    "device_commands": 0,
+    "graph_executed": false,
+    "root_sealed": false,
+    "business_complete": false
+  },
+  "next": "Root may review and seal G275 against this exact ACK and candidate. This peer receipt does not release or execute the graph."
+}

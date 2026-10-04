@@ -1,0 +1,34 @@
+{
+  "schema": "nanhai-g275-root-static-review-v1",
+  "at": "2026-10-04T09:00:54.944838+00:00",
+  "decision": "ACCEPT_G275_STATIC_CANDIDATE_FOR_ORIGINAL_OWNER_READ_ONLY_CONSUMPTION",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/PACKET-CANDIDATE.json",
+    "sha256": "a285316031b2015e9a0f55e1da62be0fd9be309ea20f71adf6bbe566720d4e5e"
+  },
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/READY.json",
+    "sha256": "d03aeccfe1b0ea966af70758db2cd8ee23759e72a78648cd8966c7bef5a6c8f7"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-independent-review-v1/REVIEW.json",
+    "sha256": "5396b22d846783f72c63f8d8d695a12189b4c00a66e5c1aea54c14ec5582b1b7"
+  },
+  "static_check": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/STATIC-CHECK.json",
+    "sha256": "fd3cbd123d3a180591c79a557b129797ac7242ba925b30e3dfc2c06f0c847e99"
+  },
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "prospective_release": 275,
+  "source_roots": 40,
+  "exact_paths": 197049,
+  "bound_refs": 358,
+  "source_sdk_guard_pass": true,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "owner_new_ACK": false,
+  "root_seal": false,
+  "device_commands": 0,
+  "next": "original owner fresh read-only SHA ACK, independent ACK review, root sealed one-shot; no G274 replay"
+}

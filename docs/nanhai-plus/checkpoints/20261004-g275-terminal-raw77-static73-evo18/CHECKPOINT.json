@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T09:24:11.926621+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "latest_terminal": "G275 exec23044/chunk4e7b58/rc2; Soong 250/250 but target-graph rc1, 182 HIDL/APEX source errors, compile0",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 77,
+    "static_apks": 73,
+    "static_dex": 147,
+    "static_elf": 522,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "reflection": "EVO18 closed after four actual groups; one bounded pregraph type-registration pilot, no global promotion; pending 0",
+  "next": "G276 exact full R4 system/tools/hidl and system/apex source admission then new independent candidate/owner ACK/seal; G275 not replayed",
+  "device_hold": "preserved, no device access",
+  "github_last_verified_commit": "199baa012a11bcdebeaffa322db7ebd8709062f2",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "f3bfc4665de135fa00320ad1eab21aa834547b15076d6b1f247116e121567722"
+    },
+    "g275_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
+      "sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d"
+    },
+    "g275_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/RESULT.json",
+      "sha256": "d87d229cbad7badf1a8a0baf7ac81a837c868ca991f2f584b3e3357c201885de"
+    },
+    "evo18_closure": {
+      "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/ROOT-CLOSURE.json",
+      "sha256": "5236d3d2302a9b258c879aa83932ea54833ec0f7b3f51ea66f2aee92e7cd02f3"
+    }
+  }
+}

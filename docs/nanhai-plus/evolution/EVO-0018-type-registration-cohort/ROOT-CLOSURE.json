@@ -1,0 +1,42 @@
+{
+  "schema": "nanhai.evo18.root-closure.v1",
+  "at": "2026-10-04T09:23:59.209488+00:00",
+  "decision": "CLOSE_ONE_LIMITED_CANDIDATE_NO_GLOBAL_PROMOTION",
+  "actual_result_groups": [
+    "G274 host terminal",
+    "Proton Meet official raw APK intake",
+    "Proton Meet complete static inventory",
+    "G275 host terminal"
+  ],
+  "lens": "diagnostic fanout and alternate pregraph source-type cohort",
+  "pilot": {
+    "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/PILOT.json",
+    "sha256": "97c8c0f9dbddcce8215671a37de5c11975561b01766f2ca5cc36f8ea78328300"
+  },
+  "method": {
+    "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/DECISION.md",
+    "sha256": "ef85e611ff109bd18278d56969916b89d04d3190abbb5217260399a7511d7352"
+  },
+  "script": {
+    "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/pilot.py",
+    "sha256": "7d5bc7f9c63ed38eb8bebeda51cf60b6c0505e8faaf2bfde50cdfe2b12aa56c6"
+  },
+  "verified": {
+    "pilot_rc": 0,
+    "diagnostics_grouped": 181,
+    "g275_total_errors": 182,
+    "g275_non_type_import_error": 1,
+    "pregraph_source_bp_files_scanned": 972,
+    "pinned_soong_go_files_scanned": 886,
+    "new_tool_count_delta": 0,
+    "original_89_delta": 0,
+    "startup_delta": 0,
+    "global_promotion": false
+  },
+  "one_improvement": "Before a new graph release, group exact pinned Android.bp module types against exact pinned Soong/plugin registration closure, with content-keyed invalidation and unresolved provider output.",
+  "falsifier": "If exact R4 provider already participates in graph or same type remains unrecognized after proper provider mount, stop and inspect bootstrap registration rather than adding more source.",
+  "limits": [
+    "Lexical scan alone cannot prove full registration closure",
+    "No measured build saved, graph pass or runtime result"
+  ]
+}

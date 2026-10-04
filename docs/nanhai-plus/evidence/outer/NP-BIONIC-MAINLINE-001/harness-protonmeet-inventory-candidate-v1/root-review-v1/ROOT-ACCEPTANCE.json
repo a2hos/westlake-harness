@@ -1,0 +1,32 @@
+{
+  "schema": "nanhai-protonmeet-static-root-acceptance-v1",
+  "at": "2026-10-04T09:08:31.325289+00:00",
+  "decision": "ACCEPT_COMPLETE_STATIC_INVENTORY_ONLY",
+  "package": "proton.android.meet",
+  "raw_root_acceptance": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/READY.json",
+    "sha256": "ac2e90dc2ce2580b76b121c5cd5fe14bfce96456037fee9142b96fee97000a6d"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/RESULT.json",
+    "sha256": "1cb51a7064a29d9afb7bf348dce0ba1f5355a178b8c2ea99c3dc76a3cb1eb816"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-peer-review-v1/REVIEW.json",
+    "sha256": "cb9dfbf59dc6980c465f8a2962e45b35c1fad8c3a39997fe9c451c8baae37255"
+  },
+  "zip_entries": 2716,
+  "dex_entries": 16,
+  "true_elf_entries": 45,
+  "arm64_elf_entries": 15,
+  "previous_complete_static": 72,
+  "new_complete_static": 73,
+  "previous_dex": 131,
+  "new_dex": 147,
+  "previous_true_elf": 477,
+  "new_true_elf": 522,
+  "qualified_blackbox": false,
+  "cold_start_verified": false,
+  "device_commands": 0
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "proton-meet-official-apk-ready-v1",
+  "at": "2026-10-04T09:00:24.427430+00:00",
+  "status": "CANDIDATE_ONLY_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "candidate_result_sha256": "8dc1d57139900c1ee76cfd22fe78a9390d03f285adc81cf3f1691833110b402d",
+  "handoff_gate": "PASS",
+  "payload": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk",
+    "bytes": 262604360,
+    "sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9"
+  },
+  "files": {
+    "run.py": {
+      "bytes": 8340,
+      "sha256": "7526da6f90e10c2385acdd476e96fe50f92be09f199f46fa0ada0bd98e473f3a"
+    },
+    "RESULT.json": {
+      "bytes": 6189,
+      "sha256": "8dc1d57139900c1ee76cfd22fe78a9390d03f285adc81cf3f1691833110b402d"
+    },
+    "HANDOFF.md": {
+      "bytes": 5683,
+      "sha256": "df86efa33f0c95335288966ceaa3f72c25dd0d870026ce2612052083f5c0d2d9"
+    },
+    "download.stdout.raw": {
+      "bytes": 76,
+      "sha256": "70ed89f4a63514d1ea58c6054382dd21b49581bcc8d8b0be9b96a94059cb3bff"
+    },
+    "download.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "badging.stdout.raw": {
+      "bytes": 7697,
+      "sha256": "6aab600c071faee101c0eba44b7e5cf08b36e8cef60f08b9192faff4890c5adf"
+    },
+    "badging.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "signature.stdout.raw": {
+      "bytes": 1026,
+      "sha256": "a603c5ebb5c9016e04aebe9f14e394ce9aa31ce76aaec143b7031de4fae4d9ec"
+    },
+    "signature.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "runtime_receipts": {
+    "page.html.raw": {
+      "bytes": 196464,
+      "sha256": "43df122e78c1f055f107518429ddef1f734b356950b80cb42dd26ab8dc5facff"
+    },
+    "page.headers.raw": {
+      "bytes": 2219,
+      "sha256": "f8dfbe5db7f0ba089c35ba986d3861672d4357dfa618a44559b87d6cd9a1e482"
+    },
+    "head.headers.raw": {
+      "bytes": 2114,
+      "sha256": "c0eab4613ca72268e62539dc54adbd6b3097d5222c2e3a764a6a2d62e4555adc"
+    },
+    "get.headers.raw": {
+      "bytes": 2114,
+      "sha256": "37a7974ea8e3705ace4b8fe7818ac30802416f37e1821d47879d5cfb76619c82"
+    }
+  },
+  "authoritative_count_changed": false,
+  "blackbox_qualified": false,
+  "device_commands": 0
+}

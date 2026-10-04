@@ -1,0 +1,24 @@
+{
+  "schema": "nanhai-g275-owner-ack-root-review-v1",
+  "at": "2026-10-04T09:04:51.485880+00:00",
+  "decision": "ORIGINAL_OWNER_ACK_CONTENT_ACCEPTED_PENDING_INDEPENDENT_PEER",
+  "ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/OWNER-ACK.json",
+    "sha256": "6e0f44aba4c27cb6a7d958ac94109955550a954bd6cc4b5d3942707fb2027b17"
+  },
+  "request": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/OWNER-REQUEST.json",
+    "sha256": "e4fed51c6137d16aa225c1c680555a09489fbb34e0f0a01f617388e8fda3cc1b"
+  },
+  "consumed_refs": 364,
+  "all_consumed_digests_match_request": true,
+  "native_turn_id": "01a10627-d0eb-7f41-ac1c-cbb3c396e254",
+  "native_terminal": "turn/completed 2026-10-04T09:04:11.587667+00:00",
+  "native_owner_entry_tool_rc": 0,
+  "release_sequence": 275,
+  "goal_session_budget_unchanged": true,
+  "docker_commands": 0,
+  "device_commands": 0,
+  "graph_executed": false,
+  "root_sealed": false
+}

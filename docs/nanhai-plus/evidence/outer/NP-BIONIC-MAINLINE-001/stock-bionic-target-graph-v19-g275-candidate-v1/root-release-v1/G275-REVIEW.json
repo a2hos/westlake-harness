@@ -1,0 +1,49 @@
+{
+  "schema": "nanhai-g275-root-terminal-review-v1",
+  "at": "2026-10-04T09:23:18.663973+00:00",
+  "decision": "ACCEPT_ACTUAL_TERMINAL_FAILURE_EVIDENCE",
+  "claim": "NP-MUSL16-ART-024",
+  "goal_id": "goal_01",
+  "release_sequence": 275,
+  "external_execution": {
+    "session_id": 23044,
+    "terminal_chunk": "4e7b58",
+    "rc": 2
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/RESULT.json",
+    "sha256": "d87d229cbad7badf1a8a0baf7ac81a837c868ca991f2f584b3e3357c201885de"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/g275-terminal-peer-review-v1/REVIEW.json",
+    "sha256": "a0ea16b07a1211aa45c797c13638a195625e5af9fc9a7a846c97e93461528ac0"
+  },
+  "observations": {
+    "stock_rc": 1,
+    "stopped_at": "target-graph",
+    "soong_bootstrap_steps": "250/250",
+    "graph_generation_pass": false,
+    "product_configuration_pass": false,
+    "target_compile_commands": 0,
+    "device_commands": 0,
+    "error_lines": 182,
+    "error_families": {
+      "hidl_interface": 177,
+      "hidl_package_root": 1,
+      "library_linking_strategy_apex_defaults": 2,
+      "library_linking_strategy_cc_defaults": 1,
+      "missing_system_apex_Android_bp": 1
+    },
+    "g274_undefined_kernel_config_and_selinux_absent": true,
+    "40_stock_source_roots_readonly": true,
+    "source_sdk_guards_pass": true,
+    "archive_hashes_pass": true,
+    "volume_removal_recorded_rc0": true
+  },
+  "limits": [
+    "No graph, target build, APK cold start, device result, or whole-tool completion",
+    "Removal receipts do not constitute fresh Docker volume inspection",
+    "G275 sealed packet is spent and must not be replayed"
+  ],
+  "next": "Admit exact full R4 system/tools/hidl and system/apex roots, then a new independently reviewed sealed one-shot graph."
+}

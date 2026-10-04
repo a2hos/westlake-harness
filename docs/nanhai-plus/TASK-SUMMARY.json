@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:54:45.466724+00:00",
+  "checked_at": "2026-10-04T09:23:59.209488+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 76,
+    "downloaded_payloads": 77,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 72,
-    "complete_inventory_dex_entries": 131,
-    "complete_inventory_native_elf_entries": 477,
+    "complete_static_inventories": 73,
+    "complete_inventory_dex_entries": 147,
+    "complete_inventory_native_elf_entries": 522,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -51,16 +51,16 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 73,
-    "supplemental_payloads": 3
+    "supplemental_payloads": 4
   },
   "latest_actual_execution": {
-    "release": 274,
+    "release": 275,
     "terminal_rc": 2,
-    "actual_exec_session": 73856,
-    "terminal_chunk": "9ba790",
+    "actual_exec_session": 23044,
+    "terminal_chunk": "4e7b58",
     "host_preparatory_steps_rc0": 6,
-    "soong_bootstrap_successful_steps": 1,
-    "soong_bootstrap_total_steps": 1,
+    "soong_bootstrap_successful_steps": 250,
+    "soong_bootstrap_total_steps": 250,
     "first_failed_step": "stock",
     "stock_child_at_stop": "target-graph",
     "target_compile_commands": 0,
@@ -459,6 +459,26 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
       "sha256": "311b75cb735ad0f36e0df6fae5cc49a7daeca998975f04c2c3ed4f3ef35308ac"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "2afcd40d8098bdc0075db76b7a62d82e32c8fe1f6a68a0a7b729883f3e6da3fc"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-independent-review-v1/REVIEW.json",
+      "sha256": "5396b22d846783f72c63f8d8d695a12189b4c00a66e5c1aea54c14ec5582b1b7"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-static-review-v1/REVIEW.json",
+      "sha256": "32bd1b71d8ac8f6d009fd3158b11466f4a8bd86fe06219f3d7e5c6f0fd14e36e"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "6a191bd160db05359c565e1f96dcd3a138af6cf72037fe78f750e5e124b4874e"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
+      "sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d"
     }
   ],
   "bionic_stock_graph": {
@@ -491,30 +511,23 @@
   },
   "next_graph_candidate": {
     "prospective_release": 275,
-    "next_input": "G275 two exact R4 source roots admitted; integrate and independently review complete source/SDK guard and exact oracle, then fresh original owner ACK and root seal",
-    "candidate_independently_reviewed": false,
-    "root_reviewed": false,
-    "original_owner_ACK": false,
-    "execution_ready": false,
+    "next_input": "G275 owner ACK and root seal present; release-only preflight rc0 after claim reference correction; independent pre-run review pending, then one-shot graph",
+    "candidate_independently_reviewed": true,
+    "root_reviewed": true,
+    "original_owner_ACK": true,
+    "execution_ready": true,
     "G274_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0017",
-    "verified_improvement_this_round": 1,
-    "scope": "Read-only per-invocation G274 oracle candidate identity recheck under injected cache sentinel; transient earlier failure not SHA-pinned",
-    "global_promotion": false,
-    "counts_as_new_tool": false,
-    "duration_seconds": null,
-    "limit_seconds": 120,
-    "pending_actual_result_groups": 1,
-    "trigger_every_groups": "3-4",
-    "next": "Wait for next 3-4 actual result groups; vary lens; one verifiable improvement",
-    "latest_closed": "EVO-0017",
-    "pending_groups": 1,
-    "latest_closure": {
-      "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/ROOT-CLOSURE.json",
-      "sha256": "cfae617c74d6f7945aaa0c7578354d8e22c11f697ee4608da7a805bdb58ef6d0"
-    }
+    "latest": "EVO-0018-type-registration-cohort",
+    "root_closure": {
+      "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/ROOT-CLOSURE.json",
+      "sha256": "5236d3d2302a9b258c879aa83932ea54833ec0f7b3f51ea66f2aee92e7cd02f3"
+    },
+    "actual_result_groups": 4,
+    "limited_pilot": true,
+    "globally_promoted": false,
+    "pending_actual_result_groups": 0
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -979,5 +992,68 @@
     "target_compile_commands": 0,
     "owner_new_ACK": false,
     "device_commands": 0
+  },
+  "protonmeet_raw_actual": {
+    "root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "2afcd40d8098bdc0075db76b7a62d82e32c8fe1f6a68a0a7b729883f3e6da3fc"
+    },
+    "package": "proton.android.meet",
+    "version": "1.2.2",
+    "bytes": 262604360,
+    "sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9",
+    "blackbox_qualified": false,
+    "static_complete": false,
+    "cold_start_verified": false,
+    "raw_count_delta": 1
+  },
+  "g275_graph_candidate": {
+    "status": "STATIC_REVIEW_ACCEPTED_FOR_OWNER_READONLY_CONSUMPTION_NOT_RELEASED",
+    "independent_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-independent-review-v1/REVIEW.json",
+      "sha256": "5396b22d846783f72c63f8d8d695a12189b4c00a66e5c1aea54c14ec5582b1b7"
+    },
+    "root_static_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-static-review-v1/REVIEW.json",
+      "sha256": "32bd1b71d8ac8f6d009fd3158b11466f4a8bd86fe06219f3d7e5c6f0fd14e36e"
+    },
+    "source_roots": 40,
+    "exact_paths": 197049,
+    "check_candidate_rc": 0,
+    "source_sdk_guard_pass": true,
+    "docker_commands": 0,
+    "graph_executed": false,
+    "owner_new_ACK": true,
+    "root_sealed": true
+  },
+  "protonmeet_static_actual": {
+    "root_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-protonmeet-inventory-candidate-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "6a191bd160db05359c565e1f96dcd3a138af6cf72037fe78f750e5e124b4874e"
+    },
+    "zip_entries": 2716,
+    "dex_entries": 16,
+    "true_elf_entries": 45,
+    "true_arm64_elf_entries": 15,
+    "static_count_delta": 1,
+    "startup_delta": 0
+  },
+  "g275_actual": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
+      "sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d"
+    },
+    "independent_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/g275-terminal-peer-review-v1/REVIEW.json",
+      "sha256": "a0ea16b07a1211aa45c797c13638a195625e5af9fc9a7a846c97e93461528ac0"
+    },
+    "result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/RESULT.json",
+      "sha256": "d87d229cbad7badf1a8a0baf7ac81a837c868ca991f2f584b3e3357c201885de"
+    },
+    "terminal_rc": 2,
+    "graph_generation_pass": false,
+    "error_lines": 182,
+    "target_compile_commands": 0
   }
 }

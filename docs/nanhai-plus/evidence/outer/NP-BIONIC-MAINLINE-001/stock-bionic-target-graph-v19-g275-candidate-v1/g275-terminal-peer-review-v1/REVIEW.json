@@ -1,0 +1,115 @@
+{
+  "schema": "nanhai-g275-independent-terminal-review-v1",
+  "at": "2026-10-04T09:21:30.057993+00:00",
+  "decision": "ACCEPT_ACTUAL_TERMINAL_FAILURE_EVIDENCE",
+  "reported_external_execution": {
+    "session_id": 23044,
+    "terminal_chunk": "4e7b58",
+    "outer_rc": 2,
+    "note": "External exec session/chunk supplied by coordinator; independently verified persisted RESULT and command/evidence receipts."
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/RESULT.json",
+    "sha256": "d87d229cbad7badf1a8a0baf7ac81a837c868ca991f2f584b3e3357c201885de",
+    "rc": 2,
+    "stock_command_rc": 1,
+    "first_failed_step": "stock",
+    "stock_child_at_stop": "target-graph",
+    "graph_generation_pass": false,
+    "product_configuration_pass": false,
+    "target_compile_commands": 0,
+    "device_commands": 0,
+    "sealed_packet_sha256": "3b9fdcfe7693b917ba09461fc8b4c953fd08753f63a2e5b612e0490acf72f433"
+  },
+  "evidence_integrity": {
+    "listed_receipts": 140,
+    "listed_receipt_hash_and_size_errors": 0,
+    "source_before_after_identical": true,
+    "source_guard_sha256": "ed7fbbcb5f70ed2916a27c3932f8c5f450500d140cd571171f8e0e25e5cf4245",
+    "sdk_regular_files": 17921,
+    "sdk_symlinks": 3,
+    "sdk_all_bytes_verified": true,
+    "g274_nine_source_entries": 85499,
+    "g275_two_source_entries": 4587,
+    "g275_all_bytes_verified": true
+  },
+  "linux_stock_mounts": {
+    "observed_total_mounts": 58,
+    "planned_readonly_roots": 40,
+    "all_40_present_and_rw_false": true,
+    "source_volume_rw_false": true,
+    "new_bind_sources": {
+      "kernel/configs": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/aosp16-r4-kernel-configs",
+      "system/sepolicy": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/aosp16-r4-system-sepolicy"
+    },
+    "new_bind_rw_false": true
+  },
+  "stock_steps": {
+    "source_pre_rc": 0,
+    "host_providers_rc": 0,
+    "mk2rbc_rc": 0,
+    "rbcrun_rc": 0,
+    "release_config_rc": 0,
+    "product_dumpvars_rc": 0,
+    "target_graph_rc": 1,
+    "source_post_rc": 0,
+    "source_volume_pre_post_equal": true,
+    "product_dumpvars_rc0_is_not_product_configuration_acceptance": true
+  },
+  "archives": {
+    "out": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/export-out.stdout.log",
+      "sha256": "f5bfff2dcafe74931d8212c0cc83d598098de1b565d0c6ee50d719f41d5980b9",
+      "hash_and_size_match": true,
+      "bytes": 1020812800,
+      "members": 1739,
+      "unsafe_paths": 0,
+      "fifo_member": ".ninja_fifo",
+      "unexpanded": true
+    },
+    "tmp": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/runtime-result/export-tmp.stdout.log",
+      "sha256": "2b36b4866cb0a85b80dab70c171e5da85438ee4a32fb4d1be4985dde85fb0916",
+      "hash_and_size_match": true,
+      "bytes": 51599872,
+      "members": 1020,
+      "unsafe_paths": 0,
+      "unexpanded": true
+    }
+  },
+  "diagnostic_compare": {
+    "g274_result_sha256": "24f7ceb9f6ec805358087b5e9e3b9106069501f0a50b2831f9f09a273153f5cf",
+    "g274_error_lines": [
+      "error: hardware/interfaces/compatibility_matrices/build/Android.bp:24:1: \"vintf-compatibility-matrix-soong-rules\" depends on undefined module \"kernel-config-soong-rules\". Did you mean [\"blueprint-bootstrap-bpdoc\" \"partner-bpfix-extensions\"]?",
+      "error: hardware/interfaces/compatibility_matrices/build/Android.bp:24:1: \"vintf-compatibility-matrix-soong-rules\" depends on undefined module \"soong-selinux\". Did you mean [\"soong-elf\" \"soong-golang\" \"soong-kernel\"]?"
+    ],
+    "g275_first_error": "error: hardware/interfaces/Android.bp:31:1: unrecognized module type \"hidl_package_root\"",
+    "g275_second_error": "error: hardware/interfaces/tetheroffload/config/1.0/Android.bp:12:1: unrecognized module type \"hidl_interface\"",
+    "g275_third_error": "error: packages/modules/common/sdk/Android.bp:195:9: module \"system_apex_Android_bpsoong_config_module_type_import_0xc005f3d808\": from: failed to open \"system/apex/Android.bp\": open /src/system/apex/Android.bp: no such file or directory",
+    "g275_error_line_count": 182,
+    "g275_unrecognized_hidl_interface_lines": 177,
+    "g274_two_undefined_module_names_absent_from_g275_errors": true,
+    "blueprint_list_entries": 7056,
+    "blueprint_list_unique": true,
+    "new_wall_definitions_in_blueprint_list": true,
+    "missing_system_apex_android_bp_in_blueprint_list": true,
+    "conclusion": "G274 two undefined modules cleared; G275 reaches later Soong module-type and missing source import wall, without graph generation."
+  },
+  "cleanup": {
+    "recorded_container_remove_rc0": true,
+    "recorded_volume_remove_rc0": true,
+    "removed_volumes": [
+      "tmp",
+      "out",
+      "source"
+    ],
+    "retained_volumes": [],
+    "fresh_post_removal_docker_inspect": false
+  },
+  "limits": [
+    "Host/SDK/source identity and stock step receipts are separate from successful product configuration and graph acceptance.",
+    "No target compile, whole Bionic tool, APK startup, or device success.",
+    "Cleanup conclusion is based on recorded remove rc0; no fresh Docker inspection was performed by this reviewer."
+  ],
+  "reviewer_actions": "Read-only inspection and hashing only; no Docker/graph/device/control mutation or replay."
+}

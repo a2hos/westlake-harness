@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai-g275-release-only-static-check-v1",
+  "at": "2026-10-04T09:08:22.173285+00:00",
+  "first_attempt": {
+    "rc": 1,
+    "failure": "malformed reference: claim.release_packet string not {path,sha256}",
+    "docker_commands": 0
+  },
+  "correction": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/CLAIM-RELEASE-CORRECTION.json",
+    "sha256": "7445d41998d854cbfcb2d995e9010c23354b096fc9e9259fd8c5aea2e13f0bb8"
+  },
+  "second_attempt": {
+    "rc": 0,
+    "released_function_pass": true,
+    "packet_sha256": "3b9fdcfe7693b917ba09461fc8b4c953fd08753f63a2e5b612e0490acf72f433",
+    "release_sequence": 275,
+    "docker_commands": 0,
+    "device_commands": 0
+  },
+  "graph_executed": false,
+  "target_compile_commands": 0
+}

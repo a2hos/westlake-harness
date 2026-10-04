@@ -1,0 +1,146 @@
+{
+  "schema": "proton-meet-official-apk-intake-candidate-v1",
+  "started_at": "2026-10-04T08:59:11.367048+00:00",
+  "finished_at": "2026-10-04T08:59:41.266493+00:00",
+  "elapsed_seconds": 29.898986499989405,
+  "candidate_only": true,
+  "root_accepted": false,
+  "blackbox_qualified": false,
+  "startup_verified": false,
+  "device_commands": 0,
+  "official_page_url": "https://proton.me/meet/download",
+  "official_apk_url": "https://proton.me/download/MeetAndroid/ProtonMeet-Android.apk",
+  "official_certificate_sha256": "DCC9439EC1A6C6A8D0203F3423EE42BCC8B970628E53CB73A0393F398DD5B853",
+  "page_sha256": "43df122e78c1f055f107518429ddef1f734b356950b80cb42dd26ab8dc5facff",
+  "head_sha256": "c0eab4613ca72268e62539dc54adbd6b3097d5222c2e3a764a6a2d62e4555adc",
+  "head_etag": "\"c28f722ea2a8f2f0547e84fe3aa59007-51\"",
+  "head_bytes": 262604360,
+  "get_headers_sha256": "37a7974ea8e3705ace4b8fe7818ac30802416f37e1821d47879d5cfb76619c82",
+  "get_http200": true,
+  "get_same_etag": true,
+  "payload_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk",
+  "payload_bytes": 262604360,
+  "payload_sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9",
+  "zip_check": {
+    "entries": 2716,
+    "unique": true,
+    "manifest_count": 1,
+    "crc_first_bad": null,
+    "uncompressed_bytes": 541829546,
+    "lib_abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ]
+  },
+  "package": "proton.android.meet",
+  "version_name": "1.2.2",
+  "version_code": "131",
+  "certificate_sha256": "DCC9439EC1A6C6A8D0203F3423EE42BCC8B970628E53CB73A0393F398DD5B853",
+  "publisher_fingerprint_matches": true,
+  "tool_source_pre_post_equal": true,
+  "commands": [
+    {
+      "name": "download",
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--no-location",
+        "--max-time",
+        "180",
+        "--max-filesize",
+        "300000000",
+        "--header",
+        "If-Match: \"c28f722ea2a8f2f0547e84fe3aa59007-51\"",
+        "--dump-header",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/get.headers.raw",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk",
+        "--write-out",
+        "%{http_code} %{url_effective} %{size_download}\n",
+        "https://proton.me/download/MeetAndroid/ProtonMeet-Android.apk"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1",
+      "started_at": "2026-10-04T08:59:11.367187+00:00",
+      "finished_at": "2026-10-04T08:59:40.073391+00:00",
+      "elapsed_seconds": 28.705906791961752,
+      "rc": 0,
+      "timed_out": false,
+      "streams": {
+        "stdout": {
+          "sha256": "70ed89f4a63514d1ea58c6054382dd21b49581bcc8d8b0be9b96a94059cb3bff",
+          "bytes": 76
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "name": "badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1",
+      "started_at": "2026-10-04T08:59:40.770205+00:00",
+      "finished_at": "2026-10-04T08:59:40.829273+00:00",
+      "elapsed_seconds": 0.05909104098100215,
+      "rc": 0,
+      "timed_out": false,
+      "streams": {
+        "stdout": {
+          "sha256": "6aab600c071faee101c0eba44b7e5cf08b36e8cef60f08b9192faff4890c5adf",
+          "bytes": 7697
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "name": "signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1",
+      "started_at": "2026-10-04T08:59:40.829317+00:00",
+      "finished_at": "2026-10-04T08:59:41.261430+00:00",
+      "elapsed_seconds": 0.43213041697163135,
+      "rc": 0,
+      "timed_out": false,
+      "streams": {
+        "stdout": {
+          "sha256": "a603c5ebb5c9016e04aebe9f14e394ce9aa31ce76aaec143b7031de4fae4d9ec",
+          "bytes": 1026
+        },
+        "stderr": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    }
+  ],
+  "qualification_limits": [
+    "Official Proton Meet product is comparatively new; overseas mainstream criterion is not proven.",
+    "Static identity and APK signature do not prove complete split set or runtime startup.",
+    "The stable URL may change later; this result is tied to exact GET bytes and ETag."
+  ],
+  "complete_raw_candidate": true
+}

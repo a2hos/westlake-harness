@@ -1,0 +1,34 @@
+{
+  "schema": "nanhai-protonmeet-exact-raw-root-admission-v1",
+  "at": "2026-10-04T09:02:36.128076+00:00",
+  "decision": "ACCEPT_EXACT_ORIGINAL_APK_BYTES_ONLY",
+  "package": "proton.android.meet",
+  "version_name": "1.2.2",
+  "version_code": "131",
+  "payload": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk",
+    "bytes": 262604360,
+    "sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9"
+  },
+  "official_page": "https://proton.me/meet/download",
+  "certificate_sha256": "DCC9439EC1A6C6A8D0203F3423EE42BCC8B970628E53CB73A0393F398DD5B853",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/READY.json",
+    "sha256": "0d665700863245b9ff0aaec3e9c7ac1a29ec932f86a17c82aef3e6c0cd2b9653"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/RESULT.json",
+    "sha256": "8dc1d57139900c1ee76cfd22fe78a9390d03f285adc81cf3f1691833110b402d"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-peer-review-v1/REVIEW.json",
+    "sha256": "c034db5aabd71b0026acc399e5d6f0235c3e2d0a851cb6ea8f0946be1e74a468"
+  },
+  "previous_accepted_raw": 76,
+  "new_accepted_raw": 77,
+  "complete_static_inventory": false,
+  "qualified_overseas_mainstream_blackbox": false,
+  "cold_start_verified": false,
+  "device_commands": 0,
+  "next": "Separate complete static inventory and independent qualification; no startup count without actual cold-run evidence"
+}

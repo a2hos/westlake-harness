@@ -1,0 +1,72 @@
+{
+  "schema": "nanhai.g275.v19.static-check.v1",
+  "at": "2026-10-04T08:58:24.705045+00:00",
+  "status": "STATIC_CANDIDATE_CHECK_PASS_NO_RELEASE",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "predecessor_g274_terminal": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+    "sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781",
+    "rc": 2,
+    "first_wall": [
+      "kernel-config-soong-rules",
+      "soong-selinux"
+    ],
+    "target_compile_commands": 0
+  },
+  "input_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-stock-input-candidate-v1/INPUT-CANDIDATE.json",
+    "sha256": "9cccbd8062aa5215763ae2c45f39d2b1bb9342b9c840b954a5836906963bc995"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/PACKET-CANDIDATE.json",
+    "sha256": "a285316031b2015e9a0f55e1da62be0fd9be309ea20f71adf6bbe566720d4e5e",
+    "inputs": 358
+  },
+  "code_sha256": {
+    "executor.py": "24e4506691fbe71c5b204856c5b7df2d6f5c44acee579db2fa474a42032faa47",
+    "g275_inputs.py": "08b3de8bd789b6e33b63048e7d6dc844288acecbb7ee299a3852684cda36ad4b",
+    "oracle_policy.py": "8fbaff1fc5bd24c7a416e4eb9d688786093ef50fe7d4f29e6b7c8af456d8afb7",
+    "MATERIALIZATION.json": "82dfdbe389dca1b6e163424c2bc33b102005f334367eb447b66b8f08373ffa05"
+  },
+  "checks": {
+    "check_candidate_command": "python3 -B scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/executor.py check-candidate",
+    "check_candidate_rc": 0,
+    "check_candidate_output": {
+      "metadata_valid": true,
+      "docker_commands": 0,
+      "target_compile": false
+    },
+    "complete_source_sdk_guard_rc": 0,
+    "v17b_source_and_sdk_pass": true,
+    "g274_nine_exact_entries_verified": 85499,
+    "g275_two_exact_entries_verified": 4587,
+    "g275_all_bytes_verified": true,
+    "prior_readonly_roots": 38,
+    "new_readonly_roots": 2,
+    "total_readonly_roots": 40,
+    "prior_oracle_exact_paths": 192462,
+    "new_oracle_exact_paths": 4587,
+    "total_oracle_exact_paths": 197049,
+    "project_input_links_resolve_to_registered_pool": true
+  },
+  "unverified": [
+    "Linux stock bind mount inspection",
+    "Soong graph",
+    "host and target build",
+    "Bionic tools",
+    "APK startup",
+    "device"
+  ],
+  "requires_before_run": [
+    "independent candidate review",
+    "root review",
+    "fresh original-owner G275 ACK covering frozen inputs",
+    "G275 sealed packet and matching root seal on original claim"
+  ],
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "owner_dispatch": false
+}

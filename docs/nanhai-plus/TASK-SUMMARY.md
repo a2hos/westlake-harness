@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T08:54:45.466724+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T09:23:59.209488+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -13,12 +13,16 @@
 | 历史 Musl 已尝试 / 未尝试 | 58 / 31 | 原 86 项已尝试 56，加新增项已尝试 2 |
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
-| 原版 APK 下载载荷接受 | 76 | 上游登记原包 73，加 Signal、WhatsApp 与 Vivaldi 官方渠道补充原包各 1；Vivaldi 签名工具有效但发布者证书绑定未证，均未计启动 |
-| APK 完整静态清点 | 72 | 共 131 个 DEX、477 个真正 ELF；VLC、Signal、Keychain 仍未计完整清点 |
+| 原版 APK 下载载荷接受 | 77 | 上游登记原包 73，加 Signal、WhatsApp、Vivaldi 与 Proton Meet 官方渠道补充原包各 1；均未计启动 |
+| APK 完整静态清点 | 73 | 共 147 个 DEX、522 个真正 ELF；VLC、Signal、Keychain 仍未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
+
+EVO18 在 G274 终态、Proton Meet 原包/静态两组、G275 终态共四组实际结果后闭合：只读小试将 181 条模块类型报错按注册来源聚类，提出下一轮图前精确来源闭合检查。仅限候选，未推广、未增加工具/启动数；反思计数归零。
+
+最新构建图实际结果：G275（exec23044，chunk4e7b58，rc2）已由原 owner 新 ACK、独审和外环复核。40 棵源码根只读挂载，Soong bootstrap 250/250，但 target-graph 返回 rc1，图生成与产品配置验收均未通过；182 条报错集中为 HIDL 模块类型 178 条、APEX 模块类型 3 条、缺少 system/apex/Android.bp 1 条。G274 两个未定义模块不再报错。目标编译 0、设备命令 0、Bionic 整工具仍 0/89；G275 封包已用，禁止重放。下一步准入精确 R4 的 system/tools/hidl 与 system/apex 完整源码根，再独审新图。
 
 最新构建图实际结果：G273 已终态（exec42573，terminal 37e6c6，rc2），经原 owner 新 ACK/root 封包、独审/root 接受。Soong 宿主引导 240/240，G272 的五种缺项均消失；本轮新报 12 种未定义模块、18 条诊断，首个是 `documentsui_defaults`（CarDocumentsUI）。源码/SDK 前后守卫一致，OUT/TMP 哈希核对与清理命令收据通过；目标编译命令 0。G274 九个精确 R4 仓获源码身份准入（85,499 跟踪项、1,875,247,905 字节）；只读虚拟路径侦察发现 13 链中 12 个可由已准入根解析、1 个原版即悬空；与旧视图 4 个路径完全同字节、无冲突。G274/v18 的输入候选经独审与 root 仅获输入准入；v18 materializer 扩展的 38 根静态检查已通过并独审/root 限定接受；首版完整 one-shot 执行器独审被阻断：继承的结果校验器只允许旧 29 仓，九个新增仓会被误拒；v2 正修订精确允许集，真实 Linux 挂载与 stock 图均未执行，尚无新图 ACK/执行。G273 旧包禁止重放。
 
@@ -32,7 +36,7 @@ A3 两包隔离静态扫描实际 exec65299/chunk9a91d5/rc0，独审和 root 接
 
 A4 又实际获取 4 个上游登记的小型原包（Files、Libre Contacts Backup、Stopwatch、aka Alarm）：exec59955/chunk857dd6/rc0，合计 2,286,257 字节；经独审与外环接受后，当前累计 **75 原包、65 完整静态**。签名、黑盒资格和启动均未由取件证明，四包的静态清点另行执行。
 
-batch12 v3 修复后，Seal 与 Briar 两份完整静态清点经独审及 root 接受，新增 3 DEX、14 真 ELF；Seal 内 3 个 ZIP 格式 `.so` 另列，不能误计 ELF。A4 v2 四份清点独审及 root 接受，新增 4 DEX、4 ELF；v1 外层 rc2 和 v2 输入 scope 沿袭文案保留为模板修订事项。当时累计 **75 原包、71 份完整静态、129 DEX、475 真 ELF**。随后 Vivaldi 官方固定版本原包经独审及 root 仅作载荷接受，当前 **76 原包、72 完整静态**；Vivaldi 的 5,097 个 ZIP 成员静态检查经独审及 root 接受，新增 2 DEX、2 真 ARM64 ELF；黑盒资格及冷启动未通过，冷启动仍为 0。
+batch12 v3 修复后，Seal 与 Briar 两份完整静态清点经独审及 root 接受，新增 3 DEX、14 真 ELF；Seal 内 3 个 ZIP 格式 `.so` 另列，不能误计 ELF。A4 v2 四份清点独审及 root 接受，新增 4 DEX、4 ELF；v1 外层 rc2 和 v2 输入 scope 沿袭文案保留为模板修订事项。当时累计 **75 原包、71 份完整静态、129 DEX、475 真 ELF**。随后 Vivaldi 官方固定版本原包经独审及 root 仅作载荷接受，当时 **76 原包、72 完整静态**；Vivaldi 的 5,097 个 ZIP 成员静态检查经独审及 root 接受，新增 2 DEX、2 真 ARM64 ELF；黑盒资格及冷启动未通过，冷启动仍为 0。
 
 历史构建图结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；G271/v15 候选经 570 项独立检查和 root 审查，后由原 octos-inner 新 ACK 与 root 封包执行为 G271；源码准入及 ACK 均不代表图闭合。G270 不重放。
 
@@ -86,6 +90,8 @@ G274 输入/静态扩展门、Vivaldi 原包、Vivaldi 静态和 G274 完整执�
 
 G275 已从官方 `android-16.0.0_r4` 补齐并独立复核 `kernel/configs` 与 `system/sepolicy` 两棵完整仓，共 4,587 个受控条目；共享索引和项目内只读软链接已登记。两条 stock 根与既有 38 根无路径冲突，外环仅准入源码身份和静态输入视图；Linux 挂载、图构建、目标编译和原 owner 新 ACK 仍未发生。详见 TASK-SUMMARY.json 的 `g275_source_view_admission`。
 
+Proton Meet 官网 APK（`proton.android.meet` 1.2.2，262,604,360 字节）经独立复验签名/ZIP/版本与 root 仅作精确原包接受，累计 **77 原包、73 完整静态**；Proton Meet 静态独审/root 接受新增 16 DEX、45 真 ELF（15 ARM64），主流黑盒资格与冷启动仍为 0。G275/v19 候选 40 根和 197,049 条精确路径经静态独审/root 审查，完整源码/SDK 守卫通过；新 owner ACK、Linux 挂载和图尚未发生。
+
 ## Boundary
 
 - Boundary: Bionic/Musl 与 Device/Tooling 的进度证据边界。
@@ -127,7 +133,7 @@ G275 已从官方 `android-16.0.0_r4` 补齐并独立复核 `kernel/configs` 与
 
 ## Proven
 
-- 38/89 历史 Musl 源码接受、76 个原包载荷接受、72 个完整静态清点。
+- 38/89 历史 Musl 源码接受、77 个原包载荷接受、73 个完整静态清点。
 
 ## Not proven
 

@@ -1,0 +1,92 @@
+{
+  "schema": "proton-meet-official-apk-independent-peer-review-v1",
+  "at": "2026-10-04T09:02:04.677934+00:00",
+  "status": "ACCEPT_EXACT_OFFICIAL_RAW_CANDIDATE_FOR_ROOT_REVIEW_ONLY",
+  "candidate": {
+    "ready": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/READY.json",
+    "ready_sha256": "0d665700863245b9ff0aaec3e9c7ac1a29ec932f86a17c82aef3e6c0cd2b9653",
+    "result": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/RESULT.json",
+    "result_sha256": "8dc1d57139900c1ee76cfd22fe78a9390d03f285adc81cf3f1691833110b402d",
+    "handoff": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-protonmeet-intake-candidate-v1/HANDOFF.md",
+    "handoff_sha256": "df86efa33f0c95335288966ceaa3f72c25dd0d870026ce2612052083f5c0d2d9"
+  },
+  "publisher": {
+    "page": "https://proton.me/meet/download",
+    "apk_link": "https://proton.me/download/MeetAndroid/ProtonMeet-Android.apk",
+    "posted_certificate_sha256": "DCC9439EC1A6C6A8D0203F3423EE42BCC8B970628E53CB73A0393F398DD5B853",
+    "live_page_checked": true,
+    "archived_page_sha256": "43df122e78c1f055f107518429ddef1f734b356950b80cb42dd26ab8dc5facff",
+    "archived_page_contains_exact_link_and_certificate": true
+  },
+  "transfer": {
+    "download_commands_in_result": 1,
+    "download_rc": 0,
+    "follow_redirects": false,
+    "get_http_status": 200,
+    "head_get_same_etag": true,
+    "etag": "\"c28f722ea2a8f2f0547e84fe3aa59007-51\"",
+    "head_get_content_length": 262604360,
+    "get_output_line": "200 https://proton.me/download/MeetAndroid/ProtonMeet-Android.apk 262604360",
+    "raw_receipts_rehashed": 13,
+    "raw_receipt_hash_errors": 0
+  },
+  "payload": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-protonmeet-intake-candidate-v1/ProtonMeet-Android.apk",
+    "bytes": 262604360,
+    "sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9",
+    "zip_entries": 2716,
+    "zip_unique": true,
+    "root_android_manifest_count": 1,
+    "zip_first_bad_crc": null,
+    "uncompressed_bytes": 541829546,
+    "native_abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ]
+  },
+  "android_identity": {
+    "aapt2_rc": 0,
+    "package": "proton.android.meet",
+    "version_name": "1.2.2",
+    "version_code": "131",
+    "apksigner_rc": 0,
+    "v2_verified": true,
+    "v3_verified": true,
+    "signers": 1,
+    "certificate_sha256": "DCC9439EC1A6C6A8D0203F3423EE42BCC8B970628E53CB73A0393F398DD5B853",
+    "certificate_matches_publisher_page": true,
+    "independent_aapt2_and_apksigner_rerun": true
+  },
+  "nonduplicate_boundary": {
+    "checkpoint_raw_count": 76,
+    "checkpoint_sha256": "3e64c99f140b06d6bcd0277fedec3202d70832f5ad8f0a2e63d301f302a6bd73",
+    "current_outer_state_raw_count": 76,
+    "current_outer_state_sha256": "b54b7cef9a445e5974cecca49feb03220f577a711061533ca231e6599d743f26",
+    "package_and_payload_sha_not_found_elsewhere_in_existing_outer_evidence_text": true,
+    "candidate_count_delta": 0,
+    "note": "Bounded search of existing outer evidence text and current raw count; root still owns authoritative inventory admission."
+  },
+  "claim_boundary": {
+    "raw_original_candidate": true,
+    "root_accepted": false,
+    "blackbox_qualified": false,
+    "complete_static_scan": false,
+    "startup_verified": false,
+    "device_commands": 0,
+    "authoritative_count_changed": false
+  },
+  "method": [
+    "SHA-256 and size rehash of APK, READY, RESULT, HANDOFF and 13 raw receipts",
+    "full ZIP testzip CRC and entry/ABI inventory",
+    "read-only aapt2 badging and apksigner verification rerun",
+    "official publisher page link and certificate fingerprint read",
+    "HEAD/GET raw response and recorded argv/rc reconciliation",
+    "bounded prior-evidence duplicate search and current checkpoint/control count read"
+  ],
+  "limitations": [
+    "Rolling official URL does not pin future bytes.",
+    "One APK does not prove split closure or overseas-mainstream blackbox qualification.",
+    "No installation, startup, build or device result."
+  ]
+}
