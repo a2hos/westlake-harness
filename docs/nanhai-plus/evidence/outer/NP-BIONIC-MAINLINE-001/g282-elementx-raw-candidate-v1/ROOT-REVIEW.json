@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai.g282.elementx.download.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:11:42.523238+00:00",
+  "candidate_sha256": "385f4219baa92df1ea84d1e6b929e6368491912239bc66a5874bfa665b0f627b",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "registry_record": "r-52d5e188c88dfba15c98",
+  "result": "ACCEPT_FAILED_ATTEMPT_ONLY",
+  "observed_first_failure": "curl timeout (28) after 240 seconds, partial transfer; no successful HTTP/TLS completion and no APK identity check",
+  "partial_file": {
+    "bytes": 1765376,
+    "sha256": "9019695af19701018cf59ffbdfaafcf34f2a05169388f94db1414b78238fa1ec",
+    "accepted_as_apk": false
+  },
+  "counts": {
+    "raw_delta": 0,
+    "static_delta": 0,
+    "blackbox_package_delta": 0,
+    "startup_delta": 0
+  },
+  "next_action": "Use a new frozen one-shot acquisition generation, preferably the already evidenced official GitHub Release asset only after exact URL/asset/SHA binding; verify complete bytes, ZIP, manifest, signer independently before admission. Do not resume or accept this partial.",
+  "device_commands": 0,
+  "container_commands": 0
+}

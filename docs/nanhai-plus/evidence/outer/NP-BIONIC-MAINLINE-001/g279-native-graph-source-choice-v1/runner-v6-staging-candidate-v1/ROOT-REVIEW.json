@@ -1,0 +1,14 @@
+{
+  "schema": "nanhai.g279.runner_v6_staging.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:12:43.395895+00:00",
+  "candidate_sha256": "a401544d5ad7ae17ed391283d0fe679ffa9640eb63ff11a018b7d64cef76dc6c",
+  "script_sha256": "cfa01e3194f745bbff5071b6239191f1590dc88757bc40156f937d5fbd3abda2",
+  "peer_sha256": "b86cc4dda0898893653de17020e81529b1e5d0b56e992bc29795d23720724705",
+  "verdict": "ACCEPT_STATIC_CANDIDATE_ONLY__NO_GO_STAGING",
+  "blocking": "Unbound current local_env; no durable pre-SSH UNKNOWN receipt/one-shot lock; existing target UID unverified; unsafe name-based cleanup under concurrent mutation; parent-chain stability not established.",
+  "next": "New exact-byte v2 and independent review before SSH; preserve remote uncertainty on failures. Staging does not authorize graph.",
+  "staging_executed": false,
+  "graph_executed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

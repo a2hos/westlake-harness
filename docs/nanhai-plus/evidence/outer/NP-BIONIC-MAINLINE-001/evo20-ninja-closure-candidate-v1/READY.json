@@ -1,0 +1,130 @@
+{
+  "status": "STATIC_CANDIDATE_LOCAL_FIXTURES_ONLY",
+  "created_at": "2026-10-04T11:09:15.024208+00:00",
+  "evo": "EVO-0020",
+  "source_anchor": "scripts/nanhai_plus_native_graph_v5.py:411-425",
+  "source_anchor_sha256": "14b4817772ca35849b924f955e4a291c618c82133e0d1f67980da52530c5ae2e",
+  "fixture_status": "PASS_LOCAL_FIXTURES",
+  "fixture_cases": 11,
+  "fixture_passed": 11,
+  "files": [
+    {
+      "path": "TEST-RESULT.json",
+      "sha256": "5fdd7eb3050831dba733f277e8283d47541253a1b3cec8b7e092b4b52d7fc6a2",
+      "bytes": 13558,
+      "type": "regular"
+    },
+    {
+      "path": "fixture_test.py",
+      "sha256": "731fbf78f398091113e303937b6e8f09b45ec01a2b9047ed9db891a0a58930e2",
+      "bytes": 3611,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/benign/a.ninja",
+      "sha256": "cda9ea74b20ea2c85dd588b2087ac0305679d645bd8586db218cdd9d33e6fb30",
+      "bytes": 24,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/benign/nested/b.ninja",
+      "sha256": "cdb8340e188ba3d83a5a2d2d54590b0ef4d3a10bf2d71dcfb7bbf97f7ab5da05",
+      "bytes": 27,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/benign/top.ninja",
+      "sha256": "6b4941e43abfd112470b287281604c0ec3aab212586c3197847fbe4d4b889214",
+      "bytes": 49,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/child_forbidden/child.ninja",
+      "sha256": "14da87dd0e8bcf0872f7619c4e575e3409c75e55e9dc09a8e166762fb7e55b18",
+      "bytes": 47,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/child_forbidden/top.ninja",
+      "sha256": "7d758f3aec49dbbc07ffcf8cbc745a1d4b2d52ecfadfabc0149096f90c78cb7e",
+      "bytes": 21,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/comment_only/top.ninja",
+      "sha256": "b4589772bc725e1a25b5e54839ef9036a142cc8395048390cfba64c5ba501f8e",
+      "bytes": 46,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/continuation/top.ninja",
+      "sha256": "d73028204a0f6cd5be3980c6425754bf817205433b7b5bf6c31402ed862f24cd",
+      "bytes": 49,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/cycle/a.ninja",
+      "sha256": "0c5d78a35096016c81419fee012cb6e815feb8bd0d0994be4f15aca7e853c58d",
+      "bytes": 19,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/cycle/top.ninja",
+      "sha256": "c047bd11b841057ba39b74d27446bc44c44d44c9e8da443813efe09f3ef54c7e",
+      "bytes": 16,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/escape/top.ninja",
+      "sha256": "c4fc95c32b63a6f8f27a35ffe5b0c0225bacdffe9d12e576f3afc2e780571025",
+      "bytes": 25,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/malformed/top.ninja",
+      "sha256": "bc586f3c9d3a4231b93043c84a474a1608f32d78e5764c2393daab8005752841",
+      "bytes": 8,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/missing/top.ninja",
+      "sha256": "24b29753814d9a2abf880a5c503006abe77a14b0f982c9c8abd7308c854902fe",
+      "bytes": 22,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/symlink/actual.ninja",
+      "sha256": "cdb8340e188ba3d83a5a2d2d54590b0ef4d3a10bf2d71dcfb7bbf97f7ab5da05",
+      "bytes": 27,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/symlink/child.ninja",
+      "sha256": "c74a121506e0061659fd61115856b5f027005c0f68d4425cf6f006bacc9c050c",
+      "bytes": 12,
+      "type": "symlink_text"
+    },
+    {
+      "path": "fixtures/symlink/top.ninja",
+      "sha256": "192d716780cc89a0ede7055983b9cb62688e33dcc0df3a95664de47955002a82",
+      "bytes": 20,
+      "type": "regular"
+    },
+    {
+      "path": "fixtures/variable_edge/top.ninja",
+      "sha256": "089209d96cf27c52aa349f10a4a2b2ea4e25f9a2541d5dbf4e794fe76c6583a4",
+      "bytes": 30,
+      "type": "regular"
+    },
+    {
+      "path": "ninja_closure.py",
+      "sha256": "3fd1ecf0c9f5ae83aecd0a720e3b9b3fa6d5027e7900c879a5a8a5f7d0028977",
+      "bytes": 5242,
+      "type": "regular"
+    }
+  ],
+  "actual_graph_scans": 0,
+  "actions_executed": 0,
+  "target_authorized": false,
+  "scope": "read-only literal Ninja include/subninja closure; no generated-graph acceptance"
+}

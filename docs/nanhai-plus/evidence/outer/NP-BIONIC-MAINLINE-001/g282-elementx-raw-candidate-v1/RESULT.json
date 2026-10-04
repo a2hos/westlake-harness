@@ -1,0 +1,66 @@
+{
+  "schema": "g282-elementx-raw-candidate-v1",
+  "started_utc": "2026-10-04T11:05:35.919512+00:00",
+  "status": "STOP_FIRST_DOWNLOAD_ERROR",
+  "registry_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "registry_record": "r-52d5e188c88dfba15c98",
+  "source_url": "https://f-droid.org/repo/io.element.android.x_202609012.apk",
+  "expected_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "expected_bytes": 117664325,
+  "apk_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g282-elementx-raw-candidate-v1/io.element.android.x_202609012.apk",
+  "tools_before": {
+    "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "commands": [
+    {
+      "name": "download",
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--location",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--max-time",
+        "240",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g282-elementx-raw-candidate-v1/io.element.android.x_202609012.apk.part",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} effective=%{url_effective}\\n",
+        "https://f-droid.org/repo/io.element.android.x_202609012.apk"
+      ],
+      "started_utc": "2026-10-04T11:05:35.920257+00:00",
+      "ended_utc": "2026-10-04T11:09:45.939711+00:00",
+      "elapsed_seconds": 250.015,
+      "rc": null,
+      "timed_out": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "68d4ff9edfac40e4289eb50f31ec1b15097304505843e8658ffbf844715c04ca",
+      "stdout_bytes": 0,
+      "stderr_bytes": 103
+    }
+  ],
+  "candidate_only": true,
+  "raw_accepted": false,
+  "canonical_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "transfer": "",
+  "ended_utc": "2026-10-04T11:09:45.939952+00:00",
+  "partial_file_after_stop": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g282-elementx-raw-candidate-v1/io.element.android.x_202609012.apk.part",
+    "bytes": 1765376,
+    "sha256": "9019695af19701018cf59ffbdfaafcf34f2a05169388f94db1414b78238fa1ec",
+    "at_utc": "2026-10-04T11:09:56.703618+00:00"
+  },
+  "curl_stderr_text": "curl: (28) Operation timed out after 240003 milliseconds with 73482186 out of 117664325 bytes received\n",
+  "post_stop_note": "No APK identity, ZIP, aapt2 or signature result; stopped at first download timeout. Partial .part retained, not accepted."
+}

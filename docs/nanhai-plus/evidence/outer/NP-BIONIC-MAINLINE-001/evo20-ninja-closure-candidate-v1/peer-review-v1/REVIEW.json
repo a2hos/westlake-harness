@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai.evo20.ninja_closure.static_peer_review.v1",
+  "verdict": "GO_LITERAL_CLOSURE_DIAGNOSTIC_ONLY__NO_GO_GRAPH_SAFETY_GATE",
+  "scanner_sha256": "3fd1ecf0c9f5ae83aecd0a720e3b9b3fa6d5027e7900c879a5a8a5f7d0028977",
+  "ready_sha256": "b15aaf266d46e18c795af44d72e5b7ae31b95787fd9401a68afbe65bdaec2704",
+  "test_result_sha256": "5fdd7eb3050831dba733f277e8283d47541253a1b3cec8b7e092b4b52d7fc6a2",
+  "fixture_review": "11/11 recorded local cases pass for the declared literal-text behavior; no real graph, action, SSH, device or container was run. Synthetic peer cases using audit() confirmed variable and shell-quoting false negatives.",
+  "closure_findings": [
+    "Literal include/subninja edges recurse relative to the containing file; missing, cycle, outside-root, symlink, empty and variable-bearing edges fail closed in fixtures.",
+    "The scanner normalizes paths and checks components for symlinks but uses separate is_symlink/lstat/read_bytes calls; mutation between checks and read is not excluded by an fd-based snapshot.",
+    "Ninja includes with variable expansion or escaped path syntax are rejected rather than fully parsed; this is safe as a bounded literal diagnostic, not a complete Ninja grammar implementation."
+  ],
+  "command_false_negatives": [
+    "Peer fixture `tool = nsjail` plus `rule x` / `command = $tool -- /bin/true` returned PASS_LITERAL_CLOSURE_ONLY, although Ninja expands variables in rule commands.",
+    "Peer fixture `command = ns'ja'il -- /bin/true` returned PASS_LITERAL_CLOSURE_ONLY, although Unix Ninja commands are passed to sh -c and shell quote removal yields nsjail.",
+    "The lexical regex only scans command RHS text, not variable bindings, shell evaluation, indirect scripts or generated/dynamic graph changes. A PASS cannot prove absence of forbidden executors."
+  ],
+  "minimum_next_evidence": "Keep this scanner as an informational include-closure inventory. Before any graph release, use Ninja's own expanded command listing for the selected target closure (or an equivalent exact parser), inspect indirect scripts and runtime execve trace under the existing no-namespace guard, and bind all graph files/actions to a stable snapshot. Maintain NO_GO when expansion or reachability is unresolved.",
+  "primary_semantics": "https://ninja-build.org/manual.html",
+  "scope": "Static semantic review and synthetic local audit() calls only; no generated graph acceptance or target execution authorization."
+}

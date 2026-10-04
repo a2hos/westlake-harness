@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai.evo20.ninja_closure.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:12:43.395895+00:00",
+  "scanner_sha256": "3fd1ecf0c9f5ae83aecd0a720e3b9b3fa6d5027e7900c879a5a8a5f7d0028977",
+  "peer_sha256": "bfbb9a36a2a84914530a952be6a85282a198d234e063a23cae43c2f9c5bcec9d",
+  "verdict": "ACCEPT_LITERAL_INCLUDE_DIAGNOSTIC_ONLY__REJECT_GRAPH_RELEASE",
+  "independent_root_reproduction": {
+    "variable_case": "tool = nsjail; command = $tool -- /bin/true returned PASS_LITERAL_CLOSURE_ONLY rc0",
+    "shell_concat_case": "command = ns'ja'il -- /bin/true returned PASS_LITERAL_CLOSURE_ONLY rc0"
+  },
+  "reason": "Official Ninja semantics expand command variables and use sh -c on Unix; v1 literal PASS cannot establish no forbidden launcher. fd snapshot also absent.",
+  "next": "v2 candidate may fail closed on ambiguous command syntax; actual graph release additionally needs Ninja-expanded selected-target commands, stable graph snapshot and runtime process trace.",
+  "graph_execution": false,
+  "target_authorized": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

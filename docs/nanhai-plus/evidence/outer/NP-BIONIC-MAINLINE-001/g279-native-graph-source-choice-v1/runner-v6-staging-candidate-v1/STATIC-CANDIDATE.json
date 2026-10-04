@@ -1,0 +1,85 @@
+{
+  "behavior": [
+    "literal canonical /usr/bin/python3.12 SSH stdin transport is dormant",
+    "remote project and control directories opened O_NOFOLLOW, owner checked",
+    "create 0444 with O_EXCL temporary and hard-link final without overwrite",
+    "fsync and readback SHA/bytes/mode; exact-existing path is read-only idempotent",
+    "outer SSH and remote rc separately captured; no runner execution"
+  ],
+  "candidate_script": {
+    "path": "scripts/nanhai_plus_stage_runner_v6_candidate.py",
+    "sha256": "cfa01e3194f745bbff5071b6239191f1590dc88757bc40156f937d5fbd3abda2"
+  },
+  "checks": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_stage_runner_v6_candidate.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:09:16.306722+00:00",
+      "expected_rc": 0,
+      "label": "static_check",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:09:16.267779+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "956a33a8a55f16dbfed4a8da23bde9705ac010522861a786059add254d4cfb5a"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_stage_runner_v6_candidate.py",
+        "--stage"
+      ],
+      "end_utc": "2026-10-04T11:09:16.343491+00:00",
+      "expected_rc": 3,
+      "label": "stage_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:09:16.306984+00:00",
+      "stderr_sha256": "1ec9ac2f689b149f4e7d82ac1fffc045889e25fc34a31aca4c3a0efdfee75f02",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-staging-candidate-v1/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:09:16.462191+00:00",
+      "expected_rc": 0,
+      "label": "local_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:09:16.343601+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1c3f2d99d230745480b9b1b731841f55bf0145ed842fbb5fce90f2054adba3bc"
+    }
+  ],
+  "container_commands": 0,
+  "destination": "/data/source/.nanhai-plus-opaleye-native/control/nanhai_plus_native_graph_v6.py",
+  "device_commands": 0,
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-staging-candidate-v1/static_fixtures.py",
+    "sha256": "127be204bb98065ca2bf466c367e04071582bb0c165e86be52a68db8f8e7a6d8"
+  },
+  "graph_commands": 0,
+  "prior_control_input_peer_sha256": "3ff416b470fb9207d3a6cd690a07ab1e9b59507287ba6b28692cd1d1f4cdd782",
+  "schema": "nanhai-g279-v6-runner-staging-static-candidate-v1",
+  "source": {
+    "bytes": 32654,
+    "intended_remote_mode": "0444",
+    "local_mode": "0644",
+    "path": "scripts/nanhai_plus_native_graph_v6.py",
+    "sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f"
+  },
+  "ssh_commands": 0,
+  "status": "STATIC_ONLY_NO_REMOTE_STAGING",
+  "unresolved": [
+    "candidate needs independent peer review before real staging",
+    "no remote runner staging or readback performed",
+    "v6 runner --run remains rc3",
+    "EVO19 actual preflight and EVO20 graph release remain NO_GO"
+  ],
+  "v8_peer_review_sha256": "683ba5aee9343bb59a2e60949eb779d5a259ea047876b4702e023a90e48428c1"
+}
