@@ -10,7 +10,7 @@ G279 全树只读源码准入：gz02 的 R4 manifest 共 1013 项，1011 项存�
 
 G279 三份项目控制输入已在 gz02 一次投递 rc0，独立 SSH 回读确认 generator、manifest ledger 与环境绑定 JSON 均为精确 SHA、0444；root 仅接受只读输入准备，runner v2 仍 NO_GO，未构图。G280 对现有 Firefox 156.0 官方下载字节做 ZIP/CRC、包名版本与 v2 签名核验，独审/root 只接受静态预检候选；与历史同版登记 SHA 不同，未计原包或完整静态。EVO-0019 在四组实际结果后有界闭合一项远端执行前 fail-closed 身份门小试，未推广。
 
-G279 runner v5 静态候选 `--static-check` 与八项本地夹具 rc0，`--run` 仍以 rc3 拒跑。独立审查未发现其候选命令有容器或 namespace 创建路径，并接受显式 GOROOT 修复的宿主 UI 启动环境；构图仍 NO_GO。EVO19 单一执行前身份门、原 owner 构图 ACK、实际后代过滤器继承与清理、完整执行轨迹和图产物尚未验收。
+G279 v5 的 GOROOT 宿主 UI 修复已限定接受。v6 身份门因远端路径权威、收据和 TOCTOU 缺口独审 NO_GO；v7 又因 `/usr/bin/python3` 为软链接而与 O_NOFOLLOW 冲突。v8 固定实测 `/usr/bin/python3.12` 的路径链、SHA/大小/权限，静态检查和本地夹具通过且经独审/root **仅接受静态身份修复**；`--preflight`、`--execute` 仍以 rc3 拒跑。远端 runner 未投递，执行临近身份交接、EVO20 生成 Ninja 闭包扫描、原 owner 构图 ACK、后代过滤器继承与实际图产物均未验收。
 
 G281 Zoom 官方下载入口经实际 302 跳转到版本固定的 Zoom CDN APK，358,226,193 字节、SHA-256 `ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b`，包名/版本/签名与 ZIP 校验通过。独审和 root 将其作为**独立官方原包补充**准入，原包载荷 77→78；旧 Google Play XAPK 是不同版本与 split，登记及失败不变。完整静态清点实际 rc0 且经独审/root 限定接受，新增 16 DEX、290 真 ELF（ARM64 148、ARM32 142），累计 74 份完整静态清单。黑盒资格已另行核验；冷启动尚未完成。
 

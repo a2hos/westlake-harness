@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v8_gate.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:06:20.347946+00:00",
+      "expected_rc": 0,
+      "label": "static_check",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:06:20.311428+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "79474450abdb7701ff568879dff6792a36a32070318bff7daf276e508e752109"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v8_gate.py",
+        "--preflight"
+      ],
+      "end_utc": "2026-10-04T11:06:20.384278+00:00",
+      "expected_rc": 3,
+      "label": "preflight_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:06:20.348158+00:00",
+      "stderr_sha256": "9e9c72528a9372efca90b0d6c7d50442fd2a04e03eeedfaf0fa1209ed3c49ca2",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v8_gate.py",
+        "--execute"
+      ],
+      "end_utc": "2026-10-04T11:06:20.421013+00:00",
+      "expected_rc": 3,
+      "label": "execute_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:06:20.384357+00:00",
+      "stderr_sha256": "9e9c72528a9372efca90b0d6c7d50442fd2a04e03eeedfaf0fa1209ed3c49ca2",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v8-candidate-v1/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:06:20.480731+00:00",
+      "expected_rc": 0,
+      "label": "local_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:06:20.421095+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "49e804c592ec2fd64cfa4533e2bfebdbda09938a69d18195b6171a42f2e88d26"
+    }
+  ],
+  "container_commands": 0,
+  "delta_from_v7": [
+    "canonical /usr/bin/python3.12 replaces symlink /usr/bin/python3 in fixed SSH command and closed spec",
+    "interpreter SHA 8295ee25..., bytes 8020928 and mode 0755 pinned from independent fd-walk read-only identity",
+    "v8 receipt destination separate from v7"
+  ],
+  "device_commands": 0,
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v8-candidate-v1/static_fixtures.py",
+    "sha256": "68d1953bf38ce07da6a7bab13833f03731785ca76c7a2bf20298355b6a74f31f"
+  },
+  "graph_commands": 0,
+  "independent_interpreter_identity_sha256": "69f255a007cbfdea710c88db89cccdf1e7135aea45b2ffe033b94d07510f06ac",
+  "independent_readonly_ssh_commands": 1,
+  "outer_interpreter_identity_sha256": "cbde15db2801060dc572b92fc32534083eabce249ca9b3b8a4880ebaa0cce954",
+  "preflight_ssh_commands": 0,
+  "schema": "nanhai-g279-runner-v8-static-candidate-v1",
+  "status": "STATIC_ONLY_NO_GO_EXECUTION",
+  "unresolved": [
+    "remote v6 runner not staged or read back",
+    "no actual SSH preflight on v8 gate",
+    "no execution-adjacent immutable handoff or reread",
+    "EVO20 recursive subninja scan",
+    "no original-owner graph ACK or runtime safety evidence"
+  ],
+  "v6_runner_unchanged_sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f",
+  "v7_peer_review_sha256": "a753758a4b90a95490e7968fa97d943c36781e0ed6b124d6111aea875f18a8c4",
+  "v8_gate": {
+    "path": "scripts/nanhai_plus_native_graph_v8_gate.py",
+    "sha256": "58fe8400443eeafb12359e2ef68ed09d52a009b751c56f83a6c0d2fdd4526aab"
+  }
+}

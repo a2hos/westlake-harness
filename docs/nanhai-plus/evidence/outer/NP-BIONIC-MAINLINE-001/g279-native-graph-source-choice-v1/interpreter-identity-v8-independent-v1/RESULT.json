@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/usr/bin/ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "ConnectTimeout=8",
+    "gz02",
+    "/usr/bin/python3.12 -"
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "end_utc": "2026-10-04T11:05:36.347453+00:00",
+  "graph_commands": 0,
+  "remote_program_sha256": "0b83e42e8c71ef3a71284ed518f137c3de3d9a6fae23487c68c3f2490cb9e9b4",
+  "schema": "nanhai.g279.interpreter_identity_v8_independent.v1",
+  "ssh_outer_rc": 0,
+  "start_utc": "2026-10-04T11:05:35.710581+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_utf8": "",
+  "stdout_sha256": "6eb8b6b13c7156882f5210fb3ccccad8c7a3d1e7282379bd4e8140d1257443d8",
+  "stdout_utf8": "{\"bytes\": 8020928, \"chain\": [{\"dev\": 64769, \"ino\": 2, \"mode\": 493, \"path\": \"/\"}, {\"dev\": 64769, \"ino\": 32769, \"mode\": 493, \"path\": \"/usr\"}, {\"dev\": 64769, \"ino\": 44, \"mode\": 493, \"path\": \"/usr/bin\"}], \"executable_bits\": true, \"mode\": 493, \"path\": \"/usr/bin/python3.12\", \"regular\": true, \"sha256\": \"8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc\", \"stable\": true}\n"
+}

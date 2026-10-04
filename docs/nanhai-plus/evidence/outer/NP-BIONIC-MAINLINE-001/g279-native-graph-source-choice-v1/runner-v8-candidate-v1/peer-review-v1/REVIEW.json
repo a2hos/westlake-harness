@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai.g279.runner_v8.static_peer_review.v1",
+  "verdict": "GO_STATIC_IDENTITY_REPAIR_ONLY__NO_GO_PREFLIGHT_OR_GRAPH",
+  "gate_sha256": "58fe8400443eeafb12359e2ef68ed09d52a009b751c56f83a6c0d2fdd4526aab",
+  "candidate_sha256": "423ee4fe5a0dc748aad19c127c9015e6228eef3a342aa033957e8919a2410572",
+  "interpreter_receipt_sha256": "69f255a007cbfdea710c88db89cccdf1e7135aea45b2ffe033b94d07510f06ac",
+  "symlink_conflict": "CLOSED_STATICALLY: fixed interpreter, remote input path, intended argv and literal SSH remote command now use /usr/bin/python3.12. Independent read-only fd-walk reports /, /usr and /usr/bin as directories and final 8,020,928-byte mode 0755 regular executable SHA-256 8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc. The former /usr/bin/python3 symlink is no longer an input.",
+  "fixed_command_and_authority": "REMOTE_FILES pins 11 inputs and hashes, including canonical interpreter SHA/size/mode; spec requires exact goal/claim/env SHA/host/runner argv/receipt path. SSH remote command is a literal /usr/bin/python3.12 - with no spec interpolation. Future outer ssh executable is still PATH-resolved as 'ssh', so pin its local binary identity before release.",
+  "receipt_review": "Dormant preflight checks local authority and wrapper, outer SSH rc, remote rc and ordered SHA/bytes/mode rows; writes an exclusive fsynced receipt with hard-link no-replace. Failure to persist returns FAIL_CLOSED_NO_VALID_RECEIPT and cannot supply an immutable failure record; current CLI never calls this path.",
+  "toctou_boundary": "Remote fd-walk checks inode, size, times, mode and parent directory state during readback, but closes all fds before any later execution. This cannot prove executable identity at graph launch; execution-adjacent recheck or equivalent immutable handoff remains necessary.",
+  "actual_cli": "Candidate records --static-check rc0, --preflight rc3 and --execute rc3; main() hard-closes the latter two before transport. No container/namespace/chroot/mount or device route is present.",
+  "remaining_no_go": [
+    "No reviewed release packet or original-owner graph ACK.",
+    "Remote v6 runner is not staged/read back and its --run remains closed.",
+    "No live v8 SSH preflight or execution-adjacent identity handoff.",
+    "EVO20 recursive subninja action scan and graph runtime safety evidence remain absent."
+  ],
+  "peer_actions": {"ssh": 0, "graph": 0, "container": 0, "device": 0, "canonical_edits": 0}
+}

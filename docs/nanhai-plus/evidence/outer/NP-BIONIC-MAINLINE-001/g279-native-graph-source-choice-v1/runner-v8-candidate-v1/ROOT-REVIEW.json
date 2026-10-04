@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai.g279.runner_v8_root_review.v1",
+  "at": "2026-10-04T11:07:35.661042+00:00",
+  "decision": "ACCEPT_STATIC_CANONICAL_INTERPRETER_REPAIR_ONLY_NO_GO_PREFLIGHT_GRAPH",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v8-candidate-v1/STATIC-CANDIDATE.json",
+    "sha256": "423ee4fe5a0dc748aad19c127c9015e6228eef3a342aa033957e8919a2410572"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v8-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "683ba5aee9343bb59a2e60949eb779d5a259ea047876b4702e023a90e48428c1"
+  },
+  "interpreter_identity": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/interpreter-identity-v8-independent-v1/RESULT.json",
+    "sha256": "69f255a007cbfdea710c88db89cccdf1e7135aea45b2ffe033b94d07510f06ac"
+  },
+  "closed": "/usr/bin/python3 symlink path conflict; v8 fixes exact /usr/bin/python3.12 SHA/size/mode and literal remote command.",
+  "remaining": [
+    "Pin outer local ssh executable",
+    "Stage exact remote v6 runner and read back",
+    "Execution-adjacent identity handoff, not just earlier readback",
+    "EVO20 generated Ninja closure and actual descendant safety",
+    "Separate original owner graph ACK"
+  ],
+  "ssh_preflight_allowed": false,
+  "graph_execution_allowed": false,
+  "container_execution_allowed": false,
+  "device_execution_allowed": false,
+  "scope_note": "Current v8 CLI hard-closes preflight and execute rc3; static identity only."
+}

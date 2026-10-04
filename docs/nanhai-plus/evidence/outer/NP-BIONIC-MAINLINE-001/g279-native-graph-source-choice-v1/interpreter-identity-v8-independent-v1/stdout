@@ -1,0 +1,1 @@
+{"bytes": 8020928, "chain": [{"dev": 64769, "ino": 2, "mode": 493, "path": "/"}, {"dev": 64769, "ino": 32769, "mode": 493, "path": "/usr"}, {"dev": 64769, "ino": 44, "mode": 493, "path": "/usr/bin"}], "executable_bits": true, "mode": 493, "path": "/usr/bin/python3.12", "regular": true, "sha256": "8295ee25cfdb239f3e165afceda7f46de73e2b606ff0e2e3d8623e3facd30acc", "stable": true}

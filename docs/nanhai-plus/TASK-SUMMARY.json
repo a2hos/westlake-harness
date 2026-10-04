@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T11:05:11.767627+00:00",
+  "checked_at": "2026-10-04T11:08:30.469982+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -1306,5 +1306,16 @@
     "qualified_package_delta": 1,
     "qualified_startup_delta": 0,
     "cold_start_pass": false
+  },
+  "g279_runner_v8": {
+    "status": "static_canonical_interpreter_repair_only_no_go_preflight_graph",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v8-candidate-v1/ROOT-REVIEW.json",
+      "sha256": "f2654b9e37ae588fefb7abe3180432072f88e46452d8fc05eb1fcdc8dcc61998"
+    },
+    "ssh_preflight_executed": false,
+    "graph_executed": false,
+    "target_compiled": false,
+    "device_executed": false
   }
 }
