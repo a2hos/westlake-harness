@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T02:33:18.596980+00:00",
+  "checked_at": "2026-10-04T02:47:20.702444+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,28 +35,29 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 21,
+    "downloaded_payloads": 23,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 10,
-    "complete_inventory_dex_entries": 18,
-    "complete_inventory_native_elf_entries": 124,
+    "complete_static_inventories": 20,
+    "complete_inventory_dex_entries": 38,
+    "complete_inventory_native_elf_entries": 209,
     "incomplete_static_inventories": [
       "org.videolan.vlc"
     ],
-    "additional_downloads_pending_root_acceptance": 2
+    "additional_downloads_pending_root_acceptance": 0,
+    "additional_static_inventory_candidates_pending_root_acceptance": 0
   },
   "latest_actual_execution": {
-    "release": 263,
+    "release": 264,
     "terminal_rc": 2,
-    "actual_exec_session": 91401,
-    "terminal_chunk": "62605b",
+    "actual_exec_session": 55476,
+    "terminal_chunk": "51734a",
     "host_tools_actual_loader_pass": 10,
-    "soong_bootstrap_successful_steps": 233,
-    "soong_bootstrap_total_steps": 234,
-    "host_soong_build_scope": "Linux x86_64 host executable only",
+    "soong_bootstrap_successful_steps": 235,
+    "soong_bootstrap_total_steps": 236,
+    "stock_clang_plugin_compiled": true,
     "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
@@ -121,16 +122,32 @@
       "path": "docs/nanhai-plus/evolution/EVO-0005-real-cli-preflight/reviews/ROOT-CLOSURE.json",
       "sha256": "e9f5e541e93badc57d02a50df9eee2757456cd9000e1305a6f0bed9179110dd9",
       "timing_compliant": false
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v6/root-release-v1/G264-REVIEW.json",
+      "sha256": "618c212a88019cf794ac0e77845a2164595d075bf1d56e4578c28a1c58b8ce31"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v5/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "8524539f7f8ac3b5c5bbfa6bef77de765ac95dac92e29849299611b61645cf58"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0006-schema-aware-evidence/reviews/ROOT-CLOSURE.json",
+      "sha256": "00ece9eef556bf59cdb291eae78cf1b817731a2a86eeafdd73a7250d0339952c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
     }
   ],
   "bionic_stock_graph": {
-    "release": 263,
+    "release": 264,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "\"ide_query_cc_analyzer_defaults\" depends on undefined module \"llvm-build-host-tools-defaults\".",
-    "failure_location": "build/make/tools/ide_query/cc_analyzer/Android.bp:21:1",
+    "first_failure": "missing core-lambda-stubs-for-system-modules and art.module.public.api.stubs.module_lib",
+    "failure_location": "build/soong/java/core-libraries/Android.bp:399:1 and :453:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -149,20 +166,21 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "version": 6,
-    "independent_review_pass": true,
-    "execution_started": false,
-    "new_owner_ack_and_root_seal_required": true,
-    "llvm_source_files_admitted": 5,
-    "whole_clang_repo_admitted": false
+    "previous_version": 6,
+    "previous_execution_terminal": true,
+    "next_input": "exact R4 complete libcore source archive candidate",
+    "source_commit_officially_confirmed": "1c599b67bcd3de5c50c79d0622e40b6de99b4cb4",
+    "execution_ready": false
   },
   "reflection": {
-    "latest": "EVO-0005",
+    "latest": "EVO-0006",
     "local_curl_method_validated": true,
     "global_promotion": false,
     "counts_as_new_tool": false,
     "duration_seconds": 188.905,
     "limit_seconds": 120,
-    "timing_compliant": false
+    "timing_compliant": false,
+    "verified_improvement_this_round": 0,
+    "outer_deadline_interrupt": true
   }
 }
