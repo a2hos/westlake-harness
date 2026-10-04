@@ -1,0 +1,21 @@
+diff --git a/ui/build/sandbox_linux.go b/ui/build/sandbox_linux.go
+index 98eed9a..c5f1229 100644
+--- a/ui/build/sandbox_linux.go
++++ b/ui/build/sandbox_linux.go
+@@ -34,14 +34,14 @@ type Sandbox struct {
+ var (
+ 	noSandbox    = Sandbox{}
+ 	basicSandbox = Sandbox{
+-		Enabled: true,
++		Enabled: false,
+ 	}
+ 
+ 	dumpvarsSandbox = basicSandbox
+ 	katiSandbox     = basicSandbox
+ 	soongSandbox    = basicSandbox
+ 	ninjaSandbox    = Sandbox{
+-		Enabled: true,
++		Enabled: false,
+ 
+ 		AllowBuildBrokenUsesNetwork: true,
+ 	}

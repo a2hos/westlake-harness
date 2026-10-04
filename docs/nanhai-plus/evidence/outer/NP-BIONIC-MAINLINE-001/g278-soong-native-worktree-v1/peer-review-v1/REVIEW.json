@@ -1,0 +1,48 @@
+{
+  "schema": "nanhai-g278-soong-native-worktree-peer-review-v1",
+  "at_utc": "2026-10-04T10:01:47.371697+00:00",
+  "classification": "STATIC_PATCH_REVIEW_ONLY",
+  "decision": "ACCEPT_PATCH_IDENTITY_AND_UI_CONTROL_ONLY",
+  "checks": {
+    "base_head_matches": true,
+    "worktree_head_matches": true,
+    "base_file_sha_matches": true,
+    "modified_file_sha_matches": true,
+    "patch_sha_matches": true,
+    "receipt_sha_matches_registry": true,
+    "patch_sha_matches_registry": true,
+    "patch_equals_git_diff": true,
+    "only_one_tracked_file_modified": true,
+    "only_two_enabled_replacements": true,
+    "base_tracked_clean": true
+  },
+  "source": {
+    "base": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build-soong",
+    "project_worktree": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+    "head": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+    "base_file_sha256": "2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a",
+    "modified_file_sha256": "85fa03c3defc2ac3271f6548fc3fa768c7ccded30cdbac9e58a9e9d2ae9de9cb",
+    "patch_sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc",
+    "receipt_sha256": "ecb09a7aed179e9f9e941531800f6cff0b69529830fadc9a87d76dc69e2f03e4",
+    "source_index": "/opt/19.SourceCode/SOURCES.json",
+    "source_index_sha256": "d8a38281ce19967fc578d601befb36ed65b4fa617dcf4ebbfd8ec04cfbdc7950"
+  },
+  "logic": {
+    "ui_sandbox_defaults": "worktree ui/build/sandbox_linux.go:34-47: basicSandbox and ninjaSandbox Enabled false; dumpvars, kati and soong alias basicSandbox",
+    "early_return": "worktree ui/build/sandbox_linux.go:64-69: !c.Sandbox.Enabled returns before sync.Once nsjail probe at 69-145; ui/build/exec.go:59-65 therefore never calls wrapSandbox for those UI commands",
+    "scope": "This verifies the source patch. It does not verify a rebuilt Linux soong_ui binary or observed process tree."
+  },
+  "remaining_risks": [
+    "Generated Ninja actions may embed nsjail independently: genrule/genrule.go:556-559 and android/rule_builder.go:611-683. Run no target action until exact generated graph and expanded command set are audited.",
+    "--soong-only --skip-ninja still runs Soong bootstrap and soong-only Kati package: ui/build/build.go:352-397. Patched UI binary must be proven in actual host invocation before graph execution.",
+    "Soong tests can invoke nsjail via scripts/run-soong-tests-with-go-tools.sh:51-67; --skip-soong-tests and bootstrap action review remain required.",
+    "Shared source index states partial selected AOSP collection, not complete graph/build input acceptance."
+  ],
+  "execution": {
+    "container": 0,
+    "namespace": 0,
+    "graph": 0,
+    "build": 0,
+    "device": 0
+  }
+}

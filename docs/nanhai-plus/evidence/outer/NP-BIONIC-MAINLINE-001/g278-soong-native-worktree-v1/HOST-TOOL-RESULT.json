@@ -1,0 +1,77 @@
+{
+  "schema": "nanhai-g278-native-soong-ui-host-tool-result-v1",
+  "at": "2026-10-04T10:09:11.257452+00:00",
+  "host": "gz02",
+  "policy": "no Docker/Podman/OCI/nsjail/chroot/proot",
+  "command": "env TOP=$NANHAI_GZ02_NATIVE_SOURCE_VIEW OUT_DIR=$NANHAI_GZ02_NATIVE_PROJECT_ROOT/out/soong-ui-v1 TMPDIR=$NANHAI_GZ02_NATIVE_PROJECT_ROOT/tmp/soong-ui-v1 NANHAI_SOONG_WORKTREE=$NANHAI_GZ02_SOONG_WORKTREE NANHAI_NATIVE_PROJECT_ROOT=$NANHAI_GZ02_NATIVE_PROJECT_ROOT timeout 600s strace -f -qq -e execve -o $OUT_DIR/execve.log bash $NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/nanhai_plus_native_soong_ui.sh",
+  "ssh_batchmode_rc": 0,
+  "build_rc": 0,
+  "timeout_seconds": 600,
+  "artifact": {
+    "path": "/data/source/.nanhai-plus-opaleye-native/out/soong-ui-v1/soong_ui",
+    "size": 19023728,
+    "sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+    "file": "ELF 64-bit LSB executable, x86-64, dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2"
+  },
+  "execution_trace": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/soong-ui-execve.log",
+    "sha256": "a453d7b726f9c9177ef0b658e901b64edd5405e257d90c70a3a92ef8b70e3b12",
+    "execve_calls": 129,
+    "forbidden_executables": {},
+    "program_counts": {
+      "bash": 1,
+      "uname": 7,
+      "readlink": 5,
+      "mkdir": 2,
+      "sed": 1,
+      "rm": 1,
+      "go": 2,
+      "compile": 95,
+      "asm": 9,
+      "link": 4,
+      "microfactory": 1,
+      "microfactory_Linux": 1
+    }
+  },
+  "source_view_links": 46,
+  "source_worktree_head": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+  "worktree_only_changed_file": "ui/build/sandbox_linux.go",
+  "worktree_modified_file_sha256": "85fa03c3defc2ac3271f6548fc3fa768c7ccded30cdbac9e58a9d2ae9de9cb",
+  "shared_checkout_tracked_clean_after": true,
+  "environment_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "refs": {
+    "remote_source_audit": {
+      "path": "../native-gz02-source-audit-20261004/ROUTE-AUDIT.json",
+      "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a"
+    },
+    "soong_static_audit": {
+      "path": "../g277-soong-native-sandbox-static-audit-v1/AUDIT.json",
+      "sha256": "5a903a9b0d38b64d4012ab68168bad38f90710e88a6237f3dc2155a467076169"
+    },
+    "patch_receipt": {
+      "path": "RECEIPT.json",
+      "sha256": "ecb09a7aed179e9f9e941531800f6cff0b69529830fadc9a87d76dc69e2f03e4"
+    },
+    "patch_peer": {
+      "path": "peer-review-v1/REVIEW.json",
+      "sha256": "c9cd5bbe2d35ce3131903d843d972a4d91c76dcd511558fc0f805e5f3ccd0dcb"
+    },
+    "source_view_peer": {
+      "path": "source-view-peer-v1/REVIEW.json",
+      "sha256": "09286367fdf9e4d30cdd524a2cd67b208f4e1ebe610aab6822ad6330e1b33e81"
+    },
+    "source_view_script": {
+      "path": "scripts/nanhai_plus_native_source_view.py",
+      "sha256": "0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5"
+    },
+    "host_tool_script": {
+      "path": "scripts/nanhai_plus_native_soong_ui.sh",
+      "sha256": "6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2"
+    }
+  },
+  "claim": "Linux x86_64 patched Soong UI host tool build passed only. Binary execution, Soong graph, generated target actions, ARM64 Bionic compile and device startup remain unverified.",
+  "container_commands": 0,
+  "graph_commands": 0,
+  "target_compile_commands": 0,
+  "device_commands": 0
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "nanhai-soong-native-sandbox-static-audit-v1",
+  "at_utc": "2026-10-04T09:59:52.611525+00:00",
+  "classification": "STATIC_CANDIDATE_ONLY",
+  "source": {
+    "pool_entry": "AOSP-16.0.0_r4/android-source/build-soong",
+    "head": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+    "tracked_worktree_clean": true,
+    "files": {
+      "ui/build/sandbox_linux.go": {
+        "sha256": "2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a"
+      },
+      "ui/build/exec.go": {
+        "sha256": "28d42149e19c712c53bcc36356b80f199f59a608a7411bd0500f8b2212db8f2d"
+      },
+      "ui/build/dumpvars.go": {
+        "sha256": "8612a3aa517ecef62e64dd593834df7a8c003d1fa8c29a1a2f79472e9cc45100"
+      },
+      "ui/build/kati.go": {
+        "sha256": "82a62022c21cc641b1ad9e4aa514aaa6de40b908e620e3e378b4ab2d9db4d3f7"
+      },
+      "ui/build/soong.go": {
+        "sha256": "4a195bcd352e6e529a83479420cf27c1a030a31286d855e22d641487f3f4f5f6"
+      },
+      "ui/build/ninja.go": {
+        "sha256": "7e26fb1ff0c55a0a96a2a491334b4c6a5a58cefd602184c85229dbdbfbec748d"
+      },
+      "ui/build/config.go": {
+        "sha256": "92039bce978fe0669dca86aa4d9fef99e100b17230409b89a90bab3ad0f70b72"
+      },
+      "ui/build/build.go": {
+        "sha256": "14a227d3b684cb83f309b81894d505903b116081be5daf3f0cb73edc8e10847e"
+      },
+      "genrule/genrule.go": {
+        "sha256": "cd87b0ece63252555582afc16a54402f2832bf51f7f908ead1ef13db5209bdc3"
+      },
+      "android/rule_builder.go": {
+        "sha256": "52cd18c75062d2f001b45430f0824258972783fc25b4aa12ec92d0fc76d64005"
+      },
+      "genrule/Android.bp": {
+        "sha256": "1e3c38b6fe4e4a5b3b2cb3ffc7fa837ac0527c566db7b26841ea496a536c41ca"
+      },
+      "scripts/run-soong-tests-with-go-tools.sh": {
+        "sha256": "1aecc4408fae3de6cedf734be18ebda69e6b0009edbd5700bc64b920f16aefb4"
+      }
+    }
+  },
+  "controls": {
+    "resume": "docs/nanhai-plus/RESUME.md",
+    "checkpoint": "docs/nanhai-plus/checkpoints/20261004-no-container-owner-ack-native-route-blocked/CHECKPOINT.json",
+    "decision": "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md:3-9",
+    "source_rules": "/opt/19.SourceCode/AGENTS.md and README.md and SOURCES.json"
+  },
+  "ui_nsjail_chain": [
+    {
+      "claim": "Linux UI defaults enable four command wrappers",
+      "source": [
+        "ui/build/sandbox_linux.go:28-47",
+        "ui/build/dumpvars.go:111",
+        "ui/build/kati.go:173-176",
+        "ui/build/soong.go:690-704",
+        "ui/build/ninja.go:121-124"
+      ]
+    },
+    {
+      "claim": "prepare calls sandboxSupported then wrapSandbox; enabled path probes nsjail before failure fallback",
+      "source": [
+        "ui/build/exec.go:44-65",
+        "ui/build/sandbox_linux.go:64-146",
+        "ui/build/sandbox_linux.go:241-343"
+      ]
+    },
+    {
+      "claim": "SOONG_SRC_DIR_IS_READ_ONLY only controls mount mode, not enablement; no R4 global environment off switch found in these paths",
+      "source": [
+        "ui/build/config.go:677-687",
+        "ui/build/sandbox_linux.go:34-47"
+      ]
+    }
+  ],
+  "minimal_worktree_delta": {
+    "file": "ui/build/sandbox_linux.go",
+    "changes": [
+      "basicSandbox.Enabled true -> false at current line 37",
+      "ninjaSandbox.Enabled true -> false at current line 44"
+    ],
+    "requires": "project-owned Git worktree; shared baseline remains read-only",
+    "logic_proof": "dumpvars/kati/soong bootstrap alias basicSandbox and final Ninja aliases ninjaSandbox. With both Enabled false, sandboxSupported returns before once.Do and therefore never executes nsjail probe or wrapSandbox. Source identity, compilation and argv must be checked after patch.",
+    "source": [
+      "ui/build/sandbox_linux.go:34-47",
+      "ui/build/sandbox_linux.go:64-69",
+      "ui/build/exec.go:59-65"
+    ]
+  },
+  "graph_scope": {
+    "flags": [
+      "--soong-only",
+      "--skip-ninja",
+      "--skip-soong-tests"
+    ],
+    "semantics": "--soong-only skips normal Kati but soong-only packaging still invokes Kati; --skip-ninja skips final target Ninja only, not Soong bootstrap Ninja, so UI patch is needed for both. --skip-soong-tests suppresses Go test bootstrap actions but does not change graph configuration.",
+    "source": [
+      "ui/build/config.go:985-1013",
+      "ui/build/build.go:325-378",
+      "ui/build/build.go:392-397",
+      "ui/build/build.go:420-453",
+      "ui/build/soong.go:399-420",
+      "ui/build/soong.go:621-704",
+      "ui/build/soong.go:722-735"
+    ],
+    "limitation": "Graph generation may emit target build actions that would call nsjail. No target build action may run until generated action audit is completed."
+  },
+  "generated_action_risk": {
+    "chain": [
+      "genrule/genrule.go:556-576",
+      "genrule/genrule.go:963-988",
+      "genrule/genrule.go:1002-1011",
+      "android/rule_builder.go:189-202",
+      "android/rule_builder.go:611-683"
+    ],
+    "example": "genrule/Android.bp:64-76 has use_nsjail:true test module",
+    "finding": "use_nsjail is a per-module property; no global R4 environment toggle found. RuleBuilder bakes the prebuilt nsjail executable into Ninja command strings. UI-only patch does not rewrite those actions.",
+    "required_gate": "After graph generation, inspect all emitted Ninja files and expanded `ninja -t commands` for nsjail/unshare/bwrap/chroot/proot and program-specific namespace launchers before any action runs. Include bootstrap.ninja actions in pre-execution static review; do not invoke scripts/setup-android-build.sh or run-soong-tests-with-go-tools.sh. Action scan proves only the exact generated graph and target set audited."
+  },
+  "sbox_note": "sbox uses temporary directories/copy rules (cmd/sbox/sbox.go), not nsjail namespace isolation by itself; classify separately under user policy and inspect any nested command payload.",
+  "execution": {
+    "graph_command_executed": false,
+    "build_command_executed": false,
+    "device_command_executed": false,
+    "container_command_executed": false,
+    "namespace_command_executed": false,
+    "result": "No native graph or build acceptance is claimed."
+  }
+}

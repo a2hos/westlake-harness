@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T10:12:20.971688+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "architecture": "OH7.0.0.39 AOSP16 R4 ARM64 App single Bionic; no containers or namespace sandbox",
+  "g278": "gz02 source 42+4 roots admitted read-only, project isolated patched Soong worktree and 46-link view, native Linux x86_64 soong_ui host-tool build rc0, artifact SHA 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624, 129 execve/zero forbidden; independent/root host-tool only",
+  "next": "G279 exact TOP choice and new original owner ACK before native graph; generated action audit before target compile",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 77,
+    "static_apks": 73,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "reflection": "EVO18 closed; two actual result groups since closure",
+  "device_hold": "preserved",
+  "environment_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "github_last_verified_commit": "6e9f1adb0878825c4c33b42a35c6bdaf464821c4",
+  "refs": [
+    {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "a4a46214e59b74945d791f9e5ba118c4d71f2653a6acdd883982b46311ba771d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/native-gz02-source-audit-20261004/ROUTE-AUDIT.json",
+      "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/G278-ROOT-REVIEW.json",
+      "sha256": "6755a18946c083be236d928c61388dae13e3ad603a139335cb8704f231c88e0b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json",
+      "sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6"
+    }
+  ]
+}

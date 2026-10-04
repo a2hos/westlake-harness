@@ -1,0 +1,51 @@
+{
+  "schema": "nanhai.g278.native_source_view_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:07:43.026956+00:00",
+  "decision": "GO_ONCE_SOONG_UI_HOST_TOOL_ONLY",
+  "scope": "One bounded Linux x86_64 native microfactory compilation of soong_ui; no soong_ui execution, target graph, target build, container, device, or Bridge action.",
+  "references": {
+    "route_audit": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/native-gz02-source-audit-20261004/ROUTE-AUDIT.json",
+      "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a"
+    },
+    "worktree_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/RECEIPT.json",
+      "sha256": "ecb09a7aed179e9f9e941531800f6cff0b69529830fadc9a87d76dc69e2f03e4"
+    },
+    "patch": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/soong-ui-no-nsjail.patch",
+      "sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc"
+    },
+    "source_view_script": {
+      "path": "scripts/nanhai_plus_native_source_view.py",
+      "sha256": "0bfbeb9d91f1392ee61f6f7adb84b5a214347e8590f52775e8a5574a46fcb1f5"
+    },
+    "host_tool_script": {
+      "path": "scripts/nanhai_plus_native_soong_ui.sh",
+      "sha256": "6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2"
+    }
+  },
+  "observed": {
+    "host": "gz02",
+    "canonical_source_alias": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source -> /data/source/aosp-16.0.0-r4",
+    "source_audit": "42 stock roots plus 4 key inputs; each of 46 remote roots rechecked at recorded HEAD and tracked-clean; audit itself does not claim bytewise full-tree integrity",
+    "source_view": "/data/source/.nanhai-plus-opaleye-native/source-view has exactly 46 symlinks, all matching audited roots; build/soong resolves to independent patched worktree; no extra links",
+    "soong_base": "/data/source/aosp-16.0.0-r4/build/soong clean; sandbox_linux.go SHA256 2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a",
+    "soong_worktree": "HEAD f389fa2a2a768a93bc99957e2288f3fbee032bff; only M ui/build/sandbox_linux.go; diff numstat 2 insertions/2 deletions, exactly basicSandbox.Enabled and ninjaSandbox.Enabled true to false; modified file SHA256 85fa03c3defc2ac3271f6548fc3fa768c7ccded30cdbac9e58a9e9d2ae9de9cb; git diff --check clean",
+    "remote_source_pool_index": "/opt/19.SourceCode/README.md and SOURCES.json register canonical alias, exact R4, 46-root limit, worktree patch, and no build acceptance",
+    "project_isolation": "source-view, out, tmp, staging, control are real directories under /data/source/.nanhai-plus-opaleye-native, separate from /data/source/aosp-16.0.0-r4 checkout",
+    "host_tool_script": "bash -n passed; Linux x86_64 and Soong link checks; readlink-resolved OUT_DIR and TMPDIR confined under project root; microfactory.bash builds package android/soong/cmd/soong_ui into OUT_DIR/soong_ui; script does not invoke soong_ui, nsjail, Docker, Podman, OCI, target graph, or device commands",
+    "microfactory_dependencies": "GZ02 source-view contains prebuilts/go/linux-x86, build/blueprint, prebuilts/bazel/common/proto, build/make/tools/rbcrun, external/golang-protobuf, external/starlark-go, external/pogreb, and build/soong/cmd/soong_ui"
+  },
+  "gate_conditions": [
+    "Before the one build, recheck the five referenced file SHA256 values and remote source/worktree HEAD/status/link topology; abort on drift.",
+    "Bind TOP=/data/source/.nanhai-plus-opaleye-native/source-view, NANHAI_SOONG_WORKTREE=/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container, NANHAI_NATIVE_PROJECT_ROOT=/data/source/.nanhai-plus-opaleye-native, and OUT_DIR/TMPDIR to its out/tmp directories.",
+    "Record actual command, return code, binary hash, and source/output pre/post guards; this review grants no runtime or graph acceptance."
+  ],
+  "limits": [
+    "source_view.py validates HEAD and containment but does not itself pin audit SHA, worktree patch hash, or destination root; the exact witnessed view and preflight conditions supply those gates.",
+    "UI sandbox switch is not proof generated Ninja actions avoid nsjail; those actions are outside this host-tool-only scope.",
+    "No host-tool compilation or graph was run in this peer review."
+  ],
+  "forbidden_execution_count": 0
+}

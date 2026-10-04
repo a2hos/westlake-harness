@@ -1,0 +1,33 @@
+{
+  "schema": "nanhai-g278-soong-native-worktree-v1",
+  "at": "2026-10-04T10:00:44.191926+00:00",
+  "status": "PATCH_PREPARED_STATIC_ONLY",
+  "owner": "nanhai-plus",
+  "source_base": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/build-soong",
+  "project_worktree": "/opt/19.SourceCode/AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+  "base_head": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+  "base_file_sha256": "2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a",
+  "modified_file_sha256": "85fa03c3defc2ac3271f6548fc3fa768c7ccded30cdbac9e58a9e9d2ae9de9cb",
+  "patch": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/soong-ui-no-nsjail.patch",
+    "sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc",
+    "base_git_apply_check_rc": 0
+  },
+  "changed_files": [
+    " M ui/build/sandbox_linux.go"
+  ],
+  "change": "basicSandbox.Enabled and ninjaSandbox.Enabled true to false; dumpvars/kati/soong/ninja UI wrappers share those values",
+  "reason": "user forbids container and namespace sandbox execution",
+  "source_audit": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g277-soong-native-sandbox-static-audit-v1/AUDIT.json",
+    "sha256": "5a903a9b0d38b64d4012ab68168bad38f90710e88a6237f3dc2155a467076169"
+  },
+  "limits": [
+    "UI-level only; generated Ninja actions may still embed nsjail",
+    "Soong binary not rebuilt",
+    "native Linux graph not executed",
+    "target compilation not executed",
+    "device not accessed"
+  ],
+  "forbidden_execution_count": 0
+}

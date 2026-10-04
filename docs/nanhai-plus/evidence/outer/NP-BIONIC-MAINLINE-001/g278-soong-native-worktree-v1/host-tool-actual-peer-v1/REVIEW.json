@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai.g278.host_tool_actual_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:10:21.067906+00:00",
+  "decision": "ACCEPT_HOST_TOOL_BUILD_ONLY",
+  "accepted_claim": "GZ02 Linux x86_64 patched R4 soong_ui microfactory host-tool build produced the recorded ELF; no Soong graph, target build, device or container acceptance.",
+  "references": {
+    "host_tool_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json",
+      "sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6"
+    },
+    "execve_trace": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/soong-ui-execve.log",
+      "sha256": "a453d7b726f9c9177ef0b658e901b64edd5405e257d90c70a3a92ef8b70e3b12"
+    }
+  },
+  "checks": {
+    "result_rc": "HOST-TOOL-RESULT records ssh_batchmode_rc=0 and build_rc=0 under timeout 600s; retained execve trace and present ELF corroborate completion. Numeric shell rc is receipt evidence, not independently encoded in execve.log.",
+    "trace": "All 129 execve starts independently recounted, including 51 unfinished/resumed pairs; program counts exactly match result (bash1 uname7 readlink5 mkdir2 sed1 rm1 go2 compile95 asm9 link4 microfactory1 microfactory_Linux1). No Docker, Podman, OCI runtime, nsjail, chroot, proot, unshare, bwrap, soong_ui execution, graph runner, or target compiler executable in recorded calls.",
+    "binary": "Remote /data/source/.nanhai-plus-opaleye-native/out/soong-ui-v1/soong_ui exists as 19,023,728-byte ELF 64-bit LSB x86-64 dynamic executable; remote SHA256 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624 matches result.",
+    "remote_trace": "Remote execve.log SHA256 a453d7b726f9c9177ef0b658e901b64edd5405e257d90c70a3a92ef8b70e3b12 matches retained trace.",
+    "source_view": "Post-build view has exactly 46 symlinks with no extras; each matches audit root, source HEAD, and tracked-clean status. Patched build/soong link resolves to isolated worktree.",
+    "source_and_patch": "Original build/soong checkout clean, original sandbox_linux.go SHA256 2673457008d4052be801300b0f9095129bd0685be9328faf0f6fdb5cd9fc225a. Worktree HEAD f389fa2a2a768a93bc99957e2288f3fbee032bff and only M ui/build/sandbox_linux.go, modified SHA256 85fa03c3defc2ac3271f6548fc3fa768c7ccded30cdbac9e58a9e9d2ae9de9cb.",
+    "script": "Remote control script SHA256 6d2bf5ca443a7fed61915035f1253489f5a2faf790989e12773f1f967182cdd2 equals reviewed local script; all seven result refs recomputed and matched."
+  },
+  "limits": [
+    "execve-only strace establishes executed programs, not a complete file-access or network trace.",
+    "HOST-TOOL-RESULT is the preserved source for numeric shell return codes; this peer did not rerun the build.",
+    "The produced soong_ui binary was not executed here or accepted for graph or target actions; generated Ninja actions and device behavior remain unverified."
+  ],
+  "forbidden_execution_count_in_peer_review": 0
+}

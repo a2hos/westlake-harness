@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T09:55:38.958965+00:00",
+  "checked_at": "2026-10-04T10:10:55+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -1146,7 +1146,7 @@
     "container_execution_allowed": false,
     "host_native_graph_pass": false,
     "native_target_build_pass": false,
-    "new_host_candidate": "native Linux x86_64 exact R4 source/tool view pending independent audit",
+    "new_host_candidate": "gz02: 42/42 R4 stock roots plus four key input roots present and tag-HEAD/clean; native host tool built; graph pending",
     "historical_g252_g276_container_receipts": "historical_only_not_native_pass",
     "host_native_route_root_review": {
       "path": "docs/nanhai-plus/revisions/no-container-20261004/NATIVE-ROUTE-REVIEW.json",
@@ -1156,5 +1156,29 @@
       "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ROOT-ACK.json",
       "sha256": "15099d8dc70d1ed8cf4446d126df960342c5268aca57ec30b67618acf0a5bddd"
     }
+  },
+  "native_host_tool_progress": {
+    "host": "gz02",
+    "source_audit": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/native-gz02-source-audit-20261004/ROUTE-AUDIT.json",
+      "sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a"
+    },
+    "accepted_roots": 46,
+    "patched_soong_worktree": "AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+    "host_tool_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json",
+      "sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6"
+    },
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/G278-ROOT-REVIEW.json",
+      "sha256": "6755a18946c083be236d928c61388dae13e3ad603a139335cb8704f231c88e0b"
+    },
+    "artifact_sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+    "build_rc": 0,
+    "execve_calls": 129,
+    "forbidden_executor_calls": 0,
+    "soong_graph_pass": false,
+    "target_build_pass": false,
+    "device_startup_pass": false
   }
 }

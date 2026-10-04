@@ -1,8 +1,10 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T09:55:54.307063+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T10:10:55+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
+
+G278 无容器原生宿主进展：重新核查发现 gz02 已有精确 R4 checkout，42/42 stock 根与 4 类关键输入的 Git 标签 HEAD、tracked-clean 和文件存在性通过，故无需整树复制。规范 `/opt/19.SourceCode` 只读入口和项目独立 Soong 工作树/46 根输入视图已建立；仅关闭 Soong UI 的两处 nsjail 开关。gz02 原生 `soong_ui` 宿主工具编译 rc0，产物 SHA-256 `92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624`；129 次 execve 中禁用执行器调用 0。独审/root 只接受宿主工具编译。Soong 图、ARM64 Bionic 目标构建、HelloWorld 冷启动和设备验收仍未通过。新环境绑定 SHA `5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718`，下一执行包须由原 owner 回读。
 
 | 范围 | 已核实数量 | 含义 |
 |---|---:|---|
@@ -26,9 +28,9 @@ G276 v20 42 根图候选已通过静态检查与独审/root 限定准入：198,0
 
 G276 的 `system/tools/hidl` 与 `system/apex` 两棵完整官方 R4 仓（共 997 项）已通过源码身份独审和外环准入。两处跨仓符号链接还要在 stock 路径核验；42 根 Linux 视图、Soong 图和目标构建均未验收。
 
-无容器政策已由原内环只读消费 8 项冻结引用，独审/root 接受；原 goal/session/claim/预算未重建。原生 Linux 宿主 gz02 可达，但精确 R4 源码不在该机；Soong UI 与生成动作的 namespace sandbox 尚须关闭和核验。
+无容器政策已由原内环只读消费 8 项冻结引用，独审/root 接受；原 goal/session/claim/预算未重建。此前仅按 `/opt/19.SourceCode` 判断 gz02 缺源码；G278 已发现并核验 `/data/source/aosp-16.0.0-r4`，建立规范别名和独立补丁工作树。生成目标动作的 namespace sandbox 仍须在实际 Ninja 图中审计。
 
-用户最新架构决定：全过程杜绝容器。此前 Docker 只用于在 macOS 上运行 Linux x86_64 宿主 Soong 工具，并非 App 桥接运行时；但它不符合新约束。G277/v21 容器候选撤销，G252–G276 容器结果只作历史证据，原生宿主图通过仍为 0。下一步核验原生 Linux x86_64 主机、精确 R4 输入及无 namespace sandbox 的 Soong 执行。
+用户最新架构决定：全过程杜绝容器。此前 Docker 只用于在 macOS 上运行 Linux x86_64 宿主 Soong 工具，并非 App 桥接运行时；但它不符合新约束。G277/v21 容器候选撤销，G252–G276 容器结果只作历史证据，原生宿主图通过仍为 0。下一步在原 owner 新 ACK 和独审后验证无 namespace sandbox 的 Soong 图。
 
 最新构建图实际结果：G276（exec87154，chunkf7480a，rc2）已独审/root 接受，真实失败在 work-init 容器创建后挂载校验，错误 `init mount drift`。根因是继承的 G275 校验器使用独立的旧 v17b 目录状态；Docker 挂载按 v20 命令创建，但校验器预期路径仍指旧目录。42 根 stock Linux 挂载、Soong 图、目标编译和设备均未发生；隔离的 work-init 容器及 out/tmp 两卷经身份核对后清理。G276 旧包禁止重放；随后形成的 G277 容器候选已撤销。
 

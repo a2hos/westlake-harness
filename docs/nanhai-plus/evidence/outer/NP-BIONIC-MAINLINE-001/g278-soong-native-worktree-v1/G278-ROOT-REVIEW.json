@@ -1,0 +1,46 @@
+{
+  "schema": "nanhai-g278-root-review-v1",
+  "at": "2026-10-04T10:10:42.625082+00:00",
+  "decision": "ACCEPT_NATIVE_SOONG_UI_HOST_TOOL_ONLY",
+  "refs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/RECEIPT.json",
+      "sha256": "ecb09a7aed179e9f9e941531800f6cff0b69529830fadc9a87d76dc69e2f03e4"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/peer-review-v1/REVIEW.json",
+      "sha256": "c9cd5bbe2d35ce3131903d843d972a4d91c76dcd511558fc0f805e5f3ccd0dcb"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/source-view-peer-v1/REVIEW.json",
+      "sha256": "09286367fdf9e4d30cdd524a2cd67b208f4e1ebe610aab6822ad6330e1b33e81"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json",
+      "sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/host-tool-actual-peer-v1/REVIEW.json",
+      "sha256": "c006300e874c0d583b9313179dd20dfa373d0ded46f4ea9f6be834f1a1aa75c6"
+    }
+  ],
+  "actual": {
+    "host": "gz02",
+    "exit_code": 0,
+    "artifact_sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624",
+    "execve_calls": 129,
+    "forbidden_executor_calls": 0,
+    "source_view_roots": 46
+  },
+  "not_proven": [
+    "soong_ui runtime behavior",
+    "Soong graph",
+    "ARM64 Bionic target compile",
+    "generated target action sandbox freedom",
+    "HelloWorld device startup",
+    "89-tool Bionic pass",
+    "200-APK startup"
+  ],
+  "next": "prepare fresh native graph candidate with exact R4 source view and owner ACK; inspect generated actions before target build",
+  "reflection_actual_groups_since_EVO18": 2
+}

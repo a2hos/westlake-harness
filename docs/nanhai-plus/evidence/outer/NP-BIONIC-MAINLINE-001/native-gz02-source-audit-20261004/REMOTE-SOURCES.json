@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "updated_at": "2026-10-04T10:03:24.714687+00:00",
+  "root": ".",
+  "naming": "<Software>-<Version>",
+  "policy": "AGENTS.md",
+  "readme": "README.md",
+  "entries": [
+    {
+      "software": "AOSP",
+      "version": "16.0.0_r4",
+      "upstream_tag": "android-16.0.0_r4",
+      "path": "AOSP-16.0.0_r4/android-source",
+      "kind": "read_only_alias_to_existing_repo_checkout",
+      "canonical_alias": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+      "alias_target": "/data/source/aosp-16.0.0-r4",
+      "completeness": "audited_42_stock_roots_plus_4_key_inputs_not_full_AOSP_claim",
+      "verified_roots": 46,
+      "source_receipt_sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a",
+      "source_receipt_project_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/native-gz02-source-audit-20261004/ROUTE-AUDIT.json",
+      "build_accepted": false,
+      "device_verified": false,
+      "project_worktrees": [
+        {
+          "path": "AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container",
+          "kind": "independent Git clone of exact R4 build-soong",
+          "owner": "nanhai-plus OH7 AOSP16 R4 Bionic",
+          "base_commit": "f389fa2a2a768a93bc99957e2288f3fbee032bff",
+          "patch_sha256": "1b5724d6c5ee2592197bbf8d158958b343201ece6f890a2d2f46a69ad4b546dc",
+          "changed_file": "ui/build/sandbox_linux.go",
+          "modified_file_sha256": "85fa03c3defc2ac3271f6548fc3fa768c7ccded30cdbac9e58a9d2ae9de9cb",
+          "graph_accepted": false,
+          "target_build_accepted": false
+        }
+      ]
+    }
+  ]
+}
