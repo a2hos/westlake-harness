@@ -1,0 +1,48 @@
+{
+  "schema": "evo-0049-process-v1",
+  "scope": "four_result_groups_bounded_reflection_code_only",
+  "result_groups": [
+    {
+      "name": "g279_v2b_v4_local_reject",
+      "terminal_sha256": "7dac082c049a4db44e68e558f87d349e7ff7f198a5a34687c33bbcd0e51e24b0",
+      "root_acceptance_sha256": "369462a2e1b4d051739ce3347b3bbb0af25eafa74f7f23f1044d66fc957e5030",
+      "bounded_result": "local_TEST_NET_3_REJECT_fact_accepted_command_rc2_not_pass"
+    },
+    {
+      "name": "steam_chat_host_static",
+      "peer_review_sha256": "8ccafa6e0ad92d02e826161a015fec645552ea8f01c5995e26eb8d899dcf088c",
+      "bounded_result": "host_static_candidate_only"
+    },
+    {
+      "name": "duckduckgo_raw_and_whitebox",
+      "raw_peer_sha256": "887c551580aebd60a4f091a589ae08588a9dabb2f551e2aae7576402d5bd3e8a",
+      "whitebox_peer_sha256": "8a17bdd58f79f93770c116d373a6669857548ebf5c08ed8c0154ccefca84ea88",
+      "bounded_result": "one_official_raw_and_source_mapped_input_not_build_or_startup"
+    },
+    {
+      "name": "g279_v2c_v1_code_only",
+      "peer_review_sha256": "47ad33bc6db91c11c5174a3e6209fe3368acd6c630f450e584587f551a76a3e8",
+      "bounded_result": "NO_GO_release_positive_route_and_ssh_oracles_unrecomputable"
+    }
+  ],
+  "small_pilot": {
+    "method": "read_only_stage_boundary_inventory_of_frozen_v2c_runner",
+    "runner_sha256": "1254c22c1538af4c13222e4d8fa7ebc45c3ac6d158797a86a2cb6fe1e23b9b52",
+    "start_line": 379,
+    "no_credential_stages_after_start": ["binary:380", "fork_denial:385", "source:389", "controller_leaf:393", "port_preflight:396"],
+    "first_private_config_write_line": 405,
+    "local_negative_line": 340,
+    "real_ssh_line": 351,
+    "positive_route_parse_line": 367,
+    "terminal_line": 424,
+    "finding": "five_fail_closed_no_credential_stages_are_inside_the_one_shot_nonce_before_any_private_config_or_remote_probe"
+  },
+  "single_improvement": "Split the compound v2c attempt into an immutable no-credential local preflight receipt and a separately released one-shot private route plus read-only SSH step. The one-shot nonce starts only after preflight is current and accepted; each terminal names its stage and retains its own evidence boundary.",
+  "falsifier": "A no-credential fault in binary, fork denial, source, controller leaf or port preflight still consumes the real-route nonce, or the second step can run without an exact fresh preflight receipt.",
+  "pilot_result": "stage_inventory_supports_trial_only_no_runtime_claim",
+  "promotion": "NO_AUTOMATIC_PROMOTION_EVO48_ORACLE_BLOCKER_REMAINS",
+  "real_proxy_or_ssh_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "task_summary_modified": false
+}

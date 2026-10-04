@@ -1,0 +1,113 @@
+{
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "at_utc": "2026-10-04T19:20:36.840111+00:00",
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_AOSP16_OH7_BIONIC_RUNTIME_INDEX_AND_RESOLUTION",
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_inventory_sha256": {
+    "arm64_elf": "6a2182ddade1e2e9dc83d17faf22a0f1d8fee3335802eeb647aee8511016f695",
+    "dex": "d26f6c92e73f829c96470f3432046f205d80876a744dbf5bba2bdd9ba4876372",
+    "metadata": "eb1d50085d979e0eb71d08cb08e35202b07ca63e5db57618e694ef846c2396d3"
+  },
+  "limits": "Demand presence does not prove missing implementations, startup reachability, loaded native libraries, or device behavior. Historical runtime locks are not substituted for the current Bionic target.",
+  "manifest_main_activities": [
+    "com.duckduckgo.app.launch.LaunchBridgeActivity"
+  ],
+  "network_commands": 0,
+  "next_evidence": "Bind an exact current Bionic runtime index and host-resolve the DEX platform members, JNI registrations and ARM64 ELF DT_NEEDED/imports; then rank cold-start-reachable gaps using a real trace or accepted graph.",
+  "package": "com.duckduckgo.mobile.android",
+  "schema": "g331-duckduckgo-static-bridge-demand-boundary-v1",
+  "static_demands": {
+    "arm64_elf_count": 11,
+    "arm64_elf_needed_sonames": [
+      "libc.so",
+      "libdl.so",
+      "liblog.so",
+      "libm.so",
+      "libnetguard.so",
+      "libz.so"
+    ],
+    "defined_dex_classes": 81328,
+    "field_reference_keys": 2057,
+    "jni_onload_libraries": 3,
+    "load_library_sites": [
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes4.dex",
+        "method": "loadLib",
+        "offset": 4,
+        "owner": "Landroidx/datastore/core/SharedCounter$Factory;",
+        "value": "datastore_shared_counter"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes4.dex",
+        "method": "<clinit>",
+        "offset": 20,
+        "owner": "Landroidx/graphics/path/PathIteratorImpl;",
+        "value": "androidx.graphics.path"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes4.dex",
+        "method": "lambda$loadLibPdf$0",
+        "offset": 4,
+        "owner": "Landroidx/pdf/service/PdfDocument;",
+        "value": "pdfclient"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes5.dex",
+        "method": "<clinit>",
+        "offset": 22,
+        "owner": "Lcom/duckduckgo/android_crashkit/Crashpad;",
+        "value": "crashkit"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes8.dex",
+        "method": "init",
+        "offset": 36,
+        "owner": "Lcom/duckduckgo/urlpredictor/UrlPredictor$Companion;",
+        "value": "url_predictor"
+      }
+    ],
+    "method_reference_keys": 14644,
+    "native_method_declarations": 101,
+    "service_request_names": {
+      "<dynamic-or-unresolved>": 72,
+      "accessibility": 15,
+      "activity": 11,
+      "alarm": 3,
+      "appops": 3,
+      "audio": 2,
+      "clipboard": 5,
+      "connectivity": 19,
+      "display": 4,
+      "input": 1,
+      "input_method": 21,
+      "jobscheduler": 6,
+      "keyguard": 3,
+      "layout_inflater": 223,
+      "locale": 3,
+      "location": 2,
+      "media_session": 1,
+      "notification": 22,
+      "phone": 4,
+      "power": 9,
+      "print": 3,
+      "sensor": 2,
+      "uimode": 6,
+      "user": 1,
+      "vibrator": 1,
+      "window": 19
+    },
+    "service_request_sites": 461,
+    "undefined_symbol_names_unique": 346
+  }
+}

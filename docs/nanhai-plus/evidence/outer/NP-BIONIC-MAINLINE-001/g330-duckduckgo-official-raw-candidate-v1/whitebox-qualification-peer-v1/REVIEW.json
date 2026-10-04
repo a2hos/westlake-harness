@@ -1,0 +1,35 @@
+{
+  "apk_package": "com.duckduckgo.mobile.android",
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "apk_version": "5.296.0",
+  "at_utc": "2026-10-04T19:19:38.677102+00:00",
+  "blackbox_count_delta": 0,
+  "build_and_identity_limits": [
+    "No complete exact tag checkout was added to /opt/19.SourceCode; SOURCES.json had no DuckDuckGo entry at review time.",
+    "No clean build of the exact tag and all submodules/web assets/dependencies was run, so full current-environment buildability is UNPROVEN.",
+    "Public Gradle source does not establish reproducibility of publisher signing, private assets or exact APK bytes; any locally rebuilt APK is a separate artifact and cannot replace the accepted SHA-pinned official APK for baseline tests.",
+    "Tag-to-asset correspondence is publisher release association, not a source-to-binary reproducible-build proof.",
+    "No app install, startup, device or Bionic behavior was tested."
+  ],
+  "container_commands": 0,
+  "decision": "GO_WHITEBOX_SOURCE_MAPPED_INPUT_ONLY_BUILD_UNVERIFIED",
+  "device_commands": 0,
+  "next_evidence": "If a build is required, first register exact DuckDuckGo-5.296.0 source in /opt/19.SourceCode with commit/submodule integrity and isolated project OUT; execute a separate clean build and preserve its receipt. Keep baseline run on unchanged official APK SHA.",
+  "official_source": {
+    "license": "Apache-2.0 per tagged README",
+    "release_linked_commit": "6903748835852d6de51a1e7fee5e240ad3794ed0",
+    "release_tag": "https://github.com/duckduckgo/Android/releases/tag/5.296.0",
+    "repository": "https://github.com/duckduckgo/Android",
+    "tag_name": "5.296.0",
+    "tagged_app_build_gradle": "https://github.com/duckduckgo/Android/blob/5.296.0/app/build.gradle",
+    "tagged_application_id": "com.duckduckgo.mobile.android",
+    "tagged_readme": "https://github.com/duckduckgo/Android/blob/5.296.0/README.md",
+    "tagged_readme_build_instruction": "git clone --recursive; git submodule update --init"
+  },
+  "qualification": "Official public Android app repository has a 5.296.0 release/tag tied to the official 5.296.0 APK asset; the tagged app Gradle recipe declares the exact APK package. This supports source-informed whitebox analysis of the unchanged accepted publisher APK. It must not be counted as a blackbox sample.",
+  "raw_peer_review_sha256": "887c551580aebd60a4f091a589ae08588a9dabb2f551e2aae7576402d5bd3e8a",
+  "review_actions": "Read official tag/release, tagged Gradle and README, shared source index and existing host raw peer review; no source checkout, build, APK edit, device or summary mutation.",
+  "schema": "g330-duckduckgo-whitebox-input-peer-review-v1",
+  "startup_delta": 0,
+  "whitebox_count_delta_by_peer": 0
+}

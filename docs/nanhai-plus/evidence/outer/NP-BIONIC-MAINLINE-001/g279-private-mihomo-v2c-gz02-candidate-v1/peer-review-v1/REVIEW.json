@@ -1,0 +1,37 @@
+{
+  "schema": "g279-private-mihomo-v2c-gz02-peer-review-v1",
+  "decision": "NO_GO_V2C_V1_RELEASE",
+  "scope": "independent_code_only_review_no_real_proxy_or_ssh",
+  "candidate_sha256": "0e5eaf4b8dfebf39a04a964a0f5449ebf85367cfd3193adc1fc61c193df2b654",
+  "runner_sha256": "1254c22c1538af4c13222e4d8fa7ebc45c3ac6d158797a86a2cb6fe1e23b9b52",
+  "fixture_script_sha256": "9982759601d0c24f064c851e8f66cc538188aff8f1458d4d053e8303b7efb729",
+  "fixture_receipt_sha256": "1969805501230bf24d226e249f6c810b77fa10e8312e681dd7e0da83fd083157",
+  "handoff_sha256": "97686a9361687fcd0f5e1481da09a4e354f4f85af76b8e46f41e6ec47f936865",
+  "findings": [
+    {
+      "kind": "blocking_evidence_oracle",
+      "detail": "positive_route_event checks the complete private Mihomo TCP line against the selected node, but exports only private_raw_line_sha256, source/target/rule/action fields and booleans. run_instance returns stdout/stderr hashes and sizes; execute then removes the 0600 private directory on a clean run. A postrun peer has neither the raw line nor a credential-free complete witness from which to recompute the decisive /32 PROXY action, selected-node match, or raw-line hash. The 26/26 synthetic fixtures prove the parser's fixture behavior, not the real binary's positive route line. EVO48 round-trip evidence gate is unmet."
+    },
+    {
+      "kind": "blocking_ssh_postrun_oracle",
+      "detail": "parse_ssh_proof requires a pinned host-key debug line, publickey authentication debug line and numeric remote UID, but only stdout/stderr hashes and a derived proof are retained. Raw SSH streams are discarded with the private process context. A postrun peer cannot independently reconstruct the host-key/authentication transcript from hashes alone."
+    },
+    {
+      "kind": "positive_code_boundaries",
+      "detail": "The candidate binds exact v2a/v2b receipts, candidate/runner/peer/release hashes, fresh START/TERMINAL one-shot gate, exact local ssh/nc binaries, one ED25519 known_hosts alias and fingerprint, /dev/null SSH config, fixed SOCKS loopback ProxyCommand, publickey BatchMode, remote LC_ALL=C /usr/bin/id -u only, and no HK01/graph/device/container/namespace/global proxy write path. main catches Exception, not SystemExit, so the v2b false rc2 path is addressed in code and fixtures. These are code-level observations, not a real-route or SSH result."
+    },
+    {
+      "kind": "release_absent",
+      "detail": "Candidate records root_release_present=false, start_present=false, terminal_present=false and positive_route_real_binary_observed=false. This NO_GO peer decision cannot satisfy runner.exact_release, which explicitly requires GO_V2C_V1_CODE_ONLY."
+    }
+  ],
+  "next_small_step": "Freeze a new generation that retains a credential-free, independently recomputable witness for the real positive route and host-key/publickey/UID proof before private logs are deleted. Use a strict whitelist/redaction contract and a postrun negative fixture showing an altered route/action cannot pass. Re-review code and only then consider a new root one-shot release; do not replay this candidate or its nonce.",
+  "observed_real_mihomo_started": false,
+  "observed_real_ssh_connections": 0,
+  "remote_write_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "graph_commands": 0,
+  "task_summary_modified": false
+}

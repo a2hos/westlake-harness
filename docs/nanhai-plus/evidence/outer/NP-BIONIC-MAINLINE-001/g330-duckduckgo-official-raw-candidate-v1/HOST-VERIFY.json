@@ -1,0 +1,79 @@
+{
+  "all_checks_pass": true,
+  "apk_bytes": 87508746,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g330-duckduckgo-official-v1/duckduckgo-5.296.0-play-release.apk",
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "asset_id": 595954499,
+  "at_utc": "2026-10-04T19:16:25.745255+00:00",
+  "checks": {
+    "asset_digest": true,
+    "asset_size": true,
+    "asset_uploaded": true,
+    "download_content_type": true,
+    "download_http200": true,
+    "download_redirect": true,
+    "elf_classes": true,
+    "manifest": true,
+    "no_nonelf_so": true,
+    "not_current_103_summary": true,
+    "package_version": true,
+    "registered_old_artifact_distinct": true,
+    "release_tag": true,
+    "sdk": true,
+    "v3_signature": true,
+    "zip_crc": true,
+    "zip_entries": true,
+    "zip_no_duplicates": true
+  },
+  "elf_header_counts": {
+    "('arm64-v8a', 2, 1, 183)": 11,
+    "('armeabi-v7a', 1, 1, 40)": 11,
+    "('x86', 1, 1, 3)": 11,
+    "('x86_64', 2, 1, 62)": 11
+  },
+  "evidence_sha256": {
+    "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "aapt2.stdout.raw": "fa910d338f333fcaf93c85234b0843a8ea1d9aaf08e30a6bad20d7cd0eb0c694",
+    "apk-get.headers.raw": "8e876a985b02807e7e821715aecfb473936818dd73f4ff6a0b4b71ca64c57338",
+    "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apksigner.stdout.raw": "62b0eb4bce97a8a57bed3074a4e3879beec389e0dc36c7f544eab6dea545cd7d",
+    "release-api.headers.raw": "bb0a409bec3c7e26e34066b7e9d92f04eb4860ad07afb8a9fb1a88db7ba26954",
+    "release-api.raw": "9254e0404865dba6f9df3b23228539d7d8eb8796057d153c50dbae42bb1fde3b"
+  },
+  "schema": "g330-duckduckgo-official-raw-host-verify-v1",
+  "signer_certificate_sha256": "bb7bb31c573c46a1da7fc5c528a6acf432108456feec50810c7f33694eb3d2d4",
+  "source_asset_url": "https://github.com/duckduckgo/Android/releases/download/5.296.0/duckduckgo-5.296.0-play-release.apk",
+  "source_release_api": "https://api.github.com/repos/duckduckgo/Android/releases/tags/5.296.0",
+  "upstream_registry_old_artifact": {
+    "abis": [],
+    "current_target_accepted": false,
+    "filenames": [],
+    "id": "a-802e824e138bb7843920",
+    "metadata_gaps": [
+      "native_abi_not_declared"
+    ],
+    "package": "com.duckduckgo.mobile.android",
+    "payload_observed_locally": false,
+    "play_urls": [],
+    "record_classes": [
+      "download_lock",
+      "indexed_apk_identity"
+    ],
+    "record_ids": [
+      "r-96746033c13092c10d43",
+      "r-9a8471e2b545db837019"
+    ],
+    "sha256": "7d9b7f53edf1c549025fd9da1e2d52fc9394bef7c87046fe44bead4aaa98e4d5",
+    "source_urls": [
+      "https://f-droid.org/repo/com.duckduckgo.mobile.android_52941000.apk"
+    ],
+    "split_counts": [],
+    "version_codes": [
+      "52941000"
+    ],
+    "versions": [
+      "5.294.1"
+    ]
+  },
+  "verification_rc": 0
+}

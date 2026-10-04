@@ -1,0 +1,126 @@
+{
+  "apk_bytes": 87508746,
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "at_utc": "2026-10-04T19:20:36.870221+00:00",
+  "authoritative_count_changed": false,
+  "blackbox_qualification_accepted_here": false,
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_BIONIC_RUNTIME_INDEX",
+  "container_commands": 0,
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "nested_archive_name_candidates": [],
+  "network_commands": 0,
+  "non_elf_so": 0,
+  "other_true_elf_by_abi": {
+    "armeabi-v7a": 11,
+    "x86": 11,
+    "x86_64": 11
+  },
+  "package": "com.duckduckgo.mobile.android",
+  "phase_results": {
+    "dex": {
+      "command_sha256": "dba2ce5df3eddb95ae34dca60ddf87e00093e6e41bab18c010dbb2270305a1f6",
+      "elapsed_seconds": 31.80799466697499,
+      "phase_result_sha256": "4d3ccb39f169cf8eb42840483fb1cbdbafda597525497987de3624c4d089a5c5",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cdd5b198287502e46687cb1b32e6c2b54fc386c29d42fff1b0c94c97576dea96",
+      "timed_out": false
+    },
+    "elf": {
+      "command_sha256": "9561c54ba083ce5623072a002e1b60012e29c312d90b6aab218617df7756c27b",
+      "elapsed_seconds": 2.2565839999588206,
+      "phase_result_sha256": "697b11343b15c254452e741a28cff885cd84e483ea6b78865c61470f0e735f6e",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6b9ca0bc554e19ee4fd5cff8bed5e3cabbab26e4adf50f66776aec88c08b69cf",
+      "timed_out": false
+    },
+    "metadata": {
+      "command_sha256": "1e22cd8da38e6b51d5cbc5a61f092795ebe3df1ebb4368f1ecbc4825b3b29e79",
+      "elapsed_seconds": 0.6703272090526298,
+      "phase_result_sha256": "426340de068187f101904ed2d195ce1189e8987c14c9b97f4a2a88a97279cc73",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "94caea4e3f8804c19f2937d6419a5c6dd28f5b053f197c0d493aa477874d7934",
+      "timed_out": false
+    },
+    "zip": {
+      "command_sha256": "8fd21a29f11aec046c3d2667f3377819d68e464dc70b57d74cd8601daee462a4",
+      "elapsed_seconds": 0.5270595410838723,
+      "phase_result_sha256": "66136ab197d2e60ea01d11efade56c519395352cd2309dfaecd31d72978fc846",
+      "rc": 0,
+      "source_guard_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "461170cb4b6b4dcc4f3d325ab67e6655b602461f087b753b06541b627222c2d9",
+      "timed_out": false
+    }
+  },
+  "refs": {
+    "BRIDGE-DEMAND.json": {
+      "bytes": 3637,
+      "sha256": "e351d8a720e0e4a367b1f84473bced222ddd6b26f18e2f1f2853d1e5ce1a9ebb"
+    },
+    "CENSUS.json": {
+      "bytes": 10114,
+      "sha256": "027615638a38e21401e4cc7afc9e78cbae76c7bc566cd3d9306cd8d3d58cec13"
+    },
+    "RESULT.json": {
+      "bytes": 6719,
+      "sha256": "664dffeb12aca0b22a1015cbf1b389c9d27c6a0933d3f2eb9bb025488ff123aa"
+    },
+    "START.json": {
+      "bytes": 1060,
+      "sha256": "4792f8156fadbf44aa051ab1a51b6dd132690db25f98ca3d18a46b0dbb3ee33b"
+    },
+    "census.py": {
+      "bytes": 3186,
+      "sha256": "48fc08df8fe061f6846a15314c098e018c917b530884a4d452d23530470dd26e"
+    },
+    "phase.py": {
+      "bytes": 5180,
+      "sha256": "f035403c2343d554d3cd5d27dcf9aa72fe5964c017df64513970c35fe1053258"
+    },
+    "phases/dex/DEX-INVENTORY.json": {
+      "bytes": 39408501,
+      "sha256": "d26f6c92e73f829c96470f3432046f205d80876a744dbf5bba2bdd9ba4876372"
+    },
+    "phases/elf/ELF-CLASSIFICATION.json": {
+      "bytes": 5520,
+      "sha256": "1a080e239ab3d4dd0b2b57178f552fbc9709208e8af29c9f9d2ba2bc3d9538fb"
+    },
+    "phases/elf/ELF-INVENTORY.json": {
+      "bytes": 578142,
+      "sha256": "6a2182ddade1e2e9dc83d17faf22a0f1d8fee3335802eeb647aee8511016f695"
+    },
+    "phases/metadata/MANIFEST.json": {
+      "bytes": 2371,
+      "sha256": "eb1d50085d979e0eb71d08cb08e35202b07ca63e5db57618e694ef846c2396d3"
+    },
+    "phases/zip/ZIP-FACTS.json": {
+      "bytes": 225,
+      "sha256": "361e3c3a33a9b2c31025da045c02fc280e983810f9269e9b0e70c6a51dbbaf15"
+    },
+    "run.py": {
+      "bytes": 3492,
+      "sha256": "def76fde955ddc1c6f93292ac987094c41530cebfd9e6b2dae8539514ff8999a"
+    }
+  },
+  "root_dex": 11,
+  "root_raw_admission_sha256": "eb387b29330a4884a743c5356720021f0fcdd1d621f9834fc0a80fd3e9007e58",
+  "schema": "g331-duckduckgo-four-static-handoff-v1",
+  "source_guard_all_equal": true,
+  "source_scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "startup_proven": false,
+  "status": "CANDIDATE_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "target_sdk": 36,
+  "terminal_rc": 0,
+  "true_arm64_elf": 11,
+  "version_code": 52960000,
+  "version_name": "5.296.0",
+  "zip_crc_all": true,
+  "zip_entries": 3626
+}

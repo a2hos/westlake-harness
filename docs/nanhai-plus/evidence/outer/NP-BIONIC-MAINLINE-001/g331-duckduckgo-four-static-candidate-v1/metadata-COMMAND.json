@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-I",
+    "-B",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g331-duckduckgo-four-static-candidate-v1/phase.py",
+    "metadata"
+  ],
+  "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+  "elapsed_seconds": 0.6703272090526298,
+  "environment": {
+    "LC_ALL": "C",
+    "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g331-duckduckgo-four-static-candidate-v1/tmp"
+  },
+  "finished_at": "2026-10-04T19:19:31.889082+00:00",
+  "nonce": "382ae347e3472fd56f167f34723b2f88",
+  "phase": "metadata",
+  "rc": 0,
+  "started_at": "2026-10-04T19:19:31.218779+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "94caea4e3f8804c19f2937d6419a5c6dd28f5b053f197c0d493aa477874d7934",
+  "timeout_seconds": 180
+}

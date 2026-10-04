@@ -1,0 +1,453 @@
+{
+  "schema": "g331-duckduckgo-census-v1",
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "apk_bytes": 87508746,
+  "root_raw_admission_sha256": "eb387b29330a4884a743c5356720021f0fcdd1d621f9834fc0a80fd3e9007e58",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "zip_entries": 3626,
+  "zip_crc_all": true,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 13276456,
+      "sha256": "cd8fdd3221c9526e7305c96f548844387895af2219eae2e749b6a55cab41e7db",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes10.dex",
+      "bytes": 10198412,
+      "sha256": "83684321fa031c652c93240a111fdf78d14fd91cb7fb5d37541f5a0e04d86b19",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes11.dex",
+      "bytes": 3046056,
+      "sha256": "e225d0d06f7922d15627daa835edbbadeb95167bfc8c3d628be2d985c376bcd0",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 3100,
+      "sha256": "9859cba7e66cb2bdbbefbffda8b33d70340a296fa4fce2c4b08397ea3dbe2a87",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes3.dex",
+      "bytes": 2888,
+      "sha256": "cee7773f7f45ade3ae80ac334701cd2f8f4acad592e75531ccb71f7ee4d1bc10",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes4.dex",
+      "bytes": 9727348,
+      "sha256": "50b59f42b2d2b03bb19c6163afe04f7b183eba48d119439f57561924705ea3a7",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes5.dex",
+      "bytes": 10795872,
+      "sha256": "e0ecc87aa9ffbb5d6b66c46ac72eb2c7e1502ec4e566d1113f13fd7a2d345b26",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes6.dex",
+      "bytes": 14736860,
+      "sha256": "fc9e2d09656c117bbbbd93ef1c07f05bca00fbfd8d5b3729ef6bc1bbd6223780",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes7.dex",
+      "bytes": 12020972,
+      "sha256": "2598bcb9b241572460c145ac2b18acb63d5e05f32448d1f5fff46f89404c773b",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes8.dex",
+      "bytes": 11100456,
+      "sha256": "3291e93822343fa86606bf7ed53f3aa1e960ae46405046b37ba1e44f155caabf",
+      "magic": "6465780a30333900",
+      "embedded": false
+    },
+    {
+      "name": "classes9.dex",
+      "bytes": 7560960,
+      "sha256": "66a2130caaff285d0a173d4ae3d484f5db0a5368954574246fe7b648e109b9e0",
+      "magic": "6465780a30333900",
+      "embedded": false
+    }
+  ],
+  "so": [
+    {
+      "name": "lib/arm64-v8a/crashpad_handler.so",
+      "kind": "elf",
+      "bytes": 985816,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10096,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libcrash-ndk.so",
+      "kind": "elf",
+      "bytes": 90472,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libcrashkit.so",
+      "kind": "elf",
+      "bytes": 987896,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 7112,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libddgcrypto.so",
+      "kind": "elf",
+      "bytes": 267440,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libhttps-bloom-lib.so",
+      "kind": "elf",
+      "bytes": 6009688,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libnetguard.so",
+      "kind": "elf",
+      "bytes": 100208,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 5797528,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/liburl_predictor.so",
+      "kind": "elf",
+      "bytes": 1681664,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libwg-go.so",
+      "kind": "elf",
+      "bytes": 4309744,
+      "class": 2,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "name": "lib/armeabi-v7a/crashpad_handler.so",
+      "kind": "elf",
+      "bytes": 743168,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 7252,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrash-ndk.so",
+      "kind": "elf",
+      "bytes": 82476,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libcrashkit.so",
+      "kind": "elf",
+      "bytes": 650032,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 4416,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libddgcrypto.so",
+      "kind": "elf",
+      "bytes": 283728,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libhttps-bloom-lib.so",
+      "kind": "elf",
+      "bytes": 4406392,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libnetguard.so",
+      "kind": "elf",
+      "bytes": 83556,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 4035640,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/liburl_predictor.so",
+      "kind": "elf",
+      "bytes": 1380700,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libwg-go.so",
+      "kind": "elf",
+      "bytes": 4060512,
+      "class": 1,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/x86/crashpad_handler.so",
+      "kind": "elf",
+      "bytes": 944808,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 9284,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libcrash-ndk.so",
+      "kind": "elf",
+      "bytes": 80340,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libcrashkit.so",
+      "kind": "elf",
+      "bytes": 890440,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 5148,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libddgcrypto.so",
+      "kind": "elf",
+      "bytes": 433084,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libhttps-bloom-lib.so",
+      "kind": "elf",
+      "bytes": 4362972,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libnetguard.so",
+      "kind": "elf",
+      "bytes": 99836,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 5403136,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/liburl_predictor.so",
+      "kind": "elf",
+      "bytes": 1625996,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libwg-go.so",
+      "kind": "elf",
+      "bytes": 4094460,
+      "class": 1,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86_64/crashpad_handler.so",
+      "kind": "elf",
+      "bytes": 998640,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10760,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libcrash-ndk.so",
+      "kind": "elf",
+      "bytes": 87360,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libcrashkit.so",
+      "kind": "elf",
+      "bytes": 972272,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 6224,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libddgcrypto.so",
+      "kind": "elf",
+      "bytes": 376640,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libhttps-bloom-lib.so",
+      "kind": "elf",
+      "bytes": 5618592,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libnetguard.so",
+      "kind": "elf",
+      "bytes": 100472,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 6372968,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/liburl_predictor.so",
+      "kind": "elf",
+      "bytes": 1656344,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libwg-go.so",
+      "kind": "elf",
+      "bytes": 4686320,
+      "class": 2,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "nested_archive_name_candidates": [],
+  "counts": {
+    "root_dex": 11,
+    "embedded_dex": 0,
+    "true_arm64_elf": 11,
+    "arm32_elf": 11,
+    "other_elf": 33,
+    "non_elf_so": 0
+  },
+  "device_commands": 0,
+  "container_commands": 0
+}

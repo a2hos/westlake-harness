@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai-plus-evolution-root-acceptance-v1",
+  "at_utc": "2026-10-04T19:22:16Z",
+  "decision": "ACCEPT_ONE_BOUNDED_ONE_SHOT_STAIRCASE_PILOT_NOT_PROMOTED",
+  "process_sha256": "fc7c91b8fc26cc178be2e30e05661674d7f262cc2977f434b3795303bc50585a",
+  "result_sha256": "ef0abfb8b7be2b23bdb9693d61de9972cf46903a4350828b68489756c304c350",
+  "actual_result_groups": 4,
+  "single_improvement": "Separate a no-credential local preflight receipt from the later one-shot private route and read-only SSH attempt, so early local failures do not consume the real-route nonce.",
+  "lens": "experiment granularity and nonce consumption, distinct from EVO46 timing, EVO47 allocation and EVO48 witness round-trip",
+  "pilot_result": "Read-only frozen v2c v1 stage inventory found five no-credential failure gates after START and before private config write.",
+  "next_falsifier": "A no-credential failure still consumes the later private-route nonce, or the later stage can run without an exact fresh preflight receipt.",
+  "broadly_promoted": false,
+  "evo48_oracle_blocker_resolved": false,
+  "count_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

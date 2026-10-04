@@ -1,0 +1,97 @@
+{
+  "apk_bytes": 87508746,
+  "apk_get_rc": 0,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g330-duckduckgo-official-v1/duckduckgo-5.296.0-play-release.apk",
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "apksigner_v3_verified": true,
+  "arm64_elf_class2_le_em_aarch64": 11,
+  "at_utc": "2026-10-04T19:16:43.628780+00:00",
+  "claim_boundary": {
+    "blackbox_qualified": false,
+    "container_commands": 0,
+    "device_commands": 0,
+    "raw_count_changed": false,
+    "startup_proven": false,
+    "static_accepted": false
+  },
+  "decision_candidate": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "dedupe": {
+    "current_103_accepted_raw_package_absent": true,
+    "interpretation": "Existing upstream identity is not an accepted host raw payload; this is one new exact version artifact, not a new upstream package identity.",
+    "new_exact_apk_sha_differs": true,
+    "registered_old_sha256": "7d9b7f53edf1c549025fd9da1e2d52fc9394bef7c87046fe44bead4aaa98e4d5",
+    "registered_old_version": "5.294.1",
+    "upstream_registry_package_present": true
+  },
+  "download_chain": "GitHub Release asset URL HTTPS 302 to release-assets.githubusercontent.com and final HTTPS 200 application/vnd.android.package-archive; curl default TLS verification returned rc0",
+  "evidence_sha256": {
+    "HOST-VERIFY.json": "c516387dc665bc9314cad50135a7de933c968ace06be322647a41996ac7b36ef",
+    "aapt2.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "aapt2.stdout.raw": "fa910d338f333fcaf93c85234b0843a8ea1d9aaf08e30a6bad20d7cd0eb0c694",
+    "apk-get.headers.raw": "8e876a985b02807e7e821715aecfb473936818dd73f4ff6a0b4b71ca64c57338",
+    "apksigner.stderr.raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apksigner.stdout.raw": "62b0eb4bce97a8a57bed3074a4e3879beec389e0dc36c7f544eab6dea545cd7d",
+    "release-api.headers.raw": "bb0a409bec3c7e26e34066b7e9d92f04eb4860ad07afb8a9fb1a88db7ba26954",
+    "release-api.raw": "9254e0404865dba6f9df3b23228539d7d8eb8796057d153c50dbae42bb1fde3b"
+  },
+  "host_commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g330-duckduckgo-official-v1/duckduckgo-5.296.0-play-release.apk"
+      ],
+      "matches_captured": true,
+      "name": "aapt2",
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fa910d338f333fcaf93c85234b0843a8ea1d9aaf08e30a6bad20d7cd0eb0c694"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g330-duckduckgo-official-v1/duckduckgo-5.296.0-play-release.apk"
+      ],
+      "matches_captured": true,
+      "name": "apksigner",
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "62b0eb4bce97a8a57bed3074a4e3879beec389e0dc36c7f544eab6dea545cd7d"
+    }
+  ],
+  "host_verify_sha256": "c516387dc665bc9314cad50135a7de933c968ace06be322647a41996ac7b36ef",
+  "non_elf_so": 0,
+  "official_asset_digest": "sha256:2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "official_asset_id": 595954499,
+  "official_asset_url": "https://github.com/duckduckgo/Android/releases/download/5.296.0/duckduckgo-5.296.0-play-release.apk",
+  "official_help": "https://duckduckgo.com/duckduckgo-help-pages/mobile/android",
+  "official_release_api": "https://api.github.com/repos/duckduckgo/Android/releases/tags/5.296.0",
+  "official_release_tag": "5.296.0",
+  "official_release_url": "https://github.com/duckduckgo/Android/releases/tag/5.296.0",
+  "other_true_elf_by_abi": {
+    "armeabi-v7a": 11,
+    "x86": 11,
+    "x86_64": 11
+  },
+  "package": "com.duckduckgo.mobile.android",
+  "play_cumulative_downloads": "50M+",
+  "play_package_same": true,
+  "play_publisher": "DuckDuckGo",
+  "play_url": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
+  "release_api_get_rc": 0,
+  "root_dex": 11,
+  "schema": "g330-duckduckgo-official-apk-host-raw-candidate-v1",
+  "signer_certificate_sha256": "bb7bb31c573c46a1da7fc5c528a6acf432108456feec50810c7f33694eb3d2d4",
+  "source_code_status": "Official DuckDuckGo Android repository is public; blackbox versus whitebox lane remains a separate decision.",
+  "status": "CANDIDATE_INDEPENDENT_REVIEW_REQUIRED",
+  "target_sdk": 36,
+  "version_code": 52960000,
+  "version_name": "5.296.0",
+  "zip_crc_all": true,
+  "zip_duplicate_names": 0,
+  "zip_entries": 3626
+}

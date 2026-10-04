@@ -1,0 +1,65 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 110,
+  "app_name": "DuckDuckGo",
+  "bytes": 87508746,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.camera.any",
+    "android.hardware.camera.autofocus",
+    "android.hardware.camera.flash",
+    "android.hardware.camera.front",
+    "android.hardware.screen.landscape",
+    "android.hardware.wifi"
+  ],
+  "filename": "duckduckgo-5.296.0-play-release.apk",
+  "main_activities": [
+    "com.duckduckgo.app.launch.LaunchBridgeActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "28",
+  "native_library_entries": 44,
+  "package": "com.duckduckgo.mobile.android",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g330-duckduckgo-official-v1/duckduckgo-5.296.0-play-release.apk",
+  "permissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.CREDENTIAL_MANAGER_SET_ORIGIN",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.android.vending.BILLING",
+    "com.duckduckgo.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "providers": 2,
+  "receivers": 23,
+  "services": 21,
+  "sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "signing_certificate_sha256": [
+    "bb7bb31c573c46a1da7fc5c528a6acf432108456feec50810c7f33694eb3d2d4"
+  ],
+  "target_sdk": "36",
+  "version_code": "52960000",
+  "version_name": "5.296.0"
+}

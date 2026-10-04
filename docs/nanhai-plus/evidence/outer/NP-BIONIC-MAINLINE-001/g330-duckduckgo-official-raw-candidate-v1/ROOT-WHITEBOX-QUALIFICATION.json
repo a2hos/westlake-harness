@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai-plus-root-whitebox-source-mapped-test-input-v1",
+  "at_utc": "2026-10-04T19:20:16Z",
+  "decision": "QUALIFY_ONE_SOURCE_MAPPED_WHITEBOX_TEST_INPUT_ONLY",
+  "package": "com.duckduckgo.mobile.android",
+  "apk_version": "5.296.0",
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "raw_admission_sha256": "eb387b29330a4884a743c5356720021f0fcdd1d621f9834fc0a80fd3e9007e58",
+  "independent_review_sha256": "8a17bdd58f79f93770c116d373a6669857548ebf5c08ed8c0154ccefca84ea88",
+  "official_tag": "5.296.0",
+  "release_linked_commit": "6903748835852d6de51a1e7fee5e240ad3794ed0",
+  "same_package_in_tagged_gradle": true,
+  "scope": "Source-informed analysis of the unchanged official APK; exact-tag clean build and source-to-binary reproducibility unverified.",
+  "blackbox_qualification_delta": 0,
+  "whitebox_startup_delta": 0,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

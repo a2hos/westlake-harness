@@ -1,0 +1,40 @@
+{
+  "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+  "at_utc": "2026-10-04T19:22:28.854847+00:00",
+  "authoritative_count_changed": false,
+  "blackbox_qualified_here": false,
+  "bridge_gap_classified": false,
+  "checks": {
+    "bridge_limit": true,
+    "dex_semantic_inventory": true,
+    "elf_header_independent": true,
+    "four_phase_rc_and_raw_command_hashes": true,
+    "four_phase_source_guards": true,
+    "handoff_artifact_hashes": true,
+    "metadata_identity_and_manifest": true,
+    "original_apk_root_raw_exact": true,
+    "phase_result_hashes": true,
+    "source_and_runner_pins": true,
+    "true_arm64_elf_readelf": true,
+    "zip_crc_names": true
+  },
+  "cold_start_proven": false,
+  "container_commands": 0,
+  "decision": "GO_EXACT_ORIGINAL_APK_FOUR_PHASE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "handoff_sha256": "72c701a68a150704909be9cbc8f3eba00d5db958cdce5c8d14cb6b401b50c885",
+  "network_commands": 0,
+  "non_elf_so": 0,
+  "other_abi_true_elf": 33,
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 11,
+  "root_raw_admission_sha256": "eb387b29330a4884a743c5356720021f0fcdd1d621f9834fc0a80fd3e9007e58",
+  "schema": "g331-duckduckgo-independent-static-review-v1",
+  "terminal_result_sha256": "664dffeb12aca0b22a1015cbf1b389c9d27c6a0933d3f2eb9bb025488ff123aa",
+  "true_arm64_elf": 11
+}

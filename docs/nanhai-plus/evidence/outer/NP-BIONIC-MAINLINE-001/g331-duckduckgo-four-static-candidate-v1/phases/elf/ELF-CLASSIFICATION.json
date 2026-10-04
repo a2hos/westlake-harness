@@ -1,0 +1,271 @@
+{
+  "non_elf_so_records": [],
+  "non_target_abi_elf_header_records": [
+    {
+      "bytes": 743168,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/crashpad_handler.so"
+    },
+    {
+      "bytes": 7252,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 82476,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libcrash-ndk.so"
+    },
+    {
+      "bytes": 650032,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libcrashkit.so"
+    },
+    {
+      "bytes": 4416,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 283728,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libddgcrypto.so"
+    },
+    {
+      "bytes": 4406392,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libhttps-bloom-lib.so"
+    },
+    {
+      "bytes": 83556,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnetguard.so"
+    },
+    {
+      "bytes": 4035640,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsqlcipher.so"
+    },
+    {
+      "bytes": 1380700,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liburl_predictor.so"
+    },
+    {
+      "bytes": 4060512,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwg-go.so"
+    },
+    {
+      "bytes": 944808,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/crashpad_handler.so"
+    },
+    {
+      "bytes": 9284,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 80340,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libcrash-ndk.so"
+    },
+    {
+      "bytes": 890440,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libcrashkit.so"
+    },
+    {
+      "bytes": 5148,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 433084,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libddgcrypto.so"
+    },
+    {
+      "bytes": 4362972,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libhttps-bloom-lib.so"
+    },
+    {
+      "bytes": 99836,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libnetguard.so"
+    },
+    {
+      "bytes": 5403136,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libsqlcipher.so"
+    },
+    {
+      "bytes": 1625996,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/liburl_predictor.so"
+    },
+    {
+      "bytes": 4094460,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libwg-go.so"
+    },
+    {
+      "bytes": 998640,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/crashpad_handler.so"
+    },
+    {
+      "bytes": 10760,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 87360,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libcrash-ndk.so"
+    },
+    {
+      "bytes": 972272,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libcrashkit.so"
+    },
+    {
+      "bytes": 6224,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 376640,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libddgcrypto.so"
+    },
+    {
+      "bytes": 5618592,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libhttps-bloom-lib.so"
+    },
+    {
+      "bytes": 100472,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libnetguard.so"
+    },
+    {
+      "bytes": 6372968,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libsqlcipher.so"
+    },
+    {
+      "bytes": 1656344,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/liburl_predictor.so"
+    },
+    {
+      "bytes": 4686320,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libwg-go.so"
+    }
+  ],
+  "scope": "ARM64 target readelf/JNI only; other ABI classified by ELF header",
+  "true_arm64_target_records": 11
+}
