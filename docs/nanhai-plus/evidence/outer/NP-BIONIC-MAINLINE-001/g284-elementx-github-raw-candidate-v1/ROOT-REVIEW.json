@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai.g284.elementx_github_raw.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:16:31.508966+00:00",
+  "prepare_sha256": "f218a620d564491acd345e4a958915fe1282c2f2dac1b46a0bc26cecdb1d2d42",
+  "runner_sha256": "13c2e81e813d539738163ebaf2a547eec3470313a08e3c20baf2b9558cee766f",
+  "peer_sha256": "767bd88feea660d944561c62a2f0d21c3e555673df894d91b7fe852e71528be4",
+  "decision": "ACCEPT_OFFICIAL_ASSET_METADATA_ONLY__NO_GO_APK_GET",
+  "asset_id": 539529327,
+  "expected_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "expected_bytes": 117664325,
+  "blocker": "execution receipt is created after staging mkdir and checks; assertions can be disabled; several failure paths lack terminal receipt and result write can replace",
+  "next": "new one-shot generation with authority binding and durable start/terminal receipt; then independent review before GET",
+  "raw_delta": 0,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

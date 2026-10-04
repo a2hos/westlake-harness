@@ -1,0 +1,2 @@
+rule forbidden
+  command = nsjail -- /bin/true

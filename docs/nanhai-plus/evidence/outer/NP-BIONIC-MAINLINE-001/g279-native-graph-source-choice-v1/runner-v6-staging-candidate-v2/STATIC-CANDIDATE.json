@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_stage_runner_v6_candidate_v2.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:14:10.810942+00:00",
+      "expected_rc": 0,
+      "label": "static_check",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:14:10.768967+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c55cdaaf3f6019124488d1613029977d9fa942db4f12e3b823aae7ddf4195cae"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_stage_runner_v6_candidate_v2.py",
+        "--stage"
+      ],
+      "end_utc": "2026-10-04T11:14:10.851643+00:00",
+      "expected_rc": 3,
+      "label": "stage_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:14:10.811060+00:00",
+      "stderr_sha256": "1ec9ac2f689b149f4e7d82ac1fffc045889e25fc34a31aca4c3a0efdfee75f02",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-staging-candidate-v2/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:14:11.060194+00:00",
+      "expected_rc": 0,
+      "label": "local_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:14:10.851741+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "04db52858b47bda5091adf2b94f6b5062d64316df73fe6d193cbaddc94ccfa46"
+    }
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "failure_semantics": "Any SSH timeout, malformed output, remote error, receipt write failure or uncertain cleanup preserves UNKNOWN and prohibits blind retry; only read-only reconciliation may decide next action. Current CLI --stage remains rc3.",
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v6-staging-candidate-v2/static_fixtures.py",
+    "sha256": "4e8e82d5085d7dcbc1f490ba5d994c32be51d34f0e986bd00dd75b1ee4a28e8c"
+  },
+  "graph_commands": 0,
+  "next_dependency": "Do not stage v6: --run is hard rc3. Produce a separately reviewed executable graph runner with a new SHA, adapt exact source/destination pins and independently review before a single remote stage.",
+  "prior_peer_review_sha256": "b86cc4dda0898893653de17020e81529b1e5d0b56e992bc29795d23720724705",
+  "remote_staging_commands": 0,
+  "repair": [
+    "current local_env config/host/project/UI/container-policy checked before transport",
+    "fixed project-owned release directory; UNKNOWN.json O_EXCL+fsync before any transport; repeat is one-shot failure",
+    "TERMINAL.json separately persisted, failures or timeout retain UNKNOWN for read-only reconciliation",
+    "remote existing file UID required; parent chain reopened and dev/inode/uid/mode compared around mutation",
+    "created file cleanup only on matching dev/inode, with parent chain stable; concurrent replacement preserved",
+    "remote SHA/size/mode/UID/readback and SSH outer vs remote rc captured"
+  ],
+  "runner": {
+    "bytes": 32654,
+    "intended_remote_mode": "0444",
+    "local_mode": "0644",
+    "path": "scripts/nanhai_plus_native_graph_v6.py",
+    "run_cli_rc": 3,
+    "sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f"
+  },
+  "runner_commands": 0,
+  "schema": "nanhai-g279-v6-runner-staging-static-candidate-v2",
+  "script": {
+    "path": "scripts/nanhai_plus_stage_runner_v6_candidate_v2.py",
+    "sha256": "493f263351544bdebef6b9948f20a79c5bd2d847aa936cc24497cea71d12fbf3"
+  },
+  "ssh_commands": 0,
+  "status": "STATIC_ONLY_NO_GO_ACTUAL_STAGING"
+}

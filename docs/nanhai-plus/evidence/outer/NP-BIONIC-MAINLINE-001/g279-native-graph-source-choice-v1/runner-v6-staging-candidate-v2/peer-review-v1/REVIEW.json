@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai.g279.runner_v6_staging_v2.static_peer_review.v1",
+  "verdict": "GO_STATIC_ONE_SHOT_PROTOCOL__NO_GO_ACTUAL_STAGING",
+  "script_sha256": "493f263351544bdebef6b9948f20a79c5bd2d847aa936cc24497cea71d12fbf3",
+  "candidate_sha256": "df4d2176f7e94ad4cb31f3a93a03d009d7c9cc64c7ef1b6462986f923b54a3b6",
+  "source_sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f",
+  "positive_findings": [
+    "authority() reloads local_env.md and checks config SHA, gz02 host, exact project/UI paths and forbidden container policy before transport; inherited NANHAI_* values are ignored.",
+    "stage_once() creates fsynced UNKNOWN.json with O_EXCL before injected transport; a second call cannot retry. TERMINAL.json is separate, and timeout/parse/write failures preserve UNKNOWN for read-only reconciliation.",
+    "Remote program walks symlink-free directory fds, checks project/control UID, source SHA/bytes/mode, target UID/size/mode/SHA and stable readback, and never overwrites a differing final path.",
+    "Ten recorded local fixtures cover authority, one-shot receipts, timeout, terminal write failure, symlink control and a replacement occurring before cleanup's inode check.",
+    "CLI --stage returns rc3 before SSH; no runner, graph, container, namespace or device command is exposed."
+  ],
+  "remaining_risks": [
+    "conditional_unlink() calls os.stat(name) and then os.unlink(name); replacement between those two syscalls could still cause deletion of another inode. The fixture injects replacement before os.stat, so it does not close this race.",
+    "check_chain() reopens and compares parent fds before/after mutation, but the named path can change between check and os.link/os.unlink. Such drift becomes uncertain and may leave a residual file; it is not an atomic path binding.",
+    "UNKNOWN can remain after a failed terminal receipt as designed; reconcile remote final and partial names read-only before any future attempt."
+  ],
+  "minimum_repair": "Do not automatically unlink a final pathname after uncertain readback or cleanup. Preserve UNKNOWN and reconcile; if cleanup is required, use an externally exclusive owner/lock protocol covering directory mutation and prove it in a race fixture. Treat parent-path drift the same way.",
+  "scope": "Static protocol review only. v6 runner --run is itself hard-closed rc3; staging its bytes would not authorize a graph. Peer executed no SSH, staging, runner, graph, container or device action."
+}

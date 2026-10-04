@@ -1,0 +1,2 @@
+rule x
+  command = "ns"jail -- /bin/true

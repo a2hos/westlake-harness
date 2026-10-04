@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai.g279.runner_v7_staging_v3.static_peer_review.v1",
+  "verdict": "GO_STATIC_STAGING_DESIGN_ONLY__NO_GO_ACTUAL_STAGE_OR_GRAPH",
+  "script_sha256": "c96ce2a8b53c0c22e70df0a2d59ef2d8760d6787f0a5758b8d3328c96fe4fe38",
+  "candidate_sha256": "e4bbeb74c50b6cb9ace97b5b1f56e94d5b0b5be036be3ab7a4715e18d7de7351",
+  "owner_provenance_plan_sha256": "0230ef8a43cf4d32a8316a505600ec469287d1b4ca6b977514706404abea585c",
+  "source": {"path": "scripts/nanhai_plus_native_graph_v7.py", "sha256_independently_checked": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0", "bytes": 41813, "mode": "0644"},
+  "destination": "/data/source/.nanhai-plus-opaleye-native/control/nanhai_plus_native_graph_v7.py",
+  "positive_static_findings": [
+    "authority() reloads current local_env.md and pins config SHA, gz02 host, project/UI relationship and forbidden container policy before the dormant transport; local source SHA/bytes/mode match the exact v7 graph runner.",
+    "UNKNOWN.json uses O_EXCL plus file/directory fsync before transport; TERMINAL.json is distinct. Retry, timeout and terminal-write failure preserve uncertain state for read-only reconciliation.",
+    "Remote writer opens every project/control path component with directory fd and O_NOFOLLOW, checks owner, uses direct O_EXCL final creation, writes/fchmods/fsyncs 0444 bytes, and checks final inode, SHA, size, mode, UID and parent chain. Existing exact file is read only; no automatic unlink remains.",
+    "Ten recorded local fixtures pass, including partial failure, concurrent replacement preservation, symlink control, durable UNKNOWN and one-shot refusal. Current CLI --stage returns rc3 before SSH."
+  ],
+  "limits": [
+    "Direct final creation can leave a partial mode 0600 or 0444 file on interruption; that is deliberately preserved under UNKNOWN and must be reconciled read-only, not retried blindly.",
+    "Parent path can still change between separate fd checks and mutation; code returns uncertain on detected drift but cannot prove an adversarial same-UID topology stable atomically. No real gz02 staging/readback occurred.",
+    "OWNER-GRAPH-ACK-PROVENANCE.md is an unexecuted plan. It correctly says same-UID 0444 JSON plus cross-hashes cannot authenticate the original octos owner or outer release; a separate signature/permission boundary is required before graph --run.",
+    "Staging exact runner bytes would not prove EVO19 v7 readback, seccomp inheritance, descendant cleanup, generated graph safety, target build or device operation."
+  ],
+  "minimum_next_evidence": "Separately review and release a staging-only entry for this exact script SHA, execute once with durable UNKNOWN, then independently read back final gz02 SHA/size/mode/UID and reconcile any partial. Keep graph runner --run NO_GO until external owner provenance and v7 EVO19/runtime guards are independently closed.",
+  "peer_actions": {"ssh": 0, "stage": 0, "graph": 0, "device": 0, "container": 0}
+}

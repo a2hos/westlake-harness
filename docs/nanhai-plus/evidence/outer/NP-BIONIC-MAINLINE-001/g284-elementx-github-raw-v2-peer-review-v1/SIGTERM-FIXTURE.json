@@ -1,0 +1,11 @@
+{
+  "outcome": "TERMINAL_FAILED",
+  "error_type": "GateError",
+  "replay": "rejected",
+  "elapsed_seconds": 0.2112207500031218,
+  "signal_after_seconds": 0.2,
+  "child_sleep_seconds": 3,
+  "network_requests": 0,
+  "apk_get": 0,
+  "scope": "local child process only"
+}

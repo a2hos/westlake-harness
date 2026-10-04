@@ -1,0 +1,2 @@
+rule x
+  command = n[s]jail -- /bin/true

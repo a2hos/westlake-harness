@@ -1,0 +1,3 @@
+rule split
+  command = ns$
+    jail -- /bin/true

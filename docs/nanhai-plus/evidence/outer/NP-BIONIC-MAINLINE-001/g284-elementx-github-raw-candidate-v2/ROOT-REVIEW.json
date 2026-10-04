@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai.g284.elementx_github_raw_v2.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:22:07.782382+00:00",
+  "runner_sha256": "4918944dbc43dcd12ef66b954e1d0aea00bce75faaa5f4e8c01d2b93d9974d22",
+  "prepare_sha256": "b08a9e85f8b610639bbbf277ff7d3464e4219cecd326035ab74b796e17032842",
+  "peer_sha256": "0df392e41d82435598b2dc2aae3d1a21c974a2b3900edfeb317b56d875d657a9",
+  "decision": "NO_GO_APK_GET",
+  "blocking": "No bounded response size for API, no --max-filesize for APK, no frozen local_env config SHA check",
+  "next": "v3 distinct one-shot generation with three minimal repairs; peer review before GET",
+  "api_get": 0,
+  "apk_get": 0,
+  "raw_delta": 0,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

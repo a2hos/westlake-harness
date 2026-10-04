@@ -1,0 +1,23 @@
+{
+  "schema": "nanhai.g279.graph_runner_v7.static_peer_review.v1",
+  "verdict": "GO_STATIC_CANDIDATE_ONLY__NO_GO_GRAPH_RELEASE",
+  "runner_sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+  "candidate_sha256": "d453dfa1518ca2e35aa6653f53cffe245f6b6940cdc596626b7752ca981df35d",
+  "handoff_sha256": "1a2e4f0ab3c6a8b8370009add5c77252c757a7648afb23699b69e3a61c7665d3",
+  "v6_delta": "v6 --run was hard rc3. v7 adds a reachable graph-only route after three local JSON documents, rechecks those documents before Soong, and moves OUT/TMP/control/preflight to fresh v7 paths. Current unstaged local --run still returns rc3 before graph.",
+  "positive_static_findings": [
+    "Release parser checks exact runner path/SHA/bytes/mode, goal/claim/host, outer graph-only and target/device false fields, owner ACK cross-hash, EVO19 outer/remote rc and 11 ordered remote input rows.",
+    "Fixed v7 preflight directory is created once before outputs; source and SDK identities plus 1013-row ledger, 1011 present projects, readonly source topology and pre/post guards are retained from v6.",
+    "Graph argv uses soong_ui --make-mode --soong-only --skip-ninja --skip-soong-tests for libc/libm/libdl/linker; OUT/TMP/HOME/GOCACHE/GOPATH are project-owned and run as nobody. It does not invoke generated Ninja or device commands.",
+    "No Docker/Podman/OCI/namespace launcher is in the direct argv. Guard precedes Soong UI, and strace/child cleanup are coded; target_compile_pass remains false and generated action audit is explicitly lexical-only."
+  ],
+  "blocking_findings": [
+    "Local fixture fabricates all three 0444 same-UID control JSONs, including arbitrary 64-character local_env, wrapper, spec and probe hashes plus fake remote rows; validate_release_packet accepts them. Cross-hashes prove consistency, not origin from the outer release, original octos owner session or real EVO19 readback. No fresh owner nonce/session/delivery/tool-exit evidence is checked.",
+    "EVO19 wrapper/spec/probe hashes are checked against values supplied in the same remote packet, not independently pinned reviewed receipts. v8 EVO19 CLI is still closed and its existing spec pins v6, so there is no genuine v7 gate result.",
+    "Mode 0444 and same UID do not make the remote control files immutable to their owner; the fixed run-id and fresh preflight directory prevent cooperative reuse but do not provide an external one-shot authority against removal/replacement.",
+    "Seccomp inheritance and full descendant reaping have only host-tool/local evidence, not a real v7 process-tree proof. SIGKILL, external cancellation or trace truncation can leave outcome unknown; strace parsing and a short target-tool name list observe after execution rather than prohibit all target compilation.",
+    "Generated Ninja include/subninja closure, expanded target actions and indirect scripts are not authorized; artifact scan covers only top-file lexical tokens. A graph result cannot be promoted to target build or device credit."
+  ],
+  "minimum_next_evidence": "Keep --run unreleased. Stage/read back this exact v7 runner once; create a v7-specific EVO19 gate with actual SSH/remote rc and pinned spec/probe hashes; independently bind outer release and original octos owner ACK to a fresh nonce/session/tool transcript outside remote same-UID JSON; peer-review one immutable execution-adjacent packet. Then perform a separately bounded guard/child-cleanup host trial before any graph attempt. Target execution remains a different gate.",
+  "scope": "Static source/diff/fixtures review only; peer ran no SSH, Soong graph, target compile, device, container or Bridge action."
+}

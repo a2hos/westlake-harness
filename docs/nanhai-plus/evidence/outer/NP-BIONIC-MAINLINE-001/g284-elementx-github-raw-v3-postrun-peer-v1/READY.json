@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_INDEPENDENT_POSTRUN_REVIEW",
+  "frozen_at": "2026-10-04T11:24:22.331961+00:00",
+  "review_status": "ACCEPT_RAW_PAYLOAD_IDENTITY_ONLY",
+  "passed": 30,
+  "failed": [],
+  "artifacts": [
+    {
+      "name": "review.py",
+      "sha256": "9f05414839a975d5f70bfed7e9028eed697b33c79aff247b5d7dbebb2f57c404",
+      "bytes": 7078
+    },
+    {
+      "name": "REVIEW.json",
+      "sha256": "ac3632ed42705bfba22a66565105d7b9aa9df65d0d9ca243e82d83d422ed992f",
+      "bytes": 3678
+    }
+  ],
+  "scope": "exact official GitHub raw APK bytes and local static checks only; root controls canonical acceptance"
+}

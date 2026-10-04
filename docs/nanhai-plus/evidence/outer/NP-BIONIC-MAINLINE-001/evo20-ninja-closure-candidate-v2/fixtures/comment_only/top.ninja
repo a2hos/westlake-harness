@@ -1,0 +1,3 @@
+# command = nsjail
+rule safe
+  command = true

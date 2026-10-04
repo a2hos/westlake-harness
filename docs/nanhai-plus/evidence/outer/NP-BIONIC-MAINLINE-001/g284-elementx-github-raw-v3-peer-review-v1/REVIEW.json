@@ -1,0 +1,44 @@
+{
+  "schema": "nanhai.g284.elementx_github_raw.static_peer_review.v3",
+  "reviewed_at": "2026-10-04T11:22:28.881425+00:00",
+  "verdict": "GO_ONE_BOUNDED_GET_ONLY",
+  "candidate_script_sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+  "candidate_prepare_sha256": "ca1373e62b91c6afb3ee0d1d2d0eaa8d03b71e8a8e73e31f93e2f109ff91efc1",
+  "candidate_fixture_sha256": "22c67ad39a82893ef951606f59f875628e66aa8dabe60462bb98d288c3a1c3cc",
+  "independent_fixture_sha256": "22c67ad39a82893ef951606f59f875628e66aa8dabe60462bb98d288c3a1c3cc",
+  "checks": {
+    "script_sha_matches_prepare": true,
+    "fixture_sha_matches_prepare": true,
+    "v2_review_sha_matches_prepare": true,
+    "peer_copy_exact_script": true,
+    "nine_independent_local_fixtures": true,
+    "frozen_env_sha_runtime": true,
+    "api_curl_body_cap": true,
+    "apk_get_exact_cap": true,
+    "one_get_no_retry": true,
+    "start_before_execute": true,
+    "terminal_no_replace": true,
+    "hash_zip_signature_guards": true,
+    "production_unstarted": true
+  },
+  "passed": 13,
+  "failed": [],
+  "v2_blockers_closed": [
+    "runtime config SHA fixed and compared before staging/network",
+    "API curl max-filesize 1048576 plus output file stat cap before JSON parse",
+    "APK GET curl max-filesize equals exact 117664325 expected bytes"
+  ],
+  "retained_gates": [
+    "START O_EXCL/fsync before execute/staging/network; terminal RESULT atomic no-replace hard link; no replay",
+    "fresh GitHub tag/asset identity precedes one GET; body bytes and SHA, ZIP CRC and manifest, arm64 ABI, aapt2 package/version, apksigner v2, and tool/APK posthash gates remain",
+    "no container or device operation coded"
+  ],
+  "sensitive_output": "No signed effective redirect URL in curl write-out; bounded API body is persisted as raw public release JSON, stderr remains raw and should be reviewed before publication. Proxy settings are forwarded but not recorded in argv/result.",
+  "scope": "one bounded official APK GET may be authorized by root; this review ran no API/APK GET and proves no raw payload, signer, qualification, install or startup result",
+  "counts": {
+    "api_get": 0,
+    "apk_get": 0,
+    "raw_accepted_delta": 0,
+    "startup_delta": 0
+  }
+}

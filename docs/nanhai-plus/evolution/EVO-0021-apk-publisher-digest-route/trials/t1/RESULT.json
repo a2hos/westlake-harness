@@ -1,0 +1,60 @@
+{
+  "schema": "nanhai.evo21.pilot.v1",
+  "rows": [
+    {
+      "case": "positive",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "20",
+        "https://api.github.com/repos/element-hq/element-x-android/releases/tags/v26.09.1"
+      ],
+      "start_utc": "2026-10-04T11:17:13.238289+00:00",
+      "end_utc": "2026-10-04T11:17:14.169214+00:00",
+      "elapsed_seconds": 0.932,
+      "rc": 0,
+      "stdout_bytes": 17651,
+      "stdout_sha256": "449ac4e28fb27986168cc61532ec78e0d35a986f7be076f6b50a91aaf682ef79",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "asset": {
+        "id": 539529327,
+        "name": "app-fdroid-arm64-v8a-release-signed.apk",
+        "size": 117664325,
+        "digest": "sha256:ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3"
+      }
+    },
+    {
+      "case": "negative",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "20",
+        "https://api.github.com/repos/element-hq/element-android/releases/tags/v1.6.62"
+      ],
+      "start_utc": "2026-10-04T11:17:14.170474+00:00",
+      "end_utc": "2026-10-04T11:17:14.767532+00:00",
+      "elapsed_seconds": 0.598,
+      "rc": 0,
+      "stdout_bytes": 10228,
+      "stdout_sha256": "e1f79bd6252346e827c3cb6da3597dc72f14ea3f937da324f1d915b5e6a60c91",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "asset": {
+        "id": 484549263,
+        "name": "vector-gplay-arm64-v8a-release-signed.apk",
+        "size": 73975127,
+        "digest": "sha256:eae9712c264886fda8c5966950721540619de59cc7a5a53516129172cd5bde8c"
+      }
+    }
+  ],
+  "apk_get": 0,
+  "device": 0,
+  "container": 0
+}

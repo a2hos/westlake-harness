@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai.g279.graph_runner_v7.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:22:07.782382+00:00",
+  "runner_sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0",
+  "candidate_sha256": "d453dfa1518ca2e35aa6653f53cffe245f6b6940cdc596626b7752ca981df35d",
+  "peer_sha256": "aa62468189a3b4e8466a47b799fa027d630633a76bd74b03d890229735f5163b",
+  "decision": "ACCEPT_STATIC_CANDIDATE_ONLY__NO_GO_GRAPH_RELEASE",
+  "proven": "new graph-only generation and local fixtures; Mac --run blocks before graph",
+  "blocker": "Three same-writer JSON documents can be self-consistent with fabricated owner, outer and EVO19 identities; no independently witnessed native owner graph ACK or actual v7 EVO19 readback. v7 runner not staged, process-tree guard runtime unproven.",
+  "next": "Bind original-owner session provenance and fresh v7 remote identity to outer release, then independently review revised exact bytes; no graph yet.",
+  "ssh_executed": false,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

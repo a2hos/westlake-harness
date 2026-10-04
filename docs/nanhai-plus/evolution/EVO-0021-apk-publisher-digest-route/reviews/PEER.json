@@ -1,0 +1,11 @@
+{
+  "schema": "nanhai.evo21.peer_causal_review.v1",
+  "observations": ["G282 F-Droid GET timed out after 250.015 seconds with no accepted APK; stderr reports 73,482,186 bytes received while retained partial is only 1,765,376 bytes, so transfer and residual accounting differ and neither is accepted.", "Pilot official GitHub API returned Element X digest/size equal to registered SHA/size in 0.932 seconds; Element Classic gplay digest/size differed from registered F-Droid SHA/size in 0.598 seconds."],
+  "inference": "A digest-first route can cheaply identify an exact-byte alternate channel or reject same-version mismatches before committing to a large GET.",
+  "hypothesis": "For future publisher releases exposing SHA-256, metadata equality will reduce wasted download attempts without increasing false raw admissions, provided full payload hash and signer checks remain mandatory.",
+  "unknown": ["Whether the alternate Element X endpoint completes an actual GET", "Whether the downloaded bytes and signer match the API digest", "How often other publishers expose suitable digest metadata"],
+  "discarded_action": "Blind repeat of the timed-out F-Droid GET or reuse of its partial, anchored to G282 RESULT; the prior attempt has no full artifact identity and cannot establish progress toward admission.",
+  "causal_chain": "250-second unsuccessful transfer -> exact alternate channel was not tested by SHA before GET -> publisher digest/size comparison to upstream lock -> avoid wrong-flavor or unsupported large transfer attempts -> measure metadata time and later complete-payload SHA success.",
+  "applicability": "Only exact registered package/version/artifact SHA+size with publisher-controlled release API digest; metadata gate does not confer raw, static, blackbox, graph or device credit.",
+  "risk": "Publisher API metadata is mutable and may be absent; pin response identity at download time and hash full payload. A mismatched digest means a separate candidate, not historical artifact substitution."
+}

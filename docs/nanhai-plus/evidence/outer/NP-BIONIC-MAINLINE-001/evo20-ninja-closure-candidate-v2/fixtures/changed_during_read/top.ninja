@@ -1,0 +1,4 @@
+rule safe
+  command = true
+
+# changed after initial fstat

@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=element.io, OU=New Vector Ltd., O=New Vector Ltd., L=London, ST=United Kingdom, C=UK
+Signer #1 certificate SHA-256 digest: 6a2fdc3148049ce0d5c6e85010723b83fb207d20c7477f5c22ac53c877e92d47
+Signer #1 certificate SHA-1 digest: 42a8c929def9b9e01858cb9173b980f1e4f832f8
+Signer #1 certificate MD5 digest: ae36b8977ba29dfed92b8c6943a5ea34
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 49a57c64546652d71c31db3bc61c1a352db3dd415f99a7a1d31b2e3ec4c4be62
+Signer #1 public key SHA-1 digest: 53f54b0b5740dbe332479daacbc26bcdc067b67e
+Signer #1 public key MD5 digest: 9446ddf6730c5a473ea98bcddb5f029b

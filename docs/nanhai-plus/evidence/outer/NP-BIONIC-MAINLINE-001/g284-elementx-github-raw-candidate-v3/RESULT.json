@@ -1,0 +1,189 @@
+{
+  "schema": "g284-elementx-github-raw-v3-result",
+  "start_sha256": "d70468ed7782a6043b6fab3149b0493f4db14294c96678b75ee751d99ddb2c68",
+  "generation": "g284-elementx-github-raw-candidate-v3",
+  "commands": [
+    {
+      "name": "api",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "20",
+        "--max-filesize",
+        "1048576",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/api.body.raw",
+        "https://api.github.com/repos/element-hq/element-x-android/releases/tags/v26.09.1"
+      ],
+      "began_utc": "2026-10-04T11:23:00.064694+00:00",
+      "ended_utc": "2026-10-04T11:23:01.015758+00:00",
+      "elapsed_seconds": 0.951,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 0,
+      "stderr_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "download",
+      "argv": [
+        "/usr/bin/curl",
+        "-q",
+        "--fail",
+        "--location",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "20",
+        "--max-time",
+        "300",
+        "--max-filesize",
+        "117664325",
+        "--silent",
+        "--show-error",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk.part",
+        "--write-out",
+        "http=%{http_code} tls=%{ssl_verify_result} bytes=%{size_download} redirects=%{num_redirects}",
+        "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk"
+      ],
+      "began_utc": "2026-10-04T11:23:01.016111+00:00",
+      "ended_utc": "2026-10-04T11:23:10.180426+00:00",
+      "elapsed_seconds": 9.164,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 42,
+      "stderr_bytes": 0,
+      "stdout_sha256": "37f5e71a52ff3fc64479bcd10ff88eda125fcf185ce6248c0f65d87f769667f1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "badging",
+      "argv": [
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/bin/aapt2",
+        "dump",
+        "badging",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk"
+      ],
+      "began_utc": "2026-10-04T11:23:10.338169+00:00",
+      "ended_utc": "2026-10-04T11:23:10.459525+00:00",
+      "elapsed_seconds": 0.121,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 4641,
+      "stderr_bytes": 0,
+      "stdout_sha256": "96f134f3d66be409d81f120b48b1c69ee6530835f0b5463c746388f72dfe4a50",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "signature",
+      "argv": [
+        "/Applications/DevEco-Studio.app/Contents/jbr/Contents/Home/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-Djava.io.tmpdir=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3",
+        "-jar",
+        "/opt/19.SourceCode/AOSP-16.0.0_r4/prebuilts/sdk-r4/tools/darwin/lib/apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk"
+      ],
+      "began_utc": "2026-10-04T11:23:10.459598+00:00",
+      "ended_utc": "2026-10-04T11:23:10.884429+00:00",
+      "elapsed_seconds": 0.425,
+      "rc": 0,
+      "timed_out": false,
+      "stdout_bytes": 1008,
+      "stderr_bytes": 0,
+      "stdout_sha256": "b714f39145ea596436e5d27b52d0191621d0a24c2794c7258d44962d0d900165",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "candidate_only": true,
+  "raw_accepted": false,
+  "canonical_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "prior_failed_part_reused": false,
+  "environment": {
+    "document": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/local_env.md",
+    "config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+    "links_checked": 5
+  },
+  "registry": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json",
+    "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+    "record_id": "r-52d5e188c88dfba15c98",
+    "artifact_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "artifact_bytes": 117664325
+  },
+  "tools_before": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "staging": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3",
+  "api_body": {
+    "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/api.body.raw",
+    "bytes": 17651,
+    "sha256": "aa263d0a9825541ca4803bf99f6fa3546fc867b0ad53a47eb9355c5801e4989b"
+  },
+  "api_asset": {
+    "id": 539529327,
+    "name": "app-fdroid-arm64-v8a-release-signed.apk",
+    "size": 117664325,
+    "digest": "sha256:ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "browser_download_url": "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk"
+  },
+  "transfer": "http=200 tls=0 bytes=117664325 redirects=1",
+  "part_bytes": 117664325,
+  "part_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "zip": {
+    "entries": 1411,
+    "bad_entry": null,
+    "manifest_count": 1,
+    "lib_abis": [
+      "arm64-v8a"
+    ]
+  },
+  "package_line": "package: name='io.element.android.x' versionCode='202609012' versionName='26.09.1' platformBuildVersionName='17' platformBuildVersionCode='37' compileSdkVersion='37' compileSdkVersionCodename='17'",
+  "native_code_line": "native-code: 'arm64-v8a'",
+  "signature_lines": [
+    "Verified using v1 scheme (JAR signing): false",
+    "Verified using v2 scheme (APK Signature Scheme v2): true",
+    "Verified using v3 scheme (APK Signature Scheme v3): true",
+    "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+    "Verified using v4 scheme (APK Signature Scheme v4): false",
+    "Number of signers: 1",
+    "Signer #1 certificate DN: CN=element.io, OU=New Vector Ltd., O=New Vector Ltd., L=London, ST=United Kingdom, C=UK",
+    "Signer #1 certificate SHA-256 digest: 6a2fdc3148049ce0d5c6e85010723b83fb207d20c7477f5c22ac53c877e92d47",
+    "Signer #1 certificate SHA-1 digest: 42a8c929def9b9e01858cb9173b980f1e4f832f8",
+    "Signer #1 certificate MD5 digest: ae36b8977ba29dfed92b8c6943a5ea34",
+    "Signer #1 key algorithm: RSA",
+    "Signer #1 key size (bits): 2048",
+    "Signer #1 public key SHA-256 digest: 49a57c64546652d71c31db3bc61c1a352db3dd415f99a7a1d31b2e3ec4c4be62",
+    "Signer #1 public key SHA-1 digest: 53f54b0b5740dbe332479daacbc26bcdc067b67e",
+    "Signer #1 public key MD5 digest: 9446ddf6730c5a473ea98bcddb5f029b"
+  ],
+  "tools_after": {
+    "curl": "b636262803922ee1dd0fbf614818473ffa53c811e44fd3278c2270d3af4759d3",
+    "aapt2": "3c5920804724dfe9a43e0dbf1f5b5dcbf08c4a2e829bebdaa04d38bfe7d7ada4",
+    "apksigner": "9469c60e5e40fc5c44a2f2338509cb6600cdf065e9b50f9fa3ca6c5be5bae6a9",
+    "java": "cd158e1a5328ff42b687b7c2f5c61c7c3be3cfee7f18226ee903169e97336158"
+  },
+  "apk_sha256_after": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "status": "RAW_CANDIDATE_STATIC_PASS",
+  "ended_utc": "2026-10-04T11:23:10.944232+00:00"
+}

@@ -1,0 +1,592 @@
+{
+  "status": "PASS_LOCAL_FIXTURES",
+  "cases": [
+    {
+      "name": "benign",
+      "expected": "PASS_LITERAL_CLOSURE_ONLY",
+      "observed": {
+        "status": "PASS_LITERAL_CLOSURE_ONLY",
+        "rc": 0,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/benign",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/benign/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "da979e4f7babe23ad7766334241d2865fb6ba877b4b3fdbcdb29286033e5e280",
+            "bytes": 42
+          },
+          {
+            "path": "a.ninja",
+            "sha256": "cda9ea74b20ea2c85dd588b2087ac0305679d645bd8586db218cdd9d33e6fb30",
+            "bytes": 24
+          },
+          {
+            "path": "nested/b.ninja",
+            "sha256": "cdb8340e188ba3d83a5a2d2d54590b0ef4d3a10bf2d71dcfb7bbf97f7ab5da05",
+            "bytes": 27
+          }
+        ],
+        "file_count": 3,
+        "total_file_bytes": 93,
+        "first_forbidden": null,
+        "failure": null,
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "child_forbidden",
+      "expected": "FORBIDDEN_COMMAND",
+      "observed": {
+        "status": "FORBIDDEN_COMMAND",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/child_forbidden",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/child_forbidden/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "7d758f3aec49dbbc07ffcf8cbc745a1d4b2d52ecfadfabc0149096f90c78cb7e",
+            "bytes": 21
+          },
+          {
+            "path": "child.ninja",
+            "sha256": "14da87dd0e8bcf0872f7619c4e575e3409c75e55e9dc09a8e166762fb7e55b18",
+            "bytes": 47
+          }
+        ],
+        "file_count": 2,
+        "total_file_bytes": 68,
+        "first_forbidden": {
+          "path": "child.ninja",
+          "line": 2,
+          "fragment": "nsjail -- /bin/true",
+          "token": "nsjail"
+        },
+        "failure": null,
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "continuation",
+      "expected": "FORBIDDEN_COMMAND",
+      "observed": {
+        "status": "FORBIDDEN_COMMAND",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/continuation",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/continuation/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "d73028204a0f6cd5be3980c6425754bf817205433b7b5bf6c31402ed862f24cd",
+            "bytes": 49
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 49,
+        "first_forbidden": {
+          "path": "top.ninja",
+          "line": 2,
+          "fragment": "nsjail -- /bin/true",
+          "token": "nsjail"
+        },
+        "failure": null,
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "variable_edge",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_edge",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_edge/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "089209d96cf27c52aa349f10a4a2b2ea4e25f9a2541d5dbf4e794fe76c6583a4",
+            "bytes": 30
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 30,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "VARIABLE_OR_EMPTY_INCLUDE",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_edge/top.ninja",
+          "line": 1
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "missing",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/missing",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/missing/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "24b29753814d9a2abf880a5c503006abe77a14b0f982c9c8abd7308c854902fe",
+            "bytes": 22
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 22,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "MISSING_INCLUDE",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/missing/absent.ninja",
+          "line": null
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "cycle",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/cycle",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/cycle/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "c047bd11b841057ba39b74d27446bc44c44d44c9e8da443813efe09f3ef54c7e",
+            "bytes": 16
+          },
+          {
+            "path": "a.ninja",
+            "sha256": "0c5d78a35096016c81419fee012cb6e815feb8bd0d0994be4f15aca7e853c58d",
+            "bytes": 19
+          }
+        ],
+        "file_count": 2,
+        "total_file_bytes": 35,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "INCLUDE_CYCLE",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/cycle/top.ninja",
+          "line": null
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "escape",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/escape",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/escape/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "c4fc95c32b63a6f8f27a35ffe5b0c0225bacdffe9d12e576f3afc2e780571025",
+            "bytes": 25
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 25,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "OUT_ESCAPE",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/escape/top.ninja",
+          "line": 1
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "malformed",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/malformed",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/malformed/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "bc586f3c9d3a4231b93043c84a474a1608f32d78e5764c2393daab8005752841",
+            "bytes": 8
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 8,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "VARIABLE_OR_EMPTY_INCLUDE",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/malformed/top.ninja",
+          "line": 1
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "comment_only",
+      "expected": "PASS_LITERAL_CLOSURE_ONLY",
+      "observed": {
+        "status": "PASS_LITERAL_CLOSURE_ONLY",
+        "rc": 0,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/comment_only",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/comment_only/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "b4589772bc725e1a25b5e54839ef9036a142cc8395048390cfba64c5ba501f8e",
+            "bytes": 46
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 46,
+        "first_forbidden": null,
+        "failure": null,
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "variable_command",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_command",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_command/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "6f53324f296179de648e05f5a15c94ba1eb99e3f9e23e5b74c3ed296c08ceb09",
+            "bytes": 52
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 52,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_command/top.ninja",
+          "line": 3
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "ordinary_ninja_variables",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/ordinary_ninja_variables",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/ordinary_ninja_variables/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "718db1bdcded32bd600e84bd89b202b5731ce37888e72aef4fad7c2dc4b7ef42",
+            "bytes": 31
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 31,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/ordinary_ninja_variables/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "quoted_join",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/quoted_join",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/quoted_join/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "65127916b9304ea77d6fc8ec0920ec5b76795c958fcc6559063cbbd54b3dab3b",
+            "bytes": 41
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 41,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/quoted_join/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "double_quoted_join",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/double_quoted_join",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/double_quoted_join/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "a9fc6d1b2396386fe0a46ea7045e06aa87efaad79c2f7d13a5a31d69d3998652",
+            "bytes": 41
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 41,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/double_quoted_join/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "backslash_join",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/backslash_join",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/backslash_join/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "0cba60f0b03b833c467017f899560dbcff128a48800e82e65c57b4f728368f52",
+            "bytes": 40
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 40,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/backslash_join/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "shell_substitution",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_substitution",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_substitution/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "1a0d60f01cd6b943e140ef58f54679348d456481c90f888d47249c9fc4b4d258",
+            "bytes": 52
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 52,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_substitution/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "shell_glob",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_glob",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_glob/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "9bfb384c8d2b7162f921bb9d17b1e9459073998f5c7dab2186decf479fffee0d",
+            "bytes": 39
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 39,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_glob/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "shell_bracket_glob",
+      "expected": "FAIL_CLOSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_bracket_glob",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_bracket_glob/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "71e7eae12e25e1b8706e35d660a4d97ef90d735133120b791dbca73f184ddf67",
+            "bytes": 41
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 41,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/shell_bracket_glob/top.ninja",
+          "line": 2
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "symlink",
+      "expected": "FAIL_CLOSED/SYMLINK_PATH",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "192d716780cc89a0ede7055983b9cb62688e33dcc0df3a95664de47955002a82",
+            "bytes": 20
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 20,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "SYMLINK_PATH",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink/child.ninja",
+          "line": null
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "changed_during_read",
+      "expected": "FAIL_CLOSED/FILE_CHANGED_DURING_READ",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/changed_during_read",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/changed_during_read/top.ninja",
+        "files": [],
+        "file_count": 0,
+        "total_file_bytes": 0,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "FILE_CHANGED_DURING_READ",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/changed_during_read/top.ninja",
+          "line": null
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "symlink_swap",
+      "expected": "FAIL_CLOSED/OPEN_REFUSED",
+      "observed": {
+        "status": "FAIL_CLOSED",
+        "rc": 2,
+        "out_root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink_swap",
+        "top": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink_swap/top.ninja",
+        "files": [
+          {
+            "path": "top.ninja",
+            "sha256": "192d716780cc89a0ede7055983b9cb62688e33dcc0df3a95664de47955002a82",
+            "bytes": 20
+          }
+        ],
+        "file_count": 1,
+        "total_file_bytes": 20,
+        "first_forbidden": null,
+        "failure": {
+          "reason": "OPEN_REFUSED_62",
+          "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink_swap/child.ninja",
+          "line": null
+        },
+        "target_execution_authorized": false,
+        "scope": "read-only lexical command screen only; dynamic Ninja variables and target reachability not proven"
+      },
+      "pass": true
+    },
+    {
+      "name": "cli_child_forbidden",
+      "expected": "rc2/child.ninja:2",
+      "observed": {
+        "rc": 2,
+        "status": "FORBIDDEN_COMMAND",
+        "first_forbidden": {
+          "fragment": "nsjail -- /bin/true",
+          "line": 2,
+          "path": "child.ninja",
+          "token": "nsjail"
+        }
+      },
+      "pass": true
+    }
+  ],
+  "case_count": 21,
+  "passed": 21,
+  "scanner_sha256": "38655ce2b14e9c54ba5f2484dc4147fef1aa564466fe044edcc30d23a22ca958",
+  "scope": "local synthetic Ninja text only; no graph action, remote, device or container"
+}

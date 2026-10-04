@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai.g284.elementx.root_raw_intake.v1",
+  "accepted_utc": "2026-10-04T11:24:59.540054+00:00",
+  "decision": "ACCEPT_EXACT_REGISTERED_RAW_APK_ONLY",
+  "package": "io.element.android.x",
+  "version_name": "26.09.1",
+  "version_code": 202609012,
+  "registry_record": "r-52d5e188c88dfba15c98",
+  "registered_artifact_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "registered_artifact_bytes": 117664325,
+  "source": "official Element X GitHub Release asset 539529327; exact bytes equal upstream fixed F-Droid artifact SHA and size",
+  "source_url": "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk",
+  "local_apk_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk",
+  "start_sha256": "d70468ed7782a6043b6fab3149b0493f4db14294c96678b75ee751d99ddb2c68",
+  "result_sha256": "5b3d1c116cbea0d87cc9f7b64deac5616fc14f3f04883dd96a061cce85e285f2",
+  "root_release_sha256": "228c0ce4b8fc8f3fc7ce3ef2abfa01844d00ffcbc56efb3a3f6ac515d5db5a5c",
+  "postrun_peer_sha256": "ac3632ed42705bfba22a66565105d7b9aa9df65d0d9ca243e82d83d422ed992f",
+  "before_summary_sha256": "ba4a6593c4ba943c8a6467effea254288b47ea34f384cdef039917f87982729b",
+  "counts_before": {
+    "raw_total": 78,
+    "registered_raw": 73,
+    "supplemental_raw": 5,
+    "complete_static": 74,
+    "blackbox_packages": 2,
+    "cold_start": 0
+  },
+  "counts_after": {
+    "raw_total": 79,
+    "registered_raw": 74,
+    "supplemental_raw": 5,
+    "complete_static": 74,
+    "blackbox_packages": 2,
+    "cold_start": 0
+  },
+  "scope": "raw original APK identity only; no full static inventory, Bionic execution, blackbox qualification or cold startup",
+  "device_commands": 0,
+  "container_commands": 0
+}

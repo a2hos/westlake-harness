@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v7.py",
+        "--static-check"
+      ],
+      "end_utc": "2026-10-04T11:19:49.762771+00:00",
+      "expected_rc": 0,
+      "label": "static_check",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:19:49.714981+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2b3d77e32669e7755d64d73d9fca2a72ec29181d49d7d78cc9af570e5cef8a04"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/scripts/nanhai_plus_native_graph_v7.py",
+        "--run"
+      ],
+      "end_utc": "2026-10-04T11:19:49.808522+00:00",
+      "expected_rc": 3,
+      "label": "run_denial",
+      "rc": 3,
+      "start_utc": "2026-10-04T11:19:49.762916+00:00",
+      "stderr_sha256": "1ec56b6eb84e8ea641f6ebfe432da5d2ba77c2b32914b52df27c68afdbf88467",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/static_fixtures.py"
+      ],
+      "end_utc": "2026-10-04T11:19:49.874712+00:00",
+      "expected_rc": 0,
+      "label": "local_fixtures",
+      "rc": 0,
+      "start_utc": "2026-10-04T11:19:49.808640+00:00",
+      "stderr_sha256": "ecab8d06065aaa72e389e67adeb898aa2cdacd45f963947d54df25faad0a993e",
+      "stdout_sha256": "ba6dea12638d2985585099fb034eb0770e6b09f0e622c038117d49d4d8b3041a"
+    }
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/static_fixtures.py",
+    "sha256": "3225d5f4eb92db568f95d6b087750197121066fc468392dcd554f2033f0cc539"
+  },
+  "graph_commands": 0,
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/HANDOFF.md",
+    "sha256": "1a2e4f0ab3c6a8b8370009add5c77252c757a7648afb23699b69e3a61c7665d3",
+    "westlake_gate": "PASS"
+  },
+  "new_generation": {
+    "control": "NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/g279-native-graph-v7",
+    "out": "NANHAI_GZ02_NATIVE_PROJECT_ROOT/out/g279-native-graph-v7",
+    "precontrol": "NANHAI_GZ02_NATIVE_PROJECT_ROOT/control/g279-native-graph-v7-preflight",
+    "tmp": "NANHAI_GZ02_NATIVE_PROJECT_ROOT/tmp/g279-native-graph-v7"
+  },
+  "release_contract": [
+    "EVO19 readback receipt, outer release and original-owner graph ACK are separate 0444 project-control files",
+    "outer release binds exact v7 runner SHA/bytes, EVO19 receipt/wrapper/spec SHA, graph-only argv and forbidden target/device flags",
+    "owner ACK binds run-id, exact runner SHA and outer release SHA",
+    "runner identity rechecked immediately before graph command; precontrol mkdir is one-shot",
+    "source manifest, staged inputs, Go/UI/guard hashes, pre/post source topology and process descendants remain guarded"
+  ],
+  "risk": [
+    "No external authentication of owner document from JSON alone; original session and outer release require independent provenance review",
+    "EVO19 v8 CLI remains closed and its existing spec pins v6, so a v7-specific reviewed gate packet is needed",
+    "No remote v7 runner staged; no actual Linux child cleanup or seccomp inheritance proof",
+    "Generated Ninja subninja closure and target action execution remain unauthorized",
+    "Graph-only command can run only after external gates; this local --run attempt denied rc3 before graph"
+  ],
+  "schema": "nanhai-g279-native-graph-v7-static-candidate-v1",
+  "ssh_commands": 0,
+  "status": "STATIC_ONLY_NO_GO_GRAPH_RELEASE",
+  "target_compiles": 0,
+  "v6_runner_sha256": "c7b536a91adb22e2a6fbcebee07ed6f79e9d15b19d7a2e73b9a71b3f93c3a60f",
+  "v7_runner": {
+    "bytes": 41813,
+    "path": "scripts/nanhai_plus_native_graph_v7.py",
+    "sha256": "0b799e6864b6e76c2cfe7fa5a98cbb11d1611343f955205ab3bfc739096316a0"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T11:08:30.469982+00:00",
+  "checked_at": "2026-10-04T11:27:50.527948+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 78,
+    "downloaded_payloads": 79,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 74,
-    "complete_inventory_dex_entries": 163,
-    "complete_inventory_native_elf_entries": 812,
+    "complete_static_inventories": 75,
+    "complete_inventory_dex_entries": 166,
+    "complete_inventory_native_elf_entries": 825,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -50,7 +50,7 @@
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 73,
+    "registered_upstream_payloads": 74,
     "supplemental_payloads": 5,
     "qualified_blackbox_packages": 2,
     "qualified_blackbox_package_ids": [
@@ -539,29 +539,30 @@
   },
   "next_graph_candidate": {
     "prospective_release": 279,
-    "status": "NO_GO_RUNNER_V3",
+    "status": "V7_STATIC_CANDIDATE_PEER_NO_GO_GRAPH_RELEASE",
     "execution_ready": false,
     "original_owner_graph_ack": false,
     "peer_review": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v3-peer-v1/REVIEW.json",
-      "sha256": "bc598ced1b2c9f8bcbb89023d110da87d1982536545b7e0ab51f8df6f400386e"
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/peer-review-v1/REVIEW.json",
+      "sha256": "aa62468189a3b4e8466a47b799fa027d630633a76bd74b03d890229735f5163b"
     },
-    "next_input": "Fix runner v3 B4-B6 and EVO19 pre-execution identity gate, independent review, separate original owner graph ACK; no graph now"
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/ROOT-REVIEW.json",
+      "sha256": "2b6959a3d2cc9ad61094b0ff24f163434867f0a536d7724c0ccdaa15b307807f"
+    },
+    "next_input": "independent native owner graph ACK provenance, fresh v7 EVO19 remote identity, safely reviewed v7 staging and runtime process safety; do not replay v6/containers"
   },
   "reflection": {
-    "latest": "EVO-0019-input-authority-execution-gate",
+    "latest": "EVO-0021-apk-publisher-digest-route",
     "root_closure": {
-      "path": "docs/nanhai-plus/evolution/EVO-0019-input-authority-execution-gate/ROOT-CLOSURE.json",
-      "sha256": "f5c0872cf64fc322e74b65693c63a403edf7920f5f68d615dc21d2f8c4bfe428"
+      "path": "docs/nanhai-plus/evolution/EVO-0021-apk-publisher-digest-route/reviews/ROOT-CLOSURE.json",
+      "sha256": "b380c28ccb09a4aa5a73f25298410df2209ddf2377ae4d23ae2bb16559f5a8b6"
     },
     "actual_result_groups": 4,
     "limited_pilot": true,
     "globally_promoted": false,
-    "pending_actual_result_groups": 0,
-    "previous_evo18_root_closure": {
-      "path": "docs/nanhai-plus/evolution/EVO-0018-type-registration-cohort/ROOT-CLOSURE.json",
-      "sha256": "5236d3d2302a9b258c879aa83932ea54833ec0f7b3f51ea66f2aee92e7cd02f3"
-    }
+    "pending_actual_result_groups": 1,
+    "direction": "APK publisher digest routing; not Ninja closure"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -1317,5 +1318,25 @@
     "graph_executed": false,
     "target_compiled": false,
     "device_executed": false
+  },
+  "g284_elementx_raw_actual": {
+    "status": "ROOT_ACCEPTED_EXACT_REGISTERED_RAW_ONLY",
+    "root_intake_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/ROOT-RAW-INTAKE.json",
+    "root_intake_sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e",
+    "raw_total_after": 79,
+    "registered_raw_after": 74,
+    "complete_static_after": 74,
+    "startup_delta": 0,
+    "blackbox_package_delta": 0
+  },
+  "g285_elementx_static_actual": {
+    "status": "ROOT_ACCEPTED_COMPLETE_HOST_STATIC_ONLY",
+    "root_acceptance_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g285-elementx-static-v1/ROOT-ACCEPTANCE.json",
+    "root_acceptance_sha256": "1152fb8cb8109aae7e2177dc7580b7df668e464554ff098d5b030ac08ccede04",
+    "complete_static_after": 75,
+    "dex_after": 166,
+    "true_elf_after": 825,
+    "startup_delta": 0,
+    "blackbox_delta": 0
   }
 }

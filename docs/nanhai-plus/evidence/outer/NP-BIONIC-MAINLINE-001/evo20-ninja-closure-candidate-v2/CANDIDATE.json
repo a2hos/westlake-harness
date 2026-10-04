@@ -1,0 +1,76 @@
+{
+  "status": "STATIC_V2_CANDIDATE_NO_GRAPH_AUTHORIZATION",
+  "created_at": "2026-10-04T11:14:48.245542+00:00",
+  "v1_peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "bfbb9a36a2a84914530a952be6a85282a198d234e063a23cae43c2f9c5bcec9d"
+  },
+  "scanner_sha256": "38655ce2b14e9c54ba5f2484dc4147fef1aa564466fe044edcc30d23a22ca958",
+  "test_result_sha256": "162191b49f86845ec04b04fbeafccb71781edb2a8e689f10b829e589b34f584c",
+  "test_cases": 21,
+  "test_passed": 21,
+  "counterexamples": {
+    "child_forbidden": {
+      "status": "FORBIDDEN_COMMAND",
+      "failure": null,
+      "first_forbidden": {
+        "path": "child.ninja",
+        "line": 2,
+        "fragment": "nsjail -- /bin/true",
+        "token": "nsjail"
+      }
+    },
+    "variable_command": {
+      "status": "FAIL_CLOSED",
+      "failure": {
+        "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+        "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/variable_command/top.ninja",
+        "line": 3
+      },
+      "first_forbidden": null
+    },
+    "quoted_join": {
+      "status": "FAIL_CLOSED",
+      "failure": {
+        "reason": "DYNAMIC_OR_SHELL_COMPOSITION_COMMAND",
+        "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/quoted_join/top.ninja",
+        "line": 2
+      },
+      "first_forbidden": null
+    },
+    "changed_during_read": {
+      "status": "FAIL_CLOSED",
+      "failure": {
+        "reason": "FILE_CHANGED_DURING_READ",
+        "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/changed_during_read/top.ninja",
+        "line": null
+      },
+      "first_forbidden": null
+    },
+    "symlink_swap": {
+      "status": "FAIL_CLOSED",
+      "failure": {
+        "reason": "OPEN_REFUSED_62",
+        "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v2/fixtures/symlink_swap/child.ninja",
+        "line": null
+      },
+      "first_forbidden": null
+    }
+  },
+  "changes": [
+    "reject any Ninja dollar expansion in command RHS",
+    "reject shell quoting, escapes, globs, braces, substitutions and composition tokens in command RHS",
+    "open every OUT-relative component with fd and O_NOFOLLOW",
+    "compare file and directory identity before and after reading",
+    "bound bytes before and during fd read"
+  ],
+  "scope": "read-only local Ninja include/subninja closure diagnostic",
+  "real_graph_scans": 0,
+  "actions_executed": 0,
+  "target_execution_authorized": false,
+  "remaining_limits": [
+    "all dynamic commands fail closed, so ordinary $in/$out generated graph is not claimed safe",
+    "indirect script behavior and target reachability require separate evidence",
+    "no actual generated graph audited"
+  ]
+}

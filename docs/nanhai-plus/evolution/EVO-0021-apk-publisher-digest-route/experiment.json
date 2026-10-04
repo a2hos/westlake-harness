@@ -1,0 +1,19 @@
+{
+  "schema": "nanhai.evo21.experiment.v1",
+  "state": "pilot",
+  "owner": "independent reflection peer",
+  "source_groups": ["G283 Vivaldi blackbox qualification", "G279 gz02 canonical Python identity", "G282 Element X F-Droid GET timeout", "EVO20 scanner v1 peer counterexamples"],
+  "problem": "A pinned APK can consume a long transfer attempt before an equivalent publisher artifact is identified; same-version alternatives can also have different bytes.",
+  "repeated_cost": "G282 F-Droid Element X attempt spent 250.015 seconds and stopped without an admissible APK. G282 shortlist separately exposed same-version channel ambiguity.",
+  "decision_to_improve": "Route an exact upstream SHA/size to a publisher asset using published digest metadata before any large GET.",
+  "baseline": "Fetch the historical F-Droid URL first, then inspect APK bytes; observed G282 timeout with no raw count change.",
+  "options": [
+    {"name": "repeat historical URL", "changed_assumption": "same endpoint will complete next time", "preserved_evidence": "upstream SHA/size", "risk": "another long timeout", "cheapest_falsifier": "HEAD/transfer probe does not prove full completion", "stop": "do not retry old partial blindly"},
+    {"name": "publisher digest route", "changed_assumption": "publisher API may expose the exact artifact SHA", "preserved_evidence": "same upstream SHA/size/version", "risk": "metadata may drift or be absent", "cheapest_falsifier": "small release API response digest and exact asset ID/name/size check", "stop": "any missing/mismatched digest or URL"}
+  ],
+  "selected_one_improvement": "Pre-GET content-identity routing gate keyed by upstream package, version code, artifact SHA-256 and bytes plus publisher repo/tag/asset ID/name; use a fresh official API response, require digest and size equality, otherwise keep alternatives separate. Revalidate at actual GET and hash complete payload before admission.",
+  "version_architecture": "AOSP16 R4 / OH7 arm64 portfolio; Element X 26.09.1 code 202609012 and Element Classic 1.6.62 code 40106622 pilot controls.",
+  "cost_cap": "metadata requests only; no APK GET, SSH, device, container or graph",
+  "acceptance": "Positive Element X exact digest equality and negative Element Classic flavor mismatch in under 20 seconds of network time, with raw API responses and command receipts retained.",
+  "rollback": "If publisher API lacks digest, changes identity, or payload hash later differs, reject the route and retain the historical registered artifact as separate."
+}

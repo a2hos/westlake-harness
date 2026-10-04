@@ -1,0 +1,18 @@
+{
+  "schema": "nanhai.evo20.ninja_closure_v2.static_peer_review.v1",
+  "verdict": "GO_BOUNDED_READ_ONLY_DIAGNOSTIC__NO_GO_TARGET_EXECUTION",
+  "scanner_sha256": "38655ce2b14e9c54ba5f2484dc4147fef1aa564466fe044edcc30d23a22ca958",
+  "candidate_sha256": "bb3b53ced39f253b4c38bab017c7a0659ad36609dd2b8865aa64eeeeb215aa94",
+  "ready_sha256": "79b2a7f80cdd1b6297ba11fba049e55599aa6f93689264de11b7fa64f3ac1103",
+  "test_result_sha256": "162191b49f86845ec04b04fbeafccb71781edb2a8e689f10b829e589b34f584c",
+  "fixtures": "21/21 recorded local synthetic cases pass. The prior `$tool` command and `ns'ja'il` shell-quote counterexamples now FAIL_CLOSED; backslash, glob, substitution and ordinary `$in/$out` commands also fail closed rather than claiming safety.",
+  "include_closure": "Literal include/subninja recursion, missing/cycle/escape/symlink rejection and bounded file/byte totals remain. Variable or ambiguous include syntax fails closed; no claim of full Ninja grammar or selected-target reachability.",
+  "fd_race": "Each OUT-relative component is opened through pinned directory fds with O_NOFOLLOW; opened file and named path are compared by dev/inode/mode/size/mtime/ctime before and after bounded fd reads. Fixtures inject a file append during read and a final-file symlink swap before open, both rejected. This closes the v1 check-then-read gap for the tested cases, though graph files could still change after audit and before execution.",
+  "command_boundary": "A literal forbidden executor is detected; any dollar expansion or listed shell composition character in command RHS causes FAIL_CLOSED. PASS_LITERAL_CLOSURE_ONLY means only that this conservative lexical screen found no listed token in scanned literal command text. Indirect scripts, arbitrary external binaries, dynamic graph generation and runtime execve are outside its proof.",
+  "remaining_no_go": [
+    "No actual generated Ninja graph was scanned; no selected-target command closure or Ninja-expanded action list exists.",
+    "No immutable graph snapshot or execution-adjacent recheck binds this audit to later graph execution.",
+    "Indirect scripts and runtime process tree remain unverified; scanner PASS cannot authorize target build, device or container use."
+  ],
+  "scope": "Independent read-only static review of candidate and 21 recorded local fixtures; peer ran no real graph, SSH, target action, container or device command."
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai.evo21.root_closure.v1",
+  "reviewed_utc": "2026-10-04T11:18:31.757290+00:00",
+  "decision_sha256": "e6593b95946e59fad3ef255f02a649db0eb3488e9bd783a14f0d82fdd5162f18",
+  "trial_sha256": "44b9dccd4fdbd51e173d7408564d37974b9ebf92ccd9acc430777fc2a66747ea",
+  "peer_sha256": "bd509f28af5897f5ea781a24934ff666d4b9416e6c5555b89c76ea04b02143d1",
+  "events_sha256": "a616f7e6267e3e1d986ac0abea129d1bde316e8722b07cb4741d4a294de4b6f6",
+  "decision": "ACCEPT_ONE_BOUNDED_PILOT_NOT_PROMOTED",
+  "timing": "2026-10-04T11:16:46Z to 11:17:47Z = 61 seconds, under 120 seconds",
+  "direction": "APK publisher digest routing, distinct from EVO20 Ninja include closure",
+  "one_improvement": "Compare publisher asset ID/name/SHA/size to registered APK before large GET; retain full payload hash/signature gates",
+  "evidence": "Element X exact-match and Element Classic channel-mismatch metadata controls, 27,879 response bytes total, no APK GET",
+  "remaining": "No proven full alternate GET completion or quantified retry savings; no raw/static/startup/tool count change",
+  "next": "Review G284 v2 then one-shot GET if admitted; keep EVO21 pilot until verified full APK and future avoided mismatch",
+  "device_commands": 0,
+  "container_commands": 0
+}

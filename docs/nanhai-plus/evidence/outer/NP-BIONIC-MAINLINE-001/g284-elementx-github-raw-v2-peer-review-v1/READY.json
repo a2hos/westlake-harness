@@ -1,0 +1,39 @@
+{
+  "status": "FROZEN_INDEPENDENT_STATIC_NO_GO",
+  "frozen_at": "2026-10-04T11:19:42.878369+00:00",
+  "verdict": "NO_GO_APK_GET_BOUNDS_AND_FROZEN_ENV_BINDING",
+  "artifacts": [
+    {
+      "name": "fixture.py",
+      "bytes": 3954,
+      "sha256": "53ab5e0fe9820ddd354fef721544c48054420126a9fba7d8584e6c2783e9602e"
+    },
+    {
+      "name": "run.py",
+      "bytes": 12979,
+      "sha256": "4918944dbc43dcd12ef66b954e1d0aea00bce75faaa5f4e8c01d2b93d9974d22"
+    },
+    {
+      "name": "FIXTURE.json",
+      "bytes": 623,
+      "sha256": "ad9d8b8a12f39c6bd7d0f64559f8a03e9b59ccc47e41a9c58131f37113fc945f"
+    },
+    {
+      "name": "sigterm_fixture.py",
+      "bytes": 1334,
+      "sha256": "a46c4fb0341971b4af14d9bec4dcb47faff047f1a0572ff5b98b0e7bd2adbde2"
+    },
+    {
+      "name": "SIGTERM-FIXTURE.json",
+      "bytes": 268,
+      "sha256": "673291115485906bc659aed801b1769bf5ccc1e5d900ae02d324f3b3b8f4a47e"
+    },
+    {
+      "name": "REVIEW.json",
+      "bytes": 3398,
+      "sha256": "0df392e41d82435598b2dc2aae3d1a21c974a2b3900edfeb317b56d875d657a9"
+    }
+  ],
+  "api_get": 0,
+  "apk_get": 0
+}

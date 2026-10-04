@@ -1,0 +1,30 @@
+{
+  "status": "FROZEN_INDEPENDENT_STATIC_GO_ONE_BOUNDED_GET_ONLY",
+  "frozen_at": "2026-10-04T11:22:34.833082+00:00",
+  "verdict": "GO_ONE_BOUNDED_GET_ONLY",
+  "candidate_script_sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+  "artifacts": [
+    {
+      "name": "run.py",
+      "sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+      "bytes": 13558
+    },
+    {
+      "name": "fixture.py",
+      "sha256": "c779472bc0c94ae5de348eca70a09ee9cc3863fbc5855ad0dbd30ad7779f6442",
+      "bytes": 4683
+    },
+    {
+      "name": "FIXTURE.json",
+      "sha256": "22c67ad39a82893ef951606f59f875628e66aa8dabe60462bb98d288c3a1c3cc",
+      "bytes": 703
+    },
+    {
+      "name": "REVIEW.json",
+      "sha256": "4aa737be5801a444a1715b7ffdb72b41480b2875e0b1a1cd2b69a64253aadfbf",
+      "bytes": 2241
+    }
+  ],
+  "api_get": 0,
+  "apk_get": 0
+}

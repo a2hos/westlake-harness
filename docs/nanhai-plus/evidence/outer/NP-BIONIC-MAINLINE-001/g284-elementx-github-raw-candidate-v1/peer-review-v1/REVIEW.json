@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai.g284.elementx_github_raw.static_peer_review.v1",
+  "verdict": "GO_PINNED_ASSET_IDENTITY_METADATA__NO_GO_APK_GET_UNTIL_RECEIPT_REPAIR",
+  "prepare_sha256": "f218a620d564491acd345e4a958915fe1282c2f2dac1b46a0bc26cecdb1d2d42",
+  "run_script_sha256": "13c2e81e813d539738163ebaf2a547eec3470313a08e3c20baf2b9558cee766f",
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "upstream_record": "r-52d5e188c88dfba15c98",
+  "package": "io.element.android.x",
+  "version_name": "26.09.1",
+  "version_code": 202609012,
+  "asset_metadata": {
+    "official_release_api": "https://api.github.com/repos/element-hq/element-x-android/releases/tags/v26.09.1",
+    "asset_id": 539529327,
+    "name": "app-fdroid-arm64-v8a-release-signed.apk",
+    "bytes": 117664325,
+    "github_api_digest": "sha256:ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "registry_artifact_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+    "finding": "Fresh read-only GitHub API metadata matched the exact tag, asset ID/name/URL/size/digest and upstream F-Droid artifact SHA/size; actual APK bytes and signer still require a completed download."
+  },
+  "local_environment": "Current nanhai_plus_env.py --json reports /opt/19.SourceCode, project evidence/staging roots and /usr/bin/curl matching run.py's intended variables. Script itself only trusts inherited NANHAI_* values; it does not reload local_env.md or bind its config SHA before creating staging.",
+  "positive_controls": [
+    "Current G284 RESULT and staging generation do not exist; G282 failed .part remains in a separate generation and is not resumed.",
+    "--execute is explicit; API asset identity is rechecked before one curl -q, --retry 0, HTTPS-only APK GET with timeout and isolated .part.",
+    "Fixed source/tool SHA values match current local files; downloaded bytes must match registry/GitHub SHA and size before ZIP CRC, package/version/ABI and v2 signer checks.",
+    "No container, namespace, graph, device or canonical ledger action is coded. Curl command records transfer metrics rather than effective signed redirect URL."
+  ],
+  "blocking_findings": [
+    "staging.mkdir and multiple registry/tool assert checks occur before receipt initialization; failures leave a created staging directory without RESULT.json. Python -O can disable the assert identity gates.",
+    "JSON parsing, subprocess launch errors, ZIP errors, disk/readback errors and several other exceptions bypass save(); no top-level finally persists a failure receipt.",
+    "save() overwrites RESULT.json directly without exclusive creation, fsync or atomic finalization, so the one-shot receipt is neither immutable nor crash-safe.",
+    "Environment paths are not compared with a fresh authoritative local_env parse before mutation; tool subprocesses inherit the full environment, which should be reduced to the required keys."
+  ],
+  "minimum_repair": "Validate current local_env and exact path roots first; replace asserts with explicit checks. Create a unique exclusive IN_PROGRESS/REMOTE_STATE_UNKNOWN-equivalent local receipt before staging/network work, catch all exceptions into a terminal failure receipt, and finalize by fsynced no-replace rename/link. Keep the APK GET disabled until peer review of the repaired exact script SHA.",
+  "scope": "Static/local metadata review plus small official GitHub API request only; APK GET 0, device 0, container 0, graph 0, canonical edits 0."
+}

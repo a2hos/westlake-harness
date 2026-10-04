@@ -1,0 +1,42 @@
+{
+  "schema": "g284-elementx-github-prepare-v1",
+  "at_utc": "2026-10-04T11:12:55.962110+00:00",
+  "status": "PREPARED_NOT_EXECUTED",
+  "prior_failure_receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g282-elementx-raw-candidate-v1/RESULT.json",
+  "prior_failure_sha256": "385f4219baa92df1ea84d1e6b929e6368491912239bc66a5874bfa665b0f627b",
+  "prior_partial_bytes": 1765376,
+  "prior_partial_sha256": "9019695af19701018cf59ffbdfaafcf34f2a05169388f94db1414b78238fa1ec",
+  "official_release_api": "https://api.github.com/repos/element-hq/element-x-android/releases/tags/v26.09.1",
+  "release_tag": "v26.09.1",
+  "asset_id": 539529327,
+  "asset_name": "app-fdroid-arm64-v8a-release-signed.apk",
+  "asset_size": 117664325,
+  "asset_digest": "sha256:ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "stable_url": "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk",
+  "observed_api_utc": "2026-10-04T11:11:49.337203+00:00",
+  "observed_api_rc": 0,
+  "observed_api_response_sha256": "9a93e373912de0409d214459f23d27d0f125361df944b6ffce2c0e4df509ea0e",
+  "observed_head_rc": 0,
+  "observed_head_http": 200,
+  "observed_head_tls": 0,
+  "observed_head_redirects": 1,
+  "observed_head_final_content_length": 117664325,
+  "prepared_script": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v1/run.py",
+  "prepared_script_sha256": "13c2e81e813d539738163ebaf2a547eec3470313a08e3c20baf2b9558cee766f",
+  "static_ast_parse": "PASS",
+  "execution_gate": "requires explicit --execute; not invoked",
+  "design_controls": [
+    "separate project staging generation; no reuse or resume of prior .part",
+    "fresh official API asset id/digest/size check before GET",
+    "curl -q and --retry 0; one bounded GET; no cookies or raw headers persisted",
+    "compare fixed registry SHA, artifact SHA and bytes before ZIP/aapt2/apksigner",
+    "read-only tool hashes before/after; raw candidate only, no canonical edit"
+  ],
+  "current_local_residual": "prior G282 .part 1,765,376 bytes; no matching process in scoped pgrep",
+  "execution_counts": {
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  }
+}

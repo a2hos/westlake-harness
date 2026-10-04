@@ -1,0 +1,56 @@
+{
+  "schema": "nanhai.g284.elementx_github_raw.static_peer_review.v2",
+  "reviewed_at": "2026-10-04T11:19:31.034131+00:00",
+  "verdict": "NO_GO_APK_GET_BOUNDS_AND_FROZEN_ENV_BINDING",
+  "prepare_sha256": "b08a9e85f8b610639bbbf277ff7d3464e4219cecd326035ab74b796e17032842",
+  "run_script_sha256": "4918944dbc43dcd12ef66b954e1d0aea00bce75faaa5f4e8c01d2b93d9974d22",
+  "fixture_sha256": "ad9d8b8a12f39c6bd7d0f64559f8a03e9b59ccc47e41a9c58131f37113fc945f",
+  "independent_fixture_sha256": "ad9d8b8a12f39c6bd7d0f64559f8a03e9b59ccc47e41a9c58131f37113fc945f",
+  "independent_sigterm_fixture_sha256": "673291115485906bc659aed801b1769bf5ccc1e5d900ae02d324f3b3b8f4a47e",
+  "checks": {
+    "prepare_script_sha": true,
+    "prepare_fixture_sha": true,
+    "copied_script_same_bytes": true,
+    "seven_local_fixtures": true,
+    "sigterm_terminal_replay": true,
+    "current_env_config": true,
+    "prior_v1_peer_binding": true,
+    "prior_failed_generation_binding": true,
+    "start_before_execute": true,
+    "terminal_final_no_replace": true,
+    "get_time_bound": true,
+    "get_byte_bound": false,
+    "api_byte_bound": false,
+    "frozen_env_config_enforced": false,
+    "current_candidate_not_started": true,
+    "current_candidate_staging_absent": true
+  },
+  "passed": 13,
+  "failed": [
+    "get_byte_bound",
+    "api_byte_bound",
+    "frozen_env_config_enforced"
+  ],
+  "positive_findings": [
+    "authoritative local_env loader compares all inherited NANHAI bindings to the current file before staging/network; no asserts",
+    "START O_EXCL/fsync precedes execute, staging, and network; terminal RESULT uses fsynced temporary plus no-replace hard link",
+    "top-level BaseException, local timeout, and SIGTERM fixture produce terminal failure; second START is refused",
+    "fresh GitHub API tag/asset identity is checked before one APK GET; later body SHA/size, ZIP CRC, Manifest, arm64 ABI, aapt2 identity, apksigner v2 and tool/APK posthash gates are present",
+    "no container or device command coded; signed effective redirect URL is not requested in curl write-out"
+  ],
+  "blocking_findings": [
+    "APK curl is limited by time but lacks --max-filesize or another transfer byte cap; a changed or malicious response can consume unbounded staging bytes before the after-download size gate",
+    "API curl captures an unbounded response body in memory and persists it as api.stdout.raw",
+    "the script does not enforce PREPARE environment_config_sha256; a changed local_env loaded afresh by the wrapper would pass the inherited-binding comparison without review of the changed candidate environment"
+  ],
+  "sensitive_output": [
+    "child environment forwards inherited proxy variables but not NANHAI or auth secrets; argv and transfer write-out contain no effective signed redirect URL",
+    "raw API stdout and curl stderr are persisted without redaction; review them before wider publication"
+  ],
+  "minimum_repair": [
+    "pin the reviewed local_env config SHA in the executable preflight",
+    "bound API response and APK GET bytes with exact curl size limits and verify the options locally",
+    "keep START/RESULT one-shot semantics and rerun independent local fixture review; do not replay this candidate after any START"
+  ],
+  "scope": "local static review and copied local fixtures only; API/APK GET 0; no raw acceptance, signature observed, device, startup or canonical edit"
+}

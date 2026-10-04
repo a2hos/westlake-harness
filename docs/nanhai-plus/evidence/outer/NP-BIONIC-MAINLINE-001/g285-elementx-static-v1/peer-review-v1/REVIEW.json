@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai.g285.elementx_static.actual_peer_review.v1",
+  "verdict": "GO_ROOT_ACCEPT_COMPLETE_STATIC_ONLY_74_TO_75",
+  "ready_sha256": "871ae0bceaeaa3d44b59482cdade351f243ca1cd198e51ee5cfeaf201ac93216",
+  "result_sha256": "d6f5d5257e33bea8228ce33fbac712a3a4d2a7c8d033b4781ee2675e7d2f5bda",
+  "inputs_sha256": "09f31ad00937e9928d2a7e57fdc466f6ecf04cbe929f281d9d1acc0b9dd1a93b",
+  "root_raw_acceptance_sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e",
+  "apk": {"package": "io.element.android.x", "version_name": "26.09.1", "version_code": 202609012, "sha256_independently_rehashed": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3", "bytes_independently_checked": 117664325},
+  "execution_review": "Four phase COMMAND.json argv/cwd/environment/PID match outer RESULT rows; zip, metadata, elf and dex phase rc are each 0 without timeout, and each recorded stdout/stderr SHA matches raw files. All four phase receipts report source/APK/tool postguard true. Outer rc 0 in 22.0555 seconds.",
+  "inventory_review": "ZIP phase records 1,411 members, all CRC scanned/OK and one manifest; DEX inventory lists 3 members; ELF inventory lists 13 true ELF, all AArch64 arm64-v8a with readelf_ok and no unclassified native members. Peer independently rehashed the 3 DEX and 13 ELF archive members against recorded per-member SHA/bytes: 16/16 exact.",
+  "guards": "SOURCE-BEFORE.json and SOURCE-AFTER.json are byte-identical SHA 787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7; READY file ledger has 29/29 matching hashes/bytes. Input binds prior root-accepted exact raw APK and fixed venv/tool/source identities.",
+  "count_scope": "Current OUTER-STATE observed complete static count 74. Independent evidence supports root review to accept this one distinct package as 75; peer does not mutate the authoritative count. No startup, overseas blackbox, target tool or device credit.",
+  "limits": "Peer did not rerun the full 1,411-member CRC scan or scanner phases; it verified persisted phase commands/rc/raw outputs and independently hashed the 16 DEX/ELF members. This is static inventory evidence only.",
+  "peer_actions": {"apk_get": 0, "scanner_reruns": 0, "device": 0, "container": 0, "count_edits": 0}
+}

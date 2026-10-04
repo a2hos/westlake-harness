@@ -1,0 +1,65 @@
+{
+  "schema": "g284-elementx-github-raw-v2-prepare",
+  "at_utc": "2026-10-04T11:17:12.693618+00:00",
+  "status": "FROZEN_STATIC_CANDIDATE_NOT_EXECUTED",
+  "v1_peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "767bd88feea660d944561c62a2f0d21c3e555673df894d91b7fe852e71528be4"
+  },
+  "prior_failed_generation": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g282-elementx-raw-candidate-v1/RESULT.json",
+    "sha256": "385f4219baa92df1ea84d1e6b929e6368491912239bc66a5874bfa665b0f627b"
+  },
+  "script": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v2/run.py",
+    "sha256": "4918944dbc43dcd12ef66b954e1d0aea00bce75faaa5f4e8c01d2b93d9974d22",
+    "explicit_execute_gate": true,
+    "ast_parse": "PASS"
+  },
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v2/FIXTURE.json",
+    "sha256": "ad9d8b8a12f39c6bd7d0f64559f8a03e9b59ccc47e41a9c58131f37113fc945f",
+    "cases": [
+      "START_EXCLUSIVE_NO_REPLAY",
+      "RESULT_ATOMIC_NO_REPLACE",
+      "START_AND_RESULT_DURABLE_CONTENT",
+      "TOP_LEVEL_EXCEPTION_TERMINAL_AND_REPLAY_REJECTED",
+      "SUBPROCESS_TIMEOUT_CAPTURED_FOR_TERMINAL_GATE",
+      "CURRENT_LOCAL_ENV_BINDING_PASS",
+      "STALE_ENV_BINDING_REJECTED"
+    ]
+  },
+  "environment_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "state_protocol": [
+    "START.json durable O_EXCL before source/output mkdir and network; means remote state UNKNOWN if no terminal RESULT",
+    "terminal RESULT.json published by durable temporary JSON plus atomic no-replace hard link",
+    "existing START or RESULT prevents blind replay of this generation"
+  ],
+  "identity_protocol": [
+    "fresh authoritative local_env.md loader and all inherited NANHAI bindings compared",
+    "explicit GateError identity checks; no assert",
+    "registry file SHA, record fields and tool hashes checked before network",
+    "fresh official GitHub API tag/asset id/name/URL/size/digest checked before exactly one APK GET",
+    "new staging, no reuse of old F-Droid .part",
+    "ZIP CRC, manifest, arm64 ABI, aapt2 identity, apksigner and pre/post hashes after complete GET"
+  ],
+  "network_protocol": [
+    "curl -q, --retry 0, HTTPS only, bounded GET",
+    "no raw headers, signed redirect URL, cookies or tokens persisted"
+  ],
+  "observed_execution_artifacts": {
+    "start_exists": false,
+    "result_exists": false,
+    "new_staging_exists": false
+  },
+  "execution_counts": {
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  },
+  "limits": [
+    "Static and local fixture proof only; actual transfer, payload identity and static APK checks remain unproved.",
+    "SIGKILL or power failure can leave START without RESULT; this is intentionally UNKNOWN and forbids automatic retry."
+  ]
+}

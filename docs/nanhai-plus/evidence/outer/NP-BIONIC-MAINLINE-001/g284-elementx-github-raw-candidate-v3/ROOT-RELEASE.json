@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai.g284.elementx_github_v3.root_release.v1",
+  "released_utc": "2026-10-04T11:22:57.449270+00:00",
+  "decision": "AUTHORIZE_ONE_BOUNDED_OFFICIAL_APK_GET_AND_LOCAL_STATIC_CHECK_ONLY",
+  "runner_sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+  "prepare_sha256": "ca1373e62b91c6afb3ee0d1d2d0eaa8d03b71e8a8e73e31f93e2f109ff91efc1",
+  "peer_review_sha256": "4aa737be5801a444a1715b7ffdb72b41480b2875e0b1a1cd2b69a64253aadfbf",
+  "exact_argv": [
+    "python3",
+    "-B",
+    "scripts/nanhai_plus_env.py",
+    "--run",
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/run.py",
+    "--execute"
+  ],
+  "expected_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "expected_bytes": 117664325,
+  "limits": {
+    "api_max_bytes": 1048576,
+    "apk_max_bytes": 117664325,
+    "apk_max_seconds": 300,
+    "retries": 0
+  },
+  "root_checked_clean_generation": true,
+  "raw_admission": false,
+  "startup_credit": false,
+  "device_authorized": false,
+  "container_authorized": false
+}

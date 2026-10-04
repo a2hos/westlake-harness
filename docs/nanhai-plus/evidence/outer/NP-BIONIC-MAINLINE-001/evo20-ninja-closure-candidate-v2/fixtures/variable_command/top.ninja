@@ -1,0 +1,3 @@
+tool = nsjail
+rule x
+  command = $tool -- /bin/true

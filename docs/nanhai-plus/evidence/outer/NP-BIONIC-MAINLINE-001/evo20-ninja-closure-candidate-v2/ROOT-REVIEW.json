@@ -1,0 +1,13 @@
+{
+  "schema": "nanhai.evo20.ninja_closure_v2.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:16:31.508966+00:00",
+  "scanner_sha256": "38655ce2b14e9c54ba5f2484dc4147fef1aa564466fe044edcc30d23a22ca958",
+  "peer_sha256": "0f504e77fa7ff2cea5c5f70632ff5dc7c15c783981cca22dd4855b49e8944aa4",
+  "decision": "ACCEPT_READ_ONLY_LITERAL_DIAGNOSTIC_ONLY",
+  "evidence": "21/21 local fixtures including v1 variable and shell-concatenation counterexamples; fd/O_NOFOLLOW snapshot checks; independent peer bounded GO",
+  "graph_action_release": false,
+  "target_execution_authorized": false,
+  "remaining": "real graph, selected-target expanded Ninja commands, indirect scripts and audit-to-execution binding unverified",
+  "device_commands": 0,
+  "container_commands": 0
+}

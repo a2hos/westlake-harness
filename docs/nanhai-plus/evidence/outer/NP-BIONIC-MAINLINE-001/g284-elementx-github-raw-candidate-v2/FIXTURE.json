@@ -1,0 +1,18 @@
+{
+  "schema": "g284-elementx-github-raw-v2-local-fixture",
+  "cases": [
+    "START_EXCLUSIVE_NO_REPLAY",
+    "RESULT_ATOMIC_NO_REPLACE",
+    "START_AND_RESULT_DURABLE_CONTENT",
+    "TOP_LEVEL_EXCEPTION_TERMINAL_AND_REPLAY_REJECTED",
+    "SUBPROCESS_TIMEOUT_CAPTURED_FOR_TERMINAL_GATE",
+    "CURRENT_LOCAL_ENV_BINDING_PASS",
+    "STALE_ENV_BINDING_REJECTED"
+  ],
+  "environment_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "script_sha256": "4918944dbc43dcd12ef66b954e1d0aea00bce75faaa5f4e8c01d2b93d9974d22",
+  "network_requests": 0,
+  "apk_get": 0,
+  "device": 0,
+  "container": 0
+}

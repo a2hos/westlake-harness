@@ -1,0 +1,33 @@
+{
+  "schema": "nanhai.g285.elementx.static.root_acceptance.v1",
+  "accepted_utc": "2026-10-04T11:27:42.333615+00:00",
+  "decision": "ACCEPT_COMPLETE_HOST_STATIC_INVENTORY_ONLY",
+  "package": "io.element.android.x",
+  "apk_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "raw_acceptance_sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e",
+  "ready_sha256": "871ae0bceaeaa3d44b59482cdade351f243ca1cd198e51ee5cfeaf201ac93216",
+  "result_sha256": "d6f5d5257e33bea8228ce33fbac712a3a4d2a7c8d033b4781ee2675e7d2f5bda",
+  "peer_sha256": "9ad3a4dd0e1387a3c6de70aa75e543657a3632c4d162442ac28dd656bb96b60a",
+  "counts_before": {
+    "raw": 79,
+    "static": 74,
+    "dex": 163,
+    "true_elf": 812,
+    "cold_start": 0
+  },
+  "counts_after": {
+    "raw": 79,
+    "static": 75,
+    "dex": 166,
+    "true_elf": 825,
+    "cold_start": 0
+  },
+  "new_members": {
+    "dex": 3,
+    "true_elf": 13,
+    "arm64_elf": 13
+  },
+  "scope": "host static only; no Bionic consumer/runtime, blackbox qualification, device or startup",
+  "device_commands": 0,
+  "container_commands": 0
+}

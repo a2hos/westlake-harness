@@ -1,0 +1,179 @@
+{
+  "schema": "nanhai.g284.elementx_github_raw.postrun_peer.v1",
+  "reviewed_at": "2026-10-04T11:24:16.339013+00:00",
+  "status": "ACCEPT_RAW_PAYLOAD_IDENTITY_ONLY",
+  "checks": [
+    {
+      "id": "script_same_as_root_release",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "start_to_result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "start_before_terminal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "candidate_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "root_release_scope",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "environment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "registry_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "registry_record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "api_body",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "api_asset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "command_set_order",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "command_rc:api",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "streams:api",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "command_rc:download",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "streams:download",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "command_rc:badging",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "streams:badging",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "command_rc:signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "streams:signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "api_argv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "one_bounded_get",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "transfer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "apk_bytes_sha",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "part_renamed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "zip_crc_manifest_abi",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "manifest_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "native_abi",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "signature_output",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "tool_hashes_before_after",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "id": "no_device_container_commands",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "passed": 30,
+  "failed": [],
+  "start_sha256": "d70468ed7782a6043b6fab3149b0493f4db14294c96678b75ee751d99ddb2c68",
+  "result_sha256": "5b3d1c116cbea0d87cc9f7b64deac5616fc14f3f04883dd96a061cce85e285f2",
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g284-elementx-github-raw-candidate-v3/elementx-v26.09.1-arm64.apk",
+  "apk_bytes": 117664325,
+  "apk_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "zip": {
+    "entries": 1411,
+    "bad_entry": null,
+    "manifest_count": 1,
+    "lib_abis": [
+      "arm64-v8a"
+    ]
+  },
+  "signer_cert_sha256": "6a2fdc3148049ce0d5c6e85010723b83fb207d20c7477f5c22ac53c877e92d47",
+  "raw_payload_delta_candidate": 1,
+  "startup_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "scope": "exact official GitHub raw APK bytes and local static checks only; root controls canonical acceptance"
+}

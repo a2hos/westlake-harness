@@ -1,0 +1,56 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T11:28:46.893575+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "original_goal_session_budget_preserved": true,
+  "container_execution": false,
+  "namespace_sandbox_execution": false,
+  "device_hold_preserved": true,
+  "monitor_pid_observed_live": 54898,
+  "counts": {
+    "raw_apk_accepted": 79,
+    "registered_raw": 74,
+    "supplemental_raw": 5,
+    "complete_static": 75,
+    "dex_entries": 166,
+    "true_elf_entries": 825,
+    "qualified_blackbox_packages": 2,
+    "qualified_blackbox_startups": 0,
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "g284_elementx_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/ROOT-RAW-INTAKE.json",
+    "sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e"
+  },
+  "g285_elementx_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g285-elementx-static-v1/ROOT-ACCEPTANCE.json",
+    "sha256": "1152fb8cb8109aae7e2177dc7580b7df668e464554ff098d5b030ac08ccede04"
+  },
+  "g279_graph_v7_no_go": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-graph-candidate-v1/ROOT-REVIEW.json",
+    "sha256": "2b6959a3d2cc9ad61094b0ff24f163434867f0a536d7724c0ccdaa15b307807f"
+  },
+  "g279_stage_v3_static_no_go": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v7-staging-candidate-v3/ROOT-REVIEW.json",
+    "sha256": "8e61a6a2f26b663cacc5a00e4d7479d462cf6c498c1c4a2996b41e97a9872f94"
+  },
+  "evo21_bounded_pilot": {
+    "path": "docs/nanhai-plus/evolution/EVO-0021-apk-publisher-digest-route/reviews/ROOT-CLOSURE.json",
+    "sha256": "b380c28ccb09a4aa5a73f25298410df2209ddf2377ae4d23ae2bb16559f5a8b6"
+  },
+  "ssh_preflight_executed": false,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_executed": false,
+  "next": "Establish independently evidenced original-owner graph ACK and fresh v7 EVO19 identity; release one safe v7 runner staging then native no-container Soong graph. Continue qualified blackbox acquisition and static portfolio without counting as startup.",
+  "task_summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "5c1b8f53e42e0b329080bb64ba8632a7f8a56176eaa6d28f12c3970faaad9028"
+  }
+}

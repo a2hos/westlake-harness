@@ -1,0 +1,56 @@
+{
+  "schema": "g284-elementx-github-raw-v3-prepare",
+  "at_utc": "2026-10-04T11:21:17.823373+00:00",
+  "status": "FROZEN_STATIC_CANDIDATE_NOT_EXECUTED",
+  "supersedes_v2_script": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v2/run.py",
+    "sha256": "4918944dbc43dcd12ef66b954e1d0aea00bce75faaa5f4e8c01d2b93d9974d22"
+  },
+  "v2_peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-v2-peer-review-v1/REVIEW.json",
+    "sha256": "0df392e41d82435598b2dc2aae3d1a21c974a2b3900edfeb317b56d875d657a9",
+    "verdict": "NO_GO_APK_GET_BOUNDS_AND_FROZEN_ENV_BINDING"
+  },
+  "script": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/run.py",
+    "sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+    "ast_parse": "PASS"
+  },
+  "fixture": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/FIXTURE.json",
+    "sha256": "22c67ad39a82893ef951606f59f875628e66aa8dabe60462bb98d288c3a1c3cc",
+    "cases": [
+      "API_AND_APK_EXACT_BYTE_CAPS_STATIC",
+      "START_EXCLUSIVE_NO_REPLAY",
+      "RESULT_ATOMIC_NO_REPLACE",
+      "START_AND_RESULT_DURABLE_CONTENT",
+      "TOP_LEVEL_EXCEPTION_TERMINAL_AND_REPLAY_REJECTED",
+      "SUBPROCESS_TIMEOUT_CAPTURED_FOR_TERMINAL_GATE",
+      "CURRENT_LOCAL_ENV_BINDING_PASS",
+      "FROZEN_ENV_CONFIG_SHA_REJECTED",
+      "STALE_ENV_BINDING_REJECTED"
+    ]
+  },
+  "minimal_v3_changes": [
+    "pin audit config SHA 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718 at runtime",
+    "API curl --max-filesize 1048576, --output bounded project file; no arbitrary large API stdout capture",
+    "APK curl --max-filesize 117664325, exactly registry and official asset byte count",
+    "generation/schema/staging paths changed from v2 to v3; all v2 START/RESULT and fixed registry/asset identity logic preserved"
+  ],
+  "production_artifacts": {
+    "start_exists": false,
+    "result_exists": false,
+    "staging_exists": false
+  },
+  "execution_counts": {
+    "api_get": 0,
+    "apk_get": 0,
+    "device": 0,
+    "container": 0,
+    "canonical_edits": 0
+  },
+  "limits": [
+    "Static/local fixture only; no payload identity, signature or raw acceptance observed.",
+    "If future execution leaves START without RESULT, state is UNKNOWN and no replay is authorized."
+  ]
+}

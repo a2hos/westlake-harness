@@ -1,0 +1,20 @@
+{
+  "schema": "g284-elementx-github-raw-v3-local-fixture",
+  "cases": [
+    "API_AND_APK_EXACT_BYTE_CAPS_STATIC",
+    "START_EXCLUSIVE_NO_REPLAY",
+    "RESULT_ATOMIC_NO_REPLACE",
+    "START_AND_RESULT_DURABLE_CONTENT",
+    "TOP_LEVEL_EXCEPTION_TERMINAL_AND_REPLAY_REJECTED",
+    "SUBPROCESS_TIMEOUT_CAPTURED_FOR_TERMINAL_GATE",
+    "CURRENT_LOCAL_ENV_BINDING_PASS",
+    "FROZEN_ENV_CONFIG_SHA_REJECTED",
+    "STALE_ENV_BINDING_REJECTED"
+  ],
+  "environment_config_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "script_sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+  "network_requests": 0,
+  "apk_get": 0,
+  "device": 0,
+  "container": 0
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "g284-elementx-github-raw-v3-start",
+  "at_utc": "2026-10-04T11:23:00.051450+00:00",
+  "status": "REMOTE_STATE_UNKNOWN_IN_PROGRESS",
+  "generation": "g284-elementx-github-raw-candidate-v3",
+  "script_sha256": "830398248b9b4fa7ae17608018d2855177835dd903cfd62bc3fce49bdc128243",
+  "url": "https://github.com/element-hq/element-x-android/releases/download/v26.09.1/app-fdroid-arm64-v8a-release-signed.apk",
+  "asset_id": 539529327,
+  "expected_artifact_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "expected_artifact_bytes": 117664325,
+  "meaning": "If RESULT.json is absent, inspect this execution; never blindly replay."
+}

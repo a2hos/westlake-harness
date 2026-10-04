@@ -1,0 +1,14 @@
+{
+  "schema": "nanhai.g279.runner_v6_staging_v2.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:16:31.508966+00:00",
+  "script_sha256": "493f263351544bdebef6b9948f20a79c5bd2d847aa936cc24497cea71d12fbf3",
+  "peer_sha256": "fb66f9cc1a6f5673e139c4b807e60336eb60b645903365321d5c5acffe10a786",
+  "decision": "ACCEPT_STATIC_PROTOCOL_ONLY__NO_GO_ACTUAL_STAGING",
+  "blocker": "conditional_unlink stat-to-unlink replacement race remains; fixed v6 runner --run also deliberately rc3",
+  "next": "Do not stage v6; produce reviewed executable graph-only successor with new SHA, and use no automatic pathname cleanup on uncertain remote state.",
+  "ssh_executed": false,
+  "staging_executed": false,
+  "graph_executed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "nanhai.evo21.decision.v1",
+  "state": "pilot_not_promoted",
+  "selected_improvement": "publisher digest/size exact-match gate before large APK GET",
+  "pilot_result": "Positive Element X and negative Element Classic controls discriminated correctly with 1.530 seconds of API transfer time and 27,879 response bytes total; no APK GET.",
+  "recommendation": "Use as a bounded candidate-selection check for publisher APIs with digest metadata; do not replace full APK hash, manifest, ZIP and signer verification or current owner admission.",
+  "next_evidence": "A separately reviewed one-shot full GET with matching payload SHA/size and signer, plus a future case showing avoided retry; otherwise remain pilot.",
+  "stop_condition": "API digest absent/mismatched, response identity drift, or any actual payload mismatch.",
+  "raw_delta": 0, "canonical_delta": 0, "device_delta": 0, "container_delta": 0
+}

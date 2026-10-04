@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai.g279.runner_v7_staging_v3.root_review.v1",
+  "reviewed_utc": "2026-10-04T11:28:27.526265+00:00",
+  "script_sha256": "c96ce2a8b53c0c22e70df0a2d59ef2d8760d6787f0a5758b8d3328c96fe4fe38",
+  "peer_sha256": "fe23824c154934b87fc8e060df5dcb225b2ab904e9a65a9127eefb32a487c174",
+  "decision": "ACCEPT_STATIC_O_EXCL_DESIGN_ONLY__NO_GO_ACTUAL_STAGING",
+  "proven": "v7 source exact pin, UNKNOWN before transport, O_EXCL final without automatic pathname cleanup, local 10 fixture pass, CLI --stage rc3",
+  "remaining": "Remote parent path non-atomic under concurrent same-UID mutation; interruption may leave partial final file; actual SSH, readback, owner graph ACK and EVO19 graph release absent",
+  "next": "Define project ownership/lease and read-only remote reconciliation contract, obtain independent execution release; do not stage v6 or v7 from static candidate.",
+  "ssh_executed": false,
+  "staging_executed": false,
+  "graph_executed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

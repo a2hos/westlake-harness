@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-04T11:25:31.087507+00:00",
+  "input_sha256": "09f31ad00937e9928d2a7e57fdc466f6ecf04cbe929f281d9d1acc0b9dd1a93b",
+  "acceptance_sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e",
+  "limits": {
+    "outer_seconds": 1350,
+    "zip_seconds": 120,
+    "metadata_seconds": 180,
+    "elf_seconds": 600,
+    "dex_seconds": 600,
+    "parallel": 1,
+    "retries": 0
+  },
+  "source_before_sha256": "787d35c4d8eef9dada4172c87f127e25d130233c48b64fae4c06357454daa2c7",
+  "attempts": 1
+}

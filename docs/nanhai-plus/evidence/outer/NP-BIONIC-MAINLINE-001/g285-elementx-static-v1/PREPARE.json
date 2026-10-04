@@ -1,0 +1,38 @@
+{
+  "schema": "g285-elementx-static-prepare-v1",
+  "at_utc": "2026-10-04T11:25:26.764119+00:00",
+  "status": "READY_FOR_ONE_ROOT_ACCEPTED_STATIC_INVENTORY",
+  "inputs_sha256": "09f31ad00937e9928d2a7e57fdc466f6ecf04cbe929f281d9d1acc0b9dd1a93b",
+  "scripts_sha256": {
+    "common.py": "cab0b525972e5b9ff5a06ac78ea102dba8fd99533162ed0d7efcba004bc45b6a",
+    "scan_phase.py": "7d1c9394a3fb79c0ca8e6ab804647ba538c4ff8963948f6731209f77f31330ba",
+    "run.py": "bd884bae0adde95e33d11e30028d8fe9459e8613d56bb8de1e95bb2fbddf1a45"
+  },
+  "root_raw_acceptance_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g284-elementx-github-raw-candidate-v3/ROOT-RAW-INTAKE.json",
+  "root_raw_acceptance_sha256": "7ddf318fc866f89dd58cea0d04d0bfa25e6882fd4f9a53a239c55c14adb30d5e",
+  "expected_apk_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+  "expected_apk_bytes": 117664325,
+  "light_zip_preview": {
+    "entries": 1411,
+    "dex_names": [
+      "classes.dex",
+      "classes2.dex",
+      "classes3.dex"
+    ],
+    "so_entries": 13,
+    "so_elf_magic": 13,
+    "abis": [
+      "arm64-v8a"
+    ]
+  },
+  "planned_phases": [
+    "zip",
+    "metadata",
+    "elf",
+    "dex"
+  ],
+  "full_scanner_executed": false,
+  "device": 0,
+  "container": 0,
+  "canonical_delta": 0
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "nanhai.evo21.inputs.v1",
+  "prediction": "Element X publisher F-Droid-flavor asset SHA and bytes equal the upstream F-Droid registration; Element Classic gplay asset differs from its F-Droid registration despite same version label.",
+  "anchors": [
+    {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g283-vivaldi-blackbox-qualification-v1/peer-review-v1/REVIEW.json", "sha256": "7d55a7de0db2023ec1e754931c654404ffd379e17030a31b4b65f70bfd3bd902", "role": "official whole-APK SHA can bind provenance and embedded signer after payload verification"},
+    {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/interpreter-identity-v8-independent-v1/RESULT.json", "sha256": "69f255a007cbfdea710c88db89cccdf1e7135aea45b2ffe033b94d07510f06ac", "role": "independent exact identity admission is distinct from execution"},
+    {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g282-elementx-raw-candidate-v1/RESULT.json", "sha256": "385f4219baa92df1ea84d1e6b929e6368491912239bc66a5874bfa665b0f627b", "role": "250.015-second F-Droid timeout, no accepted payload"},
+    {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evo20-ninja-closure-candidate-v1/peer-review-v1/REVIEW.json", "sha256": "bfbb9a36a2a84914530a952be6a85282a198d234e063a23cae43c2f9c5bcec9d", "role": "lexical proof can miss composition; digest route must fail closed on ambiguity"},
+    {"path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/upstream-apk-registry-v1/REGISTRY.json", "sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb", "role": "upstream exact SHA/size/version authority"}
+  ],
+  "known_answer_control": {"element_x_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3", "element_x_bytes": 117664325, "element_classic_fdroid_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9", "element_classic_fdroid_bytes": 72422482}
+}
