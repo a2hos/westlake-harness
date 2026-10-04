@@ -1,0 +1,52 @@
+{
+  "schema": "g328-adguardvpn-four-phase-host-static-independent-review-v1",
+  "decision": "GO_HOST_FOUR_PHASE_STATIC_ONLY",
+  "handoff_sha256": "6ad008438e2657506da3ae46375a75f1e5305dce9b0625a5b0eac8d6b05a3266",
+  "raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "raw_admission_decision": "ACCEPT_ONE_EXACT_OFFICIAL_HOST_RAW_ONLY",
+  "package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "version_code": 22022001,
+  "apk_bytes": 53867990,
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "source_binding": {
+    "census_sha256": "172ed695ff15da68e1cc27e1e1ca50347b82745e6f253088e3eac230eeedd9c2",
+    "start_sha256": "fa2a3c5d1acebb2873cae8745b88df3d3b66810f9e2ce64b500de75e5b71675f",
+    "terminal_sha256": "3fed2690db5f651d1deabcb81ef1afe980bdbf8d100c8638bc12f08c4cd2b587",
+    "runner_and_phase_sha_match_start": true,
+    "exact_raw_and_apk_sha_match_start": true,
+    "all_handoff_ref_size_and_sha_match": true,
+    "staging_apk_read_only": true,
+    "scanner_source_read_only": true,
+    "outputs_confined_to_project_evidence_and_tmp": true
+  },
+  "phase_results": {
+    "zip": {"rc": 0, "input_guard_before_after_equal": true},
+    "metadata": {"rc": 0, "input_guard_before_after_equal": true},
+    "dex": {"rc": 0, "input_guard_before_after_equal": true},
+    "elf": {"rc": 0, "input_guard_before_after_equal": true}
+  },
+  "inventory": {
+    "zip_entries": 1986,
+    "zip_crc_all": true,
+    "duplicate_zip_names": 0,
+    "root_dex_with_valid_magic": 3,
+    "embedded_dex": 0,
+    "nested_archive_magic_candidates": 0,
+    "true_arm64_elf64_little_endian_em_aarch64": 4,
+    "other_true_elf": {"armeabi-v7a": 4, "x86": 4, "x86_64": 4},
+    "non_elf_so": 0,
+    "arm64_readelf_and_abi_matches_machine_all": true,
+    "target_sdk": 35
+  },
+  "independent_checks": "40 local checks passed: all HANDOFF referenced sizes and SHA, accepted raw and APK identity, START source binding, four per-phase command/stream/guard receipts, direct ZIP CRC and content census, DEX and ELF class/endian/e_machine, ARM64 readelf inventory, and manifest identity.",
+  "claim_boundary": {
+    "host_static_inventory_candidate": true,
+    "marketing_page_2_16_68_1_not_this_apk_version": true,
+    "blackbox_qualified": false,
+    "installation_or_startup_proven": false,
+    "runtime_or_device_pass": false,
+    "authoritative_count_changed_by_review": false
+  },
+  "review_actions": "Read frozen local evidence and the admitted APK; no rerun of four-stage scanner, network, SSH, device, container, or mainline summary mutation."
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "adguardvpn-official-raw-host-handoff-v1",
+  "status": "CANDIDATE_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "at_utc": "2026-10-04T18:46:38.670029+00:00",
+  "app": "AdGuard VPN for Android",
+  "official_page": "https://adguard-vpn.com/en/free-vpn/android.html",
+  "official_version_history": "https://adguard-vpn.com/en/versions/android/release.html",
+  "official_closed_source_tracker": "https://github.com/AdguardTeam/AdGuardVPNForAndroid",
+  "google_play": "https://play.google.com/store/apps/details?id=com.adguard.vpn",
+  "google_play_package": "com.adguard.vpn",
+  "google_play_downloads": "10M+",
+  "publisher_claim": "AdGuard Software Limited",
+  "entry_url": "https://agrd.io/android_vpn_apk",
+  "entry_head_status": 301,
+  "fixed_url": "https://static.adtidy.net/android/release/adguard-vpn.apk",
+  "fixed_head_status": 200,
+  "get_metrics": {
+    "http_code": 200,
+    "ssl_verify_result": 0,
+    "num_redirects": 0,
+    "url_effective": "https://static.adtidy.net/android/release/adguard-vpn.apk",
+    "size_download": 53867990,
+    "time_total": 3.313373
+  },
+  "apk": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/adguard-vpn.apk",
+    "bytes": 53867990,
+    "sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63"
+  },
+  "exact_package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "version_code": 22022001,
+  "landing_page_display_version": "2.16.68.1",
+  "version_history_lists_apk_version": true,
+  "landing_page_version_mismatch_unresolved": true,
+  "target_sdk": 35,
+  "package_line": "package: name='com.adguard.vpn' versionCode='22022001' versionName='2.16.4' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'",
+  "native_code_line": "native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'",
+  "zip_members": 1986,
+  "zip_crc_all": true,
+  "native_elf_counts": {
+    "arm64-v8a": 4,
+    "armeabi-v7a": 4,
+    "x86": 4,
+    "x86_64": 4
+  },
+  "non_elf_so": [],
+  "aapt2_rc": 0,
+  "apksigner_rc": 0,
+  "verified_v2": true,
+  "signer_cert_sha256": "d2a1529cdff93bef67e50259326f248f82f0e0bc8443e714eedb87a05aca2415",
+  "publisher_certificate_independently_published": false,
+  "source_code_status": "AdGuard GitHub says this Android VPN app is not open source; TrustTunnel protocol source is separate.",
+  "existing_summary_exact_package_hits": 0,
+  "existing_registry_exact_package_hits": 0,
+  "receipts": {
+    "ACQUISITION.json": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/ACQUISITION.json",
+      "bytes": 3850,
+      "sha256": "6a4f6d4ef3db4f8ee7632e85a34141f02bd86fed6c615300061aae30d3da04d9"
+    },
+    "entry.headers.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/entry.headers.raw",
+      "bytes": 594,
+      "sha256": "70f7f4bae00d806bec7ddc77dd9215b2768645e965c47e36fef4aca6e3b086f4"
+    },
+    "fixed.headers.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/fixed.headers.raw",
+      "bytes": 664,
+      "sha256": "c64adb89400677af4348b2c49a8fc77ccf548e06c122739a105a55f8e0df65a6"
+    },
+    "get.headers.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/get.headers.raw",
+      "bytes": 664,
+      "sha256": "b8b3f2433c3ec361975bfc05d63519e6298f60787e5a95985ee514826c2482e0"
+    },
+    "entry.stdout.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/entry.stdout.raw",
+      "bytes": 594,
+      "sha256": "70f7f4bae00d806bec7ddc77dd9215b2768645e965c47e36fef4aca6e3b086f4"
+    },
+    "fixed.stdout.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/fixed.stdout.raw",
+      "bytes": 664,
+      "sha256": "c64adb89400677af4348b2c49a8fc77ccf548e06c122739a105a55f8e0df65a6"
+    },
+    "get.stdout.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/get.stdout.raw",
+      "bytes": 12853,
+      "sha256": "a249b3563a6093cc0d835bfc87c660db3ebbba9d28dbebd33a7d600bd2240bfd"
+    },
+    "aapt2.stdout.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/aapt2.stdout.raw",
+      "bytes": 6534,
+      "sha256": "e067436f66401715f0115a74b3559f401c6f53fd43bf28b5e22c9fe372f7c163"
+    },
+    "aapt2.stderr.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/aapt2.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner.stdout.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/apksigner.stdout.raw",
+      "bytes": 973,
+      "sha256": "8b97830548d21a863aaab0de4ae9fe94ad0ecd285b1310569aa3b5b48c86dbe7"
+    },
+    "apksigner.stderr.raw": {
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/apksigner.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "acquire_script": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-adguardvpn-official-intake-candidate-v1/acquire.py",
+    "bytes": 3681,
+    "sha256": "8a9ce5b04f18a924b3685b7601b2a9bb5259a5717419184530e33c922983ab81"
+  },
+  "raw_accepted": false,
+  "static_accepted": false,
+  "blackbox_qualified": false,
+  "startup_proven": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "g329-adguardvpn-blackbox-qualification-independent-review-v1",
+  "verdict": "GO_QUALIFIED_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "scope": "Qualification of one exact publisher-distributed, root-raw-accepted Android package for future overseas-mainstream blackbox testing; no static, install, cold-start, device or test PASS by this review.",
+  "candidate_sha256": "f059cefb3f2c2c5b1dc93750bd1c3b90a784890376fa77c5b3aa112269a95364",
+  "root_raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "raw_independent_review_sha256": "1792d25c05a776a5028e86e987b0616738812c2be4e33edf14ebe4bd8237a5cc",
+  "raw_handoff_sha256": "d553212bfd1e999f0c451dfd9a1093551af44b116adad7aa5cc2064d2ad39daa",
+  "source_capture_sha256": "91e0ed555f7c4fbe38d692280be0f1bcdbbf5628e3683d54f0c4896b0e4efb88",
+  "exact_package": {
+    "package": "com.adguard.vpn",
+    "version_name": "2.16.4",
+    "version_code": 22022001,
+    "bytes": 53867990,
+    "sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+    "checks": "Retained staging APK independently rehashed and matches CANDIDATE, HANDOFF and root raw admission; local aapt2 badging and accepted raw receipt match package and version. Raw admission is supplemental official host raw only."
+  },
+  "market_and_source_evidence": {
+    "google_play_url": "https://play.google.com/store/apps/details?id=com.adguard.vpn&hl=en_US",
+    "google_play": "Current primary Play listing at exact package ID shows AdGuard VPN — private proxy, publisher AdGuard Software Limited, and 10M+ cumulative downloads. This listing-level metric does not establish installs of exact 2.16.4 bytes or Play delivery equivalence.",
+    "publisher_repository_url": "https://github.com/AdguardTeam/AdGuardVPNForAndroid",
+    "publisher_repository": "Publisher README explicitly says AdGuard VPN for Android is not open source and this repository is an open bug tracker. Public protocol/component projects do not supply a verified buildable source tree for the exact client APK.",
+    "official_release_history_url": "https://adguard-vpn.com/en/versions/android/release.html",
+    "release_history": "Publisher's Android release history lists version 2.16.4; accepted APK manifest reports 2.16.4.",
+    "frozen_capture_sha256": {
+      "play.raw": "977e84a829bf0fc220f2834544b46c8b192176f970b9053e82aa33393ed163e1",
+      "github-readme.raw": "8d6715cd90b0888d3228255dd26455a76eb323af8263648ed59a2b7aaf93481e",
+      "version-history.raw": "006e477cda9e17861877b96e5ab5b98c7beaf844b7ada7e8bb883748a606a155"
+    }
+  },
+  "version_boundary": "Official marketing page reported 2.16.68.1 while the exact downloaded APK and official release history report 2.16.4. Cause remains unresolved; this review qualifies only the root-accepted 2.16.4 SHA, not a 2.16.68.1 artifact or current Play-delivered bytes.",
+  "identity_limit": "No independently publisher-published APK SHA or signer certificate pin is established. Official distribution chain, verified observed APK signer and root exact-byte admission support test-input qualification, not stronger publisher-byte attestation.",
+  "summary_snapshot": "Candidate pins TASK-SUMMARY SHA-256 351295fb92edbb5d281b46c63cc1c7338e47dbaf9ab4dc507bb83ae7f465c9ea, while review observed current SHA-256 ed251b3ed9de68527b278f6d0cebb79fe206c9badf53696428e08d07b658f8c6. Treat candidate's before-count 16 as a historical snapshot and re-read authoritative count/duplicate state before a root qualification-count edit; the exact-package eligibility conclusion does not depend on that number.",
+  "credit_by_peer": {
+    "qualified_test_input": 0,
+    "complete_host_static": 0,
+    "installation": 0,
+    "cold_start": 0,
+    "device": 0,
+    "note": "GO recommends a root qualification admission for this one package after current-state duplicate check; this peer receipt makes no canonical count change."
+  },
+  "reviewer_actions": {"apk_get": 0, "scan": 0, "install": 0, "device": 0, "container": 0, "bridge": 0, "canonical_edits": 0}
+}

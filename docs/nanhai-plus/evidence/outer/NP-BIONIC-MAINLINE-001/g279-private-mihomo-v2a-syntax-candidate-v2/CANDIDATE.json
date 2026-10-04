@@ -1,0 +1,60 @@
+{
+  "schema": "g279-private-mihomo-v2a-syntax-candidate-v2",
+  "at_utc": "2026-10-04T18:42:59.041976+00:00",
+  "decision_candidate": "GO_CODE_REVIEW_ONLY_NO_REAL_CREDENTIAL_EXECUTION",
+  "v1_no_go_peer_sha256": "789ea24905dcef105b41ec642b98e1174ffde49e4b7b2af845fa2773134a5ae1",
+  "exact_t_network_research_sha256": "c420665da31f0ecc69cd1045da28c9a343375290a627ed34e8ff8c45afc33f4c",
+  "runner_sha256": "baa92377f9cde9c0e2da424b892dd353fc8cbd8ceda01cdae3831c5d72452a42",
+  "fixtures_program_sha256": "8fafc93685a64589ce85a268c4543a2f043696096615e87965a7459b7964194d",
+  "fixture_sha256": "c6b407ca22341e50a95b31807d343d1f6438e26057caf7b61399f8c8da20177a",
+  "fixture_passed": 26,
+  "fixture_total": 26,
+  "mock_config_sha256": "0386deaef346c7de00892953098ef5e93b569b0c52b8c220125239629860d0bc",
+  "mock_syntax_rc": 0,
+  "handoff_sha256": "2877789e2b72f7ea58d1acfc75050ebcaa4b277b84b8bff6dc54b091d9a42c09",
+  "source_config_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "mihomo_binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "sandbox_exec_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "sandbox_policy_sha256": "80de7c41c4cac0234db39d259c29450b17c4e5768f24bc7dd9f9f8c75d2c12a3",
+  "freshness_gate": [
+    "source SHA re-read after first leaf",
+    "unique root PID/argv re-read",
+    "root socket inode re-read",
+    "controller peer PID/UID verified on every Unix HTTP connection",
+    "current leaf re-read immediately before private write",
+    "changed leaf or identity rejects"
+  ],
+  "selected_node_gate": [
+    "strict allowed type and top-level fields",
+    "strict nested ws-opts/reality-opts/alpn structure",
+    "external file/certificate/dependency fields reject",
+    "file URI and traversal reject"
+  ],
+  "syntax_gate": [
+    "macOS Seatbelt deny network policy, no container/namespace",
+    "local loopback denial probe before credential write",
+    "exact binary mock -t under same policy rc0",
+    "independent process group TERM/KILL/readback",
+    "survivor means 0600 private directory retained and NO_GO"
+  ],
+  "network_behavior_boundary": "Actual selected-node parser network attempts UNKNOWN; mock and official same-version source do not prove exact bundled binary has no network attempts. Seatbelt was tested only with no-credential fixture; no claim of remote connectivity.",
+  "root_release_present": false,
+  "peer_go_present": false,
+  "real_source_proxy_extracted": false,
+  "real_controller_queried": false,
+  "real_private_config_created": false,
+  "real_mihomo_t_executed": false,
+  "proxy_instance_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "bridge_writes": 0,
+  "count_delta": 0,
+  "known_limits": [
+    "Real selected node syntax and network attempt behavior not observed",
+    "Source-to-binary provenance for bundled Mihomo not established",
+    "Forced SIGKILL or host loss can leave private 0600 credential directory",
+    "v2b listener and v2c SSH remain separate"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "at_utc": "2026-10-04T18:51:06.773016+00:00",
+  "binary_sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+  "candidate_sha256": "28954bb45ee3dbfc629ba55828f6e008e59ff7adcd0e7a6850ef64be61f8dac9",
+  "chain_verified": true,
+  "credential_boundary": "No literal current node name, server, password or generated private YAML appears in release/START/TERMINAL; only private config SHA/size and syntax log SHA/size are exposed. Successful cleanup removed the raw actual syntax streams, so their hashes and contents cannot be independently recomputed postrun. Fixture mock.yaml contains only fake fixture credentials.",
+  "decision": "ACCEPT_BOUNDED_LOCAL_SYNTAX_ONLY",
+  "nonce_sha256": "57f15894fb343d5b40a86928bd38efae99f1d87a472614fbcdc1269a27364531",
+  "peer_review_sha256": "bb39fe5f7fb8188fb1f5f7158024cb0273be3a7b924ea89fedbf3379558eada9",
+  "postrun_readonly_observation": {
+    "matching_private_mihomo_process_observed": false,
+    "port_39027_tcp_listener_observed": false,
+    "private_root_empty": true,
+    "private_root_exists": true,
+    "source_binary_sandbox_current_sha_match_release": true
+  },
+  "review_actions": "Read-only review of exact receipts, current input hashes, private root listing, process/port status; no real config read, no runner replay, proxy, SSH, device, container, namespace, Bridge or count edit.",
+  "root_release_sha256": "43a355872301bb1413bd7e1b418827c58426e96ab5510c3bbde8f0dbb69a3386",
+  "runner_sha256": "a17afa0de9b3efa68a7ba9601a6b6fa4dc71394d39cb76b4e803f1c5035da61c",
+  "sandbox_policy_sha256": "490435d01602eb2ee0e96a8dc59eb55c9378832c67f3b926d8dc96e50bcdae24",
+  "sandbox_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "schema": "g279-private-mihomo-v2a-v3-peer-postrun-v1",
+  "scope": "One actual local sandboxed mihomo -t completed rc0 under the exact v3 release. This accepts local syntax only, not absence of network attempts, running private proxy, gz02 SSH, native graph, HelloWorld or device behavior. START nonce is consumed; do not replay.",
+  "source_sha256": "6d11128415287b191dff62c1d28095e01b4d559ef57847c78f188077b9c411a1",
+  "start_sha256": "e5807a0cbe728e9f3793cc6fa976f80d439c19f8f2fee943e2f857a7db6b9db3",
+  "terminal_claims_verified_as_record": {
+    "container_commands": 0,
+    "decision": "GO_V2A_LOCAL_SYNTAX_ONLY",
+    "device_commands": 0,
+    "gz02_connected": false,
+    "namespace_commands": 0,
+    "network_attempts_unknown": true,
+    "private_config_bytes": 513,
+    "private_config_sha256_recorded": true,
+    "private_dir_removed": true,
+    "proxy_instance_started": false,
+    "sandbox_denial_probe_pass": true,
+    "sandbox_spawn_denial_pass": true,
+    "syntax_log_bytes": {
+      "stderr": 0,
+      "stdout": 615
+    },
+    "syntax_log_sha256": {
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "1f7aad50786611c5b9f955235f17a0273b137c8e954e2ffb6d5f9a004e408f51"
+    },
+    "syntax_process_group_clean": true,
+    "syntax_rc": 0
+  },
+  "terminal_sha256": "6c52be4ac3115d56716def80d958cbe3a41602a62f7dad0a45f2ce9adbcd563e"
+}

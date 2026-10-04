@@ -1,0 +1,122 @@
+{
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "at_utc": "2026-10-04T18:49:15.748882+00:00",
+  "authoritative_count_changed": false,
+  "blackbox_qualified": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "four_phases_rc0": true,
+  "non_elf_so": 0,
+  "nonce": "1e45a6aff7c8f8238a1d97836b14896d",
+  "other_true_elf": 12,
+  "raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "rc": 0,
+  "root_dex": 3,
+  "rows": [
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phase.py",
+        "zip"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 0.47093683294951916,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:49:06.052476+00:00",
+      "nonce": "1e45a6aff7c8f8238a1d97836b14896d",
+      "phase": "zip",
+      "rc": 0,
+      "started_at": "2026-10-04T18:49:05.581570+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "95192422e07ec0bf954d9210d53d88a03bf7b0e2d046fffc8ada380d50582e8e",
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phase.py",
+        "metadata"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 0.41245575004722923,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:49:06.465471+00:00",
+      "nonce": "1e45a6aff7c8f8238a1d97836b14896d",
+      "phase": "metadata",
+      "rc": 0,
+      "started_at": "2026-10-04T18:49:06.053038+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f288915930f93d08b455af39cd8774b1ae5e8ce2d380f8f74b7c80665975e42e",
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phase.py",
+        "dex"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 7.231698166928254,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:49:13.697627+00:00",
+      "nonce": "1e45a6aff7c8f8238a1d97836b14896d",
+      "phase": "dex",
+      "rc": 0,
+      "started_at": "2026-10-04T18:49:06.466067+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "11fccecafad5ba53df6f38f012c2a7fa893e5eaae5cc2fd0c59a5a6f4788ecbc",
+      "timeout_seconds": 900
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phase.py",
+        "elf"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 2.050316374981776,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:49:15.748460+00:00",
+      "nonce": "1e45a6aff7c8f8238a1d97836b14896d",
+      "phase": "elf",
+      "rc": 0,
+      "started_at": "2026-10-04T18:49:13.698205+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e786d9f386b85963c2646296e8dcac28c29d471ddfea1cb27a362aea06fa1aa9",
+      "timeout_seconds": 900
+    }
+  ],
+  "schema": "g328-adguardvpn-four-static-terminal-candidate-v1",
+  "startup_proven": false,
+  "target_sdk": 35,
+  "true_arm64_elf": 4
+}

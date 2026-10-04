@@ -1,0 +1,69 @@
+{
+  "schema": "adguardvpn-official-apk-independent-host-raw-review-v1",
+  "decision": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "handoff_sha256": "d553212bfd1e999f0c451dfd9a1093551af44b116adad7aa5cc2064d2ad39daa",
+  "package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "version_code": 22022001,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/blackbox-adguardvpn-official-intake-candidate-v1/adguard-vpn.apk",
+  "apk_bytes": 53867990,
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "official_distribution": {
+    "landing_page": "https://adguard-vpn.com/en/free-vpn/android.html",
+    "official_apk_shortlink": "https://agrd.io/android_vpn_apk",
+    "shortlink_head_rc": 0,
+    "shortlink_http_status": 301,
+    "shortlink_redirect": "https://static.adtidy.net/android/release/adguard-vpn.apk",
+    "fixed_head_rc": 0,
+    "fixed_head_http_status": 200,
+    "get_rc": 0,
+    "get_http_status": 200,
+    "get_tls_verify_result": 0,
+    "get_effective_url": "https://static.adtidy.net/android/release/adguard-vpn.apk",
+    "get_download_bytes": 53867990
+  },
+  "version_discrepancy": {
+    "landing_page_display": "2.16.68.1",
+    "downloaded_apk_manifest": "2.16.4",
+    "official_version_history": "https://adguard-vpn.com/en/versions/android/release.html",
+    "version_history_lists_2_16_4": true,
+    "interpretation": "The current official shortlink supplies an APK whose own manifest reports 2.16.4; the official release history lists 2.16.4. The marketing-page 2.16.68.1 label is different. Its cause is unresolved, so only the exact downloaded APK identity is admitted and no 2.16.68.1 claim is made."
+  },
+  "host_integrity": {
+    "referenced_receipt_sizes_and_sha_match": true,
+    "zip_entries": 1986,
+    "zip_crc_all": true,
+    "zip_duplicate_names": 0,
+    "manifest_present": true,
+    "aapt2_rerun_rc": 0,
+    "aapt2_output_matches_capture": true,
+    "target_sdk": 35,
+    "apksigner_rerun_rc": 0,
+    "apksigner_output_matches_capture": true,
+    "signature_v2_verified": true,
+    "signer_cert_sha256": "d2a1529cdff93bef67e50259326f248f82f0e0bc8443e714eedb87a05aca2415",
+    "independently_published_publisher_cert_pin": false
+  },
+  "native_architecture": {
+    "arm64_elf64_little_endian_em_aarch64": 4,
+    "armeabi_v7a_elf32_em_arm": 4,
+    "x86_elf32_em_386": 4,
+    "x86_64_elf64_em_x86_64": 4,
+    "non_elf_so": 0,
+    "classification_method": "Archive member ELF magic, class, endian, and e_machine rather than path alone"
+  },
+  "duplicate_and_qualification_boundary": {
+    "exact_package_absent_from_current_summary": true,
+    "exact_package_only_in_this_candidate_within_project_json_search": true,
+    "play_package": "com.adguard.vpn",
+    "play_same_package": true,
+    "play_publisher": "AdGuard Software Limited",
+    "play_cumulative_downloads": "10M+",
+    "blackbox_qualification_accepted_here": false,
+    "complete_host_static_accepted_here": false,
+    "install_or_startup_proven": false,
+    "authoritative_count_delta_by_review": 0
+  },
+  "verification": "27 independent local checks passed: frozen receipt hashes and sizes, exact APK SHA and bytes, captured HTTPS redirects and GET metrics, ZIP CRC and duplicate names, content-based ELF headers, aapt2 identity, apksigner v2 signer, and exact-package nonduplication. aapt2 and apksigner reruns returned rc 0 with outputs identical to captured evidence.",
+  "review_actions": "Read local frozen evidence, reran host-only metadata and signature verification, checked publisher version history and site shortlink; no APK redownload, device, container, summary mutation, or blackbox qualification."
+}

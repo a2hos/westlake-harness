@@ -1,0 +1,20 @@
+{
+  "container_commands": 0,
+  "device_commands": 0,
+  "network_commands": 0,
+  "phase": "zip",
+  "rc": 0,
+  "source_after": {
+    "apk": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+    "census": "172ed695ff15da68e1cc27e1e1ca50347b82745e6f253088e3eac230eeedd9c2",
+    "raw": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "source_before": {
+    "apk": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+    "census": "172ed695ff15da68e1cc27e1e1ca50347b82745e6f253088e3eac230eeedd9c2",
+    "raw": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "source_guard_equal": true
+}

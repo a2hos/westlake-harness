@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T18:50:51+00:00",
+  "decision": "ACCEPT_ONE_EXACT_FOUR_PHASE_HOST_STATIC_ONLY",
+  "package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "candidate_handoff_sha256": "6ad008438e2657506da3ae46375a75f1e5305dce9b0625a5b0eac8d6b05a3266",
+  "independent_review_sha256": "42a7e6d962d14af5d39aa099e8c6717f0046b33dc3518715b2a35da92821754a",
+  "phases": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "static_before": 99,
+  "static_after": 100,
+  "semantic_dex_before": 322,
+  "semantic_dex_after": 325,
+  "true_arm64_elf_before": 1442,
+  "true_arm64_elf_after": 1446,
+  "other_abi_true_elf": 12,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "limits": "Host-only four-phase inventory of exact accepted 2.16.4 bytes; marketing-page version discrepancy is not resolved. No install, runtime, cold start, on-screen result, or device PASS.",
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,135 @@
+{
+  "schema": "g328-adguardvpn-four-static-handoff-v1",
+  "status": "CANDIDATE_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "at_utc": "2026-10-04T18:49:29.682806+00:00",
+  "package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "apk_bytes": 53867990,
+  "root_raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "terminal_rc": 0,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "source_guard_all_equal": true,
+  "zip_entries": 1986,
+  "zip_crc_all": true,
+  "root_dex": 3,
+  "embedded_dex": 0,
+  "true_arm64_elf": 4,
+  "non_target_abi_true_elf": {
+    "armeabi-v7a": 4,
+    "x86": 4,
+    "x86_64": 4
+  },
+  "non_elf_so": 0,
+  "nested_archive_name_candidates": [],
+  "target_sdk": 35,
+  "refs": {
+    "CENSUS.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/CENSUS.json",
+      "bytes": 3912,
+      "sha256": "172ed695ff15da68e1cc27e1e1ca50347b82745e6f253088e3eac230eeedd9c2"
+    },
+    "START.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/START.json",
+      "bytes": 1060,
+      "sha256": "fa2a3c5d1acebb2873cae8745b88df3d3b66810f9e2ce64b500de75e5b71675f"
+    },
+    "RESULT.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/RESULT.json",
+      "bytes": 6718,
+      "sha256": "3fed2690db5f651d1deabcb81ef1afe980bdbf8d100c8638bc12f08c4cd2b587"
+    },
+    "census.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/census.py",
+      "bytes": 3195,
+      "sha256": "2d254407e6454afc1200569906ac06be08053647284b527a57197c76f1cf572e"
+    },
+    "phase.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phase.py",
+      "bytes": 5172,
+      "sha256": "a3c59cf4948ea8f7d90630f9a9d040af7b1e58e086127dc6196d2364ab355165"
+    },
+    "run.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/run.py",
+      "bytes": 3487,
+      "sha256": "6455da81cce562caf85ac0ee3770e11c8790f667c0ee32e77f8d128f0273abc8"
+    },
+    "zip_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/zip-COMMAND.json",
+      "bytes": 1410,
+      "sha256": "1e7a573b1e4a3ce629ffe4e87910244c4a548e906ca775684c508b6346c71c61"
+    },
+    "zip_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/zip/RESULT.json",
+      "bytes": 833,
+      "sha256": "7898643d33c99d89dd3983cadcb5f4ab9083ed262928c7a8c95459b3a4a65e40"
+    },
+    "metadata_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/metadata-COMMAND.json",
+      "bytes": 1420,
+      "sha256": "300fb67db92860176f05803ccb52b0fdc92867ada0809424e0448960e78de1ac"
+    },
+    "metadata_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/metadata/RESULT.json",
+      "bytes": 838,
+      "sha256": "fb9bc1ba1a90158f7e6b1feef07b37ac13a7e2539625992b64d8decb26b688c1"
+    },
+    "dex_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/dex-COMMAND.json",
+      "bytes": 1408,
+      "sha256": "f485bddbd0ec71f56da03aed9376d335561c900a1e878387d1ed93da6d07fa58"
+    },
+    "dex_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/dex/RESULT.json",
+      "bytes": 833,
+      "sha256": "a3215795f1e5e285e8ba9cb029126f6e24b4969527d84cc108006040c9e52749"
+    },
+    "elf_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/elf-COMMAND.json",
+      "bytes": 1408,
+      "sha256": "8bd7d351a2dacae91fd14445ba12e61bf92063aca86a3d2e7ec719ee2bc26379"
+    },
+    "elf_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/elf/RESULT.json",
+      "bytes": 833,
+      "sha256": "191274ab6d7850d78903e4e9db140e1ccc9d5b00bbbb797c4198ad95653ea8ef"
+    },
+    "zip_facts": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/zip/ZIP-FACTS.json",
+      "bytes": 223,
+      "sha256": "40cf67b4e7d799730cc86f58884921f035bbd47d8d2db9fdd3ea9d7f38594530"
+    },
+    "manifest": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/metadata/MANIFEST.json",
+      "bytes": 1829,
+      "sha256": "aedc4b3ed64d87721300b774573086c4b9e74fe0961dd619adc54ac5b97490e6"
+    },
+    "dex_inventory": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/dex/DEX-INVENTORY.json",
+      "bytes": 12252381,
+      "sha256": "63ed4776e51811e3bfbbb2b6a4cc7fe7cc9c20ffbfc482f077ac36fb47e39091"
+    },
+    "elf_inventory": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/elf/ELF-INVENTORY.json",
+      "bytes": 1576292,
+      "sha256": "f18d0c33dafa75021fa094037bf77e5271383b9b34bd93166f83f8edcb035cd7"
+    },
+    "elf_classification": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/phases/elf/ELF-CLASSIFICATION.json",
+      "bytes": 2151,
+      "sha256": "b72c10a214b4e54d3acabb4b616b2b5010b72cbd14e35d61692f7cee397baddd"
+    }
+  },
+  "scope": "complete four-phase host static candidate only",
+  "independent_review": false,
+  "authoritative_count_changed": false,
+  "blackbox_qualified": false,
+  "cold_start_proven": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

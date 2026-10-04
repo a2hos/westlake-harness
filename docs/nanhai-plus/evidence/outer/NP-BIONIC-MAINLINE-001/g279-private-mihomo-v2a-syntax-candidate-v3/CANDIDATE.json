@@ -1,0 +1,50 @@
+{
+  "schema": "g279-private-mihomo-v2a-syntax-candidate-v3",
+  "at_utc": "2026-10-04T18:48:11.950550+00:00",
+  "decision_candidate": "GO_INDEPENDENT_CODE_REVIEW_ONLY_NO_REAL_EXECUTION",
+  "v2_no_go_peer_sha256": "4d7f20533c6fa9ff49ba39cab0aff8801af397ce2f0fd95bac3779b693bb3780",
+  "v2_candidate_sha256": "4bee5f0139804c3fe0e37270c94c4475eb17759e0b3af1940ee9b4f02b837231",
+  "runner_sha256": "a17afa0de9b3efa68a7ba9601a6b6fa4dc71394d39cb76b4e803f1c5035da61c",
+  "fixture_program_sha256": "e1305717d219cfa42b358ba7313b497980f781acc8df313338ac2a2a92d28acb",
+  "fixture_sha256": "9f41b057bcd4722248e99b7c165d8c3c02be0d750cc4cce90e25794b41a0e251",
+  "fixture_passed": 29,
+  "fixture_total": 29,
+  "handoff_sha256": "f8a50b1de74e22830eccdd5fa4d3060ecee0c8a3fc8b3dc66f6bc4719ff38188",
+  "sandbox_exec_sha256": "abc5bb136d6b5cce8fa85d789f78e3326c51ca60cae637b2064adfb67a1dcd9a",
+  "sandbox_policy": "(version 1)(allow default)(deny network*)(deny process-fork)",
+  "sandbox_policy_sha256": "490435d01602eb2ee0e96a8dc59eb55c9378832c67f3b926d8dc96e50bcdae24",
+  "escape_negative": {
+    "fork_setsid": {
+      "rc": 1,
+      "stderr_sha256": "0b23578623425b8f53463d1eac74daec4e0dfbde4c0110792d2e47b8e229bf85",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "posix_spawn": {
+      "rc": 1,
+      "stderr_sha256": "192396c20d0e9b7084644f8eeb2643cb4265bd9695cba9ef42021fa163f1570c",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "both_permission_denied": true
+  },
+  "exact_binary_fake_node_t_rc": 0,
+  "root_release_present": false,
+  "peer_go_present": false,
+  "real_controller_queried": false,
+  "real_selected_node_copied": false,
+  "real_private_config_created": false,
+  "real_mihomo_t_executed": false,
+  "proxy_instance_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "count_delta": 0,
+  "scope": "code and no-credential offline fixtures only; real run still needs independent peer and fixed root release",
+  "boundary": [
+    "Tested fork+setsid and posix_spawn escape paths denied under exact native Seatbelt policy",
+    "Process-group TERM/KILL/readback remains a secondary cleanup gate",
+    "Real selected-node parser network attempts UNKNOWN",
+    "No formal proof of every possible process-spawn API or actual credential-bearing syntax result",
+    "No v2b listener or v2c SSH acceptance"
+  ]
+}

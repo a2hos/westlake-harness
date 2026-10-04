@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:41:54+00:00",
+  "checked_at": "2026-10-04T18:52:11+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 101,
+    "downloaded_payloads": 102,
     "latest_raw_admission": {
       "packages": [
-        "hideme.android.vpn.noPlayStore"
+        "com.adguard.vpn"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-hideme-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816",
-      "scope": "exact official hide.me noPlayStore APK host raw only; Play package popularity not inherited; no static/blackbox/startup acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-adguardvpn-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+      "scope": "exact official AdGuard VPN 2.16.4 APK host raw only; landing-page version differs; no static/blackbox/startup acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,27 +53,27 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 99,
-    "complete_inventory_dex_entries": 322,
+    "complete_static_inventories": 100,
+    "complete_inventory_dex_entries": 325,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1442,
+    "complete_inventory_native_elf_entries": 1446,
     "latest_complete_static_admission": {
-      "package": "hideme.android.vpn.noPlayStore",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "bfda759e29cf1dcc3e4efc0480c051ec153d1ab8d00b5fb76d3203d982ab35e6",
-      "scope": "four-phase host static of exact accepted bytes; 3 DEX and 20 true ARM64 ELF; no blackbox qualification or startup"
+      "package": "com.adguard.vpn",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "75ea0c79bde613708a3c19e2d162371b2e9625c91423663003d37e0c7c32c18f",
+      "scope": "four-phase host static of exact accepted 2.16.4 bytes; 3 DEX and 4 true ARM64 ELF; no blackbox qualification or startup"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 26,
-    "qualified_blackbox_packages": 16,
+    "supplemental_payloads": 27,
+    "qualified_blackbox_packages": 17,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -90,7 +90,8 @@
       "com.goldenfrog.vyprvpn.app",
       "com.lemon.lvoverseas",
       "com.zhiliaoapp.musically",
-      "com.expressvpn.vpn"
+      "com.expressvpn.vpn",
+      "com.adguard.vpn"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -101,10 +102,10 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.expressvpn.vpn",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
-      "sha256": "79819ee3fb39ebbd4da7c01925e6ea76fbd5108869995bd7b326e6780a4e87a9",
-      "scope": "exact-package overseas-mainstream blackbox test qualification only; targetSdk37 risk, no startup"
+      "package": "com.adguard.vpn",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g329-adguardvpn-blackbox-qualification-candidate-v1/ROOT-QUALIFICATION.json",
+      "sha256": "fcaa00952dfe11ddfecfa784cfe34958e5e2700c846cb0df91d05bebf41b78e8",
+      "scope": "exact-package overseas-mainstream closed-source blackbox test input only; 10M+ Play package-level downloads; no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -2164,5 +2165,61 @@
     },
     "real_config_tested": false,
     "gz02_connected": false
+  },
+  "g279_private_native_proxy_v2a_v2": {
+    "status": "root_no_go_real_execution_v2",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v2/ROOT-NO-GO.json",
+      "sha256": "da2024b8b861354e242c1739cc8a4b0ddcfeb464d19e5ccd7baec8f1338d2ecb"
+    },
+    "remaining_blocker": "possible child session escape from original process group",
+    "real_config_generated": false,
+    "private_process_started": false,
+    "gz02_connected": false,
+    "startup_delta": 0
+  },
+  "g328_adguardvpn_official_raw": {
+    "status": "accepted_one_exact_official_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-adguardvpn-official-intake-candidate-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a"
+    },
+    "raw_after": 102,
+    "static_delta": 0,
+    "qualified_blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "g328_adguardvpn_four_static": {
+    "status": "accepted_exact_four_phase_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g328-adguardvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "75ea0c79bde613708a3c19e2d162371b2e9625c91423663003d37e0c7c32c18f"
+    },
+    "static_after": 100,
+    "semantic_dex_after": 325,
+    "true_arm64_elf_after": 1446,
+    "qualified_blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2a_v3": {
+    "status": "root_accepted_one_local_syntax_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2a-syntax-candidate-v3/ROOT-POSTRUN-ACCEPTANCE.json",
+      "sha256": "6eb6519c08035d3511dbc482ad0ef89276924011580822132105a1f0ad1d7766"
+    },
+    "actual_syntax_rc": 0,
+    "private_process_started": false,
+    "gz02_connected": false,
+    "graph_result_observed": false,
+    "startup_delta": 0
+  },
+  "g329_adguardvpn_blackbox_qualification": {
+    "status": "qualified_exact_package_test_input_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g329-adguardvpn-blackbox-qualification-candidate-v1/ROOT-QUALIFICATION.json",
+      "sha256": "fcaa00952dfe11ddfecfa784cfe34958e5e2700c846cb0df91d05bebf41b78e8"
+    },
+    "qualified_after": 17,
+    "startup_delta": 0
   }
 }

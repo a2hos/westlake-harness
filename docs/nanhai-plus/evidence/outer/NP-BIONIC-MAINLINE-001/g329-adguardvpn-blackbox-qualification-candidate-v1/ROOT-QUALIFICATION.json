@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "at_utc": "2026-10-04T18:52:11+00:00",
+  "decision": "QUALIFY_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "version_code": 22022001,
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "candidate_sha256": "f059cefb3f2c2c5b1dc93750bd1c3b90a784890376fa77c5b3aa112269a95364",
+  "independent_review_sha256": "eec270077a228f760fcf32c278b9b8c461d2156b2daffafb7b143008ec5bb128",
+  "current_summary_before_sha256": "a43c97f6f6eae83240b8573d1ea74aa8123043ec906a99859cb708759d624208",
+  "current_duplicate_check": "com.adguard.vpn absent from 16 accepted qualified package IDs before this decision",
+  "basis": "Official exact-package distribution; current primary Google Play exact package lists AdGuard Software Limited and 10M+ cumulative downloads; publisher README states Android VPN client is closed source.",
+  "qualified_before": 16,
+  "qualified_after": 17,
+  "limits": "Qualification is an eligible blackbox test input only. Play downloads are package-level, not exact 2.16.4 byte installs; marketing-page 2.16.68.1 mismatch is unresolved. No installation, cold start, device or Bionic tool PASS.",
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

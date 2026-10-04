@@ -1,0 +1,48 @@
+{
+  "schema": "g329-adguardvpn-blackbox-test-qualification-candidate-v1",
+  "at_utc": "2026-10-04T18:49:55.636832+00:00",
+  "decision_candidate": "GO_QUALIFIED_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "scope": "One root-raw-accepted publisher-distributed Android VPN package eligible for future blackbox tests; not launch, static, installation or device PASS.",
+  "package": "com.adguard.vpn",
+  "version_name": "2.16.4",
+  "version_code": 22022001,
+  "apk_bytes": 53867990,
+  "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+  "publisher": "AdGuard Software Limited",
+  "play_exact_package_url": "https://play.google.com/store/apps/details?id=com.adguard.vpn&hl=en_US",
+  "play_cumulative_downloads": "10M+",
+  "market_scope": "Google Play 10M+ applies to the com.adguard.vpn listing across versions, not to exact 2.16.4 APK.",
+  "official_distribution": "https://agrd.io/android_vpn_apk redirects to https://static.adtidy.net/android/release/adguard-vpn.apk, per root-accepted raw evidence.",
+  "official_release_history": "https://adguard-vpn.com/en/versions/android/release.html lists 2.16.4",
+  "version_discrepancy": "Publisher landing page displayed 2.16.68.1 while accepted APK manifest says 2.16.4; cause unresolved; no 2.16.68.1 APK claim.",
+  "source_code_status": "Publisher AdGuardVPNForAndroid README explicitly says AdGuard VPN for Android is not open source and repository is a bug tracker; public TrustTunnel or other components do not establish buildable source for exact app.",
+  "source_repository": "https://github.com/AdguardTeam/AdGuardVPNForAndroid",
+  "root_raw_admission_sha256": "f7bfc86123e569ae8b6d0f2c7f7fe8e240567a87899f7cbe93e3d9f396d9116a",
+  "raw_independent_review_sha256": "1792d25c05a776a5028e86e987b0616738812c2be4e33edf14ebe4bd8237a5cc",
+  "raw_handoff_sha256": "d553212bfd1e999f0c451dfd9a1093551af44b116adad7aa5cc2064d2ad39daa",
+  "source_capture_sha256": "91e0ed555f7c4fbe38d692280be0f1bcdbbf5628e3683d54f0c4896b0e4efb88",
+  "source_raw_sha256": {
+    "play.raw": "977e84a829bf0fc220f2834544b46c8b192176f970b9053e82aa33393ed163e1",
+    "github-readme.raw": "8d6715cd90b0888d3228255dd26455a76eb323af8263648ed59a2b7aaf93481e",
+    "version-history.raw": "006e477cda9e17861877b96e5ab5b98c7beaf844b7ada7e8bb883748a606a155"
+  },
+  "summary_snapshot_sha256": "351295fb92edbb5d281b46c63cc1c7338e47dbaf9ab4dc507bb83ae7f465c9ea",
+  "qualified_blackbox_package_before": 16,
+  "package_in_qualified_before": false,
+  "qualification_count_delta_by_candidate": 0,
+  "host_static_accepted_here": false,
+  "install_pass": false,
+  "startup_pass": false,
+  "device_pass": false,
+  "blackbox_test_input_accepted_here": false,
+  "execution": {
+    "device_commands": 0,
+    "container_commands": 0,
+    "bridge_commands": 0
+  },
+  "limits": [
+    "Official distribution and package identity do not prove the same exact APK bytes are the Google Play delivery.",
+    "No independently published publisher certificate pin beyond publisher URL chain and observed APK signer.",
+    "Independent review and root admission required before changing authoritative qualification count."
+  ]
+}

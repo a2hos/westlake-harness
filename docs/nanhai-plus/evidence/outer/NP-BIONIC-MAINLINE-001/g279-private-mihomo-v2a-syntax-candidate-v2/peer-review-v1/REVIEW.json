@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-04T18:45:32.922509+00:00",
+  "blocking_finding": "stop_group and group_members inspect only the original PGID. A child that creates a new session/process group can survive after the original PGID empties; syntax_group may then report group_clean=True and execute cleanup(d), deleting the private file while the escaped child remains. The existing fixture tests a same-PGID sleeper and sandbox-inherited network denial, not this escaped-child case. Exact bundled binary descendant behavior on the real selected node is unobserved. Do not issue the peer GO expected by exact_release or execute real credential-bearing -t until this is fail-closed by an independently tested process-spawn restriction or reliable descendant/escape contract.",
+  "candidate_sha256": "4bee5f0139804c3fe0e37270c94c4475eb17759e0b3af1940ee9b4f02b837231",
+  "current_readonly_probe": {
+    "controller_kernel_identity_pass": true,
+    "node_name_or_credentials_output": false,
+    "selected_schema_pass": true,
+    "selected_type": "hysteria2",
+    "selected_type_allowed": true,
+    "source_sha_exact": true
+  },
+  "decision": "NO_GO_V2A_REAL_EXECUTION_V2",
+  "exact_t_research_sha256": "c420665da31f0ecc69cd1045da28c9a343375290a627ed34e8ff8c45afc33f4c",
+  "fixture_program_sha256": "8fafc93685a64589ce85a268c4543a2f043696096615e87965a7459b7964194d",
+  "fixture_sha256": "c6b407ca22341e50a95b31807d343d1f6438e26057caf7b61399f8c8da20177a",
+  "limits": [
+    "The official same-version source and mock -t do not prove exact bundled binary source provenance or absence of actual real-node network attempts; those remain UNKNOWN.",
+    "Seatbelt probes demonstrate blocked loopback TCP for the test process and a child, not an exhaustive empirical test of every network family on real config.",
+    "Forced SIGKILL or host loss may retain private 0600 credentials and requires exact manual cleanup.",
+    "No proxy listener, gz02 SSH, graph, device, container, namespace or Bridge action has been accepted."
+  ],
+  "next": "Keep candidate, v1 NO_GO and fixtures immutable. Add a no-credential negative fixture where a child escapes PGID; require fail-closed and credential retention or prevent forking under the exact Seatbelt policy, then independently review a new candidate. Root release and START must remain absent for v2.",
+  "resolved_v1_findings": [
+    "Late source SHA, unique root PID/argv, root socket inode and kernel peer PID/UID are rechecked with a fresh current-leaf query immediately before private config write; changed identities fail closed.",
+    "selected_node_schema is a strict allowlist for hysteria2, tuic, vless and vmess, including ws-opts, reality-opts and alpn nested shape; unknown file or dependency fields reject.",
+    "The fixed /usr/bin/sandbox-exec Seatbelt deny-network policy is a native macOS process policy, not an OCI container, image or namespace. The exact-policy no-credential loopback and descendant probes returned denied; exact Mihomo binary mock -t returned rc0 under this policy.",
+    "The runner creates an independent process group, applies TERM/KILL and readback, and retains the 0600 private credential directory when group cleanup cannot be proven."
+  ],
+  "review_scope": "Read-only source, hashes, existing fixtures, and nonsecret local controller/type/schema probe only; no real private config, real mihomo -t, SSH, device, container, namespace, source modification or count update.",
+  "runner_sha256": "baa92377f9cde9c0e2da424b892dd353fc8cbd8ceda01cdae3831c5d72452a42",
+  "schema": "g279-private-mihomo-v2a-syntax-peer-review-v2",
+  "v1_peer_sha256": "789ea24905dcef105b41ec642b98e1174ffde49e4b7b2af845fa2773134a5ae1"
+}

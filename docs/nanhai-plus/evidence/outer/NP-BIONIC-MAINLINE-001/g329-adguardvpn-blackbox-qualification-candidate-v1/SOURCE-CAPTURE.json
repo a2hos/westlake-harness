@@ -1,0 +1,38 @@
+{
+  "schema": "g329-adguardvpn-primary-source-capture-v1",
+  "at_utc": "2026-10-04T18:49:55.635655+00:00",
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.adguard.vpn&hl=en_US",
+      "local": "play.raw",
+      "bytes": 1303974,
+      "sha256": "977e84a829bf0fc220f2834544b46c8b192176f970b9053e82aa33393ed163e1",
+      "supports": [
+        "exact_listing_package_com.adguard.vpn",
+        "publisher_AdGuard_Software_Limited",
+        "listing_cumulative_downloads_10M_plus"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardVPNForAndroid/master/README.md",
+      "local": "github-readme.raw",
+      "bytes": 6857,
+      "sha256": "8d6715cd90b0888d3228255dd26455a76eb323af8263648ed59a2b7aaf93481e",
+      "supports": [
+        "official_repository_says_AdGuard_VPN_for_Android_not_open_source",
+        "repository_is_open_bug_tracker"
+      ]
+    },
+    {
+      "url": "https://adguard-vpn.com/en/versions/android/release.html",
+      "local": "version-history.raw",
+      "bytes": 178503,
+      "sha256": "006e477cda9e17861877b96e5ab5b98c7beaf844b7ada7e8bb883748a606a155",
+      "supports": [
+        "official_Android_release_history_lists_2.16.4"
+      ]
+    }
+  ],
+  "capture_method": "curl --fail --location --silent --show-error --max-time 20; three commands completed rc 0",
+  "limits": "Web pages are observations at capture time; Play cumulative installs apply to package listing, not exact 2.16.4 APK. GitHub README is publisher statement, not exhaustive code audit."
+}

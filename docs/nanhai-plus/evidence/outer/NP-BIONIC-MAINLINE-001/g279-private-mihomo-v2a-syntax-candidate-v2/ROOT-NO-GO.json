@@ -1,0 +1,22 @@
+{
+  "schema": "g279-private-mihomo-v2a-syntax-root-no-go-v2",
+  "at_utc": "2026-10-04T18:45:57+00:00",
+  "decision": "NO_GO_V2A_REAL_EXECUTION_V2",
+  "candidate_sha256": "4bee5f0139804c3fe0e37270c94c4475eb17759e0b3af1940ee9b4f02b837231",
+  "runner_sha256": "baa92377f9cde9c0e2da424b892dd353fc8cbd8ceda01cdae3831c5d72452a42",
+  "independent_review_sha256": "4d7f20533c6fa9ff49ba39cab0aff8801af397ce2f0fd95bac3779b693bb3780",
+  "resolved_from_v1": [
+    "late source/process/socket/selection identity checks",
+    "strict selected-node schema including nested fields",
+    "native macOS Seatbelt deny-network no-credential probes; no container or namespace"
+  ],
+  "remaining_blocker": "A child could create a new session and escape original PGID cleanup; no negative fixture or exact process-spawn restriction proves fail-closed cleanup before credential directory removal.",
+  "release_issued": false,
+  "start_exists": false,
+  "real_private_config_generated": false,
+  "proxy_instance_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

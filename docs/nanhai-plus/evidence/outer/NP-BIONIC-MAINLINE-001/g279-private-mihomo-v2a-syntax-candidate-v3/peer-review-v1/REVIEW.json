@@ -1,0 +1,51 @@
+{
+  "at_utc": "2026-10-04T18:49:27.956461+00:00",
+  "candidate_sha256": "28954bb45ee3dbfc629ba55828f6e008e59ff7adcd0e7a6850ef64be61f8dac9",
+  "decision": "GO_V2A_SYNTAX_ONLY",
+  "exact_t_research_sha256": "c420665da31f0ecc69cd1045da28c9a343375290a627ed34e8ff8c45afc33f4c",
+  "fixed_policy": "(version 1)(allow default)(deny network*)(deny process-fork)",
+  "fixed_policy_sha256": "490435d01602eb2ee0e96a8dc59eb55c9378832c67f3b926d8dc96e50bcdae24",
+  "fixture_program_sha256": "e1305717d219cfa42b358ba7313b497980f781acc8df313338ac2a2a92d28acb",
+  "fixture_sha256": "9f41b057bcd4722248e99b7c165d8c3c02be0d750cc4cce90e25794b41a0e251",
+  "judgment": "The v2 escaped-child blocker is materially reduced: under the same fixed native Seatbelt policy, both no-credential fork-then-setsid and posix_spawn paths fail with EPERM before a child exists; the exact bundled Mihomo mock-node -t fixture returns rc0. The policy is a macOS process restriction, not an OCI container, image or namespace. This supports one exact root-released local credential-bearing syntax check, with the existing process-group cleanup retained as a second gate.",
+  "limits": [
+    "These negative probes do not formally prove every possible process creation API is denied. The fixture label sandbox_descendant_denied is an inherited test name: in v3 its nested subprocess is stopped at process creation and does not independently prove descendant network behavior.",
+    "Real selected-node -t rc and its attempted network behavior remain UNKNOWN. Seatbelt no-network policy is intended to deny egress; only local no-credential probes were observed.",
+    "Success here is not proxy listener, gz02 authentication, native graph, HelloWorld or device acceptance.",
+    "Forced SIGKILL or host loss can leave the private 0600 credential directory, requiring nonce-based manual audit and exact cleanup."
+  ],
+  "local_reverification": {
+    "fork_and_spawn_denial_probe_pass": true,
+    "mihomo_binary_sha_match": true,
+    "network_denial_probe_pass": true,
+    "real_credentials_used": false,
+    "release_start_terminal_absent": true,
+    "sandbox_binary_sha_match": true
+  },
+  "mock_config_sha256": "0386deaef346c7de00892953098ef5e93b569b0c52b8c220125239629860d0bc",
+  "next_release": "Root may separately issue the exact fixed v3 root release for one local sandboxed mihomo -t check only, after confirming current source/binary hashes and no START. No replay. v2b proxy listener and v2c SSH need separate review and release.",
+  "raw_negative_receipts": {
+    "fork_setsid": {
+      "actual_error": "os.fork PermissionError EPERM; setsid branch not reached",
+      "rc": 1,
+      "stderr_sha256": "0b23578623425b8f53463d1eac74daec4e0dfbde4c0110792d2e47b8e229bf85",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "posix_spawn": {
+      "actual_error": "os.posix_spawn PermissionError EPERM; spawned child not reached",
+      "rc": 1,
+      "stderr_sha256": "192396c20d0e9b7084644f8eeb2643cb4265bd9695cba9ef42021fa163f1570c",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "review_scope": "Read-only candidate/raw fixture review and re-run of no-credential local deny probes only; no real controller query in this v3 review, private config, actual mihomo -t, proxy instance, gz02, SSH, device, container, namespace, Bridge or count edit.",
+  "runner_sha256": "a17afa0de9b3efa68a7ba9601a6b6fa4dc71394d39cb76b4e803f1c5035da61c",
+  "schema": "g279-private-mihomo-v2a-syntax-peer-review-v3",
+  "v2_gates_unchanged_or_preserved": [
+    "Exact source SHA, unique root-owned process PID/argv, root-owned Unix socket and kernel peer PID/UID, with current selected leaf re-read immediately before private credential write.",
+    "Strict selected-node type and nested field tree; fixed gz02 /32 PROXY then MATCH REJECT config.",
+    "Exact candidate/runner/peer/release SHA and fresh one-shot START nonce; no release or START currently exists.",
+    "Private 0700/0600 O_EXCL config and logs; fixed sandboxed exact binary -t only; process-group TERM/KILL/readback and retain-private-on-unproven-cleanup."
+  ],
+  "v2_no_go_peer_sha256": "4d7f20533c6fa9ff49ba39cab0aff8801af397ce2f0fd95bac3779b693bb3780"
+}
