@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T16:56:35.889762+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 r4 / ARM64 / App single Bionic; 200 distinct original APK cold starts, at least 100 overseas-mainstream blackbox",
+  "task_summary_sha256": "b71870fb525acde0c1f1bbc804586f713fd1f31492980121708aea556347a401",
+  "accepted_raw": 94,
+  "accepted_full_host_static": 91,
+  "qualified_blackbox_packages": 13,
+  "cold_start_verified": 0,
+  "bionic_whole_tools_verified": 0,
+  "g311_blackbox_qualification_root_sha256": "583a71d47339ddf1ee97c9a5b0b7ac35376ff8693764189e6b7ecf010087e2ee",
+  "g279_v13_l5_root_sha256": "762007b713becedfbe9afddd137b67d715b0f2965187cd88f9c305841a9a25b8",
+  "evo37_result_sha256": "79aa413c6bf7f2d5293dc943135505963570ce3588bbdafc33bd77893b2e53ba",
+  "next": "independent review and exact release of fresh four-path readback, then separately reviewed native Soong graph-only attempt",
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "namespace_commands": 0,
+  "original_goal_session_budget_preserved": true
+}
