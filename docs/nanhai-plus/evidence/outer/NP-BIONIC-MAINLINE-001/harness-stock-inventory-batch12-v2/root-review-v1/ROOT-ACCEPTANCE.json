@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-04T07:00:39.941414+00:00",
+  "status": "ACCEPT_TWO_COMPLETE_STATIC_ROWS_ONLY_BATCH12_OVERALL_FAILED",
+  "outer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/root-run-v1/OUTER-RESULT.json",
+    "sha256": "5cad1223c5567fa2103b08fb87e0340cdcb5116a525506d0a427d6c2ac658818",
+    "rc": 2,
+    "timed_out": false
+  },
+  "runtime": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/RESULT.json",
+    "sha256": "29c5e45bc9697b146ad4786c95d4c9b27317532ce84e3fe5adb81f2e632cbbd4",
+    "rc": 2
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2-actual-review-v1/REVIEW.json",
+    "sha256": "724c4881f5fda39a26598d6e4fb6b752dc8fbf1ed90081c6d92e8ce16aa52417"
+  },
+  "accepted_rows": [
+    {
+      "package": "org.woheller69.gpscockpit",
+      "result": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/packages/org.woheller69.gpscockpit/RESULT.json",
+        "sha256": "8d83f2c9c2ea9f6760b4029acbe35c2249e741f2d93208c10eac58632f2d4c1e"
+      },
+      "dex_entries": 1,
+      "elf_entries": 0,
+      "readelf_rc0": 0,
+      "scope": "complete static inventory only; zero ELF does not prove Java-only"
+    },
+    {
+      "package": "org.andstatus.app",
+      "result": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/packages/org.andstatus.app/RESULT.json",
+        "sha256": "b7edd4e4bda0d93aaa208c9f4e4eb852810027d4650317263c237a23258ce785"
+      },
+      "dex_entries": 2,
+      "elf_entries": 0,
+      "readelf_rc0": 0,
+      "scope": "complete static inventory only; zero ELF does not prove Java-only"
+    }
+  ],
+  "accepted_packages_delta": 2,
+  "accepted_dex_delta": 3,
+  "accepted_elf_delta": 0,
+  "static_complete_after": 63,
+  "dex_complete_after": 120,
+  "elf_complete_after": 438,
+  "failed_rows": [
+    {
+      "package": "com.junkfood.seal",
+      "reason": "ELF header assertion on ZIP magic .zip.so; not complete"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "reason": "per-package timeout 90s; partial readelf only, no complete worker result"
+    }
+  ],
+  "guards": "source/APK/venv/tool pre/post same; batch overall still rc2",
+  "retained_temp_bytes": 15061204,
+  "cleanup_complete": false,
+  "full_gap_scan": false,
+  "device_commands": 0,
+  "startup_delta": 0,
+  "whole_tool_delta": 0,
+  "next": "Classify suffix non-ELF without declaring compatibility; Briar needs bounded separate scan experiment"
+}

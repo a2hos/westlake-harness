@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-04T06:56:02.184292+00:00",
+  "status": "ROOT_ACTUAL_TERMINAL_REVIEW_FAILURE_ONLY",
+  "release_sequence": 271,
+  "actual_session": 87818,
+  "terminal_chunk": "b5c83a",
+  "terminal_rc": 2,
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v15/runtime-result/RESULT.json",
+    "sha256": "6918974df8396dd4f26e05c5086ff0d18bced29ff16bb49e89385e53bb50b4b7"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g271-independent-pre-run-review-v1/COMPLETION-REVIEW.json",
+    "sha256": "6d5963c1e10bf5f8597447941cac5325c253d97efed74065f100ca9a7d9102c6"
+  },
+  "first_real_errors": [
+    "cts/tests/tests/hardware/Android.bp:19:1: unrecognized module type \"aidl_interface\"",
+    "cts/tests/tests/appop/aidl/AppOpsUserService/Android.bp:20:1: unrecognized module type \"aidl_interface\"",
+    "cts/tests/tests/binder_ndk/libbinder_ndk_test/Android.bp:51:1: unrecognized module type \"aidl_interface\"",
+    "cts/tests/tests/binder_ndk/libbinder_ndk_test/Android.bp:75:1: unrecognized module type \"aidl_interface\"",
+    "cts/tests/tests/binder_ndk/libbinder_ndk_test/Android.bp:92:1: unrecognized module type \"aidl_interface\"",
+    "cts/tests/tests/tv/config/tuner/Android.bp:19:1: unrecognized module type \"xsd_config\""
+  ],
+  "unrecognized_module_type_diagnostics": 6,
+  "g270_five_missing_modules_absent_in_this_first_error_set": true,
+  "graph_generation_pass": false,
+  "target_compile_commands": 0,
+  "target_ninja_executed": false,
+  "source_pre_post_guard_equal": true,
+  "sdk_guard_pass_as_recorded": true,
+  "out_export": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v15/runtime-result/export-out.stdout.log",
+    "sha256": "8e3d649992c06ab543f32f5ebf04b53a89b8d2da8229cfd614f175f6fb222c3f",
+    "bytes": 917929472,
+    "members": 1696,
+    "unexpanded_tar": true,
+    "special_members": {
+      ".ninja_fifo": {
+        "raw_name": "./.ninja_fifo",
+        "normalized_name": ".ninja_fifo",
+        "kind": "fifo",
+        "bytes": 0,
+        "mode": 420,
+        "uid": 501,
+        "gid": 501,
+        "mtime": 1791096707,
+        "readable": false,
+        "extracted": false,
+        "recreated": false
+      }
+    },
+    "member_count": 1696,
+    "total_member_bytes": 916962193
+  },
+  "tmp_export": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v15/runtime-result/export-tmp.stdout.log",
+    "sha256": "01d9aba77ef16a6316765f3b16452defbd819b623eb654b00a1f34a933a4b930",
+    "bytes": 51599872,
+    "members": 1020,
+    "unexpanded_tar": true
+  },
+  "all_owned_containers_and_volumes_cleaned_as_recorded": true,
+  "fresh_docker_inspect_not_performed": true,
+  "startup_delta": 0,
+  "whole_tool_delta": 0,
+  "device_commands": 0,
+  "next": "Pin exact R4 registration providers for aidl_interface and xsd_config; new G272 candidate/ACK/seal only; no G271 replay"
+}

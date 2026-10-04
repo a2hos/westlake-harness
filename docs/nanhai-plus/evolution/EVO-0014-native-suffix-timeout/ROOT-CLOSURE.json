@@ -1,0 +1,25 @@
+{
+  "id": "EVO-0014",
+  "at_utc": "2026-10-04T07:01:07.702005+00:00",
+  "status": "CLOSED_LOCAL_PILOT_VALIDATED_NOT_PROMOTED",
+  "trigger_actual_result_groups": [
+    "G271-actual-graph-failure",
+    "APK-A2-four-raw-accepted",
+    "Batch12-partial-two-complete-two-failed"
+  ],
+  "direction": "static scanner suffix-versus-content and timeout outcome routing",
+  "verified_improvements": 1,
+  "global_promotion": false,
+  "whole_89_tool_delta": 0,
+  "startup_delta": 0,
+  "qualified_blackbox_delta": 0,
+  "peer_reported_within_120_seconds": true,
+  "root_independent_timing_measurement": false,
+  "root_rerun_pilot_rc": 0,
+  "negative_cases_unresolved": 4,
+  "pilot_sha256": "e761ed81947f7f46c0ea176b290eea9388d7b0fba763d5d9f29e3845f36cdd87",
+  "trial_sha256": "cb5102d42e2d6dbc2042ffd26299b9d07e7240e7e1b508a4c607980d95d8da18",
+  "review_sha256": "76e6e0b54cd694a6a012133a927cf27cfd94cc514b8a48cc43cf0ab75180e94a",
+  "scope": "read-only classification; no scanner replacement or Seal/Briar static acceptance",
+  "rollback": "Reject if input/member identity drifts, magic/timeout semantics differ, or incomplete package reaches complete count"
+}

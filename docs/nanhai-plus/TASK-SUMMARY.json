@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T06:41:18.275550+00:00",
+  "checked_at": "2026-10-04T07:03:04.033068+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,31 +35,33 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 65,
+    "downloaded_payloads": 69,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 61,
-    "complete_inventory_dex_entries": 117,
+    "complete_static_inventories": 63,
+    "complete_inventory_dex_entries": 120,
     "complete_inventory_native_elf_entries": 438,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
-      "org.sufficientlysecure.keychain"
+      "org.sufficientlysecure.keychain",
+      "com.junkfood.seal",
+      "org.briarproject.briar.android"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 63,
+    "registered_upstream_payloads": 67,
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
-    "release": 270,
+    "release": 271,
     "terminal_rc": 2,
-    "actual_exec_session": 87143,
-    "terminal_chunk": "ab03cc",
+    "actual_exec_session": 87818,
+    "terminal_chunk": "b5c83a",
     "host_tools_actual_loader_pass": 10,
-    "soong_bootstrap_successful_steps": 235,
+    "soong_bootstrap_successful_steps": 236,
     "soong_bootstrap_total_steps": 236,
     "stock_clang_plugin_compiled": true,
     "target_compile_commands": 0,
@@ -346,16 +348,40 @@
     {
       "path": "docs/nanhai-plus/evolution/EVO-0013-blackbox-acquisition-join/reviews/ROOT-CLOSURE.json",
       "sha256": "aff423b7fe075123cfb192c1cf98fcd250c1cd7d1b4cec7e370c71c788a2e214"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v15/root-release-v1/G271-REVIEW.json",
+      "sha256": "29612042f051f3243e0c12f8db027cf0de34e5960fd4bbd4e4ea90417a9ddf9f"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a2/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "5719ff0d849f890dcab3fd8af31b26453b6e63176523d3c80af5ec437a0ca233"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "dd3c13e939c50717943f023a8c6eafaa9d63fb96255f35301dc8f0e12020dc1d"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/root-review-v1/RETAINED-TEMP-CLEANUP.json",
+      "sha256": "55c8fa477505006c35b2af9da1b30cbac1b19417ee7bbee459ec376e47f33051"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0014-native-suffix-timeout/ROOT-CLOSURE.json",
+      "sha256": "219d6b03d268b3a5c1efbb90b5fef975681bf694181a8812449b643031d1d94b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g272-r4-aidl-xsdc-source-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "6247b5a25d4d90dd71e3396d2757308a6a396e6200ae2dec78d94ec5d44d0dd3"
     }
   ],
   "bionic_stock_graph": {
-    "release": 270,
+    "release": 271,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "five undefined modules: doclava, jsilver, compatibility-host-util, cts-tradefed, vts-tradefed",
-    "failure_location": "build/make/tools/apicheck/Android.bp:19:1; build/soong/test_suites/Android.bp:54:1",
+    "first_failure": "unrecognized Soong module types: aidl_interface x5, xsd_config x1",
+    "failure_location": "cts/tests/tests/hardware/Android.bp:19:1 (first of six)",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -374,25 +400,26 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 271,
-    "next_input": "five exact full R4 source trees and one CTS ART external file",
-    "candidate_independently_reviewed": true,
-    "root_reviewed": true,
+    "prospective_release": 272,
+    "next_input": "exact R4 system/tools/aidl and system/tools/xsdc source trees; stock-path view and symlink closure still pending",
+    "candidate_independently_reviewed": false,
+    "root_reviewed": false,
     "original_owner_ACK": false,
     "execution_ready": false,
-    "G270_terminal": true
+    "G270_terminal": true,
+    "G271_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0013",
+    "latest": "EVO-0014",
     "verified_improvement_this_round": 1,
-    "scope": "Ten Tier-B candidate exact historical artifact join local pilot",
+    "scope": "Read-only .so suffix versus content and timeout result routing pilot",
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 82.917,
+    "duration_seconds": null,
     "limit_seconds": 120,
     "pending_actual_result_groups": 0,
     "trigger_every_groups": "3-4",
-    "next": "Wait for 3-4 new actual result groups; pilot is not a blackbox startup or full portfolio qualification"
+    "next": "Wait for 3-4 new actual result groups; timing under 120s peer reported, not independently clocked"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -555,5 +582,52 @@
     "startup_delta": 0,
     "whole_command_watchdog_seconds": 300,
     "outer_observed_seconds": 44.738
+  },
+  "g271_actual": {
+    "exec_session": 87818,
+    "terminal_chunk": "b5c83a",
+    "outer_rc": 2,
+    "stock_rc": 1,
+    "graph_generation_pass": false,
+    "first_error": "cts/tests/tests/hardware/Android.bp:19:1 unrecognized module type aidl_interface",
+    "aidl_interface_sites": 5,
+    "xsd_config_sites": 1,
+    "source_sdk_guards_pass": true,
+    "target_compile_commands": 0,
+    "device_commands": 0
+  },
+  "apk_intake_a2_actual": {
+    "outer_rc": 0,
+    "outer_seconds": 54.17091754206922,
+    "accepted_raw_payloads": 4,
+    "accepted_raw_after": 69,
+    "startup_delta": 0,
+    "source_postguard_verified": false
+  },
+  "scanner_batch12_actual": {
+    "outer_rc": 2,
+    "outer_seconds": 100.57829712505918,
+    "watchdog_timed_out": false,
+    "individually_accepted_packages": [
+      "org.woheller69.gpscockpit",
+      "org.andstatus.app"
+    ],
+    "DEX_delta": 3,
+    "ELF_delta": 0,
+    "failed_packages": {
+      "com.junkfood.seal": "ZIP magic in .zip.so classified as ELF by scanner",
+      "org.briarproject.briar.android": "per-package 90s timeout"
+    },
+    "retained_temp_cleaned_after_review": true,
+    "startup_delta": 0
+  },
+  "g272_source_admission": {
+    "aidl_regular_files": 2048,
+    "aidl_symlinks": 2,
+    "xsdc_regular_files": 137,
+    "source_only_accepted": true,
+    "stock_path_materialized": false,
+    "symlink_targets_resolved": false,
+    "graph_executed": false
   }
 }

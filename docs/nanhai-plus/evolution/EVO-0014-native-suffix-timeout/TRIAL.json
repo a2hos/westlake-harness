@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "package": "org.woheller69.gpscockpit",
+      "class": "COMPLETE_CANDIDATE_RECEIPT_ONLY",
+      "rc": 0,
+      "timed_out": false,
+      "failed_elf_entry": [],
+      "member_prefix_hex": null
+    },
+    {
+      "package": "org.andstatus.app",
+      "class": "COMPLETE_CANDIDATE_RECEIPT_ONLY",
+      "rc": 0,
+      "timed_out": false,
+      "failed_elf_entry": [],
+      "member_prefix_hex": null
+    },
+    {
+      "package": "com.junkfood.seal",
+      "class": "SO_SUFFIX_NON_ELF_UNRESOLVED",
+      "rc": 2,
+      "timed_out": false,
+      "failed_elf_entry": [
+        "lib/arm64-v8a/libaria2c.zip.so"
+      ],
+      "member_prefix_hex": "504b0304"
+    },
+    {
+      "package": "org.briarproject.briar.android",
+      "class": "TIMEOUT_PARTIAL_ONLY",
+      "rc": -9,
+      "timed_out": true,
+      "failed_elf_entry": [],
+      "member_prefix_hex": null
+    }
+  ],
+  "negatives": {
+    "suffix_without_failed_check": "UNRESOLVED",
+    "suffix_with_elf_magic": "UNRESOLVED",
+    "timeout_without_kill_rc": "UNRESOLVED",
+    "partial_rc0_without_complete_flag": "UNRESOLVED"
+  }
+}

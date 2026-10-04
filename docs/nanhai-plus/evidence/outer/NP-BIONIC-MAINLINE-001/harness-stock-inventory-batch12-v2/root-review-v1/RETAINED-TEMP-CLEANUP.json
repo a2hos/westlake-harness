@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-04T07:02:11.050258+00:00",
+  "status": "OWNED_TIMEOUT_TEMP_REMOVED_AFTER_TERMINAL_AND_PEER_REVIEW",
+  "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2/runtime-result/tmp/org.briarproject.briar.android/westlake-elf-hp39vbyv.so",
+  "bytes": 15061204,
+  "sha256_before": "ec54b954399a75cddbc76862fbd887d91714531e21be03795708483809a2e7ed",
+  "outer_pid": 2938,
+  "outer_terminal_rc": 2,
+  "peer_review": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch12-v2-actual-review-v1/REVIEW.json",
+  "scope": "derived temporary ELF extraction only; original APK and frozen receipts unchanged",
+  "removed_confirmed": true
+}

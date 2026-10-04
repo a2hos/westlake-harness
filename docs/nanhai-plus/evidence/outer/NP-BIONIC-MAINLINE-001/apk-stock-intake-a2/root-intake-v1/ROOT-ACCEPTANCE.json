@@ -1,0 +1,68 @@
+{
+  "status": "ACCEPTED_EXACT_RAW_STOCK_PAYLOAD_BYTES_ONLY",
+  "checked_at": "2026-10-04T06:48:46.488461+00:00",
+  "batch": "A2",
+  "terminal_rc": 0,
+  "outer_observed_seconds": 54.17091754206922,
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a2-candidate-v1/HANDOFF.json",
+    "sha256": "d71e1924901d486a2c0003ab22152227f6271d73341a6aeaae8476efc3e8d18f"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a2-independent-peer-v1/REVIEW.json",
+    "sha256": "e634f21ddd65274df0868a0830bdbec62d712844d868255d870c666ec3c02f28",
+    "passed_checks": 54
+  },
+  "result": {
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/RESULT.json",
+    "sha256": "d6823587b5a1a8f4f38def95bafd4f7ea64898fddcd30e0567c31d7362c4d5b7"
+  },
+  "outer_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a2-candidate-v1/OUTER-RESULT.json",
+    "sha256": "83105f127ddea68f413489f20f0730025964818677d7a3df3df6522aae05f4de"
+  },
+  "payloads": [
+    {
+      "registry_package_label": "org.woheller69.gpscockpit",
+      "record_id": "r-701ff1969588a61b7132",
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/org.woheller69.gpscockpit/body.raw",
+      "bytes": 2270153,
+      "sha256": "e8fe61ebd1acc66c52998f9e020febf031f729708bd1e4a89daa3ae4c4243de9",
+      "scope": "exact registered raw bytes and all ZIP CRC only"
+    },
+    {
+      "registry_package_label": "org.andstatus.app",
+      "record_id": "r-75a8063c266cb00bdf99",
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/org.andstatus.app/body.raw",
+      "bytes": 8944313,
+      "sha256": "8fa68144623e16fc72b1c187a798c25be17846ac28ab5fac59c13b2316079c4c",
+      "scope": "exact registered raw bytes and all ZIP CRC only"
+    },
+    {
+      "registry_package_label": "com.junkfood.seal",
+      "record_id": "r-f73f4bae2485895d875c",
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/com.junkfood.seal/body.raw",
+      "bytes": 43057559,
+      "sha256": "7070a3d4f079046912b4b8dde4edc8d1ef6eade3c9c98b02bfcaba3669c11d98",
+      "scope": "exact registered raw bytes and all ZIP CRC only"
+    },
+    {
+      "registry_package_label": "org.briarproject.briar.android",
+      "record_id": "r-0003958f55af89107e58",
+      "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a2-candidate-v1/org.briarproject.briar.android/body.raw",
+      "bytes": 50629011,
+      "sha256": "9025888a4a5f5268e1ccbcd840bd07e51e9eaf1d7bbf305ca262b8afc662e372",
+      "scope": "exact registered raw bytes and all ZIP CRC only"
+    }
+  ],
+  "accepted_new_payloads": 4,
+  "raw_payloads_after": 69,
+  "complete_static_inventory_delta": 0,
+  "signature_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "startup_delta": 0,
+  "whole_tool_delta": 0,
+  "device_commands": 0,
+  "pre_post_source_guard": "preflight pinned; no independent invocation-time postguard receipt, not claimed",
+  "note": "No manifest semantics, split completeness, signature, publisher binding, full scanner, device install or startup."
+}

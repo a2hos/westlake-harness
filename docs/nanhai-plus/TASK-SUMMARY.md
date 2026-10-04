@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T06:41:18.275550+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T07:03:04.033068+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -13,14 +13,16 @@
 | 历史 Musl 已尝试 / 未尝试 | 58 / 31 | 原 86 项已尝试 56，加新增项已尝试 2 |
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
-| 原版 APK 下载载荷接受 | 65 | 上游登记原包 63，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
-| APK 完整静态清点 | 61 | 共 117 个 DEX、438 个 ELF；VLC、Signal 与 Keychain 未计完整清点 |
+| 原版 APK 下载载荷接受 | 69 | 上游登记原包 67，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
+| APK 完整静态清点 | 63 | 共 120 个 DEX、438 个 ELF；VLC、Signal、Keychain、Seal 与 Briar 未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
 
-最新构建图实际结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；G271/v15 候选经 570 项独立检查和 root 审查，现待原 octos-inner 新 ACK，尚未执行，仍不代表跨仓依赖或 Soong 图闭合。G270 不重放。
+最新构建图实际结果：G271 已终态（exec87818，terminal b5c83a，rc2）。原 owner 对 17 项输入的 ACK、root 封包及独立预审成立；宿主 Soong 236/236 后原版 CTS 分析出现 5 处 `aidl_interface` 和 1 处 `xsd_config` 未识别类型，首处为 `cts/tests/tests/hardware/Android.bp:19:1`。G270 的 5 个缺模块错误未作为本轮首错出现。源码/SDK 前后守卫一致，OUT/TMP 哈希和资源清理有独立复核；目标编译命令仍为 0。精确 R4 `system/tools/aidl`（2048 文件、2 链接）与 `system/tools/xsdc`（137 文件）已按官方 Git 身份准入为只读源码树，stock 路径与 AIDL 两个链接目标尚未核验可用，G272 候选未封、未执行。
+
+历史构建图结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；G271/v15 候选经 570 项独立检查和 root 审查，后由原 octos-inner 新 ACK 与 root 封包执行为 G271；源码准入及 ACK 均不代表图闭合。G270 不重放。
 
 上一轮 G269 终态 rc2，唯一缺项 `junit`；前轮 Abseil 墙已消失。该历史失败保留。
 
@@ -42,6 +44,8 @@
 
 第 9 次原包取件（v9）实际 terminal c63157/rc0，Noice、Retro Music、FitoTrack、WiFiAnalyzer 四份精确锁定原包经 279 项独立检查和 root 接受，累计 **65**。第 11 批四份新原包静态扫描实际 exec84077/terminal f1152e/rc0，在外层 300 秒看门狗内完成，245 项独立检查和 root 接受新增 4 DEX、8 ELF，累计 **61 包、117 DEX、438 ELF**。Noice 仅完成静态清点，未验证启动。
 
+A2 取件四份精确登记原包（GPS Cockpit、AndStatus、Seal、Briar）实际外层 rc0、54.17 秒，104,901,036 字节，独立 54 项复核及 root 接受后累计 **69** 原包；未证执行期间独立源码 postguard。batch12 首候选交接工程 gate rc1 被保留，v2 修订候选经 96 项独审和 gate rc0 后一次执行：外层 exec22556/terminal b8a122/rc2、100.58 秒、未触发 300 秒看门狗。仅 GPS Cockpit 与 AndStatus 两份完整静态结果逐包接受，新增 3 DEX、0 ELF，累计 **63 包、120 DEX、438 ELF**。Seal 的 `libaria2c.zip.so` 实为 ZIP 头，扫描器 ELF 断言失败；Briar 90 秒单包超时，均不计完整。Briar 遗留的派生临时 SO 已在终态独审后按 SHA 收据删除。
+
 WhatsApp 官网页面标记 `2.26.32.84` 的原始下载 148,660,262 字节、15,156 ZIP 成员 CRC 通过，经 64 项独立复核后仅作为官方渠道新增载荷接受；历史登记 `2.26.37.73` XAPK 不替换。当时原包累计 **57**。随后只读实际检查两条工具命令均 rc0，apksigner 报告 v1/v2/v3/v3.1 验证通过；包内 Manifest 为 `com.whatsapp` / `2.26.39.71`，与网页标签不一致，旧整体收据 rc2 保留。原始文本解析补识别两个 SDK 区间证书，未重跑工具；官方发布者绑定、黑盒资格及启动未验收。
 
 AOSP16 R4 build-tools Python cohort 新增 843 项只读引用，另复用 2 项；protobuf superproject 2,818 个普通文件与 py-six 19 文件按同版身份登记。protobuf 内 jsoncpp Gitlink 仍未物化。CPython 4,990 文件在一次性 Linux 卷材料化、重算官方 Git 树并删除测试卷；首轮卷权限失败如实保留。以上均非新的 Soong 图、ARM64 Bionic 编译或设备通过。
@@ -50,13 +54,13 @@ AOSP16 R4 build-tools Python cohort 新增 843 项只读引用，另复用 2 项
 
 G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM64 ET_DYN、SONAME 和 40 个必需导出符号；复用 968 个对象，新增编译与生成均为 0。这属于进程外库 `build_pass`，不计 App 内 Bionic、整工具或设备通过。
 
-扫描器 38 个固定依赖已离线安装，pip check 与 16 项实际导入通过。十一批累计 61 个 APK 完成静态清点，失败批次只计独立复核通过的 3 个包。没有当前目标 runtime snapshot，因此未完成 full gap scan。HelloWorld 的 Bionic 安装、冷启动、上屏、输入和正常退出仍未验收。
+扫描器 38 个固定依赖已离线安装，pip check 与 16 项实际导入通过。十二批累计 63 个 APK 完成静态清点，失败批次合计只计逐包独立复核通过的 5 个包。没有当前目标 runtime snapshot，因此未完成 full gap scan。HelloWorld 的 Bionic 安装、冷启动、上屏、输入和正常退出仍未验收。
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；61 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G270 缺 5 个 stock 模块；WhatsApp 网页与包内版本不一致；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | G271 候选已审、待原 owner 新 ACK 与封包，随后执行新 stock 图；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；63 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G271 CTS 有 6 处未识别类型；batch12 整批 rc2；WhatsApp 网页与包内版本不一致 | 精确 R4 AIDL/XSDC stock view 与下一图候选；Bionic 真机 Activity 启动证据 |
 
-自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。此前 3 组实际结果（G268、WhatsApp 只读命令、G269）触发 EVO-0011；它已在 120 秒硬上限关闭，新增验证改进 0、推广 0；随后第 9 批、G270 和第 8 次原包取件构成新三组，EVO-0012 在 55.93 秒内验证一个限定身份链校验器：真实收据 rc0、篡改哈希负例 rc2。未推广、未测节省时间。第 10 批静态扫描、原包 v9 取件、第 11 批静态扫描形成随后三组实际结果，触发 EVO-0013 专职 peer，82.9 秒内闭合一项限定试点：对 10 个 Tier-B 黑盒候选做包名、历史工件 SHA 与有证版本的严格联接，v8/v9 和 WhatsApp 试点输入中 0 个历史工件精确命中；错误版本/SHA 负例未误判，WhatsApp 新版单列。该试点未覆盖全部 65 原包，未推广，不增加黑盒资格或启动数；反思计数归零。
+自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。此前 3 组实际结果（G268、WhatsApp 只读命令、G269）触发 EVO-0011；它已在 120 秒硬上限关闭，新增验证改进 0、推广 0；随后第 9 批、G270 和第 8 次原包取件构成新三组，EVO-0012 在 55.93 秒内验证一个限定身份链校验器：真实收据 rc0、篡改哈希负例 rc2。未推广、未测节省时间。第 10 批静态扫描、原包 v9 取件、第 11 批静态扫描形成随后三组实际结果，触发 EVO-0013 专职 peer，82.9 秒内闭合一项限定试点：对 10 个 Tier-B 黑盒候选做包名、历史工件 SHA 与有证版本的严格联接，v8/v9 和 WhatsApp 试点输入中 0 个历史工件精确命中；错误版本/SHA 负例未误判，WhatsApp 新版单列。该试点未覆盖当时全部 65 原包，未推广，不增加黑盒资格或启动数。随后 G271、A2 原包与 batch12 三组实际结果触发 EVO-0014：只读分流试点将 Seal 的非 ELF `.zip.so` 与 Briar 超时保留为两种未决类型，四个负例均拒绝；未推广，反思计数归零。
 
 历史自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。该轮四组实际结果已经闭合，不重复反思。独立 peer 的超时记录保留。
 
@@ -71,12 +75,12 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Evidence target
 
-- What this proves: 截至核对时点的已接受数量与 G270 实际终态。
+- What this proves: 截至核对时点的已接受数量与 G271 实际终态。
 - What this does not prove: 整工具完成、安装、冷启动、上屏或设备验收。
 
 ## Environment
 
-- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G270 宿主构建。
+- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G271 宿主构建。
 - Device: 本次汇总未访问设备，沿用项目 HOLD 与白名单。
 - Tool path: scripts/nanhai_plus_env.py 与候选 executor.py，精确收据见 JSON 索引。
 - Artifact path: .nanhai-plus-runtime/bionic-oh7-aosp16/out/bionic-stock-bionic-target-graph-v5/accepted-host/soong_build。
@@ -85,37 +89,37 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 ## Status
 
 - Label: build_pass
-- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G270 整体图生成失败。
+- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G271 整体图生成失败。
 
 ## Observed wall
 
 - Classification: observed
-- Fact: G270 实际报出 5 条未定义模块；此前 JUnit 墙已越过。
-- Evidence: G270-REVIEW.json，SHA 见 TASK-SUMMARY.json。
-- First failing command: G270 stock Soong Android.bp 图分析步骤。
+- Fact: G271 实际报出 6 处未识别模块类型；此前 G270 五缺模块墙已越过。
+- Evidence: G271-REVIEW.json，SHA 见 TASK-SUMMARY.json。
+- First failing command: G271 stock Soong Android.bp 图分析步骤。
 - Exit/status: 外层 terminal rc2；目标编译命令 0。
 
 ## Hypotheses
 
-- Candidate: 无新增根因假设；五源插件已实际编译，完整 libcore 已执行，完整 SDK 已核验；下一批 stock 输入待精确版本闭合。
-- Cheapest falsifier: 精确 R4 五个缺项的 owning source 核验后，新候选经原 owner ACK 与封包执行。
+- Candidate: 候选解释为 G271 的源码视图缺少 AIDL/XSDC 的 Soong 注册插件；精确 R4 源码树已准入，但 stock 路径和两个格式链接尚未闭合。
+- Cheapest falsifier: 先核 G272 隔离源码视图中的插件注册导入与 BP 清单，再经新 ACK/封包执行，观察六处类型错误是否消失。
 - Blocking: no
 
 ## Proven
 
-- 38/89 历史 Musl 源码接受、65 个原包载荷接受、61 个完整静态清点。
+- 38/89 历史 Musl 源码接受、69 个原包载荷接受、63 个完整静态清点。
 
 ## Not proven
 
-- Bionic 整工具与 APK 冷启动；包含完整 libcore 输入的 stock 图尚未通过。
+- Bionic 整工具与 APK 冷启动；加入 AIDL/XSDC 的 stock 图尚未执行；已运行的 G271 图未通过。
 
 ## Failed
 
-- G270 图分析 rc2；G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain 静态清点未完成；第 5 批汇总 rc2。
+- G271 图分析 rc2；G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 静态清点未完成；第 5、12 批整体 rc2。
 
 ## Next evidence
 
-- Command: 原 owner 接受五缺项新候选后，通过 NANHAI 环境入口执行新封包。
+- Command: 先核精确 R4 AIDL/XSDC stock 路径和符号链接，再经独审、原 owner 新 ACK 与封包运行 G272。
 - Expected output: 记录真实图分析结果及首个失败，成功时继续目标编译门。
 - If it fails: 保留原始收据，按精确版本定位下一缺项，不算成功。
 

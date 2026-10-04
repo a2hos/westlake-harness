@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-04T07:01:57.224578+00:00",
+  "status": "ADMITTED_EXACT_R4_AIDL_XSDC_SOURCE_TREES_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g272-r4-aidl-xsdc-source-candidate-v1/CANDIDATE.json",
+    "sha256": "6ae53809b6b6d84643e3982b90db7fbdbdd2f18c36f15818109d3582ff49c7b7"
+  },
+  "index_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g272-r4-aidl-xsdc-source-candidate-v1/INDEX-REVIEW.json",
+    "sha256": "dba28f70be8b5fc34115725dd405da8d4519654471e2bb19af91e200c61ade7c"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g272-r4-aidl-xsdc-source-peer-review-v1/REVIEW.json",
+    "sha256": "892276dcf257394b4c4a14e9674996195493584931213d1420e7fa7e3cfd985a"
+  },
+  "repos": [
+    {
+      "name": "aidl",
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/aidl-r4-3747384",
+      "commit": "3747384b876442e7ea0c355fe5adc75b29362833",
+      "tree": "b23fc12fb071f96a313c6ba70be2046726d13800",
+      "regular_files": 2048,
+      "symlinks": 2
+    },
+    {
+      "name": "xsdc",
+      "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source/xsdc-r4-ef55c63",
+      "commit": "ef55c63066afcba5fd8781c2b056ccbe4c6ce687",
+      "tree": "bd73096b2ef43d5434f4a415d822fea6e65a5df8",
+      "regular_files": 137,
+      "symlinks": 0
+    }
+  ],
+  "source_index_sha256": "bde6b0222b9a16d7fc7053c27ca6348869dff0aaa3f543e5272a3f56eeba788a",
+  "source_readme_sha256": "489b36cc5c56fb2428926409da733fa602a6b36daa69a1b15efaa155b046c482",
+  "stock_path_materialized": false,
+  "aidl_format_symlink_targets_resolved": false,
+  "graph_executed": false,
+  "build_accepted": false,
+  "device_commands": 0,
+  "next": "Prepare isolated stock-path project view with resolved R4 symlink targets; new candidate/peer/root/owner ACK before G272 graph"
+}
