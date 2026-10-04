@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:21:30.891112+00:00",
+  "checked_at": "2026-10-04T08:24:59.434006+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -441,6 +441,10 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/root-block-v1/BLOCK.json",
       "sha256": "39bc4674cc5e7239a91edc58d18f5592005ff5fbe1bc6b38c1cfa570df67768d"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/ROOT-CLOSURE.json",
+      "sha256": "cfae617c74d6f7945aaa0c7578354d8e22c11f697ee4608da7a805bdb58ef6d0"
     }
   ],
   "bionic_stock_graph": {
@@ -479,21 +483,21 @@
     "G273_terminal": true
   },
   "reflection": {
-    "latest": "EVO-0016",
+    "latest": "EVO-0017",
     "verified_improvement_this_round": 1,
-    "scope": "Read-only ELF member exact reuse identity key, 14 receipts and 11 controls; no actual cache or saved-time proof",
+    "scope": "Read-only per-invocation G274 oracle candidate identity recheck under injected cache sentinel; transient earlier failure not SHA-pinned",
     "global_promotion": false,
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 4,
+    "pending_actual_result_groups": 0,
     "trigger_every_groups": "3-4",
-    "next": "EVO-0017 peer opened after fourth actual group: G274 full candidate blocked; <=120s one verifiable local improvement",
-    "latest_closed": "EVO-0016",
-    "pending_groups": 4,
+    "next": "Wait for next 3-4 actual result groups; vary lens; one verifiable improvement",
+    "latest_closed": "EVO-0017",
+    "pending_groups": 0,
     "latest_closure": {
-      "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
-      "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
+      "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/ROOT-CLOSURE.json",
+      "sha256": "cfae617c74d6f7945aaa0c7578354d8e22c11f697ee4608da7a805bdb58ef6d0"
     }
   },
   "mainstream_intake": {
@@ -907,5 +911,11 @@
     },
     "new_owner_ACK": false,
     "graph_executed": false
+  },
+  "g274_v18_v2_candidate": {
+    "status": "frozen candidate pending independent review",
+    "oracle_policy_sha256": "5b2676f41cded0e2828bb9e61a13529accf76440685a3714efa87515144c8c64",
+    "graph_executed": false,
+    "root_release": false
   }
 }

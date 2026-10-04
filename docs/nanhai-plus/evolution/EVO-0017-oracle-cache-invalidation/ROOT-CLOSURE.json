@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-04T08:24:25.099914+00:00",
+  "status": "ROOT_CLOSE_ONE_READONLY_ORACLE_CACHE_INVARIANT_PILOT_NOT_PROMOTED",
+  "trigger_groups": [
+    "G274 source/input/static extension gates",
+    "Vivaldi raw GET acceptance",
+    "Vivaldi static inventory acceptance",
+    "G274 v18 full candidate BLOCK_RELEASE"
+  ],
+  "pilot": {
+    "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/pilot.py",
+    "sha256": "61501a16f34878f8bc77c46928200770ff439e5bb3af56774132d78441e2d3ae"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/RESULT.json",
+    "sha256": "77430c37d4a24f0df776453718d0f547983a4883d61d24b119e7629dde06822a"
+  },
+  "decision": {
+    "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/DECISION.md",
+    "sha256": "8a3c94ba62e0e000a622cf8d7f3d8fba7bb9248a9b4a843f381779f06a78203e"
+  },
+  "final_candidate_oracle_sha256": "5b2676f41cded0e2828bb9e61a13529accf76440685a3714efa87515144c8c64",
+  "root_rerun_rc": 0,
+  "root_rerun_result_sha256": "77430c37d4a24f0df776453718d0f547983a4883d61d24b119e7629dde06822a",
+  "one_verified_improvement": "Candidate identity is rechecked on every oracle invocation even after a synthetic prior allowlist cache is injected",
+  "historical_transient_failure_pinned": false,
+  "global_promotion": false,
+  "saved_time_measured": false,
+  "new_tool_delta": 0,
+  "original_89_delta": 0,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "v2_executable_release_inferred": false,
+  "next": "Independent v2 full-executor review and original owner ACK/root seal remain separate gates."
+}

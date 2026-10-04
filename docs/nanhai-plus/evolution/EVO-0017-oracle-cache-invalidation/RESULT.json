@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai.evo17.oracle-cache-pilot.v1",
+  "source": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/oracle_policy.py",
+  "source_sha256": "5b2676f41cded0e2828bb9e61a13529accf76440685a3714efa87515144c8c64",
+  "test_kind": "in-process isolated stub; no source or device access",
+  "cached_case": {
+    "error": "candidate identity changed",
+    "identity_rechecked": true
+  },
+  "uncached_negative_control": {
+    "error": "candidate identity changed",
+    "identity_rechecked": true
+  },
+  "invalidation_verified": true
+}
