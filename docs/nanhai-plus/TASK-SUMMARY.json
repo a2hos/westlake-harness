@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T02:02:37.097130+00:00",
+  "checked_at": "2026-10-04T02:33:18.596980+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 11,
+    "downloaded_payloads": 21,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -45,18 +45,19 @@
     "complete_inventory_native_elf_entries": 124,
     "incomplete_static_inventories": [
       "org.videolan.vlc"
-    ]
+    ],
+    "additional_downloads_pending_root_acceptance": 2
   },
   "latest_actual_execution": {
-    "release": 262,
-    "terminal_rc": 0,
-    "external_service_compile_units_rc0": 968,
-    "generated_headers_matched": 27,
-    "external_musl_service_dsos_linked": 2,
-    "link_pass": true,
-    "reused_objects": 968,
-    "new_compile_jobs": 0,
-    "required_exports_independently_verified": 40,
+    "release": 263,
+    "terminal_rc": 2,
+    "actual_exec_session": 91401,
+    "terminal_chunk": "62605b",
+    "host_tools_actual_loader_pass": 10,
+    "soong_bootstrap_successful_steps": 233,
+    "soong_bootstrap_total_steps": 234,
+    "host_soong_build_scope": "Linux x86_64 host executable only",
+    "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
   },
@@ -103,15 +104,65 @@
     {
       "path": "docs/nanhai-plus/evolution/TOOL-REGISTRY.json",
       "sha256": "039ce12797f998d8fbdd32a68202e2ff2db69cce2f63f89aef8c883e1a7fecb9"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v5/root-release-v1/G263-REVIEW.json",
+      "sha256": "f547c55308c5c002dbe69b2f08aff910c76f2e9aaf266ec7abbd616d61a850dd"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v4/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "ae07bdd11be2df193366f80276448e22e1d7b155554df4ebf6832780fef26cd6"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-llvm-defaults-r4-identity-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "6c7fab32ef080ee79c95dcce4c610b8806494b2ff48fe7d7d4db274b43949a92"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0005-real-cli-preflight/reviews/ROOT-CLOSURE.json",
+      "sha256": "e9f5e541e93badc57d02a50df9eee2757456cd9000e1305a6f0bed9179110dd9",
+      "timing_compliant": false
     }
   ],
   "bionic_stock_graph": {
-    "release": 261,
+    "release": 263,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
+    "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "fork/exec prebuilts/build-tools/linux-x86/bin/ninja: no such file or directory",
+    "first_failure": "\"ide_query_cc_analyzer_defaults\" depends on undefined module \"llvm-build-host-tools-defaults\".",
+    "failure_location": "build/make/tools/ide_query/cc_analyzer/Android.bp:21:1",
     "target_compile_commands": 0,
-    "owned_resources_cleaned": true
+    "owned_resources_cleaned": true,
+    "secondary_errors": []
+  },
+  "previous_external_service_execution": {
+    "release": 262,
+    "terminal_rc": 0,
+    "external_service_compile_units_rc0": 968,
+    "generated_headers_matched": 27,
+    "external_musl_service_dsos_linked": 2,
+    "link_pass": true,
+    "reused_objects": 968,
+    "new_compile_jobs": 0,
+    "required_exports_independently_verified": 40,
+    "runtime_verified": false,
+    "app_bionic_tool_pass_delta": 0
+  },
+  "next_graph_candidate": {
+    "version": 6,
+    "independent_review_pass": true,
+    "execution_started": false,
+    "new_owner_ack_and_root_seal_required": true,
+    "llvm_source_files_admitted": 5,
+    "whole_clang_repo_admitted": false
+  },
+  "reflection": {
+    "latest": "EVO-0005",
+    "local_curl_method_validated": true,
+    "global_promotion": false,
+    "counts_as_new_tool": false,
+    "duration_seconds": 188.905,
+    "limit_seconds": 120,
+    "timing_compliant": false
   }
 }
