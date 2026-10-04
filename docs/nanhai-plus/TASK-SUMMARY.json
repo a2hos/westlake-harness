@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:37:32+00:00",
+  "checked_at": "2026-10-04T18:41:54+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -53,24 +53,22 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 98,
-    "complete_inventory_dex_entries": 319,
+    "complete_static_inventories": 99,
+    "complete_inventory_dex_entries": 322,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1422,
+    "complete_inventory_native_elf_entries": 1442,
     "latest_complete_static_admission": {
-      "package": "org.sufficientlysecure.keychain",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g326-openkeychain-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "18eea6b3e4a5d0caa2033f7a822d04acfae727f204db0dfd7795fbb38900ed34",
-      "scope": "four-phase host static of exact accepted bytes; 1 DEX, 0 .so/ARM64 ELF; cryptographic signature verification not proven; no startup"
+      "package": "hideme.android.vpn.noPlayStore",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "bfda759e29cf1dcc3e4efc0480c051ec153d1ab8d00b5fb76d3203d982ab35e6",
+      "scope": "four-phase host static of exact accepted bytes; 3 DEX and 20 true ARM64 ELF; no blackbox qualification or startup"
     },
-    "incomplete_static_inventories": [
-      "hideme.android.vpn.noPlayStore"
-    ],
+    "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
@@ -2145,5 +2143,26 @@
       "sha256": "ae6c3929dbad9278d9a484b400b9222f3af9896ef66515f685281c91bef5388f"
     },
     "startup_delta": 0
+  },
+  "g327_hideme_four_static": {
+    "status": "accepted_exact_four_phase_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "bfda759e29cf1dcc3e4efc0480c051ec153d1ab8d00b5fb76d3203d982ab35e6"
+    },
+    "static_after": 99,
+    "semantic_dex_after": 322,
+    "true_arm64_elf_after": 1442,
+    "qualified_blackbox_delta": 0,
+    "startup_delta": 0
+  },
+  "g279_mihomo_t_network_research": {
+    "status": "source_inference_only_network_behavior_unknown",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-mihomo-exact-t-network-research-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "0dccba610eb5150f5793da4af922c129a21056bce7e61602aeff873c42854ba7"
+    },
+    "real_config_tested": false,
+    "gz02_connected": false
   }
 }

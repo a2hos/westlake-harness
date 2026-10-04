@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T18:41:54+00:00",
+  "decision": "ACCEPT_ONE_EXACT_FOUR_PHASE_HOST_STATIC_ONLY",
+  "package": "hideme.android.vpn.noPlayStore",
+  "version_name": "6.1.2",
+  "apk_sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b",
+  "raw_admission_sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816",
+  "candidate_handoff_sha256": "8bc770ccae058b7ffdd14c524a44730b43c750b5e2fda7c848a87f4c9820da08",
+  "independent_review_sha256": "3d5940c61d1fb008c1ca874a1497ab4dd246e3bd5bd3b85c984fb6bf2394853c",
+  "phases": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "static_before": 98,
+  "static_after": 99,
+  "semantic_dex_before": 319,
+  "semantic_dex_after": 322,
+  "true_arm64_elf_before": 1422,
+  "true_arm64_elf_after": 1442,
+  "other_abi_true_elf": 60,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "limits": "Exact accepted bytes received a complete host-only four-phase inventory. No install, runtime, true cold start, on-screen result, or device PASS.",
+  "device_commands": 0,
+  "container_commands": 0
+}

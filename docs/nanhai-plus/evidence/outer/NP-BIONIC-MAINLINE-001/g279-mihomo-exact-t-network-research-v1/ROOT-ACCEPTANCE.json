@@ -1,0 +1,14 @@
+{
+  "schema": "g279-mihomo-exact-t-network-root-acceptance-v1",
+  "at_utc": "2026-10-04T18:41:06+00:00",
+  "decision": "ACCEPT_VERSION_SOURCE_INFERENCE_WITH_BINARY_PROVENANCE_LIMIT",
+  "research_sha256": "c420665da31f0ecc69cd1045da28c9a343375290a627ed34e8ff8c45afc33f4c",
+  "accepted": "Official Mihomo v1.19.29 source returns from -t before normal listener startup, but parser paths can download geodata for some configurations.",
+  "limit": "Bundled exact binary SHA is not source-build attested; real selected node parse-time network behavior is unknown. Do not claim offline execution or gz02 connectivity from -t.",
+  "scope": "read-only local version/help and official source comparison",
+  "real_config_tested": false,
+  "private_proxy_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

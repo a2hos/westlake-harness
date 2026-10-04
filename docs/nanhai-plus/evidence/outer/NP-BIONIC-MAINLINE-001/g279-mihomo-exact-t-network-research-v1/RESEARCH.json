@@ -1,0 +1,38 @@
+{
+  "schema": "g279-mihomo-exact-t-network-research-v1",
+  "at_utc": "2026-10-04T18:41:06.592589+00:00",
+  "exact_local_binary": {
+    "path": "/Applications/Clash Verge.app/Contents/MacOS/verge-mihomo",
+    "sha256": "c15a8c12c461404f3f09368146538c5d32b1b728cd5e1b28885c103ffd7ed9d0",
+    "version_stdout": "Mihomo Meta v1.19.29 darwin arm64 with go1.22.12 Sat Jul 18 12:25:49 UTC 2026\nUse tags: with_gvisor",
+    "help_t": "test configuration and exit",
+    "help_rc": 0
+  },
+  "shared_source_pool": {
+    "index": "/opt/19.SourceCode/SOURCES.json",
+    "mihomo_entry_present": false,
+    "exact_upstream_commit_or_build_provenance_for_bundled_binary": false
+  },
+  "official_tag_sources": [
+    {
+      "url": "https://github.com/MetaCubeX/mihomo/blob/v1.19.29/main.go",
+      "evidence": "lines 162-177: -t executes executor.Parse or ParseWithBytes and returns before hub.Parse, updater registration and service loop"
+    },
+    {
+      "url": "https://github.com/MetaCubeX/mihomo/blob/v1.19.29/hub/executor/executor.go",
+      "evidence": "lines 60-76: executor.Parse reads config and calls config.Parse"
+    },
+    {
+      "url": "https://github.com/MetaCubeX/mihomo/blob/v1.19.29/config/config.go",
+      "evidence": "lines 587-600: ParseRawConfig notes geodata loading/downloading in parseRules and parseRuleProviders; lines 637-655 call parseProxies and parseRuleProviders"
+    }
+  ],
+  "bounded_conclusion": [
+    "Official same-version source supports that -t returns before hub.Parse and normal listener/service startup. This is source-level inference, not proof for the bundled exact SHA binary.",
+    "Official parser can reach geodata/provider download code for some configurations; -t is not a universal no-network guarantee.",
+    "The proposed v2a config has exact IP-CIDR/MATCH rules and no providers/geodata rules, narrowing known parse triggers. One real selected proxy node and its parse-time behavior remain unproven.",
+    "Do not claim no network for exact bundled binary from a credential-free mock rc0. Label v2a as local configuration parse/test with network behavior unknown until an independently bounded observation or source-to-binary provenance establishes more.",
+    "No container or namespace is required by this research; do not introduce one as a workaround."
+  ],
+  "reviewer_actions": "Local -v/-h only, official-source read only. No credential-bearing config, -t on real node, private proxy instance, gz02, SSH, device or container."
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "g327-hideme-four-phase-host-static-independent-review-v1",
+  "decision": "GO_HOST_FOUR_PHASE_STATIC_ONLY",
+  "handoff_sha256": "8bc770ccae058b7ffdd14c524a44730b43c750b5e2fda7c848a87f4c9820da08",
+  "raw_admission_sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816",
+  "raw_admission_decision": "ACCEPT_ONE_EXACT_OFFICIAL_HOST_RAW_ONLY",
+  "package": "hideme.android.vpn.noPlayStore",
+  "version_name": "6.1.2",
+  "apk_bytes": 67834658,
+  "apk_sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b",
+  "source_binding": {
+    "census_sha256": "2880583e0556d827541919e61e01f523575101c064a0bc779a2e07b15582986f",
+    "start_sha256": "8df8c615cec263ffd4bc3c6008e1366aba1e2e280a7b706d1b7d6741d06209a1",
+    "terminal_sha256": "1027659691e1f7a2465646f94b95dbf3b4c52f2db4d13e5c0f538e61f49b95d9",
+    "runner_and_phase_sha_match_start": true,
+    "exact_raw_and_apk_sha_match_start": true,
+    "all_handoff_ref_size_and_sha_match": true,
+    "staging_apk_read_only": true,
+    "scanner_source_read_only": true,
+    "outputs_confined_to_project_evidence_and_tmp": true
+  },
+  "phase_results": {
+    "zip": {"rc": 0, "input_guard_before_after_equal": true},
+    "metadata": {"rc": 0, "input_guard_before_after_equal": true},
+    "dex": {"rc": 0, "input_guard_before_after_equal": true},
+    "elf": {"rc": 0, "input_guard_before_after_equal": true}
+  },
+  "inventory": {
+    "zip_entries": 2673,
+    "zip_crc_all": true,
+    "duplicate_zip_names": 0,
+    "root_dex_with_valid_magic": 3,
+    "embedded_dex": 0,
+    "nested_archive_magic_candidates": 0,
+    "true_arm64_elf64_little_endian_em_aarch64": 20,
+    "other_true_elf": {"armeabi-v7a": 20, "x86": 20, "x86_64": 20},
+    "non_elf_so": 0,
+    "arm64_readelf_and_abi_matches_machine_all": true,
+    "target_sdk": 35
+  },
+  "independent_checks": "39 local checks passed: every HANDOFF referenced file size/SHA, accepted raw APK identity, START source binding, per-phase command/stream/guard receipts, direct ZIP CRC and member-content census, DEX magic, ARM64 and other ABI ELF class/endian/e_machine, and inventory consistency.",
+  "claim_boundary": {
+    "host_static_inventory_candidate": true,
+    "blackbox_qualified": false,
+    "play_downloads_transferred_to_no_play_store_package": false,
+    "installation_or_startup_proven": false,
+    "runtime_or_device_pass": false,
+    "authoritative_count_changed_by_review": false
+  },
+  "review_actions": "Read frozen local evidence and the admitted APK; no rerun of four-stage scanner, network, SSH, device, container, or mainline summary mutation."
+}

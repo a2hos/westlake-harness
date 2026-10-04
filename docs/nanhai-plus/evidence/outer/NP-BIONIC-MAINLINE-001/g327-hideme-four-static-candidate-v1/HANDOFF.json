@@ -1,0 +1,135 @@
+{
+  "schema": "g327-hideme-four-static-handoff-v1",
+  "status": "CANDIDATE_INDEPENDENT_ROOT_REVIEW_REQUIRED",
+  "at_utc": "2026-10-04T18:40:30.587704+00:00",
+  "package": "hideme.android.vpn.noPlayStore",
+  "version_name": "6.1.2",
+  "apk_sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b",
+  "apk_bytes": 67834658,
+  "root_raw_admission_sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816",
+  "terminal_rc": 0,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "source_guard_all_equal": true,
+  "zip_entries": 2673,
+  "zip_crc_all": true,
+  "root_dex": 3,
+  "embedded_dex": 0,
+  "true_arm64_elf": 20,
+  "non_target_abi_true_elf": {
+    "armeabi-v7a": 20,
+    "x86": 20,
+    "x86_64": 20
+  },
+  "non_elf_so": 0,
+  "nested_archive_name_candidates": [],
+  "target_sdk": 35,
+  "refs": {
+    "CENSUS.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/CENSUS.json",
+      "bytes": 13879,
+      "sha256": "2880583e0556d827541919e61e01f523575101c064a0bc779a2e07b15582986f"
+    },
+    "START.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/START.json",
+      "bytes": 1060,
+      "sha256": "8df8c615cec263ffd4bc3c6008e1366aba1e2e280a7b706d1b7d6741d06209a1"
+    },
+    "RESULT.json": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/RESULT.json",
+      "bytes": 6680,
+      "sha256": "1027659691e1f7a2465646f94b95dbf3b4c52f2db4d13e5c0f538e61f49b95d9"
+    },
+    "census.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/census.py",
+      "bytes": 3181,
+      "sha256": "aea2d4bf326099de54019994bc473c8e13e2ee91f0877697c3aff778e8fdd1f4"
+    },
+    "phase.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phase.py",
+      "bytes": 5174,
+      "sha256": "76be9cd56951baca524ce24cbe45187c534689cdc049556d745c7219dad8968c"
+    },
+    "run.py": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/run.py",
+      "bytes": 3486,
+      "sha256": "92da53c97c80ec43081afb7c2964136ce7c7a0545516d443964e16c257ab1e15"
+    },
+    "zip_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/zip-COMMAND.json",
+      "bytes": 1401,
+      "sha256": "9412e67db99c4ebc43538caff4a624a466157a94cd891ea228eaccea6a55d811"
+    },
+    "zip_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/zip/RESULT.json",
+      "bytes": 833,
+      "sha256": "671d0f87f9ed2a9a3fec5f4f90d642f2a1802a39d61ba99850a2e30f087a72e7"
+    },
+    "metadata_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/metadata-COMMAND.json",
+      "bytes": 1410,
+      "sha256": "0d09c1e5bceb093b70c77f9d8352bd9d10663c775d7c2a1d4a91762617a223b8"
+    },
+    "metadata_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/metadata/RESULT.json",
+      "bytes": 838,
+      "sha256": "7cf3b61d1c70bed472a0e25aec01ec977e7d40098e9558e3c335f2ad298de79c"
+    },
+    "dex_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/dex-COMMAND.json",
+      "bytes": 1400,
+      "sha256": "e775ba3bf209043ea27f5370a76b08c9346651dc54397a03cf144e979d40cbb4"
+    },
+    "dex_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/dex/RESULT.json",
+      "bytes": 833,
+      "sha256": "f168f03823d67972a20f0b95919ff6e78d5e60dd51ba99b94831e84ac2bd6e81"
+    },
+    "elf_command": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/elf-COMMAND.json",
+      "bytes": 1400,
+      "sha256": "cfa7897d9a34d4ea4219e60ac734219f7f5328a35cba0066f7b0fe41d1645374"
+    },
+    "elf_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/elf/RESULT.json",
+      "bytes": 833,
+      "sha256": "9b1f10763fb0ae2d12f2ba2c5cde7f38a3017d6263d3d38d81e06ce6088abe10"
+    },
+    "zip_facts": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/zip/ZIP-FACTS.json",
+      "bytes": 224,
+      "sha256": "33527599b3783003c76d3054433a554d6423c834ca43ced93763de4472909fbb"
+    },
+    "manifest": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/metadata/MANIFEST.json",
+      "bytes": 1964,
+      "sha256": "6546cd14e298ece210aacb94ba28e45f4387f6e2ebb35d334426b5111fd7146d"
+    },
+    "dex_inventory": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/dex/DEX-INVENTORY.json",
+      "bytes": 22658311,
+      "sha256": "c2feea9104e6ba68c5386ef84da1df7ca903731402fca2b5b50f76a61bc0dc43"
+    },
+    "elf_inventory": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/elf/ELF-INVENTORY.json",
+      "bytes": 1963426,
+      "sha256": "f11f36d7e4cb904c5356c55519738aae7d3b1b1c5dfc16884189194c6c4fdc28"
+    },
+    "elf_classification": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g327-hideme-four-static-candidate-v1/phases/elf/ELF-CLASSIFICATION.json",
+      "bytes": 9584,
+      "sha256": "bc5222eed94270f08a34a1abcd702a1380e996a7bcbd7b35ba6dd7f455c84b0a"
+    }
+  },
+  "scope": "complete four-phase host static candidate only",
+  "independent_review": false,
+  "authoritative_count_changed": false,
+  "blackbox_qualified": false,
+  "cold_start_proven": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

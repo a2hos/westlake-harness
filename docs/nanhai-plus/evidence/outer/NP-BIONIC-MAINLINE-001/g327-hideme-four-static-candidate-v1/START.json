@@ -1,0 +1,22 @@
+{
+  "apk_sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b",
+  "at_utc": "2026-10-04T18:40:01.703227+00:00",
+  "census_sha256": "2880583e0556d827541919e61e01f523575101c064a0bc779a2e07b15582986f",
+  "container": false,
+  "device": false,
+  "limits_seconds": {
+    "dex": 900,
+    "elf": 900,
+    "metadata": 180,
+    "zip": 180
+  },
+  "network": false,
+  "nonce": "115abb5651fc17a9f8fe6d704a8ec9eb",
+  "phase_sha256": "76be9cd56951baca524ce24cbe45187c534689cdc049556d745c7219dad8968c",
+  "python": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+  "raw_admission_sha256": "4cd550d1414aecb0435256bf1a3fc519c337c21f0950d860ef58ca8f96952816",
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "readelf_target": "/opt/19.SourceCode/OpenHarmony-SDK-26.0.0.39-mac-arm64/extracted/native/llvm/bin/llvm-readelf",
+  "runner_sha256": "92da53c97c80ec43081afb7c2964136ce7c7a0545516d443964e16c257ab1e15",
+  "ssh": false
+}

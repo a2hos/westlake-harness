@@ -1,0 +1,11 @@
+{
+  "crc_all_ok": true,
+  "embedded_dex": 0,
+  "entries_scanned": 2673,
+  "manifest_count": 1,
+  "nested_archive_name_candidates": [],
+  "non_elf_so": 0,
+  "other_abi_true_elf": 60,
+  "root_dex": 3,
+  "true_arm64_elf": 20
+}
