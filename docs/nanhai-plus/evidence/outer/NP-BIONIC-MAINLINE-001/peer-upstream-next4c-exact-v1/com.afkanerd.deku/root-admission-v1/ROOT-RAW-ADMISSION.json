@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:50:28.116900+00:00",
+  "package": "com.afkanerd.deku",
+  "artifact_id": "a-b7a27f1ce8b533da7ded",
+  "apk_sha256": "10a862955c6559ac056d4809b3879efcf7a9af4c10208b282fa987d7d8f82f8c",
+  "apk_bytes": 12737269,
+  "source_url": "https://f-droid.org/repo/com.afkanerd.deku_9103.apk",
+  "version_name": "0.77.0",
+  "version_code": "9103",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/HANDOFF.json",
+    "sha256": "dbe061883c13a993475949c5f6fb23d2aba07bd0c79695184ea66a8edd7c4bcb"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/com.afkanerd.deku/RAW.json",
+    "sha256": "574ffc0022e97eb30893bfe766099579e966d51d990e826f60bb86cb4c024001"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, F-Droid APK and local ZIP/signature/package metadata only; no install/runtime"
+}

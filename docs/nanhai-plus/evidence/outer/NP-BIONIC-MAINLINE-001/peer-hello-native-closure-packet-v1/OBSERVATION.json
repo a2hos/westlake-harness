@@ -1,0 +1,49 @@
+{
+  "at_utc": "2026-10-04T21:40:32.461721+00:00",
+  "bionic_full_archive": {
+    "bytes": 59525120,
+    "extracted_build_checkout_proven": false,
+    "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/source-archives/bionic-r4-f22516cbc67e-source.tar",
+    "sha256_recomputed": "c5cd5649847aef6ca2bc0417a8730dbbacdf2ee1011338fa2531d3de8f9bcbfe"
+  },
+  "local_selected_view": {
+    "bionic": {
+      "exists": true,
+      "is_symlink": false
+    },
+    "build/make": {
+      "exists": false,
+      "is_symlink": false
+    },
+    "build/soong": {
+      "exists": false,
+      "is_symlink": false
+    },
+    "prebuilts/build-tools/linux-x86": {
+      "exists": false,
+      "is_symlink": false
+    },
+    "prebuilts/clang/host/linux-x86": {
+      "exists": false,
+      "is_symlink": false
+    },
+    "prebuilts/go/linux-x86": {
+      "exists": false,
+      "is_symlink": false
+    }
+  },
+  "schema": "peer-hello-native-closure-local-observation-v1",
+  "scope": "Local filesystem and existing receipts only; no remote, graph, target build, container, Bridge or device action",
+  "source_sha256": {
+    "checkpoint": "7782f2376b2d9cb32d0fd44a83dbe1cc7ad04e418d469c8f55328ea4d689cf35",
+    "goal": "0cc1d223cfeb08a14dc7bf5878b29a153baab41264337607e866872c9ca775a6",
+    "local_env": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+    "native_route_review": "61a812ebf688857364975be8136d4f290de25d0c4674ac0a1dde2edcda5edfd4",
+    "postgraph_next": "95d33d35ce34419bff2fbf46fcc7961a55c4925b4534d0a312eebea784e07861",
+    "resume": "1429e5360e5b9e374f323cdc2bb236c3018f1e1dbc09cc2ac33a95cb06a2cf16",
+    "source_index": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636",
+    "source_readme": "eeb4c3d573db788548cd51794880a951da67578c3e468a00e00792c63baf8aa3",
+    "source_rules": "2ea947d5151d58ba4759079d2446449069cf5d95f6d8fbd24fdbd91f3c374179",
+    "v13_runner": "36cbba5abfd1d99adf47e360c5c5b532887a466763929d5e22cd6b05eddb6a99"
+  }
+}

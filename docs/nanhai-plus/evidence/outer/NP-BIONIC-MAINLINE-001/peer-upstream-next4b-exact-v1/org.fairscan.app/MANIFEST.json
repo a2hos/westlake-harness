@@ -1,0 +1,36 @@
+{
+  "abis": [
+    "arm64-v8a"
+  ],
+  "activities": 1,
+  "app_name": "FairScan",
+  "bytes": 45938803,
+  "features": [
+    "android.hardware.camera"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "org.fairscan.app.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 11,
+  "package": "org.fairscan.app",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4b-exact-v1/org.fairscan.app/original.apk",
+  "permissions": [
+    "android.permission.CAMERA",
+    "android.permission.INTERNET",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "org.fairscan.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 2,
+  "receivers": 1,
+  "services": 1,
+  "sha256": "35300568c6f5882b42256f0e662b2790494c3be764b05f00bee82371d49dd798",
+  "signing_certificate_sha256": [
+    "446122fc28b644d30b73894134342d2f206b61d96998bd9aff5e881f8e9d96ba"
+  ],
+  "target_sdk": "36",
+  "version_code": "96",
+  "version_name": "2.3.0"
+}

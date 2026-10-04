@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T21:43:07.973878+00:00",
+  "package": "com.swordfish.lemuroid",
+  "artifact_id": "a-f1a367c3a73d18209179",
+  "apk_sha256": "f83912a5c276f3616833fcf1b44a8e40c61d5a20f76db3f4297d6c1f63805c42",
+  "apk_bytes": 11970354,
+  "source_url": "https://f-droid.org/repo/com.swordfish.lemuroid_252.apk",
+  "version_name": "1.17.0",
+  "version_code": "252",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/HANDOFF.json",
+    "sha256": "1fad8f3ac77f9b9fa3255535639382fcec7f9d4cbf709ad16080e9785d441bfa"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "8ded144908654caa8f881a4a28226c5531cd83e9812fe55da477c32c9b312afb"
+  },
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/STATIC.json",
+    "sha256": "e1a62697cc9df150bebcc958b6b7cc27a26ca3130f85be0b7b3e1264998f71c2"
+  },
+  "semantic_dex_delta": 2,
+  "true_arm64_elf_delta": 2,
+  "full_static_delta": 1,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "empty_native_elf_inventory_expected": false,
+  "scope": "Four-phase native-host ZIP/metadata/DEX/true ARM64 ELF static only; zero ELF valid only when ZIP has no native library; no loader/device"
+}

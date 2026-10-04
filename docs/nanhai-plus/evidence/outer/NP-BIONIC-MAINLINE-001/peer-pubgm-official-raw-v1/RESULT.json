@@ -1,0 +1,88 @@
+{
+  "apk_bytes": 1274351207,
+  "apk_mime_seen": true,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-pubgm-official-raw-v1/pubgm-official.apk",
+  "apk_sha256": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+  "arm64_so_entries": 40,
+  "at_utc": "2026-10-04T21:43:45.806778+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "600",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-pubgm-official-raw-v1/pubgm-official.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/apk-get-headers.raw",
+      "https://f.gbcass.com/PUBGMOBILE_Global_4.6.0_uawebsite_livik01_5678FCFA.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "6d8085e051b546ddbdcf2839a2f29b0b512eacb595d596b24711b81d8e070b9f",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "head": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--head",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/apk-head-headers.raw",
+      "https://f.gbcass.com/PUBGMOBILE_Global_4.6.0_uawebsite_livik01_5678FCFA.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "072d117d4aaea32775646cbe8c23d3902214b93d3477e1d91d5d8c74f244d464",
+    "stdout_sha256": "d9f11fd7c5bf0bccb6f5dab76f88b947bd57c5eb41071ee08ee42b3bb5de9684"
+  },
+  "manifest_entries": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "page": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "45",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/publisher-page.raw",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/publisher-page-headers.raw",
+      "https://www.pubgmobile.com/en-US/home.shtml"
+    ],
+    "rc": 0,
+    "stderr_sha256": "2bf1841a37ac7b102b57e3a1de44557033935272e8c58239fb62cc3e837ab585",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "publisher_apk_url": "https://f.gbcass.com/PUBGMOBILE_Global_4.6.0_uawebsite_livik01_5678FCFA.apk",
+  "publisher_page": "https://www.pubgmobile.com/en-US/home.shtml",
+  "publisher_page_links_exact_apk": true,
+  "root_count_changed": false,
+  "root_dex_entries": 3,
+  "schema": "peer-pubgm-official-raw-v1",
+  "startup_proven": false,
+  "zip_duplicate_names": 0,
+  "zip_entries": 1904,
+  "zip_first_bad": null
+}

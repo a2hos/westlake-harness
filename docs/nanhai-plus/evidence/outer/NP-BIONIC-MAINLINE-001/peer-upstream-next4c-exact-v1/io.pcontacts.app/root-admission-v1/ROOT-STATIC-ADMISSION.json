@@ -1,0 +1,37 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T21:50:28.116900+00:00",
+  "package": "io.pcontacts.app",
+  "artifact_id": "a-ae528ecc6d492fd87d3c",
+  "apk_sha256": "58e2227f80e37c79d2ffb9c588538b233aa4276096ed39b814bd34989d9d8a4c",
+  "apk_bytes": 4443581,
+  "source_url": "https://f-droid.org/repo/io.pcontacts.app_18.apk",
+  "version_name": "1.7.2",
+  "version_code": "18",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/HANDOFF.json",
+    "sha256": "dbe061883c13a993475949c5f6fb23d2aba07bd0c79695184ea66a8edd7c4bcb"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "f83e79902fd96fcd40b757f00fc78f9de2fda15c0c72173538bc892468b3f955"
+  },
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/STATIC.json",
+    "sha256": "18b987ee98b6100ff1a4e756e849bf5db7370ce94d9622ab9b96747e96e7142a"
+  },
+  "semantic_dex_delta": 1,
+  "true_arm64_elf_delta": 1,
+  "full_static_delta": 1,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "scope": "Four-phase native-host ZIP/metadata/DEX/true ARM64 ELF static only; no loader/device"
+}

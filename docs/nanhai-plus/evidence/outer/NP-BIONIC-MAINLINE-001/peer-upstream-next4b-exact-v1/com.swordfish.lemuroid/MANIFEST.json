@@ -1,0 +1,51 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 17,
+  "app_name": "Lemuroid",
+  "bytes": 11970354,
+  "features": [
+    "android.hardware.gamepad",
+    "android.hardware.microphone",
+    "android.hardware.touchscreen",
+    "android.software.leanback"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "com.swordfish.lemuroid.app.mobile.feature.main.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 8,
+  "package": "com.swordfish.lemuroid",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.providers.tv.permission.READ_EPG_DATA",
+    "com.android.providers.tv.permission.WRITE_EPG_DATA",
+    "com.swordfish.lemuroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 0,
+  "receivers": 11,
+  "services": 5,
+  "sha256": "f83912a5c276f3616833fcf1b44a8e40c61d5a20f76db3f4297d6c1f63805c42",
+  "signing_certificate_sha256": [
+    "36e9853f4884e55c35803dbf671e1493e8b0b4d33e635ed84dbaa83bcad8303c"
+  ],
+  "target_sdk": "35",
+  "version_code": "252",
+  "version_name": "1.17.0"
+}

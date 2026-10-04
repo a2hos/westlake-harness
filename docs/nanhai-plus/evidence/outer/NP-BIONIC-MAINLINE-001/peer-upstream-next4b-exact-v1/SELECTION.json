@@ -1,0 +1,42 @@
+{
+  "audit_inputs_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "container_commands": 0,
+  "device_commands": 0,
+  "rows": [
+    {
+      "artifact_id": "a-5dd27d26c6d932f68d0c",
+      "expected_sha256": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "package": "at.techbee.jtx",
+      "source_url": "https://f-droid.org/repo/at.techbee.jtx_217020009.apk",
+      "version_code": "217020009",
+      "version_name": "2.17.00.ose"
+    },
+    {
+      "artifact_id": "a-30e87ec07c416de4d09c",
+      "expected_sha256": "209e0670cb44a959dd628737eaa5b8df05bfb605e4706de49ea2b72684cf72e3",
+      "package": "com.stoutner.privacybrowser.standard",
+      "source_url": "https://f-droid.org/repo/com.stoutner.privacybrowser.standard_81.apk",
+      "version_code": "81",
+      "version_name": "3.20.1"
+    },
+    {
+      "artifact_id": "a-17e6d7b1ef1274c7e49d",
+      "expected_sha256": "35300568c6f5882b42256f0e662b2790494c3be764b05f00bee82371d49dd798",
+      "package": "org.fairscan.app",
+      "source_url": "https://f-droid.org/repo/org.fairscan.app_96.apk",
+      "version_code": "96",
+      "version_name": "2.3.0"
+    },
+    {
+      "artifact_id": "a-f1a367c3a73d18209179",
+      "expected_sha256": "f83912a5c276f3616833fcf1b44a8e40c61d5a20f76db3f4297d6c1f63805c42",
+      "package": "com.swordfish.lemuroid",
+      "source_url": "https://f-droid.org/repo/com.swordfish.lemuroid_252.apk",
+      "version_code": "252",
+      "version_name": "1.17.0"
+    }
+  ],
+  "schema": "peer-upstream-next4b-selection-v1",
+  "source_scope": "registered F-Droid exact URL; live GET and hash remain to be tested"
+}

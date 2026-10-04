@@ -1,0 +1,39 @@
+{
+  "abis": [
+    "arm64-v8a"
+  ],
+  "activities": 5,
+  "app_name": "Flux News",
+  "bytes": 35641857,
+  "features": [],
+  "filename": "original.apk",
+  "main_activities": [
+    "de.circle_dev.flux_news.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "29",
+  "native_library_entries": 5,
+  "package": "de.circle_dev.flux_news",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4c-exact-v1/de.circle_dev.flux_news/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.FOREGROUND_SERVICE_SHORT_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "de.circle_dev.flux_news.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 5,
+  "receivers": 11,
+  "services": 7,
+  "sha256": "168cb7b2d24e585db82c40b188f024257cc20e5be32693a5eb38252b72483f0b",
+  "signing_certificate_sha256": [
+    "fee5401bc9d59cf5a8a461ba9698c482e87ed8ffb9258786a3d01d0356ea2ebb"
+  ],
+  "target_sdk": "36",
+  "version_code": "2026090504",
+  "version_name": "2.3.2"
+}

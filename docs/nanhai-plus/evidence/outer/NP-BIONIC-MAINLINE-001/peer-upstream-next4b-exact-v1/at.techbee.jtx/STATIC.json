@@ -1,0 +1,83 @@
+{
+  "apk_sha256": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+  "artifact_id": "a-5dd27d26c6d932f68d0c",
+  "authoritative_count_changed": false,
+  "container_commands": 0,
+  "decision": "GO_COMPLETE_HOST_STATIC_CANDIDATE",
+  "device_commands": 0,
+  "four_phase_rc0": true,
+  "package": "at.techbee.jtx",
+  "phases": {
+    "dex": {
+      "apk_sha_after": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "apk_sha_before": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "container_commands": 0,
+      "device_commands": 0,
+      "dex_entries": 3,
+      "dex_names": [
+        "classes.dex",
+        "classes2.dex",
+        "classes3.dex"
+      ],
+      "elapsed_seconds": 3.603,
+      "input_guard_equal": true,
+      "phase": "dex",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+    },
+    "elf": {
+      "abi_matches_machine": 1,
+      "apk_sha_after": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "apk_sha_before": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "arm64_elf_entries": 1,
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 0.029,
+      "input_guard_equal": true,
+      "phase": "elf",
+      "rc": 0,
+      "readelf_ok": 1,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+    },
+    "metadata": {
+      "apk_sha_after": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "apk_sha_before": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 0.115,
+      "input_guard_equal": true,
+      "manifest_available": true,
+      "package": "at.techbee.jtx",
+      "phase": "metadata",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "target_sdk": "37",
+      "version_code": "217020009",
+      "version_name": "2.17.00.ose"
+    },
+    "zip": {
+      "apk_sha_after": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "apk_sha_before": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+      "arm64_so_count": 1,
+      "container_commands": 0,
+      "crc_first_bad": null,
+      "device_commands": 0,
+      "duplicate_names": 0,
+      "elapsed_seconds": 0.05,
+      "entries": 3428,
+      "input_guard_equal": true,
+      "manifest_count": 1,
+      "phase": "zip",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "root_dex_count": 3,
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+    }
+  },
+  "raw_sha256": "f6e0c47fd1dd61946b09e2258ff8998dffde4bdab039c0fb53e56956966c5f4e",
+  "schema": "peer-upstream-next4b-exact-four-static-v1",
+  "startup_proven": false
+}

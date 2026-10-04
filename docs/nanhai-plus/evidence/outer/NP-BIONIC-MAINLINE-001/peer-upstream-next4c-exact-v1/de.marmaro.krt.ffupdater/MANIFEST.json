@@ -1,0 +1,51 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 6,
+  "app_name": "FFUpdater",
+  "bytes": 4957402,
+  "features": [
+    "android.hardware.touchscreen"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "de.marmaro.krt.ffupdater.activity.main.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "21",
+  "native_library_entries": 4,
+  "package": "de.marmaro.krt.ffupdater",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4c-exact-v1/de.marmaro.krt.ffupdater/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.ENFORCE_UPDATE_OWNERSHIP",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "de.marmaro.krt.ffupdater.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "moe.shizuku.manager.permission.API_V23"
+  ],
+  "providers": 3,
+  "receivers": 10,
+  "services": 4,
+  "sha256": "b1a854c248ca3336afd112f8f620c5c8c44c02dd6aac5784199f9931c2377ce6",
+  "signing_certificate_sha256": [
+    "f4e642bb85cbbcfd7302b2cbcbd346993a41067c27d995df492c9d0d38747e62"
+  ],
+  "target_sdk": "35",
+  "version_code": "179",
+  "version_name": "81.0.0"
+}

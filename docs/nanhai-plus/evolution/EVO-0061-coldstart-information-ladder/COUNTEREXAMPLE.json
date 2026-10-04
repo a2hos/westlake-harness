@@ -1,0 +1,61 @@
+{
+  "case": "negative_mutated_zero_native_count",
+  "checks": {
+    "complexity_gradient": false,
+    "heavy_blackbox_deferred": true,
+    "one_native_next_step": true,
+    "zero_packaged_native_sentinel": false
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "NO_GO_ORDER_PREMISE",
+  "defer_from_first_three": "com.tencent.ig",
+  "device_commands": 0,
+  "failed": [
+    "zero_packaged_native_sentinel",
+    "complexity_gradient"
+  ],
+  "input_manifest_sha256": "74cfff80960108ce0e1824c4e0cc8e09cd4ae06e85230b8904833e84ac040efd",
+  "production_changed": false,
+  "rows": [
+    {
+      "apk_bytes": 17083571,
+      "apk_sha256": "209e0670cb44a959dd628737eaa5b8df05bfb605e4706de49ea2b72684cf72e3",
+      "package": "com.stoutner.privacybrowser.standard",
+      "packaged_true_arm64_elf": 1,
+      "root_limited_raw_and_static": true,
+      "semantic_dex": 1
+    },
+    {
+      "apk_bytes": 4443581,
+      "apk_sha256": "58e2227f80e37c79d2ffb9c588538b233aa4276096ed39b814bd34989d9d8a4c",
+      "package": "io.pcontacts.app",
+      "packaged_true_arm64_elf": 1,
+      "root_limited_raw_and_static": true,
+      "semantic_dex": 1
+    },
+    {
+      "apk_bytes": 45938803,
+      "apk_sha256": "35300568c6f5882b42256f0e662b2790494c3be764b05f00bee82371d49dd798",
+      "package": "org.fairscan.app",
+      "packaged_true_arm64_elf": 11,
+      "root_limited_raw_and_static": true,
+      "semantic_dex": 1
+    },
+    {
+      "apk_bytes": 1274351207,
+      "apk_sha256": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+      "package": "com.tencent.ig",
+      "packaged_true_arm64_elf": 40,
+      "root_limited_raw_and_static": true,
+      "semantic_dex": 3
+    }
+  ],
+  "runtime_observations": 0,
+  "schema": "evo61-coldstart-information-ladder-pilot-v1",
+  "suggested_after_helloworld": [
+    "com.stoutner.privacybrowser.standard",
+    "io.pcontacts.app",
+    "org.fairscan.app"
+  ]
+}

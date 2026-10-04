@@ -1,0 +1,42 @@
+{
+  "audit_inputs_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "container_commands": 0,
+  "device_commands": 0,
+  "rows": [
+    {
+      "artifact_id": "a-b7a27f1ce8b533da7ded",
+      "expected_sha256": "10a862955c6559ac056d4809b3879efcf7a9af4c10208b282fa987d7d8f82f8c",
+      "package": "com.afkanerd.deku",
+      "source_url": "https://f-droid.org/repo/com.afkanerd.deku_9103.apk",
+      "version_code": "9103",
+      "version_name": "0.77.0"
+    },
+    {
+      "artifact_id": "a-e7af1d469505fe299eb8",
+      "expected_sha256": "168cb7b2d24e585db82c40b188f024257cc20e5be32693a5eb38252b72483f0b",
+      "package": "de.circle_dev.flux_news",
+      "source_url": "https://f-droid.org/repo/de.circle_dev.flux_news_2026090504_fee5401.apk",
+      "version_code": "2026090504",
+      "version_name": "2.3.2"
+    },
+    {
+      "artifact_id": "a-ae528ecc6d492fd87d3c",
+      "expected_sha256": "58e2227f80e37c79d2ffb9c588538b233aa4276096ed39b814bd34989d9d8a4c",
+      "package": "io.pcontacts.app",
+      "source_url": "https://f-droid.org/repo/io.pcontacts.app_18.apk",
+      "version_code": "18",
+      "version_name": "1.7.2"
+    },
+    {
+      "artifact_id": "a-424824476cc44afbee5c",
+      "expected_sha256": "b1a854c248ca3336afd112f8f620c5c8c44c02dd6aac5784199f9931c2377ce6",
+      "package": "de.marmaro.krt.ffupdater",
+      "source_url": "https://f-droid.org/repo/de.marmaro.krt.ffupdater_179_f4e642b.apk",
+      "version_code": "179",
+      "version_name": "81.0.0"
+    }
+  ],
+  "schema": "peer-upstream-next4c-selection-v1",
+  "source_scope": "registered F-Droid exact URL; live GET and hash remain to be tested"
+}

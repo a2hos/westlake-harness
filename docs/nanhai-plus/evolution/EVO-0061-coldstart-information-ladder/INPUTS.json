@@ -1,0 +1,90 @@
+{
+  "rows": [
+    {
+      "package": "com.stoutner.privacybrowser.standard",
+      "raw": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/RAW.json",
+        "sha256": "ddf2535880225360c4aad421e0152e32d1edec0bba1226230ec2fefa825b5e3c"
+      },
+      "raw_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "a00fd3dc857516897f0e8f710f5f7a65b59efdd6cab790c6f278e8fddd12cdae"
+      },
+      "static": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/STATIC.json",
+        "sha256": "2cfda4bab8ae3b6356de24836d791db1fd761527e8285e0889a31e0e1de1a781"
+      },
+      "static_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "bb1d1bdb13ddc43bfb6047e32439f2eff174b966dfbe4f2ccad9ca8a5d834af6"
+      }
+    },
+    {
+      "package": "io.pcontacts.app",
+      "raw": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/RAW.json",
+        "sha256": "98e6cb186fa23d744f7ab0d5a2adb1eab06b8005df5635bcd0b1afa400cf803f"
+      },
+      "raw_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "f83e79902fd96fcd40b757f00fc78f9de2fda15c0c72173538bc892468b3f955"
+      },
+      "static": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/STATIC.json",
+        "sha256": "18b987ee98b6100ff1a4e756e849bf5db7370ce94d9622ab9b96747e96e7142a"
+      },
+      "static_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "7a7b5562fc4210cdbe8df21388c74e36cbb09fa798b0ade5d12da241343bef3c"
+      }
+    },
+    {
+      "package": "org.fairscan.app",
+      "raw": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/RAW.json",
+        "sha256": "792142d9926055572172e9091d6c5b33071701a87653418525662b33d49ca714"
+      },
+      "raw_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "ea747b801fd29242006090970c37013a11dea19db8ca23571420199ad25c059e"
+      },
+      "static": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/STATIC.json",
+        "sha256": "ea978a8802b330f0b142d6c10ede686542665b6a96dfae1dc453300705415eed"
+      },
+      "static_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "28ccf8f6dc9c2a0883bdcdcbb1ce0509f3e2ea55cd6b0a86ed704f98cecec1c6"
+      }
+    },
+    {
+      "dex": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/DEX-RESULT.json",
+        "sha256": "dbc25156d588ce39f5e734020b1c4b3a85b998c25a209f02e9eef964da1fd142"
+      },
+      "elf": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/ELF-RESULT.json",
+        "sha256": "65f8198c884d0e91c8458601a8327d099e3cc7d1a3287e131710dbecf9b88d98"
+      },
+      "package": "com.tencent.ig",
+      "raw": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/RESULT.json",
+        "sha256": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c"
+      },
+      "raw_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "c35a4f0500b7dc26a5a33e4cfa0645e201028d783709628a994f987cb7011fe3"
+      },
+      "static": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/RESULT.json",
+        "sha256": "a905bae5c4f3d5a5397547b0d2d4fcb8e1c013192d5344ab12d38fa19a863bd4"
+      },
+      "static_root": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "3c02361c428aab1ad12c85aab1166f9fecd3f7e424e870a477d624b6345d4655"
+      }
+    }
+  ],
+  "schema": "evo61-coldstart-ladder-inputs-v1",
+  "scope": "frozen root-limited raw/static receipts only; no runtime observation"
+}

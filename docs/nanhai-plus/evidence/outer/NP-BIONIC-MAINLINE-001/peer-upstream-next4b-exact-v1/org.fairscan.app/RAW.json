@@ -1,0 +1,89 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4b-exact-v1/org.fairscan.app/original.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 4880,
+    "stdout_sha256": "af34c5e71c72f193693778062566c9ffbb0fbea568431624c895f3ee558eb8b4"
+  },
+  "aapt2_tool_sha256": "347ae46c83960aed14dd88e132f80a82c1b3456000384d234cee23c412533b03",
+  "actual_sha256": "35300568c6f5882b42256f0e662b2790494c3be764b05f00bee82371d49dd798",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4b-exact-v1/org.fairscan.app/original.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 976,
+    "stdout_sha256": "08d5334fd31f20925987d4807b0e5ee2b6b19ec0716ad0a7241de1130fc3db51"
+  },
+  "apksigner_tool_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "arm64_abi_compatible": true,
+  "arm64_so_count": 11,
+  "artifact_id": "a-17e6d7b1ef1274c7e49d",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "authoritative_count_changed": false,
+  "bytes": 45938803,
+  "container_commands": 0,
+  "decision": "GO_EXACT_REGISTERED_RAW_CANDIDATE",
+  "device_commands": 0,
+  "expected_sha256": "35300568c6f5882b42256f0e662b2790494c3be764b05f00bee82371d49dd798",
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "300",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4b-exact-v1/org.fairscan.app/original.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/GET.headers.raw",
+      "https://f-droid.org/repo/org.fairscan.app_96.apk"
+    ],
+    "rc": 0,
+    "stderr_bytes": 712,
+    "stderr_sha256": "80c4c1112e358682f235a8bce1fc5bb561a72f49f70bb9dc73135ff76d800f2c",
+    "stdout_bytes": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "get_elapsed_seconds": 4.695,
+  "input_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "manifest_count": 1,
+  "native_abis": [
+    "arm64-v8a"
+  ],
+  "package_expected": "org.fairscan.app",
+  "package_version_match": true,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "root_dex_count": 1,
+  "schema": "peer-upstream-next4b-exact-raw-v1",
+  "selection_sha256": "e607e7b5581d2bd34cf21c25efecaca5b5c4f1f7c5f96891d80f09c632831bc0",
+  "sha_matches_registry": true,
+  "source_url_registered": "https://f-droid.org/repo/org.fairscan.app_96.apk",
+  "startup_proven": false,
+  "version_code_expected": [
+    "96"
+  ],
+  "version_expected": [
+    "2.3.0"
+  ],
+  "zip_duplicate_names": 0,
+  "zip_entries": 582,
+  "zip_first_bad": null
+}

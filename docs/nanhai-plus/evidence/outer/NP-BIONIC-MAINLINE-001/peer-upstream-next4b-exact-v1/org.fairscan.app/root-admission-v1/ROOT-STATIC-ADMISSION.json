@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T21:43:07.973878+00:00",
+  "package": "org.fairscan.app",
+  "artifact_id": "a-17e6d7b1ef1274c7e49d",
+  "apk_sha256": "35300568c6f5882b42256f0e662b2790494c3be764b05f00bee82371d49dd798",
+  "apk_bytes": 45938803,
+  "source_url": "https://f-droid.org/repo/org.fairscan.app_96.apk",
+  "version_name": "2.3.0",
+  "version_code": "96",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/HANDOFF.json",
+    "sha256": "1fad8f3ac77f9b9fa3255535639382fcec7f9d4cbf709ad16080e9785d441bfa"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "ea747b801fd29242006090970c37013a11dea19db8ca23571420199ad25c059e"
+  },
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/STATIC.json",
+    "sha256": "ea978a8802b330f0b142d6c10ede686542665b6a96dfae1dc453300705415eed"
+  },
+  "semantic_dex_delta": 1,
+  "true_arm64_elf_delta": 11,
+  "full_static_delta": 1,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "empty_native_elf_inventory_expected": false,
+  "scope": "Four-phase native-host ZIP/metadata/DEX/true ARM64 ELF static only; zero ELF valid only when ZIP has no native library; no loader/device"
+}

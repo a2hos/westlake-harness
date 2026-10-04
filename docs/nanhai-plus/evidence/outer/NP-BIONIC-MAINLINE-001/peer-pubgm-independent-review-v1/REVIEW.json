@@ -1,0 +1,69 @@
+{
+  "schema": "peer-pubgm-independent-three-layer-review-v1",
+  "role": "non_author_independent_read_only_peer",
+  "decisions": {
+    "official_original_apk": "GO_CANDIDATE_ONLY",
+    "complete_four_phase_host_static": "GO_CANDIDATE_ONLY",
+    "overseas_mainstream_blackbox_test_input": "GO_CANDIDATE_ONLY",
+    "installation_cold_start_or_bionic_runtime": "NO_GO_NO_RUNTIME_EVIDENCE",
+    "authoritative_count_change": "NO_GO_PEER_CANNOT_ADMIT"
+  },
+  "independent_observation": {
+    "file": "OBSERVATION.json",
+    "sha256": "32ef9bd984e63ae9cee35ec0ccd8842a551565098f66c015e1c70b6b3af8d19b",
+    "reproducer": "verify.py",
+    "reproducer_sha256": "1b14e5644ba65fb37350d1e5d3bb2de0d5d616b258b374e8e4e49fe7877c5a7e",
+    "window_utc": ["2026-10-04T21:47:27.511453+00:00", "2026-10-04T21:47:31.230503+00:00"]
+  },
+  "official_original_apk": {
+    "publisher_page": "https://www.pubgmobile.com/en-US/home.shtml",
+    "publisher_html_android_branch_exact_apk": "https://f.gbcass.com/PUBGMOBILE_Global_4.6.0_uawebsite_livik01_5678FCFA.apk",
+    "captured_head_get": "Both HTTP/2 200, application/vnd.android.package-archive, Content-Length 1274351207; peer did not redownload.",
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-pubgm-official-raw-v1/pubgm-official.apk",
+    "bytes_recomputed": 1274351207,
+    "sha256_recomputed": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+    "package": "com.tencent.ig",
+    "version_code": 21518,
+    "version_name": "4.6.0",
+    "target_sdk": 35,
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "verified_signature_schemes": ["v1", "v2"],
+    "signer_cert_sha256": "e075e99e8540bee44a6bb3fc97d8b0b0fe16f863599490e708b7729a21fa70fa",
+    "publisher_certificate_pin_limit": "No independent publisher certificate pin; exact official-site link, captured GET chain and verified signature support this bounded original-source candidate."
+  },
+  "four_phase_static": {
+    "candidate_phase_rc": {"zip": 0, "metadata": 0, "dex": 0, "elf": 0},
+    "candidate_input_sha_guards_equal_before_after": true,
+    "peer_zip_entries": 1904,
+    "peer_zip_crc_first_bad": null,
+    "peer_duplicate_names": 0,
+    "peer_manifest_entries": 1,
+    "peer_root_dex": 3,
+    "peer_bad_dex_magic": 0,
+    "peer_so_entries": 81,
+    "peer_true_arm64_elf": 40,
+    "peer_arm32_elf": 41,
+    "peer_arm64_path_arm32_or_non_elf_so": 0,
+    "elf_header_basis": "Peer read all 81 .so ELF headers: arm64-v8a class 2 machine 183 and armeabi-v7a class 1 machine 40. Candidate ELF phase independently records all 40 ARM64 readelf successes and machine matches."
+  },
+  "blackbox_test_input": {
+    "play_url": "https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en_US",
+    "captured_play_rc": 0,
+    "captured_play_http": 200,
+    "play_exact_package": "com.tencent.ig",
+    "play_publisher": "Level Infinite",
+    "play_downloads": "1B+ package-wide listing, not version-specific",
+    "source_visibility_limit": "Candidate's targeted source check is bounded and does not establish global absence of a buildable client.",
+    "play_variant_limit": "Play delivery is not proven byte-identical to this website APK/version.",
+    "runtime_limit": "Input qualification confers no install, launch, UI, cold-start, Bionic, or device pass."
+  },
+  "deduplication": "Bounded search of earlier outer project JSON/Markdown, excluding this candidate's own receipts, found no earlier com.tencent.ig record.",
+  "candidate_receipt_sha256": {
+    "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+    "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+    "four_static_result": "a905bae5c4f3d5a5397547b0d2d4fcb8e1c013192d5344ab12d38fa19a863bd4",
+    "qualification": "0f02a19b6e55fd18fd588282c2ff8a8092998ba2bcb2862f37c6b27f70345b7a"
+  },
+  "execution_scope": {"network_requests": 0, "downloads": 0, "device_commands": 0, "container_commands": 0, "bridge_actions": 0, "ledger_changes": 0}
+}

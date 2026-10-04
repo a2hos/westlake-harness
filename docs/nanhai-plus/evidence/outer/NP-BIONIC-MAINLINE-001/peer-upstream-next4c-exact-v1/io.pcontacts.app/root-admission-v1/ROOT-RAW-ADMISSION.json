@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:50:28.116900+00:00",
+  "package": "io.pcontacts.app",
+  "artifact_id": "a-ae528ecc6d492fd87d3c",
+  "apk_sha256": "58e2227f80e37c79d2ffb9c588538b233aa4276096ed39b814bd34989d9d8a4c",
+  "apk_bytes": 4443581,
+  "source_url": "https://f-droid.org/repo/io.pcontacts.app_18.apk",
+  "version_name": "1.7.2",
+  "version_code": "18",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/HANDOFF.json",
+    "sha256": "dbe061883c13a993475949c5f6fb23d2aba07bd0c79695184ea66a8edd7c4bcb"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/RAW.json",
+    "sha256": "98e6cb186fa23d744f7ab0d5a2adb1eab06b8005df5635bcd0b1afa400cf803f"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, F-Droid APK and local ZIP/signature/package metadata only; no install/runtime"
+}

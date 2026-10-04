@@ -1,0 +1,134 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T21:53:11.650005+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 android-16.0.0_r4 / ARM64 / App single Bionic; 200 distinct unmodified APK cold starts incl 100 overseas-mainstream blackbox",
+  "task_summary_sha256": "ca11156589cad0850a7e5bb7da3dc97d08a87ba9c164e96bca3ab995ee27510f",
+  "raw_accepted": 135,
+  "full_host_static_accepted": 135,
+  "semantic_dex_entries": 546,
+  "true_arm64_elf_entries": 2103,
+  "qualified_blackbox_packages": 28,
+  "upstream_exact_raw_accepted": 95,
+  "upstream_registry_artifacts": 338,
+  "upstream_exact_artifact_gap": 243,
+  "cold_start_verified": 0,
+  "qualified_blackbox_cold_starts": 0,
+  "bionic_whole_tools_verified": 0,
+  "tool_dispositions_reviewed": 88,
+  "graph_result_observed": false,
+  "fresh_authenticated_native_linux_host": false,
+  "nine_new_raw_receipts": [
+    {
+      "package": "at.techbee.jtx",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/at.techbee.jtx/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "feebd1cd9e2e38a9f34a7a8af5cb5c01bf48bea4700b0daa77c8e37e0fe06af0"
+    },
+    {
+      "package": "com.stoutner.privacybrowser.standard",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a00fd3dc857516897f0e8f710f5f7a65b59efdd6cab790c6f278e8fddd12cdae"
+    },
+    {
+      "package": "org.fairscan.app",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "ea747b801fd29242006090970c37013a11dea19db8ca23571420199ad25c059e"
+    },
+    {
+      "package": "com.swordfish.lemuroid",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "8ded144908654caa8f881a4a28226c5531cd83e9812fe55da477c32c9b312afb"
+    },
+    {
+      "package": "com.afkanerd.deku",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/com.afkanerd.deku/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "8f53f7e098a0a193f3e8046deb358cbe183d08532f773a7e2c0310e46b41ced8"
+    },
+    {
+      "package": "de.circle_dev.flux_news",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.circle_dev.flux_news/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "2e30c72eec1f07938f484ec0f5d9dd75731ed11433629f4c46bca2e88018262c"
+    },
+    {
+      "package": "io.pcontacts.app",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f83e79902fd96fcd40b757f00fc78f9de2fda15c0c72173538bc892468b3f955"
+    },
+    {
+      "package": "de.marmaro.krt.ffupdater",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.marmaro.krt.ffupdater/root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "9a9b40e4b3fe8448abf35bcb9a3627326a5024f623c46d99f6251c31af1f655e"
+    },
+    {
+      "package": "com.tencent.ig",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "c35a4f0500b7dc26a5a33e4cfa0645e201028d783709628a994f987cb7011fe3"
+    }
+  ],
+  "nine_new_static_receipts": [
+    {
+      "package": "at.techbee.jtx",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/at.techbee.jtx/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "5f7c87ef4ee5cc0a919547f4e78bacf3e0422f7c96120eaa7203c973b83f7b06"
+    },
+    {
+      "package": "com.stoutner.privacybrowser.standard",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "bb1d1bdb13ddc43bfb6047e32439f2eff174b966dfbe4f2ccad9ca8a5d834af6"
+    },
+    {
+      "package": "org.fairscan.app",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "28ccf8f6dc9c2a0883bdcdcbb1ce0509f3e2ea55cd6b0a86ed704f98cecec1c6"
+    },
+    {
+      "package": "com.swordfish.lemuroid",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "c8487134a588c4f3beaf5aa25138b5afded4ec06e272eac649e8114a072547ca"
+    },
+    {
+      "package": "com.afkanerd.deku",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/com.afkanerd.deku/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "c6322cb677efd80e21cff3c5d8d1488ec97a6c2cc2bd80ee322e6172b56c8511"
+    },
+    {
+      "package": "de.circle_dev.flux_news",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.circle_dev.flux_news/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "469f6d6a855594ad622ed997c43803dfba1f6679287752eb64a34fae1918af52"
+    },
+    {
+      "package": "io.pcontacts.app",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "7a7b5562fc4210cdbe8df21388c74e36cbb09fa798b0ade5d12da241343bef3c"
+    },
+    {
+      "package": "de.marmaro.krt.ffupdater",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.marmaro.krt.ffupdater/root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "44a3e1df60946f066086d22b9ecf94b3ccd1ecdf4c317a26c15a684d30914864"
+    },
+    {
+      "package": "com.tencent.ig",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "3c02361c428aab1ad12c85aab1166f9fecd3f7e424e870a477d624b6345d4655"
+    }
+  ],
+  "pubgm_blackbox_receipt": {
+    "package": "com.tencent.ig",
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+    "sha256": "43c643e28034c1443c8ec4b10cd787ea50ec9d18fd684882e0d4eb21c3e06aa2"
+  },
+  "hello_native_closure_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-hello-native-closure-packet-v1/ROOT-REVIEW.json",
+    "sha256": "88a6fafcb9cf76d305dd7d68dfe9332564b5f7e45c7b50b57cc73a6a157b3e5d"
+  },
+  "evo61_decision": {
+    "path": "docs/nanhai-plus/evolution/EVO-0061-coldstart-information-ladder/decision.json",
+    "sha256": "2361acfdae0318a1701b762b781410092f453c12f04c54488bbafccbb8b8ef21"
+  },
+  "local_projection_pilot_rc": 0,
+  "remote_kanban_published": false,
+  "next": "New project-scoped authenticated native Linux x86_64 host route; run four read-only exact-R4 preflight doors under new one-use ACK, then separate Bionic graph/target/install manifest gates. Continue upstream and qualified blackbox intake; no old nonce replay.",
+  "container_commands": 0,
+  "device_commands": 0,
+  "device_hold": true,
+  "goal_session_budget_preserved": true
+}

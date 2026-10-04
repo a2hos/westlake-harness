@@ -1,0 +1,35 @@
+{
+  "apk_bytes": 1274351207,
+  "apk_sha256": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+  "at_utc": "2026-10-04T21:48:30.057108+00:00",
+  "blackbox_qualification_delta": 1,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "google_play": "https://play.google.com/store/apps/details?id=com.tencent.ig",
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-independent-review-v1/REVIEW.json",
+    "sha256": "86534135147425313a41b387ae86bd464d04fa1b1c8223bf996776fc839193be"
+  },
+  "market_download_label": "1B+ package-wide",
+  "package": "com.tencent.ig",
+  "publisher_page": "https://www.pubgmobile.com/en-US/home.shtml",
+  "qualification_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-qualification-v1/QUALIFICATION.json",
+    "sha256": "0f02a19b6e55fd18fd588282c2ff8a8092998ba2bcb2862f37c6b27f70345b7a"
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "c35a4f0500b7dc26a5a33e4cfa0645e201028d783709628a994f987cb7011fe3"
+  },
+  "schema": "nanhai-plus-root-blackbox-test-input-qualification-v1",
+  "scope": "Overseas-mainstream blackbox test-input eligibility only; no startup",
+  "source_scope": "Bounded source visibility; no global source absence or Play-byte equivalence proven",
+  "static_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-STATIC-ADMISSION.json",
+    "sha256": "3c02361c428aab1ad12c85aab1166f9fecd3f7e424e870a477d624b6345d4655"
+  },
+  "version_code": "21518",
+  "version_name": "4.6.0"
+}

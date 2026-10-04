@@ -1,0 +1,17 @@
+{
+  "schema": "nanhai-plus-root-hello-native-closure-review-v1",
+  "at_utc": "2026-10-04T21:41:54.451798+00:00",
+  "decision": "ACCEPT_DRAFT_PREP_ONLY_NO_GRAPH_RELEASE",
+  "packet_sha256": "566d92b868ed280d787dfe40a1054cd4ae204854646d4f9b2631ce7bbcb769d4",
+  "result_sha256": "271903713073a6172813f8fc855e475b318e9d8d8035b036b349ebc406e6216d",
+  "observation_sha256": "c986575e78fbff283113966d2494ebdb523d8f2cb388cc3a78a9546342938c7d",
+  "proven": "A bounded four-door read-only native-host preflight and separate graph/target/manifest gates are specified against project version and output boundaries. Local Mac partial source view gaps are observed only locally.",
+  "not_proven": "Fresh authenticated Linux x86_64 host, exact remote R4/source/toolchain readback, graph rc0, ARM64 ELF, install manifest, HelloWorld installation, cold startup, screen or 200-app progress.",
+  "next": "Use only a new project-owned authenticated host route and one-use owner/root release for H1-H4; preserve current no-container and device HOLD.",
+  "graph_commands": 0,
+  "target_build_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0,
+  "whole_tool_delta": 0
+}

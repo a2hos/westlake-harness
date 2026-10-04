@@ -1,0 +1,16 @@
+{
+  "publisher": {
+    "url": "https://www.pubgmobile.com/en-US/home.shtml",
+    "rc": 0,
+    "stdout": "200 https://www.pubgmobile.com/en-US/home.shtml",
+    "sha256": "29e8d3dd0bc490582b1b8363dc3ebf3cdeaca95e7e7c11de7d3848cbcc5b0cdf",
+    "bytes": 105044
+  },
+  "play": {
+    "url": "https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en_US",
+    "rc": 0,
+    "stdout": "200 https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en_US",
+    "sha256": "068e3c8d7d6972902b464543c9e951f6817d77c0afe1707d103ca4178eb2542e",
+    "bytes": 1377448
+  }
+}

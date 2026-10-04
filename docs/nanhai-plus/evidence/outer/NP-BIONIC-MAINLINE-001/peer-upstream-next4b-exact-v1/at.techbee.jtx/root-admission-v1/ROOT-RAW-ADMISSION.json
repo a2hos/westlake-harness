@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:43:07.973878+00:00",
+  "package": "at.techbee.jtx",
+  "artifact_id": "a-5dd27d26c6d932f68d0c",
+  "apk_sha256": "92fbd67fd935b52bba9e04003e9d6dc8235bb5c66e48dcf77af41c0e660b0c9e",
+  "apk_bytes": 8930747,
+  "source_url": "https://f-droid.org/repo/at.techbee.jtx_217020009.apk",
+  "version_name": "2.17.00.ose",
+  "version_code": "217020009",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/HANDOFF.json",
+    "sha256": "1fad8f3ac77f9b9fa3255535639382fcec7f9d4cbf709ad16080e9785d441bfa"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/at.techbee.jtx/RAW.json",
+    "sha256": "f6e0c47fd1dd61946b09e2258ff8998dffde4bdab039c0fb53e56956966c5f4e"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, F-Droid APK and local ZIP/signature/package metadata only; no install/runtime"
+}

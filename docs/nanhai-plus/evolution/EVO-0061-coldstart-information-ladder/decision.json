@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai-evolution-decision-v1",
+  "id": "EVO-0061",
+  "at_utc": "2026-10-04T21:52:50.947812+00:00",
+  "status": "pilot_only_no_run_queue_promotion",
+  "root_review": "ACCEPT_BOUNDED_OFFLINE_INFORMATION_ORDER_ONLY",
+  "one_improvement": "After verified HelloWorld cold start, trial a 0/1/11 packaged ARM64 ELF diagnostic sequence before heavyweight PUBG; compare first failure stage and discard ordering if no discrimination.",
+  "positive_rc": 0,
+  "counterexample_rc": 2,
+  "positive_sha256": "a3ed8761b33276e2c96b56d33898d614480704e8c8b6aa65281b3a07a9826c05",
+  "counterexample_sha256": "5d923e180514159982ed7aa14001aeea140dfd16231627539e875f9acb9bd736",
+  "inputs_sha256": "74cfff80960108ce0e1824c4e0cc8e09cd4ae06e85230b8904833e84ac040efd",
+  "report_sha256": "d62457b175179cdfc62dfe9a5f80d4e98243ffd1f746eeb7c08b1db213f93720",
+  "promotion_gate": "Verified authorized HelloWorld cold start plus separate same-generation APK runtime receipts; no automatic inference from packaged ELF count.",
+  "production_changed": false,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "original_89_tool_denominator_changed": false
+}

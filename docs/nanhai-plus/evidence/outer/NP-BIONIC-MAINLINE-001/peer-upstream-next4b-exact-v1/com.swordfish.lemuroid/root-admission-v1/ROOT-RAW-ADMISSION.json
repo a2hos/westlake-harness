@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:43:07.973878+00:00",
+  "package": "com.swordfish.lemuroid",
+  "artifact_id": "a-f1a367c3a73d18209179",
+  "apk_sha256": "f83912a5c276f3616833fcf1b44a8e40c61d5a20f76db3f4297d6c1f63805c42",
+  "apk_bytes": 11970354,
+  "source_url": "https://f-droid.org/repo/com.swordfish.lemuroid_252.apk",
+  "version_name": "1.17.0",
+  "version_code": "252",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/HANDOFF.json",
+    "sha256": "1fad8f3ac77f9b9fa3255535639382fcec7f9d4cbf709ad16080e9785d441bfa"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/RAW.json",
+    "sha256": "228619ac66b1c1e9f0582ec12a82590875695baabfca86dc5852386901752774"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, F-Droid APK and local ZIP/signature/package metadata only; no install/runtime"
+}

@@ -1,0 +1,148 @@
+{
+  "all_four_phases_rc0": true,
+  "apk_bytes": 1274351207,
+  "apk_sha256": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+  "authoritative_count_changed": false,
+  "blackbox_qualified": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "phases": {
+    "dex": {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/scan.py",
+        "--execute"
+      ],
+      "at_utc": "2026-10-04T21:44:20.796381+00:00",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 10.016,
+      "input_guard_equal": true,
+      "input_sha256_after": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "input_sha256_before": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "interpreter": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+      "phase": "dex",
+      "rc": 0,
+      "semantic_dex_entries": 3,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-pubgm-four-static-v1"
+    },
+    "elf": {
+      "abi_matches_machine": 40,
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/scan.py",
+        "--execute"
+      ],
+      "at_utc": "2026-10-04T21:44:30.813266+00:00",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 46.983,
+      "elf_counts": {
+        "arm64_path_arm32_elf": 0,
+        "non_elf_so": 0,
+        "other_arm32_elf": 41,
+        "other_elf": 0,
+        "true_arm64_elf": 40
+      },
+      "input_guard_equal": true,
+      "input_sha256_after": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "input_sha256_before": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "interpreter": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+      "phase": "elf",
+      "rc": 0,
+      "readelf_ok": 40,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-pubgm-four-static-v1"
+    },
+    "metadata": {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/scan.py",
+        "--execute"
+      ],
+      "at_utc": "2026-10-04T21:44:19.147635+00:00",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 1.648,
+      "input_guard_equal": true,
+      "input_sha256_after": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "input_sha256_before": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "interpreter": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+      "package": "com.tencent.ig",
+      "phase": "metadata",
+      "rc": 0,
+      "target_sdk": "35",
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-pubgm-four-static-v1",
+      "version_code": "21518",
+      "version_name": "4.6.0"
+    },
+    "zip": {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-four-static-v1/scan.py",
+        "--execute"
+      ],
+      "at_utc": "2026-10-04T21:44:17.453890+00:00",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 1.693,
+      "entries": 1904,
+      "input_guard_equal": true,
+      "input_sha256_after": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "input_sha256_before": {
+        "apk": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+        "raw_result": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+        "raw_verify": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8",
+        "readelf": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+        "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+      },
+      "interpreter": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+      "phase": "zip",
+      "rc": 0,
+      "tmpdir": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/tmp/peer-pubgm-four-static-v1"
+    }
+  },
+  "schema": "peer-pubgm-four-static-v1",
+  "startup_proven": false
+}

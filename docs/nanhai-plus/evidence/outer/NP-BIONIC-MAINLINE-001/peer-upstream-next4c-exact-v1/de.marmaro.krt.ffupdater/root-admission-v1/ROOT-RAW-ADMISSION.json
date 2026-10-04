@@ -1,0 +1,26 @@
+{
+  "schema": "nanhai-plus-root-upstream-exact-raw-admission-v1",
+  "at_utc": "2026-10-04T21:50:28.116900+00:00",
+  "package": "de.marmaro.krt.ffupdater",
+  "artifact_id": "a-424824476cc44afbee5c",
+  "apk_sha256": "b1a854c248ca3336afd112f8f620c5c8c44c02dd6aac5784199f9931c2377ce6",
+  "apk_bytes": 4957402,
+  "source_url": "https://f-droid.org/repo/de.marmaro.krt.ffupdater_179_f4e642b.apk",
+  "version_name": "81.0.0",
+  "version_code": "179",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/HANDOFF.json",
+    "sha256": "dbe061883c13a993475949c5f6fb23d2aba07bd0c79695184ea66a8edd7c4bcb"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_REGISTERED_RAW_APK_ONLY",
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.marmaro.krt.ffupdater/RAW.json",
+    "sha256": "37290d578697f50912688c404f47a51751e6f69d1bc078edb1b66ce0296e9310"
+  },
+  "raw_delta": 1,
+  "full_static_delta": 0,
+  "scope": "Exact frozen registry artifact SHA, F-Droid APK and local ZIP/signature/package metadata only; no install/runtime"
+}

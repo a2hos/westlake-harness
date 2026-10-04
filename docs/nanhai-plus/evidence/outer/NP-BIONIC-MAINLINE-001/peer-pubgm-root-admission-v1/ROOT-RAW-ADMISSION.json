@@ -1,0 +1,30 @@
+{
+  "apk_bytes": 1274351207,
+  "apk_sha256": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+  "at_utc": "2026-10-04T21:48:30.057108+00:00",
+  "blackbox_delta": 0,
+  "candidate_raw": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/RESULT.json",
+    "sha256": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c"
+  },
+  "candidate_verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-official-raw-v1/VERIFY.json",
+    "sha256": "491e7a06975ad03762b95ead84611eabdab952c086241e132b7baa67d0e01eb8"
+  },
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_SUPPLEMENTAL_OFFICIAL_RAW_APK_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-independent-review-v1/REVIEW.json",
+    "sha256": "86534135147425313a41b387ae86bd464d04fa1b1c8223bf996776fc839193be"
+  },
+  "package": "com.tencent.ig",
+  "publisher_page": "https://www.pubgmobile.com/en-US/home.shtml",
+  "raw_delta": 1,
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "Official site-linked unmodified signed Global APK, independently rehashed/ZIP checked; no install/runtime/start",
+  "version_code": "21518",
+  "version_name": "4.6.0"
+}

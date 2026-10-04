@@ -1,0 +1,41 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-pubgm-official-raw-v1/pubgm-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e2f3077e89cf40dbec2be50f335c350cfbd3babe4f17c75bdf6684b6ed5f7ce8"
+  },
+  "apk_bytes": 1274351207,
+  "apk_sha256": "9024ea4f6bf6cc3de55bbaee34a31cde8be661d5a8f2941ded99baebdeceda7c",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-pubgm-official-raw-v1/pubgm-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "21bb93dfeffda3eaf4c55c88ba334ea2b134a2340776e31b16795aec706811a8"
+  },
+  "candidate_pass": true,
+  "package_version": [
+    "com.tencent.ig",
+    "21518",
+    "4.6.0"
+  ],
+  "raw_result_sha256": "b6f86dcda81394197a22b59b58c35134cf9a19e1c89081a3bed2389f823bb87c",
+  "root_count_changed": false,
+  "schema": "peer-pubgm-official-verify-v1",
+  "signer_cert_sha256": [
+    "e075e99e8540bee44a6bb3fc97d8b0b0fe16f863599490e708b7729a21fa70fa"
+  ],
+  "startup_proven": false,
+  "target_sdk": "35"
+}

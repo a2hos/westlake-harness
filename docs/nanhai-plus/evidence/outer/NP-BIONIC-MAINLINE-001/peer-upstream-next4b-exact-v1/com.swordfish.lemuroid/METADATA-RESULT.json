@@ -1,0 +1,17 @@
+{
+  "apk_sha_after": "f83912a5c276f3616833fcf1b44a8e40c61d5a20f76db3f4297d6c1f63805c42",
+  "apk_sha_before": "f83912a5c276f3616833fcf1b44a8e40c61d5a20f76db3f4297d6c1f63805c42",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 0.133,
+  "input_guard_equal": true,
+  "manifest_available": true,
+  "package": "com.swordfish.lemuroid",
+  "phase": "metadata",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "target_sdk": "35",
+  "version_code": "252",
+  "version_name": "1.17.0"
+}

@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-10-04T21:41:29.840254+00:00",
+  "bridge_actions": 0,
+  "container_commands": 0,
+  "decision": "PREP_ONLY_NO_GO_EXECUTION",
+  "device_commands": 0,
+  "first_blocker": "No fresh authenticated project-scoped native Linux x86_64 host entry; exact remote R4 compiler/sysroot, generated Ninja graph and install actions unobserved",
+  "four_readonly_preflight_doors": [
+    "H1_authenticated_native_host",
+    "H2_exact_R4_source",
+    "H3_native_host_tools_and_target_compiler",
+    "H4_project_write_and_no_container_boundary"
+  ],
+  "graph_argv_status": "DRAFT_FROZEN_SEMANTICS_NOT_RELEASED",
+  "graph_commands": 0,
+  "next": "New authorized host route and host-key-pinned H1-H4 read-only receipt; then new one-use owner/root graph-only release, never prior nonce",
+  "observation_sha256": "c986575e78fbff283113966d2494ebdb523d8f2cb388cc3a78a9546342938c7d",
+  "packet_sha256": "566d92b868ed280d787dfe40a1054cd4ae204854646d4f9b2631ce7bbcb769d4",
+  "schema": "peer-hello-native-closure-packet-v1",
+  "ssh_connections": 0,
+  "target_compiles": 0
+}

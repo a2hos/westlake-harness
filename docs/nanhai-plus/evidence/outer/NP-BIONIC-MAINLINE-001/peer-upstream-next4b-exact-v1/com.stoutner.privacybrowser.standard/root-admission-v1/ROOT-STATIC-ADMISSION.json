@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "at_utc": "2026-10-04T21:43:07.973878+00:00",
+  "package": "com.stoutner.privacybrowser.standard",
+  "artifact_id": "a-30e87ec07c416de4d09c",
+  "apk_sha256": "209e0670cb44a959dd628737eaa5b8df05bfb605e4706de49ea2b72684cf72e3",
+  "apk_bytes": 17083571,
+  "source_url": "https://f-droid.org/repo/com.stoutner.privacybrowser.standard_81.apk",
+  "version_name": "3.20.1",
+  "version_code": "81",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/HANDOFF.json",
+    "sha256": "1fad8f3ac77f9b9fa3255535639382fcec7f9d4cbf709ad16080e9785d441bfa"
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "cold_start_delta": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "a00fd3dc857516897f0e8f710f5f7a65b59efdd6cab790c6f278e8fddd12cdae"
+  },
+  "candidate_static": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/STATIC.json",
+    "sha256": "2cfda4bab8ae3b6356de24836d791db1fd761527e8285e0889a31e0e1de1a781"
+  },
+  "semantic_dex_delta": 1,
+  "true_arm64_elf_delta": 0,
+  "full_static_delta": 1,
+  "phase_rc": {
+    "zip": 0,
+    "metadata": 0,
+    "dex": 0,
+    "elf": 0
+  },
+  "empty_native_elf_inventory_expected": true,
+  "scope": "Four-phase native-host ZIP/metadata/DEX/true ARM64 ELF static only; zero ELF valid only when ZIP has no native library; no loader/device"
+}
