@@ -1,0 +1,60 @@
+{
+  "at_utc": "2026-10-04T07:32:55.769407+00:00",
+  "reviewer": "independent peer; source-only",
+  "candidate": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-system-core-r4-source-candidate-v1/CANDIDATE.json",
+  "candidate_sha256": "eb4f0e9ac5e67cccf278281cc376cff18a93115401d96d0eb955cf504b318387",
+  "ready_sha256": "dd4bae97c2fa8bf8fdc89e3e771e0391bb75ef94baead0b3e7dc34cb40d20486",
+  "decision": "PASS_SOURCE_IDENTITY_ONLY",
+  "checks": {
+    "upstream_ls_remote_rc": 0,
+    "official_tag_object_matches": true,
+    "official_peeled_commit_matches": true,
+    "local_tag_commit_tree_matches": true,
+    "git_worktree_clean": true,
+    "all_tracked_git_blob_mode_stage_and_sha256_match_manifest": true,
+    "tracked_entries": 1915,
+    "tracked_bytes": 12567335,
+    "modes": {
+      "100644": 1841,
+      "100755": 16,
+      "120000": 58
+    },
+    "manifest_sha256_matches": true,
+    "ready_artifact_shas_match": true,
+    "shared_sources_entry_matches": true,
+    "shared_sources_sha256": "35f5ab6a3009cafb91bc90ff9fa6412b6270f09e9224ae7b7a73b71316ad7efe",
+    "handoff_gate_rc": 0,
+    "selected_symlink": {
+      "path": ".clang-format-2",
+      "mode": "120000",
+      "blob": "7ab20d4fc9df93b6d99723bf1a0e94d03ed5ae1b",
+      "bytes": 47,
+      "sha256": "44a5cc7f34b3325412078d24dbf9e8f44acd7c9de4c43e48170f4c87c736ac3f",
+      "payload": "../../build/soong/scripts/system-clang-format-2",
+      "isolated_resolved_path": "/opt/19.SourceCode/AOSP-16.0.0_r4/build/soong/scripts/system-clang-format-2",
+      "isolated_resolved_exists": false
+    }
+  },
+  "observed_wall": "No source identity failure. The original .clang-format-2 symlink leaves the isolated repository; its resolved target is absent at that isolated checkout-relative location.",
+  "hypotheses": [
+    {
+      "candidate": "A future G273 stock-path project view can bind the original symlink and exact R4 build/soong target together.",
+      "cheapest_falsifier": "Resolve all three G273 consumer links to the final target in the materialized stock view, compare the target to a pinned R4 build/soong source manifest, and rerun source guard.",
+      "blocking": false
+    }
+  ],
+  "proven": [
+    "Exact official AOSP16 R4 system/core source identity and complete tracked-file contents",
+    "Selected original symlink payload and Git mode",
+    "Shared source index and handoff consistent with source-only candidate"
+  ],
+  "not_proven": [
+    "G273 project stock-path symlink chain closure",
+    "Pinned R4 identity of final build/soong target in a G273 stock view",
+    "Soong graph, ARM64 compile, device or APK startup"
+  ],
+  "failed": [],
+  "next_evidence": "Root source-only admission; then project stock-view chain verification with exact final target hash and version lock before any graph release.",
+  "graph_run": false,
+  "device_run": false
+}

@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T07:21:36.788395+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T07:34:49.449651+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -13,7 +13,7 @@
 | 历史 Musl 已尝试 / 未尝试 | 58 / 31 | 原 86 项已尝试 56，加新增项已尝试 2 |
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
-| 原版 APK 下载载荷接受 | 69 | 上游登记原包 67，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
+| 原版 APK 下载载荷接受 | 71 | 上游登记原包 69，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
 | APK 完整静态清点 | 63 | 共 120 个 DEX、438 个 ELF；VLC、Signal、Keychain、Seal 与 Briar 未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
@@ -23,6 +23,8 @@
 最新构建图实际结果：G272 已终态（exec19714，terminal 1b5375，rc2），原 owner 新 ACK、root 封包与独审均成立。Soong 宿主引导 240/240，AIDL/XSDC 插件参与，前轮六处未识别类型不再出现；新的最早失败为 `tradefed_errorprone_defaults` 未定义，另有 Car、simpleperf、Lint、Connectivity 四种缺项，共六条诊断。源码/SDK 前后守卫一致，OUT/TMP 归档哈希通过，清理命令收据通过；目标编译命令 0。G273 精确 R4 源码定位中，G272 禁止重放。
 
 最新构建图实际结果：G271 已终态（exec87818，terminal b5c83a，rc2）。原 owner 对 17 项输入的 ACK、root 封包及独立预审成立；宿主 Soong 236/236 后原版 CTS 分析出现 5 处 `aidl_interface` 和 1 处 `xsd_config` 未识别类型，首处为 `cts/tests/tests/hardware/Android.bp:19:1`。G270 的 5 个缺模块错误未作为本轮首错出现。源码/SDK 前后守卫一致，OUT/TMP 哈希和资源清理有独立复核；目标编译命令仍为 0。精确 R4 `system/tools/aidl`（2048 文件、2 链接）与 `system/tools/xsdc`（137 文件）已按官方 Git 身份准入为只读源码树，stock 路径与 AIDL 两个链接目标尚未核验可用，G272 候选未封、未执行。
+
+G273 的五棵精确 R4 源码树（16,285 项）及额外 `system/core` 原版树（1,915 项）已分别通过独审与外环**源码身份准入**；`system/core/.clang-format-2` 的 stock 链接链和 G273 图仍未放行。A3 两次实际取包均整体 rc2，仅 LocalSend、Linphone 两个完整原包经独审与外环接受，新增 105,587,196 字节；Home Assistant Minimal、Nextcloud Notes 两轮 rc28 partial 不计。累计 71 原包、63 完整静态，启动数不变。
 
 历史构建图结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；G271/v15 候选经 570 项独立检查和 root 审查，后由原 octos-inner 新 ACK 与 root 封包执行为 G271；源码准入及 ACK 均不代表图闭合。G270 不重放。
 
@@ -91,37 +93,37 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 ## Status
 
 - Label: build_pass
-- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G271 整体图生成失败。
+- Why: 仅 G262 进程外库及宿主引导产物有局部构建证据；G272 整体图生成失败。
 
 ## Observed wall
 
 - Classification: observed
-- Fact: G271 实际报出 6 处未识别模块类型；此前 G270 五缺模块墙已越过。
-- Evidence: G271-REVIEW.json，SHA 见 TASK-SUMMARY.json。
-- First failing command: G271 stock Soong Android.bp 图分析步骤。
+- Fact: G272 实际报出 5 种模块定义缺项、6 处诊断；前轮 AIDL/XSDC 未识别类型墙已越过。
+- Evidence: G272-REVIEW.json，SHA 见 TASK-SUMMARY.json。
+- First failing command: G272 stock Soong Android.bp 图分析步骤。
 - Exit/status: 外层 terminal rc2；目标编译命令 0。
 
 ## Hypotheses
 
-- Candidate: 候选解释为 G271 的源码视图缺少 AIDL/XSDC 的 Soong 注册插件；精确 R4 源码树已准入，但 stock 路径和两个格式链接尚未闭合。
-- Cheapest falsifier: 先核 G272 隔离源码视图中的插件注册导入与 BP 清单，再经新 ACK/封包执行，观察六处类型错误是否消失。
+- Candidate: G272 的五种定义缺项归属五棵精确 R4 仓库；六棵源码树已只读身份准入，G273 的 stock 链接链尚未闭合。
+- Cheapest falsifier: 先核 G273 stock 视图全部原始链接与定义，再经独审、新 ACK 和封包执行，观察五种缺项是否消失。
 - Blocking: no
 
 ## Proven
 
-- 38/89 历史 Musl 源码接受、69 个原包载荷接受、63 个完整静态清点。
+- 38/89 历史 Musl 源码接受、71 个原包载荷接受、63 个完整静态清点。
 
 ## Not proven
 
-- Bionic 整工具与 APK 冷启动；加入 AIDL/XSDC 的 stock 图尚未执行；已运行的 G271 图未通过。
+- Bionic 整工具与 APK 冷启动；G273 stock 图尚未执行；已运行的 G272 图未通过。
 
 ## Failed
 
-- G271 图分析 rc2；G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 静态清点未完成；第 5、12 批整体 rc2。
+- G272 图分析 rc2；G271/G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 静态清点未完成；第 5、12 批整体 rc2。
 
 ## Next evidence
 
-- Command: 先核精确 R4 AIDL/XSDC stock 路径和符号链接，再经独审、原 owner 新 ACK 与封包运行 G272。
+- Command: 先核 G273 精确 R4 六仓 stock 路径和完整符号链接链，再经独审、原 owner 新 ACK 与封包运行 G273。
 - Expected output: 记录真实图分析结果及首个失败，成功时继续目标编译门。
 - If it fails: 保留原始收据，按精确版本定位下一缺项，不算成功。
 

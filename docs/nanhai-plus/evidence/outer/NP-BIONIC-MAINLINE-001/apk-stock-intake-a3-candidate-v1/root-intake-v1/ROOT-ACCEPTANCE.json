@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-04T07:34:28.922327+00:00",
+  "status": "ROOT_ACCEPT_TWO_EXACT_RAW_APK_PAYLOADS_ONLY",
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a3-candidate-v1/HANDOFF.json",
+    "sha256": "cf6e67e7a610aea89f0fc5bd3d89008e4888006ded1dab38c2d7dba88fedf29e"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a3-independent-peer-v1/REVIEW.json",
+    "sha256": "736de489f9537cc044af7ca3f7deae8703615df7cf6a054f9e6a8882119cde48"
+  },
+  "outer_attempt_rcs": [
+    2,
+    2
+  ],
+  "accepted_packages": [
+    {
+      "package": "org.localsend.localsend_app",
+      "version_name": "1.18.2",
+      "version_code": 643,
+      "bytes": 46558706,
+      "sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3",
+      "body": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a3-candidate-v1/org.localsend.localsend_app/body.raw"
+    },
+    {
+      "package": "org.linphone",
+      "version_name": "6.0.21",
+      "version_code": 6000213,
+      "bytes": 59028490,
+      "sha256": "e5c600d90d2906acf338c59fdf4b79c98df5a934002a2f6773ff0f5cbc26b267",
+      "body": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/apk-stock-intake-a3-candidate-v1/org.linphone/body.raw"
+    }
+  ],
+  "accepted_new_raw_payloads": 2,
+  "accepted_new_bytes": 105587196,
+  "new_raw_cumulative": 71,
+  "failed_partial_attempts": 4,
+  "failed_package_names": [
+    "io.homeassistant.companion.android.minimal",
+    "it.niedermann.owncloud.notes"
+  ],
+  "zip_crc_root_recheck_pass": true,
+  "download_only": true,
+  "signature_verified": false,
+  "static_inventory_delta": 0,
+  "qualified_blackbox_delta": 0,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "next": "Static inventory two complete original APKs; retain failed partials separately."
+}

@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-04T07:29:23.368515+00:00",
+  "status": "ADMITTED_FIVE_COMPLETE_EXACT_R4_REPOSITORIES_READONLY_SOURCE_ONLY",
+  "scope": "source identity only; no stock-path symlink closure, graph/build/runtime/device acceptance",
+  "target_id": "oh7.0.0.39-aosp16r4-arm64-bionic",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/READY.json",
+    "sha256": "feff26bd4f8e2bc641e13af79e9b1f6afe25709492c6cb6e4610c128811dc0e1"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/CANDIDATE.json",
+    "sha256": "3c592325a737f38fab1c8ccc314142452c57c3f14f30e6cea7cc21972288837b"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-peer-review-v1/REVIEW.json",
+    "sha256": "8cfdfe5a96699b16e1fe70e2fad97e4cbd5408384187579a2d0b3e864ebc745c"
+  },
+  "peer_delta_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-peer-review-v1/REVIEW-DELTA.json",
+    "sha256": "1df3152042b4fe126fa43ad79fc2c082a9a6e487b0b1be4dc6fe8584a38fce55"
+  },
+  "handoff_gate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/HANDOFF-v2.md",
+    "sha256": "ab0a870f99accb31c12d126c21d6c0f72af1f60608adad013e2bda5e6221588c",
+    "root_actual_rc": 0
+  },
+  "root_full_verify_repos_rc": 0,
+  "root_full_verify_chunk": "414d23",
+  "shared_index_sha256": "68abde9bea46a1eea03a29f52e48dccfdcb0fdf304066b5d3999d3bf6f05a1eb",
+  "shared_readme_sha256": "69bff700d258b76332dbd3c39a5869a8c7d6978df27d2380ea5f97a9be6e5d17",
+  "repositories": 5,
+  "tracked_entries": 16285,
+  "tracked_bytes": 940715464,
+  "unresolved_isolated_symlinks": 16,
+  "graph_view_ready": false,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "next": "Verify all original stock-path link targets; system/core/.clang-format-2 currently missing from pinned input view; no G273 graph release before closure."
+}

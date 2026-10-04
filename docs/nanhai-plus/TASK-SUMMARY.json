@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T07:21:36.788395+00:00",
+  "checked_at": "2026-10-04T07:34:49.449651+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 69,
+    "downloaded_payloads": 71,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -48,11 +48,13 @@
       "org.thoughtcrime.securesms",
       "org.sufficientlysecure.keychain",
       "com.junkfood.seal",
-      "org.briarproject.briar.android"
+      "org.briarproject.briar.android",
+      "org.localsend.localsend_app",
+      "org.linphone"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 67,
+    "registered_upstream_payloads": 69,
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
@@ -376,6 +378,18 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v16/root-release-v2/G272-REVIEW.json",
       "sha256": "ce77cdd38392990aa2556ab65f31515f96e05d42ae30dc747cea4f806e8d775b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a3-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "93265ee01194652d367cc646d19f12e1c0849a6a337bbeddbbcc185d51d1deaa"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "b6283a26d864d9b4a931d728d20222c482754474c7089b718e3ba4b4bb4b19f7"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-system-core-r4-source-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "40632b371db477563d5096f47a2ab06a9904a4fcc087edeb63dc1714b0147430"
     }
   ],
   "bionic_stock_graph": {
@@ -406,7 +420,7 @@
   },
   "next_graph_candidate": {
     "prospective_release": 273,
-    "next_input": "trace exact R4 definitions for five undefined modules",
+    "next_input": "five exact R4 source roots plus exact system/core original formatting link; v17b stock-chain view pending",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
@@ -649,5 +663,37 @@
     "host_steps": 240,
     "target_compile_commands": 0,
     "device_commands": 0
+  },
+  "apk_intake_a3_actual": {
+    "terminal_rcs": [
+      2,
+      2
+    ],
+    "root_accepted_new_raw_payloads": 2,
+    "root_accepted_bytes": 105587196,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-a3-candidate-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "93265ee01194652d367cc646d19f12e1c0849a6a337bbeddbbcc185d51d1deaa"
+    },
+    "failed_partial_packages": [
+      "io.homeassistant.companion.android.minimal",
+      "it.niedermann.owncloud.notes"
+    ],
+    "static_inventory_delta": 0,
+    "startup_delta": 0
+  },
+  "g273_source_admission": {
+    "five_repos_source_only": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "b6283a26d864d9b4a931d728d20222c482754474c7089b718e3ba4b4bb4b19f7",
+      "tracked_entries": 16285
+    },
+    "system_core_source_only": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-system-core-r4-source-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "40632b371db477563d5096f47a2ab06a9904a4fcc087edeb63dc1714b0147430",
+      "tracked_entries": 1915
+    },
+    "graph_input_view_ready": false,
+    "graph_executed": false
   }
 }

@@ -1,0 +1,197 @@
+{
+  "at_utc": "2026-10-04T07:26:28.485887+00:00",
+  "role": "independent_peer_readonly",
+  "candidate_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/CANDIDATE.json",
+  "candidate_sha256": "3c592325a737f38fab1c8ccc314142452c57c3f14f30e6cea7cc21972288837b",
+  "shared_index_sha256": "68abde9bea46a1eea03a29f52e48dccfdcb0fdf304066b5d3999d3bf6f05a1eb",
+  "shared_readme_sha256": "69bff700d258b76332dbd3c39a5869a8c7d6978df27d2380ea5f97a9be6e5d17",
+  "verification": "Independently used git ls-tree HEAD, tag peel/cat-file, origin URL, clean status; read all 16285 local entries and compared mode, Git blob SHA1, bytes and SHA256 to five JSONL manifests; checked index fields and candidate digest. Initial aggregate script reported two false mismatches because candidate includes zero-valued 120000 mode fields; normalized nonzero modes match.",
+  "repos": [
+    {
+      "name": "platform_testing",
+      "remote_url": "https://android.googlesource.com/platform/platform_testing",
+      "tag_type": "tag",
+      "tag_object": "4743c9fdb2df451ccaebc04dbcdf18696abfb3a5",
+      "peeled_commit": "8037f13cdf3d529fe396f5013f8f944050229861",
+      "root_tree": "ea330e4fa2f547b33262538ee6f9841622c42555",
+      "tracked_entries": 3490,
+      "tracked_bytes": 183487783,
+      "modes": {
+        "100644": 3453,
+        "100755": 33,
+        "120000": 4
+      },
+      "manifest_sha256": "523466092753744ccd77eaf6dd9b765a67aea72cb3b16eeceb2181d33ce79ef6",
+      "clean": true,
+      "unresolved_isolated_symlink_targets": [
+        {
+          "path": "libraries/rdroidtest/rustfmt.toml",
+          "target": "../../../build/soong/scripts/rustfmt.toml",
+          "resolves_in_isolated_checkout": false
+        }
+      ]
+    },
+    {
+      "name": "Car",
+      "remote_url": "https://android.googlesource.com/platform/packages/services/Car",
+      "tag_type": "tag",
+      "tag_object": "e35f05ec9f041732bc7d6c8643c490c8ca3a2a8d",
+      "peeled_commit": "b8fe0e1e8ffd792d9601d53d70ccf47d6edf4906",
+      "root_tree": "502c2c5a494a92123839115d0c9bfcda922eef0d",
+      "tracked_entries": 8574,
+      "tracked_bytes": 225400824,
+      "modes": {
+        "100644": 8540,
+        "100755": 34
+      },
+      "manifest_sha256": "93eceea74e49422a00a683e2210ebec5ba77febd231d670f1fb2aa025c76b9c2",
+      "clean": true,
+      "unresolved_isolated_symlink_targets": []
+    },
+    {
+      "name": "system-extras",
+      "remote_url": "https://android.googlesource.com/platform/system/extras",
+      "tag_type": "tag",
+      "tag_object": "1f86aa4d0a6ef4810fdc67850ab1977d7655663b",
+      "peeled_commit": "3f52a5ab49ba53bc463de658db1d112e001c0280",
+      "root_tree": "059df3d8215fa88e61d34d8b2451b69877617434",
+      "tracked_entries": 1264,
+      "tracked_bytes": 494308354,
+      "modes": {
+        "100644": 1165,
+        "100755": 83,
+        "120000": 16
+      },
+      "manifest_sha256": "b338eb77443439c97fe1e0a4b6edd62475e8cd08821be85c88876c16f7359bda",
+      "clean": true,
+      "unresolved_isolated_symlink_targets": [
+        {
+          "path": ".clang-format",
+          "target": ".clang-format-4",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": ".clang-format-2",
+          "target": "../../build/soong/scripts/system-clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": ".clang-format-4",
+          "target": "../../build/soong/scripts/system-clang-format",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "boot_control_copy/.clang-format",
+          "target": "../.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "iotop/.clang-format",
+          "target": "../.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "kcmdlinectrl/.clang-format",
+          "target": "../../core/.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "libfscrypt/.clang-format",
+          "target": "../../../build/soong/scripts/system-clang-format",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "libjsonpb/.clang-format",
+          "target": "../.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "memory_replay/.clang-format",
+          "target": "../.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "mtectrl/.clang-format",
+          "target": "../../core/.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "profcollectd/.clang-format",
+          "target": "../../../system/core/.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "rustfmt.toml",
+          "target": "../../build/soong/scripts/rustfmt.toml",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "simpleperf/.clang-format",
+          "target": "../.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        },
+        {
+          "path": "toolchain-extras/.clang-format",
+          "target": "../.clang-format-2",
+          "resolves_in_isolated_checkout": false
+        }
+      ]
+    },
+    {
+      "name": "lint_checks",
+      "remote_url": "https://android.googlesource.com/platform/tools/lint_checks",
+      "tag_type": "tag",
+      "tag_object": "bd9a5d8b3feb789aa89349b02d12132f00c9e52a",
+      "peeled_commit": "925ee2da6226009677934dc8aaa613e5e09272a3",
+      "root_tree": "22cf79ce84a29e2b9245763e32b7b7f547c8f4b3",
+      "tracked_entries": 48,
+      "tracked_bytes": 397690,
+      "modes": {
+        "100644": 47,
+        "100755": 1
+      },
+      "manifest_sha256": "ff421d59c68d1a701cf9508a508129610b19af636573e34d09fc3799878eb1b5",
+      "clean": true,
+      "unresolved_isolated_symlink_targets": []
+    },
+    {
+      "name": "Connectivity",
+      "remote_url": "https://android.googlesource.com/platform/packages/modules/Connectivity",
+      "tag_type": "tag",
+      "tag_object": "fddbbccd19deee9387169866c19360d02c9546e6",
+      "peeled_commit": "f930245ec39a510f37a9a7dfaded96d287491a61",
+      "root_tree": "28d9fe4d9b2c6b8347bd3076022128c872a9acaf",
+      "tracked_entries": 2909,
+      "tracked_bytes": 37120813,
+      "modes": {
+        "100644": 2897,
+        "100755": 6,
+        "120000": 6
+      },
+      "manifest_sha256": "6994a0372460d95e92feac43395c34a5ef003a552ef5e84fe40511430f045c34",
+      "clean": true,
+      "unresolved_isolated_symlink_targets": [
+        {
+          "path": "rustfmt.toml",
+          "target": "../../../build/soong/scripts/rustfmt.toml",
+          "resolves_in_isolated_checkout": false
+        }
+      ]
+    }
+  ],
+  "total_tracked_entries": 16285,
+  "total_tracked_bytes": 940715464,
+  "total_original_symlinks": 26,
+  "unresolved_in_isolated_checkout": 16,
+  "source_identity_result": "PASS",
+  "stock_path_view_result": "NOT_TESTED",
+  "graph_result": "NOT_TESTED",
+  "target_compile_result": "NOT_TESTED",
+  "device_result": "NOT_TESTED",
+  "admission_scope": "Five exact pinned complete Git source checkouts and shared index identity only",
+  "blockers": [
+    "16 original symlink target paths unresolved in isolated clone locations; validate within declared R4 stock-path project view before graph consumption",
+    "No project stock-path view or source pre/post build guards reviewed",
+    "No graph or compile execution authorized by this receipt"
+  ]
+}

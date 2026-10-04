@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-10-04T07:28:55.891787+00:00",
+  "role": "independent_peer_delta_review",
+  "previous_review": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-peer-review-v1/REVIEW.json",
+  "previous_review_sha256": "8cfdfe5a96699b16e1fe70e2fad97e4cbd5408384187579a2d0b3e864ebc745c",
+  "ready": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g273-five-r4-source-candidate-v1/READY.json",
+  "ready_sha256": "feff26bd4f8e2bc641e13af79e9b1f6afe25709492c6cb6e4610c128811dc0e1",
+  "ready_artifacts_all_hash_match": true,
+  "candidate_sha256": "3c592325a737f38fab1c8ccc314142452c57c3f14f30e6cea7cc21972288837b",
+  "five_manifest_sha256": {
+    "Car-files.jsonl": "93eceea74e49422a00a683e2210ebec5ba77febd231d670f1fb2aa025c76b9c2",
+    "Connectivity-files.jsonl": "6994a0372460d95e92feac43395c34a5ef003a552ef5e84fe40511430f045c34",
+    "lint_checks-files.jsonl": "ff421d59c68d1a701cf9508a508129610b19af636573e34d09fc3799878eb1b5",
+    "platform_testing-files.jsonl": "523466092753744ccd77eaf6dd9b765a67aea72cb3b16eeceb2181d33ce79ef6",
+    "system-extras-files.jsonl": "b338eb77443439c97fe1e0a4b6edd62475e8cd08821be85c88876c16f7359bda"
+  },
+  "script_sha256": "e1abbf6bd2a27f7e2023d5746a96c1d827c2f7d77c96cd85289330834091fe79",
+  "script_delta": "Added explicit refs/tags/android-16.0.0_r4^{} peel and checks tag object, peeled commit and HEAD separately. Script still writes manifests, so independent rerun used temporary copy and temporary manifests; canonical candidate/manifests untouched.",
+  "temporary_script_rerun_rc": 0,
+  "temporary_script_rows": 5,
+  "temporary_script_file_error_counts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "temporary_manifests_match_all_five": true,
+  "handoff_v2_gate_rc": 0,
+  "source_identity": "PASS",
+  "stock_path_view": "NOT_TESTED",
+  "graph": "NOT_TESTED",
+  "device": "NOT_TESTED",
+  "remaining_scope": "16 original cross-repo symlink targets unresolved in isolated clones; project stock-path consumer must verify before graph."
+}
