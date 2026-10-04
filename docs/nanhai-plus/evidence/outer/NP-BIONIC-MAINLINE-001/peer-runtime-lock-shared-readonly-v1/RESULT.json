@@ -1,0 +1,147 @@
+{
+  "at_utc": "2026-10-04T22:05:36.004891+00:00",
+  "bridge_commands": 0,
+  "canonical_changes": 0,
+  "container_commands": 0,
+  "decision": "NO_GO_SAME_BUILD_R4_OH39_BIONIC_RUNTIME_LOCK",
+  "device_commands": 0,
+  "excluded": {
+    "armv7_aosp14": "wrong ABI/version",
+    "bridge16": "distinct project and prohibited input",
+    "oh_dayu600_release": "OpenHarmony product images, no registered R4 Bionic/ART target provenance",
+    "westlake_art_build_worktree": "historical OH39-R4 Musl boundary; not Bionic runtime"
+  },
+  "minimum_missing": [
+    "exact android-16.0.0_r4 and OH7.0.0.39 same-build provenance/manifest/target configuration for a native ARM64 Bionic build",
+    "ordered boot-classpath manifest with every target JAR byte SHA-256",
+    "same-build ARM64 ART/Bionic/bridge/system ELF outputs with byte SHA-256 and build-source links",
+    "independent verification of the resulting runtime index and runtime_lock_id"
+  ],
+  "oh39_source_alias": {
+    "is_symlink": true,
+    "path": "/opt/19.SourceCode/OpenHarmony-7.0.0.39",
+    "target": "/opt/16.YueAPP/.control/bionic-lane/source-recovery/mounts/oh7"
+  },
+  "project_bionic_out_markers": {
+    "matches": {
+      "core-oj.jar": [],
+      "libart.so": [],
+      "libc.so": [],
+      "runtime-lock.json": []
+    },
+    "root": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/out"
+  },
+  "r4_art_source_head": {
+    "git_rc": 0,
+    "head": "1690c6912a7972c9e62c39b48c706de9b8b18b4a",
+    "path": "/opt/19.SourceCode/AOSP-16.0.0_r4/art"
+  },
+  "registered_r4_root_markers": {
+    "core_oj_jar": [],
+    "libart_so": [],
+    "root": "/opt/19.SourceCode/AOSP-16.0.0_r4",
+    "runtime_lock_json": []
+  },
+  "schema": "peer-runtime-lock-shared-readonly-v1",
+  "source_index": {
+    "path": "/opt/19.SourceCode/SOURCES.json",
+    "selected": [
+      {
+        "completeness": "partial_selected_repositories",
+        "kind": "source_collection_with_reference_tools",
+        "known_gaps": [
+          "not a complete AOSP checkout",
+          "frameworks/base and frameworks/native are selected seven-file snapshots each; full modules and generated build inputs remain absent"
+        ],
+        "path": "AOSP-16.0.0_r4",
+        "scope": "Selected Android source repositories; frameworks/base and frameworks/native each contain seven exact selected contract files; ART separate; reference tools preserved",
+        "software": "AOSP",
+        "version": "16.0.0_r4"
+      },
+      {
+        "completeness": "manifest_heads_and_paths_verified_520_of_520",
+        "kind": "source_mount_alias",
+        "limits": [
+          "not a whole-file content audit",
+          "not a full build acceptance"
+        ],
+        "path": "OpenHarmony-7.0.0.39",
+        "software": "OpenHarmony",
+        "version": "7.0.0.39"
+      }
+    ],
+    "sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636"
+  },
+  "unqualified_alexpc": {
+    "art_git_metadata_exists": false,
+    "bionic_git_metadata_exists": false,
+    "build_description_lines": [
+      "ro.build.version.sdk=36",
+      "ro.build.version.release=16",
+      "ro.build.date=Sun Sep 27 10:26:34 CST 2026",
+      "ro.build.description=mainline-eng Baklava BP4A.251205.006 eng.alexya test-keys"
+    ],
+    "fingerprint": "Android/aosp_arm64/generic_arm64:Baklava/BP4A.251205.006/eng.alexya:eng/test-keys",
+    "root": "/opt/19.SourceCode/alexpc-aosp16",
+    "same_build_r4_oh39_provenance": false,
+    "samples": {
+      "unqualified_aosp16_core_libart": {
+        "bytes": 638789,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/apex/com.android.art.debug/javalib/core-libart.jar",
+        "sha256": "8ae3d34130fbce4b0ce6887f74f96a67a51b779ee749a2d2b8cad58498f9bd4a"
+      },
+      "unqualified_aosp16_core_oj": {
+        "bytes": 6035840,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/apex/com.android.art.debug/javalib/core-oj.jar",
+        "sha256": "9486bbc2ace65e27ad1d0854c052efe8a14dbe41a08a3efa77d566ac8d2e50ed"
+      },
+      "unqualified_aosp16_framework": {
+        "bytes": 46924769,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/system/framework/framework.jar",
+        "sha256": "e4491c714dad7740bdbdf7e96184ea053f8baab8ca9cca2f12bc86e2956f2324"
+      },
+      "unqualified_aosp16_libart": {
+        "bytes": 12836248,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[md5/uuid]=d434174adaa895f2e365681112937d20, stripped",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/apex/com.android.art.debug/lib64/libart.so",
+        "sha256": "e21b4dd19168856c6c04491ec0e531dc3343547be43f92697319dab093a71c5f"
+      },
+      "unqualified_aosp16_libc": {
+        "bytes": 1305168,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[md5/uuid]=ad8757e8e6325cde75569dbe10d0022f, not stripped",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/apex/com.android.runtime/lib64/bionic/libc.so",
+        "sha256": "06826867eb1a864cd41ae955b7e0ce900717ea4425d40099e95bfc034476283c"
+      },
+      "unqualified_build_fingerprint": {
+        "bytes": 82,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "ASCII text",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/build_fingerprint-aosp_arm64.txt",
+        "sha256": "956afc305ac41cbac7588fed6aeb81366dc1903ba0b49096b6a8064cf6f9f188"
+      },
+      "unqualified_build_prop": {
+        "bytes": 5390,
+        "exists": true,
+        "file_rc": 0,
+        "file_type": "ASCII text, with very long lines (342)",
+        "path": "/opt/19.SourceCode/alexpc-aosp16/out/target/product/generic_arm64/system/build.prop",
+        "sha256": "bd4c5ab3242437aa82662209503ccbe81e6ddae00834a50b3e753f7d7b5c1d3f"
+      }
+    },
+    "source_repo_manifest_exists": false
+  }
+}

@@ -371,7 +371,20 @@ class Reachability:
 def analyse(path: Path, facts: dict[str, Any], runtime: dict[str, Any] | None = None) -> tuple[Graph, Reachability, dict[str, Any]]:
     """Run staged reachability for one APK from its manifest entry points."""
     desc = lambda name: "L" + name.replace(".", "/") + ";"
-    components = [c["name"] for c in facts["components"] if c.get("name")]
+    package = facts.get("package") or ""
+
+    def component_name(name: str) -> str:
+        # Android manifests permit .MainActivity and MainActivity; DEX uses the
+        # fully qualified owner. Keep metadata tokens separate from this rule.
+        if not name:
+            return name
+        if name.startswith("."):
+            return package + name if package else name
+        if "." not in name and package:
+            return package + "." + name
+        return name
+
+    components = [component_name(c["name"]) for c in facts["components"] if c.get("name")]
     graph = build_graph(path, components)
     r = Reachability(graph, runtime)
 
@@ -381,7 +394,7 @@ def analyse(path: Path, facts: dict[str, Any], runtime: dict[str, Any] | None = 
 
     named = names_in(facts.get("application_meta_data", {}))  # read off ApplicationInfo: live from process start
     for component in facts["components"]:
-        holder = graph.cls_ids.get(desc(component["name"] or ""))
+        holder = graph.cls_ids.get(desc(component_name(component["name"] or "")))
         listed = names_in(component["meta_data"])
         if holder is not None and listed:
             r.named_by[holder] = [graph.cls_ids[desc(n)] for n in listed]
@@ -392,14 +405,16 @@ def analyse(path: Path, facts: dict[str, Any], runtime: dict[str, Any] | None = 
               *[c["name"] for c in facts["components"] if c["kind"] == "provider" and not c.get("process")],
               *sorted(named)]
     for name in filter(None, stage0):
-        if r.start_component(desc(name)):
-            entries["0"].append(name)
+        canonical = component_name(name)
+        if r.start_component(desc(canonical)):
+            entries["0"].append(canonical)
     r.run()
 
     r.current = 1
     for name in facts.get("main_activities", []):
-        if r.start_component(desc(name)):
-            entries["1"].append(name)
+        canonical = component_name(name)
+        if r.start_component(desc(canonical)):
+            entries["1"].append(canonical)
     r.run()
 
     for stage in (2, 3):

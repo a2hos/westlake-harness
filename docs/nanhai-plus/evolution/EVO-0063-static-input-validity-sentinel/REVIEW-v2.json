@@ -1,0 +1,39 @@
+{
+  "after_output_sha256": "ffe4202e511638cb646829da413100557e140bc379834c8da3f5009530f2153f",
+  "apk_sha256": "2d122a7973ffd68c799700aaaaaa0593e5deec30bac83e22a9dc1bf9f64319fd",
+  "at_utc": "2026-10-04T22:10:46.578182+00:00",
+  "cases": {
+    "after_frozen": "VALID_STATIC_REACH_ONLY",
+    "before_claiming_current_scanner": "SUSPECT_STATIC_FALSE_NEGATIVE",
+    "before_frozen": "STALE_SCANNER_VERSION",
+    "mutated_input_hash": "INVALID_INPUT_OR_COMMAND"
+  },
+  "current_hello_root_reach_binding_matches": true,
+  "current_hello_root_sha256": "f2c568cb7424119d6c5f6fd15a634c80e25efd1f5a169d0a4248146b6314cc50",
+  "current_reach_py_sha256": "8809918e3f84c154e7b59f89cd07307296c3e58019a67d3c19640a6a99282be5",
+  "current_root_review_c_node_check": {
+    "matches_root_review": true,
+    "method_shaped_candidate_count": 36,
+    "platform_stage_entries": 40,
+    "synthetic_class_reference_count": 4
+  },
+  "decision": "RECONFIRM_EVO63_ONE_STATIC_ADMISSION_SENTINEL_ONLY",
+  "limits": "Static admission evidence only; synthetic C: entries are class-reference nodes. No runtime index, launch, device, container, Bridge or canonical changes.",
+  "note": "At v2 read time, the preserved v1 decision already binds the current f2c568 ROOT-REVIEW hash. V2 independently reruns and records current bindings; it does not rewrite v1 or propose a second improvement.",
+  "pilot_argv": [
+    "env",
+    "PYTHONPATH=harness",
+    ".nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-B",
+    "docs/nanhai-plus/evolution/EVO-0063-static-input-validity-sentinel/pilot.py"
+  ],
+  "pilot_output_matches_v1": true,
+  "pilot_rc": 0,
+  "pilot_source_sha256": "279a0b8ccbe93752a601fae416b898b4d1c87ad373254e331e0953c88bb04575",
+  "pilot_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "pilot_stdout_sha256": "7e1e5fcf4be5251fc026edaaf6a2d8aaa95d78af6bc7bc3423d62d29321fd53b",
+  "schema": "evo63-static-input-validity-rebind-v2",
+  "v1_binding_matches_current": true,
+  "v1_decision_sha256": "abcb0c719832d12505c7c9d6b9485a26efbfcd2d726ef273534de94348b2673d",
+  "v1_hello_root_binding_sha256": "f2c568cb7424119d6c5f6fd15a634c80e25efd1f5a169d0a4248146b6314cc50"
+}

@@ -85,6 +85,19 @@ class StartupReach(unittest.TestCase):
         self.assertNotIn(TRAFFIC, self.stages, "a click handler is not on the startup path")
         self.assertNotIn(CAMERA, self.stages, "nothing instantiates Never")
 
+    def test_manifest_relative_component_names(self) -> None:
+        for app, main in ((".App", ".Main"), ("App", "Main")):
+            with self.subTest(app=app, main=main):
+                facts = {**FACTS, "package": "fixture", "application_class": app,
+                         "main_activities": [main],
+                         "components": [{"kind": "activity", "name": main, "process": None, "meta_data": {}}]}
+                graph, result, summary = reach.analyse(Path(self.temp.name) / "dex/classes.dex", facts, RUNTIME)
+                stages = reach.export(graph, result, summary)["platform_stage"]
+                self.assertEqual(summary["entry_points"]["0"], ["fixture.App"])
+                self.assertEqual(summary["entry_points"]["1"], ["fixture.Main"])
+                self.assertEqual(stages[LOG], 0)
+                self.assertEqual(stages[CLOCK], 1)
+
     def test_explanation_chain(self) -> None:
         g = self.graph
         mid = g.meth_ids[(g.cls_ids["Landroid/util/Log;"], g.sig_ids["d(Ljava/lang/String;Ljava/lang/String;)I"])]

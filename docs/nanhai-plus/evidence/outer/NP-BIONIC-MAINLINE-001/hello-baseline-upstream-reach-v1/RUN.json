@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-B",
+    "-m",
+    "westlake_gap.cli",
+    "startup-reach",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/hello-baseline-upstream-reach-v1/HelloWorld-original.apk",
+    "--out",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/hello-baseline-upstream-reach-v1/STARTUP-REACH.json"
+  ],
+  "at_utc": "2026-10-04T22:08:38.212399+00:00",
+  "cold_start_claim": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "historical_input_source_sha256": "2d122a7973ffd68c799700aaaaaa0593e5deec30bac83e22a9dc1bf9f64319fd",
+  "historical_source_receipt_sha256": "1cff1f723116e5e94a0ed3d23348d0f189294d3e48bcfd63e88833959c2a6e2b",
+  "input_apk_sha256": "2d122a7973ffd68c799700aaaaaa0593e5deec30bac83e22a9dc1bf9f64319fd",
+  "output_sha256": "ffe4202e511638cb646829da413100557e140bc379834c8da3f5009530f2153f",
+  "rc": 0,
+  "runtime_gap_claim": false,
+  "scanner_cli_sha256": "31c79e38021ccbe1864aaf78cf2834e94b210f36034d0198989f97043d61838a",
+  "scanner_reach_sha256": "8809918e3f84c154e7b59f89cd07307296c3e58019a67d3c19640a6a99282be5",
+  "schema": "nanhai-hello-upstream-startup-reach-v1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "ceaf3878249d257505720b89a29c6689abd283c8e1439e5537cb1dbdac2f4a7f",
+  "target_runtime_index": null
+}

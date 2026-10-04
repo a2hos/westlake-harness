@@ -1,0 +1,51 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T22:11:32.016928+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 android-16.0.0_r4 / ARM64 / App single Bionic; 200 distinct original APK cold starts incl 100 overseas-mainstream blackbox",
+  "prior_checkpoint": {
+    "path": "docs/nanhai-plus/checkpoints/20261004-raw140-static140-blackbox29-upstream99-evo62/CHECKPOINT.json",
+    "sha256": "8628fbc17a5969af09dcec5412690f3934c5e6a4650402d54cb76396926e2040"
+  },
+  "task_summary_sha256": "c7366b93bc0c3153efea7b1d278f62bda44d75cc801aa3ed7b0764d0fedb1ad7",
+  "outer_state_sha256": "a9184de669c9f4400fb2cf75c64a3cd4137ca9125f5e11d6c7d2aa3122c0ee18",
+  "raw_accepted": 140,
+  "full_host_static_accepted": 140,
+  "semantic_dex_entries": 554,
+  "true_arm64_elf_entries": 2165,
+  "qualified_blackbox_packages": 29,
+  "upstream_exact_raw_accepted": 99,
+  "upstream_registry_artifacts": 338,
+  "cold_start_verified": 0,
+  "qualified_blackbox_cold_starts": 0,
+  "bionic_whole_tools_verified": 0,
+  "tool_dispositions_reviewed": 88,
+  "graph_result_observed": false,
+  "fresh_authenticated_native_linux_host": false,
+  "hello_reach_root_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/hello-baseline-upstream-reach-v1/ROOT-REVIEW.json",
+    "sha256": "f2c568cb7424119d6c5f6fd15a634c80e25efd1f5a169d0a4248146b6314cc50"
+  },
+  "native_host_entry_observation": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-linux-host-entry-20261004-v1/OBSERVATION-v2.json",
+    "sha256": "0e2444a22c17f685bfee4454bd2ecab76e27605305c56d65d0a59ce4f58c377e"
+  },
+  "same_build_runtime_lock_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-runtime-lock-shared-readonly-v1/RESULT.json",
+    "sha256": "d933ad9a056b886b0cd1337db9b0c58b110db4bfa861cb6a57483f144869b0e2"
+  },
+  "libz_declared_dependency_frontier": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-libz-cross-apk-140-frontier-v1/RESULT.json",
+    "sha256": "1ab2c47e3edb5a3795e50b9ed2a690ad3662b346a211e39f652333fd6308e6ff"
+  },
+  "evo63_review": {
+    "path": "docs/nanhai-plus/evolution/EVO-0063-static-input-validity-sentinel/REVIEW-v2.json",
+    "sha256": "acf49bbf7357052edbb9f6fc4e5bd3811b9d77c4f9ae96c13b6aa2dccd9ffc2e",
+    "scope": "offline pilot only"
+  },
+  "next": "Recover authenticated native Linux host; new one-use read-only H1-H4 then distinct graph/target/install gates. Runtime scanner waits same-build R4 Bionic index; continue independent APK intake.",
+  "container_commands": 0,
+  "device_commands": 0,
+  "device_hold": true,
+  "goal_session_budget_preserved": true,
+  "remote_kanban_published": false
+}

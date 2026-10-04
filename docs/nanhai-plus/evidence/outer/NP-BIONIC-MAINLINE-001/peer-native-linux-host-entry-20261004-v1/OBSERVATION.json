@@ -1,0 +1,95 @@
+{
+  "bridge_commands": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "graph_commands": 0,
+  "hosts": {
+    "alexpc": {
+      "config_rc": 0,
+      "dns": {
+        "argv": [
+          "python3",
+          "-c",
+          "socket.getaddrinfo(<host>)",
+          "alexpc.local"
+        ],
+        "elapsed_s": 5.005,
+        "rc": 124,
+        "started_utc": "2026-10-04T22:05:01.281965+00:00",
+        "stderr": "timeout",
+        "stdout": ""
+      },
+      "effective_config": {
+        "hostkeyalias": null,
+        "hostname": "alexpc.local",
+        "port": "22",
+        "proxycommand": null,
+        "proxyjump": null,
+        "stricthostkeychecking": "ask",
+        "userknownhostsfile": "/Users/alexyang/.ssh/known_hosts /Users/alexyang/.ssh/known_hosts2"
+      },
+      "known_hosts_fingerprints": [
+        "alexpc.local ED25519 SHA256:OrNmPM32xAI6J3RzMRnIYPIfmzqxZhP/rV0InmnlkKs"
+      ],
+      "known_hosts_query": "alexpc.local",
+      "known_hosts_query_rc": 0,
+      "remote_commands": 0,
+      "ssh_attempted": false,
+      "tcp": {
+        "attempted": false
+      }
+    },
+    "gz02": {
+      "config_rc": 0,
+      "dns": {
+        "argv": [
+          "python3",
+          "-c",
+          "socket.getaddrinfo(<host>)",
+          "1.95.90.207"
+        ],
+        "elapsed_s": 0.023,
+        "rc": 0,
+        "started_utc": "2026-10-04T22:04:58.239039+00:00",
+        "stderr": "",
+        "stdout": "[\"1.95.90.207\"]\n"
+      },
+      "effective_config": {
+        "hostkeyalias": null,
+        "hostname": "1.95.90.207",
+        "port": "58222",
+        "proxycommand": null,
+        "proxyjump": null,
+        "stricthostkeychecking": "ask",
+        "userknownhostsfile": "/Users/alexyang/.ssh/known_hosts /Users/alexyang/.ssh/known_hosts2"
+      },
+      "known_hosts_fingerprints": [
+        "[1.95.90.207]:58222 ED25519 SHA256:RuAqHWgFJEIEcb4hC+WXULCRfV3uCsayP4Iw4aJvwzg",
+        "[1.95.90.207]:58222 RSA SHA256:S/1lWSEzRF5JakaF1B76qMLZC9isG2+LXPSSvkJg4ao",
+        "[1.95.90.207]:58222 ECDSA SHA256:9ONJ6d8lXiAGdryqgJJrcj2jNnU/AljUN6Zqy/mjkRI"
+      ],
+      "known_hosts_query": "[1.95.90.207]:58222",
+      "known_hosts_query_rc": 0,
+      "remote_commands": 0,
+      "ssh_attempted": false,
+      "tcp": {
+        "address": "1.95.90.207",
+        "attempted": true,
+        "elapsed_s": 3.003,
+        "error": "TimeoutError: timed out",
+        "port": 58222,
+        "rc": 2,
+        "started_utc": "2026-10-04T22:04:58.261949+00:00"
+      }
+    }
+  },
+  "inputs": {
+    "known_hosts_sha256": "519aab445016e0a5fc983a1210037535908dab7711c13c9075f16e868f24b53b",
+    "local_env_sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c",
+    "ssh_config_sha256": "d99dc196e3fd7fdbe1c6eb5e6c43a5d85256e659ef5abfd5e27587b318726fdd"
+  },
+  "observed_at_utc": "2026-10-04T22:05:06.550770+00:00",
+  "old_nonce_replays": 0,
+  "remote_commands": 0,
+  "schema": "peer-native-linux-host-entry-v1"
+}

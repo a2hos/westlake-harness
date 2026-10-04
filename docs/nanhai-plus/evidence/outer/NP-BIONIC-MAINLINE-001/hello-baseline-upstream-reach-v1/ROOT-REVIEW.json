@@ -1,0 +1,39 @@
+{
+  "after_output_sha256": "ffe4202e511638cb646829da413100557e140bc379834c8da3f5009530f2153f",
+  "apk_sha256": "2d122a7973ffd68c799700aaaaaa0593e5deec30bac83e22a9dc1bf9f64319fd",
+  "at_utc": "2026-10-04T22:09:47.989194+00:00",
+  "before_output_sha256": "b9efaaf7accf98b558c2bbf7becd4fe0af926a7d8239bd344da3b44d6e6f4030",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_STATIC_ENTRYPOINT_BUGFIX_ONLY",
+  "device_commands": 0,
+  "first_activity_methods": 18,
+  "limits": "Static candidate call graph; four C: entries are intentional class-reference nodes, not methods. No R4 Bionic runtime resolution, install or Activity execution.",
+  "method_shaped_platform_candidate_count": 36,
+  "platform_stage_entries": 40,
+  "process_start_methods": 2,
+  "reach_source_sha256": "8809918e3f84c154e7b59f89cd07307296c3e58019a67d3c19640a6a99282be5",
+  "runtime_index_present": false,
+  "schema": "nanhai-hello-upstream-reach-root-review-v1",
+  "synthetic_class_reference_entries": [
+    "Landroid/widget/Button;->C:",
+    "Landroid/widget/LinearLayout;->C:",
+    "Landroid/widget/TextView;->C:",
+    "Ljava/lang/StringBuilder;->C:"
+  ],
+  "test_argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_reach.py"
+  ],
+  "test_rc": 0,
+  "test_source_sha256": "f85e57cae6fa4f07ba84ae718d19666f91d886def387d07a02cf23bfa1c6a272",
+  "test_stderr_sha256": "57c898054612c4156f88e219e4ace8fb7c28951e9189b00e255591087f278b41",
+  "test_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,77 @@
+{
+  "caller_stage": {},
+  "library_stage": {},
+  "native_method_stage": {},
+  "platform_stage": {
+    "Landroid/app/Activity;-><init>()V": 1,
+    "Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V": 1,
+    "Landroid/app/Activity;->onDestroy()V": 1,
+    "Landroid/app/Activity;->onPause()V": 1,
+    "Landroid/app/Activity;->onResume()V": 1,
+    "Landroid/app/Activity;->onStop()V": 1,
+    "Landroid/app/Application;-><init>()V": 0,
+    "Landroid/app/Application;->onCreate()V": 0,
+    "Landroid/content/ComponentName;->getShortClassName()Ljava/lang/String;": 1,
+    "Landroid/graphics/Color;-><clinit>()V": 1,
+    "Landroid/graphics/Color;->rgb(III)I": 1,
+    "Landroid/util/Log;-><clinit>()V": 0,
+    "Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I": 0,
+    "Landroid/widget/Button;-><clinit>()V": 1,
+    "Landroid/widget/Button;-><init>(Landroid/content/Context;)V": 1,
+    "Landroid/widget/Button;->C:": 1,
+    "Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V": 1,
+    "Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V": 1,
+    "Landroid/widget/LinearLayout;-><clinit>()V": 1,
+    "Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V": 1,
+    "Landroid/widget/LinearLayout;->C:": 1,
+    "Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V": 1,
+    "Landroid/widget/LinearLayout;->setOrientation(I)V": 1,
+    "Landroid/widget/LinearLayout;->setPadding(IIII)V": 1,
+    "Landroid/widget/TextView;-><clinit>()V": 1,
+    "Landroid/widget/TextView;-><init>(Landroid/content/Context;)V": 1,
+    "Landroid/widget/TextView;->C:": 1,
+    "Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V": 1,
+    "Landroid/widget/TextView;->setGravity(I)V": 1,
+    "Landroid/widget/TextView;->setPadding(IIII)V": 1,
+    "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V": 1,
+    "Landroid/widget/TextView;->setTextColor(I)V": 1,
+    "Landroid/widget/TextView;->setTextSize(F)V": 1,
+    "Ljava/lang/Object;-><init>()V": 1,
+    "Ljava/lang/StringBuilder;-><clinit>()V": 1,
+    "Ljava/lang/StringBuilder;-><init>()V": 1,
+    "Ljava/lang/StringBuilder;->C:": 1,
+    "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;": 1,
+    "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;": 1,
+    "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;": 1
+  },
+  "stages": {
+    "0": "process start",
+    "1": "first activity",
+    "2": "next screens",
+    "255": "not reached statically",
+    "3": "later"
+  },
+  "summary": {
+    "classes_defined": 18,
+    "classes_instantiated": 8,
+    "entry_points": {
+      "0": [
+        "com.example.helloworld.HelloWorldApplication"
+      ],
+      "1": [
+        "com.example.helloworld.MainActivity"
+      ],
+      "2": [],
+      "3": []
+    },
+    "methods_by_stage": {
+      "first activity": 18,
+      "later": 0,
+      "next screens": 0,
+      "not reached statically": 38,
+      "process start": 2
+    },
+    "methods_with_code": 58,
+    "runtime_index_used": false
+  }
+}

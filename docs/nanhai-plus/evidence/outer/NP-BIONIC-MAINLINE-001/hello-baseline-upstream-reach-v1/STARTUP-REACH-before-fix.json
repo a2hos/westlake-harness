@@ -1,0 +1,32 @@
+{
+  "caller_stage": {},
+  "library_stage": {},
+  "native_method_stage": {},
+  "platform_stage": {},
+  "stages": {
+    "0": "process start",
+    "1": "first activity",
+    "2": "next screens",
+    "255": "not reached statically",
+    "3": "later"
+  },
+  "summary": {
+    "classes_defined": 18,
+    "classes_instantiated": 0,
+    "entry_points": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": []
+    },
+    "methods_by_stage": {
+      "first activity": 0,
+      "later": 0,
+      "next screens": 0,
+      "not reached statically": 58,
+      "process start": 0
+    },
+    "methods_with_code": 58,
+    "runtime_index_used": false
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T22:02:44.504365+00:00",
+  "checked_at": "2026-10-04T22:11:32.016928+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -3426,6 +3426,48 @@
       "sha256": "d99c0303867fa63536659958a014160e333d4b634b4d14d677d223773475d825"
     },
     "status": "offline_pilot_only_no_queue_promotion",
+    "actual_result_groups": 4,
+    "startup_delta": 0
+  },
+  "hello_baseline_upstream_reach": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/hello-baseline-upstream-reach-v1/ROOT-REVIEW.json",
+      "sha256": "f2c568cb7424119d6c5f6fd15a634c80e25efd1f5a169d0a4248146b6314cc50"
+    },
+    "scope": "static entry-point resolution only; no runtime index or launch",
+    "process_start_methods": 2,
+    "first_activity_methods": 18,
+    "method_shaped_candidates": 36,
+    "synthetic_class_nodes": 4,
+    "cold_start_delta": 0
+  },
+  "native_linux_host_entry_20261004": {
+    "observation": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-linux-host-entry-20261004-v1/OBSERVATION-v2.json",
+      "sha256": "0e2444a22c17f685bfee4454bd2ecab76e27605305c56d65d0a59ce4f58c377e"
+    },
+    "status": "NO_GO_NO_AUTHENTICATED_HOST"
+  },
+  "same_build_runtime_lock_review": {
+    "result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-runtime-lock-shared-readonly-v1/RESULT.json",
+      "sha256": "d933ad9a056b886b0cd1337db9b0c58b110db4bfa861cb6a57483f144869b0e2"
+    },
+    "status": "NO_GO_SAME_BUILD_R4_OH39_BIONIC_RUNTIME_LOCK"
+  },
+  "libz_cross_apk_frontier_140": {
+    "result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-libz-cross-apk-140-frontier-v1/RESULT.json",
+      "sha256": "1ab2c47e3edb5a3795e50b9ed2a690ad3662b346a211e39f652333fd6308e6ff"
+    },
+    "scope": "28/140 package-label lower bound of declared DT_NEEDED; not provider absence"
+  },
+  "evo63": {
+    "review": {
+      "path": "docs/nanhai-plus/evolution/EVO-0063-static-input-validity-sentinel/REVIEW-v2.json",
+      "sha256": "acf49bbf7357052edbb9f6fc4e5bd3811b9d77c4f9ae96c13b6aa2dccd9ffc2e"
+    },
+    "status": "offline_pilot_only_no_broad_promotion",
     "actual_result_groups": 4,
     "startup_delta": 0
   }

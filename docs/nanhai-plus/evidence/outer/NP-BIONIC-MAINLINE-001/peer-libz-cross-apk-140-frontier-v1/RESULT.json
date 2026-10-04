@@ -1,0 +1,26 @@
+{
+  "accepted_artifacts": 140,
+  "at_utc": "2026-10-04T22:07:51.864620+00:00",
+  "bridge_actions": 0,
+  "canonical_changes": 0,
+  "checked_labels": 111,
+  "cohort_package_lower_bound": 28,
+  "cohort_sha256": "a8e9da2b912e61e66ec06e95af5256c0bbe0dfcd19be5960d53015f47a2cc3c8",
+  "container_commands": 0,
+  "decision": "GO_ONE_HOST_STATIC_PROVIDER_VALIDATION_CANDIDATE_ONLY",
+  "device_commands": 0,
+  "distinct_consumer_elf_sha256": 158,
+  "elf_edges": 174,
+  "provider_absence_proven": false,
+  "recompute_script_sha256": "397dcbd56175320d27b9426cb05a017d504924fd175966417dbbdb67faa4714d",
+  "replay_argv": [
+    "python3",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-libz-cross-apk-140-frontier-v1/recompute.py"
+  ],
+  "replay_rc": 0,
+  "replay_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "replay_stdout_sha256": "63456295d9fc681c0a5e5ed8c333f6635011b9d05cb65b364f3e4b8fbba08e21",
+  "review_sha256": "3c8f73ca16b2afc2c04bb37b463f40cc35ab7702d27db12206f6cda37fbe510e",
+  "schema": "peer-libz-cross-apk-140-frontier-result-v1",
+  "startup_wall_proven": false
+}

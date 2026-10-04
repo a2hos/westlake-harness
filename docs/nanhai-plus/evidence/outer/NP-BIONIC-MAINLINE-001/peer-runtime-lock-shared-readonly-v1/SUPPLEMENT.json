@@ -1,0 +1,43 @@
+{
+  "at_utc": "2026-10-04T22:05:53.008134+00:00",
+  "canonical_changes": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "interpretation": "Depth-bounded marker absence in registered R4 root; not a whole-tree or remote-host absence claim. Legacy alexpc build outputs have no exact R4 source/build provenance admission; OH dayu product outputs are not target Bionic/ART.",
+  "legacy_entries": [
+    {
+      "admission": "not_reverified_by_this_catalog",
+      "kind": "existing_build_outputs_and_images",
+      "path": "OpenHarmony-7.0.0.39-dayu600-7885-Release"
+    },
+    {
+      "admission": "exact_version_unverified_do_not_admit_as_r4",
+      "kind": "other_existing_checkout",
+      "path": "alexpc-aosp16"
+    }
+  ],
+  "r4_root_find_maxdepth5": {
+    "argv": [
+      "/usr/bin/find",
+      "/opt/19.SourceCode/AOSP-16.0.0_r4",
+      "-maxdepth",
+      "5",
+      "(",
+      "-name",
+      "libart.so",
+      "-o",
+      "-name",
+      "core-oj.jar",
+      "-o",
+      "-name",
+      "runtime-lock.json",
+      ")",
+      "-print"
+    ],
+    "rc": 0,
+    "stderr": "",
+    "stdout": []
+  },
+  "schema": "peer-runtime-lock-bounded-supplement-v1",
+  "source_index_sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636"
+}

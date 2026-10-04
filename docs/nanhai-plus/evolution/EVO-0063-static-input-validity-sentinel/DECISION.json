@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-04T22:09:55.476951+00:00",
+  "bounded_seconds": 120,
+  "decision": "GO_ONE_OFFLINE_STATIC_ADMISSION_SENTINEL_CANDIDATE_ONLY",
+  "four_observations": [
+    "Native Linux host entry remains NO_GO; no authenticated graph or target ELF.",
+    "Same-build R4/OH39 Bionic runtime lock remains NO_GO; no runtime-resolution claim.",
+    "Original HelloWorld APK unchanged; before: 58 code methods all statically unreached and no entry points; after relative component fix: 2 process and 18 first-activity methods, root tests 5/5; still static only.",
+    "libz cohort: 28 package lower bound, 158 distinct consumer ELF, 174 DT_NEEDED edges; declared dependency only, not missing provider or launch wall."
+  ],
+  "input_sha256": {
+    "hello_after": "ffe4202e511638cb646829da413100557e140bc379834c8da3f5009530f2153f",
+    "hello_before": "b9efaaf7accf98b558c2bbf7becd4fe0af926a7d8239bd344da3b44d6e6f4030",
+    "hello_root": "f2c568cb7424119d6c5f6fd15a634c80e25efd1f5a169d0a4248146b6314cc50",
+    "libz": "1ab2c47e3edb5a3795e50b9ed2a690ad3662b346a211e39f652333fd6308e6ff",
+    "native_host": "4bc857d8ee4baa41c12760f9b5f8b70ffc3c59ae905544b1bcdc4500cc957ee0",
+    "runtime_lock": "d933ad9a056b886b0cd1337db9b0c58b110db4bfa861cb6a57483f144869b0e2"
+  },
+  "limits": "The synthetic before_claiming_current_scanner case changes receipt metadata only. It demonstrates guard classification, not a new scanner run. No runtime graph, ELF provider absence, cold start or device evidence. No canonical scanner, device, container or Bridge changes.",
+  "one_trial": "At static startup-reach result admission, bind exact APK SHA, output SHA and scanner source SHA; independently parse the same APK manifest, canonicalize relative launcher names, and flag missing launcher entry points as SUSPECT_STATIC_FALSE_NEGATIVE rather than an asserted unreachable result.",
+  "pilot_argv": [
+    "PYTHONPATH=harness",
+    ".nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-B",
+    "docs/nanhai-plus/evolution/EVO-0063-static-input-validity-sentinel/pilot.py"
+  ],
+  "pilot_cases": {
+    "after_frozen": "VALID_STATIC_REACH_ONLY",
+    "before_claiming_current_scanner": "SUSPECT_STATIC_FALSE_NEGATIVE",
+    "before_frozen": "STALE_SCANNER_VERSION",
+    "mutated_input_hash": "INVALID_INPUT_OR_COMMAND"
+  },
+  "pilot_output_sha256": "7e1e5fcf4be5251fc026edaaf6a2d8aaa95d78af6bc7bc3423d62d29321fd53b",
+  "pilot_rc": 0,
+  "pilot_sha256": "279a0b8ccbe93752a601fae416b898b4d1c87ad373254e331e0953c88bb04575",
+  "pilot_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "promotion_condition": "Try the guard on one additional frozen APK with a manifest launcher and DEX class; preserve static output and check it does not reject legitimate empty/no-launcher inputs before any broad rollout.",
+  "schema": "evo63-static-input-validity-reflection-v1"
+}

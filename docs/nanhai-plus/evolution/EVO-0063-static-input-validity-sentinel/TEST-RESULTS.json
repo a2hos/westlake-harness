@@ -1,0 +1,22 @@
+{
+  "apk_sha256": "2d122a7973ffd68c799700aaaaaa0593e5deec30bac83e22a9dc1bf9f64319fd",
+  "cases": {
+    "after_frozen": "VALID_STATIC_REACH_ONLY",
+    "before_claiming_current_scanner": "SUSPECT_STATIC_FALSE_NEGATIVE",
+    "before_frozen": "STALE_SCANNER_VERSION",
+    "mutated_input_hash": "INVALID_INPUT_OR_COMMAND"
+  },
+  "expected": {
+    "after_frozen": "VALID_STATIC_REACH_ONLY",
+    "before_claiming_current_scanner": "SUSPECT_STATIC_FALSE_NEGATIVE",
+    "before_frozen": "STALE_SCANNER_VERSION",
+    "mutated_input_hash": "INVALID_INPUT_OR_COMMAND"
+  },
+  "manifest_application": ".HelloWorldApplication",
+  "manifest_main_activities": [
+    ".MainActivity"
+  ],
+  "manifest_package": "com.example.helloworld",
+  "reach_source_sha256": "8809918e3f84c154e7b59f89cd07307296c3e58019a67d3c19640a6a99282be5",
+  "schema": "evo63-offline-static-admission-pilot-v1"
+}

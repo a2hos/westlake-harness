@@ -1,0 +1,264 @@
+{
+  "accepted_total": 140,
+  "bridge_actions": 0,
+  "checkpoint_sha256": "8628fbc17a5969af09dcec5412690f3934c5e6a4650402d54cb76396926e2040",
+  "cohort_distinct_elf_sha256": 158,
+  "cohort_elf_edges": 174,
+  "cohort_packages_lower_bound": 28,
+  "container_commands": 0,
+  "decision": "HOST_STATIC_LOWER_BOUND_ONLY",
+  "device_commands": 0,
+  "frozen105_lock_sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+  "loader_failure_observed": false,
+  "provider_observed": false,
+  "reviewed_distinct_package_labels": 111,
+  "reviewed_identity_scope": "105 frozen accepted package labels plus six disjoint later root-admitted labels; remaining 29 accepted artifacts not independently enumerated here",
+  "rows": [
+    {
+      "dex_inventory_entries": 6,
+      "dex_inventory_sha256": "f3068c513897f48040e9edc087fbc890bdaa8477c72f765072429a66d41c44a8",
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "ea8fed04ac41355b419780de76577ba969f19336c8184005816efc518d415906",
+      "group": "post105_root_accepted",
+      "package": "cn.xender",
+      "root_receipt_sha256": "a37c8d6cf09064c331867a5a07693dcb52388ce4d7172fd4d8426cb0b898ca10"
+    },
+    {
+      "distinct_elf_sha256": 3,
+      "elf_edges": 3,
+      "elf_inventory_sha256": "4310c5047c1453d9acffb56a722a0096943b2511551217957e4b739e993ca2f0",
+      "group": "frozen105",
+      "package": "com.bnyro.translate",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "distinct_elf_sha256": 2,
+      "elf_edges": 2,
+      "elf_inventory_sha256": "6a2182ddade1e2e9dc83d17faf22a0f1d8fee3335802eeb647aee8511016f695",
+      "group": "frozen105",
+      "package": "com.duckduckgo.mobile.android",
+      "root_receipt_sha256": "bec2dd9fb42c6818b6692bfa244e8555054fe2ebc72c9de0c311518c513ca13a"
+    },
+    {
+      "distinct_elf_sha256": 2,
+      "elf_edges": 2,
+      "elf_inventory_sha256": "0b2941b70d50fd9da0201dde27469339bcb20ce1e52406c843b8df41396f0c08",
+      "group": "frozen105",
+      "package": "com.eset.ems2.web",
+      "root_receipt_sha256": "c13d8c389189ae2b790166a95482c199f91bfd2dc6ae6f07126bed21e3c87115"
+    },
+    {
+      "distinct_elf_sha256": 2,
+      "elf_edges": 2,
+      "elf_inventory_sha256": "c4cbf28bfe2fc101c15616a121aa1b946e2646fabfeed1da64791fc55ec05842",
+      "group": "frozen105",
+      "package": "com.eset.endpoint",
+      "root_receipt_sha256": "6a924288ffec70bcb91875b1c64eda56ea0eb1c9a8a67aed58ba16cab33b6360"
+    },
+    {
+      "distinct_elf_sha256": 3,
+      "elf_edges": 3,
+      "elf_inventory_sha256": "4baf64d28834f70269470dff7355280d6e746b59aa08db105c4b8acb370e71fd",
+      "group": "frozen105",
+      "package": "com.expressvpn.vpn",
+      "root_receipt_sha256": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007"
+    },
+    {
+      "dex_inventory_entries": 33,
+      "dex_inventory_sha256": "32272b458ed26947d3e6cdda076215822476476764ea6d04dbca03ca2039f771",
+      "distinct_elf_sha256": 25,
+      "elf_edges": 25,
+      "elf_inventory_sha256": "afb6ddcacafe2542cc7d4132c42f6b0a7127b331141f1fe491ce0e50387a5bba",
+      "group": "post105_root_accepted",
+      "package": "com.imo.android.imoim",
+      "root_receipt_sha256": "0b228bcecb2626016c2f664c5b9d645525d66f142c3ac631f5a6c38eb1a9b755"
+    },
+    {
+      "dex_inventory_entries": 3,
+      "dex_inventory_sha256": "60de6a902b3fa2cf3a5c758c11b71259b998fda487854351a2c184da50d05d69",
+      "distinct_elf_sha256": 13,
+      "elf_edges": 13,
+      "elf_inventory_sha256": "ac0f2a1bbe0e2b162553a07d445590cd50beba0afffac557ed799cb333f9d768",
+      "group": "post105_root_accepted",
+      "package": "com.imo.android.imous",
+      "root_receipt_sha256": "687ecd2d443e0d9ba5ceaf748456d4341cd9762bc003d114d229853df228a230"
+    },
+    {
+      "distinct_elf_sha256": 3,
+      "elf_edges": 3,
+      "elf_inventory_sha256": "5a1c8e42814ce5a6bc3790aa553d7ed0e540b1767edf8fcbb252f617a8cd3406",
+      "group": "frozen105",
+      "package": "com.junkfood.seal",
+      "root_receipt_sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+    },
+    {
+      "distinct_elf_sha256": 3,
+      "elf_edges": 3,
+      "elf_inventory_sha256": "ee21c80ca90c16f073dc694b605e511214fb880b1befdf45266ae6f3121ae8ca",
+      "group": "frozen105",
+      "package": "com.kms.free",
+      "root_receipt_sha256": "d0e2293ec15ed37806cef4b1812960cd76786b0b89603f0bad4268263639d952"
+    },
+    {
+      "distinct_elf_sha256": 2,
+      "elf_edges": 2,
+      "elf_inventory_sha256": "6b49b25a8f91583f24b60eef31adad15d70dda144046623e482a904689fe96a4",
+      "group": "frozen105",
+      "package": "com.nordvpn.android",
+      "root_receipt_sha256": "4d454f484b19de94d5e75464c1282d6737ad6087bfbee2c28314d0902e7241ce"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "d878bf60ca97bfa50967824c015d3aca946a1210315b4a780509ede85755d287",
+      "group": "frozen105",
+      "package": "com.opera.browser",
+      "root_receipt_sha256": "fdc45b39d92c5fbe10044d2d3c62bdb69125932e5dac657142f2eab3a1393bda"
+    },
+    {
+      "distinct_elf_sha256": 3,
+      "elf_edges": 3,
+      "elf_inventory_sha256": "b0352f55147e7438f16e1cfd09503129f716c96020b3ec4d3c0c9814f5d1934f",
+      "group": "frozen105",
+      "package": "com.surfshark.vpnclient.android",
+      "root_receipt_sha256": "e962905c85906a3315313383a7aa7f54c0150491a2584a677bccb2c03e7ae1da"
+    },
+    {
+      "dex_inventory_entries": 1,
+      "dex_inventory_sha256": "cbe42344e5640226d75989966ca3b56d69ba814045f1ffdf548cdcc2286d3fbf",
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "63d92a858c3ec1010293341b1ccf15c36b0c55011532bab5e38c3ee3b2c49434",
+      "group": "post105_root_accepted",
+      "package": "com.teamviewer.quicksupport.market",
+      "root_receipt_sha256": "7754f38b186b64715aed84c9450f0b9b7bc995e95d5b7af27294cfe981714660"
+    },
+    {
+      "dex_inventory_entries": 3,
+      "dex_inventory_sha256": "c6d81b3aa00fe309d77deb44bf05871ee23c8110208a55190e6d57a11a1480b8",
+      "distinct_elf_sha256": 12,
+      "elf_edges": 12,
+      "elf_inventory_sha256": "99e4e50ac7801327f7b054c83064175dc01896a7144a8bb07e204c305d534612",
+      "group": "post105_root_accepted",
+      "package": "com.tencent.ig",
+      "root_receipt_sha256": "3c02361c428aab1ad12c85aab1166f9fecd3f7e424e870a477d624b6345d4655"
+    },
+    {
+      "distinct_elf_sha256": 6,
+      "elf_edges": 6,
+      "elf_inventory_sha256": "7ada37f16ed5ac543e0aedac4efb00568ce31638540d3fd9078f13dbca397d83",
+      "group": "frozen105",
+      "package": "com.tiktok.lite.go",
+      "root_receipt_sha256": "3226229866c70aebd63782a02094e0355661c71b4106300f93a51390157eb9b5"
+    },
+    {
+      "distinct_elf_sha256": 16,
+      "elf_edges": 16,
+      "elf_inventory_sha256": "c428916483d1e547188e273333cc1a030032c9fa09bdba1eb3b7473b55542654",
+      "group": "frozen105",
+      "package": "com.valvesoftware.steamlink",
+      "root_receipt_sha256": "da321360f3ef45dc7bfd2c06f3ce352cdc9495f7e343666543a5401700784c94"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "80092e6c0494fcae21ed83c7db8828c574aa8d55a030db30013a328b7a8f35c6",
+      "group": "frozen105",
+      "package": "com.x8bit.bitwarden",
+      "root_receipt_sha256": "30251db40ad4f50a43b38517134e58db64882014720d7d1a01c6c251e785e0e7"
+    },
+    {
+      "distinct_elf_sha256": 50,
+      "elf_edges": 50,
+      "elf_inventory_sha256": "aa2da0a18aa816a0b4ad373c1eb8f6343372d3e7f955b86e3bd631ac58e866cf",
+      "group": "frozen105",
+      "package": "com.zhiliaoapp.musically",
+      "root_receipt_sha256": "c1ae74284a77bb715bb3f41263d9ace79f4ac6d08c4af8773420163af5d176ee"
+    },
+    {
+      "distinct_elf_sha256": 2,
+      "elf_edges": 2,
+      "elf_inventory_sha256": "8a9b7f8bcce13463bdd705cb15ff974a5940128d457e610186cd5e55056fbf0c",
+      "group": "frozen105",
+      "package": "im.vector.app",
+      "root_receipt_sha256": "a53a30e9649d32a956afd44c573eaacb1b26fa7f1b73c53f15428ceb17a8ae2f"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "f949ddda0163ea908755627b6b0fd812c44b020784ee217df1f05bb297da8bcc",
+      "group": "frozen105",
+      "package": "io.element.android.x",
+      "root_receipt_sha256": "1152fb8cb8109aae7e2177dc7580b7df668e464554ff098d5b030ac08ccede04"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "186679c45f9ec005404a6a419717ce7f18c2babf6f4c457895c5fea4eb2398b3",
+      "group": "frozen105",
+      "package": "io.privado.android",
+      "root_receipt_sha256": "438a6cb0a8d17f8d43754b591d4b4c3e4eae63ec6652c1bac1a8ce9f255c70a7"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "e564e637bf8d480ec065093ab4a3e5bb06e547d8ede3961661edee4e5ccb3fb7",
+      "group": "frozen105",
+      "package": "org.fossify.gallery",
+      "root_receipt_sha256": "5a974efec3cd293524af0845d3d0c5e21039198e9186258667bbd3be84db4bcb"
+    },
+    {
+      "distinct_elf_sha256": 2,
+      "elf_edges": 2,
+      "elf_inventory_sha256": "345c0def73b026d486ff148efef04483edd7bff6378c379ab6c94094520b582d",
+      "group": "frozen105",
+      "package": "org.linphone",
+      "root_receipt_sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "c0139eaa790863b43919c781bb3efc9b6b7243810f2693d001eaf23720e07f7d",
+      "group": "frozen105",
+      "package": "org.thoughtcrime.securesms",
+      "root_receipt_sha256": "3b6c737993c8a9bbc94d1b874392d2055d9b992f6e2e2b274e06c01cc659ab8e"
+    },
+    {
+      "distinct_elf_sha256": 1,
+      "elf_edges": 1,
+      "elf_inventory_sha256": "a44f16d136f6a63be15438c8fc6a67316bc57687283a2090157d91630f35cb5f",
+      "group": "frozen105",
+      "package": "proton.android.meet",
+      "root_receipt_sha256": "6a191bd160db05359c565e1f96dcd3a138af6cf72037fe78f750e5e124b4874e"
+    },
+    {
+      "dex_inventory_entries": 47,
+      "dex_inventory_sha256": "86ee8ecc246e25d34f27119be1e03ce437816d99498ffa1154d75cf34c599724",
+      "distinct_elf_sha256": 13,
+      "elf_edges": 13,
+      "elf_inventory_sha256": "1c8c6c0015fbee69b6de05bde06f5edf47ba8ff74a6c4363e8c5d00705914768",
+      "group": "post105_root_accepted",
+      "package": "sg.bigo.live",
+      "root_receipt_sha256": "0d86df6d68bd1ed191b8e5e785ea93a83c11ae40c4232bb1ec4b1a651f836ace"
+    },
+    {
+      "distinct_elf_sha256": 3,
+      "elf_edges": 3,
+      "elf_inventory_sha256": "ccaf2f966eff2dd6e911c0f5faad10f25230d55ce575b9388f7ffc27d3f07836",
+      "group": "frozen105",
+      "package": "us.zoom.videomeetings",
+      "root_receipt_sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1"
+    }
+  ],
+  "schema": "peer-libz-140-accepted-subset-frontier-v1",
+  "source": {
+    "android_bp_sha256": "a60d9840b75f0f9485eb277f3849b978a2c6bf8f04741b9a56e64e204276cb0a",
+    "head": "a6f47e8bd7c1ba412c4b5a3539aa77fe628d0172",
+    "manifest_ledger_sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+    "manifest_path": "external/zlib",
+    "module": "cc_library name libz",
+    "tag": "android-16.0.0_r4",
+    "worktree_clean": true
+  }
+}
