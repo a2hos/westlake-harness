@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T04:38:46+00:00",
+  "checked_at": "2026-10-04T04:52:42+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 56,
+    "downloaded_payloads": 57,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 41,
-    "complete_inventory_dex_entries": 76,
-    "complete_inventory_native_elf_entries": 320,
+    "complete_static_inventories": 49,
+    "complete_inventory_dex_entries": 97,
+    "complete_inventory_native_elf_entries": 372,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -51,7 +51,7 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 55,
-    "supplemental_payloads": 1
+    "supplemental_payloads": 2
   },
   "latest_actual_execution": {
     "release": 267,
@@ -262,6 +262,18 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-cpython3-r4-linux-materializer-v1/TEST-RESULT-v2.json",
       "sha256": "4967de08f2f2ab477b646ee42ec78f8a97288541b7b13d6f75bc6e1540d69c49"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch7-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch8-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-whatsapp-official-supplement-v1/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "3843de1d242c69f26c3c5f3122be1e73d52b1e0ccff05dfc52e39eb14e195da6"
     }
   ],
   "bionic_stock_graph": {
@@ -319,8 +331,9 @@
     "duration_seconds": 84.138768,
     "limit_seconds": 120,
     "timing_compliant": true,
-    "pending_actual_result_groups": 1,
-    "trigger_every_groups": "3-4"
+    "pending_actual_result_groups": 4,
+    "trigger_every_groups": "3-4",
+    "next": "EVO-0010 triggered after four actual result groups; limited peer trial pending"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -387,5 +400,32 @@
     "G268_graph_executed": false,
     "target_compile_commands": 0,
     "source_index_sha256": "9ac6568e895db1840038a80c9747263c9b646021bb10abb56c1f22ddcfffe56a"
+  },
+  "scanner_batch7_actual": {
+    "exec_session": 11967,
+    "terminal_chunk": "97d58f",
+    "outer_rc": 0,
+    "accepted_packages": 4,
+    "DEX_delta": 8,
+    "ELF_delta": 28,
+    "startup_delta": 0
+  },
+  "scanner_batch8_actual": {
+    "exec_session": 57454,
+    "terminal_chunk": "1ae3c8",
+    "outer_rc": 0,
+    "accepted_packages": 4,
+    "DEX_delta": 13,
+    "ELF_delta": 24,
+    "startup_delta": 0
+  },
+  "whatsapp_official_supplement": {
+    "version_website_label": "2.26.32.84",
+    "raw_bytes": 148660262,
+    "raw_sha256": "c4260c7c569c19267fd33ee33b6241fadbee55e3bcfceb3ee151012801368dbb",
+    "historical_registry_replaced": false,
+    "signer_verified": false,
+    "blackbox_qualified": false,
+    "startup_verified": false
   }
 }
