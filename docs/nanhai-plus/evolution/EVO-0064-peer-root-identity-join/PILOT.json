@@ -1,0 +1,70 @@
+{
+  "expected": "six_identity_matches_and_one_swap_rejected",
+  "negative_swapped_teamviewer_remote_raw_host_static": {
+    "four_phase_rc0": true,
+    "identity_match": false,
+    "raw_apk_sha256": "2428b81eb78e93ebacb0dde64fc1a5f382e2446db8521b8481b0d74ee4cdc935",
+    "raw_package": "com.teamviewer.teamviewer.market.mobile",
+    "raw_receipt_bound": true,
+    "static_apk_sha256": "0372259d3a49ff007e62ca5f56f0145b8afedb2d7ff79224034e1025c3dc27bb",
+    "static_package": "com.teamviewer.host.market"
+  },
+  "observed": "six_identity_matches_and_one_swap_rejected",
+  "positive": {
+    "com.dozingcatsoftware.cardswithcats": {
+      "four_phase_rc0": true,
+      "identity_match": true,
+      "raw_apk_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "raw_package": "com.dozingcatsoftware.cardswithcats",
+      "raw_receipt_bound": true,
+      "static_apk_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "static_package": "com.dozingcatsoftware.cardswithcats"
+    },
+    "com.exner.tools.meditationtimer": {
+      "four_phase_rc0": true,
+      "identity_match": true,
+      "raw_apk_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "raw_package": "com.exner.tools.meditationtimer",
+      "raw_receipt_bound": true,
+      "static_apk_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "static_package": "com.exner.tools.meditationtimer"
+    },
+    "com.ltrademark.hourly": {
+      "four_phase_rc0": true,
+      "identity_match": true,
+      "raw_apk_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "raw_package": "com.ltrademark.hourly",
+      "raw_receipt_bound": true,
+      "static_apk_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "static_package": "com.ltrademark.hourly"
+    },
+    "org.nsh07.pomodoro": {
+      "four_phase_rc0": true,
+      "identity_match": true,
+      "raw_apk_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "raw_package": "org.nsh07.pomodoro",
+      "raw_receipt_bound": true,
+      "static_apk_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "static_package": "org.nsh07.pomodoro"
+    },
+    "teamviewer-host": {
+      "four_phase_rc0": true,
+      "identity_match": true,
+      "raw_apk_sha256": "0372259d3a49ff007e62ca5f56f0145b8afedb2d7ff79224034e1025c3dc27bb",
+      "raw_package": "com.teamviewer.host.market",
+      "raw_receipt_bound": true,
+      "static_apk_sha256": "0372259d3a49ff007e62ca5f56f0145b8afedb2d7ff79224034e1025c3dc27bb",
+      "static_package": "com.teamviewer.host.market"
+    },
+    "teamviewer-remote": {
+      "four_phase_rc0": true,
+      "identity_match": true,
+      "raw_apk_sha256": "2428b81eb78e93ebacb0dde64fc1a5f382e2446db8521b8481b0d74ee4cdc935",
+      "raw_package": "com.teamviewer.teamviewer.market.mobile",
+      "raw_receipt_bound": true,
+      "static_apk_sha256": "2428b81eb78e93ebacb0dde64fc1a5f382e2446db8521b8481b0d74ee4cdc935",
+      "static_package": "com.teamviewer.teamviewer.market.mobile"
+    }
+  },
+  "schema": "evo64-peer-root-identity-join-pilot-v1"
+}

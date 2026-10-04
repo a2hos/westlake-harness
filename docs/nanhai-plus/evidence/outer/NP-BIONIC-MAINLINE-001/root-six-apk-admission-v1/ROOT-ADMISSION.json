@@ -1,0 +1,131 @@
+{
+  "schema": "nanhai-root-six-apk-admission-v1",
+  "at_utc": "2026-10-04T22:20:26.187310+00:00",
+  "decision": "ACCEPT_SIX_RAW_AND_COMPLETE_HOST_STATIC_TWO_BOUNDED_BLACKBOX_INPUTS_ONLY",
+  "refs": {
+    "prior_checkpoint": {
+      "path": "docs/nanhai-plus/checkpoints/20261004-save-state-second-reach-next4e-pending/CHECKPOINT.json",
+      "sha256": "5a4cda2df170d40ccb2e734d29a4f6a68c76ae5288d47506e54518580db74358"
+    },
+    "next4e_handoff": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4e-exact-v1/HANDOFF.json",
+      "sha256": "f230f179735227585b742e2110673eb3c6773681c3b699e4ecf9682d86d3f574"
+    },
+    "next4e_peer_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-review-next4e-exact-v1/RESULT.json",
+      "sha256": "a8506edd559c2458267b3276d898b2f9e357a49d5c74249e69b045bac0ed55e7"
+    },
+    "next4e_root_binary_recheck": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4e-exact-v1/root-binary-recheck-v1/RECHECK.json",
+      "sha256": "45f4176fbf0e01bf25d9f4290ef36bd8d6fbae0637fbf67de49d81532e8b3249"
+    },
+    "teamviewer_handoff": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-remote-host-handoff-v1/CANDIDATES.json",
+      "sha256": "90d95c7360ddcb022ed26217e7ac5a5642205ea75af44b3ff40f68b3ccfe9785"
+    },
+    "teamviewer_peer_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-remote-host-independent-review-v1/REVIEW-v3.json",
+      "sha256": "da8b85e1a10f78e391349b9582bb768e3fafe7965744dfb2b7a847a0a61092ff"
+    },
+    "teamviewer_root_binary_recheck": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-remote-host-root-binary-recheck-v1/RECHECK.json",
+      "sha256": "abe6de818f847c40841c919050c245f85f92ccf77a8d44577026cc7c3e12b41e"
+    },
+    "evo64_identity_pilot": {
+      "path": "docs/nanhai-plus/evolution/EVO-0064-peer-root-identity-join/DECISION.json",
+      "sha256": "97f8fe619962025fe029677d2df826b484330f70d79d943b638d08f79a19fbf7"
+    }
+  },
+  "anti_join": {
+    "root_admission_receipts_examined": 91,
+    "selected_identity_matches": 0,
+    "scope": "all current root-admission JSON files plus prior frozen exact upstream audit as checked by next4e peer guard; not a proof that 146 are distinct apps"
+  },
+  "rows": [
+    {
+      "package": "com.dozingcatsoftware.cardswithcats",
+      "apk_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "artifact_id": "a-a2e99d4259611eef7917",
+      "decision": "ACCEPT_EXACT_UPSTREAM_RAW_AND_COMPLETE_HOST_STATIC_ONLY",
+      "semantic_dex_delta": 1,
+      "true_arm64_elf_delta": 5,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    {
+      "package": "com.exner.tools.meditationtimer",
+      "apk_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "artifact_id": "a-46ebfb10ee53c6ae9855",
+      "decision": "ACCEPT_EXACT_UPSTREAM_RAW_AND_COMPLETE_HOST_STATIC_ONLY",
+      "semantic_dex_delta": 1,
+      "true_arm64_elf_delta": 2,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    {
+      "package": "com.ltrademark.hourly",
+      "apk_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "artifact_id": "a-39391b9d99f88e067474",
+      "decision": "ACCEPT_EXACT_UPSTREAM_RAW_AND_COMPLETE_HOST_STATIC_ONLY",
+      "semantic_dex_delta": 1,
+      "true_arm64_elf_delta": 0,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    {
+      "package": "org.nsh07.pomodoro",
+      "apk_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "artifact_id": "a-6584a3fcde422ef3679b",
+      "decision": "ACCEPT_EXACT_UPSTREAM_RAW_AND_COMPLETE_HOST_STATIC_ONLY",
+      "semantic_dex_delta": 1,
+      "true_arm64_elf_delta": 1,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    {
+      "package": "com.teamviewer.teamviewer.market.mobile",
+      "apk_sha256": "2428b81eb78e93ebacb0dde64fc1a5f382e2446db8521b8481b0d74ee4cdc935",
+      "decision": "ACCEPT_OFFICIAL_RAW_COMPLETE_HOST_STATIC_AND_BOUNDED_BLACKBOX_INPUT_QUALIFICATION",
+      "semantic_dex_delta": 2,
+      "true_arm64_elf_delta": 9,
+      "blackbox_qualification_delta": 1,
+      "cold_start_delta": 0,
+      "play_downloads_package_wide": "100M+"
+    },
+    {
+      "package": "com.teamviewer.host.market",
+      "apk_sha256": "0372259d3a49ff007e62ca5f56f0145b8afedb2d7ff79224034e1025c3dc27bb",
+      "decision": "ACCEPT_OFFICIAL_RAW_COMPLETE_HOST_STATIC_AND_BOUNDED_BLACKBOX_INPUT_QUALIFICATION",
+      "semantic_dex_delta": 1,
+      "true_arm64_elf_delta": 11,
+      "blackbox_qualification_delta": 1,
+      "cold_start_delta": 0,
+      "play_downloads_package_wide": "5M+"
+    }
+  ],
+  "delta": {
+    "raw_artifact_identities": 6,
+    "complete_host_static": 6,
+    "semantic_dex": 7,
+    "true_arm64_elf": 28,
+    "qualified_blackbox_inputs": 2,
+    "exact_upstream_artifacts": 4,
+    "cold_starts": 0,
+    "bionic_whole_tools": 0
+  },
+  "after": {
+    "raw_artifact_identities": 146,
+    "complete_host_static": 146,
+    "semantic_dex": 561,
+    "true_arm64_elf": 2193,
+    "qualified_blackbox_inputs": 31,
+    "exact_upstream_artifacts": 103,
+    "registry_total": 338,
+    "cold_starts": 0,
+    "bionic_whole_tools": 0
+  },
+  "limits": "Raw artifact identities are not yet 146 verified distinct apps; no install, Bionic runtime, Activity, screen or truly-cold launch. TeamViewer Play scale is package-wide, not exact APK-version installs. No publisher certificate pin.",
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge_mutations": 0
+}

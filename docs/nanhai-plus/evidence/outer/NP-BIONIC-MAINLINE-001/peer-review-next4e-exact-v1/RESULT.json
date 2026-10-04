@@ -1,0 +1,360 @@
+{
+  "all_pass": true,
+  "at_utc": "2026-10-04T22:18:00.330200+00:00",
+  "bridge_commands": 0,
+  "candidate_handoff_sha256": "f230f179735227585b742e2110673eb3c6773681c3b699e4ecf9682d86d3f574",
+  "container_commands": 0,
+  "device_commands": 0,
+  "limits": [
+    "F-Droid GET URL and registered SHA match; no independent publisher signing-key pin.",
+    "Static and signature do not prove installation, runtime or cold start.",
+    "Zero packaged native ELF for com.ltrademark.hourly is a Java-only inventory and not an ARM64 runtime proof.",
+    "Current anti-join was bounded to prior audit and root receipt filenames; not a full accepted-set reconstruction."
+  ],
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "reviewer_is_candidate_author": false,
+  "root_count_changed": false,
+  "rows": [
+    {
+      "aapt2": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+          "dump",
+          "badging",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/com.dozingcatsoftware.cardswithcats/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "35d460cb7f7a076680600d14c2ecd5cca866a6346f006b777e60882d7c258301"
+      },
+      "all_pass": true,
+      "apk_bytes": 64348929,
+      "apk_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "apksigner": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+          "verify",
+          "--verbose",
+          "--print-certs",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/com.dozingcatsoftware.cardswithcats/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "22f740e10a8ed1ee924e0d17134d191e0e5059e90aad9820d120fc75ddf27d59"
+      },
+      "artifact_id": "a-a2e99d4259611eef7917",
+      "candidate_raw_sha256": "685de2249c736726821dcf472c0dc2ea378ca07b2960af8d02a2947e057c81f4",
+      "candidate_static_sha256": "d962cdb4e8d42d7431e710577a2a64689cd03a7d5212f95aa8b19218822a883e",
+      "checks": {
+        "all_four_guards": true,
+        "apk_sha_bytes": true,
+        "arm64_elf_matches": true,
+        "cert_matches": true,
+        "dex_complete": true,
+        "identity": true,
+        "independent_aapt_signer_rc": true,
+        "no_wrong_arm64_or_pseudo_so": true,
+        "raw_get_aapt_signer_rc": true,
+        "registry_id_package_sha_url_version": true,
+        "zip_crc_unique_manifest": true
+      },
+      "elf": {
+        "arm32": 5,
+        "arm64_path_arm32": 0,
+        "non_elf_so": 0,
+        "other_elf": 5,
+        "true_arm64": 5
+      },
+      "package": "com.dozingcatsoftware.cardswithcats",
+      "phase_checks": {
+        "dex": true,
+        "elf": true,
+        "metadata": true,
+        "zip": true
+      },
+      "signer_cert_sha256": [
+        "dcb1787180dfdcdc8349998f4fe154ae119a403100da406006009c9855f99ea0"
+      ],
+      "source_url": "https://f-droid.org/repo/com.dozingcatsoftware.cardswithcats_10.apk",
+      "version": [
+        "com.dozingcatsoftware.cardswithcats",
+        "10",
+        "1.4.4"
+      ],
+      "zip": {
+        "crc_first_bad": null,
+        "dex_names": [
+          "classes.dex"
+        ],
+        "duplicate_names": 0,
+        "entries": 510,
+        "manifest_count": 1,
+        "so_names": [
+          "lib/arm64-v8a/libapp.so",
+          "lib/arm64-v8a/libdartjni.so",
+          "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "lib/arm64-v8a/libdds.so",
+          "lib/arm64-v8a/libflutter.so",
+          "lib/armeabi-v7a/libapp.so",
+          "lib/armeabi-v7a/libdartjni.so",
+          "lib/armeabi-v7a/libdatastore_shared_counter.so",
+          "lib/armeabi-v7a/libdds.so",
+          "lib/armeabi-v7a/libflutter.so",
+          "lib/x86_64/libapp.so",
+          "lib/x86_64/libdartjni.so",
+          "lib/x86_64/libdatastore_shared_counter.so",
+          "lib/x86_64/libdds.so",
+          "lib/x86_64/libflutter.so"
+        ]
+      }
+    },
+    {
+      "aapt2": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+          "dump",
+          "badging",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/com.exner.tools.meditationtimer/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d290ecae75cae79a6348443bf23d650a0ee701f4400a765dcb42a13ec27bd0ab"
+      },
+      "all_pass": true,
+      "apk_bytes": 4078553,
+      "apk_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "apksigner": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+          "verify",
+          "--verbose",
+          "--print-certs",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/com.exner.tools.meditationtimer/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "60ba85bf0b345097586b8cae449ede3927d25187cff2dccf7a0e24e8c12a4f54"
+      },
+      "artifact_id": "a-46ebfb10ee53c6ae9855",
+      "candidate_raw_sha256": "572f60d641e6bfd6a97e38082a23a8bc0de8841b130d300d49edb36127afa161",
+      "candidate_static_sha256": "9399267effe4646307b1a0dcc043662360cf967ef317f017a0e0f6b53f30cccb",
+      "checks": {
+        "all_four_guards": true,
+        "apk_sha_bytes": true,
+        "arm64_elf_matches": true,
+        "cert_matches": true,
+        "dex_complete": true,
+        "identity": true,
+        "independent_aapt_signer_rc": true,
+        "no_wrong_arm64_or_pseudo_so": true,
+        "raw_get_aapt_signer_rc": true,
+        "registry_id_package_sha_url_version": true,
+        "zip_crc_unique_manifest": true
+      },
+      "elf": {
+        "arm32": 2,
+        "arm64_path_arm32": 0,
+        "non_elf_so": 0,
+        "other_elf": 4,
+        "true_arm64": 2
+      },
+      "package": "com.exner.tools.meditationtimer",
+      "phase_checks": {
+        "dex": true,
+        "elf": true,
+        "metadata": true,
+        "zip": true
+      },
+      "signer_cert_sha256": [
+        "3f15745561afae58a2f73ff97a517303eba059b7c608aac576fab7465df27843"
+      ],
+      "source_url": "https://f-droid.org/repo/com.exner.tools.meditationtimer_10.apk",
+      "version": [
+        "com.exner.tools.meditationtimer",
+        "10",
+        "1.2.0"
+      ],
+      "zip": {
+        "crc_first_bad": null,
+        "dex_names": [
+          "classes.dex"
+        ],
+        "duplicate_names": 0,
+        "entries": 177,
+        "manifest_count": 1,
+        "so_names": [
+          "lib/arm64-v8a/libandroidx.graphics.path.so",
+          "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "lib/armeabi-v7a/libandroidx.graphics.path.so",
+          "lib/armeabi-v7a/libdatastore_shared_counter.so",
+          "lib/x86/libandroidx.graphics.path.so",
+          "lib/x86/libdatastore_shared_counter.so",
+          "lib/x86_64/libandroidx.graphics.path.so",
+          "lib/x86_64/libdatastore_shared_counter.so"
+        ]
+      }
+    },
+    {
+      "aapt2": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+          "dump",
+          "badging",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/com.ltrademark.hourly/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "074c847f7ea6549b2077116e77981f30a4401dac10ceffd9c9f592c94d23f472"
+      },
+      "all_pass": true,
+      "apk_bytes": 2156209,
+      "apk_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "apksigner": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+          "verify",
+          "--verbose",
+          "--print-certs",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/com.ltrademark.hourly/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "4d803aeaac56e587045ce09951523906a049bea2093ffe7ecc520c3cf101133b"
+      },
+      "artifact_id": "a-39391b9d99f88e067474",
+      "candidate_raw_sha256": "d6f1bf05e17408970f2fb5a3eeb999ed6dc1bb01943a37ffe1dbc31c8baae955",
+      "candidate_static_sha256": "744b9789c2741e8408e7e364004ce1d3a36e51be6dc0144835f1c545c46989ac",
+      "checks": {
+        "all_four_guards": true,
+        "apk_sha_bytes": true,
+        "arm64_elf_matches": true,
+        "cert_matches": true,
+        "dex_complete": true,
+        "identity": true,
+        "independent_aapt_signer_rc": true,
+        "no_wrong_arm64_or_pseudo_so": true,
+        "raw_get_aapt_signer_rc": true,
+        "registry_id_package_sha_url_version": true,
+        "zip_crc_unique_manifest": true
+      },
+      "elf": {
+        "arm32": 0,
+        "arm64_path_arm32": 0,
+        "non_elf_so": 0,
+        "other_elf": 0,
+        "true_arm64": 0
+      },
+      "package": "com.ltrademark.hourly",
+      "phase_checks": {
+        "dex": true,
+        "elf": true,
+        "metadata": true,
+        "zip": true
+      },
+      "signer_cert_sha256": [
+        "d761b654c5f7a7e0cf7c9930d70946b8fcd00513bc60c719ed0e3fddbc7f9ab4"
+      ],
+      "source_url": "https://f-droid.org/repo/com.ltrademark.hourly_13.apk",
+      "version": [
+        "com.ltrademark.hourly",
+        "13",
+        "1.81"
+      ],
+      "zip": {
+        "crc_first_bad": null,
+        "dex_names": [
+          "classes.dex"
+        ],
+        "duplicate_names": 0,
+        "entries": 664,
+        "manifest_count": 1,
+        "so_names": []
+      }
+    },
+    {
+      "aapt2": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+          "dump",
+          "badging",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/org.nsh07.pomodoro/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "78609d7181a74f32e993c89c91983497ad514e33099681a4ba33502d4072c507"
+      },
+      "all_pass": true,
+      "apk_bytes": 5763085,
+      "apk_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "apksigner": {
+        "argv": [
+          "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+          "verify",
+          "--verbose",
+          "--print-certs",
+          "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4e-exact-v1/org.nsh07.pomodoro/original.apk"
+        ],
+        "rc": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "1b8a8db6fc2f45aad9d28b13c46bd405cda15067d386aea0e7e500cf9fd81982"
+      },
+      "artifact_id": "a-6584a3fcde422ef3679b",
+      "candidate_raw_sha256": "7c653991f7144821175daa66ff6e64b9e4217d57e33883ad678bdb10bc3d573c",
+      "candidate_static_sha256": "92012dc8197f15eb88b6a4d9564cd36502a38cf9838e0540a33888f6657bcf2c",
+      "checks": {
+        "all_four_guards": true,
+        "apk_sha_bytes": true,
+        "arm64_elf_matches": true,
+        "cert_matches": true,
+        "dex_complete": true,
+        "identity": true,
+        "independent_aapt_signer_rc": true,
+        "no_wrong_arm64_or_pseudo_so": true,
+        "raw_get_aapt_signer_rc": true,
+        "registry_id_package_sha_url_version": true,
+        "zip_crc_unique_manifest": true
+      },
+      "elf": {
+        "arm32": 1,
+        "arm64_path_arm32": 0,
+        "non_elf_so": 0,
+        "other_elf": 2,
+        "true_arm64": 1
+      },
+      "package": "org.nsh07.pomodoro",
+      "phase_checks": {
+        "dex": true,
+        "elf": true,
+        "metadata": true,
+        "zip": true
+      },
+      "signer_cert_sha256": [
+        "07bef30581baee8f45ec93e47ee68ef20874e50ef5709c78b2ee67ac86be4c3d"
+      ],
+      "source_url": "https://f-droid.org/repo/org.nsh07.pomodoro_34.apk",
+      "version": [
+        "org.nsh07.pomodoro",
+        "34",
+        "1.8.5"
+      ],
+      "zip": {
+        "crc_first_bad": null,
+        "dex_names": [
+          "classes.dex"
+        ],
+        "duplicate_names": 0,
+        "entries": 1231,
+        "manifest_count": 1,
+        "so_names": [
+          "lib/arm64-v8a/libandroidx.graphics.path.so",
+          "lib/armeabi-v7a/libandroidx.graphics.path.so",
+          "lib/x86/libandroidx.graphics.path.so",
+          "lib/x86_64/libandroidx.graphics.path.so"
+        ]
+      }
+    }
+  ],
+  "schema": "peer-review-next4e-exact-v1",
+  "selection_sha256": "8b53ba0b1ed02b3da9f00a8e79cb4ccd92dcebc1b3490551bf307ed5eb9d176c",
+  "startup_proven": false
+}

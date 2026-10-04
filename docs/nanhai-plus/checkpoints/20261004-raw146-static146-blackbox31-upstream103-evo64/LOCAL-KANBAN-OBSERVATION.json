@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-local-kanban-observation-v1",
+  "at_utc": "2026-10-04T22:24:53.571028+00:00",
+  "url": "http://127.0.0.1:8767/api/state",
+  "http_status": 200,
+  "progress": {
+    "accepted_raw_apk_artifact_identities": 146,
+    "complete_host_static_inventories": 146,
+    "qualified_blackbox_test_packages": 31,
+    "stock_apk_cold_starts_verified": 0,
+    "bionic_whole_tools_verified": 0
+  },
+  "heartbeat": "Bionic整工具0/89；原包146/完整宿主静态146（561 DEX、2193 真 ARM64 ELF）/黑盒测试输入资格31/真实冷启动0/200；上游精确103/338。六包root限收仅宿主静态/输入资格；原生Linux入口与同构建runtime仍NO_GO，禁容器/设备HOLD。",
+  "scope": "local live API only; no public remote publication claim"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T22:11:32.016928+00:00",
+  "checked_at": "2026-10-04T22:20:56.657812+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,67 +35,23 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 140,
+    "downloaded_payloads": 146,
     "latest_raw_admission": {
       "packages": [
-        "at.techbee.jtx",
-        "com.stoutner.privacybrowser.standard",
-        "org.fairscan.app",
-        "com.swordfish.lemuroid",
-        "com.afkanerd.deku",
-        "de.circle_dev.flux_news",
-        "io.pcontacts.app",
-        "de.marmaro.krt.ffupdater",
-        "com.tencent.ig"
+        "com.dozingcatsoftware.cardswithcats",
+        "com.exner.tools.meditationtimer",
+        "com.ltrademark.hourly",
+        "org.nsh07.pomodoro",
+        "com.teamviewer.teamviewer.market.mobile",
+        "com.teamviewer.host.market"
       ],
       "receipts": [
         {
-          "package": "at.techbee.jtx",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/at.techbee.jtx/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "feebd1cd9e2e38a9f34a7a8af5cb5c01bf48bea4700b0daa77c8e37e0fe06af0"
-        },
-        {
-          "package": "com.stoutner.privacybrowser.standard",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "a00fd3dc857516897f0e8f710f5f7a65b59efdd6cab790c6f278e8fddd12cdae"
-        },
-        {
-          "package": "org.fairscan.app",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "ea747b801fd29242006090970c37013a11dea19db8ca23571420199ad25c059e"
-        },
-        {
-          "package": "com.swordfish.lemuroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "8ded144908654caa8f881a4a28226c5531cd83e9812fe55da477c32c9b312afb"
-        },
-        {
-          "package": "com.afkanerd.deku",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/com.afkanerd.deku/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "8f53f7e098a0a193f3e8046deb358cbe183d08532f773a7e2c0310e46b41ced8"
-        },
-        {
-          "package": "de.circle_dev.flux_news",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.circle_dev.flux_news/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "2e30c72eec1f07938f484ec0f5d9dd75731ed11433629f4c46bca2e88018262c"
-        },
-        {
-          "package": "io.pcontacts.app",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "f83e79902fd96fcd40b757f00fc78f9de2fda15c0c72173538bc892468b3f955"
-        },
-        {
-          "package": "de.marmaro.krt.ffupdater",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.marmaro.krt.ffupdater/root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "9a9b40e4b3fe8448abf35bcb9a3627326a5024f623c46d99f6251c31af1f655e"
-        },
-        {
-          "package": "com.tencent.ig",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "c35a4f0500b7dc26a5a33e4cfa0645e201028d783709628a994f987cb7011fe3"
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/root-six-apk-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "00c712bddddb7f911d67181b21cff2d2c4fda33f338dd735ff9e34c0450ce7e7"
         }
       ],
-      "scope": "eight exact upstream F-Droid artifacts plus publisher-linked PUBG MOBILE global APK; raw artifact count is not verified distinct startup apps; no install/runtime"
+      "scope": "6 accepted raw artifact identities: 4 exact upstream and 2 TeamViewer official supplements; not distinct-app or startup proof"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -106,82 +62,38 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 140,
-    "complete_inventory_dex_entries": 554,
+    "complete_static_inventories": 146,
+    "complete_inventory_dex_entries": 561,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 2165,
+    "complete_inventory_native_elf_entries": 2193,
     "latest_complete_static_admission": {
       "packages": [
-        "at.techbee.jtx",
-        "com.stoutner.privacybrowser.standard",
-        "org.fairscan.app",
-        "com.swordfish.lemuroid",
-        "com.afkanerd.deku",
-        "de.circle_dev.flux_news",
-        "io.pcontacts.app",
-        "de.marmaro.krt.ffupdater",
-        "com.tencent.ig"
+        "com.dozingcatsoftware.cardswithcats",
+        "com.exner.tools.meditationtimer",
+        "com.ltrademark.hourly",
+        "org.nsh07.pomodoro",
+        "com.teamviewer.teamviewer.market.mobile",
+        "com.teamviewer.host.market"
       ],
       "receipts": [
         {
-          "package": "at.techbee.jtx",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/at.techbee.jtx/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "5f7c87ef4ee5cc0a919547f4e78bacf3e0422f7c96120eaa7203c973b83f7b06"
-        },
-        {
-          "package": "com.stoutner.privacybrowser.standard",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.stoutner.privacybrowser.standard/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "bb1d1bdb13ddc43bfb6047e32439f2eff174b966dfbe4f2ccad9ca8a5d834af6"
-        },
-        {
-          "package": "org.fairscan.app",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/org.fairscan.app/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "28ccf8f6dc9c2a0883bdcdcbb1ce0509f3e2ea55cd6b0a86ed704f98cecec1c6"
-        },
-        {
-          "package": "com.swordfish.lemuroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4b-exact-v1/com.swordfish.lemuroid/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "c8487134a588c4f3beaf5aa25138b5afded4ec06e272eac649e8114a072547ca"
-        },
-        {
-          "package": "com.afkanerd.deku",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/com.afkanerd.deku/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "c6322cb677efd80e21cff3c5d8d1488ec97a6c2cc2bd80ee322e6172b56c8511"
-        },
-        {
-          "package": "de.circle_dev.flux_news",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.circle_dev.flux_news/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "469f6d6a855594ad622ed997c43803dfba1f6679287752eb64a34fae1918af52"
-        },
-        {
-          "package": "io.pcontacts.app",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/io.pcontacts.app/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "7a7b5562fc4210cdbe8df21388c74e36cbb09fa798b0ade5d12da241343bef3c"
-        },
-        {
-          "package": "de.marmaro.krt.ffupdater",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4c-exact-v1/de.marmaro.krt.ffupdater/root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "44a3e1df60946f066086d22b9ecf94b3ccd1ecdf4c317a26c15a684d30914864"
-        },
-        {
-          "package": "com.tencent.ig",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "3c02361c428aab1ad12c85aab1166f9fecd3f7e424e870a477d624b6345d4655"
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/root-six-apk-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "00c712bddddb7f911d67181b21cff2d2c4fda33f338dd735ff9e34c0450ce7e7"
         }
       ],
-      "scope": "nine exact four-phase native-host static inventories; +15 semantic DEX, +65 true ARM64 ELF; one native-library-free APK legitimately has ELF 0; no loader/runtime"
+      "scope": "6 four-phase native-host static inventories only"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 99,
-    "supplemental_payloads": 41,
-    "qualified_blackbox_packages": 29,
+    "registered_upstream_payloads": 103,
+    "supplemental_payloads": 43,
+    "qualified_blackbox_packages": 31,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -211,7 +123,9 @@
       "sg.bigo.live",
       "cn.xender",
       "com.tencent.ig",
-      "com.teamviewer.quicksupport.market"
+      "com.teamviewer.quicksupport.market",
+      "com.teamviewer.teamviewer.market.mobile",
+      "com.teamviewer.host.market"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -223,16 +137,16 @@
     },
     "latest_blackbox_qualification": {
       "packages": [
-        "com.tencent.ig"
+        "com.teamviewer.teamviewer.market.mobile",
+        "com.teamviewer.host.market"
       ],
       "receipts": [
         {
-          "package": "com.tencent.ig",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-pubgm-root-admission-v1/ROOT-BLACKBOX-QUALIFICATION.json",
-          "sha256": "43c643e28034c1443c8ec4b10cd787ea50ec9d18fd684882e0d4eb21c3e06aa2"
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/root-six-apk-admission-v1/ROOT-ADMISSION.json",
+          "sha256": "00c712bddddb7f911d67181b21cff2d2c4fda33f338dd735ff9e34c0450ce7e7"
         }
       ],
-      "scope": "one overseas-mainstream blackbox test-input qualification; no startup"
+      "scope": "bounded overseas-mainstream blackbox test inputs; no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -513,7 +427,20 @@
       "qualified_startup_delta": 0,
       "cold_start_delta": 0
     },
-    "artifact_package_identity_caveat": "140 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 140 is not a proved distinct-app count."
+    "artifact_package_identity_caveat": "146 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 146 is not a proved distinct-app count.",
+    "latest_six_apk_admission": {
+      "receipt": {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/root-six-apk-admission-v1/ROOT-ADMISSION.json",
+        "sha256": "00c712bddddb7f911d67181b21cff2d2c4fda33f338dd735ff9e34c0450ce7e7"
+      },
+      "raw_delta": 6,
+      "full_static_delta": 6,
+      "semantic_dex_delta": 7,
+      "true_arm64_elf_delta": 28,
+      "blackbox_input_delta": 2,
+      "upstream_exact_delta": 4,
+      "startup_delta": 0
+    }
   },
   "latest_actual_execution": {
     "scope_note": "Historical G276 native graph attempt; newer portfolio host scans and candidate GETs are recorded separately below.",
@@ -1048,18 +975,17 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0057-abi-count-boundary",
+    "latest": "EVO-0064-peer-root-identity-join",
     "result": {
-      "path": "docs/nanhai-plus/evolution/EVO-0057-abi-count-boundary/decision.json",
-      "sha256": "9f41dec120a4379f77b7cdd1c603ef6ca8685b876b31337d35ce939f3c37c732"
+      "path": "docs/nanhai-plus/evolution/EVO-0064-peer-root-identity-join/DECISION.json",
+      "sha256": "97f8fe619962025fe029677d2df826b484330f70d79d943b638d08f79a19fbf7"
     },
     "actual_result_groups": 4,
-    "duration_seconds": 24,
-    "one_testable_improvement": "Compare ELF class/e_machine against APK ABI path before aggregate ARM64 native counts; keep misplaced members separate.",
+    "one_testable_improvement": "receipt-level raw/static package+APK SHA identity join before root content review; six positive pairs and one swapped negative pair checked",
     "limited_pilot": true,
     "globally_promoted": false,
     "pending_actual_result_groups": 0,
-    "direction": "native ABI count fidelity; distinct from EVO55 input identity and EVO56 provider-consumer prioritization"
+    "direction": "peer-to-root input identity; distinct from EVO63 static input validity"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -3120,8 +3046,8 @@
     "frozen_registry_artifacts": 338,
     "frozen_registry_package_labels": 329,
     "frozen_prior_root_admitted_exact_artifacts": 79,
-    "current_root_admitted_exact_artifacts": 95,
-    "current_exact_artifact_gap": 243,
+    "current_root_admitted_exact_artifacts": 103,
+    "current_exact_artifact_gap": 235,
     "scope": "current gap is derived from four later exact upstream root admissions; original frozen audit retained"
   },
   "liblog_cross_apk_frontier": {
@@ -3468,6 +3394,15 @@
       "sha256": "acf49bbf7357052edbb9f6fc4e5bd3811b9d77c4f9ae96c13b6aa2dccd9ffc2e"
     },
     "status": "offline_pilot_only_no_broad_promotion",
+    "actual_result_groups": 4,
+    "startup_delta": 0
+  },
+  "evo64": {
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0064-peer-root-identity-join/DECISION.json",
+      "sha256": "97f8fe619962025fe029677d2df826b484330f70d79d943b638d08f79a19fbf7"
+    },
+    "status": "one_receipt_only_root_preflight_pilot_verified_not_globally_promoted",
     "actual_result_groups": 4,
     "startup_delta": 0
   }

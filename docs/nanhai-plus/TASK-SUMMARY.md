@@ -1,3 +1,5 @@
+最新限收（2026-10-04 UTC）：六个不同包名的原包及完整宿主静态经交叉独审与 root 原包重哈准入；其中四个为精确上游登记，两个 TeamViewer 官网包具备有界海外主流黑盒测试输入资格。累计原包/完整静态 146/146（561 DEX、2193 真 ARM64 ELF），黑盒资格 31，上游精确 103/338；真实冷启动 0/200、Bionic 整工具 0/89。原包数仍非已证明的不同 App 数，详见 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/root-six-apk-admission-v1/ROOT-ADMISSION.json。EVO64 仅一次收据身份联结小试。
+
 # 南海 plus 前期任务汇总
 
 核对时间：2026-10-04（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。

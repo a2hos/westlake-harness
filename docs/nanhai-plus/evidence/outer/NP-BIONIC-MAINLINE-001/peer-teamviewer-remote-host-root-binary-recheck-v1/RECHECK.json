@@ -1,0 +1,45 @@
+{
+  "schema": "nanhai-root-teamviewer-binary-recheck-v1",
+  "at_utc": "2026-10-04T22:20:00.097640+00:00",
+  "candidate_sha256": "90d95c7360ddcb022ed26217e7ac5a5642205ea75af44b3ff40f68b3ccfe9785",
+  "peer_review_sha256": "da8b85e1a10f78e391349b9582bb768e3fafe7965744dfb2b7a847a0a61092ff",
+  "rows": [
+    {
+      "package": "com.teamviewer.teamviewer.market.mobile",
+      "sha256": "2428b81eb78e93ebacb0dde64fc1a5f382e2446db8521b8481b0d74ee4cdc935",
+      "checks": {
+        "apk_sha": true,
+        "apk_bytes": true,
+        "zip_crc": true,
+        "dex_count": true,
+        "peer_independent_checks": true,
+        "static_four_rc": true,
+        "package_unique": true
+      },
+      "all_pass": true,
+      "semantic_dex": 2,
+      "true_arm64_elf": 9
+    },
+    {
+      "package": "com.teamviewer.host.market",
+      "sha256": "0372259d3a49ff007e62ca5f56f0145b8afedb2d7ff79224034e1025c3dc27bb",
+      "checks": {
+        "apk_sha": true,
+        "apk_bytes": true,
+        "zip_crc": true,
+        "dex_count": true,
+        "peer_independent_checks": true,
+        "static_four_rc": true,
+        "package_unique": true
+      },
+      "all_pass": true,
+      "semantic_dex": 1,
+      "true_arm64_elf": 11
+    }
+  ],
+  "all_pass": true,
+  "scope": "independent APK bytes, CRC, DEX cardinality, peer receipt recheck; exact source and blackbox qualification accepted separately",
+  "authoritative_count_changed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

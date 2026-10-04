@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: C=CH, L=Oberwil, CN=Jan Exner
+Signer #1 certificate SHA-256 digest: 3f15745561afae58a2f73ff97a517303eba059b7c608aac576fab7465df27843
+Signer #1 certificate SHA-1 digest: 8f7a6217a9a20675d56ab42de3c3604730d8cb7f
+Signer #1 certificate MD5 digest: 2ce4d4a0089fe593fd5863f04df42693
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 50a16424ab71e46411dec474d09cb5f8be52e8bc0f79581c24b08f7d9b67de62
+Signer #1 public key SHA-1 digest: b14d4a68094e1808aff67412d06cf2d93cbcbee8
+Signer #1 public key MD5 digest: 87b0a7591204351a94f01f782895fbff

@@ -1,0 +1,105 @@
+{
+  "schema": "nanhai-root-next4e-independent-binary-recheck-v1",
+  "at_utc": "2026-10-04T22:17:42.045518+00:00",
+  "handoff_sha256": "f230f179735227585b742e2110673eb3c6773681c3b699e4ecf9682d86d3f574",
+  "selection_sha256": "8b53ba0b1ed02b3da9f00a8e79cb4ccd92dcebc1b3490551bf307ed5eb9d176c",
+  "rows": [
+    {
+      "package": "com.dozingcatsoftware.cardswithcats",
+      "apk_sha256": "19b6693e7d7fa19a0cfe63602df309e9a455d42a33670f715e082452bab3741e",
+      "artifact_id": "a-a2e99d4259611eef7917",
+      "checks": {
+        "apk_sha_matches_selection": true,
+        "apk_sha_matches_handoff": true,
+        "apk_byte_count": true,
+        "zip_crc": true,
+        "dex_count": true,
+        "all_handoff_files_hash": true,
+        "raw_sha": true,
+        "static_sha": true,
+        "four_phase_rc0": true,
+        "distinct_selected_identity": true,
+        "package_version": true,
+        "signature_rc0": true
+      },
+      "all_pass": true,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "true_arm64_elf": 5
+    },
+    {
+      "package": "com.exner.tools.meditationtimer",
+      "apk_sha256": "50a463f1b486dd9136841445b7a5e03c4e6dc5b3b72cb9ae15d445b52ad90b21",
+      "artifact_id": "a-46ebfb10ee53c6ae9855",
+      "checks": {
+        "apk_sha_matches_selection": true,
+        "apk_sha_matches_handoff": true,
+        "apk_byte_count": true,
+        "zip_crc": true,
+        "dex_count": true,
+        "all_handoff_files_hash": true,
+        "raw_sha": true,
+        "static_sha": true,
+        "four_phase_rc0": true,
+        "distinct_selected_identity": true,
+        "package_version": true,
+        "signature_rc0": true
+      },
+      "all_pass": true,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "true_arm64_elf": 2
+    },
+    {
+      "package": "com.ltrademark.hourly",
+      "apk_sha256": "01397bdb5462c276b4d9294cab2bd32b1ae24653f94df5d0f08812bc836a2219",
+      "artifact_id": "a-39391b9d99f88e067474",
+      "checks": {
+        "apk_sha_matches_selection": true,
+        "apk_sha_matches_handoff": true,
+        "apk_byte_count": true,
+        "zip_crc": true,
+        "dex_count": true,
+        "all_handoff_files_hash": true,
+        "raw_sha": true,
+        "static_sha": true,
+        "four_phase_rc0": true,
+        "distinct_selected_identity": true,
+        "package_version": true,
+        "signature_rc0": true
+      },
+      "all_pass": true,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "true_arm64_elf": 0
+    },
+    {
+      "package": "org.nsh07.pomodoro",
+      "apk_sha256": "08079f1e0795bc85047a487df30f27d0feadd2bb2a024b374a124fa183109671",
+      "artifact_id": "a-6584a3fcde422ef3679b",
+      "checks": {
+        "apk_sha_matches_selection": true,
+        "apk_sha_matches_handoff": true,
+        "apk_byte_count": true,
+        "zip_crc": true,
+        "dex_count": true,
+        "all_handoff_files_hash": true,
+        "raw_sha": true,
+        "static_sha": true,
+        "four_phase_rc0": true,
+        "distinct_selected_identity": true,
+        "package_version": true,
+        "signature_rc0": true
+      },
+      "all_pass": true,
+      "root_dex": 1,
+      "semantic_dex": 1,
+      "true_arm64_elf": 1
+    }
+  ],
+  "all_pass": true,
+  "scope": "independent frozen-file, APK byte, ZIP CRC, DEX cardinality, receipt and signature-return-code check; peer independent review and root admission separate",
+  "authoritative_count_changed": false,
+  "device_commands": 0,
+  "container_commands": 0
+}

@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-04T22:18:08.668903+00:00",
+  "bounded_review_seconds": 120,
+  "decision": "GO_ONE_RECEIPT_ONLY_ROOT_PREFLIGHT_CANDIDATE",
+  "four_group_findings": [
+    "Second real APK startup-reach root review accepts one host-static entrypoint pilot: launcher matches, 10064 process and 897 first-activity methods, zero cold starts; it is not runtime qualification.",
+    "next4e handoff contains four exact upstream raw and full static peer candidates with large per-file evidence maps; root admissions remain zero in this handoff.",
+    "art-abort-bridge remains the only undetermined 89-tool disposition; native replacement is a source candidate, with no target build or whole-tool PASS.",
+    "TeamViewer Remote and Host have distinct package names and APK SHA values; raw and four-stage static peer receipts are available, with root admission still separate."
+  ],
+  "inputs_sha256": {
+    "art_abort_peer": "98b620a2635641889b51e72283c60c557f8f5c9300554263032d271859c7ae07",
+    "current_resume": "a26365a4a107c1fe007518a0863e37af423af0f78030dde09df40c1969d87df8",
+    "next4e_handoff": "f230f179735227585b742e2110673eb3c6773681c3b699e4ecf9682d86d3f574",
+    "second_startup_root": "b58217c55e2d3bf66fc8e1193e2c61feafcd931c9aa86bfe6a7ed4de21afe322",
+    "teamviewer_host_raw": "a37a77b47869dee73b5ec0061efb9caa27a62dda465e99256b11808ad139c40c",
+    "teamviewer_host_static": "3eb709e3e90d1990e1a2985ff8e468b442a1bcfe9bfaf946e957816661bb20f6",
+    "teamviewer_remote_raw": "1990f995e3142e56643406ea291c6490afbf451537258dba9f8385bf948ffc8c",
+    "teamviewer_remote_static": "9c56c7269453ded9f6b08694ea02ffbf419d0ae14e93a269f9e745dce3d91a7d"
+  },
+  "limits": "No APK bytes were rehashed or downloaded, and the pilot cannot certify source provenance, signature, static completeness beyond recorded phase rc, runtime, or market qualification. No canonical count, device, container, Bridge or reflection export changed.",
+  "observed_failure": "A deliberately swapped TeamViewer Remote raw / Host static pair fails both package and APK SHA identity while phase rc remains true, proving rc alone is insufficient.",
+  "pilot_argv": [
+    "python3",
+    "-B",
+    "docs/nanhai-plus/evolution/EVO-0064-peer-root-identity-join/pilot.py"
+  ],
+  "pilot_negative_swapped_pair_rejected": true,
+  "pilot_positive_count": 6,
+  "pilot_positive_matches": 6,
+  "pilot_rc": 0,
+  "pilot_source_sha256": "04903fb93a074724b2060d81cb64188afd1247965e1bf1d6e37624ef69b9158f",
+  "pilot_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "pilot_stdout_sha256": "9d944f42916df919deda35f803509d7ee4b8e6d1606d04c90a2dafd9e75455f7",
+  "schema": "evo64-peer-root-identity-cost-reflection-v1",
+  "single_proposed_change": "Before expensive root content review or count update, run a receipt-only typed identity join for each APK peer raw/static pair: raw verified package and APK SHA must equal static metadata package and APK SHA, raw receipt binding must match, and four phase rc must be zero. A mismatch stops admission for that pair; it does not decide provenance, signer trust, runtime qualification or tool disposition.",
+  "unexpected_failures": [],
+  "why_now": "Four-peer next4e and two related TeamViewer products increase receipt volume and cross-pair confusion risk. The compact join checks small JSON receipts first; the second startup-reach and art-abort results illustrate that identity/decision layer must still remain distinct from runtime and tool acceptance."
+}

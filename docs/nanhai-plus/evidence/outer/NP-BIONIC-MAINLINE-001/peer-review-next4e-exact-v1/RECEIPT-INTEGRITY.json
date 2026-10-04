@@ -1,0 +1,83 @@
+{
+  "all_pass": true,
+  "limitations": "Checks recorded headers and command outputs, not a second network acquisition; independent APK hash and tool invocations are in RESULT.json.",
+  "rows": [
+    {
+      "all_pass": true,
+      "checks": {
+        "aapt_stderr_hash": true,
+        "aapt_stdout_hash": true,
+        "apk_mime": true,
+        "get_header_200": true,
+        "phase_files_match_static": true,
+        "signer_stderr_hash": true,
+        "signer_stdout_hash": true
+      },
+      "package": "com.dozingcatsoftware.cardswithcats",
+      "phase_result_sha256": {
+        "DEX-RESULT.json": "8e4ea5d4290a845d7a7318fc50ecd45bef8319b155194c456ab71a6c91095496",
+        "ELF-RESULT.json": "0873bfeaee31b0359475fb8ab40fb3aee8e75aa2a81b1240b576b29256cd7824",
+        "METADATA-RESULT.json": "b02a9cd99148a0e0f37c75213c772fee7ce686a3744c945ef834945fa26fa821",
+        "ZIP-RESULT.json": "02f1a27a1b130e598d5c3ed7bc68b60423a9acbb3260dcd7b599ad9924b05130"
+      }
+    },
+    {
+      "all_pass": true,
+      "checks": {
+        "aapt_stderr_hash": true,
+        "aapt_stdout_hash": true,
+        "apk_mime": true,
+        "get_header_200": true,
+        "phase_files_match_static": true,
+        "signer_stderr_hash": true,
+        "signer_stdout_hash": true
+      },
+      "package": "com.exner.tools.meditationtimer",
+      "phase_result_sha256": {
+        "DEX-RESULT.json": "d8bb1c1d6c361d2a4003b1986bbb1f4edcfbb05c74031ed2f687d21f9c717ffa",
+        "ELF-RESULT.json": "a63cdd3596d0301b49fd0928af318a21d1a3277579b7763989479357a2b3b30a",
+        "METADATA-RESULT.json": "7fcc34e38bc58bd9158ead76847d6f70cdce1125456608ada662c690cb34bbc9",
+        "ZIP-RESULT.json": "a240421f4bbf690f50b296ddde42c17d531d5159ded7af015dd4884f52b868e8"
+      }
+    },
+    {
+      "all_pass": true,
+      "checks": {
+        "aapt_stderr_hash": true,
+        "aapt_stdout_hash": true,
+        "apk_mime": true,
+        "get_header_200": true,
+        "phase_files_match_static": true,
+        "signer_stderr_hash": true,
+        "signer_stdout_hash": true
+      },
+      "package": "com.ltrademark.hourly",
+      "phase_result_sha256": {
+        "DEX-RESULT.json": "d8f06378941048151024b144887534cd4130d9aac7fd033037694c66dd99eb32",
+        "ELF-RESULT.json": "bdc261117e4833b57ae6fe7012e488c06623a3f4a6c15ed69be0c6d0759fcb4d",
+        "METADATA-RESULT.json": "48828aa5ebcba095cfaecd114313bd3d84d8eefd2b829e6e041592dc12127900",
+        "ZIP-RESULT.json": "d68f9d23149477c789bfc7442f13caa2db3e655490ee808e7c249b628cefc103"
+      }
+    },
+    {
+      "all_pass": true,
+      "checks": {
+        "aapt_stderr_hash": true,
+        "aapt_stdout_hash": true,
+        "apk_mime": true,
+        "get_header_200": true,
+        "phase_files_match_static": true,
+        "signer_stderr_hash": true,
+        "signer_stdout_hash": true
+      },
+      "package": "org.nsh07.pomodoro",
+      "phase_result_sha256": {
+        "DEX-RESULT.json": "705f99982dcdab33b5fe84f411873f42986f97245f3e4c81a116bb5645c5da00",
+        "ELF-RESULT.json": "30d5b3c1c449d5e717373ecfcdbf3a23da26ddaab57b881e0935adb01b173a53",
+        "METADATA-RESULT.json": "ed73d69af9a645178a36c1e1bc5617748692abd1f1890e7762672fcd62551b2a",
+        "ZIP-RESULT.json": "f8c11d7b1e3b0ba34b3e39deaeeea05de246455e4d76fd6f5b56f0759e2f393b"
+      }
+    }
+  ],
+  "schema": "peer-review-next4e-receipt-integrity-v1"
+}
