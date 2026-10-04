@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T22:20:56.657812+00:00",
+  "checked_at": "2026-10-04T22:36:10.506530+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -1572,32 +1572,15 @@
     "target_compile_commands": 0
   },
   "no_container_revision": {
-    "status": "ACTIVE_USER_DIRECTIVE",
+    "status": "SUPERSEDED_BY_USER_DOCKER_DEV_ONLY_BOUNDARY",
     "decision": {
-      "path": "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md",
-      "sha256": "13e12034df1ef31c267f215359ea5aa3eb56e33a44dc97cd7058009feb7901bf"
+      "path": "docs/nanhai-plus/revisions/docker-dev-tools-20261005/DECISION.md",
+      "sha256": "7175c994d9f5e9d97ae1422c4548e57bb6d6bcf29f73c5e4a357f0c8ba4e7c1e"
     },
-    "g277_container_candidate": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v21-g277-candidate-v1/SUPERSEDED.json",
-      "sha256": "638778d8fe361a9569e974602d9955a21a9b2ccdd86c79371f5dfa60bff83969"
-    },
-    "environment_document": {
-      "path": "local_env.md",
-      "sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3"
-    },
-    "container_execution_allowed": false,
-    "host_native_graph_pass": false,
-    "native_target_build_pass": false,
-    "new_host_candidate": "gz02 full R4 TOP 1011/1013 manifest projects read-only admitted; two absent Darwin prebuilts; metadata ACK accepted; graph runner NO_GO and graph not executed",
-    "historical_g252_g276_container_receipts": "historical_only_not_native_pass",
-    "host_native_route_root_review": {
-      "path": "docs/nanhai-plus/revisions/no-container-20261004/NATIVE-ROUTE-REVIEW.json",
-      "sha256": "418928cceed59fac82b27f42594170cabe844380b8a16d830c7350f974584e11"
-    },
-    "owner_policy_ack": {
-      "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ROOT-ACK.json",
-      "sha256": "15099d8dc70d1ed8cf4446d126df960342c5268aca57ec30b67618acf0a5bddd"
-    }
+    "container_execution_allowed_for_dev_only": true,
+    "architecture_delivery_runtime_container_dependency": false,
+    "final_acceptance_container_evidence": false,
+    "historical_no_container_revision_preserved": true
   },
   "native_host_tool_progress": {
     "host": "gz02",

@@ -1,0 +1,96 @@
+{
+  "all_checks_pass": true,
+  "bridge_commands": 0,
+  "checks": {
+    "current_bionic_not_ready": true,
+    "g274_input_only": true,
+    "g274_materializer_pending": true,
+    "g278_generated_actions_unknown": true,
+    "g278_host_tool_only": true,
+    "no_container_policy": true,
+    "v18_allowlist_materialized": true,
+    "v18_not_released": true
+  },
+  "command_rc": 0,
+  "container_commands": 0,
+  "decision": "NO_GO_NO_LOCAL_EXECUTABLE_NATIVE_PATH",
+  "device_commands": 0,
+  "graph_commands": 0,
+  "inputs": {
+    "env": {
+      "path": "local_env.md",
+      "sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c"
+    },
+    "g18_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-independent-review-v1/REVIEW.json",
+      "sha256": "195463856786315545301e3ef1b45623d819cd2250389e7a7619e083c2001d42"
+    },
+    "g274_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/root-input-admission-v1/ADMISSION.json",
+      "sha256": "938389eac68203b94c0e0ded93e0bee9f54fcd641388f0d0a518d5803dc84899"
+    },
+    "g274_candidate": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/INPUT-CANDIDATE.json",
+      "sha256": "18514f2a8e0cb8126e109cbb8f9945f2093279cec5c7fff21a5754f27daf051d"
+    },
+    "g274_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-peer-review-v1/REVIEW.json",
+      "sha256": "0adc9bfa042274f447adcca221b1441b9912cd7a9adf800a275fd3280b24d750"
+    },
+    "g278_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/RECEIPT.json",
+      "sha256": "ecb09a7aed179e9f9e941531800f6cff0b69529830fadc9a87d76dc69e2f03e4"
+    },
+    "g278_result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/HOST-TOOL-RESULT.json",
+      "sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6"
+    },
+    "g278_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/host-tool-actual-peer-v1/REVIEW.json",
+      "sha256": "c006300e874c0d583b9313179dd20dfa373d0ded46f4ea9f6be834f1a1aa75c6"
+    },
+    "v18_material": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/MATERIALIZATION.json",
+      "sha256": "809f117f1f583751413beb6698418411200bb213c696b12ab2ba46254a70edb9"
+    },
+    "v18_packet": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/PACKET-CANDIDATE.json",
+      "sha256": "144cb6331c361879ae256cbb30ac169e80475144f53c238cd7b91378da446794"
+    },
+    "v18_ready": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/READY.json",
+      "sha256": "d55cbdd52785cbd06791ca648eb4883b38fa527c641aaccbaf4b4e4b8e39564e"
+    },
+    "v18_static": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/STATIC-CHECK.json",
+      "sha256": "2e23fc5bf7840b35a16525e4829b15e3f813713c0ed7951e5250585ed50cdbbb"
+    }
+  },
+  "migration_design": [
+    "Preserve G274 nine-root and v18 allowlist as read-only source manifest.",
+    "Resolve NANHAI_SOURCE_POOL_ROOT-relative roots into an isolated native source view; verify HEAD/tree/blob and symlinks before materialization.",
+    "Apply the reviewed two sandbox switches only in a project worktree; build soong_ui as host tool, capture execve, inspect generated actions.",
+    "Freeze OUT/TMP, run one graph-only preflight, release only after owner ACK, fresh host identity, exact input hashes, and no forbidden executor."
+  ],
+  "minimum_falsifier": {
+    "fail_condition": "Any missing root/hash/tree, unresolved symlink, non-Linux host, forbidden generated action, or absent fresh owner/host receipt => NO_GO; do not dispatch graph.",
+    "name": "native_source_view_and_host_tool_falsifier",
+    "pass_condition": "Fresh Linux x86_64 receipt proves every v18 allowlist root resolves to registered exact source entries, patched soong_ui build rc0, execve has no forbidden executor, and generated actions have no nsjail/container/namespace invocation."
+  },
+  "missing_inputs": [
+    "reachable authenticated Linux x86_64 host; G278 host receipt is historical and current route NO_GO",
+    "fresh owner ACK and non-replayed release packet",
+    "v18 materializer independent review and root seal (current root_seal=false)",
+    "proof generated Ninja actions avoid nsjail/container/namespace",
+    "fresh isolated OUT/TMP capacity and target toolchain/sysroot/CRT provenance"
+  ],
+  "namespace_commands": 0,
+  "observed": {
+    "g274_source_roots": 9,
+    "g278_source_view_links": 46,
+    "v18_allowlist_roots": 38,
+    "v18_new_source_roots": 9
+  },
+  "schema": "peer-g274-v18-native-migration-readiness-v1",
+  "target_compile_commands": 0
+}

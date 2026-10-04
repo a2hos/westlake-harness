@@ -36,7 +36,7 @@
   "qualified_blackbox_cold_starts": 0,
   "tool_dispositions_reviewed": 88,
   "art_abort_bridge": "undetermined, NO_GO final disposition until current Bionic caller/provider/ABI evidence",
-  "host_graph_runtime": "fresh authenticated native Linux host, same-build Bionic runtime index, target graph/build, and device cold-start receipt all absent",
+  "host_graph_runtime": "fresh authenticated native Linux host, same-build Bionic runtime index, target graph/build, and device cold-start receipt all absent; Docker dev-only tools may assist preparation but cannot close these delivery gates",
   "pending": "Continue APK identity/static work; recover route and design a fresh native-host graph executor bound to current local_env. Do not reuse v18/v20/v21 Docker lifecycle or old packets.",
   "continuity": {
     "goal_id": "goal_01",
@@ -94,5 +94,12 @@
     "rc": 2,
     "error": "ValueError: env loader changed",
     "container_commands": 0
+  },
+  "docker_boundary_revision": {
+    "path": "docs/nanhai-plus/revisions/docker-dev-tools-20261005/DECISION.md",
+    "sha256": "7175c994d9f5e9d97ae1422c4548e57bb6d6bcf29f73c5e4a357f0c8ba4e7c1e",
+    "at_utc": "2026-10-04T22:36:55.380710+00:00",
+    "allowed": "dev-only scanning/dependency preparation/test fixtures/failure localization",
+    "excluded": "system architecture/formal delivery/App or OH service runtime/target image/install/cold start/display/device acceptance"
   }
 }
