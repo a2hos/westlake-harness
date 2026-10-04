@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T18:07:40+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 android-16.0.0_r4 / ARM64 / App single Bionic; 200 distinct unmodified APK cold starts incl 100 overseas-mainstream blackbox",
+  "task_summary_sha256": "4ae3d8a5ee295ae60e5e415c07da6abe9e36d2e49c90ce3c752b6345a8aa9f3f",
+  "raw_accepted": 100,
+  "full_host_static_accepted": 95,
+  "semantic_dex_entries": 310,
+  "true_arm64_elf_entries": 1403,
+  "qualified_blackbox_packages": 16,
+  "cold_start_verified": 0,
+  "bionic_whole_tools_verified": 0,
+  "graph_result_observed": false,
+  "bitwarden_raw_root_admission_sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
+  "g279_local_route_root_acceptance_sha256": "f87912614430894b82459b97322eded2e868126807be3b1f0e56953586d82e28",
+  "hk01_jump": "project scope answer pending; no SSH",
+  "container_commands": 0,
+  "device_commands": 0,
+  "device_hold": true,
+  "goal_session_budget_preserved": true
+}

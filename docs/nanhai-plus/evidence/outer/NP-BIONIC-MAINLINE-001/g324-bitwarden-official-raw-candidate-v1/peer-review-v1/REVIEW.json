@@ -1,0 +1,35 @@
+{
+  "schema": "g324-bitwarden-official-raw-peer-review-v1",
+  "at_utc": "2026-10-04T18:06:10.210279+00:00",
+  "decision": "GO_HOST_RAW_ONLY",
+  "candidate_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/CANDIDATE.json",
+  "checks": {
+    "candidate_sha256": "ae96b0408a4f3e4cd6c4121730c00b702b2992899744c3ee251902c9a264427e",
+    "host_verify_sha256": "f5b6cc2dba8b22a624e2f5f5e6640724fcdd164fcb895146a8628f9886395b66",
+    "apk_sha256_recomputed": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+    "apk_size_recomputed": 137628468,
+    "release_api_raw_sha256": "ab335e749d48979b9218d3a8530613090cc9811b37b94289b7488deeb8809f1e",
+    "release_tag": "v2026.9.0-bwpm",
+    "release_asset_id": 568511588,
+    "release_asset_digest": "sha256:954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+    "release_asset_size": 137628468,
+    "release_asset_url": "https://github.com/bitwarden/android/releases/download/v2026.9.0-bwpm/com.x8bit.bitwarden.apk",
+    "summary_sha256": "87cd0c4dfb9181436526f130fb440a3839a01449b223bb1383905ac621a7fe23",
+    "package_mentions_in_summary": 0
+  },
+  "observed_evidence": [
+    "GitHub Bitwarden/android release API raw HTTP 200 identifies tag v2026.9.0-bwpm and uploaded asset id 568511588, exact filename, 137628468 bytes, SHA256 and browser_download_url matching APK.",
+    "Saved download headers show GitHub 302 to release-assets.githubusercontent.com and final HTTP 200 application/vnd.android.package-archive with Content-Length 137628468.",
+    "Recomputed local APK SHA256 and size match release asset and candidate. Saved aapt rc0 identifies com.x8bit.bitwarden, versionCode 21909, versionName 2026.9.0, targetSdk37.",
+    "Saved apksigner rc0 reports v2 true, one signer, certificate SHA256 24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a.",
+    "Independently inspected ZIP: 727 entries, no duplicate names, testzip None (all CRC pass); seven arm64-v8a .so are ELF64 EM_AARCH64 (machine 183).",
+    "Current TASK-SUMMARY.json SHA matches candidate and contains zero com.x8bit.bitwarden occurrences, so package identity is distinct from recorded 99 raw."
+  ],
+  "limits": [
+    "Host original APK admission only. No four-phase semantic scan, blackbox qualification, install, launch, runtime, or Bionic tool PASS established.",
+    "targetSdk37 exceeds AOSP16 API36 and is a compatibility risk only, not proof of install or startup failure.",
+    "The observed signing certificate was not checked against an independent pre-pinned publisher certificate; publisher provenance rests on GitHub Bitwarden/android release asset identity plus matching bytes.",
+    "Public Bitwarden source means this package cannot be counted as overseas-mainstream blackbox without a separate qualification decision; likely whitebox candidate."
+  ],
+  "prohibited_actions_observed": "No network download, SSH, device, container, Bridge, or ledger mutation by reviewer."
+}

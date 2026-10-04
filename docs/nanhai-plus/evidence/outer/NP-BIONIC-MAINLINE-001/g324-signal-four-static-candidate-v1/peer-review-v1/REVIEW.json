@@ -1,0 +1,25 @@
+{
+  "schema": "g324-signal-four-static-v1-peer-review-v1",
+  "at_utc": "2026-10-04T18:10:05.969607+00:00",
+  "decision": "NO_GO_COMPLETE_STATIC_V1",
+  "candidate_sha256": "29207558fa19976f4b0bc3c44f2474cf3f848fc3800c21b1227e34a609a499ed",
+  "root_raw_admission_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+  "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "observations": [
+    "v1 START, RESULT, CENSUS, prepare, phase, runner SHA match the candidate; raw input body.raw currently hashes to exact 9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122.",
+    "ZIP phase terminal rc0 with matching raw stdout/stderr/command/result hashes and source guard equal.",
+    "metadata phase terminal rc2 with matching raw hashes and source guard equal. Its MANIFEST.json says filename body.raw, package body, manifest_available false. The traceback is the expected metadata identity assertion.",
+    "The scanner exact source at lines 893-903 returns this non-APK fallback when suffix is not .apk/.xapk/.apkm; body.raw triggers that branch before APK parsing.",
+    "Runner stopped after metadata rc2. DEX and ELF phases have no terminal results; census header counts are preparation only.",
+    "Independent prior aapt badging on the same raw SHA reports org.thoughtcrime.securesms 8.29.3/175901 and targetSdk36, supporting path-classification cause without proving scanner success."
+  ],
+  "v2_suitability": "YES_CONDITIONAL_NEW_GENERATION",
+  "v2_conditions": [
+    "Create a declared project-owned .apk-suffixed read-only alias to the exact admitted body.raw bytes; verify alias SHA, target provenance, root raw receipt, and scanner SHA before and after.",
+    "Use a fresh immutable v2 directory, phase/runner SHA and START; never replay or modify v1.",
+    "Run metadata-only preflight first. Require manifest_available true and exact package/version/targetSdk36. If that passes, independently release a new bounded four-stage execution; record all raw streams, rc, guards and inventories.",
+    "Do not mark complete static or change count until all four v2 stages finish rc0 and independent/root review admits their exact results."
+  ],
+  "limits": "No installation, startup, device, Bionic whole-tool, or complete static PASS from v1; no production scanner edit recommended on this evidence alone.",
+  "reviewer_actions": "Read-only local inspection and hash checks; no device, container, SSH, network, old receipt mutation or ledger change."
+}

@@ -1,0 +1,259 @@
+{
+  "schema": "g325-bitwarden-full-member-census-v1",
+  "apk_sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+  "root_raw_sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "entries": 727,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 8895184,
+      "sha256": "f92b2a32eec3d7b5d7c4aa17c9919ea557abe869a3d960c684c6fbc0c198fb85",
+      "magic": "6465780a30333900",
+      "header_consistent": true
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 8920484,
+      "sha256": "c0bb519f15a4706a6070bf0da89f111653369072f9181139fb41b12037a96f1f",
+      "magic": "6465780a30333900",
+      "header_consistent": true
+    }
+  ],
+  "so": [
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10096,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libbitwarden_uniffi.so",
+      "kind": "elf",
+      "bytes": 16709280,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 7112,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 32528,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 165992,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+      "kind": "elf",
+      "bytes": 11064544,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 4896,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 7252,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libbitwarden_uniffi.so",
+      "kind": "elf",
+      "bytes": 10671892,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 4416,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 24448,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 116344,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libmlkit_google_ocr_pipeline.so",
+      "kind": "elf",
+      "bytes": 6781940,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 3460,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 126980,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/mips/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 130556,
+      "class": 1,
+      "machine": 8
+    },
+    {
+      "name": "lib/mips64/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 150256,
+      "class": 2,
+      "machine": 8
+    },
+    {
+      "name": "lib/x86/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 9284,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libbitwarden_uniffi.so",
+      "kind": "elf",
+      "bytes": 18123216,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 5148,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 41276,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 116260,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libmlkit_google_ocr_pipeline.so",
+      "kind": "elf",
+      "bytes": 11561048,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 3812,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10760,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libbitwarden_uniffi.so",
+      "kind": "elf",
+      "bytes": 18476480,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 6224,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 49416,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libjnidispatch.so",
+      "kind": "elf",
+      "bytes": 116904,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libmlkit_google_ocr_pipeline.so",
+      "kind": "elf",
+      "bytes": 11626128,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 4912,
+      "class": 2,
+      "machine": 62
+    }
+  ],
+  "nested_archives": [],
+  "nested_magic_candidate_names": [],
+  "counts": {
+    "root_dex": 2,
+    "embedded_dex": 0,
+    "true_arm64_elf": 7,
+    "arm32_elf": 8,
+    "other_elf": 24,
+    "non_elf_so": 0
+  },
+  "bounds": {
+    "nested_archive_max_bytes": 52428800,
+    "nested_max_depth": 3
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0
+}

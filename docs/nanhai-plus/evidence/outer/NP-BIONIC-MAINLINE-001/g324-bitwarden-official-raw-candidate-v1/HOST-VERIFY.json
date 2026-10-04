@@ -1,0 +1,49 @@
+{
+  "all_checks_pass": true,
+  "apk_bytes": 137628468,
+  "apk_sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+  "arm64_elf_count": 7,
+  "arm64_elf_names": [
+    "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "lib/arm64-v8a/libbitwarden_uniffi.so",
+    "lib/arm64-v8a/libdatastore_shared_counter.so",
+    "lib/arm64-v8a/libimage_processing_util_jni.so",
+    "lib/arm64-v8a/libjnidispatch.so",
+    "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+    "lib/arm64-v8a/libsurface_util_jni.so"
+  ],
+  "asset_id": 568511588,
+  "asset_url": "https://github.com/bitwarden/android/releases/download/v2026.9.0-bwpm/com.x8bit.bitwarden.apk",
+  "at_utc": "2026-10-04T18:05:01.343883+00:00",
+  "checks": {
+    "apk_http200": true,
+    "arm64_elf_present": true,
+    "asset_bytes_match": true,
+    "asset_sha_match": true,
+    "download_302_to_github_asset": true,
+    "not_in_current_summary": true,
+    "one_signer": true,
+    "package_version": true,
+    "release_api_http200": true,
+    "release_asset_uploaded": true,
+    "release_tag": true,
+    "v2_signature": true,
+    "zip_crc_all": true,
+    "zip_no_duplicate_names": true
+  },
+  "evidence_sha256": {
+    "apk-download.headers.raw": "0a1bdb030252ff18e66479b03ff389d675a2edfa92e450a0f77e254f192929e6",
+    "apksigner.stdout.raw": "7373f04502743ed71412d738864edcd0967965a9f71b5623fad4ccd639d0b7a5",
+    "badging.stdout.raw": "0036a633a2227b45d898a9bc683c01c8418adcd8e32f4872def4ec7790407e6c",
+    "release-api.headers.raw": "fd8170c474cce9d3fb0151fce1b249333e59cf1e1d6a7d0dfba009cc249bf856",
+    "release-api.raw": "ab335e749d48979b9218d3a8530613090cc9811b37b94289b7488deeb8809f1e"
+  },
+  "schema": "g324-bitwarden-official-raw-host-verification-v1",
+  "signer_cert_sha256": "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a",
+  "source_release_api": "https://api.github.com/repos/bitwarden/android/releases/tags/v2026.9.0-bwpm",
+  "staging_apk": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-bitwarden-official-v1/com.x8bit.bitwarden.apk",
+  "verification_rc": 0,
+  "zip_crc_bad": null,
+  "zip_duplicate_names": [],
+  "zip_entries": 727
+}

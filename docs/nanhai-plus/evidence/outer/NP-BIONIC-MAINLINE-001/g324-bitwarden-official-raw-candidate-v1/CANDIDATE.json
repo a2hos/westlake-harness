@@ -1,0 +1,78 @@
+{
+  "artifact": {
+    "abi_arm64_elf_count": 7,
+    "bytes": 137628468,
+    "package": "com.x8bit.bitwarden",
+    "path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-bitwarden-official-v1/com.x8bit.bitwarden.apk",
+    "sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+    "signature_scheme_v2_verified": true,
+    "signer_certificate_sha256": "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a",
+    "target_sdk": 37,
+    "version_code": 21909,
+    "version_name": "2026.9.0",
+    "zip_crc_pass": true,
+    "zip_duplicate_names": [],
+    "zip_entries": 727
+  },
+  "at_utc": "2026-10-04T18:05:16.597104+00:00",
+  "command_results": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-bitwarden-official-v1/com.x8bit.bitwarden.apk"
+      ],
+      "name": "aapt_dump_badging",
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "0036a633a2227b45d898a9bc683c01c8418adcd8e32f4872def4ec7790407e6c"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-bitwarden-official-v1/com.x8bit.bitwarden.apk"
+      ],
+      "name": "apksigner_verify",
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7373f04502743ed71412d738864edcd0967965a9f71b5623fad4ccd639d0b7a5"
+    }
+  ],
+  "decision_candidate": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "host_verification_receipt": "HOST-VERIFY.json",
+  "host_verification_receipt_sha256": "f5b6cc2dba8b22a624e2f5f5e6640724fcdd164fcb895146a8628f9886395b66",
+  "known_risks_and_limits": [
+    "targetSdk 37 exceeds AOSP16 API 36; no runtime inference",
+    "Official release asset identity and observed APK signing certificate verified; no independent pre-pinned publisher signing certificate",
+    "APK contains multiple ABIs, including seven true ARM64 ELF; no runtime library load claim",
+    "Bitwarden public source availability and overseas mainstream blackbox eligibility are separate later decisions"
+  ],
+  "no_device_or_container": true,
+  "no_ledger_mutation": true,
+  "nonoverlap": {
+    "count_delta_by_candidate": 0,
+    "current_root_raw_count": 99,
+    "current_task_summary_sha256": "87cd0c4dfb9181436526f130fb440a3839a01449b223bb1383905ac621a7fe23",
+    "package_absent_from_current_summary": true
+  },
+  "official_source": {
+    "apk_download_curl_rc": 0,
+    "asset_id": 568511588,
+    "asset_sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+    "asset_size": 137628468,
+    "asset_url": "https://github.com/bitwarden/android/releases/download/v2026.9.0-bwpm/com.x8bit.bitwarden.apk",
+    "http_chain": "GitHub release URL HTTP 302 to release-assets.githubusercontent.com; final HTTP 200 application/vnd.android.package-archive with matching Content-Length",
+    "publisher_repo": "https://github.com/bitwarden/android",
+    "release_api_body_sha256": "ab335e749d48979b9218d3a8530613090cc9811b37b94289b7488deeb8809f1e",
+    "release_api_get_rc": 0,
+    "release_api_url": "https://api.github.com/repos/bitwarden/android/releases/tags/v2026.9.0-bwpm",
+    "release_tag": "v2026.9.0-bwpm",
+    "release_url": "https://github.com/bitwarden/android/releases/tag/v2026.9.0-bwpm"
+  },
+  "schema": "g324-bitwarden-official-apk-host-raw-candidate-v1",
+  "scope": "Isolated original APK candidate; root admission, blackbox qualification, four-phase static scan, install and launch remain separate."
+}

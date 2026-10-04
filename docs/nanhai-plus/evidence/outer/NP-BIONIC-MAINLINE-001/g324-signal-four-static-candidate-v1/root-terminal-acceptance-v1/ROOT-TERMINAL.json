@@ -1,0 +1,15 @@
+{
+  "schema": "nanhai-plus-root-static-terminal-v1",
+  "at_utc": "2026-10-04T18:10:10+00:00",
+  "decision": "ACCEPT_FAILED_V1_NO_COMPLETE_STATIC_CREDIT",
+  "candidate_sha256": "29207558fa19976f4b0bc3c44f2474cf3f848fc3800c21b1227e34a609a499ed",
+  "independent_review_sha256": "06b74a44182bffeecd0e7dd1956753c87c4b47f50aa7afd0e0781413045fe27b",
+  "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "observed": "ZIP phase rc0; metadata phase rc2 with scanner manifest_available false and package body for .raw filename. DEX and ARM64 ELF phases not run.",
+  "cause_evidence": "scanner.py apk_metadata returns fallback for suffix outside .apk/.xapk/.apkm; same APK bytes separately yielded Signal manifest from aapt2.",
+  "next": "New generation with SHA-guarded .apk alias, exact metadata preflight, then four phases; v1 remains immutable and is not replayed.",
+  "complete_static_delta": 0,
+  "cold_start_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

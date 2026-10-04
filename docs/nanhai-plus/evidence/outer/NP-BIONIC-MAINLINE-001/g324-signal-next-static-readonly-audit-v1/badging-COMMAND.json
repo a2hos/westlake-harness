@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+    "dump",
+    "badging",
+    ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.thoughtcrime.securesms/body.raw"
+  ],
+  "rc": 0,
+  "stdout_sha256": "a34c5dc9eb06baececc12f09b4be6df769e70116b8fd31e5db4e46c06b478b6a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

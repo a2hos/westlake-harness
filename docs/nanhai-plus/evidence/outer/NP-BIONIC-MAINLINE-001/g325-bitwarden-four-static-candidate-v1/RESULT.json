@@ -1,0 +1,114 @@
+{
+  "at_utc": "2026-10-04T18:07:41.093007+00:00",
+  "authoritative_count_changed": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "four_phases_rc0": true,
+  "non_elf_so": 0,
+  "other_true_elf": 24,
+  "rc": 0,
+  "root_dex": 2,
+  "rows": [
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/phase.py",
+        "zip"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 0.4524306249804795,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:07:17.564274+00:00",
+      "phase": "zip",
+      "rc": 0,
+      "started_at": "2026-10-04T18:07:17.111878+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e60451ebdd734c7bfb2d06181ad2fc00c6f5c7f6e5313db61cb971a0805c5be6",
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/phase.py",
+        "metadata"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 0.6640060830395669,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:07:18.228857+00:00",
+      "phase": "metadata",
+      "rc": 0,
+      "started_at": "2026-10-04T18:07:17.564883+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f7e27df0a0a9cc9b9fdb1b3507f9ba1bae412715ef7a186a64fe31e6333287fc",
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/phase.py",
+        "elf"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 15.452576916082762,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:07:33.681743+00:00",
+      "phase": "elf",
+      "rc": 0,
+      "started_at": "2026-10-04T18:07:18.229440+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "efe0906c9cbd767ae967a68f5522707574c38b905f3f8ee9f46c2de13cadd50c",
+      "timeout_seconds": 900
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/phase.py",
+        "dex"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 7.410237416974269,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T18:07:41.092420+00:00",
+      "phase": "dex",
+      "rc": 0,
+      "started_at": "2026-10-04T18:07:33.682336+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b8585e9f37177b688199d98ae4249579bbb2a3c7094ccada69dc48c83f6e952e",
+      "timeout_seconds": 900
+    }
+  ],
+  "schema": "g325-bitwarden-four-static-terminal-candidate-v1",
+  "startup_proven": false,
+  "target_sdk_risk_only": 37,
+  "true_arm64_elf": 7
+}

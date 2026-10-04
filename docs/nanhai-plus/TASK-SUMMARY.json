@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T17:59:25+00:00",
+  "checked_at": "2026-10-04T18:09:47+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 99,
+    "downloaded_payloads": 100,
     "latest_raw_admission": {
       "packages": [
-        "com.expressvpn.vpn"
+        "com.x8bit.bitwarden"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g322-expressvpn-official-scout-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "f6862686bd6e2e93a2625c9350a4de71c8e56047c5b077311c9809df04124364",
-      "scope": "publisher-page linked exact website APK host raw only; targetSdk37 risk, no static/blackbox/startup acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
+      "scope": "exact official Bitwarden APK host raw only; targetSdk37 risk, no static/blackbox/startup acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,20 +53,20 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 95,
-    "complete_inventory_dex_entries": 310,
+    "complete_static_inventories": 96,
+    "complete_inventory_dex_entries": 312,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1403,
+    "complete_inventory_native_elf_entries": 1410,
     "latest_complete_static_admission": {
-      "package": "com.expressvpn.vpn",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g323-expressvpn-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007",
-      "scope": "four-phase target ARM64 host static only; 3 DEX, 22 true ARM64 ELF, 69 other ABI separate with three mapping exceptions; no startup"
+      "package": "com.x8bit.bitwarden",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "30251db40ad4f50a43b38517134e58db64882014720d7d1a01c6c251e785e0e7",
+      "scope": "four-phase target ARM64 host static only; 2 DEX, 7 true ARM64 ELF; 24 other ABI ELF separate; no startup"
     },
     "incomplete_static_inventories": [
       "org.thoughtcrime.securesms",
@@ -75,7 +75,7 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 24,
+    "supplemental_payloads": 25,
     "qualified_blackbox_packages": 16,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
@@ -2012,6 +2012,42 @@
     "semantic_dex_delta": 3,
     "true_arm64_elf_delta": 22,
     "other_abi_elf_separate": 69,
+    "cold_start_delta": 0
+  },
+  "g324_bitwarden_raw_actual": {
+    "status": "accepted_exact_official_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e"
+    },
+    "raw_before": 99,
+    "raw_after": 100,
+    "target_sdk": 37,
+    "full_static_delta": 0,
+    "blackbox_qualification_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g279_current_local_route_observation": {
+    "status": "accepted_local_readonly_diagnostic_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-route-current-readonly-peer-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "f87912614430894b82459b97322eded2e868126807be3b1f0e56953586d82e28"
+    },
+    "remote_graph_result_observed": false,
+    "new_graph_release": false,
+    "container_commands": 0,
+    "device_commands": 0
+  },
+  "g325_bitwarden_static_actual": {
+    "status": "accepted_complete_target_arm64_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "30251db40ad4f50a43b38517134e58db64882014720d7d1a01c6c251e785e0e7"
+    },
+    "static_before": 95,
+    "static_after": 96,
+    "dex_delta": 2,
+    "arm64_elf_delta": 7,
     "cold_start_delta": 0
   }
 }

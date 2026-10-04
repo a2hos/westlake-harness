@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Unknown, OU=Engineering, O=8bit Solutions LLC, L=Jacksonville, ST=Florida, C=US
+Signer #1 certificate SHA-256 digest: 24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a
+Signer #1 certificate SHA-1 digest: 754185cd4cdfde598748b043048bfe59a17264c2
+Signer #1 certificate MD5 digest: be9ec31af72b4e1b0f69a07d4c60ecbd
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: f7eb1677438834937de755b3252e62cfee42b4f33f2a0712983cce4e9e6b0a88
+Signer #1 public key SHA-1 digest: 468c06f426adc378cf38b31b3c72b3603e913f46
+Signer #1 public key MD5 digest: 1e18669998a5b34ab18b8e0f203fedd9

@@ -1,0 +1,12 @@
+{
+  "schema": "nanhai-plus-root-native-route-observation-v1",
+  "at_utc": "2026-10-04T18:07:45+00:00",
+  "decision": "ACCEPT_LOCAL_READONLY_OBSERVATION_ONLY",
+  "observation_sha256": "4ca21727c3bddf07a266288ffed4a4d89754ab7b9395a49d3f66c5bff8c55dfa",
+  "observed": "Local port 7897 had no TCP listener; alexpc.local lookup timed out after 5 seconds; ssh -G is configuration only and kernel route for gz02 used en0.",
+  "not_proven": "No authenticated current gz02/AlexPC remote status, no Soong graph result, and no remote host failure conclusion.",
+  "next": "Do not replay prior nonce or release a new graph packet until a project-scoped, host-key-pinned native host route and fresh remote readback are independently reviewed.",
+  "ssh_commands": 0,
+  "container_commands": 0,
+  "device_commands": 0
+}

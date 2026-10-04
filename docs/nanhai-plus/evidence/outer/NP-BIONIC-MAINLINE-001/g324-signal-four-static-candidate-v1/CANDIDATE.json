@@ -1,0 +1,64 @@
+{
+  "schema": "g324-signal-four-static-v1-failed-terminal-candidate",
+  "at_utc": "2026-10-04T18:09:06.931202+00:00",
+  "decision_candidate": "NO_GO_COMPLETE_STATIC_V1_METADATA_RC2_DEPENDENTS_NOT_RUN",
+  "root_raw_admission_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+  "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "apk_bytes": 114758484,
+  "start_sha256": "c91e1582d8d8bdd69d514c6eb88abab4aff0ff3c17f142cad163156ff6cae821",
+  "result_sha256": "43f65b4332dcc02286a6c4f73d6215db24ec9d5bf0adc420c38bcd6b120f2dd1",
+  "census_sha256": "6ae84ba7af879621943b54e5594164494c1c767e7063e1caff5303d8d3e38fc5",
+  "prepare_source_sha256": "bceaa07f5d550e37cc53984c6e924d0f9f63ce3ee2b07cc67d83c441e6784518",
+  "phase_source_sha256": "72158ec6ce4a46b879964c3f24db89f38d2a1d84d925b90ffa1f8324e8eec6a3",
+  "runner_source_sha256": "fe4a0d8905bb0d412f1698b6d1854b505fec4d20721c02e839b24a916c477a13",
+  "phase_rows": [
+    {
+      "phase": "zip",
+      "rc": 0,
+      "command_sha256": "8d838e77885f89a398c0be7080d669e28bc92eb943e7bfe133634d21be5d43a4",
+      "stdout_sha256": "50f2067c1b0a8c6df007cb6f91bbb6743c2fe4629654294bd27ccba8c5cae473",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "6bc6b3ba22df7fb1eb9feaf977c145a47f037bc460bd45e0e7b646a600879fed",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "metadata",
+      "rc": 2,
+      "command_sha256": "d6ec10b854a8af71c52c4f7ffa0dfe1d99961eb2fb3ebb6661b01173d2e4bfc2",
+      "stdout_sha256": "b6358e8f967725c152ad56941e2a81cf569cb959e5aafcf5315b21044116a566",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "2f1f1234e89981a936aaed564449e9e43998b9d661c36043f8f19ad863b642b6",
+      "source_guard_equal": true
+    }
+  ],
+  "not_run": [
+    "dex",
+    "elf"
+  ],
+  "census_counts": {
+    "root_dex": 6,
+    "embedded_dex": 0,
+    "true_arm64_elf": 12,
+    "arm32_elf": 12,
+    "other_elf": 36,
+    "non_elf_so": 0
+  },
+  "observed_wall": {
+    "phase": "metadata",
+    "rc": 2,
+    "manifest_available": false,
+    "scanner_reported_package": "body",
+    "scanner_reported_version": null,
+    "manifest_receipt_sha256": "c7a3adb2eb10330fa95410ceac30ac6706df1a6e8138a3847b9375f12f55b8e6",
+    "cause_candidate": "scanner.apk_metadata recognized path suffix .raw as non-APK and skipped manifest parsing; independently observed aapt2 on same SHA read Signal package/version/targetSdk36",
+    "cheapest_falsifier": "New immutable generation with project-owned read-only .apk-named alias to same bytes, guarded target SHA, then metadata only preflight before full four-stage release"
+  },
+  "limits": "No DEX or ARM64 ELF scanner phase ran. ZIP rc0 does not create complete static pass. Do not replay v1 or count it.",
+  "authoritative_count_changed": false,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0,
+  "ssh_commands": 0,
+  "bridge_writes": 0
+}

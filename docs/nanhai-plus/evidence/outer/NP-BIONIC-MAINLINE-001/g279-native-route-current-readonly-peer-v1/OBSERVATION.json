@@ -1,0 +1,126 @@
+{
+  "schema": "g279-native-route-current-readonly-peer-v1",
+  "time_utc": "2026-10-04T18:05:14.672059+00:00",
+  "scope": "Local read-only DNS, route, listener, and ssh -G configuration checks only. No SSH connection, device, Bridge, container, namespace, or graph execution.",
+  "source_sha256": {
+    "resume": {
+      "path": "docs/nanhai-plus/RESUME.md",
+      "sha256": "3d2e050d391520d7128a0570c3cf6b7fdf41004eb2e13ae165c7c2928c96b4de"
+    },
+    "outer_state": {
+      "path": "docs/nanhai-plus/OUTER-STATE.json",
+      "sha256": "33ae0743b13979d467098924174f5c7cb18fd507687aee7ceac3b8868d76e386"
+    },
+    "local_env": {
+      "path": "local_env.md",
+      "sha256": "5fefb4ca26c218683df175452495b86a19b53e69168727adccd7eb365b22d35c"
+    },
+    "hk01_draft": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/g279-hk01-gz02-readonly-route-draft-v1/ROUTE-DRAFT.json",
+      "sha256": "1234b77c066adecfd43959a28ceac08963d19abf4cf58b15caf66d45b0839114"
+    },
+    "backup_audit": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g318-native-backup-host-audit-v1/AUDIT.json",
+      "sha256": "1dd383c01e3b6adbf9de470fade06d41e5f8f7c73a5e44bb486dca4522cfb6f0"
+    },
+    "direct_graph_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-exact-once-candidate-v1/actual-graph-v13-v1/root-postrun-acceptance-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "1193163ce45860e208213b4f53cca557422117730533837e259e86d7650721a4"
+    },
+    "proxy_readback_acceptance": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/graph-v13-proxy-readonly-state-candidate-v3/actual-proxy-readback-v3/root-postrun-acceptance-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "749ae6cbb5b0a4ae9aeeb6cefb4ee5b305c28392ca925af4a180d0a8879f0ce9"
+    }
+  },
+  "observations": {
+    "current_resume_first_line": "最新恢复入口：docs/nanhai-plus/checkpoints/20261004-raw99-static95-blackbox16-evo43/CHECKPOINT.json，SHA cc1d457b8f080e0d85ea26c86a99e04b2b0fd56aea6291a9a952ba39ca2b9099。原包99、完整宿主静态95（310 DEX、1403 真 ARM64 ELF）、海外主流黑盒测试资格16，真实冷启动0/200、Bionic整工具0/89。EVO43 在五组实际结果后用57.64秒闭合 SDK 版本风险标签小试，未推广、未判定安装失败。G279 原生构图仍无结果，HK01 路由仅静态草案且等项目范围答复；全程禁容器/namespace，设备 HOLD，原 goal/session/累计预算保留。",
+    "hk01_draft_status": "WAIT_USER_SCOPE_NO_EXECUTION_ENTRY",
+    "hk01_project_scope_receipt": null,
+    "local_checks": {
+      "alexpc_dns": {
+        "argv": [
+          "dscacheutil",
+          "-q",
+          "host",
+          "-a",
+          "name",
+          "alexpc.local"
+        ],
+        "timed_out": true,
+        "timeout_seconds": 5,
+        "stdout_before_timeout": null,
+        "stderr_before_timeout": null
+      },
+      "gz02_kernel_route": {
+        "argv": [
+          "route",
+          "-n",
+          "get",
+          "1.95.90.207"
+        ],
+        "rc": 0,
+        "timed_out": false,
+        "stderr": "",
+        "stdout": "   route to: 1.95.90.207\ndestination: 1.95.90.207\n    gateway: 192.168.3.1\n  interface: en0\n      flags: <UP,GATEWAY,HOST,DONE,WASCLONED,IFSCOPE,IFREF,GLOBAL>\n recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire\n       0         0   5802209         0        15         0      1500         0 \n"
+      },
+      "socks_7897_listener": {
+        "argv": [
+          "lsof",
+          "-nP",
+          "-iTCP:7897",
+          "-sTCP:LISTEN"
+        ],
+        "rc": 1,
+        "timed_out": false,
+        "stderr": "",
+        "stdout": ""
+      },
+      "gz02_ssh_effective_config": {
+        "argv": [
+          "ssh",
+          "-G",
+          "gz02"
+        ],
+        "rc": 0,
+        "timed_out": false,
+        "stderr": "Pseudo-terminal will not be allocated because stdin is not a terminal.\n",
+        "selected_effective_values": [
+          "user AlexYang",
+          "hostname 1.95.90.207",
+          "port 58222",
+          "stricthostkeychecking ask",
+          "userknownhostsfile /Users/alexyang/.ssh/known_hosts /Users/alexyang/.ssh/known_hosts2"
+        ],
+        "full_stdout_sha256": "2ef35b4d8a2a7d4ef189fb6025a75853320e264bf2709a2fc7677c01864d3514"
+      },
+      "alexpc_ssh_effective_config": {
+        "argv": [
+          "ssh",
+          "-G",
+          "alexpc"
+        ],
+        "rc": 0,
+        "timed_out": false,
+        "stderr": "Pseudo-terminal will not be allocated because stdin is not a terminal.\n",
+        "selected_effective_values": [
+          "user alexyang",
+          "hostname alexpc.local",
+          "port 22",
+          "stricthostkeychecking ask",
+          "userknownhostsfile /Users/alexyang/.ssh/known_hosts /Users/alexyang/.ssh/known_hosts2"
+        ],
+        "full_stdout_sha256": "d6bf2118f321008806e5b3fe08b483e41722dca800cd304f75a81b53f2f09cd2"
+      }
+    },
+    "prior_remote_attempts": "Direct graph SSH rc255 timeout and proxy readback rc255 connection closed; neither yielded authenticated remote state; see linked acceptance receipts.",
+    "backup_host_prior": "G318 read-only AlexPC SSH previously failed local DNS resolution; exact R4 full source/build host unverified; see linked audit."
+  },
+  "inferences": [
+    "No currently verified gz02 or AlexPC connection path is established by these observations. A kernel route to gz02 and local ssh -G values are configuration only, not authenticated remote access.",
+    "The current 7897 listener check found no listener. This does not prove that another authorized proxy or route cannot work.",
+    "The five-second alexpc.local query timeout does not prove the machine is down; it leaves a current address unresolved.",
+    "HK01 remains static draft only: no project scope receipt and no connection authorization evidenced in the inspected draft."
+  ],
+  "minimum_next_fact": "Before a new graph packet, obtain one fresh authenticated, host-key-pinned, project-scoped native Linux x86_64 host readback. For gz02 via HK01, first establish explicit project scope for HK01 hop, then independently review/release a new one-shot read-only probe with a fresh nonce and exact two-hop route; read back gz02 identity and prior graph state. Alternatively restore a resolvable/authenticated AlexPC address and verify exact AOSP16 R4 full source, native tools, and project OUT/TMP/staging there. Only then prepare new graph packet, with separate owner ACK and independent preflight.",
+  "decision": "NO_GO_NEW_GRAPH_PACKET_OR_ROUTE_EXECUTION"
+}

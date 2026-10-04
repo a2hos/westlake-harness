@@ -1,0 +1,55 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi",
+    "armeabi-v7a",
+    "mips",
+    "mips64",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 10,
+  "app_name": "Bitwarden",
+  "bytes": 137628468,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.nfc"
+  ],
+  "filename": "com.x8bit.bitwarden.apk",
+  "main_activities": [
+    "com.x8bit.bitwarden.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "29",
+  "native_library_entries": 31,
+  "package": "com.x8bit.bitwarden",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-bitwarden-official-v1/com.x8bit.bitwarden.apk",
+  "permissions": [
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.NFC",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_USER_DICTIONARY",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "horizons.permission.HEADSET_CAMERA"
+  ],
+  "providers": 6,
+  "receivers": 6,
+  "services": 20,
+  "sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+  "signing_certificate_sha256": [
+    "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+  ],
+  "target_sdk": "37",
+  "version_code": "21909",
+  "version_name": "2026.9.0"
+}

@@ -1,0 +1,406 @@
+{
+  "schema": "g324-signal-full-member-census-v1",
+  "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "root_raw_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "entries": 4185,
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 11131216,
+      "sha256": "89ade56ad8a2f1da925bb6f61584433efb4c019c1f9b05043f64b5280471af2c",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 8612300,
+      "sha256": "f073703baa9d0f2e57cc21181af52b5a4b7d840f40428300aa6e813889e56232",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes3.dex",
+      "bytes": 10780092,
+      "sha256": "3f14b41cb3510e543897758faa3c640cffaaf1294310fe42a15d647ce2a239a7",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes4.dex",
+      "bytes": 10773736,
+      "sha256": "660c47b5543c917abc50b4e24cf826872dcc2d26d19df6b023ae4b90fe2c2f75",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes5.dex",
+      "bytes": 7765692,
+      "sha256": "bcf49877a1f3f6b9cee49e0e719af2b5b148f41f84e46b5e0d6e9b24913b436b",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    },
+    {
+      "name": "classes6.dex",
+      "bytes": 570812,
+      "sha256": "66b5bc8d8b520482fd91168b992bc16b86d36a1056872831049668384e49e944",
+      "magic": "6465780a30333500",
+      "header_consistent": true
+    }
+  ],
+  "so": [
+    {
+      "name": "lib/arm64-v8a/libaesgcm.so",
+      "kind": "elf",
+      "bytes": 34392,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10096,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libconscrypt_jni.so",
+      "kind": "elf",
+      "bytes": 2856520,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 7112,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 32528,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libmobilecoin.so",
+      "kind": "elf",
+      "bytes": 3366512,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libnative-utils.so",
+      "kind": "elf",
+      "bytes": 5960,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libringrtc.so",
+      "kind": "elf",
+      "bytes": 2948240,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libringrtc_rffi.so",
+      "kind": "elf",
+      "bytes": 9170040,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsignal_jni.so",
+      "kind": "elf",
+      "bytes": 8943072,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 2100040,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/arm64-v8a/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 4896,
+      "class": 2,
+      "machine": 183
+    },
+    {
+      "name": "lib/armeabi-v7a/libaesgcm.so",
+      "kind": "elf",
+      "bytes": 33864,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 7252,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libconscrypt_jni.so",
+      "kind": "elf",
+      "bytes": 1844280,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 4416,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 24448,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libmobilecoin.so",
+      "kind": "elf",
+      "bytes": 2483036,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libnative-utils.so",
+      "kind": "elf",
+      "bytes": 4008,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libringrtc.so",
+      "kind": "elf",
+      "bytes": 2043264,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libringrtc_rffi.so",
+      "kind": "elf",
+      "bytes": 4784860,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsignal_jni.so",
+      "kind": "elf",
+      "bytes": 6625208,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 1046404,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/armeabi-v7a/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 3460,
+      "class": 1,
+      "machine": 40
+    },
+    {
+      "name": "lib/x86/libaesgcm.so",
+      "kind": "elf",
+      "bytes": 62316,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 9284,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libconscrypt_jni.so",
+      "kind": "elf",
+      "bytes": 2879972,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 5148,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 41276,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libmobilecoin.so",
+      "kind": "elf",
+      "bytes": 3973432,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libnative-utils.so",
+      "kind": "elf",
+      "bytes": 4888,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libringrtc.so",
+      "kind": "elf",
+      "bytes": 3642760,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libringrtc_rffi.so",
+      "kind": "elf",
+      "bytes": 9573168,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsignal_jni.so",
+      "kind": "elf",
+      "bytes": 10526200,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 2244588,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 3812,
+      "class": 1,
+      "machine": 3
+    },
+    {
+      "name": "lib/x86_64/libaesgcm.so",
+      "kind": "elf",
+      "bytes": 69144,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "kind": "elf",
+      "bytes": 10760,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libconscrypt_jni.so",
+      "kind": "elf",
+      "bytes": 3079400,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "kind": "elf",
+      "bytes": 6224,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libimage_processing_util_jni.so",
+      "kind": "elf",
+      "bytes": 49416,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libmobilecoin.so",
+      "kind": "elf",
+      "bytes": 4167360,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libnative-utils.so",
+      "kind": "elf",
+      "bytes": 5992,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libringrtc.so",
+      "kind": "elf",
+      "bytes": 3334664,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libringrtc_rffi.so",
+      "kind": "elf",
+      "bytes": 10971880,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsignal_jni.so",
+      "kind": "elf",
+      "bytes": 10334768,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsqlcipher.so",
+      "kind": "elf",
+      "bytes": 2231416,
+      "class": 2,
+      "machine": 62
+    },
+    {
+      "name": "lib/x86_64/libsurface_util_jni.so",
+      "kind": "elf",
+      "bytes": 4912,
+      "class": 2,
+      "machine": 62
+    }
+  ],
+  "nested_archives": [],
+  "nested_magic_candidate_names": [],
+  "counts": {
+    "root_dex": 6,
+    "embedded_dex": 0,
+    "true_arm64_elf": 12,
+    "arm32_elf": 12,
+    "other_elf": 36,
+    "non_elf_so": 0
+  },
+  "bounds": {
+    "nested_archive_max_bytes": 52428800,
+    "nested_max_depth": 3
+  },
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0
+}

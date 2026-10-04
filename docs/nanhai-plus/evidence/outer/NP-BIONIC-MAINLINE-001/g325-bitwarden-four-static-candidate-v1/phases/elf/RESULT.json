@@ -1,0 +1,21 @@
+{
+  "container_commands": 0,
+  "device_commands": 0,
+  "network_commands": 0,
+  "phase": "elf",
+  "rc": 0,
+  "source_after": {
+    "apk": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+    "census": "8da8c50c7400c4dc848ef8e59c9848588a1b2f238b7770856cd42529e1ee441d",
+    "raw": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "source_before": {
+    "apk": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+    "census": "8da8c50c7400c4dc848ef8e59c9848588a1b2f238b7770856cd42529e1ee441d",
+    "raw": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "source_guard_equal": true,
+  "ssh_commands": 0
+}

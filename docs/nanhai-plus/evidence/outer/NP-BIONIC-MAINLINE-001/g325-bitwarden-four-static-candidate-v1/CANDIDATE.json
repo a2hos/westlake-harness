@@ -1,0 +1,95 @@
+{
+  "schema": "g325-bitwarden-host-four-static-candidate-v1",
+  "at_utc": "2026-10-04T18:08:01.654247+00:00",
+  "decision_candidate": "GO_HOST_FOUR_PHASE_STATIC_WITH_OTHER_ABI_MAPPING_LIMITS",
+  "package": "com.x8bit.bitwarden",
+  "version_name": "2026.9.0",
+  "version_code": 21909,
+  "apk_sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+  "root_raw_admission_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+  "root_raw_admission_sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e",
+  "prepare_source_sha256": "1e1d2e601fa37cef3bdd292e88714e5d954cb8a47175fcaa9e6a5e04e924a10e",
+  "phase_source_sha256": "531a526565ccbe63eedafc29f4666ab269c744ca68faee2fabb9245cc7c3d14c",
+  "runner_source_sha256": "aeb6bd6e355e8471aae53f93986ebada829dc7c60cf3174a54cfc882c3f82618",
+  "scanner_source_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "census_sha256": "8da8c50c7400c4dc848ef8e59c9848588a1b2f238b7770856cd42529e1ee441d",
+  "start_sha256": "d6a23645134a5605a21d8dbc965a64549d07038dad1c8120358020a334a33717",
+  "result_sha256": "e67475f78e1df0f2e4ae8d74f191ad9856643e9be0cf93aae444d7b33e226ff4",
+  "phases": {
+    "zip": {
+      "rc": 0,
+      "timed_out": false,
+      "source_guard_equal": true,
+      "command_sha256": "d8e6dbf6f9e54eceb4d2c327d51a63b48e1579bface912a972981bfd63668686",
+      "result_sha256": "efcf5cf1ebbf2f29507da82cd9a05b1aaaab16bf60aa90a7d00f20ca2db800a8",
+      "stdout_sha256": "e60451ebdd734c7bfb2d06181ad2fc00c6f5c7f6e5313db61cb971a0805c5be6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 0.4524306249804795
+    },
+    "metadata": {
+      "rc": 0,
+      "timed_out": false,
+      "source_guard_equal": true,
+      "command_sha256": "987ab6fe2d0b765345a779e250cd4ac65db4106c58733794018dd7d3f4833893",
+      "result_sha256": "acafd0edd1470db584e222151a7513edc08e5f6dc15235a05f0bb8e02a3c59f6",
+      "stdout_sha256": "f7e27df0a0a9cc9b9fdb1b3507f9ba1bae412715ef7a186a64fe31e6333287fc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 0.6640060830395669
+    },
+    "elf": {
+      "rc": 0,
+      "timed_out": false,
+      "source_guard_equal": true,
+      "command_sha256": "4cc64c0692999a269c3ac7667afe752854b2cdc5ad3d756683fb760bb3fec63d",
+      "result_sha256": "5e776aadff3cb9ff94445aed91ae2122dff3f05d9b22dbe4a4b67a0f47b2f1a4",
+      "stdout_sha256": "efe0906c9cbd767ae967a68f5522707574c38b905f3f8ee9f46c2de13cadd50c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 15.452576916082762
+    },
+    "dex": {
+      "rc": 0,
+      "timed_out": false,
+      "source_guard_equal": true,
+      "command_sha256": "e6036eafe4051faffcd5a93463951f5fd557ce73114a6d71b6f18de219c6094c",
+      "result_sha256": "4d12f90f63b5ad459fad756b17e319ff09f1bf750d1ab4dc29b43d01f805bd3f",
+      "stdout_sha256": "b8585e9f37177b688199d98ae4249579bbb2a3c7094ccada69dc48c83f6e952e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 7.410237416974269
+    }
+  },
+  "inventory_sha256": {
+    "zip_facts": "2620f704f7c7bf46d793c90538fc4afe8810c07f0e8d5dec46b3057a5583f5fd",
+    "metadata": "9ea128a69975184800ade5537f85ef0bdfc00b2db79dddfbf597ae6c7d117e75",
+    "elf": "80092e6c0494fcae21ed83c7db8828c574aa8d55a030db30013a328b7a8f35c6",
+    "elf_classification": "485d35b3cdff321acfa53246bfb4c44a8c5bd81c913a9d2734dfd639ac4f52ae",
+    "dex": "65a6f298d6e7f478a714b066925ee76578122d023f2a12d44081ec581ad88121"
+  },
+  "counts": {
+    "zip_entries": 727,
+    "root_dex": 2,
+    "embedded_dex": 0,
+    "true_arm64_elf": 7,
+    "other_true_elf": 24,
+    "non_elf_so": 0,
+    "nested_archives": 0
+  },
+  "classification_limits": {
+    "scanner_abi_mismatches": [
+      "lib/armeabi/libjnidispatch.so"
+    ],
+    "scanner_unknown_machine_abi": [
+      "lib/mips/libjnidispatch.so",
+      "lib/mips64/libjnidispatch.so"
+    ],
+    "interpretation": "Legacy armeabi alias maps to ARM32 EM_ARM; MIPS and MIPS64 entries have valid class and machine headers but scanner lacks those ABI mappings. All true ARM64 records matched class 2 EM_AARCH64 and readelf succeeded."
+  },
+  "target_sdk_risk_only": 37,
+  "authoritative_count_changed": false,
+  "startup_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0,
+  "ssh_commands": 0,
+  "limits": "Host-only four-phase static inventory candidate. No installation, cold-start, runtime, device, or Bionic whole-tool PASS."
+}

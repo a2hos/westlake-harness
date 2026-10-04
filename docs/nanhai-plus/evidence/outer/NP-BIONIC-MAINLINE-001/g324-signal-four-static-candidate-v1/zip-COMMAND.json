@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+    "-I",
+    "-B",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v1/phase.py",
+    "zip"
+  ],
+  "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+  "elapsed_seconds": 0.545859916950576,
+  "environment": {
+    "LC_ALL": "C",
+    "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v1/tmp"
+  },
+  "finished_at": "2026-10-04T18:08:36.224722+00:00",
+  "phase": "zip",
+  "rc": 0,
+  "started_at": "2026-10-04T18:08:35.678904+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "50f2067c1b0a8c6df007cb6f91bbb6743c2fe4629654294bd27ccba8c5cae473",
+  "timeout_seconds": 180
+}
