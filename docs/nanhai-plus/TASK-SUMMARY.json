@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T17:22:35+00:00",
+  "checked_at": "2026-10-04T17:25:58+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -1858,7 +1858,9 @@
     "active_rule_review_sha256": "0aafc36d17c753670259c1a061e13dadc265f8d299b37ecc27bb1331c585ea06",
     "observed_target_route": "DIRECT",
     "observed_dial_result": "i/o timeout",
-    "geoip_rule_match": "inferred_not_proven",
+    "geoip_rule_match": "strong_inference_not_direct_process_event",
+    "geoip_offline_review_sha256": "1f507aafb4f9b5c42a471e171c8d7eba3198db8913bd6313fc4711a1191ac138",
+    "offline_country_classification": "CN",
     "remote_state": "unknown",
     "proxy_configuration_changed": false
   },
@@ -1873,5 +1875,18 @@
     "full_static_delta": 0,
     "cold_start_delta": 0,
     "version_and_binary_limits_preserved": true
+  },
+  "g318_native_backup_host_audit": {
+    "status": "NO_GO_READONLY_HOST_AVAILABILITY_UNVERIFIED",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g318-native-backup-host-audit-v1/AUDIT.json",
+      "sha256": "1dd383c01e3b6adbf9de470fade06d41e5f8f7c73a5e44bb486dca4522cfb6f0"
+    },
+    "alexpc_ssh_rc": 255,
+    "alexpc_error": "Could not resolve hostname alexpc.local",
+    "exact_r4_complete_source_proven": false,
+    "native_soong_toolchain_proven": false,
+    "independent_out_tmp_capacity_proven": false,
+    "graph_or_target_executed": false
   }
 }
