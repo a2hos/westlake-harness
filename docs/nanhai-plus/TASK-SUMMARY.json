@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T06:05:58.945983+00:00",
+  "checked_at": "2026-10-04T06:16:50.466880+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,9 +40,9 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 53,
-    "complete_inventory_dex_entries": 109,
-    "complete_inventory_native_elf_entries": 410,
+    "complete_static_inventories": 57,
+    "complete_inventory_dex_entries": 113,
+    "complete_inventory_native_elf_entries": 430,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -326,6 +326,14 @@
     {
       "path": "docs/nanhai-plus/evolution/EVO-0012-identity-chain-pilot/reviews/ROOT-CLOSURE.json",
       "sha256": "7a8648c2503ec22b05baef88383166d538f3738d5f344be45229c148a5b418b8"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch10-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v15/root-release-v1/ROOT-REVIEW.json",
+      "sha256": "04d8a74af247894ae94d6f5d96eb38f5c31973f32d89b5afa88d7f4ec522e95d"
     }
   ],
   "bionic_stock_graph": {
@@ -355,7 +363,10 @@
   },
   "next_graph_candidate": {
     "prospective_release": 271,
-    "next_input": "five exact R4 owning source trees, complete CTS (sparse closure rejected)",
+    "next_input": "five exact full R4 source trees and one CTS ART external file",
+    "candidate_independently_reviewed": true,
+    "root_reviewed": true,
+    "original_owner_ACK": false,
     "execution_ready": false,
     "G270_terminal": true
   },
@@ -367,7 +378,7 @@
     "counts_as_new_tool": false,
     "duration_seconds": 55.93,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 0,
+    "pending_actual_result_groups": 1,
     "trigger_every_groups": "3-4",
     "next": "Wait for 3-4 fresh actual groups; G271 and APK scanner candidates are preparation only"
   },
@@ -501,5 +512,16 @@
     "graph_executed": false,
     "target_compiled": false,
     "cts_art_external_file_bound": true
+  },
+  "scanner_batch10_actual": {
+    "exec_session": 7036,
+    "terminal_chunk": "99685a",
+    "outer_rc": 0,
+    "accepted_packages": 4,
+    "DEX_delta": 4,
+    "ELF_delta": 20,
+    "startup_delta": 0,
+    "whole_command_watchdog_seconds": 300,
+    "outer_observed_seconds": 38.836091749952175
   }
 }

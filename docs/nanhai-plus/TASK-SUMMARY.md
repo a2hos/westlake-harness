@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T06:05:58.945983+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T06:16:50.466880+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -14,13 +14,13 @@
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
 | 原版 APK 下载载荷接受 | 61 | 上游登记原包 59，加 Signal 与 WhatsApp 新版官方渠道补充原包各 1；未计签名或启动通过 |
-| APK 完整静态清点 | 53 | 共 109 个 DEX、410 个 ELF；VLC、Signal 与 Keychain 未计完整清点 |
+| APK 完整静态清点 | 57 | 共 113 个 DEX、430 个 ELF；VLC、Signal 与 Keychain 未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
 
-最新构建图实际结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；这是来源身份准入，G271 候选尚未执行，仍不代表跨仓依赖或 Soong 图闭合。G270 不重放。
+最新构建图实际结果：G270 已终态（exec87143，terminal ab03cc，rc2）。精确 R4 JUnit/Hamcrest 接入后，`junit` 缺项消失；原版 Soong 图分析同时报 5 个未定义模块：`doclava`、`jsilver`、`compatibility-host-util`、`cts-tradefed`、`vts-tradefed`。源与 SDK 前后守卫一致，OUT/TMP 出口哈希核对通过，目标编译命令仍为 0。五棵精确 R4 完整源码树（含 CTS）已通过官方原始元数据、完整树和 ART 单文件外链审查并登记为只读入口；G271/v15 候选经 570 项独立检查和 root 审查，现待原 octos-inner 新 ACK，尚未执行，仍不代表跨仓依赖或 Soong 图闭合。G270 不重放。
 
 上一轮 G269 终态 rc2，唯一缺项 `junit`；前轮 Abseil 墙已消失。该历史失败保留。
 
@@ -36,7 +36,7 @@
 
 第 6 批静态扫描实际终态 rc0（exec31205，terminal d229ed，47.049 秒）。本批 Fossify Messages、Camera、Filemanager 与 Audiobook 四份原包经 327 项独立检查和 root 接受，新增 4 DEX、28 ELF，28 次 readelf 均 rc0。前后输入守卫通过，300 秒外层监督未触发；累计 41 包、76 DEX、320 ELF。扫描没有安装或启动 APK。
 
-第 7/8 批分别以 rc0 终态执行（exec11967/terminal97d58f，exec57454/terminal1ae3c8），各 4 份原包经独立复核与 root 接受；合计新增 21 DEX、52 ELF，累计 **49 包、97 DEX、372 ELF**。第 8 批 OpenTracks 原始版本字符串 `v4.28.3irreproducible` 原样保留。仅静态清点，未启动。第 9 批另以 rc0 终态执行（exec78401，terminal5b27d4），F-Droid、Just Player、Unciv 与 AdAway 4 份原包经 997 项独立检查和 root 接受，新增 12 DEX、38 ELF，累计 **53 包、109 DEX、410 ELF**；外层 300 秒看门狗仅有父进程观察，无独立持久化外层转录。
+第 7/8 批分别以 rc0 终态执行（exec11967/terminal97d58f，exec57454/terminal1ae3c8），各 4 份原包经独立复核与 root 接受；合计新增 21 DEX、52 ELF，累计 **49 包、97 DEX、372 ELF**。第 8 批 OpenTracks 原始版本字符串 `v4.28.3irreproducible` 原样保留。仅静态清点，未启动。第 9 批另以 rc0 终态执行（exec78401，terminal5b27d4），F-Droid、Just Player、Unciv 与 AdAway 4 份原包经 997 项独立检查和 root 接受，新增 12 DEX、38 ELF，累计 **53 包、109 DEX、410 ELF**；外层 300 秒看门狗仅有父进程观察，无独立持久化外层转录。第 10 批新四原包实际 exec7036/terminal99685a/rc0，在完整外层监督 38.836 秒内完成，273 项独立复核与 root 接受新增 4 DEX、20 ELF，累计 **57 包、113 DEX、430 ELF**。
 
 第 8 次原包取件（v8）实际 exec64981/terminal270431/rc0，四份此前未取的 F-Droid 精确锁定原包经 257 项独立检查和 root 接受，共 26,489,238 字节，全部 ZIP CRC 通过；累计 **61**。下载并未证明签名、Manifest 语义、分包完整性或启动。
 
@@ -48,11 +48,11 @@ AOSP16 R4 build-tools Python cohort 新增 843 项只读引用，另复用 2 项
 
 G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM64 ET_DYN、SONAME 和 40 个必需导出符号；复用 968 个对象，新增编译与生成均为 0。这属于进程外库 `build_pass`，不计 App 内 Bionic、整工具或设备通过。
 
-扫描器 38 个固定依赖已离线安装，pip check 与 16 项实际导入通过。九批累计 53 个 APK 完成静态清点，失败批次只计独立复核通过的 3 个包。没有当前目标 runtime snapshot，因此未完成 full gap scan。HelloWorld 的 Bionic 安装、冷启动、上屏、输入和正常退出仍未验收。
+扫描器 38 个固定依赖已离线安装，pip check 与 16 项实际导入通过。十批累计 57 个 APK 完成静态清点，失败批次只计独立复核通过的 3 个包。没有当前目标 runtime snapshot，因此未完成 full gap scan。HelloWorld 的 Bionic 安装、冷启动、上屏、输入和正常退出仍未验收。
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；53 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G270 缺 5 个 stock 模块；WhatsApp 网页与包内版本不一致；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 五树已准入，下一 stock 图候选与执行；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；57 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G270 缺 5 个 stock 模块；WhatsApp 网页与包内版本不一致；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | G271 已封候选待原 owner 新 ACK，随后执行新 stock 图；Bionic 真机 Activity 启动证据 |
 
 自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。此前 3 组实际结果（G268、WhatsApp 只读命令、G269）触发 EVO-0011；它已在 120 秒硬上限关闭，新增验证改进 0、推广 0；随后第 9 批、G270 和第 8 次原包取件构成新三组，EVO-0012 在 55.93 秒内验证一个限定身份链校验器：真实收据 rc0、篡改哈希负例 rc2。未推广、未测节省时间，反思计数归零。
 
@@ -101,7 +101,7 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Proven
 
-- 38/89 历史 Musl 源码接受、61 个原包载荷接受、53 个完整静态清点。
+- 38/89 历史 Musl 源码接受、61 个原包载荷接受、57 个完整静态清点。
 
 ## Not proven
 
