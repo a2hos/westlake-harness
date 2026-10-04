@@ -1,117 +1,31 @@
 {
   "source": "OUTER-STATE.json public projection (path-safe)",
   "public_projection_doc": "/kanban/public-projection.md",
-  "last_business_change": "2026-10-04T18:10:23.455603+00:00",
+  "last_business_change": "2026-10-04T18:13:35.876075+00:00",
   "last_sync_heartbeat": null,
   "last_success": null,
   "sync_failures": 0,
   "run_id": "nanhai-plus-20260929-opaleye",
-  "lane_preparation": {
-    "lane-musl": {
-      "status": "superseded",
-      "summary": "Musl 历史结果保留，非 Bionic 前置",
-      "last_evidence_at": "2026-10-02T01:49:54.583049+00:00",
-      "next_action": "只读消费经版本核验的适用历史证据",
-      "checklist": [
-        {
-          "id": "M-PRE-READ",
-          "title": "源码读取权限",
-          "status": "accepted",
-          "owner": "outer",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T12:42:01.052535+00:00",
-          "next_action": "已解除，不重复调查"
-        },
-        {
-          "id": "M-PRE-STATIC",
-          "title": "静态契约29项",
-          "status": "accepted",
-          "owner": "outer",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T12:42:01.052535+00:00",
-          "next_action": "29/29通过，仅静态范围"
-        },
-        {
-          "id": "M-PRE-IDENTITY",
-          "title": "源码与dirty归属",
-          "status": "accepted",
-          "owner": "musl-owner",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T19:51:34.599085+00:00",
-          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
-          "blocked_by": []
-        },
-        {
-          "id": "M-PRE-BUILD",
-          "title": "按产物绑定Mac/AlexPC工具链与命令",
-          "status": "ready",
-          "owner": "musl-owner",
-          "blocked_by": [],
-          "next_action": "当前复现复用6件已定位产物，无需把重编设置为首样本前置；重编按将来变更触发",
-          "evidence": "/kanban/public-projection.md"
-        },
-        {
-          "id": "M-PRE-OVERLAY",
-          "title": "7件精确参考runtime已用于首样例",
-          "status": "accepted",
-          "owner": "musl-owner",
-          "blocked_by": [],
-          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T19:51:34.599085+00:00"
-        },
-        {
-          "id": "M-PRE-DEVICE",
-          "title": "D600归属、镜像与恢复",
-          "status": "accepted",
-          "owner": "hardware-admin",
-          "blocked_by": [],
-          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T19:51:34.599085+00:00"
-        },
-        {
-          "id": "M-PRE-ENV",
-          "title": "Musl首样本操作输入放行",
-          "status": "accepted",
-          "owner": "outer",
-          "blocked_by": [],
-          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T19:51:34.599085+00:00"
-        },
-        {
-          "id": "M-PRE-CLI",
-          "title": "现有Harness真实CLI入口",
-          "status": "accepted",
-          "owner": "outer",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-09-29T12:52:27.174152+00:00",
-          "next_action": "--help rc0；绑定APK与runtime路径后生成实际复现argv"
-        },
-        {
-          "id": "M-PRE-SHARED-READ",
-          "title": "原Kimi读取共享版本源码并启动固定工具链",
-          "status": "accepted",
-          "owner": "original octos-inner / outer review",
-          "evidence": "/kanban/public-projection.md",
-          "observed_at": "2026-10-01T22:18:43.302552+00:00",
-          "next_action": "已验；继续同一M07.33，不重试旧EPERM或dyld失败。"
-        }
-      ]
-    },
-    "lane-bionic": {
-      "status": "active",
-      "summary": "Bionic 基座输入绑定、89 项处置、安装服务与图形契约并行",
-      "last_evidence_at": "2026-09-29T19:57:53.031910+00:00",
-      "next_action": "最小生产 Bionic 源树身份准入后释放真实构建包"
-    },
-    "lane-api": {
-      "status": "ready",
-      "summary": "现有APK元数据已验；本体核验与方法输入绑定排入下一空槽。"
-    }
+  "closeout_path": {
+    "summary": "Bionic per-package inputs → HelloWorld earliest unmet boundary; independent tool/client/service work parallel; Musl historical comparison optional"
   },
-  "updated_at": "2026-10-04T18:09:47+00:00",
+  "updated_at": "2026-10-04T18:13:31+00:00",
+  "dag_version": 10,
+  "next_action": "继续无容器原生 Soong 图路由，HK01 等项目范围答复；EVO43 有界反思和独立 APK 招募；任何远端需新 nonce/独审/release",
+  "progress": {
+    "target_stock_apk_cold_starts": 200,
+    "target_overseas_mainstream_blackbox_cold_starts": 100,
+    "stock_apk_cold_starts_verified": 0,
+    "overseas_mainstream_blackbox_cold_starts_verified": 0,
+    "accepted_raw_apk_artifact_identities": 100,
+    "complete_host_static_inventories": 97,
+    "qualified_blackbox_test_packages": 16,
+    "bionic_whole_tools_verified": 0,
+    "original_tool_ids": 89,
+    "snapshot_at_utc": "2026-10-04T18:13:31+00:00",
+    "meaning": "raw, static and qualification are separate preparation counts; they do not add to startup success"
+  },
+  "checked_at": "2026-10-04T18:13:31+00:00",
   "steps": [
     {
       "step_id": "01",
@@ -2353,14 +2267,6 @@
       "next_action": "Accept original 30 APK/API scope and Android comparison/performance evidence, then original final publication gate; no Musl prerequisite"
     }
   ],
-  "checked_at": "2026-10-04T18:09:47+00:00",
-  "human_gates": [
-    {
-      "gate_id": "original_goal_budget",
-      "status": "accepted",
-      "reason": "用户授权200亿有限上限；已在原goal_01实际回读，累计与创建时间未改变。"
-    }
-  ],
   "environment_gate": {
     "gate_id": "ENV-READY",
     "revision": 3,
@@ -2499,25 +2405,119 @@
       }
     ]
   },
-  "progress": {
-    "target_stock_apk_cold_starts": 200,
-    "target_overseas_mainstream_blackbox_cold_starts": 100,
-    "stock_apk_cold_starts_verified": 0,
-    "overseas_mainstream_blackbox_cold_starts_verified": 0,
-    "accepted_raw_apk_artifact_identities": 100,
-    "complete_host_static_inventories": 96,
-    "qualified_blackbox_test_packages": 16,
-    "bionic_whole_tools_verified": 0,
-    "original_tool_ids": 89,
-    "snapshot_at_utc": "2026-10-04T18:09:47+00:00",
-    "meaning": "raw, static and qualification are separate preparation counts; they do not add to startup success"
-  },
   "global_focus": "App 单 Bionic HelloWorld 最早未通过边界；基座、安装服务、图形输入并行；89 项独立处置与验证",
-  "next_action": "继续无容器原生 Soong 图路由，HK01 等项目范围答复；EVO43 有界反思和独立 APK 招募；任何远端需新 nonce/独审/release",
-  "dag_version": 10,
-  "closeout_path": {
-    "summary": "Bionic per-package inputs → HelloWorld earliest unmet boundary; independent tool/client/service work parallel; Musl historical comparison optional"
+  "lane_preparation": {
+    "lane-musl": {
+      "status": "superseded",
+      "summary": "Musl 历史结果保留，非 Bionic 前置",
+      "last_evidence_at": "2026-10-02T01:49:54.583049+00:00",
+      "next_action": "只读消费经版本核验的适用历史证据",
+      "checklist": [
+        {
+          "id": "M-PRE-READ",
+          "title": "源码读取权限",
+          "status": "accepted",
+          "owner": "outer",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T12:42:01.052535+00:00",
+          "next_action": "已解除，不重复调查"
+        },
+        {
+          "id": "M-PRE-STATIC",
+          "title": "静态契约29项",
+          "status": "accepted",
+          "owner": "outer",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T12:42:01.052535+00:00",
+          "next_action": "29/29通过，仅静态范围"
+        },
+        {
+          "id": "M-PRE-IDENTITY",
+          "title": "源码与dirty归属",
+          "status": "accepted",
+          "owner": "musl-owner",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00",
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "blocked_by": []
+        },
+        {
+          "id": "M-PRE-BUILD",
+          "title": "按产物绑定Mac/AlexPC工具链与命令",
+          "status": "ready",
+          "owner": "musl-owner",
+          "blocked_by": [],
+          "next_action": "当前复现复用6件已定位产物，无需把重编设置为首样本前置；重编按将来变更触发",
+          "evidence": "/kanban/public-projection.md"
+        },
+        {
+          "id": "M-PRE-OVERLAY",
+          "title": "7件精确参考runtime已用于首样例",
+          "status": "accepted",
+          "owner": "musl-owner",
+          "blocked_by": [],
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00"
+        },
+        {
+          "id": "M-PRE-DEVICE",
+          "title": "D600归属、镜像与恢复",
+          "status": "accepted",
+          "owner": "hardware-admin",
+          "blocked_by": [],
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00"
+        },
+        {
+          "id": "M-PRE-ENV",
+          "title": "Musl首样本操作输入放行",
+          "status": "accepted",
+          "owner": "outer",
+          "blocked_by": [],
+          "next_action": "本次单板首样例所需输入已实际使用并验；不代表全设备/全环境验收",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T19:51:34.599085+00:00"
+        },
+        {
+          "id": "M-PRE-CLI",
+          "title": "现有Harness真实CLI入口",
+          "status": "accepted",
+          "owner": "outer",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-09-29T12:52:27.174152+00:00",
+          "next_action": "--help rc0；绑定APK与runtime路径后生成实际复现argv"
+        },
+        {
+          "id": "M-PRE-SHARED-READ",
+          "title": "原Kimi读取共享版本源码并启动固定工具链",
+          "status": "accepted",
+          "owner": "original octos-inner / outer review",
+          "evidence": "/kanban/public-projection.md",
+          "observed_at": "2026-10-01T22:18:43.302552+00:00",
+          "next_action": "已验；继续同一M07.33，不重试旧EPERM或dyld失败。"
+        }
+      ]
+    },
+    "lane-bionic": {
+      "status": "active",
+      "summary": "Bionic 基座输入绑定、89 项处置、安装服务与图形契约并行",
+      "last_evidence_at": "2026-09-29T19:57:53.031910+00:00",
+      "next_action": "最小生产 Bionic 源树身份准入后释放真实构建包"
+    },
+    "lane-api": {
+      "status": "ready",
+      "summary": "现有APK元数据已验；本体核验与方法输入绑定排入下一空槽。"
+    }
   },
+  "human_gates": [
+    {
+      "gate_id": "original_goal_budget",
+      "status": "accepted",
+      "reason": "用户授权200亿有限上限；已在原goal_01实际回读，累计与创建时间未改变。"
+    }
+  ],
   "pending_user_decisions": [],
   "public_baseline_summary": {
     "musl": {

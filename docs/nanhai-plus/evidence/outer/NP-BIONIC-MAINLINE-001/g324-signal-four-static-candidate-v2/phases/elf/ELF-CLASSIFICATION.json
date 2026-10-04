@@ -1,0 +1,223 @@
+{
+  "arm64_target_records": 12,
+  "non_elf_so": 0,
+  "other_abi_header_only_records": [
+    {
+      "bytes": 33864,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaesgcm.so"
+    },
+    {
+      "bytes": 7252,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 1844280,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libconscrypt_jni.so"
+    },
+    {
+      "bytes": 4416,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 24448,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libimage_processing_util_jni.so"
+    },
+    {
+      "bytes": 2483036,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmobilecoin.so"
+    },
+    {
+      "bytes": 4008,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnative-utils.so"
+    },
+    {
+      "bytes": 2043264,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libringrtc.so"
+    },
+    {
+      "bytes": 4784860,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libringrtc_rffi.so"
+    },
+    {
+      "bytes": 6625208,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsignal_jni.so"
+    },
+    {
+      "bytes": 1046404,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsqlcipher.so"
+    },
+    {
+      "bytes": 3460,
+      "class": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsurface_util_jni.so"
+    },
+    {
+      "bytes": 62316,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libaesgcm.so"
+    },
+    {
+      "bytes": 9284,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 2879972,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libconscrypt_jni.so"
+    },
+    {
+      "bytes": 5148,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 41276,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libimage_processing_util_jni.so"
+    },
+    {
+      "bytes": 3973432,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libmobilecoin.so"
+    },
+    {
+      "bytes": 4888,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libnative-utils.so"
+    },
+    {
+      "bytes": 3642760,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libringrtc.so"
+    },
+    {
+      "bytes": 9573168,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libringrtc_rffi.so"
+    },
+    {
+      "bytes": 10526200,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libsignal_jni.so"
+    },
+    {
+      "bytes": 2244588,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libsqlcipher.so"
+    },
+    {
+      "bytes": 3812,
+      "class": 1,
+      "machine": 3,
+      "name": "lib/x86/libsurface_util_jni.so"
+    },
+    {
+      "bytes": 69144,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libaesgcm.so"
+    },
+    {
+      "bytes": 10760,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 3079400,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libconscrypt_jni.so"
+    },
+    {
+      "bytes": 6224,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 49416,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libimage_processing_util_jni.so"
+    },
+    {
+      "bytes": 4167360,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libmobilecoin.so"
+    },
+    {
+      "bytes": 5992,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libnative-utils.so"
+    },
+    {
+      "bytes": 3334664,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libringrtc.so"
+    },
+    {
+      "bytes": 10971880,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libringrtc_rffi.so"
+    },
+    {
+      "bytes": 10334768,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libsignal_jni.so"
+    },
+    {
+      "bytes": 2231416,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libsqlcipher.so"
+    },
+    {
+      "bytes": 4912,
+      "class": 2,
+      "machine": 62,
+      "name": "lib/x86_64/libsurface_util_jni.so"
+    }
+  ],
+  "scope": "ARM64 readelf/JNI scan only; other ABI ELF retained by header census without symbol scan"
+}

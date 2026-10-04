@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:09:47+00:00",
+  "checked_at": "2026-10-04T18:13:31+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -53,23 +53,22 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 96,
-    "complete_inventory_dex_entries": 312,
+    "complete_static_inventories": 97,
+    "complete_inventory_dex_entries": 318,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1410,
+    "complete_inventory_native_elf_entries": 1422,
     "latest_complete_static_admission": {
-      "package": "com.x8bit.bitwarden",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "30251db40ad4f50a43b38517134e58db64882014720d7d1a01c6c251e785e0e7",
-      "scope": "four-phase target ARM64 host static only; 2 DEX, 7 true ARM64 ELF; 24 other ABI ELF separate; no startup"
+      "package": "org.thoughtcrime.securesms",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "3b6c737993c8a9bbc94d1b874392d2055d9b992f6e2e2b274e06c01cc659ab8e",
+      "scope": "new v2 exact .apk alias four-phase target ARM64 host static only; 6 DEX, 12 true ARM64 ELF, 36 other ABI header-only; no startup"
     },
     "incomplete_static_inventories": [
-      "org.thoughtcrime.securesms",
       "org.sufficientlysecure.keychain"
     ],
     "additional_downloads_pending_root_acceptance": 0,
@@ -845,18 +844,18 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0043-sample-version-risk",
+    "latest": "EVO-0044-apk-content-suffix-contract",
     "result": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0043-sample-version-risk/ROOT-ACCEPTANCE.json",
-      "sha256": "9e1351609d7d1d2c037d9da2a47eb37b19874283623f9ca094856edff1075db0"
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0044-apk-content-suffix-contract/ROOT-ACCEPTANCE.json",
+      "sha256": "27a6cd7572e97ac6a4f1a16b66761ae8a076d169517e809a00df428a4c39b0dc"
     },
-    "actual_result_groups": 5,
-    "duration_seconds": 57.6357705,
-    "one_testable_improvement": "Mark exact APK targetSdk versus AOSP16 API36 as version-scope risk for scheduling; require exact device receipts for startup verdicts.",
+    "actual_result_groups": 4,
+    "duration_seconds": 60.650703584,
+    "one_testable_improvement": "Use a SHA-guarded read-only .apk alias for a validated APK stored as .raw before metadata dispatch.",
     "limited_pilot": true,
     "globally_promoted": false,
-    "pending_actual_result_groups": 0,
-    "direction": "sample version-scope triage; distinct from EVO42 mixed-ABI classification"
+    "pending_actual_result_groups": 1,
+    "direction": "APK content identity versus filename suffix; distinct from EVO43 SDK risk"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -2048,6 +2047,26 @@
     "static_after": 96,
     "dex_delta": 2,
     "arm64_elf_delta": 7,
+    "cold_start_delta": 0
+  },
+  "g324_signal_static_v1_terminal": {
+    "status": "metadata_rc2_terminal_no_static_credit",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v1/root-terminal-acceptance-v1/ROOT-TERMINAL.json",
+      "sha256": "c44d1824c4048ff820400065024b5e2d294b3f39a07fd4b5997c4628b827ba63"
+    },
+    "complete_static_delta": 0
+  },
+  "g324_signal_static_v2_actual": {
+    "status": "accepted_complete_target_arm64_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "3b6c737993c8a9bbc94d1b874392d2055d9b992f6e2e2b274e06c01cc659ab8e"
+    },
+    "static_before": 96,
+    "static_after": 97,
+    "dex_delta": 6,
+    "arm64_elf_delta": 12,
     "cold_start_delta": 0
   }
 }

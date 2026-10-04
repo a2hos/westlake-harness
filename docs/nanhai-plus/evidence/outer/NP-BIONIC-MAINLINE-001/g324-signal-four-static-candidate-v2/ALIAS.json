@@ -1,0 +1,15 @@
+{
+  "alias": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-signal-v2/Signal.apk",
+  "alias_bytes": 114758484,
+  "alias_mode": "0o444",
+  "alias_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "container_commands": 0,
+  "copy_kind": "independent_byte_copy",
+  "device_commands": 0,
+  "original": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.thoughtcrime.securesms/body.raw",
+  "original_bytes": 114758484,
+  "original_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "root_raw_admission": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/mainstream-stock-intake-v2/root-intake-v1/ROOT-ACCEPTANCE.json",
+  "root_raw_admission_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+  "schema": "g324-signal-alias-v2"
+}

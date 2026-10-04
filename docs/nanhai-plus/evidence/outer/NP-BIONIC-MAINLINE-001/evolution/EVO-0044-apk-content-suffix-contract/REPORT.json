@@ -1,0 +1,79 @@
+{
+  "actual_scope": {
+    "authoritative_count_delta": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "network_commands": 0,
+    "ssh_commands": 0
+  },
+  "at_utc": "2026-10-04T18:11:07.860938+00:00",
+  "causal_chain": "observed Signal metadata rc2 -> suffix-based scanner branch on .raw -> SHA-guarded .apk read-only alias -> skip false metadata retry -> fresh metadata and four-phase receipts",
+  "challenged_assumption": "APK byte identity alone is enough for scanner dispatch; falsified by same-content control/treatment.",
+  "decision": "GO_PILOT_ONLY_NO_MAINLINE_PROMOTION",
+  "direction": "APK content identity versus filename suffix dispatch; distinct from EVO42 ABI and EVO43 SDK risk",
+  "discarded_action": {
+    "action": "Pass arbitrary downloaded .raw filename directly into scanner.apk_metadata as if content identity alone selected APK parsing.",
+    "causal_reason": "scanner.py lines 893-903 dispatch by suffix before parsing and falls back to stem as package.",
+    "observed_failure": "metadata rc2, manifest_available false; DEX and ELF not run.",
+    "source_anchor": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v1/CANDIDATE.json"
+  },
+  "duration_seconds": 60.650703584,
+  "end_monotonic_ns": 751859705079500,
+  "group_count": 4,
+  "id": "EVO-0044-apk-content-suffix-contract",
+  "inferences": [
+    "This suffix mismatch caused Signal v1 metadata failure.",
+    "An alias with content guard may remove this class of false stop for exact APK inputs."
+  ],
+  "observations": [
+    "Four source receipts above exist and were SHA-pinned for this reflection.",
+    "Signal v1 zip rc0 and metadata rc2, dependent DEX/ELF not run.",
+    "Pilot same bytes produced different metadata result only through path suffix.",
+    "Bitwarden raw/static progressed separately; G279 route observation had no authenticated remote readback."
+  ],
+  "one_improvement": {
+    "candidate": "Before invoking apk_metadata on an accepted exact APK, provide a project-owned read-only .apk-named alias to the same validated bytes; preserve original raw path and SHA in receipts.",
+    "failure_behavior": "Fail closed before metadata; leave old raw and v1 failure immutable; no count change.",
+    "invalidation": "Reject when raw SHA, scanner SHA, target path, alias target, or expected package/version changes; never reuse a prior failed generation receipt.",
+    "key": "expected raw SHA256 + scanner.py SHA256 + alias suffix .apk + canonical target path",
+    "mechanism": "Selects scanner APK parse branch while preserving content identity; removes a false metadata wall caused solely by transport filename.",
+    "pilot_result": "Same Signal SHA and byte count: body.raw manifest_available false/package body; .apk symlink manifest_available true/package org.thoughtcrime.securesms/version 8.29.3/code 175901/targetSdk36. Metadata call pair 1.51s.",
+    "pilot_sha256": "9698c104acf0d460d70df4d4374fc943505dd072a70c6233f4a984ff5ab42739",
+    "promotion_gate": "In a fresh immutable static generation, pin raw+scanner+alias-target SHA, run metadata-only preflight and independent review, then four phases; admit only exact matching package/version and all four rc0. Keep v1 terminal and counts unchanged until then.",
+    "risk": "A mutable symlink target or extension camouflage could create mismatched provenance; content SHA and target identity must be checked before and after parse.",
+    "scope": "Host-only APK static metadata for exact accepted APK; does not prove installation, Bionic bridge, cold start, or 89-tool PASS."
+  },
+  "pilot_setup_note": "First invocation with system Python lacked androguard; rerun used existing harness venv; no scanner code or source APK edit.",
+  "problem": "Official Signal content was accepted raw but host four-phase v1 stopped at metadata rc2 before DEX/ELF; scanner returned package body and manifest_available false for body.raw.",
+  "repeated_cost": "A valid APK can be downloaded with a transport filename that has no .apk suffix, causing avoidable metadata stop and another scanner generation. G324 Signal v1 is the observed case; prevalence across portfolio is unknown.",
+  "result_groups": [
+    {
+      "name": "G279 current native route",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-route-current-readonly-peer-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "f87912614430894b82459b97322eded2e868126807be3b1f0e56953586d82e28"
+    },
+    {
+      "name": "G324 Bitwarden raw",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-bitwarden-official-raw-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "a6ab046a2f01b4fcd38527d69c83d256881bc6e638a39c038a2531afa54afd9e"
+    },
+    {
+      "name": "G325 Bitwarden four-static",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g325-bitwarden-four-static-candidate-v1/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "30251db40ad4f50a43b38517134e58db64882014720d7d1a01c6c251e785e0e7"
+    },
+    {
+      "name": "G324 Signal terminal static v1",
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g324-signal-four-static-candidate-v1/CANDIDATE.json",
+      "sha256": "29207558fa19976f4b0bc3c44f2474cf3f848fc3800c21b1227e34a609a499ed"
+    }
+  ],
+  "schema": "nanhai-plus-bounded-evolution-v1",
+  "start_monotonic_ns": 751799054375916,
+  "unknowns": [
+    "Whether a fresh Signal four-phase generation will pass.",
+    "Whether other raw APKs have the same filename-driven failure.",
+    "Any device or startup outcome."
+  ],
+  "within_120s": true
+}

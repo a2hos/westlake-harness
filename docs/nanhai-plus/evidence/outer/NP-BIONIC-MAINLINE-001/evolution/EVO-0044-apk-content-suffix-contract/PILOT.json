@@ -1,0 +1,35 @@
+{
+  "alias_is_symlink": true,
+  "alias_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0044-apk-content-suffix-contract/signal-content-identity.apk",
+  "authoritative_count_delta": 0,
+  "container_commands": 0,
+  "content_identity_preserved": true,
+  "control": {
+    "filename": "body.raw",
+    "manifest_available": false,
+    "manifest_error": null,
+    "package": "body",
+    "target_sdk": null,
+    "version_code": null,
+    "version_name": null
+  },
+  "device_commands": 0,
+  "elapsed_seconds": 1.509528375,
+  "network_commands": 0,
+  "raw_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.thoughtcrime.securesms/body.raw",
+  "same_content_sha256": true,
+  "schema": "evo44-apk-suffix-pilot-v1",
+  "source_sha256": {
+    "apk": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+    "scanner": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "treatment": {
+    "filename": "signal-content-identity.apk",
+    "manifest_available": true,
+    "manifest_error": null,
+    "package": "org.thoughtcrime.securesms",
+    "target_sdk": "36",
+    "version_code": "175901",
+    "version_name": "8.29.3"
+  }
+}

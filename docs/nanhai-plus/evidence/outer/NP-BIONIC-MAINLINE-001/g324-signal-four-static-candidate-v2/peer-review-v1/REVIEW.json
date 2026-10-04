@@ -1,0 +1,40 @@
+{
+  "schema": "g324-signal-four-static-v2-peer-review-v1",
+  "at_utc": "2026-10-04T18:12:48.852163+00:00",
+  "decision": "GO_HOST_STATIC_ONLY",
+  "candidate_sha256": "593909d503994c12330f1b55ffb1cf3ac322a4b228bbf0c9c9dd7471523e4b5a",
+  "result_sha256": "f64ae2e4f2ed4eeb7f10d74d15845bb05505de1bdbd6f0619e5d9330103b74e1",
+  "root_raw_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+  "v1_terminal_result_sha256": "43f65b4332dcc02286a6c4f73d6215db24ec9d5bf0adc420c38bcd6b120f2dd1",
+  "exact_apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "observed": {
+    "v1_frozen_metadata_rc2": true,
+    "original_raw_alias_same_bytes_and_sha": true,
+    "alias_is_project_owned_regular_file_mode_0444": true,
+    "suffix_positive_and_negative_fixture_rc0": true,
+    "scanner_raw_root_alias_census_guards_equal_each_phase": true,
+    "new_nonce_bound_start_commands_result": true,
+    "four_stage_rc": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "raw_stream_and_receipt_hashes_match": true,
+    "zip_entries_crc_no_duplicates": 4185,
+    "root_dex": 6,
+    "embedded_dex": 0,
+    "true_arm64_elf_readelf_jni_scanned": 12,
+    "other_abi_elf_header_only": 36,
+    "non_elf_so": 0,
+    "manifest_package": "org.thoughtcrime.securesms",
+    "version": "8.29.3",
+    "target_sdk": 36
+  },
+  "limits": [
+    "Host-only static inventory; no install, runtime, cold start, device, or Bionic whole-tool PASS.",
+    "Other 36 ABI ELF are header-censused only and must not be represented as readelf/JNI-scanned ARM64.",
+    "No authoritative count or blackbox qualification change by this peer review."
+  ],
+  "reviewer_actions": "Read-only local checks and isolated REVIEW.json only; no SSH, device, container, network or ledger mutation."
+}

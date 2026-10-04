@@ -1,0 +1,88 @@
+{
+  "schema": "g324-signal-four-static-v2-candidate",
+  "at_utc": "2026-10-04T18:11:50.572522+00:00",
+  "decision_candidate": "GO_HOST_FOUR_STATIC_ONLY_PENDING_PEER_ROOT",
+  "root_raw_admission_sha256": "1e14a8c22f028ff8ca9bc19f72a6cdab6821f70e92227166c18fbf588b5d8f79",
+  "apk_original_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/mainstream-stock-intake-v2/org.thoughtcrime.securesms/body.raw",
+  "apk_alias_path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g324-signal-v2/Signal.apk",
+  "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+  "apk_bytes": 114758484,
+  "alias_mode": "0o444",
+  "alias_receipt_sha256": "7945e447c78906a2f01876a5e3297795d657721d2c54a1bc2e88b6b57344faa0",
+  "suffix_fixture_sha256": "415f6e2163c6f92a165cc7ed6b643bbaa8eaa2817bf8487abdd87ab357cd72dc",
+  "fixture_checks": {
+    "apk_manifest_accepted": true,
+    "raw_rejected_by_suffix": true,
+    "same_bytes": true,
+    "target_sdk": true,
+    "version": true
+  },
+  "start_sha256": "fa3b9ca73fb297c5d035b189c829e5581a215e3227ec1159227546d2b39fc7dd",
+  "result_sha256": "f64ae2e4f2ed4eeb7f10d74d15845bb05505de1bdbd6f0619e5d9330103b74e1",
+  "census_sha256": "133283539e801adb55cd04a020dd68ccd1937f32399ba0ca35ae881019e2b4a9",
+  "prepare_source_sha256": "126cfb3b7d9579ef068179b461586ad067de652a3128279ea0afe4fa59a4b151",
+  "phase_source_sha256": "286ac6421986a34d8abb7ec178cd66a4067da019e6fa0c9d70b22de427324604",
+  "runner_source_sha256": "70dfdcbf452eec60660d4e699ba3b4523b16911b63fb9d5273058e2754fa3db4",
+  "nonce": "7955fddaf9fde7017b237e487a4ddfb2",
+  "phase_rows": [
+    {
+      "phase": "zip",
+      "rc": 0,
+      "command_sha256": "bdbc4f96d61d15fdeb2ea30182b9fea4dbe426455713cd15ef15bce2b2ca6e4e",
+      "stdout_sha256": "6ee8c852edd185be2f63163649af450f0373da5b4362ede84c2df9209dae6b1f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "55068248a25a411e8ec17ecdbff097d2ab66b9e7706c4160f665e6baec77c647",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "metadata",
+      "rc": 0,
+      "command_sha256": "bff0c71c38c2bb3610edaf27669a9fa42a37445c1a1fe31b57a3fffc7bccf515",
+      "stdout_sha256": "315c7c0648141ca7a537130511eff4658267021961bdf6fcea19c37b5addd8dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "1ffd5d6cbcfba4278bd7bf04cb4381b1051a634ceed7b8b9218e71341e1040f4",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "dex",
+      "rc": 0,
+      "command_sha256": "fbf8516ec3e6a45761fb3a54c2095d6dc33428b8199be4a81f4b285ed50c4ca4",
+      "stdout_sha256": "159c5d5475381028ac7d8d49139c3acce68054a68c5a39d6a40765d7bae15e99",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "c3b7d49dd07a9424651d9bc0dda8ca2492a789e51ad3421b9df8cf2a60d3447e",
+      "source_guard_equal": true
+    },
+    {
+      "phase": "elf",
+      "rc": 0,
+      "command_sha256": "69257e4fd75c14a3195831caa8a8cfa422be45e4907a4b934e7626e859f26e8c",
+      "stdout_sha256": "f9450f71177d279b7ba5c17c1572e9c17445291d185f8f2550d0c2bb923f7a69",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_sha256": "9e6e76cf5705f6a8b3c1d619fe7be1dedd807cf0df7bdc9cbe9b435a150d9c8b",
+      "source_guard_equal": true
+    }
+  ],
+  "census_counts": {
+    "root_dex": 6,
+    "embedded_dex": 0,
+    "true_arm64_elf": 12,
+    "arm32_elf": 12,
+    "other_elf": 36,
+    "non_elf_so": 0
+  },
+  "nested_archive_count": 0,
+  "metadata": {
+    "package": "org.thoughtcrime.securesms",
+    "version_name": "8.29.3",
+    "version_code": "175901",
+    "target_sdk": "36"
+  },
+  "limits": "Host static only; no startup/install/device evidence. v1 remains terminal rc2. Candidate pending independent peer/root admission.",
+  "authoritative_count_changed": false,
+  "startup_delta": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "network_commands": 0,
+  "ssh_commands": 0,
+  "bridge_writes": 0
+}

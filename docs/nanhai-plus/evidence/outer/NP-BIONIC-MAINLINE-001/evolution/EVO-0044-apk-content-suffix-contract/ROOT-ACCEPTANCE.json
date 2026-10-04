@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-plus-root-evolution-acceptance-v1",
+  "at_utc": "2026-10-04T18:12:00+00:00",
+  "decision": "GO_LIMITED_OFFLINE_PILOT_ONLY",
+  "report_sha256": "7052772fa42b2789fd7ad0d01b697f1493abf7b6ed15c21d1f40c8921e087e4e",
+  "pilot_sha256": "9698c104acf0d460d70df4d4374fc943505dd072a70c6233f4a984ff5ab42739",
+  "actual_result_groups": 4,
+  "duration_seconds": 60.650703584,
+  "one_testable_improvement": "For an accepted exact APK stored as .raw, use a project-owned read-only .apk alias with SHA checks of the original, alias and scanner before and after metadata parsing.",
+  "reason": "The same Signal bytes selected different scanner metadata branches by filename suffix, explaining v1 rc2 without implying a missing APK manifest.",
+  "limits": "Pilot only; no global scanner or intake change. Signal v2 requires its own independent four-phase result and review before static admission; no device, startup or Bionic tool credit.",
+  "cold_start_delta": 0,
+  "bionic_whole_tool_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0
+}
