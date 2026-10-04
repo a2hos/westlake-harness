@@ -1,0 +1,103 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-pipepipe-v1/PipePipe-5.3.1.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e07b45185d36bd6d947dc629145556d7c980c99f4ef698886d5811c52a28c225"
+  },
+  "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-pipepipe-v1/PipePipe-5.3.1.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "5d36c661c48da578f2acfb4cf7889c26e4de3d7a9301640a6fc8a708c71b3b6b"
+  },
+  "arm64_native": [
+    {
+      "bytes": 10096,
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 7970296,
+      "name": "lib/arm64-v8a/libavcodec.so",
+      "sha256": "06763971eba62488b29a953248132ee5eafc3f4ee0f577b3b1f1a9d22754c165",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 38904,
+      "name": "lib/arm64-v8a/libavdevice.so",
+      "sha256": "8da305a0a7ba922dc1b5a05639dbfc480e3d4018f5990acedd402d6f8eba9004",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 2823304,
+      "name": "lib/arm64-v8a/libavfilter.so",
+      "sha256": "72af75309ada455affa40d12132d28795e0d838a40a354eade3c02a27bb42111",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 5078968,
+      "name": "lib/arm64-v8a/libavformat.so",
+      "sha256": "a01f54510a32af09ceaeeb27c86fb0a437eb957ba6067a92bc4ae77419ba5775",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 498112,
+      "name": "lib/arm64-v8a/libavutil.so",
+      "sha256": "31085d168a0786cf4d16b9a932981b938004059a9a24f693ca5b6082e689eaaf",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 464608,
+      "name": "lib/arm64-v8a/libffmpegkit.so",
+      "sha256": "2edb48e6dd19179c11e019c48ecced605cb656df5e0d7425961f36ef6298caad",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 28384,
+      "name": "lib/arm64-v8a/libffmpegkit_abidetect.so",
+      "sha256": "e38f55d05d011de71b854695407e32aae6f53c4eb629a6fde02758883b260a0a",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 74616,
+      "name": "lib/arm64-v8a/libswresample.so",
+      "sha256": "7d5505b5379c6e5cb64823e7cc9ac89b5a5136cfcd6da0832752d7e6e19af05f",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 312856,
+      "name": "lib/arm64-v8a/libswscale.so",
+      "sha256": "8e7e31d5c304a3556dbf235a3747fd291732d2d4c4bfadb684e88439c370cb71",
+      "true_elf64_aarch64": true
+    }
+  ],
+  "candidate_pass": true,
+  "host_only": true,
+  "min_sdk": null,
+  "package": [
+    "InfinityLoop1309.NewPipeEnhanced",
+    "110804",
+    "5.3.1"
+  ],
+  "raw_count_changed": false,
+  "schema": "peer-apk-portfolio-pipepipe-verify-v1",
+  "signer_cert_sha256": [
+    "dec73429ce2563275f5ed19825e44652b32b363a46f38bdff9ad6dcde4842d88"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}

@@ -1,0 +1,83 @@
+{
+  "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "container_commands": 0,
+  "device_commands": 0,
+  "four_phase_rc0": true,
+  "package": "InfinityLoop1309.NewPipeEnhanced",
+  "phases": {
+    "dex": {
+      "apk_sha_after": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "apk_sha_before": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "container_commands": 0,
+      "device_commands": 0,
+      "dex_entries": 2,
+      "dex_names": [
+        "classes.dex",
+        "classes2.dex"
+      ],
+      "elapsed_seconds": 3.8437377919908613,
+      "network_commands": 0,
+      "phase": "dex",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "source_guard_equal": true
+    },
+    "elf": {
+      "abi_matches_machine": 10,
+      "apk_sha_after": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "apk_sha_before": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "arm64_elf_entries": 10,
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 2.0993735829833895,
+      "network_commands": 0,
+      "phase": "elf",
+      "rc": 0,
+      "readelf_ok": 10,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "source_guard_equal": true
+    },
+    "metadata": {
+      "apk_sha_after": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "apk_sha_before": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 0.3281671250006184,
+      "manifest_available": true,
+      "network_commands": 0,
+      "package": "InfinityLoop1309.NewPipeEnhanced",
+      "phase": "metadata",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "source_guard_equal": true,
+      "target_sdk": "36",
+      "version_code": "110804",
+      "version_name": "5.3.1"
+    },
+    "zip": {
+      "apk_sha_after": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "apk_sha_before": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+      "container_commands": 0,
+      "crc_bad": null,
+      "device_commands": 0,
+      "duplicate_names": 0,
+      "elapsed_seconds": 0.10543125006370246,
+      "entries": 1822,
+      "manifest_count": 1,
+      "network_commands": 0,
+      "phase": "zip",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "root_dex": 2,
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "so_count": 10,
+      "source_guard_equal": true
+    }
+  },
+  "root_count_changed": false,
+  "schema": "peer-apk-portfolio-pipepipe-static-v1",
+  "startup_proven": false
+}

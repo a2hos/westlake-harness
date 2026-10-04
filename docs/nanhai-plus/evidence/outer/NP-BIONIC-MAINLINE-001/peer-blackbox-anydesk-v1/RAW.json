@@ -1,0 +1,42 @@
+{
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-blackbox-anydesk-v1/AnyDesk.apk",
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "argv": [
+    "/usr/bin/curl",
+    "--fail",
+    "--location",
+    "--retry",
+    "0",
+    "--connect-timeout",
+    "15",
+    "--max-time",
+    "180",
+    "--max-filesize",
+    "62914560",
+    "--output",
+    "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-blackbox-anydesk-v1/AnyDesk.apk.part",
+    "https://download.anydesk.com/anydesk.apk"
+  ],
+  "bytes": 47905570,
+  "container_commands": 0,
+  "counts_changed": false,
+  "device_commands": 0,
+  "download_limit_bytes": 62914560,
+  "download_rc": 0,
+  "manifest_count": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "official_url": "https://download.anydesk.com/anydesk.apk",
+  "prescreen_sha256": "fc1dee395727c7ef30e31baf20a1322df4db70fabb346c996eeb0b44576c4b4e",
+  "root_dex": 2,
+  "schema": "peer-blackbox-anydesk-raw-v1",
+  "startup_proven": false,
+  "stderr_sha256": "d1a35358dbc71fe3e09151a50fcf9d5f3a2e014db32837a8539a799fa6fb41a7",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "zip_crc_bad": null,
+  "zip_duplicate_names": 0
+}

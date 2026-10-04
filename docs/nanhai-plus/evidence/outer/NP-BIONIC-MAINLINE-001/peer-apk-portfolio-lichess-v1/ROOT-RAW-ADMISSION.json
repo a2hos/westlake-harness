@@ -1,0 +1,22 @@
+{
+  "apk_bytes": 69681104,
+  "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "at_utc": "2026-10-04T20:30:57.905405+00:00",
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_RAW_ARTIFACT_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "package": "org.lichess.mobileV2",
+  "peer_review_sha256": "9553d2843276e56e1c771c6e57dd91bd320b87d9325a2d6e0a06ad4b88afdc65",
+  "raw_delta": 1,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "result_sha256": "811f7f30222c99c0b2ad7c624937dec766c6df54b49b5b1ac97bed8111f07767",
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "upstream_artifact_id": "a-dec4a25d4e668b7bba43",
+  "verify_sha256": "b39562d7ecd93a6361ca431ed54b5422fb586ab099c33804864adcdf1d1bc37f",
+  "version_code": 280403,
+  "version_name": "0.28.4",
+  "whitebox_public_source": true
+}

@@ -1,0 +1,50 @@
+{
+  "actual_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-ntfy-v1/ntfy-1.25.2.apk",
+  "artifact_id": "a-4eb76c7fc0c46dc48107",
+  "at_utc": "2026-10-04T20:28:07.653943+00:00",
+  "bytes": 9327009,
+  "container_commands": 0,
+  "device_commands": 0,
+  "download": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "180",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-ntfy-v1/ntfy-1.25.2.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-ntfy-v1/GET.headers.raw",
+      "https://f-droid.org/repo/io.heckel.ntfy_63.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e168c6383fa1e8e63666f01ec6d364a15ab97eef80dbdc6c9d55ae20556e22f4",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "expected_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "native_abi_names": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "package_expected": "io.heckel.ntfy",
+  "raw_count_changed": false,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "root_dex": 2,
+  "schema": "peer-apk-portfolio-ntfy-v1",
+  "sha_matches_upstream": true,
+  "source_url": "https://f-droid.org/repo/io.heckel.ntfy_63.apk",
+  "startup_proven": false,
+  "static_count_changed": false,
+  "version_code_expected": "63",
+  "version_expected": "1.25.2",
+  "zip_duplicate_names": 0,
+  "zip_first_bad": null
+}

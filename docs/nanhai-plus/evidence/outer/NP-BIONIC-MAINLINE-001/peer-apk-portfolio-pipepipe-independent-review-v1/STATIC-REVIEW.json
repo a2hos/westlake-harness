@@ -1,0 +1,59 @@
+{
+  "apk_bytes": 32331923,
+  "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "at_utc": "2026-10-04T20:28:57.486859+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 1,
+    "dex_entries": 2,
+    "mainstream_overseas_blackbox_qualifications": 0,
+    "raw_artifact_identities": 0,
+    "true_arm64_elf_entries": 10
+  },
+  "decision": "GO_FOUR_PHASE_HOST_STATIC_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "v1_static_failed": "c6bd4013473a63c5190215d0eb2585cc2205f74231193931b11df918c4bb53b6",
+    "v2_dex": "f6b60651433a1770de0bafa788afc5f9fb906a70deddfa2e29ebdd7f85402140",
+    "v2_dex_inventory": "0b27262437d533a157aa8c4f003b2e4c32f2706ce0c94da433817a90250b7f05",
+    "v2_elf": "3c2632cdabef0082ea3857709f9fd099d314b76d63b4b4c41f4ae5b57f78ba02",
+    "v2_elf_inventory": "9e1af5b66eeca3d42d06bd0efb8dd82449ab3b35f9004eb568a802cb688dff2e",
+    "v2_metadata": "4e0504884bffe17f9e41cf869ff8520881916f26e9d27bc69c1ac0a5b1e17d27",
+    "v2_static": "4048370f8ab1b260c66c59ed0be7d80a8bd07d5d923c73fec8f4b139e9691a46",
+    "v2_zip": "655b471c94a9c5cc40997c3944467c063bb1df411d8175e8530d632e61b13b89"
+  },
+  "independent_checks": {
+    "abi_matches_machine_receipt": 10,
+    "arm64_elf_count": 10,
+    "arm64_header_elfclass64_little_endian_machine_aarch64_all_10": true,
+    "current_readelf_sha_matches_receipt": true,
+    "current_scanner_sha_matches_receipt": true,
+    "dex_inventory_member_names_sha_bytes_match_apk": true,
+    "elf_inventory_member_names_sha_bytes_match_apk": true,
+    "manifest_count": 1,
+    "previous_root_static_admission_exact_package_or_sha_found": false,
+    "readelf_ok_receipt": 10,
+    "root_dex_count": 2,
+    "v1_historical_failure": "DEX rc2 AttributeError dict has no attribute name; v1 is not a complete static pass",
+    "v2_all_source_guard_equal": true,
+    "v2_phase_rc": {
+      "dex": 0,
+      "elf": 0,
+      "metadata": 0,
+      "zip": 0
+    },
+    "zip_crc_bad": null,
+    "zip_duplicate_names": 0,
+    "zip_entries": 1822
+  },
+  "limits": [
+    "V2 scanner semantic output was checked by receipt, pinned scanner hash and per-member DEX/ELF SHA; this review does not claim to rederive every 11 MB DEX semantic field independently",
+    "Static ELF header/readelf checks do not prove target loading or Bionic ABI compatibility",
+    "No install, cold start, render, input, device, bridge or whole-tool result",
+    "Root acceptance and common ledger update remain separate"
+  ],
+  "package": "InfinityLoop1309.NewPipeEnhanced",
+  "review_scope": "independent host-only readback; no download retry, device, container, Bridge or remote host",
+  "schema": "pipepipe-independent-static-review-v1",
+  "version_code": 110804,
+  "version_name": "5.3.1"
+}

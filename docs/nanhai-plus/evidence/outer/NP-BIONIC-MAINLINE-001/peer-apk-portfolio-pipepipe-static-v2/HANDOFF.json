@@ -1,0 +1,42 @@
+{
+  "apk_bytes": 32331923,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-pipepipe-v1/PipePipe-5.3.1.apk",
+  "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "at_utc": "2026-10-04T20:27:29.094895+00:00",
+  "authoritative_counts_changed": false,
+  "candidate_decision": "GO_TO_INDEPENDENT_REVIEW_FOR_EXACT_UPSTREAM_RAW_AND_FOUR_HOST_STATIC_ONLY",
+  "container_commands": 0,
+  "device_commands": 0,
+  "evidence_sha256": {
+    "VERIFY": "a7fd5cd4a95fbe3ba516ff475590c5974d295112c4f974d947178cd565878cd6",
+    "raw_RESULT": "77cafac3b62fd61eec998af5dd8df36d0880d08f03c82506052c36febd7d113d",
+    "static_v1_failure": "c6bd4013473a63c5190215d0eb2585cc2205f74231193931b11df918c4bb53b6",
+    "static_v2_success": "4048370f8ab1b260c66c59ed0be7d80a8bd07d5d923c73fec8f4b139e9691a46"
+  },
+  "host_checks": {
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "arm64_elf_entries": 10,
+    "dex_entries": 2,
+    "download_rc": 0,
+    "four_static_rc0": true,
+    "zip_entries": 1822
+  },
+  "known_limitations": [
+    "Raw and static candidate only; no root acceptance, install, runtime, screen, input, or recovery",
+    "First static v1 failed due dict accessor bug and remains immutable; v2 independently re-ran all four phases",
+    "No current Bionic runtime index exists to classify actual bridge gap"
+  ],
+  "official_listing_url": "https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced/",
+  "package": "InfinityLoop1309.NewPipeEnhanced",
+  "schema": "peer-apk-portfolio-pipepipe-handoff-v1",
+  "signature_cert_sha256": [
+    "dec73429ce2563275f5ed19825e44652b32b363a46f38bdff9ad6dcde4842d88"
+  ],
+  "source_property": "F-Droid listing links upstream public source; whitebox test input, not qualified overseas mainstream blackbox",
+  "source_url": "https://f-droid.org/repo/InfinityLoop1309.NewPipeEnhanced_110804.apk",
+  "target_sdk": "36",
+  "upstream_artifact_id": "a-b3a2190c6194b45600b7",
+  "version": "5.3.1",
+  "version_code": "110804"
+}

@@ -1,0 +1,28 @@
+{
+  "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "at_utc": "2026-10-04T20:29:24.491003+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "first_static_v1_rc2_not_counted": true,
+  "full_static_delta": 1,
+  "handoff_sha256": "7d6c2f6247cc9289b80c9f5d4ae80a03285388bc6de385da8ea2c48599222669",
+  "package": "InfinityLoop1309.NewPipeEnhanced",
+  "peer_review_sha256": "2ec9cb750d3f72921415d45ba53e3a68d9dd1d1b69a3a8a1369a61ee49f430fa",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 2,
+  "root_raw_admission_sha256": "5a07fec52ad977bd081e4f83d3516aa146a6c5c672b96332d062188cbc9be476",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "source_guard_all_equal": true,
+  "static_sha256": "4048370f8ab1b260c66c59ed0be7d80a8bd07d5d923c73fec8f4b139e9691a46",
+  "true_arm64_elf": 10,
+  "whitebox_public_source": true
+}

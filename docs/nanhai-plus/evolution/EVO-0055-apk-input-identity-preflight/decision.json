@@ -1,0 +1,20 @@
+{
+  "decision": "PILOT_ONLY_NO_PRODUCTION_PROMOTION",
+  "id": "EVO-0055",
+  "limitations": [
+    "Offline sample of three recent candidates, not full 105+ asset coverage",
+    "No live production scanner or G339 v2 change",
+    "No APK runtime/startup/Bionic tool implication"
+  ],
+  "network_or_device_action": false,
+  "observed_trigger": "PipePipe static v1 used e.name on dict entries and failed rc2; G339 v1 dynamically included wrong.package and missed Seal/Briar split-layout evidence.",
+  "one_improvement": "Before a future APK scanner/cohort run, bind an explicit root-accepted (package, APK SHA-256, exact evidence directory) list and assert the DEX entry consumer expects mappings with name keys. Reject unexpected identities or consumer shape before scanning.",
+  "pilot_code_sha256": "505b60cab6db610700ac9133f4800729340e812d3f27ba37d6ec16612c0c5352",
+  "pilot_result": "Three exact package/sha inventory pairs pass; wrong.package and same-package/wrong-SHA reject; PipePipe v1 attribute consumer rejects before scan; six offline cases rc0.",
+  "pilot_result_sha256": "0a844b12d743ce6a0f2069dbfa01e8a992c9627a6708d38dccf67acfd82caa2b",
+  "production_runner_changed": false,
+  "promotion_gate": "Independent peer/root review and host-only run against a frozen complete root-admission manifest, including split-layout Seal/Briar and a deliberately injected wrong.package, must show no false inclusion/omission and no new scan failure before integration. Do not modify G339 v2 while in flight.",
+  "rollback": "Keep current scanner/cohort if preflight excludes a legitimately root-accepted split-layout APK, admits an unaccepted identity, changes immutable inventory bytes, or makes scanning slower/less reliable; quarantine candidate and restore previous entrypoint.",
+  "schema": "nanhai-evolution-decision-v1",
+  "status": "pilot"
+}

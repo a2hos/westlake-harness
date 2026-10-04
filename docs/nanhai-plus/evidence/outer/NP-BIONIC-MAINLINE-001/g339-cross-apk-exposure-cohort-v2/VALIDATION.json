@@ -1,0 +1,41 @@
+{
+  "analyze_lock_rc": 0,
+  "analyze_lock_replay_rc": 0,
+  "build_lock_rc": 0,
+  "build_lock_replay_rc": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "host_only": true,
+  "libjnigraphics_arm64_dt_needed_packages": 34,
+  "lock_replay_byte_equal": true,
+  "negative_control": "wrong.package",
+  "negative_control_expected_error_observed": true,
+  "negative_control_mutated_lock_exit_code": 1,
+  "not_proven": [
+    "current Bionic provider absence",
+    "loader selection",
+    "first-screen reachability",
+    "APK cold starts",
+    "89 Bionic whole-tool pass"
+  ],
+  "out_of_snapshot_packages": [
+    "InfinityLoop1309.NewPipeEnhanced",
+    "io.heckel.ntfy",
+    "org.lichess.mobileV2"
+  ],
+  "pre105_checkpoint_sha256": "1ddae14db50ed5338f202e53b8eb634d130a9a7669eb91d5a8d7bf374b1edf0f",
+  "remote_commands": 0,
+  "result_replay_byte_equal": true,
+  "root_accepted_identities_locked": 105,
+  "schema": "g339-v2-root-locked-static-cohort-validation-v1",
+  "scope": "pre-batch105 exact root-accepted identities, static ARM64 DT_NEEDED only",
+  "sha256": {
+    "LOCK-REPLAY.json": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+    "LOCK.json": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+    "README.md": "06f1b843a414ea2dad9c2cbf022c65197b4c211bbf36b3f0e9930b74c0456413",
+    "REPLAY.json": "6451a8115ae1b190fe344346c46410fa417d19855cfeabd9444fa99b024ae3fb",
+    "RESULT.json": "6451a8115ae1b190fe344346c46410fa417d19855cfeabd9444fa99b024ae3fb",
+    "analyze_lock.py": "7ee086c8534dc13268ff75a3f3b0927f355ff2573ac586cb506e6b51a56595c8",
+    "build_lock.py": "182995c23514a2bc2bcc17a7d52f38049bb52079870c8e5e87041d90fd9d9b56"
+  }
+}

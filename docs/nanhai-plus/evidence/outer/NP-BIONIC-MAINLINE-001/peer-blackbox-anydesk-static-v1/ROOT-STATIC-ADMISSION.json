@@ -1,0 +1,27 @@
+{
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "at_utc": "2026-10-04T20:39:47.385357+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 1,
+  "handoff_sha256": "5ca42dc841f155a36cc83b03751b425eed95c079706568b71bf9eee5267a9bc1",
+  "package": "com.anydesk.anydeskandroid",
+  "peer_review_sha256": "36c01d286ba7473930c919455d1c66fcee481a74f067b29070b8a9fff00fcff0",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 2,
+  "root_raw_admission_sha256": "f52eae3bf501b5919a7f5da53ac34d7a78deea133f77c83a97eaefb25d7135c7",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "source_guard_all_equal": true,
+  "static_sha256": "311303e9437207af45a834be765329d70efafe9dbca347778d27d2026626b769",
+  "target_sdk_above_aosp16_r4_api36_risk_only": true,
+  "true_arm64_elf": 1
+}

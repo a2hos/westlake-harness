@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "offline_fixtures.py": "c468a4160221f3d10b226d02175ed410111f611623bc592aaf82dc96f28bedc4",
+    "socks_boundary.py": "5114e6f5c3266663b8c030055f90070bbabb5aeef0bcff16b696659f033ca432"
+  },
+  "at_utc": "2026-10-04T20:25:08.012487+00:00",
+  "basis": {
+    "v7_peer_postrun_sha256": "00d524520d3fce4a1c93c582c0c58ac66915ae6578057ca7e010651b306648b8",
+    "v7_root_postrun_sha256": "850edde1111318928555dbccb9b00e8939496ab128ee0e1d81a8ea3ceb05ef6b"
+  },
+  "decision": "GO_OFFLINE_PARSER_ONLY_NO_LIVE_RELEASE",
+  "future_falsifiable_gate": "After independent review and fresh exact root release, a separate one-shot private instance may issue one SOCKS5 CONNECT to the pinned gz02 tuple; retain only bounded REP/status, frame length/hash and local route line. Require SSH banner, pinned host key, authentication and UID in a separately released probe before claiming gz02 identity. A nonzero REP refutes a granted CONNECT for that run; REP0 alone does not prove remote TCP or identity.",
+  "interpretation": {
+    "REP0": "proxy-reported CONNECT grant only; no independently proven node outbound TCP or gz02 identity",
+    "REP1_to_8": "proxy-reported class only; not proven causal root",
+    "malformed_or_truncated": "reject with no phase attribution"
+  },
+  "not_performed": [
+    "private proxy start",
+    "node dial",
+    "SSH",
+    "global proxy change",
+    "container",
+    "namespace",
+    "device",
+    "BridgeAOSPV16 mutation"
+  ],
+  "offline_fixture": {
+    "decision": "PASS_OFFLINE_PARSER_ONLY",
+    "device_commands": 0,
+    "gz02_identity_proven": false,
+    "invalid_cases": 8,
+    "network_connections": 0,
+    "proxy_launches": 0,
+    "remote_tcp_proven": false,
+    "request_sha256": "73939c257174ad309395bcf9884d5bc29e3246b4169d0785cc288a8a931c1b84",
+    "schema": "g279-socks-connect-offline-fixtures-v1",
+    "ssh_commands": 0,
+    "valid_cases": 12
+  },
+  "purpose": "Distinguish local private Mihomo /32 selection from the separate SOCKS5 CONNECT reply boundary before any future SSH probe.",
+  "schema": "g279-socks-connect-boundary-code-only-v1",
+  "scope_limit": "No live route, no authenticated host, no Soong graph, no APK startup, no Bionic whole-tool pass."
+}

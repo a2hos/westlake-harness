@@ -1,0 +1,27 @@
+{
+  "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "at_utc": "2026-10-04T20:30:57.905405+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 1,
+  "handoff_sha256": "6d8ba530fda4df6cedbbd442e25a556131b349b47af180d90bf579ef87585d36",
+  "package": "org.lichess.mobileV2",
+  "peer_review_sha256": "71bfd91f5c1e87bc162c664f58b4bde3b5f975f22ed2a3dc8d613131bcae8f4d",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 2,
+  "root_raw_admission_sha256": "4c63f74b9aaa5a87dd4000e71f692d501c50456c09979b90608b5a345f7c580f",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "source_guard_all_equal": true,
+  "static_sha256": "ef2abced5543f6119f08508ef0c448e9cf37b019d265d4ab8996296158c04621",
+  "true_arm64_elf": 10,
+  "whitebox_public_source": true
+}

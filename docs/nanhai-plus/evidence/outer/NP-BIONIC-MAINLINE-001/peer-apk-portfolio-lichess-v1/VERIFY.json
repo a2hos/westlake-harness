@@ -1,0 +1,103 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-lichess-v1/Lichess-0.28.4.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "031611fb707deba9b4323492654d30fb579983781b0c6f73787c7d300296013a"
+  },
+  "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-lichess-v1/Lichess-0.28.4.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "2548799ca856ae75a460640fe781a87d8122ce1a0443b4bb6ad8d6fb7fe94254"
+  },
+  "arm64_native": [
+    {
+      "bytes": 21431176,
+      "name": "lib/arm64-v8a/libapp.so",
+      "sha256": "d7e309cebbfccee457f66f729aa48c536c12300b2c0660e783faf7008b3e1918",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 6500848,
+      "name": "lib/arm64-v8a/libcronet.143.0.7445.0.so",
+      "sha256": "7d955904c4fd86cece96f7bd5f95248bd7907b19da67bcc7b73f436d864b37c4",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 131128,
+      "name": "lib/arm64-v8a/libdartjni.so",
+      "sha256": "58843a785e39e3375a7345f9eec43e3cd2ad88b4db42f7c43c2629f3cef1ebfa",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 7112,
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 11747864,
+      "name": "lib/arm64-v8a/libflutter.so",
+      "sha256": "9cad0ddc4fb535c7d53b4bb19e81af863fc9dbc0407277d3af089a1a2f11a2b3",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 2182368,
+      "name": "lib/arm64-v8a/liblc0.so",
+      "sha256": "21ede4dc54468561d5924cfb5213036f01d78bc5955732d2d8d8dd02cd7aea2c",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 1603304,
+      "name": "lib/arm64-v8a/libmultistockfish_chess.so",
+      "sha256": "3d5c7b1a794353ecfcce1271d4964dc1594d36abce179688401037646136cd05",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 2685456,
+      "name": "lib/arm64-v8a/libmultistockfish_light.so",
+      "sha256": "1ffc943d09799ed423563b104d689b1608e0a429a7933ce6b399e3ad93331ff0",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 1806168,
+      "name": "lib/arm64-v8a/libmultistockfish_variant.so",
+      "sha256": "c82947e852ea321e2e31ea11d098737966bf0ffc7aa918d5e387cd3237bd7c26",
+      "true_elf64_aarch64": true
+    },
+    {
+      "bytes": 1732360,
+      "name": "lib/arm64-v8a/libsqlite3.so",
+      "sha256": "081df67ee9ab852daea6a0679427e90fc89a0245d06f93dafe2309875c609c5c",
+      "true_elf64_aarch64": true
+    }
+  ],
+  "candidate_pass": true,
+  "host_only": true,
+  "min_sdk": null,
+  "package": [
+    "org.lichess.mobileV2",
+    "280403",
+    "0.28.4"
+  ],
+  "raw_count_changed": false,
+  "schema": "peer-apk-portfolio-lichess-verify-v1",
+  "signer_cert_sha256": [
+    "496ed2c1542892a094a2a6e26d59cd07fb7e8c711355876dad3859ea82f8af62"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}

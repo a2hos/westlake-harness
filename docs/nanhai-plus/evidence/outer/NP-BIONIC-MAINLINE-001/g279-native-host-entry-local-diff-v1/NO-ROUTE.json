@@ -1,0 +1,59 @@
+{
+  "at_utc": "2026-10-04T20:27:12.024824+00:00",
+  "current_local": {
+    "arp": "no historical 192.168.8.22 or .8.173 neighbor entry; different subnet so absence expected",
+    "dns_local_resolver": "mDNS resolver for .local displayed reach 0x00000000 (Not Reachable) by scutil --dns",
+    "en0_ipv4": "192.168.3.81/24",
+    "en0_status": "active",
+    "etc_hosts": "no alexpc/gz02 or old endpoint mapping",
+    "mdns_cache_dump": "dscacheutil -cachedump -entries Host returned no alexpc/gz02 or old-address match in bounded filter; absence of cache entry is not DNS failure proof",
+    "route_192_168_8_173": "default gateway 192.168.3.1 via en0; no specific 192.168.8.0/24 route",
+    "route_192_168_8_22": "default gateway 192.168.3.1 via en0; no specific 192.168.8.0/24 route",
+    "route_gz02_pinned_public_ip": "default gateway 192.168.3.1 via en0; route presence does not prove TCP reachability",
+    "scutil_nwi_ipv4_interface": "en0_only",
+    "utun0_through_utun3": "IPv6 link-local only in ifconfig; no IPv4 route to historical AlexPC subnet"
+  },
+  "decision": "NO_ROUTE_VERIFIED_TO_AUTHENTICATED_EXACT_R4_NATIVE_LINUX_HOST",
+  "historical_diff": {
+    "alexpc_v3_current": "outer rc2, SSH rc255, no RESULT; old LAN endpoint not re-used",
+    "gz02_v13_earlier": "direct SSH rc0 with remote control inventory at 2026-10-04 15:18 UTC; no graph",
+    "gz02_v7_current": "private selected-node /32 local rule line, child SSH rc255, no pinned remote identity; consumed nonce not replayable",
+    "new_endpoint_found": false,
+    "new_version_traceable_authenticated_host_found": false
+  },
+  "input_sha256": {
+    "alexpc_v3_root_postrun": "d2113ec4d8f5804b1bd1caa1f282687e267b8428dbac2f3479f9808a01797527",
+    "known_hosts": "519aab445016e0a5fc983a1210037535908dab7711c13c9075f16e868f24b53b",
+    "ssh_config": "d99dc196e3fd7fdbe1c6eb5e6c43a5d85256e659ef5abfd5e27587b318726fdd",
+    "v13_history_diff": "ca7034cf4b6c97a5f0d7e95c186b48a4611fce037e94f3553dab161287ce04e6",
+    "v7_root_postrun": "850edde1111318928555dbccb9b00e8939496ab128ee0e1d81a8ea3ceb05ef6b"
+  },
+  "next_falsifiable_gate": "Obtain a fresh project-owned native Linux endpoint/route and host-key identity binding, then independently review one exact read-only SSH identity and AOSP16 R4 source/Soong/capacity audit packet. Do not infer a host from neighboring LAN ARP addresses, cached keys, personal SSH aliases, or historical v13 success.",
+  "not_proven": [
+    "AlexPC DNS resolution now",
+    "AlexPC current IP or service",
+    "gz02 target TCP now",
+    "gz02 current SSH identity",
+    "native Soong graph",
+    "ARM64 Bionic target",
+    "HelloWorld start"
+  ],
+  "operations_not_performed": [
+    "SSH",
+    "proxy start",
+    "target TCP",
+    "device",
+    "container",
+    "namespace",
+    "global proxy change",
+    "BridgeAOSPV16 mutation"
+  ],
+  "registered_hosts": {
+    "alexpc": "SSH config pins alexpc.local:22; prior project four-gate v3 used stale 192.168.8.22:22 and ended child rc255 with no remote RESULT",
+    "gz02": "SSH config pins 1.95.90.207:58222; local_env pins AOSP16 R4 source and native worktree by project variables; historical v13 proved remote readback at 15:18 UTC, not current reachability",
+    "known_hosts": "historical pins present for gz02 and AlexPC; presence does not prove current authentication",
+    "other_ssh_aliases": "gz02-jump and gz02-build appear in personal config, but there is no current project authorization or authenticated R4 host receipt for an alternate hop; excluded"
+  },
+  "schema": "g279-native-host-entry-local-diff-v1",
+  "scope": "local OS interface, route, DNS resolver, mDNS cache and SSH host configuration read only; no target network attempt"
+}

@@ -1,0 +1,47 @@
+{
+  "apk_bytes": 69681104,
+  "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "at_utc": "2026-10-04T20:30:37.616593+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 0,
+    "mainstream_overseas_blackbox_qualifications": 0,
+    "raw_artifact_identities": 1
+  },
+  "decision": "GO_EXACT_RAW_ARTIFACT_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "raw_result": "811f7f30222c99c0b2ad7c624937dec766c6df54b49b5b1ac97bed8111f07767",
+    "raw_verify": "b39562d7ecd93a6361ca431ed54b5422fb586ab099c33804864adcdf1d1bc37f",
+    "upstream_apps_json": "a2cd12af7510bc6629375f183fe6637d4e3b8dd564fbe0a5ffa2938af48e82e6",
+    "upstream_registry": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb"
+  },
+  "independent_checks": {
+    "aapt2_package_version_target": "org.lichess.mobileV2 / 280403 / 0.28.4 / targetSdk36",
+    "aapt2_rc": 0,
+    "aapt2_stdout_sha256": "031611fb707deba9b4323492654d30fb579983781b0c6f73787c7d300296013a",
+    "apksigner_rc": 0,
+    "apksigner_stdout_sha256": "2548799ca856ae75a460640fe781a87d8122ce1a0443b4bb6ad8d6fb7fe94254",
+    "f_droid_get_receipt": "curl rc0, HTTP/2 200, application/vnd.android.package-archive; existing payload independently rehashed; no fresh GET by reviewer",
+    "previous_root_raw_admission_exact_package_or_sha_found": false,
+    "root_dex_count": 2,
+    "signer_cert_sha256": "496ed2c1542892a094a2a6e26d59cd07fb7e8c711355876dad3859ea82f8af62",
+    "source_package_version_code_bytes_sha_url_match": true,
+    "true_arm64_elf_count": 10,
+    "upstream_apps_json_git_blob": "d70db20494378421bb4f2611b40fb4cf48649fb2",
+    "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "zip_crc_bad": null,
+    "zip_duplicate_names": 0,
+    "zip_entries": 2911
+  },
+  "limits": [
+    "Exact upstream registered F-Droid artifact identity within project snapshot; not a fresh website provenance or publisher trust audit",
+    "APK signature verification does not establish install or runtime",
+    "Whitebox test input, not qualified overseas mainstream blackbox",
+    "No root count change, install, screen, startup or whole-tool pass"
+  ],
+  "package": "org.lichess.mobileV2",
+  "review_scope": "independent host-only readback of existing APK; no download retry, device, container, Bridge or remote host",
+  "schema": "lichess-independent-raw-review-v1",
+  "version_code": 280403,
+  "version_name": "0.28.4"
+}

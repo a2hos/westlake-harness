@@ -1,0 +1,64 @@
+{
+  "alternative_not_counted": "An NDK23/API31 or Apple-clang isolated zlib compilation might test the algorithm, but is not the exact R4 Bionic tool build and cannot count toward 89.",
+  "at_utc": "2026-10-04T20:37:25.388107+00:00",
+  "decision": "NO_GO_EXACT_R4_ARM64_BIONIC_BUILD_AND_CONSUMER",
+  "dependency_gate": {
+    "bionic_archive": "Complete source archive only; no built R4 libc.so/linker64/crt objects or exact target sysroot accepted",
+    "cross_libc_risk": "Do not link an OH Musl object or NDK23/API31 Bionic object into exact R4 App cohort",
+    "graph": "No real R4 Linux Soong graph or ARM64 libz target action verified",
+    "required_consumer": "R4 ART dex/profile/ZIP consumers reference libz in ART Android.bp, but no built Bionic ART consumer linked/loaded in current App",
+    "status": "NO_GO_CLOSED_BIONIC_DEPENDENCIES",
+    "zlib_blueprint": "R4 external/zlib/Android.bp declares libz cc_library and ARM64 cflags/stubs; source alone does not close linker/libc/crt/API map dependency set"
+  },
+  "evidence_sha256": {
+    "bionic_archive_root_admission": "280d8539c33d98667cf048c19a0ce98c64f9acf3b7921c2382e5523460986a09",
+    "no_fresh_host_entry": "103cc106fda5d57a56552c31a6e83a7be16a0e2c8ecb9e0d778bcda49efdb7a3",
+    "plan": "658f3214a0a49e0d4c5bb278b10dadcdbfde557d289450473cbb31bd96624b53",
+    "source_index": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636"
+  },
+  "minimum_next_gate": "On an authenticated project-owned Linux R4 host or separately source-locked native Mac R4 toolchain, materialize the read-only exact R4 Bionic source on case-sensitive project build storage; bind Soong-generated ARM64 Bionic libc/linker/crt/sysroot and R4 zlib graph in isolated OUT/TMP. Only then build libz, hash ELF/NEEDED/version ABI and validate an actual R4 Bionic ART/resources consumer. Keep no-container and device HOLD.",
+  "offline_build_gate": {
+    "argv": null,
+    "artifact_sha256": null,
+    "build_pass": false,
+    "consumer_receipt": null,
+    "status": "NOT_RUN_PRECONDITIONS_FAILED",
+    "whole_tool_pass": false
+  },
+  "operations_not_performed": [
+    "compiler invocation",
+    "Soong graph",
+    "target build",
+    "SSH",
+    "proxy start",
+    "device",
+    "container",
+    "namespace",
+    "BridgeAOSPV16 mutation",
+    "shared source write",
+    "common ledger edit"
+  ],
+  "prebuilt_gate": {
+    "apple_clang": "host compiler exists but no evidence it reproduces exact R4 Bionic target ABI/Soong flags",
+    "current_host": "Darwin arm64",
+    "local_ndk": "23.1.7779620 Darwin universal Mach-O, supported platform max API31, not AOSP16 R4/API36 source-locked toolchain",
+    "missing": "R4-compatible native Mac ARM64 build toolchain and Soong-generated ARM64 Bionic target headers/sysroot, or authenticated project-owned native Linux R4 host",
+    "registered_r4_clang": "AOSP clang-r563880c-linux-x86, Linux x86-64 ELF, cannot execute natively on Darwin arm64",
+    "status": "NO_GO_NATIVE_EXACT_TOOLCHAIN"
+  },
+  "schema": "r155-libz-mac-native-four-gate-audit-v1",
+  "source_gate": {
+    "bionic_archive_commit": "f22516cbc67e81c13cf943ce02f01b8929a98726",
+    "bionic_archive_complete_files": 3359,
+    "bionic_archive_materialized_for_build": false,
+    "bionic_archive_sha256": "c5cd5649847aef6ca2bc0417a8730dbbacdf2ee1011338fa2531d3de8f9bcbfe",
+    "source_lock_sha256": "692cef7cdbdd6c5b908652229323e999fc68770448e85e773d0b551f25521bce",
+    "source_version_scope": "Both exact android-16.0.0_r4; source archive is not a target sysroot or built libc/linker.",
+    "status": "SOURCE_IDENTITY_PASS_ONLY",
+    "zlib_git_tree": "d7056877f7d00f276cfa35156b0f338f6773b53e",
+    "zlib_git_worktree_clean": true,
+    "zlib_upstream_commit": "a6f47e8bd7c1ba412c4b5a3539aa77fe628d0172"
+  },
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App Bionic",
+  "tool_id": "r155-libshared-libz"
+}

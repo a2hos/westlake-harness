@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-04T20:40:45.182302+00:00",
+  "audit_sha256": "b362d3585ed8b0ae04c6b5c056b8b752e2f246958e3366f9bebd71342bad5b1d",
+  "bionic_tool_pass_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_EXACT_R4_SOURCE_DEFINITION_AND_LOCAL_NO_ARTIFACT_ONLY",
+  "device_commands": 0,
+  "exact_r4_source_module_seen": true,
+  "g339_pre105_arm64_declared_needed_packages": 34,
+  "next": "Require same-generation exact R4 ARM64 libjnigraphics ELF and product install manifest before provider/loader verdict; then test runtime mapping only when device HOLD permits.",
+  "product_install_provider_absence_proven": false,
+  "project_local_arm64_provider_artifact_seen": false,
+  "result_sha256": "cfaefdbb0477c7205f12c243410ffa786e233c50576bc242baa7e66149b6b65d",
+  "root_replay_byte_equal": true,
+  "root_replay_rc": 0,
+  "runtime_loader_selection_proven": false,
+  "schema": "g340-root-provider-loader-static-review-v1",
+  "startup_blocker_proven": false,
+  "validation_sha256": "f64c4cab8eeb24e18df7a4605de6adc324cd7873a8831cd74d48a437db6ed423"
+}

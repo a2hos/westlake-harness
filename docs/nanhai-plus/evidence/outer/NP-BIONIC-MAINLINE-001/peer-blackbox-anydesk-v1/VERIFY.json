@@ -1,0 +1,47 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-blackbox-anydesk-v1/AnyDesk.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "fdd0038e63706aba226d4811bfc8c22c3623b5d80fc98b749325b29dd3cdb730"
+  },
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-blackbox-anydesk-v1/AnyDesk.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "02508a5a250c6a88fad5f7d9c735a5a8c7480077814a6a4edd212b55350d121b"
+  },
+  "arm64_native": [
+    {
+      "bytes": 33445064,
+      "name": "lib/arm64-v8a/libadext.so",
+      "sha256": "b8cde68b0b1ef0b6aa5e18b776765616594b8ccc786a7ff80b326cfc840d3d30",
+      "true_elf64_aarch64": true
+    }
+  ],
+  "candidate_pass": false,
+  "host_only": true,
+  "min_sdk": "21",
+  "package": [
+    "com.anydesk.anydeskandroid",
+    "90002",
+    "9.0.2"
+  ],
+  "raw_count_changed": false,
+  "schema": "peer-blackbox-anydesk-verify-v1",
+  "signer_cert_sha256": [],
+  "startup_proven": false,
+  "target_sdk": "37"
+}

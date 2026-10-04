@@ -1,0 +1,49 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-ntfy-v1/ntfy-1.25.2.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "5ac31f5bda43a1a787343305e23f4bce25544dd28d766c0345f0ffb329d10632"
+  },
+  "apk_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-ntfy-v1/ntfy-1.25.2.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7af8c86d59ba03ed5b0548ce9514dc8a46a06dcf7e6a44fcaf56d9fed5e8c226"
+  },
+  "arm64_native": [
+    {
+      "bytes": 42400,
+      "name": "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+      "sha256": "293297bc0d6aa2ea1936712a85639b58c20c5353d120b2af045fedd3ee24cb8e",
+      "true_elf64_aarch64": true
+    }
+  ],
+  "candidate_pass": true,
+  "host_only": true,
+  "min_sdk": null,
+  "package": [
+    "io.heckel.ntfy",
+    "63",
+    "1.25.2"
+  ],
+  "raw_count_changed": false,
+  "schema": "peer-apk-portfolio-ntfy-verify-v1",
+  "signer_cert_sha256": [
+    "76e94d8e04706c5b99064c23210d8ca9910608abae8f3e972b41e388391646e0"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}

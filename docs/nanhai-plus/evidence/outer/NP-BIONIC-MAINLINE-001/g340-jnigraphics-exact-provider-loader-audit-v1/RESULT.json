@@ -1,0 +1,59 @@
+{
+  "bionic_project_local_same_name_so_count": 0,
+  "bionic_project_local_same_name_so_paths": [],
+  "bionic_tool_plan": {
+    "build_ready": false,
+    "decision": "replace",
+    "path": "docs/nanhai-plus/tool-records/flutter-libjnigraphics-n1/targets/oh7.0.0.39-aosp16r4-arm64-bionic/plan.json",
+    "sha256": "55d69b6a8e09e16f1fd8098a8f2cffeae5ef488c2efc87434c656fa8a3a1d8a5",
+    "source_build_accepted": false,
+    "state": "not_run"
+  },
+  "container_commands": 0,
+  "decision": "NO_GO_PROVIDER_AND_LOADER_UNPROVEN",
+  "device_commands": 0,
+  "git_head": "45034f0663f960d9ee5fb0a101a4732b71f6e2f4",
+  "git_head_rc": 0,
+  "loader_search_order_verified": false,
+  "local_product_config_mk_bp_files_scanned": 24,
+  "product_config_explicit_name_mentions": [],
+  "provider_artifact_verified": false,
+  "registered_repository": {
+    "build_accepted": false,
+    "head": "45034f0663f960d9ee5fb0a101a4732b71f6e2f4",
+    "kind": "complete_pinned_readonly_source_checkout",
+    "relative": "AOSP-16.0.0_r4/android-source/frameworks-base-r4-45034f0"
+  },
+  "remote_commands": 0,
+  "schema": "g340-jnigraphics-exact-provider-loader-audit-v1",
+  "scope": "local host read-only source/product/output index; no remote product or device",
+  "soname_abi_exports_verified": false,
+  "soong_android_shared_dependencies": [
+    "libhwui",
+    "liblog",
+    "libandroid"
+  ],
+  "soong_definition_observed": true,
+  "soong_module_name": "libjnigraphics",
+  "source_files": [
+    {
+      "relative": "native/graphics/jni/Android.bp",
+      "sha256": "4f5bb47182d8fd3c1196b972129aa3bd942fb76117a4b872efcf8eaf6cd012f8"
+    },
+    {
+      "relative": "native/graphics/jni/bitmap.cpp",
+      "sha256": "d8cdfe394f9822524fd1237f17fa12ca4c4c0a9ac3f06fbefb215ae26afa0b37"
+    },
+    {
+      "relative": "native/graphics/jni/imagedecoder.cpp",
+      "sha256": "f731181cb45efc8194c43762745661b8e7feea4883f2d25527799fbd77a6f8c3"
+    },
+    {
+      "relative": "native/graphics/jni/libjnigraphics.map.txt",
+      "sha256": "2171bf774acc1149dc1298d5ae030a820d7d1994ebdc04c29806d62e129e7597"
+    }
+  ],
+  "source_files_clean": true,
+  "source_index_sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic"
+}

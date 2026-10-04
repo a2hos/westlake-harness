@@ -1,0 +1,53 @@
+{
+  "apk_bytes": 47905570,
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "at_utc": "2026-10-04T20:38:57.720666+00:00",
+  "count_effect_if_root_accepts": {
+    "blackbox_qualified_packages": 0,
+    "cold_starts": 0,
+    "complete_static_inventories": 0,
+    "raw_artifact_identities": 1
+  },
+  "decision": "GO_OFFICIAL_RAW_ARTIFACT_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "prescreen": "fc1dee395727c7ef30e31baf20a1322df4db70fabb346c996eeb0b44576c4b4e",
+    "raw": "15a92235374eeee54852073091f92eb8ca36038973d9c9facce779822baed734",
+    "verify_v1_failed_parser": "c0bb798a5fbf82f2f2afc6410bd254c8b6ff42aad0958f5b2818eb7cd187a9c5",
+    "verify_v2": "d89dc560dd017ce5f36e719aa1bf0dd1cfccc982fd5e9e8a8af579a74356e8d8"
+  },
+  "independent_host_checks": {
+    "aapt2_package_version_target": "com.anydesk.anydeskandroid / 90002 / 9.0.2 / targetSdk37",
+    "aapt2_rc": 0,
+    "aapt2_stdout_sha256": "fdd0038e63706aba226d4811bfc8c22c3623b5d80fc98b749325b29dd3cdb730",
+    "api24_32_signer_cert_sha256": "74dc8452007ccdfefc366b65ad5361a255745d1f962a3565e6cf0f78762db316",
+    "api33_plus_signer_cert_sha256": "c4f5781df5c7f28e8167d7e69bede8aea687da8e8d0ba4bc5fb7b238cc0f8ff5",
+    "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+    "apksigner_rc": 0,
+    "apksigner_stdout_sha256": "02508a5a250c6a88fad5f7d9c735a5a8c7480077814a6a4edd212b55350d121b",
+    "duplicate_names": 0,
+    "manifest_count": 1,
+    "root_raw_admission_same_package_or_sha_hits": 0,
+    "upstream_registry_same_package_hits": 0,
+    "v1_parser_failure": "v1 candidate_pass false because it expected an unqualified Signer #1 cert line; apksigner itself rc0. v2 parsed API-ranged cert lines and candidate_pass true.",
+    "zip_crc_bad": null,
+    "zip_entries": 1154
+  },
+  "official_chain": {
+    "android_page": "https://anydesk.com/en/downloads/android",
+    "browser_link_follows_to_binary": "yes; web browser rejected only unsupported APK content type",
+    "candidate_get": "curl --fail --location rc0 to direct official URL; downloaded 47905570 bytes, SHA independently rehashed; GET exact HTTP status not separately retained",
+    "page_current_version": "9.0.2",
+    "page_direct_link": "https://download.anydesk.com/anydesk.apk",
+    "prescreen_head": "HTTP 200, application/octet-stream, Content-Length 47905570"
+  },
+  "package": "com.anydesk.anydeskandroid",
+  "review_scope": "existing APK host-only readback plus current official public web pages; no payload re-download, device, container, Bridge or SSH",
+  "schema": "anydesk-independent-raw-review-v1",
+  "scope_limit": [
+    "Mutable official direct URL has no publisher posted SHA; local receipt pins the acquired exact bytes and official page version at review time",
+    "targetSdk37 exceeds AOSP16 API36 but install failure is unobserved",
+    "No root count, install, runtime or cold start"
+  ],
+  "version_code": 90002,
+  "version_name": "9.0.2"
+}

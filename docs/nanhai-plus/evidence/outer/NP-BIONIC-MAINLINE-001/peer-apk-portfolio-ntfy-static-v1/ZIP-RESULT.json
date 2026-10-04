@@ -1,0 +1,19 @@
+{
+  "apk_sha_after": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "apk_sha_before": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "container_commands": 0,
+  "crc_bad": null,
+  "device_commands": 0,
+  "duplicate_names": 0,
+  "elapsed_seconds": 0.037884750054217875,
+  "entries": 1079,
+  "manifest_count": 1,
+  "network_commands": 0,
+  "phase": "zip",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "root_dex": 2,
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "so_count": 4,
+  "source_guard_equal": true
+}

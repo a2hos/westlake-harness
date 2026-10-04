@@ -1,0 +1,21 @@
+{
+  "schema": "g279-socks-connect-boundary-root-review-v1",
+  "at_utc": "2026-10-04T20:27:07.781572+00:00",
+  "decision": "ACCEPT_OFFLINE_PARSER_ONLY_NO_LIVE_ROUTE_RELEASE",
+  "candidate_sha256": "1bcea50a97c8df2cdc3500dc8c766a142f1ea200c52946e39e13714a587c7ea7",
+  "parser_sha256": "5114e6f5c3266663b8c030055f90070bbabb5aeef0bcff16b696659f033ca432",
+  "fixtures_sha256": "c468a4160221f3d10b226d02175ed410111f611623bc592aaf82dc96f28bedc4",
+  "handoff_sha256": "2c93c7c9db1f7beed16a4af4af74e89e2a10060f2b26638dfdf151427262f557",
+  "root_fixture_command": "python3 -B scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-socks-connect-boundary-candidate-v1/offline_fixtures.py",
+  "root_fixture_rc": 0,
+  "valid_cases": 12,
+  "invalid_cases": 8,
+  "reason": "The current Mihomo may return REP=0 before a rejected route closes. A REP-only live attempt has low information value and is not released.",
+  "remote_tcp_proven": false,
+  "gz02_identity_proven": false,
+  "soong_graph_proven": false,
+  "apk_start_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "next": "Find fresh native Linux host entry or develop a separately reviewed byte-level outbound discriminator that improves attribution beyond local ACK."
+}

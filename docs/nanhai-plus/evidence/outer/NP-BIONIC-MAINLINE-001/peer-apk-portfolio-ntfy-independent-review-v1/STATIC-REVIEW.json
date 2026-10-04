@@ -1,0 +1,58 @@
+{
+  "apk_bytes": 9327009,
+  "apk_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "at_utc": "2026-10-04T20:29:50.702928+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 1,
+    "dex_entries": 2,
+    "mainstream_overseas_blackbox_qualifications": 0,
+    "raw_artifact_identities": 0,
+    "true_arm64_elf_entries": 1
+  },
+  "decision": "GO_FOUR_PHASE_HOST_STATIC_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "dex": "ca99bbb3230e3b1df139781d520100c2223c744186023a5bc0d8064c2af54ba2",
+    "dex_inventory": "63942a43b3b70ec3f64aba1f65c6509910e644a3a8c388168adfcbd7c6d3d2ec",
+    "elf": "d55b17b4e98404175f7f0414c1679b86cd8aad7a7f39577836c8e12f9e4d0b52",
+    "elf_inventory": "0f2ed676cec8f06abdcc1bc54f9508dae34e457dd22e20daf9a297be8f178100",
+    "metadata": "dd211ec3d06ec00c58dd716c8d510b988cf28f3ec8678aad3b6fcad362cf8317",
+    "v1_static": "6137f9658ce1bce86df8d1031d7e8be2a76f8357e00d4e3d264ac73a1767ff31",
+    "zip": "a9d94da0bd1340d8eddf5becb4eb38e1c288e1c0018cc0b111b94eb988c28d20"
+  },
+  "independent_checks": {
+    "abi_matches_machine_receipt": 1,
+    "all_phase_apk_source_guard_equal": true,
+    "arm64_elf_entries": 1,
+    "arm64_elf_header_class64_le_aarch64": true,
+    "dex_entries": 2,
+    "dex_inventory_member_names_sha_bytes_match_apk": true,
+    "dex_magic_valid_both": true,
+    "elf_inventory_member_name_sha_bytes_match_apk": true,
+    "manifest_count": 1,
+    "phase_rc": {
+      "dex": 0,
+      "elf": 0,
+      "metadata": 0,
+      "zip": 0
+    },
+    "previous_root_static_admission_exact_package_or_sha_found": false,
+    "readelf_ok_receipt": 1,
+    "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+    "zip_crc_bad": null,
+    "zip_duplicate_names": 0,
+    "zip_entries": 1079
+  },
+  "limits": [
+    "Four host static phases only; no Bionic load/link, install, device or screen evidence",
+    "Other ABI .so entries exist and are not counted as ARM64",
+    "No current Bionic runtime index or whole-tool pass",
+    "Root admission/common ledger separate"
+  ],
+  "package": "io.heckel.ntfy",
+  "review_scope": "independent host-only readback of existing downloaded APK; no download retry, device, container, Bridge or remote host",
+  "schema": "ntfy-independent-static-review-v1",
+  "version_code": 63,
+  "version_name": "1.25.2"
+}

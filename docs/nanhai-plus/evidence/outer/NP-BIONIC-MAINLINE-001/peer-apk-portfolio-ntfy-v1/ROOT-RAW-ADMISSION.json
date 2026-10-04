@@ -1,0 +1,22 @@
+{
+  "apk_bytes": 9327009,
+  "apk_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "at_utc": "2026-10-04T20:30:22.911820+00:00",
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_RAW_ARTIFACT_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "package": "io.heckel.ntfy",
+  "peer_review_sha256": "e06a0b8c223e3e4993fad4481126a244c8fafe0f3be0a6e849314ebb14bd1263",
+  "raw_delta": 1,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "result_sha256": "1df09587bb9ba707a8ce2fc5e052b50757ea6fae2d894345b9e380105d47a2d4",
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "upstream_artifact_id": "a-4eb76c7fc0c46dc48107",
+  "verify_sha256": "ec15bfac0b0dbf9223ba0b1120ccd82b64a98fd5aa7a7c41f06da6abd5a0c8c1",
+  "version_code": 63,
+  "version_name": "1.25.2",
+  "whitebox_public_source": true
+}

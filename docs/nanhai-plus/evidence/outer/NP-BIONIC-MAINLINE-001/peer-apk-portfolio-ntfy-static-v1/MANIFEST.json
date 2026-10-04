@@ -1,0 +1,45 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 7,
+  "app_name": "ntfy",
+  "bytes": 9327009,
+  "features": [],
+  "filename": "ntfy-1.25.2.apk",
+  "main_activities": [
+    "io.heckel.ntfy.ui.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 4,
+  "package": "io.heckel.ntfy",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-ntfy-v1/ntfy-1.25.2.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "io.heckel.ntfy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 3,
+  "receivers": 11,
+  "services": 5,
+  "sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "signing_certificate_sha256": [
+    "76e94d8e04706c5b99064c23210d8ca9910608abae8f3e972b41e388391646e0"
+  ],
+  "target_sdk": "36",
+  "version_code": "63",
+  "version_name": "1.25.2"
+}

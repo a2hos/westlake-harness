@@ -1,0 +1,18 @@
+{
+  "apk_sha_after": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "apk_sha_before": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 0.1361460000043735,
+  "manifest_available": true,
+  "network_commands": 0,
+  "package": "io.heckel.ntfy",
+  "phase": "metadata",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "source_guard_equal": true,
+  "target_sdk": "36",
+  "version_code": "63",
+  "version_name": "1.25.2"
+}

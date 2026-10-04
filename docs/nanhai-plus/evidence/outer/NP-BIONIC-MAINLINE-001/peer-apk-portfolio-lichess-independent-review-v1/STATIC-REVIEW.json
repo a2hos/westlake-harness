@@ -1,0 +1,57 @@
+{
+  "apk_bytes": 69681104,
+  "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "at_utc": "2026-10-04T20:30:37.616593+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 1,
+    "dex_entries": 2,
+    "mainstream_overseas_blackbox_qualifications": 0,
+    "raw_artifact_identities": 0,
+    "true_arm64_elf_entries": 10
+  },
+  "decision": "GO_FOUR_PHASE_HOST_STATIC_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "dex": "d05f8f1d0eab67cbde51cd1d768fd3abb09cb74a39fae1cb608d05ab2309e62a",
+    "dex_inventory": "d3963965f4c8654863b960fb4324b3a09a9103f2ec2b4272bc2d15a6591d4251",
+    "elf": "698c47cbe9cc3d7a84332762934e8832d0c8ab857cd7b23ef9144630740c5ac6",
+    "elf_inventory": "91dc281fbdae48560fe24897948a0de932f5846fc586d8d76a8a3fd7ea3881a8",
+    "metadata": "75925dbdb4aa432917fe3f5a15cf94029661eec5d2450f8989e3ea6cb43bc646",
+    "v1_static": "ef2abced5543f6119f08508ef0c448e9cf37b019d265d4ab8996296158c04621",
+    "zip": "abf23c53b85bcb9ef28c4c0b76f943d261eb28bad9a036dc2259fb5e1763e0b1"
+  },
+  "independent_checks": {
+    "abi_matches_machine_receipt": 10,
+    "all_phase_apk_source_guard_equal": true,
+    "arm64_elf_entries": 10,
+    "arm64_elf_header_class64_le_aarch64_all_10": true,
+    "dex_entries": 2,
+    "dex_inventory_member_names_sha_bytes_match_apk": true,
+    "dex_magic_valid_both": true,
+    "elf_inventory_member_names_sha_bytes_match_apk": true,
+    "manifest_count": 1,
+    "phase_rc": {
+      "dex": 0,
+      "elf": 0,
+      "metadata": 0,
+      "zip": 0
+    },
+    "previous_root_static_admission_exact_package_or_sha_found": false,
+    "readelf_ok_receipt": 10,
+    "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+    "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+    "zip_crc_bad": null,
+    "zip_duplicate_names": 0,
+    "zip_entries": 2911
+  },
+  "limits": [
+    "Four host static phases only; no Bionic load/link, install, device or screen evidence",
+    "No current Bionic runtime index or whole-tool pass",
+    "Root admission/common ledger separate"
+  ],
+  "package": "org.lichess.mobileV2",
+  "review_scope": "independent host-only readback of existing APK; no download retry, device, container, Bridge or remote host",
+  "schema": "lichess-independent-static-review-v1",
+  "version_code": 280403,
+  "version_name": "0.28.4"
+}

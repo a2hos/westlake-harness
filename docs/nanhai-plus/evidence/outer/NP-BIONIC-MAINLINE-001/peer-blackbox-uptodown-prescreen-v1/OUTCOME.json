@@ -1,0 +1,21 @@
+{
+  "apk_downloaded": false,
+  "at_utc": "2026-10-04T20:37:52.146671+00:00",
+  "container_commands": 0,
+  "counts_changed": false,
+  "decision": "NO_GO_ACQUISITION_THIS_ROUND",
+  "dedupe": "No root raw admission or upstream artifact match found by package",
+  "device_commands": 0,
+  "evidence_sha256": {
+    "official_download_js": "91d2a04b1893123cf4b732ce9e56e7658993e0bdf1b0a95b4eeeef4b0a011f42",
+    "official_download_page": "9010ac49bb472fbba9ec1c61de2e6e9bd7dfb5bc7f889e34dd9aaf4676ac0ecc"
+  },
+  "local_preflight": "Official download page required mobile user agent to return HTTP200; download button uses appID 18098 and fileID 1206377920 with Turnstile token endpoint, direct no-token request HTTP404",
+  "official_listing_observed": "v7.39, 14.83MB, proprietary license, self-reported 1.239B cumulative downloads, published SHA256 9277f5ec9ba2b5341e7734ef30202a8b6fc6f7415babafe043b3960293622c33",
+  "official_page": "https://uptodown-android.en.uptodown.com/android",
+  "package": "com.uptodown",
+  "product": "Uptodown App Store",
+  "reason": "No reliable direct artifact URL without dynamic challenge token; do not bypass challenge or count blackbox candidate from page alone",
+  "schema": "peer-blackbox-uptodown-prescreen-outcome-v1",
+  "startup_proven": false
+}

@@ -1,0 +1,16 @@
+{
+  "apk_sha_after": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "apk_sha_before": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "container_commands": 0,
+  "device_commands": 0,
+  "dex_entries": 2,
+  "elapsed_seconds": 3.6858734170673415,
+  "error": "AttributeError(\"'dict' object has no attribute 'name'\")",
+  "network_commands": 0,
+  "phase": "dex",
+  "rc": 2,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "source_guard_equal": true,
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-pipepipe-v1/scan.py\", line 78, in main\n    row[\"dex_names\"] = [e.name for e in value.dex_entries]\n                        ^^^^^^\nAttributeError: 'dict' object has no attribute 'name'\n"
+}

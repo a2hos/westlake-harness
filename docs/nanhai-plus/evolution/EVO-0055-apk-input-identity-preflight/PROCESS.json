@@ -1,0 +1,22 @@
+{
+  "actual_reviewed_result_groups": 3,
+  "adjacent_evidence": "G339 v1 directory discovery included wrong.package and missed Seal/Briar; v2 remains independent work",
+  "closed_at_utc": "2026-10-04T20:32:03Z",
+  "common_ledger_edits": 0,
+  "container_calls": 0,
+  "device_calls": 0,
+  "direction_differs_from_evo54": "APK scan input identity and DEX schema preflight rather than proxy outbound localization",
+  "g339_v2_edits": 0,
+  "groups": [
+    "PipePipe raw/static root-limited acceptance; first static v1 DEX rc2 then v2 rc0",
+    "ntfy raw/static root-limited acceptance",
+    "Lichess raw/static root-limited acceptance"
+  ],
+  "id": "EVO-0055",
+  "limit_seconds": 120,
+  "network_calls": 0,
+  "opened_at_utc": "2026-10-04T20:31:11Z",
+  "pilot_rc": 0,
+  "schema": "nanhai-evolution-process-v1",
+  "selected_improvement_count": 1
+}

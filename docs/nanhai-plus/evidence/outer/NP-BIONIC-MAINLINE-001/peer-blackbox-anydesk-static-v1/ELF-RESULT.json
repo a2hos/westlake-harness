@@ -1,0 +1,16 @@
+{
+  "abi_matches_machine": 1,
+  "apk_sha_after": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "apk_sha_before": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "arm64_elf_entries": 1,
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 3.7470173749607056,
+  "network_commands": 0,
+  "phase": "elf",
+  "rc": 0,
+  "readelf_ok": 1,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "source_guard_equal": true
+}

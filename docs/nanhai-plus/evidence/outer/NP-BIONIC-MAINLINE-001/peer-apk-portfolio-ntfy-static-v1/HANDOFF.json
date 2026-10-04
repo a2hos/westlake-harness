@@ -1,0 +1,40 @@
+{
+  "apk_bytes": 9327009,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-ntfy-v1/ntfy-1.25.2.apk",
+  "apk_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "at_utc": "2026-10-04T20:28:32.750015+00:00",
+  "authoritative_counts_changed": false,
+  "candidate_decision": "GO_TO_INDEPENDENT_REVIEW_FOR_EXACT_UPSTREAM_RAW_AND_FOUR_HOST_STATIC_ONLY",
+  "container_commands": 0,
+  "device_commands": 0,
+  "evidence_sha256": {
+    "VERIFY": "ec15bfac0b0dbf9223ba0b1120ccd82b64a98fd5aa7a7c41f06da6abd5a0c8c1",
+    "raw_RESULT": "1df09587bb9ba707a8ce2fc5e052b50757ea6fae2d894345b9e380105d47a2d4",
+    "static_success": "6137f9658ce1bce86df8d1031d7e8be2a76f8357e00d4e3d264ac73a1767ff31"
+  },
+  "host_checks": {
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "arm64_elf_entries": 1,
+    "dex_entries": 2,
+    "download_rc": 0,
+    "four_static_rc0": true,
+    "zip_entries": 1079
+  },
+  "known_limitations": [
+    "Raw and static candidate only; no root acceptance, install, runtime, screen, input, or recovery",
+    "No current Bionic runtime index exists to classify actual bridge gap"
+  ],
+  "official_listing_url": "https://f-droid.org/packages/io.heckel.ntfy/",
+  "package": "io.heckel.ntfy",
+  "schema": "peer-apk-portfolio-ntfy-handoff-v1",
+  "signature_cert_sha256": [
+    "76e94d8e04706c5b99064c23210d8ca9910608abae8f3e972b41e388391646e0"
+  ],
+  "source_property": "F-Droid listing links public Android source; whitebox test input, not qualified overseas mainstream blackbox",
+  "source_url": "https://f-droid.org/repo/io.heckel.ntfy_63.apk",
+  "target_sdk": "36",
+  "upstream_artifact_id": "a-4eb76c7fc0c46dc48107",
+  "version": "1.25.2",
+  "version_code": "63"
+}

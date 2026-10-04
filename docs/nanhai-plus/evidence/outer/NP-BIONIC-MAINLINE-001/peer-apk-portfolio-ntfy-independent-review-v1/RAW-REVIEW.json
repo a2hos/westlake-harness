@@ -1,0 +1,47 @@
+{
+  "apk_bytes": 9327009,
+  "apk_sha256": "b4baa6f668bd57ad5df3b4e0e769165dcf25c5ee19fdb04f78077ee819616f2a",
+  "at_utc": "2026-10-04T20:29:50.702928+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 0,
+    "mainstream_overseas_blackbox_qualifications": 0,
+    "raw_artifact_identities": 1
+  },
+  "decision": "GO_EXACT_RAW_ARTIFACT_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "raw_result": "1df09587bb9ba707a8ce2fc5e052b50757ea6fae2d894345b9e380105d47a2d4",
+    "raw_verify": "ec15bfac0b0dbf9223ba0b1120ccd82b64a98fd5aa7a7c41f06da6abd5a0c8c1",
+    "upstream_apps_json": "382221c13ead289f1712550e78b179defb33195b7106b7c20fd09ebf3fc7d6bf",
+    "upstream_registry": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb"
+  },
+  "independent_checks": {
+    "aapt2_package_version_target": "io.heckel.ntfy / 63 / 1.25.2 / targetSdk36",
+    "aapt2_rc": 0,
+    "aapt2_stdout_sha256": "5ac31f5bda43a1a787343305e23f4bce25544dd28d766c0345f0ffb329d10632",
+    "apksigner_rc": 0,
+    "apksigner_stdout_sha256": "7af8c86d59ba03ed5b0548ce9514dc8a46a06dcf7e6a44fcaf56d9fed5e8c226",
+    "f_droid_get_receipt": "curl rc0, HTTP/2 200, application/vnd.android.package-archive; existing payload independently rehashed; no fresh GET by reviewer",
+    "previous_root_raw_admission_exact_package_or_sha_found": false,
+    "root_dex_count": 2,
+    "signer_cert_sha256": "76e94d8e04706c5b99064c23210d8ca9910608abae8f3e972b41e388391646e0",
+    "source_package_version_code_bytes_sha_url_match": true,
+    "true_arm64_elf_count": 1,
+    "upstream_apps_json_git_blob": "f3a8f62c1ecc9809767e52dcc41eb72eddcc4571",
+    "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "zip_crc_bad": null,
+    "zip_duplicate_names": 0,
+    "zip_entries": 1079
+  },
+  "limits": [
+    "Exact upstream registered F-Droid artifact identity within project snapshot; not a fresh website provenance or publisher trust audit",
+    "APK signature verification does not establish install or runtime",
+    "Whitebox test input, not qualified overseas mainstream blackbox",
+    "No root count change, install, screen, startup or whole-tool pass"
+  ],
+  "package": "io.heckel.ntfy",
+  "review_scope": "independent host-only readback of existing downloaded APK; no download retry, device, container, Bridge or remote host",
+  "schema": "ntfy-independent-raw-review-v1",
+  "version_code": 63,
+  "version_name": "1.25.2"
+}

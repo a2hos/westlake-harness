@@ -1,0 +1,22 @@
+{
+  "actual_reviewed_result_groups": 4,
+  "closed_at_utc": "2026-10-04T20:41:57Z",
+  "common_ledger_edits": 0,
+  "container_calls": 0,
+  "device_calls": 0,
+  "direction_differs_from_evo55": "Provider/consumer experiment selection from frozen static exposure, not input identity or scanner schema",
+  "groups": [
+    "AnyDesk raw/static/blackbox root-limited admission; targetSdk37 risk only",
+    "G339 v2 frozen 105 root-accepted static identities, 34 arm64 libjnigraphics declarations",
+    "G340 exact R4 libjnigraphics source definition accepted; target ELF/product install manifest/loader unproven",
+    "r155 libz Mac four-gate: exact source but native target toolchain/sysroot and consumer NO_GO"
+  ],
+  "id": "EVO-0056",
+  "limit_seconds": 120,
+  "network_calls": 0,
+  "opened_at_utc": "2026-10-04T20:41:00Z",
+  "pilot_rc": 0,
+  "production_runner_edits": 0,
+  "schema": "nanhai-evolution-process-v1",
+  "selected_improvement_count": 1
+}

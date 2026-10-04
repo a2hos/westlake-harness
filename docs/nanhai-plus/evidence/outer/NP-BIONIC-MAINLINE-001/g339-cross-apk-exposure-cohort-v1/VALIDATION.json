@@ -1,0 +1,37 @@
+{
+  "code_sha256": "d2fa65a6d04119359e10e9fd877c853b4e4087d99c7b68e2a9fd1dd1defb389a",
+  "coverage_note_sha256": "d0559c1fe6bc85e2a0648a8e8230f4b38c285df81d93f534cbf78e6cae7d32e4",
+  "execute": {
+    "argv": [
+      "python3",
+      "-B",
+      "scripts/nanhai_plus_env.py",
+      "--run",
+      "python3",
+      "-B",
+      "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g339-cross-apk-exposure-cohort-v1/cohort.py",
+      "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001",
+      "--top",
+      "12"
+    ],
+    "rc": 0,
+    "stdout_file": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g339-cross-apk-exposure-cohort-v1/RESULT.json",
+    "stdout_sha256": "1a663a038858bef78203ea660c27491b9d99a08b297a0d1db4ed6e88cf956acd"
+  },
+  "live_replay": {
+    "new_unadmitted_candidate_observed": "InfinityLoop1309.NewPipeEnhanced",
+    "rc": 0,
+    "reason_for_difference": "live evidence directory changed between runs; snapshots are not interchangeable",
+    "stdout_file": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g339-cross-apk-exposure-cohort-v1/REPLAY.json",
+    "stdout_sha256": "0b156f5126f49e516c47b196e918242171028c449ce2a21f08348c1d71e39a8a"
+  },
+  "locked_snapshot_recount": {
+    "cohort_recount_equal": true,
+    "input_files_sha256_rechecked": 312,
+    "input_packages": 104,
+    "libjnigraphics_arm64_needed_packages": 32,
+    "rc": 0
+  },
+  "schema": "g339-static-exposure-pilot-validation-v1",
+  "scope": "host-only candidate exposure; no root-admission revalidation, provider subtraction, reachability, device or startup"
+}

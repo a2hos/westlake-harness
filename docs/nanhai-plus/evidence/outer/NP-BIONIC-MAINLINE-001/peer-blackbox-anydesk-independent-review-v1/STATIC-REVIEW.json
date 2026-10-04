@@ -1,0 +1,53 @@
+{
+  "apk_bytes": 47905570,
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "at_utc": "2026-10-04T20:38:57.720666+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 1,
+    "dex_entries": 2,
+    "raw_artifact_identities": 0,
+    "true_arm64_elf_entries": 1
+  },
+  "decision": "GO_FOUR_PHASE_HOST_STATIC_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "dex": "a3dc29c968f9501e90de9bf0cbf248be042a85276950ebc74159815c5a3b843a",
+    "dex_inventory": "c1fb8ab3b00799b3f20cd90c909d92c37cadc9a403303b13b8a9d8c9110af589",
+    "elf": "f2b86da52881a36aa46d251f3df23bb77538fb6e93ec7bd2ac2aa1352fe976a0",
+    "elf_inventory": "94e12724c26841420ad76a54b5b5de7655a35c37c0e3a095507d8d3376002172",
+    "metadata": "187bcecd3d132f47ed7b02c3a2d20dcf64c11c0e88e9f0809744fd4b2f0a4e62",
+    "static": "311303e9437207af45a834be765329d70efafe9dbca347778d27d2026626b769",
+    "zip": "fb86098bdec563170eeff562d21215e3ca37637d82138a42191fc2b0640daf16"
+  },
+  "independent_checks": {
+    "abi_matches_machine_receipt": 1,
+    "arm64_elf_entries": 1,
+    "arm64_elf_machine": 183,
+    "dex_inventory_member_names_sha_bytes_match_apk": true,
+    "dex_magic_valid": 2,
+    "elf_inventory_member_name_sha_bytes_match_apk": true,
+    "other_abi_so_entries": 3,
+    "phase_rc": {
+      "dex": 0,
+      "elf": 0,
+      "metadata": 0,
+      "zip": 0
+    },
+    "previous_root_static_admission_same_package_or_sha_hits": 0,
+    "readelf_ok_receipt": 1,
+    "root_dex_entries": 2,
+    "source_guard_all_phases": true,
+    "target_sdk": 37,
+    "zip_entries": 1154
+  },
+  "package": "com.anydesk.anydeskandroid",
+  "review_scope": "existing APK host-only readback plus current official public web pages; no payload re-download, device, container, Bridge or SSH",
+  "schema": "anydesk-independent-static-review-v1",
+  "scope_limit": [
+    "Static inventory does not prove Bionic dynamic loading, install, rendering, input or startup",
+    "targetSdk37 is a compatibility risk only",
+    "No blackbox qualification inferred solely from static analysis"
+  ],
+  "version_code": 90002,
+  "version_name": "9.0.2"
+}

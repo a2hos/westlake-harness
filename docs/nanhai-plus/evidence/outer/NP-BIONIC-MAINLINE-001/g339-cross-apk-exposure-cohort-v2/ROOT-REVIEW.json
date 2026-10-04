@@ -1,0 +1,27 @@
+{
+  "analyze_lock_sha256": "7ee086c8534dc13268ff75a3f3b0927f355ff2573ac586cb506e6b51a56595c8",
+  "apk_cold_start_delta": 0,
+  "at_utc": "2026-10-04T20:36:47.301714+00:00",
+  "bionic_tool_pass_delta": 0,
+  "build_lock_sha256": "182995c23514a2bc2bcc17a7d52f38049bb52079870c8e5e87041d90fd9d9b56",
+  "claim_scope": "declaration exposure only, not missing provider, loader selection, first-screen reachability or start pass",
+  "container_commands": 0,
+  "decision": "ACCEPT_FROZEN_105_HOST_STATIC_EXPOSURE_PILOT_ONLY",
+  "device_commands": 0,
+  "libjnigraphics_arm64_declared_needed_packages": 34,
+  "lock_sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+  "next": "Run an exact AOSP16 R4 ARM64 Bionic provider/loader-order probe after native Linux host recovery, then cold-start backtest when device HOLD permits.",
+  "out_of_snapshot_new_root_admissions": [
+    "InfinityLoop1309.NewPipeEnhanced",
+    "io.heckel.ntfy",
+    "org.lichess.mobileV2"
+  ],
+  "result_sha256": "6451a8115ae1b190fe344346c46410fa417d19855cfeabd9444fa99b024ae3fb",
+  "root_accepted_prebatch_identities": 105,
+  "root_replay_analyze_lock_rc": 0,
+  "root_replay_build_lock_rc": 0,
+  "root_replay_lock_byte_equal": true,
+  "root_replay_result_byte_equal": true,
+  "schema": "g339-v2-root-static-cohort-review-v1",
+  "validation_sha256": "d503e0dbf5f442e455a60102d73acf1f2c0e99039953b2d32c160a7bb6c49b2f"
+}

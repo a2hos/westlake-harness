@@ -1,0 +1,45 @@
+{
+  "abi_names": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "apk_bytes": 47905570,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-blackbox-anydesk-v1/AnyDesk.apk",
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "at_utc": "2026-10-04T20:37:29.482079+00:00",
+  "authoritative_counts_changed": false,
+  "candidate_decision": "GO_TO_INDEPENDENT_REVIEW_FOR_OFFICIAL_RAW_FOUR_HOST_STATIC_AND_BLACKBOX_QUALIFICATION",
+  "container_commands": 0,
+  "device_commands": 0,
+  "evidence_sha256": {
+    "PRESCREEN": "fc1dee395727c7ef30e31baf20a1322df4db70fabb346c996eeb0b44576c4b4e",
+    "QUALIFICATION_CANDIDATE": "3a77ecbdc8c6d548d314904ae6632259902eb2a7606b0d79d4b74c4a75ed8186",
+    "RAW": "15a92235374eeee54852073091f92eb8ca36038973d9c9facce779822baed734",
+    "STATIC": "311303e9437207af45a834be765329d70efafe9dbca347778d27d2026626b769",
+    "verify_v1_parser_failure": "c0bb798a5fbf82f2f2afc6410bd254c8b6ff42aad0958f5b2818eb7cd187a9c5",
+    "verify_v2_success": "d89dc560dd017ce5f36e719aa1bf0dd1cfccc982fd5e9e8a8af579a74356e8d8"
+  },
+  "host_checks": {
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "dex_entries": 2,
+    "download_rc": 0,
+    "four_static_rc0": true,
+    "true_arm64_elf": 1,
+    "zip_entries": 1154
+  },
+  "limitations": [
+    "No root admission or independent qualification yet",
+    "First verification parser rc2 despite apksigner rc0; immutable failure retained, v2 parses API-ranged certs and passes",
+    "targetSdk37 > AOSP16 API36; install/startup compatibility unobserved",
+    "No device runtime, screen, input, or recovery evidence"
+  ],
+  "min_sdk": "21",
+  "package": "com.anydesk.anydeskandroid",
+  "schema": "peer-blackbox-anydesk-handoff-v1",
+  "target_sdk": "37",
+  "version_code": "90002",
+  "version_name": "9.0.2"
+}

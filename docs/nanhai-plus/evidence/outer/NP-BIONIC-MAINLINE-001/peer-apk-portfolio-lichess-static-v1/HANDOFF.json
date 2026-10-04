@@ -1,0 +1,41 @@
+{
+  "apk_bytes": 69681104,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-lichess-v1/Lichess-0.28.4.apk",
+  "apk_sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "at_utc": "2026-10-04T20:29:40.346492+00:00",
+  "authoritative_counts_changed": false,
+  "candidate_decision": "GO_TO_INDEPENDENT_REVIEW_FOR_EXACT_UPSTREAM_RAW_AND_FOUR_HOST_STATIC_ONLY",
+  "container_commands": 0,
+  "device_commands": 0,
+  "evidence_sha256": {
+    "VERIFY": "b39562d7ecd93a6361ca431ed54b5422fb586ab099c33804864adcdf1d1bc37f",
+    "raw_RESULT": "811f7f30222c99c0b2ad7c624937dec766c6df54b49b5b1ac97bed8111f07767",
+    "static_success": "ef2abced5543f6119f08508ef0c448e9cf37b019d265d4ab8996296158c04621"
+  },
+  "host_checks": {
+    "aapt2_rc": 0,
+    "apksigner_rc": 0,
+    "arm64_elf_entries": 10,
+    "dex_entries": 2,
+    "download_rc": 0,
+    "four_static_rc0": true,
+    "zip_entries": 2911
+  },
+  "known_limitations": [
+    "Raw and static candidate only; no root acceptance, install, runtime, screen, input, or recovery",
+    "No current Bionic runtime index exists to classify actual bridge gap"
+  ],
+  "min_sdk": "26",
+  "official_listing_url": "https://f-droid.org/packages/org.lichess.mobileV2/",
+  "package": "org.lichess.mobileV2",
+  "schema": "peer-apk-portfolio-lichess-handoff-v1",
+  "signature_cert_sha256": [
+    "496ed2c1542892a094a2a6e26d59cd07fb7e8c711355876dad3859ea82f8af62"
+  ],
+  "source_property": "F-Droid listing links public Android source; whitebox test input, not qualified overseas mainstream blackbox",
+  "source_url": "https://f-droid.org/repo/org.lichess.mobileV2_280403.apk",
+  "target_sdk": "36",
+  "upstream_artifact_id": "a-dec4a25d4e668b7bba43",
+  "version": "0.28.4",
+  "version_code": "280403"
+}

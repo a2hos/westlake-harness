@@ -1,0 +1,38 @@
+{
+  "abis": [
+    "arm64-v8a"
+  ],
+  "activities": 7,
+  "app_name": "Lichess",
+  "bytes": 69681104,
+  "features": [],
+  "filename": "Lichess-0.28.4.apk",
+  "main_activities": [
+    "org.lichess.mobileV2.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 10,
+  "package": "org.lichess.mobileV2",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-lichess-v1/Lichess-0.28.4.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "org.lichess.mobileV2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 3,
+  "receivers": 11,
+  "services": 8,
+  "sha256": "076c0310a0cb559b5d9bfe48d098d9dbba4b042060cf493805f4b00a6c82ffdd",
+  "signing_certificate_sha256": [
+    "496ed2c1542892a094a2a6e26d59cd07fb7e8c711355876dad3859ea82f8af62"
+  ],
+  "target_sdk": "36",
+  "version_code": "280403",
+  "version_name": "0.28.4"
+}

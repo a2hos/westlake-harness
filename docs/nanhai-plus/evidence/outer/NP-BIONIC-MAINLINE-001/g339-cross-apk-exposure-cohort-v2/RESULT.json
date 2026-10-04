@@ -1,0 +1,1742 @@
+{
+  "accepted_packages_checked": 105,
+  "checkpoint_sha256": "1ddae14db50ed5338f202e53b8eb634d130a9a7669eb91d5a8d7bf374b1edf0f",
+  "cohorts": [
+    {
+      "needed_soname": "libc.so",
+      "package_count": 86,
+      "packages": [
+        "app.organicmaps",
+        "at.bitfire.davdroid",
+        "at.bitfire.icsdroid",
+        "ch.protonvpn.android",
+        "com.adguard.android",
+        "com.adguard.vpn",
+        "com.aka.alarm",
+        "com.amaze.filemanager",
+        "com.aurora.store",
+        "com.bnyro.translate",
+        "com.brave.browser",
+        "com.brouken.player",
+        "com.celzero.bravedns",
+        "com.duckduckgo.mobile.android",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.gaditek.purevpnics",
+        "com.gh4a",
+        "com.github.andreyasadchy.xtra",
+        "com.goldenfrog.vyprvpn.app",
+        "com.junkfood.seal",
+        "com.keylesspalace.tusky",
+        "com.kms.free",
+        "com.kunzisoft.keepass.libre",
+        "com.kylecorry.trail_sense",
+        "com.looker.droidify",
+        "com.nononsenseapps.feeder",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.opera.gx",
+        "com.shatteredpixel.shatteredpixeldungeon",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.unciv.app",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "de.ph1b.audiobook",
+        "de.tadris.fitness",
+        "dev.imranr.obtainium.fdroid",
+        "dev.lucanlm.antimine",
+        "eu.faircode.email",
+        "eu.siacs.conversations",
+        "hideme.android.vpn.noPlayStore",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.github.muntashirakon.AppManager",
+        "io.privado.android",
+        "me.hackerchick.catima",
+        "me.zhanghai.android.files",
+        "net.thunderbird.android",
+        "nodomain.freeyourgadget.gadgetbridge",
+        "org.adaway",
+        "org.breezyweather",
+        "org.briarproject.briar.android",
+        "org.connectbot",
+        "org.fdroid.fdroid",
+        "org.fossify.calendar",
+        "org.fossify.camera",
+        "org.fossify.contacts",
+        "org.fossify.filemanager",
+        "org.fossify.gallery",
+        "org.fossify.messages",
+        "org.fossify.musicplayer",
+        "org.fossify.notes",
+        "org.fossify.phone",
+        "org.fossify.voicerecorder",
+        "org.jellyfin.mobile",
+        "org.kde.kdeconnect_tp",
+        "org.liberty.android.freeotpplus",
+        "org.linphone",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.proninyaroslav.libretorrent",
+        "org.quantumbadger.redreader",
+        "org.tasks",
+        "org.thoughtcrime.securesms",
+        "org.torproject.torbrowser",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libdl.so",
+      "package_count": 86,
+      "packages": [
+        "app.organicmaps",
+        "at.bitfire.davdroid",
+        "at.bitfire.icsdroid",
+        "ch.protonvpn.android",
+        "com.adguard.android",
+        "com.adguard.vpn",
+        "com.aka.alarm",
+        "com.amaze.filemanager",
+        "com.aurora.store",
+        "com.bnyro.translate",
+        "com.brave.browser",
+        "com.brouken.player",
+        "com.celzero.bravedns",
+        "com.duckduckgo.mobile.android",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.gaditek.purevpnics",
+        "com.gh4a",
+        "com.github.andreyasadchy.xtra",
+        "com.goldenfrog.vyprvpn.app",
+        "com.junkfood.seal",
+        "com.keylesspalace.tusky",
+        "com.kms.free",
+        "com.kunzisoft.keepass.libre",
+        "com.kylecorry.trail_sense",
+        "com.looker.droidify",
+        "com.nononsenseapps.feeder",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.opera.gx",
+        "com.shatteredpixel.shatteredpixeldungeon",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.unciv.app",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "de.ph1b.audiobook",
+        "de.tadris.fitness",
+        "dev.imranr.obtainium.fdroid",
+        "dev.lucanlm.antimine",
+        "eu.faircode.email",
+        "eu.siacs.conversations",
+        "hideme.android.vpn.noPlayStore",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.github.muntashirakon.AppManager",
+        "io.privado.android",
+        "me.hackerchick.catima",
+        "me.zhanghai.android.files",
+        "net.thunderbird.android",
+        "nodomain.freeyourgadget.gadgetbridge",
+        "org.adaway",
+        "org.breezyweather",
+        "org.briarproject.briar.android",
+        "org.connectbot",
+        "org.fdroid.fdroid",
+        "org.fossify.calendar",
+        "org.fossify.camera",
+        "org.fossify.contacts",
+        "org.fossify.filemanager",
+        "org.fossify.gallery",
+        "org.fossify.messages",
+        "org.fossify.musicplayer",
+        "org.fossify.notes",
+        "org.fossify.phone",
+        "org.fossify.voicerecorder",
+        "org.jellyfin.mobile",
+        "org.kde.kdeconnect_tp",
+        "org.liberty.android.freeotpplus",
+        "org.linphone",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.proninyaroslav.libretorrent",
+        "org.quantumbadger.redreader",
+        "org.tasks",
+        "org.thoughtcrime.securesms",
+        "org.torproject.torbrowser",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libm.so",
+      "package_count": 84,
+      "packages": [
+        "app.organicmaps",
+        "at.bitfire.davdroid",
+        "at.bitfire.icsdroid",
+        "ch.protonvpn.android",
+        "com.adguard.android",
+        "com.adguard.vpn",
+        "com.aka.alarm",
+        "com.aurora.store",
+        "com.bnyro.translate",
+        "com.brave.browser",
+        "com.brouken.player",
+        "com.duckduckgo.mobile.android",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.gaditek.purevpnics",
+        "com.gh4a",
+        "com.github.andreyasadchy.xtra",
+        "com.goldenfrog.vyprvpn.app",
+        "com.junkfood.seal",
+        "com.keylesspalace.tusky",
+        "com.kms.free",
+        "com.kunzisoft.keepass.libre",
+        "com.kylecorry.trail_sense",
+        "com.looker.droidify",
+        "com.nononsenseapps.feeder",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.opera.gx",
+        "com.shatteredpixel.shatteredpixeldungeon",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.unciv.app",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "de.ph1b.audiobook",
+        "de.tadris.fitness",
+        "dev.imranr.obtainium.fdroid",
+        "dev.lucanlm.antimine",
+        "eu.faircode.email",
+        "eu.siacs.conversations",
+        "hideme.android.vpn.noPlayStore",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.github.muntashirakon.AppManager",
+        "io.privado.android",
+        "me.hackerchick.catima",
+        "me.zhanghai.android.files",
+        "net.thunderbird.android",
+        "nodomain.freeyourgadget.gadgetbridge",
+        "org.adaway",
+        "org.breezyweather",
+        "org.briarproject.briar.android",
+        "org.connectbot",
+        "org.fdroid.fdroid",
+        "org.fossify.calendar",
+        "org.fossify.camera",
+        "org.fossify.contacts",
+        "org.fossify.filemanager",
+        "org.fossify.gallery",
+        "org.fossify.messages",
+        "org.fossify.musicplayer",
+        "org.fossify.notes",
+        "org.fossify.phone",
+        "org.fossify.voicerecorder",
+        "org.jellyfin.mobile",
+        "org.kde.kdeconnect_tp",
+        "org.liberty.android.freeotpplus",
+        "org.linphone",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.proninyaroslav.libretorrent",
+        "org.quantumbadger.redreader",
+        "org.tasks",
+        "org.thoughtcrime.securesms",
+        "org.torproject.torbrowser",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "liblog.so",
+      "package_count": 71,
+      "packages": [
+        "app.organicmaps",
+        "at.bitfire.davdroid",
+        "at.bitfire.icsdroid",
+        "ch.protonvpn.android",
+        "com.adguard.android",
+        "com.adguard.vpn",
+        "com.amaze.filemanager",
+        "com.bnyro.translate",
+        "com.brave.browser",
+        "com.brouken.player",
+        "com.celzero.bravedns",
+        "com.duckduckgo.mobile.android",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.gaditek.purevpnics",
+        "com.gh4a",
+        "com.github.andreyasadchy.xtra",
+        "com.goldenfrog.vyprvpn.app",
+        "com.junkfood.seal",
+        "com.keylesspalace.tusky",
+        "com.kms.free",
+        "com.kunzisoft.keepass.libre",
+        "com.kylecorry.trail_sense",
+        "com.looker.droidify",
+        "com.nononsenseapps.feeder",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.opera.gx",
+        "com.shatteredpixel.shatteredpixeldungeon",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.unciv.app",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "de.ph1b.audiobook",
+        "dev.imranr.obtainium.fdroid",
+        "dev.lucanlm.antimine",
+        "eu.faircode.email",
+        "eu.siacs.conversations",
+        "hideme.android.vpn.noPlayStore",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.github.muntashirakon.AppManager",
+        "io.privado.android",
+        "me.zhanghai.android.files",
+        "net.thunderbird.android",
+        "nodomain.freeyourgadget.gadgetbridge",
+        "org.adaway",
+        "org.breezyweather",
+        "org.briarproject.briar.android",
+        "org.connectbot",
+        "org.fossify.camera",
+        "org.fossify.gallery",
+        "org.fossify.voicerecorder",
+        "org.jellyfin.mobile",
+        "org.liberty.android.freeotpplus",
+        "org.linphone",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.tasks",
+        "org.thoughtcrime.securesms",
+        "org.torproject.torbrowser",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libandroid.so",
+      "package_count": 48,
+      "packages": [
+        "app.organicmaps",
+        "at.bitfire.icsdroid",
+        "ch.protonvpn.android",
+        "com.adguard.android",
+        "com.adguard.vpn",
+        "com.brave.browser",
+        "com.brouken.player",
+        "com.celzero.bravedns",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.gaditek.purevpnics",
+        "com.gh4a",
+        "com.kylecorry.trail_sense",
+        "com.looker.droidify",
+        "com.nononsenseapps.feeder",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.opera.gx",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "de.ph1b.audiobook",
+        "dev.imranr.obtainium.fdroid",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.privado.android",
+        "net.thunderbird.android",
+        "nodomain.freeyourgadget.gadgetbridge",
+        "org.connectbot",
+        "org.fossify.camera",
+        "org.fossify.gallery",
+        "org.jellyfin.mobile",
+        "org.liberty.android.freeotpplus",
+        "org.linphone",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.tasks",
+        "org.thoughtcrime.securesms",
+        "org.torproject.torbrowser",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libjnigraphics.so",
+      "package_count": 34,
+      "packages": [
+        "com.bnyro.translate",
+        "com.brave.browser",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.gh4a",
+        "com.github.andreyasadchy.xtra",
+        "com.keylesspalace.tusky",
+        "com.kylecorry.trail_sense",
+        "com.looker.droidify",
+        "com.opera.browser",
+        "com.opera.gx",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "dev.imranr.obtainium.fdroid",
+        "im.vector.app",
+        "io.element.android.x",
+        "net.thunderbird.android",
+        "nodomain.freeyourgadget.gadgetbridge",
+        "org.fossify.camera",
+        "org.fossify.gallery",
+        "org.liberty.android.freeotpplus",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.thoughtcrime.securesms",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libz.so",
+      "package_count": 22,
+      "packages": [
+        "com.bnyro.translate",
+        "com.duckduckgo.mobile.android",
+        "com.eset.ems2.web",
+        "com.eset.endpoint",
+        "com.expressvpn.vpn",
+        "com.junkfood.seal",
+        "com.kms.free",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.valvesoftware.steamlink",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.privado.android",
+        "org.fossify.gallery",
+        "org.linphone",
+        "org.thoughtcrime.securesms",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libEGL.so",
+      "package_count": 18,
+      "packages": [
+        "app.organicmaps",
+        "com.brave.browser",
+        "com.expressvpn.vpn",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "dev.imranr.obtainium.fdroid",
+        "eu.siacs.conversations",
+        "im.vector.app",
+        "io.element.android.x",
+        "org.linphone",
+        "org.localsend.localsend_app",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libGLESv2.so",
+      "package_count": 15,
+      "packages": [
+        "app.organicmaps",
+        "com.gh4a",
+        "com.surfshark.vpnclient.android",
+        "com.tiktok.lite.go",
+        "com.valvesoftware.steamlink",
+        "com.x8bit.bitwarden",
+        "com.zhiliaoapp.musically",
+        "dev.imranr.obtainium.fdroid",
+        "org.fossify.gallery",
+        "org.localsend.localsend_app",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libc++_shared.so",
+      "package_count": 11,
+      "packages": [
+        "com.junkfood.seal",
+        "com.tiktok.lite.go",
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "com.valvesoftware.steamlink",
+        "com.zhiliaoapp.musically",
+        "im.vector.app",
+        "org.linphone",
+        "org.videolan.vlc",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libsentry.so",
+      "package_count": 11,
+      "packages": [
+        "ch.protonvpn.android",
+        "com.adguard.android",
+        "com.adguard.vpn",
+        "com.gaditek.purevpnics",
+        "com.goldenfrog.vyprvpn.app",
+        "hideme.android.vpn.noPlayStore",
+        "im.vector.app",
+        "io.element.android.x",
+        "io.privado.android",
+        "org.adaway",
+        "org.torproject.torbrowser"
+      ]
+    },
+    {
+      "needed_soname": "libmediandk.so",
+      "package_count": 9,
+      "packages": [
+        "com.brave.browser",
+        "com.opera.browser",
+        "com.valvesoftware.steamlink",
+        "com.vivaldi.browser",
+        "org.linphone",
+        "org.mozilla.firefox_beta",
+        "org.mozilla.focus",
+        "org.torproject.torbrowser",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libstdc++.so",
+      "package_count": 9,
+      "packages": [
+        "com.gaditek.purevpnics",
+        "com.shatteredpixel.shatteredpixeldungeon",
+        "com.tiktok.lite.go",
+        "com.unciv.app",
+        "com.valvesoftware.steamlink",
+        "com.zhiliaoapp.musically",
+        "dev.lucanlm.antimine",
+        "org.adaway",
+        "org.fossify.voicerecorder"
+      ]
+    },
+    {
+      "needed_soname": "libGLESv3.so",
+      "package_count": 8,
+      "packages": [
+        "com.expressvpn.vpn",
+        "com.tiktok.lite.go",
+        "com.zhiliaoapp.musically",
+        "im.vector.app",
+        "io.element.android.x",
+        "org.linphone",
+        "proton.android.meet",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libopenvpn.so",
+      "package_count": 7,
+      "packages": [
+        "com.gaditek.purevpnics",
+        "com.goldenfrog.vyprvpn.app",
+        "com.nordvpn.android",
+        "com.opera.browser",
+        "com.surfshark.vpnclient.android",
+        "hideme.android.vpn.noPlayStore",
+        "io.privado.android"
+      ]
+    },
+    {
+      "needed_soname": "libOpenSLES.so",
+      "package_count": 4,
+      "packages": [
+        "com.surfshark.vpnclient.android",
+        "com.valvesoftware.steamlink",
+        "com.zhiliaoapp.musically",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libaaudio.so",
+      "package_count": 4,
+      "packages": [
+        "com.brave.browser",
+        "com.opera.browser",
+        "com.vivaldi.browser",
+        "org.linphone"
+      ]
+    },
+    {
+      "needed_soname": "libcharon.so",
+      "package_count": 4,
+      "packages": [
+        "com.gaditek.purevpnics",
+        "com.surfshark.vpnclient.android",
+        "hideme.android.vpn.noPlayStore",
+        "io.privado.android"
+      ]
+    },
+    {
+      "needed_soname": "libfbjni.so",
+      "package_count": 4,
+      "packages": [
+        "com.valvesoftware.android.steam.community",
+        "com.valvesoftware.android.steam.friendsui",
+        "im.vector.app",
+        "us.zoom.videomeetings"
+      ]
+    },
+    {
+      "needed_soname": "libimcv.so",
+      "package_count": 4,
+      "packages": [
+        "com.gaditek.purevpnics",
+        "com.surfshark.vpnclient.android",
+        "hideme.android.vpn.noPlayStore",
+        "io.privado.android"
+      ]
+    }
+  ],
+  "excluded_post_snapshot": [
+    "InfinityLoop1309.NewPipeEnhanced",
+    "io.heckel.ntfy",
+    "org.lichess.mobileV2"
+  ],
+  "lock_sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+  "negative_control_excluded": "wrong.package",
+  "schema": "g339-pre-batch105-locked-arm64-needed-cohort-v2",
+  "scope": "105 frozen root-accepted APK identities; no provider subtraction, execution-order proof, device, or cold start",
+  "source_bindings": [
+    {
+      "apk_sha256": "c1fc03a8bad4dac3c400c50764a929ec7a07b02ba572336bfdd9e722a4f96519",
+      "input_sha256": [
+        "a0f6fa3d180bc2fb1a1c16c10ee6b6b56923fa948faf89e79f8ca37f5fb1c368",
+        "ea9b7dec4175d53671fb30ee91226b673ab17dca8522d31e9955fbd116812286",
+        "a3f480094cadb372ba5c17a15ba788038fdee7e007ebfd1bff469b087d1c5c3a"
+      ],
+      "package": "app.organicmaps",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "bc37c876e0de8e0224222d094a53f2b51c148ac57c47041eac2ae47a69013643",
+      "input_sha256": [
+        "037a81232a7d05c065486e0efddc4bb6fc8fab5f9a47f40eeffe32aae87ef14d",
+        "6c378de2474b4f2303cf0c27bf387cc4b20543cd1d73d72cd7426433cd579cf3",
+        "4e0ad76827bb95361ee648841f3bea18f2382b436519bcf6e367914be7f57408"
+      ],
+      "package": "at.bitfire.davdroid",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "64eca16131b45c5072d9303ba5d74db27eb9ff9d934621bc2001bba3af8389ac",
+      "input_sha256": [
+        "620a3fe2750945d6baa4a464261fbdac4d63afe8a6bac3ab74262bf582618d96",
+        "d3f2d83f484b157b830a22c1eb9f09fcdca06d532c2542d08c9b9a2eeff7e8d1",
+        "26ed9097bc4e8ade5de186f63f00dcd9e71f41c0c38ef7bc5efa955aab9923ad"
+      ],
+      "package": "at.bitfire.icsdroid",
+      "root_receipt_sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+    },
+    {
+      "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+      "input_sha256": [
+        "38e7b7fcea21e4803b965893795caa7105f4420247400a8284d0dcdcf191d2af",
+        "6c042a6375df49bb51515b0089ac939be0abcb5ed1e53a4bfe3775cc4266b8f5",
+        "1942a55dbdb6e965da50ae4133e4fee23000b3db1fa7978caa3aa59d976b2523"
+      ],
+      "package": "ch.protonvpn.android",
+      "root_receipt_sha256": "919b2a20c977e47812fe19568231f7a8d4d968a54da92715b8f89d5a2506dc6a"
+    },
+    {
+      "apk_sha256": "ef8c6012f821c92f7987f5f2a8165a5ea230fb4a86a599d051430fbdc3057fc7",
+      "input_sha256": [
+        "b37d77b54dd2bfd42c5a3c0b23764c46976b042a0f2ac1280800e67c16f22e7e",
+        "e6a131a34ffe62a076877aa4df5e660465c26dbc4ccd7703e7362a48690c1ec2",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "code.name.monkey.retromusic",
+      "root_receipt_sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+    },
+    {
+      "apk_sha256": "bc42be7eb481a5410904b54f08fc6269f837ccb1cefee67db53ecc9345e2683e",
+      "input_sha256": [
+        "8be4bf5ec2a1fee2e1b17a38eeac2c9dc8f5ff34303c4f51b1cfa437ea62bba0",
+        "5788e2b7ece46ae1bf75d61963d697f10766f27139d74d2506010270ca40b10a",
+        "b490cd6664f19d45ea4c481a13a384e28a593666069c13c87135912dd6af12bb"
+      ],
+      "package": "com.adguard.android",
+      "root_receipt_sha256": "2ce831860037d0dda497561d1fb840b4af2d37c6ae1eda40c89a988477b25ce4"
+    },
+    {
+      "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+      "input_sha256": [
+        "aedc4b3ed64d87721300b774573086c4b9e74fe0961dd619adc54ac5b97490e6",
+        "63ed4776e51811e3bfbbb2b6a4cc7fe7cc9c20ffbfc482f077ac36fb47e39091",
+        "f18d0c33dafa75021fa094037bf77e5271383b9b34bd93166f83f8edcb035cd7"
+      ],
+      "package": "com.adguard.vpn",
+      "root_receipt_sha256": "75ea0c79bde613708a3c19e2d162371b2e9625c91423663003d37e0c7c32c18f"
+    },
+    {
+      "apk_sha256": "ce69414498dfe957a1006d38d04f95680e98ee20caf06881c668692cc027fb2c",
+      "input_sha256": [
+        "2ba43547efdd268bd3f132e29534e114ab13313d335dd6a42c15a10159a3db81",
+        "689d10def7e0fb1921105aaf5af2ee749433168b44228dd93f898d08ac9c5a16",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "com.aka.alarm",
+      "root_receipt_sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+    },
+    {
+      "apk_sha256": "35e0338dac1bf026f22d91e1b096c1c6eff1424ad7d6be52a7f8d3fe50987530",
+      "input_sha256": [
+        "af965cccf41faefd4b98d0b4b89a571403208330b9dfb0536eb65c18c7cc8f1a",
+        "49eff11838f8be1e60f1c6b590e56196b7fa6091bdafff2d95a8f80480312d1c",
+        "d6451dbf2ac79b2920c39bdf1335030cbd0fb523081678f82f6804ffb8c0939a"
+      ],
+      "package": "com.amaze.filemanager",
+      "root_receipt_sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+    },
+    {
+      "apk_sha256": "a952781c260b3474563e51454071b864326145ed17b3e247dd3007ef71c7e383",
+      "input_sha256": [
+        "3927f3ee4ae55900e1592a0122b78fadbdedcf40843c377dd53a1413f7203828",
+        "0b97683246946fdd76d173a3dc29cdabdb9b2382ef78158fb205124baf6f5878",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "com.ashkanrafiee.librecontactsbackup",
+      "root_receipt_sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+    },
+    {
+      "apk_sha256": "fd9c75d90d0f4a7c132b9b4a5a2cf1992a45e03b8d8ff988b7dcfbc0db2c4d11",
+      "input_sha256": [
+        "3c4fa20887b832ad874ece5e3ed98742936d67b8c6aa15997159bb007608b100",
+        "3079536fe0a3ed6c6b70bbbdf98a58262ebf83d6f252862c1f9be9bf610a884f",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "com.aurora.store",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "789b002940339eb61e785f5d0086a0c1b25e7ae6606919b7f338a596dac3cbd2",
+      "input_sha256": [
+        "7ed347fde6a977b1db7bb1e382a064c1683e7c36519b58d3bfc0e6cc496eea3d",
+        "6878877e4500c1d10bafc2e2621bc72f3d9078ccaa1223d11101f7fc68acaedc",
+        "4310c5047c1453d9acffb56a722a0096943b2511551217957e4b739e993ca2f0"
+      ],
+      "package": "com.bnyro.translate",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "df3fbad622954843ab03744e85765da0fe5c15a018069b8f0aaabab3eafe6bcc",
+      "input_sha256": [
+        "b613683d7c09180b56f3288836a4c69c0c799c6676f536cbe072fe25833b55ac",
+        "73ffc9ca3bcf5ac93c91d519e40ce1988b41555b77ee9565efe0ece05b40a657",
+        "163e4740716dab927934b1a602d5f0d39fbd9197c2fba0924e973fdc437b03dc"
+      ],
+      "package": "com.brave.browser",
+      "root_receipt_sha256": "0b2ce3e959a822e5aa51973c050ed95e931ef0c1817d89574b1d7b2b4928c7f4"
+    },
+    {
+      "apk_sha256": "89e459ee69f2350f5006fb514d7a7e7f2f9b4e590c3b03b1f4e66c0ffc16d1a2",
+      "input_sha256": [
+        "f6c5728c7ffcb13910d3d2e945fc78f95d36970f1f6a496cdec8177d93a3a9ef",
+        "75b8dbe97cd6ad086c8bcd4133c62ed1cf23112a62dd77c0066746522e5460c4",
+        "c4733ef865a34464266d27ebcea894db08dae1adaf5345e70d2de9b2b7849241"
+      ],
+      "package": "com.brouken.player",
+      "root_receipt_sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+    },
+    {
+      "apk_sha256": "268c58bb3b9a6a0bdbf0006a8317483aff3cbf6e49d4f47b180395f1501348cd",
+      "input_sha256": [
+        "df4cfe769945fdee9f861c55d43dfdee5f96bb4e08cd0180b07a713d0b790e18",
+        "6877e7a6bd0f4c4b6bf11ab8a535b0ff7b010b05ed18392883f17a61e49f15f8",
+        "2e82331010b1727e485b04d98375dd7037a9759a7989af4f43912b7e806b8e99"
+      ],
+      "package": "com.celzero.bravedns",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "585e5a7e80ec262d42b2836a2d78b1e3848521b74622a2ef210351e74105bc79",
+      "input_sha256": [
+        "018a37ed3e34571e44edb181a744c0b73c4c3f34a812c880e061de7215a51767",
+        "7bdf0e41f6a62763904eba7eb05996f55573d2469f3063e2756ae8b48cf50e92",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "com.documentsui.shortcut",
+      "root_receipt_sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+    },
+    {
+      "apk_sha256": "2bd7abaa7d9bafd9fd5c0be184d1089e755b49d5d5a017979ed7950c34329908",
+      "input_sha256": [
+        "eb1d50085d979e0eb71d08cb08e35202b07ca63e5db57618e694ef846c2396d3",
+        "d26f6c92e73f829c96470f3432046f205d80876a744dbf5bba2bdd9ba4876372",
+        "6a2182ddade1e2e9dc83d17faf22a0f1d8fee3335802eeb647aee8511016f695"
+      ],
+      "package": "com.duckduckgo.mobile.android",
+      "root_receipt_sha256": "bec2dd9fb42c6818b6692bfa244e8555054fe2ebc72c9de0c311518c513ca13a"
+    },
+    {
+      "apk_sha256": "3020742feeb1bece129c245f3ebebea0d92e138b033eed1c1905bccabaa56522",
+      "input_sha256": [
+        "51821a0ba5af9cd79ea92c9759aa3653e8d9f138de394569cbbfa3f052e5b59d",
+        "90296a6baf6ea1ce061ceb48e8ebc4dce4ac2a5df43647764943cea3a7f2366b",
+        "0b2941b70d50fd9da0201dde27469339bcb20ce1e52406c843b8df41396f0c08"
+      ],
+      "package": "com.eset.ems2.web",
+      "root_receipt_sha256": "c13d8c389189ae2b790166a95482c199f91bfd2dc6ae6f07126bed21e3c87115"
+    },
+    {
+      "apk_sha256": "06c6819e6d75745b14329d05dafd9f7ff26c9b2e7f0068f080f731720b6ea323",
+      "input_sha256": [
+        "df097175ce317c8bd778005ac144451581cdd8f5eefa8b3131e1f0d1207ff414",
+        "eb05e1d1c54b7d08c8e04317dc0833cb36aa8b39b1ce67c6a7fbd455efe22440",
+        "c4cbf28bfe2fc101c15616a121aa1b946e2646fabfeed1da64791fc55ec05842"
+      ],
+      "package": "com.eset.endpoint",
+      "root_receipt_sha256": "6a924288ffec70bcb91875b1c64eda56ea0eb1c9a8a67aed58ba16cab33b6360"
+    },
+    {
+      "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+      "input_sha256": [
+        "6b9d9cdbe59db9734b9b0d4b8a4d6afee031f6fbd97af533d3ecc493d63d8f94",
+        "8c77d609fd740059dfe10a5bf6a5e3cf4dc1abef8ab7a244ebbb0d2d15d9c304",
+        "4baf64d28834f70269470dff7355280d6e746b59aa08db105c4b8acb370e71fd"
+      ],
+      "package": "com.expressvpn.vpn",
+      "root_receipt_sha256": "27e6ed57e7a6fc67ed4334ed7fb1d38650292d9e9b618afa2075f57a95856007"
+    },
+    {
+      "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+      "input_sha256": [
+        "2fb73707223e7c244b22f38d1e541ab83df40c52adcac51a4b117be238bb3b70",
+        "eaa544c74157732e28b823ef817623b549f1db55648649a61cc36b4a42f2c069",
+        "c4f557c003ded624087b8796db7b2c0cc097de9215a43a158a98d0e2fc664909"
+      ],
+      "package": "com.gaditek.purevpnics",
+      "root_receipt_sha256": "9edc648cc9ee044f7839987b5b8732078b7a9f20c830049d6e551e6af1ab8cc5"
+    },
+    {
+      "apk_sha256": "66711fd47c0c0e651bbe67c06f5c6f8864f1470cfa49fdc9a7f423e288e30e93",
+      "input_sha256": [
+        "70693b18ff44f94865aa962c986be12a385d62f789227e371f1b0e73902dac1d",
+        "13d17450ec791e2c44187ad4a00c74512812e1faac016abb24469c91c30468b9",
+        "9de62eaf78a9932e48b5b60501f009eceb0c6fc519b649f7a4d7dcb5e4c2b53b"
+      ],
+      "package": "com.gh4a",
+      "root_receipt_sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+    },
+    {
+      "apk_sha256": "c1cc60d77da785fe88d695de010bec2e3e62d09462627cb70d9666abcb4c8690",
+      "input_sha256": [
+        "eab7eb967171c873f4fd88098b8193769a9655c6b06e0318c158d2f0145a3a31",
+        "11203d3cfce84435c6e29d1bf8f45c1eb58e5554e2355e7296106a399ca959d1",
+        "6deb7a985f6254882a70f6a29da96ec9f36c7fc0ba84704657a37170770ee1ca"
+      ],
+      "package": "com.github.andreyasadchy.xtra",
+      "root_receipt_sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+    },
+    {
+      "apk_sha256": "8e11b3136977e9f5dc897de85c26add9a219ea61884feabcbcd4e33566d5d2ca",
+      "input_sha256": [
+        "9ece0ca14a272703c4b9eb4408731fa11c653d324d7c3afc6fd164b5402fbe43",
+        "2fb5b3fc536aab051fb48e249a25118da14c44e096c74e5bd261580ad809a59a",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "com.github.ashutoshgngwr.noice",
+      "root_receipt_sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+    },
+    {
+      "apk_sha256": "792b1e37e7bd6a26d8da1c826a68677465c333633cb2198224cc96c84257d615",
+      "input_sha256": [
+        "606f1eb5b73c5494bdd2de0a6ffe742babe3be9a635daa849ab5c03fe0f5d5cd",
+        "65eb4d4ec64d68f7a19e1240329b42e55430dafd1d92b01f8a33a33de1e919d0",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "com.github.libretube",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "f7a62d1a72457b647f4e260ea87670a64a92007e1462055826c5feb412b96b13",
+      "input_sha256": [
+        "3fa12932ca2608deb9613178e687a1961fe405bdc61a3f92ebc9c112430286fc",
+        "53a95120bf92736473c58d505dd94b664d40ddece81a5f750909b0259c86067e",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "com.github.muellerma.stopwatch",
+      "root_receipt_sha256": "f6a3eab146aae49c3922d096537a32da577d71e508504d6dbadc6dbd2e97b1d0"
+    },
+    {
+      "apk_sha256": "be67f60356bac9811ca3419259cbb22ce3e3fb113aedc4e2cc6e3b40e2c1bae7",
+      "input_sha256": [
+        "9249bbc7e767947c957d22a906accbf312765466b08d444055bd95ea1b028880",
+        "d4551c0b1c7a563082e1b47aff51c18ad98401a0aa750edbeacce28e33acef66",
+        "28780cd92860c1194483a3e0ba1e9492630715fedf514bbc21d25325be766ed3"
+      ],
+      "package": "com.goldenfrog.vyprvpn.app",
+      "root_receipt_sha256": "36348b4add7e8baa78f56b6a59c6281f2b138e981e3bb4dd91c6c92d3d1c3682"
+    },
+    {
+      "apk_sha256": "7070a3d4f079046912b4b8dde4edc8d1ef6eade3c9c98b02bfcaba3669c11d98",
+      "input_sha256": [
+        "f149da22f1c7278835079dc17757ec8c663fa3797b933cbfa55cafd29271db9b",
+        "dbf3304c447f281ae656f8548d6b4cfcff2f944cd3b6ef37cac47d2b1e72a5a9",
+        "786cf2e3aa1bf73b5e2dbc503229305b5ceaa2f467c25fb5c5df935f7bf2356d",
+        "84414bbcd5046acefb4b5fe5d580c3d1f1dd416315c843528a3706173ba19d57",
+        "99d3a58d04ba0407ac1190016db5d1733fe8e58f19a25f67f0c7a98c4c7ebac2",
+        "acd6643e2df71891b0f735a6d76415c230c6b016aaae10bd1b3ab971c098aaa7",
+        "d1f2a5835943bd4458814735fcd10d0d96dac83458b06302f3f8b912573ff4e5",
+        "d4e40aa9aa6123d585278df864f48bc5af41eb5b51d534273c5b6e7962cba19d"
+      ],
+      "package": "com.junkfood.seal",
+      "root_receipt_sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+    },
+    {
+      "apk_sha256": "3e8fcc49a80d4c30ab6f6037e51402c77e2694d27ec19ae5b8a93cd08b6caffa",
+      "input_sha256": [
+        "a2cae64376fe76a5f4afcf32d8480af0c845d81bad624a975531d5d1800f9bd8",
+        "3e47b115bc0a0b706a71ea858f966ba36dbf1322c98e78a13c01559ff6e6b38c",
+        "4f06c6aefa590392024a079b96a2f7355612cdad06883e24fe0c480ccef5b462"
+      ],
+      "package": "com.keylesspalace.tusky",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "1a1b2bd3c0f8fd4ce9fd5d37d31604e660a7efa0f0ccb448e6f347130f99da39",
+      "input_sha256": [
+        "3fb54514b3faf8e8cac5d6c3a47f08e52558ecbfd02f0ada73bcd311897186b5",
+        "8e98afdaad00c2c94e33cae7ae879c3cc8966a957cef1888fe34247ab6aa5def",
+        "ee21c80ca90c16f073dc694b605e511214fb880b1befdf45266ae6f3121ae8ca"
+      ],
+      "package": "com.kms.free",
+      "root_receipt_sha256": "d0e2293ec15ed37806cef4b1812960cd76786b0b89603f0bad4268263639d952"
+    },
+    {
+      "apk_sha256": "862f87a30baef06181f049adf7c460611605b25a807eaf3c25841a9dd84bed9e",
+      "input_sha256": [
+        "8842dd92b6c373979c2b97e1b66e40c124f8976c33db7111799abfb67d277d01",
+        "9a2b7786fed74d33fc3fd4c9cb6e5eacf1343cf8d2072e80fce683d24a13990a",
+        "0916b11afc723696dd1ce0667e462b1f94a4e5c72122e4689e22588fb67fd3e9",
+        "5e9d82c42dff8b45d0c49b0dbda1535c4d596fbe5fd4da9051d4923d969987aa"
+      ],
+      "package": "com.kunzisoft.keepass.libre",
+      "root_receipt_sha256": "5a974efec3cd293524af0845d3d0c5e21039198e9186258667bbd3be84db4bcb"
+    },
+    {
+      "apk_sha256": "846249274a0e300622cc94815fd279d258738bfcaf60ee9e276edf74f5febc1c",
+      "input_sha256": [
+        "6c648a26235e935ec99c844e96638d955701e17f025e84115fec4cf8083140c9",
+        "d80029ae4ad9f5a042db91a4e4449a6a20895625ab2505dd98b3e941fb2a92c9",
+        "bb0e9f2162f74c833f9cef66765fb78709bfe1a16871b7b9369f6c32ee8fcdc4"
+      ],
+      "package": "com.kylecorry.trail_sense",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "da3070f3f18bdbed1eab666677afd39e4b19a60c70f0bfca68a5730147f81f10",
+      "input_sha256": [
+        "8afeef6cf963eec4ecf05bbcb138dbe369ab1dcdeddb8e17388b706b3256bca0",
+        "b228cf44aa2ab2211f218f7a7b9aff97d50dcce046d54101940705e7dc787481",
+        "d488db880f955567c5a83a0b1781afe6741cb5a26bf12d41c5dc0e3e84be3e1f"
+      ],
+      "package": "com.looker.droidify",
+      "root_receipt_sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+    },
+    {
+      "apk_sha256": "0aa5eb094f94ca29ab7956d75b9e5d7c19785ebdac74b9ae512930084338bf3c",
+      "input_sha256": [
+        "36b93e5ab488fc289d89a8f959b7dc218d98d4c624942d7efcb559879fe3a7b6",
+        "714c08d9ce72ef4b76f0ae7a0b991b23693e29a6d57b2fb2a35309686e7caf68",
+        "69ce3285df64d6f441303713172d509b29e0cb8317ce464e84608628ccaa78b8"
+      ],
+      "package": "com.nononsenseapps.feeder",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+      "input_sha256": [
+        "0dff4775e10f02c50a7c08b083d6d02b5a5d9cb706dfc3259dc747a01c30c52d",
+        "2c2c46b786d1108e459e317dbdf7ecb49ed80292de6e6a07b54afaa3118153e5",
+        "6b49b25a8f91583f24b60eef31adad15d70dda144046623e482a904689fe96a4"
+      ],
+      "package": "com.nordvpn.android",
+      "root_receipt_sha256": "4d454f484b19de94d5e75464c1282d6737ad6087bfbee2c28314d0902e7241ce"
+    },
+    {
+      "apk_sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+      "input_sha256": [
+        "003f11cd6095c3b16d36c0e805bf617ae41558d4a38472f383c88a118a1d310b",
+        "89f81e424dff0bd7fce044dc6fa1f70b96d5bd1567f7b7966f4796f2e4495a3e",
+        "d878bf60ca97bfa50967824c015d3aca946a1210315b4a780509ede85755d287"
+      ],
+      "package": "com.opera.browser",
+      "root_receipt_sha256": "fdc45b39d92c5fbe10044d2d3c62bdb69125932e5dac657142f2eab3a1393bda"
+    },
+    {
+      "apk_sha256": "22f2921d3a91e94f3689f104a52d502ae6f5ad46e32cedf67e98b760be9c9503",
+      "input_sha256": [
+        "45ebe3da5f3159c9d63ed66cd61a2e174f162123c9a6e710c05ea821b43c2cfe",
+        "e3b5e717b81d0a9f865fb65b9d24deb2283158d6810674566d8c3453ef2366f2",
+        "3fd541d45adff66424464076549eb7ca25b345d7afe49188b5b8c6e8359cc4cc"
+      ],
+      "package": "com.opera.gx",
+      "root_receipt_sha256": "28741b166f9911dca130965c0cf73f2fddf880daacf0338d9da0a3175ca0ce70"
+    },
+    {
+      "apk_sha256": "ed1b43d7312a70e86c5cd159d4ac29d7d69fae1033331a4e70f9a00dd346b207",
+      "input_sha256": [
+        "908e95bc4b94f0bdd614d2ca9419aae240a926de065e7ec0feff247bc53e8591",
+        "1d9fc6b10d49b7bbe08218dbf2c69fa626482bef9fdb6483628a45b4ac889640",
+        "8e8fd489b75340ca5e697da93d94df044a3559278f8bb271fe9f8df08641d0f2"
+      ],
+      "package": "com.shatteredpixel.shatteredpixeldungeon",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+      "input_sha256": [
+        "1c32bd38d6b7b113be6d50670b8395df993c9ae1d3ebdb2d6379b4d778f5bd05",
+        "93a72fd88c4f47eed6502efe12f105794b220050bf8acda9402e9e59ef3a382a",
+        "b0352f55147e7438f16e1cfd09503129f716c96020b3ec4d3c0c9814f5d1934f"
+      ],
+      "package": "com.surfshark.vpnclient.android",
+      "root_receipt_sha256": "e962905c85906a3315313383a7aa7f54c0150491a2584a677bccb2c03e7ae1da"
+    },
+    {
+      "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+      "input_sha256": [
+        "2db82b19d6c737273ea3fbc7ecfd10f2e80bf5c45adef57955b4259033278930",
+        "e74a4faccbca8e168b3cf5a3798fabc84cb040b36299b9a46d20033b840a8b08",
+        "7ada37f16ed5ac543e0aedac4efb00568ce31638540d3fd9078f13dbca397d83"
+      ],
+      "package": "com.tiktok.lite.go",
+      "root_receipt_sha256": "3226229866c70aebd63782a02094e0355661c71b4106300f93a51390157eb9b5"
+    },
+    {
+      "apk_sha256": "0eb71e65786a7879eae99bab48bbc30a6fa76bd2771d562a807fb7e93fb04add",
+      "input_sha256": [
+        "c7a7bba5ac69dc24c00dddc5bc01677f268a3ebd010345d55da64c2ddbca87b4",
+        "bb51dff1ccc02c9c35f413ada447caa2416b4fbd663b31b18bd832c2baf6cfec",
+        "f8f1814f804a2a348cbe532821f3090336e372b4a72838ea6d012b5ff2abf2b4"
+      ],
+      "package": "com.unciv.app",
+      "root_receipt_sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+    },
+    {
+      "apk_sha256": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d",
+      "input_sha256": [
+        "2219e5362f2640308ec145073d0d728073f9f5b50edec02f6305446743859d98",
+        "9327136220ad965e18c4eed6d5f6ca171dc6def152e7f12b51fe8a78e6af1f79",
+        "c26eba6a82559b41ebdba672303054563e36c7589e3d676dcebb36be718bd56d"
+      ],
+      "package": "com.valvesoftware.android.steam.community",
+      "root_receipt_sha256": "ba3c9cfcc2a49d7404f6a14545d1c261c00a3201aeebfa7be96604ad19dcad96"
+    },
+    {
+      "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+      "input_sha256": [
+        "6b596780ce8c78b9866455ff0d5e6b84146085aab76e53c4a567bcfd9c95a99c",
+        "fa52d4cfd89572975da899303f870cfe1d831f3bc523c21251d12c9dd91be48b",
+        "489a696519a82646c28ec84fbf0c12cf0a4d5047bfd4c383c94b810a5968df6b"
+      ],
+      "package": "com.valvesoftware.android.steam.friendsui",
+      "root_receipt_sha256": "c8e2de958111be7a8a20ffd37e8f316dbdcbe483e91d1dd8bf9546ad50810242"
+    },
+    {
+      "apk_sha256": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+      "input_sha256": [
+        "ee5d3d9ee276d2a62513945caec1bc2303dc53a91b619ee38eae5e2ae503d62e",
+        "83760344464c749228055db50d515d04a648fb5eb75350f8790c44b48bb749c1",
+        "c428916483d1e547188e273333cc1a030032c9fa09bdba1eb3b7473b55542654"
+      ],
+      "package": "com.valvesoftware.steamlink",
+      "root_receipt_sha256": "da321360f3ef45dc7bfd2c06f3ce352cdc9495f7e343666543a5401700784c94"
+    },
+    {
+      "apk_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+      "input_sha256": [
+        "51ccbc9d4ca3dbe9fe84eb343e1d93de31c74e1ce51660ad6a4f87ec0dd1b288",
+        "86f9213ac69c7e1cdbbd985c8c7dc7e555d9ddc94296fd4af185dd503eda1385",
+        "90489091d80d052cc392193fb0187c01ce03ed36c825b97d799a7cae9044aed5"
+      ],
+      "package": "com.vivaldi.browser",
+      "root_receipt_sha256": "7762f26dbac3bda94374ac658d1e3bbabdb0929eb37de8a1083f593b1157640c"
+    },
+    {
+      "apk_sha256": "282a06fcc5ce5d889799113a1c6edf5e408b0902acc542308ad21051a2a7cc2b",
+      "input_sha256": [
+        "b5d9450d8cec3492089dc0e16949c50a1aab1530e5404609a38c5a63c0494ad8",
+        "f9452a3f6ef375d782b9170c75e454018521f308cd7804b1ee37403c74c1eb47",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "com.vrem.wifianalyzer",
+      "root_receipt_sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+    },
+    {
+      "apk_sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+      "input_sha256": [
+        "9ea128a69975184800ade5537f85ef0bdfc00b2db79dddfbf597ae6c7d117e75",
+        "65a6f298d6e7f478a714b066925ee76578122d023f2a12d44081ec581ad88121",
+        "80092e6c0494fcae21ed83c7db8828c574aa8d55a030db30013a328b7a8f35c6"
+      ],
+      "package": "com.x8bit.bitwarden",
+      "root_receipt_sha256": "30251db40ad4f50a43b38517134e58db64882014720d7d1a01c6c251e785e0e7"
+    },
+    {
+      "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+      "input_sha256": [
+        "3cfabe89cf5f81889c50819ecf2283ffa9b8df5702e565c9ee62dba5363cfa59",
+        "7b76d6771b8ac07cb39a0a159f96b0d456822e9069d66d2dca5e90b64daca2f8",
+        "aa2da0a18aa816a0b4ad373c1eb8f6343372d3e7f955b86e3bd631ac58e866cf"
+      ],
+      "package": "com.zhiliaoapp.musically",
+      "root_receipt_sha256": "c1ae74284a77bb715bb3f41263d9ace79f4ac6d08c4af8773420163af5d176ee"
+    },
+    {
+      "apk_sha256": "bccb5d20069e2a19fb65a9eb5e74534cfc449ea8ef52bcbfb08cef9c4b5c0cc7",
+      "input_sha256": [
+        "7e2e2825051ec372a4ea5e9fbf2d69d5bf2eb71a192e472bfd7a6a5e1dc1ad1e",
+        "6d976219b7e5c6a4b02d932ebe11c01ea62614717b95a77fc24577036cb971bb",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "de.dennisguse.opentracks",
+      "root_receipt_sha256": "cc41fc0f22625b61fe2960a33ea345c7e772836e6aab7290f1f4fdf74579dd53"
+    },
+    {
+      "apk_sha256": "21cff18073d15e350e5845f2043d1f07d944f0dee420d7cfa25fd9196f05e8b8",
+      "input_sha256": [
+        "a63d6f71128d70ab333f5ebc8eb2232b3f983faed06e0a345a311690e7f13bba",
+        "09c86294efe44ecc5d9e6e77facecc314870e5e4278f35f7028811a73f91b0f6",
+        "028eba740c0737006db4024bcd52f8c59a24bc9b7a07858af922d56251873d04"
+      ],
+      "package": "de.ph1b.audiobook",
+      "root_receipt_sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+    },
+    {
+      "apk_sha256": "e1708c7c4256748a5825e3f898a6898dac8a0988f6499c78d63ea48bbf8f352b",
+      "input_sha256": [
+        "e1e6087b7a185b1c1677276658f4ff2c0b9576404b04fc4f1b3702cb1c665fd5",
+        "ca7f9e1be743360668f54b1a62557c50b0a969daa367d1176e3f98554516232f",
+        "9e04e17951845be4b33f3d8731c1cd97b7337eff88221e5f282cc3c3f508c04f"
+      ],
+      "package": "de.tadris.fitness",
+      "root_receipt_sha256": "58960e2ba553b94990a615d4134f78220be46866384d2b159a91bfa55fd35548"
+    },
+    {
+      "apk_sha256": "8d03b4f02f070d8e64f448ce77ad66daccce9a585e4015b984ee5a7ddee9c29c",
+      "input_sha256": [
+        "727e253657ff0ded444f077a88228df9812f9749d41f680c9b3d1ef01789e56c",
+        "477f148c2d25ab69fc0914327a3ab6b8655158e60794b4e9d44c12d7dff9bf6c",
+        "adb840753f834248b57c8a16b206931540f9466f3932afc9ed327245f8f4732c"
+      ],
+      "package": "dev.imranr.obtainium.fdroid",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "e7b635b6629bc5b0f59c2700a82079386a90f3a04b39e92e0cf0bb090979e974",
+      "input_sha256": [
+        "d4c4d5f97d2f630036ad6793576e54a318d571bde687b9db121ddb93746d98de",
+        "f92bc11d6032ee60b22d26c2dd3921bd0c345308b91321e7deda5982acfce51d",
+        "79a8c6683c874dfe4a23724144ad9a5b3af8b5a3165f7b21e318bbd926d7f74f"
+      ],
+      "package": "dev.lucanlm.antimine",
+      "root_receipt_sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+    },
+    {
+      "apk_sha256": "1e59bd1d82ccdf0af90e7a29e7cb219eaa189031675b376578e7da8ec649e539",
+      "input_sha256": [
+        "d8d569a2dc81e852e572cf06b753f62a09f72e11d74cddd6776d776f44ab2a13",
+        "2ad0cfdad2ce0fa69757ea491a5c0dc37ad42fae864638beecc1371e6747d4c2",
+        "677ac8836f7e73895561ab95bd540d1621020778ba667e6d725a548015bcba20"
+      ],
+      "package": "eu.faircode.email",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "ea4737f69a8e555c159eb92891843be4367bfc5de702cc9c7419c43b3f015e80",
+      "input_sha256": [
+        "817bafd07953f1a62aa6bbae3fcadf8e94be94e06dc0105a6a8abe075b8af83f",
+        "d915c8d8559c0804bd24b5ec49af10e735459d806e4053c313b07c1cf885a6f9",
+        "d07af65a527b194e2b687c51fc5c5b8f4bb29d047873ed973d616ebbd147d28b"
+      ],
+      "package": "eu.siacs.conversations",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "db00ceb424ed2e1cec5f0ab2337f820c286a62dfe0e791f7fee6a72d750fcd5b",
+      "input_sha256": [
+        "6546cd14e298ece210aacb94ba28e45f4387f6e2ebb35d334426b5111fd7146d",
+        "c2feea9104e6ba68c5386ef84da1df7ca903731402fca2b5b50f76a61bc0dc43",
+        "f11f36d7e4cb904c5356c55519738aae7d3b1b1c5dfc16884189194c6c4fdc28"
+      ],
+      "package": "hideme.android.vpn.noPlayStore",
+      "root_receipt_sha256": "bfda759e29cf1dcc3e4efc0480c051ec153d1ab8d00b5fb76d3203d982ab35e6"
+    },
+    {
+      "apk_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+      "input_sha256": [
+        "7c9a9821e9457e19742aaab13454288be2a7c8fe493299729c69e61116059baa",
+        "7ea2af4fe7a843ed03ba24ae8401dbbed7bd0fc28a52cb2db2773e40b56ba5c5",
+        "8a9b7f8bcce13463bdd705cb15ff974a5940128d457e610186cd5e55056fbf0c"
+      ],
+      "package": "im.vector.app",
+      "root_receipt_sha256": "a53a30e9649d32a956afd44c573eaacb1b26fa7f1b73c53f15428ceb17a8ae2f"
+    },
+    {
+      "apk_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+      "input_sha256": [
+        "ea98b9a16728ee045cbe89468415ad64a488b39ea80ce099158cc64429a14e17",
+        "cb95821f00c9870974e6f8f55fa2570a83845c778045db1c4cfa63af5f20c946",
+        "f949ddda0163ea908755627b6b0fd812c44b020784ee217df1f05bb297da8bcc"
+      ],
+      "package": "io.element.android.x",
+      "root_receipt_sha256": "1152fb8cb8109aae7e2177dc7580b7df668e464554ff098d5b030ac08ccede04"
+    },
+    {
+      "apk_sha256": "e1f6ba10812c74016ad626e11e27a1ae450aec2c0964a11466abb9e7a9c8ef84",
+      "input_sha256": [
+        "39315791f5d0456a88e51dd7728188923c1a23fe3151f803f0607daaa661b214",
+        "657fca626aeccd1ff49ffb7d521f4dbdb4f6a936457e2d507fe38e9d54bcd33a",
+        "bade5c96e33c6b1618b154103ac1b3ca3646453c355426986e5e50551a421bda"
+      ],
+      "package": "io.github.muntashirakon.AppManager",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+      "input_sha256": [
+        "0c029de4c965c6b4f15be9b4e291815199923fba97727a639ffe5bf3399fb65c",
+        "0f7e8134e20144409df1a76533719c93e22442c4a74479c8ab6b63d2d5c9cdee",
+        "186679c45f9ec005404a6a419717ce7f18c2babf6f4c457895c5fea4eb2398b3"
+      ],
+      "package": "io.privado.android",
+      "root_receipt_sha256": "438a6cb0a8d17f8d43754b591d4b4c3e4eae63ec6652c1bac1a8ce9f255c70a7"
+    },
+    {
+      "apk_sha256": "4f01f40d06d82fc5b8cfbbc5eccd083151a86564fbd4fa420eb54aaebf668b71",
+      "input_sha256": [
+        "54044303bb9a35df0b6c3c6685b949e92328bce648ac920dfff158e23c930c08",
+        "366bea2eb88ce8dc40babc0f80d82fb5ae490422868e90113845d067569efc08",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "me.hackerchick.catima",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "2fe900bf43d725b655008d438f5ca46d0da0f301e3784403b5b96c3fc2df6e8a",
+      "input_sha256": [
+        "ca817fbd0e763ec05e0f2e9e74a85efd89fa95361143543c51f030a5a9ea94f9",
+        "1005f55ce38c4f2cf5e1ec3695931e94b93cdb8100962b763f571a1256db29d5",
+        "0c2c20afc781912c82d6f5fdefed47ca0423ba3fe15aa0ff35ff1e97119a5ff8"
+      ],
+      "package": "me.zhanghai.android.files",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "b13088ef0c3a9f12953f82b2a75e5c9d2fdb497dd69c6952240217f7315a779a",
+      "input_sha256": [
+        "c76294ddbe44f337192790c10a65e2b88c6470512801ad373b83ae7b8e48eac6",
+        "43e118e2dc3b5ef85896b313b891de99fc8d2290689848df85efce3e3a4dbf04",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "net.programmierecke.radiodroid2",
+      "root_receipt_sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+    },
+    {
+      "apk_sha256": "1e4a2e23a4bff8c8d96eae7ed809f1ebd05a4ab24650ab792c226749dd51d936",
+      "input_sha256": [
+        "58411177c275c5e8730145fca33a334c6d4c7bd70386e6605725cc57162c735a",
+        "c0b29d3fa23a75bd000e24421aa9ed764f8c4a7eb7a99f9f898f870485925901",
+        "cbfd3654b5d20def9490f1529a36d04f5f5f8841af356d6c67c8f6eefc2f33a1",
+        "5720da8d71c2774b50bfe5e414eb2fc7606c52206a249de459b7fe6e3513d7ec"
+      ],
+      "package": "net.thunderbird.android",
+      "root_receipt_sha256": "5a974efec3cd293524af0845d3d0c5e21039198e9186258667bbd3be84db4bcb"
+    },
+    {
+      "apk_sha256": "38b7666166f6fd0268b598ad0b40435744833f26b8cb7b13eb724ca61894a66b",
+      "input_sha256": [
+        "7e43acc29567ec1add2310593388bf16c44ff17683ddb208dce2bc27acd153d2",
+        "d71cbb9233fdc749ed6ba2ebb3f311be098af74fa2235db53e350ca701b553a0",
+        "30d71507ead5b8db616cb90d15130e547feb4236c5e42be42996af0c4b5dfcb4"
+      ],
+      "package": "nodomain.freeyourgadget.gadgetbridge",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "0de00a58a0dbb4c4b6befc9fe1f5e53800993484baab955824798f46fbf3338e",
+      "input_sha256": [
+        "1c58d340a163b0270ace8cbfdc1f6aa79a709e66c37c3cbffb3c2fc0a0e16bdb",
+        "0fd4d9279c47dac968f6b5ed3de8d969f2e21e08f6f065d05bb0b591dff8dfae",
+        "5792281964f3aefe3efeb19bb8bfd115bca998164ce2c654703aa5107637438e"
+      ],
+      "package": "org.adaway",
+      "root_receipt_sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+    },
+    {
+      "apk_sha256": "8fa68144623e16fc72b1c187a798c25be17846ac28ab5fac59c13b2316079c4c",
+      "input_sha256": [
+        "85532b7ab0e741d0212b201ba087ceadb5cb2d37085d9fcb173af1b25301ed8f",
+        "222dade0f0502f741ca756e55ebd9dbb1601021975a58fb9d9be22c30e76c2b5",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.andstatus.app",
+      "root_receipt_sha256": "dd3c13e939c50717943f023a8c6eafaa9d63fb96255f35301dc8f0e12020dc1d"
+    },
+    {
+      "apk_sha256": "343d17e11d0914e1a7708df2781580a0413e52501c0a41d91f7ef725d9615fe9",
+      "input_sha256": [
+        "3652bb97814d87fe16f485afb28ee6b17f9309c938334d6726efffdc04059182",
+        "aee62a360cca2684bccd97131cdc64d82d6efa6c5dd953fa9e062d8ec6f1a75d",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.billthefarmer.editor",
+      "root_receipt_sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+    },
+    {
+      "apk_sha256": "1369d817d426498715f8ccb6750baff19dadd78e85f707088e9bca43977570c0",
+      "input_sha256": [
+        "5454e2cbfc29691e7dbd2d9f1579dedce52e4ee224b28c93cde89eaf87acfa28",
+        "b7a34b7c241198a456c809945c3b2962c4e43383990f7890e5a47dbf77fd1202",
+        "79a00887a5f9e70656a50579b4e2f6b2b7db00067f9ac921f282f4239db3d3f7"
+      ],
+      "package": "org.breezyweather",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "9025888a4a5f5268e1ccbcd840bd07e51e9eaf1d7bbf305ca262b8afc662e372",
+      "input_sha256": [
+        "9395720d51e804e3084d8d8f20ce7947ebbe2338afe1f455057f372805f3c8f4",
+        "c78f8a1ae926f7103b62423a511764f6187e3b9d8e1550671fab47f0e0f92dd1",
+        "343a8c1d5603c80c794cd0ba9cd09f337fdae63b4387041f35732aba0f9bee5c",
+        "7422bb9432b239a63ab2a7a4694c67434094a8f50e8f3cc75e2331d7c81b3b1e",
+        "9ee08655abef83878d83d81ab861bd4cf1a2060a16603b5dc7ed1a2c45664dd8",
+        "9ee82841c534f3142d7e321d7ea74a976c309404a324604e4e87888b566f70c0",
+        "b054ba4b5a6fcde04bfa98b10afa0dd5e8a937071684449ce1568d1380020958",
+        "be46878e3223c682662059346a145f7678043c6fecc27d36b9ff57f495338357",
+        "c332d976706f017482689b63c7b17a0555a2e2b118ca5e1a096a575be78060b4",
+        "f9a6f99b8eb8879f9b760928743a3f94ebac594f5d1076ce10f57b80ef61f9cf"
+      ],
+      "package": "org.briarproject.briar.android",
+      "root_receipt_sha256": "cf41494ecedadecf5bdede379f70c7e19ffa8d795bf2d7424f0e043111b59469"
+    },
+    {
+      "apk_sha256": "191e6990a4db95b04b6d3d98906e06281872a5963133afb5b46e4d324736742f",
+      "input_sha256": [
+        "6af566b00dca3d61b4746e9320c878a33903a833364a2d2bed18212149b49c01",
+        "89f3c3f79cbca41b51ff990f3319e5baa1a6d18bb2436a4bba224252fb35eb1c",
+        "d2663b487a2610e3d13ba700189c7ce262e58f612e5238f878db555c0dd83fee"
+      ],
+      "package": "org.connectbot",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "94938d324b03755fb324f143229240c75640e809cdd3a90cc0a545b5d0a61931",
+      "input_sha256": [
+        "edc5b9bc2162569385d4ffffb32789ffe71a1a8caf5b1cf7d78c6010029626dc",
+        "53206c0ccd29066a300a8a91bd4dc84e65db078b0fdc90d566bcc92bd0195ee8",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fdroid.fdroid",
+      "root_receipt_sha256": "6409cc002e2dcdb0559fcdd5d7609185573aad8a6972d06873ae524f01a789c5"
+    },
+    {
+      "apk_sha256": "2acbd47fa2abc6dd4846e406ed2fd60c5c01b8613158d10e012135923ee24894",
+      "input_sha256": [
+        "a5cb2ca41a77efd0b8af64f03cf02c330d751497295a3a7da1e38bb5abeb0956",
+        "e0d19ef2e87353b0318f7a08ace17c4bc8c2a81f0aaaf56475ac8b69cafd93d9",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.calendar",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "116004fd8743f9e47bf25eb9c6049eb77d3f19d59506c3f47513f584c6138435",
+      "input_sha256": [
+        "2fe3c72f65c534d2f667b2688064bfd283c2af9c2e3cb5bb173ef0be30fb48b0",
+        "1e27c2d8069109b01bfc8dbafc6b9b02ea7e3b3a9c46c2c1ae72c6f1ea662687",
+        "2f42417cabe9d001637eed6c960e79999d42d11187bf75c2ce7f72f012a9c149"
+      ],
+      "package": "org.fossify.camera",
+      "root_receipt_sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+    },
+    {
+      "apk_sha256": "6a89be96b5ec39f5e2b11bd61dc7031f4b88261b324ab13af5743fbc62f0cddb",
+      "input_sha256": [
+        "257b23f2ceb5bbff05a7fc9d1c0fb45fc5a32d5000843fd91cd18eb94192ff7d",
+        "7d403d61c2f4b909ddf2147a55294880d970f48eed2c35d9653b64214bc8e6a7",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.contacts",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "9e97d2faf55fb2702386c3dc51e38a6b073781016b125701d3ab668419a70008",
+      "input_sha256": [
+        "1964063dd242a16d7f4352d1f09ea0897a0c4ace7dabb1510d4e09a9d499da7f",
+        "12accfebf7b9650e1fef104d25628991f0ffd2fc57ccb2838a20b9fc0e0d4a9a",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.filemanager",
+      "root_receipt_sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+    },
+    {
+      "apk_sha256": "ae7e699599e81f70e2b82626bb1dfa883fe096cd938387133e123c116e5641d9",
+      "input_sha256": [
+        "57580712dabbf7e2a708e59e2eb5e9ea7849b6c27c035e99424ff020dbf25647",
+        "32e5b2b80b4b9e1d6aca1600c0ffee778004925d778c092cb2ecc34d26716b3e",
+        "f6268542ac0b63eac6d31d39dcb80d407c2faaf8fbb11b091c9ea9c42d7bdc36",
+        "e564e637bf8d480ec065093ab4a3e5bb06e547d8ede3961661edee4e5ccb3fb7"
+      ],
+      "package": "org.fossify.gallery",
+      "root_receipt_sha256": "5a974efec3cd293524af0845d3d0c5e21039198e9186258667bbd3be84db4bcb"
+    },
+    {
+      "apk_sha256": "95f226c7929adc2699cdb2bc6ead29a704bddb8f55bd92d9b4ecf74bb604f1c6",
+      "input_sha256": [
+        "cf38bf78fd940615cacd8f9dce522bea7edca56433c680e06db9e58485cbd68a",
+        "3b62e757ec1dd323bb77124921523114a9cae64efb3e837b6b332b8a20def690",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.messages",
+      "root_receipt_sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+    },
+    {
+      "apk_sha256": "b5d0ce367544df1ac162adf71d642878c5b963a304ca0ddf8f8556f07bbba79b",
+      "input_sha256": [
+        "173a002d6f44451cc2a07d15a82b6460f4839b227309757ab540152ce13171b3",
+        "5f0fa2e3d450fe30323305c7c0cc30ef560bf28031618448588ab8a75b7a8a6c",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.musicplayer",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "5a56e0e39cc488e1f3b947d3801006d3b7450ec73c67f03195c64c5fd3b6bced",
+      "input_sha256": [
+        "bc168a9873c49b17cf37f68033b87e7ead85b76c01d3b620fe5fa4f51a70709e",
+        "a3440b680da4a9818caa680501d36a8cab8af2cf7a65019b133ecc16d375feb5",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.notes",
+      "root_receipt_sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+    },
+    {
+      "apk_sha256": "d1ad08467034e5138a6e68f03b6e150f0bb010dfcbf490ff3d2bd4822b755728",
+      "input_sha256": [
+        "0637de8d99255e6eea616e5fb111d6ac9da824febca6b251681945694f2d4bd2",
+        "2433d2f8bbfa65ccd1bc5167088d02fc0f76e89fefe5759a8b4d8c754012b474",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.fossify.phone",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "bd4ebc4b85fefb43a68126d8704d38222e88ef3205b3666e7a2fa00b325a696b",
+      "input_sha256": [
+        "31054a29a6ec74efd0d2a68ac52af5dc648b375dea09bd4271df4852b38431fc",
+        "2f73d848fce287e59cea18d24ea210e0a022df3690634cc4e6d387fb062ff44b",
+        "d875a969a94b2b0bf14bd5b6855ad5313573badb19456732b2c235acd0228ab2"
+      ],
+      "package": "org.fossify.voicerecorder",
+      "root_receipt_sha256": "3a2cbe1acfaeea37c77c6e699a6221792f8d1244d10eed3383d987fcd201f35f"
+    },
+    {
+      "apk_sha256": "3903d3be3db0f1622ad61cf5bb267515c95a4069e8dd46f73249721b1bb8173e",
+      "input_sha256": [
+        "8eb1e2a83ed7292ddc49ac39c05ae26f13e0f20f5fdc8de47d53a885f7a1ae9b",
+        "71096ee1b1b0353a81b2d3e06f26f7f5829ca8185d522cc9a80cf0f7cf2dd76c",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.isoron.uhabits",
+      "root_receipt_sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+    },
+    {
+      "apk_sha256": "f9f4b3ab46cc9434df811194c2d4351417f4db83a4c1a0facd0a662d69533f7f",
+      "input_sha256": [
+        "010fc28e139000dfe54fde462cc33e817e11300f865061fac67ee17611543894",
+        "c32e319dec82c5726e7e66c9c01dbd56dc68dd1527576f29798ec7b823120f82",
+        "580dbe826f3756be4c55b5d65a410a8591c807e9c07ecee4f21d953ff86889aa"
+      ],
+      "package": "org.jellyfin.mobile",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "1bb8b9a6dcbd70d07d7373e93ed1b316460ebd1983f554914bafbc523e24ac76",
+      "input_sha256": [
+        "851154b09fa2a092182db3f67a20d946b1d5e636d66ddd92c778b41ba262372f",
+        "2c0395d5e64acb2a143abe4426acfe77d5ec047920cd74035e7f6dbd729aa113",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.joinmastodon.android",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "f2c43bb816f8d39cf9490c0c69caaea9b321402e91bb6a4451c717109e4f4d68",
+      "input_sha256": [
+        "30e4a97958069241ca2adba0d176594fd2d8a503dac0e27c0b526aea5db4a083",
+        "8b40ad7761339fb80bc9b6e155a107b36a37236e2d3cb3d9f24b6153673fdb01",
+        "a105c07a281d6bb7a681ae33bbb683f7ef3cda3ab2fa5addb3a6d09b2cfaf47b"
+      ],
+      "package": "org.kde.kdeconnect_tp",
+      "root_receipt_sha256": "c511784853a0f31d93a8bb16b4b3413aa584331185f696bf0c052ceb8a8793bd"
+    },
+    {
+      "apk_sha256": "070f2dc01e319fe5a04afbf9067086f26dde36546d6df86f67872bc0486124f8",
+      "input_sha256": [
+        "04511978fb481d34c0352b2213113de2e33e9656a67f493f37e2ce06f67f0fbc",
+        "5dd07792c5c61dfeaf399d19abe67dea33bef7763b74978d92da0d7a9a69b9f4",
+        "30d71507ead5b8db616cb90d15130e547feb4236c5e42be42996af0c4b5dfcb4"
+      ],
+      "package": "org.liberty.android.freeotpplus",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "e5c600d90d2906acf338c59fdf4b79c98df5a934002a2f6773ff0f5cbc26b267",
+      "input_sha256": [
+        "5446a8c41253aa2c612ed084bb087d9ddd7136d05e59e1769c330ac76ea730d1",
+        "bc5919f810fc7bc56a080650bc3240cb52b212723d01facd9f4efd6691b5775f",
+        "345c0def73b026d486ff148efef04483edd7bff6378c379ab6c94094520b582d"
+      ],
+      "package": "org.linphone",
+      "root_receipt_sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+    },
+    {
+      "apk_sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3",
+      "input_sha256": [
+        "adbc3b26e345fdbc387c143f27786ad0f05ad3530f969786d206f10f465c829e",
+        "08236b8f70c5d54e43eedc4b00fa660a097c8215e30febf0a99206d87e4e6841",
+        "c6b85e1271c9190eab728d66adc94bee35448eaf87e08643dd09fe98095356dd"
+      ],
+      "package": "org.localsend.localsend_app",
+      "root_receipt_sha256": "e73608bb143df15792710d208d30314d64642ecaf620110162d204df786793d8"
+    },
+    {
+      "apk_sha256": "4be8d5ebc113d8bc42a3d046e68a9ba94f79a8e7950379f08ef5aa4856070c97",
+      "input_sha256": [
+        "0ab6ae2fad570a76d4790625caa61b81d45b7c93a6ae5af7661acd3c4f1f6797",
+        "5573011b710fa298b5486a378213a3ce1283110a96f125c3ac04de606dc134bd",
+        "b6b8bbba91b3b181eae3af1fed796ed34c24e8e31b9acf95ddc53af974361d36"
+      ],
+      "package": "org.mozilla.firefox_beta",
+      "root_receipt_sha256": "39ecc9fd298ef3dcf9e1ab0756318ddb03e7c21474a733ec98eeb1db77a66944"
+    },
+    {
+      "apk_sha256": "a057e3a621ee0fe5e71d456a7598ac729ea70d008725096497cb56c1729e6890",
+      "input_sha256": [
+        "f5dd52a5cc72e404cd9fdf1e59cb018bdac24a278c2767bbbb68e8e3a586bb73",
+        "06a6010203d6ae244deb4d18215c00666d929986d50aa497c364e63e48d7b774",
+        "087d112f6a42e69852c7cb25efed728df99793de64e6d4c20e189c32447c6363"
+      ],
+      "package": "org.mozilla.focus",
+      "root_receipt_sha256": "0744b81509dc7e43d572545667aee9a88e64267befc037e3c40d6e4c67d6a264"
+    },
+    {
+      "apk_sha256": "15465bc845560bd14bee0e47fc59dc4ed70fa522dc7c94306e2ba4fd89bf40a1",
+      "input_sha256": [
+        "cc237a71ad8d27a83ee182b8a83731425fc31f9526921aae7f9cc58cd148d5e9",
+        "c8d0d200e5d3ae8b2ee9890390840fadb1bd8e31470d7c55befc022bc34eb71b",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.openhab.habdroid",
+      "root_receipt_sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+    },
+    {
+      "apk_sha256": "072d2fde19bcc6e0d5b56bc07422f2c65b6712656f8be41050b2eccac56dd950",
+      "input_sha256": [
+        "da03ce559c49be506a63b0b3fe0a052e54fdfa8caf4c2c1e7037fa50ade0fc7a",
+        "f9ab0e7bb0a3756b8f1363fdb865c020a878941c29ea510611042c370ab31676",
+        "35a9a918a92a2a9004acec573fd01b4688b424c0b935ee9318e942177b962ef7"
+      ],
+      "package": "org.proninyaroslav.libretorrent",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "641512cee55154cd0c811e435d5f60b9b9e6d65a2103e0a34389c9fe5b4484f2",
+      "input_sha256": [
+        "e7da3908b482b3fb01895921edb1b5c1cceb6afd544be531e781ebc062d932b2",
+        "79bceabb065e7dd11191075dd494e8e1dc1687fc0172513a42e9198c90b40d94",
+        "aa10c576f754e441f9792c796eb03c61e35cebc93b683aaacb7715974b2923ad"
+      ],
+      "package": "org.quantumbadger.redreader",
+      "root_receipt_sha256": "bb5407aea4100096053d7935c5f0702a892f802ee8f967a8202a50571a013bf8"
+    },
+    {
+      "apk_sha256": "f88374b9113aa9ddba865258bd989eb3ac2ca1577d92e59d6e84228e080674ce",
+      "input_sha256": [
+        "629fab720d74ef889ad2090f0a102786ab0736aced651acfbdb142801d995c54",
+        "24d2d7db53dc5f156212db50b127c53bfbf74ff32d0052294ff2d6491a263942",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.sufficientlysecure.keychain",
+      "root_receipt_sha256": "18eea6b3e4a5d0caa2033f7a822d04acfae727f204db0dfd7795fbb38900ed34"
+    },
+    {
+      "apk_sha256": "ed972cc1cec3456a11992435a3fcf132d1311f1e8dfd27758265122fbc206ce0",
+      "input_sha256": [
+        "529ad269daa3bb2c443e3355e1240bc8ad2f9d80ce814987c5a124a4e2f48aaf",
+        "87c99fd1636158ceb47219e977a70c9a2568d992c2202d6a8b149d5b16f31798",
+        "edfce5c96d927a32bc36331fd489af74549ecb99997a10f5da51fcba6940e83d"
+      ],
+      "package": "org.tasks",
+      "root_receipt_sha256": "6b25bec00103066c7aa081ca0046c745641caf34223f9b203b9072ee2782ece6"
+    },
+    {
+      "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+      "input_sha256": [
+        "d2ebd5737cee6eb90d1e0489325602752659994acefe8dd923f2038bc2f3de13",
+        "9bccea12e47aae8f37978adca12e8b8805ee90acc77762ebd56a321db39796dc",
+        "c0139eaa790863b43919c781bb3efc9b6b7243810f2693d001eaf23720e07f7d"
+      ],
+      "package": "org.thoughtcrime.securesms",
+      "root_receipt_sha256": "3b6c737993c8a9bbc94d1b874392d2055d9b992f6e2e2b274e06c01cc659ab8e"
+    },
+    {
+      "apk_sha256": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+      "input_sha256": [
+        "242bb506f35adc96d36912ffc5b542a48852a50eaa5d63d9408fe6ec30a95b2e",
+        "d55b92e3ff6029bb7b2fbdcc15d7fe785bf2031f5f01608aa8c93b8da425f51a",
+        "8f4bd9bc3d99a48c6a039c9a253551f71c4b211461b58dd7f7fbaa9de75d463f"
+      ],
+      "package": "org.torproject.torbrowser",
+      "root_receipt_sha256": "9de43151acd737c47b1c4ad95128d82d1fdbfeb194d1aeb9861cd5465a4b0f90"
+    },
+    {
+      "apk_sha256": "355ff246a0348c094a256926ea31cbec92701a2faca3d41d49170798c550ee3b",
+      "input_sha256": [
+        "a215ace9f6182a53712628e773d145ac943a1c6cbce002ce812f63ef5a4d0fd3",
+        "e15279a6ede51d1d74bfa8138ca0fbcc5826c0f6762d54e9531b81145c5a7d49",
+        "546d2a71962338064de8dc925830be9bc31248793cda04acb88f1323f7d3b629"
+      ],
+      "package": "org.videolan.vlc",
+      "root_receipt_sha256": "44eb7df55607c410f001d742bdd3e62b3bd102c7c0968fc1fd719228e54c538d"
+    },
+    {
+      "apk_sha256": "e8fe61ebd1acc66c52998f9e020febf031f729708bd1e4a89daa3ae4c4243de9",
+      "input_sha256": [
+        "747aa39e7c80c1592229a1d4ff415c1619edb3bdb6fa83f09ac7cc5b2aee5e57",
+        "b1b3bf36287f77f6cb16d18c8acdf093b41554869edc5eb7346d867eac7a12aa",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.woheller69.gpscockpit",
+      "root_receipt_sha256": "dd3c13e939c50717943f023a8c6eafaa9d63fb96255f35301dc8f0e12020dc1d"
+    },
+    {
+      "apk_sha256": "c0f61ec6467965e4df5a302e227f6e2f0efb341b862ffbd30d9dc8e41e930140",
+      "input_sha256": [
+        "bbcd42b88f819de2e7c4f6b01f1d474def5b6f788a26d5abeafb1799d0f3b1d6",
+        "d9ba7bb17feb4d4063ba166aa53874a7ec81f4f70c0dfe79ddc41f1a364fcc2f",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.xbmc.kore",
+      "root_receipt_sha256": "fb638facf146feb8cf6deeef08fa4a0033e579a1e07361373dd55a99496a4db8"
+    },
+    {
+      "apk_sha256": "762f4fe86bca8a66e30a41d5ada92e5d76b2c6bddbbdc09ae505e595cf0a9da3",
+      "input_sha256": [
+        "9c6430cae470bb7c813916a069b4e2bcfa5cc3bb903f8ecfb63ba969031e4cb8",
+        "406c4cd431dfe71690ea6086e19aa2114d35c9d5521b1ad75dc9a25bf5f9364d",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "org.y20k.transistor",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "apk_sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9",
+      "input_sha256": [
+        "88660ac71a67a0e2e1d1f16314b80832a7a9efe030b38bc06e55043d744e1cf4",
+        "bc598a6880c7217d274eba52d6bb2b2cb89cfaf54081f15f6d394b1da7c1abcc",
+        "a44f16d136f6a63be15438c8fc6a67316bc57687283a2090157d91630f35cb5f"
+      ],
+      "package": "proton.android.meet",
+      "root_receipt_sha256": "6a191bd160db05359c565e1f96dcd3a138af6cf72037fe78f750e5e124b4874e"
+    },
+    {
+      "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+      "input_sha256": [
+        "3a1591e59bfbe01d13fe098171b73343031a29796f6570da2a37f5374752ad95",
+        "2b2de035556865c62c06b81fef451fac403792607c4e0783d1d9137aa0474488",
+        "ccaf2f966eff2dd6e911c0f5faad10f25230d55ce575b9388f7ffc27d3f07836"
+      ],
+      "package": "us.zoom.videomeetings",
+      "root_receipt_sha256": "f02d008e567c7548f52a00e4ee7b5276674ffe32f55d747867a88f64aceb31a1"
+    },
+    {
+      "apk_sha256": "dae01d93c8920aa63845868db2190bcc4aa6ff8410b1289de1ce27b1bb89c599",
+      "input_sha256": [
+        "c22c484c52a6ad08e0ac93a51519ff53bde8dc189c28a87678b37cc2188d72e4",
+        "014c1b099ab805107a34a45220256b2a8642e73e4c5048222b56deb031cf2bf5",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ],
+      "package": "ws.xsoh.etar",
+      "root_receipt_sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    }
+  ],
+  "status": "HOST_STATIC_EXPOSURE_ONLY"
+}

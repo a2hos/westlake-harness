@@ -1,0 +1,23 @@
+{
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "at_utc": "2026-10-04T20:39:47.385357+00:00",
+  "basis": [
+    "official direct Android APK",
+    "Google Play same package 100M+ downloads at review time",
+    "German vendor with international product",
+    "corresponding buildable Android client source not found in bounded review; official terms do not grant source rights"
+  ],
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "package": "com.anydesk.anydeskandroid",
+  "peer_review_sha256": "8b82c4640fab520ffa83c48bc7537213c91698961894970b33febb3c75ae77a5",
+  "qualification_candidate_sha256": "3a77ecbdc8c6d548d314904ae6632259902eb2a7606b0d79d4b74c4a75ed8186",
+  "qualified_blackbox_cold_start_delta": 0,
+  "qualified_blackbox_package_delta": 1,
+  "root_raw_admission_sha256": "f52eae3bf501b5919a7f5da53ac34d7a78deea133f77c83a97eaefb25d7135c7",
+  "root_static_admission_sha256": "8671fcad3f8557898cf2919ebfcdaf8ace6fcbe3a655891502fc5fff8c676df2",
+  "schema": "nanhai-plus-root-overseas-mainstream-blackbox-test-input-qualification-v1",
+  "target_sdk37_risk_not_observed_failure": true
+}

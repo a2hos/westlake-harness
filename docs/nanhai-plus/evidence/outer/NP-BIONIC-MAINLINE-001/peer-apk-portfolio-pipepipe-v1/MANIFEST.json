@@ -1,0 +1,44 @@
+{
+  "abis": [
+    "arm64-v8a"
+  ],
+  "activities": 20,
+  "app_name": "PipePipe",
+  "bytes": 32331923,
+  "features": [
+    "android.hardware.touchscreen",
+    "android.software.leanback"
+  ],
+  "filename": "PipePipe-5.3.1.apk",
+  "main_activities": [
+    "org.schabi.newpipe.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 10,
+  "package": "InfinityLoop1309.NewPipeEnhanced",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-pipepipe-v1/PipePipe-5.3.1.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "providers": 7,
+  "receivers": 8,
+  "services": 15,
+  "sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "signing_certificate_sha256": [
+    "dec73429ce2563275f5ed19825e44652b32b363a46f38bdff9ad6dcde4842d88"
+  ],
+  "target_sdk": "36",
+  "version_code": "110804",
+  "version_name": "5.3.1"
+}

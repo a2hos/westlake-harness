@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T20:22:43.887316+00:00",
+  "checked_at": "2026-10-04T20:42:08.431021+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,25 +35,19 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 107,
+    "downloaded_payloads": 111,
     "latest_raw_admission": {
       "packages": [
-        "com.gaditek.purevpnics",
-        "io.privado.android"
+        "com.anydesk.anydeskandroid"
       ],
       "receipts": [
         {
-          "package": "com.gaditek.purevpnics",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g334-purevpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4"
-        },
-        {
-          "package": "io.privado.android",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g336-privadovpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719"
+          "package": "com.anydesk.anydeskandroid",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "f52eae3bf501b5919a7f5da53ac34d7a78deea133f77c83a97eaefb25d7135c7"
         }
       ],
-      "scope": "two exact official host raw APK identities only; static/blackbox/startup unchanged"
+      "scope": "one exact official host raw APK identity only"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -64,30 +58,24 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 105,
-    "complete_inventory_dex_entries": 352,
+    "complete_static_inventories": 109,
+    "complete_inventory_dex_entries": 360,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1541,
+    "complete_inventory_native_elf_entries": 1563,
     "latest_complete_static_admission": {
       "packages": [
-        "com.gaditek.purevpnics",
-        "io.privado.android"
+        "com.anydesk.anydeskandroid"
       ],
       "receipts": [
         {
-          "package": "com.gaditek.purevpnics",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g335-purevpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "9edc648cc9ee044f7839987b5b8732078b7a9f20c830049d6e551e6af1ab8cc5"
-        },
-        {
-          "package": "io.privado.android",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g337-privadovpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "438a6cb0a8d17f8d43754b591d4b4c3e4eae63ec6652c1bac1a8ce9f255c70a7"
+          "package": "com.anydesk.anydeskandroid",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "8671fcad3f8557898cf2919ebfcdaf8ace6fcbe3a655891502fc5fff8c676df2"
         }
       ],
       "scope": "four-phase host static only; no install/runtime"
@@ -97,7 +85,7 @@
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
     "supplemental_payloads": 32,
-    "qualified_blackbox_packages": 20,
+    "qualified_blackbox_packages": 21,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -130,22 +118,16 @@
     },
     "latest_blackbox_qualification": {
       "packages": [
-        "com.gaditek.purevpnics",
-        "io.privado.android"
+        "com.anydesk.anydeskandroid"
       ],
       "receipts": [
         {
-          "package": "com.gaditek.purevpnics",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g338-pure-privado-blackbox-qualification-evidence-v1/ROOT-QUALIFICATION-PUREVPN.json",
-          "sha256": "fd2ba07b0f2f6a96ef7c3c2d555edafbb25bf113808c6280b12293557ce8d059"
-        },
-        {
-          "package": "io.privado.android",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g338-pure-privado-blackbox-qualification-evidence-v1/ROOT-QUALIFICATION-PRIVADOVPN.json",
-          "sha256": "a82b30e58495111d740dbacc0c1e9f0647dc50e379cf01a50832714082103ed7"
+          "package": "com.anydesk.anydeskandroid",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+          "sha256": "17ea5de22d02318d33dc2f9ee9e34d82b492f3629ba3d2078c889cfdad4903cf"
         }
       ],
-      "scope": "qualified exact test inputs only; no cold startup"
+      "scope": "overseas mainstream blackbox test input only; not startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -2667,5 +2649,134 @@
     },
     "disposition_reviewed_delta": 0,
     "tool_pass_delta": 0
+  },
+  "g340_pipepipe_upstream_whitebox": {
+    "raw": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-pipepipe-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "5a07fec52ad977bd081e4f83d3516aa146a6c5c672b96332d062188cbc9be476"
+    },
+    "full_static": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-pipepipe-static-v2/ROOT-STATIC-ADMISSION.json",
+      "sha256": "69033330ed9cdbd149aa8cae286045964bfa90f95e3dc1027b5c7b2629d399dd"
+    },
+    "raw_delta": 1,
+    "full_static_delta": 1,
+    "blackbox_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g279_socks_boundary_offline": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-socks-connect-boundary-candidate-v1/ROOT-REVIEW.json",
+      "sha256": "1f190ad43791d62fb5ee9050352eb191a04ae8b9365e0aae81d919c5d39fa45f"
+    },
+    "live_release": false,
+    "remote_identity_proven": false
+  },
+  "g279_native_host_entry_local_diff": {
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-host-entry-local-diff-v1/NO-ROUTE.json",
+      "sha256": "103cc106fda5d57a56552c31a6e83a7be16a0e2c8ecb9e0d778bcda49efdb7a3"
+    },
+    "authenticated_exact_r4_host_proven": false
+  },
+  "g341_ntfy_lichess_upstream_whitebox": {
+    "packages": [
+      "io.heckel.ntfy",
+      "org.lichess.mobileV2"
+    ],
+    "raw_receipts": [
+      {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-ntfy-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "5fc1c5148cfb20d586d716b3105cde1b45311cdb8e415cbf39a8d4b37a914f3d"
+      },
+      {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-lichess-v1/ROOT-RAW-ADMISSION.json",
+        "sha256": "4c63f74b9aaa5a87dd4000e71f692d501c50456c09979b90608b5a345f7c580f"
+      }
+    ],
+    "static_receipts": [
+      {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-ntfy-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "eb1ac6587e42e04e724b81dd7b6340d3b22ab66e4b9797c00a790e61d73926f9"
+      },
+      {
+        "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-lichess-static-v1/ROOT-STATIC-ADMISSION.json",
+        "sha256": "99ab66f40296363bbac60b430811744090305bb6e4b2ed6faca5b5d41ee4fbdf"
+      }
+    ],
+    "raw_delta": 2,
+    "full_static_delta": 2,
+    "blackbox_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g339_frozen_pre105_static_exposure": {
+    "status": "root_accepted_host_static_exposure_pilot_only",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g339-cross-apk-exposure-cohort-v2/ROOT-REVIEW.json",
+      "sha256": "f2e7caa5987e928a393557a91f5e6e7685c2e7970115296e9755e45bab378a75"
+    },
+    "frozen_prebatch_packages": 105,
+    "libjnigraphics_declared_needed_packages": 34,
+    "current_bionic_provider_missing_proven": false,
+    "apk_startup_delta": 0
+  },
+  "evo55": {
+    "status": "pilot_only_no_production_promotion",
+    "lens": "apk_input_identity_preflight",
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0055-apk-input-identity-preflight/decision.json",
+      "sha256": "88cb20f6a5d68c7f441b7a1fcf2b81ee8020c0545d3fd1ee572101171480228b"
+    },
+    "startup_delta": 0
+  },
+  "g342_anydesk_blackbox": {
+    "raw": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "f52eae3bf501b5919a7f5da53ac34d7a78deea133f77c83a97eaefb25d7135c7"
+    },
+    "full_static": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "8671fcad3f8557898cf2919ebfcdaf8ace6fcbe3a655891502fc5fff8c676df2"
+    },
+    "blackbox_qualification": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-BLACKBOX-QUALIFICATION.json",
+      "sha256": "17ea5de22d02318d33dc2f9ee9e34d82b492f3629ba3d2078c889cfdad4903cf"
+    },
+    "raw_delta": 1,
+    "full_static_delta": 1,
+    "blackbox_test_input_delta": 1,
+    "cold_start_delta": 0,
+    "target_sdk37_aosp16_api36_risk_only": true
+  },
+  "r155_libz_mac_four_gate": {
+    "decision": "no_go_exact_r4_arm64_bionic_build_and_consumer",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/r155-libz-mac-four-gate-v1/NO-GO.json",
+      "sha256": "1bd6e3e1d4d83d2b5583bc0a006599c131fef5168f855e020022d55c27986cf5"
+    },
+    "source_identity_pass_only": true,
+    "native_exact_toolchain_ready": false,
+    "bionic_target_dependency_closed": false,
+    "whole_tool_pass_delta": 0
+  },
+  "g340_jnigraphics_provider_loader": {
+    "decision": "source_definition_and_local_no_artifact_only",
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g340-jnigraphics-exact-provider-loader-audit-v1/ROOT-REVIEW.json",
+      "sha256": "4e1bdf150efbac70849aac8cc0dc433537384e2f8f19f5dae8e247d772f60e32"
+    },
+    "static_exposure_packages_from_g339_pre105": 34,
+    "provider_target_artifact_verified": false,
+    "runtime_loader_selection_verified": false,
+    "startup_delta": 0
+  },
+  "evo56": {
+    "status": "pilot_only_no_promotion",
+    "lens": "provider_consumer_next_evidence_edge",
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0056-provider-consumer-information-gain/decision.json",
+      "sha256": "a183bae0a03338483351168e57b4f69b771171a950aac7481815c4dc50ced139"
+    },
+    "startup_delta": 0
   }
 }

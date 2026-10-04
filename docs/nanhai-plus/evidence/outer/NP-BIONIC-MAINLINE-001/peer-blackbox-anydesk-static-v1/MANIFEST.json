@@ -1,0 +1,66 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 3,
+  "app_name": "AnyDesk",
+  "bytes": 47905570,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.faketouch",
+    "android.hardware.microphone",
+    "android.hardware.touchscreen",
+    "android.hardware.usb.host",
+    "android.software.leanback"
+  ],
+  "filename": "AnyDesk.apk",
+  "main_activities": [
+    "com.anydesk.anydeskandroid.gui.activity.HubActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "21",
+  "native_library_entries": 4,
+  "package": "com.anydesk.anydeskandroid",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-blackbox-anydesk-v1/AnyDesk.apk",
+  "permissions": [
+    "android.permission.ACCESS_LOCAL_NETWORK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.INJECT_EVENTS",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.USB_PERMISSION",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.USE_LOOPBACK_INTERFACE",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.sec.MDM_REMOTE_CONTROL",
+    "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "com.anydesk.anydeskandroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.samsung.android.knox.permission.KNOX_REMOTE_CONTROL"
+  ],
+  "providers": 4,
+  "receivers": 10,
+  "services": 4,
+  "sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "signing_certificate_sha256": [
+    "74dc8452007ccdfefc366b65ad5361a255745d1f962a3565e6cf0f78762db316"
+  ],
+  "target_sdk": "37",
+  "version_code": "90002",
+  "version_name": "9.0.2"
+}

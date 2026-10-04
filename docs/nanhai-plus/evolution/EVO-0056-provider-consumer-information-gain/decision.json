@@ -1,0 +1,20 @@
+{
+  "decision": "PILOT_SELECTION_RULE_ONLY_NO_PROMOTION",
+  "id": "EVO-0056",
+  "limitations": [
+    "Hard-coded three-candidate offline pilot; not a general cost model or production scheduler",
+    "G339 prebatch 105 snapshot excludes later admissions; AnyDesk does not enter the 34 count",
+    "No host graph, provider ELF, product install manifest, runtime loader or device result produced"
+  ],
+  "network_or_device_action": false,
+  "next_falsifiable_gate": "After authenticated exact R4 native Linux host recovery, inspect one same-generation ARM64 Bionic libjnigraphics ELF (hash, SONAME, NEEDED, symbol ABI) and product install manifest path, and compare with one frozen APK DT_NEEDED/undefined-symbol consumer. If absent, record only provider artifact/install evidence for that build; if present, still require loader mapping and cold-start trace to attribute a startup wall.",
+  "one_improvement": "Rank a shared static dependency by a two-ended evidence edge: explicit root-accepted APK consumer declarations plus the next falsifiable exact-version provider/loader witness, rather than prevalence alone.",
+  "pilot_code_sha256": "60136f2b8b02ebcffe3ee30dde3d125c05eff9672aaf4894e97c3d03af04216e",
+  "pilot_result": "Offline G339/G340 replay keeps libc.so (86) as base prerequisite and libz.so (22) behind native toolchain/sysroot gate; it selects libjnigraphics.so (34) for the next narrowly bounded exact R4 ARM64 provider ELF + product install manifest check. This is test selection only, no missing-provider or startup-blocker claim.",
+  "pilot_result_sha256": "36d634908d1c49f36bd8b04562ede6a472cf937eb8c0a9345e73571f89b5be19",
+  "production_changed": false,
+  "promotion_gate": "Independent peer/root validate the selection rule on at least one additional frozen shared dependency and an actual same-generation provider/consumer evidence pair. Measure whether it changes the next action without false provider-absence or unlock claims; only then integrate into routine scan planning.",
+  "rollback": "Reject the rule if it ranks only by APK count, selects an unbuildable/unavailable provider experiment as executable now, treats source/module declaration as ELF availability, treats targetSdk37 as install failure, or treats static DT_NEEDED as startup reachability. Restore existing evidence-gated triage.",
+  "schema": "nanhai-evolution-decision-v1",
+  "status": "pilot"
+}

@@ -1,0 +1,47 @@
+{
+  "apk_bytes": 32331923,
+  "apk_sha256": "589bb89b777bf0a33a13ab6456d2c876c3b8814f40fa8f74b2c4f0285aa56bf1",
+  "at_utc": "2026-10-04T20:28:57.486859+00:00",
+  "count_effect_if_root_accepts": {
+    "cold_starts": 0,
+    "complete_static_inventories": 0,
+    "mainstream_overseas_blackbox_qualifications": 0,
+    "raw_artifact_identities": 1
+  },
+  "decision": "GO_EXACT_RAW_ARTIFACT_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "raw_result": "77cafac3b62fd61eec998af5dd8df36d0880d08f03c82506052c36febd7d113d",
+    "raw_verify": "a7fd5cd4a95fbe3ba516ff475590c5974d295112c4f974d947178cd565878cd6",
+    "upstream_download_lock": "2a087b706eb0b020f284e2fef119982a09e6ce354c401be7e31a13071f04302a",
+    "upstream_registry": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb"
+  },
+  "independent_checks": {
+    "aapt2_package_version_target": "InfinityLoop1309.NewPipeEnhanced / 110804 / 5.3.1 / targetSdk36",
+    "aapt2_rc": 0,
+    "aapt2_stdout_sha256": "e07b45185d36bd6d947dc629145556d7c980c99f4ef698886d5811c52a28c225",
+    "apksigner_rc": 0,
+    "apksigner_stdout_sha256": "5d36c661c48da578f2acfb4cf7889c26e4de3d7a9301640a6fc8a708c71b3b6b",
+    "download_lock_git_blob": "4160c76212cff547fb23e582e820e0abc0189da3",
+    "f_droid_get_receipt": "curl rc0, HTTP/2 200, application/vnd.android.package-archive; existing payload independently rehashed; no fresh GET by reviewer",
+    "lock_package_version_code_bytes_sha_url_match": true,
+    "previous_root_raw_admission_exact_package_or_sha_found": false,
+    "root_dex_count": 2,
+    "signer_cert_sha256": "dec73429ce2563275f5ed19825e44652b32b363a46f38bdff9ad6dcde4842d88",
+    "true_arm64_elf_count": 10,
+    "upstream_commit": "ac2dcc47945d4597941e05fbb1e44a520e993fb7",
+    "zip_crc_bad": null,
+    "zip_duplicate_names": 0,
+    "zip_entries": 1822
+  },
+  "limits": [
+    "F-Droid GET receipt and exact upstream lock establish artifact identity within project evidence; no independent fresh upstream website fetch or publisher provenance assertion",
+    "apksigner verifies internal APK signature, not its installation or publisher trust",
+    "Package/source is whitebox test input; no mainstream overseas blackbox qualification",
+    "No root count change, install, runtime, screen or tool pass"
+  ],
+  "package": "InfinityLoop1309.NewPipeEnhanced",
+  "review_scope": "independent host-only readback; no download retry, device, container, Bridge or remote host",
+  "schema": "pipepipe-independent-raw-review-v1",
+  "version_code": 110804,
+  "version_name": "5.3.1"
+}

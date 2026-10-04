@@ -1,0 +1,19 @@
+{
+  "container_commands": 0,
+  "device_commands": 0,
+  "first_rc": 0,
+  "g339_pre105_needed_exposure_packages": 34,
+  "remote_commands": 0,
+  "replay_rc": 0,
+  "result_replay_byte_equal": true,
+  "root_review_candidate": "NO_GO_PROVIDER_AND_LOADER_UNPROVEN",
+  "run_command": "python3 -B scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g340-jnigraphics-exact-provider-loader-audit-v1/audit.py",
+  "schema": "g340-provider-loader-audit-validation-v1",
+  "sha256": {
+    "ASSESSMENT.md": "0287d5715b0755e658b3761a89b5731015ec411983ee48ec0c3d6ff5ec3b85b4",
+    "REPLAY.json": "cfaefdbb0477c7205f12c243410ffa786e233c50576bc242baa7e66149b6b65d",
+    "RESULT.json": "cfaefdbb0477c7205f12c243410ffa786e233c50576bc242baa7e66149b6b65d",
+    "audit.py": "b362d3585ed8b0ae04c6b5c056b8b752e2f246958e3366f9bebd71342bad5b1d"
+  },
+  "target_provider_artifact_local_count": 0
+}

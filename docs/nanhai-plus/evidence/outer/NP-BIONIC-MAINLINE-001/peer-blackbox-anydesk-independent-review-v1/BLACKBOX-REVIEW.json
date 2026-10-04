@@ -1,0 +1,37 @@
+{
+  "apk_bytes": 47905570,
+  "apk_sha256": "28f4d8cac22cd76f2ecc28d59bd9a3aa09d7bb20c1a19d3e05cc2ed907169e29",
+  "at_utc": "2026-10-04T20:38:57.720666+00:00",
+  "count_effect_if_root_accepts": {
+    "blackbox_qualified_packages": 1,
+    "cold_starts": 0,
+    "complete_static_inventories": 0,
+    "qualified_blackbox_startups": 0,
+    "raw_artifact_identities": 0
+  },
+  "decision": "GO_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY_PENDING_ROOT_ADMISSION",
+  "evidence_sha256": {
+    "qualification_candidate": "3a77ecbdc8c6d548d314904ae6632259902eb2a7606b0d79d4b74c4a75ed8186",
+    "raw": "15a92235374eeee54852073091f92eb8ca36038973d9c9facce779822baed734",
+    "verify_v2": "d89dc560dd017ce5f36e719aa1bf0dd1cfccc982fd5e9e8a8af579a74356e8d8"
+  },
+  "package": "com.anydesk.anydeskandroid",
+  "qualification_basis": {
+    "blackbox": "Official Terms section 5 says customer rights do not include software source code; bounded candidate search found no public buildable corresponding Android client. This supports treating the exact APK as black-box test input, not an exhaustive global absence proof.",
+    "google_play": "https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid",
+    "mainstream": "Google Play listing for same package shows 100M+ downloads and 133K reviews at review time",
+    "official_android_page": "https://anydesk.com/en/downloads/android",
+    "official_terms": "https://anydesk.com/en/terms",
+    "overseas": "AnyDesk Software GmbH is German vendor; international official Android download and global remote-access product"
+  },
+  "review_scope": "existing APK host-only readback plus current official public web pages; no payload re-download, device, container, Bridge or SSH",
+  "schema": "anydesk-independent-blackbox-review-v1",
+  "scope_limit": [
+    "Qualification applies to test-input cohort, not successful cold start",
+    "No install behavior observed; targetSdk37 greater than AOSP16 API36 is risk, not failure",
+    "No source compiler identity can be inferred from the APK",
+    "Product popularity does not prove this exact binary release installed by 100M users"
+  ],
+  "version_code": 90002,
+  "version_name": "9.0.2"
+}
