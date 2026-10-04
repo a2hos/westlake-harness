@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T09:31:19.675635+00:00",
+  "checked_at": "2026-10-04T09:46:17.557372+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -54,15 +54,14 @@
     "supplemental_payloads": 4
   },
   "latest_actual_execution": {
-    "release": 275,
+    "release": 276,
     "terminal_rc": 2,
-    "actual_exec_session": 23044,
-    "terminal_chunk": "4e7b58",
-    "host_preparatory_steps_rc0": 6,
-    "soong_bootstrap_successful_steps": 250,
-    "soong_bootstrap_total_steps": 250,
-    "first_failed_step": "stock",
-    "stock_child_at_stop": "target-graph",
+    "actual_exec_session": 87154,
+    "terminal_chunk": "f7480a",
+    "first_failed_step": "work-init-create",
+    "work_init_create_rc": 0,
+    "stock_container_created": false,
+    "graph_generation_pass": false,
     "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
@@ -487,6 +486,10 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-static-review-v1/REVIEW.json",
       "sha256": "65d650987db213d3761b4241cde104d09e6efcc8b6959e0e9a277dc219e09ee0"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-REVIEW.json",
+      "sha256": "bece2ccac55cbd07209add0229f36118d2221286cfbdf5f29f4e20cfa9c8c5e5"
     }
   ],
   "bionic_stock_graph": {
@@ -1091,5 +1094,27 @@
     "root_sealed": false,
     "target_compile_commands": 0,
     "device_commands": 0
+  },
+  "g276_actual": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-REVIEW.json",
+      "sha256": "bece2ccac55cbd07209add0229f36118d2221286cfbdf5f29f4e20cfa9c8c5e5"
+    },
+    "independent_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/g276-terminal-peer-review-v1/REVIEW.json",
+      "sha256": "cc530d355630312c90a38d70594c27af4391bc3fef55c7001fc2ba0024121727"
+    },
+    "result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/RESULT.json",
+      "sha256": "9797371cba73c4253040bb421a59201b6cd69ca0d2b05776097bff8af21673dc"
+    },
+    "scoped_cleanup": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-SCOPED-CLEANUP.json",
+      "sha256": "a2689d9bc693d22796c31d58d5b7ec88c042834ff56c1d9e9e95e20b1a582ad7"
+    },
+    "terminal_rc": 2,
+    "graph_generation_pass": false,
+    "stock_container_created": false,
+    "target_compile_commands": 0
   }
 }

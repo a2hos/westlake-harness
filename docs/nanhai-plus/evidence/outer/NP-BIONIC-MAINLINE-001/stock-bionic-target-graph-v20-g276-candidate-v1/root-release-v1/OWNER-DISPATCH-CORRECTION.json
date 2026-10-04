@@ -1,0 +1,13 @@
+{
+  "schema": "nanhai-g276-dispatch-message-hash-correction-v1",
+  "at": "2026-10-04T09:35:32.737642+00:00",
+  "original_event_id": "g276-stock-graph-v20-owner-consume-20261004",
+  "original_status": "rejected_pre_delivery_invalid_message",
+  "mechanism": "monitor digest hashes JSON-serialized string, not raw UTF-8 message bytes",
+  "corrected_event_id": "g276-stock-graph-v20-owner-consume-corrected-20261004",
+  "corrected_message_sha256": "f1ec2780a41aca959abeb8bc59e164439013bf449607bf5094331487722540ae",
+  "unchanged_message": true,
+  "delivery_not_yet_observed": true,
+  "docker_commands": 0,
+  "device_commands": 0
+}

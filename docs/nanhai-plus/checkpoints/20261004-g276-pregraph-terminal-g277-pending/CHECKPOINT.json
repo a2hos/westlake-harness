@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T09:46:28.973432+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "latest_terminal": "G276 exec87154/chunkf7480a/rc2 before stock graph; inherited verifier old.LEAF=v17b init mount drift; compile0",
+  "scoped_cleanup": "work-init container and out/tmp volumes exact label matched and removed rc0",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 77,
+    "static_apks": 73,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "reflection": "EVO18 closed; one actual group since closure, no new reflection yet",
+  "next": "G277 new candidate for delegated leaf binding; independent review/owner ACK/seal; G276 spent",
+  "device_hold": "preserved",
+  "github_last_verified_commit": "5a65b12acebb47c2074fcba26a9e331df56b971a",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "d1fae42b1e75bc5663dd733a75ecff82758fc00ee5c6c2649056bd787849557f"
+    },
+    "g276_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-REVIEW.json",
+      "sha256": "bece2ccac55cbd07209add0229f36118d2221286cfbdf5f29f4e20cfa9c8c5e5"
+    },
+    "g276_cleanup": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-SCOPED-CLEANUP.json",
+      "sha256": "a2689d9bc693d22796c31d58d5b7ec88c042834ff56c1d9e9e95e20b1a582ad7"
+    }
+  }
+}

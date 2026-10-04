@@ -1,0 +1,89 @@
+{
+  "schema": "nanhai.g276.owner-ack-independent-peer-review.v1",
+  "reviewed_utc": "2026-10-04T09:38:02.814615+00:00",
+  "decision": "ACK_ACCEPTED_FOR_ROOT_SEAL_REVIEW",
+  "execution_state": "BLOCK_UNTIL_G276_SEALED_PACKET_AND_MATCHING_ROOT_SEAL",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/OWNER-ACK.json",
+    "sha256": "6fc9340a5df6f7a76584cdb060a57deb792e063cbc7b295eaacb1bfe8a782866",
+    "at": "2026-10-04T09:36:09.456921+00:00",
+    "control_exactly_matches_request": true,
+    "nonce": "g276owner6a97431e1ecf6299e63254b9f5",
+    "session_matches_request": true,
+    "accepted_scope_matches_request": true,
+    "consumed_exactly_matches_request": true,
+    "consumed_references": 377,
+    "current_rehash_mismatches": [],
+    "reported_network_compiler_docker_device_commands": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "business_complete": false
+  },
+  "transport": {
+    "original_event_id": "g276-stock-graph-v20-owner-consume-20261004",
+    "original_declared_sha256": "cf3f6b11873c5017a0452e8ac1256e5c89807052107f3c14241506240ecce930",
+    "original_raw_utf8_sha256": "cf3f6b11873c5017a0452e8ac1256e5c89807052107f3c14241506240ecce930",
+    "original_monitor_delivery_record_exists": false,
+    "original_correction_receipt_status": "rejected_pre_delivery_invalid_message",
+    "corrected_event_id": "g276-stock-graph-v20-owner-consume-corrected-20261004",
+    "message_unchanged": true,
+    "corrected_declared_sha256": "f1ec2780a41aca959abeb8bc59e164439013bf449607bf5094331487722540ae",
+    "corrected_json_string_sha256": "f1ec2780a41aca959abeb8bc59e164439013bf449607bf5094331487722540ae",
+    "corrected_monitor_return_code": 0,
+    "corrected_monitor_status": "queued-awaiting-native-ACK",
+    "corrected_transport_type": "agent_prompted"
+  },
+  "native_owner_execution": {
+    "ledger_path": ".nanhai-plus-runtime/instance/ui-protocol/6f7261636c652d6b696d693a6c6f63616c3a6e616e6861692d706c757323696e6e6572007e6377642d35343431326534343037326337313832/ledger-00001791090903799580-81499.log",
+    "tool_started_seq": 186214,
+    "tool_completed_seq": 186216,
+    "tool_name": "bash",
+    "command": "python3 -B scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/owner_entry.py",
+    "tool_completed_success": true,
+    "tool_output_reported_rc": 0,
+    "tool_output_ack_sha256_prefix_matches_receipt": true,
+    "session": "oracle-kimi:local:nanhai-plus#inner",
+    "ledger_observations": [
+      {
+        "seq": 186214,
+        "kind": "tool_started",
+        "tool": "bash",
+        "success": null,
+        "session": "oracle-kimi:local:nanhai-plus#inner"
+      },
+      {
+        "seq": 186216,
+        "kind": "tool_completed",
+        "tool": "bash",
+        "success": true,
+        "session": "oracle-kimi:local:nanhai-plus#inner"
+      },
+      {
+        "seq": 186273,
+        "kind": "envelope_v2",
+        "tool": null,
+        "success": null,
+        "session": "oracle-kimi:local:nanhai-plus#inner"
+      }
+    ],
+    "ordering_limit": "Corrected user-message notification is logged at seq 186273 after the owner tool completion at seq 186216; monitor delivery and native execution are independently proven, causal attribution to corrected notification is not proven by ledger order.",
+    "turn_tool_started_count": 2,
+    "turn_tool_commands": "Only owner_entry.py SHA check and bounded owner_entry.py invocation; no Docker or device tool in that native turn."
+  },
+  "claim_control_note": "At ACK review, claim remained ready/completed_reviewed sequence 275 with accepted G275 latest_actual_review. Other control summary fields are being reconciled by root before release; ACK consumer did not depend on them.",
+  "limits": "This accepts bounded SHA-consumption ACK only. No graph, target build, device, or full business acceptance.",
+  "review_commands": {
+    "dispatch": 0,
+    "seal": 0,
+    "graph": 0,
+    "docker": 0,
+    "device": 0,
+    "bridge": 0
+  }
+}

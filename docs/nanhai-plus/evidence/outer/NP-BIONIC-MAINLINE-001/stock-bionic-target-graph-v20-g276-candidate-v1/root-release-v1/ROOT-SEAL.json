@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai-g276-root-seal-v1",
+  "at": "2026-10-04T09:38:45.257592+00:00",
+  "status": "ROOT_SEALED_G276_FOR_ONE_HOST_GRAPH_EXECUTION",
+  "claim": "NP-MUSL16-ART-024",
+  "goal_id": "goal_01",
+  "release_sequence": 276,
+  "generation": "bionic-g276-hidl-apex-stock-graph",
+  "nonce": "g276e33b1885ed88a09a9d8200f18f214a6e",
+  "candidate_sha256": "8dea207ad0869c1c7a789d3bf2ce64c7918dda216f6a62c5aaa2536fae0ec057",
+  "packet": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-SEALED.json",
+    "sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49"
+  },
+  "packet_sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49",
+  "owner_ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/OWNER-ACK.json",
+    "sha256": "6fc9340a5df6f7a76584cdb060a57deb792e063cbc7b295eaacb1bfe8a782866"
+  },
+  "owner_ack_sha256": "6fc9340a5df6f7a76584cdb060a57deb792e063cbc7b295eaacb1bfe8a782866",
+  "independent_ack_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/owner-ack-peer-review-v1/REVIEW.json",
+    "sha256": "bf318a1fb24012db3857c7549fa6511183e5bcbd2821b7de1e874320078322fa"
+  },
+  "root_ack_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/OWNER-ACK-ROOT-REVIEW.json",
+    "sha256": "ec28b6f74aab991d4a65594eb69d8f42211ef40ec74ea5f0248441466665862e"
+  },
+  "graph_executed": false,
+  "device_commands": 0
+}

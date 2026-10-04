@@ -1,0 +1,95 @@
+{
+  "schema": "nanhai.g276.v20.terminal-peer-review.v1",
+  "reviewed_utc": "2026-10-04T09:45:28.541461+00:00",
+  "decision": "ACCEPT_ACTUAL_PRE_GRAPH_TERMINAL_FAILURE_EVIDENCE",
+  "status": "G276_SPENT_PRE_GRAPH_FAILED",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "release_sequence": 276,
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/RESULT.json",
+    "sha256": "9797371cba73c4253040bb421a59201b6cd69ca0d2b05776097bff8af21673dc",
+    "rc": 2,
+    "first_failed_step": "work-init-create",
+    "error": "ValueError: init mount drift",
+    "secondary_errors": [
+      "cleanup/export work-init: ValueError: init mount drift"
+    ],
+    "commands": 14,
+    "commands_timed_out": 0,
+    "target_compile_commands": 0,
+    "device_commands": 0
+  },
+  "owner_receipt": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/OWNER-RECEIPT.json",
+    "sha256": "5d9854525425e120900909ae4ea6ecd65781c7d952b7da00276cb521894356ce",
+    "result_sha_matches": true,
+    "rc_matches": true,
+    "control_matches": true
+  },
+  "evidence_integrity": {
+    "listed_files": 45,
+    "listed_bytes": 67353,
+    "all_listed_path_size_sha256_match": true,
+    "source_before_sha256": "fcd00ec7aa740e56e5cbb97cb701e7639b67ebfd4c2b625111a92083978e5c75",
+    "source_after_sha256": "fcd00ec7aa740e56e5cbb97cb701e7639b67ebfd4c2b625111a92083978e5c75",
+    "source_guard_bytes_equal": true,
+    "g275_complete_source_and_sdk_equal": true,
+    "g276_new_roots_equal": true,
+    "g276_new_roots_entries": 997
+  },
+  "mount_boundary": {
+    "planned_stock_roots": 42,
+    "stock_container_created": false,
+    "linux_stock_ro_mounts_observed": 0,
+    "linux_stock_ro_mounts_verified": false,
+    "work_init_created_mounts": 5,
+    "work_init_mounts_match_v20_create_command": true,
+    "work_init_mounts_match_inherited_verifier": false,
+    "observed_bind_paths_use": "stock-bionic-target-graph-v20-g276-candidate-v1",
+    "inherited_verifier_expected_bind_paths_use": "stock-bionic-target-graph-v17b"
+  },
+  "verified_cause": {
+    "fact": "Docker create returned rc0 and inspect showed a created, stopped work-init container; verification raised ValueError: init mount drift before start.",
+    "code_binding": "G276 sets its own old.LEAF to v20, but G276 original_verify_container is G275 verify_container bound to G275 distinct old module with LEAF still v17b.",
+    "reproduction": "Read-only call of inherited validator on persisted inspect data raises init mount drift; same data passes G276 old.verify_work_init when its LEAF is set to v20.",
+    "mismatched_bind_destinations": [
+      "/tools/graph_volume_init.py",
+      "/tools/volume_identity.py",
+      "/control"
+    ],
+    "volume_mounts_match": true
+  },
+  "archive_and_cleanup": {
+    "exports": {},
+    "archive_validation_performed": false,
+    "source_volume_removed": true,
+    "retained_volumes": [
+      "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e",
+      "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e"
+    ],
+    "work_init_cid": "dbb7ff7f6cec9f6f5a8a8d6e6612c8394d21709cb6565b42d899d8ab4b3779de",
+    "last_recorded_work_init_state": "created",
+    "last_recorded_running": false,
+    "last_recorded_pid": 0,
+    "work_init_container_remove_recorded": false,
+    "cleanup_error": [
+      "cleanup/export work-init: ValueError: init mount drift"
+    ]
+  },
+  "safe_next_evidence": "Before any scoped cleanup, freshly inspect exact work-init CID/name/claim/nonce/phase and both retained volume names/labels; if unchanged and unused, remove that created container and only those two private volumes. Preserve immutable runtime receipts. Fix verifier LEAF binding in a new candidate and release; do not replay spent G276 packet.",
+  "not_proven": [
+    "42 stock Linux readonly mounts",
+    "materialization",
+    "Soong graph",
+    "target build",
+    "device"
+  ],
+  "review_commands": {
+    "docker": 0,
+    "graph": 0,
+    "device": 0,
+    "bridge": 0,
+    "control_mutations": 0
+  }
+}

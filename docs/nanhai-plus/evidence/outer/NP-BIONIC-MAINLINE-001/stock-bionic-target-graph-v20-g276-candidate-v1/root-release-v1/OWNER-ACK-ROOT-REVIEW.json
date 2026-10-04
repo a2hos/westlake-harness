@@ -1,0 +1,27 @@
+{
+  "schema": "nanhai-g276-owner-ack-root-review-v1",
+  "at": "2026-10-04T09:38:45.257592+00:00",
+  "decision": "ACCEPT_FRESH_ORIGINAL_OWNER_SHA_CONSUMPTION_ONLY",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "request": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/OWNER-REQUEST.json",
+    "sha256": "2bb550200af0433cda0a0b4ab98e2f568dcf52bef5615a86ced55b38bb549556"
+  },
+  "owner_ack": {
+    "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/OWNER-ACK.json",
+    "sha256": "6fc9340a5df6f7a76584cdb060a57deb792e063cbc7b295eaacb1bfe8a782866"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/owner-ack-peer-review-v1/REVIEW.json",
+    "sha256": "bf318a1fb24012db3857c7549fa6511183e5bcbd2821b7de1e874320078322fa"
+  },
+  "consumed_refs": 377,
+  "native_owner_tool_rc": 0,
+  "network_compiler_docker_device_commands": 0,
+  "limits": [
+    "No graph/target build/device result",
+    "Native ledger notification ordering does not prove monitor-to-tool causality"
+  ],
+  "next": "Seal matching G276 packet on original claim, independently pre-run review, one bounded host graph."
+}

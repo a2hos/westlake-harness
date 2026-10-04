@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-04T09:43:43.421044+00:00",
+  "_control": {
+    "claim": "NP-MUSL16-ART-024",
+    "goal_id": "goal_01",
+    "release_sequence": 276,
+    "packet_sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49",
+    "nonce": "g276e33b1885ed88a09a9d8200f18f214a6e",
+    "return_to_outer": true
+  },
+  "rc": 2,
+  "result": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/RESULT.json",
+  "result_sha256": "9797371cba73c4253040bb421a59201b6cd69ca0d2b05776097bff8af21673dc",
+  "graph_generation_pass": false,
+  "build_pass": false,
+  "device_verified": false,
+  "whole_tool_verified": false
+}

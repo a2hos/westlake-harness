@@ -1,0 +1,47 @@
+{
+  "schema": "nanhai-g276-root-terminal-review-v1",
+  "at": "2026-10-04T09:46:17.557372+00:00",
+  "decision": "ACCEPT_ACTUAL_PRE_GRAPH_TERMINAL_FAILURE_EVIDENCE",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "release_sequence": 276,
+  "external_execution": {
+    "session_id": 87154,
+    "terminal_chunk": "f7480a",
+    "rc": 2
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/RESULT.json",
+    "sha256": "9797371cba73c4253040bb421a59201b6cd69ca0d2b05776097bff8af21673dc"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/g276-terminal-peer-review-v1/REVIEW.json",
+    "sha256": "cc530d355630312c90a38d70594c27af4391bc3fef55c7001fc2ba0024121727"
+  },
+  "scoped_cleanup": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-SCOPED-CLEANUP.json",
+    "sha256": "a2689d9bc693d22796c31d58d5b7ec88c042834ff56c1d9e9e95e20b1a582ad7"
+  },
+  "observations": {
+    "first_failed_step": "work-init-create",
+    "work_init_docker_create_rc": 0,
+    "work_init_inspect_rc": 0,
+    "verifier_error": "ValueError: init mount drift",
+    "cause": "G276 delegated G275 verifier closes over separate v17b old.LEAF while G276 sets only own old.LEAF to v20",
+    "planned_stock_roots": 42,
+    "observed_stock_ro_mounts": 0,
+    "graph_generation_pass": false,
+    "product_configuration_pass": false,
+    "target_compile_commands": 0,
+    "device_commands": 0,
+    "evidence_files_verified_by_peer": 45,
+    "source_sdk_before_after_equal": true,
+    "exact_private_resource_cleanup_verified": true
+  },
+  "limits": [
+    "G276 packet spent; do not replay",
+    "No stock materialization, Soong graph, target compile, APK cold start or tool completion",
+    "Cleanup verification applies only to identified G276 container and out/tmp volumes"
+  ],
+  "next": "New G277 candidate correcting delegated verifier leaf binding, independent static review and fresh original-owner ACK/seal before one host run."
+}

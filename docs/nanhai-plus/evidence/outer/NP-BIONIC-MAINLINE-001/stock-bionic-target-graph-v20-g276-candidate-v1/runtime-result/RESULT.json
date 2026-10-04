@@ -1,0 +1,678 @@
+{
+  "at": "2026-10-04T09:40:20.390960+00:00",
+  "_control": {
+    "claim": "NP-MUSL16-ART-024",
+    "goal_id": "goal_01",
+    "release_sequence": 276,
+    "packet_sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49",
+    "nonce": "g276e33b1885ed88a09a9d8200f18f214a6e",
+    "return_to_outer": true
+  },
+  "rc": 2,
+  "commands": [
+    {
+      "id": "source-volume-freshness",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-src-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:08.281978+00:00",
+      "timed_out": false,
+      "rc": 1,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:08.357548+00:00"
+    },
+    {
+      "id": "source-volume-create",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "create",
+        "--driver",
+        "local",
+        "--label",
+        "nanhai.claim=NP-MUSL16-ART-024",
+        "--label",
+        "nanhai.nonce=g276e33b1885ed88a09a9d8200f18f214a6e",
+        "--label",
+        "nanhai.role=source",
+        "nanhai-b1-graph-src-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:16.426049+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:16.465035+00:00"
+    },
+    {
+      "id": "source-volume-created-inspect",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-src-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:24.605526+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:24.646297+00:00"
+    },
+    {
+      "id": "out-volume-freshness",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:32.630252+00:00",
+      "timed_out": false,
+      "rc": 1,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:32.653746+00:00"
+    },
+    {
+      "id": "out-volume-create",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "create",
+        "--driver",
+        "local",
+        "--label",
+        "nanhai.claim=NP-MUSL16-ART-024",
+        "--label",
+        "nanhai.nonce=g276e33b1885ed88a09a9d8200f18f214a6e",
+        "--label",
+        "nanhai.role=out",
+        "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:40.720519+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:40.762729+00:00"
+    },
+    {
+      "id": "out-volume-created-inspect",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:48.849651+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:48.890623+00:00"
+    },
+    {
+      "id": "tmp-volume-freshness",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:41:56.994693+00:00",
+      "timed_out": false,
+      "rc": 1,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:41:57.034060+00:00"
+    },
+    {
+      "id": "tmp-volume-create",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "create",
+        "--driver",
+        "local",
+        "--label",
+        "nanhai.claim=NP-MUSL16-ART-024",
+        "--label",
+        "nanhai.nonce=g276e33b1885ed88a09a9d8200f18f214a6e",
+        "--label",
+        "nanhai.role=tmp",
+        "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:42:05.404653+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:05.447466+00:00"
+    },
+    {
+      "id": "tmp-volume-created-inspect",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:42:13.813618+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:13.854663+00:00"
+    },
+    {
+      "id": "work-init-create",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "create",
+        "--pull=never",
+        "--platform",
+        "linux/amd64",
+        "--network",
+        "none",
+        "--read-only",
+        "--user",
+        "0:0",
+        "--cap-drop=ALL",
+        "--cap-add=CHOWN",
+        "--security-opt",
+        "no-new-privileges",
+        "--pids-limit",
+        "32",
+        "--cpus",
+        "1",
+        "--entrypoint",
+        "/usr/bin/env",
+        "--name",
+        "nanhai-b1-graph-work-init-g276e33b1885ed88a09a9d8200f18f214a6e",
+        "--label",
+        "nanhai.claim=NP-MUSL16-ART-024",
+        "--label",
+        "nanhai.nonce=g276e33b1885ed88a09a9d8200f18f214a6e",
+        "--label",
+        "nanhai.phase=work-init",
+        "--cidfile",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init.cid",
+        "--mount",
+        "type=volume,src=nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e,dst=/out",
+        "--mount",
+        "type=volume,src=nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e,dst=/worktmp",
+        "--mount",
+        "type=bind,src=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/graph_volume_init.py,dst=/tools/graph_volume_init.py,readonly",
+        "--mount",
+        "type=bind,src=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/volume_identity.py,dst=/tools/volume_identity.py,readonly",
+        "--mount",
+        "type=bind,src=/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/init-control,dst=/control,readonly",
+        "sha256:81d540904cc84c49df14e8dd3212dcde7ceb920d69097e72b45634f3c478d086",
+        "-i",
+        "PATH=/usr/bin:/bin",
+        "LC_ALL=C",
+        "/usr/bin/timeout",
+        "--signal=TERM",
+        "--kill-after=1",
+        "10",
+        "/usr/bin/python3",
+        "-B",
+        "/tools/graph_volume_init.py",
+        "init"
+      ],
+      "started_at": "2026-10-04T09:42:21.971593+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:22.153757+00:00"
+    },
+    {
+      "id": "work-init-inspect-created",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "inspect",
+        "--type",
+        "container",
+        "dbb7ff7f6cec9f6f5a8a8d6e6612c8394d21709cb6565b42d899d8ab4b3779de"
+      ],
+      "started_at": "2026-10-04T09:42:30.303621+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:30.326658+00:00"
+    },
+    {
+      "id": "cleanup-work-init-inspect",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "inspect",
+        "--type",
+        "container",
+        "dbb7ff7f6cec9f6f5a8a8d6e6612c8394d21709cb6565b42d899d8ab4b3779de"
+      ],
+      "started_at": "2026-10-04T09:42:38.687582+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:38.730017+00:00"
+    },
+    {
+      "id": "cleanup-source-volume-inspect",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "inspect",
+        "nanhai-b1-graph-src-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:42:47.031073+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:47.073566+00:00"
+    },
+    {
+      "id": "cleanup-source-volume-remove",
+      "argv": [
+        "/usr/local/bin/docker",
+        "--config",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/docker-config",
+        "--host",
+        "unix:///Users/alexyang/.orbstack/run/docker.sock",
+        "volume",
+        "rm",
+        "nanhai-b1-graph-src-g276e33b1885ed88a09a9d8200f18f214a6e"
+      ],
+      "started_at": "2026-10-04T09:42:55.087125+00:00",
+      "timed_out": false,
+      "rc": 0,
+      "host_environment_keys": [
+        "HOME",
+        "LC_ALL",
+        "LOGNAME",
+        "PATH",
+        "USER"
+      ],
+      "finished_at": "2026-10-04T09:42:55.130418+00:00"
+    }
+  ],
+  "product_configuration_pass": false,
+  "graph_generation_pass": false,
+  "build_pass": false,
+  "target_compile_commands": 0,
+  "target_ninja_executed": false,
+  "host_go_bootstrap_may_run": true,
+  "device_commands": 0,
+  "whole_tool_verified": false,
+  "first_failed_step": "work-init-create",
+  "error": "ValueError: init mount drift",
+  "secondary_errors": [
+    "cleanup/export work-init: ValueError: init mount drift"
+  ],
+  "exports": {},
+  "volume_names": {
+    "source": "nanhai-b1-graph-src-g276e33b1885ed88a09a9d8200f18f214a6e",
+    "out": "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e",
+    "tmp": "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e"
+  },
+  "removed_volumes": [
+    "source"
+  ],
+  "finished_at": "2026-10-04T09:43:43.415024+00:00",
+  "retained_volumes": [
+    "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e",
+    "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e"
+  ],
+  "evidence": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/SOURCE-AFTER.json",
+      "sha256": "fcd00ec7aa740e56e5cbb97cb701e7639b67ebfd4c2b625111a92083978e5c75",
+      "bytes": 15583
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/SOURCE-BEFORE.json",
+      "sha256": "fcd00ec7aa740e56e5cbb97cb701e7639b67ebfd4c2b625111a92083978e5c75",
+      "bytes": 15583
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-source-volume-inspect-COMMAND.json",
+      "sha256": "9f2e26649f9ef90164621725a449d4421b9f6a32c1f3aca9821aa493d8bc181b",
+      "bytes": 635
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-source-volume-inspect.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-source-volume-inspect.stdout.log",
+      "sha256": "855e3ff942477188f84448c18a9a356d6c00338b2243b4d34e24116fbe85b567",
+      "bytes": 515
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-source-volume-remove-COMMAND.json",
+      "sha256": "8329082df830b1fbef9fff62bd7c717bdc88737a927c8d1088dccebd7d563e5f",
+      "bytes": 629
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-source-volume-remove.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-source-volume-remove.stdout.log",
+      "sha256": "7cd8e744bae77d2df021e00b22cfedb9bad25fc29bd7ba5ef591215c64605cc3",
+      "bytes": 57
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-work-init-inspect-COMMAND.json",
+      "sha256": "82c711607cd734239776f796648ccdb0048b36d4c9fa1da4fca120a08fdd0f09",
+      "bytes": 656
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-work-init-inspect.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/cleanup-work-init-inspect.stdout.log",
+      "sha256": "b507bbf2ffdfa7ac1d56a4852c8a324541308e1b51d5481d2155fc31d6b37eb7",
+      "bytes": 11032
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-create-COMMAND.json",
+      "sha256": "108587776e37293b69447c892c062c27bec247349bedb8ffc62a1dd7163240b3",
+      "bytes": 814
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-create.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-create.stdout.log",
+      "sha256": "e8b8ad839e04f5c3c00c3a23ebb94689c53c75dba1156f0a3ca87216d6b4a8f8",
+      "bytes": 57
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-created-inspect-COMMAND.json",
+      "sha256": "b27e2cc726cef581091b13560a6bc39f73fb33defb4afef0e1daf9707a602899",
+      "bytes": 632
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-created-inspect.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-created-inspect.stdout.log",
+      "sha256": "3df68ee0622e1fb166397f81f52be0bb6244f89aa0d638b58775f0ca2035cd32",
+      "bytes": 512
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-freshness-COMMAND.json",
+      "sha256": "2f6e63ed3eb9cb4c1395243b2dc0aea8bf5fded4dc398c9391d12459c22e349f",
+      "bytes": 626
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-freshness.stderr.log",
+      "sha256": "45366208aaaae443102ae21c11dc7feb5d95146ff806b977b5187fbb30b87a70",
+      "bytes": 105
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/out-volume-freshness.stdout.log",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-create-COMMAND.json",
+      "sha256": "488c13370aa89c93c36434b3b28efba563ca30db8ca3e0e2f5d9fddd70e1f052",
+      "bytes": 820
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-create.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-create.stdout.log",
+      "sha256": "7cd8e744bae77d2df021e00b22cfedb9bad25fc29bd7ba5ef591215c64605cc3",
+      "bytes": 57
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-created-inspect-COMMAND.json",
+      "sha256": "89ef3ecb7ec26a96a1fb3c37125af32fecdc639e2317452e611ded44e90f4a3b",
+      "bytes": 635
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-created-inspect.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-created-inspect.stdout.log",
+      "sha256": "855e3ff942477188f84448c18a9a356d6c00338b2243b4d34e24116fbe85b567",
+      "bytes": 515
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-freshness-COMMAND.json",
+      "sha256": "09005a92b2441c52eb8aee6d9d6e8d109898ef9644ae168210be9fae1bf24912",
+      "bytes": 629
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-freshness.stderr.log",
+      "sha256": "68a0b21d3d17a421beac4733c68e88bd2883fe55a956697b24ce5a63ca081898",
+      "bytes": 105
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/source-volume-freshness.stdout.log",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-create-COMMAND.json",
+      "sha256": "943e3ac864f9a1deb45f2a36f6819c4bcbb4914e2711742ce06452745c41bf32",
+      "bytes": 814
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-create.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-create.stdout.log",
+      "sha256": "8a11b2d7e2d06cf30dff78264ef0ed1e0361017dffcca7229c723b36147e3197",
+      "bytes": 57
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-created-inspect-COMMAND.json",
+      "sha256": "7022ca37773b98217ddf534682cca684a87c909f745675b96e8e792a89dfb7d9",
+      "bytes": 632
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-created-inspect.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-created-inspect.stdout.log",
+      "sha256": "7ee23e7f5ae70cc9eeda73683353e5e7931bac06c33c030151ad5427811a3c9b",
+      "bytes": 512
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-freshness-COMMAND.json",
+      "sha256": "565682becb702a7cc0c28e2993c7e2a283dcad64f55083a19a7a10906652380a",
+      "bytes": 626
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-freshness.stderr.log",
+      "sha256": "2869293e24c698adfa005b76312eeb6e5b568f3819df5e78a0bbe00ab17376c2",
+      "bytes": 105
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/tmp-volume-freshness.stdout.log",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init-create-COMMAND.json",
+      "sha256": "e3cf7361b0b351ab28f6a7f71aba8eddca0cae0af6746c5577ee6ba9c90007d1",
+      "bytes": 2584
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init-create.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init-create.stdout.log",
+      "sha256": "01c03bcabfb934ecfaee8b5ed389d2591175c67d3e26abc32df8037dbabb632f",
+      "bytes": 65
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init-inspect-created-COMMAND.json",
+      "sha256": "254a04d87fb383ee52805a285b3e0bcaf1aaaffc7e7ce854c122ee9a67506dd2",
+      "bytes": 656
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init-inspect-created.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init-inspect-created.stdout.log",
+      "sha256": "cfc28aa7dd6d87b9970e7bf6e4d5c93067bfad8293abb573cd06978d20d3ce1c",
+      "bytes": 11032
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/runtime-result/work-init.cid",
+      "sha256": "6085eeb4c0a890a77556a073a8ea8f7385b5c8fd69ddb8f4367fce41f1064a75",
+      "bytes": 64
+    }
+  ]
+}

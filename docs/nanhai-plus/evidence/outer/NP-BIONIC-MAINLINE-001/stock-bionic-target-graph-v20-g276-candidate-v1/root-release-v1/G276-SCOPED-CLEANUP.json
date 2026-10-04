@@ -1,0 +1,65 @@
+{
+  "schema": "nanhai-g276-scoped-private-cleanup-v1",
+  "at": "2026-10-04T09:45:54.564512+00:00",
+  "peer_review_sha256": "cc530d355630312c90a38d70594c27af4391bc3fef55c7001fc2ba0024121727",
+  "preinspect": {
+    "cid": "dbb7ff7f6cec9f6f5a8a8d6e6612c8394d21709cb6565b42d899d8ab4b3779de",
+    "name": "/nanhai-b1-graph-work-init-g276e33b1885ed88a09a9d8200f18f214a6e",
+    "state": "created",
+    "running": false,
+    "labels": {
+      "nanhai.claim": "NP-MUSL16-ART-024",
+      "nanhai.nonce": "g276e33b1885ed88a09a9d8200f18f214a6e",
+      "nanhai.phase": "work-init"
+    },
+    "volumes": [
+      {
+        "name": "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e",
+        "labels": {
+          "nanhai.claim": "NP-MUSL16-ART-024",
+          "nanhai.nonce": "g276e33b1885ed88a09a9d8200f18f214a6e",
+          "nanhai.role": "out"
+        }
+      },
+      {
+        "name": "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e",
+        "labels": {
+          "nanhai.claim": "NP-MUSL16-ART-024",
+          "nanhai.nonce": "g276e33b1885ed88a09a9d8200f18f214a6e",
+          "nanhai.role": "tmp"
+        }
+      }
+    ]
+  },
+  "commands": {
+    "container_remove": {
+      "rc": 0,
+      "stdout": "dbb7ff7f6cec9f6f5a8a8d6e6612c8394d21709cb6565b42d899d8ab4b3779de\n",
+      "stderr": ""
+    },
+    "volume_remove": [
+      {
+        "name": "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e",
+        "rc": 0,
+        "stdout": "nanhai-b1-graph-out-g276e33b1885ed88a09a9d8200f18f214a6e\n",
+        "stderr": ""
+      },
+      {
+        "name": "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e",
+        "rc": 0,
+        "stdout": "nanhai-b1-graph-tmp-g276e33b1885ed88a09a9d8200f18f214a6e\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "postinspect": {
+    "container_rc": 1,
+    "volume_rcs": [
+      1,
+      1
+    ]
+  },
+  "removed_exact_private_resources": true,
+  "source_baseline_or_device_touched": false,
+  "runtime_receipts_preserved": true
+}

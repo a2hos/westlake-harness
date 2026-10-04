@@ -1,0 +1,63 @@
+{
+  "schema": "nanhai.g276.independent-pre-dispatch-review.v1",
+  "reviewed_utc": "2026-10-04T09:33:45.901591+00:00",
+  "decision": "GO_FOR_ORIGINAL_OWNER_SHA_CONSUMPTION_DISPATCH_ONLY",
+  "execution_state": "BLOCK_G276_GRAPH_UNTIL_OWNER_ACK_AND_MATCHING_SEALS",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "frozen_artifacts": {
+    "owner_request_sha256": "2bb550200af0433cda0a0b4ab98e2f568dcf52bef5615a86ced55b38bb549556",
+    "consume_py_sha256": "1ff563f756f375ad279aafef5d30605ea7b4938bfcfaaa23581cd0ae3a92bc76",
+    "owner_entry_py_sha256": "0b8d9efe575284f6192c54431ebe6ec3b369c2bb2902d331ea0b51d5bf5f0cbf",
+    "pre_dispatch_candidate_sha256": "d722c9592e90c735d3c2cc9c56f4c48b0d615def452d86a304c8316530bf4ce8"
+  },
+  "checks": {
+    "pre_dispatch_review_script": {
+      "rc": 0,
+      "bound_inputs_rehashed": 377,
+      "owner_ack_exists": false,
+      "g276_outbox_messages": 0
+    },
+    "independent_rehash": {
+      "file_references": 375,
+      "environment_references": 2,
+      "mismatches": 0,
+      "candidate_inputs_exactly_preserved": 372,
+      "extra_review_and_candidate_references": 5
+    },
+    "original_claim": {
+      "status": "ready",
+      "release_state": "completed_reviewed",
+      "release_sequence": 275,
+      "goal_id": "goal_01",
+      "native_session": "oracle-kimi:local:nanhai-plus#inner",
+      "runtime_state": "g275_terminal_reviewed_new_g276_required",
+      "token_budget": 20000000000
+    },
+    "g275_terminal": {
+      "review_sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d",
+      "review_and_result_hashes_match": true,
+      "decision": "ACCEPT_ACTUAL_TERMINAL_FAILURE_EVIDENCE",
+      "rc": 2,
+      "error_lines": 182,
+      "target_compile_commands": 0
+    },
+    "nonce": {
+      "value": "g276owner6a97431e1ecf6299e63254b9f5",
+      "occurrences_in_project_json_or_py": 1,
+      "fresh_against_current_project_records": true
+    },
+    "owner_entry": "checks exact OWNER-REQUEST.json and consume.py SHA-256 before invoking consumer",
+    "consumer_effect": "verifies original claim, session, environment, G275 review, budget and all 377 hashes; writes only the specified owner ACK receipt when invoked; no Docker/build/device/network call",
+    "review_effect": "pre_dispatch_review.py and this independent review did not invoke owner_entry.py or consume.py; no owner ACK, outbox event, claim transition or seal created"
+  },
+  "limits": "GO authorizes only original-owner SHA consumption dispatch in existing session. It is not a G276 graph release or execution receipt.",
+  "commands_executed": {
+    "dispatch": 0,
+    "docker": 0,
+    "build": 0,
+    "device": 0,
+    "bridge": 0
+  }
+}

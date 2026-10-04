@@ -1,0 +1,75 @@
+{
+  "schema": "nanhai.g276.v20.independent-pre-run-review.v1",
+  "reviewed_utc": "2026-10-04T09:39:54.475520+00:00",
+  "decision": "GO_ONE_BOUNDED_HOST_GRAPH_ON_ORIGINAL_CLAIM",
+  "scope": "read-only pre-run verification only; no graph execution in this review",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "readonly_release_gate": {
+    "call": "executor.released(env, candidate, candidate_sha)",
+    "rc": 0,
+    "packet_sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49",
+    "candidate_sha256": "8dea207ad0869c1c7a789d3bf2ce64c7918dda216f6a62c5aaa2536fae0ec057",
+    "bound_packet_inputs": 372
+  },
+  "bindings": {
+    "candidate_sha256": "8dea207ad0869c1c7a789d3bf2ce64c7918dda216f6a62c5aaa2536fae0ec057",
+    "sealed_packet_sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49",
+    "root_seal_sha256": "306e838cac5f1268824f237353079251ec347561ee11c3214d4f8922eb313fcc",
+    "owner_ack_sha256": "6fc9340a5df6f7a76584cdb060a57deb792e063cbc7b295eaacb1bfe8a782866",
+    "owner_ack_peer_sha256": "bf318a1fb24012db3857c7549fa6511183e5bcbd2821b7de1e874320078322fa",
+    "owner_ack_root_review_sha256": "ec28b6f74aab991d4a65594eb69d8f42211ef40ec74ea5f0248441466665862e",
+    "sealed_fields_equal_candidate_except_release_mutables": true,
+    "seal_packet_sha_matches": true,
+    "seal_owner_ack_sha_matches": true,
+    "seal_peer_sha_matches": true,
+    "seal_root_ack_review_sha_matches": true
+  },
+  "claim_state": {
+    "status": "active",
+    "release_state": "released",
+    "release_sequence": 276,
+    "current_generation": "bionic-g276-hidl-apex-stock-graph",
+    "release_packet_matches": true,
+    "receipt": "corrected G275 terminal review",
+    "latest_actual_review_sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d",
+    "handoff_sha256": "401daf244ea89f9b851d6c723627351367d0f32551ba38b39a0df3f7b372a274"
+  },
+  "nonce": {
+    "release": "g276e33b1885ed88a09a9d8200f18f214a6e",
+    "owner_ack": "g276owner6a97431e1ecf6299e63254b9f5",
+    "different_from_g275_and_each_other": true
+  },
+  "input_views": {
+    "new_roots": [
+      "system/tools/hidl",
+      "system/apex"
+    ],
+    "project_links_resolve_exactly_to_registered_pool_roots": true,
+    "both_git_worktrees_clean": true,
+    "stock_symlink_targets": [
+      "build/soong/scripts/system-clang-format",
+      "system/apex/apexd/.clang-format",
+      "build/soong/scripts/rustfmt.toml"
+    ]
+  },
+  "fresh_output_leaves": {
+    "evidence_absent": true,
+    "out_absent": true,
+    "tmp_absent": true
+  },
+  "not_proven": [
+    "Docker Linux mount read-only inspection",
+    "Soong graph result",
+    "target compilation",
+    "device behavior"
+  ],
+  "commands_executed": {
+    "docker": 0,
+    "graph": 0,
+    "device": 0,
+    "bridge": 0,
+    "claim_mutations": 0
+  }
+}

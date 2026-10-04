@@ -1,0 +1,16 @@
+{
+  "schema": "nanhai-g276-owner-dispatch-v1",
+  "at": "2026-10-04T09:34:14.763821+00:00",
+  "status": "QUEUED_VIA_EXISTING_MONITOR_NOT_YET_DELIVERED",
+  "event_id": "g276-stock-graph-v20-owner-consume-20261004",
+  "outbox_before_sha256": "5b2817a1391cb5ba1ea26891f76ae374f947c4673d681452a3b9ebeef913f245",
+  "outbox_after_sha256": "68f87a32fab1e63656f336a421595108891540216f4309378e59c0543a4af075",
+  "message_sha256": "cf3f6b11873c5017a0452e8ac1256e5c89807052107f3c14241506240ecce930",
+  "request_sha256": "2bb550200af0433cda0a0b4ab98e2f568dcf52bef5615a86ced55b38bb549556",
+  "consume_sha256": "1ff563f756f375ad279aafef5d30605ea7b4938bfcfaaa23581cd0ae3a92bc76",
+  "entry_sha256": "0b8d9efe575284f6192c54431ebe6ec3b369c2bb2902d331ea0b51d5bf5f0cbf",
+  "peer_pre_dispatch_sha256": "eb5d1ef1292e217894fae6c9c3abccc0890b12079c150ce2ffa324d2f02fb194",
+  "owner_ACK_existed_at_queue": false,
+  "docker_commands": 0,
+  "device_commands": 0
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "nanhai-g276-claim-release-transition-v1",
+  "at": "2026-10-04T09:38:45.257592+00:00",
+  "status": "ORIGINAL_CLAIM_G276_HOST_GRAPH_RELEASED_NOT_EXECUTED",
+  "state_before_sha256": "000524c7dfe19cac3a987bddd6a51fc8feb46e35dff3d5ae7a7e3043d5c1e7fe",
+  "state_after_sha256": "b514b2c80e6692ae631df7af85851b893538cf28e132663e582257829be6b4ba",
+  "packet": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-SEALED.json",
+    "sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49"
+  },
+  "seal": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/ROOT-SEAL.json",
+    "sha256": "306e838cac5f1268824f237353079251ec347561ee11c3214d4f8922eb313fcc"
+  },
+  "claim_before": {
+    "status": "ready",
+    "release_state": "completed_reviewed",
+    "release_sequence": 275,
+    "release_packet": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-SEALED.json",
+      "sha256": "3b9fdcfe7693b917ba09461fc8b4c953fd08753f63a2e5b612e0490acf72f433"
+    },
+    "current_generation": "bionic-g275-two-r4-stock-graph",
+    "handoff_sha256": "abc91d7000c7a88aaa175df156f217908cc4088715988613220001106e1bb4ee",
+    "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
+    "receipt_sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d",
+    "dispatch_state": "g275-terminal-reviewed-g276-owner-consume-ack-received"
+  },
+  "claim_after": {
+    "status": "active",
+    "release_state": "released",
+    "release_sequence": 276,
+    "release_packet": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-release-v1/G276-SEALED.json",
+      "sha256": "c710f737636d4b6e8ad99a290d968750d3e6557487b96c5c198a8dbcb4bc8b49"
+    },
+    "current_generation": "bionic-g276-hidl-apex-stock-graph",
+    "handoff_sha256": "401daf244ea89f9b851d6c723627351367d0f32551ba38b39a0df3f7b372a274",
+    "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
+    "receipt_sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d",
+    "dispatch_state": "g276-v20-stock-host-graph-sealed"
+  },
+  "original_goal_session_budget_preserved": true,
+  "device_hold_preserved": true,
+  "graph_executed": false,
+  "device_commands": 0
+}

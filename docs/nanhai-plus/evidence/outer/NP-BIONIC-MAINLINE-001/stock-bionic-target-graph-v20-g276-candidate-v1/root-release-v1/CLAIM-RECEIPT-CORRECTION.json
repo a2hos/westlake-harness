@@ -1,0 +1,29 @@
+{
+  "schema": "nanhai-g276-claim-terminal-receipt-correction-v1",
+  "at": "2026-10-04T09:37:33.138673+00:00",
+  "reason": "G275 status advanced to completed_reviewed but claim receipt and dispatch text remained G274/G275 stale",
+  "state_before_sha256": "ddfcde888e74a480d9be2e15644ef1c475258db3cd040d547ca3162429160e3e",
+  "state_after_sha256": "000524c7dfe19cac3a987bddd6a51fc8feb46e35dff3d5ae7a7e3043d5c1e7fe",
+  "claim_before": {
+    "status": "ready",
+    "release_state": "completed_reviewed",
+    "release_sequence": 275,
+    "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+    "receipt_sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781",
+    "dispatch_state": "g275-v19-stock-host-graph-sealed",
+    "next_action": "Execute G275 sealed stock host graph once; return actual terminal receipt; no device"
+  },
+  "claim_after": {
+    "status": "ready",
+    "release_state": "completed_reviewed",
+    "release_sequence": 275,
+    "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v19-g275-candidate-v1/root-release-v1/G275-REVIEW.json",
+    "receipt_sha256": "9b0b8cb961612978b98db36589039e2e670797d39ffcd88672af1ff595a4db4d",
+    "dispatch_state": "g275-terminal-reviewed-g276-owner-consume-ack-received",
+    "next_action": "G276 fresh ACK peer review, root seal and one-shot host graph; no device"
+  },
+  "original_goal_session_budget_preserved": true,
+  "owner_ack_already_exists": true,
+  "graph_executed": false,
+  "device_commands": 0
+}
