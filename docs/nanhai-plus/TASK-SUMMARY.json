@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T03:29:42.084980+00:00",
+  "checked_at": "2026-10-04T04:05:22.089861+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 36,
+    "downloaded_payloads": 56,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -44,18 +44,19 @@
     "complete_inventory_dex_entries": 68,
     "complete_inventory_native_elf_entries": 292,
     "incomplete_static_inventories": [
-      "org.videolan.vlc"
+      "org.videolan.vlc",
+      "org.thoughtcrime.securesms"
     ],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 35,
+    "registered_upstream_payloads": 55,
     "supplemental_payloads": 1
   },
   "latest_actual_execution": {
-    "release": 265,
+    "release": 267,
     "terminal_rc": 2,
-    "actual_exec_session": 31374,
-    "terminal_chunk": "e9ac25",
+    "actual_exec_session": 62919,
+    "terminal_chunk": "de0e45",
     "host_tools_actual_loader_pass": 10,
     "soong_bootstrap_successful_steps": 235,
     "soong_bootstrap_total_steps": 236,
@@ -184,16 +185,48 @@
     {
       "path": "docs/nanhai-plus/evolution/EVO-0007-dynamic-module-producer/reviews/ROOT-CLOSURE.json",
       "sha256": "b50c7544de98fc9fa48e5b57bd236537cfec68bd3431b371e6c1b4f02c4c499c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v11/root-release-v1/G267-REVIEW.json",
+      "sha256": "33a0c5bac837e7c5bbbdf90343fa4f9454f745b7f7376b3adcd797824649b4f0"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g267-actual-peer-review-v1/REVIEW.json",
+      "sha256": "edf67cd15aec67b4486aa024d77eb0358604a8469fd9bbdae29c028fc51e466f"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v7/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "799fb72dddbe88d00a9f8a28ee8bd31675c6b1dc236176560e4613ed0386ff2c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v7-actual-peer-review-v1/REVIEW.json",
+      "sha256": "bc2d7af1b5a74ffff453208dec19c9a3d862ebc11e093712ac615b75cc289ddd"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/publication-refresh-20261004-v1/RESULT.json",
+      "sha256": "821cc13f5c05693dee7c80aa0b9840ae3669ddd9ebe89fac6f68249cebd736e1"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-vndk-r4-license-root-admission-v1/ADMISSION.json",
+      "sha256": "60d1e0b7152064e0a47a5da39233b903fdaf02f60264bc5ba5fdf5b80a45e1c4"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0008-scan-phase-cost/reviews/ROOT-CLOSURE.json",
+      "sha256": "50c0551ce2f9199550e7134875f01d6438096612306a837176478e73abc6ebd7"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/signal-apksigner-environment-v1/PARTIAL.json",
+      "sha256": "1598b18bc193c8f0acd24c8ac8aeb17d99787b114dc760a4878cf00e3e486864"
     }
   ],
   "bionic_stock_graph": {
-    "release": 265,
+    "release": 267,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "six undefined art{,-removed}.api.combined.{public,system,module-lib}.latest modules",
-    "failure_location": "libcore/JavaLibrary.bp:1223:1",
+    "first_failure": "24 undefined-module errors; 9 unique Python/protobuf/sqlite/jcommander/ASM modules",
+    "failure_location": "build/soong/ui/metrics/metrics_proto/Android.bp:1:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -212,34 +245,35 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "previous_version": 7,
+    "previous_version": 9,
     "previous_execution_terminal": true,
-    "next_input": "complete exact R4 SDK read-only tree; stock prebuilt_apis dynamic module generation",
+    "next_input": "exact R4 Python/protobuf/sqlite/jcommander/ASM stock cohorts",
     "source_commit_officially_confirmed": "1c599b67bcd3de5c50c79d0622e40b6de99b4cb4",
     "execution_ready": false,
     "complete_libcore_admitted": true,
     "complete_libcore_files": 8280,
-    "version": 9,
-    "prospective_release": 266,
-    "executed": false,
-    "owner_new_ack_verified": false,
+    "version": 11,
+    "prospective_release": 267,
+    "executed": true,
+    "owner_new_ack_verified": true,
     "complete_exact_sdk_admitted": true,
     "sdk_commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
     "sdk_git_root": "0348a182903065a14d190eb1aa670246c3c2106d",
     "sdk_entries": 17924,
     "sdk_bytes": 6254795690,
     "candidate_peer_review_closed": true,
-    "root_final_admission_pending": true
+    "root_final_admission_pending": false,
+    "source_commit_officially_confirmed_scope": "complete libcore input only; not upcoming nine-module cohort"
   },
   "reflection": {
-    "latest": "EVO-0007",
-    "verified_improvement_this_round": 1,
-    "scope": "limited dynamic-module producer evidence method",
+    "latest": "EVO-0008",
+    "verified_improvement_this_round": 0,
+    "scope": "scan phase cost investigation; no validated improvement",
     "global_promotion": false,
     "counts_as_new_tool": false,
-    "duration_seconds": 161.545,
+    "duration_seconds": 95.685483,
     "limit_seconds": 120,
-    "timing_compliant": false,
+    "timing_compliant": true,
     "pending_actual_result_groups": 2,
     "trigger_every_groups": "3-4"
   },
