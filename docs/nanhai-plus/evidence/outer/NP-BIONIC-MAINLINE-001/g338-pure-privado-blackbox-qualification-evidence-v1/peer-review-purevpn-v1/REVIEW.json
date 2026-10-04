@@ -1,0 +1,40 @@
+{
+  "already_in_qualified_ids": false,
+  "apk_bytes": 72731840,
+  "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+  "app": "purevpn",
+  "at_utc": "2026-10-04T19:57:30.394698+00:00",
+  "blackbox_count_delta_here": 0,
+  "bounded_public_source_evidence_sha256": {
+    "purevpn-github-repository-search.raw": "764d7b12e187de53edf2c956fff8ddece2c37a5aabdcfe2ede8d1ad429ee068c",
+    "purevpn-unofficial-repository.raw": "ea740aa22f0794adcc5860b50746a52bf913dbf347be4c9ac676f7d00e188de8"
+  },
+  "container_commands": 0,
+  "decision": "GO_EXACT_PACKAGE_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_CANDIDATE_ONLY",
+  "dedupe_before_qualified_packages": 18,
+  "device_commands": 0,
+  "host_verify_sha256": "3c940c62a5330f04d77282734ade81bc5f0961dc35f34d0cecb83dea78f476a1",
+  "limits": [
+    "Package-level current Play cumulative downloads are neither active users nor installs of this exact APK version.",
+    "Publisher page and signer bind the accepted official binary route, but signer string is not a legal-entity identity proof.",
+    "Qualification is an eligible test input only; no installation, startup, device, Bionic runtime or 89-tool PASS."
+  ],
+  "official_page_sha256": "8b5b4c7e4779af65c451907ea5ee500dcb3ce8ac5a92c0cf7a2296a02e4dba31",
+  "official_page_url": "https://support.purevpn.com/en_US/purevpn-android/google-play-store-is-blocked-in-my-region-how-do-i-download-android-app",
+  "package": "com.gaditek.purevpnics",
+  "play_cumulative_downloads": "5M+",
+  "play_exact_package_url": "https://play.google.com/store/apps/details?id=com.gaditek.purevpnics&hl=en_US",
+  "play_publisher": "PureVPN",
+  "play_raw_sha256": "fb6e359f7b7fd875061497676d1612de364fcaa37e4cf6586fb846a506932602",
+  "public_source_conclusion": "No complete matching buildable Android client source established in the bounded publisher/repository check; this is not a universal closed-source claim.",
+  "qualification_inputs_sha256": "137dec773827245f92bba8316f7e075f69202eafb2209b2a002be0bdf3fc4cb4",
+  "raw_admission_sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4",
+  "root_admission_required": true,
+  "schema": "nanhai-plus-blackbox-input-peer-qualification-v1",
+  "signer_certificate_sha256": "c527212dd236f90c5bae8031a0d6d618f8215777d7fd810f40b5b16afd8fac2a",
+  "startup_delta": 0,
+  "static_peer_review_sha256": "5bf02f2c32521814089ca67349ede3405ef81d62d42cec67edad5a689ff51ea7",
+  "version_code": 5175,
+  "version_name": "8.44.223",
+  "version_risk": "Official CDN exact APK last modified 2023-01-05; current Play market signal does not establish freshness or support of version 8.44.223."
+}

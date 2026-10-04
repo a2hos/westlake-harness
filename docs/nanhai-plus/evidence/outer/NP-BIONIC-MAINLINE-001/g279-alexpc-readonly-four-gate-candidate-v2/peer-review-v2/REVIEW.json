@@ -1,0 +1,40 @@
+{
+  "at_utc": "2026-10-04T19:56:38.910074+00:00",
+  "authoritative_counts_changed": false,
+  "blocking_finding": {
+    "code": "run_once.py gate(): sha(HERE / peer-review-v1/REVIEW.json)",
+    "expected": "The task specifies peer-review-v2/REVIEW.json, and this review is written there. The v2 candidate release requirements bind the peer review SHA.",
+    "id": "peer_review_path_mismatch",
+    "observed": "The runner still references peer-review-v1/REVIEW.json under the v2 candidate directory. It does not exist. A local gate() call with otherwise matching in-memory candidate/release/code bytes raises FileNotFoundError before ssh -G or SSH; the requested review cannot be bound or released.",
+    "required_change": "New candidate generation should bind the exact peer-review-v2/REVIEW.json path (or an explicitly frozen, separately reviewed review path), recompute runner/candidate hashes, rerun local fixture and obtain a fresh independent review. Do not create a compatibility copy to hide the mismatch."
+  },
+  "bridge_accesses": 0,
+  "candidate_sha256": "d9c589e7e87a5b5ee3f2a50aab3de26f7cc4092177edd319c7ba19b1e8979e71",
+  "code_sha256": {
+    "fixture_no_network.py": "2b62cda17ecc086ddf13ca0ab59c85ebebdbd8eafecf9e104a26360d8a534972",
+    "remote_audit.py": "beeb973ffaf146779870705e4cee70abbeeb4aadd58e4eb6cb70ac239d1fd930",
+    "run_once.py": "8000e7cbf67bea689a66fd001cd15918ed3b0bb48edc85ae429b9d03251abe6c"
+  },
+  "container_commands": 0,
+  "decision": "NO_GO_RELEASE_BINDING_PATH",
+  "device_commands": 0,
+  "limits": "All four gates remain unobserved on AlexPC; positive local fixture tests only control logic, not route, remote HEADs, toolchain, free space or graph readiness.",
+  "next_step": "Fix review path in new candidate generation and re-review before any ROOT-RELEASE; current v2 no SSH.",
+  "positive_checks": {
+    "actual_code_bytes_hash_binds_start_terminal_and_sent_stdin": true,
+    "actual_start_present": false,
+    "candidate_sha_matches_task": true,
+    "existing_out_nonwritable_rejected": true,
+    "independent_fixture_rc": 0,
+    "independent_fixture_stdout": "PASS_NO_NETWORK: local hostkey/ssh-G, missing R4, nonwritable OUT, symlink, positive report, 8 contradictory reports",
+    "local_pinned_hostkey_and_ssh_G_checked_before_start": true,
+    "one_shot_start_open_x": true,
+    "raw_stdout_stderr_only_memory_bounded": true,
+    "release_file_present": false,
+    "remote_audit_read_only_source_and_capacity_checks": true,
+    "v1_wrong_manifest_empty_head_zero_capacity_false_true_counterexample_rejected": true
+  },
+  "schema": "g279-alexpc-four-gate-independent-code-review-v2",
+  "scope": "Code-only review and local no-network fixture. No AlexPC SSH, root release, graph, build, device, container or Bridge access.",
+  "ssh_connections": 0
+}

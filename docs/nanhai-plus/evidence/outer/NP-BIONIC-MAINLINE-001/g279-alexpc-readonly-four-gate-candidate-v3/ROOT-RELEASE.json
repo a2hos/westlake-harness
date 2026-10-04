@@ -1,0 +1,6 @@
+{
+  "candidate_sha256": "24efe1c601ce1f9c75c61f8f36b125599e650cb02c575d0d9767b871b18002d0",
+  "decision": "GO_SINGLE_READONLY_ALEXPC_AUDIT",
+  "nonce": "f49ea049894d2db6f5730afebab257e0",
+  "peer_review_sha256": "b8fc36e00c0752030a8f14011f9bd4fe6b4ba93539208a19b3355db88cdf8994"
+}

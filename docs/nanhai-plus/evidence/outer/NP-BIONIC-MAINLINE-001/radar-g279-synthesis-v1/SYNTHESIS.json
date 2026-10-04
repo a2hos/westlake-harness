@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-04T20:01:59.963171+00:00",
+  "blind_cards_sha256": {
+    "alternate_linux_host": "ab46d499b67e2276d3a4b0dc1c8611b3a2e1fa0159458bcda67b3ea9258ae50d",
+    "local_native_graph": "e85473114df6e308124fda74d2daa84e752268f5212bd5b831521433fdaf0d39",
+    "private_proxy_route": "43f5eb6da42910d7c7d5184aaa2407ac1691b505f814e40eb8a7f9183c845271"
+  },
+  "container_commands": 0,
+  "converged_fact": "No authenticated exact-R4 native Linux build host is currently proven reachable; gz02 and AlexPC fresh attempts both rc255 without remote identity, and the Mac R4 source pool is partial on Darwin arm64.",
+  "device_hold": true,
+  "falsified_or_unproven": [
+    "v5 pre-banner closed marker proves gz02 server closed: unproven",
+    "positive gz02 /32 route absent: unproven because failed run did not export parsed event",
+    "historical AlexPC SSH success means current build-ready host: refuted by fresh rc255 and four-gate RESULT absent",
+    "local Mac is ready exact-R4 native graph host: refuted by partial source and host OS mismatch"
+  ],
+  "no_graph_release": true,
+  "ranked_low_cost_probes": [
+    "Read-only current AlexPC mDNS/IP/port route discovery; only after a fresh endpoint fact design a new pinned-key identity attempt",
+    "For gz02, no-credential local SOCKS fake server to refute marker-as-server-cause and code-only positive-route-on-failure witness, then separately reviewed new connection if useful"
+  ],
+  "schema": "g279-three-angle-radar-synthesis-v1",
+  "single_next_wall": "obtain a fresh authenticated route to one exact-R4 Linux native host before releasing any Soong graph",
+  "solve_gate": "pinned hostkey + publickey auth + remote numeric UID on an authorized Linux host; subsequent exact R4 source/toolchain/capacity gate; only then native graph"
+}

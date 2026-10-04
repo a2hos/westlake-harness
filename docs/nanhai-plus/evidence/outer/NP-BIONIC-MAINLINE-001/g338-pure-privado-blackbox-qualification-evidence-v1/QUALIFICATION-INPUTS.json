@@ -1,0 +1,98 @@
+{
+  "at_utc": "2026-10-04T19:55:27.921822+00:00",
+  "author_role": "raw_candidate_author_evidence_compiler_not_independent_reviewer",
+  "blackbox_qualification_delta": 0,
+  "bridge_accesses": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "current_qualified_blackbox_packages": 18,
+  "decision": "EVIDENCE_FOR_INDEPENDENT_QUALIFICATION_REVIEW_ONLY",
+  "device_commands": 0,
+  "items": [
+    {
+      "apk_bytes": 72731840,
+      "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+      "apk_version_code": 5175,
+      "apk_version_name": "8.44.223",
+      "blackbox_cohort_dedupe_current_18": true,
+      "bounded_public_source": {
+        "classification": "matching complete buildable Android client source not established in bounded public check; not proof of universal closed-source status",
+        "evidence_files": {
+          "purevpn-github-repository-search.raw": "764d7b12e187de53edf2c956fff8ddece2c37a5aabdcfe2ede8d1ad429ee068c",
+          "purevpn-unofficial-repository.raw": "ea740aa22f0794adcc5860b50746a52bf913dbf347be4c9ac676f7d00e188de8"
+        },
+        "github_repository_search_total_count": 4,
+        "material_candidate": "ahmedpure2/purevpn-android-app is a small 31 KB non-publisher repository with no exact APK/version build attestation; the other search hits are assessments/OAuth projects.",
+        "queries": [
+          "https://api.github.com/search/repositories?q=PureVPN+Android+in:name,description&per_page=30"
+        ]
+      },
+      "claim_boundary": "Source/static/host raw only; qualification awaits independent peer and root admission. No install, cold-start, Bionic runtime, device or 89-tool proof.",
+      "host_verify_sha256": "3c940c62a5330f04d77282734ade81bc5f0961dc35f34d0cecb83dea78f476a1",
+      "market_interpretation": "Exact package listing meets the precedent 5M+ overseas-mainstream signal; cumulative listing downloads are not active users, exact-APK downloads, or an independent geographic breakdown.",
+      "observed_arm64_elf": 28,
+      "official_page_sha256": "8b5b4c7e4779af65c451907ea5ee500dcb3ce8ac5a92c0cf7a2296a02e4dba31",
+      "official_page_url": "https://support.purevpn.com/en_US/purevpn-android/google-play-store-is-blocked-in-my-region-how-do-i-download-android-app",
+      "package": "com.gaditek.purevpnics",
+      "play_cumulative_downloads": "5M+",
+      "play_exact_package_present": true,
+      "play_listing_url": "https://play.google.com/store/apps/details?id=com.gaditek.purevpnics&hl=en_US",
+      "play_raw_sha256": "fb6e359f7b7fd875061497676d1612de364fcaa37e4cf6586fb846a506932602",
+      "product": "PureVPN: Fast VPN & Secure VPN",
+      "publisher_play_display": "PureVPN",
+      "raw_handoff_sha256": "995937599956848b1bbbf6514e95c02bf5c1389b8bd0f77031ff0ecf0113c3b1",
+      "root_raw_admission_sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4",
+      "signer_cert_sha256": "c527212dd236f90c5bae8031a0d6d618f8215777d7fd810f40b5b16afd8fac2a",
+      "version_or_target_risk": "Official CDN APK was last modified 2023-01-05. Current Play listing is a market signal for this package, not evidence that this old exact binary is current or supported."
+    },
+    {
+      "apk_bytes": 70702804,
+      "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+      "apk_version_code": 2083482916,
+      "apk_version_name": "4.4.0",
+      "blackbox_cohort_dedupe_current_18": true,
+      "bounded_public_source": {
+        "classification": "matching complete buildable Android client source not established in bounded public check; not proof of universal closed-source status",
+        "evidence_files": {
+          "privadovpn-github-org-repos.raw": "7ae35643808b623eaae2115fc139751e5ff9a6af129c0858a9117deaa4ea5bb4",
+          "privadovpn-github-repository-search.raw": "08c082fdf7ca87ba911a2aabb0f0cf2d3e482a6feeaac9713e4578c20b2600b2"
+        },
+        "github_official_org_public_repositories": [
+          "privadovpn/.github",
+          "privadovpn/x402-mcp"
+        ],
+        "github_repository_search_total_count": 0,
+        "queries": [
+          "https://api.github.com/search/repositories?q=PrivadoVPN+Android+in:name,description&per_page=30"
+        ]
+      },
+      "claim_boundary": "Source/static/host raw only; qualification awaits independent peer and root admission. No install, cold-start, Bionic runtime, device or 89-tool proof.",
+      "host_verify_sha256": "2ef66d268cd5704ae48f972bb3aefbe42f52310d4d1dfadb03dcb5e57401bcab",
+      "market_interpretation": "Exact package listing meets the precedent 5M+ overseas-mainstream signal; cumulative listing downloads are not active users, exact-APK downloads, or an independent geographic breakdown.",
+      "observed_arm64_elf": 29,
+      "official_page_sha256": "1e47f428d755b4d9551fe028e00df6fdc45e1581bf55981465c09145c158ca8b",
+      "official_page_url": "https://privadovpn.com/software/",
+      "package": "io.privado.android",
+      "play_cumulative_downloads": "5M+",
+      "play_exact_package_present": true,
+      "play_listing_url": "https://play.google.com/store/apps/details?id=io.privado.android&hl=en_US",
+      "play_raw_sha256": "4ca14dd3eba5476fbd07a93508ecc8bacf8c2b6ad25c84f6d96b892ed32bbe65",
+      "product": "PrivadoVPN - VPN App & Proxy",
+      "publisher_play_display": "Privado Networks, LLC",
+      "raw_handoff_sha256": "d370828be6c5b528ae369f313f1169b4e0b714e186a6de2d0854287cff9ebd56",
+      "root_raw_admission_sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719",
+      "signer_cert_sha256": "8f308d552a090dcb694966bf03963d1d36614374810feab4f66d0013e1eda3dc",
+      "version_or_target_risk": "APK targetSdk 37 exceeds the AOSP16 API 36 baseline; this is a compatibility risk, not an observed install or startup failure."
+    }
+  ],
+  "qualified_blackbox_ids_source_sha256": "bb3218e4e29a08f89cab9505d26560bcf0c4e57af0eae18aa50dc940107bffb2",
+  "raw_delta": 0,
+  "review_questions": [
+    "Do the current exact Play package and publisher sufficiently bind to the official APK distribution despite signer/publisher names not being a legal-entity identity proof?",
+    "Does PureVPN 2023 exact APK remain a useful mainstream blackbox test input, with version freshness separately labeled?",
+    "Does PrivadoVPN targetSdk37 affect cohort inclusion or only future installation/runtime validation?",
+    "Are bounded public-source searches sufficient to classify source unavailability for this project without asserting absolute closed source?"
+  ],
+  "schema": "g338-pure-privado-blackbox-qualification-evidence-inputs-v1",
+  "static_delta": 0
+}

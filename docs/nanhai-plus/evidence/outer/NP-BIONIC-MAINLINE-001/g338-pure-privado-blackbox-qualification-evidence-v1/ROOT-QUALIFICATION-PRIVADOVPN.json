@@ -1,0 +1,19 @@
+{
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "at_utc": "2026-10-04T19:57:54.691915+00:00",
+  "bounded_source_conclusion": "No complete matching buildable Android client source established in the bounded publisher/repository check; this is not a universal closed-source claim.",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "QUALIFY_ONE_EXACT_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_ONLY",
+  "device_commands": 0,
+  "independent_peer_sha256": "9fc24fce2823ec8bf9e33057cb09fa287361f4d6f3ba01c442e3b22402dfa499",
+  "package": "io.privado.android",
+  "qualification_delta": 1,
+  "qualification_inputs_sha256": "137dec773827245f92bba8316f7e075f69202eafb2209b2a002be0bdf3fc4cb4",
+  "qualified_startup_delta": 0,
+  "raw_admission_sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719",
+  "schema": "nanhai-plus-root-blackbox-input-qualification-v1",
+  "static_peer_review_sha256": "2ce9da76d50716a1cb97409fe048404cac107d7721f6e1e822e663d9060e39ca",
+  "version_name": "4.4.0",
+  "version_risk": "APK targetSdk37 exceeds AOSP16 API36; this is not an observed installation or startup failure."
+}

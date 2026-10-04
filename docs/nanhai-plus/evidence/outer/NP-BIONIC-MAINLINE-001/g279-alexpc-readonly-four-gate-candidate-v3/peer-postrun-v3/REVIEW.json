@@ -1,0 +1,71 @@
+{
+  "artifact_sha256": {
+    "candidate": "24efe1c601ce1f9c75c61f8f36b125599e650cb02c575d0d9767b871b18002d0",
+    "peer_code_review": "b8fc36e00c0752030a8f14011f9bd4fe6b4ba93539208a19b3355db88cdf8994",
+    "remote_script": "beeb973ffaf146779870705e4cee70abbeeb4aadd58e4eb6cb70ac239d1fd930",
+    "root_release": "a7fd7fa8ad5ff9496205b252ae1456c5bd094583d63f624612b44657b46db7f1",
+    "runner": "25a76978fcae4df72e4a9d005dd8af6273ba82d57e7b6454c38a048fdabd03ba",
+    "start": "4fd9a8153fc55c4f6d11763479b7c39c62b01353991bea101b783bb0210a1d20",
+    "terminal": "a9f20227b88c2dc1caabf3297ee811d3e3e9bf7541bed33dbcc5bb0efdd32e77"
+  },
+  "at_utc": "2026-10-04T20:01:08.766298+00:00",
+  "authoritative_counts_changed": false,
+  "bridge_accesses": 0,
+  "chain_checks": {
+    "nonce_chars": 32,
+    "raw_stderr_absent": true,
+    "raw_stdout_absent": true,
+    "release_candidate_and_peer_exact": true,
+    "result_absent": true,
+    "runner_and_code_sha_bind_start": true,
+    "start_argv_equals_candidate_ssh_argv": true,
+    "start_nonce_equals_release_nonce": true,
+    "start_release_and_candidate_exact": true,
+    "terminal_sha_matches_task": true,
+    "terminal_start_release_candidate_and_sent_sha_exact": true
+  },
+  "claims_rejected": [
+    "AlexPC authenticated identity",
+    "four gate success",
+    "ready R4 build host",
+    "Soong graph or build",
+    "HelloWorld/startup/device result"
+  ],
+  "container_commands": 0,
+  "current_residual_snapshot": {
+    "interpretation": "No matching live process/socket in the postrun local snapshot; this does not reconstruct earlier network packets.",
+    "lsof_target_192_168_8_22_22_rc": 1,
+    "lsof_target_output_bytes": 0,
+    "ps_matching_ssh_or_runner_processes": 0
+  },
+  "decision": "GO_TERMINAL_RECEIPT_ONLY_NO_AUTHENTICATED_HOST_RESULT",
+  "device_commands": 0,
+  "first_observable_stage": "A released local one-shot runner created START and recorded the SSH child return rc255. The code hash is bound to bytes passed into local SSH stdin; remote receipt or execution is not established.",
+  "nonce_policy": "Consumed; do not replay this release/START/nonce. Any new attempt requires a new candidate/release/nonce and applicable review.",
+  "observed_terminal": {
+    "duration_seconds": 7.005,
+    "failure_field": null,
+    "outer_rc": "2 reported by root task; no separate outer command receipt located in this candidate directory",
+    "recomputed_gates": {},
+    "result_sha256": null,
+    "ssh_child_rc": 255,
+    "stderr_bytes": 64,
+    "stderr_sha256": "6e6642daad2c0b044f940443dfc1581a24d9aae584d6cac2a3e21f01b216c08f",
+    "stdout_bytes": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "schema": "g279-alexpc-four-gate-independent-postrun-review-v3",
+  "scope": "Read-only postrun file and local process/socket snapshot review; no SSH retry, release mutation, device, container or Bridge access.",
+  "ssh_retry_count_by_reviewer": 0,
+  "stderr_limit": "Only 64 bytes and SHA were retained; raw text was intentionally not persisted, so exact SSH failure line and cause cannot be recovered from this receipt.",
+  "unknown_stages": [
+    "TCP connection establishment",
+    "SSH banner",
+    "server host-key exchange or match",
+    "user authentication",
+    "remote Python start",
+    "remote R4 HEAD/manifest gate",
+    "remote toolchain gate",
+    "remote capacity gate"
+  ]
+}

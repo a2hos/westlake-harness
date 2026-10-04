@@ -1,0 +1,33 @@
+{
+  "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+  "at_utc": "2026-10-04T19:56:35.908253+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "full_static_delta": 1,
+  "handoff_sha256": "f8a9e4b088a5793d7aeac800318f5bb96a9e4c860f34c2db684a0c86a1264df6",
+  "non_elf_so": 0,
+  "other_true_elf_by_abi": {
+    "armeabi-v7a": 28,
+    "mips": 1,
+    "x86": 28,
+    "x86_64": 28
+  },
+  "package": "com.gaditek.purevpnics",
+  "peer_review_sha256": "5bf02f2c32521814089ca67349ede3405ef81d62d42cec67edad5a689ff51ea7",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 2,
+  "root_raw_admission_sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "source_guard_all_equal": true,
+  "true_arm64_elf": 28
+}

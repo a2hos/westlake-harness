@@ -1,0 +1,55 @@
+{
+  "Not_proven": [
+    "Neither v4 nor v5 exports a replayable actual positive /32 PROXY event or its absence.",
+    "No TCP connection to gz02, SSH banner, pinned host key, authentication or remote UID is established.",
+    "The raw v5 SSH stderr and private Mihomo debug log were removed after cleanup; the exact marker line and any positive route line cannot be independently recomputed postrun.",
+    "PRE_BANNER_CLOSED_LINE_SEEN conflates two full client lines, and neither identifies which endpoint closed; server-initiated close is not distinguished from local SOCKS, selected proxy node or intermediary close."
+  ],
+  "Proven": [
+    "v4 and v5 each launched one local SSH child, exited rc255 with stdout 0 and stderr 1462 bytes; their last exported SSH stage is UNKNOWN.",
+    "Both private instances proved loopback listener ownership and a separate TEST-NET-3 MATCH/REJECT negative before the SSH attempt, then reported clean process/private-directory removal.",
+    "v5 frozen classifier reported PRE_BANNER_CLOSED_LINE_SEEN: one of two exact local SSH stderr lines was seen by the runner; the enum is an observation of local output only.",
+    "An exact-binary no-credential fake-node probe shows the expected positive /32 PROXY log format, without real gz02 connection."
+  ],
+  "at_utc": "2026-10-04T20:01:08.678382+00:00",
+  "bridge_accesses": 0,
+  "code_changes": 0,
+  "connections": 0,
+  "container_commands": 0,
+  "counterevidence_to_server_close_inference": [
+    "v5 runner maps both `Connection closed by UNKNOWN port 65535` and `kex_exchange_identification: Connection closed by remote host` to the same enum; it retains no raw line.",
+    "v5 run_instance parses positive_route_event(logs) after process stop but raises the SSH failure before exporting that event/status, so positive_route_status UNKNOWN cannot be read as route absence.",
+    "The only directly replayable route line from v5 is the unrelated TEST-NET-3 REJECT negative; a known fake-node /32 PROXY log format is not evidence that v5 real selected node reached gz02."
+  ],
+  "device_commands": 0,
+  "hypothesis_under_attack": "gz02 server itself closed the connection",
+  "inputs": {
+    "fake_positive_route_format": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v2/LOOPBACK-FORMAT-PROBE.json",
+      "sha256": "4093ddbdbfc15923ff6ee1161994afefa4b63ece0a944dfbc1804f0a739200d7"
+    },
+    "v4_terminal": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v4/TERMINAL.json",
+      "sha256": "1fc3003223670ae175e1e673a20111b44ceb5193549a6f7e0099768e9710018f"
+    },
+    "v5_postrun_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v5/peer-postrun-v5/REVIEW.json",
+      "sha256": "3121c4862eae70044b8fc2ee652b139799a84d5616044e3c466214fb79871ffb"
+    },
+    "v5_runner": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v5/runner.py",
+      "sha256": "ff2c62a72bd8a20f43d884241c0b76e3b3df3c1a1d2af882631efda3a1db79b5"
+    },
+    "v5_terminal": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v5/TERMINAL.json",
+      "sha256": "c4ab077f3747aeb7287898aa010ea8c3d77ac9177352767e75dee81b67f8ae37"
+    }
+  },
+  "schema": "radar-g279-route-a-blind-readonly-v1",
+  "single_cheapest_next_witness": {
+    "boundary": "This can disprove an inference from the marker; it cannot determine the actual v5 closer. A separately gated real-path witness would still be required for actual positive route/TCP claims.",
+    "proposal": "In an isolated no-credential loopback harness, have a fake SOCKS5 server accept CONNECT, return success and immediately close before any SSH banner, while never dialing gz02. Run the same pinned local SSH client shape against that loopback endpoint and save full local stderr/rc. If the same PRE_BANNER_CLOSED_LINE_SEEN appears, it falsifies treating the v5 enum as unique evidence of gz02-server close. This is a proposed experiment only; no command or connection was run in this radar review.",
+    "success_criterion": "Exact full line and rc are saved, fake server connection count is one, gz02 outbound count is zero, and parser classifies the line identically."
+  },
+  "verdict": "NOT_PROVEN; current local observations do not identify the closer"
+}

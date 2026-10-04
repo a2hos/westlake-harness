@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-10-04T19:52:30.550372+00:00",
+  "author_verify_sha256": "a719e81e9889dd455c45756692508819900fddb4155b6fc2b93277ba73d87a7e",
+  "candidate_sha256": "83a761638f669930cec6d813d3e095a2957efd60373a194c008ab6fc3d55df74",
+  "container_commands": 0,
+  "decision": "NO_GO_CODE_ONLY_NO_SSH_RELEASE",
+  "device_commands": 0,
+  "graph_commands": 0,
+  "next": "new_generation_code_only_and_independent_review",
+  "peer_review_sha256": "3b30cc5c5664de6e7c819156ea11dc522d641c4a52895ab2efd6cd5acf32c051",
+  "reason": "local accept trusted remote gate booleans without independent field recomputation; existing OUT/TMP writeability incomplete; raw output preservation unsafe; pre-send binding needs recheck",
+  "root_release_present": false,
+  "schema": "g279-alexpc-four-gate-root-nogo-v1",
+  "ssh_connections": 0
+}

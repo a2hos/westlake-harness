@@ -1,0 +1,84 @@
+{
+  "apk_bytes": 72731840,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk",
+  "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+  "arm64_true_elf": 28,
+  "at_utc": "2026-10-04T19:45:00.283154+00:00",
+  "commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fc8ba1d81d08366e2904b56a3359a7d76b637af289cb025f692c18f56bf6180a"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "15e35f451b55b53b26e03c25b9262919d2f090ad11d0fcc6c6ff5ee29c1e6fb1"
+    }
+  ],
+  "container_commands": 0,
+  "crc_all_ok": true,
+  "device_commands": 0,
+  "duplicate_names": 0,
+  "elf_header_count_by_abi": [
+    {
+      "abi": "arm64-v8a",
+      "class": 2,
+      "count": 28,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "abi": "armeabi-v7a",
+      "class": 1,
+      "count": 28,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "mips",
+      "class": 1,
+      "count": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "abi": "x86",
+      "class": 1,
+      "count": 28,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "abi": "x86_64",
+      "class": 2,
+      "count": 28,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "non_elf_so": [],
+  "official_direct_source_url": "https://dzglif4kkvz04.cloudfront.net/android/release/PureVPN.apk",
+  "package": "com.gaditek.purevpnics",
+  "root_dex": 2,
+  "schema": "g334-purevpn-host-verify-v1",
+  "signer_certificate_sha256": [
+    "c527212dd236f90c5bae8031a0d6d618f8215777d7fd810f40b5b16afd8fac2a"
+  ],
+  "version_code": "5175",
+  "version_name": "8.44.223",
+  "zip_entries": 2509
+}

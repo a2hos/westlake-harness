@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-10-04T19:57:21.663391+00:00",
+  "author_verify_sha256": "09d76b8cf113fa4d697471f7131df5072885f57c584ebd3e15eebd6ffd8c8788",
+  "candidate_sha256": "d9c589e7e87a5b5ee3f2a50aab3de26f7cc4092177edd319c7ba19b1e8979e71",
+  "container_commands": 0,
+  "copied_v1_root_nogo_present_sha256": "acbe713da55a65203d3fb9155e4b4370542c5606245edf15848e95ef35f654a6",
+  "decision": "NO_GO_CODE_ONLY_NO_SSH_RELEASE",
+  "device_commands": 0,
+  "graph_commands": 0,
+  "next": "new_generation_exact_peer_binding_and_independent_review",
+  "peer_review_sha256": "8d8f9159458eb2d7268f7834dbd8145441cc071724030fbed04e71fc2a5b4d92",
+  "reason": "runner gate references peer-review-v1 while v2 independent review is peer-review-v2; exact release cannot bind before SSH",
+  "root_release_present": false,
+  "schema": "g279-alexpc-four-gate-root-nogo-v2",
+  "ssh_connections": 0
+}

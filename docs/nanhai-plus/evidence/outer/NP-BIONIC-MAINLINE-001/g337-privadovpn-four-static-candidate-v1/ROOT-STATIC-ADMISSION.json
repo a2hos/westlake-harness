@@ -1,0 +1,32 @@
+{
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "at_utc": "2026-10-04T19:56:35.948042+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "full_static_delta": 1,
+  "handoff_sha256": "82646d856eec9d85873eca0e14f030d07a97fffe04c3fc32890163f678fbe46c",
+  "non_elf_so": 0,
+  "other_true_elf_by_abi": {
+    "armeabi-v7a": 29,
+    "x86": 19,
+    "x86_64": 29
+  },
+  "package": "io.privado.android",
+  "peer_review_sha256": "2ce9da76d50716a1cb97409fe048404cac107d7721f6e1e822e663d9060e39ca",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex": 6,
+  "root_raw_admission_sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "source_guard_all_equal": true,
+  "true_arm64_elf": 29
+}

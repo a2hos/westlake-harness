@@ -1,0 +1,17 @@
+{
+  "candidate_sha256": "24efe1c601ce1f9c75c61f8f36b125599e650cb02c575d0d9767b871b18002d0",
+  "decision": "NO_GO_HOST_UNKNOWN_OR_INCOMPLETE",
+  "duration_s": 7.005,
+  "failure": null,
+  "rc": 255,
+  "recomputed_gates": {},
+  "release_sha256": "a7fd7fa8ad5ff9496205b252ae1456c5bd094583d63f624612b44657b46db7f1",
+  "remote_sent_sha256": "beeb973ffaf146779870705e4cee70abbeeb4aadd58e4eb6cb70ac239d1fd930",
+  "result_sha256": null,
+  "schema": "g279-alexpc-four-gate-terminal-v2",
+  "start_sha256": "4fd9a8153fc55c4f6d11763479b7c39c62b01353991bea101b783bb0210a1d20",
+  "stderr_bytes": 64,
+  "stderr_sha256": "6e6642daad2c0b044f940443dfc1581a24d9aae584d6cac2a3e21f01b216c08f",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,27 @@
+{
+  "bridge_accesses": 0,
+  "candidate_sha256": "24efe1c601ce1f9c75c61f8f36b125599e650cb02c575d0d9767b871b18002d0",
+  "container_commands": 0,
+  "copied_old_receipts_present": false,
+  "decision": "GO_INDEPENDENT_CODE_REVIEW_ONLY",
+  "device_commands": 0,
+  "fixture_rc": 0,
+  "fixture_sha256": "c1fcd51d61b5c2cad1958d25eb23e0cbc0be3b5eaba5323a45d842f1da52d11a",
+  "fixture_stderr": "",
+  "fixture_stdout": "PASS_NO_NETWORK: local hostkey/ssh-G, missing R4, nonwritable OUT, symlink, positive report, 8 contradictory reports",
+  "graph_commands": 0,
+  "limits": [
+    "No independent v3 review yet.",
+    "No SSH or remote host facts.",
+    "Fixture mocks only peer SHA read and verifies exact v3 path; it does not supply a real release."
+  ],
+  "release_file_present": false,
+  "remote_sha256": "beeb973ffaf146779870705e4cee70abbeeb4aadd58e4eb6cb70ac239d1fd930",
+  "runner_sha256": "25a76978fcae4df72e4a9d005dd8af6273ba82d57e7b6454c38a048fdabd03ba",
+  "schema": "g279-alexpc-four-gate-author-verification-v3",
+  "ssh_connections": 0,
+  "start_file_present": false,
+  "v2_peer_no_go_sha256": "8d8f9159458eb2d7268f7834dbd8145441cc071724030fbed04e71fc2a5b4d92",
+  "v2_root_no_go_sha256": "6aa62924fddd79f10f62af25047595cfd678a9ed0b85b2a853abdf969638aa05",
+  "v3_peer_path": "peer-review-v3/REVIEW.json"
+}

@@ -1,0 +1,24 @@
+{
+  "apk_bytes": 70702804,
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "at_utc": "2026-10-04T19:51:12.127593+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_OFFICIAL_HOST_RAW_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "handoff_sha256": "d370828be6c5b528ae369f313f1169b4e0b714e186a6de2d0854287cff9ebd56",
+  "package": "io.privado.android",
+  "peer_review_sha256": "d7108d56347c031a1ad6fcaf1f9c57241609d890e73615242ae26a8a37ae301b",
+  "raw_delta": 1,
+  "root_dex": 6,
+  "schema": "nanhai-plus-root-official-host-raw-admission-v1",
+  "source_risk": [
+    "targetSdk 37 exceeds AOSP16 API 36; host raw acceptance gives no install/runtime result",
+    "no separate publisher SHA digest"
+  ],
+  "true_arm64_elf": 29,
+  "version_name": "4.4.0"
+}

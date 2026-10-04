@@ -1,0 +1,77 @@
+{
+  "apk_bytes": 70702804,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk",
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "arm64_true_elf": 29,
+  "at_utc": "2026-10-04T19:46:17.072934+00:00",
+  "commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d523f549f823972abe2e49f3e32f2a75d85c25696f95adfaa61b734e4276e998"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e962ce8d354fc1044fe8d074698466159c3e21f8d77dd6260adc7edd18005fc2"
+    }
+  ],
+  "container_commands": 0,
+  "crc_all_ok": true,
+  "device_commands": 0,
+  "duplicate_names": 0,
+  "elf_header_count_by_abi": [
+    {
+      "abi": "arm64-v8a",
+      "class": 2,
+      "count": 29,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "abi": "armeabi-v7a",
+      "class": 1,
+      "count": 29,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "x86",
+      "class": 1,
+      "count": 19,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "abi": "x86_64",
+      "class": 2,
+      "count": 29,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "non_elf_so": [],
+  "official_direct_source_url": "https://privadovpn.com/apps/android/PrivadoVPN.apk",
+  "package": "io.privado.android",
+  "root_dex": 6,
+  "schema": "g336-privadovpn-host-verify-v1",
+  "signer_certificate_sha256": [
+    "8f308d552a090dcb694966bf03963d1d36614374810feab4f66d0013e1eda3dc"
+  ],
+  "version_code": "2083482916",
+  "version_name": "4.4.0",
+  "zip_entries": 3857
+}

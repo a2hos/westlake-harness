@@ -1,0 +1,79 @@
+{
+  "at_utc": "2026-10-04T19:52:04.394048+00:00",
+  "authoritative_counts_changed": false,
+  "blocking_findings": [
+    {
+      "code": "run_once.py: accepted predicate after JSON parse",
+      "evidence": "A local crafted JSON with schema/source_root/hostname and four true gate booleans passes accepted predicate despite host system Darwin/arm64, wrong manifest SHA, empty HEADs, false tool and zero free bytes. The parent does not recompute gate facts from returned data.",
+      "id": "terminal_trusts_remote_booleans",
+      "required_change": "Verify exact host system/machine/uid, manifest SHA, all eight HEAD/rc values, true ELF/tool paths or hashes and capacity numeric/path facts in the local terminal predicate; reject contradiction or missing fields.",
+      "severity": "BLOCKING"
+    },
+    {
+      "code": "remote_audit.py: private_paths_safe and capacity",
+      "evidence": "Existing project_base/out/tmp only require ownership and directory type; no os.access(W_OK) on them. A project-owned but non-writable existing base/out/tmp can yield capacity=true while private OUT/TMP cannot be used.",
+      "id": "capacity_false_positive",
+      "required_change": "For every existing project-owned output path, verify current-user writability and correct no-symlink/canonical ownership; keep audit read-only.",
+      "severity": "BLOCKING"
+    },
+    {
+      "code": "run_once.py: stdout.raw and stderr.raw",
+      "evidence": "Both raw streams are persisted as received; no bounded redaction or allowlist is applied before writing or sharing evidence. Terminal only stores hashes but raw evidence remains unredacted.",
+      "id": "raw_output_unredacted",
+      "required_change": "Use bounded safe structured stdout and redact or quarantine raw SSH stderr with explicit access boundary; do not publish unfiltered remote/error streams.",
+      "severity": "BLOCKING"
+    },
+    {
+      "code": "run_once.py: gate then code read/Popen",
+      "evidence": "ssh -G is author-time only, not a one-shot preflight; remote_audit.py is hashed in gate but read later without rehash, leaving a pre-send drift window.",
+      "id": "preexec_drift",
+      "required_change": "Run and validate local ssh -G immediately before START/SSH; hash code bytes actually sent and bind that hash, candidate SHA and nonce in terminal.",
+      "severity": "REPAIR"
+    }
+  ],
+  "bridge_accesses": 0,
+  "candidate_sha256": "83a761638f669930cec6d813d3e095a2957efd60373a194c008ab6fc3d55df74",
+  "container_commands": 0,
+  "counterexample": {
+    "crafted_contradictory_result_accepted_by_runner_predicate": true,
+    "network_used": false
+  },
+  "decision": "NO_GO_CODE_ONLY_NO_SSH_RELEASE",
+  "device_commands": 0,
+  "limits": "Host-key pin and ssh -G do not authenticate a live remote until a separately reviewed one-shot execution. This review does not judge AlexPC source or capacity actual state.",
+  "next_step": "Revise candidate as a new version, run negative fixtures for inconsistent result and non-writable existing output paths, then obtain fresh independent review; do not release this nonce/package.",
+  "positive_checks": {
+    "candidate_sha_matches_task": true,
+    "eight_head_values_in_pinned_ledger": true,
+    "fixture_rc": 0,
+    "fixture_stdout": "PASS_NO_NETWORK: pinned_local_key, argv, missing_R4, fake_R4, private_path_symlink",
+    "local_ssh_G_rc": 0,
+    "local_ssh_G_selected": {
+      "batchmode": "yes",
+      "clearallforwardings": "yes",
+      "controlmaster": "false",
+      "forwardagent": "no",
+      "hostkeyalgorithms": "ssh-ed25519",
+      "hostkeyalias": "alexpc.local",
+      "hostname": "192.168.8.22",
+      "port": "22",
+      "proxycommand": null,
+      "proxyjump": null,
+      "stricthostkeychecking": "true",
+      "user": "alexyang"
+    },
+    "manifest_sha_matches_shared_source_index": true,
+    "one_shot_start_open_x": true,
+    "release_file_present": false,
+    "remote_commands": "git rev-parse, read files/statvfs only; no mkdir/build/device/container operation in remote_audit.py",
+    "start_file_present": false
+  },
+  "schema": "g279-alexpc-four-gate-independent-code-review-v1",
+  "scope": "Local code, candidate, pinned ledger and no-network fixture only. No SSH connection, root release, graph, build, device, container or Bridge access.",
+  "source_sha256": {
+    "fixture_no_network.py": "ea5cf12457ed38c0534e8b675c1dd414cab317f717b74fd4020df05c9e71d967",
+    "remote_audit.py": "68aa1d4048a554ade0543e2a8772684e17a5b4b7a77110da79a3611d81bc7c6b",
+    "run_once.py": "678fa27c25d975da691204ea27cc2c758e6729005109cd101ca17f1c77957767"
+  },
+  "ssh_connections": 0
+}

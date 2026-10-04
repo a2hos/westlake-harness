@@ -1,0 +1,39 @@
+{
+  "accepted_findings": [
+    "Candidate and all four frozen file hashes match; a local, no-credential fixture rerun returned rc0 with 85/85 checks. All 69 v4 check names remain present and 16 new checks cover marker and v4 UNKNOWN boundaries.",
+    "ssh_error_marker matches only complete fixed byte lines, including the released loopback port for nc refusal. It exports only a fixed enum. Wrong port, sensitive suffix and unknown bytes return UNCLASSIFIED; distinct recognized markers return MULTIPLE_MARKERS_UNKNOWN.",
+    "A marker means only that its exact line was observed, not that the underlying network or authentication cause is proven. Nonzero rc, no timeout and nonempty stderr are required before a marker can enter the diagnostic. Arbitrary raw stderr, node names and exception text are not exported.",
+    "The v4 START/TERMINAL/peer hashes, consumed nonce equality, rc255, stdout0, stderr1462 and last stage UNKNOWN are verified before v5 release. Neither code nor fixtures infer v4 transport stage or cause from byte length. v5 has a fresh directory and random nonce on a future released start.",
+    "Success still requires rc0, pinned host-key debug line, public-key authentication line, numeric remote UID, exact positive route line, witness replay, live listener/process/config checks, and clean process/private-directory teardown. The new marker path does not satisfy or bypass any success witness.",
+    "No v5 root release, START or TERMINAL exists; code and fixture review did not launch Mihomo, SSH, gz02, device, container, namespace, graph or Bridge work."
+  ],
+  "at_utc": "2026-10-04T19:48:17.916698+00:00",
+  "candidate_sha256": "9d09fc20c7a7218246effc3d561fda1c71a2a07343f46735b96060a64d6e2adf",
+  "container_commands": 0,
+  "decision": "GO_V2C_V5_CODE_ONLY",
+  "device_commands": 0,
+  "fixture_checks_passed": 85,
+  "fixture_result_sha256": "aaa1c13d647efdab5974cc5167b29b2a2d2eade5bd7cf5842aa8dddedf4c2376",
+  "fixtures_sha256": "8f61216eb1e117f9b4c2ea756fde4c379d8423008654c470809feac9062c5888",
+  "handoff_sha256": "65f1a39db8b72063287e1ac47155aecff1c54d9d1c2d5ed5c3dc8907fc5e7772",
+  "independent_fixture_rc": 0,
+  "limits": [
+    "This is code-only approval for a separately gated one-shot. It is not authorization to execute or evidence of a gz02 connection, positive route, host-key authentication, remote UID, graph or APK startup.",
+    "If stderr contains one recognized line among unrelated lines, the enum reports that line was seen; it does not classify the entire stream or prove root cause. Unrecognized content itself is never exported.",
+    "Future raw SSH stdout/stderr are captured in memory before the post-capture byte bounds are checked; execution must remain under its one-shot timeout and resource supervision."
+  ],
+  "namespace_commands": 0,
+  "real_mihomo_started_by_review": false,
+  "real_ssh_connections_by_review": 0,
+  "remote_write_commands": 0,
+  "root_release_present": false,
+  "runner_sha256": "ff2c62a72bd8a20f43d884241c0b76e3b3df3c1a1d2af882631efda3a1db79b5",
+  "schema": "g279-private-mihomo-v2c-gz02-peer-review-v5",
+  "start_present": false,
+  "terminal_present": false,
+  "v4_checks_retained": 69,
+  "v4_peer_sha256": "6d66cc33bf3c32ab89a8fd214ebb59367b36f1fe25344f14d04832d1f81159ac",
+  "v4_start_sha256": "4430450be8bd18d0b58b63b35c6d41a8a11b40d85f20d4aa9ac501fdfce01973",
+  "v4_terminal_sha256": "1fc3003223670ae175e1e673a20111b44ceb5193549a6f7e0099768e9710018f",
+  "v5_checks_added": 16
+}

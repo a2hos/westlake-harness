@@ -1,0 +1,205 @@
+{
+  "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+  "at_utc": "2026-10-04T19:54:28.854343+00:00",
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_AOSP16_OH7_BIONIC_RUNTIME_INDEX_AND_RESOLUTION",
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_inventory_sha256": {
+    "arm64_elf": "c4f557c003ded624087b8796db7b2c0cc097de9215a43a158a98d0e2fc664909",
+    "dex": "eaa544c74157732e28b823ef817623b549f1db55648649a61cc36b4a42f2c069",
+    "metadata": "2fb73707223e7c244b22f38d1e541ab83df40c52adcac51a4b117be238bb3b70"
+  },
+  "limits": "Static demands do not prove missing implementation, startup reachability, loaded native libraries, or device behavior.",
+  "manifest_main_activities": [
+    "com.purevpn.SplashActivity"
+  ],
+  "network_commands": 0,
+  "next_evidence": "Bind current Bionic runtime index and host-resolve DEX platform members, JNI and ARM64 ELF dependencies; rank cold-start reachability only with real trace or accepted graph.",
+  "package": "com.gaditek.purevpnics",
+  "schema": "g335-purevpn-four-static-demand-boundary-v1",
+  "static_demands": {
+    "arm64_elf_count": 28,
+    "arm64_elf_needed_sonames": [
+      "libandroid.so",
+      "libc.so",
+      "libcharon.so",
+      "libdl.so",
+      "libimcv.so",
+      "libiperf.so",
+      "libipsec.so",
+      "liblog.so",
+      "libm.so",
+      "libopenvpn.so",
+      "libsentry.so",
+      "libstdc++.so",
+      "libstrongswan.so",
+      "libtnccs.so",
+      "libtncif.so",
+      "libtpmtss.so"
+    ],
+    "defined_dex_classes": 22126,
+    "field_reference_keys": 775,
+    "jni_onload_libraries": 5,
+    "load_library_sites": [
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes.dex",
+        "method": "<clinit>",
+        "offset": 148,
+        "owner": "Lcom/atom/netguard/Util;",
+        "value": "netguard"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes.dex",
+        "method": "loadNativeLib",
+        "offset": 4,
+        "owner": "Lcom/atom/sdk/android/AtomManager;",
+        "value": "Xyz"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Lcom/purevpn/App;",
+        "value": "StringsValues"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes.dex",
+        "method": "<clinit>",
+        "offset": 14,
+        "owner": "Lcom/purevpn/App;",
+        "value": "EncryptionDecryption"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 32,
+        "owner": "Lde/blinkt/openvpn/core/NativeUtils;",
+        "value": "opvpnutil"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 20,
+        "owner": "Lgo/LoadJNI;",
+        "value": "gojni"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Lio/sentry/android/ndk/SentryNdk;",
+        "value": "sentry"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 14,
+        "owner": "Lio/sentry/android/ndk/SentryNdk;",
+        "value": "sentry-android"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Liperfwrapper/Iperf3;",
+        "value": "jni"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "init",
+        "offset": 40,
+        "owner": "Lorg/conscrypt/NativeCryptoJni;",
+        "value": "conscrypt_gmscore_jni"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "init",
+        "offset": 52,
+        "owner": "Lorg/conscrypt/NativeCryptoJni;",
+        "value": "conscrypt_jni"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "(Landroid/content/Context;)V",
+        "dex": "classes2.dex",
+        "method": "<init>",
+        "offset": 16,
+        "owner": "Lcom/wireguard/android/backend/GoBackend;",
+        "value": "wg-go"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "b",
+        "offset": 58,
+        "owner": "Lorg/icmp4j/platform/unix/jni/UnixJniNativeBridge;",
+        "value": "icmp4jJNI"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes2.dex",
+        "method": "<clinit>",
+        "offset": 16,
+        "owner": "Lorg/strongswan/android/logic/CharonVpnService;",
+        "value": "androidbridge"
+      }
+    ],
+    "method_reference_keys": 9197,
+    "native_method_declarations": 637,
+    "service_request_names": {
+      "<dynamic-or-unresolved>": 20,
+      "Payment screen": 1,
+      "accessibility": 11,
+      "account": 1,
+      "activity": 20,
+      "alarm": 8,
+      "appops": 3,
+      "audio": 8,
+      "batterymanager": 2,
+      "clipboard": 5,
+      "connectivity": 63,
+      "download": 1,
+      "input_method": 18,
+      "jobscheduler": 10,
+      "keyguard": 9,
+      "layout_inflater": 150,
+      "location": 6,
+      "notification": 30,
+      "phone": 14,
+      "power": 20,
+      "restrictions": 1,
+      "sensor": 4,
+      "uimode": 111,
+      "user": 1,
+      "vibrator": 3,
+      "wifi": 18,
+      "window": 23
+    },
+    "service_request_sites": 561,
+    "undefined_symbol_names_unique": 633
+  }
+}

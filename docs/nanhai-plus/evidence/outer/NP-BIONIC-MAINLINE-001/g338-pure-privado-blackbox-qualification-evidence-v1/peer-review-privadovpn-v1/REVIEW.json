@@ -1,0 +1,40 @@
+{
+  "already_in_qualified_ids": false,
+  "apk_bytes": 70702804,
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "app": "privadovpn",
+  "at_utc": "2026-10-04T19:57:30.401624+00:00",
+  "blackbox_count_delta_here": 0,
+  "bounded_public_source_evidence_sha256": {
+    "privadovpn-github-org-repos.raw": "7ae35643808b623eaae2115fc139751e5ff9a6af129c0858a9117deaa4ea5bb4",
+    "privadovpn-github-repository-search.raw": "08c082fdf7ca87ba911a2aabb0f0cf2d3e482a6feeaac9713e4578c20b2600b2"
+  },
+  "compatibility_risk": "APK targetSdk37 exceeds AOSP16 API36; this is not an observed installation or startup failure.",
+  "container_commands": 0,
+  "decision": "GO_EXACT_PACKAGE_OVERSEAS_MAINSTREAM_BLACKBOX_TEST_INPUT_CANDIDATE_ONLY",
+  "dedupe_before_qualified_packages": 18,
+  "device_commands": 0,
+  "host_verify_sha256": "2ef66d268cd5704ae48f972bb3aefbe42f52310d4d1dfadb03dcb5e57401bcab",
+  "limits": [
+    "Package-level current Play cumulative downloads are neither active users nor installs of this exact APK version.",
+    "Publisher page and signer bind the accepted official binary route, but signer string is not a legal-entity identity proof.",
+    "Qualification is an eligible test input only; no installation, startup, device, Bionic runtime or 89-tool PASS."
+  ],
+  "official_page_sha256": "1e47f428d755b4d9551fe028e00df6fdc45e1581bf55981465c09145c158ca8b",
+  "official_page_url": "https://privadovpn.com/software/",
+  "package": "io.privado.android",
+  "play_cumulative_downloads": "5M+",
+  "play_exact_package_url": "https://play.google.com/store/apps/details?id=io.privado.android&hl=en_US",
+  "play_publisher": "Privado Networks, LLC",
+  "play_raw_sha256": "4ca14dd3eba5476fbd07a93508ecc8bacf8c2b6ad25c84f6d96b892ed32bbe65",
+  "public_source_conclusion": "No complete matching buildable Android client source established in the bounded publisher/repository check; this is not a universal closed-source claim.",
+  "qualification_inputs_sha256": "137dec773827245f92bba8316f7e075f69202eafb2209b2a002be0bdf3fc4cb4",
+  "raw_admission_sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719",
+  "root_admission_required": true,
+  "schema": "nanhai-plus-blackbox-input-peer-qualification-v1",
+  "signer_certificate_sha256": "8f308d552a090dcb694966bf03963d1d36614374810feab4f66d0013e1eda3dc",
+  "startup_delta": 0,
+  "static_peer_review_sha256": "2ce9da76d50716a1cb97409fe048404cac107d7721f6e1e822e663d9060e39ca",
+  "version_code": 2083482916,
+  "version_name": "4.4.0"
+}

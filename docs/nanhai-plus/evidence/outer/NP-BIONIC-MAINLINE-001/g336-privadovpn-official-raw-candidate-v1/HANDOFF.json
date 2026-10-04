@@ -1,0 +1,162 @@
+{
+  "actual_download_url": "https://privadovpn.com/apps/android/PrivadoVPN.apk",
+  "apk_bytes": 70702804,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk",
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "apksigner_verified_v2": true,
+  "apksigner_verified_v3": false,
+  "arm64_true_elf": 29,
+  "at_utc": "2026-10-04T19:47:00.253596+00:00",
+  "claim_boundary": {
+    "blackbox_qualification_accepted_here": false,
+    "container_commands": 0,
+    "device_commands": 0,
+    "full_static_accepted": false,
+    "raw_count_changed": false,
+    "startup_proven": false
+  },
+  "decision_candidate": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "dedupe": {
+    "current_task_summary_package_hits": 0,
+    "prior_evidence_json_package_hits_excluding_this_candidate": 0,
+    "upstream_registry_package_hits": 0
+  },
+  "download_final_http_status": 200,
+  "download_rc": 0,
+  "evidence": {
+    "HOST-VERIFY.json": {
+      "bytes": 2206,
+      "sha256": "2ef66d268cd5704ae48f972bb3aefbe42f52310d4d1dfadb03dcb5e57401bcab"
+    },
+    "aapt2.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "aapt2.stdout.raw": {
+      "bytes": 7282,
+      "sha256": "d523f549f823972abe2e49f3e32f2a75d85c25696f95adfaa61b734e4276e998"
+    },
+    "apk-get.headers.raw": {
+      "bytes": 708,
+      "sha256": "640d47e4f0f6465d1eeedab189962d17701243a93b18eb5db83ba3e5a3eabe63"
+    },
+    "apk-get.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apk-get.stdout.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apk-head.headers.raw": {
+      "bytes": 716,
+      "sha256": "5a523c09943e07ea761fb15d29a9f6c58a75bf10fb8b98014701b856b544b79f"
+    },
+    "apksigner.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner.stdout.raw": {
+      "bytes": 25056,
+      "sha256": "e962ce8d354fc1044fe8d074698466159c3e21f8d77dd6260adc7edd18005fc2"
+    },
+    "download.py": {
+      "bytes": 877,
+      "sha256": "209e59ef4489626291d2592395caafab3f13217e287c6377f26fd8631f118310"
+    },
+    "official-software.headers.raw": {
+      "bytes": 748,
+      "sha256": "47843422944cc95c77dc2eba54a6a31668b8e17058b115309a9ae9d3c064aaa2"
+    },
+    "official-software.raw": {
+      "bytes": 249525,
+      "sha256": "1e47f428d755b4d9551fe028e00df6fdc45e1581bf55981465c09145c158ca8b"
+    },
+    "play.raw": {
+      "bytes": 1268904,
+      "sha256": "4ca14dd3eba5476fbd07a93508ecc8bacf8c2b6ad25c84f6d96b892ed32bbe65"
+    },
+    "verify.py": {
+      "bytes": 3345,
+      "sha256": "4354502a5942c6501b37d57deed1df05dde6b3b5a3535ea99d8c99690f635a8a"
+    }
+  },
+  "host_commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d523f549f823972abe2e49f3e32f2a75d85c25696f95adfaa61b734e4276e998"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e962ce8d354fc1044fe8d074698466159c3e21f8d77dd6260adc7edd18005fc2"
+    }
+  ],
+  "href_scheme_difference": null,
+  "non_elf_so": 0,
+  "official_page_href": "https://privadovpn.com/apps/android/PrivadoVPN.apk",
+  "official_page_url": "https://privadovpn.com/software/",
+  "other_elf_header_count_by_abi": [
+    {
+      "abi": "arm64-v8a",
+      "class": 2,
+      "count": 29,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "abi": "armeabi-v7a",
+      "class": 1,
+      "count": 29,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "x86",
+      "class": 1,
+      "count": 19,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "abi": "x86_64",
+      "class": 2,
+      "count": 29,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "package": "io.privado.android",
+  "play_downloads": "5M+",
+  "play_publisher": "Privado Networks, LLC",
+  "play_same_package": true,
+  "play_url": "https://play.google.com/store/apps/details?id=io.privado.android",
+  "root_dex": 6,
+  "schema": "g336-privadovpn-official-host-raw-candidate-v1",
+  "signer_certificate_sha256": [
+    "8f308d552a090dcb694966bf03963d1d36614374810feab4f66d0013e1eda3dc"
+  ],
+  "source_code_status": "Bounded official/GitHub searches found no complete public Android client matching this exact APK; blackbox test qualification requires separate independent review. Absence is not exhaustive.",
+  "status": "CANDIDATE_INDEPENDENT_REVIEW_REQUIRED",
+  "target_compatibility_note": "targetSdk 37 exceeds AOSP16 API 36; raw acceptance does not establish install/runtime behavior.",
+  "target_sdk": 37,
+  "version_code": 2083482916,
+  "version_name": "4.4.0",
+  "zip_crc_all": true,
+  "zip_duplicate_names": 0,
+  "zip_entries": 3857
+}

@@ -1,0 +1,49 @@
+{
+  "apk_bytes": 70702804,
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "app": "PrivadoVPN",
+  "at_utc": "2026-10-04T19:56:13.440577+00:00",
+  "authoritative_count_changed": false,
+  "bridge_commands": 0,
+  "census_sha256": "e809aa76b276880a37989ed38ac9713a7b2ff23740b2f30b04d0799e857ccc4b",
+  "compatibility_note": "targetSdk 37 exceeds AOSP16 API36; this is a compatibility risk only, not an observed install failure.",
+  "container_commands": 0,
+  "decision": "GO_HOST_COMPLETE_STATIC_ONLY",
+  "device_commands": 0,
+  "dex_embedded": 0,
+  "dex_root": 6,
+  "handoff_sha256": "82646d856eec9d85873eca0e14f030d07a97fffe04c3fc32890163f678fbe46c",
+  "independent_byte_checks": [
+    "Accepted raw receipt SHA and current APK bytes/SHA matched each other and all phase guards.",
+    "All HANDOFF referenced bytes/SHA, phase command/result files, raw stdout/stderr SHA and rc were recalculated.",
+    "ZIP CRC and unique entry names, every DEX magic/length/SHA and all lib/*.so ELF headers were independently read from the exact APK.",
+    "DEX inventory names and target ARM64 readelf records matched the byte census."
+  ],
+  "limits": [
+    "Host static inventory only; no app install, screen, runtime, or device acceptance.",
+    "Blackbox qualification and portfolio count are outside this review."
+  ],
+  "manifest_target_sdk": "37",
+  "non_elf_so": 0,
+  "other_true_elf_by_abi": {
+    "armeabi-v7a": 29,
+    "x86": 19,
+    "x86_64": 29
+  },
+  "package": "io.privado.android",
+  "phase_raw_outputs_and_refs_recomputed": true,
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "phase_source_before_after_equal": true,
+  "result_sha256": "32417cedfa7222ae4deb732c7e2680af41b30be376662c7bb25fcfb3384d2e85",
+  "root_raw_admission_sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719",
+  "schema": "nanhai-plus-four-static-peer-review-v1",
+  "startup_delta": 0,
+  "true_arm64_elf": 29,
+  "zip_crc_all": true,
+  "zip_entries": 3857
+}

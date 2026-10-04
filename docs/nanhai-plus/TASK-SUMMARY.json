@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T19:46:09.245371+00:00",
+  "checked_at": "2026-10-04T20:02:41.325673+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,25 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 105,
+    "downloaded_payloads": 107,
     "latest_raw_admission": {
       "packages": [
-        "ch.protonvpn.android"
+        "com.gaditek.purevpnics",
+        "io.privado.android"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g332-protonvpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "bff10e8941a5f9b6bc30840c0ef118ce5b72e3629e21642527c24315fefa04be",
-      "scope": "exact official Proton VPN 5.20.57.0 APK host raw only; no static/whitebox/startup acceptance"
+      "receipts": [
+        {
+          "package": "com.gaditek.purevpnics",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g334-purevpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4"
+        },
+        {
+          "package": "io.privado.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g336-privadovpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719"
+        }
+      ],
+      "scope": "two exact official host raw APK identities only; static/blackbox/startup unchanged"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,27 +64,40 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 103,
-    "complete_inventory_dex_entries": 344,
+    "complete_static_inventories": 105,
+    "complete_inventory_dex_entries": 352,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1484,
+    "complete_inventory_native_elf_entries": 1541,
     "latest_complete_static_admission": {
-      "package": "ch.protonvpn.android",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g333-protonvpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "919b2a20c977e47812fe19568231f7a8d4d968a54da92715b8f89d5a2506dc6a",
-      "scope": "four-phase host static of exact accepted Proton VPN 5.20.57.0 bytes; 4 DEX and 8 true ARM64 ELF; no runtime bridge classification or startup"
+      "packages": [
+        "com.gaditek.purevpnics",
+        "io.privado.android"
+      ],
+      "receipts": [
+        {
+          "package": "com.gaditek.purevpnics",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g335-purevpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "9edc648cc9ee044f7839987b5b8732078b7a9f20c830049d6e551e6af1ab8cc5"
+        },
+        {
+          "package": "io.privado.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g337-privadovpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "438a6cb0a8d17f8d43754b591d4b4c3e4eae63ec6652c1bac1a8ce9f255c70a7"
+        }
+      ],
+      "scope": "four-phase host static only; no install/runtime"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 30,
-    "qualified_blackbox_packages": 18,
+    "supplemental_payloads": 32,
+    "qualified_blackbox_packages": 20,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -92,7 +116,9 @@
       "com.zhiliaoapp.musically",
       "com.expressvpn.vpn",
       "com.adguard.vpn",
-      "com.valvesoftware.android.steam.friendsui"
+      "com.valvesoftware.android.steam.friendsui",
+      "com.gaditek.purevpnics",
+      "io.privado.android"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -103,10 +129,23 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.valvesoftware.android.steam.friendsui",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-steam-chat-official-intake-candidate-v1/ROOT-QUALIFICATION.json",
-      "sha256": "312a408715a6a16765e03af92b39a39cfe2788c3a13eb1d42ac6cc08743ad054",
-      "scope": "qualified test input only; no startup"
+      "packages": [
+        "com.gaditek.purevpnics",
+        "io.privado.android"
+      ],
+      "receipts": [
+        {
+          "package": "com.gaditek.purevpnics",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g338-pure-privado-blackbox-qualification-evidence-v1/ROOT-QUALIFICATION-PUREVPN.json",
+          "sha256": "fd2ba07b0f2f6a96ef7c3c2d555edafbb25bf113808c6280b12293557ce8d059"
+        },
+        {
+          "package": "io.privado.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g338-pure-privado-blackbox-qualification-evidence-v1/ROOT-QUALIFICATION-PRIVADOVPN.json",
+          "sha256": "a82b30e58495111d740dbacc0c1e9f0647dc50e379cf01a50832714082103ed7"
+        }
+      ],
+      "scope": "qualified exact test inputs only; no cold startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -332,6 +371,59 @@
       "sha256": "1dac180763a7c0d543676a3b11efcffa855954c23d370e40964ce03c71bfa9f5",
       "raw_delta": 1,
       "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    "g334_g336_raw_supplement": {
+      "receipts": [
+        {
+          "package": "com.gaditek.purevpnics",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g334-purevpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "8000810ec544bcbf6bf1a80097b733e8102cefc219226f17217b29464bc24ac4"
+        },
+        {
+          "package": "io.privado.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g336-privadovpn-official-raw-candidate-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "3e8d17c0dc104eef1807634202bdf00155f76b5f1fccd91df66fc93cda742719"
+        }
+      ],
+      "raw_delta": 2,
+      "static_delta": 0,
+      "blackbox_qualification_delta": 0,
+      "cold_start_delta": 0
+    },
+    "g335_g337_static_supplement": {
+      "receipts": [
+        {
+          "package": "com.gaditek.purevpnics",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g335-purevpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "9edc648cc9ee044f7839987b5b8732078b7a9f20c830049d6e551e6af1ab8cc5"
+        },
+        {
+          "package": "io.privado.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g337-privadovpn-four-static-candidate-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "438a6cb0a8d17f8d43754b591d4b4c3e4eae63ec6652c1bac1a8ce9f255c70a7"
+        }
+      ],
+      "static_delta": 2,
+      "dex_delta": 8,
+      "true_arm64_elf_delta": 57,
+      "cold_start_delta": 0
+    },
+    "g338_blackbox_qualification": {
+      "receipts": [
+        {
+          "package": "com.gaditek.purevpnics",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g338-pure-privado-blackbox-qualification-evidence-v1/ROOT-QUALIFICATION-PUREVPN.json",
+          "sha256": "fd2ba07b0f2f6a96ef7c3c2d555edafbb25bf113808c6280b12293557ce8d059"
+        },
+        {
+          "package": "io.privado.android",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g338-pure-privado-blackbox-qualification-evidence-v1/ROOT-QUALIFICATION-PRIVADOVPN.json",
+          "sha256": "a82b30e58495111d740dbacc0c1e9f0647dc50e379cf01a50832714082103ed7"
+        }
+      ],
+      "qualification_delta": 2,
+      "qualified_startup_delta": 0,
       "cold_start_delta": 0
     }
   },
@@ -2463,6 +2555,71 @@
     "result": "NO_READY_BYPASS_YET",
     "process_sha256": "dcd8be5fe1126b2192fa4d4304ef61f5103e01671150de553fa6a56cc7092e83",
     "result_sha256": "3a37e0fba2facf7f45e1cb29f60f421b9a11749a09637a033f3ef32fe891a6b4",
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2c_v5": {
+    "status": "root_accepted_bounded_failure_no_remote_identity_or_tcp_proof",
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v5/ROOT-POSTRUN-NO-GO.json",
+      "sha256": "120676b37e534dc9cbceacfe34c0dd344d9790d6628c85b16ba13a68193539b3"
+    },
+    "outer_command_rc": 2,
+    "local_ssh_child_count": 1,
+    "ssh_child_rc": 255,
+    "reported_marker": "PRE_BANNER_CLOSED_LINE_SEEN",
+    "marker_independently_recomputable_after_cleanup": false,
+    "gz02_identity_proven": false,
+    "positive_route_proven": false,
+    "positive_route_absence_proven": false,
+    "one_shot_consumed": true,
+    "hello_startup_delta": 0
+  },
+  "g279_alexpc_four_gate_v1": {
+    "status": "root_no_go_code_only_no_ssh",
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-alexpc-readonly-four-gate-candidate-v1/ROOT-NO-GO.json",
+      "sha256": "acbe713da55a65203d3fb9155e4b4370542c5606245edf15848e95ef35f654a6"
+    },
+    "ssh_connections": 0,
+    "graph_commands": 0,
+    "ready_build_host": false
+  },
+  "g279_alexpc_four_gate_v2": {
+    "status": "root_no_go_code_only_no_ssh",
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-alexpc-readonly-four-gate-candidate-v2/ROOT-NO-GO-V2.json",
+      "sha256": "6aa62924fddd79f10f62af25047595cfd678a9ed0b85b2a853abdf969638aa05"
+    },
+    "ssh_connections": 0,
+    "graph_commands": 0,
+    "ready_build_host": false
+  },
+  "evo52": {
+    "status": "bounded_pilot_only_no_promotion",
+    "lens": "decision_witness_boundary",
+    "process_sha256": "b92c3dc54c9a644f32582da7b8b9387facba53501d015324d9e5fceaac12906b",
+    "pilot_result_sha256": "0f29a823d303a6fac111a29fafd26f62b0df29b9f4caba75494f8e16918f16d1",
+    "startup_delta": 0
+  },
+  "g279_alexpc_four_gate_v3": {
+    "status": "root_accepted_terminal_failure_only_no_authenticated_host",
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-alexpc-readonly-four-gate-candidate-v3/ROOT-POSTRUN-NO-GO.json",
+      "sha256": "d2113ec4d8f5804b1bd1caa1f282687e267b8428dbac2f3479f9808a01797527"
+    },
+    "outer_command_rc": 2,
+    "ssh_child_rc": 255,
+    "four_gates_verified": false,
+    "graph_commands": 0,
+    "one_shot_consumed": true
+  },
+  "g279_radar_three_angle": {
+    "status": "bounded_readonly_synthesis",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/radar-g279-synthesis-v1/SYNTHESIS.json",
+      "sha256": "d9c6fba46dc37c542091cbf764ba660fc186580ceea1bd0cd99d9ed75f0e9c39"
+    },
+    "next_wall": "fresh authenticated exact-R4 Linux native host route",
     "startup_delta": 0
   }
 }

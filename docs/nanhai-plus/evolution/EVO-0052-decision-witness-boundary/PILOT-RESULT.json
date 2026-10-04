@@ -1,0 +1,18 @@
+{
+  "actual_v5_decision": "UNKNOWN_UNREPLAYABLE",
+  "actual_v5_marker_independently_replayable": false,
+  "alexpc_v1_remote_booleans_sufficient": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_sha256": {
+    "alexpc_v1_peer_review": "3b30cc5c5664de6e7c819156ea11dc522d641c4a52895ab2efd6cd5acf32c051",
+    "v5_peer_postrun": "3121c4862eae70044b8fc2ee652b139799a84d5616044e3c466214fb79871ffb",
+    "v5_terminal": "c4ab077f3747aeb7287898aa010ea8c3d77ac9177352767e75dee81b67f8ae37"
+  },
+  "pilot_scope": "local fixtures only; no historical cause reclassification",
+  "schema": "evo52-decision-witness-pilot-v1",
+  "ssh_connections": 0,
+  "synthetic_prefix_rejected": true,
+  "synthetic_safe_full_line_replayed": true,
+  "synthetic_sensitive_suffix_rejected": true
+}

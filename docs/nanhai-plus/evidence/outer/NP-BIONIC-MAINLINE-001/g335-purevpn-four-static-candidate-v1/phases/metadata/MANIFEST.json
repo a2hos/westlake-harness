@@ -1,0 +1,56 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "mips",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 52,
+  "app_name": "PureVPN",
+  "bytes": 72731840,
+  "features": [
+    "android.hardware.screen.portrait",
+    "android.hardware.telephony",
+    "android.hardware.touchscreen",
+    "android.hardware.wifi",
+    "android.software.app_widgets",
+    "android.software.leanback"
+  ],
+  "filename": "PureVPN.apk",
+  "main_activities": [
+    "com.purevpn.SplashActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "22",
+  "native_library_entries": 113,
+  "package": "com.gaditek.purevpnics",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.adjust.preinstall.READ_PERMISSION",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "providers": 4,
+  "receivers": 34,
+  "services": 35,
+  "sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+  "signing_certificate_sha256": [
+    "c527212dd236f90c5bae8031a0d6d618f8215777d7fd810f40b5b16afd8fac2a"
+  ],
+  "target_sdk": "31",
+  "version_code": "5175",
+  "version_name": "8.44.223"
+}

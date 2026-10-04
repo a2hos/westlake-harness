@@ -1,0 +1,42 @@
+{
+  "bridge_accesses": 0,
+  "build_commands": 0,
+  "candidate_sha256": "83a761638f669930cec6d813d3e095a2957efd60373a194c008ab6fc3d55df74",
+  "container_commands": 0,
+  "decision": "GO_INDEPENDENT_CODE_REVIEW_ONLY",
+  "device_commands": 0,
+  "fixture_rc": 0,
+  "fixture_sha256": "ea5cf12457ed38c0534e8b675c1dd414cab317f717b74fd4020df05c9e71d967",
+  "fixture_stderr": "",
+  "fixture_stdout": "PASS_NO_NETWORK: pinned_local_key, argv, missing_R4, fake_R4, private_path_symlink",
+  "limits": [
+    "Historical 192.168.8.22 identity may drift; local ssh -G and known_hosts do not authenticate a live server.",
+    "Fixed /data/source/aosp16-r4 is a candidate path, not a currently verified AlexPC source root.",
+    "No remote repository completeness or clean state proven; 8 HEADs and manifest alone would only qualify a graph candidate.",
+    "No project OUT/TMP created or capacity freshly proven; fresh four gates remain pending.",
+    "No SSH/release or graph/device result from this preparation."
+  ],
+  "no_release_file": true,
+  "no_start_file": true,
+  "r4_heads_eight_match_authoritative_ledger": true,
+  "remote_sha256": "68aa1d4048a554ade0543e2a8772684e17a5b4b7a77110da79a3611d81bc7c6b",
+  "runner_sha256": "678fa27c25d975da691204ea27cc2c758e6729005109cd101ca17f1c77957767",
+  "schema": "g279-alexpc-four-gate-author-verification-v1",
+  "ssh_G_expected_match": true,
+  "ssh_G_rc": 0,
+  "ssh_G_selected": {
+    "batchmode": "yes",
+    "clearallforwardings": "yes",
+    "controlmaster": "false",
+    "globalknownhostsfile": "/dev/null",
+    "hostkeyalgorithms": "ssh-ed25519",
+    "hostkeyalias": "alexpc.local",
+    "hostname": "192.168.8.22",
+    "port": "22",
+    "requesttty": "false",
+    "stricthostkeychecking": "true",
+    "user": "alexyang",
+    "userknownhostsfile": "/Users/alexyang/.ssh/known_hosts"
+  },
+  "ssh_connections": 0
+}

@@ -1,0 +1,623 @@
+{
+  "non_elf_so_records": [],
+  "non_target_abi_elf_header_records": [
+    {
+      "bytes": 261048,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaecore.so"
+    },
+    {
+      "bytes": 199408,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaedroid.so"
+    },
+    {
+      "bytes": 72048,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaeelf.so"
+    },
+    {
+      "bytes": 232840,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaehelp.so"
+    },
+    {
+      "bytes": 422840,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaemobile.so"
+    },
+    {
+      "bytes": 249776,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaepack.so"
+    },
+    {
+      "bytes": 130192,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaescn.so"
+    },
+    {
+      "bytes": 100944,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaevdf.so"
+    },
+    {
+      "bytes": 65920,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libandroidbridge.so"
+    },
+    {
+      "bytes": 7252,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 547724,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libantivirus.so"
+    },
+    {
+      "bytes": 792376,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libcharon.so"
+    },
+    {
+      "bytes": 4416,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 245736,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libimcv.so"
+    },
+    {
+      "bytes": 34076,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libipsec.so"
+    },
+    {
+      "bytes": 660672,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmavapi.so"
+    },
+    {
+      "bytes": 374140,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnetguard.so"
+    },
+    {
+      "bytes": 3581708,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libopenvpn.so"
+    },
+    {
+      "bytes": 3064,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libovpnexec.so"
+    },
+    {
+      "bytes": 3444,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libovpnutil.so"
+    },
+    {
+      "bytes": 12080,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsentry-android.so"
+    },
+    {
+      "bytes": 456792,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsentry.so"
+    },
+    {
+      "bytes": 3407800,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libstrongswan.so"
+    },
+    {
+      "bytes": 68644,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtnccs.so"
+    },
+    {
+      "bytes": 7688,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtncif.so"
+    },
+    {
+      "bytes": 7172,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtpmtss.so"
+    },
+    {
+      "bytes": 3175660,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwg-go.so"
+    },
+    {
+      "bytes": 23092,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwg-quick.so"
+    },
+    {
+      "bytes": 47608,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwg.so"
+    },
+    {
+      "bytes": 66276,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libandroidbridge.so"
+    },
+    {
+      "bytes": 9284,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 820872,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libcharon.so"
+    },
+    {
+      "bytes": 5148,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 266936,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libimcv.so"
+    },
+    {
+      "bytes": 36336,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libipsec.so"
+    },
+    {
+      "bytes": 379444,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libnetguard.so"
+    },
+    {
+      "bytes": 5038948,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libopenvpn.so"
+    },
+    {
+      "bytes": 3160,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libovpnexec.so"
+    },
+    {
+      "bytes": 3908,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libovpnutil.so"
+    },
+    {
+      "bytes": 14760,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libsentry-android.so"
+    },
+    {
+      "bytes": 721100,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libsentry.so"
+    },
+    {
+      "bytes": 3982664,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libstrongswan.so"
+    },
+    {
+      "bytes": 72328,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libtnccs.so"
+    },
+    {
+      "bytes": 8144,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libtncif.so"
+    },
+    {
+      "bytes": 7540,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libtpmtss.so"
+    },
+    {
+      "bytes": 3198888,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libwg-go.so"
+    },
+    {
+      "bytes": 29296,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libwg-quick.so"
+    },
+    {
+      "bytes": 66532,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 3,
+      "name": "lib/x86/libwg.so"
+    },
+    {
+      "bytes": 278944,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaecore.so"
+    },
+    {
+      "bytes": 234448,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaedroid.so"
+    },
+    {
+      "bytes": 62056,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaeelf.so"
+    },
+    {
+      "bytes": 225840,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaehelp.so"
+    },
+    {
+      "bytes": 489544,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaemobile.so"
+    },
+    {
+      "bytes": 260152,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaepack.so"
+    },
+    {
+      "bytes": 118688,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaescn.so"
+    },
+    {
+      "bytes": 89848,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libaevdf.so"
+    },
+    {
+      "bytes": 70232,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libandroidbridge.so"
+    },
+    {
+      "bytes": 10760,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libandroidx.graphics.path.so"
+    },
+    {
+      "bytes": 706368,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libantivirus.so"
+    },
+    {
+      "bytes": 846928,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libcharon.so"
+    },
+    {
+      "bytes": 6224,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libdatastore_shared_counter.so"
+    },
+    {
+      "bytes": 264840,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libimcv.so"
+    },
+    {
+      "bytes": 37256,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libipsec.so"
+    },
+    {
+      "bytes": 871856,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libmavapi.so"
+    },
+    {
+      "bytes": 459664,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libnetguard.so"
+    },
+    {
+      "bytes": 5583152,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libopenvpn.so"
+    },
+    {
+      "bytes": 4288,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libovpnexec.so"
+    },
+    {
+      "bytes": 4824,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libovpnutil.so"
+    },
+    {
+      "bytes": 16384,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libsentry-android.so"
+    },
+    {
+      "bytes": 690848,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libsentry.so"
+    },
+    {
+      "bytes": 4560152,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libstrongswan.so"
+    },
+    {
+      "bytes": 74784,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libtnccs.so"
+    },
+    {
+      "bytes": 11224,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libtncif.so"
+    },
+    {
+      "bytes": 8880,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libtpmtss.so"
+    },
+    {
+      "bytes": 3607856,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libwg-go.so"
+    },
+    {
+      "bytes": 31904,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libwg-quick.so"
+    },
+    {
+      "bytes": 93760,
+      "class": 2,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 62,
+      "name": "lib/x86_64/libwg.so"
+    }
+  ],
+  "scope": "ARM64 target readelf/JNI only; other ABI classified by ELF header",
+  "true_arm64_target_records": 29
+}

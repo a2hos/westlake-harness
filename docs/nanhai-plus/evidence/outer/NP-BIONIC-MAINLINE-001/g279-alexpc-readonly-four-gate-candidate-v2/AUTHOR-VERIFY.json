@@ -1,0 +1,31 @@
+{
+  "bridge_accesses": 0,
+  "candidate_sha256": "d9c589e7e87a5b5ee3f2a50aab3de26f7cc4092177edd319c7ba19b1e8979e71",
+  "container_commands": 0,
+  "decision": "GO_INDEPENDENT_CODE_REVIEW_ONLY",
+  "device_commands": 0,
+  "fixture_rc": 0,
+  "fixture_sha256": "2b62cda17ecc086ddf13ca0ab59c85ebebdbd8eafecf9e104a26360d8a534972",
+  "fixture_stderr": "",
+  "fixture_stdout": "PASS_NO_NETWORK: local hostkey/ssh-G, missing R4, nonwritable OUT, symlink, positive report, 8 contradictory reports",
+  "graph_commands": 0,
+  "release_file_present": false,
+  "remaining_limits": [
+    "No live AlexPC SSH/hostkey authentication, source, toolchain or capacity claim.",
+    "Pinned /data/source/aosp16-r4 may not be current source root; fail closed.",
+    "Author verification is not independent peer review or root release."
+  ],
+  "remote_sha256": "beeb973ffaf146779870705e4cee70abbeeb4aadd58e4eb6cb70ac239d1fd930",
+  "repairs_verified": [
+    "local recomputation rejects eight contradictory or missing fact reports",
+    "existing OUT nonwritable and symlink fail remote capacity",
+    "raw stdout/stderr held only in capped memory; accepted allowlisted RESULT can re-enter verify_report",
+    "candidate/release/code bytes read once and exact sent SHA bound to START/TERMINAL",
+    "local known_host and ssh -G checked before START"
+  ],
+  "runner_sha256": "8000e7cbf67bea689a66fd001cd15918ed3b0bb48edc85ae429b9d03251abe6c",
+  "schema": "g279-alexpc-four-gate-author-verification-v2",
+  "ssh_connections": 0,
+  "start_file_present": false,
+  "v1_review_sha256": "3b30cc5c5664de6e7c819156ea11dc522d641c4a52895ab2efd6cd5acf32c051"
+}

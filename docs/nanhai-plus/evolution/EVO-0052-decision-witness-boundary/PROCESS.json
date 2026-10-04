@@ -1,0 +1,50 @@
+{
+  "applicability": "Nanhai Plus Bionic AOSP16 R4 OH7.0.0.39 host/route evidence only; no device claim.",
+  "at_utc": "2026-10-04T19:57:16.554657+00:00",
+  "causal_chain": "v5 marker and AlexPC v1 boolean cannot be independently replayed -> self-report crosses acceptance boundary -> preserve minimal safe witness and recompute locally -> avoid false acceptance or repeated ambiguity review -> negative fixtures reject suffix/contradiction",
+  "discarded_action": "Promote an enum or remote all_four boolean as independent evidence when the underlying safe facts are not retained.",
+  "groups": [
+    {
+      "name": "v5_code_GO",
+      "observation": "85/85 no-credential checks and exact marker classifier approved code only",
+      "receipt": "g279-private-mihomo-v2c-gz02-candidate-v5/peer-review-v5/REVIEW.json"
+    },
+    {
+      "name": "v5_one_shot_rc255",
+      "observation": "child rc255, marker enum reported, raw SSH stderr not preserved",
+      "receipt": "g279-private-mihomo-v2c-gz02-candidate-v5/TERMINAL.json"
+    },
+    {
+      "name": "v5_postrun_bounded",
+      "observation": "TEST-NET-3 line independently replayable; SSH marker exact occurrence unprovable, remote stage UNKNOWN",
+      "receipt": "g279-private-mihomo-v2c-gz02-candidate-v5/peer-postrun-v5/REVIEW.json"
+    },
+    {
+      "name": "alexpc_v1_code_NO_GO",
+      "observation": "crafted contradictory remote all_four booleans accepted by local predicate",
+      "receipt": "g279-alexpc-readonly-four-gate-candidate-v1/peer-review-v1/REVIEW.json"
+    }
+  ],
+  "next_evidence": "On one future candidate, independent peer replays a safe RESULT through a standalone verifier; if incomplete or sensitive, the gate remains UNKNOWN.",
+  "problem": "Gate-changing values sometimes depend on unreplayable remote self-report or a classified marker without a safe witness.",
+  "schema": "evo52-process-v1",
+  "scope": {
+    "bridge_accesses": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "ssh_connections": 0,
+    "task_summary_changed": false
+  },
+  "single_improvement": "For each gate-changing report, retain only a schema-allowlisted minimal witness sufficient for a separate local verifier to recompute the decision; if a safe witness cannot be retained, emit UNKNOWN_UNREPLAYABLE.",
+  "small_pilot": {
+    "actual_v5_marker_reclassified": false,
+    "alexpc_v1_booleans_sufficient": false,
+    "result_sha256": "0f29a823d303a6fac111a29fafd26f62b0df29b9f4caba75494f8e16918f16d1",
+    "script_sha256": "4eb93657d8b81bd9ccaee960a5cc828bffefc4685b158fd76fb85cdaa2bdc302",
+    "sensitive_suffix_rejected": true,
+    "synthetic_exact_safe_line": true
+  },
+  "status": "PILOT_ONLY_NO_PROMOTION",
+  "stop_condition": "No broad rollout until one real postrun safe witness is independently replayed without leaking private route or credential data.",
+  "trigger": "four actual groups after EVO51"
+}

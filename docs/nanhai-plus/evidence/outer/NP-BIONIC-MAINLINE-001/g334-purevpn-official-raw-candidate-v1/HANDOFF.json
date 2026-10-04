@@ -1,0 +1,169 @@
+{
+  "actual_download_url": "https://dzglif4kkvz04.cloudfront.net/android/release/PureVPN.apk",
+  "apk_bytes": 72731840,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk",
+  "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+  "apksigner_verified_v2": true,
+  "apksigner_verified_v3": false,
+  "arm64_true_elf": 28,
+  "at_utc": "2026-10-04T19:47:00.248111+00:00",
+  "claim_boundary": {
+    "blackbox_qualification_accepted_here": false,
+    "container_commands": 0,
+    "device_commands": 0,
+    "full_static_accepted": false,
+    "raw_count_changed": false,
+    "startup_proven": false
+  },
+  "decision_candidate": "GO_ONE_EXACT_OFFICIAL_APK_HOST_RAW_ONLY",
+  "dedupe": {
+    "current_task_summary_package_hits": 0,
+    "prior_evidence_json_package_hits_excluding_this_candidate": 0,
+    "upstream_registry_package_hits": 0
+  },
+  "download_final_http_status": 200,
+  "download_rc": 0,
+  "evidence": {
+    "HOST-VERIFY.json": {
+      "bytes": 2308,
+      "sha256": "3c940c62a5330f04d77282734ade81bc5f0961dc35f34d0cecb83dea78f476a1"
+    },
+    "aapt2.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "aapt2.stdout.raw": {
+      "bytes": 6076,
+      "sha256": "fc8ba1d81d08366e2904b56a3359a7d76b637af289cb025f692c18f56bf6180a"
+    },
+    "apk-get.headers.raw": {
+      "bytes": 589,
+      "sha256": "b35a8622b1f7fc495651cde5eb22f5035a5044d8d2d392ef57ae0ca44d8daa16"
+    },
+    "apk-get.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apk-get.stdout.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner.stdout.raw": {
+      "bytes": 19992,
+      "sha256": "15e35f451b55b53b26e03c25b9262919d2f090ad11d0fcc6c6ff5ee29c1e6fb1"
+    },
+    "download.py": {
+      "bytes": 954,
+      "sha256": "8c2f8f23a40b45779c1a804e86f11a4c56d4e79d0bdb36557a9575a623261521"
+    },
+    "official-download-page.raw": {
+      "bytes": 470780,
+      "sha256": "c048971fa7cc2e69d58eab12de4a098b5ca8784136a7bfc6c1e17113fbccdeb4"
+    },
+    "official-support.headers.raw": {
+      "bytes": 1907,
+      "sha256": "4438896f61492a57834be8ca67eeed7ad68a56212c4b7a0ae4860378a4732903"
+    },
+    "official-support.raw": {
+      "bytes": 108210,
+      "sha256": "8b5b4c7e4779af65c451907ea5ee500dcb3ce8ac5a92c0cf7a2296a02e4dba31"
+    },
+    "play.raw": {
+      "bytes": 1298567,
+      "sha256": "fb6e359f7b7fd875061497676d1612de364fcaa37e4cf6586fb846a506932602"
+    },
+    "verify.py": {
+      "bytes": 3350,
+      "sha256": "64310350b298ca1ae602f86188f8cef38041a6567d998aba4c6edc4fcf11f903"
+    }
+  },
+  "host_commands": [
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+        "dump",
+        "badging",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fc8ba1d81d08366e2904b56a3359a7d76b637af289cb025f692c18f56bf6180a"
+    },
+    {
+      "argv": [
+        "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g334-purevpn-official-v1/PureVPN.apk"
+      ],
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "15e35f451b55b53b26e03c25b9262919d2f090ad11d0fcc6c6ff5ee29c1e6fb1"
+    }
+  ],
+  "href_scheme_difference": "Official support literal href is HTTP; downloaded same host/path over HTTPS and verified final 200 TLS response. No separate publisher digest available.",
+  "non_elf_so": 0,
+  "official_page_href": "http://dzglif4kkvz04.cloudfront.net/android/release/PureVPN.apk",
+  "official_page_url": "https://support.purevpn.com/en_US/purevpn-android/google-play-store-is-blocked-in-my-region-how-do-i-download-android-app",
+  "other_elf_header_count_by_abi": [
+    {
+      "abi": "arm64-v8a",
+      "class": 2,
+      "count": 28,
+      "endian": 1,
+      "machine": 183
+    },
+    {
+      "abi": "armeabi-v7a",
+      "class": 1,
+      "count": 28,
+      "endian": 1,
+      "machine": 40
+    },
+    {
+      "abi": "mips",
+      "class": 1,
+      "count": 1,
+      "endian": 1,
+      "machine": 8
+    },
+    {
+      "abi": "x86",
+      "class": 1,
+      "count": 28,
+      "endian": 1,
+      "machine": 3
+    },
+    {
+      "abi": "x86_64",
+      "class": 2,
+      "count": 28,
+      "endian": 1,
+      "machine": 62
+    }
+  ],
+  "package": "com.gaditek.purevpnics",
+  "play_downloads": "5M+",
+  "play_publisher": "PureVPN",
+  "play_same_package": true,
+  "play_url": "https://play.google.com/store/apps/details?id=com.gaditek.purevpnics",
+  "root_dex": 2,
+  "schema": "g334-purevpn-official-host-raw-candidate-v1",
+  "signer_certificate_sha256": [
+    "c527212dd236f90c5bae8031a0d6d618f8215777d7fd810f40b5b16afd8fac2a"
+  ],
+  "source_code_status": "Bounded official/GitHub searches found no complete public Android client matching this exact APK; blackbox test qualification requires separate independent review. Absence is not exhaustive.",
+  "source_freshness_note": "Official CDN object Last-Modified 2023-01-05; package version 8.44.223 is older than current Play listing and must be evaluated as that exact old APK.",
+  "status": "CANDIDATE_INDEPENDENT_REVIEW_REQUIRED",
+  "target_sdk": 31,
+  "version_code": 5175,
+  "version_name": "8.44.223",
+  "zip_crc_all": true,
+  "zip_duplicate_names": 0,
+  "zip_entries": 2509
+}

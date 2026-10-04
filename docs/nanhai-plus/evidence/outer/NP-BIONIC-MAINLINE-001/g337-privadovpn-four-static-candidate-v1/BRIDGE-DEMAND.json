@@ -1,0 +1,167 @@
+{
+  "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "at_utc": "2026-10-04T19:54:28.911458+00:00",
+  "bridge_gap_status": "NOT_CLASSIFIED_WITHOUT_CURRENT_AOSP16_OH7_BIONIC_RUNTIME_INDEX_AND_RESOLUTION",
+  "container_commands": 0,
+  "device_commands": 0,
+  "input_inventory_sha256": {
+    "arm64_elf": "186679c45f9ec005404a6a419717ce7f18c2babf6f4c457895c5fea4eb2398b3",
+    "dex": "0f7e8134e20144409df1a76533719c93e22442c4a74479c8ab6b63d2d5c9cdee",
+    "metadata": "0c029de4c965c6b4f15be9b4e291815199923fba97727a639ffe5bf3399fb65c"
+  },
+  "limits": "Static demands do not prove missing implementation, startup reachability, loaded native libraries, or device behavior.",
+  "manifest_main_activities": [
+    "io.privado.android.ui.splash.SplashActivity"
+  ],
+  "network_commands": 0,
+  "next_evidence": "Bind current Bionic runtime index and host-resolve DEX platform members, JNI and ARM64 ELF dependencies; rank cold-start reachability only with real trace or accepted graph.",
+  "package": "io.privado.android",
+  "schema": "g337-privadovpn-four-static-demand-boundary-v1",
+  "static_demands": {
+    "arm64_elf_count": 29,
+    "arm64_elf_needed_sonames": [
+      "libandroid.so",
+      "libc.so",
+      "libcharon.so",
+      "libdl.so",
+      "libimcv.so",
+      "libipsec.so",
+      "liblog.so",
+      "libm.so",
+      "libopenvpn.so",
+      "libsentry.so",
+      "libstrongswan.so",
+      "libtnccs.so",
+      "libtncif.so",
+      "libtpmtss.so",
+      "libz.so"
+    ],
+    "defined_dex_classes": 36729,
+    "field_reference_keys": 1201,
+    "jni_onload_libraries": 5,
+    "load_library_sites": [
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "loadLib",
+        "offset": 4,
+        "owner": "Landroidx/datastore/core/SharedCounter$Factory;",
+        "value": "datastore_shared_counter"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes3.dex",
+        "method": "<clinit>",
+        "offset": 20,
+        "owner": "Landroidx/graphics/path/PathIteratorImpl;",
+        "value": "androidx.graphics.path"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "(Landroid/content/Context;Lcom/avira/mavapi/MavapiConfig;)V",
+        "dex": "classes4.dex",
+        "method": "initializeLib$mavapi_fullRelease",
+        "offset": 186,
+        "owner": "Lcom/avira/mavapi/internal/MavapiLibControllerInternal;",
+        "value": "MavapiLibController already initialized. New configuration is ignore."
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes5.dex",
+        "method": "<clinit>",
+        "offset": 16,
+        "owner": "Lde/blinkt/openvpn/core/NativeUtils;",
+        "value": "ovpnutil"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "(III[B)[B",
+        "dex": "classes5.dex",
+        "method": "addRssPssPadding",
+        "offset": 18,
+        "owner": "Lde/blinkt/openvpn/core/NativeUtils;",
+        "value": "rsapss"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes5.dex",
+        "method": "<clinit>",
+        "offset": 144,
+        "owner": "Leu/faircode/netguard/Util;",
+        "value": "netguard"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes5.dex",
+        "method": "loadNativeLibraries",
+        "offset": 18,
+        "owner": "Lio/sentry/ndk/SentryNdk;",
+        "value": "log"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes5.dex",
+        "method": "loadNativeLibraries",
+        "offset": 28,
+        "owner": "Lio/sentry/ndk/SentryNdk;",
+        "value": "sentry"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes5.dex",
+        "method": "loadNativeLibraries",
+        "offset": 38,
+        "owner": "Lio/sentry/ndk/SentryNdk;",
+        "value": "sentry-android"
+      },
+      {
+        "api": "loadLibrary",
+        "descriptor": "()V",
+        "dex": "classes6.dex",
+        "method": "<clinit>",
+        "offset": 4,
+        "owner": "Lorg/strongswan/android/logic/CharonVpnService;",
+        "value": "androidbridge"
+      }
+    ],
+    "method_reference_keys": 11269,
+    "native_method_declarations": 78,
+    "service_request_names": {
+      "<dynamic-or-unresolved>": 55,
+      "accessibility": 19,
+      "activity": 17,
+      "alarm": 5,
+      "appops": 4,
+      "audio": 1,
+      "clipboard": 7,
+      "connectivity": 34,
+      "device_policy": 3,
+      "display": 4,
+      "input_method": 15,
+      "jobscheduler": 5,
+      "keyguard": 2,
+      "layout_inflater": 89,
+      "locale": 3,
+      "location": 5,
+      "notification": 38,
+      "phone": 6,
+      "power": 13,
+      "print": 2,
+      "restrictions": 1,
+      "sensor": 1,
+      "uimode": 9,
+      "user": 1,
+      "wifi": 3,
+      "window": 12
+    },
+    "service_request_sites": 354,
+    "undefined_symbol_names_unique": 587
+  }
+}

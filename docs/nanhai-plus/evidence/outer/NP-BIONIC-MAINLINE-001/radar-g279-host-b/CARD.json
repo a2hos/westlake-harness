@@ -1,0 +1,54 @@
+{
+  "angle": "blind challenge to AlexPC immediate fallback host claim",
+  "at_utc": "2026-10-04T20:01:33.740517+00:00",
+  "counterevidence_to_immediate_fallback": [
+    "Fresh candidate failed before remote JSON; all four host gates are UNKNOWN.",
+    "Both historical AlexPC IPs now route through default gateway rather than a direct same-subnet route; historical success cannot substitute for a fresh handshake.",
+    "Second historical IP is the same hostname, not a distinct host.",
+    "gz02 is authorized native Linux source host, but its current graph and SSH identity remain unproven in existing receipts; HK01 is excluded and gz05 is only generic SSH config."
+  ],
+  "inference": "AlexPC is a plausible backup candidate but not an immediately usable native graph host. Local route change may explain failure but is not a proven cause.",
+  "not_proven": [
+    "AlexPC is reachable now on either historical IP/port or via alexpc.local.",
+    "The v3 64-byte stderr exact text; raw was not persisted, so rc255 and ~7s alone do not prove ConnectTimeout as cause.",
+    "AOSP16 R4 manifest/8 HEADs/Soong Linux toolchain/current isolated OUT-TMP capacity on AlexPC.",
+    "AlexPC can run a native graph or is an immediate fallback host.",
+    "Any third authorized independent Linux host with current route and exact R4 source."
+  ],
+  "proven": [
+    {
+      "claim": "Fresh v3 one-shot produced SSH child rc255 after 7.005s with stdout0/stderr64, no parsed report and no four gates.",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-alexpc-readonly-four-gate-candidate-v3/actual-v1/TERMINAL.json",
+      "sha256": "a9f20227b88c2dc1caabf3297ee811d3e3e9bf7541bed33dbcc5bb0efdd32e77"
+    },
+    {
+      "claim": "2026-10-01 historical AlexPC read-only host probes returned rc0 on 192.168.8.22 ports 22 and 58222; 192.168.8.173:58222 was same hostname alexyLinux. These are stale.",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-MUSL16-REUSE-021/alexpc-retry-20261001T043450Z.json",
+      "sha256": "c79282ca0adeb49c87490ddc70e8adcfbd7785189290512a016a8240838c48cb"
+    },
+    {
+      "claim": "Historical resource receipt reported Linux x86_64, 32 CPUs, 317.9 GiB free, directory aosp16-r4; no R4 manifest/HEAD or current capacity proof.",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-MUSL16-REUSE-021/alexpc-connectivity-restored-20261001T0434Z.json",
+      "sha256": "3e40d67ae49aac7a4820549449961d7cda0048a95ea419b3064ab7e7571ba031"
+    },
+    {
+      "claim": "Current local route lookup for both 192.168.8.22 and .173 selects default gateway 192.168.3.1 on en0, not a directly connected 192.168.8/24 route. This is local route selection only.",
+      "method": "route -n get 192.168.8.22 and 192.168.8.173, read-only; both default gateway 192.168.3.1 en0"
+    },
+    {
+      "claim": "Local SSH config AlexPC uses alexpc.local:22; gz02 is separate 1.95.90.207:58222. Configured gz05 is not project authorization.",
+      "method": "read ~/.ssh/config stanzas only"
+    }
+  ],
+  "schema": "radar-g279-host-b-v1",
+  "scope": {
+    "bridge_accesses": 0,
+    "container_commands": 0,
+    "device_commands": 0,
+    "execution_code_written": 0,
+    "new_network_connections": 0,
+    "new_ssh_connections": 0,
+    "task_summary_changed": false
+  },
+  "single_cheapest_next_step": "Before another nonce or graph attempt, obtain one fresh read-only local network route/topology fact for AlexPC from the responsible host-network owner (which current IP/port or reachable route belongs to alexyLinux), then freeze a new pinned host-key + read-only identity packet; do not replay v3."
+}

@@ -1,0 +1,70 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 8,
+  "app_name": "PrivadoVPN",
+  "bytes": 70702804,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.faketouch",
+    "android.hardware.location",
+    "android.hardware.location.gps",
+    "android.hardware.microphone",
+    "android.hardware.nfc",
+    "android.hardware.sensor",
+    "android.hardware.telephony",
+    "android.hardware.touchscreen",
+    "android.hardware.wifi",
+    "android.software.leanback"
+  ],
+  "filename": "PrivadoVPN.apk",
+  "main_activities": [
+    "io.privado.android.ui.splash.SplashActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 106,
+  "package": "io.privado.android",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/g336-privadovpn-official-v1/PrivadoVPN.apk",
+  "permissions": [
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_MOCK_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+    "android.permission.FOREGROUND_SERVICE_LOCATION",
+    "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.QUICKBOOT_POWERON",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "io.privado.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 5,
+  "receivers": 18,
+  "services": 22,
+  "sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+  "signing_certificate_sha256": [
+    "8f308d552a090dcb694966bf03963d1d36614374810feab4f66d0013e1eda3dc"
+  ],
+  "target_sdk": "37",
+  "version_code": "2083482916",
+  "version_name": "4.4.0"
+}

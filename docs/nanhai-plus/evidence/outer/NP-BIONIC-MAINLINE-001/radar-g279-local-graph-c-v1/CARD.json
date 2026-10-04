@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-10-04T20:00:50.935448+00:00",
+  "build_commands": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "hypothesis_to_refute": "The Mac local R4 source pool is a ready native fallback for exact ARM64 Bionic Soong graph",
+  "minimal_next_step": "do not try local graph with partial source; prioritize one authenticated exact-R4 Linux host, preserving no-container rule",
+  "network_connections": 0,
+  "not_proven": "a native exact R4 Soong graph can run locally or that prior AlexPC AOSP16 graph is exact R4",
+  "observed_host": "Darwin arm64",
+  "proven": "local registered R4 source view is partial, current host Darwin arm64; no complete stock R4 graph input or runnable native Linux-x86_64 toolchain established",
+  "refutes_mainline": true,
+  "root_frameworks_base_bp_present": false,
+  "root_manifest_present": false,
+  "root_soong_ui_present": false,
+  "schema": "g279-radar-local-graph-angle-c-v1",
+  "shared_index_completeness": "partial_selected_repositories",
+  "shared_index_sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636"
+}
