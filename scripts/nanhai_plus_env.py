@@ -21,6 +21,26 @@ START = "<!-- NANHAI_ENV_BEGIN -->"
 END = "<!-- NANHAI_ENV_END -->"
 NAME = re.compile(r"NANHAI_[A-Z][A-Z0-9_]*\Z")
 
+# Historical host-build/debug entry points. Keep their receipts and source for
+# audit, but never launch them through the current authoritative environment.
+LEGACY_CONTAINER_EXECUTORS = {
+    "nanhai_plus_entry_build.py",
+    "nanhai_plus_art_compiler_probe.py",
+    "nanhai_plus_art_component_build.py",
+    "nanhai_plus_art_component_repair.py",
+    "nanhai_plus_art_component_repair_v2.py",
+    "nanhai_plus_art_component_repair_v3.py",
+    "nanhai_plus_art_libraries_g65.py",
+    "nanhai_plus_art_native_flags.py",
+    "nanhai_plus_art_producers.py",
+    "nanhai_plus_core_debug.py",
+    "nanhai_plus_core_debug_v2.py",
+    "nanhai_plus_core_debug_v3.py",
+    "nanhai_plus_core_image_probe.py",
+    "nanhai_plus_ext4_extract.py",
+    "nanhai_plus_tool_cli_probe.py",
+}
+
 
 class EnvironmentError(ValueError):
     pass
@@ -114,6 +134,8 @@ def main(argv=None):
                                "nsjail", "proot", "unshare", "chroot", "bwrap", "bubblewrap",
                                "firejail", "systemd-nspawn"}:
                     raise EnvironmentError(f"Container or namespace launcher forbidden by current project policy: {command}")
+                if any(Path(item).name in LEGACY_CONTAINER_EXECUTORS for item in args.run):
+                    raise EnvironmentError("Historical container executor is revoked by current project policy")
                 if "run" in args.run and any("stock-bionic-target-graph-" in item and
                                              item.endswith("/executor.py") for item in args.run):
                     raise EnvironmentError("Historical container graph executor is revoked by current project policy")

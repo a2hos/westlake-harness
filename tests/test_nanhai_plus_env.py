@@ -112,6 +112,17 @@ class EnvironmentEntryTests(unittest.TestCase):
         self.assertEqual(result.returncode, 2)
         self.assertIn("container graph executor is revoked", result.stderr)
 
+    def test_historical_docker_script_is_rejected_before_execution(self):
+        self.config["values"]["NANHAI_CONTAINER_POLICY"] = "forbidden"
+        self.write()
+        result = self.cli("--run", sys.executable, "-B",
+                          "scripts/nanhai_plus_art_component_repair_v3.py", "--packet", "old.json")
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("Historical container executor is revoked", result.stderr)
+        bare = self.cli("--run", sys.executable, "nanhai_plus_entry_build.py", "run")
+        self.assertEqual(bare.returncode, 2)
+        self.assertIn("Historical container executor is revoked", bare.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()
