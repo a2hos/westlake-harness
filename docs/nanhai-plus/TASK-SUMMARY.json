@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T18:52:11+00:00",
+  "checked_at": "2026-10-04T19:46:09.245371+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -2420,6 +2420,49 @@
       "path": "docs/nanhai-plus/evolution/EVO-0050-private-failure-diagnostics/ROOT-ACCEPTANCE.json",
       "sha256": "cd2ba63a73fed70e0f30956e1fa319200a8f4674715c958c296bc0c728f50483"
     },
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2c_v3": {
+    "status": "root_no_go_real_execution_v3",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v3/ROOT-NO-GO.json",
+      "sha256": "9de115c39d4b49b9cdc754aef98b5d16042b20fbf155999b6fdb5f6c13be494e"
+    },
+    "reason": "diagnostic validators accept unbounded values and contradictory evidence stages",
+    "private_process_started": false,
+    "gz02_connected": false,
+    "startup_delta": 0
+  },
+  "g279_private_native_proxy_v2c_v4": {
+    "status": "root_accepted_bounded_failure_no_remote_identity_or_positive_route",
+    "candidate_sha256": "b58a486d317089d05591841544ef4bd2da876a33db5f54c04f70c1fd69461f7c",
+    "code_peer_sha256": "6d66cc33bf3c32ab89a8fd214ebb59367b36f1fe25344f14d04832d1f81159ac",
+    "outer_command_rc": 2,
+    "one_shot_consumed": true,
+    "local_testnet_reject_proven": true,
+    "local_ssh_child_launch_count": 1,
+    "ssh_child_rc": 255,
+    "ssh_stdout_bytes": 0,
+    "ssh_stderr_bytes": 1462,
+    "last_ssh_stage": "UNKNOWN",
+    "gz02_identity_proven": false,
+    "positive_route_proven": false,
+    "graph_result_observed": false,
+    "process_group_clean": true,
+    "private_dir_removed": true,
+    "root_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v4/ROOT-POSTRUN-NO-GO.json",
+      "sha256": "87d2b1bf322cb0fbf50c08adef56bc5ae1cf1b19f3a85cff82bacf3cb1600722"
+    },
+    "hello_startup_delta": 0,
+    "bionic_whole_tool_delta": 0
+  },
+  "evo51": {
+    "status": "bounded_pilot_only_no_promotion",
+    "lens": "dual_native_host_critical_path",
+    "result": "NO_READY_BYPASS_YET",
+    "process_sha256": "dcd8be5fe1126b2192fa4d4304ef61f5103e01671150de553fa6a56cc7092e83",
+    "result_sha256": "3a37e0fba2facf7f45e1cb29f60f421b9a11749a09637a033f3ef32fe891a6b4",
     "startup_delta": 0
   }
 }

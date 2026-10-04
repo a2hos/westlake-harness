@@ -1,0 +1,53 @@
+{
+  "schema": "g279-private-mihomo-v2c-v4-peer-postrun-v1",
+  "decision": "ACCEPT_BOUNDED_LOCAL_REJECT_AND_SSH_RC255_FAILURE_NO_REMOTE_IDENTITY_OR_POSITIVE_ROUTE",
+  "candidate_sha256": "b58a486d317089d05591841544ef4bd2da876a33db5f54c04f70c1fd69461f7c",
+  "runner_sha256": "16ccddcb0f6f407d2a90bcc5d422d96782c88dd2d93bd7850432373286b9ddce",
+  "peer_code_review_sha256": "6d66cc33bf3c32ab89a8fd214ebb59367b36f1fe25344f14d04832d1f81159ac",
+  "root_release_sha256": "6d814e545b783b135ccee999e1ffcf1e35fc6316743a7a8c75147ad0475cfdb3",
+  "start_sha256": "4430450be8bd18d0b58b63b35c6d41a8a11b40d85f20d4aa9ac501fdfce01973",
+  "terminal_sha256": "1fc3003223670ae175e1e673a20111b44ceb5193549a6f7e0099768e9710018f",
+  "nonce": "01051e175d551b2f21d628321568d838",
+  "external_command_exit_code_reported_by_root": 2,
+  "chain_checks": {
+    "release_exact_candidate_runner_peer_and_v2_v3_failure_bindings": true,
+    "start_release_runner_nonce_equal_terminal": true,
+    "one_shot_consumed_no_replay": true
+  },
+  "independent_recomputation": {
+    "negative_raw_line_sha256_matches": true,
+    "negative_canonical_event_sha256_matches": true,
+    "negative_complete_line_parser_replay_matches": true,
+    "diagnostic_schema_and_stage_order_validator_passes": true
+  },
+  "bounded_observations": {
+    "terminal_decision": "NO_GO_PRIVATE_LISTENER_AND_GZ02_IDENTITY",
+    "failure_class": "InstanceFailure",
+    "local_testnet_reject_witness": "PROVEN",
+    "local_ssh_child_launch_count": 1,
+    "last_complete_instance_stage": "SSH_LOCAL_PROCESS_LAUNCHED",
+    "ssh_child_rc": 255,
+    "ssh_timeout_flag": false,
+    "ssh_stdout_bytes": 0,
+    "ssh_stderr_bytes": 1462,
+    "last_recognized_ssh_line_stage": "UNKNOWN",
+    "positive_route_status": "UNKNOWN",
+    "process_group_clean_terminal": true,
+    "private_dir_removed_terminal": true,
+    "current_private_root_child_count": 0,
+    "current_port_39030_listener_rows": 0,
+    "remote_write_commands": 0,
+    "hk01_hops": 0,
+    "graph_commands": 0,
+    "device_commands": 0,
+    "container_commands": 0,
+    "namespace_commands": 0
+  },
+  "interpretation": "The exact runner reached a live private loopback listener, proved the local TEST-NET-3 REJECT line and launched one local SSH child. rc255 establishes SSH failure, not its cause. The diagnostic recognized no whitelisted banner/host-key/auth/UID line, so TCP reachability, SSH banner, pinned host-key verification, publickey authentication, remote id-u and positive /32 PROXY route are unproven. timed_out=false means only that the runner's 25-second communicate deadline did not fire; a shorter proxy or SSH timeout may still have occurred. The 1462 stderr bytes are not retained as a public raw stream and cannot be reverse-engineered from their count. The original private logs were deleted after reported process cleanup; no further failure text can be independently reviewed.",
+  "next_minimal_diagnostic": "Preserve this terminal and nonce. If another generation is justified, add a strict credential-free classifier for a small set of exact SSH/ProxyCommand failure lines before cleanup, with UNKNOWN fallback and no raw stderr export. Prove each class with no-credential fixtures, obtain independent code review and a fresh one-shot release; do not infer a class from rc255 or elapsed time alone.",
+  "new_ssh_connections": 0,
+  "new_proxy_runs": 0,
+  "device_commands_by_reviewer": 0,
+  "container_commands_by_reviewer": 0,
+  "task_summary_modified": false
+}

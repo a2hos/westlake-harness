@@ -1,0 +1,41 @@
+{
+  "schema": "g279-alexpc-readonly-host-prep-v1",
+  "decision": "GO_PREP_FRESH_READONLY_HOST_AUDIT_ONLY_NO_BUILD_RELEASE",
+  "control_interpretation": "Current RESUME.md explicitly treats AlexPC as a backup read-only connection candidate but says DNS, exact R4 source, native Soong and capacity remain unverified. OUTER-STATE has a 2026-10-01 read-only host/resource receipt, and GOAL mentions AlexPC OH compiler identity; none authorizes counting AlexPC as a ready R4 Bionic graph host or running a build. The user and root's present task support preparing a fresh read-only audit, not executing it here.",
+  "historical_receipt": "docs/nanhai-plus/evidence/outer/NP-MUSL16-REUSE-021/alexpc-connectivity-restored-20261001T0434Z.json",
+  "historical_endpoint": "alexyang@192.168.8.22:22 and :58222 each had read-only SSH rc0 on 2026-10-01; this is stale LAN identity and not a fresh route proof",
+  "current_ssh_config": "Host AlexPC maps alexpc.local:22 and user alexyang; latest RESUME records alexpc.local DNS timeout. The literal historical IP avoids DNS but requires a fresh pinned host-key/remote-identity check.",
+  "pinned_known_host": {
+    "alias": "alexpc.local",
+    "key_type": "ssh-ed25519",
+    "fingerprint": "SHA256:OrNmPM32xAI6J3RzMRnIYPIfmzqxZhP/rV0InmnlkKs",
+    "file": "/Users/alexyang/.ssh/known_hosts",
+    "exact_port_58222_known_host_lookup_present": false
+  },
+  "candidate_handshake_argv_no_execution": [
+    "/usr/bin/ssh", "-F", "/dev/null", "-T", "-p", "22",
+    "-o", "User=alexyang", "-o", "HostName=192.168.8.22",
+    "-o", "HostKeyAlias=alexpc.local", "-o", "UserKnownHostsFile=/Users/alexyang/.ssh/known_hosts",
+    "-o", "GlobalKnownHostsFile=/dev/null", "-o", "HostKeyAlgorithms=ssh-ed25519",
+    "-o", "StrictHostKeyChecking=yes", "-o", "BatchMode=yes",
+    "-o", "ConnectTimeout=7", "-o", "ConnectionAttempts=1",
+    "-o", "ProxyJump=none", "-o", "ProxyCommand=none",
+    "-o", "ControlMaster=no", "-o", "ControlPath=none",
+    "-o", "UpdateHostKeys=no", "-o", "CheckHostIP=no",
+    "-o", "ClearAllForwardings=yes", "-o", "RequestTTY=no",
+    "alexyang@192.168.8.22", "LC_ALL=C /usr/bin/id -u"
+  ],
+  "local_ssh_G_verified": "user alexyang; host 192.168.8.22; port 22; HostKeyAlias alexpc.local; strict host key and ed25519; /dev/null config; no jump/forward/control reuse. ssh -G is local-only and does not authenticate the remote host.",
+  "fresh_audit_package_if_root_releases": [
+    "First exact one-shot read-only handshake: pinned key, numeric UID and hostname/uname; preserve raw rc and bounded stdout/stderr and reject any identity mismatch.",
+    "Only after authenticated identity, read exact candidate source path, manifest revision and required R4 project HEAD/clean status; do not infer R4 from Android 16 build.prop or old ninja outputs.",
+    "Read Linux x86_64 Soong/prebuilt tool identities and filesystem free capacity for separate project OUT/TMP; no graph, build, source mutation or global workspace output in this audit."
+  ],
+  "next_gate": "Root should freeze a separate exact candidate with nonce and independent route/source review before any actual SSH. A passing host audit would still only make AlexPC a build candidate, not a graph/HelloWorld result.",
+  "ssh_connections": 0,
+  "build_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge16_accesses": 0,
+  "task_summary_modified": false
+}

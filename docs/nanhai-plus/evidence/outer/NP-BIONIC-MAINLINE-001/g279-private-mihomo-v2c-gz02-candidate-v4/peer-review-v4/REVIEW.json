@@ -1,0 +1,37 @@
+{
+  "schema": "g279-private-mihomo-v2c-gz02-peer-review-v4",
+  "decision": "GO_V2C_V4_CODE_ONLY",
+  "scope": "independent_frozen_code_and_no_credential_review_no_release_or_real_connection",
+  "candidate_sha256": "b58a486d317089d05591841544ef4bd2da876a33db5f54c04f70c1fd69461f7c",
+  "runner_sha256": "16ccddcb0f6f407d2a90bcc5d422d96782c88dd2d93bd7850432373286b9ddce",
+  "fixture_script_sha256": "f43bb420449c7ac4a6145cc86fb21cbb6430e547a29e71cdabecd105e3380675",
+  "fixture_receipt_sha256": "158f4e8bf11e3641aa52310ea605069ff935002bb334faed85140da3ce4deb6a",
+  "handoff_sha256": "9a08f326a1b421b43613d0dd21067c25055cd55cb2caba362189dc9d308f5bd5",
+  "v3_peer_nogo_sha256": "3d578c145e107e8a37d42e9c9aefcf675889b152c20bc3882a037055baa03e89",
+  "independent_fixture_rerun": {
+    "command": "python3 scripts/nanhai_plus_env.py --run .nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v4/fixtures.py",
+    "exit_code": 0,
+    "checks_passed": 69,
+    "real_ssh_connections": 0,
+    "real_mihomo_started": false
+  },
+  "independent_v3_counterexample_rerun": {
+    "impossible_child_rc_and_unbounded_stream_counts": "REJECT ssh_diagnostic_shape",
+    "positive_route_proven_at_instance_stage_none": "REJECT positive_route_stage_order"
+  },
+  "review_findings": [
+    "replay_ssh_diagnostic now limits rc to -31..255, null only with timeout, stdout to 65536 bytes and stderr to 1048576 bytes, and enforces rc/category/observed-line-stage consistency. Fixed enum and numeric fields prevent arbitrary exception or raw SSH text in published failure diagnostics.",
+    "validate_instance_diagnostic now enforces local REJECT, SSH launch, verified SSH proof, post-SSH guards and positive route as a monotonic sequence. It rejects the v3 false PROVEN at NONE case and similar impossible states. A line-SEEN stage remains an observed parser marker, not remote identity proof.",
+    "The v2 failed run and consumed nonce remain locked by terminal/peer/root NO_GO hashes; v3 rejected peer is pinned. v4 has separate peer/release/START/TERMINAL names. Success retains strict safe full-line positive-route replay and host-key/publickey/numeric-UID SSH witness replay.",
+    "Exact ssh/nc binaries, ED25519 host-key pin, /dev/null SSH config, loopback SOCKS ProxyCommand, remote LC_ALL=C /usr/bin/id -u only, process/loopback cleanup and no HK01/graph/device/container/namespace/global proxy write gates remain in the runner."
+  ],
+  "capture_memory_limit_assessment": "subprocess.communicate(timeout=25) is not a streaming or in-memory byte cap; the 65536/1048576 limits apply only when constructing and publishing the diagnostic after capture. This does not defeat the narrow code-only gate for one fixed read-only identity command through a pinned host, but root must not describe it as a hard memory bound. A streaming cap is the next hardening item if the release requires adversarial-output resource isolation or if output approaches these bounds; oversized output must remain NO_GO, never truncated to a success proof.",
+  "remaining_runtime_unknowns": "No selected real node or gz02 SSH has run in v4. Exact real banner/host-key/auth/UID and positive route remain unknown until a separately released one-shot run; v2's failure substage remains UNKNOWN and cannot be inferred from v4 fixtures.",
+  "root_release_present": false,
+  "start_present": false,
+  "terminal_present": false,
+  "new_ssh_connections": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "task_summary_modified": false
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "g279-private-mihomo-v2c-gz02-root-no-go-v3",
+  "at_utc": "2026-10-04T19:38:07Z",
+  "decision": "NO_GO_V2C_V3_REAL_EXECUTION",
+  "candidate_sha256": "af24fcce23bf00f0111ec349b03a083f080a597594eae90edb0f54e3b03c5086",
+  "runner_sha256": "4a3c476482240b7d93074dad13fc86941f8cdca8fb6348729392a6e5ee1b61dd",
+  "independent_review_sha256": "3d578c145e107e8a37d42e9c9aefcf675889b152c20bc3882a037055baa03e89",
+  "accepted_code_only": "Forty-nine existing fixtures pass and the candidate carries v2 failure identity, private route/SSH success witnesses, fixed remote read-only command and no-container boundary.",
+  "blocking_negative_fixtures": ["SSH diagnostic validator accepts child_rc -999999 and 10**100 stream byte counts", "Instance diagnostic validator accepts last_complete_stage NONE with positive route PROVEN and local REJECT UNKNOWN"],
+  "reason": "Unbounded or contradictory diagnostic terminal fields could be admitted as postrun evidence, defeating the bounded failure-localization contract.",
+  "next": "New immutable v4 code candidate with numeric bounds and cross-field stage partial-order constraints, then independent negative fixture review before any root release.",
+  "release_issued": false,
+  "start_exists": false,
+  "private_process_started": false,
+  "gz02_connected": false,
+  "device_commands": 0,
+  "container_commands": 0,
+  "startup_delta": 0
+}

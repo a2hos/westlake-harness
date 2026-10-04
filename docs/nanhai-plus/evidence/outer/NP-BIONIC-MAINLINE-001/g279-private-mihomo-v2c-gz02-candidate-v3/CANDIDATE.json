@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-04T19:36:22.324294+00:00",
+  "authoritative_count_changed": false,
+  "container_commands": 0,
+  "decision": "CANDIDATE_CODE_ONLY_PENDING_INDEPENDENT_REVIEW",
+  "device_commands": 0,
+  "files_sha256": {
+    "FIXTURE.json": "545085b7acab2b99dcbeda29907c70e6782e798c62ffc95d9adba8b64130d304",
+    "HANDOFF.md": "7d44e91d78b74016cfd9d3a6efaf4872fd4e9d78092b72f781af946e48da11da",
+    "fixtures.py": "bc8a3687e186b48d16b2af4209a29436be790e24a4bbd5fb99b7af0661459167",
+    "runner.py": "4a3c476482240b7d93074dad13fc86941f8cdca8fb6348729392a6e5ee1b61dd"
+  },
+  "fixture_checks_passed": 49,
+  "fixture_exit_code": 0,
+  "graph_commands": 0,
+  "hk01_hops": 0,
+  "peer_review_present": false,
+  "real_selected_node_started": false,
+  "real_ssh_connections": 0,
+  "remote_write_commands": 0,
+  "root_release_present": false,
+  "schema": "g279-private-mihomo-v2c-gz02-code-candidate-v3",
+  "scope": "private_native_exact_gz02_32_proxy_readonly_ssh_bounded_diagnostics_only",
+  "start_present": false,
+  "terminal_present": false,
+  "v2_failure_substage": "UNKNOWN_AFTER_LOCAL_SSH_PROCESS_LAUNCH",
+  "v2_loopback_format_probe_sha256": "4093ddbdbfc15923ff6ee1161994afefa4b63ece0a944dfbc1804f0a739200d7",
+  "v2_nonce_replay_allowed": false,
+  "v2_postrun_peer_sha256": "3010164a188ddeb11c26211f3cd41861230a2a883011685842bc55c70ab19362",
+  "v2_root_nogo_sha256": "9409e940333c50b2e6d700c7ced33f172a860bc75a53d88c89a85b035824879d",
+  "v2_terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7"
+}

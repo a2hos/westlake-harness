@@ -1,0 +1,43 @@
+{
+  "schema": "g279-private-mihomo-v2c-gz02-peer-review-v3",
+  "decision": "NO_GO_V2C_V3_CODE_ONLY_DIAGNOSTIC_VALIDATOR",
+  "scope": "independent_frozen_code_and_no_credential_negative_review_only",
+  "candidate_sha256": "af24fcce23bf00f0111ec349b03a083f080a597594eae90edb0f54e3b03c5086",
+  "runner_sha256": "4a3c476482240b7d93074dad13fc86941f8cdca8fb6348729392a6e5ee1b61dd",
+  "fixture_script_sha256": "bc8a3687e186b48d16b2af4209a29436be790e24a4bbd5fb99b7af0661459167",
+  "fixture_receipt_sha256": "545085b7acab2b99dcbeda29907c70e6782e798c62ffc95d9adba8b64130d304",
+  "v2_failure_terminal_sha256": "88010674dcfba761b3e816383fc35effbd3e45adfc482782241abca5230968e7",
+  "v2_postrun_peer_sha256": "3010164a188ddeb11c26211f3cd41861230a2a883011685842bc55c70ab19362",
+  "v2_root_nogo_sha256": "9409e940333c50b2e6d700c7ced33f172a860bc75a53d88c89a85b035824879d",
+  "v2_nonce_replay_allowed": false,
+  "independent_fixture_rerun": {
+    "command": "python3 scripts/nanhai_plus_env.py --run .nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-private-mihomo-v2c-gz02-candidate-v3/fixtures.py",
+    "exit_code": 0,
+    "checks_passed": 49,
+    "real_ssh_connections": 0,
+    "real_mihomo_started": false
+  },
+  "blocking_counterexamples": [
+    {
+      "validator": "replay_ssh_diagnostic",
+      "input": "child_rc=-999999, timed_out=false, stdout_bytes=10**100, stderr_bytes=10**100, last_ssh_stage=NUMERIC_UID_STDOUT_SEEN, category=NONZERO_EXIT",
+      "observed": "returns true",
+      "implication": "The purported bounded rc and stream-size schema permits unbounded/impossible values and contradictory stage evidence."
+    },
+    {
+      "validator": "validate_instance_diagnostic",
+      "input": "last_complete_stage=NONE, failure_category=UNKNOWN, ssh_outcome=null, positive_route_status=PROVEN, local_reject_status=UNKNOWN",
+      "observed": "returns true",
+      "implication": "An independent postrun validator cannot reject a claimed positive route without any preceding local evidence; enum membership alone does not enforce stage order or keep UNKNOWN from becoming a false PROVEN claim."
+    }
+  ],
+  "bounded_positive_findings": "The runner pins v2 terminal/peer/root NO_GO and a fresh v3 peer/release/START/TERMINAL chain; v2 nonce cannot replay. The 49 fixtures include fake timeout/nonzero/banner/key/auth/UID cases, fixed safe alias, replayable positive route and SSH identity witnesses, strict host-key-pinned read-only id-u argv, private process cleanup, no HK01/graph/device/container/namespace/global proxy write. These code observations do not cure the two validator gaps.",
+  "minimal_new_generation_fix": "Freeze a new runner that bounds child_rc to an explicit OS exit/signal range and byte counts to a documented maximum, rejects rc/category/stage contradictions, and enforces monotonic instance-stage implications (positive PROVEN requires local REJECT and post-SSH guards; no SSH outcome cannot claim SSH stages). Add the two exact negative inputs above and several neighboring contradictions to the no-credential fixtures, rerun them, then obtain a new independent review before any root one-shot release.",
+  "root_release_present": false,
+  "start_present": false,
+  "terminal_present": false,
+  "new_ssh_connections": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "task_summary_modified": false
+}

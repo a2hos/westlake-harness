@@ -1,0 +1,49 @@
+{
+  "schema": "g279-alternate-native-host-readonly-audit-v1",
+  "decision": "NO_VERIFIED_READY_BYPASS_OF_GZ02",
+  "scope": "local_files_and_registered_receipts_only_no_build_ssh_device_or_container",
+  "version_lock": {
+    "aosp_tag": "android-16.0.0_r4",
+    "oh_version": "7.0.0.39",
+    "target_arch": "arm64",
+    "app_libc": "bionic",
+    "build_mode": "host-native_no_container",
+    "authority": "local_env.md machine-readable block and /opt/19.SourceCode/AGENTS.md README.md SOURCES.json"
+  },
+  "local_mac": {
+    "host_os_arch": "Darwin arm64",
+    "source_root": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+    "source_index_completeness": "partial_selected_repositories",
+    "manifest_xml_present_at_source_root": false,
+    "stock_build_soong_path_present_at_source_root": false,
+    "stock_frameworks_base_and_native_present_at_source_root": false,
+    "separate_no_container_soong_worktree_present": true,
+    "linux_x86_64_ninja_or_clang_runnable_natively_on_darwin_arm64": false,
+    "disk_free_at_source_pool_mount": "532 GiB at observation, not a completeness or toolchain acceptance",
+    "conclusion": "No complete stock R4 source view or native matching Linux host toolchain is established on the Mac; source fragments and a Soong patch worktree cannot directly close the ARM64 graph."
+  },
+  "alexpc_local_mount": {
+    "path": "/opt/19.SourceCode/alexpc-aosp16",
+    "registered_index_status": "legacy_or_supporting_entry_exact_version_unverified_do_not_admit_as_r4",
+    "observed_build_soong_ui_bash": true,
+    "observed_linux_x86_64_ninja": true,
+    "observed_art_bionic_frameworks_base_frameworks_native": true,
+    "observed_repo_manifest_xml": false,
+    "observed_prior_out_build_aosp_arm64_ninja": true,
+    "prior_out_version_release": "16",
+    "prior_out_sdk": 36,
+    "prior_out_build_id": "BP4A.251205.006",
+    "prior_out_exact_r4_commit_or_manifest_proven": false,
+    "mount_free_space": "35 GiB at observation on 240 GiB volume",
+    "current_remote_host_identity_route_and_free_space_proven": false,
+    "conclusion": "A plausible Linux source/build artifact lead exists, but the mount is a stale local view without a verified android-16.0.0_r4 manifest/repo heads or fresh AlexPC host/toolchain/capacity evidence. Prior AOSP16 graph output cannot be reused as this project's R4 Bionic graph."
+  },
+  "gz02_comparison": "The shared source README/SOURCES register gz02's exact R4 Linux checkout and 1011 of 1013 manifest projects with clean HEAD, but the current native Soong graph is still unproven. This is stronger source-identity evidence than the Mac or AlexPC alternative, not a graph-success claim.",
+  "smallest_falsifiable_next_fact_for_alexpc": "Before any build, obtain a fresh authorized native AlexPC identity/route receipt and read-only exact R4 manifest and required project HEAD status, Linux toolchain executable identity, and available OUT/TMP disk capacity. If any fail, reject this bypass. Only after independent review should an isolated native no-container graph attempt be considered.",
+  "build_commands": 0,
+  "ssh_connections": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge16_accesses": 0,
+  "task_summary_modified": false
+}

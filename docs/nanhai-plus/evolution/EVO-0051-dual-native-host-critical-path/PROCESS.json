@@ -1,0 +1,33 @@
+{
+  "schema": "evo-0051-process-v1",
+  "scope": "four_actual_result_groups_bounded_reflection_critical_path",
+  "result_groups": [
+    {"name": "v2c_v3_code_no_go", "receipt_sha256": "3d578c145e107e8a37d42e9c9aefcf675889b152c20bc3882a037055baa03e89", "result": "diagnostic_validator_rejected"},
+    {"name": "v2c_v4_code_go", "receipt_sha256": "6d66cc33bf3c32ab89a8fd214ebb59367b36f1fe25344f14d04832d1f81159ac", "result": "code_only_review_passed"},
+    {"name": "v2c_v4_real_one_shot", "terminal_sha256": "1fc3003223670ae175e1e673a20111b44ceb5193549a6f7e0099768e9710018f", "result": "rc255_no_remote_identity"},
+    {"name": "v2c_v4_independent_postrun", "receipt_sha256": "3c1fd009a3806df2fb47a4eabcc85392a3e229253b6448356583e778ef00cd6e", "result": "local_reject_only_no_graph_or_startup"}
+  ],
+  "supporting_static_host_evidence": {
+    "alternate_host_audit_sha256": "de839a4a793380f84298a12040271eb4506391a18f335193f230a4cda9b3c2cb",
+    "alexpc_readonly_scope_sha256": "d5def39148724d217c9cb639335c5ad4ee83815163256eb5249c89b1f08def0f",
+    "alexpc_status": "candidate_for_fresh_readonly_host_version_capacity_audit_not_graph_ready",
+    "local_mac_status": "partial_R4_source_and_wrong_native_host_OS_for_Linux_Soong"
+  },
+  "critical_path_observation": "The next HelloWorld graph result depends on an authenticated native Linux host with exact R4 source/toolchain and isolated OUT. The gz02 route has consumed repeated one-shot attempts without remote identity; v4 code quality improved but did not move the graph boundary. AlexPC is a separate possible host with stale source/capacity evidence.",
+  "single_small_improvement": "Run one independently reviewed, read-only AlexPC host/source/toolchain/capacity readiness packet in a separate lane while v5 gz02 diagnostic work continues. Admit it only as an alternative graph candidate if fresh identity and exact R4 source/host resources all pass; then compare which host first reaches a reviewed native graph release. No build or route substitution follows automatically.",
+  "small_pilot": {
+    "method": "local_receipt_only_fallback_gate_inventory",
+    "result": "NO_READY_BYPASS_YET",
+    "missing_gates": ["fresh_AlexPC_host_identity_and_route", "exact_R4_manifest_and_required_HEADs", "native_Linux_toolchain_identity", "isolated_OUT_TMP_free_capacity"],
+    "next_trial": "One fresh read-only identity/version/capacity receipt, zero graph commands; a fail closes AlexPC lane without consuming gz02 v5 nonce."
+  },
+  "falsifier": "AlexPC's fresh audit fails any required gate or takes more coordination than v5 reaches authenticated gz02 graph readiness; then stop this fallback pilot rather than migrating builds.",
+  "not_same_as_prior_evolutions": "This changes critical-path host redundancy, not EVO47 staffing ROI, EVO48 success-evidence replay, EVO49 nonce preflight or EVO50 failure diagnostics.",
+  "promotion": "PILOT_ONLY_NO_AUTOMATIC_PROMOTION_DO_NOT_BLOCK_V5",
+  "new_ssh_connections": 0,
+  "build_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0,
+  "bridge16_accesses": 0,
+  "task_summary_modified": false
+}
