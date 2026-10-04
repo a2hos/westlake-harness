@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T05:04:03+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T05:22:15+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -20,7 +20,9 @@
 
 原看板“剩余 30”属于旧 86 项路线的未尝试数，不能解释为“30 个已开发完成”；扩展为 89 项后历史未尝试数为 31。历史 Musl 的 38 项源码接受保留，不迁入 Bionic 完成数。退休项也不算通过。
 
-最新构建图实际结果：G268 已终态（exec56670，terminal85f3ce，rc2）。原版 Soong 236/236 后首错为 `external/protobuf/Android.bp:128:1` 的 `absl_notls_defaults` 未定义，309 行同类错误；前轮九模块墙已消失。源与 SDK 前后守卫通过，SDK 17,924 项 / 6.25 GB，专属容器与卷已清理；ARM64 目标编译命令仍为 0。下一步仅按精确 AOSP16 R4 补 Abseil 模块输入，新包须新 ACK，G268 不重放。
+最新构建图实际结果：G269 已终态（exec18293，terminal734d54，rc2）。原版 Soong 236/236 后唯一缺项为 `libcore/luni/src/test/Android.bp:21:1` 的 `junit`；前轮 Abseil 墙已消失。含完整 Abseil 输入的源和 SDK 前后守卫通过，容器/卷清理完成；目标编译命令仍为 0。下一步精确 R4 JUnit owning module 新封包，不重放 G269。
+
+历史构建图实际结果：G268 已终态（exec56670，terminal85f3ce，rc2）。原版 Soong 236/236 后首错为 `external/protobuf/Android.bp:128:1` 的 `absl_notls_defaults` 未定义，309 行同类错误；前轮九模块墙已消失。源与 SDK 前后守卫通过，SDK 17,924 项 / 6.25 GB，专属容器与卷已清理；ARM64 目标编译命令仍为 0。下一步仅按精确 AOSP16 R4 补 Abseil 模块输入，新包须新 ACK，G268 不重放。
 
 历史上一轮工程结果：G267 已终态（exec62919，terminal de0e45，rc2）。346 个精确 R4 VNDK license/NOTICE/config 文件已只读接入，原四个 license 模块报错消失；本轮实际出现 24 条未定义模块错误，涉及 Python、protobuf、sqlite、jcommander、ASM 的 9 个模块。目标编译命令仍为 0，图生成未通过。root 重哈 140 项证据及 OUT/TMP，独立审查 578 项检查通过；source/SDK 前后守卫通过，三个专属卷已清理。
 
@@ -34,7 +36,7 @@
 
 第 7/8 批分别以 rc0 终态执行（exec11967/terminal97d58f，exec57454/terminal1ae3c8），各 4 份原包经独立复核与 root 接受；合计新增 21 DEX、52 ELF，累计 **49 包、97 DEX、372 ELF**。第 8 批 OpenTracks 原始版本字符串 `v4.28.3irreproducible` 原样保留。仅静态清点，未启动。
 
-WhatsApp 官网新版本 `2.26.32.84` 原始下载 148,660,262 字节、15,156 ZIP 成员 CRC 通过，经 64 项独立复核后仅作为官方渠道新增载荷接受；历史登记 `2.26.37.73` XAPK 不替换。原包累计 **57**；签名、Manifest 身份、黑盒资格及启动未验收。
+WhatsApp 官网页面标记 `2.26.32.84` 的原始下载 148,660,262 字节、15,156 ZIP 成员 CRC 通过，经 64 项独立复核后仅作为官方渠道新增载荷接受；历史登记 `2.26.37.73` XAPK 不替换。原包累计 **57**。随后只读实际检查两条工具命令均 rc0，apksigner 报告 v1/v2/v3/v3.1 验证通过；包内 Manifest 为 `com.whatsapp` / `2.26.39.71`，与网页标签不一致，旧整体收据 rc2 保留。原始文本解析补识别两个 SDK 区间证书，未重跑工具；官方发布者绑定、黑盒资格及启动未验收。
 
 AOSP16 R4 build-tools Python cohort 新增 843 项只读引用，另复用 2 项；protobuf superproject 2,818 个普通文件与 py-six 19 文件按同版身份登记。protobuf 内 jsoncpp Gitlink 仍未物化。CPython 4,990 文件在一次性 Linux 卷材料化、重算官方 Git 树并删除测试卷；首轮卷权限失败如实保留。以上均非新的 Soong 图、ARM64 Bionic 编译或设备通过。
 
@@ -46,9 +48,9 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；49 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G268 缺 absl_notls_defaults；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 精确 R4 新依赖闭合与下一 stock 图执行；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；49 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G269 缺 junit；WhatsApp 网页与包内版本不一致；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 精确 R4 新依赖闭合与下一 stock 图执行；Bionic 真机 Activity 启动证据 |
 
-自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。当前反思累计 1 组新实际结果（G268），下一次等 3–4 组。
+自进化 EVO-0010 已在第 6/7/8 批静态清点及 WhatsApp 原包四组结果后，90.403 秒内闭合。验证 1 项调用时绑定工具 SHA、argv 与显式环境的局部无网络试验，10 个负例拒绝；未推广、未改变 G268，也未增加原 89 项工具通过数。当前反思累计 3 组新实际结果（G268、WhatsApp 只读命令、G269），EVO-0011 正在有界试验。
 
 历史自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。该轮四组实际结果已经闭合，不重复反思。独立 peer 的超时记录保留。
 
@@ -63,12 +65,12 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Evidence target
 
-- What this proves: 截至核对时点的已接受数量与 G268 实际终态。
+- What this proves: 截至核对时点的已接受数量与 G269 实际终态。
 - What this does not prove: 整工具完成、安装、冷启动、上屏或设备验收。
 
 ## Environment
 
-- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G268 宿主构建。
+- Host: 当前 macOS 外环，固定 Linux x86_64 容器进行 G269 宿主构建。
 - Device: 本次汇总未访问设备，沿用项目 HOLD 与白名单。
 - Tool path: scripts/nanhai_plus_env.py 与候选 executor.py，精确收据见 JSON 索引。
 - Artifact path: .nanhai-plus-runtime/bionic-oh7-aosp16/out/bionic-stock-bionic-target-graph-v5/accepted-host/soong_build。
@@ -77,20 +79,20 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 ## Status
 
 - Label: build_pass
-- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G268 整体图生成失败。
+- Why: 仅 G262 进程外库及 G265 宿主可执行文件通过构建；G269 整体图生成失败。
 
 ## Observed wall
 
 - Classification: observed
-- Fact: G268 实际报出 2 条错误，均为原版 protobuf 引用的 absl_notls_defaults 未定义；G267 的九模块墙已越过。
-- Evidence: G268-REVIEW.json，SHA 见 TASK-SUMMARY.json。
-- First failing command: G268 stock Soong Android.bp 分析步骤（236/236）。
+- Fact: G269 实际仅报出 1 条错误，为原版 libcore/luni 测试引用的 junit 未定义；G268 的 Abseil 墙已越过。
+- Evidence: G269-REVIEW.json，SHA 见 TASK-SUMMARY.json。
+- First failing command: G269 stock Soong Android.bp 分析步骤（236/236）。
 - Exit/status: 外层 terminal rc2；目标编译命令 0。
 
 ## Hypotheses
 
 - Candidate: 无新增根因假设；五源插件已实际编译，完整 libcore 已执行，完整 SDK 已核验；下一批 stock 输入待精确版本闭合。
-- Cheapest falsifier: 精确 R4 Abseil 模块输入核验后，新候选经原 owner ACK 与封包执行。
+- Cheapest falsifier: 精确 R4 JUnit 模块输入核验后，新候选经原 owner ACK 与封包执行。
 - Blocking: no
 
 ## Proven
@@ -103,11 +105,11 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Failed
 
-- G268 图分析 rc2；G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain 静态清点未完成；第 5 批汇总 rc2。
+- G269 图分析 rc2；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain 静态清点未完成；第 5 批汇总 rc2。
 
 ## Next evidence
 
-- Command: 原 owner 接受 Abseil 新候选后，通过 NANHAI 环境入口执行新封包。
+- Command: 原 owner 接受 JUnit 新候选后，通过 NANHAI 环境入口执行新封包。
 - Expected output: 记录真实图分析结果及首个失败，成功时继续目标编译门。
 - If it fails: 保留原始收据，按精确版本定位下一缺项，不算成功。
 

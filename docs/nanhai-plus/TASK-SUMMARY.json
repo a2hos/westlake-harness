@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T05:04:03+00:00",
+  "checked_at": "2026-10-04T05:22:15+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -54,10 +54,10 @@
     "supplemental_payloads": 2
   },
   "latest_actual_execution": {
-    "release": 268,
+    "release": 269,
     "terminal_rc": 2,
-    "actual_exec_session": 56670,
-    "terminal_chunk": "85f3ce",
+    "actual_exec_session": 18293,
+    "terminal_chunk": "734d54",
     "host_tools_actual_loader_pass": 10,
     "soong_bootstrap_successful_steps": 236,
     "soong_bootstrap_total_steps": 236,
@@ -282,16 +282,32 @@
     {
       "path": "docs/nanhai-plus/evolution/EVO-0010-apk-proof-scope/reviews/ROOT-CLOSURE.json",
       "sha256": "5dda0be93a893c5710bf3adaa5158b42e1f5a811ec5a76eaf570b72361c8c3f1"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-abseil-r4-identity-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "fe92de704cb60840f641071f1dc8bca7e630e90a062ad573d2b1a6a315f6ebac"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v13/root-release-v1/G269-REVIEW.json",
+      "sha256": "d7d687a460b546bd23eefb05828252cc9f5a5b821722d61133a032d6a2c49da4"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/whatsapp-signature-manifest-v1/root-review-v1/ROOT-ACTUAL-REVIEW.json",
+      "sha256": "cfb71b1b699dea2a2daebb157598f0c63b8c91d6b5e4f66b0cf6899cc37a60d2"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/whatsapp-signature-manifest-parser-v2/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "f43edb27b5319575aaf4af756f26b5a7285239834139c7474c38bd59badb719a"
     }
   ],
   "bionic_stock_graph": {
-    "release": 268,
+    "release": 269,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "external/protobuf/Android.bp:128:1 undefined absl_notls_defaults",
-    "failure_location": "external/protobuf/Android.bp:128:1",
+    "first_failure": "libcore/luni/src/test/Android.bp:21:1 undefined junit",
+    "failure_location": "libcore/luni/src/test/Android.bp:21:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -310,10 +326,10 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 269,
-    "next_input": "exact R4 absl_notls_defaults owning module",
+    "prospective_release": 270,
+    "next_input": "exact R4 junit owning module",
     "execution_ready": false,
-    "G268_terminal": true
+    "G269_terminal": true
   },
   "reflection": {
     "latest": "EVO-0010",
@@ -324,9 +340,9 @@
     "duration_seconds": 90.402889166,
     "limit_seconds": 120,
     "timing_compliant": true,
-    "pending_actual_result_groups": 1,
+    "pending_actual_result_groups": 3,
     "trigger_every_groups": "3-4",
-    "next": "Wait 2-3 more actual accepted groups"
+    "next": "EVO-0011 triggered after G268, WhatsApp actual and G269; bounded peer experiment pending"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -419,6 +435,15 @@
     "historical_registry_replaced": false,
     "signer_verified": false,
     "blackbox_qualified": false,
-    "startup_verified": false
+    "startup_verified": false,
+    "website_version_label": "2.26.32.84",
+    "actual_manifest_version": "2.26.39.71",
+    "actual_manifest_version_code": "263907133",
+    "version_match": false,
+    "cryptographic_tool_rc": 0,
+    "manifest_tool_rc": 0,
+    "old_combined_result_rc": 2,
+    "retained_text_parser_v2_accepted": true,
+    "publisher_binding_verified": false
   }
 }
