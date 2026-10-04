@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T02:47:20.702444+00:00",
+  "checked_at": "2026-10-04T03:02:24.734932+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 23,
+    "downloaded_payloads": 35,
     "cold_start_verified": 0,
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
@@ -50,10 +50,10 @@
     "additional_static_inventory_candidates_pending_root_acceptance": 0
   },
   "latest_actual_execution": {
-    "release": 264,
+    "release": 265,
     "terminal_rc": 2,
-    "actual_exec_session": 55476,
-    "terminal_chunk": "51734a",
+    "actual_exec_session": 31374,
+    "terminal_chunk": "e9ac25",
     "host_tools_actual_loader_pass": 10,
     "soong_bootstrap_successful_steps": 235,
     "soong_bootstrap_total_steps": 236,
@@ -138,16 +138,28 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch3-v1/root-run-v1/ROOT-ACCEPTANCE.json",
       "sha256": "9db73dca88972f51e36aa466754f2de4a9b43843e009ce2bdae5aac8068cf63e"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/apk-stock-intake-v6/root-intake-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "72d3f6d8f3a4cf8c3ea918f6d439c87ee6d97e1ffe7f533421396140bd05a6ce"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-libcore-r4-archive-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "9624678a92e23efa4e00ab1da7630b1bb63210db779ae38b822f84058fbb2761"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v7/root-release-v1/G265-REVIEW.json",
+      "sha256": "fd29e8d0b5c52778f551af5eef57eb9b84e4d84a97937b443b9515b5df613e45"
     }
   ],
   "bionic_stock_graph": {
-    "release": 264,
+    "release": 265,
     "terminal_rc": 2,
     "blueprint_bootstrap_pass": true,
     "stock_ninja_executed": true,
     "graph_generation_pass": false,
-    "first_failure": "missing core-lambda-stubs-for-system-modules and art.module.public.api.stubs.module_lib",
-    "failure_location": "build/soong/java/core-libraries/Android.bp:399:1 and :453:1",
+    "first_failure": "six undefined art{,-removed}.api.combined.{public,system,module-lib}.latest modules",
+    "failure_location": "libcore/JavaLibrary.bp:1223:1",
     "target_compile_commands": 0,
     "owned_resources_cleaned": true,
     "secondary_errors": []
@@ -166,11 +178,13 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "previous_version": 6,
+    "previous_version": 7,
     "previous_execution_terminal": true,
-    "next_input": "exact R4 complete libcore source archive candidate",
+    "next_input": "exact R4 definitions for six observed ART API latest modules",
     "source_commit_officially_confirmed": "1c599b67bcd3de5c50c79d0622e40b6de99b4cb4",
-    "execution_ready": false
+    "execution_ready": false,
+    "complete_libcore_admitted": true,
+    "complete_libcore_files": 8280
   },
   "reflection": {
     "latest": "EVO-0006",
