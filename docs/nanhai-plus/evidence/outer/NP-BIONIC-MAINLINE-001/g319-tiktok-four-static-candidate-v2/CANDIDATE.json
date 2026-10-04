@@ -1,0 +1,75 @@
+{
+  "all_four_phase_rc": 0,
+  "apk_bytes": 429047484,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g319-tiktok-official-v1/TikTok.apk",
+  "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+  "at_utc": "2026-10-04T17:39:57.107778+00:00",
+  "authoritative_count_changed": false,
+  "census_sha256": "53f7841aac873dc6fec48c845b2b9794f2096b5d1b5f9c1c6c5eb2a485885cb5",
+  "cold_start_delta": 0,
+  "decision": "GO_INDEPENDENT_REVIEW_HOST_STATIC_ONLY",
+  "dex_embedded_entries": 0,
+  "dex_inventory_sha256": "7b76d6771b8ac07cb39a0a159f96b0d456822e9069d66d2dca5e90b64daca2f8",
+  "dex_root_entries": 51,
+  "elf_inventory_sha256": "aa2da0a18aa816a0b4ad373c1eb8f6343372d3e7f955b86e3bd631ac58e866cf",
+  "limitations": "Host static only. KOM-like payloads are not ELF; no runtime loadability inference. Scanner read_elf called on content-confirmed true ELF entries rather than its APK helper, which would try non-ELF .so; exact scanner source SHA pinned by per-phase guards.",
+  "network_ssh_device_container_namespace_commands_by_candidate": 0,
+  "non_elf_content_sha256": "2982a8ae95851faf202e8ba6aa6ab952e229a05fe19f1b9333cde69e79513c1c",
+  "non_elf_so_entries": 4,
+  "non_elf_so_magic": "7f4b4f4d (KOM-like opaque payload; format not independently decoded)",
+  "phase_py_sha256": "681ef6fa1908dbea351adfc47f3fdda3c9678913440454cfd68c4b7bde96be87",
+  "phases": {
+    "dex": {
+      "command_sha256": "224e94725b8a04c57fb03ffc1b6a735c088be92551ba63bf42825cf34dfc6f28",
+      "elapsed_seconds": 112.65909141697921,
+      "rc": 0,
+      "result_sha256": "78b3f310ba9beb9281625112e4a8ad2ba671d9c86929279aa7df587ff770f50b",
+      "source_pre_post_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b08592b7770f022096f39707d6e94cf3d00811df201523a629f6d79167569fe6"
+    },
+    "elf": {
+      "command_sha256": "220eb8e273634de76c93c0aad7f1f4d2eb2685473cc22218aafb89146a727a78",
+      "elapsed_seconds": 52.5264977500774,
+      "rc": 0,
+      "result_sha256": "e31d155433ebbc9d20869ec54d509521102418024592249af67fc71223ec8377",
+      "source_pre_post_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1d939f02392143c0aa15f323bd88ee6e8889de007386785afbd6f51ab34a87ec"
+    },
+    "metadata": {
+      "command_sha256": "007e8d6775df38b9926eb84fdc1fa6b1c61b23d01a84b3ac223d5123077e5b63",
+      "elapsed_seconds": 5.489525082986802,
+      "rc": 0,
+      "result_sha256": "48f90110aa017a41b702a82d6bd0fadc5d9e08f7db626785b286992771629148",
+      "source_pre_post_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c8cb94c3bbd8ed055abdeb8e80ebf118a7eb33c9756cae601331a8b371307edf"
+    },
+    "zip": {
+      "command_sha256": "60f426f9efa1f44eaa2b7cfd14694a59282c2af63d7059ada945da7ce78c9525",
+      "elapsed_seconds": 1.5264124580426142,
+      "rc": 0,
+      "result_sha256": "29ee92157d0ad07c6a9deebcb89c0ecd393302a9a1522913954c32640aaa795a",
+      "source_pre_post_equal": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7855d93b1955d0e3f06d90d457cc602a77fd14c8f055f16ce4233b81bbc34ca7"
+    }
+  },
+  "raw_root_sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4",
+  "result_sha256": "84c4ab9294cc5cf9c401b6a636247786df1cc14c5808e0e135cb4883c4f3d683",
+  "run_py_sha256": "fb4d140a696af16c117005eb2645a9198bf8781ecf792d0ec6de4f453dc4816e",
+  "schema": "g319-tiktok-four-static-host-candidate-v2",
+  "scope": "one exact native Mac host four-phase static scan, no target/launch/blackbox qualification/count update",
+  "start_sha256": "3db6841ee58bd6caf60b7907302648697988d8ad664d7cf2f5d2490b16a883bb",
+  "supersedes_failed_v1_without_replay": {
+    "failure": "ELF phase guard wrongly assumed all real ELF were ARM64; v1 zip/metadata rc0, ELF rc2, DEX not run",
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/RESULT.json",
+    "sha256": "de1b18a08639b441583c237131d610cfb608fc34ac7a7e03d109c1bfc7981e63"
+  },
+  "true_arm32_elf_entries": 225,
+  "true_arm64_elf_entries": 227,
+  "true_elf_entries": 452,
+  "whole_bionic_tool_delta": 0,
+  "zip_entries": 20205
+}

@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "bytes": 286336,
+      "classification": "KOM-signature opaque non-ELF .so; not an ARM64 or ARM32 ELF",
+      "header_16_hex": "7f4b4f4d0100000079b8f899f8b33c00",
+      "header_ascii": "b'\\x7fKOM'",
+      "is_elf": false,
+      "name": "lib/arm64-v8a/liblynxsuit.so",
+      "sha256": "ca48a39d3366ad5f35afb0159f3c9443a80f07794e548a5c0b51c2543e7f79ac"
+    },
+    {
+      "bytes": 9162896,
+      "classification": "KOM-signature opaque non-ELF .so; not an ARM64 or ARM32 ELF",
+      "header_16_hex": "7f4b4f4d0100000079b8f899d0a8d212",
+      "header_ascii": "b'\\x7fKOM'",
+      "is_elf": false,
+      "name": "lib/arm64-v8a/libmedia.so",
+      "sha256": "ec480590657de5385c657e36755cea22acbe254a9f6e04d5e7006d7fe16b1f15"
+    },
+    {
+      "bytes": 265919,
+      "classification": "KOM-signature opaque non-ELF .so; not an ARM64 or ARM32 ELF",
+      "header_16_hex": "7f4b4f4d0100000079b8f89988c42600",
+      "header_ascii": "b'\\x7fKOM'",
+      "is_elf": false,
+      "name": "lib/armeabi-v7a/liblynxsuit.so",
+      "sha256": "0478ee5b46126cf616678e83315c5176911aacf93e2a2e148240fd2bfbc78623"
+    },
+    {
+      "bytes": 9229868,
+      "classification": "KOM-signature opaque non-ELF .so; not an ARM64 or ARM32 ELF",
+      "header_16_hex": "7f4b4f4d0100000079b8f8999c87fd0d",
+      "header_ascii": "b'\\x7fKOM'",
+      "is_elf": false,
+      "name": "lib/armeabi-v7a/libmedia.so",
+      "sha256": "22a4c9ff7cc6aaf43f4a4c0c0915c3625819ab3777fde2ec7432183320687506"
+    }
+  ],
+  "schema": "g319-tiktok-non-elf-so-content-classification-v1",
+  "true_elf_delta": 0
+}

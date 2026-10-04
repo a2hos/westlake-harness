@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T17:25:58+00:00",
+  "checked_at": "2026-10-04T17:41:00+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,14 +35,14 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 96,
+    "downloaded_payloads": 97,
     "latest_raw_admission": {
       "packages": [
-        "com.lemon.lvoverseas"
+        "com.zhiliaoapp.musically"
       ],
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g316-capcut-official-raw-candidate-v2/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
-      "sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
-      "scope": "publisher-page linked exact host raw only; one ARM32 ELF misplaced under arm64-v8a; no static or blackbox acceptance"
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-official-route-attempt-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4",
+      "scope": "official download-page serialized CDN link exact host raw only; four non-ELF .so entries, no static or blackbox acceptance"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -53,14 +53,20 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 92,
-    "complete_inventory_dex_entries": 251,
-    "complete_inventory_native_elf_entries": 1135,
+    "complete_static_inventories": 93,
+    "complete_inventory_dex_entries": 303,
+    "latest_static_correction": {
+      "package": "com.vivaldi.browser",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
+      "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
+      "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
+    },
+    "complete_inventory_native_elf_entries": 1362,
     "latest_complete_static_admission": {
-      "package": "com.brave.browser",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g315-brave-four-static-candidate-v1/root-combined-static-admission-v1/ROOT-STATIC-ADMISSION.json",
-      "sha256": "0b2ce3e959a822e5aa51973c050ed95e931ef0c1817d89574b1d7b2b4928c7f4",
-      "scope": "four-phase plus exact embedded DEX semantic host static only; no startup"
+      "package": "com.zhiliaoapp.musically",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "c1ae74284a77bb715bb3f41263d9ace79f4ac6d08c4af8773420163af5d176ee",
+      "scope": "four-phase host static only; 51 DEX, 227 true ARM64 ELF, 225 ARM32 ELF separate, four non-ELF .so separate; no startup"
     },
     "incomplete_static_inventories": [
       "org.thoughtcrime.securesms",
@@ -69,8 +75,8 @@
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
     "registered_upstream_payloads": 75,
-    "supplemental_payloads": 21,
-    "qualified_blackbox_packages": 14,
+    "supplemental_payloads": 22,
+    "qualified_blackbox_packages": 15,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -85,7 +91,8 @@
       "com.kms.free",
       "com.adguard.android",
       "com.goldenfrog.vyprvpn.app",
-      "com.lemon.lvoverseas"
+      "com.lemon.lvoverseas",
+      "com.zhiliaoapp.musically"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -96,10 +103,10 @@
       "cold_start_delta": 0
     },
     "latest_blackbox_qualification": {
-      "package": "com.lemon.lvoverseas",
-      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g317-capcut-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
-      "sha256": "2e1b9911055a8ad9bd3db8ea66822314a7ebf93c260824a8f840d75ee277b23a",
-      "scope": "exact-package blackbox test qualification only; old APK/ARM32 path exception, no startup"
+      "package": "com.zhiliaoapp.musically",
+      "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g320-tiktok-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "6a81fdb38b05fa88343a6e6b75a819c82d058d3ce94b36ec9c7b9e9381223a64",
+      "scope": "exact-package overseas-mainstream blackbox test qualification only; G319 static v1 NO_GO, no startup"
     },
     "g299_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g299-blackbox-next-intake-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -1229,7 +1236,7 @@
     "graph_executed": false
   },
   "vivaldi_static_actual": {
-    "status": "root accepted complete static only",
+    "status": "original four-phase accepted plus later exact embedded DEX semantic correction; host static only",
     "outer_rc": 0,
     "zip_entries_crc": 5097,
     "new_dex": 2,
@@ -1237,6 +1244,13 @@
     "root_review": {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-vivaldi-inventory-candidate-v3/root-review-v1/ROOT-ACCEPTANCE.json",
       "sha256": "7762f26dbac3bda94374ac658d1e3bbabdb0929eb37de8a1083f593b1157640c"
+    },
+    "later_embedded_dex_correction": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
+      "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
+      "additional_semantic_dex": 1,
+      "combined_package_dex": 3,
+      "package_count_delta": 0
     },
     "startup_delta": 0,
     "blackbox_qualified": false
@@ -1888,5 +1902,54 @@
     "native_soong_toolchain_proven": false,
     "independent_out_tmp_capacity_proven": false,
     "graph_or_target_executed": false
+  },
+  "g319_tiktok_static_v1_terminal": {
+    "status": "NO_GO_FULL_STATIC_ELF_PHASE_RC2_ARM32_MISCLASSIFICATION",
+    "result_sha256": "de1b18a08639b441583c237131d610cfb608fc34ac7a7e03d109c1bfc7981e63",
+    "independent_review_sha256": "f148909eb464ffb5c7548c4be3ce81e580e75c3b749199ac82ce0cf3487c46d4",
+    "zip_metadata_rc0": true,
+    "elf_rc": 2,
+    "dex_executed": false,
+    "full_static_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g320_tiktok_blackbox_qualification": {
+    "status": "accepted_exact_package_blackbox_test_qualification_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g320-tiktok-blackbox-qualification-candidate-v1/root-qualification-v1/ROOT-QUALIFICATION.json",
+      "sha256": "6a81fdb38b05fa88343a6e6b75a819c82d058d3ce94b36ec9c7b9e9381223a64"
+    },
+    "qualified_before": 14,
+    "qualified_after": 15,
+    "full_static_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g319_tiktok_static_v2_actual": {
+    "status": "accepted_complete_four_phase_host_static_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v2/root-static-admission-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "c1ae74284a77bb715bb3f41263d9ace79f4ac6d08c4af8773420163af5d176ee"
+    },
+    "full_static_before": 92,
+    "full_static_after": 93,
+    "semantic_dex_delta": 51,
+    "true_arm64_elf_delta": 227,
+    "true_arm32_elf_separate": 225,
+    "non_elf_so_separate": 4,
+    "cold_start_delta": 0
+  },
+  "g319_tiktok_raw_actual": {
+    "status": "accepted_official_download_page_linked_host_raw_only",
+    "receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-official-route-attempt-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4"
+    },
+    "raw_before": 96,
+    "raw_after": 97,
+    "true_arm64_elf": 227,
+    "non_elf_so_members": 4,
+    "static_delta": 0,
+    "blackbox_qualification_delta": 0,
+    "cold_start_delta": 0
   }
 }

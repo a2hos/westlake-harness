@@ -1,0 +1,70 @@
+{
+  "schema": "g320-tiktok-blackbox-independent-qualification-review-v1",
+  "reviewed_at_utc": "2026-10-04T17:37:00Z",
+  "decision": "GO_ONE_EXACT_PACKAGE_BLACKBOX_TEST_QUALIFICATION_ONLY",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g320-tiktok-blackbox-qualification-candidate-v1/CANDIDATE.json",
+    "sha256": "cd3bf46a8ffac29e056776b67fb2d181f8623aaa2649117bfe00512759f92f4c"
+  },
+  "checks_passed": 21,
+  "checks_failed": 0,
+  "scope": "Read-only review of captured official-distribution, exact-package market, source-search and G319 root raw evidence. No ledger, network, device, SSH, container or bridge mutation.",
+  "exact_raw_binding": {
+    "root_admission": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-official-route-attempt-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
+    "root_admission_sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4",
+    "root_decision": "ACCEPT_EXACT_OFFICIAL_PAGE_LINKED_UNMODIFIED_HOST_RAW_ONLY",
+    "package": "com.zhiliaoapp.musically",
+    "version_name": "38.3.3",
+    "version_code": "2023803030",
+    "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+    "signer_cert_sha256": "9041803e91bcb814b4b4399fb5c85a91640b755e5e8ba76813814bf4cf2ab5ba",
+    "raw_count_after_g319": 97,
+    "note": "All five exact identity fields match the immutable G319 root raw admission; this review does not add another raw package."
+  },
+  "official_product_source": {
+    "captured_publisher_page": "https://www.tiktok.com/download",
+    "route": "Captured TikTok page serialized download_page_apk.apps[].link to sf16-va.tiktokcdn.com, followed by full HTTP 200/TLS 0 APK GET in G319.",
+    "scope_limit": "No independent publisher-published APK digest or certificate anchor; official-channel capture and verified APK signer form the observed chain."
+  },
+  "overseas_mainstream_evidence": {
+    "play_url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en_US",
+    "play_capture_http": 200,
+    "play_capture_tls_verify_result": 0,
+    "play_body_sha256": "9185f77d0689f9afa61097fc7f45be40d0f735abf8a521fcfafe49adb2cd1225",
+    "canonical_package": "com.zhiliaoapp.musically",
+    "displayed_publisher": "TikTok Pte. Ltd.",
+    "displayed_download_bucket": "1B+",
+    "listing_update_date": "Sep 28, 2026",
+    "interpretation": "English-US exact-package Play listing supports substantial international distribution; 1B+ is cumulative listing/product downloads, not installs of APK 38.3.3 or a per-country count."
+  },
+  "code_availability": {
+    "observed_primary_metadata": [
+      "GitHub org:tiktok android: 2 OpenSDK/business SDK repositories",
+      "GitHub org:bytedance android: 15 libraries, tooling, SDK and demo repositories",
+      "GitHub exact package in name/description: 5 third-party decompilation, patch, web-replica or metadata repositories"
+    ],
+    "assessment": "No publisher-owned, matching, fully buildable TikTok Android client was established in these bounded searches; the original APK is therefore a reasonable blackbox test candidate under the portfolio rule.",
+    "limit": "Repository metadata searches cannot prove global nonexistence of public or private source; third-party decompilation is not publisher-owned full buildable client source."
+  },
+  "distinctness": {
+    "qualified_package_ids_before": 14,
+    "all_prior_ids_unique": true,
+    "exact_package_already_qualified": false,
+    "different_from_tiktok_lite_go": true,
+    "admissible_distinct_package_delta_if_root_accepts": 1
+  },
+  "qualification_boundary": {
+    "blackbox_qualification_delta_in_this_peer_review": 0,
+    "root_may_accept_blackbox_qualification_delta": 1,
+    "full_static_delta": 0,
+    "truly_cold_start_delta": 0,
+    "bionic_whole_tool_delta": 0,
+    "known_runtime_risk": "G319 APK contains four .so-named members that are non-ELF by content; runtime behavior and scanner handling are untested here."
+  },
+  "observed_wall": "None for package-level qualification; no runtime attempt was made.",
+  "hypotheses": [],
+  "proven": "G319 exact official-channel host raw identity is root accepted; same-package English-US Play listing shows TikTok Pte. Ltd. and 1B+ cumulative downloads; bounded source metadata search did not establish a full publisher-owned buildable client; package is absent from the 14 already qualified IDs.",
+  "not_proven": "Global source-code nonexistence, exact 38.3.3 install count, country-specific installs, equivalence to current Play-delivered bytes, publisher-published artifact hash, full static scan, install, startup or display.",
+  "failed": "None within this bounded read-only qualification review.",
+  "next_evidence": "Root may add one exact-package blackbox test qualification, then separately scan this APK and validate truly-cold device startup when platform and device gates permit."
+}

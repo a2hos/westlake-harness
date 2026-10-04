@@ -1,0 +1,47 @@
+{
+  "schema": "g319-tiktok-four-static-v2-independent-review-v1",
+  "at_utc": "2026-10-04T17:40:26.522005+00:00",
+  "decision": "GO_HOST_COMPLETE_FOUR_PHASE_STATIC_ONLY",
+  "result_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v2/RESULT.json",
+  "result_sha256": "84c4ab9294cc5cf9c401b6a636247786df1cc14c5808e0e135cb4883c4f3d683",
+  "start_sha256": "3db6841ee58bd6caf60b7907302648697988d8ad664d7cf2f5d2490b16a883bb",
+  "phase_source_sha256": "681ef6fa1908dbea351adfc47f3fdda3c9678913440454cfd68c4b7bde96be87",
+  "runner_source_sha256": "fb4d140a696af16c117005eb2645a9198bf8781ecf792d0ec6de4f453dc4816e",
+  "census_sha256": "53f7841aac873dc6fec48c845b2b9794f2096b5d1b5f9c1c6c5eb2a485885cb5",
+  "phase_result_sha256": {
+    "zip": "29ee92157d0ad07c6a9deebcb89c0ecd393302a9a1522913954c32640aaa795a",
+    "metadata": "48f90110aa017a41b702a82d6bd0fadc5d9e08f7db626785b286992771629148",
+    "elf": "e31d155433ebbc9d20869ec54d509521102418024592249af67fc71223ec8377",
+    "dex": "78b3f310ba9beb9281625112e4a8ad2ba671d9c86929279aa7df587ff770f50b"
+  },
+  "inventory_sha256": {
+    "dex": "7b76d6771b8ac07cb39a0a159f96b0d456822e9069d66d2dca5e90b64daca2f8",
+    "elf": "aa2da0a18aa816a0b4ad373c1eb8f6343372d3e7f955b86e3bd631ac58e866cf"
+  },
+  "verified": {
+    "four_phase_rc": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_guard_before_after_all_equal": true,
+    "stream_sha_and_command_receipts_all_equal": true,
+    "zip_unique_entries": 20205,
+    "dex_members_sha_and_size_verified": 51,
+    "arm64_elf_sha_and_size_verified": 227,
+    "arm32_elf_sha_and_size_verified": 225,
+    "non_elf_so_classified_from_magic": 4,
+    "package": "com.zhiliaoapp.musically",
+    "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc"
+  },
+  "limits": "Host complete static only. No startup, device, blackbox, whole-tool, or authoritative count credit; root acceptance required separately. Embedded DEX count is 0 per census and ZIP member scan; no nested archive claim beyond scanner scope.",
+  "peer_actions": {
+    "network": 0,
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "bridge_writes": 0,
+    "count_writes": 0
+  }
+}

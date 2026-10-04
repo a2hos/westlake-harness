@@ -1,0 +1,4075 @@
+{
+  "apk_bytes": 429047484,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/g319-tiktok-official-v1/TikTok.apk",
+  "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+  "at_utc": "2026-10-04T17:34:41.735948+00:00",
+  "counts": {
+    "embedded_dex": 0,
+    "non_elf_so": 4,
+    "root_dex": 51,
+    "true_arm64_elf": 227
+  },
+  "dex": [
+    {
+      "bytes": 8936880,
+      "header_consistent": true,
+      "header_file_size": 8936880,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes.dex"
+    },
+    {
+      "bytes": 9032160,
+      "header_consistent": true,
+      "header_file_size": 9032160,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes10.dex"
+    },
+    {
+      "bytes": 8199880,
+      "header_consistent": true,
+      "header_file_size": 8199880,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes11.dex"
+    },
+    {
+      "bytes": 9057704,
+      "header_consistent": true,
+      "header_file_size": 9057704,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes12.dex"
+    },
+    {
+      "bytes": 8488324,
+      "header_consistent": true,
+      "header_file_size": 8488324,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes13.dex"
+    },
+    {
+      "bytes": 10132484,
+      "header_consistent": true,
+      "header_file_size": 10132484,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes14.dex"
+    },
+    {
+      "bytes": 9384200,
+      "header_consistent": true,
+      "header_file_size": 9384200,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes15.dex"
+    },
+    {
+      "bytes": 9275268,
+      "header_consistent": true,
+      "header_file_size": 9275268,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes16.dex"
+    },
+    {
+      "bytes": 10284772,
+      "header_consistent": true,
+      "header_file_size": 10284772,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes17.dex"
+    },
+    {
+      "bytes": 9634836,
+      "header_consistent": true,
+      "header_file_size": 9634836,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes18.dex"
+    },
+    {
+      "bytes": 8212896,
+      "header_consistent": true,
+      "header_file_size": 8212896,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes19.dex"
+    },
+    {
+      "bytes": 10073772,
+      "header_consistent": true,
+      "header_file_size": 10073772,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes2.dex"
+    },
+    {
+      "bytes": 7864788,
+      "header_consistent": true,
+      "header_file_size": 7864788,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes20.dex"
+    },
+    {
+      "bytes": 8849460,
+      "header_consistent": true,
+      "header_file_size": 8849460,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes21.dex"
+    },
+    {
+      "bytes": 8350900,
+      "header_consistent": true,
+      "header_file_size": 8350900,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes22.dex"
+    },
+    {
+      "bytes": 8278804,
+      "header_consistent": true,
+      "header_file_size": 8278804,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes23.dex"
+    },
+    {
+      "bytes": 8591320,
+      "header_consistent": true,
+      "header_file_size": 8591320,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes24.dex"
+    },
+    {
+      "bytes": 4872788,
+      "header_consistent": true,
+      "header_file_size": 4872788,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes25.dex"
+    },
+    {
+      "bytes": 1252,
+      "header_consistent": true,
+      "header_file_size": 1252,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes26.dex"
+    },
+    {
+      "bytes": 876,
+      "header_consistent": true,
+      "header_file_size": 876,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes27.dex"
+    },
+    {
+      "bytes": 1032,
+      "header_consistent": true,
+      "header_file_size": 1032,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes28.dex"
+    },
+    {
+      "bytes": 1304,
+      "header_consistent": true,
+      "header_file_size": 1304,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes29.dex"
+    },
+    {
+      "bytes": 11913424,
+      "header_consistent": true,
+      "header_file_size": 11913424,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes3.dex"
+    },
+    {
+      "bytes": 844,
+      "header_consistent": true,
+      "header_file_size": 844,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes30.dex"
+    },
+    {
+      "bytes": 1640,
+      "header_consistent": true,
+      "header_file_size": 1640,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes31.dex"
+    },
+    {
+      "bytes": 1644,
+      "header_consistent": true,
+      "header_file_size": 1644,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes32.dex"
+    },
+    {
+      "bytes": 1620,
+      "header_consistent": true,
+      "header_file_size": 1620,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes33.dex"
+    },
+    {
+      "bytes": 75324,
+      "header_consistent": true,
+      "header_file_size": 75324,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes34.dex"
+    },
+    {
+      "bytes": 1532,
+      "header_consistent": true,
+      "header_file_size": 1532,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes35.dex"
+    },
+    {
+      "bytes": 72172,
+      "header_consistent": true,
+      "header_file_size": 72172,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes36.dex"
+    },
+    {
+      "bytes": 2412692,
+      "header_consistent": true,
+      "header_file_size": 2412692,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes37.dex"
+    },
+    {
+      "bytes": 1280,
+      "header_consistent": true,
+      "header_file_size": 1280,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes38.dex"
+    },
+    {
+      "bytes": 826108,
+      "header_consistent": true,
+      "header_file_size": 826108,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes39.dex"
+    },
+    {
+      "bytes": 8586348,
+      "header_consistent": true,
+      "header_file_size": 8586348,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes4.dex"
+    },
+    {
+      "bytes": 2740,
+      "header_consistent": true,
+      "header_file_size": 2740,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes40.dex"
+    },
+    {
+      "bytes": 2100112,
+      "header_consistent": true,
+      "header_file_size": 2100112,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes41.dex"
+    },
+    {
+      "bytes": 1184,
+      "header_consistent": true,
+      "header_file_size": 1184,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes42.dex"
+    },
+    {
+      "bytes": 1580,
+      "header_consistent": true,
+      "header_file_size": 1580,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes43.dex"
+    },
+    {
+      "bytes": 685380,
+      "header_consistent": true,
+      "header_file_size": 685380,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes44.dex"
+    },
+    {
+      "bytes": 98068,
+      "header_consistent": true,
+      "header_file_size": 98068,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes45.dex"
+    },
+    {
+      "bytes": 844,
+      "header_consistent": true,
+      "header_file_size": 844,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes46.dex"
+    },
+    {
+      "bytes": 2396,
+      "header_consistent": true,
+      "header_file_size": 2396,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes47.dex"
+    },
+    {
+      "bytes": 209796,
+      "header_consistent": true,
+      "header_file_size": 209796,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes48.dex"
+    },
+    {
+      "bytes": 1623276,
+      "header_consistent": true,
+      "header_file_size": 1623276,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes49.dex"
+    },
+    {
+      "bytes": 9382544,
+      "header_consistent": true,
+      "header_file_size": 9382544,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes5.dex"
+    },
+    {
+      "bytes": 53044,
+      "header_consistent": true,
+      "header_file_size": 53044,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes50.dex"
+    },
+    {
+      "bytes": 4531360,
+      "header_consistent": true,
+      "header_file_size": 4531360,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes51.dex"
+    },
+    {
+      "bytes": 7840752,
+      "header_consistent": true,
+      "header_file_size": 7840752,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes6.dex"
+    },
+    {
+      "bytes": 8577576,
+      "header_consistent": true,
+      "header_file_size": 8577576,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes7.dex"
+    },
+    {
+      "bytes": 7273256,
+      "header_consistent": true,
+      "header_file_size": 7273256,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes8.dex"
+    },
+    {
+      "bytes": 8176756,
+      "header_consistent": true,
+      "header_file_size": 8176756,
+      "kind": "root_classpath",
+      "magic": "6465780a30333500",
+      "name": "classes9.dex"
+    }
+  ],
+  "no_scan_or_runtime_claim": true,
+  "schema": "g319-tiktok-full-apk-dex-and-so-census-v1",
+  "so": [
+    {
+      "bytes": 771976,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libAGFX.so"
+    },
+    {
+      "bytes": 5078376,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libAndroidPitayaCore.so"
+    },
+    {
+      "bytes": 100463576,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libAwebviewbytedance.so"
+    },
+    {
+      "bytes": 195760,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libAwplatsupport.so"
+    },
+    {
+      "bytes": 346224,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libBDMicroPythonVM.so"
+    },
+    {
+      "bytes": 469808,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libBDPythonVM.so"
+    },
+    {
+      "bytes": 34648,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libByteAIDT.so"
+    },
+    {
+      "bytes": 51096,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libByteAINN.so"
+    },
+    {
+      "bytes": 462152,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libByteVC1_dec.so"
+    },
+    {
+      "bytes": 79768,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCepAST.so"
+    },
+    {
+      "bytes": 79768,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCepAST_V2.so"
+    },
+    {
+      "bytes": 288800,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCepEngine.so"
+    },
+    {
+      "bytes": 317408,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCepEngine_V2.so"
+    },
+    {
+      "bytes": 296856,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCepProxy.so"
+    },
+    {
+      "bytes": 18184,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCurve25519Donna.so"
+    },
+    {
+      "bytes": 399144,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libCutSameJni.so"
+    },
+    {
+      "bytes": 1105056,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libDavinciResourceJni.so"
+    },
+    {
+      "bytes": 3016816,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libEffectCreatorJni.so"
+    },
+    {
+      "bytes": 51376,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libEffectEditorABTestJni.so"
+    },
+    {
+      "bytes": 346200,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libEffectEditorJni.so"
+    },
+    {
+      "bytes": 75704,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libEncryptor.so"
+    },
+    {
+      "bytes": 1329632,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libNLEEditorJni.so"
+    },
+    {
+      "bytes": 265160,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libNLEMediaJni.so"
+    },
+    {
+      "bytes": 2050888,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libNLEMediaPublicJni.so"
+    },
+    {
+      "bytes": 297368,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libNLEMediaRemoteJni.so"
+    },
+    {
+      "bytes": 264832,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libNLEResourcesDAVJni.so"
+    },
+    {
+      "bytes": 1067352,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libNLETemplateModelJni.so"
+    },
+    {
+      "bytes": 100176,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libPitayaBdComponent.so"
+    },
+    {
+      "bytes": 2085832,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libRealXAudio.so"
+    },
+    {
+      "bytes": 380392,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libRealXBase.so"
+    },
+    {
+      "bytes": 805072,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libSmartMovieJni.so"
+    },
+    {
+      "bytes": 395696,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libTTMStrategyCenter.so"
+    },
+    {
+      "bytes": 364336,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libTTMachineCore.so"
+    },
+    {
+      "bytes": 198552,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libTTNativeML.so"
+    },
+    {
+      "bytes": 137272,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/lib_jbmf.so"
+    },
+    {
+      "bytes": 104496,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/lib_jhmp.so"
+    },
+    {
+      "bytes": 55720,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libalog.so"
+    },
+    {
+      "bytes": 67704,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libanrthanos.so"
+    },
+    {
+      "bytes": 68024,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libarcore_sdk_c.so"
+    },
+    {
+      "bytes": 100800,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libarcore_sdk_jni.so"
+    },
+    {
+      "bytes": 175608,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libart_sym.so"
+    },
+    {
+      "bytes": 67584,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libartshadowhook.so"
+    },
+    {
+      "bytes": 116768,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libaudio_fingerprint_sdk.so"
+    },
+    {
+      "bytes": 4362376,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libaudioeffect.so"
+    },
+    {
+      "bytes": 460744,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libavmdlbase.so"
+    },
+    {
+      "bytes": 2459880,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libavmdlp2pv2.so"
+    },
+    {
+      "bytes": 1214744,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libavmdlv2.so"
+    },
+    {
+      "bytes": 100728,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbach-sdk-jni.so"
+    },
+    {
+      "bytes": 1820960,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbase_live.so"
+    },
+    {
+      "bytes": 313392,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbat.so"
+    },
+    {
+      "bytes": 68584,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbdheif.so"
+    },
+    {
+      "bytes": 606856,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbdhm_native.so"
+    },
+    {
+      "bytes": 150136,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbdmpg123.so"
+    },
+    {
+      "bytes": 88784,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbdsword.so"
+    },
+    {
+      "bytes": 837696,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbdvideouploader.so"
+    },
+    {
+      "bytes": 231248,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbdzstd.so"
+    },
+    {
+      "bytes": 4224904,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbmf_hydra.so"
+    },
+    {
+      "bytes": 1394216,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbmf_hydra_lite.so"
+    },
+    {
+      "bytes": 129056,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbmf_mods.so"
+    },
+    {
+      "bytes": 399496,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbmf_module_sdk.so"
+    },
+    {
+      "bytes": 182328,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbreakpad_client.so"
+    },
+    {
+      "bytes": 396040,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbtch_collection.so"
+    },
+    {
+      "bytes": 18184,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbuffer.so"
+    },
+    {
+      "bytes": 51416,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbvcparser.so"
+    },
+    {
+      "bytes": 503168,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbyteVC2dec.so"
+    },
+    {
+      "bytes": 1313432,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbyteaudio.so"
+    },
+    {
+      "bytes": 673992,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytebench.so"
+    },
+    {
+      "bytes": 313800,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytedt.so"
+    },
+    {
+      "bytes": 59016,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytehook.so"
+    },
+    {
+      "bytes": 822392,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytelink.so"
+    },
+    {
+      "bytes": 67408,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytemonitor.so"
+    },
+    {
+      "bytes": 3000192,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytenn.so"
+    },
+    {
+      "bytes": 51232,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytennwrapper.so"
+    },
+    {
+      "bytes": 544512,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytevc0.so"
+    },
+    {
+      "bytes": 1266536,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytevc1enc.so"
+    },
+    {
+      "bytes": 2142720,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libbytevc1enc10b.so"
+    },
+    {
+      "bytes": 911696,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libc++_shared.so"
+    },
+    {
+      "bytes": 51240,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libconfigcenter.so"
+    },
+    {
+      "bytes": 4936,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libcrashpad_handler_trampoline.so"
+    },
+    {
+      "bytes": 18272,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libdelta.so"
+    },
+    {
+      "bytes": 773560,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfast_engine.so"
+    },
+    {
+      "bytes": 935696,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfastcv.so"
+    },
+    {
+      "bytes": 559624,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfdk-aac.so"
+    },
+    {
+      "bytes": 1139496,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libffmpeg_dashdec.so"
+    },
+    {
+      "bytes": 18184,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfile_lock.so"
+    },
+    {
+      "bytes": 51320,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfileprotect.so"
+    },
+    {
+      "bytes": 7320,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libflipped.so"
+    },
+    {
+      "bytes": 18280,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libflock-lib.so"
+    },
+    {
+      "bytes": 51024,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libfly-main-color-lib.so"
+    },
+    {
+      "bytes": 329704,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libgaia_lib.so"
+    },
+    {
+      "bytes": 119768,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libgeckox_bspatch.so"
+    },
+    {
+      "bytes": 39408,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libgifimage.so"
+    },
+    {
+      "bytes": 27504,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libgodzilla-memsponge.so"
+    },
+    {
+      "bytes": 34616,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libgodzilla-sysopt.so"
+    },
+    {
+      "bytes": 133032,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libh3-java.so"
+    },
+    {
+      "bytes": 18424,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libhelios_bm.so"
+    },
+    {
+      "bytes": 359680,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libhmp.so"
+    },
+    {
+      "bytes": 100408,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libicu.so"
+    },
+    {
+      "bytes": 67616,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libiesapplogger.so"
+    },
+    {
+      "bytes": 264328,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libimagepipeline.so"
+    },
+    {
+      "bytes": 30880,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libjarvis-metrics.so"
+    },
+    {
+      "bytes": 547888,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libjarvis-trace.so"
+    },
+    {
+      "bytes": 305488,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libjato.so"
+    },
+    {
+      "bytes": 166144,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libjazz.so"
+    },
+    {
+      "bytes": 157720,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libjnidispatch.so"
+    },
+    {
+      "bytes": 310624,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libkeva.so"
+    },
+    {
+      "bytes": 15800,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libkomprese-decompressor.so"
+    },
+    {
+      "bytes": 1166480,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libkrypton.so"
+    },
+    {
+      "bytes": 182544,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libkryptonaurum.so"
+    },
+    {
+      "bytes": 116848,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libkryptoneffect.so"
+    },
+    {
+      "bytes": 1873568,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblens.so"
+    },
+    {
+      "bytes": 2341312,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblink_mic_sdk.so"
+    },
+    {
+      "bytes": 1100480,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libliveio.so"
+    },
+    {
+      "bytes": 1886960,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblivepusher.so"
+    },
+    {
+      "bytes": 919576,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblivestrategy.so"
+    },
+    {
+      "bytes": 2455856,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblynx.so"
+    },
+    {
+      "bytes": 51320,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblynx_krypton.so"
+    },
+    {
+      "bytes": 166112,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblynx_markdown.so"
+    },
+    {
+      "bytes": 100624,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblynx_v8_bridge.so"
+    },
+    {
+      "bytes": 34800,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblynxservice.so"
+    },
+    {
+      "bytes": 286336,
+      "class": null,
+      "header_hex": "7f4b4f4d0100000079b8f899f8b33c00",
+      "kind": "other",
+      "machine": null,
+      "name": "lib/arm64-v8a/liblynxsuit.so"
+    },
+    {
+      "bytes": 51448,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblynxtrace.so"
+    },
+    {
+      "bytes": 83560,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmdlttkmedianetloader.so"
+    },
+    {
+      "bytes": 100088,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmdlttquicheloader.so"
+    },
+    {
+      "bytes": 9162896,
+      "class": null,
+      "header_hex": "7f4b4f4d0100000079b8f899d0a8d212",
+      "kind": "other",
+      "machine": null,
+      "name": "lib/arm64-v8a/libmedia.so"
+    },
+    {
+      "bytes": 165952,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmemrelief.so"
+    },
+    {
+      "bytes": 1849224,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmetasec_ov.so"
+    },
+    {
+      "bytes": 657960,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmio_live.so"
+    },
+    {
+      "bytes": 67624,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmmt.so"
+    },
+    {
+      "bytes": 182656,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libmonitorcollector-lib.so"
+    },
+    {
+      "bytes": 264288,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnapi.so"
+    },
+    {
+      "bytes": 85888,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnapi_v8.so"
+    },
+    {
+      "bytes": 22536,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnative-filters.so"
+    },
+    {
+      "bytes": 51528,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnativeaudio.so"
+    },
+    {
+      "bytes": 18256,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnetecho.so"
+    },
+    {
+      "bytes": 43040,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnewep.so"
+    },
+    {
+      "bytes": 80712,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth.so"
+    },
+    {
+      "bytes": 10136,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_bt.so"
+    },
+    {
+      "bytes": 30656,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_dl.so"
+    },
+    {
+      "bytes": 121704,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_dumper.so"
+    },
+    {
+      "bytes": 39448,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_fd_tracker.so"
+    },
+    {
+      "bytes": 10064,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_fp_unw.so"
+    },
+    {
+      "bytes": 27000,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_logcat.so"
+    },
+    {
+      "bytes": 92096,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_tools.so"
+    },
+    {
+      "bytes": 333880,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_unw.so"
+    },
+    {
+      "bytes": 6048,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_wrapper.so"
+    },
+    {
+      "bytes": 42920,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libnpth_xasan.so"
+    },
+    {
+      "bytes": 6490472,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libonetex.so"
+    },
+    {
+      "bytes": 411168,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libopus.so"
+    },
+    {
+      "bytes": 1096328,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liborbuculum.so"
+    },
+    {
+      "bytes": 88320,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liborbuculumadapter.so"
+    },
+    {
+      "bytes": 14160,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libotis_attrib.so"
+    },
+    {
+      "bytes": 39000,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libotisopt.so"
+    },
+    {
+      "bytes": 2466336,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libp2plivevdp.so"
+    },
+    {
+      "bytes": 22536,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpipo-security-sdk.so"
+    },
+    {
+      "bytes": 18424,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpns_crypto.so"
+    },
+    {
+      "bytes": 330032,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpns_ttmachine_adapter.so"
+    },
+    {
+      "bytes": 3296872,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpreload.so"
+    },
+    {
+      "bytes": 471424,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libprofiler.so"
+    },
+    {
+      "bytes": 100384,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpsiencrypt.so"
+    },
+    {
+      "bytes": 51304,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpsp_engine.so"
+    },
+    {
+      "bytes": 51232,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpumbaa-network.so"
+    },
+    {
+      "bytes": 67616,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpunch.so"
+    },
+    {
+      "bytes": 5133568,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpy-cv-numpycv.so"
+    },
+    {
+      "bytes": 1816856,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpy-numpy.so"
+    },
+    {
+      "bytes": 2229160,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libpythonA.so"
+    },
+    {
+      "bytes": 1739200,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libquick.so"
+    },
+    {
+      "bytes": 26736,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libres_memory.so"
+    },
+    {
+      "bytes": 67936,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libreschecker.so"
+    },
+    {
+      "bytes": 108672,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libresource_monitor.so"
+    },
+    {
+      "bytes": 677976,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/librex.so"
+    },
+    {
+      "bytes": 34904,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libropaencrypt.so"
+    },
+    {
+      "bytes": 2821688,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/librtmglobal.so"
+    },
+    {
+      "bytes": 262432,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libserval_svg.so"
+    },
+    {
+      "bytes": 79440,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libshadowhook.so"
+    },
+    {
+      "bytes": 1112,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libshadowhook_nothing.so"
+    },
+    {
+      "bytes": 84096,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsimba.so"
+    },
+    {
+      "bytes": 71896,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libskbase.so"
+    },
+    {
+      "bytes": 1116440,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libskity.so"
+    },
+    {
+      "bytes": 83984,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsliver.so"
+    },
+    {
+      "bytes": 18256,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libspeechengine.so"
+    },
+    {
+      "bytes": 18256,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libspeechepg.so"
+    },
+    {
+      "bytes": 937928,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libspeechsdk.so"
+    },
+    {
+      "bytes": 2643504,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libspeechspg.so"
+    },
+    {
+      "bytes": 5538968,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsscronet.so"
+    },
+    {
+      "bytes": 391992,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libstatic-webp.so"
+    },
+    {
+      "bytes": 34920,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libstorage-hook.so"
+    },
+    {
+      "bytes": 346488,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsysoptimizer.so"
+    },
+    {
+      "bytes": 55376,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtailor.so"
+    },
+    {
+      "bytes": 59288,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtexturerender_native.so"
+    },
+    {
+      "bytes": 2932792,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtt_c2pa_sdk.so"
+    },
+    {
+      "bytes": 2932792,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtt_c2pa_sdk_d.so"
+    },
+    {
+      "bytes": 380808,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttboringssl.so"
+    },
+    {
+      "bytes": 1220008,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttcrypto.so"
+    },
+    {
+      "bytes": 51096,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttdemux.so"
+    },
+    {
+      "bytes": 3287032,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttffmpeg.so"
+    },
+    {
+      "bytes": 165712,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttheif_dec.so"
+    },
+    {
+      "bytes": 632064,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttkmedianet.so"
+    },
+    {
+      "bytes": 1132880,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttlivestreamercore.so"
+    },
+    {
+      "bytes": 55232,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttmcmaf.so"
+    },
+    {
+      "bytes": 3349120,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttmplayer.so"
+    },
+    {
+      "bytes": 9920,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttmverify.so"
+    },
+    {
+      "bytes": 26480,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttmverifylite.so"
+    },
+    {
+      "bytes": 706576,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttpreload.so"
+    },
+    {
+      "bytes": 4737784,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttquic.so"
+    },
+    {
+      "bytes": 330280,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libttr.so"
+    },
+    {
+      "bytes": 207088,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libtttext_lite.so"
+    },
+    {
+      "bytes": 96128,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/liburiparser.so"
+    },
+    {
+      "bytes": 19526696,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libv8_libfull.cr.so"
+    },
+    {
+      "bytes": 215176,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvcbasekit.so"
+    },
+    {
+      "bytes": 575520,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvcdatacenter.so"
+    },
+    {
+      "bytes": 214960,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvcn.so"
+    },
+    {
+      "bytes": 18184,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvcnverify.so"
+    },
+    {
+      "bytes": 34640,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvcnverifylite.so"
+    },
+    {
+      "bytes": 5896,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvctfo.so"
+    },
+    {
+      "bytes": 18520,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvebytevc1enc10bwrapper.so"
+    },
+    {
+      "bytes": 18520,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvebytevc1enc8bwrapper.so"
+    },
+    {
+      "bytes": 174184,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvegasdk.so"
+    },
+    {
+      "bytes": 51224,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvideodec.so"
+    },
+    {
+      "bytes": 1870064,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvoip.so"
+    },
+    {
+      "bytes": 9359496,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libvolcenginertc.so"
+    },
+    {
+      "bytes": 1067160,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libwasm.so"
+    },
+    {
+      "bytes": 26448,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libwatson.so"
+    },
+    {
+      "bytes": 788416,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libwcdb.so"
+    },
+    {
+      "bytes": 38584,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libwhisper.so"
+    },
+    {
+      "bytes": 313400,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libworker.so"
+    },
+    {
+      "bytes": 34792,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libxtrace.so"
+    },
+    {
+      "bytes": 214960,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libyuv.so"
+    },
+    {
+      "bytes": 20304,
+      "class": 2,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 183,
+      "name": "lib/arm64-v8a/libzoin.so"
+    },
+    {
+      "bytes": 513720,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libAGFX.so"
+    },
+    {
+      "bytes": 3138608,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libAndroidPitayaCore.so"
+    },
+    {
+      "bytes": 65812488,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libAwebviewbytedance.so"
+    },
+    {
+      "bytes": 102800,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libAwplatsupport.so"
+    },
+    {
+      "bytes": 243420,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libBDMicroPythonVM.so"
+    },
+    {
+      "bytes": 329816,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libBDPythonVM.so"
+    },
+    {
+      "bytes": 17964,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libByteAIDT.so"
+    },
+    {
+      "bytes": 30296,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libByteAINN.so"
+    },
+    {
+      "bytes": 461760,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libByteVC1_dec.so"
+    },
+    {
+      "bytes": 50816,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCepAST.so"
+    },
+    {
+      "bytes": 54912,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCepAST_V2.so"
+    },
+    {
+      "bytes": 186028,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCepEngine.so"
+    },
+    {
+      "bytes": 206476,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCepEngine_V2.so"
+    },
+    {
+      "bytes": 185984,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCepProxy.so"
+    },
+    {
+      "bytes": 22096,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCurve25519Donna.so"
+    },
+    {
+      "bytes": 263860,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libCutSameJni.so"
+    },
+    {
+      "bytes": 743600,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libDavinciResourceJni.so"
+    },
+    {
+      "bytes": 2172548,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libEffectCreatorJni.so"
+    },
+    {
+      "bytes": 26268,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libEffectEditorABTestJni.so"
+    },
+    {
+      "bytes": 218776,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libEffectEditorJni.so"
+    },
+    {
+      "bytes": 75348,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libEncryptor.so"
+    },
+    {
+      "bytes": 988952,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libNLEEditorJni.so"
+    },
+    {
+      "bytes": 202752,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libNLEMediaJni.so"
+    },
+    {
+      "bytes": 1484696,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libNLEMediaPublicJni.so"
+    },
+    {
+      "bytes": 194224,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libNLEMediaRemoteJni.so"
+    },
+    {
+      "bytes": 194408,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libNLEResourcesDAVJni.so"
+    },
+    {
+      "bytes": 866080,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libNLETemplateModelJni.so"
+    },
+    {
+      "bytes": 58916,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libPitayaBdComponent.so"
+    },
+    {
+      "bytes": 1383528,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libRealXAudio.so"
+    },
+    {
+      "bytes": 239972,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libRealXBase.so"
+    },
+    {
+      "bytes": 530160,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libSmartMovieJni.so"
+    },
+    {
+      "bytes": 333692,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libTTMStrategyCenter.so"
+    },
+    {
+      "bytes": 236300,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libTTMachineCore.so"
+    },
+    {
+      "bytes": 136832,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libTTNativeML.so"
+    },
+    {
+      "bytes": 91684,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/lib_jbmf.so"
+    },
+    {
+      "bytes": 71204,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/lib_jhmp.so"
+    },
+    {
+      "bytes": 38768,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libalog.so"
+    },
+    {
+      "bytes": 34448,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libanrthanos.so"
+    },
+    {
+      "bytes": 50828,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libarcore_sdk_c.so"
+    },
+    {
+      "bytes": 63104,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libarcore_sdk_jni.so"
+    },
+    {
+      "bytes": 122840,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libart_sym.so"
+    },
+    {
+      "bytes": 67236,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libartshadowhook.so"
+    },
+    {
+      "bytes": 91736,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaudio_fingerprint_sdk.so"
+    },
+    {
+      "bytes": 2927920,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libaudioeffect.so"
+    },
+    {
+      "bytes": 296580,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavmdlbase.so"
+    },
+    {
+      "bytes": 1275660,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavmdlp2pv2.so"
+    },
+    {
+      "bytes": 1210228,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libavmdlv2.so"
+    },
+    {
+      "bytes": 71300,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbach-sdk-jni.so"
+    },
+    {
+      "bytes": 1787732,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbase_live.so"
+    },
+    {
+      "bytes": 308872,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbat.so"
+    },
+    {
+      "bytes": 39004,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbdheif.so"
+    },
+    {
+      "bytes": 321120,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbdhm_native.so"
+    },
+    {
+      "bytes": 137056,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbdmpg123.so"
+    },
+    {
+      "bytes": 88264,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbdsword.so"
+    },
+    {
+      "bytes": 624412,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbdvideouploader.so"
+    },
+    {
+      "bytes": 181836,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbdzstd.so"
+    },
+    {
+      "bytes": 3327256,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbmf_hydra.so"
+    },
+    {
+      "bytes": 1201224,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbmf_hydra_lite.so"
+    },
+    {
+      "bytes": 104024,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbmf_mods.so"
+    },
+    {
+      "bytes": 243384,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbmf_module_sdk.so"
+    },
+    {
+      "bytes": 99972,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbreakpad_client.so"
+    },
+    {
+      "bytes": 280744,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbtch_collection.so"
+    },
+    {
+      "bytes": 18000,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbuffer.so"
+    },
+    {
+      "bytes": 34588,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbvcparser.so"
+    },
+    {
+      "bytes": 416772,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbyteVC2dec.so"
+    },
+    {
+      "bytes": 866212,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbyteaudio.so"
+    },
+    {
+      "bytes": 530156,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytebench.so"
+    },
+    {
+      "bytes": 259972,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytedt.so"
+    },
+    {
+      "bytes": 41844,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytehook.so"
+    },
+    {
+      "bytes": 805048,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytelink.so"
+    },
+    {
+      "bytes": 50868,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytemonitor.so"
+    },
+    {
+      "bytes": 2188988,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytenn.so"
+    },
+    {
+      "bytes": 38488,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytennwrapper.so"
+    },
+    {
+      "bytes": 429472,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytevc0.so"
+    },
+    {
+      "bytes": 953708,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytevc1enc.so"
+    },
+    {
+      "bytes": 1242676,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libbytevc1enc10b.so"
+    },
+    {
+      "bytes": 554808,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libc++_shared.so"
+    },
+    {
+      "bytes": 42672,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libconfigcenter.so"
+    },
+    {
+      "bytes": 3152,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libcrashpad_handler_trampoline.so"
+    },
+    {
+      "bytes": 13892,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libdelta.so"
+    },
+    {
+      "bytes": 530904,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfast_engine.so"
+    },
+    {
+      "bytes": 779788,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfastcv.so"
+    },
+    {
+      "bytes": 464724,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfdk-aac.so"
+    },
+    {
+      "bytes": 1084736,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libffmpeg_dashdec.so"
+    },
+    {
+      "bytes": 13904,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfile_lock.so"
+    },
+    {
+      "bytes": 50828,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfileprotect.so"
+    },
+    {
+      "bytes": 5124,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libflipped.so"
+    },
+    {
+      "bytes": 13924,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libflock-lib.so"
+    },
+    {
+      "bytes": 38488,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libfly-main-color-lib.so"
+    },
+    {
+      "bytes": 243380,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libgaia_lib.so"
+    },
+    {
+      "bytes": 86648,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libgeckox_bspatch.so"
+    },
+    {
+      "bytes": 26496,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libgifimage.so"
+    },
+    {
+      "bytes": 26648,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libgodzilla-memsponge.so"
+    },
+    {
+      "bytes": 99988,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libgodzilla-sysopt.so"
+    },
+    {
+      "bytes": 104064,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libh3-java.so"
+    },
+    {
+      "bytes": 13972,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libhelios_bm.so"
+    },
+    {
+      "bytes": 227872,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libhmp.so"
+    },
+    {
+      "bytes": 54848,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libicu.so"
+    },
+    {
+      "bytes": 42584,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libiesapplogger.so"
+    },
+    {
+      "bytes": 165584,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libimagepipeline.so"
+    },
+    {
+      "bytes": 30464,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libjarvis-metrics.so"
+    },
+    {
+      "bytes": 350408,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libjarvis-trace.so"
+    },
+    {
+      "bytes": 206696,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libjato.so"
+    },
+    {
+      "bytes": 120508,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libjazz.so"
+    },
+    {
+      "bytes": 116284,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libjnidispatch.so"
+    },
+    {
+      "bytes": 211248,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libkeva.so"
+    },
+    {
+      "bytes": 16904,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libkomprese-decompressor.so"
+    },
+    {
+      "bytes": 981280,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libkrypton.so"
+    },
+    {
+      "bytes": 120500,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libkryptonaurum.so"
+    },
+    {
+      "bytes": 71256,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libkryptoneffect.so"
+    },
+    {
+      "bytes": 1319932,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblens.so"
+    },
+    {
+      "bytes": 1559136,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblink_mic_sdk.so"
+    },
+    {
+      "bytes": 685896,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libliveio.so"
+    },
+    {
+      "bytes": 1390640,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblivepusher.so"
+    },
+    {
+      "bytes": 485056,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblivestrategy.so"
+    },
+    {
+      "bytes": 2112256,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblynx.so"
+    },
+    {
+      "bytes": 18012,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblynx_krypton.so"
+    },
+    {
+      "bytes": 112312,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblynx_markdown.so"
+    },
+    {
+      "bytes": 54964,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblynx_v8_bridge.so"
+    },
+    {
+      "bytes": 38460,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblynxservice.so"
+    },
+    {
+      "bytes": 265919,
+      "class": null,
+      "header_hex": "7f4b4f4d0100000079b8f89988c42600",
+      "kind": "other",
+      "machine": null,
+      "name": "lib/armeabi-v7a/liblynxsuit.so"
+    },
+    {
+      "bytes": 30400,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblynxtrace.so"
+    },
+    {
+      "bytes": 71096,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmdlttkmedianetloader.so"
+    },
+    {
+      "bytes": 91768,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmdlttquicheloader.so"
+    },
+    {
+      "bytes": 9229868,
+      "class": null,
+      "header_hex": "7f4b4f4d0100000079b8f8999c87fd0d",
+      "kind": "other",
+      "machine": null,
+      "name": "lib/armeabi-v7a/libmedia.so"
+    },
+    {
+      "bytes": 79460,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmemrelief.so"
+    },
+    {
+      "bytes": 1167376,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmetasec_ov.so"
+    },
+    {
+      "bytes": 337732,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmio_live.so"
+    },
+    {
+      "bytes": 54868,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmmt.so"
+    },
+    {
+      "bytes": 112476,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libmonitorcollector-lib.so"
+    },
+    {
+      "bytes": 144980,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnapi.so"
+    },
+    {
+      "bytes": 39372,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnapi_v8.so"
+    },
+    {
+      "bytes": 13944,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnative-filters.so"
+    },
+    {
+      "bytes": 30444,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnativeaudio.so"
+    },
+    {
+      "bytes": 22144,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnetecho.so"
+    },
+    {
+      "bytes": 26148,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnewep.so"
+    },
+    {
+      "bytes": 67748,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth.so"
+    },
+    {
+      "bytes": 9816,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_bt.so"
+    },
+    {
+      "bytes": 26204,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_dl.so"
+    },
+    {
+      "bytes": 108500,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_dumper.so"
+    },
+    {
+      "bytes": 38888,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_fd_tracker.so"
+    },
+    {
+      "bytes": 26480,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_logcat.so"
+    },
+    {
+      "bytes": 71328,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_tools.so"
+    },
+    {
+      "bytes": 194180,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_unw.so"
+    },
+    {
+      "bytes": 5660,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libnpth_wrapper.so"
+    },
+    {
+      "bytes": 4658980,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libonetex.so"
+    },
+    {
+      "bytes": 386624,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libopus.so"
+    },
+    {
+      "bytes": 686020,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liborbuculum.so"
+    },
+    {
+      "bytes": 55036,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liborbuculumadapter.so"
+    },
+    {
+      "bytes": 22052,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libotis_attrib.so"
+    },
+    {
+      "bytes": 22128,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libotisopt.so"
+    },
+    {
+      "bytes": 2327192,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libp2plivevdp.so"
+    },
+    {
+      "bytes": 26284,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpipo-security-sdk.so"
+    },
+    {
+      "bytes": 34468,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpns_crypto.so"
+    },
+    {
+      "bytes": 247640,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpns_ttmachine_adapter.so"
+    },
+    {
+      "bytes": 2361804,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpreload.so"
+    },
+    {
+      "bytes": 275364,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libprofiler.so"
+    },
+    {
+      "bytes": 63064,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpsiencrypt.so"
+    },
+    {
+      "bytes": 34484,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpsp_engine.so"
+    },
+    {
+      "bytes": 26200,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpumbaa-network.so"
+    },
+    {
+      "bytes": 50816,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpunch.so"
+    },
+    {
+      "bytes": 3585320,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpy-cv-numpycv.so"
+    },
+    {
+      "bytes": 1228716,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpy-numpy.so"
+    },
+    {
+      "bytes": 1509128,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libpythonA.so"
+    },
+    {
+      "bytes": 416076,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libquick.so"
+    },
+    {
+      "bytes": 13912,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libres_memory.so"
+    },
+    {
+      "bytes": 51016,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libreschecker.so"
+    },
+    {
+      "bytes": 75496,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libresource_monitor.so"
+    },
+    {
+      "bytes": 579308,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/librex.so"
+    },
+    {
+      "bytes": 26296,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libropaencrypt.so"
+    },
+    {
+      "bytes": 1771824,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/librtmglobal.so"
+    },
+    {
+      "bytes": 142028,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libserval_svg.so"
+    },
+    {
+      "bytes": 62076,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libshadowhook.so"
+    },
+    {
+      "bytes": 704,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libshadowhook_nothing.so"
+    },
+    {
+      "bytes": 71328,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsimba.so"
+    },
+    {
+      "bytes": 59076,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libskbase.so"
+    },
+    {
+      "bytes": 747172,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libskity.so"
+    },
+    {
+      "bytes": 87720,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsliver.so"
+    },
+    {
+      "bytes": 22104,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libspeechengine.so"
+    },
+    {
+      "bytes": 22104,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libspeechepg.so"
+    },
+    {
+      "bytes": 596584,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libspeechsdk.so"
+    },
+    {
+      "bytes": 1777052,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libspeechspg.so"
+    },
+    {
+      "bytes": 3386908,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsscronet.so"
+    },
+    {
+      "bytes": 329740,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libstatic-webp.so"
+    },
+    {
+      "bytes": 18060,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libstorage-hook.so"
+    },
+    {
+      "bytes": 321356,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsysoptimizer.so"
+    },
+    {
+      "bytes": 34420,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtailor.so"
+    },
+    {
+      "bytes": 38488,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtexturerender_native.so"
+    },
+    {
+      "bytes": 2083044,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtt_c2pa_sdk.so"
+    },
+    {
+      "bytes": 2083044,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtt_c2pa_sdk_d.so"
+    },
+    {
+      "bytes": 248540,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttboringssl.so"
+    },
+    {
+      "bytes": 814964,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttcrypto.so"
+    },
+    {
+      "bytes": 42640,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttdemux.so"
+    },
+    {
+      "bytes": 2647716,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttffmpeg.so"
+    },
+    {
+      "bytes": 124492,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttheif_dec.so"
+    },
+    {
+      "bytes": 457680,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttkmedianet.so"
+    },
+    {
+      "bytes": 927456,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttlivestreamercore.so"
+    },
+    {
+      "bytes": 50836,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttmcmaf.so"
+    },
+    {
+      "bytes": 2232492,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttmplayer.so"
+    },
+    {
+      "bytes": 13748,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttmverify.so"
+    },
+    {
+      "bytes": 17956,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttmverifylite.so"
+    },
+    {
+      "bytes": 468688,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttpreload.so"
+    },
+    {
+      "bytes": 3274988,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttquic.so"
+    },
+    {
+      "bytes": 223052,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libttr.so"
+    },
+    {
+      "bytes": 145024,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libtttext_lite.so"
+    },
+    {
+      "bytes": 75376,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liburiparser.so"
+    },
+    {
+      "bytes": 12982040,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libv8_libfull.cr.so"
+    },
+    {
+      "bytes": 157428,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvcbasekit.so"
+    },
+    {
+      "bytes": 468608,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvcdatacenter.so"
+    },
+    {
+      "bytes": 124556,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvcn.so"
+    },
+    {
+      "bytes": 9720,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvcnverify.so"
+    },
+    {
+      "bytes": 13860,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvcnverifylite.so"
+    },
+    {
+      "bytes": 13904,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvctfo.so"
+    },
+    {
+      "bytes": 18188,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvebytevc1enc10bwrapper.so"
+    },
+    {
+      "bytes": 22284,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvebytevc1enc8bwrapper.so"
+    },
+    {
+      "bytes": 112256,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvegasdk.so"
+    },
+    {
+      "bytes": 38560,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvideodec.so"
+    },
+    {
+      "bytes": 1726204,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvoip.so"
+    },
+    {
+      "bytes": 6303460,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libvolcenginertc.so"
+    },
+    {
+      "bytes": 1140400,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwasm.so"
+    },
+    {
+      "bytes": 26200,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwatson.so"
+    },
+    {
+      "bytes": 575136,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwcdb.so"
+    },
+    {
+      "bytes": 46620,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libwhisper.so"
+    },
+    {
+      "bytes": 161344,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libworker.so"
+    },
+    {
+      "bytes": 26252,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libxtrace.so"
+    },
+    {
+      "bytes": 157472,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libyuv.so"
+    },
+    {
+      "bytes": 16060,
+      "class": 1,
+      "header_hex": null,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libzoin.so"
+    }
+  ],
+  "zip_entries": 20205
+}

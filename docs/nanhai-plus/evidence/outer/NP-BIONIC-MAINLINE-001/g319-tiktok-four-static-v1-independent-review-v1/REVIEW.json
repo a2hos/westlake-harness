@@ -1,0 +1,36 @@
+{
+  "schema": "g319-tiktok-four-static-v1-independent-peer-review",
+  "at_utc": "2026-10-04T17:37:05.167678+00:00",
+  "decision": "NO_GO_COMPLETE_STATIC_V1",
+  "result_path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/RESULT.json",
+  "result_sha256": "de1b18a08639b441583c237131d610cfb608fc34ac7a7e03d109c1bfc7981e63",
+  "phase_source_sha256": "dc15be36b1f1ce419ace2c5b3074d0310235076d00979a82107e6261243f5a41",
+  "census_sha256": "53f7841aac873dc6fec48c845b2b9794f2096b5d1b5f9c1c6c5eb2a485885cb5",
+  "elf_phase_result_sha256": "a7932c5e24edc8d9f5acbef86f517c533fba9f0aa97296dddb888f49b1e548ca",
+  "raw_admission_sha256": "3f4e60a5de6c611a452640545ead7f18d640a05f5de9d14f05df5dbe26511ac4",
+  "phase_rcs": {
+    "zip": 0,
+    "metadata": 0,
+    "elf": 2,
+    "dex": "NOT_RUN"
+  },
+  "root_census_only": {
+    "dex_entries": 51,
+    "true_arm64_elf": 227,
+    "arm32_elf": 225,
+    "non_elf_so_path_entries": 4
+  },
+  "failure_cause": "ELF phase loops all census ELF rows but asserts every row is arm64-v8a/ELF64/EM_AARCH64. The 225 legitimate armeabi-v7a ELF32/EM_ARM rows violate that assertion. This is scanner orchestration error; it does not invalidate raw APK identity.",
+  "dex_boundary": "ZIP/census lists 51 root .dex but no DEX phase ran, so scanner-level complete DEX inventory is unproven. Embedded DEX 0 is census claim only.",
+  "non_elf_boundary": "Four .so-named non-ELF members are separately classified in census/ZIP facts; cannot count them as true ELF or hide them in a successful ELF phase.",
+  "count_boundary": "No complete-static count, DEX count, tool pass, startup, or device credit from v1. Existing root raw admission remains separate.",
+  "v2_minimal_correction": "New immutable attempt: classify all 456 .so paths by magic/ELF class/machine; scan 227 arm64 ELF with the appropriate ABI; retain 225 ARM32 ELF and 4 non-ELF as explicit separate classes; then run DEX phase and verify source guards before/after. Do not edit/replay v1.",
+  "peer_actions": {
+    "network": 0,
+    "ssh": 0,
+    "device": 0,
+    "container": 0,
+    "bridge_writes": 0,
+    "count_writes": 0
+  }
+}

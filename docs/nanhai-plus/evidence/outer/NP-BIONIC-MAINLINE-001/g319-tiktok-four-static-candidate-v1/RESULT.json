@@ -1,0 +1,88 @@
+{
+  "at_utc": "2026-10-04T17:36:14.682357+00:00",
+  "authoritative_count_changed": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "embedded_dex": 0,
+  "four_phases_rc0": false,
+  "non_elf_so": 4,
+  "rc": 2,
+  "root_dex": 51,
+  "rows": [
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/phase.py",
+        "zip"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 1.58397987508215,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T17:35:45.760063+00:00",
+      "phase": "zip",
+      "rc": 0,
+      "started_at": "2026-10-04T17:35:44.176131+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7855d93b1955d0e3f06d90d457cc602a77fd14c8f055f16ce4233b81bbc34ca7",
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/phase.py",
+        "metadata"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 5.466463792021386,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T17:35:51.227079+00:00",
+      "phase": "metadata",
+      "rc": 0,
+      "started_at": "2026-10-04T17:35:45.760715+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c8cb94c3bbd8ed055abdeb8e80ebf118a7eb33c9756cae601331a8b371307edf",
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin/python3",
+        "-I",
+        "-B",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/phase.py",
+        "elf"
+      ],
+      "cwd": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye",
+      "elapsed_seconds": 23.45451354200486,
+      "environment": {
+        "LC_ALL": "C",
+        "PATH": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/inputs-view/harness-native-hosttool-v1/bin:/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/venvs/harness-python-v1/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "TMPDIR": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g319-tiktok-four-static-candidate-v1/tmp"
+      },
+      "finished_at": "2026-10-04T17:36:14.681784+00:00",
+      "phase": "elf",
+      "rc": 2,
+      "started_at": "2026-10-04T17:35:51.227664+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e95d4b5bb9d6e5629316ef21cf2a97f5c19db8fb44f86ba41ea7969e59310442",
+      "timeout_seconds": 900
+    }
+  ],
+  "schema": "g319-tiktok-four-static-terminal-candidate-v1",
+  "startup_proven": false,
+  "true_arm64_elf": 227
+}
