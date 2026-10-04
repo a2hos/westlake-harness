@@ -1,0 +1,48 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 16,
+  "app_name": "Clock",
+  "bytes": 9110265,
+  "features": [
+    "android.hardware.faketouch",
+    "android.hardware.screen.portrait"
+  ],
+  "filename": "fossify-clock-1.6.0.apk",
+  "main_activities": [
+    "org.fossify.clock.activities.SplashActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 4,
+  "package": "org.fossify.clock",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-fossify-clock-v1/fossify-clock-1.6.0.apk",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.USE_EXACT_ALARM",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.android.alarm.permission.SET_ALARM",
+    "org.fossify.android.permission.WRITE_GLOBAL_SETTINGS"
+  ],
+  "providers": 1,
+  "receivers": 11,
+  "services": 5,
+  "sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "signing_certificate_sha256": [
+    "affdb124d3f4720c2f98dbca9eacba0514fba4306e20a2786c861c3c0d6ff292"
+  ],
+  "target_sdk": "36",
+  "version_code": "10",
+  "version_name": "1.6.0"
+}

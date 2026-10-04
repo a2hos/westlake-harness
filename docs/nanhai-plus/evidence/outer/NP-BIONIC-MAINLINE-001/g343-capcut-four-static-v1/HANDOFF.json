@@ -1,0 +1,66 @@
+{
+  "all_146_readelf_ok": true,
+  "apk_bytes": 319992455,
+  "apk_sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+  "arm64_path_misplaced_arm32_elf": [
+    {
+      "bytes": 66956,
+      "class": 1,
+      "endian": 1,
+      "kind": "elf",
+      "machine": 40,
+      "name": "lib/arm64-v8a/libcvt.so",
+      "sha256": "336c9807054a2f88703509b6f27edd9d7c82acdbc7f2a50d6b0e2d5c79697153"
+    }
+  ],
+  "at_utc": "2026-10-04T20:50:39.617926+00:00",
+  "decision": "GO_INDEPENDENT_REVIEW_HOST_STATIC_ONLY",
+  "dex_entries": 24,
+  "inventory_sha256": {
+    "classification": "c2827eb8493b3592bbb17a489a281a15e47fcc1003b6e0366f639417c01fee58",
+    "dex": "0b266360d84c40630f56c0812cecefead99e6608fa113ae63f9089a520a2bc2e",
+    "elf": "6f41482a0b8009ea3affe619d1c13f517723daaa8a951a45682540ba4040446b"
+  },
+  "limits": "Candidate evidence for independent review only; no canonical static count update, installation, Bionic target build, device or cold start.",
+  "non_elf_so_entries": 0,
+  "other_arm32_elf_entries": 145,
+  "other_elf_entries": 0,
+  "package": "com.lemon.lvoverseas",
+  "phases": {
+    "dex": {
+      "command_sha256": "e1a118b1056a90cbeb1fe415dca95654702140520ebdd4729be39726133d7b65",
+      "phase_result_sha256": "f746ddaf15f38bfcc7e3988dc234595d49d1f02468420df6361d4028c1d3cbb4",
+      "rc": 0,
+      "timed_out": false
+    },
+    "elf": {
+      "command_sha256": "897040fabb760f4e1da515468a073c08231d418779204ec219f5d0e61ceac1a9",
+      "phase_result_sha256": "fae1f5022d26a68902e828f33fef7733076f6c4dd857c8a380280b693154a346",
+      "rc": 0,
+      "timed_out": false
+    },
+    "metadata": {
+      "command_sha256": "430d10a0391014274e3d2086263476d8e0a31dcfa102bfdf8feefda5aca3b34b",
+      "phase_result_sha256": "bb75997ff30dac01a64eb7325ea5d968c3acbcb8b713705975e81b0bbaa36a11",
+      "rc": 0,
+      "timed_out": false
+    },
+    "zip": {
+      "command_sha256": "f5e0caa568cac26d3fb6f5e14e3b4332c380e2fb883b569da3f2001b0273d7ee",
+      "phase_result_sha256": "f7122a72b2beaf8c8432c2c45acc52605180f7a0303621dd0192a590905bab2f",
+      "rc": 0,
+      "timed_out": false
+    }
+  },
+  "raw_admission_sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
+  "result_sha256": "c521e878ce5613f00240099cdf390c9338bae29ad4a98c6ae57c1ae617e4b207",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "schema": "g343-capcut-four-static-handoff-v1",
+  "start_sha256": "e3514b215c4b8ba276a4a6d68c1b0b086547de4fb89be20c83f730c4bb6eeaf0",
+  "target_sdk": "34",
+  "true_arm64_elf_entries": 146,
+  "version_code": "13601600",
+  "version_name": "13.6.0",
+  "zip_crc_all_ok": true,
+  "zip_entries": 27633
+}

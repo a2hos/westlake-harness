@@ -1,0 +1,4664 @@
+{
+  "candidate_imports_in_r4_map": 54,
+  "candidate_imports_outside_r4_map": [
+    "AHardwareBuffer_acquire",
+    "AHardwareBuffer_allocate",
+    "AHardwareBuffer_describe",
+    "AHardwareBuffer_fromHardwareBuffer",
+    "AHardwareBuffer_lock",
+    "AHardwareBuffer_lockPlanes",
+    "AHardwareBuffer_recvHandleFromUnixSocket",
+    "AHardwareBuffer_release",
+    "AHardwareBuffer_sendHandleToUnixSocket",
+    "AHardwareBuffer_toHardwareBuffer",
+    "AHardwareBuffer_unlock",
+    "AImageReader_acquireLatestImage",
+    "AImageReader_acquireLatestImageAsync",
+    "AImageReader_acquireNextImageAsync",
+    "AImageReader_delete",
+    "AImageReader_getFormat",
+    "AImageReader_getWindow",
+    "AImageReader_new",
+    "AImageReader_newWithUsage",
+    "AImageReader_setImageListener",
+    "AImage_delete",
+    "AImage_deleteAsync",
+    "AImage_getCropRect",
+    "AImage_getHardwareBuffer",
+    "AImage_getHeight",
+    "AImage_getPlaneData",
+    "AImage_getPlanePixelStride",
+    "AImage_getPlaneRowStride",
+    "AImage_getWidth",
+    "AInputEvent_release",
+    "AMotionEvent_getClassification",
+    "ANativeWindow_toSurface"
+  ],
+  "consumers": [
+    {
+      "apk_sha256": "c1fc03a8bad4dac3c400c50764a929ec7a07b02ba572336bfdd9e722a4f96519",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/liborganicmaps.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "908855b464094d9a3b90712b8abcda2a699f224e2e97d4a32258361ffe547d22"
+        }
+      ],
+      "package": "app.organicmaps"
+    },
+    {
+      "apk_sha256": "64eca16131b45c5072d9303ba5d74db27eb9ff9d934621bc2001bba3af8389ac",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "83075d475735b5c095534d52365a8d4d983b48b48604dc0e2121a91e97245030"
+        }
+      ],
+      "package": "at.bitfire.icsdroid"
+    },
+    {
+      "apk_sha256": "57b06d74cb00fe73e26cc0232dbae98bbeed52738ef5ce5d7c8cafa2a9de20e6",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        },
+        {
+          "elf": "lib/arm64-v8a/libgojni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so"
+          ],
+          "sha256": "c725ec4b7a46ed52a32f20d003228129ae9d4e343e530d64c9b003eb1f70d81a"
+        }
+      ],
+      "package": "ch.protonvpn.android"
+    },
+    {
+      "apk_sha256": "bc42be7eb481a5410904b54f08fc6269f837ccb1cefee67db53ecc9345e2683e",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libadguard-dns.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "f885469f16ab7f2c4d0bee2eb08dd711380f6729bd3b6ca1ea9d14e4bfd5008e"
+        }
+      ],
+      "package": "com.adguard.android"
+    },
+    {
+      "apk_sha256": "3a97e1d9342e2837a47a5e34057d03d59fd54c066f952fa7b4ef45f511b34b63",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libvpnclient_android.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "e196bb47c15102fc2661ce79d92d0242e2fbac75d4897e80d7649dfb61b56796"
+        }
+      ],
+      "package": "com.adguard.vpn"
+    },
+    {
+      "apk_sha256": "df3fbad622954843ab03744e85765da0fe5c15a018069b8f0aaabab3eafe6bcc",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libarcore_sdk_c.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "e37317d976a0c872d1e32228056a6170876599e6f640ea774f0215e85467869c"
+        },
+        {
+          "elf": "lib/arm64-v8a/libchrome.so",
+          "ndk_symbol_candidates": [
+            "AAssetDir_close",
+            "AAssetDir_getNextFileName",
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAssetManager_openDir",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AHardwareBuffer_acquire",
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_describe",
+            "AHardwareBuffer_fromHardwareBuffer",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_lockPlanes",
+            "AHardwareBuffer_recvHandleFromUnixSocket",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_sendHandleToUnixSocket",
+            "AHardwareBuffer_unlock",
+            "AImageReader_acquireLatestImageAsync",
+            "AImageReader_acquireNextImageAsync",
+            "AImageReader_delete",
+            "AImageReader_getWindow",
+            "AImageReader_newWithUsage",
+            "AImageReader_setImageListener",
+            "AImage_delete",
+            "AImage_deleteAsync",
+            "AImage_getCropRect",
+            "AImage_getHardwareBuffer",
+            "AImage_getHeight",
+            "AImage_getWidth",
+            "AInputEvent_getSource",
+            "AInputEvent_getType",
+            "AInputEvent_release",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "AMotionEvent_getAction",
+            "AMotionEvent_getAxisValue",
+            "AMotionEvent_getButtonState",
+            "AMotionEvent_getClassification",
+            "AMotionEvent_getDownTime",
+            "AMotionEvent_getEventTime",
+            "AMotionEvent_getHistoricalEventTime",
+            "AMotionEvent_getHistoricalTouchMajor",
+            "AMotionEvent_getHistoricalX",
+            "AMotionEvent_getHistoricalY",
+            "AMotionEvent_getHistorySize",
+            "AMotionEvent_getMetaState",
+            "AMotionEvent_getOrientation",
+            "AMotionEvent_getPointerCount",
+            "AMotionEvent_getPointerId",
+            "AMotionEvent_getPressure",
+            "AMotionEvent_getRawX",
+            "AMotionEvent_getRawY",
+            "AMotionEvent_getToolType",
+            "AMotionEvent_getTouchMajor",
+            "AMotionEvent_getTouchMinor",
+            "AMotionEvent_getX",
+            "AMotionEvent_getY",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_release",
+            "ANativeWindow_toSurface"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libaaudio.so",
+            "libandroid.so",
+            "libbinder_ndk.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so"
+          ],
+          "sha256": "65ce849913956dcd73260e4c059d4b1bd558d3fe341094f20ca5f451fc28c096"
+        }
+      ],
+      "package": "com.brave.browser"
+    },
+    {
+      "apk_sha256": "89e459ee69f2350f5006fb514d7a7e7f2f9b4e590c3b03b1f4e66c0ffc16d1a2",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdav1dJNI.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "d677094f02b627b9c6e15430140e1e1afcb9da9c13ab44b233b62943c717ce94"
+        },
+        {
+          "elf": "lib/arm64-v8a/libffmpegJNI.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "613f81bf972964f47434c361a356347bdeaac1c74ec04057272199f0d0c18600"
+        }
+      ],
+      "package": "com.brouken.player"
+    },
+    {
+      "apk_sha256": "268c58bb3b9a6a0bdbf0006a8317483aff3cbf6e49d4f47b180395f1501348cd",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libgojni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so"
+          ],
+          "sha256": "e745c103a74f07a72c3e852583efa585c4d8ced3d31937c70aee1d04fd353434"
+        }
+      ],
+      "package": "com.celzero.bravedns"
+    },
+    {
+      "apk_sha256": "3020742feeb1bece129c245f3ebebea0d92e138b033eed1c1905bccabaa56522",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "178f89a2c6c9234ddf980dd4cd1f3616186a46b2b932aafa6707abd04c5fd76a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "com.eset.ems2.web"
+    },
+    {
+      "apk_sha256": "06c6819e6d75745b14329d05dafd9f7ff26c9b2e7f0068f080f731720b6ea323",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "178f89a2c6c9234ddf980dd4cd1f3616186a46b2b932aafa6707abd04c5fd76a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "f0e4611db0d6b68942d8ba6977519f3dd1cdbffa87b7fc16d8006696ba954af4"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "6cb2eac3c68e6a82ce2a5ea5aba86749eb8c609914392e125f6cdfbc208992f8"
+        }
+      ],
+      "package": "com.eset.endpoint"
+    },
+    {
+      "apk_sha256": "97f1d5e4c6441b241e0643e2ec640bb4dcd9935fb887ea5c373cc0087e43fcb8",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libheliumvpn.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "628587335d9bcb4503d1f590f7e55283481511287d41876102170a2e8b609002"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmaplibre.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength64",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "c0ba68b0823e543d7b1a578a1a7a8f87795de1140c4a0280a2ba7cf26e9959c9"
+        },
+        {
+          "elf": "lib/arm64-v8a/libtoolChecker.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8b8e358b836ce35835d40bc1b5b935c34633e535eb7bc7642c9762e2f27cb683"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvpnutils.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "efd8e872944818c2cfc73cdaf3d2ac6d4203494f9b6984515926641bf0a7bc59"
+        }
+      ],
+      "package": "com.expressvpn.vpn"
+    },
+    {
+      "apk_sha256": "7389ee26e8c344cc62f790d4cef1a7f41ce1ddd1a582edf4f61e78b05df95e1f",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libStringsValues.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "a51e6581600c448637c880eaea57e9ab253917d717c6b783cb2ace016d91376f"
+        },
+        {
+          "elf": "lib/arm64-v8a/librealm-jni.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "67098c76995456bcca405024ec52df0027ff691070e0699b7b5bcb12ec385c2e"
+        },
+        {
+          "elf": "lib/arm64-v8a/libXyz.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "5b046c5565fe83a9ad3d1aa761d0d678e5615f1158875f8f966e8ef427ae52a4"
+        },
+        {
+          "elf": "lib/arm64-v8a/libgojni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so"
+          ],
+          "sha256": "0bba7a31c0e68cbec21be86039eb0a5fa3753509b38da6d164ce51539f07950f"
+        },
+        {
+          "elf": "lib/arm64-v8a/libEncryptionDecryption.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "e93511bf37e48a05d48f43687dc070434b670a512af65e26e9aa867a3497c0e0"
+        }
+      ],
+      "package": "com.gaditek.purevpnics"
+    },
+    {
+      "apk_sha256": "66711fd47c0c0e651bbe67c06f5c6f8864f1470cfa49fdc9a7f423e288e30e93",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8749489e1ff6c5acdb3e1d8ce98aacfde1abb10f02f1078a91ff3938d60e6d0c"
+        }
+      ],
+      "package": "com.gh4a"
+    },
+    {
+      "apk_sha256": "846249274a0e300622cc94815fd279d258738bfcaf60ee9e276edf74f5febc1c",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "com.kylecorry.trail_sense"
+    },
+    {
+      "apk_sha256": "da3070f3f18bdbed1eab666677afd39e4b19a60c70f0bfca68a5730147f81f10",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "83075d475735b5c095534d52365a8d4d983b48b48604dc0e2121a91e97245030"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "f0e4611db0d6b68942d8ba6977519f3dd1cdbffa87b7fc16d8006696ba954af4"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "6cb2eac3c68e6a82ce2a5ea5aba86749eb8c609914392e125f6cdfbc208992f8"
+        }
+      ],
+      "package": "com.looker.droidify"
+    },
+    {
+      "apk_sha256": "0aa5eb094f94ca29ab7956d75b9e5d7c19785ebdac74b9ae512930084338bf3c",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libgojni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so"
+          ],
+          "sha256": "6308decb7b0a97ff630f373b0be9c932ef1dfdec39c2d69b76820d30554a4490"
+        }
+      ],
+      "package": "com.nononsenseapps.feeder"
+    },
+    {
+      "apk_sha256": "820ec9e0f930504893aa46d4fbe84edc5a2a7c6617809a284bb2b3163ec7ae4e",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        }
+      ],
+      "package": "com.nordvpn.android"
+    },
+    {
+      "apk_sha256": "fd2b2e3578d7c6e3fdb9f0f9b932b315d9e2612bc68f073169f422c6ed5dcce6",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "178f89a2c6c9234ddf980dd4cd1f3616186a46b2b932aafa6707abd04c5fd76a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libdummy.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "6a258ad4410528c667fa57e948256ca2e4705620a4c428d65131c7fbbaf092ef"
+        },
+        {
+          "elf": "lib/arm64-v8a/libheliumvpn.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "2500f9422044d362b8f01065ce00cc306e098299be30e685fd3ae2f6a5e939cc"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libopera.so",
+          "ndk_symbol_candidates": [
+            "AHardwareBuffer_acquire",
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_describe",
+            "AHardwareBuffer_fromHardwareBuffer",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_lockPlanes",
+            "AHardwareBuffer_recvHandleFromUnixSocket",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_sendHandleToUnixSocket",
+            "AHardwareBuffer_unlock",
+            "AImageReader_acquireLatestImageAsync",
+            "AImageReader_acquireNextImageAsync",
+            "AImageReader_delete",
+            "AImageReader_getWindow",
+            "AImageReader_newWithUsage",
+            "AImageReader_setImageListener",
+            "AImage_delete",
+            "AImage_deleteAsync",
+            "AImage_getCropRect",
+            "AImage_getHardwareBuffer",
+            "AImage_getHeight",
+            "AImage_getWidth",
+            "AInputEvent_getSource",
+            "AInputEvent_getType",
+            "AInputEvent_release",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "AMotionEvent_getAction",
+            "AMotionEvent_getAxisValue",
+            "AMotionEvent_getButtonState",
+            "AMotionEvent_getClassification",
+            "AMotionEvent_getDownTime",
+            "AMotionEvent_getEventTime",
+            "AMotionEvent_getHistoricalEventTime",
+            "AMotionEvent_getHistoricalTouchMajor",
+            "AMotionEvent_getHistoricalX",
+            "AMotionEvent_getHistoricalY",
+            "AMotionEvent_getHistorySize",
+            "AMotionEvent_getMetaState",
+            "AMotionEvent_getOrientation",
+            "AMotionEvent_getPointerCount",
+            "AMotionEvent_getPointerId",
+            "AMotionEvent_getPressure",
+            "AMotionEvent_getRawX",
+            "AMotionEvent_getRawY",
+            "AMotionEvent_getToolType",
+            "AMotionEvent_getTouchMajor",
+            "AMotionEvent_getTouchMinor",
+            "AMotionEvent_getX",
+            "AMotionEvent_getY",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_release",
+            "ANativeWindow_toSurface"
+          ],
+          "needed": [
+            "libaaudio.so",
+            "libandroid.so",
+            "libbinder_ndk.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libz.so"
+          ],
+          "sha256": "162761a1eebd3b9808d756687699c0a2bfb6e3600f64c31ee568b04a97540ea3"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvpnutils.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "febf88ffc41a07a5eb6ee1851138be6fde01959ab30e1f065baaf3c72c7063e2"
+        }
+      ],
+      "package": "com.opera.browser"
+    },
+    {
+      "apk_sha256": "22f2921d3a91e94f3689f104a52d502ae6f5ad46e32cedf67e98b760be9c9503",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        }
+      ],
+      "package": "com.opera.gx"
+    },
+    {
+      "apk_sha256": "bba60c65cca0791a2f053b3e146e5e806da5089272c45614901a8e17c93866a7",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libmavapi.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "19b15a0fe091b78a2c8722600a0ef36ada63d6f8b70f00c30176e109accd3c5d"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmltransformersaudionoisesuppression.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "f6a0aee77ed3988d99b8b738b4da5401b85d6ef9652e1744b384e5b1be2654bf"
+        },
+        {
+          "elf": "lib/arm64-v8a/libtoolChecker.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8b8e358b836ce35835d40bc1b5b935c34633e535eb7bc7642c9762e2f27cb683"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvonage-voice-sdk.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libmltransformersaudionoisesuppression.so",
+            "libz.so"
+          ],
+          "sha256": "1a07a1acea1a68638b0937a40277afefff26fb649a1c1efdbd847f963eeaeceb"
+        }
+      ],
+      "package": "com.surfshark.vpnclient.android"
+    },
+    {
+      "apk_sha256": "37b528ba36ebcb1e6d4f642d144c5446352b5d19abebea7504e3654b9882b9f0",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libbdvideouploader.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libvcbasekit.so",
+            "libvcn.so",
+            "libxquicclient.so",
+            "libz.so"
+          ],
+          "sha256": "0f4d8479b201294669b457db016afcfacb19057a4f2a5fc1eb4844975d3fb817"
+        },
+        {
+          "elf": "lib/arm64-v8a/libconfigcenter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "29c33875bf2433e8ae2559fc558c0c0e83e8d689b2de8695df4dda4b01dcaecf"
+        },
+        {
+          "elf": "lib/arm64-v8a/libkrypton.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getLength",
+            "AAsset_read",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libnapi.so"
+          ],
+          "sha256": "6b4b333af60be01bf7b37edb6bcd90c83e4e3c2192780729fcbddbda89bc01e2"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblynx_krypton.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "libkrypton.so",
+            "liblog.so",
+            "liblynx.so",
+            "libm.so"
+          ],
+          "sha256": "ae6f2dca710256179e5be4281ed28b70b9d0c23fea4fd96f353146a72d9d35ae"
+        },
+        {
+          "elf": "lib/arm64-v8a/libpumbaa-network.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "6df2f9018dd2d69a4952ba0a2a2d04ce378f09259ac54a25943a687fe8b8cc4c"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsscronet.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libz.so"
+          ],
+          "sha256": "f7000c71974907a217011f9530ac61ef39032566d9695828d50ecd3991538aaf"
+        },
+        {
+          "elf": "lib/arm64-v8a/libxquicclient.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libxquic.so",
+            "libz.so"
+          ],
+          "sha256": "087a4cf0f5e76f166190a939d13ba0280e62b41861daa12a47b9e0e86c95e97f"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzoin.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libkomprese-decompressor.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "09678bbe2c7f1d610a9df3901905bab6e446109a82c5547e43cb619a8a0c1e9d"
+        }
+      ],
+      "package": "com.tiktok.lite.go"
+    },
+    {
+      "apk_sha256": "0c4efad049af622c994a3a7d0e6a0deb291e743cf8dde88bf8cc1669de48020d",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libexpo-av.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "1711ed1a8115913b10479633e34d5685cee26350f276bfffb4cd6798dd14c897"
+        },
+        {
+          "elf": "lib/arm64-v8a/libexpo-modules-core.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "aac428fa814fecf92393128b5be35623e5ceccdc75b20273dd5b31395cc3d5fb"
+        },
+        {
+          "elf": "lib/arm64-v8a/libfbjni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22"
+        },
+        {
+          "elf": "lib/arm64-v8a/libhermestooling.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libhermes.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "e2da466819b767972d64224b9b55b86d2666f0a798d3646b50058f2634b197c0"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "3e0071afcdc7e321f839e196d266014182f18d0988e4455acc9857a085b2184e"
+        },
+        {
+          "elf": "lib/arm64-v8a/libreactnative.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_read"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "28aa21c60de143ae45df4223666e048eefd740fb33da6a44f91dea5c68207773"
+        },
+        {
+          "elf": "lib/arm64-v8a/libreanimated.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so",
+            "libworklets.so"
+          ],
+          "sha256": "605a2cb2ca4e5bc7aa8da9331f4c1e0dea025018489f3af96171d392445f1e0b"
+        },
+        {
+          "elf": "lib/arm64-v8a/librnscreens.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "d549425752fdf2fb25e9805b4b7fd67f637267a176495f3acd07d7a02e55c479"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "ee3f0d56f81cc0a301db32dc4fd51274c3216733b4c40172768e38bc5049a265"
+        }
+      ],
+      "package": "com.valvesoftware.android.steam.community"
+    },
+    {
+      "apk_sha256": "b83d6bfaf24ec5f79ddb7151c0136abe031b3d17d2852b85d37f9db226829307",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libexpo-av.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "1711ed1a8115913b10479633e34d5685cee26350f276bfffb4cd6798dd14c897"
+        },
+        {
+          "elf": "lib/arm64-v8a/libexpo-modules-core.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "b4f1edd0b18f21259fd850f7d2a82b60afd8790fd57af7b0cc753e103994d388"
+        },
+        {
+          "elf": "lib/arm64-v8a/libfbjni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22"
+        },
+        {
+          "elf": "lib/arm64-v8a/libhermestooling.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libhermes.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "e2da466819b767972d64224b9b55b86d2666f0a798d3646b50058f2634b197c0"
+        },
+        {
+          "elf": "lib/arm64-v8a/libreactnative.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_read"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "b0ad408107c890ebcd77cb30e7632c249678e27ee9834498eb3c83e875023fe9"
+        },
+        {
+          "elf": "lib/arm64-v8a/librnscreens.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "a0d38ab7a0b32c3cb056c7774df77046cdb963dc1da79893d1e95f571da6944e"
+        }
+      ],
+      "package": "com.valvesoftware.android.steam.friendsui"
+    },
+    {
+      "apk_sha256": "379396e508afd25de7bd3a8bc79ec5da0462e2e9cbf8e47035ce5149b30db459",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libSDL3.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getLength64",
+            "AAsset_read",
+            "AAsset_seek64",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libGLESv1_CM.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "1a4983f0338375b2acb1d2ca63b1ee40b317e37680fa7cb52205d71522d50879"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmain.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libGLESv1_CM.so",
+            "libGLESv2.so",
+            "libOpenMAXAL.so",
+            "libSDL3.so",
+            "libSDL3_image.so",
+            "libSDL3_ttf.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libh264bitstream.so",
+            "libhevcbitstream.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libz.so"
+          ],
+          "sha256": "50e1d3147d5d47b71ef1970e1867a2fe4f3e1ecf2ea6153f927fac88b88ea38e"
+        },
+        {
+          "elf": "lib/arm64-v8a/libplugins_platforms_qtforandroid_arm64-v8a.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getLength",
+            "AAsset_read",
+            "AAsset_seek",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libQt5Core_arm64-v8a.so",
+            "libQt5Gui_arm64-v8a.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "b418ef15fc62a4fe8706b9b3720180c69d9314de26f9477916b7781797e365fc"
+        },
+        {
+          "elf": "lib/arm64-v8a/libshell_arm64-v8a.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libGLESv1_CM.so",
+            "libGLESv2.so",
+            "libOpenMAXAL.so",
+            "libQt5AndroidExtras_arm64-v8a.so",
+            "libQt5Core_arm64-v8a.so",
+            "libQt5Gui_arm64-v8a.so",
+            "libQt5Network_arm64-v8a.so",
+            "libQt5Svg_arm64-v8a.so",
+            "libQt5Widgets_arm64-v8a.so",
+            "libSDL3.so",
+            "libSDL3_image.so",
+            "libSDL3_mixer.so",
+            "libSDL3_ttf.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libz.so"
+          ],
+          "sha256": "15b2d79881eef0c47ed2f96c17d1d60a5f42d3285abcf9f512cfffdac5b238a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsteamwebrtc.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libstdc++.so"
+          ],
+          "sha256": "2a74920293078807ec8e47ecc8df2a4565b60e8ace471b883746b180950c3710"
+        }
+      ],
+      "package": "com.valvesoftware.steamlink"
+    },
+    {
+      "apk_sha256": "cd19e4ac429fb4f059bc3dfbd069616faf020b556b3d4c0501514cce5193c595",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libchrome.so",
+          "ndk_symbol_candidates": [
+            "AHardwareBuffer_acquire",
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_describe",
+            "AHardwareBuffer_fromHardwareBuffer",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_lockPlanes",
+            "AHardwareBuffer_recvHandleFromUnixSocket",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_sendHandleToUnixSocket",
+            "AHardwareBuffer_unlock",
+            "AImageReader_acquireLatestImageAsync",
+            "AImageReader_acquireNextImageAsync",
+            "AImageReader_delete",
+            "AImageReader_getWindow",
+            "AImageReader_newWithUsage",
+            "AImageReader_setImageListener",
+            "AImage_delete",
+            "AImage_deleteAsync",
+            "AImage_getCropRect",
+            "AImage_getHardwareBuffer",
+            "AImage_getHeight",
+            "AImage_getWidth",
+            "AInputEvent_getSource",
+            "AInputEvent_getType",
+            "AInputEvent_release",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "AMotionEvent_getAction",
+            "AMotionEvent_getAxisValue",
+            "AMotionEvent_getButtonState",
+            "AMotionEvent_getClassification",
+            "AMotionEvent_getDownTime",
+            "AMotionEvent_getEventTime",
+            "AMotionEvent_getHistoricalEventTime",
+            "AMotionEvent_getHistoricalTouchMajor",
+            "AMotionEvent_getHistoricalX",
+            "AMotionEvent_getHistoricalY",
+            "AMotionEvent_getHistorySize",
+            "AMotionEvent_getMetaState",
+            "AMotionEvent_getOrientation",
+            "AMotionEvent_getPointerCount",
+            "AMotionEvent_getPointerId",
+            "AMotionEvent_getPressure",
+            "AMotionEvent_getRawX",
+            "AMotionEvent_getRawY",
+            "AMotionEvent_getToolType",
+            "AMotionEvent_getTouchMajor",
+            "AMotionEvent_getTouchMinor",
+            "AMotionEvent_getX",
+            "AMotionEvent_getY",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_release",
+            "ANativeWindow_toSurface"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libaaudio.so",
+            "libandroid.so",
+            "libbinder_ndk.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so"
+          ],
+          "sha256": "61bf118c0d7a992e243a82664cc0c054f8c6663a9aa31b8f1edf0ff4d2259974"
+        }
+      ],
+      "package": "com.vivaldi.browser"
+    },
+    {
+      "apk_sha256": "954967bb3c9b940c16edb981242461b03c34f0e60671f42793c07a46190d64b3",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "fa41d509a661e8aa8b3e3ac1a28541f8823f308414fcad733fe26d61feea2646"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "com.x8bit.bitwarden"
+    },
+    {
+      "apk_sha256": "ab8d9394d87ca046bda8f49031791cfaf75588a0830b5d54766e1bcf8ccdd6bc",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libAwebviewbytedance.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "dec23339c1807d8e87b64c0f423d72e36e5c7937344108130396ad4854e354d2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libDavinciResourceJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "f6f020f79221c9bba88ef6e1cda143b06004365b2f5d99ae0fdd2d03e4f31d73"
+        },
+        {
+          "elf": "lib/arm64-v8a/libNLEEditorJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libAGFX.so",
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfastcv.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjnigraphics.so",
+            "liblens.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libttvesdk.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "aaa27409ac2d6c15bdbb3acd3133aaf89548f3c13ef0fb0d1a8f2d61a8599380"
+        },
+        {
+          "elf": "lib/arm64-v8a/libNLEMediaJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libAGFX.so",
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfastcv.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjnigraphics.so",
+            "liblens.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libttvesdk.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "133e9293284d155a1f0d08ae699cd4d59f7c159c17f0616989d01f8ea687ceae"
+        },
+        {
+          "elf": "lib/arm64-v8a/libNLEMediaPublicJni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libAGFX.so",
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libNLEEditorJni.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfastcv.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjnigraphics.so",
+            "liblens.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libttvesdk.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "fe737854485b98b9725131dc77a698bc87a02aec0e1edacb5487b2076f09d762"
+        },
+        {
+          "elf": "lib/arm64-v8a/libNLEMediaRemoteJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libAGFX.so",
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libNLEEditorJni.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfastcv.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjnigraphics.so",
+            "liblens.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libttvesdk.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "f78f6ce92680a3fced3e75159b676277bf3d35b438803f8c334e288b9344c2ed"
+        },
+        {
+          "elf": "lib/arm64-v8a/libNLEResourcesDAVJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libAGFX.so",
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libNLEEditorJni.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfastcv.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjnigraphics.so",
+            "liblens.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libttvesdk.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "6798c990871b01eae53784a69fe2c3db2f1ecab03a2b1acade564ca93f63ddd0"
+        },
+        {
+          "elf": "lib/arm64-v8a/libNLETemplateModelJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libAGFX.so",
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libNLEEditorJni.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfastcv.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjnigraphics.so",
+            "liblens.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libttvesdk.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "586fe51b41f87df5414ac2851af4707efb70953c31c76b49801e2f5965f13b86"
+        },
+        {
+          "elf": "lib/arm64-v8a/libRealXAudio.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libRealXBase.so",
+            "libandroid.so",
+            "libbytenn.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfdk-aac.so",
+            "liblog.so",
+            "libm.so",
+            "libopus.so"
+          ],
+          "sha256": "8e791c36b68f7396349a79b837d5b71a35ecae03d2b2907ae4ba5678093bf8eb"
+        },
+        {
+          "elf": "lib/arm64-v8a/libRealXBase.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8bf5a41901f36bda138c99000576929df7b50cf1c4396d58613de56fccd5a8d2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libSmartMovieJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libDavinciResourceJni.so",
+            "libNLEEditorJni.so",
+            "libNLEResourcesDAVJni.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libgaia_lib.so",
+            "libm.so"
+          ],
+          "sha256": "4301ed43c11a6c2c097bb9d7c73e58a9bb3c9c8fb2478c8c385eda07108aed01"
+        },
+        {
+          "elf": "lib/arm64-v8a/libanrthanos.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libnpth_unw.so",
+            "libshadowhook.so"
+          ],
+          "sha256": "626206cea76523cbeb99f7be495606fbb2e14a5555146f6598031a70b78b591c"
+        },
+        {
+          "elf": "lib/arm64-v8a/libarcore_sdk_c.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "a573cc8113bcbbe77b159e7977bb3b9fa94cde23490b196defa31f0228e10698"
+        },
+        {
+          "elf": "lib/arm64-v8a/libarcore_sdk_jni.so",
+          "ndk_symbol_candidates": [
+            "AHardwareBuffer_toHardwareBuffer"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libarcore_sdk_c.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8f0b4015f1afb06d92c0dd3eeb9b677e2f4848e85467a4bcea37a4d272356066"
+        },
+        {
+          "elf": "lib/arm64-v8a/libaudioeffect.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libbytenn.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libiesapplogger.so",
+            "liblog.so",
+            "libm.so",
+            "libopus.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libz.so"
+          ],
+          "sha256": "7b3637dbe1560d89371ae2ee8d64711b6bbda97183b6a52028ed86eed3694f92"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbach-sdk-jni.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libgaia_lib.so",
+            "libiesapplogger.so",
+            "libjazz.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "748d265c090d22e4a19880b33f2f5f3326ba487dce2dbce6bce7b4f087e0f194"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbat.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "5d9da6f4727529ebb43a02707a5e6a303863d5b8371fb51c7dd24d46af611cbb"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbdvideouploader.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libvcbasekit.so",
+            "libvcn.so",
+            "libz.so"
+          ],
+          "sha256": "4336fd080076b55900668d026b099de5ab8839ea8e95d3babdad8c2ef3f1756c"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbmf_mods.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libandroid.so",
+            "libbmf_hydra.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "96fe48384c015ee212707cca53dfd07437dde2aae84e0e9cd822bc4e988ae9a0"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbtch_collection.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava"
+          ],
+          "needed": [
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libbvcparser.so",
+            "libbytebench.so",
+            "libbytenn.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libttffmpeg.so",
+            "libz.so"
+          ],
+          "sha256": "349b16c6d80e88fd67dff2288159da6a9919789eca643d757ecf31188d590a1d"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbytebench.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libbytemonitor.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "libkeva.so",
+            "liblog.so",
+            "libm.so",
+            "libnapi.so",
+            "libworker.so",
+            "libz.so"
+          ],
+          "sha256": "5e961735641fad28251761dade6e8c85aa47e4542f9f1c7652b3eef89b491e70"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbytelink.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libbat.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libvoip.so",
+            "libz.so"
+          ],
+          "sha256": "3ab8fcac3731d98fd8f4fd369d1cf12441b5bafd45368ad53b0f7d4d81e47094"
+        },
+        {
+          "elf": "lib/arm64-v8a/libbytemonitor.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "8d89b124ae963978dc21141d6323aa33427b18a90e8562c1f70273d33c3a1033"
+        },
+        {
+          "elf": "lib/arm64-v8a/libconfigcenter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "d93dbe9d100fff5da551e1f0c804ef63fb8cc0c11897e5177e708f4b3acb28b3"
+        },
+        {
+          "elf": "lib/arm64-v8a/libfastcv.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "959f3f59316dce0676d15ca20e0687a02146e4d52980e389778974c500f94c41"
+        },
+        {
+          "elf": "lib/arm64-v8a/libfly-main-color-lib.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "4eae061db755de08346e4cec950e9748d506af1fb140b2bfd95bc7dc49a0ba57"
+        },
+        {
+          "elf": "lib/arm64-v8a/libgifimage.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "5650c904228d2bf5b50fc2400049f286a524a817da82d7dd64c63965ccf9d7b5"
+        },
+        {
+          "elf": "lib/arm64-v8a/libjarvis-trace.so",
+          "ndk_symbol_candidates": [
+            "ALooper_forThread"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libbytehook.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libnpth_dl.so",
+            "libshadowhook.so",
+            "libz.so"
+          ],
+          "sha256": "4731f7ed844f6f3b978ef283fb6700cb932e1e76d86416dc8adfffaabf264eab"
+        },
+        {
+          "elf": "lib/arm64-v8a/libkrypton.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getLength",
+            "AAsset_read",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libnapi.so",
+            "libskity.so",
+            "libz.so"
+          ],
+          "sha256": "1a049ee927f3adf607219692d83e697500266adeca09cc60c5345ea19815b371"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblens.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libbytenn.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfastcv.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "4a54a70c08517ef417f8f5a43d89f81fb536ec218e63b4e5ec82d78be78af467"
+        },
+        {
+          "elf": "lib/arm64-v8a/libliveio.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so",
+            "libz.so"
+          ],
+          "sha256": "c55fcc7d79eff3c4f39d62a77264cd8ef4f1ba3437455baaf30e2e972912d2b7"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblivepusher.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv1_CM.so",
+            "libGLESv2.so",
+            "libGLESv3.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libbytevc0.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfdk-aac.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "848d3b81b96cece2c1f218bfbeeace439923fd2702be100d6aaf64f2dd32e7d9"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblivestrategy.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libvcbasekit.so",
+            "libvcdatacenter.so"
+          ],
+          "sha256": "a439163bc3d16df22c4de31bd64648e67b5aa9e9ffa15cc7fd4d3fe12672f771"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblynx.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "liblynxtrace.so",
+            "libm.so",
+            "libnapi.so",
+            "libquick.so"
+          ],
+          "sha256": "e5819854fba5f79a68996dc6c0b78bb836b4485af60c2599a93dc4471a7589e8"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblynx_krypton.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libkrypton.so",
+            "liblog.so",
+            "liblynx.so"
+          ],
+          "sha256": "1aa15adb20e32088431f0e0f2310fed75d61ee347a5f3d6bcfadaa0e88c96099"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblynx_markdown.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libtttext_lite.so"
+          ],
+          "sha256": "5eb98989398254ec95ef2a8d46832625991e04e719ce5e2a845956c3edf9551b"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmdlttquicheloader.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libavmdlbase.so",
+            "libavmdlv2.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libvcbasekit.so",
+            "libvcn.so",
+            "libz.so"
+          ],
+          "sha256": "be997be48492433419ce639b57a6d6827f8c28a6c34aba7a424abc118e9da8d5"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmemrelief.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libnpth_dl.so",
+            "libshadowhook.so"
+          ],
+          "sha256": "d19011d24d82a64a1b51434450f8d654caf359c809eae23603d4166008ee3acd"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmio_live.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libavmdlbase.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so",
+            "libz.so"
+          ],
+          "sha256": "b41b3a796d154d2f70d4deeae3bd77610cc23f239af2f1ec883e85f45fb38917"
+        },
+        {
+          "elf": "lib/arm64-v8a/libotis_attrib.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "6d50ce196e1d315490986137c0ab2034b9a42e681693236bf6d7343b74fefb50"
+        },
+        {
+          "elf": "lib/arm64-v8a/libpns_crypto.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttcrypto.so"
+          ],
+          "sha256": "2b1a592f4fbe3f35016eeb5a8b4eed3b809bc6f64388e87d0b1d66ee28f2d5e3"
+        },
+        {
+          "elf": "lib/arm64-v8a/libpreload.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libavmdlbase.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libconfigcenter.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttmplayer.so",
+            "libvcbasekit.so",
+            "libvcdatacenter.so"
+          ],
+          "sha256": "b4d7a69dbf2f110d2266b54aa4efde4494379e6121087e080bfe755e41bd6413"
+        },
+        {
+          "elf": "lib/arm64-v8a/libpumbaa-network.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "9bcc784fdc6ec8aa404be6e27e7ddc98963bdc8e1ffa3c69265775d8cd5b9890"
+        },
+        {
+          "elf": "lib/arm64-v8a/libres_memory.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "1ea9cdcaf8da7539cc8592df050823f41121b8ba023a790bb9582943c674032f"
+        },
+        {
+          "elf": "lib/arm64-v8a/libresource_monitor.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libbytehook.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libnpth_dl.so",
+            "libshadowhook.so"
+          ],
+          "sha256": "f91f1d66475341f9f25d5df86d634f87703a8b854b9a69ded16dcff73b7694c6"
+        },
+        {
+          "elf": "lib/arm64-v8a/librtmglobal.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libRealXBase.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so",
+            "libz.so"
+          ],
+          "sha256": "eeaa5a9fcc52bfd682d35a60cc1199ae854ae86f0c1a778a3dc6851e864f71d1"
+        },
+        {
+          "elf": "lib/arm64-v8a/libserval_svg.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "3cdaa32eb9d6b39f4335b2d74bc7a978240e694250b16b80ec79f51be84bb76a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libspeechengine.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudio_fingerprint_sdk.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libspeechsdk.so",
+            "libz.so"
+          ],
+          "sha256": "7500c450176213fcf3120a5ef89fa7ab96d5fda20058e60e09ea11b13832ef4d"
+        },
+        {
+          "elf": "lib/arm64-v8a/libspeechepg.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudio_fingerprint_sdk.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libspeechspg.so",
+            "libsscronet.so",
+            "libz.so"
+          ],
+          "sha256": "2f830a82276e6468f089c9f1993222f095a3f254558e7771b3ed876480861ca0"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsscronet.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libz.so"
+          ],
+          "sha256": "c664262e5e175fbb3debbefc42bafafbe238196f30d2aec16f75e46877b1c7f3"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsysoptimizer.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libbytehook.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libnpth_dl.so",
+            "libshadowhook.so"
+          ],
+          "sha256": "fdb52e546acd7b925e6963935d74fe289d443c2f0f74d70570ad5fd1e80b8e8a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libtexturerender_native.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "e83a5e391124ee13839bc524f0cee6c3f5298538c604dbab8df95bc5f2d765b5"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttdemux.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "4a59fbe427face7ee5dd6c33de768156540f3b7741867d601464538570722c49"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttkmedianet.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libvcbasekit.so",
+            "libz.so"
+          ],
+          "sha256": "f6826092b0e554652515dac78ffbeb99ee14434369d57c0e81697564b5e03860"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttlivestreamercore.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv1_CM.so",
+            "libGLESv2.so",
+            "libGLESv3.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbyteaudio.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libeffect.so",
+            "libfdk-aac.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so",
+            "libyuv.so",
+            "libz.so"
+          ],
+          "sha256": "c8615048b7a017daa2702d92141d152e44a608316bffb8fcb45c5f9b391f39ff"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttmplayer.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libByteVC1_dec.so",
+            "libEGL.so",
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libaudioeffect.so",
+            "libbyteVC2dec.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libconfigcenter.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libttdemux.so",
+            "libttffmpeg.so",
+            "libttr.so",
+            "libvcbasekit.so",
+            "libwhisper.so",
+            "libz.so"
+          ],
+          "sha256": "f6ed9dff4d3b93ba5bff73474b87c50e15de85670241d7b213e89b8606361932"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttmverify.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libz.so"
+          ],
+          "sha256": "449e935aef98f343d4a090842e7235f9393a6133c95b93c1f745f5a3b3feb881"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttmverifylite.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libz.so"
+          ],
+          "sha256": "d096dfd39328388ba4ec342abe3817139a12ec723b0fd0db6a136a68c0d2ed0a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttpreload.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so",
+            "libttmcmaf.so",
+            "libttquic.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "d4fc8b19e73b51a0128391f7255c58cdc0b9a2e960779c76d8261f68685b06e0"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttquic.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "ca4ea7fe1f2332dcb917fff224cd86972cc2c34b2d0bcabfa372840415093cb8"
+        },
+        {
+          "elf": "lib/arm64-v8a/libttr.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttffmpeg.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "0bc2c56355caf23956178d1539fb5362057520dc9bb41328e59dbba01568cb58"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvcbasekit.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_wake"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8c14558d007cc520125fea1ee31ec83bafcea72412a4fe7213b113b9e2147555"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvcdatacenter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libnpth_dl.so",
+            "libvcbasekit.so"
+          ],
+          "sha256": "7c260c986c4e8b8383f8e9011166d0bf2ca17864ee56b7f7def2ec00261bdeb2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvcn.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libz.so"
+          ],
+          "sha256": "b1060ae9e0451374c5f18ad95a777123d937c9c7e81c93b8bbe98618790af3e3"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvcnverify.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libvcn.so",
+            "libz.so"
+          ],
+          "sha256": "cb4928063eb3e668c4df210a200e8821a6da265e852ba86c968ac24371a8d1ef"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvcnverifylite.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libvcn.so",
+            "libz.so"
+          ],
+          "sha256": "9c1a1617357a0b640d2b159060c9d927cfdb4b430d6da55da8664004049fe93f"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvegasdk.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "9916f88567fa96fb4f239cbc73d712519aaed415fa102900e17bf42a126db0b1"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvoip.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libGLESv2.so",
+            "libOpenSLES.so",
+            "libandroid.so",
+            "libbat.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "d142641ff1a7d7f3551845c652111aada0a7d7a66666674792ae369f2eb2e4d2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libvolcenginertc.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libAGFX.so",
+            "libEGL.so",
+            "libGLESv1_CM.so",
+            "libGLESv2.so",
+            "libGLESv3.so",
+            "libOpenSLES.so",
+            "libRealXAudio.so",
+            "libRealXBase.so",
+            "libandroid.so",
+            "libbyteaudio.so",
+            "libbytenn.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfdk-aac.so",
+            "libgaia_lib.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libopus.so",
+            "libsscronet.so",
+            "libttboringssl.so",
+            "libttcrypto.so",
+            "libttffmpeg.so"
+          ],
+          "sha256": "d7890969a238b2cf36813fe8e2f814409e974a220752431b7e525d0f8c4e05b6"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzoin.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libkomprese-decompressor.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "461eaaa63714d460001f67de31520aa3d5b97431d177f9f73005c9519e87adcc"
+        }
+      ],
+      "package": "com.zhiliaoapp.musically"
+    },
+    {
+      "apk_sha256": "21cff18073d15e350e5845f2043d1f07d944f0dee420d7cfa25fd9196f05e8b8",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        }
+      ],
+      "package": "de.ph1b.audiobook"
+    },
+    {
+      "apk_sha256": "8d03b4f02f070d8e64f448ce77ad66daccce9a585e4015b984ee5a7ddee9c29c",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libflutter.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_isAllocated",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "9cad0ddc4fb535c7d53b4bb19e81af863fc9dbc0407277d3af089a1a2f11a2b3"
+        }
+      ],
+      "package": "dev.imranr.obtainium.fdroid"
+    },
+    {
+      "apk_sha256": "ff73751599211c709c1e691d1a2b7412df0bab979ffbe8ff0d4b7f31c6a444c9",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libfbjni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22"
+        },
+        {
+          "elf": "lib/arm64-v8a/libhermestooling.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libhermes.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "429170b800a3e0a8b0be15c09e7356fd789b7159a2dad43375d23eedf22bdc3b"
+        },
+        {
+          "elf": "lib/arm64-v8a/libjsctooling.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsc.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "05c792ebc8bb277515c9b13faf75fcc593bfffa2c0f154934338d4c6ddc463dc"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmaplibre.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength64",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "06406234032d5f9274f03bd4d1f64d58a501f052184907b7f15226abc4edfe5a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libopuscodec.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "cad9e3888ea82c210d5aeb7eb328cdf0d58cd3407a5be2b4379da82a4e19601f"
+        },
+        {
+          "elf": "lib/arm64-v8a/libreactnative.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_read"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "f5e13c085223cc49f7eec90559d4b73fa66aecabb62cefd1f5c9aab20969dab8"
+        },
+        {
+          "elf": "lib/arm64-v8a/librealm-jni.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "7693a9d21679f3e230f9f634459ff8102e30bd7ec73a764d7360df216d3099e0"
+        },
+        {
+          "elf": "lib/arm64-v8a/librnscreens.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjsi.so",
+            "libm.so"
+          ],
+          "sha256": "8e57c67b93fcc3bb84ce3e900ccf856f5827c006712db7fc79a17a098b08da5f"
+        },
+        {
+          "elf": "lib/arm64-v8a/librnworklets.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libhermes.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "27e5af9d252c20d9ab3aa3629517fcc41fab67ed10b5c9ae8c19a54308beff9d"
+        }
+      ],
+      "package": "im.vector.app"
+    },
+    {
+      "apk_sha256": "ceb076564298cd0aef4688ad79058b55638d196b9beb5ac47ab421d757335bf3",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "178f89a2c6c9234ddf980dd4cd1f3616186a46b2b932aafa6707abd04c5fd76a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmaplibre.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength64",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "6f0274b3ac7e3f5121255d49354f966d30abeb4d85ec40bce5ac14271b0768e3"
+        },
+        {
+          "elf": "lib/arm64-v8a/libopuscodec.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "33d58ada12beac3c1e1fb2ba43ab94de46384445107a1fb2d8cc28777fad48db"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "io.element.android.x"
+    },
+    {
+      "apk_sha256": "d439d3b1ea549304a6026aa778d1e1a0691fdb12067c86bd1bbaa266fb2fd31e",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libmavapi.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "4839a9fac541ee6d0353b5e1fc9446e9e415e3a7fb2bd0e65670bc037f29e91b"
+        }
+      ],
+      "package": "io.privado.android"
+    },
+    {
+      "apk_sha256": "1e4a2e23a4bff8c8d96eae7ed809f1ebd05a4ab24650ab792c226749dd51d936",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "net.thunderbird.android"
+    },
+    {
+      "apk_sha256": "38b7666166f6fd0268b598ad0b40435744833f26b8cb7b13eb724ca61894a66b",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "nodomain.freeyourgadget.gadgetbridge"
+    },
+    {
+      "apk_sha256": "191e6990a4db95b04b6d3d98906e06281872a5963133afb5b46e4d324736742f",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libjni_cb_term.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "9ec23441f8d0e7942e8f963a05ca4f9cf092934fcd3eaed887055c69d375dc9c"
+        }
+      ],
+      "package": "org.connectbot"
+    },
+    {
+      "apk_sha256": "116004fd8743f9e47bf25eb9c6049eb77d3f19d59506c3f47513f584c6138435",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "f0e4611db0d6b68942d8ba6977519f3dd1cdbffa87b7fc16d8006696ba954af4"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "6cb2eac3c68e6a82ce2a5ea5aba86749eb8c609914392e125f6cdfbc208992f8"
+        }
+      ],
+      "package": "org.fossify.camera"
+    },
+    {
+      "apk_sha256": "ae7e699599e81f70e2b82626bb1dfa883fe096cd938387133e123c116e5641d9",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libjxlcoder.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libbrotlicommon.so",
+            "libbrotlidec.so",
+            "libbrotlienc.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "libjxl.so",
+            "libjxl_cms.so",
+            "libjxl_threads.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "772e418101dbbe1de2f8473e8f6ad1f5d3f912e43ed2126c930e4718231ac50e"
+        },
+        {
+          "elf": "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "293297bc0d6aa2ea1936712a85639b58c20c5353d120b2af045fedd3ee24cb8e"
+        }
+      ],
+      "package": "org.fossify.gallery"
+    },
+    {
+      "apk_sha256": "f9f4b3ab46cc9434df811194c2d4351417f4db83a4c1a0facd0a662d69533f7f",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libffmpegJNI.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "63d56c5fbd0f0b84dc607af3c3faed7befdea5e9fa5187bbcdb3ebc54782e929"
+        }
+      ],
+      "package": "org.jellyfin.mobile"
+    },
+    {
+      "apk_sha256": "070f2dc01e319fe5a04afbf9067086f26dde36546d6df86f67872bc0486124f8",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "org.liberty.android.freeotpplus"
+    },
+    {
+      "apk_sha256": "e5c600d90d2906acf338c59fdf4b79c98df5a934002a2f6773ff0f5cbc26b267",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libmediastreamer2.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libZXing.so",
+            "libandroid.so",
+            "libbctoolbox.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libjpeg.so",
+            "libm.so",
+            "libortp.so",
+            "libsrtp2.so",
+            "libturbojpeg.so",
+            "libz.so"
+          ],
+          "sha256": "985241b35ac9398378ed93fe08e2c0d4b5896bd9ba444c57ebcaa4415d48a095"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmsandroidcamera2.so",
+          "ndk_symbol_candidates": [
+            "AImageReader_acquireLatestImage",
+            "AImageReader_delete",
+            "AImageReader_getFormat",
+            "AImageReader_getWindow",
+            "AImageReader_new",
+            "AImageReader_setImageListener",
+            "AImage_delete",
+            "AImage_getHeight",
+            "AImage_getPlaneData",
+            "AImage_getPlanePixelStride",
+            "AImage_getPlaneRowStride",
+            "AImage_getWidth",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libbctoolbox.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libcamera2ndk.so",
+            "libdl.so",
+            "libm.so",
+            "libmediandk.so",
+            "libmediastreamer2.so",
+            "libortp.so"
+          ],
+          "sha256": "ef3909001e25bc90683f093cdf89e999279e0e5169d371cc67e629d2e3aebcb3"
+        }
+      ],
+      "package": "org.linphone"
+    },
+    {
+      "apk_sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libflutter.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_isAllocated",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0c56c4a468224beb2336c7bacaee6d5885047a0075d613fe421871b4dceafdce"
+        }
+      ],
+      "package": "org.localsend.localsend_app"
+    },
+    {
+      "apk_sha256": "4be8d5ebc113d8bc42a3d046e68a9ba94f79a8e7950379f08ef5aa4856070c97",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmozavcodec.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libmozavutil.so"
+          ],
+          "sha256": "da0449bd1e8b4b911b28cf9a99320db6e16391f37e0de23aad6ba501deae1544"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmozavutil.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "577d979c8e356d67846510319c0086955297f9a437fd6433eb649ad5a6ac4c5a"
+        },
+        {
+          "elf": "lib/arm64-v8a/libxul.so",
+          "ndk_symbol_candidates": [
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_describe",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_recvHandleFromUnixSocket",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_sendHandleToUnixSocket",
+            "AHardwareBuffer_unlock",
+            "AImageReader_acquireNextImageAsync",
+            "AImageReader_delete",
+            "AImageReader_getWindow",
+            "AImageReader_newWithUsage",
+            "AImageReader_setImageListener",
+            "AImage_delete",
+            "AImage_deleteAsync",
+            "AImage_getHardwareBuffer",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_toSurface",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "libjnigraphics.so",
+            "liblgpllibs.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libmozglue.so",
+            "libnss3.so",
+            "libsync.so"
+          ],
+          "sha256": "a30040dfd3eeba56d77e9b0ad65c906a2a38e492dfc957bcbdda87c7b7870eb5"
+        }
+      ],
+      "package": "org.mozilla.firefox_beta"
+    },
+    {
+      "apk_sha256": "a057e3a621ee0fe5e71d456a7598ac729ea70d008725096497cb56c1729e6890",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libmozavcodec.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libmozavutil.so"
+          ],
+          "sha256": "7d42d2b34420a0a447e56e28b9437a601f912b9731435806f75fd997b6e18372"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmozavutil.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "b4f0013b72ce9cfc1bae991a590949d069db5eaad7a728656e428941d7fb1395"
+        },
+        {
+          "elf": "lib/arm64-v8a/libxul.so",
+          "ndk_symbol_candidates": [
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_describe",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_recvHandleFromUnixSocket",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_sendHandleToUnixSocket",
+            "AHardwareBuffer_unlock",
+            "AImageReader_acquireNextImageAsync",
+            "AImageReader_delete",
+            "AImageReader_getWindow",
+            "AImageReader_newWithUsage",
+            "AImageReader_setImageListener",
+            "AImage_delete",
+            "AImage_deleteAsync",
+            "AImage_getHardwareBuffer",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_toSurface",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "libjnigraphics.so",
+            "liblgpllibs.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libmozglue.so",
+            "libnss3.so",
+            "libsync.so"
+          ],
+          "sha256": "d9988e70ffe1012897ae1aa67b20a3414b85599a12feb798dd755bb4ec7d5f10"
+        }
+      ],
+      "package": "org.mozilla.focus"
+    },
+    {
+      "apk_sha256": "ed972cc1cec3456a11992435a3fcf132d1311f1e8dfd27758265122fbc206ce0",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "deed4546c8dafad0e68ea2c25e4c0a62ca97343614ae386b7ed2af6abb7fa999"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsqliteJni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "9d3ad85cca0b7b02e0fe31beec3f17c86cccdebf62e1d1c47ac46743f4967a99"
+        }
+      ],
+      "package": "org.tasks"
+    },
+    {
+      "apk_sha256": "9fca2a1cd46ad805bd12d7bcc3930cc9388bffd5a1d01b0422c6149f1b702122",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "0292b063fafccf734472cbb59588e756c2dbca907c72021ba6fbf126385508a2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "a5c9d1928ea92ec7a94dff8cf666e7739cd734198b9f0ae1d4e28ea3c86516ba"
+        }
+      ],
+      "package": "org.thoughtcrime.securesms"
+    },
+    {
+      "apk_sha256": "4b8d51527ab516c5e8ecf7ea25dabbcb0e4bdfb54d55eadb12ad09a36f227cda",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libmozavcodec.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libmozavutil.so"
+          ],
+          "sha256": "3b2abf4aab7e34e77adfe63eef891ac5a3aab6f3711fccdc88a3b5b6bad1d8d4"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmozavutil.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "9bb3fad18021c81409959b7fd5656ec4c1c180299261f9bab4654e6f4785ae21"
+        },
+        {
+          "elf": "lib/arm64-v8a/libxul.so",
+          "ndk_symbol_candidates": [
+            "AHardwareBuffer_acquire",
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_describe",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_recvHandleFromUnixSocket",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_sendHandleToUnixSocket",
+            "AHardwareBuffer_unlock",
+            "ANativeWindow_acquire",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libgkcodecs.so",
+            "liblgpllibs.so",
+            "liblog.so",
+            "libm.so",
+            "libmozglue.so",
+            "libnss3.so"
+          ],
+          "sha256": "666a2eb3a6761a0ef501e385adcb30e4e4f3f25770a3dda32ddb028fa6a64959"
+        }
+      ],
+      "package": "org.torproject.torbrowser"
+    },
+    {
+      "apk_sha256": "981fd735cef19a87890b7c17c10a506600f519b59a4dcc20fd2144b198b3b7a9",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libflutter.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_isAllocated",
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake",
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "30d867063c01c31e6ba07bb23feccd92f5f9f836d3db6f389dde0d9071c704f2"
+        },
+        {
+          "elf": "lib/arm64-v8a/libgojni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so"
+          ],
+          "sha256": "515a0de5ed60de527be45e8ecc38350e1cbdf45cd24ebb16060ab5ac993c90c8"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmediapipe_tasks_jni.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AHardwareBuffer_allocate",
+            "AHardwareBuffer_lock",
+            "AHardwareBuffer_release",
+            "AHardwareBuffer_unlock"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "3e24311e736feedbab78b3c6c0122042233919384ac1ff0fe191d3586d319ab3"
+        }
+      ],
+      "package": "proton.android.meet"
+    },
+    {
+      "apk_sha256": "ead71709006b62aa6b22e74f39a7058177d7de3dc3449e8f0be82f31f78ee52b",
+      "arm64_consumers": [
+        {
+          "elf": "lib/arm64-v8a/libAndroidEasyIPC.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "8a6e4af32d8118415f9ecc170a764f309e3920866a395acc4a672a42f6798212"
+        },
+        {
+          "elf": "lib/arm64-v8a/libasrkernel.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libonnxruntime.so",
+            "libzoom-lid.so",
+            "libzoom-vad.so"
+          ],
+          "sha256": "fb85e6016ef1c5f34a4455ddc9400018a1cabd3f89730be894293682eafe3cdc"
+        },
+        {
+          "elf": "lib/arm64-v8a/libfbjni.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22"
+        },
+        {
+          "elf": "lib/arm64-v8a/libhermestooling.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libhermesvm.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "fd2e39f4e3a968a868445e01ae3294e779f1e7c3838103b5e667b06ab865b387"
+        },
+        {
+          "elf": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_lock",
+            "ANativeWindow_release",
+            "ANativeWindow_setBuffersGeometry",
+            "ANativeWindow_unlockAndPost"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "3e0071afcdc7e321f839e196d266014182f18d0988e4455acc9857a085b2184e"
+        },
+        {
+          "elf": "lib/arm64-v8a/liblooper.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_pollOnce",
+            "ALooper_prepare",
+            "ALooper_release",
+            "ALooper_removeFd",
+            "ALooper_wake"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "281705d595edcd6e45a9f382331dc50aed0ac629ad7d5c77e4eca4620582b946"
+        },
+        {
+          "elf": "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength"
+          ],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "fa41d509a661e8aa8b3e3ac1a28541f8823f308414fcad733fe26d61feea2646"
+        },
+        {
+          "elf": "lib/arm64-v8a/libnlooper.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "liblooper.so",
+            "libm.so"
+          ],
+          "sha256": "8ba99f1b2b92bd5b9ea044a8c6253ca0a8f885f2ebf888c5410b3766afaa5c89"
+        },
+        {
+          "elf": "lib/arm64-v8a/libnydus.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv3.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libusb-1.0.so",
+            "libuvc.so"
+          ],
+          "sha256": "b93f4953b769ff56f219cfaea0df8ba2437717756b866559ccfd8363a063a33e"
+        },
+        {
+          "elf": "lib/arm64-v8a/libreactnative.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength",
+            "AAsset_read"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "956255ae3c899cb2d1bcf70a85e1d327995e9c2a633d2ae06db3d8777f8a8a1a"
+        },
+        {
+          "elf": "lib/arm64-v8a/librn_built_in.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava",
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getBuffer",
+            "AAsset_getLength"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libcmmbase.so",
+            "libcmmbiz.so",
+            "libcmmlib.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libzNetUtils.so"
+          ],
+          "sha256": "1112c5f53386b4bf0e832d953ae2882e36a5ee18a31da47da5f000c7fd4b92b4"
+        },
+        {
+          "elf": "lib/arm64-v8a/librn_bundlekit.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "liblooper.so",
+            "libm.so",
+            "libnlooper.so",
+            "libreactnative.so"
+          ],
+          "sha256": "cecd9c212e24046945b2e7b6d84b419a83cf47d2a73d72e4956c64cf44b4791b"
+        },
+        {
+          "elf": "lib/arm64-v8a/librnscreens.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "libm.so",
+            "libreactnative.so"
+          ],
+          "sha256": "2fa645a620c86c0b4e43891fa3b67830ebbe334401986c22eea3364bfc5b2c3b"
+        },
+        {
+          "elf": "lib/arm64-v8a/libsurface_util_jni.so",
+          "ndk_symbol_candidates": [
+            "ANativeWindow_fromSurface",
+            "ANativeWindow_getFormat",
+            "ANativeWindow_getHeight",
+            "ANativeWindow_getWidth",
+            "ANativeWindow_release"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc.so",
+            "libdl.so",
+            "libm.so"
+          ],
+          "sha256": "ee3f0d56f81cc0a301db32dc4fd51274c3216733b4c40172768e38bc5049a265"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzAppUI.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libcmmbase.so",
+            "libcmmbiz.so",
+            "libcmmlib.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libprotoc.so"
+          ],
+          "sha256": "15d5d2c0196824ed85de48cf1c3ff61a4cc41ee02c88baf1ea76fad34e47cb81"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzReflection.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_fromJava"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so"
+          ],
+          "sha256": "2c8c7dfcdb66c0e1b25fabf2d3a2df8239ab7c99b28228875c9d0e294cd43ad1"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzSipSdk.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libcares.so",
+            "libcmmbase.so",
+            "libcmmlib.so",
+            "libcrypto_sb.so",
+            "libdl.so",
+            "liblog.so",
+            "liblooper.so",
+            "libm.so",
+            "libsipphone_audioctrl.so",
+            "libsrtp.so",
+            "libssl_sb.so",
+            "libzReflection.so",
+            "libzoom_tp.so",
+            "libzoom_util.so",
+            "libzoombase_shared.so"
+          ],
+          "sha256": "9a31f235a4d409adaa7deb293ee5a8b16935c0661737d8e8216e62f66d244845"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzTelemetryJNI.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libcmmbase.so",
+            "libcmmbiz.so",
+            "libcmmlib.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libprotoc.so"
+          ],
+          "sha256": "7a0b69c45a4654180be47b9a3852f898fe2e35e7206085b3d3cfe14b223d8b1c"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzUnifyWebViewApp.so",
+          "ndk_symbol_candidates": [
+            "AAssetManager_open",
+            "AAsset_close",
+            "AAsset_getLength",
+            "AAsset_read"
+          ],
+          "needed": [
+            "libZMDB.so",
+            "libZoomTask.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libcmmbase.so",
+            "libcmmbiz.so",
+            "libcmmlib.so",
+            "libdl.so",
+            "libjnigraphics.so",
+            "liblog.so",
+            "libm.so",
+            "libprotoc.so",
+            "libzNetUtils.so",
+            "libzReflection.so",
+            "libzServiceHubCore.so",
+            "libzlib.so",
+            "libzoom_util.so"
+          ],
+          "sha256": "a85d94a01fc968d96d9edeebd067b47be5c6ed825beaddff7c3966d0de534b3f"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzinstrumentor.so",
+          "ndk_symbol_candidates": [
+            "ALooper_acquire",
+            "ALooper_addFd",
+            "ALooper_forThread",
+            "ALooper_release",
+            "ALooper_removeFd"
+          ],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libz.so"
+          ],
+          "sha256": "672a2912e9432c25f337cf3d130aab9548ae00ed59de73b9f1495548051ed99b"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzlt.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libEGL.so",
+            "libGLESv2.so",
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "liblog.so",
+            "libm.so",
+            "libmediandk.so",
+            "libtensorflowlite_gpu_jni.so",
+            "libtensorflowlite_jni.so"
+          ],
+          "sha256": "0a821ef8ba7f6e9d3978535c5d05a9eaee58dac834b7b7c7f4dbec03bcf77168"
+        },
+        {
+          "elf": "lib/arm64-v8a/libzm_rn_autolink_glue.so",
+          "ndk_symbol_candidates": [],
+          "needed": [
+            "libandroid.so",
+            "libc++_shared.so",
+            "libc.so",
+            "libdl.so",
+            "libfbjni.so",
+            "libjsi.so",
+            "liblog.so",
+            "liblooper.so",
+            "libm.so",
+            "libnlooper.so",
+            "libreact_codegen_rnscreens.so",
+            "libreact_codegen_safeareacontext.so",
+            "libreactnative.so",
+            "librn_bundlekit.so"
+          ],
+          "sha256": "29db49b1e5031bc51dbdb5377a030f84702fcaaf62ec1b8168fcb20f71730608"
+        }
+      ],
+      "package": "us.zoom.videomeetings"
+    }
+  ],
+  "declared_needed_packages": 48,
+  "exact_r4_provider_source": {
+    "android_bp_sha256": "bb1b7a5a7c01bc0e7660ade6f95c2319efbcf0830366666448b8007754a2ca4c",
+    "commit": "45034f0663f960d9ee5fb0a101a4732b71f6e2f4",
+    "definitions": [
+      "ndk_library libandroid",
+      "cc_library_shared libandroid"
+    ],
+    "indexed_relative_path": "AOSP-16.0.0_r4/android-source/frameworks-base-r4-45034f0",
+    "libandroid_map_sha256": "81d7d70f74c4a2d7b02f1daba270a12eca328690cf4ef8edf0c9cc2da9fa962d",
+    "source_index_sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636",
+    "tree": "6667cba9cf8225451f0822ad94cb21902025dfa3"
+  },
+  "frozen_packages_checked": 105,
+  "g339_result_sha256": "6451a8115ae1b190fe344346c46410fa417d19855cfeabd9444fa99b024ae3fb",
+  "limit": "ELF declarations and unresolved names only; no provider ELF, linker mapping, reachability, cold start or device result",
+  "lock_sha256": "3e63f87f6c007bf51464fe19eb5ab577f1fff355a84b96a6f72856e68a5612f6",
+  "schema": "g341-libandroid-frozen-consumer-contract-v2",
+  "status": "HOST_STATIC_CONSUMER_EXPOSURE_ONLY",
+  "symbol_family_package_counts": {
+    "AAsset": 14,
+    "AHardwareBuffer": 8,
+    "AImage": 6,
+    "AInput": 3,
+    "ALooper": 14,
+    "AMotion": 3,
+    "ANativeWindow": 32
+  },
+  "target_plans": {
+    "flutter-libandroid-n1": {
+      "decision": "replace",
+      "sha256": "e9684b453cc8efe0a373b9ca9de6b16e1643391f38dcaa03d707dfae92bc06ea",
+      "source_build_accepted": false,
+      "state": "not_run"
+    },
+    "libandroid-9ccf64f8": {
+      "decision": "replace",
+      "sha256": "e71602be9c72ba2e06a0004e464463296cc48a17df9298e31ff69bd638db0de5",
+      "source_build_accepted": false,
+      "state": "not_run"
+    }
+  }
+}

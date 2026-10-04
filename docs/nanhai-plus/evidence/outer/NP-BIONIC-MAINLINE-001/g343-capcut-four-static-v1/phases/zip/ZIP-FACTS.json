@@ -1,0 +1,33 @@
+{
+  "crc_first_bad": null,
+  "entries": 27633,
+  "manifest_entries": 1,
+  "root_dex_names": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex",
+    "classes7.dex",
+    "classes8.dex",
+    "classes9.dex",
+    "classes10.dex",
+    "classes11.dex",
+    "classes12.dex",
+    "classes13.dex",
+    "classes14.dex",
+    "classes15.dex",
+    "classes16.dex",
+    "classes17.dex",
+    "classes18.dex",
+    "classes19.dex",
+    "classes20.dex",
+    "classes21.dex",
+    "classes22.dex",
+    "classes23.dex",
+    "classes24.dex"
+  ],
+  "so_entries": 292,
+  "unique_names": 27633
+}

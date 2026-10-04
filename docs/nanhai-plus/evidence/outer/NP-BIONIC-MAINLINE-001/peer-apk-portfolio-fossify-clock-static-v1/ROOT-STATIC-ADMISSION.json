@@ -1,0 +1,43 @@
+{
+  "apk_bytes": 9110265,
+  "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "at_utc": "2026-10-04T20:51:31.566809+00:00",
+  "bionic_whole_tool_delta": 0,
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_COMPLETE_HOST_STATIC_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 1,
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/HANDOFF.json",
+    "sha256": "bc72b953f27e5613ace5ae0315ecbde86355de5d9ba9d82af0013ad3dd793cf2"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-independent-review-v1/REVIEW.json",
+    "sha256": "fde8a0c979f554a941ed9410d9b55c29257d8dd62a3d21179d064f23cd34407a"
+  },
+  "package": "org.fossify.clock",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "raw_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/ROOT-RAW-ADMISSION.json",
+    "sha256": "344c20fc2ffec1d447279db1e3685c1badae4fbdd2a8bc3d85561a0c33890f01"
+  },
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "schema": "nanhai-plus-root-four-phase-host-static-admission-v1",
+  "scope": "ZIP/metadata/DEX/ELF host static only; no runtime reachability/provider/startup conclusion",
+  "semantic_dex_delta": 1,
+  "static_result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/STATIC.json",
+    "sha256": "57b491ae7abbb04fd47f65b538a82a3561690be3bf4ca6a1509f310ccd458b38"
+  },
+  "true_arm64_elf_delta": 1,
+  "upstream_artifact_id": "a-3c59cabd083b4683cc1b",
+  "version_code": 10,
+  "version_name": "1.6.0"
+}

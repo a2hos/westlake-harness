@@ -1,0 +1,32 @@
+{
+  "anativewindow_import_candidate_packages": 32,
+  "at_utc": "2026-10-04T20:51:31.566809+00:00",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_FROZEN_LIBANDROID_DECLARED_CONSUMER_CLUSTER_ONLY",
+  "declared_needed_arm64_elf_members": 221,
+  "declared_needed_packages": 48,
+  "device_commands": 0,
+  "frozen_apk_packages": 105,
+  "loader_selection_verified": false,
+  "next": "Same-generation R4 ARM64 Bionic product libandroid.so ELF, install manifest and exact consumer export/loader contract after authenticated native host graph.",
+  "product_install_manifest_verified": false,
+  "r4_source_definition_seen": true,
+  "replay": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v2/REPLAY.json",
+    "sha256": "3583ea99cd3aa7cce6306940e4df3cdf5d6d2d4213760f021c922d78106020b5"
+  },
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v2/RESULT.json",
+    "sha256": "3583ea99cd3aa7cce6306940e4df3cdf5d6d2d4213760f021c922d78106020b5"
+  },
+  "root_replay_byte_equal": true,
+  "root_replay_rc": 0,
+  "same_generation_target_elf_verified": false,
+  "schema": "g341-root-static-contract-review-v1",
+  "source_script": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v2/scan.py",
+    "sha256": "60091db6539e2834d015f5058433e4d03fd2c3f86dff01b16fdd14da49141f6f"
+  },
+  "startup_blocker_proven": false
+}

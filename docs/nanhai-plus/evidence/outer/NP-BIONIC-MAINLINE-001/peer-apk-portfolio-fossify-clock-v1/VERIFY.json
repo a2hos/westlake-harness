@@ -1,0 +1,49 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-fossify-clock-v1/fossify-clock-1.6.0.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "a8915037a73c7476daefed7da7f79dfc43a7f94d7557a479bda2b6da3e65e721"
+  },
+  "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-fossify-clock-v1/fossify-clock-1.6.0.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "16f90d22ed80f950db8508a195883c7e25e401925bbdf1b80e8b49d5fbcdad2e"
+  },
+  "arm64_native": [
+    {
+      "bytes": 10096,
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6",
+      "true_elf64_aarch64": true
+    }
+  ],
+  "candidate_pass": true,
+  "host_only": true,
+  "min_sdk": null,
+  "package": [
+    "org.fossify.clock",
+    "10",
+    "1.6.0"
+  ],
+  "raw_count_changed": false,
+  "schema": "peer-apk-portfolio-fossify-clock-verify-v1",
+  "signer_cert_sha256": [
+    "affdb124d3f4720c2f98dbca9eacba0514fba4306e20a2786c861c3c0d6ff292"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "g279-native-host-fresh-entry-v1",
+  "observed_at_utc": "2026-10-04T20:45:41Z",
+  "decision": "NO_GO_NO_FRESH_AUTHENTICATED_EXACT_R4_NATIVE_LINUX_ENTRY",
+  "scope": "local read-only route, DNS, SSH configuration and bounded TCP diagnostics; no SSH or remote commands",
+  "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 App Bionic / native host / no container",
+  "current_observations": {
+    "local_os_arch": "Darwin arm64",
+    "en0": "active 192.168.3.81/24",
+    "alexpc_config": "alexpc.local:22",
+    "alexpc_dns": "socket.getaddrinfo returned gaierror Errno 8 after 5.0 seconds; dscacheutil -q host returned no address",
+    "alexpc_historical_subnet_route": "192.168.8.22 routed via default 192.168.3.1/en0; no specific 192.168.8.0/24 route",
+    "gz02_config": "1.95.90.207:58222",
+    "gz02_route": "default gateway 192.168.3.1/en0; route alone does not show reachability",
+    "gz02_direct_tcp": "socket.create_connection timed out after 3.01 seconds; no banner or host-key identity obtained",
+    "proxy_7897": "lsof -nP -iTCP:7897 -sTCP:LISTEN returned no listener",
+    "registered_config_hashes": {
+      "ssh_config_sha256": "d99dc196e3fd7fdbe1c6eb5e6c43a5d85256e659ef5abfd5e27587b318726fdd",
+      "known_hosts_sha256": "519aab445016e0a5fc983a1210037535908dab7711c13c9075f16e868f24b53b"
+    }
+  },
+  "prior_receipts_considered": [
+    "g279-native-host-entry-local-diff-v1/NO-ROUTE.json: prior local-only NO-ROUTE",
+    "g279-v2c-v7-alternate-node-candidate-v1/TERMINAL.json: SSH child rc255, no remote identity; nonce consumed",
+    "g279-alexpc-readonly-four-gate-candidate-v3/ROOT-POSTRUN-NO-GO.json: SSH child rc255, no RESULT; nonce consumed",
+    "r155-libz-mac-four-gate-v1/NO-GO.json: source identity only; exact R4 toolchain, graph and consumer absent",
+    "g279-alternate-native-host-readonly-audit-v1/REVIEW.json: local Mac and stale AlexPC mount do not close exact R4 native build gates"
+  ],
+  "not_proven": [
+    "current authenticated Linux x86_64 host",
+    "current project-owned remote identity and host key",
+    "remote exact R4 source and native toolchain",
+    "Soong graph or ARM64 Bionic target action",
+    "HelloWorld cold start"
+  ],
+  "minimum_next_credential": "Provide or restore a project-owned native Linux x86_64 endpoint with a fresh reachable route and independently pinned host-key identity, plus its project scope/owner; then run one new non-replayed read-only SSH packet for uname/UID, exact android-16.0.0_r4 manifest and required HEADs, Linux R4 toolchain, and isolated OUT/TMP capacity. Review that receipt before any graph/build.",
+  "not_performed": ["SSH", "old nonce replay", "proxy launch or global proxy change", "build", "device", "container", "namespace", "BridgeAOSPV16 access", "shared source mutation", "control document edit"]
+}

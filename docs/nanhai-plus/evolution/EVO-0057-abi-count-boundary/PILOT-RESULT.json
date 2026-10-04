@@ -1,0 +1,25 @@
+{
+  "capcut": {
+    "arm64_path_entries": 147,
+    "correctly_placed_arm32": 145,
+    "misplaced_arm32_in_arm64_path": 1,
+    "misplaced_member": "lib/arm64-v8a/libcvt.so",
+    "path_only_overcount": 1,
+    "verified_arm64_elf": 146
+  },
+  "claim_boundary": "Static ABI inventory only; no install, load, startup or package-wide failure inference",
+  "container_calls": 0,
+  "device_calls": 0,
+  "fossify_clock_negative_control": {
+    "arm64_path_entries": 1,
+    "mismatch": 0,
+    "verified_arm64_elf": 1
+  },
+  "network_calls": 0,
+  "production_edits": 0,
+  "schema": "evo57-offline-abi-count-pilot-v1",
+  "source_sha256": {
+    "capcut_classification": "c2827eb8493b3592bbb17a489a281a15e47fcc1003b6e0366f639417c01fee58",
+    "fossify_elf_result": "0913498a04432d16e32ee4ffd3379186ddf8f66b45ec73e6e45c6f5917e85746"
+  }
+}

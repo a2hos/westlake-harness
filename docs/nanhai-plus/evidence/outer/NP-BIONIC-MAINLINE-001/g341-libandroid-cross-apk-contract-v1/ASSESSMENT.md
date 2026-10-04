@@ -1,0 +1,15 @@
+# G341 frozen `libandroid.so` consumer contract
+
+The G339 root accepted, SHA locked 105 APK snapshot has **48 packages / 221 ARM64 ELF members** declaring `DT_NEEDED: libandroid.so`. In these same members, 32 packages have `ANativeWindow*` unresolved symbol candidates; the narrower `AAsset*` and `ALooper*` families each occur in 14 packages. This is a useful common provider contract to probe after the native R4 product graph is available. It is not evidence that any of these files loads before first screen, that their symbols bind to one provider, or that any APK fails to start.
+
+The exact `android-16.0.0_r4` `frameworks/base` checkout at commit `45034f0663f960d9ee5fb0a101a4732b71f6e2f4` is clean for `native/android/Android.bp`. That file defines both an `ndk_library` stub and a `cc_library_shared` named `libandroid`; `libandroid.map.txt` contains 54 of the 86 distinct A-prefixed unresolved names observed. The remaining 32 names, including `AImage*` and `AHardwareBuffer*`, are *not* proof of missing exports: ELF undefined symbol tables do not assign each import to one `DT_NEEDED` provider, and several APIs have other library owners. The two historical `libandroid` façades are marked `replace`, `not_run`, and `source_build_accepted=false` in this Bionic target's plans. They cannot satisfy this R4 provider contract by name alone.
+
+**Next falsifiable hypothesis:** one exact R4 ARM64 product generation may supply a real `libandroid.so` whose `DT_SONAME`, versioned exports and transitive `DT_NEEDED` closure cover the 48 declared consumers, including the 32 `ANativeWindow*` cohort. Obtain its same generation target ELF and product install manifest from the authenticated native Linux build owner. Hash it, run `llvm-readelf -h -d -Ws`, compare its exports against `libandroid.map.txt` and these consumers' undefined names, then enumerate all installed `libandroid.so` candidates and their linker search paths. If there is no product artifact, the first actionable gap is R4 module/dependency build or product inclusion. If there is an artifact with a mismatched ABI/export set, pursue that exact mismatch. Even a clean static closure leaves loader selection and runtime call behavior unproven until a later authorized device run.
+
+Reproduce from the project root with the environment loader:
+
+```sh
+python3 -B scripts/nanhai_plus_env.py --run python3 -B docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v1/scan.py > docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v1/RESULT.json
+```
+
+Two host only runs returned rc=0 and produced byte identical `RESULT.json` and `REPLAY.json`; `cmp` returned rc=0. The scanner replays G339's 105 identity and input hash checks, fails if its accepted result differs, verifies the exact R4 source commit and clean build definition, and records every matched ELF hash. No container, device, remote host, or BridgeAOSPV16 action occurred. This is an independent analysis receipt, pending owner and root review; no progress counter or control document was changed.

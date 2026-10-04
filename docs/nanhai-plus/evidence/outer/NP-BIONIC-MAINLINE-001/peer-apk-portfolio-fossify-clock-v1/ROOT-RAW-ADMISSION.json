@@ -1,0 +1,31 @@
+{
+  "apk_bytes": 9110265,
+  "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "at_utc": "2026-10-04T20:51:31.566809+00:00",
+  "blackbox_qualification_delta": 0,
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_ONE_EXACT_UPSTREAM_RAW_ARTIFACT_ONLY",
+  "device_commands": 0,
+  "full_static_delta": 0,
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-independent-review-v1/REVIEW.json",
+    "sha256": "fde8a0c979f554a941ed9410d9b55c29257d8dd62a3d21179d064f23cd34407a"
+  },
+  "package": "org.fossify.clock",
+  "raw_delta": 1,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/RESULT.json",
+    "sha256": "adc1f76ffd873c97ec0baea5b54b8e1c0c3dc220d756eb1fecb6d408a658ce0f"
+  },
+  "schema": "nanhai-plus-root-raw-apk-admission-v1",
+  "scope": "APK identity only; whitebox source availability; no install/start/device pass",
+  "upstream_artifact_id": "a-3c59cabd083b4683cc1b",
+  "verify": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/VERIFY.json",
+    "sha256": "a81a95e2fb3556e4db02d1c6e436f3b05819d8396b4bcfba5105dae500bf5e62"
+  },
+  "version_code": 10,
+  "version_name": "1.6.0"
+}

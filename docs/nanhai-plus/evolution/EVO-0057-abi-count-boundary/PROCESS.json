@@ -1,0 +1,25 @@
+{
+  "schema": "nanhai-evolution-process-v1",
+  "id": "EVO-0057",
+  "observed_pilot_window_utc": ["2026-10-04T20:52:14Z", "2026-10-04T20:52:38Z"],
+  "limit_seconds": 120,
+  "actual_reviewed_result_groups": 4,
+  "groups": [
+    "Fresh native-host NO-GO: exact R4 native Linux host identity/Soong graph not established; no build or runtime inference",
+    "Fossify Clock original package and static admission: one ARM64 ELF with header/path match; no cold start",
+    "G341 libandroid v1 to v2: source binding corrected, frozen 105 APK consumer counts unchanged, source map remains static only",
+    "G343 CapCut four static phases rc0: 147 arm64-path .so entries include one ARM32 ELF; 146 true ARM64 ELF and 145 correctly placed ARM32 ELF"
+  ],
+  "selected_improvement_count": 1,
+  "pilot_rc": 0,
+  "pilot_kind": "read_only_receipt_replay",
+  "counterexamples_checked": [
+    "145 correctly placed CapCut ARM32 ELF must not trigger an arm64-path mismatch flag",
+    "Fossify Clock one arm64-path ELF matches its ARM64 header"
+  ],
+  "production_runner_edits": 0,
+  "common_ledger_edits": 0,
+  "device_calls": 0,
+  "container_calls": 0,
+  "network_calls": 0
+}

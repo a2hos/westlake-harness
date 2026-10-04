@@ -1,0 +1,33 @@
+{
+  "aapt2_replay_rc": 0,
+  "apk_bytes": 9110265,
+  "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "apksigner_replay_rc": 0,
+  "artifact_id": "a-3c59cabd083b4683cc1b",
+  "container_commands": 0,
+  "decision": "ACCEPT_RAW_AND_FULL_HOST_STATIC_CANDIDATE_FOR_ROOT_REVIEW_ONLY",
+  "device_commands": 0,
+  "package": "org.fossify.clock",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "phase_replay_equal": true,
+  "prior_g339_105_duplicate_hits": [],
+  "raw_handoff_sha256": "19c7edaf84b52ec869faeb1148eb5e2e5d05d97f50660c7349b86373a4bf7e0c",
+  "root_dex_entries": 1,
+  "schema": "fossify-clock-independent-review-v1",
+  "scope": "host raw identity and complete four phase static only; root counters unchanged; no startup or device acceptance",
+  "signer_cert_sha256": [
+    "affdb124d3f4720c2f98dbca9eacba0514fba4306e20a2786c861c3c0d6ff292"
+  ],
+  "source_lock_sha256": "dbd75aa3ce0b1a2bac0c28cd00b3245a33593316f0efb5e0c319dfb00c9e07bf",
+  "static_handoff_sha256": "bc72b953f27e5613ace5ae0315ecbde86355de5d9ba9d82af0013ad3dd793cf2",
+  "true_arm64_elf_entries": 1,
+  "upstream_registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "version": "1.6.0",
+  "version_code": 10,
+  "zip_entries": 1893
+}

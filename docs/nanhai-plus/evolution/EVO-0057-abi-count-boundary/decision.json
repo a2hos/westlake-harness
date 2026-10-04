@@ -1,0 +1,20 @@
+{
+  "schema": "nanhai-evolution-decision-v1",
+  "id": "EVO-0057",
+  "status": "pilot",
+  "decision": "ABI_COUNT_BOUNDARY_ONLY_NO_PROMOTION",
+  "one_improvement": "Before aggregating ARM64 native-library exposure across APKs, require ELF class and e_machine to agree with the archive ABI path; report misplaced members separately while retaining correctly placed 32-bit siblings.",
+  "pilot_result": "On G343 CapCut, path-only ARM64 counting yields 147 versus 146 verified ARM64 ELF; the one excess is lib/arm64-v8a/libcvt.so with ELFCLASS32/EM_ARM. The 145 armeabi-v7a ELF are correctly placed and remain a separate 32-bit inventory. Fossify Clock has one matching ARM64 ELF and zero mismatch.",
+  "why_this_round": "CapCut supplies a real mismatch and an in-package negative control; Fossify Clock supplies a second package negative control. Native-host NO-GO and G341 static-only scope keep this as a portfolio count correction, not an executable provider or startup experiment.",
+  "next_falsifiable_gate": "Run the same header/path comparison on one additional independently admitted multi-ABI APK with a frozen original-package hash; independently replay the count and confirm that mismatches stay separate from true ARM64 totals without rejecting correctly placed ARM32 entries.",
+  "promotion_gate": "Only after independent review on that additional APK and a demonstrated correction to an actual portfolio aggregate, consider a production count guard; retain original scan receipt and explicit mismatch category.",
+  "rollback": "Drop the rule if it rejects all multi-ABI packages, counts ELF path alone, treats a misplaced member as install or startup failure, or changes historical accepted counts without a separately reviewed new generation.",
+  "limitations": [
+    "Pilot replays already produced static receipts; no independent APK rescan or production aggregate was changed",
+    "ELF header/path mismatch does not prove package manager extraction, dlopen reachability, install rejection, or startup failure",
+    "One positive mismatch package and one negative package do not establish portfolio-wide prevalence"
+  ],
+  "production_changed": false,
+  "startup_count_delta": 0,
+  "device_or_container_action": false
+}

@@ -1,0 +1,77 @@
+{
+  "aapt2_rc": 0,
+  "apk_bytes": 9110265,
+  "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "apksigner_rc": 0,
+  "artifact_id": "a-3c59cabd083b4683cc1b",
+  "at_utc": "2026-10-04T20:46:44.394568+00:00",
+  "blackbox_qualified": false,
+  "container_commands": 0,
+  "device_commands": 0,
+  "download_rc": 0,
+  "files": {
+    "GET.headers.raw": {
+      "bytes": 364,
+      "sha256": "53a0fddf358f609cf2cd12b3349f2cf1d0101b1ee4f29a8cd5482d5439381a5b"
+    },
+    "GET.stderr.raw": {
+      "bytes": 475,
+      "sha256": "67504948354ea9b88e980feb40a30156734a3859d6e2aa08d82559f0176e6211"
+    },
+    "GET.stdout.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "RESULT.json": {
+      "bytes": 1903,
+      "sha256": "adc1f76ffd873c97ec0baea5b54b8e1c0c3dc220d756eb1fecb6d408a658ce0f"
+    },
+    "VERIFY.json": {
+      "bytes": 1734,
+      "sha256": "a81a95e2fb3556e4db02d1c6e436f3b05819d8396b4bcfba5105dae500bf5e62"
+    },
+    "aapt2.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "aapt2.stdout.raw": {
+      "bytes": 7109,
+      "sha256": "a8915037a73c7476daefed7da7f79dfc43a7f94d7557a479bda2b6da3e65e721"
+    },
+    "acquire.py": {
+      "bytes": 3827,
+      "sha256": "c4c409aa1e55feecab2d85545bccd536a81c488a95ea664c1d8d26416043bd46"
+    },
+    "apksigner.stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "apksigner.stdout.raw": {
+      "bytes": 954,
+      "sha256": "16f90d22ed80f950db8508a195883c7e25e401925bbdf1b80e8b49d5fbcdad2e"
+    },
+    "verify.py": {
+      "bytes": 3428,
+      "sha256": "6cc49e241c881b661c66e8c739b58089fb9adeb0301038de2638e860ce38a09f"
+    }
+  },
+  "package": "org.fossify.clock",
+  "phase_rc": {
+    "dex": 0,
+    "elf": 0,
+    "metadata": 0,
+    "zip": 0
+  },
+  "root_dex_entries": 1,
+  "schema": "peer-apk-portfolio-fossify-clock-handoff-v1",
+  "scope": "candidate for independent peer and root review; no root accepted count change",
+  "signer_cert_sha256": [
+    "affdb124d3f4720c2f98dbca9eacba0514fba4306e20a2786c861c3c0d6ff292"
+  ],
+  "source_url": "https://f-droid.org/repo/org.fossify.clock_10.apk",
+  "startup_proven": false,
+  "true_arm64_elf_entries": 1,
+  "upstream_registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "version_code": 10,
+  "version_name": "1.6.0"
+}

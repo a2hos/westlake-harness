@@ -1,0 +1,15 @@
+{
+  "accepted_scope": "Local route/DNS/TCP observations; no SSH identity, Linux UID, exact R4 remote source, graph, target artifact or startup proof",
+  "arm64_bionic_target_observed": false,
+  "at_utc": "2026-10-04T20:53:01.507967+00:00",
+  "candidate_sha256": "bbb53095b7d25c20ecd2fefd7f4b5b02f0ab59aa23dd7c4524be34ae14d1cdd4",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "decision": "ACCEPT_FRESH_LOCAL_READONLY_NO_GO_ONLY",
+  "device_commands": 0,
+  "native_host_authenticated": false,
+  "next": "Fresh reachable project-owned native Linux x86_64 endpoint and independently pinned host key, then one new read-only owner-bound identity/source/toolchain/capacity check; old nonce never replayed.",
+  "schema": "g279-native-host-entry-root-scope-review-v1",
+  "soong_graph_observed": false,
+  "ssh_commands": 0
+}

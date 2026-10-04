@@ -1,0 +1,82 @@
+{
+  "apk_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "container_commands": 0,
+  "device_commands": 0,
+  "four_phase_rc0": true,
+  "package": "org.fossify.clock",
+  "phases": {
+    "dex": {
+      "apk_sha_after": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "apk_sha_before": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "container_commands": 0,
+      "device_commands": 0,
+      "dex_entries": 1,
+      "dex_names": [
+        "classes.dex"
+      ],
+      "elapsed_seconds": 1.8120277499547228,
+      "network_commands": 0,
+      "phase": "dex",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "source_guard_equal": true
+    },
+    "elf": {
+      "abi_matches_machine": 1,
+      "apk_sha_after": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "apk_sha_before": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "arm64_elf_entries": 1,
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 0.06469104194547981,
+      "network_commands": 0,
+      "phase": "elf",
+      "rc": 0,
+      "readelf_ok": 1,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "source_guard_equal": true
+    },
+    "metadata": {
+      "apk_sha_after": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "apk_sha_before": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "container_commands": 0,
+      "device_commands": 0,
+      "elapsed_seconds": 0.2909737080335617,
+      "manifest_available": true,
+      "network_commands": 0,
+      "package": "org.fossify.clock",
+      "phase": "metadata",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "source_guard_equal": true,
+      "target_sdk": "36",
+      "version_code": "10",
+      "version_name": "1.6.0"
+    },
+    "zip": {
+      "apk_sha_after": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "apk_sha_before": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+      "container_commands": 0,
+      "crc_bad": null,
+      "device_commands": 0,
+      "duplicate_names": 0,
+      "elapsed_seconds": 0.0317286669742316,
+      "entries": 1893,
+      "manifest_count": 1,
+      "network_commands": 0,
+      "phase": "zip",
+      "rc": 0,
+      "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+      "root_dex": 1,
+      "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+      "so_count": 4,
+      "source_guard_equal": true
+    }
+  },
+  "root_count_changed": false,
+  "schema": "peer-apk-portfolio-fossify-clock-static-v1",
+  "startup_proven": false
+}

@@ -1,0 +1,17 @@
+{
+  "apk_sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+  "at_utc": "2026-10-04T20:48:30.093693+00:00",
+  "limits_seconds": {
+    "dex": 1800,
+    "elf": 1800,
+    "metadata": 300,
+    "zip": 300
+  },
+  "nonce": "6e57da07b8d2694c3129fffb2757fdcd",
+  "phase_script_sha256": "d5adf0252648a8573ff72ad26e2a8092414d1004cc1ae5039c7d4f020a3a6413",
+  "raw_admission_sha256": "4e835511eb4cb07e7057197112449bc2aff0c83c0f3dfa097c860db7d094c1df",
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "runner_sha256": "89c1e995a8ddeb30d2ec0f82a9dd2c1e37731f7a39054a8307ea410033ee8bbb",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "scope": "native Mac host static only; no device/container/SSH"
+}

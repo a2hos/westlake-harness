@@ -1,0 +1,18 @@
+{
+  "apk_sha_after": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "apk_sha_before": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 0.2909737080335617,
+  "manifest_available": true,
+  "network_commands": 0,
+  "package": "org.fossify.clock",
+  "phase": "metadata",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "source_guard_equal": true,
+  "target_sdk": "36",
+  "version_code": "10",
+  "version_name": "1.6.0"
+}

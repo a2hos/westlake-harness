@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T20:42:08.431021+00:00",
+  "checked_at": "2026-10-04T20:53:47.447533+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,19 +35,19 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 111,
+    "downloaded_payloads": 112,
     "latest_raw_admission": {
       "packages": [
-        "com.anydesk.anydeskandroid"
+        "org.fossify.clock"
       ],
       "receipts": [
         {
-          "package": "com.anydesk.anydeskandroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-v1/ROOT-RAW-ADMISSION.json",
-          "sha256": "f52eae3bf501b5919a7f5da53ac34d7a78deea133f77c83a97eaefb25d7135c7"
+          "package": "org.fossify.clock",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/ROOT-RAW-ADMISSION.json",
+          "sha256": "344c20fc2ffec1d447279db1e3685c1badae4fbdd2a8bc3d85561a0c33890f01"
         }
       ],
-      "scope": "one exact official host raw APK identity only"
+      "scope": "one exact upstream original APK identity only; no runtime pass"
     },
     "downloaded_payloads_meaning": "root-accepted raw artifact identities; not every network GET",
     "recent_unaccepted_downloads": [
@@ -58,33 +58,39 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 109,
-    "complete_inventory_dex_entries": 360,
+    "complete_static_inventories": 111,
+    "complete_inventory_dex_entries": 385,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 1563,
+    "complete_inventory_native_elf_entries": 1710,
     "latest_complete_static_admission": {
       "packages": [
-        "com.anydesk.anydeskandroid"
+        "org.fossify.clock",
+        "com.lemon.lvoverseas"
       ],
       "receipts": [
         {
-          "package": "com.anydesk.anydeskandroid",
-          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-blackbox-anydesk-static-v1/ROOT-STATIC-ADMISSION.json",
-          "sha256": "8671fcad3f8557898cf2919ebfcdaf8ace6fcbe3a655891502fc5fff8c676df2"
+          "package": "org.fossify.clock",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "ac49e87af15530cdc143894fd3552ba28307e26130c406a894c3c09815995e84"
+        },
+        {
+          "package": "com.lemon.lvoverseas",
+          "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g343-capcut-four-static-v1/ROOT-STATIC-ADMISSION.json",
+          "sha256": "a335c46e1c2a1205a5f5a7a0c9ef08d1c593ace5c00b70570cc03e4b50bc6923"
         }
       ],
-      "scope": "four-phase host static only; no install/runtime"
+      "scope": "two four-phase host static inventories; CapCut ARM64 path contains one ARM32 ELF, separately classified; no install/runtime pass"
     },
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 75,
-    "supplemental_payloads": 32,
+    "registered_upstream_payloads": 79,
+    "supplemental_payloads": 33,
     "qualified_blackbox_packages": 21,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
@@ -106,7 +112,8 @@
       "com.adguard.vpn",
       "com.valvesoftware.android.steam.friendsui",
       "com.gaditek.purevpnics",
-      "io.privado.android"
+      "io.privado.android",
+      "com.anydesk.anydeskandroid"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -869,6 +876,30 @@
     {
       "path": "docs/nanhai-plus/revisions/no-container-20261004/owner_sync/ROOT-ACK.json",
       "sha256": "15099d8dc70d1ed8cf4446d126df960342c5268aca57ec30b67618acf0a5bddd"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "344c20fc2ffec1d447279db1e3685c1badae4fbdd2a8bc3d85561a0c33890f01"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "ac49e87af15530cdc143894fd3552ba28307e26130c406a894c3c09815995e84"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g343-capcut-four-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "a335c46e1c2a1205a5f5a7a0c9ef08d1c593ace5c00b70570cc03e4b50bc6923"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v2/ROOT-REVIEW.json",
+      "sha256": "55e85a949bef4aff2bcc705dfdd5b65e35fffc0a75bbd7a035b607b1d88fd177"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-host-fresh-entry-20261004T2045Z/ROOT-REVIEW.json",
+      "sha256": "4bc857d8ee4baa41c12760f9b5f8b70ffc3c59ae905544b1bcdc4500cc957ee0"
+    },
+    {
+      "path": "docs/nanhai-plus/evolution/EVO-0057-abi-count-boundary/decision.json",
+      "sha256": "9f41dec120a4379f77b7cdd1c603ef6ca8685b876b31337d35ce939f3c37c732"
     }
   ],
   "bionic_stock_graph": {
@@ -918,18 +949,18 @@
     "next_input": "Independent v13 type-aware linkfile guard and new one-shot graph generation; do not replay v12"
   },
   "reflection": {
-    "latest": "EVO-0045-route-observability",
+    "latest": "EVO-0057-abi-count-boundary",
     "result": {
-      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/evolution/EVO-0045-route-observability/ROOT-ACCEPTANCE.json",
-      "sha256": "bdc9595116bea19fb51dfa0a787cd2de4c69dc1cdf66ae1dac46b3a08fbfe2fc"
+      "path": "docs/nanhai-plus/evolution/EVO-0057-abi-count-boundary/decision.json",
+      "sha256": "9f41dec120a4379f77b7cdd1c603ef6ca8685b876b31337d35ce939f3c37c732"
     },
-    "actual_result_groups": 3,
-    "duration_seconds": 58.307251333,
-    "one_testable_improvement": "Add protocol-stage sidecar receipts to a future byte-transparent project-private SOCKS5 read-only handshake; keep historical rc255 stage unknown.",
+    "actual_result_groups": 4,
+    "duration_seconds": 24,
+    "one_testable_improvement": "Compare ELF class/e_machine against APK ABI path before aggregate ARM64 native counts; keep misplaced members separate.",
     "limited_pilot": true,
     "globally_promoted": false,
     "pending_actual_result_groups": 0,
-    "direction": "transport stage observability; distinct from EVO44 suffix and EVO43 SDK risk"
+    "direction": "native ABI count fidelity; distinct from EVO55 input identity and EVO56 provider-consumer prioritization"
   },
   "mainstream_intake": {
     "accepted_raw_supplement": "Signal 8.29.3",
@@ -2777,6 +2808,66 @@
       "path": "docs/nanhai-plus/evolution/EVO-0056-provider-consumer-information-gain/decision.json",
       "sha256": "a183bae0a03338483351168e57b4f69b771171a950aac7481815c4dc50ced139"
     },
+    "startup_delta": 0
+  },
+  "g343_fossify_clock": {
+    "raw_root": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/ROOT-RAW-ADMISSION.json",
+      "sha256": "344c20fc2ffec1d447279db1e3685c1badae4fbdd2a8bc3d85561a0c33890f01"
+    },
+    "full_static_root": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "ac49e87af15530cdc143894fd3552ba28307e26130c406a894c3c09815995e84"
+    },
+    "raw_delta": 1,
+    "full_static_delta": 1,
+    "semantic_dex_delta": 1,
+    "true_arm64_elf_delta": 1,
+    "blackbox_delta": 0,
+    "cold_start_delta": 0
+  },
+  "g343_capcut_static": {
+    "root_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g343-capcut-four-static-v1/ROOT-STATIC-ADMISSION.json",
+      "sha256": "a335c46e1c2a1205a5f5a7a0c9ef08d1c593ace5c00b70570cc03e4b50bc6923"
+    },
+    "full_static_delta": 1,
+    "semantic_dex_delta": 24,
+    "true_arm64_elf_delta": 146,
+    "arm64_path_misplaced_arm32_elf": 1,
+    "ordinary_arm32_elf": 145,
+    "cold_start_delta": 0
+  },
+  "g341_libandroid_consumer": {
+    "root_static_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g341-libandroid-cross-apk-contract-v2/ROOT-REVIEW.json",
+      "sha256": "55e85a949bef4aff2bcc705dfdd5b65e35fffc0a75bbd7a035b607b1d88fd177"
+    },
+    "frozen_packages": 105,
+    "declared_needed_packages": 48,
+    "declared_needed_arm64_elf_members": 221,
+    "runtime_provider_verified": false,
+    "startup_blocker_proven": false,
+    "cold_start_delta": 0
+  },
+  "g279_native_host_fresh_entry": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-host-fresh-entry-20261004T2045Z/ROOT-REVIEW.json",
+      "sha256": "4bc857d8ee4baa41c12760f9b5f8b70ffc3c59ae905544b1bcdc4500cc957ee0"
+    },
+    "fresh_authenticated_linux_host": false,
+    "soong_graph_observed": false,
+    "device_commands": 0,
+    "container_commands": 0
+  },
+  "evo57": {
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0057-abi-count-boundary/decision.json",
+      "sha256": "9f41dec120a4379f77b7cdd1c603ef6ca8685b876b31337d35ce939f3c37c732"
+    },
+    "status": "pilot_only_no_production_promotion",
+    "actual_result_groups": 4,
+    "selected_improvement_count": 1,
     "startup_delta": 0
   }
 }

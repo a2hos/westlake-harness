@@ -1,0 +1,50 @@
+{
+  "actual_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-fossify-clock-v1/fossify-clock-1.6.0.apk",
+  "artifact_id": "a-3c59cabd083b4683cc1b",
+  "at_utc": "2026-10-04T20:46:09.339568+00:00",
+  "bytes": 9110265,
+  "container_commands": 0,
+  "device_commands": 0,
+  "download": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "180",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-apk-portfolio-fossify-clock-v1/fossify-clock-1.6.0.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-apk-portfolio-fossify-clock-v1/GET.headers.raw",
+      "https://f-droid.org/repo/org.fossify.clock_10.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "67504948354ea9b88e980feb40a30156734a3859d6e2aa08d82559f0176e6211",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "expected_sha256": "43cf9f0ec45f1f1ff2df47286622e5b8f3acedaeb07b7f7641b5243dbedca079",
+  "native_abi_names": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "package_expected": "org.fossify.clock",
+  "raw_count_changed": false,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "root_dex": 1,
+  "schema": "peer-apk-portfolio-fossify-clock-v1",
+  "sha_matches_upstream": true,
+  "source_url": "https://f-droid.org/repo/org.fossify.clock_10.apk",
+  "startup_proven": false,
+  "static_count_changed": false,
+  "version_code_expected": "10",
+  "version_expected": "1.6.0",
+  "zip_duplicate_names": 0,
+  "zip_first_bad": null
+}
