@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T04:23:19+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T04:38:46+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -14,7 +14,7 @@
 | 历史 Musl 限定原生工具设备通过 | 12 | 限定检查范围，不代表整工具或 APK 跑通 |
 | 新增自进化工具 | 2 项限定小试通过 | APK 清点、stock 模块前沿报告；未全面推广，不增加原 89 项通过数 |
 | 原版 APK 下载载荷接受 | 56 | 上游登记原包 55，加官方 Signal 补充原包 1；未计签名或启动通过 |
-| APK 完整静态清点 | 37 | 共 72 个 DEX、292 个 ELF；VLC、Signal 与 Keychain 未计完整清点 |
+| APK 完整静态清点 | 41 | 共 76 个 DEX、320 个 ELF；VLC、Signal 与 Keychain 未计完整清点 |
 | 真实 Bionic APK 冷启动 | 0/200 | 下载、扫描和宿主编译不计启动成功 |
 | 合格海外主流黑盒启动 | 0/100 | 包下载来源或黑盒意向不能替代资格与启动证据 |
 
@@ -26,19 +26,23 @@
 
 第 5 批静态扫描实际终态为 rc2（exec22164，terminal a49d2a）：Kore、uHabits、openHAB 的 3 份原始扫描输出经独立复核与 root 单项接受，新增 4 DEX、0 ELF；Keychain 在 35 秒上限终止，DEX 输出不完整。批次汇总器写死 14 包而本次输入为 4 包，故全局批次仍失败，未改写原结果。累计 37 包、72 DEX、292 ELF。VLC、Signal、Keychain 均未计完整。签名环境准备发现固定镜像的 /usr/bin/java 不存在（rc127）；现存 JDK 尚缺官方 checksum 来源绑定，候选不可执行；该准备任务总耗时 168 秒超过 150 秒上限，保留为 PARTIAL。
 
-精确 R4 的 jcommander、ow2-asm、sqlite 源码树及 CPython 原始 Git blob 归档已只读准入共享源码池，后者 4,990 文件、112,220,160 字节并保留 Git 路径大小写和 blob 字节。macOS 大小写不敏感检出目录以及受归档过滤影响的旧 tar 均被拒绝作为构建输入；Python、protobuf 与 build-tools 其余依赖仍需闭合。这是源码身份准入，不是 G268 构建图通过。
+精确 R4 的 jcommander、ow2-asm、sqlite 源码树及 CPython 原始 Git blob 归档已只读准入共享源码池，后者 4,990 文件、112,220,160 字节并保留 Git 路径大小写和 blob 字节。macOS 大小写不敏感检出目录以及受归档过滤影响的旧 tar 均被拒绝作为构建输入；其余原版图依赖及宿主 loader 仍需核验。这是源码身份准入，不是 G268 构建图通过。
+
+第 6 批静态扫描实际终态 rc0（exec31205，terminal d229ed，47.049 秒）。本批 Fossify Messages、Camera、Filemanager 与 Audiobook 四份原包经 327 项独立检查和 root 接受，新增 4 DEX、28 ELF，28 次 readelf 均 rc0。前后输入守卫通过，300 秒外层监督未触发；累计 41 包、76 DEX、320 ELF。扫描没有安装或启动 APK。
+
+AOSP16 R4 build-tools Python cohort 新增 843 项只读引用，另复用 2 项；protobuf superproject 2,818 个普通文件与 py-six 19 文件按同版身份登记。protobuf 内 jsoncpp Gitlink 仍未物化。CPython 4,990 文件在一次性 Linux 卷材料化、重算官方 Git 树并删除测试卷；首轮卷权限失败如实保留。以上均非新的 Soong 图、ARM64 Bionic 编译或设备通过。
 
 精确 R4 SDK 17,924 项、6,254,795,690 字节已准入并在实际构建前后守卫中验证；G266 的六个 API latest 缺项报错消失，继而 G267 的四个 VNDK license 缺项报错消失。构建图整体仍失败，不能据此宣称 Bionic 编译完成。
 
 G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM64 ET_DYN、SONAME 和 40 个必需导出符号；复用 968 个对象，新增编译与生成均为 0。这属于进程外库 `build_pass`，不计 App 内 Bionic、整工具或设备通过。
 
-扫描器 38 个固定依赖已离线安装，pip check 与 16 项实际导入通过。五批累计 37 个 APK 完成静态清点，失败批次只计独立复核通过的 3 个包。没有当前目标 runtime snapshot，因此未完成 full gap scan。HelloWorld 的 Bionic 安装、冷启动、上屏、输入和正常退出仍未验收。
+扫描器 38 个固定依赖已离线安装，pip check 与 16 项实际导入通过。六批累计 41 个 APK 完成静态清点，失败批次只计独立复核通过的 3 个包。没有当前目标 runtime snapshot，因此未完成 full gap scan。HelloWorld 的 Bionic 安装、冷启动、上屏、输入和正常退出仍未验收。
 
 | 已证明 | 未证明 | 实际失败 | 下一证据 |
 |---|---|---|---|
-| 2 个进程外服务库 `build_pass`；宿主 soong_build；37 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G267 缺 9 个 stock 输入模块；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 精确 R4 新依赖闭合与下一 stock 图执行；Bionic 真机 Activity 启动证据 |
+| 2 个进程外服务库 `build_pass`；宿主 soong_build；41 个 APK 静态清点 | App 内 Bionic 整工具、真实冷启动、当前 runtime gap scan | G267 缺 9 个 stock 输入模块；VLC/Signal/Keychain 清点未完成；第 5 批汇总 rc2 | 精确 R4 新依赖闭合与下一 stock 图执行；Bionic 真机 Activity 启动证据 |
 
-自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。反思计数归零，下一次等 3–4 组新实际结果。独立 peer 的超时记录保留。
+自进化记录：G267、原包 v7 和静态扫描第 5 批形成 3 组实际结果后，独立目录 EVO-0009 在 84.139 秒内闭合。限定预检在执行前正确拒绝“4 包输入、14 包汇总”冲突，并通过一致 4 包样例；仅此 1 项验证改进，未全局推广或计作第 3 个工具。反思当前累计 1 组新实际结果，下一次等 3–4 组新实际结果。独立 peer 的超时记录保留。
 
 这是核对时点的任务快照，不是整项目完成声明。逐项计数及本地不可变收据路径/SHA 保存于 [TASK-SUMMARY.json](TASK-SUMMARY.json)；该文件的证据索引不声称大型构建产物已上传。
 
@@ -83,7 +87,7 @@ G262 两个 OH 进程外 Musl 服务库链接成功（rc0），独立核验 ARM6
 
 ## Proven
 
-- 38/89 历史 Musl 源码接受、56 个原包载荷接受、37 个完整静态清点。
+- 38/89 历史 Musl 源码接受、56 个原包载荷接受、41 个完整静态清点。
 
 ## Not proven
 

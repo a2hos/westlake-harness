@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T04:23:19+00:00",
+  "checked_at": "2026-10-04T04:38:46+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -40,9 +40,9 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 37,
-    "complete_inventory_dex_entries": 72,
-    "complete_inventory_native_elf_entries": 292,
+    "complete_static_inventories": 41,
+    "complete_inventory_dex_entries": 76,
+    "complete_inventory_native_elf_entries": 320,
     "incomplete_static_inventories": [
       "org.videolan.vlc",
       "org.thoughtcrime.securesms",
@@ -238,6 +238,30 @@
     {
       "path": "docs/nanhai-plus/evolution/EVO-0009-batch-cardinality/reviews/ROOT-CLOSURE.json",
       "sha256": "a86e5304ffda64d43b3ea9cecb2cf868d1a9658212659ac1653ceb3e9e42bb7b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1/root-review-v1/ROOT-ACCEPTANCE.json",
+      "sha256": "099e69b53c96c43ac5d87aedd72c8b770609aef431e75ad1a21d8d6e6f5fc7b5"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/harness-stock-inventory-batch6-v1-actual-peer-review-v1/REVIEW.json",
+      "sha256": "80ab77373856aa98a68ffa549c76382eefcdc97c0bddd17a386bff439e9c3b02"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-python-build-tools-r4-cohort-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "c8c2af3d7152f32e841615e711bd650bef96bcb4a9790dbb547aabb1649846cc"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-protobuf-python-r4-closure-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "258426d2635710b0dc5fade33504d364789509086716cf362611664f41d62332"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-cpython3-r4-linux-materializer-v1-peer-review-v1/REVIEW.json",
+      "sha256": "0083c817e53a2a55582d2a0cda6fe8027b12142055b048522575a59835dc704f"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-cpython3-r4-linux-materializer-v1/TEST-RESULT-v2.json",
+      "sha256": "4967de08f2f2ab477b646ee42ec78f8a97288541b7b13d6f75bc6e1540d69c49"
     }
   ],
   "bionic_stock_graph": {
@@ -295,7 +319,7 @@
     "duration_seconds": 84.138768,
     "limit_seconds": 120,
     "timing_compliant": true,
-    "pending_actual_result_groups": 0,
+    "pending_actual_result_groups": 1,
     "trigger_every_groups": "3-4"
   },
   "mainstream_intake": {
@@ -335,5 +359,33 @@
     "filtered_git_archive_accepted": false,
     "build_graph_pass": false,
     "other_nine_module_dependencies_closed": false
+  },
+  "scanner_batch6_actual": {
+    "exec_session": 31205,
+    "terminal_chunk": "d229ed",
+    "outer_rc": 0,
+    "whole_command_seconds": 47.048769999993965,
+    "whole_command_limit_seconds": 300,
+    "accepted_packages": [
+      "org.fossify.messages",
+      "org.fossify.camera",
+      "de.ph1b.audiobook",
+      "org.fossify.filemanager"
+    ],
+    "DEX_delta": 4,
+    "ELF_delta": 28,
+    "readelf_rc0": 28,
+    "startup_delta": 0
+  },
+  "source_frontier_after_g267": {
+    "buildtools_new_readonly_refs": 843,
+    "buildtools_reused_refs": 2,
+    "protobuf_superproject_regular_files": 2818,
+    "protobuf_jsoncpp_gitlink_content_materialized": false,
+    "py_six_regular_files": 19,
+    "cpython_linux_materialization_verified_files": 4990,
+    "G268_graph_executed": false,
+    "target_compile_commands": 0,
+    "source_index_sha256": "9ac6568e895db1840038a80c9747263c9b646021bb10abb56c1f22ddcfffe56a"
   }
 }
