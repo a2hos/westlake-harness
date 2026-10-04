@@ -1,6 +1,6 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T08:24:59.434006+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04T08:48:18.835889+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
@@ -93,7 +93,7 @@ G274 输入/静态扩展门、Vivaldi 原包、Vivaldi 静态和 G274 完整执�
 
 ## Evidence target
 
-- What this proves: 截至核对时点的已接受数量、G273 实际终态、G274 输入准入与 Vivaldi 原包载荷。
+- What this proves: 截至核对时点的已接受数量、G274 实际终态、精确 R4 输入准入与 Vivaldi 原包载荷。
 - What this does not prove: 整工具完成、安装、冷启动、上屏或设备验收。
 
 ## Environment
@@ -107,20 +107,20 @@ G274 输入/静态扩展门、Vivaldi 原包、Vivaldi 静态和 G274 完整执�
 ## Status
 
 - Label: build_pass
-- Why: 仅 G262 进程外库及宿主引导产物有局部构建证据；G273 整体图生成失败。
+- Why: 仅 G262 进程外库及宿主引导产物有局部构建证据；G274 整体图生成失败。
 
 ## Observed wall
 
 - Classification: observed
-- Fact: G273 实际报出 12 种模块定义缺项、18 处诊断；G272 的五种缺项均已越过。
-- Evidence: G273-REVIEW.json，SHA 见 TASK-SUMMARY.json。
-- First failing command: G273 stock Soong Android.bp 图分析步骤。
+- Fact: G274 实际在 Soong bootstrap blueprint 报出 `kernel-config-soong-rules` 和 `soong-selinux` 两个未定义模块；G273 的 12 种缺项为历史。
+- Evidence: G274-REVIEW.json、独立复核 REVIEW.json，SHA 见 TASK-SUMMARY.json。
+- First failing command: G274 stock 的 target-graph 子步骤。
 - Exit/status: 外层 terminal rc2；目标编译命令 0。
 
 ## Hypotheses
 
-- Candidate: G273 的十二种新定义缺项正在按精确 R4 来源分组；其所需源码范围尚未准入。
-- Cheapest falsifier: 先核 G274 十二种定义的来源与 stock 视图，再经独审、新 ACK 和封包执行，观察本轮缺项是否消失。
+- Candidate: G275 需核对这两个定义的精确 R4 来源与 stock 视图；尚无 G275 执行准入。
+- Cheapest falsifier: 先核 G275 两个定义的精确 R4 来源与 stock 视图，再经独审、新 ACK 和封包执行。
 - Blocking: no
 
 ## Proven
@@ -129,15 +129,15 @@ G274 输入/静态扩展门、Vivaldi 原包、Vivaldi 静态和 G274 完整执�
 
 ## Not proven
 
-- Bionic 整工具与 APK 冷启动；G274 stock 图尚未执行；已运行的 G273 图未通过。
+- Bionic 整工具与 APK 冷启动；G274 已运行且图未通过，产品配置成功门也未通过。
 
 ## Failed
 
-- G273 图分析 rc2；G272/G271/G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 历史 v2 静态清点失败已由 v3 新证据修复；第 5、12 批整体 rc2。
+- G274 图分析 rc2；G273/G272/G271/G270/G269 历史图失败；G268/G267 历史图失败；Firefox 下载 SHA 不符；VLC/Signal/Keychain/Seal/Briar 历史 v2 静态清点失败已由 v3 新证据修复；第 5、12 批整体 rc2。
 
 ## Next evidence
 
-- Command: 先核 G274 精确 R4 模块定义与 stock 路径，再经独审、原 owner 新 ACK 与封包运行 G274。
+- Command: 先核 G275 精确 R4 模块定义与 stock 路径，再经独审、原 owner 新 ACK 与封包运行新候选；G274 不重放。
 - Expected output: 记录真实图分析结果及首个失败，成功时继续目标编译门。
 - If it fails: 保留原始收据，按精确版本定位下一缺项，不算成功。
 

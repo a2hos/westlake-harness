@@ -1,0 +1,58 @@
+{
+  "schema": "nanhai.g274.v18.full-executor-v2-ready.v1",
+  "at": "2026-10-04T08:23:46.960431+00:00",
+  "status": "FULL_ONE_SHOT_EXECUTOR_V2_STATIC_CANDIDATE_NOT_RELEASED",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/PACKET-CANDIDATE.json",
+    "sha256": "144cb6331c361879ae256cbb30ac169e80475144f53c238cd7b91378da446794",
+    "bytes": 73871
+  },
+  "executor": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/executor.py",
+    "sha256": "5413f220b7ffb49929b6009f2117fef785c559ea45fd040066ef4ab3546cc5c6",
+    "bytes": 9200
+  },
+  "oracle_policy": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/oracle_policy.py",
+    "sha256": "5b2676f41cded0e2828bb9e61a13529accf76440685a3714efa87515144c8c64",
+    "bytes": 10521
+  },
+  "static_check": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/STATIC-CHECK.json",
+    "sha256": "2e23fc5bf7840b35a16525e4829b15e3f813713c0ed7951e5250585ed50cdbbb",
+    "bytes": 4231
+  },
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/HANDOFF.md",
+    "sha256": "30ebf3eba2a807f2ac06f2a124a31c560a2b657b72dca71a44e4260c553b900f",
+    "bytes": 6007
+  },
+  "prior_v1_ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/READY.json",
+    "sha256": "b4802693b62e6e6261fb83d9ba8178a664428a1600d8ea21653551ee759d0ea8",
+    "bytes": 1981
+  },
+  "old_roots": 29,
+  "new_roots": 9,
+  "stock_roots_total": 38,
+  "new_entries": 85499,
+  "new_paths_in_oracle": 85495,
+  "exact_overlap_paths": 4,
+  "all_allowlisted_paths": 192462,
+  "source_sdk_complete_readonly_guard_executed_once": true,
+  "full_prepost_equal_executed": false,
+  "linux_mount_inspection_executed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "earliest_unclosed_gate": "independent full-executor v2 review",
+  "requires": [
+    "independent full-executor v2 review",
+    "root review",
+    "fresh original-owner G274 ACK",
+    "root seal"
+  ]
+}

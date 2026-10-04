@@ -1,0 +1,94 @@
+{
+  "at": "2026-10-04T08:37:45.683184+00:00",
+  "checks": {
+    "claim": {
+      "budget": 20000000000,
+      "count": 1,
+      "current_generation": "bionic-g274-nine-r4-stock-graph",
+      "goal_id": "goal_01",
+      "native_session": "oracle-kimi:local:nanhai-plus#inner",
+      "release_packet_sha256": "ae77fe651e3cedf767797bcf5ddbf50797916a3865c3916ae154c2c657d11a60",
+      "release_sequence": 274,
+      "release_state": "released",
+      "status": "active"
+    },
+    "full_source_sdk_guard": {
+      "elapsed_seconds": 37.749,
+      "new_entries": 85499,
+      "new_original_dangling_links": 1,
+      "new_qualified_links": 12,
+      "new_roots": 9,
+      "old_roots": 29,
+      "rc": 0,
+      "sdk_regular": 17921,
+      "sdk_symlinks": 3,
+      "terminal_chunk": "edf6da"
+    },
+    "one_shot_output_freshness": {
+      "evidence_exists": false,
+      "out_exists": false,
+      "output_leaf": "bionic-stock-bionic-target-graph-v18-v2",
+      "prior_g274_result_exists": false,
+      "tmp_exists": false
+    },
+    "owner_ack": {
+      "candidate_input_digest_mismatch": 0,
+      "candidate_input_missing": 0,
+      "compiler_commands": 0,
+      "consumed_total": 351,
+      "control": {
+        "claim": "NP-MUSL16-ART-024",
+        "goal_id": "goal_01",
+        "nonce": "g274ownercfdf61f2e836b2d2e2504050",
+        "release_sequence": 274,
+        "return_to_outer": true
+      },
+      "device_commands": 0,
+      "docker_commands": 0,
+      "extra_consumed": 5,
+      "session": "oracle-kimi:local:nanhai-plus#inner"
+    },
+    "release_only_validation": {
+      "docker_commands": 0,
+      "packet_sha256": "ae77fe651e3cedf767797bcf5ddbf50797916a3865c3916ae154c2c657d11a60",
+      "rc": 0,
+      "terminal_chunk": "14b17d"
+    },
+    "root_seal_binding": {
+      "ack_match": true,
+      "candidate_match": true,
+      "packet_match": true
+    },
+    "sealed_delta": {
+      "all_other_fields_exactly_candidate": true,
+      "changed_keys": [
+        "candidate_sha256",
+        "generation",
+        "nonce",
+        "owner_ack",
+        "owner_ack_nonce",
+        "release_sequence",
+        "status"
+      ],
+      "count": 7
+    }
+  },
+  "frozen": {
+    "candidate_sha256": "144cb6331c361879ae256cbb30ac169e80475144f53c238cd7b91378da446794",
+    "owner_ack_sha256": "3b9f5d936b68c762ba8c3d24c2efdc9465a18bb88cf1b61466257501be280c55",
+    "root_seal_sha256": "6a35f1278f774e696821a30ba50b59835a5ca5744779dbe33bb9b4a9f06f898d",
+    "sealed_packet_sha256": "ae77fe651e3cedf767797bcf5ddbf50797916a3865c3916ae154c2c657d11a60"
+  },
+  "limits": {
+    "device_commands": 0,
+    "graph_executed": false,
+    "linux_mount_inspection_executed": false,
+    "runtime_result_accepted": false,
+    "source_prepost_equal_executed": false,
+    "target_compiled": false
+  },
+  "next_gate": "Authorized original-owner single execution only; retain exact rc/log/export receipts, independent terminal review and root acceptance before reporting graph status.",
+  "schema": "nanhai.g274.v18.v2.pre-run-independent-review.v1",
+  "scope": "Read-only pre-run review; no Docker, graph, device, Herdr or Git was invoked.",
+  "status": "GO_FOR_SINGLE_AUTHORIZED_HOST_GRAPH_RUN_AFTER_ROOT_ACCEPTANCE"
+}

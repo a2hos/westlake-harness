@@ -1,0 +1,117 @@
+{
+  "schema": "nanhai.g274.v18.full-executor-v2-static-check.v1",
+  "at": "2026-10-04T08:23:46.959786+00:00",
+  "status": "STATIC_CANDIDATE_ONLY_NOT_RELEASED",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "checks": {
+    "python_ast": "pass",
+    "check_candidate": {
+      "rc": 0,
+      "terminal_chunk": "1e33d1",
+      "docker_commands": 0
+    },
+    "handoff_gate": {
+      "rc": 0,
+      "terminal_chunk": "c4d640"
+    },
+    "old_new_full_source_sdk_guard": {
+      "rc": 0,
+      "terminal_chunk": "e6504d",
+      "elapsed_seconds": 36.504,
+      "old_roots": 29,
+      "new_roots": 9,
+      "new_entries": 85499,
+      "sdk_regular": 17921,
+      "sdk_symlinks": 3,
+      "sdk_bytes_read": 6254795690
+    },
+    "exact_oracle_allowlist": {
+      "rc": 0,
+      "terminal_chunk": "0e83b7",
+      "total_paths": 192462,
+      "new_exact_paths": 85495,
+      "exact_overlaps": 4,
+      "root_prefix_wildcards": 0
+    },
+    "oracle_negative_and_fixture": {
+      "rc": 0,
+      "terminal_chunk": "7fa0da",
+      "qualified_blueprint_accepted": true,
+      "unlisted_blueprint_rejected": true,
+      "synthetic_graph_qualified_pass": true,
+      "synthetic_graph_unlisted_rejected": true,
+      "second_call_candidate_manifest_drift_rejected": true,
+      "docker_commands": 0
+    },
+    "stock_argv_static": {
+      "rc": 0,
+      "new_ro_mounts": 9,
+      "new_links_mount": 1,
+      "network_none": true,
+      "pull_never": true,
+      "timeout_seconds": 600,
+      "docker_commands": 0
+    },
+    "run_without_fresh_g274_release_negative": {
+      "outer_rc": 2,
+      "terminal_chunk": "e16a19",
+      "refusal": "wrong release path",
+      "docker_commands": 0
+    }
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/PACKET-CANDIDATE.json",
+    "sha256": "144cb6331c361879ae256cbb30ac169e80475144f53c238cd7b91378da446794",
+    "bytes": 73871
+  },
+  "executor": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/executor.py",
+    "sha256": "5413f220b7ffb49929b6009f2117fef785c559ea45fd040066ef4ab3546cc5c6",
+    "bytes": 9200
+  },
+  "oracle_policy": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/oracle_policy.py",
+    "sha256": "5b2676f41cded0e2828bb9e61a13529accf76440685a3714efa87515144c8c64",
+    "bytes": 10521
+  },
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/HANDOFF.md",
+    "sha256": "30ebf3eba2a807f2ac06f2a124a31c560a2b657b72dca71a44e4260c553b900f",
+    "bytes": 6007
+  },
+  "g274_input": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g274-v18-stock-input-candidate-v1/INPUT-CANDIDATE.json",
+    "sha256": "18514f2a8e0cb8126e109cbb8f9945f2093279cec5c7fff21a5754f27daf051d",
+    "bytes": 14551
+  },
+  "v18_static_extension": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/READY.json",
+    "sha256": "670edc0d44c25a5842cad6fb86363c3f34f3ee034f977d2a10bd03bf6e49ff4f",
+    "bytes": 2710
+  },
+  "v1_candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/READY.json",
+    "sha256": "b4802693b62e6e6261fb83d9ba8178a664428a1600d8ea21653551ee759d0ea8",
+    "bytes": 1981
+  },
+  "g273_executor": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/executor.py",
+    "sha256": "eb53aef4061044aad29ed36c5b142d07ac8bd372ef75454d1dfa786301bd5569",
+    "bytes": 64195
+  },
+  "g273_stock_shell": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v17b/stock_target_graph.sh",
+    "sha256": "e59c00a6fc1a5b6d6bd831ad6224a70cfa12a43d2a9000c7b66b12a9fc90bf33",
+    "bytes": 1997
+  },
+  "full_prepost_equal_executed": false,
+  "linux_mount_inspection_executed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "independent_review": false,
+  "owner_ack": false,
+  "root_seal": false
+}

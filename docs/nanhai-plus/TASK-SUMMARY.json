@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:24:59.434006+00:00",
+  "checked_at": "2026-10-04T08:48:18.835889+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -54,13 +54,15 @@
     "supplemental_payloads": 3
   },
   "latest_actual_execution": {
-    "release": 273,
+    "release": 274,
     "terminal_rc": 2,
-    "actual_exec_session": 42573,
-    "terminal_chunk": "37e6c6",
-    "host_tools_actual_loader_pass": 10,
-    "soong_bootstrap_successful_steps": 240,
-    "soong_bootstrap_total_steps": 240,
+    "actual_exec_session": 73856,
+    "terminal_chunk": "9ba790",
+    "host_preparatory_steps_rc0": 6,
+    "soong_bootstrap_successful_steps": 1,
+    "soong_bootstrap_total_steps": 1,
+    "first_failed_step": "stock",
+    "stock_child_at_stop": "target-graph",
     "target_compile_commands": 0,
     "runtime_verified": false,
     "app_bionic_tool_pass_delta": 0
@@ -445,19 +447,29 @@
     {
       "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/ROOT-CLOSURE.json",
       "sha256": "cfae617c74d6f7945aaa0c7578354d8e22c11f697ee4608da7a805bdb58ef6d0"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+      "sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/g274-terminal-peer-review-v1/REVIEW.json",
+      "sha256": "14b3c2109294ce837b13d2b0225d4563c1f5874c265fd32eaef2860ad11cf793"
     }
   ],
   "bionic_stock_graph": {
-    "release": 273,
+    "release": 274,
     "terminal_rc": 2,
-    "blueprint_bootstrap_pass": true,
-    "soong_host_steps": 240,
-    "stock_ninja_executed": true,
+    "product_configuration_pass": false,
+    "preparatory_product_dumpvars_rc0": true,
+    "blueprint_bootstrap_pass": false,
+    "stock_ninja_executed": false,
     "graph_generation_pass": false,
-    "first_failure": "documentsui_defaults undefined; 12 distinct module names, 18 diagnostics",
-    "failure_location": "packages/services/Car/packages/CarDocumentsUI/Android.bp:17:1",
+    "first_failure": "undefined kernel-config-soong-rules and soong-selinux",
+    "failure_location": "hardware/interfaces/compatibility_matrices/build/Android.bp:24:1",
     "target_compile_commands": 0,
-    "owned_resources_cleaned": true,
+    "owned_resources_remove_command_rc0": true,
+    "fresh_post_cleanup_inspect": false,
     "secondary_errors": []
   },
   "previous_external_service_execution": {
@@ -474,13 +486,13 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 274,
-    "next_input": "G274/v18 input-only admitted; integrate and independently review materializer/executor with exact overlap, links, source/SDK guards; then original owner fresh ACK/root seal",
+    "prospective_release": 275,
+    "next_input": "verify exact android-16.0.0_r4 source definitions of kernel-config-soong-rules and soong-selinux; form bounded candidate, independent review and new original-owner ACK",
     "candidate_independently_reviewed": false,
     "root_reviewed": false,
     "original_owner_ACK": false,
     "execution_ready": false,
-    "G273_terminal": true
+    "G274_terminal": true
   },
   "reflection": {
     "latest": "EVO-0017",
@@ -490,11 +502,11 @@
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 0,
+    "pending_actual_result_groups": 1,
     "trigger_every_groups": "3-4",
     "next": "Wait for next 3-4 actual result groups; vary lens; one verifiable improvement",
     "latest_closed": "EVO-0017",
-    "pending_groups": 0,
+    "pending_groups": 1,
     "latest_closure": {
       "path": "docs/nanhai-plus/evolution/EVO-0017-oracle-cache-invalidation/ROOT-CLOSURE.json",
       "sha256": "cfae617c74d6f7945aaa0c7578354d8e22c11f697ee4608da7a805bdb58ef6d0"
@@ -913,9 +925,41 @@
     "graph_executed": false
   },
   "g274_v18_v2_candidate": {
-    "status": "frozen candidate pending independent review",
+    "status": "terminal failure evidence accepted; do not replay",
     "oracle_policy_sha256": "5b2676f41cded0e2828bb9e61a13529accf76440685a3714efa87515144c8c64",
-    "graph_executed": false,
-    "root_release": false
+    "graph_executed": true,
+    "root_release": true,
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+      "sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781"
+    }
+  },
+  "g274_actual": {
+    "root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+      "sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781"
+    },
+    "independent_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/g274-terminal-peer-review-v1/REVIEW.json",
+      "sha256": "14b3c2109294ce837b13d2b0225d4563c1f5874c265fd32eaef2860ad11cf793"
+    },
+    "result": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/runtime-result/RESULT.json",
+      "sha256": "24f7ceb9f6ec805358087b5e9e3b9106069501f0a50b2831f9f09a273153f5cf"
+    },
+    "terminal_rc": 2,
+    "first_failed_step": "stock",
+    "stock_child_at_stop": "target-graph",
+    "undefined_modules": [
+      "kernel-config-soong-rules",
+      "soong-selinux"
+    ],
+    "target_compile_commands": 0,
+    "source_sdk_guard_pass": true,
+    "product_configuration_pass": false,
+    "graph_generation_pass": false,
+    "whole_tool_delta": 0,
+    "apk_start_delta": 0,
+    "device_commands": 0
   }
 }

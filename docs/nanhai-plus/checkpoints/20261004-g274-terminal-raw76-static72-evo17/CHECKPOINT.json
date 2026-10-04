@@ -1,0 +1,32 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T08:48:36.602811+00:00",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "release": 274,
+  "result": "terminal rc2, target-graph failed: kernel-config-soong-rules and soong-selinux undefined",
+  "original_89_bionic_whole_tools": 0,
+  "historical_musl_source_acceptances": 38,
+  "raw_apks": 76,
+  "complete_static_apks": 72,
+  "cold_starts": 0,
+  "qualified_blackbox_starts": 0,
+  "reflection": "EVO17 closed; one actual result group since closure",
+  "device_hold": "preserved; no device access",
+  "next": "G275 exact R4 source scout and new candidate",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "00d90338a8fc94c6e511dadfbcc786e49b4e68696ec156aaafd2a45aebf7dbda"
+    },
+    "outer_state": {
+      "path": "docs/nanhai-plus/OUTER-STATE.json",
+      "sha256": "584292a20af0cccca1e3b73629f12c9488abe29d2faf1446ed5c44dd92618143"
+    },
+    "g274_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/root-release-v1/G274-REVIEW.json",
+      "sha256": "88c3fda01f0473f6552170ba3407f66cf2c6e2013a4a3cecf8e274d9b88eb781"
+    }
+  }
+}

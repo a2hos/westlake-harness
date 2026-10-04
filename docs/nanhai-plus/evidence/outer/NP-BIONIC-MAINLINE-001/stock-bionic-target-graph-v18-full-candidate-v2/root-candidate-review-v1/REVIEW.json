@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-04T08:26:48.625974+00:00",
+  "status": "ROOT_ACCEPT_G274_V18_V2_CANDIDATE_FOR_OWNER_ACK_ONLY",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/READY.json",
+    "sha256": "d55cbdd52785cbd06791ca648eb4883b38fa527c641aaccbaf4b4e4b8e39564e"
+  },
+  "peer_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/independent-review-v1/REVIEW.json",
+    "sha256": "6b4369d10a9e20d7c447dfcc0ca3c45625cd99bb26ee1d3ea3fe76603910d2ce"
+  },
+  "root_ready_refs_checked": 6,
+  "root_check_candidate_rc": 0,
+  "root_check_candidate_stdout": "{\"metadata_valid\": true, \"docker_commands\": 0, \"target_compile\": false}",
+  "old_roots": 29,
+  "new_roots": 9,
+  "exact_allowed_paths": 192462,
+  "prior_v1_block_preserved": true,
+  "fresh_original_owner_ACK": false,
+  "root_execution_sealed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "device_commands": 0,
+  "next": "Use original octos-inner owner request/monitor for fresh G274 ACK, then root seal and single execution only after ACK; no G273 replay."
+}

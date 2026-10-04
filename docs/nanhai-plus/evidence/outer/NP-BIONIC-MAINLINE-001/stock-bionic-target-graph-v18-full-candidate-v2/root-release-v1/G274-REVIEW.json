@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai-g274-root-review-v1",
+  "at": "2026-10-04T08:48:18.835889+00:00",
+  "decision": "ACCEPT_TERMINAL_FAILURE_EVIDENCE",
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/runtime-result/RESULT.json",
+    "sha256": "24f7ceb9f6ec805358087b5e9e3b9106069501f0a50b2831f9f09a273153f5cf"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/g274-terminal-peer-review-v1/REVIEW.json",
+    "sha256": "14b3c2109294ce837b13d2b0225d4563c1f5874c265fd32eaef2860ad11cf793"
+  },
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "release_sequence": 274,
+  "actual_exec_session": 73856,
+  "terminal_chunk": "9ba790",
+  "outer_rc": 2,
+  "observed_first_wall": [
+    "kernel-config-soong-rules",
+    "soong-selinux"
+  ],
+  "first_failed_step": "stock",
+  "stock_child_at_stop": "target-graph",
+  "source_sdk_guard_pass": true,
+  "preparatory_steps_rc0": 6,
+  "product_configuration_pass": false,
+  "graph_generation_pass": false,
+  "target_compile_commands": 0,
+  "build_pass": false,
+  "whole_tools_delta": 0,
+  "apk_start_delta": 0,
+  "device_commands": 0,
+  "cleanup_scope": "recorded remove rc0 only; no fresh Docker inspect",
+  "next": "G275 exact R4 source provenance and fresh stock graph candidate; do not replay G274"
+}

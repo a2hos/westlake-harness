@@ -1,0 +1,98 @@
+{
+  "at": "2026-10-04T08:46:58.053024+00:00",
+  "status": "INDEPENDENT_READONLY_REVIEW_G274_ACTUAL_TERMINAL_ACCEPTED_AS_FAILURE_EVIDENCE",
+  "scope": "Receipt, archived stdout and cleanup review only; no Docker or device commands executed by reviewer.",
+  "result": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/runtime-result/RESULT.json",
+    "sha256": "24f7ceb9f6ec805358087b5e9e3b9106069501f0a50b2831f9f09a273153f5cf",
+    "rc": 2,
+    "evidence_refs": 140,
+    "evidence_rehashed_ok": 140
+  },
+  "control": {
+    "goal_id": "goal_01",
+    "claim": "NP-MUSL16-ART-024",
+    "release_sequence": 274,
+    "packet_sha256": "ae77fe651e3cedf767797bcf5ddbf50797916a3865c3916ae154c2c657d11a60",
+    "owner_ack_sha256": "3b9f5d936b68c762ba8c3d24c2efdc9465a18bb88cf1b61466257501be280c55",
+    "owner_receipt_result_sha256_match": true
+  },
+  "source_sdk": {
+    "source_before_after_bytes_identical": true,
+    "source_pre_post_stdout_identical": true,
+    "source_pre_post_rc": 0,
+    "sdk_pre_post": {
+      "all_bytes_verified": true,
+      "bytes_hashed": 6254795690,
+      "commit": "8c36435476cbaea0a4170a327e55dd4775cd60b9",
+      "manifest_sha256": "03018238a9dac914dedcbb3c9486a8ec84924dc99c1643bb1134bb2bbe58b2e4",
+      "regular_files": 17921,
+      "symlinks": 3,
+      "tree": "0348a182903065a14d190eb1aa670246c3c2106d"
+    }
+  },
+  "steps_rc": {
+    "source-pre": "0",
+    "host-providers": "0",
+    "mk2rbc": "0",
+    "rbcrun": "0",
+    "release-config": "0",
+    "product-dumpvars": "0",
+    "target-graph": "1",
+    "source-post": "0"
+  },
+  "out_archive": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/runtime-result/export-out.stdout.log",
+    "sha256": "3551bcaa1d24398a436fc28176286066d0bfee8b0416da29ce54f4f8ea162e0e",
+    "bytes": 55007232,
+    "members": 914,
+    "unexpanded_tar": true,
+    "special_members": {},
+    "member_count": 914,
+    "total_member_bytes": 54473931
+  },
+  "tmp_archive": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate-v2/runtime-result/export-tmp.stdout.log",
+    "sha256": "b6ea6194ec49599dd8abf1da0b1e8d8bba9984999a1e95b36dd12c5ccf6aac44",
+    "bytes": 51599872,
+    "members": 1020,
+    "unexpanded_tar": true
+  },
+  "failure": {
+    "stock_command_rc": 1,
+    "first_failed_step": "target-graph",
+    "stage": "Soong bootstrap blueprint",
+    "undefined_modules": [
+      "kernel-config-soong-rules",
+      "soong-selinux"
+    ],
+    "diagnostic_path": "hardware/interfaces/compatibility_matrices/build/Android.bp:24:1",
+    "previous_g273_12_names": "Historical G273 undefined-module set is not a current G274 failure claim."
+  },
+  "cleanup": {
+    "recorded_removed_containers": [
+      "stock",
+      "materialize",
+      "work-init"
+    ],
+    "recorded_removed_volumes": [
+      "tmp",
+      "out",
+      "source"
+    ],
+    "remove_command_rc_all_zero": true,
+    "fresh_post_cleanup_docker_inspection": false
+  },
+  "gates": {
+    "product_dumpvars_rc_zero": true,
+    "product_configuration_pass_result_field": false,
+    "graph_generation_pass": false,
+    "target_compile_commands": 0,
+    "target_ninja_executed": false,
+    "build_pass": false,
+    "device_commands": 0,
+    "device_verified": false,
+    "whole_tool_verified": false
+  },
+  "caveat": "Six preparatory product/host steps reached rc0 and target-graph printed product configuration, but RESULT.product_configuration_pass is false; do not promote that banner to product, graph, build, or device PASS. The two new missing Soong modules are the next host-source wall."
+}
