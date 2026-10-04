@@ -1,0 +1,7 @@
+{
+  "schema": "evo62-frozen-four-group-inputs-v1",
+  "hello_h1_h4": ["docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/RESULT.json", "89ade6677a0b649d7849880ecb939e00a9c64034878a1768e426ccc89b147b8c"],
+  "upstream_four_root": ["docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4d-exact-v1/root-admission-v1/ROOT-ADMISSION.json", "cbfffc3d3498f5e6b6da355bdbd848fa6d5d541050d98173f0962cc5d9dd8824"],
+  "scanner_135_readiness": ["docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-scanner-runtime-readiness-135-v1/RESULT-v2.json", "93def4173c103d5ef4fadc04c4a8c56b6735f8b618a4d3e8fdf5a3498c7c98d0"],
+  "teamviewer_root": ["docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-root-admission-v1/ROOT-ADMISSION.json", "7754f38b186b64715aed84c9450f0b9b7bc995e95d5b7af27294cfe981714660"]
+}

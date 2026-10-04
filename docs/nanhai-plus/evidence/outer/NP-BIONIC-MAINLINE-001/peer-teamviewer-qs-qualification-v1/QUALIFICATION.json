@@ -1,0 +1,59 @@
+{
+  "at_utc": "2026-10-04T21:58:47.327847+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "fetch": {
+    "play": {
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--location",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "45",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-qualification-v1/play.html",
+        "https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market&hl=en_US"
+      ],
+      "body_sha256": "6d3bbe989fe37c3de3627ddf17828c78771ef01aca4dfba9513a7db2ab8574db",
+      "rc": 0,
+      "stderr_sha256": "98addbe73169ac4039717ee404f0d606b8e0b0250a7df7bbc204b277439e133b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publisher": {
+      "argv": [
+        "/usr/bin/curl",
+        "--fail",
+        "--location",
+        "--retry",
+        "0",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "45",
+        "--output",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-qualification-v1/publisher.html",
+        "https://www.teamviewer.com/en/download/portal/android/"
+      ],
+      "body_sha256": "ce438474bde156d696e9d063a9503394d7b6d2b4be242083d57ca664a190d6a3",
+      "rc": 0,
+      "stderr_sha256": "7dd680cd99d825a07de1bbed610623f83e4b88b1c09c336a840159049af38cab",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "play_50m_seen": true,
+  "play_exact_package_seen": true,
+  "play_publisher_seen": true,
+  "play_url": "https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market&hl=en_US",
+  "publisher_apk_url": "https://download.teamviewer.com/download/TeamViewerQS.apk",
+  "publisher_exact_apk_href": true,
+  "publisher_page": "https://www.teamviewer.com/en/download/portal/android/",
+  "root_count_changed": false,
+  "schema": "peer-teamviewer-qs-qualification-v1",
+  "source_scope": "Publisher download and same-package Play listing plus bounded project registry check; source-code absence is not globally proved.",
+  "startup_proven": false
+}

@@ -1,0 +1,48 @@
+{
+  "all_dex_names": [
+    "classes.dex"
+  ],
+  "crc_first_bad": null,
+  "duplicate_names": 0,
+  "entries": 707,
+  "manifest_count": 1,
+  "root_dex_names": [
+    "classes.dex"
+  ],
+  "so_names": [
+    "lib/arm64-v8a/libQuickSupport.so",
+    "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "lib/arm64-v8a/libc++_shared.so",
+    "lib/arm64-v8a/liblogging.so",
+    "lib/arm64-v8a/libsamsungrcclient14.so",
+    "lib/arm64-v8a/libsamsungrcclient24.so",
+    "lib/arm64-v8a/libsamsungrcclient27.so",
+    "lib/arm64-v8a/libscrcopy.so",
+    "lib/arm64-v8a/libsentry-android.so",
+    "lib/arm64-v8a/libsentry.so",
+    "lib/armeabi-v7a/libQuickSupport.so",
+    "lib/armeabi-v7a/libandroidx.graphics.path.so",
+    "lib/armeabi-v7a/libc++_shared.so",
+    "lib/armeabi-v7a/liblogging.so",
+    "lib/armeabi-v7a/libsamsungrcclient14.so",
+    "lib/armeabi-v7a/libsamsungrcclient24.so",
+    "lib/armeabi-v7a/libsamsungrcclient27.so",
+    "lib/armeabi-v7a/libscrcopy.so",
+    "lib/armeabi-v7a/libsentry-android.so",
+    "lib/armeabi-v7a/libsentry.so",
+    "lib/x86/libQuickSupport.so",
+    "lib/x86/libandroidx.graphics.path.so",
+    "lib/x86/libc++_shared.so",
+    "lib/x86/liblogging.so",
+    "lib/x86/libscrcopy.so",
+    "lib/x86/libsentry-android.so",
+    "lib/x86/libsentry.so",
+    "lib/x86_64/libQuickSupport.so",
+    "lib/x86_64/libandroidx.graphics.path.so",
+    "lib/x86_64/libc++_shared.so",
+    "lib/x86_64/liblogging.so",
+    "lib/x86_64/libscrcopy.so",
+    "lib/x86_64/libsentry-android.so",
+    "lib/x86_64/libsentry.so"
+  ]
+}

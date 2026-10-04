@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T21:52:55.501106+00:00",
+  "checked_at": "2026-10-04T22:02:44.504365+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -35,7 +35,7 @@
     "broadly_promoted": false
   },
   "apk_portfolio": {
-    "downloaded_payloads": 135,
+    "downloaded_payloads": 140,
     "latest_raw_admission": {
       "packages": [
         "at.techbee.jtx",
@@ -106,15 +106,15 @@
     "cold_start_target": 200,
     "qualified_blackbox_startups": 0,
     "qualified_blackbox_target": 100,
-    "complete_static_inventories": 135,
-    "complete_inventory_dex_entries": 546,
+    "complete_static_inventories": 140,
+    "complete_inventory_dex_entries": 554,
     "latest_static_correction": {
       "package": "com.vivaldi.browser",
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/vivaldi-embedded-dex-semantic-v1/root-combined-correction-v1/ROOT-CORRECTION.json",
       "sha256": "396d926ca9d395dc3d25d81eed1a216dcd39579b32ef869cadff904ceded9856",
       "scope": "same-package embedded DEX semantic supplement; package count unchanged, DEX +1"
     },
-    "complete_inventory_native_elf_entries": 2103,
+    "complete_inventory_native_elf_entries": 2165,
     "latest_complete_static_admission": {
       "packages": [
         "at.techbee.jtx",
@@ -179,9 +179,9 @@
     "incomplete_static_inventories": [],
     "additional_downloads_pending_root_acceptance": 0,
     "additional_static_inventory_candidates_pending_root_acceptance": 0,
-    "registered_upstream_payloads": 95,
-    "supplemental_payloads": 40,
-    "qualified_blackbox_packages": 28,
+    "registered_upstream_payloads": 99,
+    "supplemental_payloads": 41,
+    "qualified_blackbox_packages": 29,
     "qualified_blackbox_package_ids": [
       "us.zoom.videomeetings",
       "com.vivaldi.browser",
@@ -210,7 +210,8 @@
       "com.imo.android.imoimlite",
       "sg.bigo.live",
       "cn.xender",
-      "com.tencent.ig"
+      "com.tencent.ig",
+      "com.teamviewer.quicksupport.market"
     ],
     "opera_raw_supplement": {
       "receipt": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/blackbox-opera-triple-intake-candidate-v1/root-raw-admission-v1/ROOT-RAW-ADMISSION.json",
@@ -512,7 +513,7 @@
       "qualified_startup_delta": 0,
       "cold_start_delta": 0
     },
-    "artifact_package_identity_caveat": "135 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 135 is not a proved distinct-app count."
+    "artifact_package_identity_caveat": "140 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 140 is not a proved distinct-app count."
   },
   "latest_actual_execution": {
     "scope_note": "Historical G276 native graph attempt; newer portfolio host scans and candidate GETs are recorded separately below.",
@@ -3393,6 +3394,39 @@
     "status": "pilot_only_no_run_queue_promotion",
     "actual_result_groups": 3,
     "selected_improvement_count": 1,
+    "startup_delta": 0
+  },
+  "latest_batch_20261004_upstream_next4d_teamviewer_qs": {
+    "upstream_root_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4d-exact-v1/root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "cbfffc3d3498f5e6b6da355bdbd848fa6d5d541050d98173f0962cc5d9dd8824"
+    },
+    "teamviewer_root_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-root-admission-v1/ROOT-ADMISSION.json",
+      "sha256": "7754f38b186b64715aed84c9450f0b9b7bc995e95d5b7af27294cfe981714660"
+    },
+    "raw_delta": 5,
+    "full_static_delta": 5,
+    "blackbox_test_input_delta": 1,
+    "cold_start_delta": 0
+  },
+  "hello_native_preflight_v2": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/RESULT-v2.json",
+    "sha256": "14a2fd17641e2c83dd07045dd5bd2900a98116f91f1c2419e65f9a4500f6190d",
+    "status": "offline_fixture_only_no_remote_auth"
+  },
+  "scanner_runtime_readiness_135": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-scanner-runtime-readiness-135-v1/RESULT-v2.json",
+    "sha256": "93def4173c103d5ef4fadc04c4a8c56b6735f8b618a4d3e8fdf5a3498c7c98d0",
+    "status": "inventory_ready_runtime_resolution_blind"
+  },
+  "evo62": {
+    "decision": {
+      "path": "docs/nanhai-plus/evolution/EVO-0062-runtime-scan-evidence-gate/decision.json",
+      "sha256": "d99c0303867fa63536659958a014160e333d4b634b4d14d677d223773475d825"
+    },
+    "status": "offline_pilot_only_no_queue_promotion",
+    "actual_result_groups": 4,
     "startup_delta": 0
   }
 }

@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection established
+
+HTTP/2 200 
+date: Sun, 04 Oct 2026 21:57:43 GMT
+content-type: text/html;charset=utf-8
+content-length: 264123
+set-cookie: aep_fpid=1d1da3a1-3792-4f76-8725-0225e8594963; Domain=.teamviewer.com; Path=/; Expires=Mon, 04 Oct 2027 21:57:43 GMT; SameSite=Lax; Secure
+set-cookie: __bs=1; Domain=.teamviewer.com; Path=/; Expires=Mon, 04 Oct 2027 21:57:43 GMT; SameSite=Lax; Secure
+set-cookie: __cf_bm=9UWigiuZnUCuddlTCRGiRzzHaxa3geMZzGcM4BCCDZM-1791151063.7045023-1.0.1.1-G3RzVPlLa5DvKW4Bk2efrg0OLOOTLMwF7zdQJz8clLAh40eYren4dtp_NZpJOIo2vRMjWiowPoYFfsorn6vW9CePT5jkBmor43Pt0S.TdwPQD3UE7X5zTNxNfUUqFx.f; HttpOnly; SameSite=None; Secure; Path=/; Domain=teamviewer.com; Expires=Sun, 04 Oct 2026 22:27:43 GMT
+set-cookie: _cfuvid=VuquKFTNwi.gM1veFpzkgkxKUmlIuMQpgKFYS2zJmLg-1791151063.7045023-1.0.1.1-RlrNbWbaFN_dT2KG5uJAFim8ii8t51LUBdsMdTDWsyM; HttpOnly; SameSite=None; Secure; Path=/; Domain=teamviewer.com
+cf-ray: a45771a42b378188-SJC
+cf-cache-status: HIT
+access-control-allow-origin: https://www.teamviewer.com
+age: 23545
+cache-control: public, max-age=28800
+last-modified: Sun, 04 Oct 2026 15:25:18 GMT
+server: cloudflare
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains;
+vary: Origin, Accept-Encoding
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-country-filter: true
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=86400
+

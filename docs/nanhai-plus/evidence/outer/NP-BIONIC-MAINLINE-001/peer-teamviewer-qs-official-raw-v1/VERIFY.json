@@ -1,0 +1,41 @@
+{
+  "aapt2": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/aapt2",
+      "dump",
+      "badging",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-teamviewer-qs-official-raw-v1/teamviewer-qs-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "826295674245165a7bfff1597dca208617765414e88b52880ea036ba3050a26f"
+  },
+  "apk_bytes": 52434999,
+  "apk_sha256": "2cbd20da44138342e61cde01b655b51246599555c6146d2cba7d864a102e9b5d",
+  "apksigner": {
+    "argv": [
+      "/Users/alexyang/Library/Android/sdk/build-tools/36.1.0/apksigner",
+      "verify",
+      "--verbose",
+      "--print-certs",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-teamviewer-qs-official-raw-v1/teamviewer-qs-official.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "1f9325b9e2eb861c806bd7d94a72b8d6b081cf69e1be03c097c96caa67fd1535"
+  },
+  "candidate_pass": true,
+  "package_version": [
+    "com.teamviewer.quicksupport.market",
+    "1582264",
+    "15.82.264"
+  ],
+  "raw_result_sha256": "0e68123ce7c05e3b14ba8228e7c248023d5e6b7076123c523ec33409a5b2bb23",
+  "root_count_changed": false,
+  "schema": "peer-teamviewer-qs-official-verify-v1",
+  "signer_cert_sha256": [
+    "a7d99ff485f0c55fd4f1f9cc35cb08a1b74eb995fc3f0524318ff662f8d3cd26"
+  ],
+  "startup_proven": false,
+  "target_sdk": "36"
+}

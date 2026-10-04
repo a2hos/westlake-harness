@@ -1,0 +1,46 @@
+{
+  "abis": [],
+  "activities": 19,
+  "app_name": "Clock",
+  "bytes": 7181862,
+  "features": [
+    "android.hardware.camera",
+    "android.hardware.camera.flash"
+  ],
+  "filename": "original.apk",
+  "main_activities": [
+    "com.best.deskclock.DeskClock"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 0,
+  "package": "com.best.deskclock",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4d-exact-v1/com.best.deskclock/original.apk",
+  "permissions": [
+    "android.permission.FLASHLIGHT",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.TURN_SCREEN_ON",
+    "android.permission.USE_EXACT_ALARM",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.best.deskclock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "org.codeaurora.permission.POWER_OFF_ALARM"
+  ],
+  "providers": 2,
+  "receivers": 10,
+  "services": 11,
+  "sha256": "64d6152ff3a5c84ee45ca96b3c0003e058965371f6a6c5060e56a54300e69a01",
+  "signing_certificate_sha256": [
+    "91aec64808918f21cfec27339cc5bd3f529759fc79ac32ba4379531595bd375c"
+  ],
+  "target_sdk": "36",
+  "version_code": "2036",
+  "version_name": "2.32"
+}

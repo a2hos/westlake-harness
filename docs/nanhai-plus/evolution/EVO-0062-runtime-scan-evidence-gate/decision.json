@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-04T22:02:01.005989+00:00",
+  "bridge_actions": 0,
+  "canonical_changes": 0,
+  "cases": {
+    "current": {
+      "rc": 0,
+      "sha256": "9c402e705d03da2a8cfc85fe22812cfb884601160a014792cec12ab320563171"
+    },
+    "historical_empty_system": {
+      "rc": 0,
+      "sha256": "eb724ae73293690351f6b1f27a941b934f09104ecf6488d04de280446084a55b"
+    },
+    "synthetic_complete": {
+      "rc": 0,
+      "sha256": "b2d7da676686650adacb95bd68003e05d48d3b3166dd3c0134bc7763d2bbfbdb"
+    }
+  },
+  "container_commands": 0,
+  "decision": "GO_SMALL_OFFLINE_PILOT_ONLY",
+  "device_commands": 0,
+  "inputs_sha256": "9f583054bfb33ef62ab59803cd8ee878b6b1ed7026a53bd17223df14287fc40c",
+  "one_improvement": "Gate runtime-resolution scan dispatch on exact R4 same-build ordered BCP plus ARM64 bridge and system ELF full index; otherwise inventory only and resolution BLIND",
+  "pilot_sha256": "560ab68fff2fb828cc54b69885ab65e0599b884775444d8e646ed79841027d05",
+  "report_sha256": "954d16a34c795e7fb8d9ca15d3389d0fafdc25274e6a4362422a8da82018ee71",
+  "runtime_scan_commands": 0,
+  "schema": "evo62-bounded-reflection-v1",
+  "test_results_sha256": "11462caf469c7a419832b56b6d3a66c73132fae8ba15267550bd6b1623ac882d"
+}

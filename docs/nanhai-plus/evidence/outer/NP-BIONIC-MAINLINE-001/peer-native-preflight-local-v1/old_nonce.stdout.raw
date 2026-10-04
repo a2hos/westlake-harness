@@ -1,0 +1,1 @@
+{"decision": "NO_GO_OFFLINE_FIXTURE", "first_failure": "H1_AUTH_HOST", "input_sha256": "036639dabad4c54fa631c3a6bd86cca17cf7fc0a27ace033c11e76c592e8f7c7", "remote_calls": 0, "rows": [{"door": "H1_AUTH_HOST", "reason": "new nonce or freshness-ledger assertion missing", "status": "FAIL"}]}

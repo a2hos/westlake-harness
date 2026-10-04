@@ -1,0 +1,42 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 2,
+  "app_name": "Sift",
+  "bytes": 78674715,
+  "features": [],
+  "filename": "original.apk",
+  "main_activities": [
+    "app.siftrecipes.MainActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "23",
+  "native_library_entries": 184,
+  "package": "app.siftrecipes",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4d-exact-v1/app.siftrecipes/original.apk",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "app.siftrecipes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 4,
+  "receivers": 0,
+  "services": 0,
+  "sha256": "fdc68ce83806767d43b057aaa5db12c8eead58093623f09f37fec9928507244e",
+  "signing_certificate_sha256": [
+    "05fab0d4078ea7d473298f4bb47646c7196057ea17809e2941930487c889f9c5"
+  ],
+  "target_sdk": "34",
+  "version_code": "8",
+  "version_name": "1.0.7"
+}

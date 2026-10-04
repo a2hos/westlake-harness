@@ -1,0 +1,55 @@
+{
+  "schema": "nanhai-plus-outer-checkpoint-v1",
+  "at_utc": "2026-10-04T22:02:44.504365+00:00",
+  "goal": "OH7.0.0.39 / AOSP16 android-16.0.0_r4 / ARM64 / App single Bionic; 200 distinct unmodified APK cold starts incl 100 overseas-mainstream blackbox",
+  "prior_checkpoint": {
+    "path": "docs/nanhai-plus/checkpoints/20261004-raw135-static135-blackbox28-upstream95-evo61/CHECKPOINT.json",
+    "sha256": "acf2e9821c2c864ee6e6d9d54cfb8ccf461980aa531378f9ac201fe6c9fa974f"
+  },
+  "task_summary_sha256": "6b4b343fa98f424dd0ca5187622851a30376c8e8466828a5e9044f59292bfab0",
+  "outer_state_sha256": "a341289625d6d93e8e46e5616e3eff16ab7b688bea23af46eb8e6632a457d24e",
+  "raw_accepted": 140,
+  "full_host_static_accepted": 140,
+  "semantic_dex_entries": 554,
+  "true_arm64_elf_entries": 2165,
+  "qualified_blackbox_packages": 29,
+  "upstream_exact_raw_accepted": 99,
+  "upstream_registry_artifacts": 338,
+  "upstream_exact_artifact_gap": 239,
+  "cold_start_verified": 0,
+  "qualified_blackbox_cold_starts": 0,
+  "bionic_whole_tools_verified": 0,
+  "tool_dispositions_reviewed": 88,
+  "graph_result_observed": false,
+  "fresh_authenticated_native_linux_host": false,
+  "upstream_four_root_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-upstream-next4d-exact-v1/root-admission-v1/ROOT-ADMISSION.json",
+    "sha256": "cbfffc3d3498f5e6b6da355bdbd848fa6d5d541050d98173f0962cc5d9dd8824"
+  },
+  "teamviewer_qs_root_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-root-admission-v1/ROOT-ADMISSION.json",
+    "sha256": "7754f38b186b64715aed84c9450f0b9b7bc995e95d5b7af27294cfe981714660"
+  },
+  "hello_native_preflight_offline_v2": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/RESULT-v2.json",
+    "sha256": "14a2fd17641e2c83dd07045dd5bd2900a98116f91f1c2419e65f9a4500f6190d",
+    "scope": "offline fixture only"
+  },
+  "scanner_runtime_readiness_135": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-scanner-runtime-readiness-135-v1/RESULT-v2.json",
+    "sha256": "93def4173c103d5ef4fadc04c4a8c56b6735f8b618a4d3e8fdf5a3498c7c98d0",
+    "scope": "inventory only; target runtime resolution blind"
+  },
+  "evo62_decision": {
+    "path": "docs/nanhai-plus/evolution/EVO-0062-runtime-scan-evidence-gate/decision.json",
+    "sha256": "d99c0303867fa63536659958a014160e333d4b634b4d14d677d223773475d825",
+    "scope": "offline pilot, no queue promotion"
+  },
+  "remote_kanban_published": false,
+  "next": "Authenticate a project-scoped native Linux x86_64 R4 host with new one-use authorization; H1-H4 read-only doors, then graph, ARM64 target and install manifest; freeze same-build runtime before semantic scan. Continue exact upstream/blackbox intake.",
+  "container_commands": 0,
+  "device_commands": 0,
+  "device_hold": true,
+  "goal_session_budget_preserved": true,
+  "artifact_package_identity_caveat": "140 root-accepted raw artifact identities and receipt package labels; Signal/WhatsApp raw package semantics remain independently unresolved, so 140 is not a proved distinct-app count."
+}

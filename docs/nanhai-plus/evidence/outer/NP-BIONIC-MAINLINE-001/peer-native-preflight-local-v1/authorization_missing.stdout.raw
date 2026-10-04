@@ -1,0 +1,1 @@
+{"decision": "NO_GO_OFFLINE_FIXTURE", "first_failure": "H1_AUTH_HOST", "input_sha256": "6e0f6c7539193f15c71697ee0a7496f8e9bb2373f15ab41ec9db249c11eaab50", "remote_calls": 0, "rows": [{"door": "H1_AUTH_HOST", "reason": "new one-use read-only authorization missing", "status": "FAIL"}]}

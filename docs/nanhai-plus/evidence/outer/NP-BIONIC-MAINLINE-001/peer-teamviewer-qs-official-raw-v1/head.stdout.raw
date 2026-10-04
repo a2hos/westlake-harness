@@ -1,0 +1,53 @@
+HTTP/1.1 200 Connection established
+
+HTTP/2 301 
+date: Sun, 04 Oct 2026 21:57:44 GMT
+location: https://dl.teamviewer.com/mobile/TeamViewerQS.apk
+set-cookie: ARRAffinity=6604cbc9841844361edff933259af03c17f8930d53959e3b958e9148ccdd11fc;Path=/;HttpOnly;Secure;Domain=downloadprovider.teamviewer.com
+set-cookie: ARRAffinitySameSite=6604cbc9841844361edff933259af03c17f8930d53959e3b958e9148ccdd11fc;Path=/;HttpOnly;SameSite=None;Secure;Domain=downloadprovider.teamviewer.com
+set-cookie: __cf_bm=7ZSGKiXtRLt8cXXYsFIqhqHFlSBIdnebxyZ38NUyQ5I-1791151064.1397667-1.0.1.1-MT8nvOfEgp66xOAij5hTtyrmwdGKbyO_LYk2HnriwSK7PbbXGSTMBo007NY6RWCmH0wWMuRvGOj7IAnLDaJOxqfPfU0dzNMNEVWBHL..sUNTxXGNAWo_tWz84ZUQyXbL; HttpOnly; SameSite=None; Secure; Path=/; Domain=teamviewer.com; Expires=Sun, 04 Oct 2026 22:27:44 GMT
+set-cookie: _cfuvid=VXh9Wu4n1JR9.XhNTIDroj.V6firkwBvKmat2QMCsM8-1791151064.1397667-1.0.1.1-X_jPs0hsnA_Bj_RWio81jT_qWgSttGwvhsj.0YM7o9M; HttpOnly; SameSite=None; Secure; Path=/; Domain=teamviewer.com
+cf-ray: a45771a6dc91e19d-SJC
+cf-cache-status: DYNAMIC
+access-control-allow-origin: *
+server: cloudflare
+vary: accept-encoding
+strict-transport-security: max-age=31536000; includeSubDomains;
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, X-Access-Token
+permissions-policy: camera=(), display-capture=(), fullscreen=(), geolocation=(), microphone=(), payment=()
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+correlation-id: 818cf61f-ad55-44b0-a8a0-905fe39ae187
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 Connection established
+
+HTTP/2 200 
+date: Sun, 04 Oct 2026 21:57:44 GMT
+content-type: application/octet-stream
+content-length: 52434999
+set-cookie: __cf_bm=PSpVWFUo0pCcMEJkn9ojBE5uEjCIBOc0NXPmqPN.f4c-1791151064.5647938-1.0.1.1-2Xtgjy6fM9rrcXPv9qi4yBLeJvKxv2kVI3xj8lp51irsKyzSmiAws0wlI3z3QcxiFu2P8j2ioXQHUI1br5yddBM3aPZgtLJyP2ELW_61aBHKipDyPmKX1cnbmVdjOJ5S; HttpOnly; SameSite=None; Secure; Path=/; Domain=teamviewer.com; Expires=Sun, 04 Oct 2026 22:27:44 GMT
+set-cookie: _cfuvid=H49wE5gLcBX9BL4G0n48dex8caUbJuhiqcSCYU3S5fE-1791151064.5647938-1.0.1.1-Yrn6IZ7EUenGUxDBSEaSdjPsCS2mA_7924Rs0.k5FCw; HttpOnly; SameSite=None; Secure; Path=/; Domain=teamviewer.com
+cf-ray: a45771a98a6d148e-SJC
+cf-cache-status: HIT
+accept-ranges: bytes
+age: 36229
+cache-control: public, max-age=300
+etag: "0x8DF1DF5D601F35F"
+expires: Mon, 05 Oct 2026 01:57:44 GMT
+last-modified: Tue, 29 Sep 2026 06:49:40 GMT
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubDomains;
+vary: accept-encoding
+content-md5: ZVZA+ENT6yf8DkxcV1P06w==
+content-security-policy: default-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'self' blob:; frame-ancestors 'none';
+permissions-policy: camera=(), display-capture=(), fullscreen=(), geolocation=(), microphone=(), payment=()
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-moduleconversion: false
+x-xss-protection: 1; mode=block
+alt-svc: h3=":443"; ma=86400
+

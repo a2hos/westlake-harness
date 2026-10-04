@@ -1,0 +1,17 @@
+{
+  "apk_sha_after": "64d6152ff3a5c84ee45ca96b3c0003e058965371f6a6c5060e56a54300e69a01",
+  "apk_sha_before": "64d6152ff3a5c84ee45ca96b3c0003e058965371f6a6c5060e56a54300e69a01",
+  "container_commands": 0,
+  "device_commands": 0,
+  "elapsed_seconds": 0.295,
+  "input_guard_equal": true,
+  "manifest_available": true,
+  "package": "com.best.deskclock",
+  "phase": "metadata",
+  "rc": 0,
+  "readelf_sha256": "213f0ff658bbaf477ef0d2b8934984c2c056b84619eb0b750e2a6bdbd06ea2b2",
+  "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a",
+  "target_sdk": "36",
+  "version_code": "2036",
+  "version_name": "2.32"
+}

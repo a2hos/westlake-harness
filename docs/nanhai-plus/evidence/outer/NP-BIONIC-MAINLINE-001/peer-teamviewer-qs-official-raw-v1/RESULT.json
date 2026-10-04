@@ -1,0 +1,90 @@
+{
+  "apk_bytes": 52434999,
+  "apk_mime_seen": true,
+  "apk_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-teamviewer-qs-official-raw-v1/teamviewer-qs-official.apk",
+  "apk_sha256": "2cbd20da44138342e61cde01b655b51246599555c6146d2cba7d864a102e9b5d",
+  "arm64_so_entries": 10,
+  "at_utc": "2026-10-04T21:57:48.270611+00:00",
+  "candidate_pass": true,
+  "container_commands": 0,
+  "device_commands": 0,
+  "get": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "180",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-teamviewer-qs-official-raw-v1/teamviewer-qs-official.apk.part",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-official-raw-v1/apk-get-headers.raw",
+      "https://download.teamviewer.com/download/TeamViewerQS.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "a2494d65630fcf2604b20ccddf48c12a2ef895658da2f6607390fd81728c5030",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "head": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--head",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-official-raw-v1/apk-head-headers.raw",
+      "https://download.teamviewer.com/download/TeamViewerQS.apk"
+    ],
+    "rc": 0,
+    "stderr_sha256": "41540ec6a80755c256b80d1e8591fb9e2972e3dbe7529a5c6d78b1be29d07351",
+    "stdout_sha256": "c651eb722958119d113f9c937f162cea1ddb3e4dd3712a4fbcae4fca1e94bf72"
+  },
+  "manifest_entries": 1,
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "page": {
+    "argv": [
+      "/usr/bin/curl",
+      "--fail",
+      "--location",
+      "--retry",
+      "0",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "45",
+      "--output",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-official-raw-v1/publisher-page.raw",
+      "--dump-header",
+      "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-teamviewer-qs-official-raw-v1/publisher-page-headers.raw",
+      "https://www.teamviewer.com/en/download/portal/android/"
+    ],
+    "rc": 0,
+    "stderr_sha256": "d5ec51a8b5ecfcda8d4aa9f020623ffb8aa400c275684be4d3ee4fa88e112ac5",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "publisher_apk_url": "https://download.teamviewer.com/download/TeamViewerQS.apk",
+  "publisher_page": "https://www.teamviewer.com/en/download/portal/android/",
+  "publisher_page_links_exact_apk": true,
+  "root_count_changed": false,
+  "root_dex_entries": 1,
+  "schema": "peer-teamviewer-qs-official-raw-v1",
+  "startup_proven": false,
+  "zip_duplicate_names": 0,
+  "zip_entries": 707,
+  "zip_first_bad": null
+}

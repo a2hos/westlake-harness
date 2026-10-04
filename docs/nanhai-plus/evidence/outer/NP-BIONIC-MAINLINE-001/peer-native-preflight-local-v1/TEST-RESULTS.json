@@ -1,0 +1,233 @@
+{
+  "at_utc": "2026-10-04T21:57:36.722037+00:00",
+  "cases": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/positive.json"
+      ],
+      "decision": "STATIC_FIXTURE_PASS_NOT_REMOTE_AUTHORIZATION",
+      "first_failure": null,
+      "input_sha256": "e5ad2f7aec423be8cee23a7ebd721747bd2816a332ae5da36f8ec4773ea3026b",
+      "name": "positive",
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "882ec1b03c4f50cfe42bb1150b283d669c444e79dccb82c538203e9d24ad6e16"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/old_nonce.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H1_AUTH_HOST",
+      "input_sha256": "036639dabad4c54fa631c3a6bd86cca17cf7fc0a27ace033c11e76c592e8f7c7",
+      "name": "old_nonce",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "dbf8e22681b74a7b5aaff747db6e72418a5390b9720da74470c8ef016d4f300d"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/host_key_mismatch.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H1_AUTH_HOST",
+      "input_sha256": "f32a69e1080a128860cf06dc70f8f076880d07f738e1b28c78e1b301ef46db38",
+      "name": "host_key_mismatch",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ff01221745f762c44a0b8ab69553b5bd0d6f1ae76dbf1dd9701272eb1dcff4f7"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/host_key_unpinned.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H1_AUTH_HOST",
+      "input_sha256": "29326c427b020d186174d2f8e4265d17099e9d45dfbc258efb4470193cfe1f73",
+      "name": "host_key_unpinned",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8899c90722d5fb2ed210c63e6b6800c67cc351b22c30cd562a1d86f433c2c220"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/authorization_missing.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H1_AUTH_HOST",
+      "input_sha256": "6e0f6c7539193f15c71697ee0a7496f8e9bb2373f15ab41ec9db249c11eaab50",
+      "name": "authorization_missing",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b8a6246e9103e99733e70e14be9bbd98db91ebb5265a23fd4d096c1f4209c0ea"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/source_incomplete.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H2_EXACT_R4_SOURCE",
+      "input_sha256": "188ca08558248e6b1890c69b5a5ff9105a9130ea151fed3ae38742eede850bde",
+      "name": "source_incomplete",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "af435baff512d27fa538b8cbeff2a9c892b4f46159f57927a3f4a7edd786a024"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/sysroot_missing.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H3_TOOLCHAIN",
+      "input_sha256": "7a8449d8105ac4fbd912939b20a169a21abe60975a9510c6487d39321b4eeb88",
+      "name": "sysroot_missing",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f9bfb6f9bf66a4bbc16d8dc687f218d874308e158840c1e414494997cd4cfc7d"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/post_graph_obligation_missing.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H3_TOOLCHAIN",
+      "input_sha256": "671fb2534029f8210b04ec0f6641e15b28b8eb805d60260f9e0d65afc921e610",
+      "name": "post_graph_obligation_missing",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e42e386f907a482f171cc021026c7a4a5b88ff2e01083a1e4550685851b83092"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/container_observed.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H4_OUTPUT_EXEC_BOUNDARY",
+      "input_sha256": "da83388116a8f616638c6f5a794c3c8973ee20bc73da18ed67d09c0966809f1e",
+      "name": "container_observed",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "948ec7f66d0f042cf4979aae7c53c6cf3a50286d82318e626e6ace479794ad77"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/namespace_observed.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H4_OUTPUT_EXEC_BOUNDARY",
+      "input_sha256": "d56ad54e96324e83f02563fc9994ba8277c9fa143867229c5849f31520670415",
+      "name": "namespace_observed",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "96c96dfa7c2a9c0987efeecfd5d4843486c19150ade0b14318ad251519b60eb9"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/namespace_launcher.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H4_OUTPUT_EXEC_BOUNDARY",
+      "input_sha256": "525d4ea63e50237f42dfaed06dd74890aaf6eb8240185a259cf6aa99ac425c17",
+      "name": "namespace_launcher",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "641795dc0195e2510307d1a85b7434e5e275f6cf62603873079d211269538a11"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/output_overlap.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H4_OUTPUT_EXEC_BOUNDARY",
+      "input_sha256": "ce59508521bef0b49056c7446758b494c1b2003838ce32b6210d5454676b062a",
+      "name": "output_overlap",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "0c4acde4b87eb67740ff4d9065382a3afb2f11ba85ec60556b269a1747c94307"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--fixture",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/fixtures/traversal_output.json"
+      ],
+      "decision": "NO_GO_OFFLINE_FIXTURE",
+      "first_failure": "H4_OUTPUT_EXEC_BOUNDARY",
+      "input_sha256": "16d7a8bfcdcd736764911ff051f05f2f54f9c300d8bb8dfcdb71a78e6c924201",
+      "name": "traversal_output",
+      "rc": 2,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "43dd6c2cb3cb14cf35918ee9d9a0efd3bcf02623365b1d7a4b51554afd51a4c5"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py"
+      ],
+      "decision": "DRY_RUN_ONLY",
+      "first_failure": null,
+      "input_sha256": null,
+      "name": "default_dry_run",
+      "rc": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "56e2a69351fb30f41e4f01b33c01fb95c52c509ba80cdf5208ebce8cfcbace5a"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/peer-native-preflight-local-v1/preflight_packet.py",
+        "--execute"
+      ],
+      "decision": "NO_GO_REMOTE_EXECUTION_NOT_IMPLEMENTED",
+      "first_failure": null,
+      "input_sha256": null,
+      "name": "execute_rejected",
+      "rc": 4,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "68b585c800fc60a1d47462ad1a66ffc357479fc8a11b027b59683b0c0431c0a2"
+    }
+  ],
+  "container_commands": 0,
+  "device_commands": 0,
+  "remote_calls": 0,
+  "schema": "peer-native-preflight-offline-test-results-v1",
+  "test_sha256": "7c1f5220ccb32f7213a33a0412671bd3affef367979a4099fe44a1073735c133",
+  "tool_sha256": "2214e09c42ce943f28f327ca0bb8e4fe4e09867441d0107846b31fcb75740fbd"
+}

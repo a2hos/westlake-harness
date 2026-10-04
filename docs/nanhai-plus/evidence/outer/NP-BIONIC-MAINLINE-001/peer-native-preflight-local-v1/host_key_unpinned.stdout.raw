@@ -1,0 +1,1 @@
+{"decision": "NO_GO_OFFLINE_FIXTURE", "first_failure": "H1_AUTH_HOST", "input_sha256": "29326c427b020d186174d2f8e4265d17099e9d45dfbc258efb4470193cfe1f73", "remote_calls": 0, "rows": [{"door": "H1_AUTH_HOST", "reason": "host-key pin absent", "status": "FAIL"}]}

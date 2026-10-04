@@ -1,0 +1,1 @@
+{"decision": "NO_GO_OFFLINE_FIXTURE", "first_failure": "H2_EXACT_R4_SOURCE", "input_sha256": "188ca08558248e6b1890c69b5a5ff9105a9130ea151fed3ae38742eede850bde", "remote_calls": 0, "rows": [{"door": "H1_AUTH_HOST", "status": "PASS_OFFLINE_ASSERTION"}, {"door": "H2_EXACT_R4_SOURCE", "reason": "R4 manifest project closure mismatch", "status": "FAIL"}]}

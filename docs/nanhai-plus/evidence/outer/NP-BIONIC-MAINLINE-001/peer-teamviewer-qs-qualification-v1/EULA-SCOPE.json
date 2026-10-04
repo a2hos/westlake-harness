@@ -1,0 +1,11 @@
+{
+  "body_bytes": 488517,
+  "body_sha256": "3198a7deed815ca51a521961efd3a574e4e6d1eb0647ccedbaad1cb433f2f2ec",
+  "interpretation": "TeamViewer EULA software terms cover mobile applications and license grant excludes source-code rights. This supports proprietary-client treatment, not global absence of component source.",
+  "mobile_application_scope_seen": true,
+  "root_count_changed": false,
+  "schema": "peer-teamviewer-qs-eula-source-scope-v1",
+  "source_code_clause_seen": true,
+  "startup_proven": false,
+  "url": "https://www.teamviewer.com/en/legal/eula/"
+}

@@ -1,0 +1,73 @@
+{
+  "base_checkpoint_sha256": "acf2e9821c2c864ee6e6d9d54cfb8ccf461980aa531378f9ac201fe6c9fa974f",
+  "cold_start_delta": 0,
+  "container_commands": 0,
+  "device_commands": 0,
+  "full_static_delta": 4,
+  "guard_sha256": "2ccef361c219a0f1726340c1b407396e5f2314779e54543c448afa6e34c61893",
+  "handoff_sha256": "4cbe92d965affe5d3840087f99bbcc272c24bb035b955e665cc141cd2cdece5a",
+  "raw_delta": 4,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "rows": [
+    {
+      "apk_bytes": 7181862,
+      "apk_sha256": "64d6152ff3a5c84ee45ca96b3c0003e058965371f6a6c5060e56a54300e69a01",
+      "artifact_id": "a-d7daa96aea3c791870be",
+      "candidate_raw_sha256": "9b816bd2adc1af46436277e57bfe6bf432c08c859fa85eaf3e1f37da91347cc6",
+      "candidate_static_sha256": "40e5936cfa5f49b94ca2c92db0d9e1c07691e413619e2596c711f335eceb2b34",
+      "decision": "ACCEPT_EXACT_RAW_AND_FOUR_PHASE_HOST_STATIC_ONLY",
+      "package": "com.best.deskclock",
+      "semantic_dex_delta": 1,
+      "source_url": "https://f-droid.org/repo/com.best.deskclock_2036.apk",
+      "true_arm64_elf_delta": 0,
+      "version_code": "2036",
+      "version_name": "2.32"
+    },
+    {
+      "apk_bytes": 1451410,
+      "apk_sha256": "dbf937ebbe7c0b3d24c07fa0ede7cb53ea117f7071db3b61f1c96b7d257cda55",
+      "artifact_id": "a-e35b50eef5173077f344",
+      "candidate_raw_sha256": "c8fc8175a290db5ce23002f7d481f9f56ce191241089e9287bc8e1c61fbace8c",
+      "candidate_static_sha256": "7bcb6d81a0bd9daf1005dbaadb709a798659af7dd7bdbd6679f168d791e407a1",
+      "decision": "ACCEPT_EXACT_RAW_AND_FOUR_PHASE_HOST_STATIC_ONLY",
+      "package": "com.justdeax.composeStopwatch",
+      "semantic_dex_delta": 1,
+      "source_url": "https://f-droid.org/repo/com.justdeax.composeStopwatch_1009011.apk",
+      "true_arm64_elf_delta": 2,
+      "version_code": "1009011",
+      "version_name": "1.9.1"
+    },
+    {
+      "apk_bytes": 30222956,
+      "apk_sha256": "77e8d32476d9db8870e5705975dead6143115127feef616db96e6637de8aec01",
+      "artifact_id": "a-59cc2e162d53c8fa98e1",
+      "candidate_raw_sha256": "a929b0c6383d6ba529d764da0efd6441ae0f5ad88b16aa6d9553585ab7ba1345",
+      "candidate_static_sha256": "10d0056c6f234b92afaf645894361485bb96aca08bad94aa3f8341fdfae05ef5",
+      "decision": "ACCEPT_EXACT_RAW_AND_FOUR_PHASE_HOST_STATIC_ONLY",
+      "package": "com.k.todo",
+      "semantic_dex_delta": 2,
+      "source_url": "https://f-droid.org/repo/com.k.todo_12003.apk",
+      "true_arm64_elf_delta": 4,
+      "version_code": "12003",
+      "version_name": "1.6.0"
+    },
+    {
+      "apk_bytes": 78674715,
+      "apk_sha256": "fdc68ce83806767d43b057aaa5db12c8eead58093623f09f37fec9928507244e",
+      "artifact_id": "a-75624e2e4a82f10589b8",
+      "candidate_raw_sha256": "5d4f065a7a3f30e0fd7d9a093539b9215c16abc4020fd1220d50d97d47e7efd6",
+      "candidate_static_sha256": "6f999c72dbb2ebdeb3a9e7d7f2d64032083263b4ea6bb4eb21b0dcdd9764713b",
+      "decision": "ACCEPT_EXACT_RAW_AND_FOUR_PHASE_HOST_STATIC_ONLY",
+      "package": "app.siftrecipes",
+      "semantic_dex_delta": 3,
+      "source_url": "https://f-droid.org/repo/app.siftrecipes_8.apk",
+      "true_arm64_elf_delta": 46,
+      "version_code": "8",
+      "version_name": "1.0.7"
+    }
+  ],
+  "schema": "nanhai-root-next4d-exact-admission-v1",
+  "scope": "Exact registered original APK and four-phase native-host static only; no Bionic runtime or Activity proof",
+  "semantic_dex_delta": 7,
+  "true_arm64_elf_delta": 52
+}

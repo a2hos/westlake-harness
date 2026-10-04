@@ -1,0 +1,45 @@
+{
+  "audit_inputs_sha256": "9d776d88c7d54db7c030ceecc7a7e451f79d009bd6ed18fa9888588c616aebc4",
+  "audit_result_sha256": "77c0fffc751389d41575a3278201b4b46c5a420db3c6c32e72ad6bc4a3ead8a1",
+  "container_commands": 0,
+  "current_checkpoint_sha256": "acf2e9821c2c864ee6e6d9d54cfb8ccf461980aa531378f9ac201fe6c9fa974f",
+  "current_upstream_exact_accepted": 95,
+  "device_commands": 0,
+  "registry_sha256": "289dcdb499d5ff37e58a8e7d4fbd3d30e3fe9f77d4e7e8ba7139c927c890c1eb",
+  "rows": [
+    {
+      "artifact_id": "a-d7daa96aea3c791870be",
+      "expected_sha256": "64d6152ff3a5c84ee45ca96b3c0003e058965371f6a6c5060e56a54300e69a01",
+      "package": "com.best.deskclock",
+      "source_url": "https://f-droid.org/repo/com.best.deskclock_2036.apk",
+      "version_code": "2036",
+      "version_name": "2.32"
+    },
+    {
+      "artifact_id": "a-e35b50eef5173077f344",
+      "expected_sha256": "dbf937ebbe7c0b3d24c07fa0ede7cb53ea117f7071db3b61f1c96b7d257cda55",
+      "package": "com.justdeax.composeStopwatch",
+      "source_url": "https://f-droid.org/repo/com.justdeax.composeStopwatch_1009011.apk",
+      "version_code": "1009011",
+      "version_name": "1.9.1"
+    },
+    {
+      "artifact_id": "a-59cc2e162d53c8fa98e1",
+      "expected_sha256": "77e8d32476d9db8870e5705975dead6143115127feef616db96e6637de8aec01",
+      "package": "com.k.todo",
+      "source_url": "https://f-droid.org/repo/com.k.todo_12003.apk",
+      "version_code": "12003",
+      "version_name": "1.6.0"
+    },
+    {
+      "artifact_id": "a-75624e2e4a82f10589b8",
+      "expected_sha256": "fdc68ce83806767d43b057aaa5db12c8eead58093623f09f37fec9928507244e",
+      "package": "app.siftrecipes",
+      "source_url": "https://f-droid.org/repo/app.siftrecipes_8.apk",
+      "version_code": "8",
+      "version_name": "1.0.7"
+    }
+  ],
+  "schema": "peer-upstream-next4d-selection-v1",
+  "source_scope": "registered exact F-Droid URL; fresh GET and SHA required"
+}

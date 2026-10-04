@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=TeamViewer GmbH, OU=TeamViewer GmbH, O=TeamViewer GmbH, L=Goeppingen, ST=Baden Wuerttemberg, C=DE
+Signer #1 certificate SHA-256 digest: a7d99ff485f0c55fd4f1f9cc35cb08a1b74eb995fc3f0524318ff662f8d3cd26
+Signer #1 certificate SHA-1 digest: 3e22144e1ba9151c08838d4c5eff236db48aaa32
+Signer #1 certificate MD5 digest: 4ae33b07d8f862beda5efac713d68161
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: e97445cdc17b0263f21f28ec3a84bcdb5ed919b214798c6fa1b0da8e2dc407f0
+Signer #1 public key SHA-1 digest: b63572bb644f2ea17856b3aae8f71411d9f19e8f
+Signer #1 public key MD5 digest: 99af1acbfd34b872f07edadf8f7ed40c

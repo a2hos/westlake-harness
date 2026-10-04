@@ -1,0 +1,87 @@
+{
+  "authorization": {
+    "claim": "NP-MUSL16-ART-024",
+    "goal_id": "goal_01",
+    "host_key_sha256": "904265ea459f1ab5c563d70fd0adc8d4599dee2d24d2b12f5b30b5202b2ec864",
+    "nonce": "4e680afdb81d4c43a42e69a3397f2d19",
+    "nonce_freshness_ledger_checked": true,
+    "one_use": true,
+    "operation": "read_only_preflight"
+  },
+  "boundary": {
+    "container_observed": false,
+    "namespace_observed": false,
+    "out_root": "/project/opaleye/out/new",
+    "out_tmp_new_generation": true,
+    "planned_argv": [
+      "/project/opaleye/out/soong_ui",
+      "--make-mode",
+      "--soong-only",
+      "--skip-ninja",
+      "--skip-soong-tests",
+      "libc",
+      "libm",
+      "libdl",
+      "linker"
+    ],
+    "post_execution_trace_required": true,
+    "project_root": "/project/opaleye",
+    "source_read_only_for_build_uid": true,
+    "source_root": "/exact-r4/source",
+    "tmp_root": "/project/opaleye/tmp/new"
+  },
+  "host": {
+    "arch": "x86_64",
+    "authenticated": true,
+    "host_key_pinned": true,
+    "host_key_sha256": "904265ea459f1ab5c563d70fd0adc8d4599dee2d24d2b12f5b30b5202b2ec864",
+    "os": "Linux",
+    "project_scoped": true,
+    "uid": 1000
+  },
+  "schema": "nanhai-native-r4-readonly-preflight-fixture-v1",
+  "source": {
+    "all_heads_match": true,
+    "bionic_commit": "f22516cbc67e81c13cf943ce02f01b8929a98726",
+    "bionic_full_checkout": true,
+    "darwin_prebuilts_absent": 2,
+    "linux_projects": 1011,
+    "manifest_sha256": "810b19cb158e4f6b536137f361ea941ddd8f4e22c883cbce05f74b548546de22",
+    "sandbox_off_patch_pinned": true,
+    "soong_worktree_sha256": "e3facde0e25cbd03b0214b86986714e04c226a01423d6307d00762b2a1748fc4",
+    "tag": "android-16.0.0_r4",
+    "tracked_clean": true,
+    "untracked_clean": true
+  },
+  "tools": {
+    "build_tools": {
+      "path": "/exact-r4/build_tools",
+      "sha256": "4c8d7fdacfdc5b7e513201f65c0b490cfa54973f0765ccb13aa961e9f323ddb2"
+    },
+    "candidate_toolchain_verified": true,
+    "clang": {
+      "path": "/exact-r4/clang",
+      "sha256": "ca802557296d271593c83ffa0e2caf2c010c2c89d3ef24ade7f867ec01cd1627"
+    },
+    "clang_revision": "clang-r563880c",
+    "clang_source_commit": "9916fb51ccb914d62d35ad9a7b9b21d2ef046928",
+    "go": {
+      "path": "/exact-r4/go",
+      "sha256": "4cd0e21a9a0795a14ec9aa5f0e7d1abff0492565770e43eafdf1e3e8afed1f33"
+    },
+    "ld_lld": {
+      "path": "/exact-r4/ld_lld",
+      "sha256": "45ac093560ee4e8016e6cc22d44ff7ee98e854f87c193ede51ecee5769e4850d"
+    },
+    "post_graph_action_readback_required": true,
+    "resource_dir": {
+      "path": "/exact-r4/resource_dir",
+      "sha256": "5499536d6b6b9462d65b622f38c66b19ea3ccec5fefad29d724edbff3e343b67"
+    },
+    "soong_ui": {
+      "path": "/exact-r4/soong_ui",
+      "sha256": "d812a0044d3f0f16546f8e4b0ec84ce6c002b4f12b21b4a65f6e21d0be337f54"
+    },
+    "target": "aarch64-linux-android"
+  }
+}

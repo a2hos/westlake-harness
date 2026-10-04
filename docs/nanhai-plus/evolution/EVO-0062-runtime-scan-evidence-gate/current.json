@@ -1,0 +1,1 @@
+{"case": "current", "claim": "Synthetic complete case tests contract shape only, not a real runtime index.", "container_commands": 0, "decision": "BLOCK_NO_TARGET_RUNTIME_INDEX", "device_commands": 0, "input_manifest_sha256": "9f583054bfb33ef62ab59803cd8ee878b6b1ed7026a53bd17223df14287fc40c", "runtime_scan_commands": 0, "schema": "evo62-runtime-scan-evidence-gate-pilot-v1"}

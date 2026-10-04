@@ -1,0 +1,105 @@
+{
+  "all_checks_pass": true,
+  "blind_or_unknown": [
+    "full scan/benchmark missing-class, missing-method, missing-field findings against target R4 boot classpath",
+    "JNI binding/provider resolution against actual Bionic bridge ELFs",
+    "native imports resolved against deployed R4 Bionic/system ELF exports; missing system index is O-BLIND",
+    "dynamic loading, runtime reachability, install, lifecycle and cold start"
+  ],
+  "bridge_commands": 0,
+  "can_now": [
+    "existing exact APK ZIP/manifest/DEX/packaged ARM64 ELF inventory with per-APK input SHA guard",
+    "package-local declared symbols, DT_NEEDED, JNI names, and ABI exposure as static candidates"
+  ],
+  "checks": {
+    "accepted_static_sample": true,
+    "frozen_135_inventory_control": true,
+    "historical_locks_lack_system_elf_index": true,
+    "missing_system_index_is_blind": true,
+    "no_current_r4_target_outputs_in_registered_out": true,
+    "no_graph_or_runtime_run": true,
+    "runtime_scan_requires_index": true,
+    "snapshot_content_locks_native_providers": true,
+    "snapshot_requires_ordered_bcp": true
+  },
+  "container_commands": 0,
+  "current_out_target_files": {
+    "core-oj.jar": [],
+    "libart.so": [],
+    "libc.so": [],
+    "runtime-lock.json": []
+  },
+  "decision": "INVENTORY_READY_RUNTIME_RESOLUTION_BLIND",
+  "device_commands": 0,
+  "historical_runtime_locks": [
+    {
+      "boot_classpath_count": 10,
+      "bridge_elf_count": 1,
+      "first_bcp_path": "${BRIDGE_ARM64}/corejars/core-oj.jar",
+      "relative_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/source/benchmark/2026-08-20/runtime-lock.json",
+      "runtime_lock_id": "sha256:446d5ac751765981ddb2d10f5b4a14c569865b139080452de9b5140527d4809d",
+      "sha256": "66507d094c67ed277d3ee2d206dad64385f65302d14e536a2e8830d83da03b3a",
+      "system_elf_count": 0,
+      "target_abi": null
+    },
+    {
+      "boot_classpath_count": 10,
+      "bridge_elf_count": 1,
+      "first_bcp_path": "${BRIDGE_ARM64}/corejars/core-oj.jar",
+      "relative_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/source/benchmark/2026-08-21/runtime-lock.json",
+      "runtime_lock_id": "sha256:ea40fb1c62fd3a5bc9d45cf6db86de1ffafd783b9f6f9ade26abcdbfd7d5ab80",
+      "sha256": "797825533a8c5624b99f4fe4e345464a2569a5090bace58076722283d210e26d",
+      "system_elf_count": 0,
+      "target_abi": "arm64-v8a"
+    },
+    {
+      "boot_classpath_count": 10,
+      "bridge_elf_count": 1,
+      "first_bcp_path": "${WESTLAKE_RUNTIME_ROOT}/jars/core-oj.jar",
+      "relative_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/source/benchmark/2026-08-21-armv7/runtime-lock.json",
+      "runtime_lock_id": "sha256:acd4b44a4ef5cae0cc9485c6a16658f3f2609f4daf9391140cd19dfe8281c335",
+      "sha256": "649e3aca1985124265d865c9e728a9c3cee661fae414dd46b0769eedc7c7bbe5",
+      "system_elf_count": 0,
+      "target_abi": "armeabi-v7a"
+    },
+    {
+      "boot_classpath_count": 10,
+      "bridge_elf_count": 1,
+      "first_bcp_path": "core-oj.jar",
+      "relative_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/source/benchmark/2026-08-22-x-weibo/runtime-lock.json",
+      "runtime_lock_id": "sha256:101c9c5d49eb7371efd1dfb61c0dc4fd332da5d30c9803bd2a06f285fce889ee",
+      "sha256": "4186b98bd702d0303e0fd209d759cf12192fb9e688522b9a18c2e0d8634cc8ee",
+      "system_elf_count": 0,
+      "target_abi": "arm64-v8a"
+    },
+    {
+      "boot_classpath_count": 10,
+      "bridge_elf_count": 1,
+      "first_bcp_path": "${WESTLAKE_RUNTIME_ROOT}/jars/core-oj.jar",
+      "relative_path": ".nanhai-plus-runtime/bionic-oh7-aosp16/source/benchmark/2026-08-23-toutiao/runtime-lock.json",
+      "runtime_lock_id": "sha256:96366a206a3fe68c5b78a68fafc9addc63932d8ecee1ee166ab802ea62322b2b",
+      "sha256": "a7111f7f3b9c1b92ce2188e9ce3497d7feb64ee59ab4e612aeaef947a9ccd2ec",
+      "system_elf_count": 0,
+      "target_abi": "arm64-v8a"
+    }
+  ],
+  "inputs": {
+    "checkpoint": {
+      "path": "docs/nanhai-plus/checkpoints/20261004-raw135-static135-blackbox28-upstream95-evo61/CHECKPOINT.json",
+      "sha256": "acf2e9821c2c864ee6e6d9d54cfb8ccf461980aa531378f9ac201fe6c9fa974f"
+    },
+    "cli_sha256": "31c79e38021ccbe1864aaf78cf2834e94b210f36034d0198989f97043d61838a",
+    "nativeprov_sha256": "729e67c6eafbc162583eef4eacfb738413f1b2b247cc51e5c49493312be9f6f3",
+    "sample_raw_sha256": "98e6cb186fa23d744f7ab0d5a2adb1eab06b8005df5635bcd0b1afa400cf803f",
+    "sample_static_sha256": "18b987ee98b6100ff1a4e756e849bf5db7370ce94d9622ab9b96747e96e7142a",
+    "scanner_sha256": "5ac937a7dcc425544dd4051368bfab6a3cdc1808024a505c20dfb09f2e187e3a"
+  },
+  "inventory": {
+    "accepted_apks": 135,
+    "semantic_dex": 546,
+    "true_arm64_elf": 2103
+  },
+  "minimum_next": "On a verified native R4/Bionic build host, freeze ordered boot-classpath JAR SHA-256 values plus same-build ARM64 bridge and system ELF SHA-256 values; generate snapshot-runtime with target ABI arm64-v8a, retain full index and runtime_lock_id, independently verify source/build/target provenance, then pilot scan one frozen APK before 135-way benchmark.",
+  "runtime_scans_executed": 0,
+  "schema": "peer-scanner-runtime-readiness-135-v1"
+}

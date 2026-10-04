@@ -1,0 +1,72 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 9,
+  "app_name": "QuickSupport",
+  "bytes": 52434999,
+  "features": [
+    "android.hardware.bluetooth",
+    "android.hardware.bluetooth_le",
+    "android.hardware.touchscreen",
+    "android.hardware.type.pc",
+    "android.software.leanback"
+  ],
+  "filename": "teamviewer-qs-official.apk",
+  "main_activities": [
+    "com.teamviewer.quicksupport.ui.QSActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "24",
+  "native_library_entries": 34,
+  "package": "com.teamviewer.quicksupport.market",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-teamviewer-qs-official-raw-v1/teamviewer-qs-official.apk",
+  "permissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_ADVERTISE",
+    "android.permission.CAPTURE_VIDEO_OUTPUT",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+    "android.permission.GET_PACKAGE_SIZE",
+    "android.permission.INJECT_EVENTS",
+    "android.permission.INTERNET",
+    "android.permission.KILL_BACKGROUND_PROCESSES",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.sec.MDM_REMOTE_CONTROL",
+    "com.android.remotecontrolservice.REMOTE_CONTROL",
+    "com.motorola.enterprise.service.REMOTE_ACCESS_PERMISSION",
+    "com.samsung.android.knox.permission.KNOX_REMOTE_CONTROL",
+    "com.teamviewer.quicksupport.market.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.teamviewer.quicksupport.market.SAMSUNG_SUPPORT_PERMISSION",
+    "com.zebra.provider.READ"
+  ],
+  "providers": 9,
+  "receivers": 6,
+  "services": 6,
+  "sha256": "2cbd20da44138342e61cde01b655b51246599555c6146d2cba7d864a102e9b5d",
+  "signing_certificate_sha256": [
+    "a7d99ff485f0c55fd4f1f9cc35cb08a1b74eb995fc3f0524318ff662f8d3cd26"
+  ],
+  "target_sdk": "36",
+  "version_code": "1582264",
+  "version_name": "15.82.264"
+}

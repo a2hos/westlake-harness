@@ -1,0 +1,45 @@
+{
+  "schema": "evo62-test-results-v1",
+  "at_utc": "2026-10-04T22:01:34.960773+00:00",
+  "rows": [
+    {
+      "case": "current",
+      "argv": [
+        "/usr/local/bin/python3",
+        "docs/nanhai-plus/evolution/EVO-0062-runtime-scan-evidence-gate/pilot.py",
+        "--case",
+        "current"
+      ],
+      "rc": 0,
+      "stdout_sha256": "9c402e705d03da2a8cfc85fe22812cfb884601160a014792cec12ab320563171",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "synthetic_complete",
+      "argv": [
+        "/usr/local/bin/python3",
+        "docs/nanhai-plus/evolution/EVO-0062-runtime-scan-evidence-gate/pilot.py",
+        "--case",
+        "synthetic_complete"
+      ],
+      "rc": 0,
+      "stdout_sha256": "b2d7da676686650adacb95bd68003e05d48d3b3166dd3c0134bc7763d2bbfbdb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "historical_empty_system",
+      "argv": [
+        "/usr/local/bin/python3",
+        "docs/nanhai-plus/evolution/EVO-0062-runtime-scan-evidence-gate/pilot.py",
+        "--case",
+        "historical_empty_system"
+      ],
+      "rc": 0,
+      "stdout_sha256": "eb724ae73293690351f6b1f27a941b934f09104ecf6488d04de280446084a55b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "runtime_scan_commands": 0,
+  "device_commands": 0,
+  "container_commands": 0
+}

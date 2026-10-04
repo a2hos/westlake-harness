@@ -1,0 +1,39 @@
+{
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "activities": 1,
+  "app_name": "Compose Stopwatch",
+  "bytes": 1451410,
+  "features": [],
+  "filename": "original.apk",
+  "main_activities": [
+    "com.justdeax.composeStopwatch.AppActivity"
+  ],
+  "manifest_available": true,
+  "min_sdk": "26",
+  "native_library_entries": 8,
+  "package": "com.justdeax.composeStopwatch",
+  "path": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.nanhai-plus-runtime/bionic-oh7-aosp16/staging/peer-upstream-next4d-exact-v1/com.justdeax.composeStopwatch/original.apk",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.justdeax.composeStopwatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "providers": 1,
+  "receivers": 1,
+  "services": 1,
+  "sha256": "dbf937ebbe7c0b3d24c07fa0ede7cb53ea117f7071db3b61f1c96b7d257cda55",
+  "signing_certificate_sha256": [
+    "6b2ab59a567e5e05d5a3d56366bd5ae0d12a11ee2e1046d54d149bfa5343d2e0"
+  ],
+  "target_sdk": "37",
+  "version_code": "1009011",
+  "version_name": "1.9.1"
+}

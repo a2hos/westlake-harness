@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-04T21:56:43.514636+00:00",
+  "bridge_actions": 0,
+  "canonical_changes": 0,
+  "container_commands": 0,
+  "decision": "GO_LOCAL_STATIC_FIXTURE_ONLY_NO_GO_REMOTE_OR_GRAPH",
+  "default_mode": "DRY_RUN_ONLY",
+  "device_commands": 0,
+  "explicit_execute_rc": 4,
+  "graph_commands": 0,
+  "handoff_sha256": "d34d59fcedbf37928852d5ea62f3f91fc736e01df09141d5cdb1b2f67204b841",
+  "namespace_commands": 0,
+  "offline_cases_passed": 15,
+  "remote_calls": 0,
+  "schema": "peer-native-preflight-local-v1-result",
+  "source_v13_runner_sha256": "36cbba5abfd1d99adf47e360c5c5b532887a466763929d5e22cd6b05eddb6a99",
+  "ssh_calls": 0,
+  "test_results_sha256": "f417e592b2799d329b08efbf0b51e2bf9a8a2cde712ebc6076ed566d8e450e98",
+  "test_sha256": "7c1f5220ccb32f7213a33a0412671bd3affef367979a4099fe44a1073735c133",
+  "tool_sha256": "2214e09c42ce943f28f327ca0bb8e4fe4e09867441d0107846b31fcb75740fbd"
+}

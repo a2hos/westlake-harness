@@ -1,0 +1,282 @@
+{
+  "arm64_path_arm32_elf": [],
+  "non_elf_so": [],
+  "other_arm32_elf": [
+    {
+      "bytes": 21391836,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libQuickSupport.so",
+      "sha256": "1077541bc60f5dc8f83b43dd320febaed50dce0b72b815d764b512e748250c8f"
+    },
+    {
+      "bytes": 7252,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b"
+    },
+    {
+      "bytes": 963028,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libc++_shared.so",
+      "sha256": "af383654daf4cf0829615460419a180f84edd9d8bf51aa0f81ed0db811bf8491"
+    },
+    {
+      "bytes": 10848,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/liblogging.so",
+      "sha256": "6b9323bedde2283a7791111528aa1ba8f2c3add1171ece65c292ea4644ad157c"
+    },
+    {
+      "bytes": 13632,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsamsungrcclient14.so",
+      "sha256": "7ec7cec575313573f46d01848a0e825c96ed5709a5e7e36327d4ffb8cd3933fb"
+    },
+    {
+      "bytes": 14100,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsamsungrcclient24.so",
+      "sha256": "f28f72a9d78d699049193c3a93ce78e28e73a0c41d067e70b758f386f6e713d4"
+    },
+    {
+      "bytes": 14020,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsamsungrcclient27.so",
+      "sha256": "ead4fe94d19eb8ed3e9dc640b2ebc11faef1a4c55ef3159a625e5b64d480c8a8"
+    },
+    {
+      "bytes": 414340,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libscrcopy.so",
+      "sha256": "455db9c049409cba203c11a683f1e01b2443e8d54d480d30790d78654cc1a548"
+    },
+    {
+      "bytes": 14300,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsentry-android.so",
+      "sha256": "eea4653ad518d86d7988e6a049dd73b7b85cbaad3559abc9bd0239e032c6560c"
+    },
+    {
+      "bytes": 559664,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 40,
+      "name": "lib/armeabi-v7a/libsentry.so",
+      "sha256": "f1a456d208daa2afad5021d19a0b2c2c6666ff0f624131c64a1ee3486dc354e0"
+    }
+  ],
+  "other_elf": [
+    {
+      "bytes": 30284836,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/libQuickSupport.so",
+      "sha256": "2646a5225a2c48a78fb9b5b9136f8b7ccd42ef9744002582c99e06a978f97c1c"
+    },
+    {
+      "bytes": 9284,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/libandroidx.graphics.path.so",
+      "sha256": "eb0570b41fd3bff25d8204a967c03bd7550719e768b791f680cc40cbe35f29af"
+    },
+    {
+      "bytes": 1255932,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/libc++_shared.so",
+      "sha256": "1b9fba4282c5a043994aa023c0a274b580534c5d72916cae7b42bec4e1a27d70"
+    },
+    {
+      "bytes": 32652,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/liblogging.so",
+      "sha256": "e91031cfc02528a27c609080dfaefc33ca88fcc113c54c87a8338aeaa52aee4f"
+    },
+    {
+      "bytes": 662748,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/libscrcopy.so",
+      "sha256": "61548c25024d8136fbcec6358134146b3989eb548bd06ca20e408cf5fb432e04"
+    },
+    {
+      "bytes": 17492,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/libsentry-android.so",
+      "sha256": "140054f0692124a15123506cad0ef6a0b8a67143c10d211d04298685c32051c5"
+    },
+    {
+      "bytes": 880916,
+      "elf_class": 1,
+      "endian": 1,
+      "machine": 3,
+      "name": "lib/x86/libsentry.so",
+      "sha256": "0c6877d9ce88e888d694697ca93f8d62f45a6f41069109608851a380d1620183"
+    },
+    {
+      "bytes": 30863072,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/libQuickSupport.so",
+      "sha256": "cfe20c76a2526ed4491dce5af6f6c9f2777ff0da15a5e219de46bf83d7dc848a"
+    },
+    {
+      "bytes": 10760,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/libandroidx.graphics.path.so",
+      "sha256": "4e56c996f13670e70082658de7880c4020eabf4f25e43387f88ed78a713fc9f0"
+    },
+    {
+      "bytes": 1337488,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/libc++_shared.so",
+      "sha256": "683a1c7cd2f6829fd40bf805739166c5fce35235bf60d2c4e4a95e9f65a342ef"
+    },
+    {
+      "bytes": 37272,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/liblogging.so",
+      "sha256": "ee88a17d5394d41b66a9e799b06a3a2b94c79f0ceb5679acca77cff792a579c8"
+    },
+    {
+      "bytes": 618624,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/libscrcopy.so",
+      "sha256": "e65e29556b4b12003f27deace3ad545f54a075bdaa6995e8ec12ac8cce17d38d"
+    },
+    {
+      "bytes": 19464,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/libsentry-android.so",
+      "sha256": "8ffb974c54c5eb0662fb97701804333d2ee6ada433507992d52be9255b4f700f"
+    },
+    {
+      "bytes": 835792,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 62,
+      "name": "lib/x86_64/libsentry.so",
+      "sha256": "a4c5dfdc70bffbac513f6886bd2713da4979e0179cf18aa2b9759a8434d91fb0"
+    }
+  ],
+  "true_arm64_elf": [
+    {
+      "bytes": 31216928,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libQuickSupport.so",
+      "sha256": "ef796ae59cdf1e2762fd4010f3f0b8f08894dea63758b2a2621e15e0bcc14e1e"
+    },
+    {
+      "bytes": 10096,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+    },
+    {
+      "bytes": 1374336,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libc++_shared.so",
+      "sha256": "c4c2fe5cbcb1fba0003a31fc7ab29a9bb12df6cc187ec45a806462540e83d93b"
+    },
+    {
+      "bytes": 38048,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/liblogging.so",
+      "sha256": "e070907e7bab501a039c68e543f36db0e170055b264a99e1dfefc945aa63a61e"
+    },
+    {
+      "bytes": 18328,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsamsungrcclient14.so",
+      "sha256": "16e8f9da711ba8354f3671bc5f1881bbb40481fee9cc2e12f6c3aac286022e5a"
+    },
+    {
+      "bytes": 18960,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsamsungrcclient24.so",
+      "sha256": "890d9a9e4297c1991167b4bb57b7e05feb078c39fcb3c09ce996126e15b1fd9b"
+    },
+    {
+      "bytes": 18848,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsamsungrcclient27.so",
+      "sha256": "74353e2de6d55919f2a3cb89c58e988d09b2b1565c0377f70d9bd08f7f4e39d1"
+    },
+    {
+      "bytes": 459168,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libscrcopy.so",
+      "sha256": "e1a0172d07bba821e40c1228c8459941cd876bdd18865bdf18b0002f9177820e"
+    },
+    {
+      "bytes": 20024,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsentry-android.so",
+      "sha256": "ee86e26879cd7c1dac0e3f75da37d9f44ffb034e861e9497a5580a363122ccef"
+    },
+    {
+      "bytes": 851272,
+      "elf_class": 2,
+      "endian": 1,
+      "machine": 183,
+      "name": "lib/arm64-v8a/libsentry.so",
+      "sha256": "cf92cfd15d23686d06c2581d5ad3ed309ec3f8665026f94c808cc1c945e88a5b"
+    }
+  ]
+}

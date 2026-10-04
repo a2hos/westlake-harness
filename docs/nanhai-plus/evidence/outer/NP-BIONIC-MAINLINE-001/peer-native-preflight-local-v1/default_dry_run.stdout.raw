@@ -1,0 +1,1 @@
+{"decision": "DRY_RUN_ONLY", "doors": ["H1_AUTH_HOST", "H2_EXACT_R4_SOURCE", "H3_TOOLCHAIN", "H4_OUTPUT_EXEC_BOUNDARY"], "remote_calls": 0, "next": "Provide offline fixture for static check; separate new signed release required for real SSH."}

@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-10-04T22:01:40.598132+00:00",
+  "cases_passed": 15,
+  "container_commands": 0,
+  "current_test_results_sha256": "4bbbc1d58122775bf84baa4868d6f20bb2731f864642512b74ae90e82013d227",
+  "device_commands": 0,
+  "prior_v1_result_sha256": "89ade6677a0b649d7849880ecb939e00a9c64034878a1768e426ccc89b147b8c",
+  "rc": 0,
+  "reason_for_test_results_hash_drift": "test_offline.py embeds at_utc in TEST-RESULTS.json; rerun reproduces case rc and raw hashes but changes report timestamp and whole-file SHA",
+  "schema": "peer-native-preflight-local-v2-receipt",
+  "ssh_calls": 0,
+  "test_script_sha256": "7c1f5220ccb32f7213a33a0412671bd3affef367979a4099fe44a1073735c133",
+  "tool_sha256": "2214e09c42ce943f28f327ca0bb8e4fe4e09867441d0107846b31fcb75740fbd",
+  "v1_preserved": true
+}
