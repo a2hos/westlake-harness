@@ -2541,6 +2541,49 @@
     "status": "dev_only_allowed_architecture_and_delivery_excluded",
     "allowed": "开发阶段扫描、依赖准备、测试夹具、失败定位",
     "excluded": "系统架构、正式交付构建、App/OH服务运行、目标镜像、安装/冷启动/上屏、设备验收",
-    "evidence_rule": "dev-only容器输出不得升级为交付PASS"
+    "evidence_rule": "dev-only容器输出不得升级为交付PASS",
+    "scope": [
+      "system_architecture",
+      "formal_delivery",
+      "app_runtime",
+      "oh_service_runtime",
+      "system_image",
+      "device_acceptance"
+    ],
+    "dev_only_tools_allowed": [
+      "docker"
+    ],
+    "dev_only_scope": [
+      "static_scan",
+      "dependency_preparation",
+      "test_fixture",
+      "reproducible_experiment",
+      "failure_localization"
+    ],
+    "delivery_forbidden_tools": [
+      "docker",
+      "podman",
+      "runc",
+      "crun",
+      "nerdctl",
+      "buildah",
+      "proot",
+      "nsjail",
+      "unshare",
+      "chroot",
+      "systemd-nspawn"
+    ],
+    "namespace_isolation_always_forbidden": true,
+    "forbidden_launchers": [
+      "runc",
+      "crun",
+      "nerdctl",
+      "buildah",
+      "proot",
+      "nsjail",
+      "unshare",
+      "chroot",
+      "systemd-nspawn"
+    ]
   }
 }
