@@ -1,0 +1,30 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T09:31:53.294756+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "latest_terminal": "G275 rc2, target-graph 182 errors, compile0",
+  "g276": "42-root v20 static candidate check rc0, independent GO only for root review, root static accepted for original-owner readonly consumption; fresh ACK/seal/graph pending",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 77,
+    "static_apks": 73,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "reflection": "EVO18 closed; pending0",
+  "device_hold": "preserved",
+  "github_last_verified_commit": "943a8af9ef4741165e866a5d0d8bd984026b21a9",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "078a4bbc3cf5a1d2c12fadfd28174b0c044399acc9658383292b3056f6415d96"
+    },
+    "g276_static_root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-static-review-v1/REVIEW.json",
+      "sha256": "65d650987db213d3761b4241cde104d09e6efcc8b6959e0e9a277dc219e09ee0"
+    }
+  }
+}

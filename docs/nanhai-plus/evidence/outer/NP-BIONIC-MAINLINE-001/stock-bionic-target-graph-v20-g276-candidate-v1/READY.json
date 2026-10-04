@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai.g276.v20.candidate-ready.v1",
+  "at": "2026-10-04T09:28:57.445709+00:00",
+  "status": "FULL_ONE_SHOT_STATIC_CANDIDATE_NOT_RELEASED",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/PACKET-CANDIDATE.json",
+    "sha256": "8dea207ad0869c1c7a789d3bf2ce64c7918dda216f6a62c5aaa2536fae0ec057"
+  },
+  "executor": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/executor.py",
+    "sha256": "6379ec2939ae141e71c92b0bf016a98fa58d7d8dcd742ccfe44c999c11dba4f0"
+  },
+  "static_check": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/STATIC-CHECK.json",
+    "sha256": "dddbcb4c4e19c56f2cc01ccde163fdfbe13a10e7fe73a07989d9c4c224427e99"
+  },
+  "handoff": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/HANDOFF.md",
+    "sha256": "401daf244ea89f9b851d6c723627351367d0f32551ba38b39a0df3f7b372a274"
+  },
+  "stock_roots": 42,
+  "new_exact_entries": 997,
+  "all_allowlisted_paths": 198046,
+  "new_source_bytes_verified_once": true,
+  "prior_complete_source_sdk_guard_retained": true,
+  "linux_mount_inspection_executed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compiled": false,
+  "device_commands": 0,
+  "earliest_unclosed_gate": "independent candidate review",
+  "requires": [
+    "independent candidate review",
+    "root review",
+    "fresh original-owner G276 ACK covering frozen inputs",
+    "G276 sealed packet and matching root seal on original claim"
+  ]
+}

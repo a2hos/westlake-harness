@@ -1,0 +1,45 @@
+{
+  "schema": "nanhai.g276.v20.root-static-review.v1",
+  "at": "2026-10-04T09:31:10.747662+00:00",
+  "decision": "ACCEPT_STATIC_CANDIDATE_FOR_OWNER_READONLY_CONSUMPTION_ONLY",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/READY.json",
+    "sha256": "307db4ea04d37a47f0faea9b96034dffed3d9ab87a2f7ed322cda8d80e723d50"
+  },
+  "candidate": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/PACKET-CANDIDATE.json",
+    "sha256": "8dea207ad0869c1c7a789d3bf2ce64c7918dda216f6a62c5aaa2536fae0ec057"
+  },
+  "static_check": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/STATIC-CHECK.json",
+    "sha256": "dddbcb4c4e19c56f2cc01ccde163fdfbe13a10e7fe73a07989d9c4c224427e99"
+  },
+  "independent_peer": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/peer-review-v1/REVIEW.json",
+    "sha256": "efdfa5ea55866ad3c0f6a9544d25159288aef40445881667a98536263e1a3652"
+  },
+  "admitted_source": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+    "sha256": "1cb49da27ea89d98a04090efa7b6d58b620e6f5bc4415ce6c31b4dca87bef7e9"
+  },
+  "stock_roots": 42,
+  "exact_paths": 198046,
+  "virtual_cross_root_links": 3,
+  "static_check_rc": 0,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "target_compile_commands": 0,
+  "device_commands": 0,
+  "execution_release": false,
+  "required_next": [
+    "fresh original-owner G276 ACK",
+    "matching G276 sealed packet and root seal",
+    "single host graph execution under original claim"
+  ],
+  "limits": [
+    "Static view is not Linux mount evidence",
+    "No Soong graph or APK cold start result"
+  ]
+}

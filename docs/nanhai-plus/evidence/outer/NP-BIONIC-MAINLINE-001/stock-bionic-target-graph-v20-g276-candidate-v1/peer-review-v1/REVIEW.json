@@ -1,0 +1,62 @@
+{
+  "schema": "nanhai.g276.v20.independent-static-peer-review.v1",
+  "reviewed_utc": "2026-10-04T09:30:46.022294+00:00",
+  "decision": "GO_FOR_ROOT_REVIEW_ONLY",
+  "execution_state": "BLOCKED_PENDING_FRESH_ORIGINAL_OWNER_ACK_AND_MATCHING_SEALS",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "ready": {
+    "path": "../READY.json",
+    "sha256": "307db4ea04d37a47f0faea9b96034dffed3d9ab87a2f7ed322cda8d80e723d50"
+  },
+  "candidate": {
+    "path": "../PACKET-CANDIDATE.json",
+    "sha256": "8dea207ad0869c1c7a789d3bf2ce64c7918dda216f6a62c5aaa2536fae0ec057"
+  },
+  "independent_checks": {
+    "check_candidate": {
+      "command": "python3 -B scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/executor.py check-candidate",
+      "rc": 0,
+      "output": {
+        "metadata_valid": true,
+        "docker_commands": 0,
+        "target_compile": false
+      }
+    },
+    "ready_references": "4/4 SHA-256 match",
+    "candidate_bound_file_inputs": "370/370 SHA-256 match; 2 env inputs verified by check-candidate",
+    "materialization": "42 distinct read-only stock roots; prior 40 preserved in order; exactly system/tools/hidl and system/apex appended; every other materialization field matches G275",
+    "exact_allowlist": {
+      "g275": 197049,
+      "new_hidl": 453,
+      "new_apex": 544,
+      "total": 198046,
+      "overlap": 0
+    },
+    "cross_root_links": {
+      "system/tools/hidl/.clang-format": "build/soong/scripts/system-clang-format",
+      "system/apex/libs/libapexsupport/.clang-format": "system/apex/apexd/.clang-format",
+      "system/apex/rustfmt.toml": "build/soong/scripts/rustfmt.toml"
+    },
+    "source_sdk_guards": "G276 full_source_guard wraps G275 complete source/SDK guard plus both full new roots; inherited runner calls it before and after execution and compares summaries",
+    "new_stock_mounts": "executor adds two readonly bind mounts and verifies Docker inspect Source/Type/RW during a future released run",
+    "owner_release_gate": "run checks original claim goal/session/active/released sequence 276; frozen packet candidate SHA; fresh owner ACK consuming G275 terminal and all 370 file inputs; matching G276-SEALED and ROOT-SEAL SHA bindings",
+    "release_artifacts_at_review": {
+      "owner_ack": false,
+      "g276_sealed_packet": false,
+      "root_seal": false
+    }
+  },
+  "observed_wall": null,
+  "evidence_boundary": {
+    "proven": "Static candidate integrity, 42-root plan, exact allowlist count and virtual link target membership, and gated execution code.",
+    "not_proven": "Linux read-only mounts, Soong graph, target compilation, or device behavior.",
+    "failed": "None in static candidate scope.",
+    "next_evidence": "Root review, fresh original-owner G276 ACK, sealed packet and matching root seal on original claim; only then one host graph execution."
+  },
+  "commands_executed": {
+    "docker": 0,
+    "device": 0,
+    "bridge": 0
+  }
+}

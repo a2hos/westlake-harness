@@ -1,0 +1,48 @@
+{
+  "schema": "nanhai.g276.v20.static-check.v1",
+  "at": "2026-10-04T09:28:57.442696+00:00",
+  "status": "STATIC_CANDIDATE_CHECK_PASSED_NOT_RELEASED",
+  "command": "python3 scripts/nanhai_plus_env.py --run python3 docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/executor.py check-candidate",
+  "exit_code": 0,
+  "output": {
+    "metadata_valid": true,
+    "docker_commands": 0,
+    "target_compile": false
+  },
+  "materialization": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/MATERIALIZATION.json",
+    "sha256": "ce621329b607cf82c4be655db0d9d07dc81e1148a21d98c7e22195754ad5108e"
+  },
+  "source_admission": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+    "sha256": "1cb49da27ea89d98a04090efa7b6d58b620e6f5bc4415ce6c31b4dca87bef7e9"
+  },
+  "new_root_full_guard": {
+    "entries": 997,
+    "bytes": 35682822,
+    "git_heads_and_trees_verified": true,
+    "tracked_bytes_and_git_blobs_verified": true
+  },
+  "plan": {
+    "old_roots": 40,
+    "new_roots": [
+      "system/tools/hidl",
+      "system/apex"
+    ],
+    "total_roots": 42,
+    "private_materialization_entries_unchanged": 18023
+  },
+  "oracle": {
+    "prior_exact_paths": 197049,
+    "new_exact_paths": 997,
+    "total_exact_paths": 198046,
+    "stock_symlink_targets_present": 3
+  },
+  "not_executed": [
+    "docker",
+    "Linux mount inspection",
+    "Soong graph",
+    "target compilation",
+    "device"
+  ]
+}

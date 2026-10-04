@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T09:26:36.754839+00:00",
+  "checked_at": "2026-10-04T09:31:19.675635+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -483,6 +483,10 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g276-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
       "sha256": "1cb49da27ea89d98a04090efa7b6d58b620e6f5bc4415ce6c31b4dca87bef7e9"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-static-review-v1/REVIEW.json",
+      "sha256": "65d650987db213d3761b4241cde104d09e6efcc8b6959e0e9a277dc219e09ee0"
     }
   ],
   "bionic_stock_graph": {
@@ -1070,6 +1074,21 @@
     "tracked_entries": 997,
     "unresolved_standalone_external_links": 2,
     "graph_executed": false,
+    "target_compile_commands": 0,
+    "device_commands": 0
+  },
+  "g276_graph_candidate": {
+    "status": "STATIC_ROOT_ACCEPTED_FOR_ORIGINAL_OWNER_READONLY_CONSUMPTION_NOT_RELEASED",
+    "root_static_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v20-g276-candidate-v1/root-static-review-v1/REVIEW.json",
+      "sha256": "65d650987db213d3761b4241cde104d09e6efcc8b6959e0e9a277dc219e09ee0"
+    },
+    "stock_roots": 42,
+    "exact_paths": 198046,
+    "check_candidate_rc": 0,
+    "graph_executed": false,
+    "owner_new_ACK": false,
+    "root_sealed": false,
     "target_compile_commands": 0,
     "device_commands": 0
   }
