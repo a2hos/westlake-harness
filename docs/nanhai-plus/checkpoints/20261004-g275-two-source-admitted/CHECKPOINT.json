@@ -1,0 +1,29 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "at": "2026-10-04T08:55:49.499913+00:00",
+  "goal_id": "goal_01",
+  "original_claim": "NP-MUSL16-ART-024",
+  "original_session": "nanhai-plus/octos-inner",
+  "latest_terminal": "G274 rc2, target-graph missing kernel-config-soong-rules and soong-selinux",
+  "g275": "two complete exact R4 source repos and project read-only links root admitted; graph candidate pending",
+  "counts": {
+    "bionic_whole_tools": 0,
+    "historical_musl_source": 38,
+    "raw_apks": 76,
+    "static_apks": 72,
+    "cold_starts": 0,
+    "qualified_blackbox_starts": 0
+  },
+  "device_hold": "preserved, no device access",
+  "github_commit": "cb21cbf6774e0ee617527c90ec68229059010dfb",
+  "refs": {
+    "summary": {
+      "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+      "sha256": "9a3a2aa088619c27a84a5bca78c951c0cfcb52ce179a2e783dee34d12397bba6"
+    },
+    "g275_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g275-two-r4-stock-input-candidate-v1/root-admission-v1/ADMISSION.json",
+      "sha256": "311b75cb735ad0f36e0df6fae5cc49a7daeca998975f04c2c3ed4f3ef35308ac"
+    }
+  }
+}
