@@ -1,0 +1,120 @@
+{
+  "at": "2026-10-04T08:20:53.472070+00:00",
+  "blocking_finding": {
+    "description": "Inherited old.artifact_oracle and old.graph_oracle construct their allowed stock path set from full-candidate SOURCE-MANIFEST.json and MATERIALIZATION.json. SOURCE-MANIFEST.json is a symlink to v17b and lists only 29 old repositories. Nine G274 stock roots are mounted and can enter stock finder output, but their Android.bp paths are absent from allowed. A successful G274 graph would be rejected as an unsealed Blueprint/config input in post-run archive oracle, a false negative.",
+    "executor_locations": [
+      "stock-bionic-target-graph-v17b/executor.py:artifact_oracle",
+      "stock-bionic-target-graph-v17b/executor.py:graph_oracle",
+      "stock-bionic-target-graph-v18-full-candidate/SOURCE-MANIFEST.json"
+    ],
+    "falsifier": "Extend G274 oracle allowlist exactly from the nine accepted full-tree manifests, bind and peer-review that new oracle, then independently run static positive and injected unqualified-path negative checks before new owner ACK/root seal.",
+    "release_blocked": true
+  },
+  "candidate": {
+    "executor_sha256": "480a07a5d3271c59e9ccbb83982ac42cae2dba9b674b4fb68ed15a3e54ba966c",
+    "packet_sha256": "3617ff20c2c58a30cd73d683948705a1e6868d3e33172ff21cef896f54303456",
+    "ready_sha256": "b4802693b62e6e6261fb83d9ba8178a664428a1600d8ea21653551ee759d0ea8",
+    "static_check_sha256": "a4c9f84acf12d9db394e18abacb3fed14038580f892b7bfe919ccc81a981e962"
+  },
+  "control": {
+    "claim": "NP-MUSL16-ART-024",
+    "goal_id": "goal_01",
+    "owner_ack": null,
+    "prior_release_sequence": 273,
+    "release_sequence": null,
+    "root_seal_present": false
+  },
+  "independent_observations": {
+    "archive_cleanup": "inherited executor records OUT/TMP tar and cleanup/oracle receipts; reviewed statically, not executed",
+    "candidate_check": {
+      "docker_commands": 0,
+      "metadata_valid": true,
+      "rc": 0,
+      "terminal_chunk": "2886e2"
+    },
+    "candidate_input_refs": 343,
+    "exact_overlap_control_paths": 6,
+    "full_guard": {
+      "elapsed_seconds": 36.873,
+      "new_entries": 85499,
+      "new_source_roots": 9,
+      "old_source_roots": 29,
+      "original_dangling_links": 1,
+      "qualified_links": 12,
+      "rc": 0,
+      "sdk_regular": 17921,
+      "sdk_symlinks": 3,
+      "terminal_chunk": "f9b61e"
+    },
+    "isolation_and_timeout": "inherited Docker argv uses --network none, --pull never, read-only root, private volumes and stock command timeout 600s / host 630s; reviewed statically",
+    "link_table_entries": 13,
+    "new_root_android_bp_examples": [
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "packages/apps/DocumentsUI/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "system/netd/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "device/google/cuttlefish/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "system/bpf/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "packages/modules/common/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "frameworks/base/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "hardware/interfaces/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "frameworks/native/Android.bp"
+      },
+      {
+        "exact_source_exists": true,
+        "inherited_oracle_allowlist": false,
+        "path": "system/libvintf/Android.bp"
+      }
+    ],
+    "new_root_argv_and_mount_policy": "reviewed extension.stock_bind_args/verify_stock_mounts and inherited container_argv/verify_container; nine exact read-only binds plus one read-only link-table bind; Linux inspect not executed",
+    "readonly_root_mounts": 38,
+    "run_without_g274_seal_negative": {
+      "docker_commands": 0,
+      "rc": 2,
+      "refusal": "wrong release path",
+      "terminal_chunk": "be16db"
+    },
+    "source_manifest_roots": 29
+  },
+  "limits": {
+    "device_commands": 0,
+    "full_prepost_equal_executed": false,
+    "graph_executed": false,
+    "linux_mount_inspection_executed": false,
+    "no_replay_of_g273": true,
+    "owner_ack_present": false,
+    "target_compiled": false
+  },
+  "schema": "nanhai.g274.v18.full-executor-independent-review.v1",
+  "scope": "static and read-only guards only; no Docker, graph, target compilation, device, Herdr or Git",
+  "status": "BLOCK_RELEASE_INHERITED_GRAPH_ORACLE_EXCLUDES_NINE_NEW_ROOTS"
+}

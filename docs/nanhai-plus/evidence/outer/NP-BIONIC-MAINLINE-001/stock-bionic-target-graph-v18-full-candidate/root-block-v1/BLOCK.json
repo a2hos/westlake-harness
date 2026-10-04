@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-04T08:21:14.547037+00:00",
+  "status": "ROOT_BLOCK_G274_V18_FULL_CANDIDATE_RELEASE",
+  "candidate_ready": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/READY.json",
+    "sha256": "b4802693b62e6e6261fb83d9ba8178a664428a1600d8ea21653551ee759d0ea8"
+  },
+  "independent_review": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/independent-review-v1/REVIEW.json",
+    "sha256": "25e2ae020b7f4c438fbef54e11598eccbaf3c4336db58559fec0aca9b4046d2d"
+  },
+  "blocker": "Inherited graph_oracle and artifact_oracle use SOURCE-MANIFEST with 29 old repositories; nine new R4 roots are not in allowed Blueprint/config paths, so successful graph would be falsely rejected",
+  "new_owner_ACK": false,
+  "root_execution_sealed": false,
+  "docker_commands": 0,
+  "graph_executed": false,
+  "device_commands": 0,
+  "next": "New frozen v2 candidate with exact allowed-path extension and positive/negative static tests; independent re-review before any original owner ACK."
+}

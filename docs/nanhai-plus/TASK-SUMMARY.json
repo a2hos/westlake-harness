@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T08:16:07.671751+00:00",
+  "checked_at": "2026-10-04T08:21:30.891112+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -437,6 +437,10 @@
     {
       "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-candidate/root-static-review-v1/REVIEW.json",
       "sha256": "c790949f79388aa06ea04d0c61271a052104d103090b80c0d90d002431656791"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/root-block-v1/BLOCK.json",
+      "sha256": "39bc4674cc5e7239a91edc58d18f5592005ff5fbe1bc6b38c1cfa570df67768d"
     }
   ],
   "bionic_stock_graph": {
@@ -482,11 +486,11 @@
     "counts_as_new_tool": false,
     "duration_seconds": null,
     "limit_seconds": 120,
-    "pending_actual_result_groups": 3,
+    "pending_actual_result_groups": 4,
     "trigger_every_groups": "3-4",
-    "next": "Wait for 3-4 new actual result groups; vary lens; one bounded verifiable improvement",
+    "next": "EVO-0017 peer opened after fourth actual group: G274 full candidate blocked; <=120s one verifiable local improvement",
     "latest_closed": "EVO-0016",
-    "pending_groups": 3,
+    "pending_groups": 4,
     "latest_closure": {
       "path": "docs/nanhai-plus/evolution/EVO-0016-elf-member-reuse-key/ROOT-CLOSURE.json",
       "sha256": "8136f67fb7948fb877008e96bffdddbabed8cfe90784bf8fd8e206f18feaf7b5"
@@ -892,6 +896,16 @@
     "old_roots": 29,
     "new_roots": 9,
     "full_one_shot_executor_ready": false,
+    "graph_executed": false
+  },
+  "g274_v18_full_candidate_block": {
+    "status": "BLOCK_RELEASE",
+    "reason": "inherited graph/artifact oracles allow only old 29 roots; nine new roots would be falsely rejected",
+    "root_block": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/stock-bionic-target-graph-v18-full-candidate/root-block-v1/BLOCK.json",
+      "sha256": "39bc4674cc5e7239a91edc58d18f5592005ff5fbe1bc6b38c1cfa570df67768d"
+    },
+    "new_owner_ACK": false,
     "graph_executed": false
   }
 }

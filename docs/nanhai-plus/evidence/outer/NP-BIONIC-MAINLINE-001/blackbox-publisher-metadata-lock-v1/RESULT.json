@@ -1,0 +1,117 @@
+{
+  "schema": "blackbox-publisher-metadata-lock-v1",
+  "checked_at_utc": "2026-10-04T08:17:47.413073+00:00",
+  "policy": "Read-only publisher HTML GET and one historical APK HEAD; no APK payload GET, device, Git, qualification, or count change.",
+  "observations": [
+    {
+      "name": "zoom_current_page",
+      "method": "GET",
+      "requested_url": "https://zoom.us/download?os=android",
+      "status": 200,
+      "final_url": "https://zoom.us/download?os=android",
+      "redirect_chain": [
+        {
+          "status": 200,
+          "url": "https://zoom.us/download?os=android",
+          "location": null
+        }
+      ],
+      "content_type": "text/html;charset=utf-8",
+      "content_length": null,
+      "header_date": "Sun, 04 Oct 2026 08:17:44 GMT",
+      "body_bytes": 523204,
+      "body_sha256": "1cb4a6a4161ce0f9cc02dd878ecd3d3484649bc1539ff31ff700ed2091d9ec82",
+      "contains_apk_string": false,
+      "notes": "Publisher HTML only; no APK body requested"
+    },
+    {
+      "name": "zoom_historical_official_url",
+      "method": "HEAD",
+      "requested_url": "https://zoom.us/client/5.12.8.9880/zoom.apk",
+      "status": 200,
+      "final_url": "https://cdn.zoom.us/prod/5.12.8.9880/zoom.apk",
+      "redirect_chain": [
+        {
+          "status": 302,
+          "url": "https://zoom.us/client/5.12.8.9880/zoom.apk",
+          "location": "https://cdn.zoom.us/prod/5.12.8.9880/zoom.apk"
+        },
+        {
+          "status": 200,
+          "url": "https://cdn.zoom.us/prod/5.12.8.9880/zoom.apk",
+          "location": null
+        }
+      ],
+      "content_type": "application/vnd.android.package-archive",
+      "content_length": "253224483",
+      "header_date": "Sun, 04 Oct 2026 08:17:45 GMT",
+      "body_bytes": 0,
+      "body_sha256": null,
+      "contains_apk_string": null,
+      "notes": "No APK body requested; HEAD only"
+    },
+    {
+      "name": "line_current_page",
+      "method": "GET",
+      "requested_url": "https://www.line.me/en/",
+      "status": 200,
+      "final_url": "https://www.line.me/en/",
+      "redirect_chain": [
+        {
+          "status": 200,
+          "url": "https://www.line.me/en/",
+          "location": null
+        }
+      ],
+      "content_type": "text/html",
+      "content_length": null,
+      "header_date": "Sun, 04 Oct 2026 00:38:19 GMT",
+      "body_bytes": 35792,
+      "body_sha256": "9765b1199a4e68d32fb24b3b37104e793834ec2b679e30f641f4a96abb9c950f",
+      "contains_apk_string": false,
+      "notes": "Publisher HTML only; no APK body requested"
+    },
+    {
+      "name": "epic_store_current_page",
+      "method": "GET",
+      "requested_url": "https://store.epicgames.com/mobile/android",
+      "status": 403,
+      "final_url": "https://store.epicgames.com/mobile/android",
+      "redirect_chain": [
+        {
+          "status": 403,
+          "url": "https://store.epicgames.com/mobile/android",
+          "location": null
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": null,
+      "header_date": "Sun, 04 Oct 2026 08:17:46 GMT",
+      "body_bytes": 25471,
+      "body_sha256": "bb81502dd06e11cd0fa0fb6c868b8fa381f4574a81e318c6597a2825b6fd521f",
+      "contains_apk_string": false,
+      "notes": "Publisher HTML only; no APK body requested"
+    },
+    {
+      "name": "epic_official_faq",
+      "method": "GET",
+      "requested_url": "https://www.epicgames.com/help/c-32735058/c-34235392/a20529412?lang=en-US",
+      "status": 403,
+      "final_url": "https://www.epicgames.com/help/c-32735058/c-34235392/a20529412?lang=en-US",
+      "redirect_chain": [
+        {
+          "status": 403,
+          "url": "https://www.epicgames.com/help/c-32735058/c-34235392/a20529412?lang=en-US",
+          "location": null
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": null,
+      "header_date": "Sun, 04 Oct 2026 08:17:47 GMT",
+      "body_bytes": 25626,
+      "body_sha256": "e6e2f89c8a0c0ec61867ba1fddc590362e09fee99a1a36ac6e0306f22aedb6e9",
+      "contains_apk_string": true,
+      "notes": "Publisher HTML only; no APK body requested"
+    }
+  ]
+}
