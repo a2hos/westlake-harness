@@ -1,6 +1,6 @@
 {
   "schema": "nanhai-plus-task-summary-v1",
-  "checked_at": "2026-10-04T10:10:55+00:00",
+  "checked_at": "2026-10-04T10:27:22.487980+00:00",
   "target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
   "current_bionic": {
     "original_tools": 89,
@@ -533,13 +533,15 @@
     "app_bionic_tool_pass_delta": 0
   },
   "next_graph_candidate": {
-    "prospective_release": 275,
-    "next_input": "G275 owner ACK and root seal present; release-only preflight rc0 after claim reference correction; independent pre-run review pending, then one-shot graph",
-    "candidate_independently_reviewed": true,
-    "root_reviewed": true,
-    "original_owner_ACK": true,
-    "execution_ready": true,
-    "G274_terminal": true
+    "prospective_release": 279,
+    "status": "NO_GO_RUNNER_V2",
+    "execution_ready": false,
+    "original_owner_graph_ack": false,
+    "peer_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v2-peer-v1/REVIEW.json",
+      "sha256": "1ac8725f82504d2ba9d5c1c67f5c3f9a4bd4d69b1b5e4564cbd9ae323a527eb6"
+    },
+    "next_input": "Fix runner v2 peer B1-B6, then independent review, separate original owner graph ACK and one-shot release"
   },
   "reflection": {
     "latest": "EVO-0018-type-registration-cohort",
@@ -1141,12 +1143,12 @@
     },
     "environment_document": {
       "path": "local_env.md",
-      "sha256": "63696c2d70122d864fd4fda1dde26bb686a4cadac2ee3f7a86ebda54eb02a890"
+      "sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3"
     },
     "container_execution_allowed": false,
     "host_native_graph_pass": false,
     "native_target_build_pass": false,
-    "new_host_candidate": "gz02: 42/42 R4 stock roots plus four key input roots present and tag-HEAD/clean; native host tool built; graph pending",
+    "new_host_candidate": "gz02 full R4 TOP 1011/1013 manifest projects read-only admitted; two absent Darwin prebuilts; metadata ACK accepted; graph runner NO_GO and graph not executed",
     "historical_g252_g276_container_receipts": "historical_only_not_native_pass",
     "host_native_route_root_review": {
       "path": "docs/nanhai-plus/revisions/no-container-20261004/NATIVE-ROUTE-REVIEW.json",
@@ -1180,5 +1182,29 @@
     "soong_graph_pass": false,
     "target_build_pass": false,
     "device_startup_pass": false
+  },
+  "g279_source_admission": {
+    "status": "read_only_input_only",
+    "manifest_projects": 1013,
+    "present_projects": 1011,
+    "missing_darwin_host_prebuilts": 2,
+    "registration_root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-REGISTRATION-ROOT-REVIEW.json",
+      "sha256": "7f7f8cba172cb2591374aa5ef609eea2c8bfd60627a944e7d8456fd952e6eea0"
+    },
+    "ledger": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS.tsv",
+      "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+    }
+  },
+  "g279_owner_metadata_ack": {
+    "status": "accepted_metadata_only",
+    "root_ack": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-sync-v1/ROOT-ACK.json",
+      "sha256": "e3932d34a66d48779b5c1229b25628bbbb672c5e225e4d89feede3ac082d1da4"
+    },
+    "graph_executed": false,
+    "target_compiled": false,
+    "device_executed": false
   }
 }

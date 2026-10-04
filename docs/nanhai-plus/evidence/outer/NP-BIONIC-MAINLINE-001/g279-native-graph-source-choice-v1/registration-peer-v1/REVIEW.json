@@ -1,0 +1,48 @@
+{
+  "schema": "nanhai.g279.full_top_registration_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:18:29.738816+00:00",
+  "decision": "ACCEPT_READ_ONLY_FULL_TOP_INPUT_REGISTRATION_ONLY",
+  "references": {
+    "admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-SOURCE-ADMISSION.json",
+      "sha256": "62749d2cd34024bd6c87e3e8c3f81c274b3b6c1347d389cf81b5dd76ecee2e14"
+    },
+    "ledger": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS.tsv",
+      "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+    },
+    "ledger_receipt": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS-RECEIPT.json",
+      "sha256": "7a6d19358323a3d7c2e6bd83716c237b9835af0a1567f3997910b2aff10f6554"
+    },
+    "remote_sources_full_copy": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/REMOTE-SOURCES-FULL.json",
+      "sha256": "039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79"
+    },
+    "remote_readme_full_copy": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/REMOTE-README-FULL.md",
+      "sha256": "718f1a48a29fcf3452a379d81983dc22c2a5eea66972a23ac74fa837c9f9d0ec"
+    },
+    "local_shared_index": {
+      "path": "/opt/19.SourceCode/SOURCES.json",
+      "sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636"
+    },
+    "local_env": {
+      "path": "local_env.md",
+      "sha256": "497517ad575ed18a58b9bb58a3e07306d05a1ddf3b7c3a3be1a3850a9f73cee3"
+    }
+  },
+  "checks": {
+    "local_index": "/opt/19.SourceCode/SOURCES.json AOSP 16.0.0_r4 remote_readonly_mirrors.gz02 preserves the canonical alias and original 42+4 receipt, and now records manifest_projects=1013, present_r4_tag_clean_projects=1011, exact two Darwin absences, ledger SHA256 fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356, admission SHA256 62749d2cd34024bd6c87e3e8c3f81c274b3b6c1347d389cf81b5dd76ecee2e14, byte/untracked limits, source_only=true, graph_accepted=false, build_accepted=false.",
+    "gz02_index_and_readme": "Remote /opt/19.SourceCode/SOURCES.json SHA256 039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79 and README.md SHA256 718f1a48a29fcf3452a379d81983dc22c2a5eea66972a23ac74fa837c9f9d0ec exactly match REMOTE-SOURCES-FULL.json and REMOTE-README-FULL.md. Remote index says 1011 of 1013 present, two named Darwin gaps, graph/build/device false.",
+    "canonical_alias": "GZ02 /opt/19.SourceCode/AOSP-16.0.0_r4/android-source remains a symlink resolving to /data/source/aosp-16.0.0-r4; no replacement checkout.",
+    "checkout_guard": "After registration, read-only replay of pinned generate_manifest_heads.py returned rc0 with stdout and stderr byte-identical to prior G279 ledger and GENERATE.stderr: all 1011 present projects remain R4-tag HEAD and tracked-clean, two Darwin absent, .repo metadata extras zero; original build/soong and art checkout status also empty.",
+    "nanhai_binding": "local_env.md defines NANHAI_GZ02_AOSP_SOURCE_ROOT=/opt/19.SourceCode/AOSP-16.0.0_r4/android-source, while retaining the separate 46-link source-view variable."
+  },
+  "limits": [
+    "Registration is for the observed 1011-present-project Linux R4 tree, not literal 1013-present completeness.",
+    "Tracked Git status and HEAD/tree do not prove per-file byte hashes or untracked-file contents.",
+    "No graph, build, container, Bridge or device command was run; graph execution remains a separate owner/release gate."
+  ],
+  "forbidden_execution_count": 0
+}

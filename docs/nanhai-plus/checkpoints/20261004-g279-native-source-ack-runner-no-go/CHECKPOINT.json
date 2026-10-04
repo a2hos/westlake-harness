@@ -1,0 +1,66 @@
+{
+  "schema": "nanhai-plus-checkpoint-v1",
+  "created_at": "2026-10-04T10:27:55.659609+00:00",
+  "goal_id": "goal_01",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "claim": "NP-MUSL16-ART-024",
+  "active_target": "OH7.0.0.39 / android-16.0.0_r4 / ARM64 / App single Bionic",
+  "policy": {
+    "container_execution": false,
+    "namespace_sandbox_execution": false,
+    "old_container_packet_replay": false,
+    "device_hold_preserved": true
+  },
+  "g278": {
+    "accepted_scope": "Linux x86_64 native soong_ui host tool only",
+    "host_tool_sha256": "92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624"
+  },
+  "g279": {
+    "manifest_projects": 1013,
+    "present_clean_r4": 1011,
+    "absent_darwin_prebuilts": 2,
+    "source_admission": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-SOURCE-ADMISSION.json",
+      "sha256": "62749d2cd34024bd6c87e3e8c3f81c274b3b6c1347d389cf81b5dd76ecee2e14"
+    },
+    "registration_root_review": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-REGISTRATION-ROOT-REVIEW.json",
+      "sha256": "7f7f8cba172cb2591374aa5ef609eea2c8bfd60627a944e7d8456fd952e6eea0"
+    },
+    "ledger": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS.tsv",
+      "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+    },
+    "owner_metadata_ack": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-sync-v1/ROOT-ACK.json",
+      "sha256": "e3932d34a66d48779b5c1229b25628bbbb672c5e225e4d89feede3ac082d1da4"
+    },
+    "runner_v2_peer": {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/runner-v2-peer-v1/REVIEW.json",
+      "sha256": "1ac8725f82504d2ba9d5c1c67f5c3f9a4bd4d69b1b5e4564cbd9ae323a527eb6"
+    },
+    "runner_status": "NO_GO",
+    "graph_executed": false,
+    "target_compiled": false,
+    "device_executed": false
+  },
+  "counts": {
+    "bionic_whole_tools_pass": 0,
+    "tool_denominator": 89,
+    "historical_musl_source_accepted": 38,
+    "raw_apk_accepted": 77,
+    "apk_static_complete": 73,
+    "cold_starts": 0,
+    "cold_start_target": 200
+  },
+  "reflection": {
+    "last_closed": "EVO18",
+    "pending_actual_result_groups": 2
+  },
+  "next": "Fix runner v2 blockers B1-B6, independently review, then obtain separate original owner graph ACK and one-shot release; no graph/device now",
+  "task_summary": {
+    "path": "docs/nanhai-plus/TASK-SUMMARY.json",
+    "sha256": "1b636d3d48fb4dccb09eb6ff51daae9d50d327aa452606bc0f870ac744b0500f"
+  },
+  "control_continuity": "Preserve original goal/session/claim/cumulative budget and device access policy."
+}

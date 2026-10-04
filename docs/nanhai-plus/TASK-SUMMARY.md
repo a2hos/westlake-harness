@@ -1,10 +1,12 @@
 # 南海 plus 前期任务汇总
 
-核对时间：2026-10-04T10:10:55+00:00（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
+核对时间：2026-10-04（UTC）。当前目标是 OH7.0.0.39 / android-16.0.0_r4 / ARM64，App 内单 Bionic。目标仍为 200 个不同原版 APK 的真实冷启动，其中至少 100 个合格海外主流黑盒应用。
 
 **如果“开发完成”指源码复现，历史 Musl 路线已接受 38/89；如果指当前 Bionic 架构下整工具完成，当前是 0/89。** 两个数量不能合并。
 
 G278 无容器原生宿主进展：重新核查发现 gz02 已有精确 R4 checkout，42/42 stock 根与 4 类关键输入的 Git 标签 HEAD、tracked-clean 和文件存在性通过，故无需整树复制。规范 `/opt/19.SourceCode` 只读入口和项目独立 Soong 工作树/46 根输入视图已建立；仅关闭 Soong UI 的两处 nsjail 开关。gz02 原生 `soong_ui` 宿主工具编译 rc0，产物 SHA-256 `92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624`；129 次 execve 中禁用执行器调用 0。独审/root 只接受宿主工具编译。Soong 图、ARM64 Bionic 目标构建、HelloWorld 冷启动和设备验收仍未通过。新环境绑定 SHA `5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718`，下一执行包须由原 owner 回读。
+
+G279 全树只读源码准入：gz02 的 R4 manifest 共 1013 项，1011 项存在且逐仓精确标签 HEAD、tracked-clean；缺两项 Darwin 宿主预构建。原内环已对新环境和共享索引完成一次 metadata ACK，**没有构图授权或执行**。原生构图 runner v2 的独审为 NO_GO，六组边界问题待修；不得调用它或旧容器包。下一步修 runner、复审、单独取得原 owner 构图 ACK 后才可尝试普通宿主进程构图。当前 Soong 图、ARM64 Bionic 目标编译、HelloWorld 冷启动及设备验收仍为 0。
 
 | 范围 | 已核实数量 | 含义 |
 |---|---:|---|

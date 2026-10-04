@@ -1,0 +1,36 @@
+{
+  "schema": "nanhai.g279.native_graph_source_choice_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:14:47.327571+00:00",
+  "decision": "GO_SOURCE_CHOICE_AND_GRAPH_PREPARATION_ONLY",
+  "graph_execution_gate": "BLOCK_PENDING_FULL_TREE_INPUT_ADMISSION_AND_SEPARATE_RELEASE",
+  "source_choice": "Prefer /data/source/aosp-16.0.0-r4 through the canonical /opt/19.SourceCode/AOSP-16.0.0_r4/android-source alias as the Linux R4 full-tree TOP, with the exact patched project soong_ui binary and separate project OUT/TMP; do not claim all 1013 manifest projects are present.",
+  "choice_ref": {
+    "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/CHOICE.json",
+    "sha256": "0c06849cf03def3ff1552c2e2d2c36602676efd074c69dbdd6ed1c08908af264"
+  },
+  "independent_remote_checks": {
+    "manifest": "GZ02 .repo/manifest.xml SHA256 33d794c99c197c2eb0726ff2cc8c4bcd532e0f3fcd75eaea3fbd10bd53675d25 includes default.xml SHA256 19db4af44aa74ea4ed07bf602f5805476bab1c821d59ba818031022280ae055f; manifest Git HEAD 15128c9e27cfa599c48d294babd39286ee8f1426; default revision refs/tags/android-16.0.0_r4; 1013 project entries, zero project revision overrides, zero local manifest entries.",
+    "all_project_identity": "Read-only Python/XML iteration over all 1013 manifest projects: 1011 present directories, each its own Git top-level, HEAD equals peeled android-16.0.0_r4 tag, and git status --porcelain=v1 --untracked-files=no empty; no Git command errors. Missing exactly prebuilts/clang/host/darwin-x86 and prebuilts/go/darwin-x86.",
+    "nine_key_repositories": "art, libcore, system/core, external/boringssl, external/libcxx, external/zlib, hardware/libhardware, packages/modules/Bluetooth, prebuilts/ndk independently matched CHOICE HEAD and tracked counts; each has root Android.bp, zero missing tracked files, matching peeled tag, and clean tracked status.",
+    "view_gap": "Existing project source-view has exactly 46 symlinked manifest roots, leaving 965 of 1011 present projects outside view. Its root Android.bp is absent, while full TOP has Android.bp -> build/soong/root.bp and bootstrap.bash -> build/soong/bootstrap.bash manifest linkfiles.",
+    "soong_scope": "Source lines in ui/build/finder.go, soong.go, config.go and build.go show finder starts at cwd, traverses global Android.bp universe, passes Android.bp.list to primary builder; --soong-only/--skip-ninja/--skip-soong-tests do not narrow discovery to libc/libm/libdl/linker. ALLOW_BP_UNDER_SYMLINKS defaults false for a symlink view.",
+    "source_hashes": "finder.go SHA256 4e80b817227303a9743023bdfed46119c85443646a8019e7da473c66696e3685 and build.go SHA256 14a227d3b684cb83f309b81894d505903b116081be5daf3f0cb73edc8e10847e matched CHOICE."
+  },
+  "before_any_graph": [
+    "Register the 1011-present-project Linux R4 scope and two Darwin absences in gz02 shared source index and Nanhai read-only full-TOP input binding; current gz02 SOURCES.json still says 46 verified roots and local_env.md only binds the 46-link view.",
+    "Recheck manifest hashes, all 1011 Git roots/HEAD/tag/tracked status, patched Soong worktree and exact project soong_ui ELF SHA immediately before one separately released native graph.",
+    "Use project-owned OUT/TMP/staging, forbid writes to shared source, and capture actual argv/rc, exec trace and post-source guards."
+  ],
+  "limits": [
+    "HEAD/tag equality and tracked-clean status do not constitute a bytewise hash of every working-tree file, validate untracked files, or prove all dependencies needed for a graph.",
+    "The 965 newly considered present projects are not individually registered/admitted in the current shared index or local_env input binding; source-choice approval is not that admission.",
+    "The missing two Darwin repositories mean this Linux tree is not literally a complete 1013-project manifest checkout.",
+    "No graph, container, build, or device command was executed by this review."
+  ],
+  "counts": {
+    "graph": 0,
+    "container": 0,
+    "device": 0,
+    "bridge": 0
+  }
+}

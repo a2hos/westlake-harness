@@ -1,0 +1,29 @@
+{
+  "schema": "nanhai.g279.original_owner_metadata_ack_actual_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:24:20.066624+00:00",
+  "decision": "ACCEPT_ORIGINAL_OWNER_SOURCE_ENV_METADATA_ACK_ONLY",
+  "references": {
+    "request_sha256": "eeb02ec830106f504a02b1c311d7d4b0416766a0d58e35b8bd702b1110f2814e",
+    "dispatch_sha256": "80014ff0feb0d05b72602f440c4417e9ffa4ed92dd449b700a8bd1c3ae42fb9c",
+    "ack_sha256": "fe6f5a0d8391da5ddc1a7291366cc9afe353bbe48f6715e97db216a2f420e92b",
+    "native_session_lines": "/Users/alexyang/orca/workspaces/westlake-harness/opaleye/.octos/oracle-kimi/sessions/oracle-kimi%3Alocal%3Ananhai-plus%23inner.jsonl:7028-7033",
+    "native_session_line_slice_sha256": "1967455f0a3c3a296e1203323c995c395acdfc3e4003b5362b45049448debe64"
+  },
+  "observed": {
+    "delivery": "monitor-state.json event g279-native-source-owner-ack-20261004 matches OWNER-DISPATCH message SHA256 da340e0400fcbd683bff92cda2ec6ee3bc8dc74b9b6ea82d877b1fd9dec98d1f, claim NP-MUSL16-ART-024, return_code 0 and agent_prompted on original octos-inner. Monitor status remains queued-awaiting-native-ACK; it is transport evidence, not the completion proof.",
+    "native_execution": "Original session JSONL lines 7028-7033, one thread 01a1066e-b030-7102-a6ff-0e13de94472c: owner_entry.py SHA check printed Match: True and tool Exit code: 0; then exact python3 scripts/nanhai_plus_env.py --run python3 .../owner_entry.py command printed rc 0, ACK path and SHA, tool Exit code: 0. No other tool invocation in these six lines.",
+    "ack": "OWNER-ACK.json SHA256 fe6f5a0d8391da5ddc1a7291366cc9afe353bbe48f6715e97db216a2f420e92b has exact goal_01, NP-MUSL16-ART-024, oracle-kimi:local:nanhai-plus#inner, nonce cd02b888357272d0b2ce41e6, env SHA256 5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718, local index SHA256 7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636, remote index SHA256 039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79, and all four consumed refs identical to REQUEST.",
+    "execution_boundary": "ACK flags container_execution_allowed=false, graph_executed=false, target_compilation_executed=false, device_commands=0. Native JSONL tool commands were only SHA read and metadata ACK script; no graph, container, target or device command observed."
+  },
+  "limits": [
+    "The ACK is evidence that the original owner consumed frozen source/environment metadata. It does not release a graph, target build or device action.",
+    "The owner consume script echoes the request remote-index hash without requerying gz02; prior independent peer verified that remote hash at pre-dispatch, so ACK is not a fresh remote-source audit.",
+    "Monitor-state keeps queued-awaiting-native-ACK despite the later native tool rc0 and persisted ACK; completion is supported by native JSONL and ACK, not the monitor label."
+  ],
+  "review_execution_counts": {
+    "graph": 0,
+    "container": 0,
+    "target_build": 0,
+    "device": 0
+  }
+}

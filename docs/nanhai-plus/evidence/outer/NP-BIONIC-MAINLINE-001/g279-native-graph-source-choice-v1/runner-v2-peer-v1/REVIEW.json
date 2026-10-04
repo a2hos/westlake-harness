@@ -1,0 +1,59 @@
+{
+  "schema": "nanhai.g279.native_graph_v2_static_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:25:34Z",
+  "decision": "NO_GO_UNTIL_REMAINING_BLOCKERS_FIXED_AND_REVIEWED",
+  "scope": "Read-only static review of scripts/nanhai_plus_native_graph_v2.py at SHA256 5df1276affe212821505d63e75eed43ecc835b8432acbce16a7086d3eb13d1e4. No runner, graph, container, target build, device, or Bridge execution.",
+  "v1_findings_retested": {
+    "artifact_path": "Improved: v2:180 dynamically detects soong/build.*.ninja instead of the wrong literal build.ninja. It still needs exact product/coverage and nonempty Android.bp.list validation before a graph-success claim.",
+    "timeout": "Improved for normal timeout: v2:128-145 uses GNU timeout with kill-after and a new outer session. Incomplete for exception/cancellation and unverified descendant survival; see B4.",
+    "source_guard": "Improved: v2:62-95 adds ordinary and ignored untracked counts plus root name/two-link checks; v2:128-130 runs the graph as nobody. The full ten manifest linkfiles and pinned root baseline are not covered; see B3.",
+    "identity_one_shot": "Improved: v2:19-32 fixes accepted index, binary, generator and ledger hashes, and v2:107-108 reserves fixed fresh paths. Hardcoded paths conflict with local_env binding, and the exact files are not all staged yet; see B1/B2.",
+    "forbidden_detection": "Improved: v2:33-34 extends names and v2:130/154-155 captures execveat as well as execve. It remains a post-execution name check and does not observe namespace syscalls; see B5.",
+    "terminal_result_environment": "Improved: v2:119-130 constructs an env -i build environment and v2:188-202 attempts a terminal RESULT after preparation. Pre-control errors have no RESULT, and exceptions after process start can leave descendants; see B4/B6."
+  },
+  "current_host_read_only_checks": {
+    "source_alias_and_index": "Remote index SHA256 039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79 and patched UI SHA256 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624 match v2 constants.",
+    "unstaged_required_files": ["/data/source/.nanhai-plus-opaleye-native/control/generate_manifest_heads.py", "/data/source/.nanhai-plus-opaleye-native/control/MANIFEST-HEADS.tsv"],
+    "nobody_dac": "id nobody is uid/gid 65534/nogroup. sudo -n -u nobody read source Android.bp rc0, write-test source root rc1, execute-test patched UI rc0. Find found zero world-writable regular files or directories outside old out/.repo and zero nogroup group-writable entries there. Old out is mode 755 owned AlexYang; nobody cannot write it. This supports ordinary-UID isolation, but does not replace source/permission recheck immediately before dispatch.",
+    "existing_untracked": "1011 projects currently have zero ordinary/ignored untracked paths. Manifest linkfile inventory has 10/10 correct targets. The checkout root also contains old out (115036575394 logical bytes; 542066 regular files) and .repo.failed-google-20260808T003450Z (26360 bytes), outside the project ledger."
+  },
+  "must_fix": [
+    {
+      "id": "B1_PATH_AUTHORITY",
+      "lines": "19-28",
+      "problem": "Runner hardcodes remote source, project, index, binary, generator, ledger and output paths instead of consuming frozen NANHAI_* bindings from local_env.md. This conflicts with current project AGENTS.md path authority and makes future binding drift invisible.",
+      "required": "Read and verify a frozen remote environment binding derived from local_env.md, then construct all paths from its variables; pin its hash in the reviewed packet or immutable control receipt. Preserve exact source/project isolation checks."
+    },
+    {
+      "id": "B2_INPUT_STAGING",
+      "lines": "24-25,103-106",
+      "problem": "Live gz02 check found neither required control/generate_manifest_heads.py nor control/MANIFEST-HEADS.tsv. Current prepare() must fail before graph; their local hashes alone do not prove remote staging.",
+      "required": "Stage exact read-only copies in project control, verify their SHA256 and a fresh ledger replay, and review destination ownership/permissions before dispatch."
+    },
+    {
+      "id": "B3_INCOMPLETE_ROOT_SOURCE_GUARD",
+      "lines": "77-95,189-196",
+      "problem": "root_guard excludes old out and .repo, records root names and only Android.bp/bootstrap.bash of ten manifest linkfiles. Eight other generated linkfiles can change without altering the per-repo tracked ledger. Pre/post equality does not compare root state to a pinned admitted baseline. Untracked guard counts paths but not their bytes; its zero baseline is currently sound only while nobody write isolation and no concurrent writer are proven.",
+      "required": "Pin and recheck all ten manifest link destinations, targets and content hashes plus root topology; record explicit exclusions for old out/.repo.failed and verify prune marker/permissions. Keep an immediate pre/post no-untracked check and detect permission drift. Do not label whole shared source unchanged beyond these guards."
+    },
+    {
+      "id": "B4_DESCENDANT_CLEANUP_ON_ALL_EXITS",
+      "lines": "128-146,184-195",
+      "problem": "Outer group termination is only inside except subprocess.TimeoutExpired. KeyboardInterrupt, signal or other exception after Popen can enter main finally and run post_guard while a graph descendant continues. sudo/timeout may also create a different process group, so killing the outer sudo group alone is not a proven descendant stop.",
+      "required": "Wrap Popen lifecycle in its own finally; terminate/reap the actual traced build process tree on every abnormal exit and verify no process remains before post-guard. Keep GNU timeout as the bounded primary mechanism and record its actual terminal state."
+    },
+    {
+      "id": "B5_FORBIDDEN_NAMESPACE_AND_ACTION_BOUNDARY",
+      "lines": "33-34,128-158,180-183",
+      "problem": "Trace checks executable basenames after execution and captures only execve/execveat. Direct clone/clone3/unshare/setns namespace operations are not observed. A forbidden executable could already have run before RESULT rejects it. A generated Soong Ninja file may contain nsjail actions even though --skip-ninja does not run them.",
+      "required": "Before dispatch, statically close the bootstrap/soong-only package argv to disallowed launchers; fail closed on complete execution trace and relevant namespace syscalls. Report generated-action audit separately and do not authorize target Ninja from this graph result."
+    },
+    {
+      "id": "B6_RESULT_AND_GRAPH_ARTIFACT_BOUNDARY",
+      "lines": "98-116,161-203",
+      "problem": "Failures before CONTROL.mkdir leave no RESULT; status GRAPH_COMMAND_TERMINAL and exit 0 can follow any build.*.ninja file without checking it is the fixed aosp_arm64 graph or that Android.bp.list is nonempty and covers the admitted full TOP. Result unconditionally states zero target compile commands rather than deriving that from the trace; it has no separate graph-pass field.",
+      "required": "Emit a fail-closed preflight receipt even if preparation fails, require the expected product-specific Ninja artifact and nonempty full-tree BP list, and distinguish observed graph command rc from graph evidence, target compilation and generated action safety."
+    }
+  ],
+  "next": "Revise in a new reviewed runner version; preserve v1/v2 scripts and reviews as historical candidates. No G279 graph dispatch on this v2 SHA."
+}

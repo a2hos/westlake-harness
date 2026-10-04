@@ -1,0 +1,40 @@
+{
+  "schema": "nanhai.g279.native_manifest_heads_receipt.v1",
+  "method": "Read-only SSH to gz02: python3 - consumed generate_manifest_heads.py on stdin; remote stdout was saved as MANIFEST-HEADS.tsv and stderr as GENERATE.stderr. No source checkout writes, graph, container, device, or Bridge command.",
+  "generation_rc": 0,
+  "host": "gz02",
+  "manifest_path": "/data/source/aosp-16.0.0-r4/.repo/manifests/default.xml",
+  "manifest_sha256": "19db4af44aa74ea4ed07bf602f5805476bab1c821d59ba818031022280ae055f",
+  "generator": {
+    "path": "generate_manifest_heads.py",
+    "sha256": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634"
+  },
+  "ledger": {
+    "path": "MANIFEST-HEADS.tsv",
+    "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+    "lines_including_header": 1014,
+    "unique_manifest_paths": 1013,
+    "columns": ["path", "manifest_name", "manifest_revision", "expected_r4_commit", "head", "tree", "present", "tracked_clean", "missing_tracked_count", "state", "tag_source"]
+  },
+  "generator_stderr": {
+    "path": "GENERATE.stderr",
+    "sha256": "b18298a168c05d59fd772c9d3f03ea45b826914df62171f5236ba3056f802874"
+  },
+  "coverage": {
+    "manifest_projects": 1013,
+    "repo_metadata_projects": 1011,
+    "present_clean_head_equals_peeled_r4_tag": 1011,
+    "present_missing_tracked_paths": 0,
+    "extra_repo_metadata_projects": 0,
+    "missing_manifest_projects": [
+      "prebuilts/clang/host/darwin-x86",
+      "prebuilts/go/darwin-x86"
+    ],
+    "absent_expected_commits": {
+      "prebuilts/clang/host/darwin-x86": "269561cf8e3210a60093db99bc665fdfe8262dd3",
+      "prebuilts/go/darwin-x86": "a524afa53ed98979d91d4430a109af65cf06b414"
+    },
+    "absent_commit_source": "Generator checks both peeled android-16.0.0_r4 tags live via git ls-remote against the corresponding official android.googlesource.com repositories."
+  },
+  "boundary": "Tracked Git status and missing-path checks are not a per-file SHA-256 byte audit; the two absent Darwin host projects have no local HEAD or tree. No Soong graph or Bionic target compile is claimed."
+}

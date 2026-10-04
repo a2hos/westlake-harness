@@ -1,0 +1,3 @@
+# Shared source pool on gz02
+
+Follow `AGENTS.md` and `SOURCES.json`. `/opt/19.SourceCode/AOSP-16.0.0_r4/android-source` is a canonical read-only alias to the existing `/data/source/aosp-16.0.0-r4` checkout. The android-16.0.0_r4 manifest lists 1013 projects: 1011 Linux-present projects match peeled R4 tag HEAD and tracked-clean checks; two Darwin host prebuilt projects are absent. The G279 manifest ledger and independent review record exact identities. This does not prove every file byte, untracked content, Soong graph, target build, or device behavior. Project patches use `AOSP-16.0.0_r4/worktrees/opaleye-soong-no-container`; outputs live under `/data/source/.nanhai-plus-opaleye-native`.

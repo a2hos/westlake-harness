@@ -7,7 +7,7 @@
 1. 恢复先读当前 claim 的已核任务书、target/revision、输入清单、预检/独审结果、设备 policy 和封包 SHA。只执行外环发布且由原 owner ACK 的当前包；不从旧 Musl prompt 或历史恢复文档自行恢复任务。
 2. 当前主线是 Bionic。Musl 输入只能按新包明确的来源、适用性与只读范围消费；不能把 Musl 输出目录或同名 `.so` 当作 Bionic 产物。
 3. 使用 env wrapper 获取 `NANHAI_*`。若实际配置仍指向 Musl 而包声称 Bionic，保留检查结果并返回；不得静默换路径、换 libc 或回退旧版本。
-3a. 最新用户决定禁止任何容器参与本项目的构建、扫描、测试、桥接和 App 运行。不得调用 Docker/Podman/OCI、镜像或旧 `stock-bionic-target-graph` 容器执行器；G277/v21 静态候选已撤销。若收到旧封包，仅记录拒绝与返回外环。只接受经独审的原生宿主构建包，使用独立 OUT/TMP/staging 和只读精确版本源码。
+3a. 最新用户决定禁止任何容器参与本项目的构建、扫描、测试、桥接和 App 运行。不得调用 Docker/Podman/OCI、镜像、nsjail/unshare/chroot 等 namespace 隔离，或旧 `stock-bionic-target-graph` 容器执行器；G277/v21 静态候选已撤销。若收到旧封包，仅记录拒绝与返回外环。只接受经独审的普通原生宿主构建包，使用独立 OUT/TMP/staging 和只读精确版本源码。
 4. 精确遵守写集、实际 argv、编译器/sysroot、独立输出、资源租约和超时。参考 adapterBio3/BridgeAOSPV16 均只读；输入来源不赋予写入其项目或操作其设备的权限。
 5. 单 Bionic 指 App 运行进程的真实 linker/libc/pthread/TLS/依赖组合。保留 AOSP Framework/ART/BCP 语义；不加空实现、双 libc 转发或安全绕过来满足表面输出。
 6. 首个失败保留命令、rc、日志、输入身份和输出，不执行该包的依赖后续步骤，不修改封包或其验收规则后自行重试。返回新的事实边界和最小候选动作，由外环版本化处理。

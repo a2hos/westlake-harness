@@ -1,0 +1,13 @@
+{
+  "schema": "nanhai-g279-owner-metadata-dispatch-v1",
+  "at": "2026-10-04T10:21:12.098812+00:00",
+  "status": "OUTBOX_APPENDED_AWAIT_MONITOR_DELIVERY",
+  "event_id": "g279-native-source-owner-ack-20261004",
+  "message_sha256": "da340e0400fcbd683bff92cda2ec6ee3bc8dc74b9b6ea82d877b1fd9dec98d1f",
+  "entry_sha256": "3047362b811c12de42d9422c9b297980488bb8307eec233d0184dbc8532afe27",
+  "peer_pre_dispatch_sha256": "4882658e96891f3e29412b84b6910eca3fceeb9ac6a73b7b1ca19e66e65cb06e",
+  "container_policy_revision": 1,
+  "container_execution": false,
+  "graph_commands": 0,
+  "device_commands": 0
+}

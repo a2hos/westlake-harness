@@ -1,0 +1,31 @@
+{
+  "schema": "nanhai.g279.owner_source_env_metadata_peer_predispatch_review.v1",
+  "reviewed_utc": "2026-10-04T10:20:41.550368+00:00",
+  "decision": "GO_ORIGINAL_OWNER_METADATA_ACK_ONLY",
+  "frozen_files": {
+    "REQUEST.json": "eeb02ec830106f504a02b1c311d7d4b0416766a0d58e35b8bd702b1110f2814e",
+    "consume.py": "0189863fad9f8e42318408895287d05988e47256584b6ffb8ee30af2235378c3",
+    "owner_entry.py": "3047362b811c12de42d9422c9b297980488bb8307eec233d0184dbc8532afe27"
+  },
+  "checks": {
+    "request": "REQUEST.json SHA256 eeb02ec830106f504a02b1c311d7d4b0416766a0d58e35b8bd702b1110f2814e is pinned by owner_entry.py; consume.py SHA256 0189863fad9f8e42318408895287d05988e47256584b6ffb8ee30af2235378c3 is also pinned. Four named refs currently exist and match their request SHA256 values.",
+    "environment": "nanhai_plus_env.py --run read-only environment print gave NANHAI_ENV_CONFIG_SHA256=5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718, NANHAI_CONTAINER_POLICY=forbidden, NANHAI_BUILD_EXECUTION_MODE=host-native, canonical GZ02 AOSP root and /opt/19.SourceCode pool as requested.",
+    "indexes": "Current local /opt/19.SourceCode/SOURCES.json SHA256 7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636 and gz02 /opt/19.SourceCode/SOURCES.json SHA256 039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79 match REQUEST; gz02 canonical alias still targets /data/source/aosp-16.0.0-r4.",
+    "claim": "OUTER-STATE has exactly one NP-MUSL16-ART-024 claim: goal_01, oracle-kimi:local:nanhai-plus#inner, status ready, release_state completed_reviewed, release_sequence 276. Container policy revision 1/status forbidden and current env SHA match request. G279 source registration review says graph/target/device execution false.",
+    "nonce_and_output": "Request nonce cd02b888357272d0b2ce41e6 is copied into one fixed ACK path docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/g279-native-source-ack-v1/OWNER-ACK.json, currently absent; consume.py asserts absence and writes only this receipt after guards.",
+    "side_effects": "Static inspection of owner_entry.py and consume.py found only local SHA/JSON reads, environment and claim assertions, ACK parent mkdir and one ACK write. No subprocess, shell, SSH, Docker, Podman, OCI, nsjail, graph, target or device launch code. owner_entry.py was not executed in this review."
+  },
+  "scope_limit": "The owner ACK will prove consumption of frozen metadata and local environment/index at owner execution time. consume.py copies remote_source_index_sha256 from REQUEST without its own remote SSH recheck; this peer independently verified the current remote SHA, and ACK must not be labeled a fresh remote audit.",
+  "dispatch_conditions": [
+    "Invoke only the exact reviewed owner_entry.py bytes (SHA256 3047362b811c12de42d9422c9b297980488bb8307eec233d0184dbc8532afe27) in the original owner session and existing goal/claim.",
+    "Treat any hash/state/receipt-exists assertion failure as BLOCK; retain actual owner command return code and ACK hash.",
+    "Do not treat metadata ACK as authorization for graph, container, target compilation or device execution."
+  ],
+  "execution_counts": {
+    "owner_entry": 0,
+    "graph": 0,
+    "container": 0,
+    "target_build": 0,
+    "device": 0
+  }
+}

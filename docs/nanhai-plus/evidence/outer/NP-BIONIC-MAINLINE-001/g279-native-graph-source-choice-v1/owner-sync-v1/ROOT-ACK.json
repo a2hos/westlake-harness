@@ -1,0 +1,35 @@
+{
+  "schema": "nanhai-g279-owner-metadata-root-ack-v1",
+  "at": "2026-10-04T10:24:48.050153+00:00",
+  "decision": "ACCEPT_ORIGINAL_OWNER_SOURCE_ENV_METADATA_ACK_ONLY",
+  "refs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-sync-v1/REQUEST.json",
+      "sha256": "eeb02ec830106f504a02b1c311d7d4b0416766a0d58e35b8bd702b1110f2814e"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-sync-v1/peer-pre-dispatch-v1/REVIEW.json",
+      "sha256": "4882658e96891f3e29412b84b6910eca3fceeb9ac6a73b7b1ca19e66e65cb06e"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-sync-v1/OWNER-DISPATCH.json",
+      "sha256": "80014ff0feb0d05b72602f440c4417e9ffa4ed92dd449b700a8bd1c3ae42fb9c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/owner-sync-v1/ACK-REVIEW.json",
+      "sha256": "5743bc623451d24902225d4b7f6136bb963bc1e1c85a443c1efddf4be13b5a0b"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/g279-native-source-ack-v1/OWNER-ACK.json",
+      "sha256": "fe6f5a0d8391da5ddc1a7291366cc9afe353bbe48f6715e97db216a2f420e92b"
+    }
+  ],
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "environment_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "graph_execution_allowed": false,
+  "graph_commands": 0,
+  "device_commands": 0,
+  "next": "correct G279 runner peer blockers then separately review/seal one-shot native graph"
+}

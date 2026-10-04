@@ -1,0 +1,21 @@
+{
+  "schema": "nanhai-g279-original-owner-source-ack-request-v1",
+  "at": "2026-10-04T10:19:16.473112+00:00",
+  "goal_id": "goal_01",
+  "claim": "NP-MUSL16-ART-024",
+  "session": "oracle-kimi:local:nanhai-plus#inner",
+  "nonce": "cd02b888357272d0b2ce41e6",
+  "container_policy_revision": 1,
+  "container_execution": false,
+  "environment_sha256": "5ce3a58541ef1711890aad8348c3a31a03203f584fa50f1f5c0cb4fd88b49718",
+  "shared_source_index_sha256": "7d87ea12cb46a1193e60be427906f1725c02ccbeef91097d8d25d59882006636",
+  "remote_source_index_sha256": "039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79",
+  "refs": {
+    "docs/nanhai-plus/revisions/no-container-20261004/DECISION.md": "13e12034df1ef31c267f215359ea5aa3eb56e33a44dc97cd7058009feb7901bf",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g278-soong-native-worktree-v1/G278-ROOT-REVIEW.json": "6755a18946c083be236d928c61388dae13e3ad603a139335cb8704f231c88e0b",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-REGISTRATION-ROOT-REVIEW.json": "7f7f8cba172cb2591374aa5ef609eea2c8bfd60627a944e7d8456fd952e6eea0",
+    "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS-RECEIPT.json": "7a6d19358323a3d7c2e6bd83716c237b9835af0a1567f3997910b2aff10f6554"
+  },
+  "owner_receipt": "docs/nanhai-plus/evidence/inner/NP-BIONIC-MAINLINE-001/g279-native-source-ack-v1/OWNER-ACK.json",
+  "scope": "read-only metadata consumption only; no graph/target/device execution"
+}

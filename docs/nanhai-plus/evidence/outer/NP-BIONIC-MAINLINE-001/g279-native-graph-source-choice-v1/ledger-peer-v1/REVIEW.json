@@ -1,0 +1,34 @@
+{
+  "schema": "nanhai.g279.manifest_heads_ledger_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:16:55.265093+00:00",
+  "decision": "GO_REGISTER_1011_PROJECT_LINUX_R4_TOP_READ_ONLY",
+  "scope": "Register canonical gz02 alias to the observed 1011-present-project Linux R4 TOP as a read-only input with two exact Darwin absences. This is source admission only, not graph/build/device release.",
+  "references": {
+    "generate_manifest_heads.py": "dafbc416c2b036ea8816591f408b24a8a99974827302968041474d54ef550634",
+    "MANIFEST-HEADS.tsv": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+    "GENERATE.stderr": "b18298a168c05d59fd772c9d3f03ea45b826914df62171f5236ba3056f802874",
+    "MANIFEST-HEADS-RECEIPT.json": "7a6d19358323a3d7c2e6bd83716c237b9835af0a1567f3997910b2aff10f6554",
+    "CHOICE.json": "0c06849cf03def3ff1552c2e2d2c36602676efd074c69dbdd6ed1c08908af264"
+  },
+  "checks": {
+    "generator": "Read-only source inspection: manifest SHA/default revision and unique paths guarded; .repo/projects metadata compared with manifest; present project HEAD, peeled R4 tag, tree, tracked status and missing paths checked; two absent tags checked live against official android.googlesource.com via git ls-remote; no checkout write command.",
+    "independent_replay": "Ran the exact saved generator over SSH stdin on gz02 in read-only mode. Remote rc=0; stdout byte-identical to saved MANIFEST-HEADS.tsv (SHA256 fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356) and stderr byte-identical to GENERATE.stderr (SHA256 b18298a168c05d59fd772c9d3f03ea45b826914df62171f5236ba3056f802874).",
+    "ledger": "1014 lines including header, 1013 unique manifest project paths and 11 expected columns; all 1011 present rows have HEAD=expected peeled R4 commit, 40-hex tree, tracked_clean=yes, missing_tracked_count=0, state=present_clean_r4. No malformed row.",
+    "metadata": "GZ02 .repo/projects has exactly 1011 matching metadata projects, zero extras; manifest has 1013 projects, default refs/tags/android-16.0.0_r4 and SHA256 19db4af44aa74ea4ed07bf602f5805476bab1c821d59ba818031022280ae055f.",
+    "absences": {
+      "prebuilts/clang/host/darwin-x86": "269561cf8e3210a60093db99bc665fdfe8262dd3",
+      "prebuilts/go/darwin-x86": "a524afa53ed98979d91d4430a109af65cf06b414"
+    },
+    "receipt": "All generator, ledger and stderr SHA256 values and 1013/1011/2/0 counts match MANIFEST-HEADS-RECEIPT.json."
+  },
+  "registration_conditions": [
+    "Index as 1011 present Linux R4 projects plus the two named absent Darwin projects, not a complete 1013-present checkout.",
+    "Pin this ledger and manifest SHA in gz02 shared SOURCES.json and Nanhai read-only input binding; preserve project OUT/TMP outside shared checkout.",
+    "Fresh HEAD/tag/status and policy guards remain required before any separately released graph command."
+  ],
+  "limits": [
+    "Git HEAD/tree and tracked-clean/missing checks are not a per-file working-tree SHA-256 audit and do not validate untracked files.",
+    "The replay independently confirms the saved outputs and live official absent tags, but does not execute a Soong graph, target build, container, device or Bridge action."
+  ],
+  "forbidden_execution_count": 0
+}

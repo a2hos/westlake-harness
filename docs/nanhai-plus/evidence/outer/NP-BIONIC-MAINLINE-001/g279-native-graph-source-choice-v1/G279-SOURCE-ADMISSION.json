@@ -1,0 +1,42 @@
+{
+  "schema": "nanhai-g279-full-top-root-source-admission-v1",
+  "at": "2026-10-04T10:17:07.053650+00:00",
+  "decision": "ADMIT_GZ02_LINUX_R4_FULL_TOP_AS_READ_ONLY_INPUT_ONLY",
+  "host": "gz02",
+  "canonical_source": "/opt/19.SourceCode/AOSP-16.0.0_r4/android-source",
+  "source_alias_target": "/data/source/aosp-16.0.0-r4",
+  "manifest_sha256": "19db4af44aa74ea4ed07bf602f5805476bab1c821d59ba818031022280ae055f",
+  "present_r4_tag_clean_projects": 1011,
+  "absent_darwin_host_projects": [
+    "prebuilts/clang/host/darwin-x86",
+    "prebuilts/go/darwin-x86"
+  ],
+  "untracked_verified": false,
+  "whole_tree_file_sha256_verified": false,
+  "refs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/CHOICE.json",
+      "sha256": "0c06849cf03def3ff1552c2e2d2c36602676efd074c69dbdd6ed1c08908af264"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/peer-review-v1/REVIEW.json",
+      "sha256": "628050dd2329cca4e5178797ef8ae8357bcac3d52e8edec8dd3059c3eb09d058"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS.tsv",
+      "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS-RECEIPT.json",
+      "sha256": "7a6d19358323a3d7c2e6bd83716c237b9835af0a1567f3997910b2aff10f6554"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/ledger-peer-v1/REVIEW.json",
+      "sha256": "e9bf30b323102f44ac72265dc330639e7156bc14a93083423fafbe5074a0b0e2"
+    }
+  ],
+  "graph_execution_allowed": false,
+  "native_build_accepted": false,
+  "device_verified": false,
+  "next": "register shared source index/local env and create reviewed one-shot graph packet; original owner ACK required"
+}

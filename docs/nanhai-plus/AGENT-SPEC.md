@@ -5,7 +5,7 @@
 ## 固定边界
 
 - OH7.0.0.39 / android-16.0.0_r4 / ARM64；App 进程统一 Bionic，进程内 OH client 按 Bionic 重建；OH 服务可在进程外使用 Musl。
-- 构建、扫描、测试、桥接和 App 运行全过程禁止 Docker/Podman/OCI 容器及容器镜像。历史 G252–G276 容器收据仅作历史事实，不是当前架构或可重放执行包；G277/v21 容器候选撤销。宿主构建只能在经版本和工具链核验的原生主机进程中，用本项目独立 OUT/TMP/staging 与只读源码输入执行。
+- 构建、扫描、测试、桥接和 App 运行全过程禁止 Docker/Podman/OCI 容器及容器镜像，也不以 nsjail、unshare、chroot 或同类 namespace 隔离替代。历史 G252–G276 容器收据仅作历史事实，不是当前架构或可重放执行包；G277/v21 容器候选撤销。宿主构建只能在经版本和工具链核验的普通原生主机进程中，用本项目独立 OUT/TMP/staging 与只读源码输入执行。
 - 保留 AOSP Framework/ART/BCP 语义；适配 OS、IPC、JNI、服务和图形输入边界；不新增整套 Android system_server，不以 stub、双 libc、语义补丁或安全降级凑通过。
 - Bio3 设计经验需核 AOSP14、ARM32、OH7.0.0.18 差异；BridgeAOSPV16 仅只读并行参考，不等待其整体上屏；本项目独立构建和验证。
 - HelloWorld 当前最早未通过环节是关键路径，独立工具与 client 工作同时释放。诊断 APK 与未修改基准 APK 分列。

@@ -1,0 +1,38 @@
+{
+  "schema": "nanhai-g279-full-top-registration-root-review-v1",
+  "at": "2026-10-04T10:19:00.863538+00:00",
+  "decision": "ACCEPT_GZ02_R4_FULL_TOP_READ_ONLY_INPUT_ONLY",
+  "refs": [
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/G279-SOURCE-ADMISSION.json",
+      "sha256": "62749d2cd34024bd6c87e3e8c3f81c274b3b6c1347d389cf81b5dd76ecee2e14"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/registration-peer-v1/REVIEW.json",
+      "sha256": "2200626c6a26b19d1ee4538372adb3e238aa28f88b9021bb3dfdf8f259b3752c"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/MANIFEST-HEADS.tsv",
+      "sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/ledger-peer-v1/REVIEW.json",
+      "sha256": "e9bf30b323102f44ac72265dc330639e7156bc14a93083423fafbe5074a0b0e2"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/REMOTE-SOURCES-FULL.json",
+      "sha256": "039f72bb0f25b6c611bd85874e0c3446449faaac2790cc9a6b56585f43f98d79"
+    },
+    {
+      "path": "docs/nanhai-plus/evidence/outer/NP-BIONIC-MAINLINE-001/g279-native-graph-source-choice-v1/REMOTE-README-FULL.md",
+      "sha256": "718f1a48a29fcf3452a379d81983dc22c2a5eea66972a23ac74fa837c9f9d0ec"
+    }
+  ],
+  "present_projects": 1011,
+  "manifest_projects": 1013,
+  "absent_darwin_projects": 2,
+  "graph_execution_allowed": false,
+  "target_build_allowed": false,
+  "device_allowed": false,
+  "next": "original owner reads new environment/source admission, then reviewed one-shot native graph packet"
+}

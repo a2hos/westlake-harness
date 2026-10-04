@@ -1,0 +1,68 @@
+{
+  "schema": "nanhai.g279.native_graph_runner_static_peer_review.v1",
+  "reviewed_utc": "2026-10-04T10:19:42Z",
+  "decision": "NO_GO_UNTIL_MUST_FIX",
+  "scope": "Static read-only review of scripts/nanhai_plus_native_graph_v1.py; no runner, graph, container, device, or Bridge execution.",
+  "runner_sha256": "121e7444888e858fe5bf4c328b1f79a137afbc52e78562120c3d914eb6524b0c",
+  "admitted_ledger_sha256": "fe22e645511647b6b34dd83f5c0573ef1f8d45eaf380ac08b12c5120d1e13356",
+  "positive_findings": [
+    "Line 57 fixes the requested --make-mode --soong-only --skip-ninja --skip-soong-tests libc libm libdl linker argv; these flags are valid in R4 ui/build/config.go:987-1013.",
+    "Lines 69-77 require fresh project output and temp leaves, and lines 91-97 invoke the patched UI path directly under strace. No literal Docker/Podman/OCI command is present in the reviewed runner.",
+    "Lines 78-81 block graph execution when the pre-ledger subprocess fails or differs from admitted ledger SHA."
+  ],
+  "must_fix": [
+    {
+      "id": "F1_WRONG_GRAPH_ARTIFACT_PATH",
+      "runner_lines": "106-117",
+      "finding": "Runner requires soong/build.ninja. R4 config.go:1758-1765 chooses soong/build.<TARGET_PRODUCT><coverage>.ninja after product resolution, so a successful aosp_arm64 run can be falsely marked failed.",
+      "required_change": "Derive the exact expected filename from the fixed product/configuration, verify the resulting path and nonempty Android.bp.list, and keep generated-action status separate from target compilation."
+    },
+    {
+      "id": "F2_TIMEOUT_DESCENDANTS",
+      "runner_lines": "91-102",
+      "finding": "subprocess.run timeout terminates the immediate strace process; traced build descendants may survive and keep running/writing while post-guard and RESULT proceed.",
+      "required_change": "Start a fresh process group, terminate and reap the whole group on timeout or exception, verify no descendants remain, and only then take post guards. Bound and type-check timeout_seconds."
+    },
+    {
+      "id": "F3_SOURCE_GUARD_BLIND_SPOTS",
+      "runner_lines": "35-48,59-78,102-117",
+      "finding": "The generator checks tracked Git state and missing tracked paths, not new untracked files or root files outside repositories. It hardcodes /data/source/aosp-16.0.0-r4 independently of packet source_checkout; equal TSV hashes could validate one tree while graph runs in another. No source immutability is enforced while the graph runs.",
+      "required_change": "Require source_checkout to resolve to the registered R4 alias target; add an exact pre/post untracked inventory for every present project and root linkfile/entry topology, including changed content hashes for any preexisting untracked files. Enforce read-only shared-source access through the execution identity or an equivalent non-container host permission boundary; do not claim source unchanged solely from tracked ledger equality."
+    },
+    {
+      "id": "F4_PACKET_SELF_ASSERTION_AND_ONE_SHOT",
+      "runner_lines": "51-77,109-123",
+      "finding": "Packet-supplied binary path/hash, source index path/hash, ledger hash, project root and output paths are only compared with themselves. The runner does not anchor to accepted patched UI SHA 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624, admitted ledger SHA, registered source/project roots, original claim/nonce, or a consumed one-shot state. Project could also be an ancestor of source because line 67 checks only one containment direction.",
+      "required_change": "Verify the packet against an independently sealed owner gate or fixed admitted identities and exact registered roots; check source/project disjointness both ways; atomically reserve a unique claim/nonce before run and prevent a second output leaf replay."
+    },
+    {
+      "id": "F5_FORBIDDEN_PROCESS_PROOF",
+      "runner_lines": "16,91-117",
+      "finding": "Forbidden names omit unshare, bwrap/bubblewrap, systemd-nspawn and other namespace launchers; strace captures execve only, not execveat or direct namespace syscalls. Missing or empty trace is accepted by the graph_pass expression if other checks pass. It does not prove the exact patched UI executable was observed.",
+      "required_change": "Expand the forbidden route policy, trace relevant execveat/namespace operations or equivalent, fail closed on missing/incomplete trace, and verify the observed UI exec path and hash. Audit generated Ninja actions separately before any target build."
+    },
+    {
+      "id": "F6_TERMINAL_RECEIPT_AND_ENVIRONMENT",
+      "runner_lines": "82-123",
+      "finding": "The inherited environment retains unbounded build-affecting variables, and only a few are cleared. Exceptions after launch (including post-guard timeout, trace decode, invalid timeout type or file errors) can exit without a terminal RESULT or proven descendant cleanup; source index and binary are hashed only pre-run.",
+      "required_change": "Use a documented allowlisted environment with exact output/temp/product bindings; record its hash. Wrap run/post-guard in fail-closed finally logic that always emits an attempted-run receipt, rechecks UI/index hashes, and distinguishes graph rc, trace completeness, source state and receipt failure."
+    }
+  ],
+  "read_only_untracked_probe": {
+    "method": "Live gz02 git ls-files --others -z on all 1011 present repos, without --exclude-standard; lstat each returned path. This includes ignored files if any.",
+    "repos_checked": 1011,
+    "repos_with_untracked": 0,
+    "untracked_files": 0,
+    "untracked_logical_bytes": 0,
+    "stat_or_git_errors": 0,
+    "root_manifest_linkfiles": 10,
+    "root_manifest_linkfiles_present_and_target_match": 10,
+    "root_android_bp": "Android.bp -> build/soong/root.bp",
+    "root_bootstrap": "bootstrap.bash -> build/soong/bootstrap.bash",
+    "root_entries_outside_manifest_top_level_and_repo": [".repo.failed-google-20260808T003450Z", "out"],
+    "legacy_out": {"logical_bytes_du_sb": 115036575394, "regular_files": 542066, "prune_marker": "out/.out-dir present"},
+    "failed_repo_directory": {"logical_bytes_du_sb": 26360, "regular_files": 19},
+    "hash_feasibility": "Pre/post byte hashing of repo untracked files is cheap at the observed zero-file baseline. Hashing the old root out directory bytewise would reread about 115 GB and is not a bounded graph guard; it must be explicitly excluded from the graph input and protected from writes, while its existence/prune marker and root topology are checked."
+  },
+  "evidence_boundary": "Even after fixes, a successful one-shot command and generated Soong Ninja file prove only a host-native graph step. --skip-ninja does not run target Bionic compilation; generated actions may still contain nsjail until separately audited. No runtime or device acceptance follows."
+}

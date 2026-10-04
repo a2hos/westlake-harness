@@ -1,0 +1,64 @@
+{
+  "schema": "nanhai.g279.native_graph_top_choice.read_only.v1",
+  "observed_utc": "2026-10-04T10:12:55Z",
+  "decision": "PREFER_TAG_AUDITED_LINUX_FULL_TREE_TOP_AFTER_INPUT_ADMISSION_AND_PREEXEC_GATES",
+  "execution_status": "SOURCE_CHOICE_ONLY; NO_GRAPH, CONTAINER, DEVICE, OR BRIDGE EXECUTION",
+  "candidate_top": "/data/source/aosp-16.0.0-r4",
+  "manifest": {
+    "pointer": ".repo/manifest.xml includes default.xml",
+    "pointer_sha256": "33d794c99c197c2eb0726ff2cc8c4bcd532e0f3fcd75eaea3fbd10bd53675d25",
+    "default_xml_sha256": "19db4af44aa74ea4ed07bf602f5805476bab1c821d59ba818031022280ae055f",
+    "manifest_git_head": "15128c9e27cfa599c48d294babd39286ee8f1426",
+    "default_revision": "refs/tags/android-16.0.0_r4",
+    "projects": 1013,
+    "local_manifests": 0,
+    "project_revision_overrides": 0,
+    "present_project_dirs": 1011,
+    "present_head_equals_peeled_r4_tag": 1011,
+    "present_tracked_clean": 1011,
+    "absent_projects": [
+      "prebuilts/clang/host/darwin-x86",
+      "prebuilts/go/darwin-x86"
+    ],
+    "scope_limit": "Linux checkout is not literally all 1013 manifest projects; 1011 present HEAD/tag and tracked-clean checks do not provide per-file byte hashes or validate untracked files. The missing two are Darwin host prebuilts."
+  },
+  "competing_46_link_view": {
+    "path": "/data/source/.nanhai-plus-opaleye-native/source-view",
+    "audited_roots": 46,
+    "present_manifest_projects_not_in_view": 965,
+    "root_android_bp": "absent in view; full tree has Android.bp -> build/soong/root.bp and bootstrap.bash -> build/soong/bootstrap.bash from manifest linkfile entries",
+    "finder_symlink_gate": "Soong ui/build/finder.go:70-72 follows directory symlinks only with ALLOW_BP_UNDER_SYMLINKS=true; default is false. A corrected curated TOP requires this environment setting, root linkfiles, and verification that its Android.bp.list includes intended roots.",
+    "conclusion": "The current 46-link view cannot stand in for a stock whole-tree graph. Adding individual missing module providers can be useful as a bounded diagnostic, but the resulting graph remains intentionally partial and repeatedly risks missing providers."
+  },
+  "uncurated_key_repositories": [
+    {"path":"art","head":"1690c6912a7972c9e62c39b48c706de9b8b18b4a","tracked":10712},
+    {"path":"libcore","head":"1c599b67bcd3de5c50c79d0622e40b6de99b4cb4","tracked":8280},
+    {"path":"system/core","head":"e9d1fa3705d7fbd0ac1c942bc4c276161bfbfed1","tracked":1915},
+    {"path":"external/boringssl","head":"1e3b727981831886a0910cd9e82d5bbee4cc7029","tracked":3735},
+    {"path":"external/libcxx","head":"88894a62bb97313ed9bf79a546f1486de4b2e723","tracked":6809},
+    {"path":"external/zlib","head":"a6f47e8bd7c1ba412c4b5a3539aa77fe628d0172","tracked":190},
+    {"path":"hardware/libhardware","head":"67b44bb0f7d1df962e737cfe9baf716bab45792e","tracked":378},
+    {"path":"packages/modules/Bluetooth","head":"5323f31677c7dfa04de2e6e9fce1012ef4edaff2","tracked":4761},
+    {"path":"prebuilts/ndk","head":"e0e58e67cd11713799cdf6b50ba5843d62881660","tracked":36}
+  ],
+  "uncurated_key_check": "Each of nine key repositories is a manifest project, has root Android.bp, HEAD equals peeled android-16.0.0_r4 tag, tracked Git status clean, and zero missing tracked paths. They illustrate that the 46-root view omits real globally parsed definitions; they are not the only omissions.",
+  "soong_read_scope": {
+    "finder_source_sha256": "4e80b817227303a9743023bdfed46119c85443646a8019e7da473c66696e3685",
+    "build_source_sha256": "14a227d3b684cb83f309b81894d505903b116081be5daf3f0cb73edc8e10847e",
+    "finder": "ui/build/finder.go:38-42 and 65-85 roots finder at current working directory '.', excludes .git/.repo, and lines 230-238 recursively write all found Android.bp to OUT_DIR/.module_paths/Android.bp.list. ui/build/soong.go:227 passes that entire list to primary builder.",
+    "flags": "ui/build/config.go:987-1013: --soong-only skips normal Kati, --skip-ninja skips final Ninja, --skip-soong-tests omits Soong Go tests. ui/build/build.go:352-397 still runs Soong and the soong-only Kati packaging step. None narrows source discovery to libc/libm/libdl/linker.",
+    "impact": "Changing TOP from 46 links to full tree changes the parsed global module universe and generated graph; it is a material source-boundary change, not just a file-availability fix."
+  },
+  "required_before_graph": [
+    "Register the 1011-project Linux R4 full-tree scope in the gz02 shared source index and Nanhai read-only input binding; recheck manifest SHA, each HEAD/tag and tracked-clean status immediately before execution. Keep the two absent Darwin projects explicit.",
+    "Use the already built project-owned patched Soong UI ELF by exact SHA256 92d62e59e154846535684d339657b7305ad7186aaa795bfee89a81b500901624; invoke it directly so stock build/soong cannot silently replace the patched UI. Recheck the independent patch/worktree and no-nsjail process plan.",
+    "Bind OUT_DIR, TMPDIR and staging beneath the project-owned gz02 root, outside the shared checkout; prohibit writes into /data/source/aosp-16.0.0-r4 and preserve original claim/session/device HOLD.",
+    "Perform a bounded static argv/source guard, then a separately authorized one-shot native graph. Capture actual return code and source/output post-guards; do not infer target compilation or graph pass from this source audit."
+  ],
+  "alternative": "If the owner instead needs a deliberately partial diagnostic graph, repair the 46-link view with root linkfiles and ALLOW_BP_UNDER_SYMLINKS=true, then add only admitted exact-tag roots and label the result partial. It should not be reported as the stock full graph.",
+  "prior_receipts": {
+    "gz02_42_plus_4_source_audit_sha256": "69452d15900e00d6fbd582435c0fb1bbd13098d12d98663746f6d4ee1be1c56a",
+    "g278_patched_ui_host_tool_result_sha256": "72c7f09e3e5ce41ca666f402a0bcae0d10ef0b4c7942e07fc5eefcc5805664d6"
+  },
+  "counts": {"graph":0,"container":0,"device":0,"bridge":0}
+}
